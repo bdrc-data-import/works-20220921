@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG14602 {
+    bda:LG1F921706AC4A14F0
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-05T09:21:28.649Z"^^xsd:dateTime ;
+        adm:logMessage      "temp released for scan request to india"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8F4E5C4010749D81
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-10-10T12:00:30.81Z"^^xsd:dateTime ;
+        adm:logMessage      "Completed catalogued and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGA7756184B6026BC8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-28T16:28:14.496Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:WA1KG14602  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG14602 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "16/WA1KG14602.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG14602 ;
+        adm:logEntry        bda:LG1F921706AC4A14F0 , bda:LG8F4E5C4010749D81 , bda:LGA7756184B6026BC8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CRE747040826957570
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1GS58456 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA1KG14602  a       :Work ;
+        skos:altLabel       "klu 'bum tshe ring gi lhug rtsom phyogs bsgrigs/ ri'i pha rol tu shor pa'i sems pa/"@bo-x-ewts ;
+        skos:prefLabel      "klu 'bum tshe ring gi lhug rtsom phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of author's prose writings"@en ;
+        :creator            bdr:CRE747040826957570 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T1884 ;
+        :workHasInstance    bdr:MW1KG14602 , bdr:W1KG14602 .
+}

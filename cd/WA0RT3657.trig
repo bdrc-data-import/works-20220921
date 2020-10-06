@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0RT3657 {
+    bda:WA0RT3657  a        adm:AdminData ;
+        adm:adminAbout      bdr:WA0RT3657 ;
+        adm:metadataLegal   bda:LD_rKTs_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR6A31AE_WA0RT3657
+        a                   :AgentAsCreator ;
+        :agent              bdr:P79 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR7123A6_WA0RT3657
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15242 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:IDC3FEB6_WA0RT3657
+        a                   bdr:RefrKTsT ;
+        rdf:value           "3657" .
+    
+    bdr:WA0RT3657  a        :Work ;
+        skos:prefLabel      "tshe'i gnas skabs kyi 'bras bu gnod pa 'byung ba zhes bya ba'i las/"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDC3FEB6_WA0RT3657 ;
+        :creator            bdr:CR6A31AE_WA0RT3657 , bdr:CR7123A6_WA0RT3657 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23703_4323 ;
+        :workHasParallelsIn  bdr:WA0RTI3657 ;
+        adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3657> .
+}

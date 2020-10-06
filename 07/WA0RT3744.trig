@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0RT3744 {
+    bda:WA0RT3744  a        adm:AdminData ;
+        adm:adminAbout      bdr:WA0RT3744 ;
+        adm:metadataLegal   bda:LD_rKTs_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR7E3565_WA0RT3744
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8209 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CRE36ED9_WA0RT3744
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:ID0783A0_WA0RT3744
+        a                   bdr:RefrKTsT ;
+        rdf:value           "3744" .
+    
+    bdr:IDFF03EC_WA0RT3744
+        a                   bdr:RefrKTsK ;
+        rdf:value           "821" .
+    
+    bdr:WA0RT3744  a        :Work ;
+        skos:altLabel       "dkon mchog gsum gyi bde legs kyi tshigs su bcad pa/"@bo-x-ewts , "dkon mchog gsum gyi bkra shis kyi tshigs su bcad pa/"@bo-x-ewts , "ratnatrayasvastigāthā"@sa-x-iast , "ratnatri svastigāthā"@sa-x-iast ;
+        skos:prefLabel      "dkon mchog gsum gyi bkra shis kyi tshigs su bcad pa/"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0783A0_WA0RT3744 , bdr:IDFF03EC_WA0RT3744 ;
+        :creator            bdr:CR7E3565_WA0RT3744 , bdr:CRE36ED9_WA0RT3744 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG14700_0377 , bdr:MW1KG14700_0834 , bdr:MW1PD127393_0342 , bdr:MW1PD96684_0447 , bdr:MW1PD96684_0450 , bdr:MW1PD96684_0729 , bdr:MW1PD96684_1049 , bdr:MW1PD96685_0452 , bdr:MW1PD96685_0455 , bdr:MW1PD96685_0734 , bdr:MW1PD96685_1050 , bdr:MW22083_0331A , bdr:MW22083_0332 , bdr:MW22083_0763 , bdr:MW22084_0824 , bdr:MW22084_0827 , bdr:MW22084_1108 , bdr:MW22703_0740 , bdr:MW22703_0743 , bdr:MW23703_4413 , bdr:MW26071_0781 , bdr:MW26071_0784 , bdr:MW29468_0824 , bdr:MW29468_0827 , bdr:MW29468_1110 , bdr:MW30532_0824 , bdr:MW30532_0827 , bdr:MW30532_1108 , bdr:MW4CZ5369_0824 , bdr:MW4CZ5369_0827 , bdr:MW4CZ5369_1108 , bdr:MW4CZ7445_0008-M , bdr:MW4CZ7445_0745-H , bdr:MW4CZ7445_0745-K , bdr:MW4CZ7445_1005 , bdr:MW4PD3142_0008-M , bdr:MW4PD3142_0745-H , bdr:MW4PD3142_0745-K , bdr:MW4PD3142_1005 ;
+        :workHasParallelsIn  bdr:WA0RTI3744 ;
+        adm:sameAsrKTs      <http://purl.rkts.eu/resource/WKT0821> , <http://purl.rkts.eu/resource/WTT3744> .
+}

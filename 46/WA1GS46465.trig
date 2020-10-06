@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1GS46465 {
+    bda:LG40C997521AEFCF7D
+        a                   adm:UpdateData .
+    
+    bda:LG4BA21D181EAE45A1
+        a                   adm:UpdateData .
+    
+    bda:LGF86BA032E6543B1D
+        a                   adm:InitialDataCreation .
+    
+    bda:W1GS46465  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W1GS46465 ;
+        adm:replaceWith     bdr:WA1GS46465 ;
+        adm:status          bda:StatusWithdrawn .
+    
+    bda:WA1GS46465  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1GS46465 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "46/WA1GS46465.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1GS46465 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:NTDE17A5B1E739168E
+        a                   :Note ;
+        :noteText           "tbrc holds typescript in one page of this text written by an anonymous rtse drung; the original is in the van manen papers, in the instittut kern, leiden (4 pp. legal size foolscap)"@en .
+    
+    bdr:WA1GS46465  a       :Work ;
+        skos:prefLabel      "bstan rgyal gling gi rgyal zur bka' khrims phogs pa'i lo rgyus/"@bo-x-ewts ;
+        :isRoot             true ;
+        :note               bdr:NTDE17A5B1E739168E .
+}

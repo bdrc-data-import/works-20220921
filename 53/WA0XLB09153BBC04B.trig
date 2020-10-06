@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0XLB09153BBC04B {
+    bda:WA0XLB09153BBC04B
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0XLB09153BBC04B ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "53/WA0XLB09153BBC04B.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0XLB09153BBC04B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CRBC7F7E205D63C5A0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15140 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRC68E6ED7CB9A929C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7257 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA0XLB09153BBC04B
+        a                   :Work ;
+        skos:prefLabel      "shes rab kyi pha rol tu phyin pa'i mdzod kyi lde mig"@bo-x-ewts , "prajnaparamiktakosatala"@sa-x-ndia ;
+        :creator            bdr:CRBC7F7E205D63C5A0 , bdr:CRC68E6ED7CB9A929C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1KG13126_B09153 ;
+        :workIsAbout        bdr:WA4CZ15640 .
+}

@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0RT0465 {
+    bda:WA0RT0465  a        adm:AdminData ;
+        adm:adminAbout      bdr:WA0RT0465 ;
+        adm:metadataLegal   bda:LD_rKTs_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR250D2B_WA0RT0465
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1359 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR31A4F8_WA0RT0465
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15078 ;
+        :role               bdr:R0ER0023 .
+    
+    bdr:CRB6F0B4_WA0RT0465
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10154 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:ID121B4C_WA0RT0465
+        a                   bdr:RefrKTsT ;
+        rdf:value           "465" .
+    
+    bdr:WA0RT0465  a        :Work ;
+        skos:prefLabel      "dbang rin chen snang ba/"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID121B4C_WA0RT0465 ;
+        :creator            bdr:CR250D2B_WA0RT0465 , bdr:CR31A4F8_WA0RT0465 , bdr:CRB6F0B4_WA0RT0465 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23703_1333 ;
+        :workHasParallelsIn  bdr:WA0RTI0465 ;
+        adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0465> .
+}

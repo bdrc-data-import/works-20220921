@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG216525 {
+    bda:LG2A1DE98651CC986A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-10-02T14:51:43.225Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:WA2KG216525  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG216525 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "1a/WA2KG216525.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG216525 ;
+        adm:logEntry        bda:LG2A1DE98651CC986A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR2294EA274FAC5368
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR6EC25228197D7F0E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA2KG216525  a      :SerialMember , :Work ;
+        skos:altLabel       "'pho ba'i man ngag phyogs gcig tu bsdebs pa myur lam zhing mchog bgrod pa'i thems skas/"@bo-x-ewts ;
+        skos:prefLabel      "blo bzang dgongs rgyan mu tig phreng mdzes deb so gsum pa/"@bo-x-ewts ;
+        :catalogInfo        "A collection of quintessential instruction on the transference of consciousness by Gelug masters."@en ;
+        :creator            bdr:CR2294EA274FAC5368 , bdr:CR6EC25228197D7F0E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS2KG216525 ;
+        :workGenre          bdr:T456 ;
+        :workHasInstance    bdr:MW2KG216525 ;
+        :workIsAbout        bdr:T15 .
+}

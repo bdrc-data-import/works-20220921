@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ301802 {
+    bda:LG31B32B0CD9232853
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-12-14T13:59:07.108Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGE27F72FE76CF22CA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-12-14T13:54:33.412Z"^^xsd:dateTime ;
+        adm:logMessage      "new and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:WA4CZ301802  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ301802 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "97/WA4CZ301802.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ301802 ;
+        adm:logEntry        bda:LG31B32B0CD9232853 , bda:LGE27F72FE76CF22CA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR5A55DECEA7D55DC0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA4CZ301802  a      :Work ;
+        skos:altLabel       "bde mchog bsdus pa'i rgyud kyi rgya cher bshad pa sbas don kun gsal/"@bo-x-ewts ;
+        skos:prefLabel      "bsdus pa'i rgyud kyi rgya cher bshad pa sbas don kun gsal/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the laghusamvara tantra; written with dka' bzhi pa rin chen dpal as the scribe"@en ;
+        :creator            bdr:CR5A55DECEA7D55DC0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW4CZ301802 , bdr:W4CZ301802 ;
+        :workIsAbout        bdr:WA1GS152270 .
+}

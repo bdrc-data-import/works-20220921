@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0XL7F4C061A21F7 {
+    bda:WA0XL7F4C061A21F7
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0XL7F4C061A21F7 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b9/WA0XL7F4C061A21F7.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0XL7F4C061A21F7 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR1434A379D68FCD3F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1615 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR58C76FF76D53CEEE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1615 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA0XL7F4C061A21F7
+        a                   :Work ;
+        skos:prefLabel      "gur rigs bsdus kyi rig pa'i dbang lnga'i bshad pa/"@bo-x-ewts ;
+        :catalogInfo        "explanation of the empowerment of vajra panjara"@en ;
+        :creator            bdr:CR1434A379D68FCD3F , bdr:CR58C76FF76D53CEEE ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T157 ;
+        :workHasInstance    bdr:MW00EGS1017151_7F4C06 ;
+        :workIsAbout        bdr:T131 .
+}

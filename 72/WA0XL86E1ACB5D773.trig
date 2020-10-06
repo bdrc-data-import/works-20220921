@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0XL86E1ACB5D773 {
+    bda:WA0XL86E1ACB5D773
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0XL86E1ACB5D773 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "72/WA0XL86E1ACB5D773.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0XL86E1ACB5D773 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR21B6931092BFB42C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR89181625306F39F8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15493 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR936DAE6A6987306A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7641 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA0XL86E1ACB5D773
+        a                   :Work ;
+        skos:prefLabel      "bsgom rim bar ma/"@bo-x-ewts , "bhavanakrama"@sa-x-ndia ;
+        :creator            bdr:CR21B6931092BFB42C , bdr:CR89181625306F39F8 , bdr:CR936DAE6A6987306A ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG13126_86E1AC ;
+        :workIsAbout        bdr:T1524 .
+}

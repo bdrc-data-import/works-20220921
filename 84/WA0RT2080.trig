@@ -1,0 +1,55 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0RT2080 {
+    bda:WA0RT2080  a        adm:AdminData ;
+        adm:adminAbout      bdr:WA0RT2080 ;
+        adm:metadataLegal   bda:LD_rKTs_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR0B424A_WA0RT2080
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8224 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR9778C3_WA0RT2080
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4004 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR9D0A00_WA0RT2080
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6453 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRDD617E_WA0RT2080
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ10547 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:ID721486_WA0RT2080
+        a                   bdr:RefrKTsT ;
+        rdf:value           "2080" .
+    
+    bdr:WA0RT2080  a        :Work ;
+        skos:altLabel       "rgyal mtshan gyi dpung rgyan gyi rtse mo'i sgrub thabs/"@bo-x-ewts , "rgyal mtshan gyi rtse mo'i dpung rgyan gyi sgrub thabs/"@bo-x-ewts ;
+        skos:prefLabel      "rgyal mtshan rtse mo'i dpung rgyan gyi sgrub thabs/"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID721486_WA0RT2080 ;
+        :creator            bdr:CR0B424A_WA0RT2080 , bdr:CR9778C3_WA0RT2080 , bdr:CR9D0A00_WA0RT2080 , bdr:CRDD617E_WA0RT2080 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23703_3258 ;
+        :workHasParallelsIn  bdr:WA0RTI2080 ;
+        adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT2080> .
+}

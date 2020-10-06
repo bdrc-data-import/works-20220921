@@ -1,0 +1,77 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17410 {
+    bda:LG14A50102B33DD6D8
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-17T08:48:33.707Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG1B5ECBA0D574B25E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-17T08:49:58.6Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:WA8LS17410  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17410 ;
+        adm:facetIndex      9 ;
+        adm:gitPath         "84/WA8LS17410.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17410 ;
+        adm:logEntry        bda:LG14A50102B33DD6D8 , bda:LG1B5ECBA0D574B25E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR405EC3E318811641
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4420 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR49C65809C8BEA86B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2614 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR674EE0EC8855F9F7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15242 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRAA4E6843F622430D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5651 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRB9369D52067BC229
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15243 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRC7C78B9C1EE431E1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA8LS17410  a       :Work ;
+        skos:altLabel       "rigs pa drug bcu pa'i tshig le'ur byas pa/ brtsod pa bzlog pa'i tshig le'ur byas pa dang stong nyid bdun bcu pa'i tshig le'ur byas pa/"@bo-x-ewts ;
+        skos:prefLabel      "rigs pa drug bcu pa/ rtsod pa bzlog pa dang stong nyid bdun bcu pa'i tshig le'ur byas pa/"@bo-x-ewts ;
+        :catalogInfo        "The root text of Yuktishataka, Vigraha vyavartani karika and Shunyatasamtikarika by Acharya Nagarjuna. All three texts are on Madhyamika philosophy and annotated by unknown master."@en ;
+        :creator            bdr:CR405EC3E318811641 , bdr:CR49C65809C8BEA86B , bdr:CR674EE0EC8855F9F7 , bdr:CRAA4E6843F622430D , bdr:CRB9369D52067BC229 , bdr:CRC7C78B9C1EE431E1 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS17410 , bdr:W8LS17410 ;
+        :workIsAbout        bdr:T233 .
+}

@@ -1,0 +1,65 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ301801 {
+    bda:LG546DB69FA179FF7C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-12-14T13:54:33.1Z"^^xsd:dateTime ;
+        adm:logMessage      "new and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG642E9892932BB591
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-12-14T13:57:57.545Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:WA4CZ301801  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ301801 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "61/WA4CZ301801.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ301801 ;
+        adm:logEntry        bda:LG546DB69FA179FF7C , bda:LG642E9892932BB591 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CRAE5E510FE3B7B690
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6161 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRDA03913B1F4F6B20
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG07267 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CRDD239C1E2BF1703B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:MW4CZ301801  skos:altLabel  "bodhicaryavatara"@sa-x-ndia .
+    
+    bdr:WA4CZ301801  a      :Work ;
+        skos:altLabel       "byang chub sems dpa'i spyod pa la 'jug pa/"@bo-x-ewts ;
+        skos:prefLabel      "spyod 'jug"@bo-x-ewts , "bodhicaryavatara"@sa-x-ndia ;
+        :catalogInfo        "Root text of the Bodhicaryavatara by Shantideva."@en ;
+        :creator            bdr:CRAE5E510FE3B7B690 , bdr:CRDA03913B1F4F6B20 , bdr:CRDD239C1E2BF1703B ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW4CZ301801 , bdr:W4CZ301801 ;
+        :workIsAbout        bdr:T1078 , bdr:T58 .
+}

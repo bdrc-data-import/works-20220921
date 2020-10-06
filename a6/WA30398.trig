@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA30398 {
+    bda:LGF519B73A14ABF628
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM093A1A0447
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIM8647D1C7AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 10"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:WA30398  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA30398 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "a6/WA30398.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA30398 ;
+        adm:logEntry        bda:LGF519B73A14ABF628 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR703B6C699F697CE0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10615 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:MW30398  skos:altLabel  "wish granting attainments"@en-x-mixed .
+    
+    bdr:WA30398  a          :Work ;
+        skos:altLabel       "daily prayers of namdroling monastery"@en ;
+        skos:prefLabel      "rnam gling sngon 'gro slob grwa'i zhal 'don chog sgrigs dngos grub 'dod 'jo/"@bo-x-ewts , "wish granting attainments"@en-x-mixed ;
+        :creator            bdr:CR703B6C699F697CE0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW30398 , bdr:W30398 ;
+        :workIsAbout        bdr:G4886 , bdr:T1082 .
+}

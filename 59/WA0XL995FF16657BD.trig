@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0XL995FF16657BD {
+    bda:WA0XL995FF16657BD
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0XL995FF16657BD ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "59/WA0XL995FF16657BD.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0XL995FF16657BD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR6D23006B048CD03A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG02663 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CRE1D0DD8C77243CF6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG02663 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRFC6CC00B98C321F3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15214 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:WA0XL995FF16657BD
+        a                   :Work ;
+        skos:prefLabel      "'chi ba bslu ba/"@bo-x-ewts , "mrtyusthapaka"@sa-x-ndia ;
+        :creator            bdr:CR6D23006B048CD03A , bdr:CRE1D0DD8C77243CF6 , bdr:CRFC6CC00B98C321F3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG13126_995FF1 ;
+        :workIsAbout        bdr:T619 , bdr:T846 .
+}

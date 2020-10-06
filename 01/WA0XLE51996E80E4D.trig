@@ -1,0 +1,41 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0XLE51996E80E4D {
+    bda:WA0XLE51996E80E4D
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0XLE51996E80E4D ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "01/WA0XLE51996E80E4D.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0XLE51996E80E4D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CRF074224DFA8D79AF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA0XLE51996E80E4D
+        a                   :Work ;
+        skos:prefLabel      "chos rje bla ma dam pa dang / rgyal lha khang pa blo gros seng ge'i bris sku re bzhengs pa'i gsham du/ snye'u nas/ drung chen nam mkha' bzang pos bskul ba/"@bo-x-ewts ;
+        :catalogInfo        "stotra of red mda' ba gzhon nu blo gros and rgyal khang pa blo gros seng ge, composed during the statue making of the above two"@en ;
+        :creator            bdr:CRF074224DFA8D79AF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T67 ;
+        :workHasInstance    bdr:MW635_E51996 ;
+        :workIsAbout        bdr:P60 .
+}

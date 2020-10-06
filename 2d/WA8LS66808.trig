@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS66808 {
+    bda:LG74614AE74177D702
+        a                   adm:UpdateData ;
+        adm:logDate         "2019-12-05T11:52:00.006Z"^^xsd:dateTime ;
+        adm:logMessage      "added pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG8859FCEC700F62AC
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-10-09T09:27:00.681Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC123FD38AA22F29A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-12-05T11:54:03.537Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:WA8LS66808  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS66808 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "2d/WA8LS66808.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS66808 ;
+        adm:logEntry        bda:LG74614AE74177D702 , bda:LG8859FCEC700F62AC , bda:LGC123FD38AA22F29A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:WA8LS66808  a       :SerialMember , :Work ;
+        skos:prefLabel      "'khrungs gling / stod cha dang smad cha/"@bo-x-ewts ;
+        :catalogInfo        "Gesar epic story known as Trungling."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS8LS66738 ;
+        :workHasInstance    bdr:MW8LS66808 , bdr:W8LS66808 ;
+        :workIsAbout        bdr:T248 .
+}

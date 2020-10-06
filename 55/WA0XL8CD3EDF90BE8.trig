@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0XL8CD3EDF90BE8 {
+    bda:WA0XL8CD3EDF90BE8
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0XL8CD3EDF90BE8 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "55/WA0XL8CD3EDF90BE8.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0XL8CD3EDF90BE8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR4130160A80D0AF63
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15182 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR66F056ECFA264026
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8142 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRBA6C570B60ED494C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8213 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:WA0XL8CD3EDF90BE8
+        a                   :Work ;
+        skos:prefLabel      "dkyil 'khor thams cad kyi rjes su 'jug pa'i cho ga lnga pa/"@bo-x-ewts , "sarvamandalanuvartipancavidhi"@sa-x-ndia ;
+        :creator            bdr:CR4130160A80D0AF63 , bdr:CR66F056ECFA264026 , bdr:CRBA6C570B60ED494C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T159 ;
+        :workHasInstance    bdr:MW1KG13126_8CD3ED ;
+        :workIsAbout        bdr:T1377 .
+}

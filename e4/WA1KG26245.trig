@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG26245 {
+    bda:LG8BF112CEF4E08F23
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-03-24T13:22:11.579Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC9BBDC469DD6C8AF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-11T09:26:09.287Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:WA1KG26245  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG26245 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e4/WA1KG26245.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG26245 ;
+        adm:logEntry        bda:LG8BF112CEF4E08F23 , bda:LGC9BBDC469DD6C8AF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:WA1KG26245  a       :Work ;
+        skos:altLabel       "भोटप्रकाश:"@bo-x-ewts ;
+        skos:prefLabel      "bod kyi brda'i rab 'byed/"@bo-x-ewts , "bhota-prakasa; a tibetan chrestomathy, With introduction, skeleton grammar, notes, texts and vocabularies."@en ;
+        :catalogInfo        "Tibetan-Sanskrit-English and Sanskrit-Tibetan-English vocabularies."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn , bdr:LangSa ;
+        :workHasInstance    bdr:MW1KG26245 , bdr:W1KG26245 ;
+        :workIsAbout        bdr:T265 , bdr:T4CZ16893 .
+}

@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG12960 {
+    bda:LG6212C5094EEFCE48
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2019-05-09T16:06:24.616Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:WA1KG12960  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG12960 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "03/WA1KG12960.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG12960 ;
+        adm:logEntry        bda:LG6212C5094EEFCE48 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR3978D94F2799A917
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG6146 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA1KG12960  a       :Work ;
+        skos:prefLabel      "bden don gsal ba'i sgron me/"@bo-x-ewts ;
+        :catalogInfo        "Chronology of key political developments in Tibet from 1940 until about 1970, with special details on the Anti-Panchen Campaign (1964-1966), conflicts in Lhasa and certain counties across the Tibetan plateau, and the author's personal experience as a political prisoner."@en ;
+        :creator            bdr:CR3978D94F2799A917 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 , bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW1KG12960 , bdr:W1KG12960 ;
+        :workIsAbout        bdr:G3196 .
+}

@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0RT3280 {
+    bda:WA0RT3280  a        adm:AdminData ;
+        adm:adminAbout      bdr:WA0RT3280 ;
+        adm:metadataLegal   bda:LD_rKTs_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR4A33BE_WA0RT3280
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR7D94F0_WA0RT3280
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3214 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CRD78F16_WA0RT3280
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3396 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:IDDF6C5E_WA0RT3280
+        a                   bdr:RefrKTsT ;
+        rdf:value           "3280" .
+    
+    bdr:WA0RT3280  a        :Work ;
+        skos:altLabel       "bslab pa kun las btus pa'i tshig le'ur/"@bo-x-ewts , "bslab pa kun las btus pa'i tshig le'ur byas bas/"@bo-x-ewts , "bslab pa kun las btus pa'i tshig le'ur byas pa/"@bo-x-ewts ;
+        skos:prefLabel      "bslab pa kun las btus pa'i tshig le'u byas pa/"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDDF6C5E_WA0RT3280 ;
+        :creator            bdr:CR4A33BE_WA0RT3280 , bdr:CR7D94F0_WA0RT3280 , bdr:CRD78F16_WA0RT3280 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:IE0GR0378 , bdr:MW23703_3939 ;
+        :workHasParallelsIn  bdr:WA0RTI3280 ;
+        adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3280> .
+}

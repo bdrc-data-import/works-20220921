@@ -1,0 +1,66 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA21915 {
+    bda:LG309E888FC404C9F7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-11-14T15:45:46.386Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG415A95A4E0AB0CDD
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-11-14T15:45:06.264Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold and completed cataloging"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGDFCF5FF4AB636D5F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4599A38FCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to CTC 14"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4D99209C62
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
+        adm:logMessage      "made open access"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00012 .
+    
+    bda:WA21915  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA21915 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "09/WA21915.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA21915 ;
+        adm:logEntry        bda:LG309E888FC404C9F7 , bda:LG415A95A4E0AB0CDD , bda:LGDFCF5FF4AB636D5F , bda:LGIM4599A38FCE , bda:LGIM4D99209C62 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:MW21915  skos:altLabel  "藏医诊治论文选"@zh-hans .
+    
+    bdr:WA21915  a          :Work ;
+        skos:altLabel       "zang yi zhen zhi lun wen xue"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gso rig skor gyi rgyun mkho gal che ba bdams bsgrigs/"@bo-x-ewts , "藏医诊治论文选"@zh-hans ;
+        :catalogInfo        "Selection of important medicine texts."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW21915 , bdr:W21915 ;
+        :workIsAbout        bdr:T85 .
+}

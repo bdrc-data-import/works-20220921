@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG14604 {
+    bda:LG77D4A0283A524CC7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-09-28T16:29:14.56Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGCD23EFA3AE980874
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-05T09:21:28.793Z"^^xsd:dateTime ;
+        adm:logMessage      "temp released for scan request to india"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF1C251BEB5201927
+        a                   adm:UpdateData ;
+        adm:logDate         "2017-10-10T12:00:32.315Z"^^xsd:dateTime ;
+        adm:logMessage      "Completed catalogued and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:WA1KG14604  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG14604 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "0b/WA1KG14604.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG14604 ;
+        adm:logEntry        bda:LG77D4A0283A524CC7 , bda:LGCD23EFA3AE980874 , bda:LGF1C251BEB5201927 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR74CBC108EC3251EC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG14553 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:WA1KG14604  a       :SerialMember , :Work ;
+        skos:prefLabel      "mi'i rigs kyi shes rig mdun du skul mkhan mkhas dbang brgya tham pa/"@bo-x-ewts ;
+        :catalogInfo        "Biographical dictionary of philosophers"@en ;
+        :creator            bdr:CR74CBC108EC3251EC ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS1KG14556 ;
+        :workGenre          bdr:T1PD128746 , bdr:T3 ;
+        :workHasInstance    bdr:MW1KG14604 , bdr:W1KG14604 .
+}

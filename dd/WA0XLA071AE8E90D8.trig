@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0XLA071AE8E90D8 {
+    bda:WA0XLA071AE8E90D8
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0XLA071AE8E90D8 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "dd/WA0XLA071AE8E90D8.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0XLA071AE8E90D8 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR787D1BDA0164595D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR83FAFF80FD6AD232
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE5D84D8667E4C1F3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3456 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:WA0XLA071AE8E90D8
+        a                   :Work ;
+        skos:prefLabel      "shes rabs kyi pha rol tu phyin pa'i don bsdus sgron ma/"@bo-x-ewts , "prajnaparamitapindarthapradipa"@sa-x-ndia ;
+        :creator            bdr:CR787D1BDA0164595D , bdr:CR83FAFF80FD6AD232 , bdr:CRE5D84D8667E4C1F3 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T2398 ;
+        :workHasInstance    bdr:MW1KG13126_A071AE ;
+        :workIsAbout        bdr:WA4CZ15640 .
+}

@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0RT3187 {
+    bda:WA0RT3187  a        adm:AdminData ;
+        adm:adminAbout      bdr:WA0RT3187 ;
+        adm:metadataLegal   bda:LD_rKTs_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR5BCA8D_WA0RT3187
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8175 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR97B00C_WA0RT3187
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8183 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:ID39E1F4_WA0RT3187
+        a                   bdr:RefrKTsT ;
+        rdf:value           "3187" .
+    
+    bdr:WA0RT3187  a        :Work ;
+        skos:altLabel       "dbu ma rtsa ba'i 'grel pa bud+d+dha pa li ta/"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma rtsa ba'i 'grel pa bud+d+ha pA li ta/"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID39E1F4_WA0RT3187 ;
+        :creator            bdr:CR5BCA8D_WA0RT3187 , bdr:CR97B00C_WA0RT3187 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23703_3842 ;
+        :workHasParallelsIn  bdr:WA0RTI3187 ;
+        adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3187> .
+}

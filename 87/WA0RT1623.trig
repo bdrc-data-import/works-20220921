@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0RT1623 {
+    bda:WA0RT1623  a        adm:AdminData ;
+        adm:adminAbout      bdr:WA0RT1623 ;
+        adm:metadataLegal   bda:LD_rKTs_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR043631_WA0RT1623
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9963 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR6D4B5A_WA0RT1623
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4007 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CREDA0E4_WA0RT1623
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8192 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:ID200005_WA0RT1623
+        a                   bdr:RefrKTsT ;
+        rdf:value           "1623" .
+    
+    bdr:WA0RT1623  a        :Work ;
+        skos:prefLabel      "grags pa bskyed pa'i cho ga"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID200005_WA0RT1623 ;
+        :creator            bdr:CR043631_WA0RT1623 , bdr:CR6D4B5A_WA0RT1623 , bdr:CREDA0E4_WA0RT1623 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23703_2803 ;
+        :workHasParallelsIn  bdr:WA0RTI1623 ;
+        adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1623> .
+}

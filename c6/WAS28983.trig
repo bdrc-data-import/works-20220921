@@ -1,0 +1,28 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WAS28983 {
+    bda:WAS28983  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WAS28983 ;
+        adm:gitPath         "c6/WAS28983.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WAS28983 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:WAS28983  a         :SerialWork ;
+        skos:prefLabel      "bod kyi bcu phrag rig mdzod chen mo/ bka' brgyud pa'i gsung rab/"@bo-x-ewts ;
+        :isRoot             true ;
+        :serialHasMember    bdr:WA28983 , bdr:WA29018 , bdr:WA29022 , bdr:WA29032 , bdr:WA30012 , bdr:WA30013 , bdr:WA30014 , bdr:WA30015 , bdr:WA30016 , bdr:WA30017 , bdr:WA30018 , bdr:WA30019 , bdr:WA30020 , bdr:WA30021 , bdr:WA30022 , bdr:WA30023 .
+}

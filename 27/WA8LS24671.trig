@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS24671 {
+    bda:LG6BC643613E2259F6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-29T08:56:09.048Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG90CE7CB73B8D2504
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-29T08:54:44.923Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:WA8LS24671  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS24671 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "27/WA8LS24671.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS24671 ;
+        adm:logEntry        bda:LG6BC643613E2259F6 , bda:LG90CE7CB73B8D2504 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR94C075B197EB5971
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG21031 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA8LS24671  a       :SerialMember , :Work ;
+        skos:prefLabel      "rgyal sras ba ku la/"@bo-x-ewts ;
+        :catalogInfo        "A bilingual biography of Kuhsok Bakula Rinpoche Losang Thupten Choknor."@en ;
+        :creator            bdr:CR94C075B197EB5971 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangEn ;
+        :serialMemberOf     bdr:WAS8LS24671 ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS24671 , bdr:W8LS24671 .
+}

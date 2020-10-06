@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0XL6B5E6142F528 {
+    bda:WA0XL6B5E6142F528
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0XL6B5E6142F528 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "cb/WA0XL6B5E6142F528.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0XL6B5E6142F528 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR4694B7EF6021927F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4849 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR8E65A220527FFC1C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4849 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:WA0XL6B5E6142F528
+        a                   :Work ;
+        skos:prefLabel      "smra ba'i sgo mtshon cha lta bu/"@bo-x-ewts , "vacanamukhayudhopama"@sa-x-ndia ;
+        :creator            bdr:CR4694B7EF6021927F , bdr:CR8E65A220527FFC1C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 ;
+        :workHasInstance    bdr:MW1KG13126_6B5E61 ;
+        :workIsAbout        bdr:T282 .
+}

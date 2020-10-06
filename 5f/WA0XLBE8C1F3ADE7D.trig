@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0XLBE8C1F3ADE7D {
+    bda:WA0XLBE8C1F3ADE7D
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0XLBE8C1F3ADE7D ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "5f/WA0XLBE8C1F3ADE7D.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0XLBE8C1F3ADE7D ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR1D701AB08A8447B7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2147 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRBCED162CC6B4A885
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3299 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE0BB5CE74308C71D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ10558 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:WA0XLBE8C1F3ADE7D
+        a                   :Work ;
+        skos:prefLabel      "gshin gyi cho ga"@bo-x-ewts , "mrtyuvidhi"@sa-x-ndia ;
+        :creator            bdr:CR1D701AB08A8447B7 , bdr:CRBCED162CC6B4A885 , bdr:CRE0BB5CE74308C71D ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T810 ;
+        :workHasInstance    bdr:MW1KG13126_BE8C1F ;
+        :workIsAbout        bdr:T130 .
+}

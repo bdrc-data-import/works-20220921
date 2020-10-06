@@ -1,0 +1,60 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ315263 {
+    bda:LG44841D171C884CF9
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2018-07-30T11:49:29.07Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG514D3DDC8AC0C02E
+        a                   adm:UpdateData ;
+        adm:logDate         "2018-08-06T10:00:12.998Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restricted in China"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGDFD4CD259B051EA6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2018-07-30T12:31:40.696Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGIMA612579E55
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:WA4CZ315263  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ315263 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "17/WA4CZ315263.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ315263 ;
+        adm:logEntry        bda:LG44841D171C884CF9 , bda:LG514D3DDC8AC0C02E , bda:LGDFD4CD259B051EA6 , bda:LGIMA612579E55 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:WA4CZ315263  a      :SerialMember , :Work ;
+        skos:prefLabel      "yid dga' lha mo'i dmangs kyi lo rgyus rgyu cha/"@bo-x-ewts ;
+        :catalogInfo        "The Public Historical Resources of Ama Yiga Lhamoby Ga Sonam Gyalba (1959-2017)"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS00EGS1016612 ;
+        :workHasInstance    bdr:MW4CZ315263 , bdr:W4CZ315263 ;
+        :workIsAbout        bdr:G4144 , bdr:T2382 .
+}

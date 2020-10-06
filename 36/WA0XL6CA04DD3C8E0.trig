@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0XL6CA04DD3C8E0 {
+    bda:WA0XL6CA04DD3C8E0
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0XL6CA04DD3C8E0 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "36/WA0XL6CA04DD3C8E0.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0XL6CA04DD3C8E0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR745AB7DF55546045
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10711 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR95E4CD0FC7EC0158
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2085 ;
+        :role               bdr:R0ER0023 .
+    
+    bdr:CRD4CBFD97153C1AE2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4004 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA0XL6CA04DD3C8E0
+        a                   :Work ;
+        skos:prefLabel      "thub pa'i dgongs pa'i rgyan/"@bo-x-ewts , "munimatalamkara"@sa-x-ndia ;
+        :creator            bdr:CR745AB7DF55546045 , bdr:CR95E4CD0FC7EC0158 , bdr:CRD4CBFD97153C1AE2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 ;
+        :workHasInstance    bdr:MW1KG13126_6CA04D ;
+        :workIsAbout        bdr:T233 .
+}

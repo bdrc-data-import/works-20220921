@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0RT1292 {
+    bda:WA0RT1292  a        adm:AdminData ;
+        adm:adminAbout      bdr:WA0RT1292 ;
+        adm:metadataLegal   bda:LD_rKTs_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR1D8C8C_WA0RT1292
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4007 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRA084F5_WA0RT1292
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1518 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:IDA75A68_WA0RT1292
+        a                   bdr:RefrKTsT ;
+        rdf:value           "1292" .
+    
+    bdr:WA0RT1292  a        :Work ;
+        skos:prefLabel      "sems rin po che sbyang ba'i lam 'bras/"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDA75A68_WA0RT1292 ;
+        :creator            bdr:CR1D8C8C_WA0RT1292 , bdr:CRA084F5_WA0RT1292 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23703_2465 ;
+        :workHasParallelsIn  bdr:WA0RTI1292 ;
+        adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1292> .
+}

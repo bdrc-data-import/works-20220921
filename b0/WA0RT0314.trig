@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0RT0314 {
+    bda:WA0RT0314  a        adm:AdminData ;
+        adm:adminAbout      bdr:WA0RT0314 ;
+        adm:metadataLegal   bda:LD_rKTs_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR64E18C_WA0RT0314
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15603 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR8EEA76_WA0RT0314
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1052 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRE17BD5_WA0RT0314
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8166 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:ID08C5C9_WA0RT0314
+        a                   bdr:RefrKTsT ;
+        rdf:value           "314" .
+    
+    bdr:WA0RT0314  a        :Work ;
+        skos:altLabel       "rgyud kyi rgyal po dpal khye'i rdo rje'i 'grel bshad kha sbyar shin tu dri ma med pa zhes bya ba/"@bo-x-ewts , "rgyud kyi rgyal po dpal kye'i rdo rje'i 'grel bshad kha sbyar shin tu dri ma med pa zhes bya ba/"@bo-x-ewts ;
+        skos:prefLabel      "rgyud kyi rgyal po dpal kye'i rdo rje'i 'grel bshad kha sbyor shin tu dri ma med pa zhes bya ba/"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID08C5C9_WA0RT0314 ;
+        :creator            bdr:CR64E18C_WA0RT0314 , bdr:CR8EEA76_WA0RT0314 , bdr:CRE17BD5_WA0RT0314 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23703_1184 ;
+        :workHasParallelsIn  bdr:WA0RTI0314 ;
+        adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0314> .
+}

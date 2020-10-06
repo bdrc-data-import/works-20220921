@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0RT3530 {
+    bda:WA0RT3530  a        adm:AdminData ;
+        adm:adminAbout      bdr:WA0RT3530 ;
+        adm:metadataLegal   bda:LD_rKTs_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR105DF6_WA0RT3530
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15284 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CRA0C499_WA0RT3530
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3890 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:ID0B5BD2_WA0RT3530
+        a                   bdr:RefrKTsT ;
+        rdf:value           "3530" .
+    
+    bdr:WA0RT3530  a        :Work ;
+        skos:altLabel       "slob ma la springs pa'i 'grel pa/"@bo-x-ewts ;
+        skos:prefLabel      "slob ma la spring ba'i 'grel pa/"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0B5BD2_WA0RT3530 ;
+        :creator            bdr:CR105DF6_WA0RT3530 , bdr:CRA0C499_WA0RT3530 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23703_4192 ;
+        :workHasParallelsIn  bdr:WA0RTI3530 ;
+        adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3530> .
+}

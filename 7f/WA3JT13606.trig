@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3JT13606 {
+    bda:LG02A5AC89FA765AA3
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-11-18T16:00:27.825Z"^^xsd:dateTime ;
+        adm:logMessage      "Cataloged completed"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:LGA6165D0C5FC5525F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2014-11-18T16:06:18.804Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00013 .
+    
+    bda:WA3JT13606  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3JT13606 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "7f/WA3JT13606.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3JT13606 ;
+        adm:logEntry        bda:LG02A5AC89FA765AA3 , bda:LGA6165D0C5FC5525F ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CRBD35B0D97F2BEB61
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5459 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:EV0EF35E340FD72381
+        a                   :CompletedEvent ;
+        :onYear             "2005"^^xsd:gYear .
+    
+    bdr:WA3JT13606  a       :Work ;
+        skos:altLabel       "bla ma gsang sngags rang gi rtogs brjod mdor bsdus/"@bo-x-ewts ;
+        skos:prefLabel      "bla ma gsang sngags kyi rtogs brjod mdor bsdus/"@bo-x-ewts ;
+        :creator            bdr:CRBD35B0D97F2BEB61 ;
+        :isRoot             true ;
+        :language           bdr:LangDz ;
+        :workEvent          bdr:EV0EF35E340FD72381 ;
+        :workGenre          bdr:T1779 , bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW3JT13606 , bdr:W3JT13606 .
+}

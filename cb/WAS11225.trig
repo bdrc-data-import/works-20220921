@@ -1,0 +1,28 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WAS11225 {
+    bda:WAS11225  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WAS11225 ;
+        adm:gitPath         "cb/WAS11225.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WAS11225 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:WAS11225  a         :SerialWork ;
+        skos:prefLabel      "the ngargyur nyingmay sungrab"@en ;
+        :isRoot             true ;
+        :serialHasMember    bdr:WA11225 , bdr:WA12624 , bdr:WA18978 , bdr:WA19615 , bdr:WA19811 , bdr:WA1KG10067 , bdr:WA1KG10193 , bdr:WA1KG10289 , bdr:WA1KG10440 , bdr:WA1KG12075 , bdr:WA21857 , bdr:WA30146 , bdr:WA30148 , bdr:WA30264 , bdr:WA30540 , bdr:WA5062 .
+}

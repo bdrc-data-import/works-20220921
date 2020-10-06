@@ -1,0 +1,52 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN727 {
+    bda:LG0C74356578A85340
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-12-03T17:02:12.542Z"^^xsd:dateTime ;
+        adm:logMessage      "catalogued"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGCEA7F270985341BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-12-05T09:29:38.452Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to tradition restriction"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:WA3CN727  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN727 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f1/WA3CN727.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN727 ;
+        adm:logEntry        bda:LG0C74356578A85340 , bda:LGCEA7F270985341BE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR51C37D8E33310D6C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1693 ;
+        :role               bdr:R0ER0025 .
+    
+    bdr:WA3CN727  a         :Work ;
+        skos:altLabel       "pad+ma gling pa'i gter ma chos tshan drug cu gser dngul bris ma bzhugs/"@bo-x-ewts ;
+        skos:prefLabel      "pad+ma gling pa'i gter chos dngul bris ma/"@bo-x-ewts ;
+        :creator            bdr:CR51C37D8E33310D6C ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 , bdr:T4CZ71 ;
+        :workHasInstance    bdr:MW3CN727 , bdr:W3CN727 ;
+        :workIsAbout        bdr:T1082 .
+}

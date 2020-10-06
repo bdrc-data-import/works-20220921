@@ -1,0 +1,53 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS17399 {
+    bda:LGA0D68BF079723A3B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2016-03-10T09:20:10.608Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGB0A524809C98F1DD
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2016-03-10T09:18:59.747Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:WA8LS17399  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS17399 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "27/WA8LS17399.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS17399 ;
+        adm:logEntry        bda:LGA0D68BF079723A3B , bda:LGB0A524809C98F1DD ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CRBED7AD3C634912CB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P396 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA8LS17399  a       :Work ;
+        skos:altLabel       "yul gangs can gyi ljongs su bstan pa'i snying po dbu ma'i gzhung lugs pa chen po rnams kyi snyan du springs pa tshangs pa'i 'khor los rang bzo'i dregs pa nyams byed/"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma'i spring yig tshangs pa'i 'khor lo/"@bo-x-ewts ;
+        :catalogInfo        "A short introduction of Madhyamika philosophy in the form of letter by Panchen Shakya Chokden."@en ;
+        :creator            bdr:CRBED7AD3C634912CB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T221 ;
+        :workHasInstance    bdr:MW8LS17399 , bdr:W8LS17399 ;
+        :workIsAbout        bdr:T233 .
+}

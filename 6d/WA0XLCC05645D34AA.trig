@@ -1,0 +1,56 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0XLCC05645D34AA {
+    bda:WA0XLCC05645D34AA
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0XLCC05645D34AA ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6d/WA0XLCC05645D34AA.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0XLCC05645D34AA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR06C284DA8E99499A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9963 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CRAA0EFFD1AA96E3B0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8192 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CRB4263346ABFEDDA1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG4929 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRB7BDE0F66691BE36
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4007 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:WA0XLCC05645D34AA
+        a                   :Work ;
+        skos:prefLabel      "dpal rdo rje thod pa'i dngos grub sgrub pa'i thabs/"@bo-x-ewts , "[srivajrakapalasiddhisadhana]"@sa-x-ndia ;
+        :catalogInfo        "gser bris number 1630"@en ;
+        :creator            bdr:CR06C284DA8E99499A , bdr:CRAA0EFFD1AA96E3B0 , bdr:CRB4263346ABFEDDA1 , bdr:CRB7BDE0F66691BE36 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1KG13126_CC0564 ;
+        :workIsAbout        bdr:T106 .
+}

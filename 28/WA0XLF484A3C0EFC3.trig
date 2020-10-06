@@ -1,0 +1,50 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0XLF484A3C0EFC3 {
+    bda:WA0XLF484A3C0EFC3
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0XLF484A3C0EFC3 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "28/WA0XLF484A3C0EFC3.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0XLF484A3C0EFC3 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR4B4ACD09F2AE4396
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8151 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR68989CD506595F80
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3458 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRA62385DC43E832FF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3299 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA0XLF484A3C0EFC3
+        a                   :Work ;
+        skos:prefLabel      "shrI ba san ta ti la ka"@bo-x-ewts , "srivasantatilaka"@sa-x-ndia ;
+        :creator            bdr:CR4B4ACD09F2AE4396 , bdr:CR68989CD506595F80 , bdr:CRA62385DC43E832FF ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1KG13126_F484A3 ;
+        :workIsAbout        bdr:T628 .
+}

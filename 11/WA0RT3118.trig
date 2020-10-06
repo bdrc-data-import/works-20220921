@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0RT3118 {
+    bda:WA0RT3118  a        adm:AdminData ;
+        adm:adminAbout      bdr:WA0RT3118 ;
+        adm:metadataLegal   bda:LD_rKTs_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR71B96F_WA0RT3118
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8192 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR92DCEC_WA0RT3118
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9963 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CRC4D6D6_WA0RT3118
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4007 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:ID819F22_WA0RT3118
+        a                   bdr:RefrKTsT ;
+        rdf:value           "3118" .
+    
+    bdr:WA0RT3118  a        :Work ;
+        skos:prefLabel      "pha rol gyi gnod pa bsrung pa/"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID819F22_WA0RT3118 ;
+        :creator            bdr:CR71B96F_WA0RT3118 , bdr:CR92DCEC_WA0RT3118 , bdr:CRC4D6D6_WA0RT3118 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23703_2826 ;
+        :workHasParallelsIn  bdr:WA0RTI3118 ;
+        adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3118> .
+}

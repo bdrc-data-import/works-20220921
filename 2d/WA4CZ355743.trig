@@ -1,0 +1,48 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ355743 {
+    bda:LG2C8D507F271669C5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-01-29T14:32:04.158Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGE91E5415BD71423A
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-01-28T16:27:36.716Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:WA4CZ355743  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ355743 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2d/WA4CZ355743.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ355743 ;
+        adm:logEntry        bda:LG2C8D507F271669C5 , bda:LGE91E5415BD71423A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:MW4CZ355743  skos:altLabel  "youth of pen holder"@en .
+    
+    bdr:WA4CZ355743  a      :Work ;
+        skos:prefLabel      "sor smyug gi lang tsho/"@bo-x-ewts , "youth of pen holder"@en ;
+        :catalogInfo        "Youth of pen holder: A collection of poetry composed by Gangtsang Drogtsang."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW4CZ355743 , bdr:W4CZ355743 ;
+        :workIsAbout        bdr:T1KG6100 , bdr:T281 .
+}

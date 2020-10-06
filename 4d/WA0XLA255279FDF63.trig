@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0XLA255279FDF63 {
+    bda:WA0XLA255279FDF63
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0XLA255279FDF63 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "4d/WA0XLA255279FDF63.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0XLA255279FDF63 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR12FACD92FC5AC756
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1056 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRA6E0CB2E956674B8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1615 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA0XLA255279FDF63
+        a                   :Work ;
+        skos:prefLabel      "gzhung lugs legs par bshad pa/"@bo-x-ewts ;
+        :catalogInfo        "treatise on fundamental buddhist teaching"@en ;
+        :creator            bdr:CR12FACD92FC5AC756 , bdr:CRA6E0CB2E956674B8 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 , bdr:T245 ;
+        :workHasInstance    bdr:MW00EGS1017151_A25527 .
+}

@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0XLD220E4585E6E {
+    bda:WA0XLD220E4585E6E
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0XLD220E4585E6E ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "5f/WA0XLD220E4585E6E.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0XLD220E4585E6E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR4F2E9953739B0853
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ10540 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRA898B2C3E6033D54
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1578 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:WA0XLD220E4585E6E
+        a                   :Work ;
+        skos:altLabel       "dpal ye shes thig le'i dka' 'grel gsang ba'i de kho na nyid/"@bo-x-ewts ;
+        skos:prefLabel      "ye shes thig le'i dka' 'grel gsang ba'i de kho na nyid/"@bo-x-ewts , "srijnantilakapanjikaguhyatatttva"@sa-x-ndia ;
+        :creator            bdr:CR4F2E9953739B0853 , bdr:CRA898B2C3E6033D54 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1KG13126_D220E4 ;
+        :workIsAbout        bdr:WA22934 .
+}

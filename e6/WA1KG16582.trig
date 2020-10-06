@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1KG16582 {
+    bda:LG810BEBE8213F25B4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2014-02-03T11:46:53.392Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGIM74A445C794
+        a                   adm:UpdateData ;
+        adm:logDate         "2014-10-15T17:57:00.715Z"^^xsd:dateTime ;
+        adm:logMessage      "updated catalog info"@en ;
+        adm:logMethod       bda:BatchMethod ;
+        adm:logWho          bdu:U00006 .
+    
+    bda:WA1KG16582  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1KG16582 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "e6/WA1KG16582.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1KG16582 ;
+        adm:logEntry        bda:LG810BEBE8213F25B4 , bda:LGIM74A445C794 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:MW1KG16582  skos:altLabel  "《果惹擦宗》《少帅扎拉次吉》《森达海螺宗》《扎拉铠甲宗》《阿达拉姆秘传》"@zh-hans .
+    
+    bdr:WA1KG16582  a       :Work ;
+        skos:altLabel       "《guo re ca zong》《shao shuai zha la ci ji》《sen da hai luo zong》《zha la kai jia zong》《a da la mi chuan》"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "mtsho sngon zhing chen gyi ge sar sgrung ba grags can gyi dpe tshogs/ go ra tshwa rdzong / lha sras dgra lha rtse rgyal/ seng stag dung dkar stag rjong / dgra lha'i khrab rjong / a stag lha mo'i gsang rnam/"@bo-x-ewts , "《果惹擦宗》《少帅扎拉次吉》《森达海螺宗》《扎拉铠甲宗》《阿达拉姆秘传》"@zh-hans ;
+        :catalogInfo        "Collection of episodes from the epic of King Gesar."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW1KG16582 ;
+        :workIsAbout        bdr:T1863 , bdr:T248 .
+}

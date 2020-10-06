@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0RT0114 {
+    bda:WA0RT0114  a        adm:AdminData ;
+        adm:adminAbout      bdr:WA0RT0114 ;
+        adm:metadataLegal   bda:LD_rKTs_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR0A6FF9_WA0RT0114
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15091 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR515B00_WA0RT0114
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15091 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:ID04687E_WA0RT0114
+        a                   bdr:RefrKTsT ;
+        rdf:value           "114" .
+    
+    bdr:WA0RT0114  a        :Work ;
+        skos:altLabel       "'jam dpal mtshan brjod kyi 'grel pa dri med 'od/"@bo-x-ewts , "'phags pa 'jam dpal gyi mtshan yang dag par brjod pa'i 'grel pa dri ma med pa'i 'od/"@bo-x-ewts ;
+        skos:prefLabel      "'phags pa 'jam dpal gyi mtshan yang dag par brjod pa'i 'grel pa dri ma med pa'i 'od ces bya ba/"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID04687E_WA0RT0114 ;
+        :creator            bdr:CR0A6FF9_WA0RT0114 , bdr:CR515B00_WA0RT0114 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23703_1398 ;
+        :workHasParallelsIn  bdr:WA0RTI0114 ;
+        adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0114> .
+}

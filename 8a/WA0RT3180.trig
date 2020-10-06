@@ -1,0 +1,49 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0RT3180 {
+    bda:WA0RT3180  a        adm:AdminData ;
+        adm:adminAbout      bdr:WA0RT3180 ;
+        adm:metadataLegal   bda:LD_rKTs_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR48C3E8_WA0RT3180
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15242 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR54E03A_WA0RT3180
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4266 ;
+        :role               bdr:R0ER0023 .
+    
+    bdr:CRD76188_WA0RT3180
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4416 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:ID0ACBB8_WA0RT3180
+        a                   bdr:RefrKTsT ;
+        rdf:value           "3180" .
+    
+    bdr:WA0RT3180  a        :Work ;
+        skos:prefLabel      "yi ge brgya pa zhes bya ba'i 'grel pa/"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:ID0ACBB8_WA0RT3180 ;
+        :creator            bdr:CR48C3E8_WA0RT3180 , bdr:CR54E03A_WA0RT3180 , bdr:CRD76188_WA0RT3180 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23703_3835 ;
+        :workHasParallelsIn  bdr:WA0RTI3180 ;
+        adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3180> .
+}

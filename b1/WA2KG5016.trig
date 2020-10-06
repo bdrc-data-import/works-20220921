@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG5016 {
+    bda:LG1AF9A939E592B29C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-09-02T18:33:32.921Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGAC78A713B1058929
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-08-27T16:29:09.211Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC1E59EB07556B632
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-09-04T20:46:45.346Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1CIHTS00"@en ;
+        adm:logWhoStr       "add-works-to-PR1CIHTS00" .
+    
+    bda:WA2KG5016  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG5016 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b1/WA2KG5016.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG5016 ;
+        adm:logEntry        bda:LG1AF9A939E592B29C , bda:LGAC78A713B1058929 , bda:LGC1E59EB07556B632 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:MW2KG5016  skos:altLabel  "gondhala proto kangyur"@en .
+    
+    bdr:WA2KG5016  a        :Work ;
+        skos:altLabel       "bka' 'gyur/ (gon d+ha la bris ma/)"@bo-x-ewts ;
+        skos:prefLabel      "bka' 'gyur/"@bo-x-ewts , "gondhala proto kangyur"@en ;
+        :catalogInfo        "Gondhla Kangyur. An early 14th century manuscript collection of Gondhla, Lahul, India. Comprises 397 texts divided into 36 volumes. Presently it is in the possession of the descendants of the former lords of Tinan (older name for Gondhala), and there is evidence that at least parts of the collection were produced for these local rulers. Preserved at Mr. Ramesh Thakur, Gondhola Village, Lahaul, H.P. Digitized by Multimedia Section, Shantarakshita Library, CIHTS, Sarnath, Varanasi in July 2015."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW2KG5016 , bdr:W2KG5016 ;
+        :workIsAbout        bdr:G2KG5024 , bdr:T2423 .
+}

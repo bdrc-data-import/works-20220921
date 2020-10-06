@@ -1,0 +1,58 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN9771 {
+    bda:LGB141C6B3122DCD5B
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-29T14:27:01.037Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGFEF980DFF9BC1CC9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-29T14:30:08.474Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:WA3CN9771  a        adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN9771 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "27/WA3CN9771.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN9771 ;
+        adm:logEntry        bda:LGB141C6B3122DCD5B , bda:LGFEF980DFF9BC1CC9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR51D6DEA4D6A75178
+        a                   :AgentAsCreator ;
+        :agent              bdr:P270 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRDCD467B36EA62081
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6962 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA3CN9771  a        :Work ;
+        skos:altLabel       "dpal snga 'gyur rnying ma'i gzhung lugs chen mo'i skor/"@bo-x-ewts ;
+        skos:prefLabel      "byang chub sems dpa'i spyod pa la 'jug pa'i TI ka'i skor/"@bo-x-ewts ;
+        :catalogInfo        "Some selected texts of commentary on Shantideva's Bodhicaryavatara."@en ;
+        :creator            bdr:CR51D6DEA4D6A75178 , bdr:CRDCD467B36EA62081 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN9771 , bdr:W3CN9771 ;
+        :workIsAbout        bdr:WA19740 .
+}

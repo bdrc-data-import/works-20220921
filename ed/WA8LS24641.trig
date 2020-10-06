@@ -1,0 +1,87 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS24641 {
+    bda:LG3531DC4D16637A3C
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2017-08-28T09:44:25.359Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF9FBBFDEB485D1E4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2017-08-28T09:45:32.765Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:WA8LS24641  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS24641 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "ed/WA8LS24641.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS24641 ;
+        adm:logEntry        bda:LG3531DC4D16637A3C , bda:LGF9FBBFDEB485D1E4 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR33403736E200AAA9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2943 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR4B895AC6100E96D7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR4E4744DB9D1E303C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P270 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR8F8AB6D0EEDFE987
+        a                   :AgentAsCreator ;
+        :agent              bdr:P697 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRBEBCF05398F01553
+        a                   :AgentAsCreator ;
+        :agent              bdr:P314 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRC6FECD6D4737DD73
+        a                   :AgentAsCreator ;
+        :agent              bdr:P698 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRC9C3DE4FAD3350A6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRD8C2CBA1BD99FFEB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P724 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA8LS24641  a       :Work ;
+        skos:altLabel       "dpal snga 'gyur rnying ma'i bka' dgongs phur gsum chos sde las/ sgrub pa bka' brgyad kyi bskyed rdzogs zab chos thun min skor/"@bo-x-ewts ;
+        skos:prefLabel      "sgrub pa bka' brgyad kyi bskyed rdzogs zab chos thun min skor/"@bo-x-ewts ;
+        :catalogInfo        "A collection of teaching cycles concerned with the development and completion stages of Drupa kagye."@en ;
+        :creator            bdr:CR33403736E200AAA9 , bdr:CR4B895AC6100E96D7 , bdr:CR4E4744DB9D1E303C , bdr:CR8F8AB6D0EEDFE987 , bdr:CRBEBCF05398F01553 , bdr:CRC6FECD6D4737DD73 , bdr:CRC9C3DE4FAD3350A6 , bdr:CRD8C2CBA1BD99FFEB ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS24641 , bdr:W8LS24641 ;
+        :workIsAbout        bdr:T1082 , bdr:T1193 , bdr:T1248 , bdr:T1CZ30 .
+}

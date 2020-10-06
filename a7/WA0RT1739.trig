@@ -1,0 +1,44 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0RT1739 {
+    bda:WA0RT1739  a        adm:AdminData ;
+        adm:adminAbout      bdr:WA0RT1739 ;
+        adm:metadataLegal   bda:LD_rKTs_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR61A67E_WA0RT1739
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4277 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRD6D6BC_WA0RT1739
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15186 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:IDFEB305_WA0RT1739
+        a                   bdr:RefrKTsT ;
+        rdf:value           "1739" .
+    
+    bdr:WA0RT1739  a        :Work ;
+        skos:prefLabel      "rdo rje rnam par 'joms pa zhes bya ba'i gzungs kyi sgrub thabs/"@bo-x-ewts ;
+        <http://id.loc.gov/ontologies/bibframe/identifiedBy>
+            bdr:IDFEB305_WA0RT1739 ;
+        :creator            bdr:CR61A67E_WA0RT1739 , bdr:CRD6D6BC_WA0RT1739 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW23703_2914 ;
+        :workHasParallelsIn  bdr:WA0RTI1739 ;
+        adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1739> .
+}

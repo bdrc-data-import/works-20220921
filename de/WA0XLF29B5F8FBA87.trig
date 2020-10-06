@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA0XLF29B5F8FBA87 {
+    bda:WA0XLF29B5F8FBA87
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA0XLF29B5F8FBA87 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "de/WA0XLF29B5F8FBA87.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA0XLF29B5F8FBA87 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR78E77FEF5DC26273
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3214 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CREDF3ADCBC0994BDA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3214 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:WA0XLF29B5F8FBA87
+        a                   :Work ;
+        skos:prefLabel      "gshin rje gshed kyi yid bzhin gyi nor bu'i phreng ba zhes bya ba'i sgrub thabs/"@bo-x-ewts , "yamaricintamanimalanamasadhana"@sa-x-ndia ;
+        :creator            bdr:CR78E77FEF5DC26273 , bdr:CREDF3ADCBC0994BDA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1KG13126_F29B5F ;
+        :workIsAbout        bdr:T1734 .
+}
