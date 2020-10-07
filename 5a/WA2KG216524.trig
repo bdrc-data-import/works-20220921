@@ -14,26 +14,39 @@
 bdg:WA2KG216524 {
     bda:LG60B0B25D434D2D1E
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-10-02T14:51:42.949Z"^^xsd:dateTime ;
+        adm:logDate         "2020-10-06T11:35:42.954Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG7E57ED7D17B3EC58
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-10-06T14:40:26.608Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9C0699971DA8336E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-06T18:10:01.684Z"^^xsd:dateTime ;
+        adm:logMessage      "added volume map"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG216524  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG216524 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "5a/WA2KG216524.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG216524 ;
-        adm:logEntry        bda:LG60B0B25D434D2D1E ;
+        adm:logEntry        bda:LG60B0B25D434D2D1E , bda:LG7E57ED7D17B3EC58 , bda:LG9C0699971DA8336E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7E57ED7D17B3EC58
+    bdr:CRA65B1BE4C73AEB7A
         a                   :AgentAsCreator ;
         :agent              bdr:P108 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR9C0699971DA8336E
+    bdr:CREFD3C21EBCB6C458
         a                   :AgentAsCreator ;
         :agent              bdr:P423 ;
         :role               bdr:R0ER0019 .
@@ -42,10 +55,10 @@ bdg:WA2KG216524 {
         skos:altLabel       "mdo sngags dris lan gyi rim pa phyogs bsgrigs dam pa'i zab bcud gcer du phyung ba/"@bo-x-ewts ;
         skos:prefLabel      "blo bzang dgongs rgyan mu tig phreng mdzes deb sum cu tham pa/"@bo-x-ewts ;
         :catalogInfo        "Collection of questions and responses on Sutra and Mantra scriptures."@en ;
-        :creator            bdr:CR7E57ED7D17B3EC58 , bdr:CR9C0699971DA8336E ;
+        :creator            bdr:CRA65B1BE4C73AEB7A , bdr:CREFD3C21EBCB6C458 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS2KG216524 ;
         :workGenre          bdr:T1753 , bdr:T28 , bdr:T769 ;
-        :workHasInstance    bdr:MW2KG216524 .
+        :workHasInstance    bdr:MW2KG216524 , bdr:W2KG216524 .
 }
