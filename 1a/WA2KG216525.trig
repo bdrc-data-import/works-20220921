@@ -12,42 +12,60 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG216525 {
+    bda:LG2294EA274FAC5368
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-10-07T16:42:03.162Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG2A1DE98651CC986A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-10-06T11:35:43.646Z"^^xsd:dateTime ;
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG66649C398FA918C7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-07T17:46:54.067Z"^^xsd:dateTime ;
+        adm:logMessage      "refresh title page title"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG6EC25228197D7F0E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-07T17:23:30.52Z"^^xsd:dateTime ;
+        adm:logMessage      "added comments"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG216525  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG216525 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "1a/WA2KG216525.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG216525 ;
-        adm:logEntry        bda:LG2A1DE98651CC986A ;
+        adm:logEntry        bda:LG2294EA274FAC5368 , bda:LG2A1DE98651CC986A , bda:LG66649C398FA918C7 , bda:LG6EC25228197D7F0E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2294EA274FAC5368
-        a                   :AgentAsCreator ;
-        :agent              bdr:P64 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR6EC25228197D7F0E
+    bdr:CR33D8276A539C083D
         a                   :AgentAsCreator ;
         :agent              bdr:P719 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CREBAF4732E2C0A0CD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA2KG216525  a      :SerialMember , :Work ;
-        skos:altLabel       "'pho ba'i man ngag phyogs gcig tu bsdebs pa myur lam zhing mchog bgrod pa'i them skas/"@bo-x-ewts ;
+        skos:altLabel       "'pho ba'i man ngag phyogs gcig tu bsdeb pa myur lam zhing mchog bgrod pa'i them skas/"@bo-x-ewts ;
         skos:prefLabel      "blo bzang dgongs rgyan mu tig phreng mdzes deb so gsum pa/"@bo-x-ewts ;
         :catalogInfo        "A collection of quintessential instruction on the transference of consciousness by Gelug masters."@en ;
-        :creator            bdr:CR2294EA274FAC5368 , bdr:CR6EC25228197D7F0E ;
+        :creator            bdr:CR33D8276A539C083D , bdr:CREBAF4732E2C0A0CD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS2KG216525 ;
         :workGenre          bdr:T456 ;
-        :workHasInstance    bdr:MW2KG216525 ;
+        :workHasInstance    bdr:MW2KG216525 , bdr:W2KG216525 ;
         :workIsAbout        bdr:T15 .
 }

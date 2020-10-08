@@ -14,50 +14,56 @@
 bdg:WA2KG216527 {
     bda:LG96721F4D2E57BF5A
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-10-06T11:35:44.384Z"^^xsd:dateTime ;
+        adm:logDate         "2020-10-07T17:23:51.064Z"^^xsd:dateTime ;
         adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGFDC9A15A0A9E0DC3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-10-07T17:47:45.524Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG216527  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG216527 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "8d/WA2KG216527.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG216527 ;
-        adm:logEntry        bda:LG96721F4D2E57BF5A ;
+        adm:logEntry        bda:LG96721F4D2E57BF5A , bda:LGFDC9A15A0A9E0DC3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR01835A1B62EFF615
         a                   :AgentAsCreator ;
-        :agent              bdr:P2425 ;
+        :agent              bdr:P2596 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR515B4BF7EE839131
         a                   :AgentAsCreator ;
-        :agent              bdr:P2596 ;
+        :agent              bdr:P1629 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR59A911C37C42CFA6
         a                   :AgentAsCreator ;
-        :agent              bdr:P1629 ;
+        :agent              bdr:P179 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRFDC9A15A0A9E0DC3
+    bdr:CR8ECA25431245CE77
         a                   :AgentAsCreator ;
-        :agent              bdr:P179 ;
+        :agent              bdr:P2425 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2KG216527  a      :SerialMember , :Work ;
         skos:altLabel       "yid dam 'khor lo bde mchog gi bskyed rdzogs/ bde mchog tshogs mchod/ bde mchog bdag bskyed/ bde mchog bsnyen sgrub/ bde mchog bcu cha'i sbyin sreg bcas man ngag gis yongs su bcings pa mchog thun dngos grub spungs zhus kyi rgyal po/"@bo-x-ewts ;
         skos:prefLabel      "blo bzang dgongs rgyan mu tig phreng mdzes deb lnga bcu nga bzhi pa/"@bo-x-ewts ;
         :catalogInfo        "Collection of teaching related to deity Chakrasamvara including the two stages of a process of contemplation (utpatti and sampannakrama), feast offering, self-visualization, recitation practice, and burnt offerings."@en ;
-        :creator            bdr:CR01835A1B62EFF615 , bdr:CR515B4BF7EE839131 , bdr:CR59A911C37C42CFA6 , bdr:CRFDC9A15A0A9E0DC3 ;
+        :creator            bdr:CR01835A1B62EFF615 , bdr:CR515B4BF7EE839131 , bdr:CR59A911C37C42CFA6 , bdr:CR8ECA25431245CE77 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS2KG216527 ;
         :workGenre          bdr:T151 , bdr:T456 , bdr:T457 , bdr:T8 ;
-        :workHasInstance    bdr:MW2KG216527 ;
+        :workHasInstance    bdr:MW2KG216527 , bdr:W2KG216527 ;
         :workIsAbout        bdr:T1CZ30 , bdr:T330 , bdr:T423 .
 }
