@@ -18,6 +18,12 @@ bdg:WA1NLM1862 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGF32EDBDBE35EB460
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-21T15:57:01.563Z"^^xsd:dateTime ;
+        adm:logMessage      "released for outline"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM1862 {
     bda:WA1NLM1862  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1862 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "62/WA1NLM1862.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1862 ;
-        adm:logEntry        bda:LG99CC06F7B034CD41 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG99CC06F7B034CD41 , bda:LGF32EDBDBE35EB460 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRBC1806B0C85314F3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4694 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1862  a       :Work ;
+        skos:altLabel       "bka' thang bsdus pa/"@bo-x-ewts ;
         skos:prefLabel      "tshe'i mthar nye bar phan pa'i man ngag 'khrul snang dbyings grol sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instrctions at the time of death and general meaning of logic"@en ;
+        :creator            bdr:CRBC1806B0C85314F3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1862 , bdr:W1NLM1862 .
+        :workHasInstance    bdr:MW1NLM1862 , bdr:W1NLM1862 ;
+        :workIsAbout        bdr:T444 , bdr:T58 .
 }
