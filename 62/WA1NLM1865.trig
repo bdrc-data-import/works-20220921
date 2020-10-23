@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1865 {
+    bda:LG72303A3D58DE2367
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-22T14:56:37.654Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloed"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG8D4378AD833FAE03
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1865 {
     bda:WA1NLM1865  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1865 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "62/WA1NLM1865.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1865 ;
-        adm:logEntry        bda:LG8D4378AD833FAE03 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG72303A3D58DE2367 , bda:LG8D4378AD833FAE03 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1865  a       :Work ;
-        skos:prefLabel      "gtsug tor gdugs dkar gyi bzlog bsgyur mi mthun g.yul las rgyal byed sogs/"@bo-x-ewts ;
+        skos:altLabel       "gtsug tor gdugs dkar gyi bzlog bsgyur mi mthun g.yul las rgyal byed sogs/"@bo-x-ewts ;
+        skos:prefLabel      "gdugs dkar gyi bzlog bsgyur mi mthun g.yul las rgyal byed/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals and liturgical texts"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM1865 , bdr:W1NLM1865 .
 }

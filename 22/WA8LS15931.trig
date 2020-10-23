@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS15931 {
+    bda:LG1279C8557765434F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-22T14:31:04.624Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG28B43FDF383B098F
         a                   adm:UpdateData ;
         adm:logDate         "2015-04-01T16:32:41.475Z"^^xsd:dateTime ;
@@ -88,19 +93,20 @@ bdg:WA8LS15931 {
     bda:WA8LS15931  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS15931 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "22/WA8LS15931.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS15931 ;
-        adm:logEntry        bda:LG28B43FDF383B098F , bda:LG2BD453411FC9F0F1 , bda:LG3E64D8607BDD229C , bda:LG7EAA3D4E1EAF3892 , bda:LG8715C119EDB7B02E , bda:LG87A5383953C6E28B , bda:LG8ACE5364DB6EE762 , bda:LGA57866E30C94C62C , bda:LGB426D9E58C61547C , bda:LGB8ECC70B7F8D1E91 , bda:LGC235A7287FD148D7 , bda:LGC6453C7CCFD1B2C6 , bda:LGED6BCBE6FB3372F6 ;
+        adm:logEntry        bda:LG1279C8557765434F , bda:LG28B43FDF383B098F , bda:LG2BD453411FC9F0F1 , bda:LG3E64D8607BDD229C , bda:LG7EAA3D4E1EAF3892 , bda:LG8715C119EDB7B02E , bda:LG87A5383953C6E28B , bda:LG8ACE5364DB6EE762 , bda:LGA57866E30C94C62C , bda:LGB426D9E58C61547C , bda:LGB8ECC70B7F8D1E91 , bda:LGC235A7287FD148D7 , bda:LGC6453C7CCFD1B2C6 , bda:LGED6BCBE6FB3372F6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA8LS15931  a       :Work ;
-        skos:prefLabel      "'jam sdud bzang gsum gtso bor gyur pa'i mdo phran grags che ba khag"@bo-x-ewts ;
-        :catalogInfo        "A collection of important sutra and tantra initially edited by Zhalu Chokyong Zangpo and printed at Lhunpo Gang and later reprinted by Tashilhunpo monastery, presently preserved in Bardan area of Zanskar."@en ;
+        skos:altLabel       "'bar gdan dgon pa gsang sngags chos gling gi bka' 'gyur/"@bo-x-ewts ;
+        skos:prefLabel      "bka' 'gyur/"@bo-x-ewts ;
+        :catalogInfo        "A few volumes of Kangyur presently preserved in Bardan Sangngak Choeling Monastery in Zanskar."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T2129 , bdr:T769 ;
-        :workHasInstance    bdr:MW8LS15931 , bdr:W8LS15931 .
+        :workHasInstance    bdr:MW8LS15931 ;
+        :workIsAbout        bdr:T2423 .
 }

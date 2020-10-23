@@ -18,6 +18,12 @@ bdg:WA1NLM1866 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG7D7E9C2B1FF638F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-22T14:56:38.081Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloed"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM1866 {
     bda:WA1NLM1866  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1866 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "29/WA1NLM1866.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1866 ;
-        adm:logEntry        bda:LG5E802170A4EDC2F0 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG5E802170A4EDC2F0 , bda:LG7D7E9C2B1FF638F1 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1866  a       :Work ;
-        skos:prefLabel      "byin rlabs gter chen dga' ldan lha brgya mar grags pa'i bshad lung zin bris byin rlabs char rgyun sogs/"@bo-x-ewts ;
+        skos:altLabel       "byin rlabs gter chen dga' ldan lha brgya mar grags pa'i bshad lung zin bris byin rlabs char rgyun/"@bo-x-ewts ;
+        skos:prefLabel      "dga' ldan lha brgya mar grags pa'i bshad lung zin bris byin rlabs char rgyun sogs/"@bo-x-ewts ;
+        :catalogInfo        "Note commentary on the hundred deities of Tushita, a guru yoga of Tsongkhapa and other miscellaneous texts"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1866 , bdr:W1NLM1866 .
+        :workGenre          bdr:T1478 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1866 , bdr:W1NLM1866 ;
+        :workIsAbout        bdr:T430 .
 }

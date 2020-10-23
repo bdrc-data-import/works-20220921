@@ -18,6 +18,12 @@ bdg:WA1NLM1863 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG78CBDC6562D79AC8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-22T14:56:36.88Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloed"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1863 {
     bda:WA1NLM1863  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1863 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "17/WA1NLM1863.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1863 ;
-        adm:logEntry        bda:LG52B1567F85BF4033 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG52B1567F85BF4033 , bda:LG78CBDC6562D79AC8 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1863  a       :Work ;
+        skos:altLabel       "dga' ldan yid dga' chos 'dzin du skye ba'i smon lam nor bu'i them skas/"@bo-x-ewts , "rig byed ma'i sgrub thabs dngos grub kun 'byung /"@bo-x-ewts , "theg chen gso sbyong gi sdom pa blang ba'i go rim gsal bar bkod pa/"@bo-x-ewts ;
         skos:prefLabel      "'phags pa 'jam dpal gyi mtshan yang dag par brjod pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "The Argya Manjushri Namasangiti, Prayer to reborn in Tushita, Ritual text concerning the bestowing of mahayana posadha vows and versified sadhana of ku ru kul le"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1863 , bdr:W1NLM1863 .
+        :workHasInstance    bdr:MW1NLM1863 , bdr:W1NLM1863 ;
+        :workIsAbout        bdr:T544 .
 }
