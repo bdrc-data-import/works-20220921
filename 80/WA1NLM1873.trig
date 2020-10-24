@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1873 {
+    bda:LG21008C4ED0D57EB9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-23T16:08:56.342Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGBA7E60923D54EC8F
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM1873 {
     bda:WA1NLM1873  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1873 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "80/WA1NLM1873.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1873 ;
-        adm:logEntry        bda:LGBA7E60923D54EC8F , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG21008C4ED0D57EB9 , bda:LGBA7E60923D54EC8F , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1873  a       :Work ;
-        skos:prefLabel      "ma cig mkha' 'gro snyan rgyud kyi gcod lam zab rgyun gyi rnal 'byor shin tu 'khyer bde bar bkod pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "gnyan khrod yig chung gsal ba'i sgron me/"@bo-x-ewts , "ma gcig mkha' 'gro snyan rgyud kyi gcod lam zab rgyun gyi rnal 'byor shin tu 'khyer bde bar bkod pa/"@bo-x-ewts ;
+        skos:prefLabel      "gcod kyi lam zab rgyun gyi rnal 'byor shin tu 'khyer bde bar bkod pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instructions on the practice of Chod, particularly according Shije tradition and other essential daily prayers"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1873 , bdr:W1NLM1873 .
+        :workHasInstance    bdr:MW1NLM1873 , bdr:W1NLM1873 ;
+        :workIsAbout        bdr:T194 , bdr:T544 .
 }

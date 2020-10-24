@@ -18,6 +18,12 @@ bdg:WA1NLM1871 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG828763ECC236625B
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-23T09:58:19.26Z"^^xsd:dateTime ;
+        adm:logMessage      "released for outline"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM1871 {
     bda:WA1NLM1871  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1871 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b1/WA1NLM1871.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1871 ;
-        adm:logEntry        bda:LG3D2B99A7E0F5CD8C , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG3D2B99A7E0F5CD8C , bda:LG828763ECC236625B , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1871  a       :Work ;
-        skos:prefLabel      "'dod khams dbang phyug ma dmag zor rgyal mo'i sgrub thabs gtor chog sogs/"@bo-x-ewts ;
+        skos:altLabel       "'dod khams dbang phyug ma dmag zor rgyal mo'i sgrub thabs gtor chog"@bo-x-ewts ;
+        skos:prefLabel      "dmag zor rgyal mo'i sgrub thabs gtor chog sogs/"@bo-x-ewts ;
+        :catalogInfo        "Shridevi's sadhana and bali offering ritual and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1871 , bdr:W1NLM1871 .
+        :workGenre          bdr:T1458 ;
+        :workHasInstance    bdr:MW1NLM1871 , bdr:W1NLM1871 ;
+        :workIsAbout        bdr:T926 .
 }

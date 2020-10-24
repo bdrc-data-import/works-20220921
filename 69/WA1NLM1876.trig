@@ -18,6 +18,11 @@ bdg:WA1NLM1876 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG8F7B5267B6DB9EAE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-23T16:08:57.121Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +32,19 @@ bdg:WA1NLM1876 {
     bda:WA1NLM1876  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1876 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "69/WA1NLM1876.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1876 ;
-        adm:logEntry        bda:LG5E0126C87489339D , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG5E0126C87489339D , bda:LG8F7B5267B6DB9EAE , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1876  a       :Work ;
         skos:prefLabel      "'go ba'i lha lnga'i gsol mchod bya tshul dang 'brel ba'i g.yang len dgos 'dod kun 'byung sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals and liturgical texts"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1876 , bdr:W1NLM1876 .
+        :workHasInstance    bdr:MW1NLM1876 , bdr:W1NLM1876 ;
+        :workIsAbout        bdr:T249 , bdr:T406 .
 }
