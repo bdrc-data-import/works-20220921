@@ -18,6 +18,11 @@ bdg:WA1NLM1883 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGD48D19AD792FB222
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-27T15:30:19.446Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM1883 {
     bda:WA1NLM1883  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1883 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d5/WA1NLM1883.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1883 ;
-        adm:logEntry        bda:LG82975CF330336007 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG82975CF330336007 , bda:LGD48D19AD792FB222 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1883  a       :Work ;
         skos:prefLabel      "sman bla lho sgo'i rim pa bgegs sel sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1883 , bdr:W1NLM1883 .
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW1NLM1883 , bdr:W1NLM1883 ;
+        :workIsAbout        bdr:T1CZ25 , bdr:T1CZ27 .
 }
