@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1890 {
+    bda:LG3E618B7359CC2479
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-28T15:12:17.385Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG5BB703663E6AF0DA
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,42 @@ bdg:WA1NLM1890 {
     bda:WA1NLM1890  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1890 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "db/WA1NLM1890.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1890 ;
-        adm:logEntry        bda:LG5BB703663E6AF0DA , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG3E618B7359CC2479 , bda:LG5BB703663E6AF0DA , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR16FA785F68FBE4CE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8209 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR1B9A92E3BAEB6FA5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR33B90CBF3AE991E8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8210 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR8B1BEC186DAD7137
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG8854 ;
+        :role               bdr:R0ER0018 .
+    
     bdr:WA1NLM1890  a       :Work ;
+        skos:altLabel       "de bzhin gshegs pa bdun gyi sngon gyi smon lam gyi khyad par rgyas pa zhes bya theg pa chen po'i mdo/"@bo-x-ewts ;
         skos:prefLabel      "mdo sde brgyad brgya pa/"@bo-x-ewts ;
+        :catalogInfo        "Seven Arya Tathagata's prayer sutra (Saptatathagatapurvapranidhanavishashavistara sutra)"@en ;
+        :creator            bdr:CR16FA785F68FBE4CE , bdr:CR1B9A92E3BAEB6FA5 , bdr:CR33B90CBF3AE991E8 , bdr:CR8B1BEC186DAD7137 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1890 , bdr:W1NLM1890 .
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM1890 , bdr:W1NLM1890 ;
+        :workIsAbout        bdr:T1855 .
 }
