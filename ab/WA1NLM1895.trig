@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1895 {
+    bda:LG0652BF1E9F9473D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-29T17:25:00.749Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGD7390289DCC3502F
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,21 @@ bdg:WA1NLM1895 {
     bda:WA1NLM1895  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1895 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ab/WA1NLM1895.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1895 ;
-        adm:logEntry        bda:LGD7390289DCC3502F , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG0652BF1E9F9473D3 , bda:LGD7390289DCC3502F , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1895  a       :Work ;
-        skos:prefLabel      "rgyal po chen po rnam thos sras la mchod gtor 'bul ba'i rim pa dngos grub kyi dbang mdzod sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal ldan lha mo'i gtor chog dang 'brel ba'i ma mo'i 'khrugs skongs/"@bo-x-ewts , "lha chen drag po gdong bzhi pa'i mngon rtogs bskang bshags bstod bskul/"@bo-x-ewts , "rgyal ba'i bstan srung chen po rnams la las bzhi'i 'phrin las 'chol tshul dngos grub myur 'gugs rdo rje sgra dbyangs/"@bo-x-ewts ;
+        skos:prefLabel      "rgyal po chen po rnam thos sras la mchod gtor 'bul ba'i rim pa dngos grub kyi dbang mdzod/"@bo-x-ewts ;
+        :catalogInfo        "Sadhana with the puja and bali offering to Vaishrava or Kubera , confession and purification, praise of Brahma, rite of amendment to Shridevi and content verses in praise of Dharmapalas"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1895 , bdr:W1NLM1895 .
+        :workGenre          bdr:T1458 ;
+        :workHasInstance    bdr:MW1NLM1895 , bdr:W1NLM1895 ;
+        :workIsAbout        bdr:T406 .
 }

@@ -18,6 +18,11 @@ bdg:WA1NLM1891 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGEB393779FDB2E655
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-29T17:24:58.687Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +32,27 @@ bdg:WA1NLM1891 {
     bda:WA1NLM1891  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1891 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "84/WA1NLM1891.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1891 ;
-        adm:logEntry        bda:LGE5D60F9E49435B63 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LGE5D60F9E49435B63 , bda:LGEB393779FDB2E655 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRCFB279CE96D33959
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1891  a       :Work ;
-        skos:prefLabel      "'dod khams dbang phyug ma dmag zor rgyal ma'i sgrub thabs gtor chog sogs/"@bo-x-ewts ;
+        skos:altLabel       "'dod khams dbang phyug ma dmag zor rgyal ma'i sgrub thabs gtor chog"@bo-x-ewts , "dam can chos kyi rgyal po'i gtor chog bskang gso bstod bskul dang bcas pa/"@bo-x-ewts ;
+        skos:prefLabel      "dmag zor rgyal ma'i sgrub thabs gtor chog"@bo-x-ewts ;
+        :catalogInfo        "Sadhana and bali offering, propitiation and praises of Shridevi and holy Dharma raja Yama"@en ;
+        :creator            bdr:CRCFB279CE96D33959 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1891 , bdr:W1NLM1891 .
+        :workGenre          bdr:T1458 ;
+        :workHasInstance    bdr:MW1NLM1891 , bdr:W1NLM1891 ;
+        :workIsAbout        bdr:T198 , bdr:T926 .
 }

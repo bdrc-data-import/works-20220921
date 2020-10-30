@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1899 {
+    bda:LG35A8F4FF7492F1AD
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-29T17:25:01.766Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG59845BE9995384E7
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM1899 {
     bda:WA1NLM1899  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1899 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "55/WA1NLM1899.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1899 ;
-        adm:logEntry        bda:LG59845BE9995384E7 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG35A8F4FF7492F1AD , bda:LG59845BE9995384E7 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1899  a       :Work ;
-        skos:prefLabel      "bka' bsrung dregs pa sde brgyad gyis bskang gsol 'phrin las myur 'gyogs sogs/"@bo-x-ewts ;
+        skos:altLabel       "bka' bsrung dregs pa sde brgyad gyis bskang gsol 'phrin las myur 'gyogs/"@bo-x-ewts ;
+        skos:prefLabel      "dregs pa sde brgyad gyis bskang gsol 'phrin las myur 'gyogs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgical and ritual texts"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM1899 , bdr:W1NLM1899 .
 }

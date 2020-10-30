@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1896 {
+    bda:LG1160AC52FFF32927
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-29T17:25:00.974Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG7B5DEAFC543A08EF
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,21 @@ bdg:WA1NLM1896 {
     bda:WA1NLM1896  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1896 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "e9/WA1NLM1896.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1896 ;
-        adm:logEntry        bda:LG7B5DEAFC543A08EF , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG1160AC52FFF32927 , bda:LG7B5DEAFC543A08EF , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1896  a       :Work ;
+        skos:altLabel       "slob dpon pad+ma 'byung gnas kyi mdzad pa'i chang gi 'byung khungs dang bzang ngan rnam par phye ba'i rnam bshad/"@bo-x-ewts ;
         skos:prefLabel      "slob dpon pad+ma 'byung gnas kyi mdzad pa'i chang gi 'byung khungs dang bzang ngan rnam par phye ba'i rnam bshad sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instruction on the harms caused by alcoholic consumption and other miscellaneous topics"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1896 , bdr:W1NLM1896 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1896 , bdr:W1NLM1896 ;
+        :workIsAbout        bdr:T1196 , bdr:T1730 .
 }

@@ -18,6 +18,11 @@ bdg:WA1NLM1893 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG54C4BBD21AFDFCBA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-10-29T17:25:00.269Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +32,32 @@ bdg:WA1NLM1893 {
     bda:WA1NLM1893  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1893 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "16/WA1NLM1893.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1893 ;
-        adm:logEntry        bda:LG51602072A44D79E1 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG51602072A44D79E1 , bda:LG54C4BBD21AFDFCBA , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRA9B7AC741629F0E0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRC60D4089BF2B4352
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1893  a       :Work ;
-        skos:prefLabel      "myur mdzad ye shes kyi mgon po phyag drug pa'i gtor chog bskang gso tshul sogs/"@bo-x-ewts ;
+        skos:altLabel       "lha chen tshangs pa chen po'i mngon rtogs bskang bshags bstod pa/"@bo-x-ewts , "mgon po yid bzhin nor bu'i sgrub thabs/"@bo-x-ewts , "rdo rje 'jigs byed kyi bla brgyud gsol 'debs bstod pa smon lam shis brjod yan lag bdun pa/"@bo-x-ewts ;
+        skos:prefLabel      "myur mdzad ye shes kyi mgon po phyag drug pa'i gtor chog bskang gso tshul/"@bo-x-ewts ;
+        :catalogInfo        "Bali offering ritual and egular propitiation of six armed Mahaakala, Visualization, confession and purification, praise of Brahma, Prayer to teacher in the lineage of vajrabairava."@en ;
+        :creator            bdr:CRA9B7AC741629F0E0 , bdr:CRC60D4089BF2B4352 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1893 , bdr:W1NLM1893 .
+        :workGenre          bdr:T5 ;
+        :workHasInstance    bdr:MW1NLM1893 , bdr:W1NLM1893 ;
+        :workIsAbout        bdr:T104 , bdr:T1436 , bdr:T411 .
 }
