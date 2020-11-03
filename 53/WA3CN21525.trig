@@ -30,6 +30,12 @@ bdg:WA3CN21525 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGA522AC127213A46C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LGA9E683C1D4FF07AC
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-12-06T14:39:22.3Z"^^xsd:dateTime ;
@@ -39,15 +45,15 @@ bdg:WA3CN21525 {
     bda:WA3CN21525  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21525 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "53/WA3CN21525.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21525 ;
-        adm:logEntry        bda:LG2723C8DEAFAC791D , bda:LG4C7F11AC7E6E7E16 , bda:LG8056BF9D32DF5848 , bda:LGA9E683C1D4FF07AC ;
+        adm:logEntry        bda:LG2723C8DEAFAC791D , bda:LG4C7F11AC7E6E7E16 , bda:LG8056BF9D32DF5848 , bda:LGA522AC127213A46C , bda:LGA9E683C1D4FF07AC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA522AC127213A46C
+    bdr:CR300788E9D0BF4242
         a                   :AgentAsCreator ;
         :agent              bdr:P55 ;
         :role               bdr:R0ER0019 .
@@ -55,7 +61,7 @@ bdg:WA3CN21525 {
     bdr:WA3CN21525  a       :Work ;
         skos:prefLabel      "paN chen sku phreng rim byon gyi tshad ma'i gsung rtsom phyogs sgrig"@bo-x-ewts ;
         :catalogInfo        "Collected Pramana Works of the successive incarnations of the Panchen Lama line."@en ;
-        :creator            bdr:CRA522AC127213A46C ;
+        :creator            bdr:CR300788E9D0BF4242 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

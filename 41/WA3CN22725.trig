@@ -30,32 +30,38 @@ bdg:WA3CN22725 {
         adm:logMessage      "added info"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGDE10772B484303A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:WA3CN22725  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN22725 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "41/WA3CN22725.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN22725 ;
-        adm:logEntry        bda:LG0FEF826BD3BCEB0C , bda:LGABDC0BD2F78D7CFC , bda:LGC57CCC41063A6BB5 ;
+        adm:logEntry        bda:LG0FEF826BD3BCEB0C , bda:LGABDC0BD2F78D7CFC , bda:LGC57CCC41063A6BB5 , bda:LGDE10772B484303A2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR53DADB4C8C2D1FD3
         a                   :AgentAsCreator ;
-        :agent              bdr:P335 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRDE10772B484303A2
-        a                   :AgentAsCreator ;
         :agent              bdr:P5316 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR6CFA155ED9B25F81
+        a                   :AgentAsCreator ;
+        :agent              bdr:P335 ;
+        :role               bdr:R0ER0016 .
     
     bdr:WA3CN22725  a       :Work ;
         skos:altLabel       "rje btsun bla ma dam pa ye shes dpal 'byor gyi zhal snga nas gang gi rtogs pa brjod pa ngo mtshar lhan cig skyes pa'i rol mo/"@bo-x-ewts ;
         skos:prefLabel      "bla ma dam pa ye shes dpal 'byor gyi rtogs brjod ngo mtshar lhan cig skyes pa'i rol mo/"@bo-x-ewts ;
         :catalogInfo        "Biography of Tsangpa Khenchen Yeshe Paljor by Gontse Kalsang Rinchen Wangchuk (1751-1816)."@en ;
-        :creator            bdr:CR53DADB4C8C2D1FD3 , bdr:CRDE10772B484303A2 ;
+        :creator            bdr:CR53DADB4C8C2D1FD3 , bdr:CR6CFA155ED9B25F81 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1779 ;

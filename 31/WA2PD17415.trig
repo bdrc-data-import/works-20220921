@@ -17,6 +17,12 @@ bdg:WA2PD17415 {
         adm:logDate         "2017-09-23T09:32:12.119Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG8B460D26F4616BAE
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LG9058F187D2CA164A
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2015-11-09T20:27:56.48Z"^^xsd:dateTime ;
@@ -32,35 +38,35 @@ bdg:WA2PD17415 {
     bda:WA2PD17415  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17415 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "31/WA2PD17415.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17415 ;
-        adm:logEntry        bda:LG29EA218823404329 , bda:LG9058F187D2CA164A , bda:LGA519032539E88C66 ;
+        adm:logEntry        bda:LG29EA218823404329 , bda:LG8B460D26F4616BAE , bda:LG9058F187D2CA164A , bda:LGA519032539E88C66 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1NLM964 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:CR0B16E8DA071C4705
         a                   :AgentAsCreator ;
-        :agent              bdr:P8205 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CR119D9B091C8B2910
-        a                   :AgentAsCreator ;
         :agent              bdr:P1KG8854 ;
         :role               bdr:R0ER0018 .
     
-    bdr:CR8B460D26F4616BAE
+    bdr:CR119D9B091C8B2910
         a                   :AgentAsCreator ;
         :agent              bdr:P8209 ;
         :role               bdr:R0ER0018 .
+    
+    bdr:CRD99827416DC7BAFE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA2PD17415  a       :Work ;
         skos:altLabel       "'phags pa gser 'od dam pa mdo sde'i dbang po rgyal po/"@bo-x-ewts , "'phags pa gser 'od dam pa mdo sde'i dbang po rgyal po zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts ;
         skos:prefLabel      "gser 'od dam pa mdo sde'i dbang po rgyal po/"@bo-x-ewts ;
         :catalogInfo        "The Golden Light Sutra, Mahayana Buddhist canonical text that focuses on the confession of faults."@en ;
-        :creator            bdr:CR0B16E8DA071C4705 , bdr:CR119D9B091C8B2910 , bdr:CR8B460D26F4616BAE ;
+        :creator            bdr:CR0B16E8DA071C4705 , bdr:CR119D9B091C8B2910 , bdr:CRD99827416DC7BAFE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T769 .

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ355732 {
+    bda:LG546E16FD1C5F3E34
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LG6AEBB0F088022B6D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-01-28T16:27:34.339Z"^^xsd:dateTime ;
@@ -27,20 +33,20 @@ bdg:WA4CZ355732 {
     bda:WA4CZ355732  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ355732 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "0b/WA4CZ355732.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ355732 ;
-        adm:logEntry        bda:LG6AEBB0F088022B6D , bda:LGAD603CEA7371FCBF ;
+        adm:logEntry        bda:LG546E16FD1C5F3E34 , bda:LG6AEBB0F088022B6D , bda:LGAD603CEA7371FCBF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR546E16FD1C5F3E34
+    bdr:CR83689873A86B5BC9
         a                   :AgentAsCreator ;
         :agent              bdr:P7911 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR83689873A86B5BC9
+    bdr:CRA3B6C2B0CB8758ED
         a                   :AgentAsCreator ;
         :agent              bdr:P1PD76233 ;
         :role               bdr:R0ER0019 .
@@ -50,7 +56,7 @@ bdg:WA4CZ355732 {
     bdr:WA4CZ355732  a      :Work ;
         skos:prefLabel      "bde thang mdzub ston/"@bo-x-ewts , "health guidance"@en ;
         :catalogInfo        "Selection of speeches on Health Guidance"@en ;
-        :creator            bdr:CR546E16FD1C5F3E34 , bdr:CR83689873A86B5BC9 ;
+        :creator            bdr:CR83689873A86B5BC9 , bdr:CRA3B6C2B0CB8758ED ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG5001 ;

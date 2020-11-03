@@ -24,31 +24,37 @@ bdg:WA2KG5007 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG951D96C34EAF7A8D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:WA2KG5007  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG5007 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "00/WA2KG5007.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG5007 ;
-        adm:logEntry        bda:LG315421E4EE8CAA4D , bda:LG7C8A6F462C54B7D1 ;
+        adm:logEntry        bda:LG315421E4EE8CAA4D , bda:LG7C8A6F462C54B7D1 , bda:LG951D96C34EAF7A8D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR951D96C34EAF7A8D
+    bdr:CR37EE74909A3EF1AD
         a                   :AgentAsCreator ;
-        :agent              bdr:P563 ;
+        :agent              bdr:P385 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRB2D5C91E7E95C890
         a                   :AgentAsCreator ;
-        :agent              bdr:P385 ;
+        :agent              bdr:P563 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2KG5007  a        :Work ;
         skos:prefLabel      "rtsa gsum bka' srung bcas kyi gtor bsngos/"@bo-x-ewts ;
         :catalogInfo        "Collection of rituals for the offering of bali (gtor ma) to the host of protective deities."@en ;
-        :creator            bdr:CR951D96C34EAF7A8D , bdr:CRB2D5C91E7E95C890 ;
+        :creator            bdr:CR37EE74909A3EF1AD , bdr:CRB2D5C91E7E95C890 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2KG5007 , bdr:W2KG5007 ;

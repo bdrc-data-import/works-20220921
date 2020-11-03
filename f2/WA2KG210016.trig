@@ -30,18 +30,24 @@ bdg:WA2KG210016 {
         adm:logMessage      "Work Number for CN"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGECF9DD80CAFED131
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:WA2KG210016  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG210016 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "f2/WA2KG210016.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG210016 ;
-        adm:logEntry        bda:LG199189CE71D0F1D4 , bda:LG3CE5E0DE9C9F65BC , bda:LGCE90D0CDC903BAB0 ;
+        adm:logEntry        bda:LG199189CE71D0F1D4 , bda:LG3CE5E0DE9C9F65BC , bda:LGCE90D0CDC903BAB0 , bda:LGECF9DD80CAFED131 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRECF9DD80CAFED131
+    bdr:CR0CBACC961BC94BCA
         a                   :AgentAsCreator ;
         :agent              bdr:P623 ;
         :role               bdr:R0ER0019 .
@@ -49,7 +55,7 @@ bdg:WA2KG210016 {
     bdr:WA2KG210016  a      :SerialMember , :Work ;
         skos:prefLabel      "yang dag pa'i lta ba/"@bo-x-ewts ;
         :catalogInfo        "Almost Buddhist by Dzongsar Khyentse Rinpoche. Translated to Tibetan by Serthang Dukar Tsering."@en ;
-        :creator            bdr:CRECF9DD80CAFED131 ;
+        :creator            bdr:CR0CBACC961BC94BCA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS2KG210021 ;

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG23036 {
+    bda:LG438E18EC726D5A40
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LGF428F33A41358245
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-03-17T16:25:50.568Z"^^xsd:dateTime ;
@@ -21,15 +27,15 @@ bdg:WA1KG23036 {
     bda:WA1KG23036  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG23036 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d9/WA1KG23036.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG23036 ;
-        adm:logEntry        bda:LGF428F33A41358245 ;
+        adm:logEntry        bda:LG438E18EC726D5A40 , bda:LGF428F33A41358245 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR438E18EC726D5A40
+    bdr:CRE69614D51A0C2342
         a                   :AgentAsCreator ;
         :agent              bdr:P649 ;
         :role               bdr:R0ER0019 .
@@ -37,7 +43,7 @@ bdg:WA1KG23036 {
     bdr:WA1KG23036  a       :Work ;
         skos:prefLabel      "za 'dre kha phral gyi cho ga drag po lcags 'dul dkar nag gi phyag len bsdus pa'i 'don 'grigs bsdus chog sogs/"@bo-x-ewts ;
         :catalogInfo        "Collection of ritual texts of Nyingma order."@en ;
-        :creator            bdr:CR438E18EC726D5A40 ;
+        :creator            bdr:CRE69614D51A0C2342 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T977 ;

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN21631 {
+    bda:LG1A4A435D4254EBC8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LG370DB7F33E135399
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-01-17T15:52:27.629Z"^^xsd:dateTime ;
@@ -39,33 +45,33 @@ bdg:WA3CN21631 {
     bda:WA3CN21631  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21631 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "de/WA3CN21631.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21631 ;
-        adm:logEntry        bda:LG370DB7F33E135399 , bda:LG6744830B0BD7B033 , bda:LGA7FDE0DCE9FD75DD , bda:LGE28419ED78DB174D ;
+        adm:logEntry        bda:LG1A4A435D4254EBC8 , bda:LG370DB7F33E135399 , bda:LG6744830B0BD7B033 , bda:LGA7FDE0DCE9FD75DD , bda:LGE28419ED78DB174D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1A4A435D4254EBC8
-        a                   :AgentAsCreator ;
-        :agent              bdr:P64 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR81409C6167916206
+    bdr:CR586D05FC526662DF
         a                   :AgentAsCreator ;
         :agent              bdr:P65 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRE6EF312E9080F305
+    bdr:CR81409C6167916206
         a                   :AgentAsCreator ;
         :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE6EF312E9080F305
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA3CN21631  a       :Work ;
         skos:prefLabel      "rje tsong kha pa yab sras gsum gyis mdzad pa'i gsang ba 'dus pa'i skor gyi yig cha phyogs bsdus/"@bo-x-ewts ;
         :catalogInfo        "Collection of old woodblocks printed texts about the Guhyasamaja Tantra by Tsongkhapa and his two main disciples."@en ;
-        :creator            bdr:CR1A4A435D4254EBC8 , bdr:CR81409C6167916206 , bdr:CRE6EF312E9080F305 ;
+        :creator            bdr:CR586D05FC526662DF , bdr:CR81409C6167916206 , bdr:CRE6EF312E9080F305 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

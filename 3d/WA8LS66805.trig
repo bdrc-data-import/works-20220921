@@ -24,6 +24,12 @@ bdg:WA8LS66805 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGA163660845587904
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LGBDCA75A7A0B1D99B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-10-08T15:55:03.338Z"^^xsd:dateTime ;
@@ -33,15 +39,15 @@ bdg:WA8LS66805 {
     bda:WA8LS66805  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66805 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "3d/WA8LS66805.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66805 ;
-        adm:logEntry        bda:LG0889705CCE077E60 , bda:LG8B159D5E7F1C9F92 , bda:LGBDCA75A7A0B1D99B ;
+        adm:logEntry        bda:LG0889705CCE077E60 , bda:LG8B159D5E7F1C9F92 , bda:LGA163660845587904 , bda:LGBDCA75A7A0B1D99B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA163660845587904
+    bdr:CR3B85AF0680406EC9
         a                   :AgentAsCreator ;
         :agent              bdr:P00KG07632 ;
         :role               bdr:R0ER0019 .
@@ -49,7 +55,7 @@ bdg:WA8LS66805 {
     bdr:WA8LS66805  a       :SerialMember , :Work ;
         skos:prefLabel      "zla 'od 'og gi dran 'char/"@bo-x-ewts ;
         :catalogInfo        "Collection of essays written by Tsering Yangkyi."@en ;
-        :creator            bdr:CRA163660845587904 ;
+        :creator            bdr:CR3B85AF0680406EC9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG14508 ;

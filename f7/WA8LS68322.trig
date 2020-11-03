@@ -18,6 +18,12 @@ bdg:WA8LS68322 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGB4382FCDC5C277B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LGDCA83AB1F1C9A44B
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-02-05T12:09:44.401Z"^^xsd:dateTime ;
@@ -27,15 +33,15 @@ bdg:WA8LS68322 {
     bda:WA8LS68322  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68322 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "f7/WA8LS68322.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68322 ;
-        adm:logEntry        bda:LG90403DB7C0255042 , bda:LGDCA83AB1F1C9A44B ;
+        adm:logEntry        bda:LG90403DB7C0255042 , bda:LGB4382FCDC5C277B1 , bda:LGDCA83AB1F1C9A44B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB4382FCDC5C277B1
+    bdr:CR5B9B3594AE6A56CB
         a                   :AgentAsCreator ;
         :agent              bdr:P6590 ;
         :role               bdr:R0ER0019 .
@@ -43,7 +49,7 @@ bdg:WA8LS68322 {
     bdr:WA8LS68322  a       :Work ;
         skos:prefLabel      "gtsug lag pod bzhi ma dang bstan chos lnga las tshig rkang nyis brgya ba/"@bo-x-ewts ;
         :catalogInfo        "PRC cummunist cadre's text book; traslated by Golok Namgyal."@en ;
-        :creator            bdr:CRB4382FCDC5C277B1 ;
+        :creator            bdr:CR5B9B3594AE6A56CB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1157 , bdr:T1777 , bdr:T266 ;

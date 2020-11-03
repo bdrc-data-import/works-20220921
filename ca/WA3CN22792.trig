@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN22792 {
+    bda:LG5EEB436D3604FE6D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LGDCDD28D0FCF4FB29
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-05-18T15:14:17.989Z"^^xsd:dateTime ;
@@ -33,28 +39,28 @@ bdg:WA3CN22792 {
     bda:WA3CN22792  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN22792 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "ca/WA3CN22792.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN22792 ;
-        adm:logEntry        bda:LGDCDD28D0FCF4FB29 , bda:LGE3A2E8E3249DE521 , bda:LGF0551BD4F4A114F8 ;
+        adm:logEntry        bda:LG5EEB436D3604FE6D , bda:LGDCDD28D0FCF4FB29 , bda:LGE3A2E8E3249DE521 , bda:LGF0551BD4F4A114F8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1411A0BA734C5170
         a                   :AgentAsCreator ;
-        :agent              bdr:P167 ;
+        :agent              bdr:P7651 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR5EEB436D3604FE6D
+    bdr:CRD47640D598EB0E03
         a                   :AgentAsCreator ;
-        :agent              bdr:P7651 ;
+        :agent              bdr:P167 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA3CN22792  a       :SerialMember , :Work ;
         skos:prefLabel      "ser shul drang nges dang shing bza' drang nges/"@bo-x-ewts ;
         :catalogInfo        "Two different commentaries on Je Tsongkhapa's treatise The Essence of Eloquence, on understanding the definitive meaning."@en ;
-        :creator            bdr:CR1411A0BA734C5170 , bdr:CR5EEB436D3604FE6D ;
+        :creator            bdr:CR1411A0BA734C5170 , bdr:CRD47640D598EB0E03 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS140 ;

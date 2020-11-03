@@ -24,18 +24,24 @@ bdg:WA8LS67716 {
         adm:logMessage      "new work record created"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGDBCB610748263144
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:WA8LS67716  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS67716 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "a0/WA8LS67716.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS67716 ;
-        adm:logEntry        bda:LG0FA3736BD2959008 , bda:LGBD0D0376E2FAF9B4 ;
+        adm:logEntry        bda:LG0FA3736BD2959008 , bda:LGBD0D0376E2FAF9B4 , bda:LGDBCB610748263144 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDBCB610748263144
+    bdr:CRDB1B35DE339EADD6
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG16700 ;
         :role               bdr:R0ER0019 .
@@ -43,7 +49,7 @@ bdg:WA8LS67716 {
     bdr:WA8LS67716  a       :SerialMember , :Work ;
         skos:prefLabel      "khang rnying /"@bo-x-ewts ;
         :catalogInfo        "Collection of essays written by Cone Yum Tshering."@en ;
-        :creator            bdr:CRDBCB610748263144 ;
+        :creator            bdr:CRDB1B35DE339EADD6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS67704 ;

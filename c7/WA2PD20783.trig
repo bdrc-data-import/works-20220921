@@ -18,6 +18,12 @@ bdg:WA2PD20783 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGAC6D1CDDB7094B83
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LGB6C8BB210E8AE097
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-08-10T23:20:07.97Z"^^xsd:dateTime ;
@@ -26,22 +32,22 @@ bdg:WA2PD20783 {
     bda:WA2PD20783  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD20783 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "c7/WA2PD20783.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD20783 ;
-        adm:logEntry        bda:LG4135C68ED1780DA9 , bda:LGB6C8BB210E8AE097 ;
+        adm:logEntry        bda:LG4135C68ED1780DA9 , bda:LGAC6D1CDDB7094B83 , bda:LGB6C8BB210E8AE097 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRAC6D1CDDB7094B83
+    bdr:CR42BAB15A240CFBFE
         a                   :AgentAsCreator ;
         :agent              bdr:P5013 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2PD20783  a       :Work ;
         skos:prefLabel      "mgon po tshogs bdag drag sngags gsang ba spu gri/"@bo-x-ewts ;
-        :creator            bdr:CRAC6D1CDDB7094B83 ;
+        :creator            bdr:CR42BAB15A240CFBFE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1 ;

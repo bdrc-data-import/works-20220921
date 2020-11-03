@@ -18,6 +18,12 @@ bdg:WA8LS68328 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG61946089B015F667
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LGEEE94A727BC45E1A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-03-04T12:26:30.631Z"^^xsd:dateTime ;
@@ -26,15 +32,15 @@ bdg:WA8LS68328 {
     bda:WA8LS68328  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68328 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "8c/WA8LS68328.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68328 ;
-        adm:logEntry        bda:LG502836E41786934E , bda:LGEEE94A727BC45E1A ;
+        adm:logEntry        bda:LG502836E41786934E , bda:LG61946089B015F667 , bda:LGEEE94A727BC45E1A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR61946089B015F667
+    bdr:CRB589987A478ABC38
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG16585 ;
         :role               bdr:R0ER0019 .
@@ -42,7 +48,7 @@ bdg:WA8LS68328 {
     bdr:WA8LS68328  a       :Work ;
         skos:prefLabel      "'dul ba bsdus pa'i par gzhi zhib 'jug"@bo-x-ewts ;
         :catalogInfo        "Research on the edition of Vinaya by Jazhung Yangbum Gyal."@en ;
-        :creator            bdr:CR61946089B015F667 ;
+        :creator            bdr:CRB589987A478ABC38 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS68328 , bdr:W8LS68328 ;

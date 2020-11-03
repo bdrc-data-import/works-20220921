@@ -18,6 +18,12 @@ bdg:WA8LS67755 {
         adm:logMessage      "new work record created"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGDAB0459C6D9452FA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LGDDCFCF9663FF5ABB
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-11-22T10:43:33.494Z"^^xsd:dateTime ;
@@ -27,15 +33,15 @@ bdg:WA8LS67755 {
     bda:WA8LS67755  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS67755 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "b0/WA8LS67755.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS67755 ;
-        adm:logEntry        bda:LG391C8E8C5871B10A , bda:LGDDCFCF9663FF5ABB ;
+        adm:logEntry        bda:LG391C8E8C5871B10A , bda:LGDAB0459C6D9452FA , bda:LGDDCFCF9663FF5ABB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDAB0459C6D9452FA
+    bdr:CR47027EFC3B76F9EE
         a                   :AgentAsCreator ;
         :agent              bdr:P1647 ;
         :role               bdr:R0ER0019 .
@@ -43,7 +49,7 @@ bdg:WA8LS67755 {
     bdr:WA8LS67755  a       :SerialMember , :Work ;
         skos:prefLabel      "rang gi byung brjod pa rang gsal A dar sha"@bo-x-ewts ;
         :catalogInfo        "Autobiography of Muge Samten Gyatsho. Translated into Chinese by Ngangtshang Bumkyap and Yeshe Tshering."@en ;
-        :creator            bdr:CRDAB0459C6D9452FA ;
+        :creator            bdr:CR47027EFC3B76F9EE ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :serialMemberOf     bdr:WAS8LS67755 ;

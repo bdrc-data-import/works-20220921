@@ -24,6 +24,12 @@ bdg:WA3CN18528 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG85D3FF6032820BD0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LG8E86B663286F088A
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-06-03T16:47:51.339Z"^^xsd:dateTime ;
@@ -39,28 +45,28 @@ bdg:WA3CN18528 {
     bda:WA3CN18528  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN18528 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "10/WA3CN18528.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN18528 ;
-        adm:logEntry        bda:LG1280FD4DD154660D , bda:LG6179E96823C017DD , bda:LG8E86B663286F088A , bda:LGF3B30F45304452BA ;
+        adm:logEntry        bda:LG1280FD4DD154660D , bda:LG6179E96823C017DD , bda:LG85D3FF6032820BD0 , bda:LG8E86B663286F088A , bda:LGF3B30F45304452BA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR6043B90010B13F8B
         a                   :AgentAsCreator ;
-        :agent              bdr:P3CN21160 ;
-        :role               bdr:R0ER0025 .
-    
-    bdr:CR85D3FF6032820BD0
-        a                   :AgentAsCreator ;
         :agent              bdr:P8067 ;
         :role               bdr:R0ER0011 .
+    
+    bdr:CRC863D4A7ECF8B9B6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN21160 ;
+        :role               bdr:R0ER0025 .
     
     bdr:WA3CN18528  a       :Work ;
         skos:prefLabel      "chos skyong ba'i rgyal po srong btsan sgam po'i bka' 'bum/"@bo-x-ewts ;
         :catalogInfo        "Collection of teachings focusing on Avalokitesvara. Attributed to King Songtsen Gampo and revealed as a terma by Drubtob Ngudrup and others."@en ;
-        :creator            bdr:CR6043B90010B13F8B , bdr:CR85D3FF6032820BD0 ;
+        :creator            bdr:CR6043B90010B13F8B , bdr:CRC863D4A7ECF8B9B6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN18528 , bdr:W3CN18528 ;

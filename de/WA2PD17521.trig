@@ -34,32 +34,38 @@ bdg:WA2PD17521 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGCD38775F9FE795D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:WA2PD17521  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17521 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "de/WA2PD17521.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17521 ;
-        adm:logEntry        bda:LG1571F8D7235D1CF3 , bda:LG263A10EA582E1808 , bda:LG6DAC2A4B1FBCFBEB , bda:LGACE13C5ED0FD6998 ;
+        adm:logEntry        bda:LG1571F8D7235D1CF3 , bda:LG263A10EA582E1808 , bda:LG6DAC2A4B1FBCFBEB , bda:LGACE13C5ED0FD6998 , bda:LGCD38775F9FE795D6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CRCA8827D84DE38B5A
         a                   :AgentAsCreator ;
-        :agent              bdr:P4PD1189 ;
-        :role               bdr:R0ER0025 .
-    
-    bdr:CRCD38775F9FE795D6
-        a                   :AgentAsCreator ;
         :agent              bdr:P7418 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CREC2FCCD90D0C2F42
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4PD1189 ;
+        :role               bdr:R0ER0025 .
     
     bdr:WA2PD17521  a       :Work ;
         skos:altLabel       "dpal ldan mgon po'i bstod las byang chub sgrub pa/"@bo-x-ewts ;
         skos:prefLabel      "mgon po tshogs bdag gi sgrub skor/"@bo-x-ewts ;
         :catalogInfo        "Rituals for the propitiation of Ganesh as a protective deity according to Peyul Monastery."@en ;
-        :creator            bdr:CRCA8827D84DE38B5A , bdr:CRCD38775F9FE795D6 ;
+        :creator            bdr:CRCA8827D84DE38B5A , bdr:CREC2FCCD90D0C2F42 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

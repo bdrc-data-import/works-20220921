@@ -24,6 +24,12 @@ bdg:WA8LS17947 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG91BFCF558BA2C79F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LGB30B1556268D7088
         a                   adm:UpdateData ;
         adm:logDate         "2019-08-14T11:43:09.798Z"^^xsd:dateTime ;
@@ -33,43 +39,43 @@ bdg:WA8LS17947 {
     bda:WA8LS17947  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS17947 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "9a/WA8LS17947.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS17947 ;
-        adm:logEntry        bda:LG19FA7F18A5C22999 , bda:LG1BDAF9C9B5157F93 , bda:LGB30B1556268D7088 ;
+        adm:logEntry        bda:LG19FA7F18A5C22999 , bda:LG1BDAF9C9B5157F93 , bda:LG91BFCF558BA2C79F , bda:LGB30B1556268D7088 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR4B5BAEA0162B03B9
         a                   :AgentAsCreator ;
-        :agent              bdr:P6120 ;
+        :agent              bdr:P6242 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR5FB2A897F992A32D
-        a                   :AgentAsCreator ;
-        :agent              bdr:P6118 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR91BFCF558BA2C79F
         a                   :AgentAsCreator ;
         :agent              bdr:P5782 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRBAC1A0A4BF30BEC6
         a                   :AgentAsCreator ;
-        :agent              bdr:P6242 ;
+        :agent              bdr:P6119 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRC8EB517B30C7048D
         a                   :AgentAsCreator ;
-        :agent              bdr:P6119 ;
+        :agent              bdr:P6118 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRCECF5AC4166FE603
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6120 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA8LS17947  a       :Work ;
         skos:prefLabel      "dbu ma 'jug pa/ mngon rtogs rgyan/ mdzod/ 'dul ba dang rnam 'grel bcas kyi rtsa ba/"@bo-x-ewts ;
         :catalogInfo        "The root text of Madhyamikavatara, Abhisamayalankara, Abhidharmakosha, Vinayavastu and Pramanavarttika."@en ;
-        :creator            bdr:CR4B5BAEA0162B03B9 , bdr:CR5FB2A897F992A32D , bdr:CR91BFCF558BA2C79F , bdr:CRBAC1A0A4BF30BEC6 , bdr:CRC8EB517B30C7048D ;
+        :creator            bdr:CR4B5BAEA0162B03B9 , bdr:CR5FB2A897F992A32D , bdr:CRBAC1A0A4BF30BEC6 , bdr:CRC8EB517B30C7048D , bdr:CRCECF5AC4166FE603 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG8787 ;

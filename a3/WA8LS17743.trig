@@ -18,6 +18,12 @@ bdg:WA8LS17743 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGDCE1C13EE70E4B47
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LGFA925B5A73193A0D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-06-01T09:44:53.753Z"^^xsd:dateTime ;
@@ -27,15 +33,15 @@ bdg:WA8LS17743 {
     bda:WA8LS17743  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS17743 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "a3/WA8LS17743.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS17743 ;
-        adm:logEntry        bda:LG1A454756D06DC89F , bda:LGFA925B5A73193A0D ;
+        adm:logEntry        bda:LG1A454756D06DC89F , bda:LGDCE1C13EE70E4B47 , bda:LGFA925B5A73193A0D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDCE1C13EE70E4B47
+    bdr:CR43EED4DDEA48C0CC
         a                   :AgentAsCreator ;
         :agent              bdr:P2388 ;
         :role               bdr:R0ER0026 .
@@ -45,7 +51,7 @@ bdg:WA8LS17743 {
     bdr:WA8LS17743  a       :Work ;
         skos:prefLabel      "lung ston pa tsan+dra pa'i mdo/"@bo-x-ewts , "Candravyakarana"@sa-x-ndia ;
         :catalogInfo        "Root text of sanskrit grammar Candravyakarana translated into Tibetan by Lotsava Jangchub Tsemo."@en ;
-        :creator            bdr:CRDCE1C13EE70E4B47 ;
+        :creator            bdr:CR43EED4DDEA48C0CC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGA001113 , bdr:MW8LS17743 , bdr:W8LS17743 ;

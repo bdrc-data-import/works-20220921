@@ -24,26 +24,32 @@ bdg:WA4PD912 {
         adm:logMessage      "new created work record"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG8441BD3B98A7D9A1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:WA4PD912  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4PD912 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "2e/WA4PD912.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4PD912 ;
-        adm:logEntry        bda:LG3E43866C155836CD , bda:LG4D030F74D027B450 ;
+        adm:logEntry        bda:LG3E43866C155836CD , bda:LG4D030F74D027B450 , bda:LG8441BD3B98A7D9A1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA28852 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR8441BD3B98A7D9A1
+    bdr:CRA53BDCD37B040146
         a                   :AgentAsCreator ;
         :agent              bdr:P9362 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA4PD912  a         :Work ;
         skos:prefLabel      "rgyal ba sku gsum gyi rnam thar yongs 'dus ljon pa/"@bo-x-ewts ;
-        :creator            bdr:CR8441BD3B98A7D9A1 ;
+        :creator            bdr:CRA53BDCD37B040146 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

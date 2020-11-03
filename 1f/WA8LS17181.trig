@@ -24,32 +24,38 @@ bdg:WA8LS17181 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGC62CF4BCFF6CB2B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:WA8LS17181  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS17181 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "1f/WA8LS17181.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS17181 ;
-        adm:logEntry        bda:LG4209F75DF925EF77 , bda:LGC24B47B2515B7F44 ;
+        adm:logEntry        bda:LG4209F75DF925EF77 , bda:LGC24B47B2515B7F44 , bda:LGC62CF4BCFF6CB2B8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR19C7F4F37A58A729
         a                   :AgentAsCreator ;
-        :agent              bdr:P252 ;
+        :agent              bdr:P314 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRC62CF4BCFF6CB2B8
+    bdr:CR7382DBFA0FB9AB3A
         a                   :AgentAsCreator ;
-        :agent              bdr:P314 ;
+        :agent              bdr:P252 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA8LS17181  a       :Work ;
         skos:altLabel       "'phags pa'i gsol 'debs zhal mthong ma dang ser ba lam bsgyur/"@bo-x-ewts ;
         skos:prefLabel      "gsol 'debs zhal mthong ma dang ser ba lam bsgyur/"@bo-x-ewts ;
         :catalogInfo        "A reverential petition of Arya by Jigme Lingpa and golden water offering by Ju Mipham Namgyal Gyatso."@en ;
-        :creator            bdr:CR19C7F4F37A58A729 , bdr:CRC62CF4BCFF6CB2B8 ;
+        :creator            bdr:CR19C7F4F37A58A729 , bdr:CR7382DBFA0FB9AB3A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T140 ;

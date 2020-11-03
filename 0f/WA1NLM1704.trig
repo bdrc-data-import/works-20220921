@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1704 {
+    bda:LG28544636A65A3080
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T12:10:09.067Z"^^xsd:dateTime ;
+        adm:logMessage      "added title, topic, content, cat and biblio info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGE97C4650CEC7E0DC
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1704 {
     bda:WA1NLM1704  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1704 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "0f/WA1NLM1704.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1704 ;
-        adm:logEntry        bda:LGE97C4650CEC7E0DC , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG28544636A65A3080 , bda:LGE97C4650CEC7E0DC , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1704  a       :Work ;
         skos:prefLabel      "bcom ldan 'das sangs rgyas sman bla'i sgrub thabs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rje btsun 'phags ma sgrol ma'i bskang bshags bstod bskul dang bcas pa/ 2 rje btsun 'phags ma sgrol ma'i gshegs gtor/ 3 klu bsang gi dgos pa kun 'grub/ 4 drag po btsan bzhengs ba/ 5 rje rin po che'i gsol 'debs/ 6 bcom ldan 'das sman bla bde bar gshegs pa mched brgyad kyi mtshan nas brjod cing gzungs sngags bzla ba dang 'brel ba'i 'do gsol smon lam phan yon dang bcas pa dngos grub kun 'byung / 7 rdo rje 'chang sogs rtsa brgyud bla ma/ 8 seng ge'i gdong pa can/ 9 brul gtor/ 10 sa gzhi gang ba'i spyan gzigs mchod gtor 'gul/ 11 rta mgrin gsang sgrub lugs gnyis kyi rgyun 'khyer snying po bcud 'dus/ 12 dpang skong phyag rgyas pa/ 13 rdo rje 'jigs byed bla brgyud gsol 'debs dngos grub rnam gnyis/ 14 bde mchog bkra shis/ 15 'phags pa reman+ta zhes bya ba'i gzungs/ 16 'phags pa snang ba brgyad thub mchod kun 'dul byang bkra shis snying ma/ 17 bsrung ba sos 'khor lo dang sngags byang bsrung mdud rnams rab gnas bya tshul/rlung 'khor bskor tshul yang yod/ 18 gsang ba ye shes kyi mkha' 'gro ma'i sgo nas phyugs nad sel thabs rdo rje sbyin byed/ rta mgrin gsang sgrub kyi sgo nas phyugs glud gtor thabs 'byung po tshi ma byed/ mo mo'i gsol mchod mkha' 'gro dgyes dol/"@en , "Sadhana of medicine Buddha and included other text also."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1704 , bdr:W1NLM1704 .
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM1704 , bdr:W1NLM1704 ;
+        :workIsAbout        bdr:T568 .
 }

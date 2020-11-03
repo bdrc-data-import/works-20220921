@@ -24,32 +24,38 @@ bdg:WA8LS43901 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG6F8C97234E3A6034
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:WA8LS43901  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS43901 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "b0/WA8LS43901.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS43901 ;
-        adm:logEntry        bda:LG239605D417C6C202 , bda:LG2F1D326E3B2DDA3C ;
+        adm:logEntry        bda:LG239605D417C6C202 , bda:LG2F1D326E3B2DDA3C , bda:LG6F8C97234E3A6034 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1NLM708 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:CR43CA1EA8CF0D8A5E
         a                   :AgentAsCreator ;
-        :agent              bdr:P4CZ10511 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CR6F8C97234E3A6034
-        a                   :AgentAsCreator ;
         :agent              bdr:P6161 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRA4E568218CB6D707
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ10511 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA8LS43901  a       :Work ;
         skos:prefLabel      "byang chub sems dpa'i spyod pa la 'jug pa/"@bo-x-ewts ;
         :catalogInfo        "Root text of Bodhicaryavatara."@en ;
-        :creator            bdr:CR43CA1EA8CF0D8A5E , bdr:CR6F8C97234E3A6034 ;
+        :creator            bdr:CR43CA1EA8CF0D8A5E , bdr:CRA4E568218CB6D707 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1777 ;

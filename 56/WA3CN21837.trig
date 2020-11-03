@@ -18,6 +18,12 @@ bdg:WA3CN21837 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG2FCA99857C706BF1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LG52D22F7776994B33
         a                   adm:UpdateData ;
         adm:logDate         "2019-12-09T14:58:40.258Z"^^xsd:dateTime ;
@@ -33,28 +39,28 @@ bdg:WA3CN21837 {
     bda:WA3CN21837  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21837 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "56/WA3CN21837.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21837 ;
-        adm:logEntry        bda:LG0C8E853EDD05E270 , bda:LG52D22F7776994B33 , bda:LGA13C3A813D4AEBA5 ;
+        adm:logEntry        bda:LG0C8E853EDD05E270 , bda:LG2FCA99857C706BF1 , bda:LG52D22F7776994B33 , bda:LGA13C3A813D4AEBA5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2FCA99857C706BF1
-        a                   :AgentAsCreator ;
-        :agent              bdr:P3CN9065 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRED2A67467355CDE3
+    bdr:CR34EAA3A1A146BD8A
         a                   :AgentAsCreator ;
         :agent              bdr:P3CN21693 ;
         :role               bdr:R0ER0026 .
     
+    bdr:CRED2A67467355CDE3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN9065 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA3CN21837  a       :Work ;
         skos:prefLabel      "g+han d+hi'i rang rnam/"@bo-x-ewts ;
         :catalogInfo        "The Autobiography of M.K.Gandhi (2nd volume)."@en ;
-        :creator            bdr:CR2FCA99857C706BF1 , bdr:CRED2A67467355CDE3 ;
+        :creator            bdr:CR34EAA3A1A146BD8A , bdr:CRED2A67467355CDE3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;

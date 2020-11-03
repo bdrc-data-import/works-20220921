@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS66792 {
+    bda:LG1B63BAB7639C6681
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LG81ABCACBD5AFC292
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-12-04T12:00:20.716Z"^^xsd:dateTime ;
@@ -33,43 +39,43 @@ bdg:WA8LS66792 {
     bda:WA8LS66792  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66792 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "c7/WA8LS66792.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66792 ;
-        adm:logEntry        bda:LG81ABCACBD5AFC292 , bda:LGE3D93DF4CFBDA62F , bda:LGE4E256D5EFFC81A8 ;
+        adm:logEntry        bda:LG1B63BAB7639C6681 , bda:LG81ABCACBD5AFC292 , bda:LGE3D93DF4CFBDA62F , bda:LGE4E256D5EFFC81A8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1B63BAB7639C6681
-        a                   :AgentAsCreator ;
-        :agent              bdr:P3500 ;
-        :role               bdr:R0ER0019 .
-    
     bdr:CR72A393B58C64446E
         a                   :AgentAsCreator ;
-        :agent              bdr:P5258 ;
+        :agent              bdr:P1KG13997 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR7DC3884964AD63EE
         a                   :AgentAsCreator ;
-        :agent              bdr:P101 ;
+        :agent              bdr:P5274 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR8BD64172B5E49B9D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5258 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRC49FAB7107FB7BC5
         a                   :AgentAsCreator ;
-        :agent              bdr:P5274 ;
+        :agent              bdr:P3500 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRFF348E6CE98B6EFF
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG13997 ;
+        :agent              bdr:P101 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA8LS66792  a       :SerialMember , :Work ;
         skos:prefLabel      "chos 'byung phyogs bsgrigs/"@bo-x-ewts ;
         :catalogInfo        "Collection of religious history."@en ;
-        :creator            bdr:CR1B63BAB7639C6681 , bdr:CR72A393B58C64446E , bdr:CR7DC3884964AD63EE , bdr:CRC49FAB7107FB7BC5 , bdr:CRFF348E6CE98B6EFF ;
+        :creator            bdr:CR72A393B58C64446E , bdr:CR7DC3884964AD63EE , bdr:CR8BD64172B5E49B9D , bdr:CRC49FAB7107FB7BC5 , bdr:CRFF348E6CE98B6EFF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS3CN5586 ;

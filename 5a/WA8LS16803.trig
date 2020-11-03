@@ -18,6 +18,12 @@ bdg:WA8LS16803 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGAE87845E0587EB8C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LGD53D802DE317E391
         a                   adm:InitialDataCreation ;
         adm:logDate         "2015-11-18T12:01:51.54Z"^^xsd:dateTime ;
@@ -27,20 +33,20 @@ bdg:WA8LS16803 {
     bda:WA8LS16803  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS16803 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "5a/WA8LS16803.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS16803 ;
-        adm:logEntry        bda:LG0EE892E21044F530 , bda:LGD53D802DE317E391 ;
+        adm:logEntry        bda:LG0EE892E21044F530 , bda:LGAE87845E0587EB8C , bda:LGD53D802DE317E391 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR70BD703A0704DFC1
+    bdr:CR441302A26160F6AD
         a                   :AgentAsCreator ;
         :agent              bdr:P1675 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRAE87845E0587EB8C
+    bdr:CR70BD703A0704DFC1
         a                   :AgentAsCreator ;
         :agent              bdr:P1654 ;
         :role               bdr:R0ER0019 .
@@ -49,7 +55,7 @@ bdg:WA8LS16803 {
         skos:altLabel       "dbu ma bden gnyis kyi gzhung dang theg pa chen po dbu ma bden gnyis kyi 'grel pa/"@bo-x-ewts ;
         skos:prefLabel      "dbu ma'i gzhung dang 'grel pa/"@bo-x-ewts ;
         :catalogInfo        "The root text of two truth of Madhyamika by Meton Sherab Odzer and its commentary written by Mnyam med Sherab Gyaltsen."@en ;
-        :creator            bdr:CR70BD703A0704DFC1 , bdr:CRAE87845E0587EB8C ;
+        :creator            bdr:CR441302A26160F6AD , bdr:CR70BD703A0704DFC1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

@@ -30,6 +30,12 @@ bdg:WA1PD133153 {
         adm:logMessage      "added subjects, contents and page number"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGE8A08BA920ED3DA4
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LGEDDF556B69916FF5
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-02-25T15:09:47.14Z"^^xsd:dateTime ;
@@ -39,28 +45,28 @@ bdg:WA1PD133153 {
     bda:WA1PD133153  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD133153 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "9d/WA1PD133153.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD133153 ;
-        adm:logEntry        bda:LG39E1CDE5BBA07759 , bda:LGC9DE0F83CA696FA4 , bda:LGD9FDCE2FFA5C9E10 , bda:LGEDDF556B69916FF5 ;
+        adm:logEntry        bda:LG39E1CDE5BBA07759 , bda:LGC9DE0F83CA696FA4 , bda:LGD9FDCE2FFA5C9E10 , bda:LGE8A08BA920ED3DA4 , bda:LGEDDF556B69916FF5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR13FB272B426DC7EC
         a                   :AgentAsCreator ;
-        :agent              bdr:P741 ;
+        :agent              bdr:P252 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRE8A08BA920ED3DA4
+    bdr:CR589C8C02C2647938
         a                   :AgentAsCreator ;
-        :agent              bdr:P252 ;
+        :agent              bdr:P741 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1PD133153  a      :Work ;
         skos:prefLabel      "gu ru'i tshig bdun gsol 'debs kyi rnam bshad pad+ma dkar po dang bzang spyod smon lam gyi 'bru 'grel theg chen lam bzang /"@bo-x-ewts ;
         :catalogInfo        "Detailed commentary of the Seven Line Prayer of Guru Padmasambhava and word by word commentary of Bhadracaryapranidhana."@en ;
-        :creator            bdr:CR13FB272B426DC7EC , bdr:CRE8A08BA920ED3DA4 ;
+        :creator            bdr:CR13FB272B426DC7EC , bdr:CR589C8C02C2647938 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1488 , bdr:T61 ;

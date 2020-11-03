@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS17113 {
+    bda:LG16DE3520A91BE6F2
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LGAACD355C28AFF59C
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-01-20T14:40:17.43Z"^^xsd:dateTime ;
@@ -27,34 +33,34 @@ bdg:WA8LS17113 {
     bda:WA8LS17113  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS17113 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "57/WA8LS17113.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS17113 ;
-        adm:logEntry        bda:LGAACD355C28AFF59C , bda:LGB27B2C14A5CAFCC9 ;
+        adm:logEntry        bda:LG16DE3520A91BE6F2 , bda:LGAACD355C28AFF59C , bda:LGB27B2C14A5CAFCC9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR16DE3520A91BE6F2
-        a                   :AgentAsCreator ;
-        :agent              bdr:P252 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR6ADB9048607CDB4F
+    bdr:CR488D054D0D17DE18
         a                   :AgentAsCreator ;
         :agent              bdr:P270 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRF4EB7D7E7A521586
+    bdr:CR6ADB9048607CDB4F
         a                   :AgentAsCreator ;
         :agent              bdr:P1243 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRF4EB7D7E7A521586
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA8LS17113  a       :Work ;
         skos:altLabel       "don rnam par nges pa shes rab ral gri /zhal gdams ding ri brgya rtsa dang byang chub sems dpa'i spyod pa la 'jug pa'i sa bcad don gsal me long /"@bo-x-ewts ;
         skos:prefLabel      "don rnam par nges pa'i shes rab ral gri /ding ri brgya rtsa dang spyod 'jug gi sa bcad/"@bo-x-ewts ;
         :catalogInfo        "1 rje btsun dam pa sangs rgyas kyi zhal gdams ding ri brgya rtsa/ 2 byang chub sems dpa'i spyod pa la 'jug pa'i sa bcad don gsal me long /"@bo-x-ewts , "A text on two truth by Ju Mipham Jamyang Namgyal Gyatso, instructional teachings by Phadampa Sangye and topical outline of Bodhicaryavatara by Zapatrul Ugyen Jigme Chokyi Wangpo."@en ;
-        :creator            bdr:CR16DE3520A91BE6F2 , bdr:CR6ADB9048607CDB4F , bdr:CRF4EB7D7E7A521586 ;
+        :creator            bdr:CR488D054D0D17DE18 , bdr:CR6ADB9048607CDB4F , bdr:CRF4EB7D7E7A521586 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T89 ;

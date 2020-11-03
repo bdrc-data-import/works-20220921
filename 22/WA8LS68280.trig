@@ -24,32 +24,38 @@ bdg:WA8LS68280 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGDB377FA982CDADC8
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:WA8LS68280  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68280 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "22/WA8LS68280.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68280 ;
-        adm:logEntry        bda:LG22F037954F0AC311 , bda:LG7ED15ED7786C8F98 ;
+        adm:logEntry        bda:LG22F037954F0AC311 , bda:LG7ED15ED7786C8F98 , bda:LGDB377FA982CDADC8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CRC6759B796787C395
         a                   :AgentAsCreator ;
-        :agent              bdr:P3627 ;
+        :agent              bdr:P4959 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRDB377FA982CDADC8
+    bdr:CRDA41525434BB8E6C
         a                   :AgentAsCreator ;
-        :agent              bdr:P4959 ;
+        :agent              bdr:P3627 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA8LS68280  a       :SerialMember , :Work ;
         skos:altLabel       "gso ba rig pa spyi dang bye brag tu dam pa'i chos dpal ldan sman gyi rgyud bzhi'i chos byung tshul dri med bai DUrya'i me long dang gso ba rig pa'i khog 'bugs legs bshad bai DUrya'i chu rgyun tshogs gnyis rgya mtshos gro sa'i chos grar sbyar ba/"@bo-x-ewts ;
         skos:prefLabel      "gso rig byung tshul dri med bai DUrya'i me long / khog 'bugs legs bshad bai Durya'i chu rgyun/"@bo-x-ewts ;
         :catalogInfo        "Hitory and survey of Tibetan science of medicine by Lungrik Tender and Tshoknyi Gyatsho."@en ;
-        :creator            bdr:CRC6759B796787C395 , bdr:CRDB377FA982CDADC8 ;
+        :creator            bdr:CRC6759B796787C395 , bdr:CRDA41525434BB8E6C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1GS58453 ;

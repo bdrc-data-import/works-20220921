@@ -18,6 +18,12 @@ bdg:WA2KG209028 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG2F8A125784669608
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LGDB99826D01517655
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-11-22T15:52:09.992Z"^^xsd:dateTime ;
@@ -27,15 +33,15 @@ bdg:WA2KG209028 {
     bda:WA2KG209028  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG209028 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "15/WA2KG209028.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG209028 ;
-        adm:logEntry        bda:LG0263E765B0FE3AEB , bda:LGDB99826D01517655 ;
+        adm:logEntry        bda:LG0263E765B0FE3AEB , bda:LG2F8A125784669608 , bda:LGDB99826D01517655 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2F8A125784669608
+    bdr:CR0F2C865260526525
         a                   :AgentAsCreator ;
         :agent              bdr:P00KG01065 ;
         :role               bdr:R0ER0019 .
@@ -45,7 +51,7 @@ bdg:WA2KG209028 {
     bdr:WA2KG209028  a      :Work ;
         skos:prefLabel      "bod kyi tshad ma rig pa'i rtog pa'i skor gyi dpyad bsdur/"@bo-x-ewts , "藏传因明逻辑思维新探"@zh-hans ;
         :catalogInfo        "A study on Buddhist and Tibetan logic."@en ;
-        :creator            bdr:CR2F8A125784669608 ;
+        :creator            bdr:CR0F2C865260526525 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2KG209028 , bdr:W2KG209028 ;

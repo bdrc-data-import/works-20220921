@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS16780 {
+    bda:LG1693C4F165F7FA83
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LG5E3B40C3971D5C12
         a                   adm:InitialDataCreation ;
         adm:logDate         "2015-11-16T15:27:54.508Z"^^xsd:dateTime ;
@@ -40,29 +46,29 @@ bdg:WA8LS16780 {
     bda:WA8LS16780  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS16780 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "8d/WA8LS16780.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS16780 ;
-        adm:logEntry        bda:LG5E3B40C3971D5C12 , bda:LGCBC1BE666D8A3E79 , bda:LGDCBF91FB6D304E0A , bda:LGIM4599A38FCE ;
+        adm:logEntry        bda:LG1693C4F165F7FA83 , bda:LG5E3B40C3971D5C12 , bda:LGCBC1BE666D8A3E79 , bda:LGDCBF91FB6D304E0A , bda:LGIM4599A38FCE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR11760FC084D86292
         a                   :AgentAsCreator ;
-        :agent              bdr:P5013 ;
+        :agent              bdr:P1663 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR1693C4F165F7FA83
+    bdr:CR466261CE10553CEF
         a                   :AgentAsCreator ;
-        :agent              bdr:P1663 ;
+        :agent              bdr:P5013 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA8LS16780  a       :Work ;
         skos:altLabel       "theg pa rim pa mngon du bshad pa'i mdo rgyud dang theg pa rim pa mngon du bshad pa'i mdo rgyud kyi 'grel pa me long dgu skor/"@bo-x-ewts ;
         skos:prefLabel      "theg rim mngon du bshad pa'i mdo rgyud dang de'i 'grel pa/"@bo-x-ewts ;
         :catalogInfo        "The root text of nine vehicle of Bonpo tradition by Vairocana and its commentary by Shardza Tashi Gyaltsen."@en ;
-        :creator            bdr:CR11760FC084D86292 , bdr:CR1693C4F165F7FA83 ;
+        :creator            bdr:CR11760FC084D86292 , bdr:CR466261CE10553CEF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

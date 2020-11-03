@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ355842 {
+    bda:LG1D4218C746ADBA72
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LG694C9387EC34E2B9
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-02-11T16:03:34.128Z"^^xsd:dateTime ;
@@ -27,29 +33,29 @@ bdg:WA4CZ355842 {
     bda:WA4CZ355842  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ355842 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "0b/WA4CZ355842.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ355842 ;
-        adm:logEntry        bda:LG694C9387EC34E2B9 , bda:LG98E4A24E9545C15E ;
+        adm:logEntry        bda:LG1D4218C746ADBA72 , bda:LG694C9387EC34E2B9 , bda:LG98E4A24E9545C15E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR01FBED23B89208A0
         a                   :AgentAsCreator ;
-        :agent              bdr:P139 ;
+        :agent              bdr:P1428 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR1D4218C746ADBA72
+    bdr:CR44FE4203F078147B
         a                   :AgentAsCreator ;
-        :agent              bdr:P1428 ;
+        :agent              bdr:P139 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA4CZ355842  a      :Work ;
         skos:altLabel       "bla ma mchod pa'i cho ga bde legs rab rgyas sogs/"@bo-x-ewts ;
         skos:prefLabel      "jo nang pa'i chos spyod/"@bo-x-ewts ;
         :catalogInfo        "Collection of liturgies text of Jonang order."@en ;
-        :creator            bdr:CR01FBED23B89208A0 , bdr:CR1D4218C746ADBA72 ;
+        :creator            bdr:CR01FBED23B89208A0 , bdr:CR44FE4203F078147B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T225 ;

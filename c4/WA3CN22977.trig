@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN22977 {
+    bda:LG60D2F0F28582335C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
+        adm:logMessage      "updated works scanned in China scanInfo"@en ;
+        adm:logWhoStr       "works-update-scaninfo-from-list" .
+    
     bda:LG7FCC8707ADB7182A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-08-10T10:25:13.568Z"^^xsd:dateTime ;
@@ -33,38 +39,38 @@ bdg:WA3CN22977 {
     bda:WA3CN22977  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN22977 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "c4/WA3CN22977.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN22977 ;
-        adm:logEntry        bda:LG7FCC8707ADB7182A , bda:LGCEF7539ACCA670CD , bda:LGE020E0E8F9F67258 ;
+        adm:logEntry        bda:LG60D2F0F28582335C , bda:LG7FCC8707ADB7182A , bda:LGCEF7539ACCA670CD , bda:LGE020E0E8F9F67258 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR5B8DFA5386CEDCAA
         a                   :AgentAsCreator ;
-        :agent              bdr:P55 ;
+        :agent              bdr:P64 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR60D2F0F28582335C
-        a                   :AgentAsCreator ;
-        :agent              bdr:P65 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRF505E76DB7ED0FCA
+    bdr:CR7E278752EB89A2EE
         a                   :AgentAsCreator ;
         :agent              bdr:P80 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CRF505E76DB7ED0FCA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRFD164A742ACCE7C5
         a                   :AgentAsCreator ;
-        :agent              bdr:P64 ;
+        :agent              bdr:P65 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA3CN22977  a       :Work ;
         skos:prefLabel      "rje tsong kha pa yab sras kyi tshad gzhung yig cha phyogs bsdebs/"@bo-x-ewts ;
         :catalogInfo        "Collection of old woodblock printed texts about the Pramaṇa by Tsongkhapa and his two main disciples."@en ;
-        :creator            bdr:CR5B8DFA5386CEDCAA , bdr:CR60D2F0F28582335C , bdr:CRF505E76DB7ED0FCA , bdr:CRFD164A742ACCE7C5 ;
+        :creator            bdr:CR5B8DFA5386CEDCAA , bdr:CR7E278752EB89A2EE , bdr:CRF505E76DB7ED0FCA , bdr:CRFD164A742ACCE7C5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;
