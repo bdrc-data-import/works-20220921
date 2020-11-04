@@ -18,6 +18,12 @@ bdg:WA1NLM1909 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGE64DC1D808EB91C6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-03T11:37:37.16Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM1909 {
     bda:WA1NLM1909  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1909 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "91/WA1NLM1909.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1909 ;
-        adm:logEntry        bda:LGDB8DF94B5CA7829F , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LGDB8DF94B5CA7829F , bda:LGE64DC1D808EB91C6 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1909  a       :Work ;
-        skos:prefLabel      "chos brgyad bcos pa bsdus sogs/"@bo-x-ewts ;
+        skos:prefLabel      "chos brgyad bcos pa bsdus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals and liturgical texts"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM1909 , bdr:W1NLM1909 .
 }

@@ -18,6 +18,12 @@ bdg:WA1NLM1709 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGD55734FA520352F7
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-03T10:07:42.143Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA07EBF90  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1709 {
     bda:WA1NLM1709  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1709 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "81/WA1NLM1709.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1709 ;
-        adm:logEntry        bda:LGB9FE5D1331243764 , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LGB9FE5D1331243764 , bda:LGD55734FA520352F7 , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1709  a       :Work ;
         skos:prefLabel      "ye shes kyi mkha' 'gro ma lab sgron sde lnga'i chog dngos grub yid bzhin gter mdzod la bsnyen pa drag po bsgral las gnam lcags zhun m'i' 'khrul 'khor dgra bgegs dpung 'joms nag po sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 ma gcig lab sgron ma'i gcod yul brgyud pa'i gsol 'debs dngos grub mchog bstsol/ 2 'phags pa tshe dang ye shes dpag tu med pa zhes bya ba theg pa chen po'i mdo/ 3 btsan grub dag po bsangs gsol mchod/ 4 dregs pa sde brgyad gser skyems gtong ba'i cho ga bdud rtsi'i rlabs 'phreng / 5 bcu gsum bsangs mchod/ 6 mgon po phyag drug tshogs 'khor/ 7 gza' nyi ma mig dmar gyi lung bzlog bco thabs bya tshul/ 8 dzam+b+ha la dkar po'i chu sbyin bya tshul/ 9 mtshun lha'i gsol mchod ma/ 10 brgyad stong pa bsdus pa/ skyabs mgon rje btsun tA ra nA thA'i/ bka' rtsom gnang ba/ byin rlabs chos gos bla gos/ 11 klu gtor bsdus pa/"@en , "A wrathful ritual based on the five deity Jnyadakini Labgron; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1709 , bdr:W1NLM1709 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1709 , bdr:W1NLM1709 ;
+        :workIsAbout        bdr:P3312 , bdr:T1768 , bdr:T1808 .
 }

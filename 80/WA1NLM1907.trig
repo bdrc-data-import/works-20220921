@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1907 {
+    bda:LG60B34F0D1EA2D495
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-03T11:37:36.803Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG861F15EBC4896043
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1907 {
     bda:WA1NLM1907  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1907 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "80/WA1NLM1907.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1907 ;
-        adm:logEntry        bda:LG861F15EBC4896043 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG60B34F0D1EA2D495 , bda:LG861F15EBC4896043 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1907  a       :Work ;
         skos:prefLabel      "rta mgrin gsang sgrub bka' sdod bcas pa mchod cing bskang bshags bzlog pa bya ba'i cho ga dngos grub char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Propitiation of Hayagriva and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1907 , bdr:W1NLM1907 .
+        :workGenre          bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1907 , bdr:W1NLM1907 ;
+        :workIsAbout        bdr:T50 .
 }
