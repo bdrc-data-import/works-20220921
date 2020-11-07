@@ -12,28 +12,40 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ364071 {
+    bda:LG322CAC570211A2C9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-06T15:05:23.522Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG69F6503A4FD0B0F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-06T15:05:55.176Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGB9D635241CF1ADBF
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-11-05T16:32:25.285Z"^^xsd:dateTime ;
+        adm:logDate         "2020-11-06T12:27:21.674Z"^^xsd:dateTime ;
+        adm:logMessage      "new cat and released"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ364071  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ364071 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "64/WA4CZ364071.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ364071 ;
-        adm:logEntry        bda:LGB9D635241CF1ADBF ;
+        adm:logEntry        bda:LG322CAC570211A2C9 , bda:LG69F6503A4FD0B0F1 , bda:LGB9D635241CF1ADBF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA4CZ364071  a      :Work ;
-        skos:altLabel       "rus pa'i rgyan can gyi mi la ras pa'i rnam thar ggzhir bzung /"@bo-x-ewts ;
+        skos:altLabel       "rus pa'i rgyan can gyi mi la ras pa'i rnam thar gzhir bzung /"@bo-x-ewts ;
         skos:prefLabel      "mi la ras pa'i rnam thar gyi rtsom rig khyad chos gleng ba/"@bo-x-ewts ;
         :catalogInfo        "An analysis of amang Milarepa's biographies"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ364071 ;
+        :workHasInstance    bdr:MW4CZ364071 , bdr:W4CZ364071 ;
         :workIsAbout        bdr:P442 , bdr:T1979 .
 }
