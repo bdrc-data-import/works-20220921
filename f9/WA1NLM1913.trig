@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1913 {
+    bda:LG43E6D6FDD3A3731E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-09T17:05:48.111Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG8F16BC69CCC19859
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM1913 {
     bda:WA1NLM1913  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1913 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "f9/WA1NLM1913.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1913 ;
-        adm:logEntry        bda:LG8F16BC69CCC19859 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG43E6D6FDD3A3731E , bda:LG8F16BC69CCC19859 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1913  a       :Work ;
-        skos:prefLabel      "rje btsun byams pa mgon po la mchod bstod cing smon lam btab la gsol ba 'dab pa'i mdo chog ji ltar tshul sogs/"@bo-x-ewts ;
+        skos:altLabel       "rje btsun byams pa mgon po la mchod bstod cing smon lam btab la gsol ba 'dab pa'i mdo chog ji ltar tshul/"@bo-x-ewts ;
+        skos:prefLabel      "byams pa mgon po la mchod bstod cing smon lam btab la gsol ba 'dab pa'i mdo chog ji ltar tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "A daily recitation of prayer, verses of praise, repelling rituals and other liturgical texts"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1913 , bdr:W1NLM1913 .
+        :workGenre          bdr:T34 ;
+        :workHasInstance    bdr:MW1NLM1913 , bdr:W1NLM1913 ;
+        :workIsAbout        bdr:T1726 .
 }

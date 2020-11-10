@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1912 {
+    bda:LG18B35E0AF9C9EB60
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-09T17:05:47.794Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGE5461A72C9C8DF5A
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM1912 {
     bda:WA1NLM1912  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1912 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "fb/WA1NLM1912.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1912 ;
-        adm:logEntry        bda:LGE5461A72C9C8DF5A , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG18B35E0AF9C9EB60 , bda:LGE5461A72C9C8DF5A , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1912  a       :Work ;
         skos:prefLabel      "gser gyi rus spal gyi bcos thabs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals and liturgical texts"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM1912 , bdr:W1NLM1912 .
 }

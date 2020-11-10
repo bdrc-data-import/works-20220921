@@ -12,10 +12,22 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ301805 {
+    bda:LG28A1151A50AEE5B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-09T13:24:10.722Z"^^xsd:dateTime ;
+        adm:logMessage      "re ssend scan requiest"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG2A0C3BC1F1C87C48
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-12-14T13:54:34.401Z"^^xsd:dateTime ;
         adm:logMessage      "new and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG6382FD272B8EB318
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-09T16:08:58.479Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LGE4B3E5703112961F
@@ -27,15 +39,15 @@ bdg:WA4CZ301805 {
     bda:WA4CZ301805  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ301805 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "13/WA4CZ301805.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ301805 ;
-        adm:logEntry        bda:LG2A0C3BC1F1C87C48 , bda:LGE4B3E5703112961F ;
+        adm:logEntry        bda:LG28A1151A50AEE5B0 , bda:LG2A0C3BC1F1C87C48 , bda:LG6382FD272B8EB318 , bda:LGE4B3E5703112961F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR28A1151A50AEE5B0
+    bdr:CRE7F8FEAAA8A34E92
         a                   :AgentAsCreator ;
         :agent              bdr:P2627 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +56,7 @@ bdg:WA4CZ301805 {
         skos:altLabel       "dpal de kho na nyid 'dus pa'i snying po'i chos spyod rab tu gsal ba/"@bo-x-ewts ;
         skos:prefLabel      "de nyid 'dus pa'i snying po'i chos spyod rab tu gsal ba/"@bo-x-ewts ;
         :catalogInfo        "Collection of rituals and prayers of the Denyi Dupa."@en ;
-        :creator            bdr:CR28A1151A50AEE5B0 ;
+        :creator            bdr:CRE7F8FEAAA8A34E92 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T225 , bdr:T4CZ71 ;

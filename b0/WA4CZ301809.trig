@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ301809 {
+    bda:LG24EA0E8A5C257B20
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-09T16:10:11.713Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG34ECFA35A73683F1
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-12-14T14:05:25.174Z"^^xsd:dateTime ;
@@ -24,18 +30,24 @@ bdg:WA4CZ301809 {
         adm:logMessage      "new and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGAB3671A0CF45386C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-09T13:24:12.277Z"^^xsd:dateTime ;
+        adm:logMessage      "re ssend scan requiest"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ301809  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ301809 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "b0/WA4CZ301809.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ301809 ;
-        adm:logEntry        bda:LG34ECFA35A73683F1 , bda:LG35AF11299A09B07A ;
+        adm:logEntry        bda:LG24EA0E8A5C257B20 , bda:LG34ECFA35A73683F1 , bda:LG35AF11299A09B07A , bda:LGAB3671A0CF45386C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRAB3671A0CF45386C
+    bdr:CR7D82A99D4CCE3013
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ301811 ;
         :role               bdr:R0ER0019 .
@@ -43,7 +55,8 @@ bdg:WA4CZ301809 {
     bdr:WA4CZ301809  a      :Work ;
         skos:altLabel       "rgyal ba yang dgon chos rje'i rnam thar yid bzhin nor bu/"@bo-x-ewts ;
         skos:prefLabel      "yang dgon chos rje'i rnam thar yid bzhin nor bu/"@bo-x-ewts ;
-        :creator            bdr:CRAB3671A0CF45386C ;
+        :catalogInfo        "Biography of Yangon Choje"@en ;
+        :creator            bdr:CR7D82A99D4CCE3013 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 , bdr:T4CZ71 ;

@@ -24,31 +24,43 @@ bdg:WA4CZ301801 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGAE5E510FE3B7B690
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-09T13:24:08.601Z"^^xsd:dateTime ;
+        adm:logMessage      "re ssend scan requiest"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGDA03913B1F4F6B20
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-09T16:06:57.518Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ301801  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ301801 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "61/WA4CZ301801.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ301801 ;
-        adm:logEntry        bda:LG546DB69FA179FF7C , bda:LG642E9892932BB591 ;
+        adm:logEntry        bda:LG546DB69FA179FF7C , bda:LG642E9892932BB591 , bda:LGAE5E510FE3B7B690 , bda:LGDA03913B1F4F6B20 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRAE5E510FE3B7B690
+    bdr:CR8CF21D99B4210ACC
         a                   :AgentAsCreator ;
-        :agent              bdr:P6161 ;
-        :role               bdr:R0ER0019 .
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
     
-    bdr:CRDA03913B1F4F6B20
+    bdr:CRC1CA264745F8B374
         a                   :AgentAsCreator ;
         :agent              bdr:P00KG07267 ;
         :role               bdr:R0ER0018 .
     
     bdr:CRDD239C1E2BF1703B
         a                   :AgentAsCreator ;
-        :agent              bdr:P8205 ;
-        :role               bdr:R0ER0026 .
+        :agent              bdr:P6161 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW4CZ301801  skos:altLabel  "bodhicaryavatara"@sa-x-ndia .
     
@@ -56,7 +68,7 @@ bdg:WA4CZ301801 {
         skos:altLabel       "byang chub sems dpa'i spyod pa la 'jug pa/"@bo-x-ewts ;
         skos:prefLabel      "spyod 'jug"@bo-x-ewts , "bodhicaryavatara"@sa-x-ndia ;
         :catalogInfo        "Root text of the Bodhicaryavatara by Shantideva."@en ;
-        :creator            bdr:CRAE5E510FE3B7B690 , bdr:CRDA03913B1F4F6B20 , bdr:CRDD239C1E2BF1703B ;
+        :creator            bdr:CR8CF21D99B4210ACC , bdr:CRC1CA264745F8B374 , bdr:CRDD239C1E2BF1703B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T4CZ71 ;

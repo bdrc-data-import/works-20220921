@@ -12,9 +12,21 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ301814 {
+    bda:LG0E4756AD883AF898
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-09T13:24:13.713Z"^^xsd:dateTime ;
+        adm:logMessage      "re ssend scan requiest"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG175F6E5723372140
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-12-14T14:12:10.788Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG77050DADF4319BB4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-09T16:17:41.395Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -27,15 +39,15 @@ bdg:WA4CZ301814 {
     bda:WA4CZ301814  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ301814 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "15/WA4CZ301814.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ301814 ;
-        adm:logEntry        bda:LG175F6E5723372140 , bda:LGE630EE3388CD1787 ;
+        adm:logEntry        bda:LG0E4756AD883AF898 , bda:LG175F6E5723372140 , bda:LG77050DADF4319BB4 , bda:LGE630EE3388CD1787 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0E4756AD883AF898
+    bdr:CR32796144F151A0E2
         a                   :AgentAsCreator ;
         :agent              bdr:P1932 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +56,7 @@ bdg:WA4CZ301814 {
         skos:altLabel       "rje btsun 'bar ra ba rgyal mtshan dpal bzang po'i rnam thar mgur 'bum dang bcas pa/"@bo-x-ewts ;
         skos:prefLabel      "'ba' ra ba rgyal mtshan dpal bzang po'i rnam thar mgur 'bum/"@bo-x-ewts ;
         :catalogInfo        "Biography and select songs by Kagyu master Barawa Gyatsen Pelzang (1310-1391). Includes writings on sadhana practice."@en ;
-        :creator            bdr:CR0E4756AD883AF898 ;
+        :creator            bdr:CR32796144F151A0E2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T184 , bdr:T1CZ60 ;
