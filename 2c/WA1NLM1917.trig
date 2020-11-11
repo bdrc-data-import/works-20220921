@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1917 {
+    bda:LG180801A116AFA819
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-10T12:34:46.824Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGBDA53387476B1EFD
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1917 {
     bda:WA1NLM1917  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1917 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "2c/WA1NLM1917.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1917 ;
-        adm:logEntry        bda:LGBDA53387476B1EFD , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG180801A116AFA819 , bda:LGBDA53387476B1EFD , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1917  a       :Work ;
         skos:prefLabel      "bkra shis brtsegs pa'i g.yang 'gugs byed tshul gyi cho ga bkra shis dge mtshan 'gugs byed dgos 'dod kun 'byung sogs/"@bo-x-ewts ;
+        :catalogInfo        "A prosperity ritual and save the life of animals other miscellaneous liturgical and rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1917 , bdr:W1NLM1917 .
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW1NLM1917 , bdr:W1NLM1917 ;
+        :workIsAbout        bdr:T22 , bdr:T444 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1715 {
+    bda:LG2B054B33831FE471
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-10T14:51:02.063Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGC3851FB769DF9E85
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1715 {
     bda:WA1NLM1715  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1715 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "4b/WA1NLM1715.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1715 ;
-        adm:logEntry        bda:LGC3851FB769DF9E85 , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG2B054B33831FE471 , bda:LGC3851FB769DF9E85 , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1715  a       :Work ;
-        skos:prefLabel      "sgrol ma maN+Dal bzhi pa'i cho ga gdon cha go rim sogs/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma maN+Dal bzhi pa'i cho ga 'don cha go rim sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rje btsun sgrol ma'i gdung 'bod rat+na'i 'phreng ba zhes bya ba ma ti sa ras mdzad pa/ 2 rje btsun sgrol ma'i sgrub thabs/ 3 rje rin po che'i gsang ba'i rnam thar/ 4 sa bdag chab gtor gyi lhan thabs/ 5 rgyal chen bzhi la gtor ma 'bul tshul las bzhi'i dngos grub kun 'byung / 6 'phags pa 'jam dpal gzhon nur gyur pa la phyag 'tshal lo/ 7 slob dpon sam+b+h wa'i mdzad pa rgya nag spangs 'bum bsangs pad+ma/ 8 me lha'i bsangs/ 9 sngon po'i tshe thar bsang / 10 skeg gi bto bcos pa/ 11 rnam dag gangs ri/ 12 chos skyong dreg pa lcam sring gi gser skyems/"@en , "Liturgical recitation of four mandala Tara by Matisara; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1715 , bdr:W1NLM1715 .
+        :workGenre          bdr:T536 ;
+        :workHasInstance    bdr:MW1NLM1715 , bdr:W1NLM1715 ;
+        :workIsAbout        bdr:T1709 .
 }

@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1921 {
+    bda:LG053B7F3D13BC4495
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-10T16:41:19.755Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGC1B14B48605F3BDC
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,21 @@ bdg:WA1NLM1921 {
     bda:WA1NLM1921  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1921 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "63/WA1NLM1921.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1921 ;
-        adm:logEntry        bda:LGC1B14B48605F3BDC , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG053B7F3D13BC4495 , bda:LGC1B14B48605F3BDC , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1921  a       :Work ;
-        skos:prefLabel      "sna tshogs yum gyi maN+Dal bzhi pa 'brum nad sogs rims nad zhi zhir yang pa'i phyir sna tshogs yum bsgom mchod bzlas pa cho ga gdung sel chu 'dzin sogs/"@bo-x-ewts ;
+        skos:altLabel       "sna tshogs yum gyi maN+Dal bzhi pa 'brum nad sogs rims nad zhi zhir yang pa'i phyir sna tshogs yum bsgom mchod bzlas pa cho ga gdung sel chu 'dzin sogs/"@bo-x-ewts ;
+        skos:prefLabel      "'brum nad sogs rims nad zhi zhir yang pa'i phyir sna tshogs yum bsgom mchod bzlas pa cho ga gdung sel chu 'dzin sogs/"@bo-x-ewts ;
+        :catalogInfo        "Method for preventing smallpox by means of the visvamatr-sadhan and other miscellaneous rituls"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1921 , bdr:W1NLM1921 .
+        :workGenre          bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1921 , bdr:W1NLM1921 ;
+        :workIsAbout        bdr:T1GS139157 .
 }

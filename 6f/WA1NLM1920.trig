@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1920 {
+    bda:LG6B0518D08A78D558
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-10T12:34:47.931Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGFD3120E727997F84
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM1920 {
     bda:WA1NLM1920  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1920 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "6f/WA1NLM1920.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1920 ;
-        adm:logEntry        bda:LGFD3120E727997F84 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG6B0518D08A78D558 , bda:LGFD3120E727997F84 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1920  a       :Work ;
         skos:prefLabel      "chos skyong lcam sring gi bsnyen sgrub sogs/"@bo-x-ewts ;
+        :catalogInfo        "A dice prognostication of glorious army-repulsing queen and explanation of its result including collection of rituals and liturgical texts"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM1920 , bdr:W1NLM1920 .
 }
