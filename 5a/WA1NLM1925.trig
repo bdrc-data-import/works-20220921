@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1925 {
+    bda:LG28538217BF1926FA
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-11T10:25:17.428Z"^^xsd:dateTime ;
+        adm:logMessage      "released for outline"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGEE3FC2C57BEFE122
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM1925 {
     bda:WA1NLM1925  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1925 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "5a/WA1NLM1925.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1925 ;
-        adm:logEntry        bda:LGEE3FC2C57BEFE122 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG28538217BF1926FA , bda:LGEE3FC2C57BEFE122 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1925  a       :Work ;
-        skos:prefLabel      "'phags ma sgrol ma la phyag 'tshal nyi shu rtsa gcig gi bstod pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "'phags ma sgrol ma la phyag 'tshal nyi shu rtsa gcig gi bstod pa/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma la phyag 'tshal nyi shu rtsa gcig gi bstod pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Hymn to Namastare-ekavimsatistotra and a collection of minor devotional works"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1925 , bdr:W1NLM1925 .
+        :workGenre          bdr:T67 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1925 , bdr:W1NLM1925 ;
+        :workIsAbout        bdr:T619 .
 }

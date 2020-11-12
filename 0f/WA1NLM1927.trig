@@ -18,6 +18,11 @@ bdg:WA1NLM1927 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGB9F4AFCD8B1B8443
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-11T13:54:34.701Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +32,21 @@ bdg:WA1NLM1927 {
     bda:WA1NLM1927  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1927 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "0f/WA1NLM1927.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1927 ;
-        adm:logEntry        bda:LG3B329A843223FD80 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG3B329A843223FD80 , bda:LGB9F4AFCD8B1B8443 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1927  a       :Work ;
-        skos:prefLabel      "'phags pa 'jam dpal gyi mtshan yang dag par brjod sogs/"@bo-x-ewts ;
+        skos:altLabel       "'phags pa 'jam dpal gyi mtshan yang dag par brjod/"@bo-x-ewts ;
+        skos:prefLabel      "'jam dpal mtshan brjod/"@bo-x-ewts ;
+        :catalogInfo        "Argya Manjushri Namasangiti ( two different printed matter edition)"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1927 , bdr:W1NLM1927 .
+        :workGenre          bdr:T1KG8787 ;
+        :workHasInstance    bdr:MW1NLM1927 , bdr:W1NLM1927 ;
+        :workIsAbout        bdr:T1212 .
 }

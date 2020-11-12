@@ -12,14 +12,20 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA19567 {
+    bda:LG411FAFA0CAC0C221
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGB2D380A3FE85FA38
         a                   adm:UpdateData ;
         adm:logDate         "2009-11-20T12:49:00.932Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
     
     bda:LGFB1AB6E870285753
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-11T11:01:22.563Z"^^xsd:dateTime ;
+        adm:logMessage      "changed sealed to copyright"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -31,25 +37,26 @@ bdg:WA19567 {
     bda:WA19567  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19567 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "74/WA19567.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19567 ;
-        adm:logEntry        bda:LGB2D380A3FE85FA38 , bda:LGFB1AB6E870285753 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG411FAFA0CAC0C221 , bda:LGB2D380A3FE85FA38 , bda:LGFB1AB6E870285753 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR411FAFA0CAC0C221
+    bdr:CR744CBB565540B530
         a                   :AgentAsCreator ;
         :agent              bdr:P5928 ;
         :role               bdr:R0ER0019 .
     
-    bdr:MW19567  skos:altLabel  "Rje Dpyi-sa Blo-gros-rgya-mtshoʾi gsuṅ rtsom."@en-x-mixed , "hsi-sha lo-che-chia-tso wen chi"@zh-latn-wadegile .
+    bdr:MW19567  skos:altLabel  "hsi-sha lo-che-chia-tso wen chi"@zh-latn-wadegile .
     
     bdr:WA19567  a          :Work ;
         skos:altLabel       "rje dpyi sa blo gros rgya mtsho'i gsung rtsom/"@bo-x-ewts , "xisha luozhejiacuo wen ji"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "gsung 'bum/_blo gros rgya mtsho/"@bo-x-ewts , "Rje Dpyi-sa Blo-gros-rgya-mtshoʾi gsuṅ rtsom."@en-x-mixed , "hsi-sha lo-che-chia-tso wen chi"@zh-latn-wadegile ;
-        :creator            bdr:CR411FAFA0CAC0C221 ;
+        skos:prefLabel      "gsung 'bum/_blo gros rgya mtsho/"@bo-x-ewts , "hsi-sha lo-che-chia-tso wen chi"@zh-latn-wadegile ;
+        :catalogInfo        "Collected works of a Gelug master Chisa Lodro Gyatso (1890-1959)."@en ;
+        :creator            bdr:CR744CBB565540B530 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

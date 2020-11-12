@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1923 {
+    bda:LG45D3FC51C1F60083
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-11T13:50:55.365Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG7C4133EF49815803
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM1923 {
     bda:WA1NLM1923  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1923 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "eb/WA1NLM1923.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1923 ;
-        adm:logEntry        bda:LG7C4133EF49815803 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG45D3FC51C1F60083 , bda:LG7C4133EF49815803 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1923  a       :Work ;
-        skos:prefLabel      "dpal gsang ba 'dus pa'i rtsa rgyud/"@bo-x-ewts ;
+        skos:altLabel       "dpal gsang ba 'dus pa'i rtsa rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "gsang 'dus rtsa rgyud/"@bo-x-ewts ;
+        :catalogInfo        "The root text of Guhyasamaja tantra"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1923 , bdr:W1NLM1923 .
+        :workHasInstance    bdr:MW1NLM1923 , bdr:W1NLM1923 ;
+        :workIsAbout        bdr:T1PD95 , bdr:T417 .
 }

@@ -18,6 +18,11 @@ bdg:WA1NLM1926 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGF0CA51D0D20C2B6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-11T13:50:55.856Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM1926 {
     bda:WA1NLM1926  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1926 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "7c/WA1NLM1926.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1926 ;
-        adm:logEntry        bda:LG82535069E40E6929 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG82535069E40E6929 , bda:LGF0CA51D0D20C2B6E , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1926  a       :Work ;
-        skos:prefLabel      "slob dpon chen po pad+mo kA ra'i zhabs kyis mdzad pa'i 'bum bsangs bai DUrya'i sngon po bkra shis 'dod pa'i re skong ma sogs/"@bo-x-ewts ;
+        skos:altLabel       "slob dpon chen po pad+mo kA ra'i zhabs kyis mdzad pa'i 'bum bsangs bai DUrya'i sngon po bkra shis 'dod pa'i re skong ma/"@bo-x-ewts ;
+        skos:prefLabel      "'bum bsangs bai DUrya'i sngon po bkra shis 'dod pa'i re skong ma sogs/"@bo-x-ewts ;
+        :catalogInfo        "Method for propitiation of various local deities through the smoke-offering other miscellaneous rituls"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1926 , bdr:W1NLM1926 .
+        :workHasInstance    bdr:MW1NLM1926 , bdr:W1NLM1926 ;
+        :workIsAbout        bdr:T00AG01323 , bdr:T173 .
 }
