@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1935 {
+    bda:LG05EF839F22A33740
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-12T16:40:47.481Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG1C4DCC2731DCA01C
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM1935 {
     bda:WA1NLM1935  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1935 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9e/WA1NLM1935.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1935 ;
-        adm:logEntry        bda:LG1C4DCC2731DCA01C , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG05EF839F22A33740 , bda:LG1C4DCC2731DCA01C , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1935  a       :Work ;
-        skos:prefLabel      "'phags pa brgyad stong pa'i klog thabs dngos grub kun 'byung sogs/"@bo-x-ewts ;
+        skos:altLabel       "'phags pa brgyad stong pa'i klog thabs dngos grub kun 'byung /"@bo-x-ewts ;
+        skos:prefLabel      "brgyad stong pa'i klog thabs dngos grub kun 'byung sogs/"@bo-x-ewts ;
+        :catalogInfo        "Method of reading Prajnaparamita in eight thousand verses and other miscellaneous rituls"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1935 , bdr:W1NLM1935 .
+        :workGenre          bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1935 , bdr:W1NLM1935 ;
+        :workIsAbout        bdr:T1016 .
 }

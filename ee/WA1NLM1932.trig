@@ -18,6 +18,12 @@ bdg:WA1NLM1932 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG20E20F538FC9B3E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-12T16:40:46.092Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM1932 {
     bda:WA1NLM1932  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1932 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ee/WA1NLM1932.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1932 ;
-        adm:logEntry        bda:LG133FC64BDFD74B68 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG133FC64BDFD74B68 , bda:LG20E20F538FC9B3E6 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1932  a       :Work ;
-        skos:prefLabel      "gdugs dkar kyi byed grol dar lcog sogs/"@bo-x-ewts ;
+        skos:prefLabel      "gdugs dkar kyi byad grol dar lcog sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of minor devotional works and other miscellaneous rituls"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM1932 , bdr:W1NLM1932 .
 }

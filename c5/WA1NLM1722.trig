@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1722 {
+    bda:LGB76E067358DDEB96
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-12T13:57:04.708Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGC2819FAEEFAFBFA1
         a                   adm:UpdateData ;
         adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
@@ -33,17 +39,25 @@ bdg:WA1NLM1722 {
     bda:WA1NLM1722  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1722 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c5/WA1NLM1722.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1722 ;
-        adm:logEntry        bda:LGC2819FAEEFAFBFA1 , bda:LGDEA718422E04EE00 , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LGB76E067358DDEB96 , bda:LGC2819FAEEFAFBFA1 , bda:LGDEA718422E04EE00 , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR359F4D554A6609BB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10132 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1722  a       :Work ;
         skos:prefLabel      "bla ma rgyang 'bod dang 'brel bar byang chub lam rim gyi snying po'i don nyams su len tshul thar 'dod nye lam gyi zur 'debs lag len rab gsal sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 myur mdzad ye shes kyi mgon po'i gtor chog cha lag"@bo-x-ewts , "A supplementary to the practice of graduated approach by Agwandampa; other text also included."@en ;
+        :creator            bdr:CR359F4D554A6609BB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T00AG0572 , bdr:T238 ;
         :workHasInstance    bdr:MW1NLM1722 , bdr:W1NLM1722 .
 }

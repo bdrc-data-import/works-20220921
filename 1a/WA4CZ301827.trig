@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ301827 {
+    bda:LG00A0BB2B2E3D4F7E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-12T09:17:01.616Z"^^xsd:dateTime ;
+        adm:logMessage      "removed old scan requist"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG88CDE7057BCD1762
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-12-14T13:54:40.191Z"^^xsd:dateTime ;
@@ -22,6 +28,12 @@ bdg:WA4CZ301827 {
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-09T13:24:19.819Z"^^xsd:dateTime ;
         adm:logMessage      "re ssend scan requiest"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGBFD09B02D2B3A78C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-11-12T09:20:23.962Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LGC55BC1E8351DF918
@@ -39,20 +51,20 @@ bdg:WA4CZ301827 {
     bda:WA4CZ301827  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ301827 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "1a/WA4CZ301827.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ301827 ;
-        adm:logEntry        bda:LG88CDE7057BCD1762 , bda:LG9656D670DAB01A56 , bda:LGC55BC1E8351DF918 , bda:LGCBD2251415409BEA ;
+        adm:logEntry        bda:LG00A0BB2B2E3D4F7E , bda:LG88CDE7057BCD1762 , bda:LG9656D670DAB01A56 , bda:LGBFD09B02D2B3A78C , bda:LGC55BC1E8351DF918 , bda:LGCBD2251415409BEA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR00A0BB2B2E3D4F7E
+    bdr:CRCE6F941479F3BE4E
         a                   :AgentAsCreator ;
         :agent              bdr:P2577 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVBFD09B02D2B3A78C
+    bdr:EV2FB104A8178E112C
         a                   :CompletedEvent ;
         :onYear             "1520"^^xsd:gYear .
     
@@ -60,10 +72,10 @@ bdg:WA4CZ301827 {
         skos:altLabel       "chos kyi rje dpal ldan sgam po pa chen po'i rnam par thar pa yid bzhin gyi nor bu rin po che kun khyab snyan pa'i ba dan thar pa rin po che'i rgyan gyi mchog"@bo-x-ewts ;
         skos:prefLabel      "sgam po pa chen po'i rnam thar yid bzhin gyi nor bu rin po che kun khyab snyan pa'i ba dan thar pa rin po che'i rgyan gyi mchog"@bo-x-ewts ;
         :catalogInfo        "The life of Gampopa Sonam RInchen; written in 1520 by the subject's descendant, Gampopa Sonam Lhundrub"@en ;
-        :creator            bdr:CR00A0BB2B2E3D4F7E ;
+        :creator            bdr:CRCE6F941479F3BE4E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVBFD09B02D2B3A78C ;
+        :workEvent          bdr:EV2FB104A8178E112C ;
         :workGenre          bdr:T3 , bdr:T4CZ71 ;
         :workHasInstance    bdr:MW20499_A7AA4B , bdr:MW4CZ301827 , bdr:W4CZ301827 ;
         :workIsAbout        bdr:P1844 .
