@@ -18,6 +18,11 @@ bdg:WA1NLM1728 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGF267D80F05F1F559
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-16T15:10:13.846Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA07EBF90  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
@@ -27,17 +32,19 @@ bdg:WA1NLM1728 {
     bda:WA1NLM1728  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1728 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "37/WA1NLM1728.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1728 ;
-        adm:logEntry        bda:LG0269E8E260FAB9B1 , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG0269E8E260FAB9B1 , bda:LGF267D80F05F1F559 , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1728  a       :Work ;
         skos:prefLabel      "tshes la rgyu ba'i sa bdag rnams 'bras bshad dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 gcod kyi bsrung ma'i las bzhi ma mgon bsrung ma la mchod gtor 'bul ba/ 2 bka' bsrung gsol mchod/ 3 mkha' 'gro'i bzhengs bskul dang 'bum bskul bzhengs/ 4 dgongs bskyod ma/ 5 gsol 'debs ngo tsha ma/ 6 ne ser 'brang rgyas/ 7 ne ser jo po chen po'i gtor tshogs/ 8 rta mchog rol ba'i rnal 'byor pas/ /rang gzhan don du gtor ma dang / /gser skyems bsangs sogs gtong ba'i skabs/ /'dod gsol kha bsgyur byed tshul/ 9 rje btsun blo bzang chos kyi rgyal mtshan gyis mdzad pa'i gtor ma rtsa/ 10 dge slong gi bslab bya lung gi bar sdom mchan dang bcas pa/ 11 rta mgrin gsang sgrub kyis gtang rag 12 spyi swa ni go rim 'don cha/"@en , "Prognostication of Lords of earth; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1728 , bdr:W1NLM1728 .
+        :workHasInstance    bdr:MW1NLM1728 , bdr:W1NLM1728 ;
+        :workIsAbout        bdr:T1448 , bdr:T1911 .
 }
