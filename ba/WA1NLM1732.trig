@@ -18,6 +18,12 @@ bdg:WA1NLM1732 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGAE6F3F3EAFEEB639
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-17T12:04:39.98Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA07EBF90  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1732 {
     bda:WA1NLM1732  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1732 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ba/WA1NLM1732.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1732 ;
-        adm:logEntry        bda:LG8439F432B69CAA04 , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG8439F432B69CAA04 , bda:LGAE6F3F3EAFEEB639 , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1732  a       :Work ;
         skos:prefLabel      "sman bla'i mdo cho ga 'don bzur bkol pa yid bzhin dbang rgyal sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rje btsun dam pa rgyal khrir bzhugs pa'i gsang ba'i rnam thar rgyal sras dga' ston rgya mtsho/"@bo-x-ewts , "A supplementary to the recitation of medicine Buddha; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1732 , bdr:W1NLM1732 .
+        :workGenre          bdr:T00AG0572 , bdr:T536 ;
+        :workHasInstance    bdr:MW1NLM1732 , bdr:W1NLM1732 ;
+        :workIsAbout        bdr:T870 .
 }

@@ -18,6 +18,12 @@ bdg:WA1NLM1731 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG9CB08EF08F67F74C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-17T11:36:22.293Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA07EBF90  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1731 {
     bda:WA1NLM1731  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1731 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ba/WA1NLM1731.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1731 ;
-        adm:logEntry        bda:LG6B46D0D294554410 , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG6B46D0D294554410 , bda:LG9CB08EF08F67F74C , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1NLM156 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:WA1NLM1731  a       :Work ;
         skos:prefLabel      "'phags pa shes rab kyi pha rol tu phyin pa yon tan rin po che sdud pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sgrol ma maN+Dal bzhi ba'i cho ga phan bde'i dpal ster/ 2 blud rdzongs shin tu bsdu pa 'phral skyen myur bzlog 3 bkra shis brtsegs pa'i g.yang 'gug 4 mchod gtor phyi nang gsang ba/ 5 glang po pany+ca rak+Sha/ 6 bde gshegs gtsug tor/ 7 hal ha'i yul bzangs mchod pa/ 8 rta legs/ 9 bcu pa'i skabs su bkra shis don grub phyogs bzhir 'dod na/"@en , "Ratnagunasancayagatha prajnaparamita sutra; other text also included."@en ;
         :isRoot             true ;
-        :language           bdr:LangBo .
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workIsAbout        bdr:T36 .
 }

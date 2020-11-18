@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1730 {
+    bda:LG3EA1AF9EEAB6B9C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-17T10:53:02.037Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG6EFD8258A6A30CC7
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1730 {
     bda:WA1NLM1730  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1730 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "52/WA1NLM1730.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1730 ;
-        adm:logEntry        bda:LG6EFD8258A6A30CC7 , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG3EA1AF9EEAB6B9C9 , bda:LG6EFD8258A6A30CC7 , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1NLM1485 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:WA1NLM1730  a       :Work ;
         skos:prefLabel      "'phags pa shes rab kyi pha rol tu phyin pa rdo rje gcod pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bla ma yum chen dbyer med dang /mkha' 'gro tshogs la gus pas 'dud/ 2 gcod yul gyi bstan bsrung la gtor ma 'gul bar 'dod pa/ 3 ma gcig gi bshags pa/ 4 dgongs bskyed ma/"@bo-x-ewts , "Arya Vajrachedika Prajnaparamita sutra; other text also included."@en ;
         :isRoot             true ;
-        :language           bdr:LangBo .
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workIsAbout        bdr:T36 .
 }
