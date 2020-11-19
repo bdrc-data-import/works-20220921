@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1736 {
+    bda:LGB79659FBD4B8DB15
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-18T12:39:35.258Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGEC431F6F2F9E9B2B
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1736 {
     bda:WA1NLM1736  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1736 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "23/WA1NLM1736.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1736 ;
-        adm:logEntry        bda:LGEC431F6F2F9E9B2B , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LGB79659FBD4B8DB15 , bda:LGEC431F6F2F9E9B2B , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1736  a       :Work ;
-        skos:prefLabel      "drug bcu pa sdus pa'i ngag 'don bgegs dpung kun 'joms sogs/"@bo-x-ewts ;
+        skos:prefLabel      "drug bcu pa bsdus pa'i ngag 'don bgegs dpung kun 'joms sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bde gshegs brgyad la a ru ra'i stong mchod 'bul tshul/ 2 dpal rdo rje 'jigs byed lhan skyes kyi bsgom bzlas mdor bsdus bya tshul/ 3 dam can rdo rje legs pa lab sang gi shug pa a gar snying khrad sh chil bsang rdzas bshams la rang nyi phyag rdor nga rgyal gyi sgo nas/ 4 bsangs chog bkra shis char 'bebs mchod sprin rgya mtsho/ 5 srog chags grog ma la sbyin pa gtong tshul/ 6 lha mo'i gsol mchod/ 7 ma mo 'khrugs skong shin tu 'khyer bde ba'i cho ga/ 8 lha mo 'od 'chang ma'i gsol mchod/ 9 'phags rgyal nor rgyun ma'i gzungs/ 10 bstan srung chen po tshangs pa dung gi sngo gtsug can gyis mdzad nas gnang ba'i brtan bzhugs/ 11 khyod thob ma thad pa dang rnam rdzogs sbyor ba thob ma thag pa gnyis la mu bzhi yod na/ 12 nyon sgrib spang nges kyi bar chad med lam de la theg pa gsum ka'i bar chad med lam yod/ 13 zhi bar byed pa'i gzungs/ 14 dgun gyi rgyal mo la bsangs kyi cho ga/ 15 'byung bzhi gtor ma bsdus pa/"@en , "Liturgical recitation of Drukchupa; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1736 , bdr:W1NLM1736 .
+        :workGenre          bdr:T536 ;
+        :workHasInstance    bdr:MW1NLM1736 , bdr:W1NLM1736 ;
+        :workIsAbout        bdr:T1433 .
 }
