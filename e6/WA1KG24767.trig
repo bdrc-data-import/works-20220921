@@ -18,6 +18,12 @@ bdg:WA1KG24767 {
         adm:logMessage      "completed cataloging and released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGE03828C40BED0F3A
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-19T16:15:59.584Z"^^xsd:dateTime ;
+        adm:logMessage      "added series name and number"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGFD175F1192FB868A
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-29T14:17:27.782Z"^^xsd:dateTime ;
@@ -55,26 +61,27 @@ bdg:WA1KG24767 {
     bda:WA1KG24767  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24767 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "e6/WA1KG24767.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24767 ;
-        adm:logEntry        bda:LG108BA0A9ECB396A8 , bda:LGFD175F1192FB868A , bda:LGIM01FF8512D7 , bda:LGIM095CC38C9F , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG108BA0A9ECB396A8 , bda:LGE03828C40BED0F3A , bda:LGFD175F1192FB868A , bda:LGIM01FF8512D7 , bda:LGIM095CC38C9F , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE03828C40BED0F3A
+    bdr:CR611B8FAAB8EF4D96
         a                   :AgentAsCreator ;
         :agent              bdr:P7801 ;
         :role               bdr:R0ER0019 .
     
-    bdr:WA1KG24767  a       :Work ;
+    bdr:WA1KG24767  a       :SerialMember , :Work ;
         skos:altLabel       "gangs can bod kyi gnas bshad lam yig gsar ma/ lha sa sa khul gyi gnas yig"@bo-x-ewts ;
         skos:prefLabel      "lha sa sa khul gyi gnas yig"@bo-x-ewts ;
         :catalogInfo        "A guidebook of Lhasa region of Tibet."@en ;
-        :creator            bdr:CRE03828C40BED0F3A ;
+        :creator            bdr:CR611B8FAAB8EF4D96 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS1KG24767 ;
         :workGenre          bdr:T25 ;
         :workHasInstance    bdr:MW1KG24767 , bdr:W1KG24767 ;
         :workIsAbout        bdr:G1819 , bdr:G3196 .

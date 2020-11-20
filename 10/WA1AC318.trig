@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1AC318 {
+    bda:LG4B4B0DDF5DC7E94C
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-19T16:15:33.845Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and series name and number"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG6F846B59534267B0
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-18T22:56:17.471Z"^^xsd:dateTime ;
@@ -57,21 +63,30 @@ bdg:WA1AC318 {
     bda:WA1AC318  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC318 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "10/WA1AC318.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC318 ;
-        adm:logEntry        bda:LG6F846B59534267B0 , bda:LG7A70D2D97A164FDF , bda:LGBD391638C6CBB879 , bda:LGE83026C79738ECCE , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG4B4B0DDF5DC7E94C , bda:LG6F846B59534267B0 , bda:LG7A70D2D97A164FDF , bda:LGBD391638C6CBB879 , bda:LGE83026C79738ECCE , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR55FE2559E88BD28A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7801 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1AC318  skos:altLabel  "雪域圣迹导游. 那曲地区"@zh-hans .
     
     bdr:WA1AC318  a         :SerialMember , :Work ;
-        skos:altLabel       "xie yue shen ji dao you na qu di qu"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "gangs can bod kyi gnas bshad lam yig gsar ma las/"@bo-x-ewts , "雪域圣迹导游. 那曲地区"@zh-hans ;
+        skos:altLabel       "gangs can bod kyi gnas bshad lam yig gsar ma/ nag chu sa khul gyi gnas yig"@bo-x-ewts , "xie yue shen ji dao you na qu di qu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "nag chu sa khul gyi gnas yig"@bo-x-ewts , "雪域圣迹导游. 那曲地区"@zh-hans ;
+        :catalogInfo        "A guidebook of important places in Nagchu prefecture of Tibet Autonomous Region."@en ;
+        :creator            bdr:CR55FE2559E88BD28A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS1AC318 ;
         :workGenre          bdr:T25 ;
-        :workHasInstance    bdr:MW1AC318 , bdr:W1AC318 .
+        :workHasInstance    bdr:MW1AC318 , bdr:W1AC318 ;
+        :workIsAbout        bdr:G2141 .
 }

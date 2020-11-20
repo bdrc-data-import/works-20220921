@@ -18,6 +18,12 @@ bdg:WA1NLM1737 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG4EE0ABF1B8F5124E
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-19T09:08:45.021Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA07EBF90  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM1737 {
     bda:WA1NLM1737  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1737 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "74/WA1NLM1737.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1737 ;
-        adm:logEntry        bda:LG13239DAA309C14B7 , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG13239DAA309C14B7 , bda:LG4EE0ABF1B8F5124E , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1NLM1092 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:WA1NLM1737  a       :Work ;
         skos:prefLabel      "'phags pa tshe dang ye shes dpag tu med pa zhes bya ba theg pa chen po'i mdo sogs/"@bo-x-ewts ;
+        :catalogInfo        "Arya Aparimita Ayurjnana Nama Mahayana sutra; other text also included."@en ;
         :isRoot             true ;
-        :language           bdr:LangBo .
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 .
 }

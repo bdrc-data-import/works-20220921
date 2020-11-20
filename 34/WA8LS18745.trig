@@ -30,6 +30,12 @@ bdg:WA8LS18745 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGD2F15A6A2A54A677
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-19T10:47:05.963Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, series name and number"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -61,20 +67,27 @@ bdg:WA8LS18745 {
     bda:WA8LS18745  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18745 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "34/WA8LS18745.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18745 ;
-        adm:logEntry        bda:LG0C86F1B9316844B6 , bda:LG67D939DEE7922C77 , bda:LG7C39E7F7861144D6 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0C86F1B9316844B6 , bda:LG67D939DEE7922C77 , bda:LG7C39E7F7861144D6 , bda:LGD2F15A6A2A54A677 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA8LS18745  a       :Work ;
-        skos:altLabel       "gangs can bod kyi gnas bshad lam yig gsar ma las gzhis rtse sa khul gyi gnas yig gzhis rtse sa khul gyi gnas yig"@bo-x-ewts ;
+    bdr:CR0AABC9F7AD6B7812
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7801 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA8LS18745  a       :SerialMember , :Work ;
+        skos:altLabel       "gangs can bod kyi gnas bshad lam yig gsar ma/ gzhis rtse sa khul gyi gnas yig"@bo-x-ewts ;
         skos:prefLabel      "gzhis rtse sa khul gyi gnas yig"@bo-x-ewts ;
         :catalogInfo        "A guide book of power places in Zhikatse area by Chophel."@en ;
+        :creator            bdr:CR0AABC9F7AD6B7812 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS8LS18745 ;
         :workGenre          bdr:T25 ;
         :workHasInstance    bdr:MW8LS18745 , bdr:W8LS18745 ;
         :workIsAbout        bdr:G2170 .

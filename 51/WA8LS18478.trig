@@ -24,6 +24,12 @@ bdg:WA8LS18478 {
         adm:logMessage      "marked as accessioned"@en ;
         adm:logWho          bdu:U00012 .
     
+    bda:LG91973A9D8D031D43
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-19T16:15:34.37Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and series name and number"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGD82A741AD3C61F58
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-29T10:59:42.366Z"^^xsd:dateTime ;
@@ -61,20 +67,27 @@ bdg:WA8LS18478 {
     bda:WA8LS18478  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18478 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "51/WA8LS18478.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18478 ;
-        adm:logEntry        bda:LG098B3F4455D0FD77 , bda:LG70798A5D788E24BF , bda:LGD82A741AD3C61F58 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LG098B3F4455D0FD77 , bda:LG70798A5D788E24BF , bda:LG91973A9D8D031D43 , bda:LGD82A741AD3C61F58 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA8LS18478  a       :Work ;
-        skos:altLabel       "gangs can ljongs kyi gnas bshad lam yig gsar ma/"@bo-x-ewts ;
+    bdr:CR2011FEF265421238
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7801 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA8LS18478  a       :SerialMember , :Work ;
+        skos:altLabel       "gangs can bod kyi gnas bshad lam yig gsar ma/ lho kha sa khul gyi gnas yig"@bo-x-ewts ;
         skos:prefLabel      "lho kha sa khul gyi gnas yig"@bo-x-ewts ;
         :catalogInfo        "Guide to power places in the southern part of Central Tibet by Chophel."@en ;
+        :creator            bdr:CR2011FEF265421238 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS8LS18478 ;
         :workGenre          bdr:T25 ;
         :workHasInstance    bdr:MW8LS18478 , bdr:W8LS18478 ;
         :workIsAbout        bdr:G1814 .
