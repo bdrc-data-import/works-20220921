@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1752 {
+    bda:LG7FA6AE5091875A9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-24T10:23:24.88Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGB0BE8A22332E8072
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,30 @@ bdg:WA1NLM1752 {
     bda:WA1NLM1752  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1752 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c5/WA1NLM1752.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1752 ;
-        adm:logEntry        bda:LGB0BE8A22332E8072 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG7FA6AE5091875A9F , bda:LGB0BE8A22332E8072 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR197E70E4386BDA34
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5782 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRA255118BCF3C78BD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5651 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA1NLM1752  a       :Work ;
         skos:prefLabel      "dbu ma la 'jug pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bcos pa'i chos brgyad bsdus pa/ 2 bgegs gtor 'bul ba/ 3 sangs rgyas klu dbang rgyal po'i sgrub thabs/ 4 dpal ldan lhun grub kun gsal chos sku dang / 5 rlung rta bsang / 6 'jam dbyangs nag po'i sgrub thabs nyung ngu rnam gsal/ 7 stong nyid chos dbyings/ 8 man ngag rin chen 'byung gnas las 'brum pa nad kyi rtags/"@bo-x-ewts , "Madhyamikavatara; other text also included."@en ;
+        :creator            bdr:CR197E70E4386BDA34 , bdr:CRA255118BCF3C78BD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1752 , bdr:W1NLM1752 .
+        :workHasInstance    bdr:MW1NLM1752 , bdr:W1NLM1752 ;
+        :workIsAbout        bdr:T233 .
 }
