@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1759 {
+    bda:LG6A3D088452CB3DD3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-11-30T11:04:04.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG79AD085501BA8737
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM1759 {
     bda:WA1NLM1759  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1759 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "2d/WA1NLM1759.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1759 ;
-        adm:logEntry        bda:LG79AD085501BA8737 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG6A3D088452CB3DD3 , bda:LG79AD085501BA8737 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1759  a       :Work ;
         skos:prefLabel      "bkra shis brtsegs pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bla ma mchod pa'i cho ga/ 2 rlung rta'i mchod chog phan bde'i pad+ma dkar po'i mdzes rgyan bung ba gzhon nu'i glu dbyangs/ 3 mchog gi dang po'i sangs rgyas las byung ba rgyud kyi rgyal po dpal dus kyi 'khor lo/ 4 rlung rta'i lha la bsangs mchod 'bul tshul/ 5 bla ma'i bka' dring rjes su dran nas gsol ba 'debs tshul dngos grub myur du 'gugs pa'i lcags kyu/ 6 rje tsong kha pa'i gzigs pa rnam pa lnga'i sku brnyan mtshan bstod/"@bo-x-ewts , "Arya Mangala Kuta Mahayana sutra; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
         :workHasInstance    bdr:MW1NLM1759 , bdr:W1NLM1759 .
 }
