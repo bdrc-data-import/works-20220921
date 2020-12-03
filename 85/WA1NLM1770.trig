@@ -18,6 +18,12 @@ bdg:WA1NLM1770 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGDDD85F55CEC37278
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-02T12:42:21.675Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1770 {
     bda:WA1NLM1770  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1770 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "85/WA1NLM1770.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1770 ;
-        adm:logEntry        bda:LGD763AC0ABD384547 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LGD763AC0ABD384547 , bda:LGDDD85F55CEC37278 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1770  a       :Work ;
         skos:prefLabel      "bcu gcig pa'i zhal gyi dkyil 'khor dang 'brel ba'i lho sgo'i cho ga ngan song sgo 'gegs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal rdo rje 'jigs byed kyi zhi ba'i sbyin sreg bya tshul gyi cho ga blo bzang dgongs rgyay shel dkar me long / 2 dpal rdo rje 'jigs byed kyi sgrub thabs dpa' bo gcig pa/ 3 rab gnas bsdus pa gnyis thog ma/ 4 myur mdzad ye shes kyi mgon po la bsangs mchod 'bul tshul/ mgon dkar dang lha mo'i bsangs dang a phyi chos gron ma/"@en , "Mandala ritual of eleven faced Avalokiteshvara by author signed as Kagyurwa; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1770 , bdr:W1NLM1770 .
+        :workGenre          bdr:T159 ;
+        :workHasInstance    bdr:MW1NLM1770 , bdr:W1NLM1770 ;
+        :workIsAbout        bdr:T525 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1772 {
+    bda:LG0A5EA201A322C976
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-02T15:07:39.824Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG3F6F9AFAEA588DF9
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM1772 {
     bda:WA1NLM1772  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1772 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "d4/WA1NLM1772.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1772 ;
-        adm:logEntry        bda:LG3F6F9AFAEA588DF9 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG0A5EA201A322C976 , bda:LG3F6F9AFAEA588DF9 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR571C048E43079D00
+        a                   :AgentAsCreator ;
+        :agent              bdr:P105 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1772  a       :Work ;
         skos:prefLabel      "gtor ma brgya rtsa'i khrid yig dngos grub kun ‘byung sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 gso sbyong byin gyis brlab tshul thar pa'i them skas/ 2 gang gi sku ni mtshan dpe'i dpal gyis rnam par bkra/ 3 rgyal dbang dge 'dun grub pas mdzad pa'i seng gdong ma'i sgrub thabs/ 4 rgyal dbang dge 'dun grub kyis mdzad pa'i seng gdong ma'i sgrub thabs kyi zur rgyan/ 5 lha mo sgrol dkar yid bzhin 'khor lo'i zhi ba'i sbyin sreg 6 rje btsun sgrol ma'i zhi ba'i sbyin bsreg gi cho ga 7 bcom ldan 'das dpal rdo rje 'jigs byed kyi zhi ba'i sbyin sreg ji ltar bya ba'i cho ga'i ngag 'don blo gsar nyin byed dbang po/"@bo-x-ewts , "Instructional manual of hundred bali offering by Kachen Yeshe Gyaltshen, composed at Dewacan residence of Potala; other text also included."@en ;
+        :creator            bdr:CR571C048E43079D00 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1772 , bdr:W1NLM1772 .
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW1NLM1772 , bdr:W1NLM1772 ;
+        :workIsAbout        bdr:T1366 .
 }
