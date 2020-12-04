@@ -18,6 +18,11 @@ bdg:WA1NLM1430 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGC67308B3DE932C59
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-03T18:25:11.926Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM15986367  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-02-03T15:34:16.94Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM1430 {
     bda:WA1NLM1430  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1430 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d4/WA1NLM1430.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1430 ;
-        adm:logEntry        bda:LG5E5C3B5421041321 , bda:LGIM15986367 ;
+        adm:logEntry        bda:LG5E5C3B5421041321 , bda:LGC67308B3DE932C59 , bda:LGIM15986367 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG13701 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:WA1NLM1430  a       :Work ;
         skos:prefLabel      "'phags pa shes rab kyi pha rol tu phyin pa brgyad stong pa/"@bo-x-ewts ;
+        :catalogInfo        "Prajnaparamita in eight thousand verses."@en ;
         :isRoot             true ;
-        :language           bdr:LangBo .
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
+        :workIsAbout        bdr:T2005 .
 }

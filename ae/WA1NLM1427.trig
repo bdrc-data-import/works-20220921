@@ -18,6 +18,11 @@ bdg:WA1NLM1427 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGF9348B640C220E02
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-03T18:25:10.868Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM15986367  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-02-03T15:34:16.94Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM1427 {
     bda:WA1NLM1427  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1427 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ae/WA1NLM1427.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1427 ;
-        adm:logEntry        bda:LG726748274A54C15C , bda:LGIM15986367 ;
+        adm:logEntry        bda:LG726748274A54C15C , bda:LGF9348B640C220E02 , bda:LGIM15986367 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1427  a       :Work ;
         skos:prefLabel      "'phags pa shes rab kyi pha rol tu phyin pa rdo rje gcod pa zhes bya ba theg pa chen po'i mdo sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Sutra and ritual texts."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1427 , bdr:MW1NLM1429 , bdr:MW1NLM720 , bdr:W1NLM1427 , bdr:W1NLM1429 , bdr:W1NLM720 .
+        :workGenre          bdr:T1028 , bdr:T769 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1427 , bdr:MW1NLM1429 , bdr:MW1NLM720 , bdr:W1NLM1427 , bdr:W1NLM1429 , bdr:W1NLM720 ;
+        :workIsAbout        bdr:WA4CZ15645 .
 }
