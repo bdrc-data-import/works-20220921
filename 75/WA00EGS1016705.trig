@@ -81,12 +81,17 @@ bdg:WA00EGS1016705 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:MW00EGS1016705
+        skos:altLabel       "tibetan guides to places of pilgrimage"@en .
+    
     bdr:WA00EGS1016705
-        a                   :Work ;
+        a                   :SerialMember , :Work ;
         skos:altLabel       "a collection of guidebooks (gnas yig) to places of buddhist pilgrimage in tibet and china"@en ;
         skos:prefLabel      "sras mkhar dgu thog sogs bod kyi gnas yig khag cig"@bo-x-ewts , "tibetan guides to places of pilgrimage"@en ;
         :catalogInfo        "Collection of guidebooks to Buddhist pilgrimage sites in Tibet and China. Published by the Library of Tibetan Works and Archives. Reproduced from manuscripts held in the library of Rai Bahadur T.D. Densapa (Bumiok Athing) of Gangtok, Sikkim, India."@en ;
         :isRoot             true ;
+        :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS00EGS1016706 ;
         :workGenre          bdr:T25 ;
         :workHasInstance    bdr:MW00EGS1016705 , bdr:W00EGS1016705 .
 }
