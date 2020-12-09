@@ -18,6 +18,12 @@ bdg:WA1NLM1794 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGC1611024745B4651
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-08T15:14:44.161Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,40 @@ bdg:WA1NLM1794 {
     bda:WA1NLM1794  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1794 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "d5/WA1NLM1794.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1794 ;
-        adm:logEntry        bda:LG0845D4976F7D74FF , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG0845D4976F7D74FF , bda:LGC1611024745B4651 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR3D1D5BF33D532373
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8209 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR73E2B6B6D2A5B7E9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR7EF7E0F636273712
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3214 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CRD417A015ECFDB460
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG8854 ;
+        :role               bdr:R0ER0018 .
+    
     bdr:WA1NLM1794  a       :Work ;
         skos:prefLabel      "mdo sde brgyad brgya pa/"@bo-x-ewts ;
+        :catalogInfo        "Sutra concerning prayer of seven medicine Buddha."@en ;
+        :creator            bdr:CR3D1D5BF33D532373 , bdr:CR73E2B6B6D2A5B7E9 , bdr:CR7EF7E0F636273712 , bdr:CRD417A015ECFDB460 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
         :workHasInstance    bdr:MW1NLM1794 , bdr:W1NLM1794 .
 }
