@@ -18,18 +18,41 @@ bdg:WA3CN21413 {
         adm:logMessage      "created"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG65053672EA274917
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-10T16:14:19.664Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG87F93D5C420BA72F
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-10T15:29:18.233Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3CN21413  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21413 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "71/WA3CN21413.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21413 ;
-        adm:logEntry        bda:LG3BA2CA04B6E3CA5A ;
+        adm:logEntry        bda:LG3BA2CA04B6E3CA5A , bda:LG65053672EA274917 , bda:LG87F93D5C420BA72F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR8A1FE8383AFA8F78
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN11323 ;
+        :role               bdr:R0ER0025 .
+    
     bdr:WA3CN21413  a       :Work ;
+        skos:prefLabel      "yul shul bod kyi rig gnas dmangs srol bshams ston khang gi ge sar sgrung yig sogs dpe rnying phyogs bsdebs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Gesar epic manuscript texts and other texts at Yulshul Tibetan cultural museum. (part 1)"@en ;
+        :creator            bdr:CR8A1FE8383AFA8F78 ;
         :isRoot             true ;
-        :workHasInstance    bdr:MW3CN21413 .
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW3CN21413 ;
+        :workIsAbout        bdr:T247 , bdr:T248 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1795 {
+    bda:LG675E2B09091D5EE3
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-10T16:32:27.966Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGDFBB5D6AB39B75AB
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM1795 {
     bda:WA1NLM1795  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1795 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "55/WA1NLM1795.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1795 ;
-        adm:logEntry        bda:LGDFBB5D6AB39B75AB , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG675E2B09091D5EE3 , bda:LGDFBB5D6AB39B75AB , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR73CA8550C43F6BC1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1795  a       :Work ;
         skos:prefLabel      "rje btsun 'jam pa'i dbyangs la bstod pa 'jam dbyangs mnyes pa byed pa'i bstod sprin rgya mtsho sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal ldan dmag zor rgyal mo'i sgo nas thabs dang bcas pa/ 2 gnas brtan/ 3 bla ma sangs rgyas byang sems sogs la brten pa'i 'pho ba'i skor/ 4 gzhi bdag dge bsnyen chen po la gsol mchod bya tshul/ gser skyems 'bul tshul/ 5 myur byon yid smon lhun grub ma/"@bo-x-ewts , "Manjushri's Verses of praise by Tsongkhapa Lobsang Dakpa; other text also included."@en ;
+        :creator            bdr:CR73CA8550C43F6BC1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1795 , bdr:W1NLM1795 .
+        :workGenre          bdr:T67 ;
+        :workHasInstance    bdr:MW1NLM1795 , bdr:W1NLM1795 ;
+        :workIsAbout        bdr:T69 .
 }
