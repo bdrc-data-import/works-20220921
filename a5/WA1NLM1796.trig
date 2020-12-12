@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1796 {
+    bda:LGB648C2163426F8F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-11T09:07:50.171Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGBE813B844C60A954
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1796 {
     bda:WA1NLM1796  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1796 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a5/WA1NLM1796.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1796 ;
-        adm:logEntry        bda:LGBE813B844C60A954 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LGB648C2163426F8F1 , bda:LGBE813B844C60A954 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1796  a       :Work ;
         skos:prefLabel      "mdo sde brgyad brgya ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 skal bzang rnam 'dren bzhi pa shAkya'i tog"@en , "Sutra concerning prayer of seven medicine Buddhas."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1796 , bdr:W1NLM1796 .
+        :workGenre          bdr:T34 , bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM1796 , bdr:W1NLM1796 ;
+        :workIsAbout        bdr:T568 .
 }

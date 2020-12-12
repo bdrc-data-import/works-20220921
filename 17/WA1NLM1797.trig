@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1797 {
+    bda:LG31587C1D05AA633D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-11T11:07:52.661Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGF0C4B519CB819965
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM1797 {
     bda:WA1NLM1797  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1797 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "17/WA1NLM1797.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1797 ;
-        adm:logEntry        bda:LGF0C4B519CB819965 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG31587C1D05AA633D , bda:LGF0C4B519CB819965 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR3E7C910C45204784
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8864 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1797  a       :Work ;
         skos:prefLabel      "dpal ldan dmag zor rgyal mo'i sgo nas rno mthong sgrub tshul de'i 'bras bshad dang bcas pa/"@bo-x-ewts ;
+        :catalogInfo        "A dice prognostication of Shridevi and explanation of its result by the fourth Cakra Ngawang Trinley Zangpo."@en ;
+        :creator            bdr:CR3E7C910C45204784 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1797 , bdr:W1NLM1797 .
+        :workGenre          bdr:T1029 ;
+        :workHasInstance    bdr:MW1NLM1797 , bdr:W1NLM1797 ;
+        :workIsAbout        bdr:T405 , bdr:T926 .
 }
