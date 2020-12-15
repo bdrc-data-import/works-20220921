@@ -18,6 +18,12 @@ bdg:WA1NLM1803 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG56AD6EABDCD7AD6D
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-14T12:26:06.866Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM1803 {
     bda:WA1NLM1803  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1803 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "81/WA1NLM1803.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1803 ;
-        adm:logEntry        bda:LG3B4004FCFB6ACF80 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG3B4004FCFB6ACF80 , bda:LG56AD6EABDCD7AD6D , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1803  a       :Work ;
         skos:prefLabel      "'phags pa shes rab kyi pha rol tu phyin pa yon tan rin po che sdud pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sangs rgyas kyi gtsug tor dpa' bar 'gro b zhes bya ba cheng pa chen po'i mdo las gsungs pa'i sngags/ 2 slob dpon chen po'i gsol 'debs bsam pa lhun grub ma/"@bo-x-ewts , "Prajnaparamita sutra; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1803 , bdr:W1NLM1803 .
+        :workHasInstance    bdr:MW1NLM1803 , bdr:W1NLM1803 ;
+        :workIsAbout        bdr:T2005 .
 }
