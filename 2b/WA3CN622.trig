@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN622 {
+    bda:LG36E1BA9CEAE335F5
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2020-12-15T15:29:14.428Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG5D6FA35D433EE7A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-15T15:40:02.522Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:WA3CN622  a         adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN622 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "2b/WA3CN622.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN622 ;
+        adm:logEntry        bda:LG36E1BA9CEAE335F5 , bda:LG5D6FA35D433EE7A9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:WA3CN622  a         :Work ;
+        skos:altLabel       "gsang chen dpal ldan smad rgyud pa'i nyams bzhes chos skor/"@bo-x-ewts ;
+        skos:prefLabel      "gsang chen dpal ldan smad rgyud pa'i chos skor/"@bo-x-ewts ;
+        :catalogInfo        "Collected liturgies and explanation texts of Gyudmed Tantric University. Compiled from blockprints and manuscripts in the monastery. added one more volum of Karchag and published by Longshod monastery at Yulshul Kham."@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS11187 ;
+        :workHasInstance    bdr:MW3CN622 ;
+        :workIsAbout        bdr:G394 , bdr:T819 .
+}

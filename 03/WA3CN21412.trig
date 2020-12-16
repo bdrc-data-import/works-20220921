@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN21412 {
+    bda:LG036132AF82C6AA5B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-15T07:26:04.316Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG048C60E575A38B82
         a                   adm:UpdateData ;
         adm:logDate         "2020-12-09T19:04:52.543Z"^^xsd:dateTime ;
@@ -33,30 +39,30 @@ bdg:WA3CN21412 {
     bda:WA3CN21412  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21412 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "03/WA3CN21412.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21412 ;
-        adm:logEntry        bda:LG048C60E575A38B82 , bda:LGE5E498CB00691C13 , bda:LGE82C8FB6043262B0 ;
+        adm:logEntry        bda:LG036132AF82C6AA5B , bda:LG048C60E575A38B82 , bda:LGE5E498CB00691C13 , bda:LGE82C8FB6043262B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR036132AF82C6AA5B
+    bdr:CR375C4F4982D7B347
         a                   :AgentAsCreator ;
-        :agent              bdr:P4CN11321 ;
+        :agent              bdr:P6274 ;
         :role               bdr:R0ER0028 .
     
     bdr:CR9C27D03D0F4855BD
         a                   :AgentAsCreator ;
-        :agent              bdr:P6274 ;
+        :agent              bdr:P4CN11321 ;
         :role               bdr:R0ER0028 .
     
     bdr:WA3CN21412  a       :Work ;
         skos:prefLabel      "sku zhabs bse mkhar rnam sras kyis nyar tshags mdzad pa'i dpe rnying phyogs bsdebs/"@bo-x-ewts ;
         :catalogInfo        "Collection of old Tibetan manuscript texts by Mr. Sekhar Namsey and his two sons."@en ;
-        :creator            bdr:CR036132AF82C6AA5B , bdr:CR9C27D03D0F4855BD ;
+        :creator            bdr:CR375C4F4982D7B347 , bdr:CR9C27D03D0F4855BD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T4CZ71 ;
-        :workHasInstance    bdr:MW3CN21412 .
+        :workHasInstance    bdr:MW3CN21412 , bdr:W3CN21412 .
 }

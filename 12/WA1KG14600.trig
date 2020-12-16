@@ -24,26 +24,38 @@ bdg:WA1KG14600 {
         adm:logMessage      "temp released for scan request to india"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGDA36A1972D35BE58
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-15T11:01:14.888Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGE03F70899A48C540
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-09-28T16:30:34.975Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGFB8C20F0875B1E10
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-15T11:00:46.676Z"^^xsd:dateTime ;
+        adm:logMessage      "removed old invalid SR"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA1KG14600  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14600 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "12/WA1KG14600.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14600 ;
-        adm:logEntry        bda:LG5D3812CE165A31FE , bda:LG99AAC1B2F0B33407 , bda:LGE03F70899A48C540 ;
+        adm:logEntry        bda:LG5D3812CE165A31FE , bda:LG99AAC1B2F0B33407 , bda:LGDA36A1972D35BE58 , bda:LGE03F70899A48C540 , bda:LGFB8C20F0875B1E10 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1KG14600  a       :Work ;
         skos:prefLabel      "bod kyi srol rgyun mda' rtsed rig gnas/"@bo-x-ewts ;
-        :catalogInfo        "Contributed articles on traditional Tibetan archery"@en ;
+        :catalogInfo        "Contributed articles on traditional Tibetan archery."@en ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workHasInstance    bdr:MW1KG14600 , bdr:W1KG14600 ;
