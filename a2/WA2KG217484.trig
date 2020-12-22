@@ -14,13 +14,13 @@
 bdg:WA2KG217484 {
     bda:LG808A129BDAAF8846
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-10-07T14:37:38.37Z"^^xsd:dateTime ;
+        adm:logDate         "2020-12-21T19:26:10.16Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG217484  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG217484 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a2/WA2KG217484.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG217484 ;
@@ -28,9 +28,23 @@ bdg:WA2KG217484 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA2KG217484  a      :Work ;
-        skos:prefLabel      "Testing 2"@bo-x-ewts ;
+    bdr:CR0A97C300947E9BFB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2043 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR167A4DC41A04BD21
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2069 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA2KG217484  a      :SerialMember , :Work ;
+        skos:prefLabel      "rgyud sde bzhi'i lam gyi gnad bsdus pa rig 'dzin rol pa'i dga' ston/ dbu ma'i lta khrid/ dge tshul long gis nyin zhag phrugs gcig la nyams len bya tshul bcas/"@bo-x-ewts ;
+        :creator            bdr:CR0A97C300947E9BFB , bdr:CR167A4DC41A04BD21 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG217484 .
+        :serialMemberOf     bdr:WAS2KG217484 ;
+        :workGenre          bdr:T395 ;
+        :workHasInstance    bdr:MW2KG217484 ;
+        :workIsAbout        bdr:T1611 , bdr:T1871 , bdr:T1967 , bdr:T233 , bdr:T2339 , bdr:T541 .
 }

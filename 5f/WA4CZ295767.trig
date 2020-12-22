@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ295767 {
+    bda:LG14BF42EC9CBBA5CC
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-21T09:25:54.553Z"^^xsd:dateTime ;
+        adm:logMessage      "changed info"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG1937BF0859547AF6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-21T09:26:43.645Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG234A593AF6017C65
         a                   adm:UpdateData ;
         adm:logDate         "2018-04-30T15:00:53.697Z"^^xsd:dateTime ;
@@ -36,6 +48,12 @@ bdg:WA4CZ295767 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGFCB3EA2ACF8F5682
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-21T14:22:54.735Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -46,12 +64,13 @@ bdg:WA4CZ295767 {
     bda:WA4CZ295767  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ295767 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "5f/WA4CZ295767.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ295767 ;
-        adm:logEntry        bda:LG234A593AF6017C65 , bda:LG911E89C251939840 , bda:LG9FCEB762CF96F9D3 , bda:LGE050BD39BA2EA4BE , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG14BF42EC9CBBA5CC , bda:LG1937BF0859547AF6 , bda:LG234A593AF6017C65 , bda:LG911E89C251939840 , bda:LG9FCEB762CF96F9D3 , bda:LGE050BD39BA2EA4BE , bda:LGFCB3EA2ACF8F5682 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW4CZ295767  skos:altLabel  "Modern Tibetan language"@en .
@@ -62,6 +81,6 @@ bdg:WA4CZ295767 {
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T266 ;
-        :workHasInstance    bdr:MW4CZ295767 ;
+        :workHasInstance    bdr:MW4CZ295767 , bdr:W4CZ295767 ;
         :workIsAbout        bdr:T2CZ10088 .
 }

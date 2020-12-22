@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ299883 {
+    bda:LG457A1446274CFC27
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-21T14:51:36.06Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG4B0B96B6BDFEC58A
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-09-27T12:34:38.172Z"^^xsd:dateTime ;
@@ -24,14 +30,20 @@ bdg:WA4CZ299883 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG774AAF1166ED4B77
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-21T14:51:19.907Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ299883  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ299883 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "03/WA4CZ299883.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ299883 ;
-        adm:logEntry        bda:LG4B0B96B6BDFEC58A , bda:LG60A00073A06F7AE5 ;
+        adm:logEntry        bda:LG457A1446274CFC27 , bda:LG4B0B96B6BDFEC58A , bda:LG60A00073A06F7AE5 , bda:LG774AAF1166ED4B77 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

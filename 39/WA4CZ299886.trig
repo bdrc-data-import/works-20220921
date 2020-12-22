@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ299886 {
+    bda:LG1DDF2AD23B2D0ABF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-21T15:05:18.197Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGB24A9917D34A5B8B
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-09-27T15:30:09.237Z"^^xsd:dateTime ;
@@ -24,18 +30,23 @@ bdg:WA4CZ299886 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGBC8510C122FF6B33
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-21T15:04:41.035Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ299886  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ299886 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "39/WA4CZ299886.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ299886 ;
-        adm:logEntry        bda:LGB24A9917D34A5B8B , bda:LGB45940C0B9169B5F ;
+        adm:logEntry        bda:LG1DDF2AD23B2D0ABF , bda:LGB24A9917D34A5B8B , bda:LGB45940C0B9169B5F , bda:LGBC8510C122FF6B33 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusEditing .
     
-    bdr:CRBC8510C122FF6B33
+    bdr:CR093E0B41A4416534
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG6324 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +55,7 @@ bdg:WA4CZ299886 {
         skos:altLabel       "bka' brgyud grub thob brgya rtsa'i rnam par thar pa skal bzang mgul rgyan dri med shel dkar phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "bka' brgyud grub thob brgya rtsa'i rnam thar skal bzang mgul rgyan/"@bo-x-ewts ;
         :catalogInfo        "Crystal mala of the Kagyu, Anthology of the successive life stories of masters in the Kagyu order."@en ;
-        :creator            bdr:CRBC8510C122FF6B33 ;
+        :creator            bdr:CR093E0B41A4416534 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

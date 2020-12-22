@@ -24,10 +24,22 @@ bdg:WA4CZ295773 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGE700FFDE17DBC6E0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-21T09:33:12.992Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGEDDE12B826265720
         a                   adm:UpdateData ;
         adm:logDate         "2018-04-30T15:00:55.317Z"^^xsd:dateTime ;
         adm:logMessage      "chenged scanrequest"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGF56A4A62FF751B72
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-21T14:22:56.33Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:LGIM84B17F7EDC
@@ -40,12 +52,13 @@ bdg:WA4CZ295773 {
     bda:WA4CZ295773  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ295773 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "ed/WA4CZ295773.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ295773 ;
-        adm:logEntry        bda:LG299E05B17968F522 , bda:LG8A967E5583163B12 , bda:LGEDDE12B826265720 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG299E05B17968F522 , bda:LG8A967E5583163B12 , bda:LGE700FFDE17DBC6E0 , bda:LGEDDE12B826265720 , bda:LGF56A4A62FF751B72 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW4CZ295773  skos:altLabel  "speak fluent tibetan"@en .
@@ -56,6 +69,6 @@ bdg:WA4CZ295773 {
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T266 ;
-        :workHasInstance    bdr:MW4CZ295773 ;
+        :workHasInstance    bdr:MW4CZ295773 , bdr:W4CZ295773 ;
         :workIsAbout        bdr:T265 .
 }
