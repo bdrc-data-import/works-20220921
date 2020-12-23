@@ -12,9 +12,27 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ299952 {
+    bda:LG3B4AB0C1CFD3F5B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-22T09:43:13.777Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG495236A26920FB45
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-09-28T16:01:02.747Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGBF46CEBAAFABDDD1
+        a                   adm:UpdateData ;
+        adm:logDate         "2020-12-22T09:47:31.682Z"^^xsd:dateTime ;
+        adm:logMessage      "add info"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGC4194CCF15E1F407
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2020-12-22T09:44:35.404Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
@@ -27,15 +45,16 @@ bdg:WA4CZ299952 {
     bda:WA4CZ299952  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ299952 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "fd/WA4CZ299952.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ299952 ;
-        adm:logEntry        bda:LG495236A26920FB45 , bda:LGD3F5833414D26443 ;
+        adm:logEntry        bda:LG3B4AB0C1CFD3F5B6 , bda:LG495236A26920FB45 , bda:LGBF46CEBAAFABDDD1 , bda:LGC4194CCF15E1F407 , bda:LGD3F5833414D26443 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3B4AB0C1CFD3F5B6
+    bdr:CRDD39CF5E157ACD8D
         a                   :AgentAsCreator ;
         :agent              bdr:P270 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +63,7 @@ bdg:WA4CZ299952 {
         skos:altLabel       "thog mtha' bar gsum du dge ba'i gtam lta sgom spyod gsum nyams len dam pa'i snying nor/"@bo-x-ewts ;
         skos:prefLabel      "thog mtha' bar gsum du dge ba'i gtam/"@bo-x-ewts ;
         :catalogInfo        "Verse instruction to from first to last Buddhist practice."@en ;
-        :creator            bdr:CR3B4AB0C1CFD3F5B6 ;
+        :creator            bdr:CRDD39CF5E157ACD8D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T245 ;
