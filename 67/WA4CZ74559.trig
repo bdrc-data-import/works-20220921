@@ -24,6 +24,12 @@ bdg:WA4CZ74559 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGC6DA36D45C4E4D9F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-04T21:08:17.913Z"^^xsd:dateTime ;
+        adm:logMessage      "changed status from editing to released"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -34,15 +40,15 @@ bdg:WA4CZ74559 {
     bda:WA4CZ74559  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ74559 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "67/WA4CZ74559.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ74559 ;
-        adm:logEntry        bda:LG0ABE433E05143FEC , bda:LGB1E168615E02B83A , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0ABE433E05143FEC , bda:LGB1E168615E02B83A , bda:LGC6DA36D45C4E4D9F , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusAccessioned .
+        adm:status          bda:StatusReleased .
     
-    bdr:CRC6DA36D45C4E4D9F
+    bdr:CR90698C7588070581
         a                   :AgentAsCreator ;
         :agent              bdr:P6068 ;
         :role               bdr:R0ER0019 .
@@ -50,7 +56,8 @@ bdg:WA4CZ74559 {
     bdr:WA4CZ74559  a       :Work ;
         skos:altLabel       "mdod kyi cha lag sngo dbyings byin 'bebs/"@bo-x-ewts ;
         skos:prefLabel      "rtsa ba gsum gyi lha tshogs la rgyun tshogs 'bul ba'i cho ga bde ba chen po'i mchod sprin sogs/"@bo-x-ewts ;
-        :creator            bdr:CRC6DA36D45C4E4D9F ;
+        :catalogInfo        "A liturgical text of offering a daily feast to the assembly deities of three roots (bla ma/ yi dam/ mkha' 'gro/)."@en ;
+        :creator            bdr:CR90698C7588070581 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T529 , bdr:T98 ;

@@ -18,6 +18,12 @@ bdg:WA1NLM1950 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG9E0BF9CE65CFEAC8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-04T11:54:53.749Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1950 {
     bda:WA1NLM1950  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1950 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "c2/WA1NLM1950.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1950 ;
-        adm:logEntry        bda:LG13F6A31DD7887D9A , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG13F6A31DD7887D9A , bda:LG9E0BF9CE65CFEAC8 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1950  a       :Work ;
         skos:prefLabel      "bla ma mchog gsum spyi'i mchod chog yid bzhin dbang rgyal sogs/"@bo-x-ewts ;
+        :catalogInfo        "Offering ritual to the lama and the three jewels and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1950 , bdr:W1NLM1950 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1950 , bdr:W1NLM1950 ;
+        :workIsAbout        bdr:T4 .
 }

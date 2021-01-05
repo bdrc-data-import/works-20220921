@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1954 {
+    bda:LG3E8F4B758B825AF2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-04T11:54:55.286Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG6EB4526B9603AA63
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1954 {
     bda:WA1NLM1954  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1954 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "1a/WA1NLM1954.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1954 ;
-        adm:logEntry        bda:LG6EB4526B9603AA63 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG3E8F4B758B825AF2 , bda:LG6EB4526B9603AA63 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1954  a       :Work ;
-        skos:prefLabel      "dpal gsang ba 'dus pa'i rtsa rgyud/"@bo-x-ewts ;
+        skos:altLabel       "dpal gsang ba 'dus pa'i rtsa rgyud/"@bo-x-ewts ;
+        skos:prefLabel      "gsang 'dus rtsa rgyud/"@bo-x-ewts ;
+        :catalogInfo        "The root text of Guhyasamaja tantra"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1954 , bdr:W1NLM1954 .
+        :workHasInstance    bdr:MW1NLM1954 , bdr:W1NLM1954 ;
+        :workIsAbout        bdr:T1PD95 , bdr:T417 .
 }

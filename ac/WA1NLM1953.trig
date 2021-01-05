@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1953 {
+    bda:LG6A564E5605C65DE4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-04T11:54:54.925Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG88537E90AC15ED8D
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM1953 {
     bda:WA1NLM1953  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1953 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ac/WA1NLM1953.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1953 ;
-        adm:logEntry        bda:LG88537E90AC15ED8D , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG6A564E5605C65DE4 , bda:LG88537E90AC15ED8D , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1953  a       :Work ;
-        skos:prefLabel      "'phags pa shes rab kyi pha rol tu phyin pa rdo rje gcod pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "'dod khams dbang phyug ma dmag zor rgyal mo'i sgrub thabs gtor chog"@bo-x-ewts , "sgrol ma rnam gnyis dang rig byed ma rnam gsum 'brel ba'i maN+Dal bzhi'i cho ga bkra shis sgo brgya byed pa'i lde mig"@bo-x-ewts ;
+        skos:prefLabel      "'phags pa shes rab kyi pha rol tu phyin pa rdo rje gcod pa/"@bo-x-ewts ;
+        :catalogInfo        "Diamond Cutter Sutra. A Prajnaparamita text, Sadhana and bali offering ritual of Shridevi by the third Panchen Losang Chogyen and Ritual of four Mandala vidhi of three Taras"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1953 , bdr:W1NLM1953 .
+        :workGenre          bdr:T1458 ;
+        :workHasInstance    bdr:MW1NLM1953 , bdr:W1NLM1953 ;
+        :workIsAbout        bdr:T1362 , bdr:T926 .
 }
