@@ -12,40 +12,47 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG217484 {
+    bda:LG0A97C300947E9BFB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-01-05T17:10:56.998Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG808A129BDAAF8846
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-01-04T18:19:07.97Z"^^xsd:dateTime ;
+        adm:logDate         "2021-01-05T16:51:51.726Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG217484  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG217484 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "a2/WA2KG217484.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG217484 ;
-        adm:logEntry        bda:LG808A129BDAAF8846 ;
+        adm:logEntry        bda:LG0A97C300947E9BFB , bda:LG808A129BDAAF8846 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0A97C300947E9BFB
+    bdr:CR14B80DB0EA368A61
         a                   :AgentAsCreator ;
-        :agent              bdr:P2043 ;
+        :agent              bdr:P2069 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR167A4DC41A04BD21
         a                   :AgentAsCreator ;
-        :agent              bdr:P2069 ;
+        :agent              bdr:P2043 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2KG217484  a      :SerialMember , :Work ;
         skos:prefLabel      "rgyud sde bzhi'i lam gyi gnad bsdus pa rig 'dzin rol pa'i dga' ston/ dbu ma'i lta khrid/ dge tshul long gis nyin zhag phrugs gcig la nyams len bya tshul bcas/"@bo-x-ewts ;
         :catalogInfo        "Collection of texts written by some of the Tongkhor lines of reincarnations on a concise explanation on the path of the four sections of tantra; Instructions on the View of the Middle Way; Instruction on how to practice the three levels of ordination by novice monastic and fully ordained in a whole day."@en ;
-        :creator            bdr:CR0A97C300947E9BFB , bdr:CR167A4DC41A04BD21 ;
+        :creator            bdr:CR14B80DB0EA368A61 , bdr:CR167A4DC41A04BD21 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS2KG217484 ;
         :workGenre          bdr:T395 ;
-        :workHasInstance    bdr:MW2KG217484 ;
+        :workHasInstance    bdr:MW2KG217484 , bdr:W2KG217484 ;
         :workIsAbout        bdr:T1611 , bdr:T1871 , bdr:T1967 , bdr:T233 , bdr:T2339 , bdr:T541 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1965 {
+    bda:LG4D96C06C36B7FA8E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-05T14:12:50.657Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG59E20EAB088CEA24
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM1965 {
     bda:WA1NLM1965  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1965 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ae/WA1NLM1965.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1965 ;
-        adm:logEntry        bda:LG59E20EAB088CEA24 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG4D96C06C36B7FA8E , bda:LG59E20EAB088CEA24 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1965  a       :Work ;
-        skos:prefLabel      "ye shes kyi mkha' 'gro ma seng ge'i gdong ba can gyi thugs dam bskang zhing 'phrin las 'tshol ba'i tshul gtso 'khor gsum dang gtso rkyang gang la yang sbyar chog pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "ye shes kyi mkha' 'gro ma seng ge'i gdong pa can gyi thugs dam bskang zhing 'phrin las 'tshol ba'i tshul gtso 'khor gsum dang gtso rkyang gang la yang sbyar chog pa/"@bo-x-ewts ;
+        skos:prefLabel      "seng ge'i gdong pa can gyi thugs dam bskang zhing 'phrin las 'tshol ba'i tshul gtso 'khor gsum dang gtso rkyang gang la yang sbyar chog pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Ritual text for clearing of obstacles on the basis of Shridevi as diety and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1965 , bdr:W1NLM1965 .
+        :workGenre          bdr:T977 , bdr:T98 ;
+        :workHasInstance    bdr:MW1NLM1965 , bdr:W1NLM1965 ;
+        :workIsAbout        bdr:T401 .
 }

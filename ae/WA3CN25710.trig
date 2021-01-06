@@ -17,18 +17,38 @@ bdg:WA3CN25710 {
         adm:logDate         "2020-11-30T11:16:38.554Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGEEAC61BB6FC4704E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-05T19:35:45.72Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3CN25710  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25710 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ae/WA3CN25710.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25710 ;
-        adm:logEntry        bda:LGB3CEB3A56A0B5759 ;
+        adm:logEntry        bda:LGB3CEB3A56A0B5759 , bda:LGEEAC61BB6FC4704E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1E567D16B22890A8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2627 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:MW3CN25710  skos:altLabel  "珀东班钦全集"@zh-hans .
+    
     bdr:WA3CN25710  a       :Work ;
+        skos:altLabel       "bo dong paN chen phyogs las rnam rgyal gyi gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ bo dong paN chen phyogs las rnam rgyal/"@bo-x-ewts , "珀东班钦全集"@zh-hans ;
+        :catalogInfo        "Collected Works by Bodong Panchen Chokle Namgyal (1376-1451). This is a most comprehensive collection that include W22103 colection and 44 volumes from Amdo Labrang monastery. Colected and edited by Pongrong Dawa and Bodong Pema Chosding Monastery."@en ;
+        :creator            bdr:CR1E567D16B22890A8 ;
         :isRoot             true ;
-        :workHasInstance    bdr:MW3CN25710 .
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN25710 ;
+        :workIsAbout        bdr:G1KR1648 , bdr:T2054 .
 }

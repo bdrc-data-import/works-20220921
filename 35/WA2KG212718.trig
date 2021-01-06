@@ -14,21 +14,28 @@
 bdg:WA2KG212718 {
     bda:LG10FD93F1CAD00D7C
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-01-04T17:52:21.067Z"^^xsd:dateTime ;
+        adm:logDate         "2021-01-05T16:52:23.874Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG72DF093F51D6AC7C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-01-05T17:08:59.925Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG212718  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG212718 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "35/WA2KG212718.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG212718 ;
-        adm:logEntry        bda:LG10FD93F1CAD00D7C ;
+        adm:logEntry        bda:LG10FD93F1CAD00D7C , bda:LG72DF093F51D6AC7C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR72DF093F51D6AC7C
+    bdr:CR63A8318B1A5FC7A3
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG4775 ;
         :role               bdr:R0ER0019 .
@@ -36,10 +43,10 @@ bdg:WA2KG212718 {
     bdr:WA2KG212718  a      :Work ;
         skos:prefLabel      "don bdun cu'i mtha' dpyod mi pham bla ma'i zhal lung bdud rtsi'i gzegs ma sogs/"@bo-x-ewts ;
         :catalogInfo        "Collection of writings by 6th Tongkhor Jamphel Gedun Gyatso (1754-1803) on the seventy topics in Abhisamayalankara; definition of types of awareness, signs and reasoning; difficult and essence points of Treatment of the fundamentals of logical disputation."@en ;
-        :creator            bdr:CR72DF093F51D6AC7C ;
+        :creator            bdr:CR63A8318B1A5FC7A3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 ;
-        :workHasInstance    bdr:MW2KG212718 ;
+        :workHasInstance    bdr:MW2KG212718 , bdr:W2KG212718 ;
         :workIsAbout        bdr:T1215 , bdr:T1235 , bdr:T1420 , bdr:T333 , bdr:T96 .
 }

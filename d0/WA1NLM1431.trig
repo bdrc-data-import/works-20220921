@@ -18,6 +18,11 @@ bdg:WA1NLM1431 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG75E236D3621C63EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-05T17:55:27.561Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM15986367  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-02-03T15:34:16.94Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM1431 {
     bda:WA1NLM1431  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1431 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d0/WA1NLM1431.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1431 ;
-        adm:logEntry        bda:LG7021DE0308C4F20D , bda:LGIM15986367 ;
+        adm:logEntry        bda:LG7021DE0308C4F20D , bda:LG75E236D3621C63EB , bda:LGIM15986367 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1431  a       :Work ;
         skos:prefLabel      "nam mkha' rgyal mtshan khro rgyal kha mchu nag po'i bzlog bsgyur sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of ritual and rite text concern to exorcism, purifying, spirit tamming."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1431 , bdr:W1NLM1431 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1431 , bdr:W1NLM1431 ;
+        :workIsAbout        bdr:T1200 , bdr:T1447 , bdr:T1726 .
 }

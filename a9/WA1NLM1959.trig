@@ -18,6 +18,12 @@ bdg:WA1NLM1959 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGCAEFDAFF69CB2F86
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-05T14:12:48.082Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM1959 {
     bda:WA1NLM1959  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1959 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a9/WA1NLM1959.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1959 ;
-        adm:logEntry        bda:LG87F5BE6D9C47DDB0 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG87F5BE6D9C47DDB0 , bda:LGCAEFDAFF69CB2F86 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1959  a       :Work ;
-        skos:prefLabel      "'dod khams dbang phyug ma dmag zor rgyal mo'i skangs gso bstod pa bskul bya sogs/"@bo-x-ewts ;
+        skos:altLabel       "'dod khams dbang phyug ma dmag zor rgyal mo'i skangs gso bstod pa bskul ba/"@bo-x-ewts ;
+        skos:prefLabel      "dmag zor rgyal mo'i bskang gso bstod pa bskul ba/"@bo-x-ewts ;
+        :catalogInfo        "Method for extensive recitation of thread crossed propitiation of sridevi, offering for confession on the basis of deity Vajrapani and other liturgical texts from the Geluk order."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1959 , bdr:W1NLM1959 .
+        :workGenre          bdr:T98 ;
+        :workHasInstance    bdr:MW1NLM1959 , bdr:W1NLM1959 ;
+        :workIsAbout        bdr:T926 , bdr:T93 .
 }
