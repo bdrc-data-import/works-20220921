@@ -18,6 +18,12 @@ bdg:WA1NLM1967 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGCA41BF4BB4EBBB66
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-06T15:43:12.339Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM1967 {
     bda:WA1NLM1967  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1967 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a9/WA1NLM1967.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1967 ;
-        adm:logEntry        bda:LG6FDD148F14BC0183 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG6FDD148F14BC0183 , bda:LGCA41BF4BB4EBBB66 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1967  a       :Work ;
         skos:prefLabel      "rigs brgyud 'phel bar byed pa'i maN+Dal bzhi pa'i cho ga 'dod 'jo'i dpag gsam ljon shing sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM1967 , bdr:W1NLM1967 .
 }

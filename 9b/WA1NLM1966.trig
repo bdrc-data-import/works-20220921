@@ -18,6 +18,12 @@ bdg:WA1NLM1966 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGD607EB0D87E61391
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-06T15:43:11.723Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1966 {
     bda:WA1NLM1966  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1966 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9b/WA1NLM1966.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1966 ;
-        adm:logEntry        bda:LG786BFFEF7F85DC7C , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG786BFFEF7F85DC7C , bda:LGD607EB0D87E61391 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1966  a       :Work ;
-        skos:prefLabel      "dpal rta mgrin gyi bskang gso'i cho ga sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal rta mgrin gyi bskang gso'i cho ga"@bo-x-ewts ;
+        skos:prefLabel      "rta mgrin gyi bskang gso'i cho ga sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM1966 , bdr:W1NLM1966 .
 }

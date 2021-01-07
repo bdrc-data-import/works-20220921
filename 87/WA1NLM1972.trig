@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1972 {
+    bda:LG796D831A0692670A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-06T15:43:14.008Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG9886C2C4248E8C5F
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1972 {
     bda:WA1NLM1972  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1972 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "87/WA1NLM1972.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1972 ;
-        adm:logEntry        bda:LG9886C2C4248E8C5F , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG796D831A0692670A , bda:LG9886C2C4248E8C5F , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1972  a       :Work ;
-        skos:prefLabel      "'bras rtsis legs bshad kun 'dus zhes bya ba bzhugs pa'i dbu phyogs sogs/"@bo-x-ewts ;
+        skos:prefLabel      "'bras rtsis legs bshad kun 'dus sogs/"@bo-x-ewts ;
+        :catalogInfo        "Astrology text written by Lhatsun Losang Tenzin Gyaltshen; also included other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1972 , bdr:W1NLM1972 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1972 , bdr:W1NLM1972 ;
+        :workIsAbout        bdr:T1911 .
 }
