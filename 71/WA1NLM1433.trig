@@ -18,6 +18,11 @@ bdg:WA1NLM1433 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG9E5251772983C7C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-07T17:09:50.426Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM15986367  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-02-03T15:34:16.94Z"^^xsd:dateTime ;
@@ -27,17 +32,31 @@ bdg:WA1NLM1433 {
     bda:WA1NLM1433  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1433 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "71/WA1NLM1433.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1433 ;
-        adm:logEntry        bda:LG43B07B5B05E1EF7D , bda:LGIM15986367 ;
+        adm:logEntry        bda:LG43B07B5B05E1EF7D , bda:LG9E5251772983C7C8 , bda:LGIM15986367 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR00A4D1AFA9DA2A16
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE486892B570B2B92
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1433  a       :Work ;
         skos:prefLabel      "rgyud thams cad kyi rgyal po dpal gsang ba 'dus pa'i bskyed rim khrid kyi zin bris rig 'dzin yongs kyi gzhung lam sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of teachings on utpattikrama and sampannakrama according to the practice of deities Guhyasamaja, vajrabhairava and the contents of Abhisamayalamkara."@en ;
+        :creator            bdr:CR00A4D1AFA9DA2A16 , bdr:CRE486892B570B2B92 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1433 , bdr:W1NLM1433 .
+        :workGenre          bdr:T1478 ;
+        :workHasInstance    bdr:MW1NLM1433 , bdr:W1NLM1433 ;
+        :workIsAbout        bdr:T104 , bdr:T163 , bdr:T164 , bdr:T417 .
 }

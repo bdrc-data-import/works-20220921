@@ -18,6 +18,12 @@ bdg:WA1NLM2079 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGB46C95917130911D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-07T09:12:40.604Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2079 {
     bda:WA1NLM2079  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2079 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "0b/WA1NLM2079.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2079 ;
-        adm:logEntry        bda:LG1A4349F7DBC2F089 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG1A4349F7DBC2F089 , bda:LGB46C95917130911D , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2079  a       :Work ;
         skos:prefLabel      "'jam dpal nag po'i gser chos las srid rgyud shel dkar me long sna tshogs man ngag dpal ldan sa skya'i lde mig las bu rdzi lha mo'i mngon rtogs bskang bshag sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sbrum ma dang byis pa'i gdon chen bco lnga'i cho ga 2 rgyal po'i gsol mchod dregs pa'i re ba skong byed/ 3 btsan gyi gsol mchod 'phrul gyi mchod sbyin/ 4 rgyal mdos ma/ 5 rta mgrin gsang sgub kyi sgo nas rgyal rdzongs bya tshul gnod 'tshe kun sel/ 6 rta mgrin gsang sgrub kyi las byang dbang chen dgyes pa'i rol gang / 7 dpal rta mgrin yang gsang khros pa yab yum gyi bsgom bzlas nyams su len tshul gnad don chen snyon po dang bka' sdod gter bsrung bcas kyi mchod thabs khyer bde/ 8 lha mo bu rdzi ma'i rten mdos slob dpon pad+mas mdzad pa/ 9 byis pa'i gdon chen bco lnga mdos kyi cho ga 10 byis pa'i gdon chen bco lnga glud mdos/ 11 srog glud 'chi zhags gcod pa'i ral gri 12 btsan mdos bcos thabs/ 13 btsan gsol gyi mdos/"@bo-x-ewts , "Visualization, confession and purification of Buzi deity acoording to the Sakya's golden teachings; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2079 , bdr:W1NLM2079 .
+        :workGenre          bdr:T5 ;
+        :workHasInstance    bdr:MW1NLM2079 , bdr:W1NLM2079 ;
+        :workIsAbout        bdr:T1227 , bdr:T1892 , bdr:T617 .
 }
