@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1439 {
+    bda:LG9B13AAB5F705266C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-08T16:07:32.499Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGE5949AD059F82423
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,26 @@ bdg:WA1NLM1439 {
     bda:WA1NLM1439  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1439 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "19/WA1NLM1439.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1439 ;
-        adm:logEntry        bda:LGE5949AD059F82423 , bda:LGIM15986367 ;
+        adm:logEntry        bda:LG9B13AAB5F705266C , bda:LGE5949AD059F82423 , bda:LGIM15986367 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1NLM1415 ;
         adm:status          bda:StatusWithdrawn .
     
+    bdr:CR2D65B3FD526A2275
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1439  a       :Work ;
         skos:prefLabel      "theg pa chen po rgyud bla ma'i Tik+ka"@bo-x-ewts ;
+        :catalogInfo        "Detailed commentary on Maitreya's Ratnagotravibhaga-uttaratantra-shastra, by Gyaltsab Darma Rinchen."@en ;
+        :creator            bdr:CR2D65B3FD526A2275 ;
         :isRoot             true ;
-        :language           bdr:LangBo .
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workIsAbout        bdr:WA1GS1563 .
 }

@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1437 {
+    bda:LG0B296F75D69237F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-08T16:07:31.938Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGCA68C654184606EA
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM1437 {
     bda:WA1NLM1437  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1437 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "18/WA1NLM1437.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1437 ;
-        adm:logEntry        bda:LGCA68C654184606EA , bda:LGIM15986367 ;
+        adm:logEntry        bda:LG0B296F75D69237F4 , bda:LGCA68C654184606EA , bda:LGIM15986367 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1437  a       :Work ;
         skos:prefLabel      "bla ma mchod pa'i khrid yig dngos grub kyi char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgical and ritual texts."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1437 , bdr:W1NLM1437 .
+        :workGenre          bdr:T140 , bdr:T200 ;
+        :workHasInstance    bdr:MW1NLM1437 , bdr:W1NLM1437 ;
+        :workIsAbout        bdr:T138 , bdr:T1726 .
 }

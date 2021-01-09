@@ -18,6 +18,11 @@ bdg:WA1NLM1440 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGD8732B944EBC26E3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-08T16:07:32.787Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM15986367  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-02-03T15:34:16.94Z"^^xsd:dateTime ;
@@ -27,17 +32,19 @@ bdg:WA1NLM1440 {
     bda:WA1NLM1440  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1440 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "6f/WA1NLM1440.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1440 ;
-        adm:logEntry        bda:LG590A3FA5E93DF6DC , bda:LGIM15986367 ;
+        adm:logEntry        bda:LG590A3FA5E93DF6DC , bda:LGD8732B944EBC26E3 , bda:LGIM15986367 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1440  a       :Work ;
         skos:prefLabel      "'phags pa dam pa'i chos pad+ma dkar po/"@bo-x-ewts ;
+        :catalogInfo        "Sadharmapundarika sutra, one of the most popular sutra."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
         :workHasInstance    bdr:MW1NLM1440 , bdr:W1NLM1440 .
 }
