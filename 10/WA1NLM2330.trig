@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2330 {
+    bda:LG2FBAC3B166122265
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-11T15:39:17.497Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +26,20 @@ bdg:WA1NLM2330 {
     bda:WA1NLM2330  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2330 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "10/WA1NLM2330.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2330 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG2FBAC3B166122265 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2330  a       :Work ;
-        skos:prefLabel      "u rgyan slob dpon pad+ma 'byung gnas kyis mdzad pa rdzu 'phrul gyi 'phur lto brgya rtsa ba rgya nag nas 'byung pa'i tshul sogs/"@bo-x-ewts ;
+        skos:altLabel       "u rgyan slob dpon pad+ma 'byung gnas kyis mdzad pa rdzu 'phrul gyi 'phur lto brgya rtsa ba rgya nag nas 'byung pa'i tshul sogs/"@bo-x-ewts ;
+        skos:prefLabel      "pad+ma 'byung gnas kyis mdzad pa rdzu 'phrul gyi 'phur lto brgya rtsa ba rgya nag nas 'byung pa'i tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of sadhana and liturgical texts and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2330 , bdr:W1NLM2330 .
 }
