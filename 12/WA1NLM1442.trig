@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1442 {
+    bda:LG1A76C121417B567F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-12T16:25:16.206Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG89A371137DBBB106
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,31 @@ bdg:WA1NLM1442 {
     bda:WA1NLM1442  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1442 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "12/WA1NLM1442.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1442 ;
-        adm:logEntry        bda:LG89A371137DBBB106 , bda:LGIM15986367 ;
+        adm:logEntry        bda:LG1A76C121417B567F , bda:LG89A371137DBBB106 , bda:LGIM15986367 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR7CB8A4538AF6DB11
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7588 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRDF80552CCEB70C9E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P105 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1442  a       :Work ;
         skos:prefLabel      "'khrungs rabs so bzhi pa'i snying po bsdus pa'i tshigs su bcad pa theg chen chos kyi sgra dbyangs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Previous life stories of the Buddha Shakya Muni."@en ;
+        :creator            bdr:CR7CB8A4538AF6DB11 , bdr:CRDF80552CCEB70C9E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1442 , bdr:W1NLM1442 .
+        :workGenre          bdr:T1342 ;
+        :workHasInstance    bdr:MW1NLM1442 , bdr:W1NLM1442 ;
+        :workIsAbout        bdr:P7326 .
 }
