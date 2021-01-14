@@ -18,6 +18,12 @@ bdg:WA1NLM2090 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG8ED784F46ABBE04D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-13T12:06:27.431Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2090 {
     bda:WA1NLM2090  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2090 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "1f/WA1NLM2090.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2090 ;
-        adm:logEntry        bda:LG6548A90C2319AB1B , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG6548A90C2319AB1B , bda:LG8ED784F46ABBE04D , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2090  a       :Work ;
         skos:prefLabel      "bcom ldan 'das ngan song thams cad yongs su sbyong ba gzi brjid rgyal po'i mdun skyed kyi ngag 'don sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 kun rig rnam par snang mdzad la brten pa'i brgyud pa'i gsol 'debs 'dod gsol sogs/ 2 cha gsum gtor ma/ 3 bcom ldan 'das kun rig rnam par snang mdzad kyi bum chog 4 bcom ldan 'das kun rig rnam par snang mdzad kyi sgo nas gshin po rjes 'dzin gyi lho sgo'i cho ga'i ngag 'don/"@bo-x-ewts , "Liturgical recitation for self generation of Vairocana; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2090 , bdr:W1NLM2090 .
+        :workGenre          bdr:T536 ;
+        :workHasInstance    bdr:MW1NLM2090 , bdr:W1NLM2090 ;
+        :workIsAbout        bdr:T1214 , bdr:T1903 .
 }

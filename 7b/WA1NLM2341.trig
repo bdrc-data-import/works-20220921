@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2341 {
+    bda:LG50AF7247BA415CD8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-13T15:06:30.704Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +26,20 @@ bdg:WA1NLM2341 {
     bda:WA1NLM2341  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2341 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "7b/WA1NLM2341.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2341 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG50AF7247BA415CD8 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2341  a       :Work ;
-        skos:prefLabel      "dpal ldan lha mo dmag zor rgyal mo'i gtor chog dang 'brel bar ma mo 'khrugs skongs bya tshul gyi cho ga mkha' 'gro mnyes byed sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal ldan lha mo dmag zor rgyal mo'i gtor chog dang 'brel bar ma mo 'khrugs skongs bya tshul gyi cho ga mkha' 'gro mnyes byed/"@bo-x-ewts ;
+        skos:prefLabel      "dmag zor rgyal mo'i gtor chog dang 'brel bar ma mo 'khrugs skongs bya tshul gyi cho ga mkha' 'gro mnyes byed sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collected sadhana, rite of amendment to ease Magzor ma and other rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2341 , bdr:W1NLM2341 .
 }

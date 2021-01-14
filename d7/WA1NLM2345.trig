@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2345 {
+    bda:LG9263FD2A53EB7A17
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-13T15:06:32.177Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +26,21 @@ bdg:WA1NLM2345 {
     bda:WA1NLM2345  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2345 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "d7/WA1NLM2345.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2345 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG9263FD2A53EB7A17 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2345  a       :Work ;
-        skos:prefLabel      "drang nges rnam 'byed kyi rtags gsal rig pa'i sgo 'byed ces bya ba sogs/"@bo-x-ewts ;
+        skos:altLabel       "rta mgrin tsi'u dmar dam can rnams kyi bskang bshags sbrags pa'i zhal 'don/"@bo-x-ewts , "sa lam gyi rnam bzhag"@bo-x-ewts ;
+        skos:prefLabel      "drang nges rnam 'byed kyi rtags gsal rig pa'i sgo 'byed/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on The Essence of Eloquence by Tsongkhapa, Analysis treatment of the ten stages and five paths and propitiation and bali offering of Hayagriva, tsi'u dmar po and Yama raja"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2345 , bdr:W1NLM2345 .
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM2345 , bdr:W1NLM2345 ;
+        :workIsAbout        bdr:T406 , bdr:T93 , bdr:WA606 .
 }

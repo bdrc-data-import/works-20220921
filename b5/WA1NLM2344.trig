@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2344 {
+    bda:LGB77F6C661703D09E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-13T15:06:31.834Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +26,26 @@ bdg:WA1NLM2344 {
     bda:WA1NLM2344  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2344 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b5/WA1NLM2344.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2344 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGB77F6C661703D09E , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR11162D5A5932DD1C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P37 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2344  a       :Work ;
-        skos:prefLabel      "bder gshegs bdun gyi mchod pa'i chog bsgrigs yid bzhin dbang rgyal sogs/"@bo-x-ewts ;
+        skos:altLabel       "bde gshegs bdun gyi mchod pa'i chog bsgrigs yid bzhin dbang rgyal sogs/"@bo-x-ewts ;
+        skos:prefLabel      "mchod bla'i chog bsgrigs yid bzhin dbang rgyal/"@bo-x-ewts ;
+        :catalogInfo        "The seven medicine Buddha's ritual and prayer text by the fifth Dalai Lama, collection texts on the fasting ritual focussing on Avalokiteshvara and offering text for the worship of Maitreya"@en ;
+        :creator            bdr:CR11162D5A5932DD1C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2344 , bdr:W1NLM2344 .
+        :workHasInstance    bdr:MW1NLM2344 , bdr:W1NLM2344 ;
+        :workIsAbout        bdr:T147 , bdr:T863 , bdr:T870 .
 }
