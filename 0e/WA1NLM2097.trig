@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2097 {
+    bda:LG81A5D90FEFD2868C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-14T12:29:30.685Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG964EDBEA319EFC24
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,25 @@ bdg:WA1NLM2097 {
     bda:WA1NLM2097  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2097 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "0e/WA1NLM2097.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2097 ;
-        adm:logEntry        bda:LG964EDBEA319EFC24 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG81A5D90FEFD2868C , bda:LG964EDBEA319EFC24 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB1233BBB8F61C677
+        a                   :AgentAsCreator ;
+        :agent              bdr:P331 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2097  a       :Work ;
         skos:prefLabel      "dpyad mchog gtar kha'i gdams pa nyes 'khrugs rnyog drung byin byed kar+ke ta sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dur rdzongs dang lag 'brel gcod gto/ 2 gsang ba ye shes mkha' 'gro rdo rje sder mo bskang gso dgra bgegs gshid ma bdud sde brlag pa'i 'dzin cha/ 3 'go ba'i lha lnga'i gsol mchod bya tshul/ 4 rdo rje sder mo'i gzungs mdo dang 'brel zhing yi dam bsrung ma'i 'phrin las kyi sgo nas phyir bzlog byed tshul phas rgol 'joms pa'i rdo rje/ 5 slob dpon bhas mdzad pa'i bla ma lnga brgya ba/ 6 byang chub sems dpa'i spyod pa la 'jug pa'i gzhung 'don thabs byin rlabs chu rgyun/ 7 rta mgrin gsang sgrub kyi bzlog pa'i cho ga bdud dpung pham pa'i rgyal rnga/ 8 rab gnas rta thog ma/"@en , "Examination of acupuncture channels by Deumar Geshe Tenzin Phuntshok; other text also included."@en ;
+        :creator            bdr:CRB1233BBB8F61C677 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2097 , bdr:W1NLM2097 .
+        :workHasInstance    bdr:MW1NLM2097 , bdr:W1NLM2097 ;
+        :workIsAbout        bdr:T1121 .
 }

@@ -24,6 +24,12 @@ bdg:WA8LS17119 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG9ECEBC0DE57190A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-14T13:49:43.541Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGE52616FCB2486F90
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -33,24 +39,29 @@ bdg:WA8LS17119 {
     bda:WA8LS17119  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS17119 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f3/WA8LS17119.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS17119 ;
-        adm:logEntry        bda:LG276C985B22D29E3A , bda:LG6A4EE61519E1A214 , bda:LGE52616FCB2486F90 ;
+        adm:logEntry        bda:LG276C985B22D29E3A , bda:LG6A4EE61519E1A214 , bda:LG9ECEBC0DE57190A2 , bda:LGE52616FCB2486F90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9ECEBC0DE57190A2
+    bdr:CR2DE62CB3F098AE69
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG14683 ;
+        :agent              bdr:P698 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE4B25924A7D81CFD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P314 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA8LS17119  a       :Work ;
         skos:altLabel       "klong chen snying gi thig le las gcod yul mkha' 'gro'i gad rgyangs/"@bo-x-ewts ;
         skos:prefLabel      "gcod yul mkha' 'gro'i gad rgyangs/"@bo-x-ewts ;
-        :catalogInfo        "An instruction of the practices of Chod; author signed as khrakthung Pawo written at the age of thirty three."@en ;
-        :creator            bdr:CR9ECEBC0DE57190A2 ;
+        :catalogInfo        "Collection of texts concern with the instruction of Chod practices; written by Kunkhen Jigme Lingpa and Do Khyentse Yeshe Dorje. Also, author-signed as khrakthung Pawo written at the age of thirty-three."@en ;
+        :creator            bdr:CR2DE62CB3F098AE69 , bdr:CRE4B25924A7D81CFD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS17119 , bdr:W8LS17119 ;

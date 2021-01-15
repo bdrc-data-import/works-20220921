@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1443 {
+    bda:LGB51D8580AB46BEA0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-14T14:06:47.365Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGCA9A1140955BB1FF
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM1443 {
     bda:WA1NLM1443  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1443 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "df/WA1NLM1443.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1443 ;
-        adm:logEntry        bda:LGCA9A1140955BB1FF , bda:LGIM15986367 ;
+        adm:logEntry        bda:LGB51D8580AB46BEA0 , bda:LGCA9A1140955BB1FF , bda:LGIM15986367 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1443  a       :Work ;
         skos:prefLabel      "rtags rigs kyi rnam bzhag nyung gsal lags bshad gser gyi phreng mdzes sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of texts on various subjects. The outline of this volume has spelled out all the individual texts."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1443 , bdr:W1NLM1443 .
+        :workGenre          bdr:T140 , bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW1NLM1443 , bdr:W1NLM1443 ;
+        :workIsAbout        bdr:T1235 , bdr:T1709 , bdr:WA466 .
 }
