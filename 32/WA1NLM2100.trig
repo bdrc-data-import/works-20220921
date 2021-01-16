@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2100 {
+    bda:LG3733C6169D1BDF8C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-15T09:22:13.855Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG4015F8450F0CF8E9
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2100 {
     bda:WA1NLM2100  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2100 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "32/WA1NLM2100.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2100 ;
-        adm:logEntry        bda:LG4015F8450F0CF8E9 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG3733C6169D1BDF8C , bda:LG4015F8450F0CF8E9 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2100  a       :Work ;
         skos:prefLabel      "rgyal pa'i bstan bsrung chen po rdo rje legs pa'i bsnyen bsgrub las gsum gyi man ngag dngos grub bang mdzod byed pa'i lde mig sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rta mgrin gsang sgrub kyi bzlog pa'i cho ga bdud dpung pham pa'i rgyal rnga / 2 rta mgrin gyi bzlog pa rnam rgyal stobs kyi mtshon cha/ 3 rta mgrin gsang sgrub kyi zhi ba'i sbyin sreg ye shes 'od 'bar gyi lag len gsal bar brjod pa zur rgyan 'od 'bar snang ba/ 4 rta mgrin gyi tshogs mchod/ 5 rgyal po sku lnga'i bsangs mchod gser skyems/ 6 chos skyong dregs pa lcam sring gi gsur gtor tshul 'jigs pa 'ba' po'i mtshon cha/ 7 gnod sbyin lcam dral gyi bstod pa rig pa'i lha mo ma/ 8 chos skyong lcam sring 'khor bcas la mdos glud 'bul tshul/ 9 dregs pa sde brgyad gser skyems gtong ba'i cho ga bdud rtsi rlabs 'phreng / 10 mi khab khrom bsgyur/ 11 lo dkar rang mdos/ 12 phyugs glud gtong ba'i thabs/ 13 rgyal mdos bya bar 'dod pa/"@bo-x-ewts , "Seva vidhi and method to practice Vajrasadhu by author signed as Bhikshu Konchok Samphel; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2100 , bdr:W1NLM2100 .
+        :workGenre          bdr:T151 , bdr:T456 ;
+        :workHasInstance    bdr:MW1NLM2100 , bdr:W1NLM2100 ;
+        :workIsAbout        bdr:T504 .
 }
