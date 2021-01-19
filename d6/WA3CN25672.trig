@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN25672 {
+    bda:LG0DD765F24A3929F6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-01-18T16:56:41.669Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG52999A0457CF5CE4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-18T16:25:34.596Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGF874739991AB6C4D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-11-30T11:14:31.82Z"^^xsd:dateTime ;
@@ -20,15 +32,26 @@ bdg:WA3CN25672 {
     bda:WA3CN25672  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25672 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "d6/WA3CN25672.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25672 ;
-        adm:logEntry        bda:LGF874739991AB6C4D ;
+        adm:logEntry        bda:LG0DD765F24A3929F6 , bda:LG52999A0457CF5CE4 , bda:LGF874739991AB6C4D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR88FE87143761926F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5955 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA3CN25672  a       :Work ;
+        skos:prefLabel      "klong chen snying gi thig le'i sgrub gzhung gi 'grel pa rgyud don snang ba/"@bo-x-ewts ;
+        :catalogInfo        "A commentary of Khadro Dechen Gyalmo Grubzhung from the Longchen Nyingthik teaching by Ngawang Tenzin Dorje (18th Cent.)."@en ;
+        :creator            bdr:CR88FE87143761926F ;
         :isRoot             true ;
-        :workHasInstance    bdr:MW3CN25672 .
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN25672 , bdr:W3CN25672 ;
+        :workIsAbout        bdr:T328 .
 }

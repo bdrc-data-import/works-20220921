@@ -12,23 +12,40 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN25675 {
+    bda:LG235743B0820A7C85
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-18T20:55:32.881Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGA6686191D4A7A5DA
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-11-30T11:14:41.563Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGDF179BF73606AA19
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-01-18T21:08:07.07Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3CN25675  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25675 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d2/WA3CN25675.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25675 ;
-        adm:logEntry        bda:LGA6686191D4A7A5DA ;
+        adm:logEntry        bda:LG235743B0820A7C85 , bda:LGA6686191D4A7A5DA , bda:LGDF179BF73606AA19 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA3CN25675  a       :Work ;
+        skos:prefLabel      "gnam chos thugs kyi gter kha snyan rgyud zab mo thun mong ma yin pa'i skor las rgyal ba rgya mtsho'i bum sgrub sogs/"@bo-x-ewts ;
+        :catalogInfo        "Various texts about daily practice of dharma in all kind of tradition."@en ;
         :isRoot             true ;
-        :workHasInstance    bdr:MW3CN25675 .
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW3CN25675 , bdr:W3CN25675 ;
+        :workIsAbout        bdr:T808 .
 }
