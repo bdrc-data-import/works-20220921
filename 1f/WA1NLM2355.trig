@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2355 {
+    bda:LG6351E2742C511266
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-19T16:32:15.262Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +27,20 @@ bdg:WA1NLM2355 {
     bda:WA1NLM2355  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2355 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "1f/WA1NLM2355.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2355 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG6351E2742C511266 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2355  a       :Work ;
-        skos:prefLabel      "bcom ldan 'das dpal rdo rje 'jigs byed la brten pa'i gshin po'i rjes 'dzin gyi cho ga bde chen myur lam sogs/"@bo-x-ewts ;
+        skos:altLabel       "bcom ldan 'das dpal rdo rje 'jigs byed la brten pa'i gshin po'i rjes 'dzin gyi cho ga bde chen myur lam/"@bo-x-ewts ;
+        skos:prefLabel      "'jigs byed la brten pa'i gshin po'i rjes 'dzin gyi cho ga bde chen myur lam sogs/"@bo-x-ewts ;
+        :catalogInfo        "Funeral ritual focussing on the practice of Vajrabhairava and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T810 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2355 , bdr:W1NLM2355 .
 }

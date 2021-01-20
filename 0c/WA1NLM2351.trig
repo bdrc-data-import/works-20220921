@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2351 {
+    bda:LGA9D07AC321722165
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-19T16:32:14.285Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +27,21 @@ bdg:WA1NLM2351 {
     bda:WA1NLM2351  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2351 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "0c/WA1NLM2351.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2351 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGA9D07AC321722165 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2351  a       :Work ;
-        skos:prefLabel      "lha mchog rnams dga' bar byed pa'i bsangs mchod bcu gsum mu tig phreng ba sogs/"@bo-x-ewts ;
+        skos:altLabel       "lha mchog rnams dga' bar byed pa'i bsangs mchod bcu gsum mu tig phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "bsangs mchod bcu gsum mu tig phreng ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals for the propitiation of protective deities through incense and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2351 , bdr:W1NLM2351 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2351 , bdr:W1NLM2351 ;
+        :workIsAbout        bdr:T173 .
 }

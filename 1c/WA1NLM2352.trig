@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2352 {
+    bda:LG641667E733B2154D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-19T16:32:14.519Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +27,20 @@ bdg:WA1NLM2352 {
     bda:WA1NLM2352  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2352 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "1c/WA1NLM2352.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2352 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG641667E733B2154D , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2352  a       :Work ;
         skos:prefLabel      "rgya nag sa glang brtag tshul legs bshad yongs 'du'i shing dbang sogs/"@bo-x-ewts ;
+        :catalogInfo        "Brief explanation of the principles of the calculation in the Chinese system of the calendar and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2352 , bdr:W1NLM2352 .
+        :workGenre          bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2352 , bdr:W1NLM2352 ;
+        :workIsAbout        bdr:T188 .
 }

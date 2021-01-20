@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2354 {
+    bda:LG4AF0A995D2BC7076
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-19T16:32:14.997Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +27,19 @@ bdg:WA1NLM2354 {
     bda:WA1NLM2354  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2354 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "3a/WA1NLM2354.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2354 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG4AF0A995D2BC7076 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2354  a       :Work ;
         skos:prefLabel      "'phags pa bzang po spyod pa'i smon lam gyi rgyal po sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgical texts for daily prayers"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T225 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2354 , bdr:W1NLM2354 .
 }
