@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1446 {
+    bda:LG4414DBB7C89E1A00
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-20T16:03:18.626Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG76655B806644D45F
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,26 @@ bdg:WA1NLM1446 {
     bda:WA1NLM1446  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1446 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "f9/WA1NLM1446.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1446 ;
-        adm:logEntry        bda:LG76655B806644D45F , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG4414DBB7C89E1A00 , bda:LG76655B806644D45F , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB3BFA98E3B1EC5FF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7688 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1446  a       :Work ;
         skos:prefLabel      "bla ma rin po ches 'jam dpal zhal lung gi bshad lung gnang bar bla ma la skyon rtog gi blo 'gog tshul sogs la gsung bshad zhib tu gnang ba dkyus ma las zur du zin bris bkod pa'o sogs/"@bo-x-ewts ;
+        :catalogInfo        "Annotative note on the practice of the Lamrim by the fifth Dalai Lama particularly on how to cease defective thought towards one's spiritual teacher; And, quintessential instruction on practice one's own mind towards virtuous activities taught in Lamrim Chenmo."@en ;
+        :creator            bdr:CRB3BFA98E3B1EC5FF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1446 , bdr:W1NLM1446 .
+        :workGenre          bdr:T132 , bdr:T1478 , bdr:T238 ;
+        :workHasInstance    bdr:MW1NLM1446 , bdr:W1NLM1446 ;
+        :workIsAbout        bdr:WA466 .
 }

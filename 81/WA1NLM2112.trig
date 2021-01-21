@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2112 {
+    bda:LGC8B74CB33390C4F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-20T12:59:34.264Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD38572664792CCA0
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,36 @@ bdg:WA1NLM2112 {
     bda:WA1NLM2112  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2112 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "81/WA1NLM2112.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2112 ;
-        adm:logEntry        bda:LGD38572664792CCA0 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LGC8B74CB33390C4F1 , bda:LGD38572664792CCA0 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR0E4769380AECC3B9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ10511 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR3BD5C1A1F11CFDA9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8209 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR51EE9B8556A00689
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6119 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2112  a       :Work ;
         skos:prefLabel      "chos mngon pa'i mdzod sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sgrol ma'i maN+Dal bzhi pa'i sgo nas dge mtshan phywa g.yang spel ba'i cho ga bya tshul dus ngan 'tsho ba'i lag cha/ 2 byang sems dang rig pa 'dzin pa'i phyir bcos/ 3 skyabs 'gro dang sdom pa gong ma gnyis kyi bslab bya'i rkang grangs bshags tshig tu bsgrigs pa/"@en , "Root text of Abhidharmakosha by Vasubhandu; other text also included."@en ;
+        :creator            bdr:CR0E4769380AECC3B9 , bdr:CR3BD5C1A1F11CFDA9 , bdr:CR51EE9B8556A00689 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2112 , bdr:W1NLM2112 .
+        :workGenre          bdr:T1KG8787 ;
+        :workHasInstance    bdr:MW1NLM2112 , bdr:W1NLM2112 ;
+        :workIsAbout        bdr:T59 , bdr:WA19720 .
 }

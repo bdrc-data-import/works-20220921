@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2360 {
+    bda:LGB5E1FCDED1E7C761
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-20T15:52:43.211Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +27,27 @@ bdg:WA1NLM2360 {
     bda:WA1NLM2360  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2360 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "53/WA1NLM2360.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2360 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGB5E1FCDED1E7C761 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR3FF280491160F287
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7785 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2360  a       :Work ;
-        skos:prefLabel      "bshes pa'i 'phrin yig gi Tik+ka"@bo-x-ewts ;
+        skos:altLabel       "bshes pa'i 'phrin yig gi Tik+ka"@bo-x-ewts ;
+        skos:prefLabel      "bshes spring kyi Tik+ka"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Nagarjuna's Letter to a Friend."@en ;
+        :creator            bdr:CR3FF280491160F287 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2360 , bdr:W1NLM2360 .
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM2360 , bdr:W1NLM2360 ;
+        :workIsAbout        bdr:WA22950 .
 }

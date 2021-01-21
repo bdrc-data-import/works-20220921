@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1447 {
+    bda:LG54420EEB16605826
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-20T16:03:18.872Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG5FB88DC3B7124E5C
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,31 @@ bdg:WA1NLM1447 {
     bda:WA1NLM1447  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1447 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "eb/WA1NLM1447.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1447 ;
-        adm:logEntry        bda:LG5FB88DC3B7124E5C , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG54420EEB16605826 , bda:LG5FB88DC3B7124E5C , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR190F4E1FA81EC2D2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR3892505ACA77A89E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4797 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1447  a       :Work ;
         skos:prefLabel      "zhugs pa dang gnas pa'i skyes bu chen po rnams kyi rnam par bzhag pa blo gsal bgrod pa'i them skas sogs/"@bo-x-ewts ;
+        :catalogInfo        "Analysis of entering and abiding of Abhisamayalankara by Tsongkhapa Losang Dakpa and other text."@en ;
+        :creator            bdr:CR190F4E1FA81EC2D2 , bdr:CR3892505ACA77A89E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1447 , bdr:W1NLM1447 .
+        :workGenre          bdr:T140 , bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW1NLM1447 , bdr:W1NLM1447 ;
+        :workIsAbout        bdr:T2117 , bdr:T307 .
 }

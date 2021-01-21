@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2359 {
+    bda:LG4FD3FA459BEE24DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-20T15:52:42.837Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +27,20 @@ bdg:WA1NLM2359 {
     bda:WA1NLM2359  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2359 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "3c/WA1NLM2359.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2359 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG4FD3FA459BEE24DA , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2359  a       :Work ;
-        skos:prefLabel      "thal bzlog gi'i skabs kyi rtsa she'i 'grel pa tshigs gsal sogs/"@bo-x-ewts ;
+        skos:prefLabel      "thal bzlog gi skabs kyi rtsa she'i 'grel pa tshigs gsal sogs/"@bo-x-ewts ;
+        :catalogInfo        "Analysis of contradictions and consequences and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2359 , bdr:W1NLM2359 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2359 , bdr:W1NLM2359 ;
+        :workIsAbout        bdr:T2344 .
 }

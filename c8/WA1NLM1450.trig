@@ -18,6 +18,11 @@ bdg:WA1NLM1450 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG5FAF71B2CA475F5E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-20T16:03:19.564Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIMA07EBF90  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
@@ -27,17 +32,31 @@ bdg:WA1NLM1450 {
     bda:WA1NLM1450  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1450 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c8/WA1NLM1450.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1450 ;
-        adm:logEntry        bda:LG035D1984ED265996 , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG035D1984ED265996 , bda:LG5FAF71B2CA475F5E , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR30B80E745FA9B72D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR9E2AAB5A43397E57
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1450  a       :Work ;
         skos:prefLabel      "byang chub gyi sgron ma'i rnam bshad phul byung bzhad pa'i dga' ston sogs/"@bo-x-ewts ;
+        :catalogInfo        "Detailed commentary on the bodhipathapradipa of Atisa by Penchen Lobsang Chokyi Gyaltsen; Mandala ritual of vajraksobhya 9 devatmaka and so on."@en ;
+        :creator            bdr:CR30B80E745FA9B72D , bdr:CR9E2AAB5A43397E57 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1450 , bdr:W1NLM1450 .
+        :workGenre          bdr:T159 , bdr:T61 , bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM1450 , bdr:W1NLM1450 ;
+        :workIsAbout        bdr:T4 , bdr:T998 , bdr:WA4CZ16766 .
 }
