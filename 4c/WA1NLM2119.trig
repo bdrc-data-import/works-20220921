@@ -18,6 +18,12 @@ bdg:WA1NLM2119 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGD04687035CB29412
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-21T10:59:21.972Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM2119 {
     bda:WA1NLM2119  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2119 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "4c/WA1NLM2119.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2119 ;
-        adm:logEntry        bda:LG74EF42490E7C57A7 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG74EF42490E7C57A7 , bda:LGD04687035CB29412 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2119  a       :Work ;
-        skos:prefLabel      "tshe thar gtong tshul dang bcas pa dbang po rnams la rten dang spyan gzigs go gser skyems dang gtor ma sogs phyi nang gsang gsum mchod pa 'bul ba'i ngo mtshar brgya byin 'greng ba sogs/"@bo-x-ewts ;
+        skos:prefLabel      "tshe thar gtong tshul dang bcas pa dbang po rnams la rten dang spyan gzigs kyi gser skyems dang gtor ma sogs phyi nang gsang gsum mchod pa 'bul ba'i ngo mtshar brgya byin 'greng ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mtshun lha rnams la 'bul ba'i gser skyems mchod pa/ 2 nya stong zla nyi la/ /sgra can dus me 'jug tshul/ 3 chos skyong dregs pa lcam sring gi tshogs mchod/ 4 rje btsun rdo rje rnal 'byor ma'i tshogs mchod nyung bsdus/ 5 bag rtsis/ 6 skar ma'i bcos thabs/ 7 btsan la gsol mchod/"@bo-x-ewts , "Liberation of animal life, golden water offering and bali offering of Avalokiteshvara; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2119 , bdr:W1NLM2119 .
+        :workHasInstance    bdr:MW1NLM2119 , bdr:W1NLM2119 ;
+        :workIsAbout        bdr:T106 , bdr:T1219 , bdr:T26 , bdr:T444 .
 }
