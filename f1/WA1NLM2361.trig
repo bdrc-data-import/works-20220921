@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2361 {
+    bda:LGEB9CBAC96D47FE0F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-22T11:30:38.607Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +26,26 @@ bdg:WA1NLM2361 {
     bda:WA1NLM2361  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2361 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "f1/WA1NLM2361.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2361 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGEB9CBAC96D47FE0F , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRAEC4E04045E8C5B7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1591 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2361  a       :Work ;
-        skos:prefLabel      "bslab pa yongs su sbyang ba'i gzhi gsum gyi chog la sogs pa so sor thar ba'i blang dor gyi gnas rnams mdor bsdus pa rje 'dul ba 'dzin pa chen po grags pa rgyal mtshan kyis mdzad pa/"@bo-x-ewts ;
+        skos:altLabel       "bslab pa yongs su sbyang ba'i gzhi gsum gyi chog la sogs pa so sor thar ba'i blang dor gyi gnas rnams mdor bsdus pa rje 'dul ba 'dzin pa chen po grags pa rgyal mtshan kyis mdzad pa/"@bo-x-ewts ;
+        skos:prefLabel      "'dul ba'i bslab bya chen mo/"@bo-x-ewts ;
+        :catalogInfo        "Work on Vinaya rules of monastic discipline by the Geluk author, Duldzin Drakpa Gyaltsen (1374-1434), founder of Tsunmo Tsel Monastery in Taktse Dzong, central Tibet."@en ;
+        :creator            bdr:CRAEC4E04045E8C5B7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2361 , bdr:W1NLM2361 .
+        :workHasInstance    bdr:MW1NLM2361 , bdr:W1NLM2361 ;
+        :workIsAbout        bdr:T55 , bdr:T58 .
 }

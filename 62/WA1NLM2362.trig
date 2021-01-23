@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2362 {
+    bda:LG4F84139CAB22C5D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-22T11:30:38.913Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +26,20 @@ bdg:WA1NLM2362 {
     bda:WA1NLM2362  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2362 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "62/WA1NLM2362.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2362 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG4F84139CAB22C5D0 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2362  a       :Work ;
-        skos:prefLabel      "'jam dbyangs kyi sgrub thabs dang bcos ka 'ga' zhig bzhugs so/_/sa lha'i gsol kha sogs/"@bo-x-ewts ;
+        skos:altLabel       "'jam dbyangs kyi sgrub thabs dang bcos ka 'ga' zhig bzhugs so/_/sa lha'i gsol kha/"@bo-x-ewts ;
+        skos:prefLabel      "'jam dbyangs kyi sgrub thabs dang bcos ka 'ga' zhig sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals and liturgical texts and ritual text for taking formal vows of bhiksu"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2362 , bdr:W1NLM2362 .
 }
