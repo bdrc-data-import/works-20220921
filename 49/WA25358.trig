@@ -12,9 +12,37 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA25358 {
-    bdr:WA25358  a          :Work ;
-        skos:prefLabel      "śrī jñānavajrasamuccaya"@sa-x-iast ;
+    bda:LG0919424D3D422261
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:WA25358  a          adm:AdminData ;
         :isRoot             true ;
-        :language           bdr:LangInc ;
+        adm:adminAbout      bdr:WA25358 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "49/WA25358.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA25358 ;
+        adm:logEntry        bda:LG0919424D3D422261 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+    
+    bdr:CR4501ACA41867A5C8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8174 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR742448377E0E4275
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3456 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:WA25358  a          :Work ;
+        skos:altLabel       "dpal ye shes rdo rje kun las btus pa/"@bo-x-ewts ;
+        skos:prefLabel      "ye shes rdo rje kun las btus pa/"@bo-x-ewts , "jnanavajrasamuccaya"@sa-alalc97 , "śrī jñānavajrasamuccaya"@sa-x-iast ;
+        :creator            bdr:CR4501ACA41867A5C8 , bdr:CR742448377E0E4275 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangInc ;
+        :workHasInstance    bdr:MW25358 ;
         :workHasParallelsIn  bdr:WA0RK0450 .
 }

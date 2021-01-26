@@ -12,9 +12,47 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA25474 {
-    bdr:WA25474  a          :Work ;
-        skos:prefLabel      "mahāśītavana sūtra"@sa-x-iast ;
+    bda:LGC870E76CCCE8C17E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:WA25474  a          adm:AdminData ;
         :isRoot             true ;
-        :language           bdr:LangInc ;
+        adm:adminAbout      bdr:WA25474 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "b9/WA25474.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA25474 ;
+        adm:logEntry        bda:LGC870E76CCCE8C17E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+    
+    bdr:CR0F99A9D7C13E54E8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8222 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR752CCB025B0C639C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8201 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CRB07A8D5F3F2524AC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8223 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CRB23D58E0830A5DD9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:WA25474  a          :Work ;
+        skos:altLabel       "rig sngags kyi rgyal mo bsil ba'i tshal gyi mdo chen po/"@bo-x-ewts ;
+        skos:prefLabel      "bsil ba'i tshal chen po'i mdo/"@bo-x-ewts , "mahasitavanasutra"@sa-alalc97 , "mahāśītavana sūtra"@sa-x-iast ;
+        :creator            bdr:CR0F99A9D7C13E54E8 , bdr:CR752CCB025B0C639C , bdr:CRB07A8D5F3F2524AC , bdr:CRB23D58E0830A5DD9 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangInc ;
+        :workHasInstance    bdr:MW25474 ;
         :workHasParallelsIn  bdr:WA0RK0557 .
 }

@@ -12,10 +12,37 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA25455 {
-    bdr:WA25455  a          :Work ;
-        skos:prefLabel      "ārya mañjuśrīmūlatantra"@sa-x-iast ;
+    bda:LG969AA73B24DFA8FE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:WA25455  a          adm:AdminData ;
         :isRoot             true ;
-        :language           bdr:LangInc ;
-        :workHasInstance    bdr:IE0GR0130 ;
+        adm:adminAbout      bdr:WA25455 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "cc/WA25455.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA25455 ;
+        adm:logEntry        bda:LG969AA73B24DFA8FE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+    
+    bdr:CR5CD376A4108D60F2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8216 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRD7FF9BFD873B5EDA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8215 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:WA25455  a          :Work ;
+        skos:altLabel       "'phags pa 'jam dpal gyi rtsa ba'i rgyud/"@bo-x-ewts , "arya-manjusrimulatantra"@sa-alalc97 ;
+        skos:prefLabel      "'jam dpal rtsa rgyud/"@bo-x-ewts , "manjusrimulatantra"@sa-alalc97 , "ārya mañjuśrīmūlatantra"@sa-x-iast ;
+        :creator            bdr:CR5CD376A4108D60F2 , bdr:CRD7FF9BFD873B5EDA ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangInc ;
+        :workHasInstance    bdr:IE0GR0130 , bdr:MW25455 ;
         :workHasParallelsIn  bdr:WA0RK0541 .
 }

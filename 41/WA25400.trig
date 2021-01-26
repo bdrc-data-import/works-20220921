@@ -12,11 +12,26 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA25400 {
+    bda:LG7C6FAC05CDEA5CD6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:WA25400  a          adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA25400 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "41/WA25400.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA25400 ;
+        adm:logEntry        bda:LG7C6FAC05CDEA5CD6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+    
     bdr:WA25400  a          :Work ;
         skos:altLabel       "ārya prajñāpāramitānayārdhaśanikā (distorted)"@sa-x-iast , "ārya prajñāpāramitānayārdhaśatikā (distorted)"@sa-x-iast , "ārya-prajñāpāramitānayaśatapañcaśatikā"@sa-x-iast ;
-        skos:prefLabel      "ārya prajñāpāramitānayaśatapañcāśatikā"@sa-x-iast ;
+        skos:prefLabel      "shes rab kyi pha rol tu phyin pa'i tshul brgya lnga bcu pa/"@bo-x-ewts , "prajnaparamitanayasatapancasatika"@sa-alalc97 , "ārya prajñāpāramitānayaśatapañcāśatikā"@sa-x-iast ;
         :isRoot             true ;
-        :language           bdr:LangInc ;
-        :workHasInstance    bdr:IE0GR0005 , bdr:IE0GR0006 ;
+        :language           bdr:LangBo , bdr:LangInc ;
+        :workHasInstance    bdr:IE0GR0005 , bdr:IE0GR0006 , bdr:MW25400 ;
         :workHasParallelsIn  bdr:WA0RK0017 .
 }

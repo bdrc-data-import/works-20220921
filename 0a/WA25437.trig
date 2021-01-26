@@ -12,10 +12,26 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA25437 {
-    bdr:WA25437  a          :Work ;
-        skos:altLabel       "ārya-anantamukhasādhaka-nāma-dhāraṇī"@sa-x-iast , "āryānantamukhasādhaka nāma dhāraṇī"@sa-x-iast ;
-        skos:prefLabel      "āryānantamukhanihāra nāma dhāraṇī"@sa-x-iast ;
+    bda:LG71CEC06669AF60EA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:WA25437  a          adm:AdminData ;
         :isRoot             true ;
-        :language           bdr:LangInc ;
+        adm:adminAbout      bdr:WA25437 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "0a/WA25437.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA25437 ;
+        adm:logEntry        bda:LG71CEC06669AF60EA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+    
+    bdr:WA25437  a          :Work ;
+        skos:altLabel       "'phags pa sgo mtha' yas pas bsgrub pa zhes bya ba'i gzungs/"@bo-x-ewts , "ārya-anantamukhasādhaka-nāma-dhāraṇī"@sa-x-iast , "āryānantamukhasādhaka nāma dhāraṇī"@sa-x-iast ;
+        skos:prefLabel      "sgo mtha' yas pa sgrub pa'i gzungs/"@bo-x-ewts , "anantamukhasadhaka-nama-dharani"@sa-alalc97 , "āryānantamukhanihāra nāma dhāraṇī"@sa-x-iast ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangInc ;
+        :workHasInstance    bdr:MW25437 ;
         :workHasParallelsIn  bdr:WA0RK0140 .
 }

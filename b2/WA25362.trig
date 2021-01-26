@@ -12,9 +12,36 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA25362 {
-    bdr:WA25362  a          :Work ;
-        skos:prefLabel      "ārya nīlāmbaradharavajrapāṇi rudratrivinaya tantra nāma"@sa-x-iast ;
+    bda:LGCBC48BDCD7382834
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:WA25362  a          adm:AdminData ;
         :isRoot             true ;
-        :language           bdr:LangInc ;
+        adm:adminAbout      bdr:WA25362 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "b2/WA25362.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA25362 ;
+        adm:logEntry        bda:LGCBC48BDCD7382834 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusOnHold .
+    
+    bdr:CR64CF57B4D859431D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3221 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRE6468E7B3810E9A0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8176 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:WA25362  a          :Work ;
+        skos:prefLabel      "lag na rdo rje gos sngon po can drag po gsum 'dul zhes bya ba'i rtsa rgyud/"@bo-x-ewts , "nilambaradharavajrapanirudratrivinaya-tantra-nama"@sa-alalc97 , "ārya nīlāmbaradharavajrapāṇi rudratrivinaya tantra nāma"@sa-x-iast ;
+        :creator            bdr:CR64CF57B4D859431D , bdr:CRE6468E7B3810E9A0 ;
+        :isRoot             true ;
+        :language           bdr:LangBo , bdr:LangInc ;
+        :workHasInstance    bdr:MW25362 ;
         :workHasParallelsIn  bdr:WA0RK0454 .
 }
