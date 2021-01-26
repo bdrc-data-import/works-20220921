@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2363 {
+    bda:LG77AC74A6A52B2615
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-25T11:41:04.872Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +27,21 @@ bdg:WA1NLM2363 {
     bda:WA1NLM2363  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2363 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "ee/WA1NLM2363.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2363 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG77AC74A6A52B2615 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2363  a       :Work ;
+        skos:altLabel       "dgra lha mched dgur mchod gtor 'bul tshul dang dgra lha dpang bstod/"@bo-x-ewts ;
         skos:prefLabel      "bsangs kyi cho ga dngos grub gyi gzi 'od 'bar ba ngo mtshar rin po che'i phreng ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals such as offering of warrior deity and others"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2363 , bdr:W1NLM2363 .
+        :workGenre          bdr:T529 ;
+        :workHasInstance    bdr:MW1NLM2363 , bdr:W1NLM2363 ;
+        :workIsAbout        bdr:T406 .
 }
