@@ -11,17 +11,28 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA2KG216529 {
-    bda:WA2KG216529  a      adm:AdminData ;
+bdg:WA0XLF4F5B77665AA {
+    bda:WA0XLF4F5B77665AA
+        a                   adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA2KG216529 ;
-        adm:gitPath         "4c/WA2KG216529.trig" ;
+        adm:adminAbout      bdr:WA0XLF4F5B77665AA ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "1d/WA0XLF4F5B77665AA.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA2KG216529 .
+        adm:graphId         bdg:WA0XLF4F5B77665AA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bdr:WA2KG216529  a      :SerialMember , :Work ;
+    bdr:CR51FE524D170C0EB9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P84 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA0XLF4F5B77665AA
+        a                   :Work ;
+        skos:prefLabel      "brjod bya ngos gzung ba/"@bo-x-ewts ;
+        :creator            bdr:CR51FE524D170C0EB9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :serialMemberOf     bdr:WAS2KG216529 ;
-        :workHasInstance    bdr:MW2KG216529 .
+        :workHasInstance    bdr:MW1PD159542_F4F5B7 .
 }

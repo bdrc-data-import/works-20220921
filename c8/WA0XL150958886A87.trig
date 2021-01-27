@@ -11,17 +11,28 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA2KG216529 {
-    bda:WA2KG216529  a      adm:AdminData ;
+bdg:WA0XL150958886A87 {
+    bda:WA0XL150958886A87
+        a                   adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA2KG216529 ;
-        adm:gitPath         "4c/WA2KG216529.trig" ;
+        adm:adminAbout      bdr:WA0XL150958886A87 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "c8/WA0XL150958886A87.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA2KG216529 .
+        adm:graphId         bdg:WA0XL150958886A87 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
-    bdr:WA2KG216529  a      :SerialMember , :Work ;
+    bdr:CR2AAD63CBAB145A65
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA0XL150958886A87
+        a                   :Work ;
+        skos:prefLabel      "mchod brjod sogs klad kyi don/"@bo-x-ewts ;
+        :creator            bdr:CR2AAD63CBAB145A65 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :serialMemberOf     bdr:WAS2KG216529 ;
-        :workHasInstance    bdr:MW2KG216529 .
+        :workHasInstance    bdr:MW1PD159542_150958 .
 }
