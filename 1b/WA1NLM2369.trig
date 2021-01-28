@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2369 {
+    bda:LG8B553CE0C9110742
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-27T16:30:19.6Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +27,21 @@ bdg:WA1NLM2369 {
     bda:WA1NLM2369  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2369 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "1b/WA1NLM2369.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2369 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG8B553CE0C9110742 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2369  a       :Work ;
-        skos:prefLabel      "dpal ye shes kyi mkha' 'gro seng ge'i gdong pa can gtso 'khor gsum gyi sgo nas gtor bzlog bya tshul bdud dpung phyer 'thag sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal ye shes kyi mkha' 'gro seng ge'i gdong pa can gtso 'khor gsum gyi sgo nas gtor bzlog bya tshul bdud dpung phyer 'thag"@bo-x-ewts ;
+        skos:prefLabel      "seng gdong ma gtso 'khor gsum gyi sgo nas gtor bzlog bya tshul bdud dpung phyer 'thag sogs/"@bo-x-ewts ;
+        :catalogInfo        "Ritual text for clearing of obstacles on the basis of Singhamukha principal deity and retinue, collection of Thread cross ceremony rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2369 , bdr:W1NLM2369 .
+        :workGenre          bdr:T1081 , bdr:T98 ;
+        :workHasInstance    bdr:MW1NLM2369 , bdr:W1NLM2369 ;
+        :workIsAbout        bdr:T400 .
 }
