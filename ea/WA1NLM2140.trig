@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2140 {
+    bda:LGA38D9CA67548E425
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-28T09:22:46.931Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGE68B952DEE90AF2B
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,25 @@ bdg:WA1NLM2140 {
     bda:WA1NLM2140  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2140 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "ea/WA1NLM2140.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2140 ;
-        adm:logEntry        bda:LGE68B952DEE90AF2B , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LGA38D9CA67548E425 , bda:LGE68B952DEE90AF2B , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR395E1D3AFD4EA866
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5782 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2140  a       :Work ;
         skos:prefLabel      "dbu ma la 'jug pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'phags pa gnam sa snang brgyad/ 2 'phags pa bkra shis brtsegs pa/"@bo-x-ewts , "A root text of Madhyamakavatara by Acharya Chandrakirti; other text also included."@en ;
+        :creator            bdr:CR395E1D3AFD4EA866 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2140 , bdr:W1NLM2140 .
+        :workHasInstance    bdr:MW1NLM2140 , bdr:W1NLM2140 ;
+        :workIsAbout        bdr:T233 , bdr:WA19458 .
 }
