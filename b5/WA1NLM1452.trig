@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1452 {
+    bda:LG42BADC3720AEA2AC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-29T17:20:50.468Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGFF6BE00988711C54
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,25 @@ bdg:WA1NLM1452 {
     bda:WA1NLM1452  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1452 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "b5/WA1NLM1452.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1452 ;
-        adm:logEntry        bda:LGFF6BE00988711C54 , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG42BADC3720AEA2AC , bda:LGFF6BE00988711C54 , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRA83B5B0D02A4CEFD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1452  a       :Work ;
         skos:prefLabel      "mnyam med tsong kha pa chen pos mdzad pa'i byang chub lam rim chen mo/"@bo-x-ewts ;
+        :catalogInfo        "Extensive stages of the Path to Enlightenment by Tsongkhapa."@en ;
+        :creator            bdr:CRA83B5B0D02A4CEFD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T238 ;
         :workHasInstance    bdr:MW1NLM1452 , bdr:W1NLM1452 .
 }

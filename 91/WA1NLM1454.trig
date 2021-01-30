@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1454 {
+    bda:LG197ABCDFD751BB0B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-29T17:20:50.953Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGA9ABDD34AE214FA0
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM1454 {
     bda:WA1NLM1454  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1454 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "91/WA1NLM1454.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1454 ;
-        adm:logEntry        bda:LGA9ABDD34AE214FA0 , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG197ABCDFD751BB0B , bda:LGA9ABDD34AE214FA0 , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1454  a       :Work ;
         skos:prefLabel      "bcom ldan 'das ngan song thams cad yongs su sbyong ba gzi brjid kyi rgyal po'i mdun bskyed kyi ngag 'don sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals texts mainly connected with the practice of the Sarvadurgatiparisodhana Tantra used in Tibetan funerary rites and other texts."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1454 , bdr:W1NLM1454 .
+        :workGenre          bdr:T11 , bdr:T536 ;
+        :workHasInstance    bdr:MW1NLM1454 , bdr:W1NLM1454 ;
+        :workIsAbout        bdr:T1297 , bdr:T2517 , bdr:T976 .
 }

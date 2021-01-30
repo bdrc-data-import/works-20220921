@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1453 {
+    bda:LG48B490C02351D758
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-29T17:20:50.733Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGAECF55D52318E971
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM1453 {
     bda:WA1NLM1453  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1453 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "3d/WA1NLM1453.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1453 ;
-        adm:logEntry        bda:LGAECF55D52318E971 , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG48B490C02351D758 , bda:LGAECF55D52318E971 , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1453  a       :Work ;
         skos:prefLabel      "sman bla'i chog bsgrigs 'dod dgu'i 'byung gnas sogs/"@bo-x-ewts ;
+        :catalogInfo        "A compilation of medicine buddha's ritual and recitation and ritual of eliminating cure of ground-breaking and skylight and other texts."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1453 , bdr:W1NLM1453 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1453 , bdr:W1NLM1453 ;
+        :workIsAbout        bdr:T2625 , bdr:T568 .
 }
