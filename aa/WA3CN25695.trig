@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN25695 {
+    bda:LGA74BB98CE8015767
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-30T22:01:01.575Z"^^xsd:dateTime ;
+        adm:logMessage      "catalog & released"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGC508E681693690C2
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-11-30T11:15:49.914Z"^^xsd:dateTime ;
@@ -20,16 +26,26 @@ bdg:WA3CN25695 {
     bda:WA3CN25695  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25695 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "aa/WA3CN25695.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25695 ;
-        adm:logEntry        bda:LGC508E681693690C2 ;
+        adm:logEntry        bda:LGA74BB98CE8015767 , bda:LGC508E681693690C2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR41478792B1D67E73
+        a                   :AgentAsCreator ;
+        :agent              bdr:P22 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA3CN25695  a       :Work ;
+        skos:prefLabel      "bka' gdams pa dang dge lugs bla ma rags rim gyi gsung 'bum mtshan tho/"@bo-x-ewts ;
+        :catalogInfo        "Contents of the collected writings of the Kadampa and Gelukpa masters by Longdol Lama Ngagwang Lobsang (1719-1794)."@en ;
+        :creator            bdr:CR41478792B1D67E73 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW3CN25695 .
+        :workGenre          bdr:T2123 ;
+        :workHasInstance    bdr:MW3CN25695 ;
+        :workIsAbout        bdr:T791 , bdr:T819 .
 }

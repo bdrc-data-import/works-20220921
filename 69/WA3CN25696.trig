@@ -17,18 +17,36 @@ bdg:WA3CN25696 {
         adm:logDate         "2020-11-30T11:15:54.767Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG381A2975D8AB98EB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-30T22:01:07.924Z"^^xsd:dateTime ;
+        adm:logMessage      "catalog & released"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3CN25696  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25696 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "69/WA3CN25696.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25696 ;
-        adm:logEntry        bda:LG010AC77D7F7F6C7C ;
+        adm:logEntry        bda:LG010AC77D7F7F6C7C , bda:LG381A2975D8AB98EB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRDA60AEDD1B4BEADC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P875 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA3CN25696  a       :Work ;
+        skos:altLabel       "grub brnyes bla ma dam pa ngag dbang bstan 'phel ba'i rnam thar gsol 'debs byin rlabs bdud rtsi'i gru char/"@bo-x-ewts , "mnyam med lha rtse ba chen po rje btsun ngag dbang bzang po mtshan 'dzin pa de nyid gdul bya dman pa dang bstun nas thun mong mi'i snang ngor byon tshul gyi rnam par thar pa'i lo rgyus mdor bstan tsam brjod pa mos gus kyi snye ma/"@bo-x-ewts ;
+        skos:prefLabel      "lha rtse ba chen po ngag dbang bzang po dang bla ma dam pa ngag dbang bstan 'phel ba'i rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Drukpa Kagyu master Lhatsewa Ngagwang Sangpo by Kamtul Karma Tenpel (1569-1637)."@en ;
+        :creator            bdr:CRDA60AEDD1B4BEADC ;
         :isRoot             true ;
-        :workHasInstance    bdr:MW3CN25696 .
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW3CN25696 ;
+        :workIsAbout        bdr:P874 .
 }

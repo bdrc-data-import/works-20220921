@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN25699 {
+    bda:LGB79D3EC1B0BECEBD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-30T22:01:16.728Z"^^xsd:dateTime ;
+        adm:logMessage      "catalog & released"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGF89E97698611527D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-11-30T11:16:03.998Z"^^xsd:dateTime ;
@@ -20,15 +26,27 @@ bdg:WA3CN25699 {
     bda:WA3CN25699  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25699 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "f9/WA3CN25699.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25699 ;
-        adm:logEntry        bda:LGF89E97698611527D ;
+        adm:logEntry        bda:LGB79D3EC1B0BECEBD , bda:LGF89E97698611527D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRF7FEBF8EDA3A3181
+        a                   :AgentAsCreator ;
+        :agent              bdr:P326 ;
+        :role               bdr:R0ER0025 .
+    
     bdr:WA3CN25699  a       :Work ;
+        skos:altLabel       "pad+ma g.yang 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "slob dpon pad+ma 'byung gnas kyi g.yang 'bum rin chen bang mdzod cig"@bo-x-ewts ;
+        :catalogInfo        "Prosperity ritual from Guru Rinpoche, discovery by Guru Chowang (1212-1270)."@en ;
+        :creator            bdr:CRF7FEBF8EDA3A3181 ;
         :isRoot             true ;
-        :workHasInstance    bdr:MW3CN25699 .
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
+        :workHasInstance    bdr:MW3CN25699 ;
+        :workIsAbout        bdr:T22 .
 }
