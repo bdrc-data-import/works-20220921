@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2378 {
+    bda:LG11BA79C05D823E0D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-01T15:58:34.502Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG6D99C88019B82009
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-01T16:22:36.945Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +33,21 @@ bdg:WA1NLM2378 {
     bda:WA1NLM2378  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2378 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "73/WA1NLM2378.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2378 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG11BA79C05D823E0D , bda:LG6D99C88019B82009 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2378  a       :Work ;
-        skos:prefLabel      "rgyal ba kun gyi mkhyen brtse nus gsum gyi bdag nyid rje btsun tsong kha pa chen po la dmigs brtse ma'i gsol 'debs dang 'brel ba'i bla ma'i rnal 'byor dga' ldan lha brgya ma'i khrid yig dngos grub kun 'byung sogs/"@bo-x-ewts ;
+        skos:altLabel       "rgyal ba kun gyi mkhyen brtse nus gsum gyi bdag nyid rje btsun tsong kha pa chen po la dmigs brtse ma'i gsol 'debs dang 'brel ba'i bla ma'i rnal 'byor dga' ldan lha brgya ma'i khrid yig dngos grub kun 'byung /"@bo-x-ewts ;
+        skos:prefLabel      "dmigs brtse ma'i gsol 'debs dang 'brel ba'i bla ma'i rnal 'byor dga' ldan lha brgya ma'i khrid yig dngos grub kun 'byung sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instruction on the practice of the guruyoga focusing upon rje rin po che tsong kha pa blo bzang grags pa and called the Gadhen Lhagyama and other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2378 , bdr:W1NLM2378 .
+        :workGenre          bdr:T132 , bdr:T200 ;
+        :workHasInstance    bdr:MW1NLM2378 , bdr:W1NLM2378 ;
+        :workIsAbout        bdr:T430 .
 }

@@ -12,23 +12,40 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN25704 {
+    bda:LG4BD12A99B34C4ED9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-30T15:40:57.438Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG6D6E2C956EFC1855
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-11-30T11:16:17.943Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGF440FFAB38B6C0B4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-01T20:57:41.159Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3CN25704  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25704 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "97/WA3CN25704.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25704 ;
-        adm:logEntry        bda:LG6D6E2C956EFC1855 ;
+        adm:logEntry        bda:LG4BD12A99B34C4ED9 , bda:LG6D6E2C956EFC1855 , bda:LGF440FFAB38B6C0B4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA3CN25704  a       :Work ;
+        skos:prefLabel      "dbu ma la 'jug pa'i bsdus 'grel tshig don gsal bar byed pa'i sgrol ma/"@bo-x-ewts ;
+        :catalogInfo        "Comentory on madhyamakavatara by Geluk master Jampa Phunsok and others from Amdo."@en ;
         :isRoot             true ;
-        :workHasInstance    bdr:MW3CN25704 .
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW3CN25704 ;
+        :workIsAbout        bdr:T233 .
 }

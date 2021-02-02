@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2377 {
+    bda:LG8E1255E8AFCEF53F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-01T15:14:37.524Z"^^xsd:dateTime ;
+        adm:logMessage      "released for outline"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG9CE3C59D9474F934
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-01T16:22:36.482Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +33,20 @@ bdg:WA1NLM2377 {
     bda:WA1NLM2377  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2377 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d3/WA1NLM2377.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2377 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG8E1255E8AFCEF53F , bda:LG9CE3C59D9474F934 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2377  a       :Work ;
         skos:prefLabel      "ma Ni bum bsgrub kyi cho ga dngos grub gter mdzod sogs/"@bo-x-ewts ;
+        :catalogInfo        "Ma Ni bum sgrub ritual and prayer to teacher of the lineage of graduated approach"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2377 , bdr:W1NLM2377 .
+        :workGenre          bdr:T11 , bdr:T238 ;
+        :workHasInstance    bdr:MW1NLM2377 , bdr:W1NLM2377 ;
+        :workIsAbout        bdr:T1569 .
 }

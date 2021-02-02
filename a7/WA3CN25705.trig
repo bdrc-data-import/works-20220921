@@ -17,18 +17,35 @@ bdg:WA3CN25705 {
         adm:logDate         "2020-11-30T11:16:22.523Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGA305CDA1643CAF14
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-01-30T23:18:29.417Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGEC1EA23F6E78BBD0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-01T21:54:21.874Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3CN25705  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25705 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a7/WA3CN25705.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25705 ;
-        adm:logEntry        bda:LG7BEDAFF533D37471 ;
+        adm:logEntry        bda:LG7BEDAFF533D37471 , bda:LGA305CDA1643CAF14 , bda:LGEC1EA23F6E78BBD0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA3CN25705  a       :Work ;
+        skos:prefLabel      "zhi byed kyi chos skor/"@bo-x-ewts ;
+        :catalogInfo        "Teaching cycle about Zhiche."@en ;
         :isRoot             true ;
-        :workHasInstance    bdr:MW3CN25705 .
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T10MS11187 ;
+        :workHasInstance    bdr:MW3CN25705 ;
+        :workIsAbout        bdr:T194 .
 }
