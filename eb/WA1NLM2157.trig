@@ -18,6 +18,12 @@ bdg:WA1NLM2157 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGEDCD4633092B0AC7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-03T13:06:26.092Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,25 @@ bdg:WA1NLM2157 {
     bda:WA1NLM2157  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2157 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "eb/WA1NLM2157.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2157 ;
-        adm:logEntry        bda:LGE93C372010732E64 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LGE93C372010732E64 , bda:LGEDCD4633092B0AC7 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR446C667ABB22D924
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15125 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2157  a       :Work ;
         skos:prefLabel      "byang chub sems dpa'i spyod pa la 'jug pa/"@bo-x-ewts ;
+        :catalogInfo        "Bodhisattva way of life by Acarya Shantideva."@en ;
+        :creator            bdr:CR446C667ABB22D924 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2157 , bdr:W1NLM2157 .
+        :workHasInstance    bdr:MW1NLM2157 , bdr:W1NLM2157 ;
+        :workIsAbout        bdr:T2064 , bdr:WA19740 .
 }

@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2384 {
+    bda:LG11E30D857E2C4D2E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-03T16:27:05.85Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +26,20 @@ bdg:WA1NLM2384 {
     bda:WA1NLM2384  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2384 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "f6/WA1NLM2384.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2384 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG11E30D857E2C4D2E , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2384  a       :Work ;
-        skos:prefLabel      "bya rgyud pad+ma'i rigs kyi gtso bo mgon po tshe dpag med kyi sgrub thabs smyung bar gnas pa'i cho ga dang bcas pa rin po che'i phreng ba sogs/"@bo-x-ewts ;
+        skos:altLabel       "bya rgyud pad+ma'i rigs kyi gtso bo mgon po tshe dpag med kyi sgrub thabs smyung bar gnas pa'i cho ga dang bcas pa rin po che'i phreng ba sogs/"@bo-x-ewts ;
+        skos:prefLabel      "tshe dpag med kyi sgrub thabs smyung bar gnas pa'i cho ga dang bcas pa rin po che'i phreng ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "LIturgical text explaining the method of performance of the smyung gnas rites of fasting and silence focusing upon the aparimitayurjnana-sadhana by Yongzin Yeshe Gyaltsan, Explanations of the secret expressions fro Manngag Rinchen Jungne, and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2384 , bdr:W1NLM2384 .
+        :workHasInstance    bdr:MW1NLM2384 , bdr:W1NLM2384 ;
+        :workIsAbout        bdr:T147 , bdr:T85 .
 }
