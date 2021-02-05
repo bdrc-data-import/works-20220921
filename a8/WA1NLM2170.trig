@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2170 {
+    bda:LG11F1D82E98763BA7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-04T14:54:47.794Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGB6A4CD136A051202
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,19 @@ bdg:WA1NLM2170 {
     bda:WA1NLM2170  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2170 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a8/WA1NLM2170.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2170 ;
-        adm:logEntry        bda:LGB6A4CD136A051202 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG11F1D82E98763BA7 , bda:LGB6A4CD136A051202 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2170  a       :Work ;
         skos:prefLabel      "'phags pa gnam sa snang brgyad sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'phags pa bkra shis brtsegs pa zhes bya ba theg pa chen po'i mdo/ 2 zhing mchog yid dga' chos 'dzin du skye ba'i smon lam ma nor bu'i them skas/ 3 gdungs shugs drag pos sme sngags gsol 'debs bya tshul/ 4 zhing mchog yid dga' chos 'dzin du skye ba'i smon lam ma nor bu'i them skas/ 5 shis brjod bkra shis don grub/ 6 dge slong gi phyi bcos/ 7 'dul ba rgya mtsho'i snying po/ 8 zhing mchog yid dga' chos 'dzin du skye ba'i smon lam ma nor bu'i them skas/"@bo-x-ewts , "Arya parayangyati sutra; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
         :workHasInstance    bdr:MW1NLM2170 , bdr:W1NLM2170 .
 }

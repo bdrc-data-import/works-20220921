@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2164 {
+    bda:LGDDBAACF8158863F7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-04T10:13:56.812Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGE21254F4F8077CDA
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2164 {
     bda:WA1NLM2164  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2164 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "55/WA1NLM2164.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2164 ;
-        adm:logEntry        bda:LGE21254F4F8077CDA , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LGDDBAACF8158863F7 , bda:LGE21254F4F8077CDA , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2164  a       :Work ;
         skos:prefLabel      "gsang bde 'jigs gsum sgrub thabs bsdus pa chos skyong bsrung ma'i bskang gso bsdus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'dod gsol kha sgyur byed tshul/ 2 klu dang sa bdag la bsang / 3 'jigs byed dpa' bo gcig pa'i mngon rtogs mdor bsdus/ 4 dam tshig rdo rje bsgom bzlas/ 5 rang nyid ston pa sangs rgyas su gyur/ 6 chos skyong dregs pa lcam sring nyer gtad gser skyems/ 7 chos skyong dregs pa lcam sring gi tshogs mchod/ 8 btsan gyi grib sel/ 9 rta mgrin gsang sgrub kyi gser skyems 'bul bar 'dod na/ 10 chos skyong lcam sring gi gtor chog bsdus pa/ 11 od hor theng ki re'i chu tshan gi bsangs/ 12 me lha khrus gsol/ 13 phyugs bzhi bsur ma/ 14 skyabs 'gro sems bskyed tshad med bzhi bsgom pa sngon du btang nas/ 15 chos skyong beg tse lcam sring gi bsang mchod 'bul tshul bsam pa kun 'grub/ 16 skar ma bdun lug srog rtag du pa'i tshe thar/ 17 'dzam bu de ba'i zhal zas sman rag phud kyi mchod par chang la bdud rtsi ril bu btab/ 18 theg pa chen po'i gso sbyong gi sdom pa/ 19 mkhyen brste'i dri med/ 20 gza' yab kyi gzungs/ 21 dpal myur ye shes mgon po sgrub thabs/ 22 dpa' gcig bcu gsum ci rigs kyi sgrub thabs rgyas 'brel na/"@en , "A short Sadhana of Guhyasamaja, Cakrasamvara and Vajrabairava and short regular propitiation of protective deities; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2164 , bdr:W1NLM2164 .
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM2164 , bdr:W1NLM2164 ;
+        :workIsAbout        bdr:T1345 , bdr:T19 , bdr:T406 .
 }
