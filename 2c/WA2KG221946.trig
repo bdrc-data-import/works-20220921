@@ -12,33 +12,40 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG221946 {
+    bda:LG387EB8C8B0EF6C6B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-02-05T17:42:19.079Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGAC5C4A31CE3CCB6F
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-02-04T19:32:28.058Z"^^xsd:dateTime ;
+        adm:logDate         "2021-02-05T17:38:25.41Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG221946  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG221946 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "2c/WA2KG221946.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG221946 ;
-        adm:logEntry        bda:LGAC5C4A31CE3CCB6F ;
+        adm:logEntry        bda:LG387EB8C8B0EF6C6B , bda:LGAC5C4A31CE3CCB6F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR387EB8C8B0EF6C6B
+    bdr:CR4B1F8BFA554F0E06
         a                   :AgentAsCreator ;
         :agent              bdr:P6120 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR4B1F8BFA554F0E06
+    bdr:CR4D88E6CD44909B18
         a                   :AgentAsCreator ;
         :agent              bdr:P9950 ;
         :role               bdr:R0ER0014 .
     
-    bdr:CR4D88E6CD44909B18
+    bdr:CRC6F9085228AA2A6C
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG14968 ;
         :role               bdr:R0ER0026 .
@@ -46,11 +53,11 @@ bdg:WA2KG221946 {
     bdr:WA2KG221946  a      :SerialMember , :Work ;
         skos:prefLabel      "slob dpon chos grags kyi tshad ma rigs thigs dang / de'i 'grel pa slob dpon chos mchog gis mdzad pa/"@bo-x-ewts , "âcàrya dharmakãrti's nyàya bindu with dharmottara's commentary"@en , "आचार्य धर्मकीर्ति विरचित न्याय-बिन्दु एवं धर्मोत्तर टीका"@sa-Deva ;
         :catalogInfo        "Acharya Dharmakīrti's Nyāya Bindu with Dharmottara's commentary translated in Hindi, Sanskrit, and Tibetan and annotated by Govindacandra Paṇḍe; Edited Sanskrit and Tibetan version by Dr. Lobsang Dorjee Rabling and Thinlay Ram Shashni."@en ;
-        :creator            bdr:CR387EB8C8B0EF6C6B , bdr:CR4B1F8BFA554F0E06 , bdr:CR4D88E6CD44909B18 ;
+        :creator            bdr:CR4B1F8BFA554F0E06 , bdr:CR4D88E6CD44909B18 , bdr:CRC6F9085228AA2A6C ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangHi , bdr:LangSa ;
         :serialMemberOf     bdr:WAS2KG221946 ;
         :workGenre          bdr:T132 ;
-        :workHasInstance    bdr:MW2KG221946 ;
+        :workHasInstance    bdr:MW2KG221946 , bdr:W2KG221946 ;
         :workIsAbout        bdr:T1252 , bdr:WA4CZ16851 .
 }

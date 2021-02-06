@@ -18,6 +18,12 @@ bdg:WA1NLM2175 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG4B149B7E5EFFA0C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-05T12:10:38.933Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM2175 {
     bda:WA1NLM2175  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2175 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "cd/WA1NLM2175.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2175 ;
-        adm:logEntry        bda:LG416FDBAFD5BA95B9 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG416FDBAFD5BA95B9 , bda:LG4B149B7E5EFFA0C5 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR77913EED7CD218A6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2175  a       :Work ;
         skos:prefLabel      "rta mgrin gsang sgrub bka' sdod bcas pa mchod cing bskang bshags bzlog pa bya ba'i cho ga dngos grub char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sna tshogs pad+ma 'dab ma brgyad pa'i lte bar a las zla ba'i dkyil 'khor gyi steng du/ 2 thub dbang gnas brtan bcu drug dang bcas pa la mchod cing gsol ba gdab pa'i tshul khrus gsol dang bcas pa thub bstan rgyas byed yid bzhin nor bu/ 3 dpal dur khrod bdag po'i bskang gso dngos grub 'bar ba'i 'od/ 4 bla mgon dbyer med kyi rnal 'byor nyams su len tshul/ 5 te lo'i ba'i gsol 'debs/ 6 pany+tsha rak+Sha'i gzungs mdo/ 7 don yod zhags pa'i snying po'i gzungs/ 8 rigs gsum mgon po'i sgrub thabs/ 9 gnas brtan mchod pa'i skabs su khrus gsol bya tshul/ 10 shar gangs ri ma/ 11 rgyal po sku lnga bsangs mchod 'bul bar 'dod pa/ 12 rnga mong pang rdzar rag che/ 13 dpal lha mo nor gyi rgyun zhes bya ba'i gzungs/ 14 rta mgrin gsang sgrub mnga' gsol/ /lha rgyal snyan pa'i rnga gsang dang / /paN chen blo bzang chos rgyan gyis/ /mdzad pa'i beg tse'i mnga' gsol/ 15 'byung bzhi gtor ma gtong bar 'dod pa'i tshul/ 16 gsol 'debs 'dod don re skong / 17 rta mgrin gsang sgrub kyi sgo nas grib sel bya tshul nor bu ke ta ka"@en , "Puja offering, confession and purification, repelling ritual of Hayagriva Guhyasadhana by the third Thukwan Chokyi Nyima; other text also included."@en ;
+        :creator            bdr:CR77913EED7CD218A6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2175 , bdr:W1NLM2175 .
+        :workGenre          bdr:T529 ;
+        :workHasInstance    bdr:MW1NLM2175 , bdr:W1NLM2175 ;
+        :workIsAbout        bdr:T1892 , bdr:T1AT269 , bdr:T50 .
 }

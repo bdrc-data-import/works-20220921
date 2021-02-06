@@ -12,28 +12,35 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG221947 {
+    bda:LGECB641C142233E8C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-02-05T17:42:47.744Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGF4ACA35B82B4401D
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-02-04T19:32:46.389Z"^^xsd:dateTime ;
+        adm:logDate         "2021-02-05T17:38:25.813Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG221947  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG221947 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "19/WA2KG221947.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG221947 ;
-        adm:logEntry        bda:LGF4ACA35B82B4401D ;
+        adm:logEntry        bda:LGECB641C142233E8C , bda:LGF4ACA35B82B4401D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusEditing .
     
-    bdr:CR7007D2D1896DB401
+    bdr:CR14D05FCCE012E231
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG5870 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CRECB641C142233E8C
+    bdr:CR7007D2D1896DB401
         a                   :AgentAsCreator ;
         :agent              bdr:P3379 ;
         :role               bdr:R0ER0019 .
@@ -41,10 +48,10 @@ bdg:WA2KG221947 {
     bdr:WA2KG221947  a      :SerialMember , :Work ;
         skos:prefLabel      "jo bo rjes mdzad pa'i gzhung tshan lnga /"@bo-x-ewts , "five treatises of acarya dipamkarasrijnana"@en , "आचार्य दीपंकरश्रीज्ञान प्रणीत पञ्च ग्रन्थ संग्रह"@sa-Deva ;
         :catalogInfo        "Critically edited with translations of five great treatises of Atīśa on Buddhist doctrines."@en ;
-        :creator            bdr:CR7007D2D1896DB401 , bdr:CRECB641C142233E8C ;
+        :creator            bdr:CR14D05FCCE012E231 , bdr:CR7007D2D1896DB401 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn , bdr:LangHi , bdr:LangSa ;
         :serialMemberOf     bdr:WAS2KG221947 ;
-        :workHasInstance    bdr:MW2KG221947 ;
+        :workHasInstance    bdr:MW2KG221947 , bdr:W2KG221947 ;
         :workIsAbout        bdr:T1252 , bdr:T770 .
 }
