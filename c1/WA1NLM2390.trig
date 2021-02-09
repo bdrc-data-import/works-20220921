@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2390 {
+    bda:LGA10803E4FD387AC1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-08T16:59:31.465Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +26,21 @@ bdg:WA1NLM2390 {
     bda:WA1NLM2390  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2390 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "c1/WA1NLM2390.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2390 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGA10803E4FD387AC1 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2390  a       :Work ;
-        skos:prefLabel      "byang chub lam gyi rim pa'i sngon 'gro bla ma'i rnal 'byor zhal shes thun mong ma yin pa kun mkhyen lam bzang sogs/"@bo-x-ewts ;
+        skos:altLabel       "byang chub lam gyi rim pa'i sngon 'gro bla ma'i rnal 'byor zhal shes thun mong ma yin pa kun mkhyen lam bzang /"@bo-x-ewts ;
+        skos:prefLabel      "lam rim sngon 'gro bla ma'i rnal 'byor zhal shes thun mong ma yin pa kun mkhyen lam bzang sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instruction on the practice of the preliminaries of the lam rim precepts, notes on practice focusing upon the gurupujavidhi and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2390 , bdr:W1NLM2390 .
+        :workGenre          bdr:T238 ;
+        :workHasInstance    bdr:MW1NLM2390 , bdr:W1NLM2390 ;
+        :workIsAbout        bdr:T4 .
 }

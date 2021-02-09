@@ -24,6 +24,12 @@ bdg:WA3CN15690 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGF709BAD469CF73BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-08T16:49:52.12Z"^^xsd:dateTime ;
+        adm:logMessage      "added other titles"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -40,40 +46,42 @@ bdg:WA3CN15690 {
     bda:WA3CN15690  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN15690 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "20/WA3CN15690.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN15690 ;
-        adm:logEntry        bda:LG316E10A27A279930 , bda:LGEC58AA97A77256D7 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG316E10A27A279930 , bda:LGEC58AA97A77256D7 , bda:LGF709BAD469CF73BF , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR19A9C43955A82069
-        a                   :AgentAsCreator ;
-        :agent              bdr:P3379 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR5E767AD11A8944FE
+    bdr:CR075D96D7BBF02F24
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG5870 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CRF709BAD469CF73BF
-        a                   :AgentAsCreator ;
-        :agent              bdr:P4954 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRFA29EEF3A9858416
+    bdr:CR19A9C43955A82069
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ10568 ;
         :role               bdr:R0ER0019 .
     
-    bdr:WA3CN15690  a       :Work ;
-        skos:prefLabel      "'phags pa phung po gsum pa'i mdo dang de'i rgya 'grel gsum/"@bo-x-ewts ;
-        :catalogInfo        "Aryatriskandhasutram and its three Commentaries by Acarya Nagarjuna, Jitari and Dipamkarashrijnana. Restored, translated and critically edited by Lobsang Dorjee (Rabling)"@en ;
-        :creator            bdr:CR19A9C43955A82069 , bdr:CR5E767AD11A8944FE , bdr:CRF709BAD469CF73BF , bdr:CRFA29EEF3A9858416 ;
+    bdr:CR5E767AD11A8944FE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRFA29EEF3A9858416
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA3CN15690  a       :SerialMember , :Work ;
+        skos:prefLabel      "'phags pa phung po gsum pa'i mdo dang de'i rgya 'grel gsum/"@bo-x-ewts , "âryatriskandhasåtram and its three Commentaries"@en , "आर्यत्रिस्कन्धसूत्रं टीकात्रयसंवलितम्"@sa-Deva ;
+        :catalogInfo        "Aryatriskandhasutram and its three Commentaries by Acarya Nagarjuna, Jitari and Dipamkarashrijnana. Restored, translated and critically edited by Lobsang Dorjee (Rabling)."@en ;
+        :creator            bdr:CR075D96D7BBF02F24 , bdr:CR19A9C43955A82069 , bdr:CR5E767AD11A8944FE , bdr:CRFA29EEF3A9858416 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangHi , bdr:LangSa ;
+        :serialMemberOf     bdr:WAS3CN15690 ;
         :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW3CN15690 , bdr:W3CN15690 ;
         :workIsAbout        bdr:WA4CZ16793 .
