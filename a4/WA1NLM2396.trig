@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2396 {
+    bda:LGB7E10CD2B418BBFD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-17T15:26:30.282Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged and relewased"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +27,20 @@ bdg:WA1NLM2396 {
     bda:WA1NLM2396  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2396 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "a4/WA1NLM2396.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2396 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGB7E10CD2B418BBFD , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2396  a       :Work ;
-        skos:prefLabel      "rje btsun sgrol ma'i sgo nas 'gro ba kun la shin tu phan pa'i thabs bla na med pa bdud las rnam rgyal sogs/"@bo-x-ewts ;
+        skos:altLabel       "rje btsun sgrol ma'i sgo nas 'gro ba kun la shin tu phan pa'i thabs bla na med pa bdud las rnam rgyal/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma'i sgo nas 'gro ba kun la shin tu phan pa'i thabs bla na med pa bdud las rnam rgyal sogs/"@bo-x-ewts ;
+        :catalogInfo        "A ritual text on the basis of Tara as deity to dispel epidemic diseases, spirit and obstacles, nstruction on the practice of the taking of refuge in the three jewels, 'two works on the 'grel pa bzhi sbrags, popular approach to the exegesis of the guhyasamaja tantra and other other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2396 , bdr:W1NLM2396 .
+        :workHasInstance    bdr:MW1NLM2396 , bdr:W1NLM2396 ;
+        :workIsAbout        bdr:T00AG01323 , bdr:T1297 .
 }
