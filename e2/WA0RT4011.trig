@@ -17,6 +17,16 @@ bdg:WA0RT4011 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRA3A4C1_WA0RT4011
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4004 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CRF7ED6C_WA0RT4011
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6453 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:ID0D7B61_WA0RT4011
         a                   bdr:RefrKTsT ;
         rdf:value           "4011" .
@@ -25,6 +35,7 @@ bdg:WA0RT4011 {
         skos:prefLabel      "sgrol ma'i sgrub thabs/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID0D7B61_WA0RT4011 ;
+        :creator            bdr:CRA3A4C1_WA0RT4011 , bdr:CRF7ED6C_WA0RT4011 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG13126_4014 , bdr:MW22704_2808 , bdr:MW23703_3193 , bdr:MW2KG5015_2808 ;

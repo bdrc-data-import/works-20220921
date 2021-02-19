@@ -17,8 +17,14 @@ bdg:WA0RTI4042 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB8CBF0_WA0RTI4042
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1518 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA0RTI4042  a       :Work ;
         skos:prefLabel      "maṇḍalavidhi"@sa-x-iast ;
+        :creator            bdr:CRB8CBF0_WA0RTI4042 ;
         :isRoot             true ;
         :language           bdr:LangInc ;
         :workHasParallelsIn  bdr:WA0RT4042 .
