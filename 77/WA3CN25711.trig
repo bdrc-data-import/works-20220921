@@ -18,9 +18,21 @@ bdg:WA3CN25711 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG21E63BCFF2201B26
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-19T11:04:35.599Z"^^xsd:dateTime ;
+        adm:logMessage      "added copyRight"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG5B431F9A284465AB
         a                   adm:UpdateData ;
         adm:logDate         "2021-02-01T22:12:56.514Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB9576D65AD324868
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-02-19T11:01:14.725Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGC52C0C465169F93C
@@ -37,15 +49,15 @@ bdg:WA3CN25711 {
     bda:WA3CN25711  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25711 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "77/WA3CN25711.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25711 ;
-        adm:logEntry        bda:LG2143FF566BCE9607 , bda:LG5B431F9A284465AB , bda:LGC52C0C465169F93C , bda:LGF2E9A85AEAA04D3E ;
+        adm:logEntry        bda:LG2143FF566BCE9607 , bda:LG21E63BCFF2201B26 , bda:LG5B431F9A284465AB , bda:LGB9576D65AD324868 , bda:LGC52C0C465169F93C , bda:LGF2E9A85AEAA04D3E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB9576D65AD324868
+    bdr:CR60BB821C64A0C804
         a                   :AgentAsCreator ;
         :agent              bdr:P319 ;
         :role               bdr:R0ER0019 .
@@ -54,10 +66,10 @@ bdg:WA3CN25711 {
         skos:altLabel       "dpa' bo gtsug lag phreng ba'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/ dpa' bo gtsug lag phreng ba/"@bo-x-ewts ;
         :catalogInfo        "Collected Works of Karma Kagyu master Pawo Tsuklag Trengwa (1504-1566)."@en ;
-        :creator            bdr:CRB9576D65AD324868 ;
+        :creator            bdr:CR60BB821C64A0C804 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW3CN25711 ;
+        :workHasInstance    bdr:MW3CN25711 , bdr:W3CN25711 ;
         :workIsAbout        bdr:T1386 .
 }

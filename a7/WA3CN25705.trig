@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN25705 {
+    bda:LG7B72B3816E977521
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-02-19T10:51:30.515Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG7BEDAFF533D37471
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-11-30T11:16:22.523Z"^^xsd:dateTime ;
@@ -32,11 +38,11 @@ bdg:WA3CN25705 {
     bda:WA3CN25705  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25705 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "a7/WA3CN25705.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25705 ;
-        adm:logEntry        bda:LG7BEDAFF533D37471 , bda:LGA305CDA1643CAF14 , bda:LGEC1EA23F6E78BBD0 ;
+        adm:logEntry        bda:LG7B72B3816E977521 , bda:LG7BEDAFF533D37471 , bda:LGA305CDA1643CAF14 , bda:LGEC1EA23F6E78BBD0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -46,6 +52,6 @@ bdg:WA3CN25705 {
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T10MS11187 ;
-        :workHasInstance    bdr:MW3CN25705 ;
+        :workHasInstance    bdr:MW3CN25705 , bdr:W3CN25705 ;
         :workIsAbout        bdr:T194 .
 }

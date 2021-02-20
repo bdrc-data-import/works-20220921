@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN25695 {
+    bda:LG41478792B1D67E73
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-02-19T10:40:10.486Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGA74BB98CE8015767
         a                   adm:UpdateData ;
         adm:logDate         "2021-01-30T22:01:01.575Z"^^xsd:dateTime ;
@@ -26,15 +32,15 @@ bdg:WA3CN25695 {
     bda:WA3CN25695  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25695 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "aa/WA3CN25695.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25695 ;
-        adm:logEntry        bda:LGA74BB98CE8015767 , bda:LGC508E681693690C2 ;
+        adm:logEntry        bda:LG41478792B1D67E73 , bda:LGA74BB98CE8015767 , bda:LGC508E681693690C2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR41478792B1D67E73
+    bdr:CR892F00FAEEC62D6B
         a                   :AgentAsCreator ;
         :agent              bdr:P22 ;
         :role               bdr:R0ER0019 .
@@ -42,10 +48,10 @@ bdg:WA3CN25695 {
     bdr:WA3CN25695  a       :Work ;
         skos:prefLabel      "bka' gdams pa dang dge lugs bla ma rags rim gyi gsung 'bum mtshan tho/"@bo-x-ewts ;
         :catalogInfo        "Contents of the collected writings of the Kadampa and Gelukpa masters by Longdol Lama Ngagwang Lobsang (1719-1794)."@en ;
-        :creator            bdr:CR41478792B1D67E73 ;
+        :creator            bdr:CR892F00FAEEC62D6B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T2123 ;
-        :workHasInstance    bdr:MW3CN25695 ;
+        :workHasInstance    bdr:MW3CN25695 , bdr:W3CN25695 ;
         :workIsAbout        bdr:T791 , bdr:T819 .
 }

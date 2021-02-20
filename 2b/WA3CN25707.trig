@@ -18,6 +18,12 @@ bdg:WA3CN25707 {
         adm:logMessage      "added info"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG7CCCE77EF7DFF3B3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-02-19T10:55:50.803Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGADE9CD8EB1D873F2
         a                   adm:UpdateData ;
         adm:logDate         "2021-01-30T23:18:29.417Z"^^xsd:dateTime ;
@@ -32,15 +38,15 @@ bdg:WA3CN25707 {
     bda:WA3CN25707  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25707 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "2b/WA3CN25707.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25707 ;
-        adm:logEntry        bda:LG276512C1EA6C1BEA , bda:LGADE9CD8EB1D873F2 , bda:LGDC8F3CF47C931622 ;
+        adm:logEntry        bda:LG276512C1EA6C1BEA , bda:LG7CCCE77EF7DFF3B3 , bda:LGADE9CD8EB1D873F2 , bda:LGDC8F3CF47C931622 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7CCCE77EF7DFF3B3
+    bdr:CRA768068E8910238F
         a                   :AgentAsCreator ;
         :agent              bdr:P996 ;
         :role               bdr:R0ER0019 .
@@ -48,9 +54,9 @@ bdg:WA3CN25707 {
     bdr:WA3CN25707  a       :Work ;
         skos:prefLabel      "rnam bshad dgongs pa rab gsal gyi mtha' gcod rigs pa'i rgya mtsho blo gsal 'jug sgo"@bo-x-ewts ;
         :catalogInfo        "Enalytic treatment on the Tsongkhapa's great exposition on the Madhyamakavatara of chandrakirti by Geluk master Tenpa Rabgye (1493-1568)."@en ;
-        :creator            bdr:CR7CCCE77EF7DFF3B3 ;
+        :creator            bdr:CRA768068E8910238F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW3CN25707 ;
+        :workHasInstance    bdr:MW3CN25707 , bdr:W3CN25707 ;
         :workIsAbout        bdr:T1215 , bdr:T233 .
 }
