@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2406 {
+    bda:LG10CF10B507470774
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-22T16:06:02.56Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +27,20 @@ bdg:WA1NLM2406 {
     bda:WA1NLM2406  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2406 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "44/WA1NLM2406.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2406 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG10CF10B507470774 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2406  a       :Work ;
-        skos:prefLabel      "rgyal ba thams cad kyi mkhyen brtse nus gsum gcig tu bsdus pa'i bdag nyid lnga brgya rnams kyi gtsug gi nor bu thams cad mkhyen pa blo bzang grags pa'i dpal gyi gsol 'debs dang 'brel ba'i bla ma'i rnal 'byor dga' ldan lha brgya mar grags pa'i dmigs rim dang bya ba ji ltar byed pa'i rim pa gsal bar phye ba dngos grub kyi 'bras bu g.yur du za ba'i ljon shing sogs/"@bo-x-ewts ;
+        skos:altLabel       "rgyal ba thams cad kyi mkhyen brtse nus gsum gcig tu bsdus pa'i bdag nyid lnga brgya rnams kyi gtsug gi nor bu thams cad mkhyen pa blo bzang grags pa'i dpal gyi gsol 'debs dang 'brel ba'i bla ma'i rnal 'byor dga' ldan lha brgya mar grags pa'i dmigs rim dang bya ba ji ltar byed pa'i rim pa gsal bar phye ba dngos grub kyi 'bras bu g.yur du za ba'i ljon shing /"@bo-x-ewts ;
+        skos:prefLabel      "bla ma'i rnal 'byor dga' ldan lha brgya mar grags pa'i dmigs rim dang bya ba ji ltar byed pa'i rim pa gsal bar phye ba dngos grub kyi 'bras bu g.yur du za ba'i ljon shing sogs/"@bo-x-ewts ;
+        :catalogInfo        "The Guruyoga connected with the practice of the Gadhan Lhagyama, supplementary to the ritual of Gurupuja and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2406 , bdr:W1NLM2406 .
+        :workHasInstance    bdr:MW1NLM2406 , bdr:W1NLM2406 ;
+        :workIsAbout        bdr:T138 , bdr:T4 .
 }

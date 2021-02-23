@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2402 {
+    bda:LG278C01D9E0315A01
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-22T16:06:01.649Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +27,19 @@ bdg:WA1NLM2402 {
     bda:WA1NLM2402  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2402 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "14/WA1NLM2402.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2402 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG278C01D9E0315A01 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2402  a       :Work ;
         skos:prefLabel      "skyabs 'gro sems bskyed kyi nyams len gsal byed legs tshogs kun 'byung sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instruction on the essence of the taking of refuge in mahayana buddhist practiceby Khalkha Damtshig Dorjee, Instructional manual of hundred bali offering by Kachen Yeshe Gyaltshen and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2402 , bdr:W1NLM2402 .
+        :workHasInstance    bdr:MW1NLM2402 , bdr:W1NLM2402 ;
+        :workIsAbout        bdr:T1366 , bdr:T465 .
 }
