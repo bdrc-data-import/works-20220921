@@ -18,6 +18,11 @@ bdg:WA1NLM1455 {
         adm:logMessage      "added Work to CTC 17"@en ;
         adm:logWhoStr       "add-works-to-PR1CTC17" .
     
+    bda:LGBCA771C2966B369A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-23T16:18:27.185Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGFA35090B2BB33B27
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -33,17 +38,20 @@ bdg:WA1NLM1455 {
     bda:WA1NLM1455  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1455 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "4b/WA1NLM1455.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1455 ;
-        adm:logEntry        bda:LGB36BE897B4513D1E , bda:LGFA35090B2BB33B27 , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LGB36BE897B4513D1E , bda:LGBCA771C2966B369A , bda:LGFA35090B2BB33B27 , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1455  a       :Work ;
         skos:prefLabel      "rje btsun dam pa bstan pa'i rgyal mtshan gyi rnam thar sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of texts on various subjects including a biography of Khalkha Jetsun Dampa Lobsang Tenpai Gyaltsen, the ritual of the funeral, praise, and prayer of White Sarasvati and Tara. See the detailed list on the outline."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1455 , bdr:W1NLM1455 .
+        :workGenre          bdr:T3 , bdr:T810 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1455 , bdr:W1NLM1455 ;
+        :workIsAbout        bdr:P6556 , bdr:T619 .
 }

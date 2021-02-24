@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2415 {
+    bda:LGBD7C9338A4E053FA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-23T17:18:41.592Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +27,27 @@ bdg:WA1NLM2415 {
     bda:WA1NLM2415  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2415 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b2/WA1NLM2415.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2415 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGBD7C9338A4E053FA , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4B9C6B127FAABF30
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2415  a       :Work ;
-        skos:prefLabel      "'jam dgon bla ma tsong kha pa chen po gtso bor gyur ba'i skyabs nas dam pa rnams la phyag mchod sogs bsag sbyang gi rim pa ji ltar byas pa'i tshul gsal bar bgod pa dge legs rgyas byed phan bde'i char 'bebs sogs/"@bo-x-ewts ;
+        skos:altLabel       "'jam dgon bla ma tsong kha pa chen po gtso bor gyur ba'i skyabs nas dam pa rnams la phyag mchod sogs bsag sbyang gi rim pa ji ltar byas pa'i tshul gsal bar bgod pa dge legs rgyas byed phan bde'i char 'bebs/"@bo-x-ewts ;
+        skos:prefLabel      "tsong kha pa chen po gtso bor gyur ba'i skyabs nas dam pa rnams la phyag mchod sogs bsag sbyang gi rim pa ji ltar byas pa'i tshul gsal bar bgod pa dge legs rgyas byed phan bde'i char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "The approach of accumulating the merits and purify the negative actions by making offerings to chiefly Tsongkhapa and the sacred object of refuge, instruction on the dual sadhana propitiating vajrabhairava and sukla manjughosha and other rituals"@en ;
+        :creator            bdr:CR4B9C6B127FAABF30 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2415 , bdr:W1NLM2415 .
+        :workGenre          bdr:T151 ;
+        :workHasInstance    bdr:MW1NLM2415 , bdr:W1NLM2415 ;
+        :workIsAbout        bdr:T1338 , bdr:T859 .
 }
