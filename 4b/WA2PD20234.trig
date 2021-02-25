@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2PD20234 {
+    bda:LG39F560333529F5B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-24T17:38:25.414Z"^^xsd:dateTime ;
+        adm:logMessage      "added G#"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG55E4FB999CA97028
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-03-06T20:30:26.576Z"^^xsd:dateTime ;
@@ -33,18 +39,19 @@ bdg:WA2PD20234 {
     bda:WA2PD20234  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD20234 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "4b/WA2PD20234.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD20234 ;
-        adm:logEntry        bda:LG55E4FB999CA97028 , bda:LG67D4F1921FB9F141 , bda:LG75445AC1E1978A8E ;
+        adm:logEntry        bda:LG39F560333529F5B2 , bda:LG55E4FB999CA97028 , bda:LG67D4F1921FB9F141 , bda:LG75445AC1E1978A8E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA2PD20234  a       :Work ;
-        skos:prefLabel      "'dam dkar dgon dul mo chos rje phyag dpe rtsa chen skor/"@bo-x-ewts ;
+        skos:prefLabel      "'dam dkar dgon dul mo chos rje'i phyag dpe rtsa chen skor/"@bo-x-ewts ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T4CZ71 ;
-        :workHasInstance    bdr:MW2PD20234 , bdr:W2PD20234 .
+        :workHasInstance    bdr:MW2PD20234 , bdr:W2PD20234 ;
+        :workIsAbout        bdr:G2578 .
 }
