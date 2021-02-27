@@ -18,6 +18,11 @@ bdg:WA1NLM1457 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG5C9EB1597B677313
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-26T12:53:05.746Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIMA07EBF90  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
@@ -27,17 +32,31 @@ bdg:WA1NLM1457 {
     bda:WA1NLM1457  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1457 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "14/WA1NLM1457.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1457 ;
-        adm:logEntry        bda:LG5C060642D6FE8FA7 , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG5C060642D6FE8FA7 , bda:LG5C9EB1597B677313 , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR6137DB37C7BE190C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1896 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRAEC359DCE881DDF5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P477 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1457  a       :Work ;
         skos:prefLabel      "dpal rdo rje 'jigs byed chen po'i dkyil 'khor bsgrub chog bla brgyud gsol 'debs bum mchog bdag 'jug dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rite and ritual texts concern with deities Vajrabhairava, Cakrasaṃvara, Sridevi, and Vaiśravaṇa."@en ;
+        :creator            bdr:CR6137DB37C7BE190C , bdr:CRAEC359DCE881DDF5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1457 , bdr:W1NLM1457 .
+        :workGenre          bdr:T159 , bdr:T385 ;
+        :workHasInstance    bdr:MW1NLM1457 , bdr:W1NLM1457 ;
+        :workIsAbout        bdr:T104 , bdr:T197 , bdr:T401 , bdr:T423 .
 }

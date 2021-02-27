@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1458 {
+    bda:LG0C8B80B6F3D9BD4A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-02-26T12:53:05.983Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGEF8BD4A6AE862997
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,19 @@ bdg:WA1NLM1458 {
     bda:WA1NLM1458  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1458 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "bb/WA1NLM1458.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1458 ;
-        adm:logEntry        bda:LGEF8BD4A6AE862997 , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG0C8B80B6F3D9BD4A , bda:LGEF8BD4A6AE862997 , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1458  a       :Work ;
-        skos:prefLabel      "'jam dpal gshin rje gshed kyi bka' sdod 'chi bdag las kyi gshin rje 'khor dang bcas pa'i nyin zhag gi dbyu gu drug cu rtsa bzhi'i gtor ma la brten te drag por gtso bor gyur pa'i las sgrub pa'i rim pa gnam lcags thog chen drag 'bebs/_'di la dbang rjes gnang ma thob pa dang /_dam tshig mi gtsang ba sogs kyis blta zhing /_nyams su blangs na drag po'i chad pas mnar bar 'gyur pas bag yod par byos shig sogs/"@bo-x-ewts ;
+        skos:prefLabel      "'jam dpal gshin rje gshed kyi bka' sdod 'chi bdag las kyi gshin rje 'khor dang bcas pa'i nyin zhag gi dbyu gu drug cu rtsa bzhi'i gtor ma la brten te drag por gtso bor gyur pa'i las sgrub pa'i rim pa gnam lcags thog chen drag 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rite and ritual texts concern with deities Vajrabhairava, Tara, Hayagrīva, Vajrapani, Pancaraksadevi."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1458 , bdr:W1NLM1458 .
+        :workHasInstance    bdr:MW1NLM1458 , bdr:W1NLM1458 ;
+        :workIsAbout        bdr:T104 , bdr:T1433 , bdr:T2044 , bdr:T619 , bdr:T896 .
 }
