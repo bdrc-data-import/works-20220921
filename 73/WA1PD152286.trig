@@ -40,6 +40,12 @@ bdg:WA1PD152286 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGD9D4DE4393053802
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-01T14:04:54.013Z"^^xsd:dateTime ;
+        adm:logMessage      "topic, added cat info, about person, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGFB257AB71C31955C
         a                   adm:UpdateData ;
         adm:logDate         "2016-11-28T23:51:57.367Z"^^xsd:dateTime ;
@@ -69,11 +75,11 @@ bdg:WA1PD152286 {
     bda:WA1PD152286  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD152286 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "73/WA1PD152286.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD152286 ;
-        adm:logEntry        bda:LG486AB1FA8E4CE791 , bda:LG5E44AB8BFAAAD1B7 , bda:LGBE23AD33B6CE887D , bda:LGD53ECA03749E9D2B , bda:LGD628CEADFE94E032 , bda:LGFB257AB71C31955C , bda:LGIM4599A38FCE , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG486AB1FA8E4CE791 , bda:LG5E44AB8BFAAAD1B7 , bda:LGBE23AD33B6CE887D , bda:LGD53ECA03749E9D2B , bda:LGD628CEADFE94E032 , bda:LGD9D4DE4393053802 , bda:LGFB257AB71C31955C , bda:LGIM4599A38FCE , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -82,8 +88,10 @@ bdg:WA1PD152286 {
     bdr:WA1PD152286  a      :Work ;
         skos:altLabel       "ba da chuan tong zang xi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod kyi lha mo'i zlos gar gyi 'khrab gzhung phyogs bsgrigs/"@bo-x-ewts , "八大传统藏戏"@zh-hans ;
+        :catalogInfo        "A collection of play script of Tibetan folk opera."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T3 ;
-        :workHasInstance    bdr:MW1PD152286 , bdr:W1PD152286 .
+        :workGenre          bdr:T1081 , bdr:T3 ;
+        :workHasInstance    bdr:MW1PD152286 , bdr:W1PD152286 ;
+        :workIsAbout        bdr:P1KG20918 , bdr:P1KG21783 , bdr:P1KG21822 , bdr:P1KG5401 , bdr:P1KG6045 , bdr:P8116 , bdr:T2034 , bdr:T256 .
 }

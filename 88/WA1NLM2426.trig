@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2426 {
+    bda:LG2E47169B9E2597DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-01T15:15:12.896Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted doner"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +27,21 @@ bdg:WA1NLM2426 {
     bda:WA1NLM2426  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2426 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "88/WA1NLM2426.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2426 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG2E47169B9E2597DA , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2426  a       :Work ;
-        skos:prefLabel      "rdo rje mi 'khrugs pa lha dgu'i dkyil 'khor gyi ngag 'don mthong ba don ldan sogs/"@bo-x-ewts ;
+        skos:altLabel       "rdo rje mi 'khrugs pa lha dgu'i dkyil 'khor gyi ngag 'don mthong ba don ldan/"@bo-x-ewts ;
+        skos:prefLabel      "mi 'khrugs pa lha dgu'i dkyil 'khor gyi ngag 'don mthong ba don ldan sogs/"@bo-x-ewts ;
+        :catalogInfo        "Ritual for the performance of the nine-deity Aksobhya mandala practice and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2426 , bdr:W1NLM2426 .
+        :workGenre          bdr:T536 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2426 , bdr:W1NLM2426 ;
+        :workIsAbout        bdr:T998 .
 }

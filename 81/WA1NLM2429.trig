@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2429 {
+    bda:LGF1192A5123A19B6F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-01T15:15:13.639Z"^^xsd:dateTime ;
+        adm:logMessage      "deleted doner"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -21,17 +27,19 @@ bdg:WA1NLM2429 {
     bda:WA1NLM2429  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2429 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "81/WA1NLM2429.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2429 ;
-        adm:logEntry        bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGF1192A5123A19B6F , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2429  a       :Work ;
         skos:prefLabel      "lha bsang rnam dag chos sku ma sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2429 , bdr:W1NLM2429 .
 }

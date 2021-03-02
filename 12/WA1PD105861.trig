@@ -35,6 +35,12 @@ bdg:WA1PD105861 {
         adm:logDate         "2012-08-22T14:46:02.641Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGD8ED38A4B5925157
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-01T10:51:44.085Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
         adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
@@ -65,15 +71,15 @@ bdg:WA1PD105861 {
     bda:WA1PD105861  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD105861 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "12/WA1PD105861.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD105861 ;
-        adm:logEntry        bda:LG394EF623C6005681 , bda:LG60F319DAC3564446 , bda:LG8E97E549058E9DCC , bda:LG925F07F0740F9117 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG394EF623C6005681 , bda:LG60F319DAC3564446 , bda:LG8E97E549058E9DCC , bda:LG925F07F0740F9117 , bda:LGD8ED38A4B5925157 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD8ED38A4B5925157
+    bdr:CR6226F16F82382342
         a                   :AgentAsCreator ;
         :agent              bdr:P645 ;
         :role               bdr:R0ER0019 .
@@ -83,11 +89,12 @@ bdg:WA1PD105861 {
     bdr:WA1PD105861  a      :SerialMember , :Work ;
         skos:altLabel       "slob dpon sangs rgyas gnyis pa pad+ma 'byung gnas kyi rnam thar yid kyi mun sel/"@bo-x-ewts ;
         skos:prefLabel      "slob dpon pad+ma 'byung gnas kyi rnam thar yid kyi mun sel/"@bo-x-ewts , "Slob dpon saṅs rgyas gñis pa Padma-ʼbyuṅ-gnas kyi rnam thar yid kyi mun sel źes bya ba bźugs so /[ʼtsho bsdu legs sgrig, Blo-gros-rgya-mtsho ; rtsom sgrig ʼgan ʼkhur ba, Don-grub-phun-tshogs]."@en-x-mixed , "第二佛陀莲花生大士传 消除心中之暗"@zh-hans ;
-        :creator            bdr:CRD8ED38A4B5925157 ;
+        :catalogInfo        "The biography of Guru Padmasambhava by Sokdokpa Lodro Gyaltshen; also compilation of other biography of Padmasambhava."@en ;
+        :creator            bdr:CR6226F16F82382342 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC2 ;
-        :workGenre          bdr:T3 ;
+        :workGenre          bdr:T1081 , bdr:T3 ;
         :workHasInstance    bdr:MW1PD105861 , bdr:W1PD105861 ;
         :workIsAbout        bdr:T449 .
 }

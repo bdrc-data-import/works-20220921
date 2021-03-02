@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA00KG03653 {
+    bda:LG06D9477DB9253A7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-01T14:10:11.737Z"^^xsd:dateTime ;
+        adm:logMessage      "Added About Person & modify catalog record"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG2F00045F8E06D68C
         a                   adm:UpdateData ;
         adm:logDate         "2014-12-18T11:36:14.589Z"^^xsd:dateTime ;
@@ -54,15 +60,15 @@ bdg:WA00KG03653 {
     bda:WA00KG03653  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG03653 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "b2/WA00KG03653.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG03653 ;
-        adm:logEntry        bda:LG2F00045F8E06D68C , bda:LGAAD9637C486B32FC , bda:LGFCB9A77C6D8613B2 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG06D9477DB9253A7F , bda:LG2F00045F8E06D68C , bda:LGAAD9637C486B32FC , bda:LGFCB9A77C6D8613B2 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR06D9477DB9253A7F
+    bdr:CR0E322BB178E38C0F
         a                   :AgentAsCreator ;
         :agent              bdr:P7645 ;
         :role               bdr:R0ER0019 .
@@ -70,10 +76,10 @@ bdg:WA00KG03653 {
     bdr:WA00KG03653  a      :Work ;
         skos:prefLabel      "'das log karma dbang 'dzin gyi rnam thar thar pa'i lcags kyu/"@bo-x-ewts ;
         :catalogInfo        "Autobiographical account of a return from death by Karma Wangdzin."@en ;
-        :creator            bdr:CR06D9477DB9253A7F ;
+        :creator            bdr:CR0E322BB178E38C0F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
         :workHasInstance    bdr:IE00KG03653 , bdr:MW00KG03653 , bdr:W00KG03653 ;
-        :workIsAbout        bdr:T1203 .
+        :workIsAbout        bdr:P7645 , bdr:T1203 .
 }

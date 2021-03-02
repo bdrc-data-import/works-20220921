@@ -18,6 +18,12 @@ bdg:WA1NLM1460 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG7725E27665F18697
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-01T18:16:45.546Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIMA07EBF90  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1460 {
     bda:WA1NLM1460  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1460 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "09/WA1NLM1460.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1460 ;
-        adm:logEntry        bda:LG3EF736AF74D5F764 , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG3EF736AF74D5F764 , bda:LG7725E27665F18697 , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1460  a       :Work ;
         skos:prefLabel      "dpal ldan 'dod khams dbang phyug dmag zor rgyal mo'i 'phrin las bzhi'i sbyin sreg gi cho ga dngos grub rin po che'i dbang mdzod sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rites and ritual texts concern with deities Glorious Army-Repulsing Queen, Lhamo Budzima, Sridevi, etc. See detail on the outline."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1460 , bdr:W1NLM1460 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1460 , bdr:W1NLM1460 ;
+        :workIsAbout        bdr:T1227 , bdr:T401 , bdr:T926 .
 }

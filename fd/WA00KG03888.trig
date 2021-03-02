@@ -12,16 +12,16 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA00KG03888 {
-    bda:LG7BE5C7F2899196A0
-        a                   adm:UpdateData ;
-        adm:logDate         "2009-12-02T15:29:52.863Z"^^xsd:dateTime ;
-        adm:logMessage      "corrected the publisher"@en ;
-        adm:logWho          bdu:U00016 .
-    
     bda:LG8665466BB9D62CAC
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-11-15T12:07:06.339Z"^^xsd:dateTime ;
         adm:logMessage      "cataloged and published"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8AE2A25BF65A1EE0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-01T18:41:22.538Z"^^xsd:dateTime ;
+        adm:logMessage      "Added About Person & modify catalog record"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIM01FF8512D7
@@ -52,13 +52,6 @@ bdg:WA00KG03888 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
-    bda:LGIM8647D1C7AE
-        a                   adm:UpdateData ;
-        adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
-        adm:logMessage      "added Work to CTC 10"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00006 .
-    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -76,15 +69,15 @@ bdg:WA00KG03888 {
     bda:WA00KG03888  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG03888 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "fd/WA00KG03888.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG03888 ;
-        adm:logEntry        bda:LG7BE5C7F2899196A0 , bda:LG8665466BB9D62CAC , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG8665466BB9D62CAC , bda:LG8AE2A25BF65A1EE0 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB563EB4F3FF127AC
+    bdr:CRF817D264DDAFF41C
         a                   :AgentAsCreator ;
         :agent              bdr:P00KG03893 ;
         :role               bdr:R0ER0019 .
@@ -94,11 +87,11 @@ bdg:WA00KG03888 {
     bdr:WA00KG03888  a      :Work ;
         skos:altLabel       "mthong gling bstan 'dzin pad+ma 'od zer gyi sku phreng rim byon gyi rnam thar dang legs bshad zhal gdams/"@bo-x-ewts ;
         skos:prefLabel      "grub dbang bstan 'dzin pad+ma 'od zer gyi sku phreng rim byon gyi rnam thar/"@bo-x-ewts , "tang ling . dan zeng bei ma e se zhuan lue ji zuo pin xuan"@zh-latn-pinyin-x-ndia ;
-        :catalogInfo        "Biographies of Sakya master Tenzin Pema Ozer's incarnations along with pith instructions."@en ;
-        :creator            bdr:CRB563EB4F3FF127AC ;
+        :catalogInfo        "Biographies of Drikhung Kagyu master Tenzin Pema Ozer's incarnations along with pith instructions."@en ;
+        :creator            bdr:CRF817D264DDAFF41C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW00KG03888 , bdr:W00KG03888 ;
-        :workIsAbout        bdr:T58 , bdr:T617 .
+        :workIsAbout        bdr:P8LS13400 , bdr:P8LS13401 , bdr:P8LS13402 , bdr:T1190 , bdr:T58 .
 }
