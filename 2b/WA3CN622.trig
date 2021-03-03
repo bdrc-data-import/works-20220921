@@ -24,14 +24,20 @@ bdg:WA3CN622 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGEA873D3041216075
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-03-02T13:35:11.605Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3CN622  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN622 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "2b/WA3CN622.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN622 ;
-        adm:logEntry        bda:LG36E1BA9CEAE335F5 , bda:LG5D6FA35D433EE7A9 ;
+        adm:logEntry        bda:LG36E1BA9CEAE335F5 , bda:LG5D6FA35D433EE7A9 , bda:LGEA873D3041216075 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -42,6 +48,6 @@ bdg:WA3CN622 {
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T10MS11187 ;
-        :workHasInstance    bdr:MW3CN622 ;
+        :workHasInstance    bdr:MW3CN622 , bdr:W3CN622 ;
         :workIsAbout        bdr:G394 , bdr:T819 .
 }

@@ -34,6 +34,12 @@ bdg:WA1PD159405 {
         adm:logDate         "2016-11-11T20:23:54.623Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGC83EC286DCA839B6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-02T10:24:20.321Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, about person, cat info, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGCF0DB37F095BEFFC
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-21T21:07:41.787Z"^^xsd:dateTime ;
@@ -63,22 +69,29 @@ bdg:WA1PD159405 {
     bda:WA1PD159405  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159405 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "e3/WA1PD159405.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159405 ;
-        adm:logEntry        bda:LG22E82B2A4C2C71BA , bda:LG2A1859DA3AA0319E , bda:LG2A7D8EEAD09ED0D2 , bda:LG891DA4D3040930EB , bda:LGCF0DB37F095BEFFC , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG22E82B2A4C2C71BA , bda:LG2A1859DA3AA0319E , bda:LG2A7D8EEAD09ED0D2 , bda:LG891DA4D3040930EB , bda:LGC83EC286DCA839B6 , bda:LGCF0DB37F095BEFFC , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRF123FB48FDA1A6BC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75166 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD159405  skos:altLabel  "尼玛丹增自传"@zh-hans .
     
     bdr:WA1PD159405  a      :Work ;
         skos:altLabel       "mkhan nyi ma bstan 'dzin gyi rnam thar/"@bo-x-ewts , "ni ma dan zeng zi zhuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "dpal gshen bstan sman ri'i mkhan po sgo ston nyi ma bstan 'dzin dbang gi rgyal po'i rnam thar legs bshad nyi ma 'bum gyi 'od can 'gro kun blo mun sel ba'i sgron me/"@bo-x-ewts , "尼玛丹增自传"@zh-hans ;
+        :catalogInfo        "Biography of 23rd Menri Khenpo Goton Nyima Tenzin by Nyima Tenzin."@en ;
+        :creator            bdr:CRF123FB48FDA1A6BC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW1PD159405 , bdr:W1PD159405 ;
-        :workIsAbout        bdr:T247 .
+        :workIsAbout        bdr:P8LS66561 , bdr:T247 .
 }

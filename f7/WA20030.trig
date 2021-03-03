@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20030 {
+    bda:LG166F7D402A051D91
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG30B443AC830B28CE
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2008-05-29T15:28:30.658Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA20030 {
         adm:logWho          bdu:U00021 .
     
     bda:LGEA4859FCD65E1DBD
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-02T15:34:53.747Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, cat info, print type, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LGEE129359656F8BD5
         a                   adm:UpdateData ;
@@ -37,25 +43,26 @@ bdg:WA20030 {
     bda:WA20030  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20030 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f7/WA20030.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20030 ;
-        adm:logEntry        bda:LG30B443AC830B28CE , bda:LGAB780103A2B4A320 , bda:LGEA4859FCD65E1DBD , bda:LGEE129359656F8BD5 ;
+        adm:logEntry        bda:LG166F7D402A051D91 , bda:LG30B443AC830B28CE , bda:LGAB780103A2B4A320 , bda:LGEA4859FCD65E1DBD , bda:LGEE129359656F8BD5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR166F7D402A051D91
+    bdr:CR52DFFA9E6A6407F8
         a                   :AgentAsCreator ;
         :agent              bdr:P6308 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA20030  a          :Work ;
         skos:prefLabel      "mag sar paN+Di ta sku phreng rim byon gyi rtogs brjod shel dkar phreng ba/"@bo-x-ewts ;
-        :creator            bdr:CR166F7D402A051D91 ;
+        :catalogInfo        "A sucessive Magsar Pandita's biography by Tsezhungpa Yamathar."@en ;
+        :creator            bdr:CR52DFFA9E6A6407F8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T3 ;
+        :workGenre          bdr:T1779 , bdr:T3 ;
         :workHasInstance    bdr:MW20030 , bdr:W20030 ;
-        :workIsAbout        bdr:T1082 .
+        :workIsAbout        bdr:P3639 , bdr:P4956 , bdr:P6309 , bdr:P7952 , bdr:P7978 , bdr:P7979 , bdr:T1082 , bdr:T2CZ7865 .
 }

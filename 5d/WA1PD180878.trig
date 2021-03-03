@@ -57,6 +57,12 @@ bdg:WA1PD180878 {
         adm:logDate         "2014-06-06T13:59:42.394Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGCF952DEBE6EC5F06
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-02T14:07:48.992Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD6B03BC6DB1ADB3A
         a                   adm:UpdateData ;
         adm:logDate         "2020-04-13T16:41:08.592Z"^^xsd:dateTime ;
@@ -93,22 +99,43 @@ bdg:WA1PD180878 {
     bda:WA1PD180878  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD180878 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      19 ;
         adm:gitPath         "5d/WA1PD180878.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD180878 ;
-        adm:logEntry        bda:LG5D02376F5CAA35B5 , bda:LG638B5103ADD8592A , bda:LG6F527CBE5B3AEC6D , bda:LG7B7F1D87F458BAA3 , bda:LG9650621C944A86E3 , bda:LG9ABF849AEC96E5B6 , bda:LGA2114F06194D392A , bda:LGB351767A9DD6A2A7 , bda:LGD6B03BC6DB1ADB3A , bda:LGE332DE23EA4CC651 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM74A445C794 ;
+        adm:logEntry        bda:LG5D02376F5CAA35B5 , bda:LG638B5103ADD8592A , bda:LG6F527CBE5B3AEC6D , bda:LG7B7F1D87F458BAA3 , bda:LG9650621C944A86E3 , bda:LG9ABF849AEC96E5B6 , bda:LGA2114F06194D392A , bda:LGB351767A9DD6A2A7 , bda:LGCF952DEBE6EC5F06 , bda:LGD6B03BC6DB1ADB3A , bda:LGE332DE23EA4CC651 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM74A445C794 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR5E7403E2D39A633C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2627 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR7281BCE8F1645C9D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1060 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRBB5F420BE253A06C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1219 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRFF63689901815247
+        a                   :AgentAsCreator ;
+        :agent              bdr:P791 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD180878  skos:altLabel  "藏族史记集成 (61-90)"@zh-hans .
     
     bdr:WA1PD180878  a      :Work ;
         skos:prefLabel      "bod kyi lo rgyus rnam thar phyogs bsgrigs/༼61－90༽"@bo-x-ewts , "藏族史记集成 (61-90)"@zh-hans ;
-        :catalogInfo        "Collected biographies of Tibetan masters."@en ;
+        :catalogInfo        "Collection of Tibetan historical literature by multiple author."@en ;
+        :creator            bdr:CR5E7403E2D39A633C , bdr:CR7281BCE8F1645C9D , bdr:CRBB5F420BE253A06C , bdr:CRFF63689901815247 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1081 , bdr:T1134 , bdr:T3 ;
+        :workGenre          bdr:T1081 , bdr:T1134 , bdr:T12 , bdr:T1673 , bdr:T3 ;
         :workHasInstance    bdr:MW1PD180878 , bdr:W1PD180878 ;
-        :workIsAbout        bdr:T1113 .
+        :workIsAbout        bdr:P0RK546 , bdr:P1060 , bdr:P1219 , bdr:P127 , bdr:P1405 , bdr:P1844 , bdr:P1853 , bdr:P2090 , bdr:P2557 , bdr:P2635 , bdr:P2636 , bdr:P3085 , bdr:P3379 , bdr:P3442 , bdr:P3719 , bdr:P4024 , bdr:P4252 , bdr:P4278 , bdr:P4CZ16915 , bdr:P5740 , bdr:P909 , bdr:P910 , bdr:P916 , bdr:P918 , bdr:T1113 .
 }

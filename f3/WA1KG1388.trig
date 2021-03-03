@@ -13,31 +13,24 @@
 
 bdg:WA1KG1388 {
     bda:LGD1C44296E12880AC
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2019-05-09T16:18:22.195Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-03-02T13:54:27.392Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
         adm:logWho          bdu:U00016 .
-    
-    bda:LGIMA612579E55
-        a                   adm:UpdateData ;
-        adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
-        adm:logMessage      "changed access to restrictedInChina"@en ;
-        adm:logMethod       bda:BatchMethod ;
-        adm:logWho          bdu:U00006 .
     
     bda:WA1KG1388  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG1388 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "f3/WA1KG1388.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG1388 ;
-        adm:logEntry        bda:LGD1C44296E12880AC , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LGD1C44296E12880AC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDDE24CA443ABEF0D
+    bdr:CRC39D991C39BD12C9
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG24552 ;
         :role               bdr:R0ER0019 .
@@ -46,9 +39,10 @@ bdg:WA1KG1388 {
         skos:altLabel       "tsha zer ngar dug gis gzhom ma nus pa'i gangs ri'i chu thig"@bo-x-ewts ;
         skos:prefLabel      "chu thig"@bo-x-ewts ;
         :catalogInfo        "Autobiography of a former political prisoner Gang Lhamo."@en ;
-        :creator            bdr:CRDDE24CA443ABEF0D ;
+        :creator            bdr:CRC39D991C39BD12C9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW1KG1388 , bdr:W1KG1388 .
+        :workHasInstance    bdr:MW1KG1388 , bdr:W1KG1388 ;
+        :workIsAbout        bdr:P1KG24552 .
 }

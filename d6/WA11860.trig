@@ -30,6 +30,10 @@ bdg:WA11860 {
         adm:logMessage      "added pub info and note"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG50C29F07CD8518E7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGA20B76663691AA34
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2009-04-29T14:36:06.972Z"^^xsd:dateTime ;
@@ -37,31 +41,34 @@ bdg:WA11860 {
         adm:logWho          bdu:U00016 .
     
     bda:LGD77A7F7A2BA2D31D
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-02T10:15:20.001Z"^^xsd:dateTime ;
+        adm:logMessage      "added pub info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:WA11860  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA11860 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "d6/WA11860.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA11860 ;
-        adm:logEntry        bda:LG254CF6D0C629BFC6 , bda:LG278EFE7E7469F7B4 , bda:LG480936DB2F3F236B , bda:LGA20B76663691AA34 , bda:LGD77A7F7A2BA2D31D ;
+        adm:logEntry        bda:LG254CF6D0C629BFC6 , bda:LG278EFE7E7469F7B4 , bda:LG480936DB2F3F236B , bda:LG50C29F07CD8518E7 , bda:LGA20B76663691AA34 , bda:LGD77A7F7A2BA2D31D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR50C29F07CD8518E7
+    bdr:CR3B6264BA8078C364
         a                   :AgentAsCreator ;
         :agent              bdr:P1226 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA11860  a          :Work ;
+        skos:altLabel       "lam 'bras bla ma brgyud pa'i rnam thar/"@bo-x-ewts ;
         skos:prefLabel      "bla ma brgyud pa'i rnam thar ngo mtshar snang ba/"@bo-x-ewts ;
-        :creator            bdr:CR50C29F07CD8518E7 ;
+        :catalogInfo        "Biographies of masters in the lineage of the Lamdre master of Sakya tradition"@en ;
+        :creator            bdr:CR3B6264BA8078C364 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW11860 , bdr:W11860 ;
-        :workIsAbout        bdr:T1543 .
+        :workIsAbout        bdr:T1702 .
 }

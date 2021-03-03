@@ -30,6 +30,12 @@ bdg:WA1KG10496 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG9EA571B090D1664F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-02T13:43:52.226Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -40,17 +46,24 @@ bdg:WA1KG10496 {
     bda:WA1KG10496  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG10496 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "7e/WA1KG10496.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG10496 ;
-        adm:logEntry        bda:LG0B0E595162296690 , bda:LG106074A3FB7723E6 , bda:LG6941DA85A5806325 , bda:LGIM4BF5F96E12 ;
+        adm:logEntry        bda:LG0B0E595162296690 , bda:LG106074A3FB7723E6 , bda:LG6941DA85A5806325 , bda:LG9EA571B090D1664F , bda:LGIM4BF5F96E12 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRC31FCCB9D81D7DDF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG222136 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG10496  a       :Work ;
         skos:altLabel       "smyung gnas rnam thar/"@bo-x-ewts ;
         skos:prefLabel      "smyung gnas bla ma brgyud pa'i rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biographies of the lineage masters of Nyung-ney practice written by Tsunpa Chokyi Dragpa (15 cent.)."@en ;
+        :creator            bdr:CRC31FCCB9D81D7DDF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA19803 {
-    bda:LGEB73AFCA765EED0C
+    bda:LG1890E4E88227C7A6
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGEB73AFCA765EED0C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-02T11:40:23.049Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info and changed author and topic"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
@@ -68,20 +74,20 @@ bdg:WA19803 {
     bda:WA19803  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19803 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "0b/WA19803.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19803 ;
-        adm:logEntry        bda:LGEB73AFCA765EED0C , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG1890E4E88227C7A6 , bda:LGEB73AFCA765EED0C , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1890E4E88227C7A6
+    bdr:CR560F75BBB2E452DD
         a                   :AgentAsCreator ;
         :agent              bdr:P6191 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR560F75BBB2E452DD
+    bdr:CRC02AF17A5153C993
         a                   :AgentAsCreator ;
         :agent              bdr:P7123 ;
         :role               bdr:R0ER0016 .
@@ -90,9 +96,9 @@ bdg:WA19803 {
         skos:altLabel       "gangs ljongs lo rgyus thog gi grags can mi sna/"@bo-x-ewts ;
         skos:prefLabel      "mi sna/"@bo-x-ewts ;
         :catalogInfo        "Biographical dictionary."@en ;
-        :creator            bdr:CR1890E4E88227C7A6 , bdr:CR560F75BBB2E452DD ;
+        :creator            bdr:CR560F75BBB2E452DD , bdr:CRC02AF17A5153C993 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T3 ;
+        :workGenre          bdr:T1986 ;
         :workHasInstance    bdr:MW19803 , bdr:W19803 .
 }
