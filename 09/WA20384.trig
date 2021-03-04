@@ -13,14 +13,20 @@
 
 bdg:WA20384 {
     bda:LG1757411CC0B9BB64
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-03T09:35:07.886Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, cat info, print type, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LG34E50181E5FFDA55
         a                   adm:UpdateData ;
         adm:logDate         "2018-01-10T15:56:24.198Z"^^xsd:dateTime ;
         adm:logMessage      "added catalogue info"@en ;
         adm:logWho          bdu:U00081 .
+    
+    bda:LG864B5EFB13D417CA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -46,20 +52,31 @@ bdg:WA20384 {
     bda:WA20384  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20384 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "09/WA20384.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20384 ;
-        adm:logEntry        bda:LG1757411CC0B9BB64 , bda:LG34E50181E5FFDA55 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG1757411CC0B9BB64 , bda:LG34E50181E5FFDA55 , bda:LG864B5EFB13D417CA , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRA763C4F3E54531AC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P336 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRC179C15D56DFE07C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2251 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA20384  a          :Work ;
         skos:prefLabel      "kun mkhyen jo nang pa chen po'i skyes rabs rtogs brjod/"@bo-x-ewts ;
-        :catalogInfo        "Two biographies of Dolpopa."@en ;
+        :catalogInfo        "Two biography of Dolpopa Sherap Gyaltshen by Mati Takphu Losang Tenpe Gyaltshen and Kunpang Chodrak Pal."@en ;
+        :creator            bdr:CRA763C4F3E54531AC , bdr:CRC179C15D56DFE07C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T3 ;
+        :workGenre          bdr:T1779 , bdr:T3 ;
         :workHasInstance    bdr:MW20384 , bdr:W20384 ;
-        :workIsAbout        bdr:T360 .
+        :workIsAbout        bdr:P139 , bdr:T360 .
 }

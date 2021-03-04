@@ -13,13 +13,19 @@
 
 bdg:WA28982 {
     bda:LG52A94D006AEB097C
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-03T15:56:45.835Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat , pub info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGB14F3F88904CCFAB
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2007-09-28T16:46:18.422Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBCF333A82EB4B08D
+        a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:LGIM01FF8512D7
@@ -53,15 +59,15 @@ bdg:WA28982 {
     bda:WA28982  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28982 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "f0/WA28982.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28982 ;
-        adm:logEntry        bda:LG52A94D006AEB097C , bda:LGB14F3F88904CCFAB , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG52A94D006AEB097C , bda:LGB14F3F88904CCFAB , bda:LGBCF333A82EB4B08D , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRBCF333A82EB4B08D
+    bdr:CR132B25C09146F061
         a                   :AgentAsCreator ;
         :agent              bdr:P9459 ;
         :role               bdr:R0ER0019 .
@@ -69,9 +75,11 @@ bdg:WA28982 {
     bdr:WA28982  a          :Work ;
         skos:altLabel       "gser tshang phun tshogs bkra shis kyis bod ljongs su las don bsgrubs shing 'tsho gnas byas pa'i rang gi lo rgyus mdor bsdus/"@bo-x-ewts ;
         skos:prefLabel      "gangs ri'i pang gi lang tsho'i rol mo/"@bo-x-ewts ;
-        :creator            bdr:CRBCF333A82EB4B08D ;
+        :catalogInfo        "Autobiographical memoirs of the Phuntsok Tsering"@en ;
+        :creator            bdr:CR132B25C09146F061 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
-        :workHasInstance    bdr:MW28982 , bdr:W28982 .
+        :workHasInstance    bdr:MW28982 , bdr:W28982 ;
+        :workIsAbout        bdr:P9459 .
 }

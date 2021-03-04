@@ -18,6 +18,10 @@ bdg:WA21145 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG21C42E85A4F2DE19
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG24D9DC27895BB118
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-10T09:32:18.274Z"^^xsd:dateTime ;
@@ -31,8 +35,10 @@ bdg:WA21145 {
         adm:logWho          bdu:U00012 .
     
     bda:LGCF0631DC7CE0866E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-03T13:27:25.391Z"^^xsd:dateTime ;
+        adm:logMessage      "added T#s"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -58,20 +64,22 @@ bdg:WA21145 {
     bda:WA21145  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21145 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "76/WA21145.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21145 ;
-        adm:logEntry        bda:LG16F2680163065C46 , bda:LG24D9DC27895BB118 , bda:LGAE02CBB76AA5FD30 , bda:LGCF0631DC7CE0866E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG16F2680163065C46 , bda:LG21C42E85A4F2DE19 , bda:LG24D9DC27895BB118 , bda:LGAE02CBB76AA5FD30 , bda:LGCF0631DC7CE0866E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:MW21145  skos:altLabel  "bde mchog snan brgyud biographies"@en .
+    
     bdr:WA21145  a          :Work ;
-        skos:altLabel       "bde mchog snan brgyud biographies"@bo-alalc97 ;
-        skos:prefLabel      "bde mchog snyan brgyud kyi rnam thar skor/"@bo-x-ewts ;
+        skos:prefLabel      "bde mchog snyan brgyud kyi rnam thar skor/"@bo-x-ewts , "bde mchog snan brgyud biographies"@en ;
         :catalogInfo        "Biographies of masters in the transmission of the Chakrasamvara Dakini teachings of the Marpa Kagyu order. Reproduced from a rare manuscript from Takna Monastery in Ladakh."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
-        :workHasInstance    bdr:MW21145 , bdr:W21145 .
+        :workHasInstance    bdr:MW21145 , bdr:W21145 ;
+        :workIsAbout        bdr:P2636 , bdr:P4278 , bdr:T10MS11132 .
 }

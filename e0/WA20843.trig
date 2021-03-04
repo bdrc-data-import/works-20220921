@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20843 {
-    bda:LG609FCFFEDEC7EA6D
+    bda:LG5B2FB96AD1FFB1DC
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG609FCFFEDEC7EA6D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-03T16:13:31.376Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, topic, author, print type, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LG71FFA46BF28D02FF
         a                   adm:UpdateData ;
@@ -52,20 +58,21 @@ bdg:WA20843 {
     bda:WA20843  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20843 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "e0/WA20843.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20843 ;
-        adm:logEntry        bda:LG609FCFFEDEC7EA6D , bda:LG71FFA46BF28D02FF , bda:LGC260A4DF10E28E7D , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG5B2FB96AD1FFB1DC , bda:LG609FCFFEDEC7EA6D , bda:LG71FFA46BF28D02FF , bda:LGC260A4DF10E28E7D , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA20843  a          :Work ;
         skos:altLabel       "dpal ldan sa skya dgon gyi lo rgyus dang khri pa rim byon gyi rnam thar mdor bsdus/"@bo-x-ewts ;
         skos:prefLabel      "sa skya dgon pa/"@bo-x-ewts ;
+        :catalogInfo        "Abbatial lineage of Sakya Gonchen; compiled by Tashi Lhunpo editorial board."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T3 ;
         :workHasInstance    bdr:MW1PD95675_A388C9 , bdr:MW20843 , bdr:MW8LS32711 , bdr:W20843 , bdr:W8LS32711 ;
-        :workIsAbout        bdr:G880 .
+        :workIsAbout        bdr:G880 , bdr:P1048 , bdr:P1056 , bdr:P1614 , bdr:P1615 , bdr:P3730 , bdr:P3731 , bdr:T16 , bdr:T617 .
 }

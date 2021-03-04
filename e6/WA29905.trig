@@ -13,8 +13,10 @@
 
 bdg:WA29905 {
     bda:LG038E380189281C3E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-03T15:56:48.207Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat , pub info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG1A8E4DD2A63147A6
         a                   adm:UpdateData ;
@@ -27,6 +29,10 @@ bdg:WA29905 {
         adm:logDate         "2009-11-07T16:33:19.286Z"^^xsd:dateTime ;
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LG7B120F9587242E79
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGDD98DF415F2CD036
         a                   adm:UpdateData ;
@@ -57,11 +63,11 @@ bdg:WA29905 {
     bda:WA29905  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29905 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "e6/WA29905.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29905 ;
-        adm:logEntry        bda:LG038E380189281C3E , bda:LG1A8E4DD2A63147A6 , bda:LG720C29469AA90457 , bda:LGDD98DF415F2CD036 , bda:LGFC44D5662A2A89BE , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG038E380189281C3E , bda:LG1A8E4DD2A63147A6 , bda:LG720C29469AA90457 , bda:LG7B120F9587242E79 , bda:LGDD98DF415F2CD036 , bda:LGFC44D5662A2A89BE , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -75,5 +81,5 @@ bdg:WA29905 {
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW29905 , bdr:W29905 ;
-        :workIsAbout        bdr:G3205 .
+        :workIsAbout        bdr:G3205 , bdr:P9977 , bdr:P9978 .
 }

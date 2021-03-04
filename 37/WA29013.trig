@@ -13,6 +13,12 @@
 
 bdg:WA29013 {
     bda:LG775D3BDC48DA9CE9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-03T15:56:46.214Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat , pub info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGC4F5240B9279295A
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -33,37 +39,38 @@ bdg:WA29013 {
     bda:WA29013  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29013 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "37/WA29013.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29013 ;
-        adm:logEntry        bda:LG775D3BDC48DA9CE9 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG775D3BDC48DA9CE9 , bda:LGC4F5240B9279295A , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA7E1BF6733B42E55
+    bdr:CR05492DDDA37B8342
         a                   :AgentAsCreator ;
-        :agent              bdr:P9464 ;
+        :agent              bdr:P9468 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CRC4F5240B9279295A
+    bdr:CRA7E1BF6733B42E55
         a                   :AgentAsCreator ;
         :agent              bdr:P7317 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRF6DACDD6A47FA0D6
         a                   :AgentAsCreator ;
-        :agent              bdr:P9468 ;
+        :agent              bdr:P9464 ;
         :role               bdr:R0ER0026 .
     
     bdr:MW29013  skos:altLabel  "banchan e erdeni zhuan"@zh-latn-pinyin-x-ndia .
     
     bdr:WA29013  a          :Work ;
         skos:prefLabel      "paN chen sku phreng rim byon gyi mdzad rnam/"@bo-x-ewts , "banchan e erdeni zhuan"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CRA7E1BF6733B42E55 , bdr:CRC4F5240B9279295A , bdr:CRF6DACDD6A47FA0D6 ;
+        :catalogInfo        "Collected biographies of the successive embodiments of the Panchen Lamas."@en ;
+        :creator            bdr:CR05492DDDA37B8342 , bdr:CRA7E1BF6733B42E55 , bdr:CRF6DACDD6A47FA0D6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW29013 , bdr:W29013 ;
-        :workIsAbout        bdr:T2380 .
+        :workIsAbout        bdr:T2380 , bdr:T2CZ7865 .
 }

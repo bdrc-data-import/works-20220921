@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29152 {
+    bda:LG971A1964B3025A75
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG9DE6E15BDD0D5D98
         a                   adm:UpdateData ;
         adm:logDate         "2013-09-20T13:27:22.036Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA29152 {
         adm:logWho          bdu:U00016 .
     
     bda:LGBA4081C85191966B
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-03T15:56:47.015Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat , pub info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
@@ -32,15 +38,15 @@ bdg:WA29152 {
     bda:WA29152  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29152 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "92/WA29152.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29152 ;
-        adm:logEntry        bda:LG9DE6E15BDD0D5D98 , bda:LGBA4081C85191966B , bda:LGIM4BF5F96E12 ;
+        adm:logEntry        bda:LG971A1964B3025A75 , bda:LG9DE6E15BDD0D5D98 , bda:LGBA4081C85191966B , bda:LGIM4BF5F96E12 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR971A1964B3025A75
+    bdr:CR255D932861A6BDE1
         a                   :AgentAsCreator ;
         :agent              bdr:P816 ;
         :role               bdr:R0ER0011 .
@@ -48,7 +54,7 @@ bdg:WA29152 {
     bdr:WA29152  a          :Work ;
         skos:altLabel       "grub pa'i dbang phyug chen po rnal 'byor kun dga' legs pa'i dpal gyi rnam par thar ba/"@bo-x-ewts ;
         skos:prefLabel      "'brug pa kun legs kyi rang rnam/"@bo-x-ewts ;
-        :creator            bdr:CR971A1964B3025A75 ;
+        :creator            bdr:CR255D932861A6BDE1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

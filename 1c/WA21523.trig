@@ -13,8 +13,10 @@
 
 bdg:WA21523 {
     bda:LG3596F668588635C8
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-03T15:17:09.152Z"^^xsd:dateTime ;
+        adm:logMessage      "added infos"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LG3D56FF09E1DC6DBF
         a                   adm:UpdateData ;
@@ -27,6 +29,10 @@ bdg:WA21523 {
         adm:logDate         "2008-04-30T14:03:30.485Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LG647D65E59E098197
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG65BB3B4577423266
         a                   adm:UpdateData ;
@@ -64,15 +70,15 @@ bdg:WA21523 {
     bda:WA21523  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21523 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "1c/WA21523.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21523 ;
-        adm:logEntry        bda:LG3596F668588635C8 , bda:LG3D56FF09E1DC6DBF , bda:LG423842BA7538ACD8 , bda:LG65BB3B4577423266 , bda:LGC63D321143D97326 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG3596F668588635C8 , bda:LG3D56FF09E1DC6DBF , bda:LG423842BA7538ACD8 , bda:LG647D65E59E098197 , bda:LG65BB3B4577423266 , bda:LGC63D321143D97326 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR647D65E59E098197
+    bdr:CRDF62A5B924F9889D
         a                   :AgentAsCreator ;
         :agent              bdr:P657 ;
         :role               bdr:R0ER0019 .
@@ -82,7 +88,7 @@ bdg:WA21523 {
     bdr:WA21523  a          :SerialMember , :Work ;
         skos:prefLabel      "bka' ma mdo dbang gi bla ma brgyud pa'i rnam thar/"@bo-x-ewts , "accounts eminent masters in the transmission lineage the 'dus pa mdo tantra"@en ;
         :catalogInfo        "Accounts of eminent masters in the transmission lineage of spoken canonical works."@en ;
-        :creator            bdr:CR647D65E59E098197 ;
+        :creator            bdr:CRDF62A5B924F9889D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016202 ;

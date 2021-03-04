@@ -13,8 +13,10 @@
 
 bdg:WA19222 {
     bda:LG07353F304493E764
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-03T12:18:42.031Z"^^xsd:dateTime ;
+        adm:logMessage      "changed lang encoding"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG2C3EF57A37A26EFE
         a                   adm:UpdateData ;
@@ -26,6 +28,10 @@ bdg:WA19222 {
         a                   adm:UpdateData ;
         adm:logDate         "2007-05-07T10:56:27.465Z"^^xsd:dateTime ;
         adm:logMessage      "corrected volume map"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG3B9EA86719C6CBCA
+        a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:LG4E9D2087F8C29F6F
@@ -70,22 +76,20 @@ bdg:WA19222 {
     bda:WA19222  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19222 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "0d/WA19222.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19222 ;
-        adm:logEntry        bda:LG07353F304493E764 , bda:LG2C3EF57A37A26EFE , bda:LG2DCF40856A24855C , bda:LG4E9D2087F8C29F6F , bda:LG73D811CFCFD6031D , bda:LGDF289133ECD3D127 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG07353F304493E764 , bda:LG2C3EF57A37A26EFE , bda:LG2DCF40856A24855C , bda:LG3B9EA86719C6CBCA , bda:LG4E9D2087F8C29F6F , bda:LG73D811CFCFD6031D , bda:LGDF289133ECD3D127 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bdr:MW19222  skos:altLabel  "brief lives of the successive masters in the transmission lineage of the bar 'brug-pa dkar-brgyud-pa of rwa-lung"@en .
     
     bdr:WA19222  a          :Work ;
         skos:altLabel       "dkar brgyud rnams kyi rnam thar gnad kyi sgron me zhes bya ba the tshom gsal byed gzhan las khyad par 'phags pa rnam thar thams cad kyi nying khu/"@bo-x-ewts , "Rwa luṅ dkar brgyud gser ʾphreṅ :brief lives of the successive masters in the transmission lineage of the Bar ʾBrug-pa Dkar-brgyud-pa of Rwa-luṅ."@en-x-mixed ;
         skos:prefLabel      "rwa lung dkar brgyud gser 'phreng /"@bo-x-ewts , "brief lives of the successive masters in the transmission lineage of the bar 'brug-pa dkar-brgyud-pa of rwa-lung"@en ;
         :catalogInfo        "Golden Rosary of the Rwalung Kagyu. Anthology of the successive life stories of masters in the Rwalung Drukpa Kagyu order."@en ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
+        :language           bdr:LangBo , bdr:LangEn ;
         :workHasInstance    bdr:MW19222 , bdr:MW4PD5167 , bdr:W19222 ;
         :workIsAbout        bdr:T1702 , bdr:T816 .
 }
