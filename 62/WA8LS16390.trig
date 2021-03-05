@@ -18,6 +18,12 @@ bdg:WA8LS16390 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG226B3801B62DA130
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T14:22:28.926Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG535486761D242E6F
         a                   adm:InitialDataCreation ;
         adm:logDate         "2015-04-10T14:36:06.075Z"^^xsd:dateTime ;
@@ -33,37 +39,37 @@ bdg:WA8LS16390 {
     bda:WA8LS16390  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS16390 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "62/WA8LS16390.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS16390 ;
-        adm:logEntry        bda:LG0F0330C950BBC96F , bda:LG535486761D242E6F , bda:LGAF01DC650262E066 ;
+        adm:logEntry        bda:LG0F0330C950BBC96F , bda:LG226B3801B62DA130 , bda:LG535486761D242E6F , bda:LGAF01DC650262E066 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR226B3801B62DA130
-        a                   :AgentAsCreator ;
-        :agent              bdr:P133 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR74FB735943CE2157
+    bdr:CR662A839F593353D8
         a                   :AgentAsCreator ;
         :agent              bdr:P1426 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR7ABD27585AC92E17
+    bdr:CR74FB735943CE2157
         a                   :AgentAsCreator ;
         :agent              bdr:P4580 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR7ABD27585AC92E17
+        a                   :AgentAsCreator ;
+        :agent              bdr:P133 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA8LS16390  a       :Work ;
         skos:altLabel       "'bri gung pa'i rnam thar dang gsung skor/"@bo-x-ewts ;
         skos:prefLabel      "rnam thar dang gsung skor/"@bo-x-ewts ;
         :catalogInfo        "Biographies and writtings of Drigung Kagyu masters written by author such as Drigung Rinchen Phuntsok, Zhedang Dorje and 5th Zhamar Konchok Yanlak."@en ;
-        :creator            bdr:CR226B3801B62DA130 , bdr:CR74FB735943CE2157 , bdr:CR7ABD27585AC92E17 ;
+        :creator            bdr:CR662A839F593353D8 , bdr:CR74FB735943CE2157 , bdr:CR7ABD27585AC92E17 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG21749 , bdr:T3 ;
         :workHasInstance    bdr:MW8LS16390 , bdr:W8LS16390 ;
-        :workIsAbout        bdr:T1190 .
+        :workIsAbout        bdr:P131 , bdr:P16 , bdr:P399 , bdr:T1190 .
 }

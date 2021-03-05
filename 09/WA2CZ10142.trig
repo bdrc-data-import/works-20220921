@@ -18,6 +18,12 @@ bdg:WA2CZ10142 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00020 .
     
+    bda:LG2251AF393CE0ABA5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T12:08:50.667Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat , pub info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG25EE8A65B0A78DA6
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2013-03-29T16:02:08.246Z"^^xsd:dateTime ;
@@ -74,28 +80,29 @@ bdg:WA2CZ10142 {
     bda:WA2CZ10142  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2CZ10142 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "09/WA2CZ10142.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2CZ10142 ;
-        adm:logEntry        bda:LG061356498560B0C3 , bda:LG25EE8A65B0A78DA6 , bda:LG7F3E0F160B70B766 , bda:LGA0EB3051859E745C , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG061356498560B0C3 , bda:LG2251AF393CE0ABA5 , bda:LG25EE8A65B0A78DA6 , bda:LG7F3E0F160B70B766 , bda:LGA0EB3051859E745C , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2251AF393CE0ABA5
+    bdr:CR84FDA48123683FAC
         a                   :AgentAsCreator ;
         :agent              bdr:P264 ;
         :role               bdr:R0ER0019 .
     
-    bdr:MW2CZ10142  skos:altLabel  "Koṅ-sprul Yon-tan-rgya-mtshoʾi rnam thar /[Koṅ-sprul Yon-tan-rgya-mtsho daṅ Karma Bkra-śis-chos-ʾphel gñis kyis brtsams]."@en-x-mixed , "工珠。云丹嘉措传"@zh-hans .
+    bdr:MW2CZ10142  skos:altLabel  "工珠。云丹嘉措传"@zh-hans .
     
     bdr:WA2CZ10142  a       :Work ;
         skos:altLabel       "'du shes gsum ldan spong ba pa'i gzugs brnyen pad+ma gar gyi dbang phyug phrin las 'gro 'dul rtsal gyi rtogs pa brjod pa'i dum bu smrig rgyu'i bdud rtsi/"@bo-x-ewts , "gong zhu yun dan jia cuo zhuan"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "kong sprul yon tan rgya mtsho'i rnam thar/"@bo-x-ewts , "Koṅ-sprul Yon-tan-rgya-mtshoʾi rnam thar /[Koṅ-sprul Yon-tan-rgya-mtsho daṅ Karma Bkra-śis-chos-ʾphel gñis kyis brtsams]."@en-x-mixed , "工珠。云丹嘉措传"@zh-hans ;
+        skos:prefLabel      "kong sprul yon tan rgya mtsho'i rnam thar/"@bo-x-ewts , "工珠。云丹嘉措传"@zh-hans ;
         :catalogInfo        "Autobiography of Jamgon Kongtrul Lodro Tayas (1813-1899)."@en ;
-        :creator            bdr:CR2251AF393CE0ABA5 ;
+        :creator            bdr:CR84FDA48123683FAC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW2CZ10142 , bdr:W2CZ10142 .
+        :workHasInstance    bdr:MW2CZ10142 , bdr:W2CZ10142 ;
+        :workIsAbout        bdr:P264 .
 }

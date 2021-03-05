@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG14815 {
+    bda:LG3DC405F68A34BE20
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T19:28:48.252Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG6436C4C07B837AA5
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-07-25T14:09:45.041Z"^^xsd:dateTime ;
@@ -48,15 +54,15 @@ bdg:WA1KG14815 {
     bda:WA1KG14815  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14815 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "dd/WA1KG14815.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14815 ;
-        adm:logEntry        bda:LG6436C4C07B837AA5 , bda:LGBBFDF74D18D90819 , bda:LGIM4599A38FCE , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG3DC405F68A34BE20 , bda:LG6436C4C07B837AA5 , bda:LGBBFDF74D18D90819 , bda:LGIM4599A38FCE , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3DC405F68A34BE20
+    bdr:CR296A5A0E61386FF5
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG4203 ;
         :role               bdr:R0ER0019 .
@@ -67,10 +73,11 @@ bdg:WA1KG14815 {
         skos:altLabel       "Grub-thob Ñag-re-se-boʼi skyes rabs rnam thar ma ʼoṅs luṅ btsan źal chems ñams mgur bźugs so /ma dpe bsdu rub daṅ spyi khyab źu sgrig pa, Ācārya Dge-bśes Thub-bstan-byaṅ-chub ; gtso ʼgan źu sgrig pa, Bkra-śis-tshe-riṅ ; dpe sdur daṅ lag bstar źu sgrig pa, Brag-gʼyab Grags-pa-tshe-riṅ."@en-x-mixed ;
         skos:prefLabel      "grub thob nyag re se bo'i skyes rabs rnam thar ma 'ong lung bstan zhal chems nyams mgur/"@bo-x-ewts , "autobiography, spritual songs and prophecies of the drub thob nyag re bse bo (1141?-1201)"@en ;
         :catalogInfo        "Autobiography, spritual songs and prophecies of the Martshang Kagyu master Druptop Nyaksewa (1141-1201)."@en ;
-        :creator            bdr:CR3DC405F68A34BE20 ;
+        :creator            bdr:CR296A5A0E61386FF5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1GS140301 ;
         :workGenre          bdr:T1CZ60 , bdr:T33 , bdr:T6 ;
-        :workHasInstance    bdr:MW1KG14815 , bdr:W1KG14815 .
+        :workHasInstance    bdr:MW1KG14815 , bdr:W1KG14815 ;
+        :workIsAbout        bdr:P1KG4203 .
 }

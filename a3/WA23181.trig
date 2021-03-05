@@ -29,9 +29,21 @@ bdg:WA23181 {
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGBEEC4236DB0B00CA
+    bda:LG99EFC8D43646BC8C
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGBEEC4236DB0B00CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T12:55:13.614Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected T#, title and language encodings"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD2F2AA3A0F998CE7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T12:57:51.541Z"^^xsd:dateTime ;
+        adm:logMessage      "added \"gser phreng\" as T#"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -57,30 +69,30 @@ bdg:WA23181 {
     bda:WA23181  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23181 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "a3/WA23181.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23181 ;
-        adm:logEntry        bda:LG016F087B52CF0943 , bda:LG678DD0F3D2CCCC25 , bda:LG8E6C032478EF5718 , bda:LGBEEC4236DB0B00CA , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG016F087B52CF0943 , bda:LG678DD0F3D2CCCC25 , bda:LG8E6C032478EF5718 , bda:LG99EFC8D43646BC8C , bda:LGBEEC4236DB0B00CA , bda:LGD2F2AA3A0F998CE7 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD2F2AA3A0F998CE7
+    bdr:CRDD2CB3BB548A3DF9
         a                   :AgentAsCreator ;
         :agent              bdr:P7639 ;
         :role               bdr:R0ER0019 .
     
-    bdr:MW23181  skos:altLabel  "bka' brgyud yid bzin nor bu yi 'phren ba"@en-x-mixed .
+    bdr:MW23181  skos:altLabel  "a precious rosary of lives of eminent masters of the 'brig-gun-pa dkar-brgyud-pa tradition"@en-x-mixed .
     
     bdr:WA23181  a          :SerialMember , :Work ;
-        skos:altLabel       "a precious rosary of lives of eminent masters of the 'brig-gun-pa dkar-brgyud-pa tradition"@en-x-mixed , "Bkaʼ brgyud Yid bźin nor bu yi ʼphreṅ ba :a precious rosary of lives of eminent masters of the ʼBri-guṅ-pa Dkar-brgyud-pa tradition /by Grub-thob O-rgyan-pa Rin-chen-dpal."@en-x-mixed ;
-        skos:prefLabel      "bka' brgyud yid bzhin nor bu yi 'phreng ba/"@bo-x-ewts , "bka' brgyud yid bzin nor bu yi 'phren ba"@en-x-mixed ;
+        skos:altLabel       "Bkaʼ brgyud Yid bźin nor bu yi ʼphreṅ ba :a precious rosary of lives of eminent masters of the ʼBri-guṅ-pa Dkar-brgyud-pa tradition /by Grub-thob O-rgyan-pa Rin-chen-dpal."@en-x-mixed ;
+        skos:prefLabel      "bka' brgyud yid bzhin nor bu yi 'phreng ba/"@bo-x-ewts , "a precious rosary of lives of eminent masters of the 'brig-gun-pa dkar-brgyud-pa tradition"@en-x-mixed ;
         :catalogInfo        "This Sertreng or \"Golden Rosary of Lives\" recounts the life stories of great masters transmitting the methods of practice in the Drikung and Martsang Kagyu lineages of Tibet."@en ;
-        :creator            bdr:CRD2F2AA3A0F998CE7 ;
+        :creator            bdr:CRDD2CB3BB548A3DF9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016202 ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW23181 , bdr:W23181 ;
-        :workIsAbout        bdr:T1190 , bdr:T1678 .
+        :workIsAbout        bdr:T1678 , bdr:T2620 .
 }

@@ -24,6 +24,12 @@ bdg:WA1KG15241 {
         adm:logMessage      "subject class changed from T1PD85357 to T1CZ60"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGD8261484B1EA7929
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T19:28:48.677Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGEE17524D24F538A0
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-09-19T13:41:05.094Z"^^xsd:dateTime ;
@@ -61,28 +67,27 @@ bdg:WA1KG15241 {
     bda:WA1KG15241  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG15241 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "02/WA1KG15241.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG15241 ;
-        adm:logEntry        bda:LG083C2B89B8AB55C7 , bda:LG45D52EA0CD3A5351 , bda:LGEE17524D24F538A0 , bda:LGIM4BF5F96E12 , bda:LGIMA1F3FB78EA , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG083C2B89B8AB55C7 , bda:LG45D52EA0CD3A5351 , bda:LGD8261484B1EA7929 , bda:LGEE17524D24F538A0 , bda:LGIM4BF5F96E12 , bda:LGIMA1F3FB78EA , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD8261484B1EA7929
+    bdr:CR1406F3DD578AB80F
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG15253 ;
         :role               bdr:R0ER0019 .
     
-    bdr:MW1KG15241  skos:altLabel  "Mi tsheʾi lo rgyus las ʾphros paʾi gtam thabs byus sñiṅ stobs kyi ʾbras bu /Kun-gliṅ ʾOd-zer-rgyal-mtshan = Mi tseʾi [sic] lo rgyus las ʾphros paʾi gtam thabs byus snying stobs kyi ʾbras bu / by Kundeling Woeser Gyaltsen."@en-x-mixed .
-    
     bdr:WA1KG15241  a       :Work ;
         skos:prefLabel      "mi tshe'i lo rgyus las 'phros pa'i gtam thabs byus snying stobs kyi 'bras bu/"@bo-x-ewts , "Mi tsheʾi lo rgyus las ʾphros paʾi gtam thabs byus sñiṅ stobs kyi ʾbras bu /Kun-gliṅ ʾOd-zer-rgyal-mtshan = Mi tseʾi [sic] lo rgyus las ʾphros paʾi gtam thabs byus snying stobs kyi ʾbras bu / by Kundeling Woeser Gyaltsen."@en-x-mixed ;
         :catalogInfo        "Autobiography of Kundeling Woeser Gyaltsen (1915-2001), an ex-cabinet minister in Tibetan government-in-exile."@en ;
-        :creator            bdr:CRD8261484B1EA7929 ;
+        :creator            bdr:CR1406F3DD578AB80F ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
+        :language           bdr:LangBo , bdr:LangEn ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW1KG15241 , bdr:W1KG15241 .
+        :workHasInstance    bdr:MW1KG15241 , bdr:W1KG15241 ;
+        :workIsAbout        bdr:P1KG15253 .
 }

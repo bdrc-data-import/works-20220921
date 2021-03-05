@@ -18,6 +18,12 @@ bdg:WA1KG21296 {
         adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG9F269D2DC5B93344
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T19:28:53.29Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGB368ADFBE1B78751
         a                   adm:InitialDataCreation ;
         adm:logDate         "2015-03-17T15:56:50.121Z"^^xsd:dateTime ;
@@ -59,36 +65,36 @@ bdg:WA1KG21296 {
     bda:WA1KG21296  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG21296 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "65/WA1KG21296.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG21296 ;
-        adm:logEntry        bda:LG9D7A2C1A6D1F4AA9 , bda:LGB368ADFBE1B78751 , bda:LGC21A6D469C61A26F , bda:LGE995830C0345A8F7 , bda:LGF581BCB74D546E45 , bda:LGIM4D99209C62 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG9D7A2C1A6D1F4AA9 , bda:LG9F269D2DC5B93344 , bda:LGB368ADFBE1B78751 , bda:LGC21A6D469C61A26F , bda:LGE995830C0345A8F7 , bda:LGF581BCB74D546E45 , bda:LGIM4D99209C62 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR24704C7F5764F651
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG21580 ;
+        :agent              bdr:P1KG21581 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR29BCD1C5DEB63AFD
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG21579 ;
+        :agent              bdr:P1KG21578 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR583BA3946B1B7A4B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG21580 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR7F236578CFC9CFF2
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG21581 ;
+        :agent              bdr:P1KG21579 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR95D797704360406D
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1KG21578 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR9F269D2DC5B93344
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG21577 ;
         :role               bdr:R0ER0019 .
@@ -96,11 +102,11 @@ bdg:WA1KG21296 {
     bdr:WA1KG21296  a       :SerialMember , :Work ;
         skos:prefLabel      "mi tshe'i myong gtam lo rgyus khag cig"@bo-x-ewts ;
         :catalogInfo        "Personal accounts of some civil servants of exiled Tibetan government."@en ;
-        :creator            bdr:CR24704C7F5764F651 , bdr:CR29BCD1C5DEB63AFD , bdr:CR7F236578CFC9CFF2 , bdr:CR95D797704360406D , bdr:CR9F269D2DC5B93344 ;
+        :creator            bdr:CR24704C7F5764F651 , bdr:CR29BCD1C5DEB63AFD , bdr:CR583BA3946B1B7A4B , bdr:CR7F236578CFC9CFF2 , bdr:CR95D797704360406D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016612 ;
         :workGenre          bdr:T1134 , bdr:T1CZ60 ;
         :workHasInstance    bdr:MW1KG21296 , bdr:W1KG21296 ;
-        :workIsAbout        bdr:T2382 .
+        :workIsAbout        bdr:P1KG21577 , bdr:P1KG21578 , bdr:P1KG21579 , bdr:P1KG21580 , bdr:P1KG21581 , bdr:T2382 .
 }

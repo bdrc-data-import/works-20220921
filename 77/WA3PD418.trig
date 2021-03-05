@@ -28,24 +28,31 @@ bdg:WA3PD418 {
         adm:logDate         "2017-09-25T15:03:40.031Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGFE3F67EE228F151F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T16:14:02.782Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA3PD418  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3PD418 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "77/WA3PD418.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3PD418 ;
-        adm:logEntry        bda:LG37241EAB1E6140FF , bda:LG4571398D928F887F , bda:LG558E4372A4564725 ;
+        adm:logEntry        bda:LG37241EAB1E6140FF , bda:LG4571398D928F887F , bda:LG558E4372A4564725 , bda:LGFE3F67EE228F151F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA3PD418  a         :SerialMember , :Work ;
         skos:altLabel       "xiang xiong wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "rgyal gshen mi lus bsam legs kyi rnam thar mdor bsdus tshig bshad gsol 'debs/"@bo-x-ewts , "象雄文集"@zh-hans ;
+        :catalogInfo        "Biographies of incarnated Geluk masters from Kirti Monastery in Ngawa, Amdo."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS3PD414 ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW3PD418 , bdr:W3PD418 ;
-        :workIsAbout        bdr:T247 .
+        :workIsAbout        bdr:P278 , bdr:P2CN11127 , bdr:T247 .
 }

@@ -42,6 +42,12 @@ bdg:WA2DB5977 {
         adm:logMessage      "gsar du bcug"@en ;
         adm:logWho          bdu:U00003 .
     
+    bda:LGCF342CE10C5A258D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T16:14:00.615Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
         adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
@@ -66,24 +72,26 @@ bdg:WA2DB5977 {
     bda:WA2DB5977  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2DB5977 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "70/WA2DB5977.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2DB5977 ;
-        adm:logEntry        bda:LG35C8CD2DD31A0BE5 , bda:LG53682F6F974B35AE , bda:LG9831491931C52D6B , bda:LGAA9BAB30A7995457 , bda:LGC060644E8957E7EB , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG35C8CD2DD31A0BE5 , bda:LG53682F6F974B35AE , bda:LG9831491931C52D6B , bda:LGAA9BAB30A7995457 , bda:LGC060644E8957E7EB , bda:LGCF342CE10C5A258D , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCF342CE10C5A258D
+    bdr:CRDD25A53E019FC936
         a                   :AgentAsCreator ;
         :agent              bdr:P706 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2DB5977  a        :Work ;
         skos:prefLabel      "rje btsun bla ma shAkya shrI dz+nyA na'i rnam thar/"@bo-x-ewts , "shi jia xi jia na zhuan"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CRCF342CE10C5A258D ;
+        :catalogInfo        "Biography of Shakya Shri and autobiographical reminiscences of Nagwang Pelzang"@en ;
+        :creator            bdr:CRDD25A53E019FC936 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
-        :workHasInstance    bdr:MW2DB5977 , bdr:W2DB5977 .
+        :workHasInstance    bdr:MW2DB5977 , bdr:W2DB5977 ;
+        :workIsAbout        bdr:P724 .
 }

@@ -18,6 +18,12 @@ bdg:WA1KG21840 {
         adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG633FAA226BDCCDC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T19:28:53.675Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG696CB1650C2B2555
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2015-05-28T09:39:57.49Z"^^xsd:dateTime ;
@@ -46,21 +52,21 @@ bdg:WA1KG21840 {
     bda:WA1KG21840  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG21840 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "02/WA1KG21840.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG21840 ;
-        adm:logEntry        bda:LG316DDCC25F74ABA7 , bda:LG696CB1650C2B2555 , bda:LGAE2F4D12BE5A5331 , bda:LGD4CDCF2F159B3D3D , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG316DDCC25F74ABA7 , bda:LG633FAA226BDCCDC3 , bda:LG696CB1650C2B2555 , bda:LGAE2F4D12BE5A5331 , bda:LGD4CDCF2F159B3D3D , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR633FAA226BDCCDC3
+    bdr:CR82E9A918276F42F0
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG21902 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR82E9A918276F42F0
+    bdr:CR8CF13FAB43167790
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG15488 ;
         :role               bdr:R0ER0026 .
@@ -69,9 +75,10 @@ bdg:WA1KG21840 {
         skos:altLabel       "tha'e wan gyi srid 'dzin khrin hru'e pen mchog gi mi tshe'i brgyud lam dang / 'dzin skyong gi gtam tshig/ rgyal khab kyi phugs 'dun bcas mtshon pa'i rang nyid kyi lo rgyus/"@bo-x-ewts ;
         skos:prefLabel      "tha'e wan gyi bu/"@bo-x-ewts ;
         :catalogInfo        "Autography of Tawian's Prime Minister Trihuwe, his life and administration, speechs, goal of nation."@en ;
-        :creator            bdr:CR633FAA226BDCCDC3 , bdr:CR82E9A918276F42F0 ;
+        :creator            bdr:CR82E9A918276F42F0 , bdr:CR8CF13FAB43167790 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW1KG21840 , bdr:W1KG21840 .
+        :workHasInstance    bdr:MW1KG21840 , bdr:W1KG21840 ;
+        :workIsAbout        bdr:P1KG21902 .
 }

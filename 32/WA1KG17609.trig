@@ -18,6 +18,12 @@ bdg:WA1KG17609 {
         adm:logMessage      "subject class changed from T1PD85357 to T1CZ60"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG60B1D4573F6C011B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T19:28:51.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG8222905907D13340
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-06-25T08:50:59.073Z"^^xsd:dateTime ;
@@ -61,16 +67,16 @@ bdg:WA1KG17609 {
     bda:WA1KG17609  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG17609 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "32/WA1KG17609.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG17609 ;
-        adm:logEntry        bda:LG3B327C37E0D8E2A4 , bda:LG8222905907D13340 , bda:LGD4437773AE3C71E8 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM84B17F7EDC , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG3B327C37E0D8E2A4 , bda:LG60B1D4573F6C011B , bda:LG8222905907D13340 , bda:LGD4437773AE3C71E8 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM84B17F7EDC , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR60B1D4573F6C011B
+    bdr:CRB2928792515D6DC4
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG17622 ;
         :role               bdr:R0ER0019 .
@@ -80,10 +86,11 @@ bdg:WA1KG17609 {
     bdr:WA1KG17609  a       :SerialMember , :Work ;
         skos:prefLabel      "rang gi mi tshe'i lo rgyus srong por brjod pa bya dur tshangs thig"@bo-x-ewts , "jadur's vertical axis: a truthful autobiographical account"@en ;
         :catalogInfo        "Autobiography of a former member of Assembly of Tibetan People's Deputies member and retired jurist of the Tibetan Government in exile."@en ;
-        :creator            bdr:CR60B1D4573F6C011B ;
+        :creator            bdr:CRB2928792515D6DC4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG17609 ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW1KG17609 , bdr:W1KG17609 .
+        :workHasInstance    bdr:MW1KG17609 , bdr:W1KG17609 ;
+        :workIsAbout        bdr:P1KG17622 .
 }

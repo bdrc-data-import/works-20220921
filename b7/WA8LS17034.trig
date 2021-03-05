@@ -18,6 +18,12 @@ bdg:WA8LS17034 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG9C572FE2DD0CB8F7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T14:32:36.023Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, topic"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD47AA3DEA3D801E2
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -39,15 +45,15 @@ bdg:WA8LS17034 {
     bda:WA8LS17034  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS17034 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "b7/WA8LS17034.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS17034 ;
-        adm:logEntry        bda:LG909688BE786DE8C2 , bda:LGD47AA3DEA3D801E2 , bda:LGFC9E8210F6C23F3C , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG909688BE786DE8C2 , bda:LG9C572FE2DD0CB8F7 , bda:LGD47AA3DEA3D801E2 , bda:LGFC9E8210F6C23F3C , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9C572FE2DD0CB8F7
+    bdr:CR519941FBBDE4CCCE
         a                   :AgentAsCreator ;
         :agent              bdr:P7 ;
         :role               bdr:R0ER0019 .
@@ -55,9 +61,10 @@ bdg:WA8LS17034 {
     bdr:WA8LS17034  a       :Work ;
         skos:prefLabel      "gter chen chos kyi rgyal po'i rnam thar gsol 'debs/"@bo-x-ewts ;
         :catalogInfo        "A reverential petition of author's own life account by Minling Terchen Gyurme Dorje, composed at the request of Tenzin Garwang and Khampa Lama Palden Senge."@en ;
-        :creator            bdr:CR9C572FE2DD0CB8F7 ;
+        :creator            bdr:CR519941FBBDE4CCCE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T140 , bdr:T3 ;
-        :workHasInstance    bdr:MW8LS17034 , bdr:W8LS17034 .
+        :workHasInstance    bdr:MW8LS17034 , bdr:W8LS17034 ;
+        :workIsAbout        bdr:P7 , bdr:T1082 , bdr:T1887 .
 }

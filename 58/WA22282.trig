@@ -13,8 +13,10 @@
 
 bdg:WA22282 {
     bda:LG490F2BF5BD92AC04
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T12:30:55.514Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected language settings"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LG5A10676A455924CF
         a                   adm:UpdateData ;
@@ -28,32 +30,36 @@ bdg:WA22282 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGED227BA2DD2A3028
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:WA22282  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22282 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "58/WA22282.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22282 ;
-        adm:logEntry        bda:LG490F2BF5BD92AC04 , bda:LG5A10676A455924CF , bda:LG61727D3B3F905658 ;
+        adm:logEntry        bda:LG490F2BF5BD92AC04 , bda:LG5A10676A455924CF , bda:LG61727D3B3F905658 , bda:LGED227BA2DD2A3028 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRED227BA2DD2A3028
+    bdr:CR32B6850E485739FF
         a                   :AgentAsCreator ;
         :agent              bdr:P5651 ;
         :role               bdr:R0ER0026 .
     
-    bdr:EV32B6850E485739FF
+    bdr:EVD546C3E09A0EAC1F
         a                   :CompletedEvent ;
         :onYear             "1630"^^xsd:gYear .
     
     bdr:WA22282  a          :Work ;
         skos:prefLabel      "grub thob brgyad bcu rtsa bzhi'i rnam thar/"@bo-x-ewts ;
-        :creator            bdr:CRED227BA2DD2A3028 ;
+        :creator            bdr:CR32B6850E485739FF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV32B6850E485739FF ;
+        :workEvent          bdr:EVD546C3E09A0EAC1F ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW22282 , bdr:W22282 ;
         :workIsAbout        bdr:T1043 .

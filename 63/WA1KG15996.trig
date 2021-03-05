@@ -24,6 +24,12 @@ bdg:WA1KG15996 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGBC46E07423315805
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T19:28:49.757Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGED2F6072DB40A265
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-14T10:40:09.803Z"^^xsd:dateTime ;
@@ -47,32 +53,33 @@ bdg:WA1KG15996 {
     bda:WA1KG15996  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG15996 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "63/WA1KG15996.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG15996 ;
-        adm:logEntry        bda:LG3F69A9E876502F8E , bda:LG908A2E356D7CBE01 , bda:LGED2F6072DB40A265 , bda:LGIM4BF5F96E12 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG3F69A9E876502F8E , bda:LG908A2E356D7CBE01 , bda:LGBC46E07423315805 , bda:LGED2F6072DB40A265 , bda:LGIM4BF5F96E12 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRBC46E07423315805
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1KG15997 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRFC6D70EB0CEEB83A
+    bdr:CR9DBD89CB2E12593D
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG15998 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRFC6D70EB0CEEB83A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG15997 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG15996  a       :SerialMember , :Work ;
         skos:altLabel       "sum ldan rdo rje 'dzin pa sbas pa'i rnal 'byor chen po sbyin pa nor bu'i rnam par thar pa byang chub lam rgyan/"@bo-x-ewts ;
         skos:prefLabel      "grub dbang sbyin pa nor bu'i rang rnam/"@bo-x-ewts ;
         :catalogInfo        "Autobiography of a Nyingma master, Jinpa Norbu (18-19 cent.)"@en ;
-        :creator            bdr:CRBC46E07423315805 , bdr:CRFC6D70EB0CEEB83A ;
+        :creator            bdr:CR9DBD89CB2E12593D , bdr:CRFC6D70EB0CEEB83A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS140 ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW1KG15996 , bdr:W1KG15996 .
+        :workHasInstance    bdr:MW1KG15996 , bdr:W1KG15996 ;
+        :workIsAbout        bdr:P1KG15997 .
 }

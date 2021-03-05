@@ -18,9 +18,15 @@ bdg:WA20880 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGE714828FF64BEFDD
+    bda:LG8CDF6D572EAF1C7D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGE714828FF64BEFDD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T09:11:09.039Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LGFC90C7B3A424B89F
         a                   adm:UpdateData ;
@@ -65,34 +71,34 @@ bdg:WA20880 {
     bda:WA20880  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20880 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "04/WA20880.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20880 ;
-        adm:logEntry        bda:LG505A9926F617063F , bda:LGE714828FF64BEFDD , bda:LGFC90C7B3A424B89F , bda:LGFD974B8569150973 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG505A9926F617063F , bda:LG8CDF6D572EAF1C7D , bda:LGE714828FF64BEFDD , bda:LGFC90C7B3A424B89F , bda:LGFD974B8569150973 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR0AC15E0706742489
         a                   :AgentAsCreator ;
-        :agent              bdr:P6173 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR8CDF6D572EAF1C7D
-        a                   :AgentAsCreator ;
         :agent              bdr:P264 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CREABE0DE42F92426E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6173 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW20880  skos:altLabel  "the autobiography of 'jam-mgon kon-sprul blo-gros-mtha'-yas"@en .
     
     bdr:WA20880  a          :Work ;
         skos:altLabel       "pad+ma gar gyi dbang phyug phrin las 'gro 'dul rtsal gyi rtogs pa brjod pa dang / byung ba brjod pa nor bu sna tshogs mdog can/"@bo-x-ewts ;
         skos:prefLabel      "'jam mgon kong sprul blo gros mtha' yas kyi rang rnam/"@bo-x-ewts , "the autobiography of 'jam-mgon kon-sprul blo-gros-mtha'-yas"@en ;
-        :catalogInfo        "Autobiography of Jamgon Kongtrul Lodro Taye (1813-1899). Completed and supplemented by his disciple Nesar Tashi Pel."@en ;
-        :creator            bdr:CR0AC15E0706742489 , bdr:CR8CDF6D572EAF1C7D ;
+        :catalogInfo        "Autobiography of Jamgon Kongtrul Lodro Taye (1813-1899). Completed and supplemented by his disciple Nesar Tashi Pel or Jamyang chokyi Nyima Lodro Gyepede."@en ;
+        :creator            bdr:CR0AC15E0706742489 , bdr:CREABE0DE42F92426E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW20880 , bdr:MW2PD17417 , bdr:W20880 , bdr:W2PD17417 ;
-        :workIsAbout        bdr:T808 .
+        :workIsAbout        bdr:P264 , bdr:T808 .
 }

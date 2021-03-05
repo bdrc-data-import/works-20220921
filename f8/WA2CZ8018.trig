@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2CZ8018 {
+    bda:LGB640CC3C978D6949
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T12:08:53.079Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat , pub info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGC46765A88E5B60A3
         a                   adm:InitialDataCreation ;
         adm:logDate         "2010-04-22T09:50:07.588Z"^^xsd:dateTime ;
@@ -41,15 +47,15 @@ bdg:WA2CZ8018 {
     bda:WA2CZ8018  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2CZ8018 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f8/WA2CZ8018.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2CZ8018 ;
-        adm:logEntry        bda:LGC46765A88E5B60A3 , bda:LGDB8D562FF1DCD537 , bda:LGIM4BF5F96E12 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LGB640CC3C978D6949 , bda:LGC46765A88E5B60A3 , bda:LGDB8D562FF1DCD537 , bda:LGIM4BF5F96E12 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB640CC3C978D6949
+    bdr:CR023E61244FC5D1CD
         a                   :AgentAsCreator ;
         :agent              bdr:P84 ;
         :role               bdr:R0ER0019 .
@@ -58,9 +64,10 @@ bdg:WA2CZ8018 {
         skos:altLabel       "rje btsun thams cad mkhyen pa'i gsung 'bum thor bu las rje nyid kyi rnam thar/"@bo-x-ewts ;
         skos:prefLabel      "dge 'dun rgya mtsho'i rang rnam/"@bo-x-ewts ;
         :catalogInfo        "Autobiography of Dalai Lama 02 Gedun Gyatso (1476-1542)."@en ;
-        :creator            bdr:CRB640CC3C978D6949 ;
+        :creator            bdr:CR023E61244FC5D1CD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW2CZ8018 , bdr:W2CZ8018 .
+        :workHasInstance    bdr:MW2CZ8018 , bdr:W2CZ8018 ;
+        :workIsAbout        bdr:P84 .
 }

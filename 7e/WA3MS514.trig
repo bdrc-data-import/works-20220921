@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3MS514 {
+    bda:LG53B22D205C88A23C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-04T16:14:01.007Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGCC9A2AC62762A1A5
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-01-10T16:15:44.303Z"^^xsd:dateTime ;
@@ -33,15 +39,15 @@ bdg:WA3MS514 {
     bda:WA3MS514  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3MS514 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "7e/WA3MS514.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3MS514 ;
-        adm:logEntry        bda:LGCC9A2AC62762A1A5 , bda:LGD9B5BA6C666E621A , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG53B22D205C88A23C , bda:LGCC9A2AC62762A1A5 , bda:LGD9B5BA6C666E621A , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR53B22D205C88A23C
+    bdr:CR05340D64B5762DB2
         a                   :AgentAsCreator ;
         :agent              bdr:P7826 ;
         :role               bdr:R0ER0019 .
@@ -50,9 +56,10 @@ bdg:WA3MS514 {
         skos:altLabel       "rtogs ldan bla ma rgyal mtshan gyi rnam thar mgur ma/"@bo-x-ewts ;
         skos:prefLabel      "rtogs ldan bla ma rgyal mtshan gyi rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography and songs of realization of Tokden Lama Gyaltsen by Paton Odsel Gyaltsen."@en ;
-        :creator            bdr:CR53B22D205C88A23C ;
+        :creator            bdr:CR05340D64B5762DB2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 , bdr:T6 ;
-        :workHasInstance    bdr:MW3MS514 , bdr:W3MS514 .
+        :workHasInstance    bdr:MW3MS514 , bdr:W3MS514 ;
+        :workIsAbout        bdr:P7826 .
 }
