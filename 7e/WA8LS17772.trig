@@ -30,23 +30,36 @@ bdg:WA8LS17772 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGC129E03BAB0883C1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T09:41:23.134Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, topic"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS17772  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS17772 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "7e/WA8LS17772.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS17772 ;
-        adm:logEntry        bda:LG64C2788371D0C066 , bda:LG82F145FD64F544C5 , bda:LG98D588B2E71F9AB9 ;
+        adm:logEntry        bda:LG64C2788371D0C066 , bda:LG82F145FD64F544C5 , bda:LG98D588B2E71F9AB9 , bda:LGC129E03BAB0883C1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRB21D57A902D0D2E6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1499 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS17772  a       :Work ;
         skos:altLabel       "rgyal kun mkhyen brtse nus pa'i bdag nyid rdo rje 'chang rje btsun 'jigs med 'phrin las rgya mtsho dpal bzang po'i rnam thar gyi sa bon drang po'i gtam gyi tshangs thig"@bo-x-ewts ;
         skos:prefLabel      "'jigs med 'phrin las rgya mtsho dpal bzang po'i rnam thar gyi sa bon drang po'i gtam gyi tshangs thig"@bo-x-ewts ;
-        :catalogInfo        "Biography of Jigme Trinley Gyatsho."@en ;
+        :catalogInfo        "1 dbu ma la 'jug pa'i bshad pa dag rgya che ba'i tshul gsal bar byed pa/"@bo-x-ewts , "Autobiography of Alak Lago Jigme Trinley Gyatsho."@en ;
+        :creator            bdr:CRB21D57A902D0D2E6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T3 ;
-        :workHasInstance    bdr:MW8LS17772 , bdr:W8LS17772 .
+        :workGenre          bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW8LS17772 , bdr:W8LS17772 ;
+        :workIsAbout        bdr:P1499 , bdr:T819 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG24530 {
+    bda:LG36A7A8B55E50F231
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T14:11:09.788Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG8CDD415DB9614F80
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-10-06T12:58:37.361Z"^^xsd:dateTime ;
@@ -48,16 +54,16 @@ bdg:WA1KG24530 {
     bda:WA1KG24530  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24530 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "5a/WA1KG24530.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24530 ;
-        adm:logEntry        bda:LG8CDD415DB9614F80 , bda:LGF92460B8F23E5C68 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG36A7A8B55E50F231 , bda:LG8CDD415DB9614F80 , bda:LGF92460B8F23E5C68 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR36A7A8B55E50F231
+    bdr:CR22CC034E56582EED
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG24537 ;
         :role               bdr:R0ER0019 .
@@ -67,11 +73,11 @@ bdg:WA1KG24530 {
     bdr:WA1KG24530  a       :SerialMember , :Work ;
         skos:prefLabel      "dus rabs gsar rnying gi bod/"@bo-x-ewts , "Tibet: old and new century"@en ;
         :catalogInfo        "Historical account of Tibet especially early reign and aftermath of Communist invasion in Tibet; includes autobiographical account of Gonpo Dorji."@en ;
-        :creator            bdr:CR36A7A8B55E50F231 ;
+        :creator            bdr:CR22CC034E56582EED ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG13996 ;
         :workGenre          bdr:T1134 , bdr:T1CZ60 ;
         :workHasInstance    bdr:MW1KG24530 , bdr:W1KG24530 ;
-        :workIsAbout        bdr:G3196 .
+        :workIsAbout        bdr:G3196 , bdr:P1KG24537 .
 }

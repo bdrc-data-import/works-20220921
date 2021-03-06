@@ -24,6 +24,12 @@ bdg:WA1NLM1638 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGC6FA709E4BBD86BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T20:40:10.082Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIMA07EBF90  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-04-08T21:50:39.192Z"^^xsd:dateTime ;
@@ -33,15 +39,15 @@ bdg:WA1NLM1638 {
     bda:WA1NLM1638  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1638 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "44/WA1NLM1638.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1638 ;
-        adm:logEntry        bda:LG0304D88F6ED39F9A , bda:LG1B5C88767DB7519A , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG0304D88F6ED39F9A , bda:LG1B5C88767DB7519A , bda:LGC6FA709E4BBD86BF , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC6FA709E4BBD86BF
+    bdr:CR9C6E76EAFBC414E9
         a                   :AgentAsCreator ;
         :agent              bdr:P298 ;
         :role               bdr:R0ER0019 .
@@ -50,7 +56,7 @@ bdg:WA1NLM1638 {
         skos:altLabel       "sbyor ba'i chos drug bya tshul thub bstan lhun po'i mdzes rgyan/"@bo-x-ewts ;
         skos:prefLabel      "dpal gsang ba 'dus brgyud kyi rgyal po/"@bo-x-ewts ;
         :catalogInfo        "The root text of Guhyasamaja tantra and instructions on the six sbyor chos"@en ;
-        :creator            bdr:CRC6FA709E4BBD86BF ;
+        :creator            bdr:CR9C6E76EAFBC414E9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1NLM1638 , bdr:W1NLM1638 ;

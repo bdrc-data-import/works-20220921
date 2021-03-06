@@ -24,6 +24,12 @@ bdg:WA8LS18002 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG8658F2A20B83D651
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T13:41:53.924Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM124731122E
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:26:25.168Z"^^xsd:dateTime ;
@@ -34,16 +40,16 @@ bdg:WA8LS18002 {
     bda:WA8LS18002  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18002 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "76/WA8LS18002.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18002 ;
-        adm:logEntry        bda:LG0D60F639E2C8634C , bda:LG2B0F5852D0252813 , bda:LGIM124731122E ;
+        adm:logEntry        bda:LG0D60F639E2C8634C , bda:LG2B0F5852D0252813 , bda:LG8658F2A20B83D651 , bda:LGIM124731122E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8658F2A20B83D651
+    bdr:CRD6C6F8CAFD76D2EA
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS18004 ;
         :role               bdr:R0ER0019 .
@@ -52,9 +58,10 @@ bdg:WA8LS18002 {
         skos:altLabel       "me lce drag po'i nang gi pu rgyal bod dang nga'i gzhon nu'i lang tsho/"@bo-x-ewts ;
         skos:prefLabel      "pu rgyal bod dang nga'i gzhon nu'i lang tsho/"@bo-x-ewts ;
         :catalogInfo        "The personal account of Chede Dechen Gyatsho."@en ;
-        :creator            bdr:CR8658F2A20B83D651 ;
+        :creator            bdr:CRD6C6F8CAFD76D2EA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW8LS18002 , bdr:W8LS18002 .
+        :workHasInstance    bdr:MW8LS18002 , bdr:W8LS18002 ;
+        :workIsAbout        bdr:P8LS18004 .
 }

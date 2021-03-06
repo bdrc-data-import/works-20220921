@@ -24,6 +24,12 @@ bdg:WA8LS18008 {
         adm:logMessage      "chenged to copyright and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGCAAE2816B2994914
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T13:45:25.97Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD57C4AA7625BB4A0
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-08-29T12:23:05.153Z"^^xsd:dateTime ;
@@ -33,16 +39,16 @@ bdg:WA8LS18008 {
     bda:WA8LS18008  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18008 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "79/WA8LS18008.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18008 ;
-        adm:logEntry        bda:LG5DD92481505EDCA2 , bda:LG7F067E2698959425 , bda:LGD57C4AA7625BB4A0 ;
+        adm:logEntry        bda:LG5DD92481505EDCA2 , bda:LG7F067E2698959425 , bda:LGCAAE2816B2994914 , bda:LGD57C4AA7625BB4A0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCAAE2816B2994914
+    bdr:CR09CBA4ECC8FF513D
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS18009 ;
         :role               bdr:R0ER0019 .
@@ -50,10 +56,11 @@ bdg:WA8LS18008 {
     bdr:WA8LS18008  a       :SerialMember , :Work ;
         skos:prefLabel      "mi tshe hril po'i ngang tshul gsal bar bshad pa/"@bo-x-ewts ;
         :catalogInfo        "The life account of Phunkhang Jampa Phuntshok."@en ;
-        :creator            bdr:CRCAAE2816B2994914 ;
+        :creator            bdr:CR09CBA4ECC8FF513D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS18008 ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW8LS18008 , bdr:W8LS18008 .
+        :workHasInstance    bdr:MW8LS18008 , bdr:W8LS18008 ;
+        :workIsAbout        bdr:P8LS18009 .
 }

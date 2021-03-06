@@ -18,6 +18,12 @@ bdg:WA8LS17978 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGA9D897B90E811321
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T11:42:36.867Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGFA97364C60EE0F4C
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-08-02T10:34:39.886Z"^^xsd:dateTime ;
@@ -34,16 +40,16 @@ bdg:WA8LS17978 {
     bda:WA8LS17978  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS17978 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "eb/WA8LS17978.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS17978 ;
-        adm:logEntry        bda:LG075B4AD6DEBDC866 , bda:LGFA97364C60EE0F4C , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG075B4AD6DEBDC866 , bda:LGA9D897B90E811321 , bda:LGFA97364C60EE0F4C , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA9D897B90E811321
+    bdr:CR23DCC6DEAAA5479A
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS13105 ;
         :role               bdr:R0ER0019 .
@@ -52,9 +58,10 @@ bdg:WA8LS17978 {
         skos:altLabel       "shar chen klu lding pa 'jam dbyangs bstan pa'i nyi ma rang nyid kyi mi tshe'i byung ba brjod pa rnam gsal me long /"@bo-x-ewts ;
         skos:prefLabel      "klu lding pa 'jam dbyangs bstan pa'i nyi ma'i rang rnam/"@bo-x-ewts ;
         :catalogInfo        "Autobiography of Luding Khenchen Jamyang Tenpai Nyima, 75th abbot of Ngor monastery."@en ;
-        :creator            bdr:CRA9D897B90E811321 ;
+        :creator            bdr:CR23DCC6DEAAA5479A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW8LS17978 , bdr:W8LS17978 .
+        :workHasInstance    bdr:MW8LS17978 , bdr:W8LS17978 ;
+        :workIsAbout        bdr:P8LS13105 .
 }

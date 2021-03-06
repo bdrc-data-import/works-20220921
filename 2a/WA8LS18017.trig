@@ -24,6 +24,12 @@ bdg:WA8LS18017 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGDB913805CFD297C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T13:57:11.866Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, topic, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -34,16 +40,16 @@ bdg:WA8LS18017 {
     bda:WA8LS18017  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18017 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "2a/WA8LS18017.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18017 ;
-        adm:logEntry        bda:LG6A3E6DED106C4447 , bda:LGC0A12AB4CD866B10 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG6A3E6DED106C4447 , bda:LGC0A12AB4CD866B10 , bda:LGDB913805CFD297C0 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDB913805CFD297C0
+    bdr:CR4F6FF30F4D74D44D
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS13212 ;
         :role               bdr:R0ER0019 .
@@ -51,9 +57,10 @@ bdg:WA8LS18017 {
     bdr:WA8LS18017  a       :Work ;
         skos:prefLabel      "ka rabs rnam thar/"@bo-x-ewts ;
         :catalogInfo        "A short biography of successive Karmapas, compiled by the 7th Dzokchen Ponlop Karma Sungrab Ngedon Tenpai Gyaltsen."@en ;
-        :creator            bdr:CRDB913805CFD297C0 ;
+        :creator            bdr:CR4F6FF30F4D74D44D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
-        :workHasInstance    bdr:MW8LS18017 , bdr:W8LS18017 .
+        :workHasInstance    bdr:MW8LS18017 , bdr:W8LS18017 ;
+        :workIsAbout        bdr:P1382 , bdr:P1400 , bdr:P1410 , bdr:P1456 , bdr:P1487 , bdr:P385 , bdr:P5611 , bdr:P562 , bdr:P563 , bdr:P66 , bdr:P821 , bdr:P828 , bdr:P838 , bdr:P865 , bdr:P889 , bdr:T1386 .
 }

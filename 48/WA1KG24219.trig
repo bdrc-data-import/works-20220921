@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG24219 {
+    bda:LG08E8E1CD0026AED7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T14:11:09.067Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGB381A37812EE0659
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-07-29T14:47:40.807Z"^^xsd:dateTime ;
@@ -48,24 +54,24 @@ bdg:WA1KG24219 {
     bda:WA1KG24219  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24219 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "48/WA1KG24219.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24219 ;
-        adm:logEntry        bda:LGB381A37812EE0659 , bda:LGF3DAC51A71188D9C , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG08E8E1CD0026AED7 , bda:LGB381A37812EE0659 , bda:LGF3DAC51A71188D9C , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR08E8E1CD0026AED7
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1KG24232 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CREA314F9F702FD40E
+    bdr:CR96A54FEBD43915C0
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG5680 ;
         :role               bdr:R0ER0026 .
+    
+    bdr:CREA314F9F702FD40E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG24232 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1KG24219  skos:altLabel  "my third expedition to tibet"@en .
     
@@ -73,11 +79,11 @@ bdg:WA1KG24219 {
         skos:altLabel       "ngos kyi bod nang skor skyod gsum pa/ (1936)"@bo-x-ewts ;
         skos:prefLabel      "ngos kyi bod nang skor skyod gsum pa/"@bo-x-ewts , "my third expedition to tibet"@en ;
         :catalogInfo        "Translation of Rahul Sankrityayan's \"My third Expedition to Tibet\""@en ;
-        :creator            bdr:CR08E8E1CD0026AED7 , bdr:CREA314F9F702FD40E ;
+        :creator            bdr:CR96A54FEBD43915C0 , bdr:CREA314F9F702FD40E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG13996 ;
         :workGenre          bdr:T1CZ60 ;
         :workHasInstance    bdr:MW1KG24219 , bdr:W1KG24219 ;
-        :workIsAbout        bdr:T1113 , bdr:T2356 .
+        :workIsAbout        bdr:P1KG24232 , bdr:T1113 , bdr:T2356 .
 }

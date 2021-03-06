@@ -23,6 +23,12 @@ bdg:WA8LS17966 {
         adm:logDate         "2016-07-29T10:34:30.255Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGFDEFC6EA5C469181
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T11:21:47.218Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -33,16 +39,16 @@ bdg:WA8LS17966 {
     bda:WA8LS17966  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS17966 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "36/WA8LS17966.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS17966 ;
-        adm:logEntry        bda:LGA59934F162759496 , bda:LGFC647854B9F3AB22 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LGA59934F162759496 , bda:LGFC647854B9F3AB22 , bda:LGFDEFC6EA5C469181 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFDEFC6EA5C469181
+    bdr:CR537616172C51F139
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS17967 ;
         :role               bdr:R0ER0019 .
@@ -50,11 +56,11 @@ bdg:WA8LS17966 {
     bdr:WA8LS17966  a       :Work ;
         skos:altLabel       "bod dmag gcig gi mi tshe/"@bo-x-ewts , "sku srung ru dpon bsod nams bkra shis kyi mi tshe'i lo rgyus/"@bo-x-ewts ;
         skos:prefLabel      "bsod nams bkra shis kyi mi tshe'i lo rgyus/"@bo-x-ewts ;
-        :catalogInfo        "An autobiography of Kuzung Rupon Sonam Tashi or Rupon Sotey who served as commander of Tibetan government's bodyguard soldier. This work also included account of Tibetan army."@en ;
-        :creator            bdr:CRFDEFC6EA5C469181 ;
+        :catalogInfo        "An autobiography of Kuzung Rupon Sonam Tashi or Rupon Sotey who served as commander of Tibetan government's bodyguard. This work also included account of Tibetan army."@en ;
+        :creator            bdr:CR537616172C51F139 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
         :workHasInstance    bdr:MW8LS17966 , bdr:W8LS17966 ;
-        :workIsAbout        bdr:T2214 .
+        :workIsAbout        bdr:P8LS17967 , bdr:T2214 .
 }

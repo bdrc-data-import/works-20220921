@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG4477 {
+    bda:LG6EC1ECC8A63BD654
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T23:15:15.086Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG9255006B73F8E99B
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-05T16:21:06.901Z"^^xsd:dateTime ;
@@ -75,20 +81,20 @@ bdg:WA1KG4477 {
     bda:WA1KG4477  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4477 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "b0/WA1KG4477.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4477 ;
-        adm:logEntry        bda:LG9255006B73F8E99B , bda:LG9FAF8D5E102FCC59 , bda:LGBA0AE4D517EB2C90 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG6EC1ECC8A63BD654 , bda:LG9255006B73F8E99B , bda:LG9FAF8D5E102FCC59 , bda:LGBA0AE4D517EB2C90 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5332D0E59B879D1C
+    bdr:CR13143DA8701F0273
         a                   :AgentAsCreator ;
         :agent              bdr:P66 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CR6EC1ECC8A63BD654
+    bdr:CR5332D0E59B879D1C
         a                   :AgentAsCreator ;
         :agent              bdr:P7588 ;
         :role               bdr:R0ER0019 .
@@ -99,10 +105,10 @@ bdg:WA1KG4477 {
         skos:altLabel       "ston pa thams cad mkhyen pa'i skyes rabs phreng/ /bcu phrag gsum dang bzhi ni dpa' bo'i ste/ /phyi nas rang byung rdo rjes bdun lhag pa'i/ /drug cus brgya rtsa rdzogs par mdzad pa bzhugs/"@bo-x-ewts , "the tibetan jātakamālā of āryaśūra"@en , "The Tibetan rendering of the Jātakamālā of Āryaśūra, supplemented with 67 additional Jātaka stories /by the third Karma-pa Raṅ-byuṅ-rdo-rje."@en-x-mixed ;
         skos:prefLabel      "ston pa'i skyes rabs/"@bo-x-ewts , "the tibetan rendering of the jātakamālā of āryaśūra, supplemented with 67 additional jātaka stories by the third karma-pa rang-byung-rdo-rje"@en ;
         :catalogInfo        "Stories of previous lives of the Buddha."@en ;
-        :creator            bdr:CR5332D0E59B879D1C , bdr:CR6EC1ECC8A63BD654 ;
+        :creator            bdr:CR13143DA8701F0273 , bdr:CR5332D0E59B879D1C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1342 , bdr:T3 ;
         :workHasInstance    bdr:MW1KG4477 , bdr:W1KG4477 ;
-        :workIsAbout        bdr:T386 .
+        :workIsAbout        bdr:P7326 , bdr:T386 .
 }

@@ -18,6 +18,12 @@ bdg:WA1NLM1677 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGA714FC407CB681A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T22:10:17.024Z"^^xsd:dateTime ;
+        adm:logMessage      "removed individual donor's name"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGAC5D125A566D5DFC
         a                   adm:UpdateData ;
         adm:logDate         "2020-08-21T10:27:41.836Z"^^xsd:dateTime ;
@@ -33,39 +39,39 @@ bdg:WA1NLM1677 {
     bda:WA1NLM1677  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1677 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "bd/WA1NLM1677.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1677 ;
-        adm:logEntry        bda:LG634F3CA7BD4788D6 , bda:LGAC5D125A566D5DFC , bda:LGIMA07EBF90 ;
+        adm:logEntry        bda:LG634F3CA7BD4788D6 , bda:LGA714FC407CB681A9 , bda:LGAC5D125A566D5DFC , bda:LGIMA07EBF90 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR86EF092AAA6B4D71
+    bdr:CR2F07AD530490A74F
         a                   :AgentAsCreator ;
-        :agent              bdr:P8210 ;
-        :role               bdr:R0ER0018 .
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
     
-    bdr:CRA714FC407CB681A9
+    bdr:CR86EF092AAA6B4D71
         a                   :AgentAsCreator ;
         :agent              bdr:P8209 ;
         :role               bdr:R0ER0018 .
     
     bdr:CRAB2B02109B551F0C
         a                   :AgentAsCreator ;
-        :agent              bdr:P8205 ;
-        :role               bdr:R0ER0026 .
+        :agent              bdr:P1KG8854 ;
+        :role               bdr:R0ER0018 .
     
     bdr:CRB1BAF98792594C60
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG8854 ;
+        :agent              bdr:P8210 ;
         :role               bdr:R0ER0018 .
     
     bdr:WA1NLM1677  a       :Work ;
         skos:altLabel       "'phags pa de bzhin gshegs pa bdun gyi sngon gyi smon lam gyi khyad par rgyas zhes bya ba theg pa chen po mdo/"@bo-x-ewts ;
         skos:prefLabel      "mdo sde brgyad brgya pa sogs/"@bo-x-ewts ;
         :catalogInfo        "1 bstod pa rnam dag gangs ri ma/ 2 dus kyi 'khor lo'i lam yongs rdzogs kyi smon lam/ 3 gsol 'debs/"@bo-x-ewts , "Seven medicine Buddha's prayer sutra, translated by Jinamitra, Danashila, Shilendrabodhi and lotsava Bende Yeshe De."@en ;
-        :creator            bdr:CR86EF092AAA6B4D71 , bdr:CRA714FC407CB681A9 , bdr:CRAB2B02109B551F0C , bdr:CRB1BAF98792594C60 ;
+        :creator            bdr:CR2F07AD530490A74F , bdr:CR86EF092AAA6B4D71 , bdr:CRAB2B02109B551F0C , bdr:CRB1BAF98792594C60 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T34 , bdr:T769 ;

@@ -18,6 +18,11 @@ bdg:WA4CZ299885 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG487F7209EDAF2AF7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-05T15:36:42.731Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG4FE2CC589C32D4FE
         a                   adm:UpdateData ;
         adm:logDate         "2021-01-04T21:08:16.293Z"^^xsd:dateTime ;
@@ -51,21 +56,28 @@ bdg:WA4CZ299885 {
     bda:WA4CZ299885  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ299885 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "4a/WA4CZ299885.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ299885 ;
-        adm:logEntry        bda:LG0D723C1042E3790B , bda:LG4FE2CC589C32D4FE , bda:LG61BBBDEFE10504BE , bda:LG7E732399556BD25A , bda:LGCF4F7509E014B1A8 , bda:LGCFD39A625460ED78 ;
+        adm:logEntry        bda:LG0D723C1042E3790B , bda:LG487F7209EDAF2AF7 , bda:LG4FE2CC589C32D4FE , bda:LG61BBBDEFE10504BE , bda:LG7E732399556BD25A , bda:LGCF4F7509E014B1A8 , bda:LGCFD39A625460ED78 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRD37858EB50B2D0B1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366109 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA4CZ299885  a      :Work ;
-        skos:altLabel       "la stod lho khul gzhung zhabs sger pa chung gras sngon ma lung pa pha bu'i byung ba gang dran gsong por bkod pa'i gtam sna bsdus spu bsdus/"@bo-x-ewts ;
-        skos:prefLabel      "sngon ma lung pa pha bu'i byung ba gang dran gsong por bkod pa'i gtam sna bsdus spu bsdus/"@bo-x-ewts ;
+        skos:altLabel       "la stod lho khul gzhung zhabs sger pa chung gras sngon ma lung pa pha bu'i byung ba gang dran gsong por bkod pa'i gtam sna bsdus spu bsdus/"@bo-x-ewts , "sngon ma lung pa pha bu'i byung ba gang dran gsong por bkod pa'i gtam sna bsdus spu bsdus/"@bo-x-ewts ;
+        skos:prefLabel      "sngon lung pha bu'i byung ba/"@bo-x-ewts ;
         :catalogInfo        "Autobiography and story of the Ngonlung Jedrung Ngawang Thutob"@en ;
+        :creator            bdr:CRD37858EB50B2D0B1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW4CZ299885 , bdr:W4CZ299885 .
+        :workHasInstance    bdr:MW4CZ299885 , bdr:W4CZ299885 ;
+        :workIsAbout        bdr:P4CZ366109 .
 }
