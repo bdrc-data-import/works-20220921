@@ -16,7 +16,7 @@ bdg:WA0XL9581645EA4EE {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA0XL9581645EA4EE ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "b5/WA0XL9581645EA4EE.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA0XL9581645EA4EE ;
@@ -28,10 +28,15 @@ bdg:WA0XL9581645EA4EE {
         :agent              bdr:P4278 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CRCDEFCC2489AD9B2A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15227 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA0XL9581645EA4EE
         a                   :Work ;
         skos:prefLabel      "bla ma ti pu'i lus sbyong sum bcu pa/"@bo-x-ewts ;
-        :creator            bdr:CR23655069CFC2E86A ;
+        :creator            bdr:CR23655069CFC2E86A , bdr:CRCDEFCC2489AD9B2A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW00JW501203_958164 ;

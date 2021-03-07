@@ -19,7 +19,7 @@ bdg:WA21815 {
     bda:WA21815  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21815 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "00/WA21815.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21815 ;
@@ -27,8 +27,14 @@ bdg:WA21815 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
+    bdr:CRCA66D6A82117B848
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7359 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA21815  a          :Work ;
         skos:prefLabel      "gsung 'bum/_pad+ma nor bu/"@bo-x-ewts ;
+        :creator            bdr:CRCA66D6A82117B848 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW21815 .

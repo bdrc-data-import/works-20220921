@@ -19,7 +19,7 @@ bdg:WA12894 {
     bda:WA12894  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA12894 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "6e/WA12894.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA12894 ;
@@ -27,8 +27,14 @@ bdg:WA12894 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
+    bdr:CR08EA2A7B0BE7A189
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS13405 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA12894  a          :Work ;
         skos:prefLabel      "thob yig shel dkar me long /"@bo-x-ewts ;
+        :creator            bdr:CR08EA2A7B0BE7A189 ;
         :isRoot             true ;
         :workHasInstance    bdr:MW12894 .
 }
