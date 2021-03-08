@@ -19,7 +19,7 @@ bdg:WA19854 {
     bda:WA19854  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19854 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "d3/WA19854.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19854 ;
@@ -27,9 +27,15 @@ bdg:WA19854 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
+    bdr:CR19DEF14C6BBECFF8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6233 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA19854  a          :Work ;
         skos:altLabel       "sangs rgyas kyi bstan pa rin po che ji ltar gnas gyur dus kyi nges pa rjes su dran pa bskyed pa legs bshad sa bon tsam smos pa nyung ngu don gsal rin po che'i sgron me/"@bo-x-ewts ;
         skos:prefLabel      "rin po che'i sgron me/"@bo-x-ewts ;
+        :creator            bdr:CR19DEF14C6BBECFF8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW19854 .

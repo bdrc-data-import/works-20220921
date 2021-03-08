@@ -17,6 +17,11 @@ bdg:WA0RT3446 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR08FDDB_WA0RT3446
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5011 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR132991_WA0RT3446
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ15568 ;
@@ -36,10 +41,12 @@ bdg:WA0RT3446 {
         skos:prefLabel      "so so thar pa'i bshad pa rnams mi brjed dran byed tsam du bris pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID3ED368_WA0RT3446 ;
-        :creator            bdr:CR132991_WA0RT3446 , bdr:CR6DB3A6_WA0RT3446 ;
+        :creator            bdr:CR08FDDB_WA0RT3446 , bdr:CR132991_WA0RT3446 , bdr:CR6DB3A6_WA0RT3446 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_5609 , bdr:MW22704_4398 , bdr:MW23702_0000T3612 , bdr:MW23703_4108 , bdr:MW2KG5015_4398 ;
         :workHasParallelsIn  bdr:WA0RTI3446 ;
+        :workIsAbout        bdr:W4CZ16817 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3446> .
 }

@@ -22,6 +22,11 @@ bdg:WA0RT0473 {
         :agent              bdr:P10154 ;
         :role               bdr:R0ER0026 .
     
+    bdr:CRE8ECD7_WA0RT0473
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10154 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID9DFBA1_WA0RT0473
         a                   bdr:RefrKTsT ;
         rdf:value           "473" .
@@ -30,10 +35,12 @@ bdg:WA0RT0473 {
         skos:prefLabel      "yan lag brgyad pa'i rim pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID9DFBA1_WA0RT0473 ;
-        :creator            bdr:CR573FCB_WA0RT0473 ;
+        :creator            bdr:CR573FCB_WA0RT0473 , bdr:CRE8ECD7_WA0RT0473 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T932 ;
         :workHasInstance    bdr:MW1KG13126_2473 , bdr:MW22704_1268 , bdr:MW23702_0000T477 , bdr:MW23703_1341 , bdr:MW2KG5015_1268 ;
         :workHasParallelsIn  bdr:WA0RTI0473 ;
+        :workIsAbout        bdr:T130 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0473> .
 }

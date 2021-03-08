@@ -17,6 +17,11 @@ bdg:WA0RT2818 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR280BE2_WA0RT2818
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3217 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR326F30_WA0RT2818
         a                   :AgentAsCreator ;
         :agent              bdr:P5820 ;
@@ -36,10 +41,12 @@ bdg:WA0RT2818 {
         skos:prefLabel      "las kyi gshin rje 'khor bcas kyi mchod pa'i cho ga"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID861AEB_WA0RT2818 ;
-        :creator            bdr:CR326F30_WA0RT2818 , bdr:CRF6003F_WA0RT2818 ;
+        :creator            bdr:CR280BE2_WA0RT2818 , bdr:CR326F30_WA0RT2818 , bdr:CRF6003F_WA0RT2818 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T529 ;
         :workHasInstance    bdr:MW1KG13126_4819 , bdr:MW22704_3608 , bdr:MW23702_0000T2818 , bdr:MW23703_1993 , bdr:MW2KG5015_3608 ;
         :workHasParallelsIn  bdr:WA0RTI2818 ;
+        :workIsAbout        bdr:T2GS1135 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT2818> .
 }

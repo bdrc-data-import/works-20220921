@@ -17,6 +17,11 @@ bdg:WA0RT2573 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR2687F0_WA0RT2573
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9949 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDE178EE_WA0RT2573
         a                   bdr:RefrKTsT ;
         rdf:value           "2573" .
@@ -25,9 +30,12 @@ bdg:WA0RT2573 {
         skos:prefLabel      "lha mo nor rgyun ma la bstod pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDE178EE_WA0RT2573 ;
+        :creator            bdr:CR2687F0_WA0RT2573 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T67 ;
         :workHasInstance    bdr:MW1KG13126_4574 , bdr:MW22704_3363 , bdr:MW23702_0000T2573 , bdr:MW23703_3752 , bdr:MW2KG5015_3363 ;
         :workHasParallelsIn  bdr:WA0RTI2573 ;
+        :workIsAbout        bdr:T694 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT2573> .
 }

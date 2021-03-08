@@ -17,6 +17,11 @@ bdg:WA0RT0422 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRC5E011_WA0RT0422
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3292 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDECA8ED_WA0RT0422
         a                   bdr:RefrKTsT ;
         rdf:value           "422" .
@@ -25,9 +30,12 @@ bdg:WA0RT0422 {
         skos:prefLabel      "man ngag rim pa gsum pa zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDECA8ED_WA0RT0422 ;
+        :creator            bdr:CRC5E011_WA0RT0422 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T456 ;
         :workHasInstance    bdr:MW1KG13126_2422 , bdr:MW22704_1217 , bdr:MW23702_0000T426 , bdr:MW23703_1266 , bdr:MW2KG5015_1217 ;
         :workHasParallelsIn  bdr:WA0RTI0422 ;
+        :workIsAbout        bdr:W20804 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0422> .
 }

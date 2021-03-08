@@ -17,6 +17,11 @@ bdg:WA0RT1910 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR557963_WA0RT1910
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7599 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRC68413_WA0RT1910
         a                   :AgentAsCreator ;
         :agent              bdr:P3709 ;
@@ -31,9 +36,10 @@ bdg:WA0RT1910 {
         skos:prefLabel      "dngos grub sgrub pa'i thabs/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDD50EFF_WA0RT1910 ;
-        :creator            bdr:CRC68413_WA0RT1910 ;
+        :creator            bdr:CR557963_WA0RT1910 , bdr:CRC68413_WA0RT1910 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1AT414 ;
         :workHasInstance    bdr:MW1KG13126_3911 , bdr:MW22704_2704 , bdr:MW23702_0000T1913 , bdr:MW23703_3091 , bdr:MW2KG5015_2704 ;
         :workHasParallelsIn  bdr:WA0RTI1910 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1910> .

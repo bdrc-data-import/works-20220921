@@ -17,6 +17,11 @@ bdg:WA0RT1303 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRDBF71E_WA0RT1303
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7588 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID8C3107_WA0RT1303
         a                   bdr:RefrKTsT ;
         rdf:value           "1303" .
@@ -25,9 +30,12 @@ bdg:WA0RT1303 {
         skos:prefLabel      "ltung ba sbom po/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID8C3107_WA0RT1303 ;
+        :creator            bdr:CRDBF71E_WA0RT1303 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1503 ;
         :workHasInstance    bdr:MW1KG13126_3304 , bdr:MW22704_2100 , bdr:MW23702_0000T1308 , bdr:MW23703_2479 , bdr:MW2KG5015_2100 ;
         :workHasParallelsIn  bdr:WA0RTI1303 ;
+        :workIsAbout        bdr:T1336 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1303> .
 }

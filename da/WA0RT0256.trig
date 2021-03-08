@@ -17,6 +17,11 @@ bdg:WA0RT0256 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRF95C36_WA0RT0256
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3277 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDDF2C4F_WA0RT0256
         a                   bdr:RefrKTsT ;
         rdf:value           "256" .
@@ -25,9 +30,12 @@ bdg:WA0RT0256 {
         skos:prefLabel      "rdo rje rnal 'byor ma dmar mo'i sgrub thabs/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDDF2C4F_WA0RT0256 ;
+        :creator            bdr:CRF95C36_WA0RT0256 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW1KG13126_2256 , bdr:MW22704_1047 , bdr:MW23702_0000T258 , bdr:MW23703_1548 , bdr:MW2KG5015_1047 ;
         :workHasParallelsIn  bdr:WA0RTI0256 ;
+        :workIsAbout        bdr:T00JR885 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0256> .
 }

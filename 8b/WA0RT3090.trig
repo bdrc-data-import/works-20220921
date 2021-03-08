@@ -17,6 +17,11 @@ bdg:WA0RT3090 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR801DE3_WA0RT3090
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8224 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRDC3AE0_WA0RT3090
         a                   :AgentAsCreator ;
         :agent              bdr:P8224 ;
@@ -31,10 +36,12 @@ bdg:WA0RT3090 {
         skos:prefLabel      "rdo rje'i tshig rnam par dbye ba zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID7BA60F_WA0RT3090 ;
-        :creator            bdr:CRDC3AE0_WA0RT3090 ;
+        :creator            bdr:CR801DE3_WA0RT3090 , bdr:CRDC3AE0_WA0RT3090 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ4665 ;
         :workHasInstance    bdr:MW23703_1987 ;
         :workHasParallelsIn  bdr:WA0RTI3090 ;
+        :workIsAbout        bdr:T104 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3090> .
 }

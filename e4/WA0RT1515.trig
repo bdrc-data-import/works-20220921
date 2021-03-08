@@ -17,6 +17,11 @@ bdg:WA0RT1515 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR68D076_WA0RT1515
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7603 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRBE0A66_WA0RT1515
         a                   :AgentAsCreator ;
         :agent              bdr:P8224 ;
@@ -36,10 +41,12 @@ bdg:WA0RT1515 {
         skos:prefLabel      "gsang sngags chen mo rjes su 'dzin ma'i mdo'i 'bum 'grel/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDAAFE1E_WA0RT1515 ;
-        :creator            bdr:CRBE0A66_WA0RT1515 , bdr:CRD20D78_WA0RT1515 ;
+        :creator            bdr:CR68D076_WA0RT1515 , bdr:CRBE0A66_WA0RT1515 , bdr:CRD20D78_WA0RT1515 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_3516 , bdr:MW22704_2313 , bdr:MW23702_0000T1521 , bdr:MW23703_2692 , bdr:MW2KG5015_2313 ;
         :workHasParallelsIn  bdr:WA0RTI1515 ;
+        :workIsAbout        bdr:W25471 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1515> .
 }

@@ -22,6 +22,11 @@ bdg:WA0RT0625 {
         :agent              bdr:P3146 ;
         :role               bdr:R0ER0026 .
     
+    bdr:CRCAD0CE_WA0RT0625
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8141 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRE324A2_WA0RT0625
         a                   :AgentAsCreator ;
         :agent              bdr:P8141 ;
@@ -35,10 +40,12 @@ bdg:WA0RT0625 {
         skos:prefLabel      "dpal nag po chen po'i dkyil 'khor gyi cho ga zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDC69168_WA0RT0625 ;
-        :creator            bdr:CR921737_WA0RT0625 , bdr:CRE324A2_WA0RT0625 ;
+        :creator            bdr:CR921737_WA0RT0625 , bdr:CRCAD0CE_WA0RT0625 , bdr:CRE324A2_WA0RT0625 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T159 ;
         :workHasInstance    bdr:MW1KG13126_2625 , bdr:MW22704_1420 , bdr:MW23702_0000T628 , bdr:MW23703_1754 , bdr:MW2KG5015_1420 ;
         :workHasParallelsIn  bdr:WA0RTI0625 ;
+        :workIsAbout        bdr:W4CZ15228 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0625> .
 }

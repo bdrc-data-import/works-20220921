@@ -17,6 +17,11 @@ bdg:WA0RT0683 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4FDB2A_WA0RT0683
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3299 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRCF160F_WA0RT0683
         a                   :AgentAsCreator ;
         :agent              bdr:P3299 ;
@@ -36,10 +41,12 @@ bdg:WA0RT0683 {
         skos:prefLabel      "rdo rje sems dpa' mchod pa'i cho ga"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDB7BC8E_WA0RT0683 ;
-        :creator            bdr:CRCF160F_WA0RT0683 , bdr:CRDD9F0D_WA0RT0683 ;
+        :creator            bdr:CR4FDB2A_WA0RT0683 , bdr:CRCF160F_WA0RT0683 , bdr:CRDD9F0D_WA0RT0683 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T529 ;
         :workHasInstance    bdr:MW1KG13126_2684 , bdr:MW22704_1479 , bdr:MW23702_0000T687 , bdr:MW23703_1820 , bdr:MW2KG5015_1479 ;
         :workHasParallelsIn  bdr:WA0RTI0683 ;
+        :workIsAbout        bdr:T452 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0683> .
 }

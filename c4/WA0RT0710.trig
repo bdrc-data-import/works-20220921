@@ -17,6 +17,11 @@ bdg:WA0RT0710 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRAE31E5_WA0RT0710
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10022 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRBE1B2B_WA0RT0710
         a                   :AgentAsCreator ;
         :agent              bdr:P2614 ;
@@ -35,10 +40,12 @@ bdg:WA0RT0710 {
         skos:prefLabel      "dpal gsang ba 'dus pa'i rgyan zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID7D3B04_WA0RT0710 ;
-        :creator            bdr:CRBE1B2B_WA0RT0710 , bdr:CRDD35EE_WA0RT0710 ;
+        :creator            bdr:CRAE31E5_WA0RT0710 , bdr:CRBE1B2B_WA0RT0710 , bdr:CRDD35EE_WA0RT0710 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_2711 , bdr:MW22704_1506 , bdr:MW23702_0000T714 , bdr:MW23703_1848 , bdr:MW2KG5015_1506 ;
         :workHasParallelsIn  bdr:WA0RTI0710 ;
+        :workIsAbout        bdr:W4CZ15240 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0710> .
 }

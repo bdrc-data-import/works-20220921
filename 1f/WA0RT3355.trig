@@ -17,6 +17,11 @@ bdg:WA0RT3355 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR864020_WA0RT3355
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ16798 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRECB1DE_WA0RT3355
         a                   :AgentAsCreator ;
         :agent              bdr:P8221 ;
@@ -31,10 +36,12 @@ bdg:WA0RT3355 {
         skos:prefLabel      "'phags pa dgongs pa zab mo nges par 'grel pa'i mdo rgya cher 'grel pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID1FE943_WA0RT3355 ;
-        :creator            bdr:CRECB1DE_WA0RT3355 ;
+        :creator            bdr:CR864020_WA0RT3355 , bdr:CRECB1DE_WA0RT3355 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_5517 , bdr:MW22704_4306 , bdr:MW23702_0000T3520 , bdr:MW23703_4016 , bdr:MW2KG5015_4306 ;
         :workHasParallelsIn  bdr:WA0RTI3355 ;
+        :workIsAbout        bdr:W4CZ16768 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3355> .
 }

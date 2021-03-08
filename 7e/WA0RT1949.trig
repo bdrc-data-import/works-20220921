@@ -22,6 +22,11 @@ bdg:WA0RT1949 {
         :agent              bdr:P318 ;
         :role               bdr:R0ER0026 .
     
+    bdr:CRA963C4_WA0RT1949
+        a                   :AgentAsCreator ;
+        :agent              bdr:P207 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID355812_WA0RT1949
         a                   bdr:RefrKTsT ;
         rdf:value           "1949" .
@@ -30,10 +35,12 @@ bdg:WA0RT1949 {
         skos:prefLabel      "gza' dgu'i mchod pa'i cho ga"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID355812_WA0RT1949 ;
-        :creator            bdr:CR89AAA4_WA0RT1949 ;
+        :creator            bdr:CR89AAA4_WA0RT1949 , bdr:CRA963C4_WA0RT1949 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T529 ;
         :workHasInstance    bdr:MW1KG13126_3950 , bdr:MW22704_2744 , bdr:MW23702_0000T1952 , bdr:MW23703_3129 , bdr:MW2KG5015_2744 ;
         :workHasParallelsIn  bdr:WA0RTI1949 ;
+        :workIsAbout        bdr:T502 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1949> .
 }

@@ -17,6 +17,11 @@ bdg:WA0RT3611 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4DB085_WA0RT3611
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ16861 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRA28745_WA0RT3611
         a                   :AgentAsCreator ;
         :agent              bdr:P2085 ;
@@ -30,10 +35,12 @@ bdg:WA0RT3611 {
         skos:prefLabel      "'brel pa mdor bstan pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDC8EA00_WA0RT3611 ;
-        :creator            bdr:CRA28745_WA0RT3611 ;
+        :creator            bdr:CR4DB085_WA0RT3611 , bdr:CRA28745_WA0RT3611 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 ;
         :workHasInstance    bdr:MW1KG13126_5774 , bdr:MW22704_4565 , bdr:MW23702_0000T3777 , bdr:MW23703_4276 , bdr:MW2KG5015_4565 ;
         :workHasParallelsIn  bdr:WA0RTI3611 ;
+        :workIsAbout        bdr:T282 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3611> .
 }

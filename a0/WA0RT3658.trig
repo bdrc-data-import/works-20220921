@@ -17,6 +17,11 @@ bdg:WA0RT3658 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4BAF82_WA0RT3658
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15389 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRB50183_WA0RT3658
         a                   :AgentAsCreator ;
         :agent              bdr:P1448 ;
@@ -31,9 +36,10 @@ bdg:WA0RT3658 {
         skos:prefLabel      "gtsug gi nor bu zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDFED243_WA0RT3658 ;
-        :creator            bdr:CRB50183_WA0RT3658 ;
+        :creator            bdr:CR4BAF82_WA0RT3658 , bdr:CRB50183_WA0RT3658 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T203 ;
         :workHasInstance    bdr:MW22704_4626 , bdr:MW23702_0000T3823 , bdr:MW23703_4324 , bdr:MW2KG5015_4626 ;
         :workHasParallelsIn  bdr:WA0RTI3658 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3658> .

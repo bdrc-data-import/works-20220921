@@ -17,6 +17,11 @@ bdg:WA0RT1033 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR32280D_WA0RT1033
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDE37971_WA0RT1033
         a                   bdr:RefrKTsT ;
         rdf:value           "1033" .
@@ -26,9 +31,12 @@ bdg:WA0RT1033 {
         skos:prefLabel      "phyag na rdo rje'i lam yan lag brgyad pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDE37971_WA0RT1033 ;
+        :creator            bdr:CR32280D_WA0RT1033 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW1KG13126_3034 , bdr:MW22704_1830 , bdr:MW23702_0000T1038 , bdr:MW23703_2191 , bdr:MW2KG5015_1830 ;
         :workHasParallelsIn  bdr:WA0RTI1033 ;
+        :workIsAbout        bdr:T00AG01174 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1033> .
 }

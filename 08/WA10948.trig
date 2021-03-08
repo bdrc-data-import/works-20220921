@@ -19,7 +19,7 @@ bdg:WA10948 {
     bda:WA10948  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA10948 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "08/WA10948.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA10948 ;
@@ -27,9 +27,15 @@ bdg:WA10948 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
+    bdr:CR7A98F81CDFEB7039
+        a                   :AgentAsCreator ;
+        :agent              bdr:P912 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA10948  a          :Work ;
         skos:altLabel       "sangs rgyas rab bdun ma'i rten 'brel rnam bshad nyi ma'i 'od zer/"@bo-x-ewts ;
         skos:prefLabel      "rten 'brel rnam bshad nyi ma'i 'od zer/"@bo-x-ewts ;
+        :creator            bdr:CR7A98F81CDFEB7039 ;
         :isRoot             true ;
         :workHasInstance    bdr:MW10948 .
 }

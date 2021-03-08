@@ -17,6 +17,11 @@ bdg:WA0RT1866 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRA186EE_WA0RT1866
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7148 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID75FB94_WA0RT1866
         a                   bdr:RefrKTsT ;
         rdf:value           "1866" .
@@ -25,9 +30,12 @@ bdg:WA0RT1866 {
         skos:prefLabel      "mi bzad pa'i nad shi bar byed pa gser gyi rgya mtsho zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID75FB94_WA0RT1866 ;
+        :creator            bdr:CRA186EE_WA0RT1866 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1206 ;
         :workHasInstance    bdr:MW1KG13126_3867 , bdr:MW22704_2660 , bdr:MW23702_0000T1869 , bdr:MW23703_3043 , bdr:MW2KG5015_2660 ;
         :workHasParallelsIn  bdr:WA0RTI1866 ;
+        :workIsAbout        bdr:T2549 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1866> .
 }

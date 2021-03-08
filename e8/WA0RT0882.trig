@@ -22,6 +22,11 @@ bdg:WA0RT0882 {
         :agent              bdr:P2147 ;
         :role               bdr:R0ER0026 .
     
+    bdr:CRDC020B_WA0RT0882
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3209 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID7DFB1C_WA0RT0882
         a                   bdr:RefrKTsT ;
         rdf:value           "882" .
@@ -31,10 +36,12 @@ bdg:WA0RT0882 {
         skos:prefLabel      "gshin rje gshed dmar po maN+Dala du mchod pa'i cho ga zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID7DFB1C_WA0RT0882 ;
-        :creator            bdr:CRD2CCD3_WA0RT0882 ;
+        :creator            bdr:CRD2CCD3_WA0RT0882 , bdr:CRDC020B_WA0RT0882 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1362 ;
         :workHasInstance    bdr:MW1KG13126_2883 , bdr:MW22704_1678 , bdr:MW23702_0000T886 , bdr:MW23703_2027 , bdr:MW2KG5015_1678 ;
         :workHasParallelsIn  bdr:WA0RTI0882 ;
+        :workIsAbout        bdr:T1613 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0882> .
 }

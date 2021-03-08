@@ -17,6 +17,11 @@ bdg:WA0RT1221 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRAD5F8A_WA0RT1221
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9847 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDD000FF_WA0RT1221
         a                   bdr:RefrKTsT ;
         rdf:value           "1221" .
@@ -25,9 +30,12 @@ bdg:WA0RT1221 {
         skos:prefLabel      "rnal 'byor bzhi'i nyams len gyi thabs zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDD000FF_WA0RT1221 ;
+        :creator            bdr:CRAD5F8A_WA0RT1221 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T541 ;
         :workHasInstance    bdr:MW1KG13126_3222 , bdr:MW22704_2018 , bdr:MW23702_0000T1226 , bdr:MW23703_2380 , bdr:MW2KG5015_2018 ;
         :workHasParallelsIn  bdr:WA0RTI1221 ;
+        :workIsAbout        bdr:T616 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1221> .
 }

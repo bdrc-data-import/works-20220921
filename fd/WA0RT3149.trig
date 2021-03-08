@@ -17,6 +17,11 @@ bdg:WA0RT3149 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4F1B5F_WA0RT3149
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR8CBD0C_WA0RT3149
         a                   :AgentAsCreator ;
         :agent              bdr:P3456 ;
@@ -36,10 +41,12 @@ bdg:WA0RT3149 {
         skos:prefLabel      "shes rab kyi pha rol tu phyin pa'i don bsdus sgron ma/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDB2A0D1_WA0RT3149 ;
-        :creator            bdr:CR8CBD0C_WA0RT3149 , bdr:CRD55AEB_WA0RT3149 ;
+        :creator            bdr:CR4F1B5F_WA0RT3149 , bdr:CR8CBD0C_WA0RT3149 , bdr:CRD55AEB_WA0RT3149 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T2398 ;
         :workHasInstance    bdr:MW1KG13126_5201 , bdr:MW1KG13126_5873 , bdr:MW22704_3990 , bdr:MW22704_4671 , bdr:MW23702_0000T3205 , bdr:MW23702_0000T3887 , bdr:MW23703_3804 , bdr:MW2KG5015_3990 , bdr:MW2KG5015_4671 ;
         :workHasParallelsIn  bdr:WA0RTI3149 ;
+        :workIsAbout        bdr:W4CZ15640 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3149> .
 }

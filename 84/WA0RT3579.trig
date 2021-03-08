@@ -17,6 +17,11 @@ bdg:WA0RT3579 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR02998C_WA0RT3579
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ16855 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR2D9249_WA0RT3579
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ10511 ;
@@ -35,10 +40,12 @@ bdg:WA0RT3579 {
         skos:prefLabel      "thams cad mkhyen pa grub pa'i tshig le'ur byas pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDF92D11_WA0RT3579 ;
-        :creator            bdr:CR2D9249_WA0RT3579 , bdr:CRA63F6E_WA0RT3579 ;
+        :creator            bdr:CR02998C_WA0RT3579 , bdr:CR2D9249_WA0RT3579 , bdr:CRA63F6E_WA0RT3579 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 ;
         :workHasInstance    bdr:MW1KG13126_5741 , bdr:MW22704_4532 , bdr:MW23702_0000T3744 , bdr:MW23703_4243 , bdr:MW2KG5015_4532 ;
         :workHasParallelsIn  bdr:WA0RTI3579 ;
+        :workIsAbout        bdr:T370 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3579> .
 }

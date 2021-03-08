@@ -17,6 +17,11 @@ bdg:WA0RT1500 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR18D21C_WA0RT1500
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7603 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDEAA705_WA0RT1500
         a                   bdr:RefrKTsT ;
         rdf:value           "1500" .
@@ -26,9 +31,12 @@ bdg:WA0RT1500 {
         skos:prefLabel      "'phags pa phyag na rdo rje gos sngon can gyi gzungs kyi 'grel pa zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDEAA705_WA0RT1500 ;
+        :creator            bdr:CR18D21C_WA0RT1500 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_3501 , bdr:MW22704_2297 , bdr:MW23702_0000T1505 , bdr:MW23703_2676 , bdr:MW2KG5015_2297 ;
         :workHasParallelsIn  bdr:WA0RTI1500 ;
+        :workIsAbout        bdr:W25411 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1500> .
 }

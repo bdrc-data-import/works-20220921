@@ -22,6 +22,11 @@ bdg:WA0RT0489 {
         :agent              bdr:P4284 ;
         :role               bdr:R0ER0026 .
     
+    bdr:CR92D061_WA0RT0489
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4004 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID8E5532_WA0RT0489
         a                   bdr:RefrKTsT ;
         rdf:value           "489" .
@@ -30,10 +35,12 @@ bdg:WA0RT0489 {
         skos:prefLabel      "ye shes mkha' 'gro'i sgrub thabs/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID8E5532_WA0RT0489 ;
-        :creator            bdr:CR598A4F_WA0RT0489 ;
+        :creator            bdr:CR598A4F_WA0RT0489 , bdr:CR92D061_WA0RT0489 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW1KG13126_2489 , bdr:MW22704_1284 , bdr:MW23702_0000T493 , bdr:MW23703_1618 , bdr:MW2KG5015_1284 ;
         :workHasParallelsIn  bdr:WA0RTI0489 ;
+        :workIsAbout        bdr:T1768 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0489> .
 }

@@ -17,6 +17,11 @@ bdg:WA0RT0813 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR225581_WA0RT0813
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR7F0742_WA0RT0813
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ15169 ;
@@ -35,10 +40,12 @@ bdg:WA0RT0813 {
         skos:prefLabel      "dbyug pa gshin rje gshed rnam par 'joms pa zhes bya ba'i sgrub thabs/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID1DC931_WA0RT0813 ;
-        :creator            bdr:CR7F0742_WA0RT0813 , bdr:CRE9C4F4_WA0RT0813 ;
+        :creator            bdr:CR225581_WA0RT0813 , bdr:CR7F0742_WA0RT0813 , bdr:CRE9C4F4_WA0RT0813 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW1KG13126_2814 , bdr:MW22704_1608 , bdr:MW23702_0000T816 , bdr:MW23703_1949 , bdr:MW2KG5015_1608 ;
         :workHasParallelsIn  bdr:WA0RTI0813 ;
+        :workIsAbout        bdr:T4CZ15546 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0813> .
 }

@@ -17,6 +17,11 @@ bdg:WA0RT1266 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR049995_WA0RT1266
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1243 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR31390B_WA0RT1266
         a                   :AgentAsCreator ;
         :agent              bdr:P4402 ;
@@ -31,10 +36,12 @@ bdg:WA0RT1266 {
         skos:prefLabel      "phyag rgya chen po brda'i brgyud pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDDC1C18_WA0RT1266 ;
-        :creator            bdr:CR31390B_WA0RT1266 ;
+        :creator            bdr:CR049995_WA0RT1266 , bdr:CR31390B_WA0RT1266 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T541 ;
         :workHasInstance    bdr:MW1KG13126_3267 , bdr:MW22704_2063 , bdr:MW23702_0000T1271 , bdr:MW23703_2439 , bdr:MW2KG5015_2063 ;
         :workHasParallelsIn  bdr:WA0RTI1266 ;
+        :workIsAbout        bdr:T1GS135820 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1266> .
 }

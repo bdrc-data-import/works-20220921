@@ -17,6 +17,11 @@ bdg:WA0RT0399 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR767036_WA0RT0399
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ10566 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRD4F246_WA0RT0399
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ10570 ;
@@ -30,10 +35,12 @@ bdg:WA0RT0399 {
         skos:prefLabel      "dpal kye rdo rje'i mngon par rtogs pa'i thig le zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID5EE45C_WA0RT0399 ;
-        :creator            bdr:CRD4F246_WA0RT0399 ;
+        :creator            bdr:CR767036_WA0RT0399 , bdr:CRD4F246_WA0RT0399 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T5 ;
         :workHasInstance    bdr:MW1KG13126_2399 , bdr:MW22704_1194 , bdr:MW23702_0000T404 , bdr:MW23703_1277 , bdr:MW2KG5015_1194 ;
         :workHasParallelsIn  bdr:WA0RTI0399 ;
+        :workIsAbout        bdr:T130 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0399> .
 }

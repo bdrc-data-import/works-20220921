@@ -16,17 +16,30 @@ bdg:WA0XL9B46BEC26663 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA0XL9B46BEC26663 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "db/WA0XL9B46BEC26663.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA0XL9B46BEC26663 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR24966D3B505277B6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4669 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRC2D7D58408DA0D51
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1017975 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA0XL9B46BEC26663
         a                   :Work ;
         skos:prefLabel      "lo rgyus gtso cher brjod pa/"@bo-x-ewts ;
+        :creator            bdr:CR24966D3B505277B6 , bdr:CRC2D7D58408DA0D51 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;
-        :workHasInstance    bdr:MW23911_9B46BE .
+        :workHasInstance    bdr:MW23911_9B46BE ;
+        :workIsAbout        bdr:P4669 .
 }

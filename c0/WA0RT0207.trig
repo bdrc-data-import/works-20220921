@@ -17,6 +17,11 @@ bdg:WA0RT0207 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR380017_WA0RT0207
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR65AEE1_WA0RT0207
         a                   :AgentAsCreator ;
         :agent              bdr:P753 ;
@@ -35,10 +40,12 @@ bdg:WA0RT0207 {
         skos:prefLabel      "dpal bcom ldan 'das kyi mngon par rtogs pa zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID53EFA3_WA0RT0207 ;
-        :creator            bdr:CR65AEE1_WA0RT0207 , bdr:CRAD8C0E_WA0RT0207 ;
+        :creator            bdr:CR380017_WA0RT0207 , bdr:CR65AEE1_WA0RT0207 , bdr:CRAD8C0E_WA0RT0207 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T5 ;
         :workHasInstance    bdr:MW1KG13126_2207 , bdr:MW22704_0997 , bdr:MW23702_0000T209 , bdr:MW23703_1492 , bdr:MW2KG5015_0997 ;
         :workHasParallelsIn  bdr:WA0RTI0207 ;
+        :workIsAbout        bdr:T423 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0207> .
 }

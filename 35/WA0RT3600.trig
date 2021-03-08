@@ -22,6 +22,11 @@ bdg:WA0RT3600 {
         :agent              bdr:P4CZ15090 ;
         :role               bdr:R0ER0018 .
     
+    bdr:CRC99472_WA0RT3600
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7217 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CREFDA2E_WA0RT3600
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ10524 ;
@@ -36,10 +41,12 @@ bdg:WA0RT3600 {
         skos:prefLabel      "rigs pa'i sbyor ba zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID52CA32_WA0RT3600 ;
-        :creator            bdr:CR76E908_WA0RT3600 , bdr:CREFDA2E_WA0RT3600 ;
+        :creator            bdr:CR76E908_WA0RT3600 , bdr:CRC99472_WA0RT3600 , bdr:CREFDA2E_WA0RT3600 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 ;
         :workHasInstance    bdr:MW1KG13126_5761 , bdr:MW22704_4552 , bdr:MW23702_0000T3764 , bdr:MW23703_4265 , bdr:MW2KG5015_4552 ;
         :workHasParallelsIn  bdr:WA0RTI3600 ;
+        :workIsAbout        bdr:T370 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3600> .
 }

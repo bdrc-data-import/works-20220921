@@ -22,6 +22,11 @@ bdg:WA0RT3072 {
         :agent              bdr:P3074 ;
         :role               bdr:R0ER0026 .
     
+    bdr:CRE0AC8D_WA0RT3072
+        a                   :AgentAsCreator ;
+        :agent              bdr:P44 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRF67D3C_WA0RT3072
         a                   :AgentAsCreator ;
         :agent              bdr:P8232 ;
@@ -35,10 +40,12 @@ bdg:WA0RT3072 {
         skos:prefLabel      "rdo rje rnal 'byor ma mchod pa mdor bsdus pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID12FE81_WA0RT3072 ;
-        :creator            bdr:CRDBDE7F_WA0RT3072 , bdr:CRF67D3C_WA0RT3072 ;
+        :creator            bdr:CRDBDE7F_WA0RT3072 , bdr:CRE0AC8D_WA0RT3072 , bdr:CRF67D3C_WA0RT3072 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T529 ;
         :workHasInstance    bdr:MW23703_1543 ;
         :workHasParallelsIn  bdr:WA0RTI3072 ;
+        :workIsAbout        bdr:T00JR885 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3072> .
 }

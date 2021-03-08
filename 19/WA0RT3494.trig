@@ -17,6 +17,11 @@ bdg:WA0RT3494 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR531050_WA0RT3494
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7588 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRA185FF_WA0RT3494
         a                   :AgentAsCreator ;
         :agent              bdr:P1050 ;
@@ -31,10 +36,12 @@ bdg:WA0RT3494 {
         skos:prefLabel      "sangs rgyas kyi spyod pa zhes bya ba'i snyan dngags chen po/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID52F31A_WA0RT3494 ;
-        :creator            bdr:CRA185FF_WA0RT3494 ;
+        :creator            bdr:CR531050_WA0RT3494 , bdr:CRA185FF_WA0RT3494 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1342 ;
         :workHasInstance    bdr:MW1KG13126_5656 , bdr:MW22704_4445 , bdr:MW23702_0000T3659 , bdr:MW23703_4156 , bdr:MW2KG5015_4445 ;
         :workHasParallelsIn  bdr:WA0RTI3494 ;
+        :workIsAbout        bdr:P7326 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3494> .
 }

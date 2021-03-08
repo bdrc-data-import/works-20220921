@@ -17,6 +17,11 @@ bdg:WA0RT3307 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR6C8628_WA0RT3307
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRAF6BAC_WA0RT3307
         a                   :AgentAsCreator ;
         :agent              bdr:P8228 ;
@@ -35,10 +40,12 @@ bdg:WA0RT3307 {
         skos:prefLabel      "byang chub tu sems bskyed pa'i cho ga"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDD63EDC_WA0RT3307 ;
-        :creator            bdr:CRAF6BAC_WA0RT3307 , bdr:CRB7234E_WA0RT3307 ;
+        :creator            bdr:CR6C8628_WA0RT3307 , bdr:CRAF6BAC_WA0RT3307 , bdr:CRB7234E_WA0RT3307 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
         :workHasInstance    bdr:MW1KG13126_5361 , bdr:MW1KG13126_5405 , bdr:MW22704_4150 , bdr:MW22704_4194 , bdr:MW23702_0000T3364 , bdr:MW23702_0000T3408 , bdr:MW23703_3966 , bdr:MW2KG5015_4150 , bdr:MW2KG5015_4194 ;
         :workHasParallelsIn  bdr:WA0RTI3307 ;
+        :workIsAbout        bdr:T338 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3307> .
 }

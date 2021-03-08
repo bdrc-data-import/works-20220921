@@ -17,6 +17,11 @@ bdg:WA0RT1547 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRE16560_WA0RT1547
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7599 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDE2DBC4_WA0RT1547
         a                   bdr:RefrKTsT ;
         rdf:value           "1547" .
@@ -26,9 +31,12 @@ bdg:WA0RT1547 {
         skos:prefLabel      "thugs rje chen po la smre sngags kyis bstod pa zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDE2DBC4_WA0RT1547 ;
+        :creator            bdr:CRE16560_WA0RT1547 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T67 ;
         :workHasInstance    bdr:MW1KG13126_3548 , bdr:MW22704_2349 , bdr:MW23702_0000T1558 , bdr:MW23703_2732 , bdr:MW2KG5015_2349 ;
         :workHasParallelsIn  bdr:WA0RTI1547 ;
+        :workIsAbout        bdr:T106 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1547> .
 }

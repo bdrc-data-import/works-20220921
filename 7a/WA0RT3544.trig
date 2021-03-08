@@ -17,6 +17,11 @@ bdg:WA0RT3544 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR15C05E_WA0RT3544
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6126 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR4A128F_WA0RT3544
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ15509 ;
@@ -36,10 +41,12 @@ bdg:WA0RT3544 {
         skos:prefLabel      "dus gsum brtag pa zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID6F3B94_WA0RT3544 ;
-        :creator            bdr:CR4A128F_WA0RT3544 , bdr:CRCFAB09_WA0RT3544 ;
+        :creator            bdr:CR15C05E_WA0RT3544 , bdr:CR4A128F_WA0RT3544 , bdr:CRCFAB09_WA0RT3544 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 ;
         :workHasInstance    bdr:MW1KG13126_5705 , bdr:MW22704_4494 , bdr:MW23702_0000T3708 , bdr:MW23703_4207 , bdr:MW2KG5015_4494 ;
         :workHasParallelsIn  bdr:WA0RTI3544 ;
+        :workIsAbout        bdr:T370 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3544> .
 }

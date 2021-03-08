@@ -17,6 +17,11 @@ bdg:WA0RT0640 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR65A630_WA0RT0640
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7875 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDABFEB6_WA0RT0640
         a                   bdr:RefrKTsT ;
         rdf:value           "640" .
@@ -25,9 +30,12 @@ bdg:WA0RT0640 {
         skos:prefLabel      "dpal nag po chen po la bstod pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDABFEB6_WA0RT0640 ;
+        :creator            bdr:CR65A630_WA0RT0640 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T67 ;
         :workHasInstance    bdr:MW1KG13126_2640 , bdr:MW1KG13126_4910 , bdr:MW22704_1435 , bdr:MW22704_3699 , bdr:MW23702_0000T2909 , bdr:MW23702_0000T643 , bdr:MW23703_1774 , bdr:MW2KG5015_1435 , bdr:MW2KG5015_3699 ;
         :workHasParallelsIn  bdr:WA0RTI0640 ;
+        :workIsAbout        bdr:T950 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0640> .
 }

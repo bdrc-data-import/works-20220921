@@ -17,6 +17,11 @@ bdg:WA0RT1394 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR16763F_WA0RT1394
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8398 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID733627_WA0RT1394
         a                   bdr:RefrKTsT ;
         rdf:value           "1394" .
@@ -26,9 +31,12 @@ bdg:WA0RT1394 {
         skos:prefLabel      "'jam dpal gyi mtshan yang dag par brjod pa'i byang chub chen po'i sku gdung gi cho ga zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID733627_WA0RT1394 ;
+        :creator            bdr:CR16763F_WA0RT1394 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1015 , bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_3395 , bdr:MW22704_2191 , bdr:MW23702_0000T1399 , bdr:MW23703_2568 , bdr:MW2KG5015_2191 ;
         :workHasParallelsIn  bdr:WA0RTI1394 ;
+        :workIsAbout        bdr:W22003 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1394> .
 }

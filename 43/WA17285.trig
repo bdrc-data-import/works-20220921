@@ -19,7 +19,7 @@ bdg:WA17285 {
     bda:WA17285  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA17285 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "43/WA17285.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA17285 ;
@@ -27,8 +27,14 @@ bdg:WA17285 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
+    bdr:CRF158CCB7603C7000
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4911 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA17285  a          :Work ;
         skos:prefLabel      "rten 'brel bstod pa'i 'grel pa/"@bo-x-ewts ;
+        :creator            bdr:CRF158CCB7603C7000 ;
         :isRoot             true ;
         :workHasInstance    bdr:MW17285 .
 }

@@ -17,6 +17,11 @@ bdg:WA0RT0427 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRD300BE_WA0RT0427
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2956 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDCA93EF_WA0RT0427
         a                   bdr:RefrKTsT ;
         rdf:value           "427" .
@@ -26,9 +31,12 @@ bdg:WA0RT0427 {
         skos:prefLabel      "kye'i rdo rje phyag bcu drug pa'i sgrub pa'i thabs/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDCA93EF_WA0RT0427 ;
+        :creator            bdr:CRD300BE_WA0RT0427 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW1KG13126_2427 , bdr:MW22704_1222 , bdr:MW23702_0000T431 , bdr:MW23703_1297 , bdr:MW2KG5015_1222 ;
         :workHasParallelsIn  bdr:WA0RTI0427 ;
+        :workIsAbout        bdr:T130 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0427> .
 }

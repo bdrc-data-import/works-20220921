@@ -17,6 +17,11 @@ bdg:WA0RT0118 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR2FB990_WA0RT0118
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7752 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR319CCC_WA0RT0118
         a                   :AgentAsCreator ;
         :agent              bdr:P7048 ;
@@ -36,10 +41,12 @@ bdg:WA0RT0118 {
         skos:prefLabel      "dpal 'khor lo sdom pa'i dka' 'grel sgrub pa'i thabs kyi gleng gzhi zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDC5A7BA_WA0RT0118 ;
-        :creator            bdr:CR319CCC_WA0RT0118 , bdr:CRDCB5A0_WA0RT0118 ;
+        :creator            bdr:CR2FB990_WA0RT0118 , bdr:CR319CCC_WA0RT0118 , bdr:CRDCB5A0_WA0RT0118 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T1KG3171 ;
         :workHasInstance    bdr:MW1KG13126_2118 , bdr:MW22704_0908 , bdr:MW23702_0000T119 , bdr:MW23703_1401 , bdr:MW2KG5015_0908 ;
         :workHasParallelsIn  bdr:WA0RTI0118 ;
+        :workIsAbout        bdr:T1 , bdr:W10MS11137 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0118> .
 }

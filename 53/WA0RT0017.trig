@@ -17,6 +17,11 @@ bdg:WA0RT0017 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR39C6DD_WA0RT0017
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR745312_WA0RT0017
         a                   :AgentAsCreator ;
         :agent              bdr:P3456 ;
@@ -35,10 +40,12 @@ bdg:WA0RT0017 {
         skos:prefLabel      "sems can mgu bar bya ba'i bstod pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID4B26F1_WA0RT0017 ;
-        :creator            bdr:CR745312_WA0RT0017 , bdr:CRAB1A5A_WA0RT0017 ;
+        :creator            bdr:CR39C6DD_WA0RT0017 , bdr:CR745312_WA0RT0017 , bdr:CRAB1A5A_WA0RT0017 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T67 ;
         :workHasInstance    bdr:MW1KG13126_2017 , bdr:MW22704_0806 , bdr:MW23702_0000T17 , bdr:MW23703_1125 , bdr:MW2KG5015_0806 ;
         :workHasParallelsIn  bdr:WA0RTI0017 ;
+        :workIsAbout        bdr:T1078 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0017> .
 }

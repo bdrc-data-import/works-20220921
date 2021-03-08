@@ -17,6 +17,11 @@ bdg:WA0RT1200 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR277FAC_WA0RT1200
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID10498A_WA0RT1200
         a                   bdr:RefrKTsT ;
         rdf:value           "1200" .
@@ -25,8 +30,10 @@ bdg:WA0RT1200 {
         skos:prefLabel      "klu sgrub kyi glu/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID10498A_WA0RT1200 ;
+        :creator            bdr:CR277FAC_WA0RT1200 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T4CZ2184 ;
         :workHasInstance    bdr:MW1KG13126_3201 , bdr:MW22704_1997 , bdr:MW23702_0000T1205 , bdr:MW23703_2373 , bdr:MW2KG5015_1997 ;
         :workHasParallelsIn  bdr:WA0RTI1200 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1200> .

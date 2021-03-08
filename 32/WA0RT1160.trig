@@ -17,6 +17,11 @@ bdg:WA0RT1160 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRE33E29_WA0RT1160
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7641 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID447886_WA0RT1160
         a                   bdr:RefrKTsT ;
         rdf:value           "1160" .
@@ -26,9 +31,12 @@ bdg:WA0RT1160 {
         skos:prefLabel      "rnal 'byor lam gyi sgron ma zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID447886_WA0RT1160 ;
+        :creator            bdr:CRE33E29_WA0RT1160 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 ;
         :workHasInstance    bdr:MW1KG13126_3161 , bdr:MW22704_1957 , bdr:MW23702_0000T1165 , bdr:MW23703_2322 , bdr:MW2KG5015_1957 ;
         :workHasParallelsIn  bdr:WA0RTI1160 ;
+        :workIsAbout        bdr:T1120 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1160> .
 }

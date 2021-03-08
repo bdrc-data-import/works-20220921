@@ -27,6 +27,11 @@ bdg:WA0RT1890 {
         :agent              bdr:P3458 ;
         :role               bdr:R0ER0026 .
     
+    bdr:CRE2BC1E_WA0RT1890
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDAC990F_WA0RT1890
         a                   bdr:RefrKTsT ;
         rdf:value           "1890" .
@@ -35,10 +40,12 @@ bdg:WA0RT1890 {
         skos:prefLabel      "dge ba'i 'dod 'jo/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDAC990F_WA0RT1890 ;
-        :creator            bdr:CR5A64A1_WA0RT1890 , bdr:CRA3FE5C_WA0RT1890 ;
+        :creator            bdr:CR5A64A1_WA0RT1890 , bdr:CRA3FE5C_WA0RT1890 , bdr:CRE2BC1E_WA0RT1890 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW1KG13126_3891 , bdr:MW22704_2684 , bdr:MW23702_0000T1893 , bdr:MW23703_3067 , bdr:MW2KG5015_2684 ;
         :workHasParallelsIn  bdr:WA0RTI1890 ;
+        :workIsAbout        bdr:T618 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1890> .
 }

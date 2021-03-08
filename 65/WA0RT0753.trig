@@ -17,6 +17,11 @@ bdg:WA0RT0753 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB6A098_WA0RT0753
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8946 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRD546B6_WA0RT0753
         a                   :AgentAsCreator ;
         :agent              bdr:P3458 ;
@@ -30,10 +35,12 @@ bdg:WA0RT0753 {
         skos:prefLabel      "de kho na nyid rin po che snang ba'i rnam par bshad pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID2CCFDD_WA0RT0753 ;
-        :creator            bdr:CRD546B6_WA0RT0753 ;
+        :creator            bdr:CRB6A098_WA0RT0753 , bdr:CRD546B6_WA0RT0753 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 , bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_2754 , bdr:MW1KG13126_4793 , bdr:MW22704_1548 , bdr:MW22704_3582 , bdr:MW23702_0000T756 , bdr:MW23703_1890 , bdr:MW2KG5015_1548 , bdr:MW2KG5015_3582 ;
         :workHasParallelsIn  bdr:WA0RTI0753 ;
+        :workIsAbout        bdr:W4CZ15271 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0753> .
 }

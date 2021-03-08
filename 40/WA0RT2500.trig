@@ -17,6 +17,11 @@ bdg:WA0RT2500 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR835E68_WA0RT2500
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ10526 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDAFF464_WA0RT2500
         a                   bdr:RefrKTsT ;
         rdf:value           "2500" .
@@ -26,9 +31,12 @@ bdg:WA0RT2500 {
         skos:prefLabel      "sgrol ma'i maN+Dal gyi cho ga"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDAFF464_WA0RT2500 ;
+        :creator            bdr:CR835E68_WA0RT2500 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1709 ;
         :workHasInstance    bdr:MW1KG13126_4501 , bdr:MW22704_3294 , bdr:MW23702_0000T2503 , bdr:MW23703_3679 , bdr:MW2KG5015_3294 ;
         :workHasParallelsIn  bdr:WA0RTI2500 ;
+        :workIsAbout        bdr:T619 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT2500> .
 }

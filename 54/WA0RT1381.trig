@@ -17,6 +17,11 @@ bdg:WA0RT1381 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB35934_WA0RT1381
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8398 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID3CD7A9_WA0RT1381
         a                   bdr:RefrKTsT ;
         rdf:value           "1381" .
@@ -26,9 +31,12 @@ bdg:WA0RT1381 {
         skos:prefLabel      "'jam dpal gyi mtshan gdon pa'i man ngag"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID3CD7A9_WA0RT1381 ;
+        :creator            bdr:CRB35934_WA0RT1381 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T637 ;
         :workHasInstance    bdr:MW1KG13126_3382 , bdr:MW22704_2178 , bdr:MW23702_0000T1386 , bdr:MW23703_2555 , bdr:MW2KG5015_2178 ;
         :workHasParallelsIn  bdr:WA0RTI1381 ;
+        :workIsAbout        bdr:W22003 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1381> .
 }

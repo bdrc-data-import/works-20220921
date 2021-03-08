@@ -17,6 +17,11 @@ bdg:WA0RT3062 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR44F073_WA0RT3062
+        a                   :AgentAsCreator ;
+        :agent              bdr:P44 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CREEEC51_WA0RT3062
         a                   :AgentAsCreator ;
         :agent              bdr:P476 ;
@@ -30,10 +35,12 @@ bdg:WA0RT3062 {
         skos:prefLabel      "dpal dus kyi 'khor lo'i sgrub thabs rnal 'byor rab gsal/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDDFC2D0_WA0RT3062 ;
-        :creator            bdr:CREEEC51_WA0RT3062 ;
+        :creator            bdr:CR44F073_WA0RT3062 , bdr:CREEEC51_WA0RT3062 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW23703_1363 ;
         :workHasParallelsIn  bdr:WA0RTI3062 ;
+        :workIsAbout        bdr:T74 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3062> .
 }

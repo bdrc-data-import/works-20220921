@@ -17,6 +17,11 @@ bdg:WA0RT0092 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR6A663A_WA0RT0092
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15096 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRFE8E48_WA0RT0092
         a                   :AgentAsCreator ;
         :agent              bdr:P1560 ;
@@ -30,10 +35,12 @@ bdg:WA0RT0092 {
         skos:prefLabel      "sbyor ba'i phreng ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID7DA546_WA0RT0092 ;
-        :creator            bdr:CRFE8E48_WA0RT0092 ;
+        :creator            bdr:CR6A663A_WA0RT0092 , bdr:CRFE8E48_WA0RT0092 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1428 ;
         :workHasInstance    bdr:MW1KG13126_2092 , bdr:MW22704_0882 , bdr:MW23702_0000T93 , bdr:MW23703_1376 , bdr:MW2KG5015_0882 ;
         :workHasParallelsIn  bdr:WA0RTI0092 ;
+        :workIsAbout        bdr:T2552 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0092> .
 }

@@ -17,6 +17,11 @@ bdg:WA0RT1820 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB8614A_WA0RT1820
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7148 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID544413_WA0RT1820
         a                   bdr:RefrKTsT ;
         rdf:value           "1820" .
@@ -25,9 +30,12 @@ bdg:WA0RT1820 {
         skos:prefLabel      "gzungs sngags kyi las grub pa rnams chud mi za bar byed pa rin po che'i gter sgrub zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID544413_WA0RT1820 ;
+        :creator            bdr:CRB8614A_WA0RT1820 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T933 ;
         :workHasInstance    bdr:MW1KG13126_3821 , bdr:MW22704_2613 , bdr:MW23702_0000T1823 , bdr:MW23703_2996 , bdr:MW2KG5015_2613 ;
         :workHasParallelsIn  bdr:WA0RTI1820 ;
+        :workIsAbout        bdr:T2549 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1820> .
 }

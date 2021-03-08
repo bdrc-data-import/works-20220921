@@ -16,7 +16,7 @@ bdg:WA0XLD2568A85BF8A {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA0XLD2568A85BF8A ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "eb/WA0XLD2568A85BF8A.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA0XLD2568A85BF8A ;
@@ -28,10 +28,15 @@ bdg:WA0XLD2568A85BF8A {
         :agent              bdr:P821 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CRE4BA1E08A821CAF6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2CN574 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA0XLD2568A85BF8A
         a                   :Work ;
         skos:prefLabel      "de nyid brgyad kyi lta ba/"@bo-x-ewts ;
-        :creator            bdr:CR40803FDB6141688C ;
+        :creator            bdr:CR40803FDB6141688C , bdr:CRE4BA1E08A821CAF6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T4CZ2184 ;

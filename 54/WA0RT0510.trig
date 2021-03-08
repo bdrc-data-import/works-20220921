@@ -17,6 +17,11 @@ bdg:WA0RT0510 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB91FEF_WA0RT0510
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3299 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID3A4724_WA0RT0510
         a                   bdr:RefrKTsT ;
         rdf:value           "510" .
@@ -25,9 +30,12 @@ bdg:WA0RT0510 {
         skos:prefLabel      "rigs lnga mkha' 'gro'i bstod pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID3A4724_WA0RT0510 ;
+        :creator            bdr:CRB91FEF_WA0RT0510 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T67 ;
         :workHasInstance    bdr:MW1KG13126_2510 , bdr:MW22704_1305 , bdr:MW23702_0000T514 , bdr:MW23703_1638 , bdr:MW2KG5015_1305 ;
         :workHasParallelsIn  bdr:WA0RTI0510 ;
+        :workIsAbout        bdr:T1AT298 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0510> .
 }

@@ -64,7 +64,7 @@ bdg:WA30263 {
     bda:WA30263  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30263 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "c3/WA30263.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30263 ;
@@ -72,7 +72,12 @@ bdg:WA30263 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:EV3DCC8CE9110543AA
+    bdr:CR3DCC8CE9110543AA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P814 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:EV86E97436CF276421
         a                   :CompletedEvent ;
         :onOrAbout          "ཀུན་དགའ་ཞེས་པ་ཤིང་ཕོ་སྟག་གི་ལོ།དབོའི་ཟླ་བའི་དཀར་པོའི་ཕྱོགས་ལ་རང་གི་བསམ་གཏན་གི་ཁང་བུ།མཁའ་སྤྱོད་ཕོ་བྲང་གི་བ་གམ་གསུམ་པ་ས་བསིལ་ལྡན་གྱི་ཀུན་དགའ་ར་བར་སྦྱར་བའོ༎" .
     
@@ -81,9 +86,10 @@ bdg:WA30263 {
     bdr:WA30263  a          :Work ;
         skos:prefLabel      "dbus smyon kun dga' bzang po'i mgur 'bum/"@bo-x-ewts , "Dbus-smyon Kun-dgaʾ-bzaṅ-poʾi Mgur ʾbum bźugs so."@en-x-mixed ;
         :catalogInfo        "Songs of realization by the Kagyu master Wunyon Kunga Zangpo."@en ;
+        :creator            bdr:CR3DCC8CE9110543AA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV3DCC8CE9110543AA ;
+        :workEvent          bdr:EV86E97436CF276421 ;
         :workGenre          bdr:T184 ;
         :workHasInstance    bdr:MW1KG9258_029EAA , bdr:MW30263 , bdr:W30263 ;
         :workIsAbout        bdr:T807 .

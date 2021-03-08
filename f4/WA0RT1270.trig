@@ -22,6 +22,11 @@ bdg:WA0RT1270 {
         :agent              bdr:P4402 ;
         :role               bdr:R0ER0026 .
     
+    bdr:CR768550_WA0RT1270
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1243 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID90BC02_WA0RT1270
         a                   bdr:RefrKTsT ;
         rdf:value           "1270" .
@@ -30,10 +35,12 @@ bdg:WA0RT1270 {
         skos:prefLabel      "thugs kyi gsang ba glur blangs pa zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID90BC02_WA0RT1270 ;
-        :creator            bdr:CR5F9EA8_WA0RT1270 ;
+        :creator            bdr:CR5F9EA8_WA0RT1270 , bdr:CR768550_WA0RT1270 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T6 ;
         :workHasInstance    bdr:MW1KG13126_3271 , bdr:MW22704_2067 , bdr:MW23702_0000T1275 , bdr:MW23703_2443 , bdr:MW2KG5015_2067 ;
         :workHasParallelsIn  bdr:WA0RTI1270 ;
+        :workIsAbout        bdr:T1346 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1270> .
 }

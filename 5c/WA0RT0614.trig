@@ -17,6 +17,11 @@ bdg:WA0RT0614 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR339CBF_WA0RT0614
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15116 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR4B4AD4_WA0RT0614
         a                   :AgentAsCreator ;
         :agent              bdr:P3731 ;
@@ -31,10 +36,12 @@ bdg:WA0RT0614 {
         skos:prefLabel      "sgrol ma'i man ngag me long dangs pa zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID305DE2_WA0RT0614 ;
-        :creator            bdr:CR4B4AD4_WA0RT0614 ;
+        :creator            bdr:CR339CBF_WA0RT0614 , bdr:CR4B4AD4_WA0RT0614 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW1KG13126_2614 , bdr:MW22704_1409 , bdr:MW23702_0000T617 , bdr:MW23703_1743 , bdr:MW2KG5015_1409 ;
         :workHasParallelsIn  bdr:WA0RTI0614 ;
+        :workIsAbout        bdr:T619 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0614> .
 }

@@ -39,7 +39,7 @@ bdg:WA2PD17401 {
     bda:WA2PD17401  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17401 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "1f/WA2PD17401.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17401 ;
@@ -47,9 +47,15 @@ bdg:WA2PD17401 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusEditing .
     
+    bdr:CR9DEA857916F6446D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3JT5599 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA2PD17401  a       :Work ;
         skos:prefLabel      "ltung bshags kyi 'grel pa/"@bo-x-ewts ;
         :catalogInfo        "Commentary on sutra of confessions of sins of bodhisattva written by Lopon Shri Sengha"@en ;
+        :creator            bdr:CR9DEA857916F6446D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

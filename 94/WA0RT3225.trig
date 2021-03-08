@@ -17,6 +17,11 @@ bdg:WA0RT3225 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR290455_WA0RT3225
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1017688 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRB83A72_WA0RT3225
         a                   :AgentAsCreator ;
         :agent              bdr:P00EGS1017688 ;
@@ -31,10 +36,12 @@ bdg:WA0RT3225 {
         skos:prefLabel      "byang chub kyi spyod pa la 'jug pa'i dgongs pa'i 'grel pa khyad par gsal byed ces bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDEFDF7E_WA0RT3225 ;
-        :creator            bdr:CRB83A72_WA0RT3225 ;
+        :creator            bdr:CR290455_WA0RT3225 , bdr:CRB83A72_WA0RT3225 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_5282 , bdr:MW22704_4071 , bdr:MW23702_0000T3285 , bdr:MW23703_3880 , bdr:MW2KG5015_4071 ;
         :workHasParallelsIn  bdr:WA0RTI3225 ;
+        :workIsAbout        bdr:W19740 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3225> .
 }

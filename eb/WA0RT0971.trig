@@ -17,6 +17,11 @@ bdg:WA0RT0971 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1E88A0_WA0RT0971
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15360 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRC74220_WA0RT0971
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ15361 ;
@@ -31,10 +36,12 @@ bdg:WA0RT0971 {
         skos:prefLabel      "bla ma'i maN+Dala yi dam gyi maN+Dala gyi cho ga"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID8EEFB7_WA0RT0971 ;
-        :creator            bdr:CRC74220_WA0RT0971 ;
+        :creator            bdr:CR1E88A0_WA0RT0971 , bdr:CRC74220_WA0RT0971 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1362 ;
         :workHasInstance    bdr:MW1KG13126_2972 , bdr:MW22704_1766 , bdr:MW23702_0000T975 , bdr:MW23703_2121 , bdr:MW2KG5015_1766 ;
         :workHasParallelsIn  bdr:WA0RTI0971 ;
+        :workIsAbout        bdr:T311 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0971> .
 }

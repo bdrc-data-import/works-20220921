@@ -17,6 +17,11 @@ bdg:WA0RT2592 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR769029_WA0RT2592
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7878 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRABCCCF_WA0RT2592
         a                   :AgentAsCreator ;
         :agent              bdr:P753 ;
@@ -30,9 +35,10 @@ bdg:WA0RT2592 {
         skos:prefLabel      "chu gtor gyi cho ga zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDC204F2_WA0RT2592 ;
-        :creator            bdr:CRABCCCF_WA0RT2592 ;
+        :creator            bdr:CR769029_WA0RT2592 , bdr:CRABCCCF_WA0RT2592 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1742 ;
         :workHasInstance    bdr:MW1KG13126_4593 , bdr:MW22704_3382 , bdr:MW23702_0000T2592 , bdr:MW23703_3775 , bdr:MW2KG5015_3382 ;
         :workHasParallelsIn  bdr:WA0RTI2592 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT2592> .

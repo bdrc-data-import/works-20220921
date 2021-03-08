@@ -17,6 +17,11 @@ bdg:WA0RT3411 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR69F6FC_WA0RT3411
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6117 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDD7F69E_WA0RT3411
         a                   bdr:RefrKTsT ;
         rdf:value           "3411" .
@@ -25,9 +30,12 @@ bdg:WA0RT3411 {
         skos:prefLabel      "bsam gtan gyi sgron ma zhes bya ba'i man ngag"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDD7F69E_WA0RT3411 ;
+        :creator            bdr:CR69F6FC_WA0RT3411 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T613 ;
         :workHasInstance    bdr:MW1KG13126_5574 , bdr:MW22704_4363 , bdr:MW23702_0000T3577 , bdr:MW23703_4073 , bdr:MW2KG5015_4363 ;
         :workHasParallelsIn  bdr:WA0RTI3411 ;
+        :workIsAbout        bdr:T1988 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3411> .
 }

@@ -17,6 +17,11 @@ bdg:WA0RT0022 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRDEF602_WA0RT0022
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDDBF6E3_WA0RT0022
         a                   bdr:RefrKTsT ;
         rdf:value           "22" .
@@ -25,9 +30,12 @@ bdg:WA0RT0022 {
         skos:prefLabel      "'phags pa rje btsun 'jam dpal gyi don dam pa'i bstod pa zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDDBF6E3_WA0RT0022 ;
+        :creator            bdr:CRDEF602_WA0RT0022 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T67 ;
         :workHasInstance    bdr:MW1KG13126_2022 , bdr:MW22704_0811 , bdr:MW23702_0000T22 , bdr:MW23703_1131 , bdr:MW2KG5015_0811 ;
         :workHasParallelsIn  bdr:WA0RTI0022 ;
+        :workIsAbout        bdr:T69 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0022> .
 }

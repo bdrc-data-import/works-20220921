@@ -33,7 +33,7 @@ bdg:WA8LS32601 {
     bda:WA8LS32601  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS32601 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "87/WA8LS32601.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS32601 ;
@@ -41,10 +41,16 @@ bdg:WA8LS32601 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR046642CF57DB03A2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2CN2 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS32601  a       :Work ;
         skos:altLabel       "gsang spyod snyan rgyud las chos sku yum chen sher phyin ma'i sgrub thabs las tshogs dang bcas pa/"@bo-x-ewts ;
         skos:prefLabel      "gsang spyod snyan rgyud/"@bo-x-ewts ;
         :catalogInfo        "Sadhanas of Chod practice by Shongchen Tenpa Gyaltsen."@en ;
+        :creator            bdr:CR046642CF57DB03A2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1 ;

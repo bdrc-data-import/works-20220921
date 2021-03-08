@@ -17,6 +17,11 @@ bdg:WA0RT0221 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR338CC8_WA0RT0221
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3926 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDAD9A11_WA0RT0221
         a                   bdr:RefrKTsT ;
         rdf:value           "221" .
@@ -25,9 +30,12 @@ bdg:WA0RT0221 {
         skos:prefLabel      "lhan cig skyes pa'i de kho na nyid snang ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDAD9A11_WA0RT0221 ;
+        :creator            bdr:CR338CC8_WA0RT0221 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_2221 , bdr:MW22704_1011 , bdr:MW23702_0000T223 , bdr:MW23703_1506 , bdr:MW2KG5015_1011 ;
         :workHasParallelsIn  bdr:WA0RTI0221 ;
+        :workIsAbout        bdr:W10MS11137 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0221> .
 }

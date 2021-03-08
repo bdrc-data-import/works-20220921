@@ -17,6 +17,11 @@ bdg:WA0RT0626 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR80F402_WA0RT0626
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8141 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR99EEC0_WA0RT0626
         a                   :AgentAsCreator ;
         :agent              bdr:P8141 ;
@@ -36,10 +41,12 @@ bdg:WA0RT0626 {
         skos:prefLabel      "ye shes kyi me sbar ba zhes bya ba'i sbyin sreg gi cho ga"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDA3022C_WA0RT0626 ;
-        :creator            bdr:CR99EEC0_WA0RT0626 , bdr:CRB0BAA1_WA0RT0626 ;
+        :creator            bdr:CR80F402_WA0RT0626 , bdr:CR99EEC0_WA0RT0626 , bdr:CRB0BAA1_WA0RT0626 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T8 ;
         :workHasInstance    bdr:MW1KG13126_2626 , bdr:MW22704_1421 , bdr:MW23702_0000T629 , bdr:MW23703_1755 , bdr:MW2KG5015_1421 ;
         :workHasParallelsIn  bdr:WA0RTI0626 ;
+        :workIsAbout        bdr:T950 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0626> .
 }

@@ -16,7 +16,7 @@ bdg:WA0XLD92B8E51C898 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA0XLD92B8E51C898 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "c5/WA0XLD92B8E51C898.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA0XLD92B8E51C898 ;
@@ -28,10 +28,15 @@ bdg:WA0XLD92B8E51C898 {
         :agent              bdr:P1583 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CRCC49BFF45C89B170
+        a                   :AgentAsCreator ;
+        :agent              bdr:P0RK1003 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA0XLD92B8E51C898
         a                   :Work ;
         skos:prefLabel      "gsang ba chen po rtags kyi yi ge:"@bo-x-ewts ;
-        :creator            bdr:CR7E2FDB62B07E40E4 ;
+        :creator            bdr:CR7E2FDB62B07E40E4 , bdr:CRCC49BFF45C89B170 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T456 ;

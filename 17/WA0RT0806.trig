@@ -17,6 +17,11 @@ bdg:WA0RT0806 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR2DB04B_WA0RT0806
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR9ABB43_WA0RT0806
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ15169 ;
@@ -36,10 +41,12 @@ bdg:WA0RT0806 {
         skos:prefLabel      "rdo rje mkha' 'gro ma rnal 'byor ma'i sgrub thabs zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID4FF670_WA0RT0806 ;
-        :creator            bdr:CR9ABB43_WA0RT0806 , bdr:CRD4A951_WA0RT0806 ;
+        :creator            bdr:CR2DB04B_WA0RT0806 , bdr:CR9ABB43_WA0RT0806 , bdr:CRD4A951_WA0RT0806 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW1KG13126_2807 , bdr:MW22704_1601 , bdr:MW23702_0000T809 , bdr:MW23703_1942 , bdr:MW2KG5015_1601 ;
         :workHasParallelsIn  bdr:WA0RTI0806 ;
+        :workIsAbout        bdr:T1346 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0806> .
 }

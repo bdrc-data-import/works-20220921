@@ -17,6 +17,11 @@ bdg:WA0RT1888 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR35805E_WA0RT1888
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3214 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRAADDF1_WA0RT1888
         a                   :AgentAsCreator ;
         :agent              bdr:P3214 ;
@@ -30,10 +35,12 @@ bdg:WA0RT1888 {
         skos:prefLabel      "'phags pa mi g.yo ba'i sgrub thabs/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDF9C1EE_WA0RT1888 ;
-        :creator            bdr:CRAADDF1_WA0RT1888 ;
+        :creator            bdr:CR35805E_WA0RT1888 , bdr:CRAADDF1_WA0RT1888 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW1KG13126_3889 , bdr:MW1KG13126_5110 , bdr:MW22704_2682 , bdr:MW22704_3899 , bdr:MW23702_0000T1891 , bdr:MW23702_0000T3108 , bdr:MW23703_3065 , bdr:MW2KG5015_2682 , bdr:MW2KG5015_3899 ;
         :workHasParallelsIn  bdr:WA0RTI1888 ;
+        :workIsAbout        bdr:T618 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1888> .
 }

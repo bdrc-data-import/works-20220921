@@ -22,6 +22,11 @@ bdg:WA0RT3052 {
         :agent              bdr:P856 ;
         :role               bdr:R0ER0026 .
     
+    bdr:CREA26DC_WA0RT3052
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8232 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID399EB8_WA0RT3052
         a                   bdr:RefrKTsT ;
         rdf:value           "3052" .
@@ -30,10 +35,12 @@ bdg:WA0RT3052 {
         skos:prefLabel      "rdo rje 'chang chen po'i bstod pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID399EB8_WA0RT3052 ;
-        :creator            bdr:CR835ABB_WA0RT3052 ;
+        :creator            bdr:CR835ABB_WA0RT3052 , bdr:CREA26DC_WA0RT3052 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T67 ;
         :workHasInstance    bdr:MW23703_1126 ;
         :workHasParallelsIn  bdr:WA0RTI3052 ;
+        :workIsAbout        bdr:T1987 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3052> .
 }

@@ -17,6 +17,11 @@ bdg:WA0RT1922 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR170701_WA0RT1922
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7599 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRB3D72E_WA0RT1922
         a                   :AgentAsCreator ;
         :agent              bdr:P3709 ;
@@ -30,10 +35,12 @@ bdg:WA0RT1922 {
         skos:prefLabel      "dngos grub sgrub pa'i sgo nas sri'u gso ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID5F1E72_WA0RT1922 ;
-        :creator            bdr:CRB3D72E_WA0RT1922 ;
+        :creator            bdr:CR170701_WA0RT1922 , bdr:CRB3D72E_WA0RT1922 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1AT414 ;
         :workHasInstance    bdr:MW1KG13126_3923 , bdr:MW22704_2716 , bdr:MW23702_0000T1925 , bdr:MW23703_3102 , bdr:MW2KG5015_2716 ;
         :workHasParallelsIn  bdr:WA0RTI1922 ;
+        :workIsAbout        bdr:T703 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1922> .
 }

@@ -17,6 +17,11 @@ bdg:WA0RT3073 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR02013F_WA0RT3073
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7136 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID12F06F_WA0RT3073
         a                   bdr:RefrKTsT ;
         rdf:value           "3073" .
@@ -25,9 +30,12 @@ bdg:WA0RT3073 {
         skos:prefLabel      "rdo rje rnal 'byor ma'i dgongs pa gsang ba'i sbyin sreg gi cho ga"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID12F06F_WA0RT3073 ;
+        :creator            bdr:CR02013F_WA0RT3073 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T8 ;
         :workHasInstance    bdr:MW23702_0000T311 , bdr:MW23703_1597 ;
         :workHasParallelsIn  bdr:WA0RTI3073 ;
+        :workIsAbout        bdr:T428 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3073> .
 }

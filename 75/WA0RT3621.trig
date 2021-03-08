@@ -22,6 +22,11 @@ bdg:WA0RT3621 {
         :agent              bdr:P2388 ;
         :role               bdr:R0ER0026 .
     
+    bdr:CRA352D2_WA0RT3621
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ16864 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDCB98FB_WA0RT3621
         a                   bdr:RefrKTsT ;
         rdf:value           "3621" .
@@ -31,10 +36,12 @@ bdg:WA0RT3621 {
         skos:prefLabel      "lung ston pa ka lA pa'i mdo'i 'grel pa slob ma la phan pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDCB98FB_WA0RT3621 ;
-        :creator            bdr:CR9B64A8_WA0RT3621 ;
+        :creator            bdr:CR9B64A8_WA0RT3621 , bdr:CRA352D2_WA0RT3621 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_5884 , bdr:MW22704_4682 , bdr:MW23702_0000T3898 , bdr:MW23703_4286 , bdr:MW2KG5015_4682 ;
         :workHasParallelsIn  bdr:WA0RTI3621 ;
+        :workIsAbout        bdr:W26874 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3621> .
 }

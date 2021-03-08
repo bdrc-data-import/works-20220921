@@ -17,6 +17,11 @@ bdg:WA0RT3423 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1B0E10_WA0RT3423
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1016642 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR6574C7_WA0RT3423
         a                   :AgentAsCreator ;
         :agent              bdr:P2554 ;
@@ -35,10 +40,12 @@ bdg:WA0RT3423 {
         skos:prefLabel      "dbu ma rgyan gyi man ngag"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID59E3F3_WA0RT3423 ;
-        :creator            bdr:CR6574C7_WA0RT3423 , bdr:CR8F27DC_WA0RT3423 ;
+        :creator            bdr:CR1B0E10_WA0RT3423 , bdr:CR6574C7_WA0RT3423 , bdr:CR8F27DC_WA0RT3423 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T456 ;
         :workHasInstance    bdr:MW1KG13126_5586 , bdr:MW22704_4375 , bdr:MW23702_0000T3589 , bdr:MW23703_4085 , bdr:MW2KG5015_4375 ;
         :workHasParallelsIn  bdr:WA0RTI3423 ;
+        :workIsAbout        bdr:W21920 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3423> .
 }

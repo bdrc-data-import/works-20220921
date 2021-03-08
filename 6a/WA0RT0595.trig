@@ -17,6 +17,11 @@ bdg:WA0RT0595 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRC8E1DE_WA0RT0595
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5782 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDAF3442_WA0RT0595
         a                   bdr:RefrKTsT ;
         rdf:value           "595" .
@@ -25,9 +30,12 @@ bdg:WA0RT0595 {
         skos:prefLabel      "rdo rje phag mo sgrol ma la bstod pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDAF3442_WA0RT0595 ;
+        :creator            bdr:CRC8E1DE_WA0RT0595 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T67 ;
         :workHasInstance    bdr:MW1KG13126_2595 , bdr:MW22704_1391 , bdr:MW23702_0000T598 , bdr:MW23703_1724 , bdr:MW2KG5015_1391 ;
         :workHasParallelsIn  bdr:WA0RTI0595 ;
+        :workIsAbout        bdr:T619 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0595> .
 }

@@ -17,6 +17,11 @@ bdg:WA0RT1409 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRA2A791_WA0RT1409
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4957 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDA44787_WA0RT1409
         a                   bdr:RefrKTsT ;
         rdf:value           "1409" .
@@ -26,9 +31,12 @@ bdg:WA0RT1409 {
         skos:prefLabel      "'phags pa 'jam dpal gyi rab tu gnas pa'i cho ga"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDA44787_WA0RT1409 ;
+        :creator            bdr:CRA2A791_WA0RT1409 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1028 , bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_3410 , bdr:MW22704_2206 , bdr:MW23702_0000T1414 , bdr:MW23703_2583 , bdr:MW2KG5015_2206 ;
         :workHasParallelsIn  bdr:WA0RTI1409 ;
+        :workIsAbout        bdr:W22003 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1409> .
 }

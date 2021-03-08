@@ -17,6 +17,11 @@ bdg:WA0RT1816 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB75440_WA0RT1816
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7148 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID93216C_WA0RT1816
         a                   bdr:RefrKTsT ;
         rdf:value           "1816" .
@@ -26,9 +31,12 @@ bdg:WA0RT1816 {
         skos:prefLabel      "gnod sbyin gyi gdon las thar bar byed pa'i man ngag"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID93216C_WA0RT1816 ;
+        :creator            bdr:CRB75440_WA0RT1816 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T2600 ;
         :workHasInstance    bdr:MW1KG13126_3817 , bdr:MW22704_2609 , bdr:MW23702_0000T1819 , bdr:MW23703_2992 , bdr:MW2KG5015_2609 ;
         :workHasParallelsIn  bdr:WA0RTI1816 ;
+        :workIsAbout        bdr:T2549 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1816> .
 }

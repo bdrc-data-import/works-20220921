@@ -17,6 +17,11 @@ bdg:WA0RT0425 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB8080B_WA0RT0425
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7868 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID676758_WA0RT0425
         a                   bdr:RefrKTsT ;
         rdf:value           "425" .
@@ -25,9 +30,12 @@ bdg:WA0RT0425 {
         skos:prefLabel      "dbang bskur ba'i cho ga"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID676758_WA0RT0425 ;
+        :creator            bdr:CRB8080B_WA0RT0425 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T48 ;
         :workHasInstance    bdr:MW1KG13126_2425 , bdr:MW22704_1220 , bdr:MW23702_0000T429 , bdr:MW23703_1269 , bdr:MW2KG5015_1220 ;
         :workHasParallelsIn  bdr:WA0RTI0425 ;
+        :workIsAbout        bdr:T130 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0425> .
 }

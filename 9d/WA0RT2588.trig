@@ -17,6 +17,11 @@ bdg:WA0RT2588 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR749765_WA0RT2588
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15577 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRAD4EC4_WA0RT2588
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ10557 ;
@@ -30,10 +35,12 @@ bdg:WA0RT2588 {
         skos:prefLabel      "chos skyong thams cad pa'i gtor ma'i cho ga"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID8BFA0D_WA0RT2588 ;
-        :creator            bdr:CRAD4EC4_WA0RT2588 ;
+        :creator            bdr:CR749765_WA0RT2588 , bdr:CRAD4EC4_WA0RT2588 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T170 ;
         :workHasInstance    bdr:MW1KG13126_4589 , bdr:MW22704_3378 , bdr:MW23702_0000T2588 , bdr:MW23703_3770 , bdr:MW2KG5015_3378 ;
         :workHasParallelsIn  bdr:WA0RTI2588 ;
+        :workIsAbout        bdr:T406 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT2588> .
 }

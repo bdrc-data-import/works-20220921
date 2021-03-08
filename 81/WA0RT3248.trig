@@ -17,6 +17,11 @@ bdg:WA0RT3248 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR0DDF40_WA0RT3248
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4004 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRC86627_WA0RT3248
         a                   :AgentAsCreator ;
         :agent              bdr:P10711 ;
@@ -35,10 +40,12 @@ bdg:WA0RT3248 {
         skos:prefLabel      "thub pa'i dgongs pa'i rgyan/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID783E28_WA0RT3248 ;
-        :creator            bdr:CRC86627_WA0RT3248 , bdr:CRD26641_WA0RT3248 ;
+        :creator            bdr:CR0DDF40_WA0RT3248 , bdr:CRC86627_WA0RT3248 , bdr:CRD26641_WA0RT3248 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 ;
         :workHasInstance    bdr:MW1KG13126_5299 , bdr:MW22704_4088 , bdr:MW23702_0000T3302 , bdr:MW23703_3903 , bdr:MW2KG5015_4088 ;
         :workHasParallelsIn  bdr:WA0RTI3248 ;
+        :workIsAbout        bdr:T233 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3248> .
 }

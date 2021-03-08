@@ -17,6 +17,11 @@ bdg:WA0RT0335 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4E4FD5_WA0RT0335
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3401 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRD291EC_WA0RT0335
         a                   :AgentAsCreator ;
         :agent              bdr:P1578 ;
@@ -30,10 +35,12 @@ bdg:WA0RT0335 {
         skos:prefLabel      "dpal de kho na nyid kyi sgron ma'i rgyud kyi dka' 'grel rin chen phreng ba zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDFD17F1_WA0RT0335 ;
-        :creator            bdr:CRD291EC_WA0RT0335 ;
+        :creator            bdr:CR4E4FD5_WA0RT0335 , bdr:CRD291EC_WA0RT0335 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_2335 , bdr:MW22704_1130 , bdr:MW23702_0000T340 , bdr:MW23703_1205 , bdr:MW2KG5015_1130 ;
         :workHasParallelsIn  bdr:WA0RTI0335 ;
+        :workIsAbout        bdr:W22934 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0335> .
 }

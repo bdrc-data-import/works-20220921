@@ -17,6 +17,11 @@ bdg:WA0RT3317 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRC3CC74_WA0RT3317
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDF47647_WA0RT3317
         a                   bdr:RefrKTsT ;
         rdf:value           "3317" .
@@ -25,9 +30,12 @@ bdg:WA0RT3317 {
         skos:prefLabel      "bla ma'i bya ba'i rim pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDF47647_WA0RT3317 ;
+        :creator            bdr:CRC3CC74_WA0RT3317 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T977 ;
         :workHasInstance    bdr:IE0GR0292 , bdr:MW1KG13126_5374 , bdr:MW1KG13126_5402 , bdr:MW22704_4163 , bdr:MW22704_4191 , bdr:MW23702_0000T3377 , bdr:MW23702_0000T3405 , bdr:MW23703_3977 , bdr:MW2KG5015_4163 , bdr:MW2KG5015_4191 ;
         :workHasParallelsIn  bdr:WA0RTI3317 ;
+        :workIsAbout        bdr:T338 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3317> .
 }

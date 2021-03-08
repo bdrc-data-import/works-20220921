@@ -17,6 +17,11 @@ bdg:WA0RT0522 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRC27295_WA0RT0522
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8166 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRD8CE5B_WA0RT0522
         a                   :AgentAsCreator ;
         :agent              bdr:P4849 ;
@@ -30,10 +35,12 @@ bdg:WA0RT0522 {
         skos:prefLabel      "rdo rje bdud rtsi'i rgyud kyi bshad pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID50265E_WA0RT0522 ;
-        :creator            bdr:CRD8CE5B_WA0RT0522 ;
+        :creator            bdr:CRC27295_WA0RT0522 , bdr:CRD8CE5B_WA0RT0522 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 , bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_2522 , bdr:MW22704_1317 , bdr:MW23702_0000T526 , bdr:MW23703_1650 , bdr:MW2KG5015_1317 ;
         :workHasParallelsIn  bdr:WA0RTI0522 ;
+        :workIsAbout        bdr:W4CZ15191 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0522> .
 }

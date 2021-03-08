@@ -17,6 +17,11 @@ bdg:WA0RT0470 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR2D0909_WA0RT0470
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10154 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR4ABF28_WA0RT0470
         a                   :AgentAsCreator ;
         :agent              bdr:P10154 ;
@@ -30,10 +35,12 @@ bdg:WA0RT0470 {
         skos:prefLabel      "dbang rin chen phreng ba'i man ngag"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID8B2B2B_WA0RT0470 ;
-        :creator            bdr:CR4ABF28_WA0RT0470 ;
+        :creator            bdr:CR2D0909_WA0RT0470 , bdr:CR4ABF28_WA0RT0470 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW1KG13126_2470 , bdr:MW22704_1265 , bdr:MW23702_0000T474 , bdr:MW23703_1338 , bdr:MW2KG5015_1265 ;
         :workHasParallelsIn  bdr:WA0RTI0470 ;
+        :workIsAbout        bdr:T130 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0470> .
 }

@@ -61,7 +61,7 @@ bdg:WA1KG10566 {
     bda:WA1KG10566  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG10566 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "2b/WA1KG10566.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG10566 ;
@@ -74,11 +74,16 @@ bdg:WA1KG10566 {
         :agent              bdr:P7852 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CRE86BF84523D9BC1E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7854 ;
+        :role               bdr:R0ER0025 .
+    
     bdr:WA1KG10566  a       :Work ;
         skos:altLabel       "pha 'brug sgom zhig po'i rnam par thar pa thugs rje'i chu rgyun/"@bo-x-ewts ;
         skos:prefLabel      "pha jo 'brug sgom zhig po'i rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography of 12th century Drukpa Kagyu lama from Bhutan, Pajo Drukgom Zhikpo."@en ;
-        :creator            bdr:CRB892EE179CD61E42 ;
+        :creator            bdr:CRB892EE179CD61E42 , bdr:CRE86BF84523D9BC1E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

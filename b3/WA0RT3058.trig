@@ -22,6 +22,11 @@ bdg:WA0RT3058 {
         :agent              bdr:P856 ;
         :role               bdr:R0ER0018 .
     
+    bdr:CR745C71_WA0RT3058
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4849 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID2505C3_WA0RT3058
         a                   bdr:RefrKTsT ;
         rdf:value           "3058" .
@@ -30,10 +35,12 @@ bdg:WA0RT3058 {
         skos:prefLabel      "skyes pa rabs kyi bstod pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID2505C3_WA0RT3058 ;
-        :creator            bdr:CR7011F6_WA0RT3058 ;
+        :creator            bdr:CR7011F6_WA0RT3058 , bdr:CR745C71_WA0RT3058 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1342 , bdr:T67 ;
         :workHasInstance    bdr:MW23703_1178 ;
         :workHasParallelsIn  bdr:WA0RTI3058 ;
+        :workIsAbout        bdr:P7326 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3058> .
 }

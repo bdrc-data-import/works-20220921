@@ -17,6 +17,11 @@ bdg:WA0RT0643 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR24BDA5_WA0RT0643
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7875 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDE48718_WA0RT0643
         a                   bdr:RefrKTsT ;
         rdf:value           "643" .
@@ -25,9 +30,12 @@ bdg:WA0RT0643 {
         skos:prefLabel      "dpal lha mo nag mo chen mo la bstod pa brgyad pa zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDE48718_WA0RT0643 ;
+        :creator            bdr:CR24BDA5_WA0RT0643 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ49 ;
         :workHasInstance    bdr:MW1KG13126_2643 , bdr:MW22704_1438 , bdr:MW23702_0000T646 , bdr:MW23703_1777 , bdr:MW2KG5015_1438 ;
         :workHasParallelsIn  bdr:WA0RTI0643 ;
+        :workIsAbout        bdr:T401 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0643> .
 }

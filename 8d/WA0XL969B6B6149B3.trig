@@ -16,12 +16,17 @@ bdg:WA0XL969B6B6149B3 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA0XL969B6B6149B3 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "8d/WA0XL969B6B6149B3.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA0XL969B6B6149B3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8989AC641914056A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2CN2 ;
+        :role               bdr:R0ER0019 .
     
     bdr:CRCE0F7FDCC3BACED6
         a                   :AgentAsCreator ;
@@ -32,9 +37,10 @@ bdg:WA0XL969B6B6149B3 {
         a                   :Work ;
         skos:altLabel       "rje btsun gshongs chen pa'i rnam thar rtogs brjod/"@bo-x-ewts ;
         skos:prefLabel      "rje btsun gshongs chen pa'i rnam thar zhal gsungs ma/"@bo-x-ewts ;
-        :creator            bdr:CRCE0F7FDCC3BACED6 ;
+        :creator            bdr:CR8989AC641914056A , bdr:CRCE0F7FDCC3BACED6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW23919_969B6B .
+        :workHasInstance    bdr:MW23919_969B6B ;
+        :workIsAbout        bdr:P2CN2 .
 }

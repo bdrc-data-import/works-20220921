@@ -17,6 +17,11 @@ bdg:WA0RT0812 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR009226_WA0RT0812
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR8607D5_WA0RT0812
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ15169 ;
@@ -36,10 +41,12 @@ bdg:WA0RT0812 {
         skos:prefLabel      "khro bo thob gshin rje gshed kyi sgrub thabs zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID5FBECE_WA0RT0812 ;
-        :creator            bdr:CR8607D5_WA0RT0812 , bdr:CR9E63C8_WA0RT0812 ;
+        :creator            bdr:CR009226_WA0RT0812 , bdr:CR8607D5_WA0RT0812 , bdr:CR9E63C8_WA0RT0812 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW1KG13126_2813 , bdr:MW22704_1607 , bdr:MW23702_0000T815 , bdr:MW23703_1948 , bdr:MW2KG5015_1607 ;
         :workHasParallelsIn  bdr:WA0RTI0812 ;
+        :workIsAbout        bdr:T4CZ15546 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0812> .
 }

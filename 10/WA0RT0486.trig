@@ -17,6 +17,11 @@ bdg:WA0RT0486 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRA49770_WA0RT0486
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7401 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDE02F0B_WA0RT0486
         a                   bdr:RefrKTsT ;
         rdf:value           "486" .
@@ -25,9 +30,12 @@ bdg:WA0RT0486 {
         skos:prefLabel      "rdo rje dril thabs kyi mchod pa'i thabs kyi rim pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDE02F0B_WA0RT0486 ;
+        :creator            bdr:CRA49770_WA0RT0486 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T529 ;
         :workHasInstance    bdr:MW1KG13126_2486 , bdr:MW22704_1281 , bdr:MW23702_0000T490 , bdr:MW23703_1615 , bdr:MW2KG5015_1281 ;
         :workHasParallelsIn  bdr:WA0RTI0486 ;
+        :workIsAbout        bdr:T1205 , bdr:T2127 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0486> .
 }

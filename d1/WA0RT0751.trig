@@ -17,6 +17,11 @@ bdg:WA0RT0751 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR983FD3_WA0RT0751
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8946 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRDD61AF_WA0RT0751
         a                   :AgentAsCreator ;
         :agent              bdr:P3458 ;
@@ -30,10 +35,12 @@ bdg:WA0RT0751 {
         skos:prefLabel      "yan lag bdun pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID960AB0_WA0RT0751 ;
-        :creator            bdr:CRDD61AF_WA0RT0751 ;
+        :creator            bdr:CR983FD3_WA0RT0751 , bdr:CRDD61AF_WA0RT0751 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T932 ;
         :workHasInstance    bdr:MW1KG13126_2752 , bdr:MW22704_1546 , bdr:MW23702_0000T754 , bdr:MW23703_1888 , bdr:MW2KG5015_1546 ;
         :workHasParallelsIn  bdr:WA0RTI0751 ;
+        :workIsAbout        bdr:T417 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0751> .
 }

@@ -17,6 +17,11 @@ bdg:WA0RT1913 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR3BB8CB_WA0RT1913
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7599 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRE99316_WA0RT1913
         a                   :AgentAsCreator ;
         :agent              bdr:P3709 ;
@@ -31,9 +36,10 @@ bdg:WA0RT1913 {
         skos:prefLabel      "mdze la sogs pa sa bdag gi nad gso ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID784D1F_WA0RT1913 ;
-        :creator            bdr:CRE99316_WA0RT1913 ;
+        :creator            bdr:CR3BB8CB_WA0RT1913 , bdr:CRE99316_WA0RT1913 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T2600 ;
         :workHasInstance    bdr:MW1KG13126_3914 , bdr:MW22704_2707 , bdr:MW23702_0000T1916 , bdr:MW23703_3094 , bdr:MW2KG5015_2707 ;
         :workHasParallelsIn  bdr:WA0RTI1913 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1913> .

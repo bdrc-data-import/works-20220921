@@ -17,6 +17,11 @@ bdg:WA0RT2520 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRE4133E_WA0RT2520
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15560 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID2DF3D7_WA0RT2520
         a                   bdr:RefrKTsT ;
         rdf:value           "2520" .
@@ -26,9 +31,12 @@ bdg:WA0RT2520 {
         skos:prefLabel      "tshangs pa'i bu mo dbyangs can ma la bstod pas grub pa ngag gi 'od zer zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID2DF3D7_WA0RT2520 ;
+        :creator            bdr:CRE4133E_WA0RT2520 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T67 ;
         :workHasInstance    bdr:MW1KG13126_4521 , bdr:MW22704_3314 , bdr:MW23702_0000T2523 , bdr:MW23703_3698 , bdr:MW2KG5015_3314 ;
         :workHasParallelsIn  bdr:WA0RTI2520 ;
+        :workIsAbout        bdr:T389 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT2520> .
 }

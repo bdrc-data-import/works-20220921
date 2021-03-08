@@ -17,6 +17,11 @@ bdg:WA0RT2566 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR0F0B52_WA0RT2566
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15572 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRE165DE_WA0RT2566
         a                   :AgentAsCreator ;
         :agent              bdr:P2614 ;
@@ -31,10 +36,12 @@ bdg:WA0RT2566 {
         skos:prefLabel      "dzam b+h+ha la'i sgrub thabs/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID9BABF4_WA0RT2566 ;
-        :creator            bdr:CRE165DE_WA0RT2566 ;
+        :creator            bdr:CR0F0B52_WA0RT2566 , bdr:CRE165DE_WA0RT2566 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW1KG13126_4567 , bdr:MW22704_3356 , bdr:MW23702_0000T2565 , bdr:MW23703_3744 , bdr:MW2KG5015_3356 ;
         :workHasParallelsIn  bdr:WA0RTI2566 ;
+        :workIsAbout        bdr:T1432 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT2566> .
 }

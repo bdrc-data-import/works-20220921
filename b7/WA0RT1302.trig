@@ -17,6 +17,11 @@ bdg:WA0RT1302 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRE003D9_WA0RT1302
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7588 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID73DD24_WA0RT1302
         a                   bdr:RefrKTsT ;
         rdf:value           "1302" .
@@ -25,9 +30,12 @@ bdg:WA0RT1302 {
         skos:prefLabel      "rdo rje theg pa rtsa ba'i ltung ba bsdus pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID73DD24_WA0RT1302 ;
+        :creator            bdr:CRE003D9_WA0RT1302 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1503 ;
         :workHasInstance    bdr:MW1KG13126_3303 , bdr:MW22704_2099 , bdr:MW23702_0000T1307 , bdr:MW23703_2478 , bdr:MW2KG5015_2099 ;
         :workHasParallelsIn  bdr:WA0RTI1302 ;
+        :workIsAbout        bdr:T1336 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1302> .
 }

@@ -17,6 +17,11 @@ bdg:WA0RT3430 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR2CDCFA_WA0RT3430
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15477 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRCEA1B0_WA0RT3430
         a                   :AgentAsCreator ;
         :agent              bdr:P8219 ;
@@ -35,10 +40,12 @@ bdg:WA0RT3430 {
         skos:prefLabel      "chos mngon pa'i mdzod kyi 'grel bshad/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID21E4AC_WA0RT3430 ;
-        :creator            bdr:CRCEA1B0_WA0RT3430 , bdr:CRD7F362_WA0RT3430 ;
+        :creator            bdr:CR2CDCFA_WA0RT3430 , bdr:CRCEA1B0_WA0RT3430 , bdr:CRD7F362_WA0RT3430 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:IE0GR0403 , bdr:MW1KG13126_5593 , bdr:MW22704_4382 , bdr:MW23702_0000T3596 , bdr:MW23703_4092 , bdr:MW2KG5015_4382 ;
         :workHasParallelsIn  bdr:WA0RTI3430 ;
+        :workIsAbout        bdr:W19720 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3430> .
 }

@@ -17,6 +17,11 @@ bdg:WA0RT0671 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRD1181E_WA0RT0671
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7401 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRD2559C_WA0RT0671
         a                   :AgentAsCreator ;
         :agent              bdr:P3388 ;
@@ -35,10 +40,12 @@ bdg:WA0RT0671 {
         skos:prefLabel      "ro bsreg pa'i cho ga"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID5E7382_WA0RT0671 ;
-        :creator            bdr:CRD2559C_WA0RT0671 , bdr:CRF681DF_WA0RT0671 ;
+        :creator            bdr:CRD1181E_WA0RT0671 , bdr:CRD2559C_WA0RT0671 , bdr:CRF681DF_WA0RT0671 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T978 ;
         :workHasInstance    bdr:MW1KG13126_2672 , bdr:MW22704_1467 , bdr:MW23702_0000T675 , bdr:MW23703_1807 , bdr:MW2KG5015_1467 ;
         :workHasParallelsIn  bdr:WA0RTI0671 ;
+        :workIsAbout        bdr:T417 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0671> .
 }

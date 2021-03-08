@@ -17,6 +17,11 @@ bdg:WA0RT1414 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR022E46_WA0RT1414
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15476 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRA81590_WA0RT1414
         a                   :AgentAsCreator ;
         :agent              bdr:P4849 ;
@@ -35,10 +40,12 @@ bdg:WA0RT1414 {
         skos:prefLabel      "'phags pa 'jam dpal rin po che'i cho ga"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDF30C8F_WA0RT1414 ;
-        :creator            bdr:CRA81590_WA0RT1414 , bdr:CRC85010_WA0RT1414 ;
+        :creator            bdr:CR022E46_WA0RT1414 , bdr:CRA81590_WA0RT1414 , bdr:CRC85010_WA0RT1414 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T529 ;
         :workHasInstance    bdr:MW1KG13126_3415 , bdr:MW22704_2211 , bdr:MW23702_0000T1419 , bdr:MW23703_2588 , bdr:MW2KG5015_2211 ;
         :workHasParallelsIn  bdr:WA0RTI1414 ;
+        :workIsAbout        bdr:T69 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1414> .
 }

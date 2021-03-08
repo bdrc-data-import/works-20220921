@@ -17,6 +17,11 @@ bdg:WA0RT3412 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR29FC30_WA0RT3412
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6126 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR453039_WA0RT3412
         a                   :AgentAsCreator ;
         :agent              bdr:P753 ;
@@ -35,10 +40,12 @@ bdg:WA0RT3412 {
         skos:prefLabel      "rnal 'byor la 'jug pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDFC2046_WA0RT3412 ;
-        :creator            bdr:CR453039_WA0RT3412 , bdr:CR9C356B_WA0RT3412 ;
+        :creator            bdr:CR29FC30_WA0RT3412 , bdr:CR453039_WA0RT3412 , bdr:CR9C356B_WA0RT3412 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T613 ;
         :workHasInstance    bdr:IE0GR0286 , bdr:MW1KG13126_5453 , bdr:MW1KG13126_5575 , bdr:MW22704_4242 , bdr:MW22704_4364 , bdr:MW23702_0000T3456 , bdr:MW23702_0000T3578 , bdr:MW23703_4074 , bdr:MW2KG5015_4242 , bdr:MW2KG5015_4364 ;
         :workHasParallelsIn  bdr:WA0RTI3412 ;
+        :workIsAbout        bdr:T439 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3412> .
 }

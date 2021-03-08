@@ -17,6 +17,11 @@ bdg:WA0RT0247 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR9C4D78_WA0RT0247
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7648 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRB9FFCD_WA0RT0247
         a                   :AgentAsCreator ;
         :agent              bdr:P2553 ;
@@ -36,10 +41,12 @@ bdg:WA0RT0247 {
         skos:prefLabel      "dpal 'khor lo sdom pa dpa' bo gcig pa'i sgrub thabs/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDED0A88_WA0RT0247 ;
-        :creator            bdr:CRB9FFCD_WA0RT0247 , bdr:CRCC8ABC_WA0RT0247 ;
+        :creator            bdr:CR9C4D78_WA0RT0247 , bdr:CRB9FFCD_WA0RT0247 , bdr:CRCC8ABC_WA0RT0247 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW1KG13126_2247 , bdr:MW22704_1038 , bdr:MW23702_0000T249 , bdr:MW23703_1536 , bdr:MW2KG5015_1038 ;
         :workHasParallelsIn  bdr:WA0RTI0247 ;
+        :workIsAbout        bdr:T423 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0247> .
 }

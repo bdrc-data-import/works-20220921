@@ -17,6 +17,11 @@ bdg:WA0RT3487 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1D6F6B_WA0RT3487
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15116 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRE27A37_WA0RT3487
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ15220 ;
@@ -31,9 +36,10 @@ bdg:WA0RT3487 {
         skos:prefLabel      "ye d+harmA'i 'grel pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDD6FA4A_WA0RT3487 ;
-        :creator            bdr:CRE27A37_WA0RT3487 ;
+        :creator            bdr:CR1D6F6B_WA0RT3487 , bdr:CRE27A37_WA0RT3487 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T860 ;
         :workHasInstance    bdr:MW23703_4149 ;
         :workHasParallelsIn  bdr:WA0RTI3487 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3487> .

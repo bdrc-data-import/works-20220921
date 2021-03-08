@@ -17,6 +17,11 @@ bdg:WA0RT0210 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR30A9CD_WA0RT0210
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR95A1AD_WA0RT0210
         a                   :AgentAsCreator ;
         :agent              bdr:P3379 ;
@@ -35,10 +40,12 @@ bdg:WA0RT0210 {
         skos:prefLabel      "rdo rje gdan gyi rdo rje'i glu'i 'grel pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID3288BA_WA0RT0210 ;
-        :creator            bdr:CR95A1AD_WA0RT0210 , bdr:CRC19963_WA0RT0210 ;
+        :creator            bdr:CR30A9CD_WA0RT0210 , bdr:CR95A1AD_WA0RT0210 , bdr:CRC19963_WA0RT0210 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_2210 , bdr:MW22704_1000 , bdr:MW23702_0000T212 , bdr:MW23703_1495 , bdr:MW2KG5015_1000 ;
         :workHasParallelsIn  bdr:WA0RTI0210 ;
+        :workIsAbout        bdr:W4CZ15143 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0210> .
 }

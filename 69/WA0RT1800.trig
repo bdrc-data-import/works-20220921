@@ -17,6 +17,11 @@ bdg:WA0RT1800 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB1F718_WA0RT1800
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7148 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID334593_WA0RT1800
         a                   bdr:RefrKTsT ;
         rdf:value           "1800" .
@@ -26,9 +31,12 @@ bdg:WA0RT1800 {
         skos:prefLabel      "gzhan gyi rig sngags bshig pa'i phyir bzlog pa zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID334593_WA0RT1800 ;
+        :creator            bdr:CRB1F718_WA0RT1800 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T00KG02658 ;
         :workHasInstance    bdr:MW1KG13126_3801 , bdr:MW22704_2593 , bdr:MW23702_0000T1803 , bdr:MW23703_2976 , bdr:MW2KG5015_2593 ;
         :workHasParallelsIn  bdr:WA0RTI1800 ;
+        :workIsAbout        bdr:T2549 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1800> .
 }

@@ -17,6 +17,11 @@ bdg:WA0RT0333 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR30A971_WA0RT0333
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ10540 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRA41580_WA0RT0333
         a                   :AgentAsCreator ;
         :agent              bdr:P1578 ;
@@ -31,10 +36,12 @@ bdg:WA0RT0333 {
         skos:prefLabel      "dpal ye shes thig le'i dka' 'grel gsang ba'i de kho na nyid ces bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID0D1B71_WA0RT0333 ;
-        :creator            bdr:CRA41580_WA0RT0333 ;
+        :creator            bdr:CR30A971_WA0RT0333 , bdr:CRA41580_WA0RT0333 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_2333 , bdr:MW22704_1128 , bdr:MW23702_0000T338 , bdr:MW23703_1203 , bdr:MW2KG5015_1128 ;
         :workHasParallelsIn  bdr:WA0RTI0333 ;
+        :workIsAbout        bdr:W22934 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0333> .
 }

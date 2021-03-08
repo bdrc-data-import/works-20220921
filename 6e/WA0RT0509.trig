@@ -17,6 +17,11 @@ bdg:WA0RT0509 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRF10FBF_WA0RT0509
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3299 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:ID1316E1_WA0RT0509
         a                   bdr:RefrKTsT ;
         rdf:value           "509" .
@@ -25,9 +30,12 @@ bdg:WA0RT0509 {
         skos:prefLabel      "spyi'i chos spyod/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID1316E1_WA0RT0509 ;
+        :creator            bdr:CRF10FBF_WA0RT0509 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T225 ;
         :workHasInstance    bdr:MW1KG13126_2509 , bdr:MW22704_1304 , bdr:MW23702_0000T513 , bdr:MW23703_1637 , bdr:MW2KG5015_1304 ;
         :workHasParallelsIn  bdr:WA0RTI0509 ;
+        :workIsAbout        bdr:T2GS1087 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0509> .
 }

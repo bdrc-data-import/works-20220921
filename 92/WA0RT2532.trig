@@ -17,6 +17,11 @@ bdg:WA0RT2532 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4CF57C_WA0RT2532
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15570 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR510C05_WA0RT2532
         a                   :AgentAsCreator ;
         :agent              bdr:P753 ;
@@ -35,10 +40,12 @@ bdg:WA0RT2532 {
         skos:prefLabel      "gsang sngags kyi tshul gyi snang ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID1A1E31_WA0RT2532 ;
-        :creator            bdr:CR510C05_WA0RT2532 , bdr:CRD57AE7_WA0RT2532 ;
+        :creator            bdr:CR4CF57C_WA0RT2532 , bdr:CR510C05_WA0RT2532 , bdr:CRD57AE7_WA0RT2532 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 ;
         :workHasInstance    bdr:MW1KG13126_4533 , bdr:MW22704_3326 , bdr:MW23702_0000T2535 , bdr:MW23703_3710 , bdr:MW2KG5015_3326 ;
         :workHasParallelsIn  bdr:WA0RTI2532 ;
+        :workIsAbout        bdr:T307 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT2532> .
 }

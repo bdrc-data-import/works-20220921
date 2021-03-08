@@ -17,6 +17,16 @@ bdg:WA0RT3687 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR49791D_WA0RT3687
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5013 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR60E283_WA0RT3687
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3JT5599 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRAA950E_WA0RT3687
         a                   :AgentAsCreator ;
         :agent              bdr:P5013 ;
@@ -30,10 +40,12 @@ bdg:WA0RT3687 {
         skos:prefLabel      "sher snying 'grel pa sngags su 'grel pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID2C0758_WA0RT3687 ;
-        :creator            bdr:CRAA950E_WA0RT3687 ;
+        :creator            bdr:CR49791D_WA0RT3687 , bdr:CR60E283_WA0RT3687 , bdr:CRAA950E_WA0RT3687 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_5840 , bdr:MW22704_4638 , bdr:MW23702_0000T3853 , bdr:MW23703_4353 , bdr:MW2KG5015_4638 ;
         :workHasParallelsIn  bdr:WA0RTI3687 ;
+        :workIsAbout        bdr:W22339 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3687> .
 }

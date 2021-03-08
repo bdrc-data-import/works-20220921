@@ -17,6 +17,11 @@ bdg:WA0RT0420 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRA90FDD_WA0RT0420
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ10555 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRF32C9C_WA0RT0420
         a                   :AgentAsCreator ;
         :agent              bdr:P3456 ;
@@ -35,10 +40,12 @@ bdg:WA0RT0420 {
         skos:prefLabel      "dgyes pa'i rdo rje'i sgrub pa'i thabs/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID79BCD4_WA0RT0420 ;
-        :creator            bdr:CRF32C9C_WA0RT0420 , bdr:CRF65F37_WA0RT0420 ;
+        :creator            bdr:CRA90FDD_WA0RT0420 , bdr:CRF32C9C_WA0RT0420 , bdr:CRF65F37_WA0RT0420 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW1KG13126_2420 , bdr:MW22704_1215 , bdr:MW23702_0000T424 , bdr:MW23703_1264 , bdr:MW2KG5015_1215 ;
         :workHasParallelsIn  bdr:WA0RTI0420 ;
+        :workIsAbout        bdr:T130 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0420> .
 }

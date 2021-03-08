@@ -17,6 +17,11 @@ bdg:WA0RT3604 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR3CFCE6_WA0RT3604
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7599 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR78CE56_WA0RT3604
         a                   :AgentAsCreator ;
         :agent              bdr:P2085 ;
@@ -36,10 +41,12 @@ bdg:WA0RT3604 {
         skos:prefLabel      "lung ston pa tsan+d+ra pa'i mdo/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID3782AE_WA0RT3604 ;
-        :creator            bdr:CR78CE56_WA0RT3604 , bdr:CRDEAC97_WA0RT3604 ;
+        :creator            bdr:CR3CFCE6_WA0RT3604 , bdr:CR78CE56_WA0RT3604 , bdr:CRDEAC97_WA0RT3604 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T186 ;
         :workHasInstance    bdr:MW1KG13126_5767 , bdr:MW22704_4558 , bdr:MW23702_0000T3770 , bdr:MW23703_4269 , bdr:MW2KG5015_4558 ;
         :workHasParallelsIn  bdr:WA0RTI3604 ;
+        :workIsAbout        bdr:T282 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3604> .
 }

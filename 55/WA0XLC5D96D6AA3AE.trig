@@ -16,7 +16,7 @@ bdg:WA0XLC5D96D6AA3AE {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA0XLC5D96D6AA3AE ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "55/WA0XLC5D96D6AA3AE.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA0XLC5D96D6AA3AE ;
@@ -28,13 +28,19 @@ bdg:WA0XLC5D96D6AA3AE {
         :agent              bdr:P2778 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CRCC8B692563551EBA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2CN2 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA0XLC5D96D6AA3AE
         a                   :Work ;
         skos:altLabel       "pha rgod rtogs pa'i rgyal po rgyal mtshan dpal bzang po'i rnam thar shin tu bsdus pa/"@bo-x-ewts ;
         skos:prefLabel      "ras sgom chen po'i rnam thar bzang po'i mtshan can gyis mdzad pa/"@bo-x-ewts ;
-        :creator            bdr:CR3445D4686CA4C8F1 ;
+        :creator            bdr:CR3445D4686CA4C8F1 , bdr:CRCC8B692563551EBA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
-        :workHasInstance    bdr:MW23919_C5D96D .
+        :workHasInstance    bdr:MW23919_C5D96D ;
+        :workIsAbout        bdr:P2CN1 .
 }

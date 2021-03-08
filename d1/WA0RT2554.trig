@@ -17,6 +17,11 @@ bdg:WA0RT2554 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR821517_WA0RT2554
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3455 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRE31BB2_WA0RT2554
         a                   :AgentAsCreator ;
         :agent              bdr:P2147 ;
@@ -31,10 +36,12 @@ bdg:WA0RT2554 {
         skos:prefLabel      "rdo rje lus ngan po chen po'i sgrub thabs/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDFE09BB_WA0RT2554 ;
-        :creator            bdr:CRE31BB2_WA0RT2554 ;
+        :creator            bdr:CR821517_WA0RT2554 , bdr:CRE31BB2_WA0RT2554 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW1KG13126_4555 , bdr:MW22704_3348 , bdr:MW23702_0000T2557 , bdr:MW23703_3733 , bdr:MW2KG5015_3348 ;
         :workHasParallelsIn  bdr:WA0RTI2554 ;
+        :workIsAbout        bdr:T197 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT2554> .
 }

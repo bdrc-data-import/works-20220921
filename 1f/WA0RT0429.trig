@@ -17,6 +17,11 @@ bdg:WA0RT0429 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR8362C0_WA0RT0429
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8152 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDF9EC0A_WA0RT0429
         a                   bdr:RefrKTsT ;
         rdf:value           "429" .
@@ -26,9 +31,12 @@ bdg:WA0RT0429 {
         skos:prefLabel      "gtor ma'i las kyi rim pa zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDF9EC0A_WA0RT0429 ;
+        :creator            bdr:CR8362C0_WA0RT0429 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T170 ;
         :workHasInstance    bdr:MW1KG13126_2429 , bdr:MW22704_1224 , bdr:MW23702_0000T433 , bdr:MW23703_1299 , bdr:MW2KG5015_1224 ;
         :workHasParallelsIn  bdr:WA0RTI0429 ;
+        :workIsAbout        bdr:T130 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0429> .
 }

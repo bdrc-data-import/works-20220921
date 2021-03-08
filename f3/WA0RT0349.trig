@@ -17,6 +17,11 @@ bdg:WA0RT0349 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRCD9EF5_WA0RT0349
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8335 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRD64C7B_WA0RT0349
         a                   :AgentAsCreator ;
         :agent              bdr:P8151 ;
@@ -36,10 +41,12 @@ bdg:WA0RT0349 {
         skos:prefLabel      "dpal kye rdo rje'i mar me'i rtse mo lta bu'i gdams pa zhes bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID2247B5_WA0RT0349 ;
-        :creator            bdr:CRD64C7B_WA0RT0349 , bdr:CRDAF23A_WA0RT0349 ;
+        :creator            bdr:CRCD9EF5_WA0RT0349 , bdr:CRD64C7B_WA0RT0349 , bdr:CRDAF23A_WA0RT0349 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T613 ;
         :workHasInstance    bdr:MW1KG13126_2349 , bdr:MW22704_1144 , bdr:MW23702_0000T354 , bdr:MW23703_1220 , bdr:MW2KG5015_1144 ;
         :workHasParallelsIn  bdr:WA0RTI0349 ;
+        :workIsAbout        bdr:T130 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0349> .
 }

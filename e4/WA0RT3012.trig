@@ -17,6 +17,11 @@ bdg:WA0RT3012 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR81BA5C_WA0RT3012
+        a                   :AgentAsCreator ;
+        :agent              bdr:P207 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR9B7120_WA0RT3012
         a                   :AgentAsCreator ;
         :agent              bdr:P318 ;
@@ -31,10 +36,12 @@ bdg:WA0RT3012 {
         skos:prefLabel      "bla ma'i bsnyen bkur gyi dka' 'grel/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID388F0F_WA0RT3012 ;
-        :creator            bdr:CR9B7120_WA0RT3012 ;
+        :creator            bdr:CR81BA5C_WA0RT3012 , bdr:CR9B7120_WA0RT3012 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_5013 , bdr:MW22704_3802 , bdr:MW23702_0000T3012 , bdr:MW23703_3722 , bdr:MW2KG5015_3802 ;
         :workHasParallelsIn  bdr:WA0RTI3012 ;
+        :workIsAbout        bdr:W22925 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3012> .
 }

@@ -22,6 +22,11 @@ bdg:WA0RT3525 {
         :agent              bdr:P3814 ;
         :role               bdr:R0ER0026 .
     
+    bdr:CRCF3366_WA0RT3525
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8226 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDF4F1B6_WA0RT3525
         a                   bdr:RefrKTsT ;
         rdf:value           "3525" .
@@ -31,10 +36,12 @@ bdg:WA0RT3525 {
         skos:prefLabel      "bu la spring ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDF4F1B6_WA0RT3525 ;
-        :creator            bdr:CRB444ED_WA0RT3525 ;
+        :creator            bdr:CRB444ED_WA0RT3525 , bdr:CRCF3366_WA0RT3525 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T14 ;
         :workHasInstance    bdr:MW1KG13126_5687 , bdr:MW22704_4476 , bdr:MW23702_0000T3690 , bdr:MW23703_4187 , bdr:MW2KG5015_4476 ;
         :workHasParallelsIn  bdr:WA0RTI3525 ;
+        :workIsAbout        bdr:T58 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3525> .
 }

@@ -22,6 +22,11 @@ bdg:WA0RT0610 {
         :agent              bdr:P4CZ10557 ;
         :role               bdr:R0ER0026 .
     
+    bdr:CR4C3271_WA0RT0610
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15116 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDC9FBFA_WA0RT0610
         a                   bdr:RefrKTsT ;
         rdf:value           "610" .
@@ -31,10 +36,12 @@ bdg:WA0RT0610 {
         skos:prefLabel      "phyir bzlog gi 'khor lo/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDC9FBFA_WA0RT0610 ;
-        :creator            bdr:CR1A7EA7_WA0RT0610 ;
+        :creator            bdr:CR1A7EA7_WA0RT0610 , bdr:CR4C3271_WA0RT0610 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T00KG02658 ;
         :workHasInstance    bdr:MW1KG13126_2610 , bdr:MW22704_1405 , bdr:MW23702_0000T613 , bdr:MW23703_1739 , bdr:MW2KG5015_1405 ;
         :workHasParallelsIn  bdr:WA0RTI0610 ;
+        :workIsAbout        bdr:T619 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0610> .
 }

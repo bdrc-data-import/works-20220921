@@ -17,6 +17,11 @@ bdg:WA0RT1507 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRC55D50_WA0RT1507
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ4725 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDF06FD6_WA0RT1507
         a                   bdr:RefrKTsT ;
         rdf:value           "1507" .
@@ -25,9 +30,12 @@ bdg:WA0RT1507 {
         skos:prefLabel      "rdo rje rnam par 'joms pa zhes bya ba'i gzungs rnam par bshad pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDF06FD6_WA0RT1507 ;
+        :creator            bdr:CRC55D50_WA0RT1507 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW1KG13126_3508 , bdr:MW22704_2303 , bdr:MW23702_0000T1511 , bdr:MW23703_2683 , bdr:MW2KG5015_2303 ;
         :workHasParallelsIn  bdr:WA0RTI1507 ;
+        :workIsAbout        bdr:W4CZ15490 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT1507> .
 }

@@ -17,6 +17,11 @@ bdg:WA0RT3597 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRF911D2_WA0RT3597
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ10568 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:IDEF1989_WA0RT3597
         a                   bdr:RefrKTsT ;
         rdf:value           "3597" .
@@ -25,9 +30,12 @@ bdg:WA0RT3597 {
         skos:prefLabel      "chos dang chos can gtan la dbab pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDEF1989_WA0RT3597 ;
+        :creator            bdr:CRF911D2_WA0RT3597 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 ;
         :workHasInstance    bdr:MW1KG13126_5759 , bdr:MW22704_4550 , bdr:MW23702_0000T3762 , bdr:MW23703_4262 , bdr:MW2KG5015_4550 ;
         :workHasParallelsIn  bdr:WA0RTI3597 ;
+        :workIsAbout        bdr:T370 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3597> .
 }

@@ -17,6 +17,11 @@ bdg:WA0RT0014 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR48AB5E_WA0RT0014
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR90E92B_WA0RT0014
         a                   :AgentAsCreator ;
         :agent              bdr:P3456 ;
@@ -40,10 +45,12 @@ bdg:WA0RT0014 {
         skos:prefLabel      "don dam par bstod pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID40F264_WA0RT0014 , bdr:IDF0FDA7_WA0RT0014 ;
-        :creator            bdr:CR90E92B_WA0RT0014 , bdr:CRC0A551_WA0RT0014 ;
+        :creator            bdr:CR48AB5E_WA0RT0014 , bdr:CR90E92B_WA0RT0014 , bdr:CRC0A551_WA0RT0014 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T67 ;
         :workHasInstance    bdr:MW1KG13126_2014 , bdr:MW1KG13607_0241 , bdr:MW1KG13607_0391 , bdr:MW22704_0803 , bdr:MW23702_0000T14 , bdr:MW23703_1122 , bdr:MW2KG5015_0803 ;
         :workHasParallelsIn  bdr:WA0RTI0014 ;
+        :workIsAbout        bdr:P7326 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WKT1113> , <http://purl.rkts.eu/resource/WTT0014> .
 }

@@ -17,6 +17,11 @@ bdg:WA0RT0245 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR818B64_WA0RT0245
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15153 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRBF377D_WA0RT0245
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ15153 ;
@@ -36,10 +41,12 @@ bdg:WA0RT0245 {
         skos:prefLabel      "lam gyi rab tu bya ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID9A34B7_WA0RT0245 ;
-        :creator            bdr:CRBF377D_WA0RT0245 , bdr:CRD9F5AA_WA0RT0245 ;
+        :creator            bdr:CR818B64_WA0RT0245 , bdr:CRBF377D_WA0RT0245 , bdr:CRD9F5AA_WA0RT0245 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T157 ;
         :workHasInstance    bdr:MW1KG13126_2245 , bdr:MW22704_1036 , bdr:MW23702_0000T247 , bdr:MW23703_1534 , bdr:MW2KG5015_1036 ;
         :workHasParallelsIn  bdr:WA0RTI0245 ;
+        :workIsAbout        bdr:T423 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0245> .
 }

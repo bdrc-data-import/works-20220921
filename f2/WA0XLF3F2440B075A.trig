@@ -16,7 +16,7 @@ bdg:WA0XLF3F2440B075A {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA0XLF3F2440B075A ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "f2/WA0XLF3F2440B075A.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA0XLF3F2440B075A ;
@@ -28,11 +28,16 @@ bdg:WA0XLF3F2440B075A {
         :agent              bdr:P2778 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CRC7F99078ABC0F713
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2CN2 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA0XLF3F2440B075A
         a                   :Work ;
         skos:altLabel       "ma gcig gsang spyod snyan brgyud las/ rdo rje phag mo'i sgrub thabs las tshogs dang bcas pa/"@bo-x-ewts ;
         skos:prefLabel      "rdo rje phag mo'i sgrub thabs las tshogs dang bcas pa/"@bo-x-ewts ;
-        :creator            bdr:CR27308FFE6D6E7C3B ;
+        :creator            bdr:CR27308FFE6D6E7C3B , bdr:CRC7F99078ABC0F713 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1 , bdr:T398 ;

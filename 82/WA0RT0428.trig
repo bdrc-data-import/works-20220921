@@ -17,6 +17,11 @@ bdg:WA0RT0428 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1FF82F_WA0RT0428
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3291 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRB04042_WA0RT0428
         a                   :AgentAsCreator ;
         :agent              bdr:P3302 ;
@@ -35,10 +40,12 @@ bdg:WA0RT0428 {
         skos:prefLabel      "dpal dgyes pa'i rdo rje'i gtor ma'i rim pa/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:ID73D709_WA0RT0428 ;
-        :creator            bdr:CRB04042_WA0RT0428 , bdr:CRC68FEF_WA0RT0428 ;
+        :creator            bdr:CR1FF82F_WA0RT0428 , bdr:CRB04042_WA0RT0428 , bdr:CRC68FEF_WA0RT0428 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T170 ;
         :workHasInstance    bdr:MW1KG13126_2428 , bdr:MW22704_1223 , bdr:MW23702_0000T432 , bdr:MW23703_1298 , bdr:MW2KG5015_1223 ;
         :workHasParallelsIn  bdr:WA0RTI0428 ;
+        :workIsAbout        bdr:T130 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0428> .
 }

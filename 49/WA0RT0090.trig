@@ -17,6 +17,11 @@ bdg:WA0RT0090 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR76A969_WA0RT0090
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8206 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRF8872F_WA0RT0090
         a                   :AgentAsCreator ;
         :agent              bdr:P3146 ;
@@ -35,10 +40,12 @@ bdg:WA0RT0090 {
         skos:prefLabel      "yan lag drug gi sbyor ba'i man ngag"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDE3B2FD_WA0RT0090 ;
-        :creator            bdr:CRF8872F_WA0RT0090 , bdr:CRFDBDBF_WA0RT0090 ;
+        :creator            bdr:CR76A969_WA0RT0090 , bdr:CRF8872F_WA0RT0090 , bdr:CRFDBDBF_WA0RT0090 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T456 ;
         :workHasInstance    bdr:MW1KG13126_2090 , bdr:MW22704_0880 , bdr:MW23702_0000T91 , bdr:MW23703_1374 , bdr:MW2KG5015_0880 ;
         :workHasParallelsIn  bdr:WA0RTI0090 ;
+        :workIsAbout        bdr:W4CZ15092 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT0090> .
 }

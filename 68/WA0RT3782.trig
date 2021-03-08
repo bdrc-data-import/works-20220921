@@ -17,6 +17,11 @@ bdg:WA0RT3782 {
         adm:metadataLegal   bda:LD_rKTs_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR2CD26F_WA0RT3782
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15081 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CRE6E507_WA0RT3782
         a                   :AgentAsCreator ;
         :agent              bdr:P856 ;
@@ -31,10 +36,12 @@ bdg:WA0RT3782 {
         skos:prefLabel      "skad dod gcig gis don du mar 'jug pa'i mngon brjod nor bu'i phreng ba/"@bo-x-ewts ;
         <http://id.loc.gov/ontologies/bibframe/identifiedBy>
             bdr:IDC1A6C9_WA0RT3782 ;
-        :creator            bdr:CRE6E507_WA0RT3782 ;
+        :creator            bdr:CR2CD26F_WA0RT3782 , bdr:CRE6E507_WA0RT3782 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1777 ;
         :workHasInstance    bdr:MW1KG13126_5899 , bdr:MW22704_4697 , bdr:MW23702_0000T3913 , bdr:MW23703_4454 , bdr:MW2KG5015_4697 ;
         :workHasParallelsIn  bdr:WA0RTI3782 ;
+        :workIsAbout        bdr:T282 ;
         adm:sameAsrKTs      <http://purl.rkts.eu/resource/WTT3782> .
 }
