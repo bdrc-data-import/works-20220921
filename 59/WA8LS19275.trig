@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS19275 {
+    bda:LG19F2BB0B47FBA4BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-08T10:32:14.39Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, about person"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG9EA5A3A8CBBD944F
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-05T11:15:27.672Z"^^xsd:dateTime ;
@@ -53,20 +59,20 @@ bdg:WA8LS19275 {
     bda:WA8LS19275  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19275 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "59/WA8LS19275.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19275 ;
-        adm:logEntry        bda:LG9EA5A3A8CBBD944F , bda:LGD6BA3A922D457387 , bda:LGE41E5B54D5D9AEDD , bda:LGIM095CC38C9F , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG19F2BB0B47FBA4BC , bda:LG9EA5A3A8CBBD944F , bda:LGD6BA3A922D457387 , bda:LGE41E5B54D5D9AEDD , bda:LGIM095CC38C9F , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA8LS19275  a       :Work ;
         skos:prefLabel      "'dzam gling skyong ba'i pho lha ge sar dmag gi rgyal po'i rtogs brjod las byang bdud dru gu g.yul rgyal stobs chen thog rgod rgyal po mnga' 'bangs bcas dbang du bsdus shing go mtshon g.yang du blangs pa'i rnam thar yid 'phrog snying gi dga' ston/"@bo-x-ewts ;
-        :catalogInfo        "A story of Gesar epic known as Drugu."@en ;
+        :catalogInfo        "A story of Gesar epic known as Drugu, conquering the kingdom of Drugu, author unknown."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T3 ;
+        :workGenre          bdr:T1779 , bdr:T3 ;
         :workHasInstance    bdr:MW3PD983_7FB450 , bdr:MW8LS19275 , bdr:W8LS19275 ;
-        :workIsAbout        bdr:T248 .
+        :workIsAbout        bdr:T1863 , bdr:T248 .
 }

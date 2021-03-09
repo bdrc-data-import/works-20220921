@@ -24,6 +24,12 @@ bdg:WA4CZ301814 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG21F746EDF6110628
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-08T10:11:15.198Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG32796144F151A0E2
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-25T15:00:33.726Z"^^xsd:dateTime ;
@@ -45,15 +51,15 @@ bdg:WA4CZ301814 {
     bda:WA4CZ301814  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ301814 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "15/WA4CZ301814.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ301814 ;
-        adm:logEntry        bda:LG0E4756AD883AF898 , bda:LG175F6E5723372140 , bda:LG32796144F151A0E2 , bda:LG77050DADF4319BB4 , bda:LGE630EE3388CD1787 ;
+        adm:logEntry        bda:LG0E4756AD883AF898 , bda:LG175F6E5723372140 , bda:LG21F746EDF6110628 , bda:LG32796144F151A0E2 , bda:LG77050DADF4319BB4 , bda:LGE630EE3388CD1787 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR21F746EDF6110628
+    bdr:CR9A58977D2B01DFBC
         a                   :AgentAsCreator ;
         :agent              bdr:P1932 ;
         :role               bdr:R0ER0019 .
@@ -62,9 +68,10 @@ bdg:WA4CZ301814 {
         skos:altLabel       "rje btsun 'bar ra ba rgyal mtshan dpal bzang po'i rnam thar mgur 'bum dang bcas pa/"@bo-x-ewts ;
         skos:prefLabel      "'ba' ra ba rgyal mtshan dpal bzang po'i rnam thar mgur 'bum/"@bo-x-ewts ;
         :catalogInfo        "Biography and select songs by Kagyu master Barawa Gyatsen Pelzang (1310-1391). Includes writings on sadhana practice."@en ;
-        :creator            bdr:CR21F746EDF6110628 ;
+        :creator            bdr:CR9A58977D2B01DFBC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T184 , bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW4CZ301814 , bdr:W4CZ301814 .
+        :workHasInstance    bdr:MW4CZ301814 , bdr:W4CZ301814 ;
+        :workIsAbout        bdr:P1932 .
 }

@@ -18,6 +18,12 @@ bdg:WA8LS19156 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG9EEED902BF5B4768
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-08T10:23:14.713Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGF0D449769157139A
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-01T11:25:49.94Z"^^xsd:dateTime ;
@@ -55,19 +61,26 @@ bdg:WA8LS19156 {
     bda:WA8LS19156  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19156 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "20/WA8LS19156.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19156 ;
-        adm:logEntry        bda:LG1475CD7EA2F71BA6 , bda:LGF0D449769157139A , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1475CD7EA2F71BA6 , bda:LG9EEED902BF5B4768 , bda:LGF0D449769157139A , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRAD8294C2F78CBA98
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75168 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS19156  a       :Work ;
         skos:prefLabel      "nged pha bu tsho'i mi tshe/"@bo-x-ewts ;
         :catalogInfo        "The life account of Yardro Tashi Tsegyel's family."@en ;
+        :creator            bdr:CRAD8294C2F78CBA98 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW8LS19156 , bdr:W8LS19156 .
+        :workHasInstance    bdr:MW8LS19156 , bdr:W8LS19156 ;
+        :workIsAbout        bdr:P8LS75168 .
 }

@@ -18,6 +18,12 @@ bdg:WA4CZ315250 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG8E8DB94287728DB3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-08T12:10:39.719Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGD96801641D0F7E5B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-06-26T10:01:09.028Z"^^xsd:dateTime ;
@@ -40,15 +46,15 @@ bdg:WA4CZ315250 {
     bda:WA4CZ315250  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ315250 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "6b/WA4CZ315250.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ315250 ;
-        adm:logEntry        bda:LG8843686E0A64632E , bda:LGD96801641D0F7E5B , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG8843686E0A64632E , bda:LG8E8DB94287728DB3 , bda:LGD96801641D0F7E5B , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8E8DB94287728DB3
+    bdr:CR8B533C681FC74302
         a                   :AgentAsCreator ;
         :agent              bdr:P339 ;
         :role               bdr:R0ER0019 .
@@ -57,9 +63,10 @@ bdg:WA4CZ315250 {
         skos:altLabel       "mkhan po er+te ni paN+Di tar grags pa'i spyod tshul brjod pa sgra 'dzin bcud len/"@bo-x-ewts ;
         skos:prefLabel      "sum pa mkhan po ye shes dpal 'byor gyi rang rnam sgra 'dzin bcud len/"@bo-x-ewts ;
         :catalogInfo        "The autobiography of Sumpa Khenpo Yeshe Peljor (1704 -1788)"@en ;
-        :creator            bdr:CR8E8DB94287728DB3 ;
+        :creator            bdr:CR8B533C681FC74302 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW4CZ315250 , bdr:W4CZ315250 .
+        :workHasInstance    bdr:MW4CZ315250 , bdr:W4CZ315250 ;
+        :workIsAbout        bdr:P339 .
 }

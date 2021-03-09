@@ -24,6 +24,12 @@ bdg:WA4CZ301823 {
         adm:logMessage      "re ssend scan requiest"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG5CFC20E0FFA26FA4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-08T10:11:16.131Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG86DDEB502841201F
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-25T15:00:33.726Z"^^xsd:dateTime ;
@@ -45,15 +51,15 @@ bdg:WA4CZ301823 {
     bda:WA4CZ301823  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ301823 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "19/WA4CZ301823.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ301823 ;
-        adm:logEntry        bda:LG1A0649B666574277 , bda:LG462492DD34AEDCA3 , bda:LG86DDEB502841201F , bda:LGE4D51E687125AFFF , bda:LGF7D3BD0A92D197A3 ;
+        adm:logEntry        bda:LG1A0649B666574277 , bda:LG462492DD34AEDCA3 , bda:LG5CFC20E0FFA26FA4 , bda:LG86DDEB502841201F , bda:LGE4D51E687125AFFF , bda:LGF7D3BD0A92D197A3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5CFC20E0FFA26FA4
+    bdr:CR63316FB2F935E3CD
         a                   :AgentAsCreator ;
         :agent              bdr:P4441 ;
         :role               bdr:R0ER0019 .
@@ -62,9 +68,10 @@ bdg:WA4CZ301823 {
         skos:altLabel       "dpal ldan bla ma dam pa mkhas grub lha btsun chos kyi rgyal po'i rnam mgur blo 'das chos sku'i rang gdangs/"@bo-x-ewts ;
         skos:prefLabel      "lha btsun chos kyi rgyal po'i rnam mgur blo 'das chos sku'i rang gdangs/"@bo-x-ewts ;
         :catalogInfo        "Autobiography, with interspersed songs of spiritual experience, of Lhatsun Richen Namgyal."@en ;
-        :creator            bdr:CR5CFC20E0FFA26FA4 ;
+        :creator            bdr:CR63316FB2F935E3CD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 , bdr:T4CZ71 ;
-        :workHasInstance    bdr:MW4CZ301823 , bdr:W4CZ301823 .
+        :workHasInstance    bdr:MW4CZ301823 , bdr:W4CZ301823 ;
+        :workIsAbout        bdr:P4441 .
 }

@@ -30,6 +30,12 @@ bdg:WA4CZ321162 {
         adm:logMessage      "new realeased"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGE5A4CC2FB8B914CB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-08T16:03:38.222Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -40,16 +46,16 @@ bdg:WA4CZ321162 {
     bda:WA4CZ321162  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ321162 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "97/WA4CZ321162.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ321162 ;
-        adm:logEntry        bda:LG045A1A77B624A7A4 , bda:LG7ADC1BA1B01475B4 , bda:LG7E757D5E30E9F8B9 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG045A1A77B624A7A4 , bda:LG7ADC1BA1B01475B4 , bda:LG7E757D5E30E9F8B9 , bda:LGE5A4CC2FB8B914CB , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE5A4CC2FB8B914CB
+    bdr:CRC04985D815D6FFD1
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ321228 ;
         :role               bdr:R0ER0019 .
@@ -58,9 +64,10 @@ bdg:WA4CZ321162 {
         skos:altLabel       "mtshan nyid slob dpon dkon mchog rnam rgyal gyi rang rnam/"@bo-x-ewts ;
         skos:prefLabel      "nga'i mi tshe dang nga dgu'i gong gi bod/"@bo-x-ewts ;
         :catalogInfo        "Autobiographical reminiscences of before 1959 in Tibet."@en ;
-        :creator            bdr:CRE5A4CC2FB8B914CB ;
+        :creator            bdr:CRC04985D815D6FFD1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW4CZ321162 , bdr:W4CZ321162 .
+        :workHasInstance    bdr:MW4CZ321162 , bdr:W4CZ321162 ;
+        :workIsAbout        bdr:P4CZ321228 .
 }

@@ -13,14 +13,20 @@
 
 bdg:WA23724 {
     bda:LG24409B4051AB0AA9
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-08T09:35:12.758Z"^^xsd:dateTime ;
+        adm:logMessage      "added title & normalized language encoding"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LG5D69DC8D667786C0
         a                   adm:UpdateData ;
         adm:logDate         "2009-12-28T12:17:12.371Z"^^xsd:dateTime ;
         adm:logMessage      "edited annotation"@en ;
         adm:logWho          bdu:U00020 .
+    
+    bda:LG8F32D440CF92F23C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGC4C40E82B2BAB1F9
         a                   adm:UpdateData ;
@@ -78,26 +84,26 @@ bdg:WA23724 {
     bda:WA23724  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23724 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "f2/WA23724.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23724 ;
-        adm:logEntry        bda:LG24409B4051AB0AA9 , bda:LG5D69DC8D667786C0 , bda:LGC4C40E82B2BAB1F9 , bda:LGD19D76FAFDEA2879 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG24409B4051AB0AA9 , bda:LG5D69DC8D667786C0 , bda:LG8F32D440CF92F23C , bda:LGC4C40E82B2BAB1F9 , bda:LGD19D76FAFDEA2879 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8F32D440CF92F23C
+    bdr:CRB0AECCE0957F8573
         a                   :AgentAsCreator ;
         :agent              bdr:P6625 ;
         :role               bdr:R0ER0019 .
     
-    bdr:MW23724  skos:altLabel  "sajia xue pai ming ren lu"@zh-latn-pinyin-x-ndia .
+    bdr:MW23724  skos:altLabel  "萨迦学派名人录"@zh-hans .
     
     bdr:WA23724  a          :Work ;
-        skos:altLabel       "lam 'bras bla ma brgyud pa'i rnam thar/"@bo-x-ewts ;
-        skos:prefLabel      "gsung ngag rin po che lam 'bras bla ma brgyud pa'i rnam thar kun 'dus me long /"@bo-x-ewts , "sajia xue pai ming ren lu"@zh-latn-pinyin-x-ndia ;
+        skos:altLabel       "gsung ngag rin po che lam 'bras bla ma brgyud pa'i rnam thar kun 'dus me long /"@bo-x-ewts , "sa jia xue pai ming ren lu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "lam 'bras bla ma brgyud pa'i rnam thar/"@bo-x-ewts , "萨迦学派名人录"@zh-hans ;
         :catalogInfo        "Biographies of masters in the transmission lineage of the Sakya Lamdre teachings, both Lobshe and Tsokshe."@en ;
-        :creator            bdr:CR8F32D440CF92F23C ;
+        :creator            bdr:CRB0AECCE0957F8573 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ307966 {
+    bda:LG0BF4A79F73E5ACCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-08T12:10:38.748Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG6DAEF549DACDA59B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-05-22T12:25:55.84Z"^^xsd:dateTime ;
@@ -34,16 +40,16 @@ bdg:WA4CZ307966 {
     bda:WA4CZ307966  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ307966 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "9a/WA4CZ307966.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ307966 ;
-        adm:logEntry        bda:LG6DAEF549DACDA59B , bda:LGB5BD6446BF6729FB , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG0BF4A79F73E5ACCE , bda:LG6DAEF549DACDA59B , bda:LGB5BD6446BF6729FB , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0BF4A79F73E5ACCE
+    bdr:CR92B29F2D87AF91FE
         a                   :AgentAsCreator ;
         :agent              bdr:P351 ;
         :role               bdr:R0ER0019 .
@@ -52,9 +58,10 @@ bdg:WA4CZ307966 {
         skos:altLabel       "chos smra ba blo bzang bstan pa'i spyod tshul rag pa tsam gsal bar ston pa dri bral me long /"@bo-x-ewts ;
         skos:prefLabel      "blo bzang bstan pa'i spyod tshul rag pa tsam gsal bar ston pa dri bral me long /"@bo-x-ewts ;
         :catalogInfo        "Autobiography of Drakyab Chungtsang 03 Losang Tenpa"@en ;
-        :creator            bdr:CR0BF4A79F73E5ACCE ;
+        :creator            bdr:CR92B29F2D87AF91FE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW4CZ307966 , bdr:W4CZ307966 .
+        :workHasInstance    bdr:MW4CZ307966 , bdr:W4CZ307966 ;
+        :workIsAbout        bdr:P351 .
 }

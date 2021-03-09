@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ321163 {
+    bda:LG28387394E29A8718
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-08T16:03:38.582Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG37795EC0A5A0CCAB
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-07-31T11:34:40.813Z"^^xsd:dateTime ;
@@ -34,22 +40,28 @@ bdg:WA4CZ321163 {
     bda:WA4CZ321163  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ321163 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "84/WA4CZ321163.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ321163 ;
-        adm:logEntry        bda:LG37795EC0A5A0CCAB , bda:LG9659208BB5429B83 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG28387394E29A8718 , bda:LG37795EC0A5A0CCAB , bda:LG9659208BB5429B83 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRED48725E9742895C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366111 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA4CZ321163  a      :Work ;
         skos:altLabel       "rdo gcod dkon mchog bstan dar gyi mi tshe'i myong tshor/"@bo-x-ewts ;
         skos:prefLabel      "khrag gi mig chu/"@bo-x-ewts ;
         :catalogInfo        "An autobiography of political prisoner Drakyab pa Docoe Konchog Tendar,"@en ;
+        :creator            bdr:CRED48725E9742895C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
         :workHasInstance    bdr:MW4CZ321163 , bdr:W4CZ321163 ;
-        :workIsAbout        bdr:T1151 .
+        :workIsAbout        bdr:P4CZ366111 , bdr:T1151 .
 }
