@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ346619 {
+    bda:LG0F5121EEC48D878B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-09T11:07:50.283Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat, pub info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG3DC5E45675E85D6E
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-07-01T10:53:32.515Z"^^xsd:dateTime ;
@@ -34,16 +40,16 @@ bdg:WA4CZ346619 {
     bda:WA4CZ346619  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ346619 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a5/WA4CZ346619.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ346619 ;
-        adm:logEntry        bda:LG3DC5E45675E85D6E , bda:LGC43A7FCA934CD358 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG0F5121EEC48D878B , bda:LG3DC5E45675E85D6E , bda:LGC43A7FCA934CD358 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0F5121EEC48D878B
+    bdr:CR105B051F7F48284B
         a                   :AgentAsCreator ;
         :agent              bdr:P10489 ;
         :role               bdr:R0ER0019 .
@@ -51,9 +57,10 @@ bdg:WA4CZ346619 {
     bdr:WA4CZ346619  a      :Work ;
         skos:prefLabel      "btsan 'og gi bud med/"@bo-x-ewts ;
         :catalogInfo        "A sad story of Tibetan women's situation under Chinese rule."@en ;
-        :creator            bdr:CR0F5121EEC48D878B ;
+        :creator            bdr:CR105B051F7F48284B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW4CZ346619 , bdr:W4CZ346619 .
+        :workHasInstance    bdr:MW4CZ346619 , bdr:W4CZ346619 ;
+        :workIsAbout        bdr:P10489 .
 }

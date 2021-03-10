@@ -28,6 +28,12 @@ bdg:WA2PD19460 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG77D93F7A151FD8FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-09T12:58:31.508Z"^^xsd:dateTime ;
+        adm:logMessage      "added P# & T#, and authorship"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGD0FD11CDEA621EC2
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-06T21:49:48.492Z"^^xsd:dateTime ;
@@ -43,20 +49,22 @@ bdg:WA2PD19460 {
     bda:WA2PD19460  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD19460 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "52/WA2PD19460.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD19460 ;
-        adm:logEntry        bda:LG172494FF16DFE064 , bda:LG39011139C41EA863 , bda:LG3E4507ED9C97F96D , bda:LGD0FD11CDEA621EC2 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG172494FF16DFE064 , bda:LG39011139C41EA863 , bda:LG3E4507ED9C97F96D , bda:LG77D93F7A151FD8FE , bda:LGD0FD11CDEA621EC2 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA2PD19460  a       :SerialMember , :Work ;
-        skos:prefLabel      "rnal 'byor gyi dbang phyug chen po rje btsun dbyings rig rang shar mchog gi rnam mgur ut+pal dmar po'i do shal/"@bo-x-ewts ;
+        skos:altLabel       "rnal 'byor gyi dbang phyug chen po rje btsun dbyings rig rang shar mchog gi rnam mgur ut+pal dmar po'i do shal/"@bo-x-ewts ;
+        skos:prefLabel      "rje btsun dbyings rig rang shar mchog gi rnam mgur ut+pal dmar po'i do shal/"@bo-x-ewts ;
+        :catalogInfo        "Songs of esoteric experience interspersed with an account of the life story of the Drukpa Kagyu Yogi Yingrik Rangshar."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS2PD19458 ;
-        :workGenre          bdr:T3 ;
+        :workGenre          bdr:T1CZ60 , bdr:T6 ;
         :workHasInstance    bdr:MW2PD19460 , bdr:W2PD19460 ;
-        :workIsAbout        bdr:T1187 .
+        :workIsAbout        bdr:P4CN12034 .
 }

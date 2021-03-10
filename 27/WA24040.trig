@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA24040 {
-    bda:LGBF2D8C281FE033DF
+    bda:LGB248F3EE9986F28D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGBF2D8C281FE033DF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-09T18:26:43.543Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person and modify catalog"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGEEEF028687736607
         a                   adm:UpdateData ;
@@ -60,15 +66,15 @@ bdg:WA24040 {
     bda:WA24040  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA24040 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "27/WA24040.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA24040 ;
-        adm:logEntry        bda:LGBF2D8C281FE033DF , bda:LGEEEF028687736607 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LGB248F3EE9986F28D , bda:LGBF2D8C281FE033DF , bda:LGEEEF028687736607 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB248F3EE9986F28D
+    bdr:CR45144B54A206E3D9
         a                   :AgentAsCreator ;
         :agent              bdr:P1693 ;
         :role               bdr:R0ER0025 .
@@ -77,10 +83,11 @@ bdg:WA24040 {
     
     bdr:WA24040  a          :Work ;
         skos:prefLabel      "rgyal po sin d+ha ra dza'i rnam thar/"@bo-x-ewts , "Rgyal-po Sindha-ra-dzaʼi rnam thar źes bya ba bźugs so /[Padma-gliṅ-pa]"@en-x-mixed ;
-        :catalogInfo        "Rediscovered biographical work of an early King of Bhutan."@en ;
-        :creator            bdr:CRB248F3EE9986F28D ;
+        :catalogInfo        "Rediscovered biographical work of an early King Sindhu Raja of Bhutan."@en ;
+        :creator            bdr:CR45144B54A206E3D9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
-        :workHasInstance    bdr:MW24040 , bdr:W24040 .
+        :workHasInstance    bdr:MW24040 , bdr:W24040 ;
+        :workIsAbout        bdr:P2KG228498 .
 }

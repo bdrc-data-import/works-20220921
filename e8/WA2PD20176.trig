@@ -23,6 +23,12 @@ bdg:WA2PD20176 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG9752806A9A340296
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-09T13:31:17.465Z"^^xsd:dateTime ;
+        adm:logMessage      "added Author and about P#s & catalogInfo"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGC27AC7B3263E9506
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-31T21:22:27.041Z"^^xsd:dateTime ;
@@ -44,19 +50,26 @@ bdg:WA2PD20176 {
     bda:WA2PD20176  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD20176 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "e8/WA2PD20176.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD20176 ;
-        adm:logEntry        bda:LG14FD5F580B22C138 , bda:LG81C43F027CF67DDC , bda:LGC27AC7B3263E9506 , bda:LGDAA14C02B3B68F23 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG14FD5F580B22C138 , bda:LG81C43F027CF67DDC , bda:LG9752806A9A340296 , bda:LGC27AC7B3263E9506 , bda:LGDAA14C02B3B68F23 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRD05387466FCCA514
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1428 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA2PD20176  a       :Work ;
         skos:prefLabel      "slob dpon rnam thar yid ches sum ldan sogs/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Guru Rinpoche by Tara Natha."@en ;
+        :creator            bdr:CRD05387466FCCA514 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW2PD20176 , bdr:W2PD20176 ;
-        :workIsAbout        bdr:T449 .
+        :workIsAbout        bdr:P4956 .
 }

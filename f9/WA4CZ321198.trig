@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ321198 {
+    bda:LG6770D1B684971EEE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-09T10:18:28.188Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat, pub info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGBA95634895B8CC0C
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-01-25T15:37:30.833Z"^^xsd:dateTime ;
@@ -34,16 +40,16 @@ bdg:WA4CZ321198 {
     bda:WA4CZ321198  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ321198 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "f9/WA4CZ321198.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ321198 ;
-        adm:logEntry        bda:LGBA95634895B8CC0C , bda:LGF53F2255728F6EC1 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG6770D1B684971EEE , bda:LGBA95634895B8CC0C , bda:LGF53F2255728F6EC1 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6770D1B684971EEE
+    bdr:CRAD61A1ECE784B9D5
         a                   :AgentAsCreator ;
         :agent              bdr:P6063 ;
         :role               bdr:R0ER0019 .
@@ -54,9 +60,10 @@ bdg:WA4CZ321198 {
         skos:altLabel       "sa skya'i khri chen ngag dbang kun dga' theg chen dpal 'bar 'phrin las bsam 'phel dbang gi rgyal po'i gsung rnam mdor bsdus/"@bo-x-ewts ;
         skos:prefLabel      "ngag dbang kun dga' theg chen dpal 'bar 'phrin las bsam 'phel dbang gi rgyal po'i gsung rnam mdor bsdus/"@bo-x-ewts , "radiance of a jewel"@en ;
         :catalogInfo        "Radiance of a Jewel, Autobiography by H.H. Sakya Trizin"@en ;
-        :creator            bdr:CR6770D1B684971EEE ;
+        :creator            bdr:CRAD61A1ECE784B9D5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW4CZ321198 , bdr:W4CZ321198 .
+        :workHasInstance    bdr:MW4CZ321198 , bdr:W4CZ321198 ;
+        :workIsAbout        bdr:P6063 .
 }

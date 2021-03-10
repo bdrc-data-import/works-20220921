@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ346624 {
+    bda:LG3DEF29B97A5CBFF4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-09T11:07:50.68Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat, pub info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG8E50BC0CBAA5716F
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-07-01T10:53:33.939Z"^^xsd:dateTime ;
@@ -34,16 +40,16 @@ bdg:WA4CZ346624 {
     bda:WA4CZ346624  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ346624 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "8b/WA4CZ346624.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ346624 ;
-        adm:logEntry        bda:LG8E50BC0CBAA5716F , bda:LG980B3F7E39E18BC4 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG3DEF29B97A5CBFF4 , bda:LG8E50BC0CBAA5716F , bda:LG980B3F7E39E18BC4 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3DEF29B97A5CBFF4
+    bdr:CR78CFF473659AABE3
         a                   :AgentAsCreator ;
         :agent              bdr:P313 ;
         :role               bdr:R0ER0019 .
@@ -52,9 +58,10 @@ bdg:WA4CZ346624 {
         skos:altLabel       "rang tshul lhug par smras pa ma bcos gnyug ma'i rang grol/"@bo-x-ewts ;
         skos:prefLabel      "'brug khams sprul chos kyi nyi ma'i rang rnam/"@bo-x-ewts ;
         :catalogInfo        "Autobiography of 4th khams sprul Tenzin Choekyi Nyima"@en ;
-        :creator            bdr:CR3DEF29B97A5CBFF4 ;
+        :creator            bdr:CR78CFF473659AABE3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW4CZ346624 , bdr:W4CZ346624 .
+        :workHasInstance    bdr:MW4CZ346624 , bdr:W4CZ346624 ;
+        :workIsAbout        bdr:P313 .
 }

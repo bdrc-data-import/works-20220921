@@ -24,6 +24,12 @@ bdg:WA8LS23463 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG99F59E56B78E7278
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-09T10:55:35.638Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, topic, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -34,16 +40,16 @@ bdg:WA8LS23463 {
     bda:WA8LS23463  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS23463 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "37/WA8LS23463.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS23463 ;
-        adm:logEntry        bda:LG2085E5FFD3911774 , bda:LG8627967CBC04560E , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG2085E5FFD3911774 , bda:LG8627967CBC04560E , bda:LG99F59E56B78E7278 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR99F59E56B78E7278
+    bdr:CRDF23BF57FC589BAB
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG522 ;
         :role               bdr:R0ER0019 .
@@ -51,10 +57,11 @@ bdg:WA8LS23463 {
     bdr:WA8LS23463  a       :Work ;
         skos:altLabel       "mnar gcod kyi go rim zhig 'dri gcod kyi nyin tho/"@bo-x-ewts ;
         skos:prefLabel      "'dri gcod kyi nyin tho/"@bo-x-ewts ;
-        :catalogInfo        "The life story of Jamyang Kyid."@en ;
-        :creator            bdr:CR99F59E56B78E7278 ;
+        :catalogInfo        "The life account of Jamyang Kyid."@en ;
+        :creator            bdr:CRDF23BF57FC589BAB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1134 , bdr:T3 ;
-        :workHasInstance    bdr:MW8LS23463 , bdr:W8LS23463 .
+        :workGenre          bdr:T1134 , bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW8LS23463 , bdr:W8LS23463 ;
+        :workIsAbout        bdr:P1KG522 , bdr:T342 .
 }

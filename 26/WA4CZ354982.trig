@@ -18,6 +18,12 @@ bdg:WA4CZ354982 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGA2B943C1FE330E73
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-09T11:07:52.449Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat, pub info and changed topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGA6D93AB7187FBEFB
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-12-11T12:41:17.692Z"^^xsd:dateTime ;
@@ -40,16 +46,16 @@ bdg:WA4CZ354982 {
     bda:WA4CZ354982  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ354982 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "26/WA4CZ354982.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ354982 ;
-        adm:logEntry        bda:LG32D322B446CAAD81 , bda:LGA6D93AB7187FBEFB , bda:LGCEA4080ED0F6043A , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG32D322B446CAAD81 , bda:LGA2B943C1FE330E73 , bda:LGA6D93AB7187FBEFB , bda:LGCEA4080ED0F6043A , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA2B943C1FE330E73
+    bdr:CR93DFB446A326EC54
         a                   :AgentAsCreator ;
         :agent              bdr:P9615 ;
         :role               bdr:R0ER0019 .
@@ -58,9 +64,10 @@ bdg:WA4CZ354982 {
         skos:altLabel       "dge sdig las kyi myong ba/"@bo-x-ewts ;
         skos:prefLabel      "ri 'bur sprul sku'i rang rnam/"@bo-x-ewts ;
         :catalogInfo        "An autobiography of Ribur tulku Ngawang Gyatsho."@en ;
-        :creator            bdr:CRA2B943C1FE330E73 ;
+        :creator            bdr:CR93DFB446A326EC54 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW4CZ354982 , bdr:W4CZ354982 .
+        :workHasInstance    bdr:MW4CZ354982 , bdr:W4CZ354982 ;
+        :workIsAbout        bdr:P9615 .
 }

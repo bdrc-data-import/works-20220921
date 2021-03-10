@@ -12,10 +12,22 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2PD19903 {
+    bda:LG068087412F1A63F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-09T13:11:41.803Z"^^xsd:dateTime ;
+        adm:logMessage      "added Author & about P#"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG457B3293F3BD0DA4
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-12-16T03:20:37.39Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LG79BD481B2CC253BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-09T13:25:21.16Z"^^xsd:dateTime ;
+        adm:logMessage      "added catalog Info"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGC65301923D59BDC6
         a                   adm:UpdateData ;
@@ -44,18 +56,26 @@ bdg:WA2PD19903 {
     bda:WA2PD19903  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD19903 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "46/WA2PD19903.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD19903 ;
-        adm:logEntry        bda:LG457B3293F3BD0DA4 , bda:LGC65301923D59BDC6 , bda:LGF0490A4FBF282F56 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG068087412F1A63F6 , bda:LG457B3293F3BD0DA4 , bda:LG79BD481B2CC253BB , bda:LGC65301923D59BDC6 , bda:LGF0490A4FBF282F56 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRAAB30D9F5AA3DDF0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P625 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA2PD19903  a       :Work ;
         skos:prefLabel      "sangs rgyas mnyan sprul dgu pa'i rnam thar mdor bsdus dad pa'i sa bon/"@bo-x-ewts ;
+        :catalogInfo        "Biography of 9th Sangye Nyenpa Rinpoche (1897-1962) by Dilgo Khyentse Rinpoche (1910-1991)."@en ;
+        :creator            bdr:CRAAB30D9F5AA3DDF0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
-        :workHasInstance    bdr:MW2PD19903 , bdr:W2PD19903 .
+        :workHasInstance    bdr:MW2PD19903 , bdr:W2PD19903 ;
+        :workIsAbout        bdr:P934 .
 }

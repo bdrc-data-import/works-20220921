@@ -24,18 +24,30 @@ bdg:WA8LS24671 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG94C075B197EB5971
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-09T14:23:13.809Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGDB93103C5E0D7ACF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-09T14:24:39.442Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS24671  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS24671 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "27/WA8LS24671.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS24671 ;
-        adm:logEntry        bda:LG6BC643613E2259F6 , bda:LG90CE7CB73B8D2504 ;
+        adm:logEntry        bda:LG6BC643613E2259F6 , bda:LG90CE7CB73B8D2504 , bda:LG94C075B197EB5971 , bda:LGDB93103C5E0D7ACF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR94C075B197EB5971
+    bdr:CRA8D6AF772A0A44F8
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG21031 ;
         :role               bdr:R0ER0019 .
@@ -43,10 +55,11 @@ bdg:WA8LS24671 {
     bdr:WA8LS24671  a       :SerialMember , :Work ;
         skos:prefLabel      "rgyal sras ba ku la/"@bo-x-ewts ;
         :catalogInfo        "A bilingual biography of Kuhsok Bakula Rinpoche Losang Thupten Choknor."@en ;
-        :creator            bdr:CR94C075B197EB5971 ;
+        :creator            bdr:CRA8D6AF772A0A44F8 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn ;
         :serialMemberOf     bdr:WAS8LS24671 ;
         :workGenre          bdr:T3 ;
-        :workHasInstance    bdr:MW8LS24671 , bdr:W8LS24671 .
+        :workHasInstance    bdr:MW8LS24671 , bdr:W8LS24671 ;
+        :workIsAbout        bdr:P3CN15711 , bdr:T819 .
 }

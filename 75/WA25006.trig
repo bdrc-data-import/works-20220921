@@ -13,8 +13,10 @@
 
 bdg:WA25006 {
     bda:LG04FF24C385C57C89
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-09T18:26:44.907Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person and modify catalog"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG268C3EC60630DC53
         a                   adm:UpdateData ;
@@ -27,6 +29,10 @@ bdg:WA25006 {
         adm:logDate         "2012-12-20T21:42:28.495Z"^^xsd:dateTime ;
         adm:logMessage      "removed author from outline"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGE9E2C81BC595EAFD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -45,26 +51,27 @@ bdg:WA25006 {
     bda:WA25006  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25006 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "75/WA25006.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25006 ;
-        adm:logEntry        bda:LG04FF24C385C57C89 , bda:LG268C3EC60630DC53 , bda:LGBACFB2C5EEAD282E , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG04FF24C385C57C89 , bda:LG268C3EC60630DC53 , bda:LGBACFB2C5EEAD282E , bda:LGE9E2C81BC595EAFD , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE9E2C81BC595EAFD
+    bdr:CR015763722D5F7AEF
         a                   :AgentAsCreator ;
         :agent              bdr:P339 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA25006  a          :SerialMember , :Work ;
         skos:prefLabel      "paN+Di ta sum pa ye shes dpal 'byor mchog gi spyod tshul brjod pa sgra 'dzin bcud len/"@bo-x-ewts ;
-        :creator            bdr:CRE9E2C81BC595EAFD ;
+        :catalogInfo        "An autobiographies of Gelug master Sumpa Khenpo Yeshe Peljor (1704 -1788)."@en ;
+        :creator            bdr:CR015763722D5F7AEF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG14493 ;
-        :workGenre          bdr:T3 ;
+        :workGenre          bdr:T1CZ60 ;
         :workHasInstance    bdr:MW25006 , bdr:W25006 ;
-        :workIsAbout        bdr:T819 .
+        :workIsAbout        bdr:P339 , bdr:T819 .
 }
