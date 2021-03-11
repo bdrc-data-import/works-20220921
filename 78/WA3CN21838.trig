@@ -18,10 +18,22 @@ bdg:WA3CN21838 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LG1E4A8C66BD33D8C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-10T17:25:18.745Z"^^xsd:dateTime ;
+        adm:logMessage      "added P#"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG36290784F9646DB7
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-12-09T16:15:08.619Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG3D9134FDC528486E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-10T17:26:56.631Z"^^xsd:dateTime ;
+        adm:logMessage      "added author P#"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LG8C4BFB9D58DFD88D
@@ -33,13 +45,18 @@ bdg:WA3CN21838 {
     bda:WA3CN21838  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21838 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "78/WA3CN21838.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21838 ;
-        adm:logEntry        bda:LG0A066DA82B2D600C , bda:LG36290784F9646DB7 , bda:LG8C4BFB9D58DFD88D ;
+        adm:logEntry        bda:LG0A066DA82B2D600C , bda:LG1E4A8C66BD33D8C8 , bda:LG36290784F9646DB7 , bda:LG3D9134FDC528486E , bda:LG8C4BFB9D58DFD88D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR6BAE80030D5AAAF4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26172 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW3CN21838  skos:altLabel  "金大中自述"@zh-hans .
     
@@ -47,9 +64,11 @@ bdg:WA3CN21838 {
         skos:altLabel       "dmangs gtso'i don du nga la blo 'gyod med/"@bo-x-ewts ;
         skos:prefLabel      "cin tA krung gi rang rnam/"@bo-x-ewts , "金大中自述"@zh-hans ;
         :catalogInfo        "The Autobiography of Kim Dae-Jung, translated to Tibetan by Tribma."@en ;
+        :creator            bdr:CR6BAE80030D5AAAF4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS3CN21691 ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW3CN21838 , bdr:W3CN21838 .
+        :workHasInstance    bdr:MW3CN21838 , bdr:W3CN21838 ;
+        :workIsAbout        bdr:P3CN26172 .
 }

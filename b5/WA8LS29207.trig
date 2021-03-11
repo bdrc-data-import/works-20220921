@@ -18,6 +18,11 @@ bdg:WA8LS29207 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG641A4E3CF8D7CDD1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-10T15:01:02.034Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG814900C40DA5A1CE
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-11-01T08:52:42.323Z"^^xsd:dateTime ;
@@ -27,15 +32,15 @@ bdg:WA8LS29207 {
     bda:WA8LS29207  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS29207 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "b5/WA8LS29207.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS29207 ;
-        adm:logEntry        bda:LG40E42BFF236A8EE0 , bda:LG814900C40DA5A1CE ;
+        adm:logEntry        bda:LG40E42BFF236A8EE0 , bda:LG641A4E3CF8D7CDD1 , bda:LG814900C40DA5A1CE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR641A4E3CF8D7CDD1
+    bdr:CRD75F6E44883D9569
         a                   :AgentAsCreator ;
         :agent              bdr:P7843 ;
         :role               bdr:R0ER0019 .
@@ -44,9 +49,10 @@ bdg:WA8LS29207 {
         skos:altLabel       "dpal ldan bla ma rdo rje 'chang ngag dbang mkhas grub dbang phyug gi rnam thar in+dra nA la'i phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "ngag dbang mkhas grub dbang phyug gi rnam thar in+dra nA la'i phreng ba/"@bo-x-ewts ;
         :catalogInfo        "1 rig 'dzin rnam dag snang rdo rje rnam par thar ba bskal bzang dwangs ba 'dren pa'i lcags kyu/ 2 rong ston shes bya kun gzigs lho ba thugs rje dpal gnyis kyis sa skya'i gtsug lag khang du rtsod pa mdzad pa'i rtsod yig bstan pa'i nyin byed/ 3 phyag drug ye shes mgon po'i bskang gso sangs rgyas gnyan ston zhabs kyis mdzad pa/ 4 bstan rtsis mdor bsdus grags pa dpal bzang gis sbyar ba/ 5 nags sman rgyal mo'i mchod sprin bdud rtsi'i thigs pa/"@bo-x-ewts , "Biography of Ngawang Khedrup Wangchuk by Tsoknyi Gyatsho."@en ;
-        :creator            bdr:CR641A4E3CF8D7CDD1 ;
+        :creator            bdr:CRD75F6E44883D9569 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
-        :workHasInstance    bdr:MW8LS29207 , bdr:W8LS29207 .
+        :workHasInstance    bdr:MW8LS29207 , bdr:W8LS29207 ;
+        :workIsAbout        bdr:P8933 , bdr:T360 .
 }

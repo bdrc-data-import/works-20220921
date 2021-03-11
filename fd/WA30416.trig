@@ -18,6 +18,10 @@ bdg:WA30416 {
         adm:logMessage      "added cat info"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG36BE7807928DE5B1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG94AC57446EB9C841
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-27T11:33:56.694Z"^^xsd:dateTime ;
@@ -31,8 +35,10 @@ bdg:WA30416 {
         adm:logWho          bdu:U00003 .
     
     bda:LGB8A6A5CE56E25912
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-10T13:36:36.376Z"^^xsd:dateTime ;
+        adm:logMessage      "added P# and corrected catalogInfo"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGCC4CB904906B8D09
         a                   adm:UpdateData ;
@@ -76,29 +82,29 @@ bdg:WA30416 {
     bda:WA30416  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30416 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "fd/WA30416.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30416 ;
-        adm:logEntry        bda:LG16017D17F5FF5AB3 , bda:LG94AC57446EB9C841 , bda:LG9CC75A4EB2854B83 , bda:LGB8A6A5CE56E25912 , bda:LGCC4CB904906B8D09 , bda:LGE262330E470AB695 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG16017D17F5FF5AB3 , bda:LG36BE7807928DE5B1 , bda:LG94AC57446EB9C841 , bda:LG9CC75A4EB2854B83 , bda:LGB8A6A5CE56E25912 , bda:LGCC4CB904906B8D09 , bda:LGE262330E470AB695 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR36BE7807928DE5B1
+    bdr:CRDC8E888B8B1381EE
         a                   :AgentAsCreator ;
         :agent              bdr:P1397 ;
         :role               bdr:R0ER0019 .
     
-    bdr:MW30416  skos:altLabel  "Rnam thar gźan la phan paʼi ñi maʼi ʼod zer źes bya ba bźugs so."@en-x-mixed , "mu ya . jia yang zha ba zi zhuan"@zh-latn-pinyin-x-ndia .
+    bdr:MW30416  skos:altLabel  "Rnam thar gźan la phan paʼi ñi maʼi ʼod zer źes bya ba bźugs so."@en-x-mixed , "mu ya jia yang zha ba zi zhuan"@zh-latn-pinyin-x-ndia .
     
     bdr:WA30416  a          :Work ;
         skos:altLabel       "rnam thar gzhan la phan pa'i nyi ma'i 'od zer/"@bo-x-ewts ;
-        skos:prefLabel      "mi nyag 'jam dbyangs grags pa'i rang rnam/"@bo-x-ewts , "Rnam thar gźan la phan paʼi ñi maʼi ʼod zer źes bya ba bźugs so."@en-x-mixed , "mu ya . jia yang zha ba zi zhuan"@zh-latn-pinyin-x-ndia ;
-        :catalogInfo        "Autobiography of Drigung Kagyu lama Jamgyang Dragpa (14 cent.) from Minyak."@en ;
-        :creator            bdr:CR36BE7807928DE5B1 ;
+        skos:prefLabel      "mi nyag 'jam dbyangs grags pa'i rang rnam/"@bo-x-ewts , "Rnam thar gźan la phan paʼi ñi maʼi ʼod zer źes bya ba bźugs so."@en-x-mixed , "mu ya jia yang zha ba zi zhuan"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Autobiography of Karma Kagyu lama Jamgyang Dragpa (14 cent.) from Minyak."@en ;
+        :creator            bdr:CRDC8E888B8B1381EE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
         :workHasInstance    bdr:MW30416 , bdr:W30416 ;
-        :workIsAbout        bdr:T1386 .
+        :workIsAbout        bdr:P1397 .
 }

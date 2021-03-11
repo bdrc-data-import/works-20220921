@@ -24,23 +24,30 @@ bdg:WA8LS29204 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGC966EC690A5D69FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-10T14:55:06.56Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, topic"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS29204  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS29204 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "19/WA8LS29204.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS29204 ;
-        adm:logEntry        bda:LG2AEB92240B75B8EC , bda:LG61A2A6F18D49B9B2 ;
+        adm:logEntry        bda:LG2AEB92240B75B8EC , bda:LG61A2A6F18D49B9B2 , bda:LGC966EC690A5D69FC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA8LS29204  a       :Work ;
-        skos:altLabel       "dpal ldan bla ma rdo rje 'chang kun dga' nges don bstan pa'i rgyal mtsha 'phrin las dpal bzang po'i rnam thar/"@bo-x-ewts ;
-        skos:prefLabel      "kun dga' nges don bstan pa'i rgyal mtsha 'phrin las dpal bzang po'i rnam thar/"@bo-x-ewts ;
+        skos:altLabel       "dpal ldan bla ma rdo rje 'chang kun dga' nges don bstan pa'i rgyal mtshan 'phrin las dpal bzang po'i rnam thar/"@bo-x-ewts ;
+        skos:prefLabel      "kun dga' nges don bstan pa'i rgyal mtshan 'phrin las dpal bzang po'i rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography of Kunga Ngedon Tenpey Gyaltshen Trinley by Lama Lhaden."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
-        :workHasInstance    bdr:MW8LS29204 , bdr:W8LS29204 .
+        :workHasInstance    bdr:MW8LS29204 , bdr:W8LS29204 ;
+        :workIsAbout        bdr:P8807 , bdr:T360 .
 }

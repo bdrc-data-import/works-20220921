@@ -30,32 +30,39 @@ bdg:WA30417 {
         adm:logMessage      "ctc6"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LG9AE1BFF8DBC7260F
+    bda:LG69D552C4A03BF133
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG9AE1BFF8DBC7260F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-10T10:51:43.754Z"^^xsd:dateTime ;
+        adm:logMessage      "added P# and infos"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:WA30417  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30417 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "8f/WA30417.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30417 ;
-        adm:logEntry        bda:LG155088DF36D7187F , bda:LG2771D9A283A167D7 , bda:LG541883B74437DB2E , bda:LG9AE1BFF8DBC7260F ;
+        adm:logEntry        bda:LG155088DF36D7187F , bda:LG2771D9A283A167D7 , bda:LG541883B74437DB2E , bda:LG69D552C4A03BF133 , bda:LG9AE1BFF8DBC7260F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR69D552C4A03BF133
+    bdr:CR437AEF1EB6F1E923
         a                   :AgentAsCreator ;
         :agent              bdr:P10634 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA30417  a          :Work ;
         skos:prefLabel      "rnam thar pad+ma'i phreng ba/"@bo-x-ewts ;
-        :creator            bdr:CR69D552C4A03BF133 ;
+        :catalogInfo        "collection of biographies of rnying ma teachers"@en ;
+        :creator            bdr:CR437AEF1EB6F1E923 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW30417 , bdr:W30417 ;
-        :workIsAbout        bdr:T1082 .
+        :workIsAbout        bdr:P743 , bdr:T1082 .
 }

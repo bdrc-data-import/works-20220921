@@ -12,27 +12,21 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30073 {
-    bda:LG4F866CCB31222FFB
-        a                   adm:UpdateData ;
-        adm:logDate         "2013-03-29T16:01:20.312Z"^^xsd:dateTime ;
-        adm:logMessage      "reviewed"@en ;
-        adm:logWho          bdu:U00021 .
-    
     bda:LG5152D5164DD356D8
         a                   adm:UpdateData ;
         adm:logDate         "2007-05-30T05:53:57.734Z"^^xsd:dateTime ;
         adm:logMessage      "added annotation"@en ;
         adm:logWho          bdu:U00001 .
     
-    bda:LGC6DC16E6F25AA7C7
+    bda:LG8B370F6A6E8989C7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-10T10:13:04.671Z"^^xsd:dateTime ;
+        adm:logMessage      "added about P# and infos"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC43FB27DB12CF4FF
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
-    
-    bda:LGF42E103BDB0E6F53
-        a                   adm:UpdateData ;
-        adm:logDate         "2009-12-03T16:10:58.756Z"^^xsd:dateTime ;
-        adm:logMessage      "added annotation"@en ;
-        adm:logWho          bdu:U00020 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -79,15 +73,15 @@ bdg:WA30073 {
     bda:WA30073  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30073 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "14/WA30073.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30073 ;
-        adm:logEntry        bda:LG4F866CCB31222FFB , bda:LG5152D5164DD356D8 , bda:LGC6DC16E6F25AA7C7 , bda:LGF42E103BDB0E6F53 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG5152D5164DD356D8 , bda:LG8B370F6A6E8989C7 , bda:LGC43FB27DB12CF4FF , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8995C6C4E98C5A76
+    bdr:CRC6DC16E6F25AA7C7
         a                   :AgentAsCreator ;
         :agent              bdr:P2387 ;
         :role               bdr:R0ER0019 .
@@ -96,10 +90,10 @@ bdg:WA30073 {
         skos:altLabel       "rje btsun kun dga' grol mchog gi phyi nang gsang gsum gyi rnam thar/"@bo-x-ewts ;
         skos:prefLabel      "kun dga' grol mchog gi phyi nang gsang gsum gyi rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Collected biographical materials connected with the life of the Jonang master Kunga Drolchok from Mustang (1507-1565/1566) and his previous embodiments. Portions of the text have missing orderions that do not correspond to the originals."@en ;
-        :creator            bdr:CR8995C6C4E98C5A76 ;
+        :creator            bdr:CRC6DC16E6F25AA7C7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1342 , bdr:T3 ;
         :workHasInstance    bdr:MW30073 , bdr:W30073 ;
-        :workIsAbout        bdr:T360 .
+        :workIsAbout        bdr:P2387 , bdr:T360 .
 }

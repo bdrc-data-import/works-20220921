@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS29192 {
+    bda:LG1C349A2CED8AE3CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-10T14:02:24.592Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, topic"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG3053E1A58651BA6D
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-10-31T12:15:02.863Z"^^xsd:dateTime ;
@@ -27,19 +33,26 @@ bdg:WA8LS29192 {
     bda:WA8LS29192  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS29192 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "09/WA8LS29192.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS29192 ;
-        adm:logEntry        bda:LG3053E1A58651BA6D , bda:LGD0DDF71F38AB1F12 ;
+        adm:logEntry        bda:LG1C349A2CED8AE3CE , bda:LG3053E1A58651BA6D , bda:LGD0DDF71F38AB1F12 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR56E322B613A1E1C4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8968 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS29192  a       :Work ;
         skos:prefLabel      "mtshungs med chos rje blo gros rnam rgyal gyi rnam thar thos grol rab gsal myur du smin byed/"@bo-x-ewts ;
-        :catalogInfo        "1 rje ngag dbang 'phrin las kyi rnam thar nyung ngu rnam gsal/ 2 ngag dbang bstan 'dzin rnam rgyal gyi rnam thar nyung ngu rnam gsal yid ches gsum ldan/ 3 dpal ldan bla ma sprul sku kun bzang 'phrin las rnam rgyal gyi rnam thar dad pa'i ljon pa mdo tsam/ 4 gtsang chen bla ma'i rnam thar zla 'od gzhon nu'i 'khri shing skal bzang rnam mkhyen bsgrod pa'i 'jug ngog 5 rje btsun bla ma dam pa ngag dbang chos 'phel rgya mtsho'i rnam par thar pa yid bzhing dbang gi rgyal po/"@bo-x-ewts , "Biography of Lodro Namgyal by Rapjampa Ngawang Kunga Trinley."@en ;
+        :catalogInfo        "1 rje ngag dbang 'phrin las kyi rnam thar nyung ngu rnam gsal/ 2 ngag dbang bstan 'dzin rnam rgyal gyi rnam thar nyung ngu rnam gsal yid ches gsum ldan/ 3 dpal ldan bla ma sprul sku kun bzang 'phrin las rnam rgyal gyi rnam thar dad pa'i ljon pa mdo tsam/ 4 gtsang chen bla ma'i rnam thar zla 'od gzhon nu'i 'khri shing skal bzang rnam mkhyen bsgrod pa'i 'jug ngog 5 rje btsun bla ma dam pa ngag dbang chos 'phel rgya mtsho'i rnam par thar pa yid bzhing dbang gi rgyal po/"@bo-x-ewts , "Biography of Lodro Namgyal by Ngawang Trinley."@en ;
+        :creator            bdr:CR56E322B613A1E1C4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
-        :workHasInstance    bdr:MW8LS29192 , bdr:W8LS29192 .
+        :workHasInstance    bdr:MW8LS29192 , bdr:W8LS29192 ;
+        :workIsAbout        bdr:P10313 , bdr:T360 .
 }
