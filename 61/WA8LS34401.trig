@@ -29,6 +29,12 @@ bdg:WA8LS34401 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGCA11F1236D202B25
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T14:12:53.62Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -39,21 +45,28 @@ bdg:WA8LS34401 {
     bda:WA8LS34401  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS34401 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "61/WA8LS34401.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS34401 ;
-        adm:logEntry        bda:LG09393094778DB215 , bda:LG63D8E87E65A60266 , bda:LG747A5F85F94E0FD0 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG09393094778DB215 , bda:LG63D8E87E65A60266 , bda:LG747A5F85F94E0FD0 , bda:LGCA11F1236D202B25 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4A35E99442606DEA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75181 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS34401  a       :SerialMember , :Work ;
-        skos:prefLabel      "pha yul gyi ri klung mi tsher phyi mig bltas pa/"@bo-x-ewts ;
-        :catalogInfo        "Phuntshok Rabga's personal life account."@en ;
+        skos:prefLabel      "pha yul gyi ri klung / mi tsher phyi mig bltas pa/"@bo-x-ewts ;
+        :catalogInfo        "Autobiography of Phuntshok Rabga."@en ;
+        :creator            bdr:CR4A35E99442606DEA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG13996 ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW8LS34401 , bdr:W8LS34401 .
+        :workHasInstance    bdr:MW8LS34401 , bdr:W8LS34401 ;
+        :workIsAbout        bdr:P8LS75181 .
 }

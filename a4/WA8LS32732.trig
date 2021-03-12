@@ -18,6 +18,12 @@ bdg:WA8LS32732 {
         adm:logMessage      "created title"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGAFD4AC29CA9B725A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T10:45:34.373Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, topic"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGC310AE6B5CB40B49
         a                   adm:UpdateData ;
         adm:logDate         "2018-05-22T14:35:07.134Z"^^xsd:dateTime ;
@@ -39,20 +45,26 @@ bdg:WA8LS32732 {
     bda:WA8LS32732  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS32732 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "a4/WA8LS32732.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS32732 ;
-        adm:logEntry        bda:LGA2B1CF3655FA1EF8 , bda:LGC310AE6B5CB40B49 , bda:LGDA128D5E183E3748 , bda:LGDB4DABC00629798E ;
+        adm:logEntry        bda:LGA2B1CF3655FA1EF8 , bda:LGAFD4AC29CA9B725A , bda:LGC310AE6B5CB40B49 , bda:LGDA128D5E183E3748 , bda:LGDB4DABC00629798E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR1AA6B1920AF1B04B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5875 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS32732  a       :Work ;
         skos:prefLabel      "sangs rgyas dbon chen ras pa'i rnam thar sogs/"@bo-x-ewts ;
         :catalogInfo        "Biography of Sangye Wonchen Repa."@en ;
+        :creator            bdr:CR1AA6B1920AF1B04B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW8LS32732 , bdr:W8LS32732 ;
-        :workIsAbout        bdr:P912 .
+        :workIsAbout        bdr:P1718 , bdr:P2631 , bdr:P2632 , bdr:P2633 , bdr:P2635 , bdr:P606 , bdr:P912 , bdr:P913 , bdr:P914 , bdr:P916 , bdr:P918 , bdr:T816 .
 }

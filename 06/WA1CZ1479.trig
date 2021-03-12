@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1CZ1479 {
+    bda:LG17032C1CE9D24DB7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T12:09:22.134Z"^^xsd:dateTime ;
+        adm:logMessage      "Added topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG2C67731ACDA8DCC6
         a                   adm:UpdateData ;
         adm:logDate         "2014-01-14T14:15:05.632Z"^^xsd:dateTime ;
@@ -64,25 +70,27 @@ bdg:WA1CZ1479 {
     bda:WA1CZ1479  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1CZ1479 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "06/WA1CZ1479.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1CZ1479 ;
-        adm:logEntry        bda:LG2C67731ACDA8DCC6 , bda:LG3DA89B0DF8E78BC0 , bda:LGA3F768069C0FC34C , bda:LGBC86D1F88671EFCC , bda:LGC1E0BB840ED14CFE , bda:LGE1B2F76B8FB1121C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG17032C1CE9D24DB7 , bda:LG2C67731ACDA8DCC6 , bda:LG3DA89B0DF8E78BC0 , bda:LGA3F768069C0FC34C , bda:LGBC86D1F88671EFCC , bda:LGC1E0BB840ED14CFE , bda:LGE1B2F76B8FB1121C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR17032C1CE9D24DB7
+    bdr:CRF4A551E957B0A150
         a                   :AgentAsCreator ;
         :agent              bdr:P2465 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1CZ1479  a        :Work ;
-        skos:prefLabel      "'jam dbyangs chos rje rin chen rgyal mtshan pa'i gsung sgros kha yar/"@bo-x-ewts ;
-        :catalogInfo        "Miscellaneous Writings by Sakya scholar Jamyang Rinchen Gyaltsen."@en ;
-        :creator            bdr:CR17032C1CE9D24DB7 ;
+        skos:altLabel       "'jam dbyangs chos rje rin chen rgyal mtshan pa'i gsung sgros kha yar/"@bo-x-ewts ;
+        skos:prefLabel      "gsung thor bu/ 'jam dbyangs chos rje rin chen rgyal mtshan/"@bo-x-ewts ;
+        :catalogInfo        "Miscellaneous writings by Sakya scholar Jamyang Rinchen Gyaltsen."@en ;
+        :creator            bdr:CRF4A551E957B0A150 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW1CZ1479 , bdr:W1CZ1479 .
+        :workHasInstance    bdr:MW1CZ1479 , bdr:W1CZ1479 ;
+        :workIsAbout        bdr:T617 .
 }

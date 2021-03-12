@@ -18,6 +18,12 @@ bdg:WA2KG209273 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG69B79CE59793D379
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T18:43:30.815Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGD4F272C3C0FDF169
         a                   adm:UpdateData ;
         adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
@@ -46,15 +52,15 @@ bdg:WA2KG209273 {
     bda:WA2KG209273  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG209273 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "f4/WA2KG209273.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG209273 ;
-        adm:logEntry        bda:LG3FDF6DFCFF602D5F , bda:LGD4F272C3C0FDF169 , bda:LGE5AA184507169FE8 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG3FDF6DFCFF602D5F , bda:LG69B79CE59793D379 , bda:LGD4F272C3C0FDF169 , bda:LGE5AA184507169FE8 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR69B79CE59793D379
+    bdr:CRF2D034ED121CC6A8
         a                   :AgentAsCreator ;
         :agent              bdr:P2KG209789 ;
         :role               bdr:R0ER0019 .
@@ -63,9 +69,10 @@ bdg:WA2KG209273 {
         skos:altLabel       "mang dge dgon lhag chos brtsegs lhun po'i ri sul gyi dben gnas brag dkar rgod tshang ri khrod pa dge legs yar 'phel gyi rnam thar dad pa'i yan lag"@bo-x-ewts ;
         skos:prefLabel      "dben gnas brag dkar rgod tshang ri khrod pa dge legs yar 'phel gyi rnam thar dad pa'i yan lag"@bo-x-ewts ;
         :catalogInfo        "The autobiography of a Gelug master Rikhrodpa Gelek Yarphel and a short biography by an unknown author named Arya."@en ;
-        :creator            bdr:CR69B79CE59793D379 ;
+        :creator            bdr:CRF2D034ED121CC6A8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW2KG209273 , bdr:W2KG209273 .
+        :workHasInstance    bdr:MW2KG209273 , bdr:W2KG209273 ;
+        :workIsAbout        bdr:P2KG209789 .
 }

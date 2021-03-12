@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS31146 {
+    bda:LG571BF562F137C0DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T08:25:03.246Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG95A87C7856F43847
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-01-17T15:12:47.072Z"^^xsd:dateTime ;
@@ -40,21 +46,27 @@ bdg:WA8LS31146 {
     bda:WA8LS31146  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS31146 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "27/WA8LS31146.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS31146 ;
-        adm:logEntry        bda:LG95A87C7856F43847 , bda:LGD6D8DED8C9DC82B9 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG571BF562F137C0DE , bda:LG95A87C7856F43847 , bda:LGD6D8DED8C9DC82B9 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR4177C0315CF5DF87
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10716 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS31146  a       :Work ;
         skos:altLabel       "dmyal ba mi yul gyi sa mtshams shi gson gnyis kyi bang chen bka'i 'phrin pa bya bral kun dga' rang grol gyi dmyal khams gnas su byon nas 'khor 'das kyi chos rgyal rin po che'i dkar nag dbye ba'i 'bras bu'i rnam thar mdo tsam/"@bo-x-ewts ;
         skos:prefLabel      "bya bral kun dga' rang grol gyi dmyal khams gnas su byon nas 'khor 'das kyi chos rgyal rin po che'i dkar nag dbye ba'i 'bras bu'i rnam thar mdo tsam/"@bo-x-ewts ;
-        :catalogInfo        "Biography of yogic master Kunga Rangdrol focussing on return from death experiences."@en ;
+        :catalogInfo        "Return from death experiences of yogic master Kunga Rangdrol."@en ;
+        :creator            bdr:CR4177C0315CF5DF87 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW8LS31146 , bdr:W8LS31146 ;
-        :workIsAbout        bdr:T1203 .
+        :workIsAbout        bdr:P10716 , bdr:T1082 , bdr:T1203 .
 }

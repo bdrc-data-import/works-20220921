@@ -24,6 +24,12 @@ bdg:WA8LS34532 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG9AD9E7A81F344390
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T15:01:13.315Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGF812E307807E4484
         a                   adm:UpdateData ;
         adm:logDate         "2018-06-18T08:37:34.321Z"^^xsd:dateTime ;
@@ -39,16 +45,16 @@ bdg:WA8LS34532 {
     bda:WA8LS34532  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS34532 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "8a/WA8LS34532.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS34532 ;
-        adm:logEntry        bda:LG5C6FC99505839A79 , bda:LG60DFF010CC963308 , bda:LGF812E307807E4484 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG5C6FC99505839A79 , bda:LG60DFF010CC963308 , bda:LG9AD9E7A81F344390 , bda:LGF812E307807E4484 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9AD9E7A81F344390
+    bdr:CRC558625A8A7663D7
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS34533 ;
         :role               bdr:R0ER0019 .
@@ -57,9 +63,10 @@ bdg:WA8LS34532 {
         skos:altLabel       "dpyid nyi ring po la drod gsum grang gsum yod/ mi tshe'i ring po la skyid gsum sdug gsum byung /zhe bo blo bzang dar rgyas kyi mi tshe'i byung ba brjod pa/"@bo-x-ewts ;
         skos:prefLabel      "zhe bo blo bzang dar rgyas kyi mi tshe'i byung ba brjod pa/"@bo-x-ewts ;
         :catalogInfo        "An autobiography of Zhewo Losang Dargyey."@en ;
-        :creator            bdr:CR9AD9E7A81F344390 ;
+        :creator            bdr:CRC558625A8A7663D7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW8LS34532 , bdr:W8LS34532 .
+        :workHasInstance    bdr:MW8LS34532 , bdr:W8LS34532 ;
+        :workIsAbout        bdr:P8LS34533 .
 }

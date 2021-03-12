@@ -17,6 +17,12 @@ bdg:WA8LS34826 {
         adm:logDate         "2018-06-18T12:11:13.881Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG21BD283651A9DECF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T16:15:20.12Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG37093A73B6CFB58F
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-06-18T12:08:51.772Z"^^xsd:dateTime ;
@@ -39,16 +45,16 @@ bdg:WA8LS34826 {
     bda:WA8LS34826  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS34826 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "50/WA8LS34826.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS34826 ;
-        adm:logEntry        bda:LG029B14CA7FF63C74 , bda:LG37093A73B6CFB58F , bda:LG52059B1DA43B2A84 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG029B14CA7FF63C74 , bda:LG21BD283651A9DECF , bda:LG37093A73B6CFB58F , bda:LG52059B1DA43B2A84 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR21BD283651A9DECF
+    bdr:CRE173C79EA250CA0E
         a                   :AgentAsCreator ;
         :agent              bdr:P9174 ;
         :role               bdr:R0ER0019 .
@@ -57,9 +63,10 @@ bdg:WA8LS34826 {
         skos:altLabel       "bka' zur lcog steng thub bstan nor bzang gis 1926 nas 1968 bar 7rgyal dbang sku thog gnyis kyi srid zhu'i skor/"@bo-x-ewts ;
         skos:prefLabel      "bya ba las kyi 'khor lo'i rnam gzhag"@bo-x-ewts ;
         :catalogInfo        "The life account of Kazur Chokteng Thupten Norzang."@en ;
-        :creator            bdr:CR21BD283651A9DECF ;
+        :creator            bdr:CRE173C79EA250CA0E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW8LS34826 , bdr:W8LS34826 .
+        :workHasInstance    bdr:MW8LS34826 , bdr:W8LS34826 ;
+        :workIsAbout        bdr:P9174 .
 }

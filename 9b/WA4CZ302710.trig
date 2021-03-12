@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ302710 {
+    bda:LG5704C9FD0915C0FA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T12:09:25.235Z"^^xsd:dateTime ;
+        adm:logMessage      "Added topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGB3DAD68E2E95B986
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-04-30T12:05:50.504Z"^^xsd:dateTime ;
@@ -32,15 +38,15 @@ bdg:WA4CZ302710 {
     bda:WA4CZ302710  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ302710 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "9b/WA4CZ302710.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ302710 ;
-        adm:logEntry        bda:LGB3DAD68E2E95B986 , bda:LGC5A13DD300283089 , bda:LGEB00A887E3035045 ;
+        adm:logEntry        bda:LG5704C9FD0915C0FA , bda:LGB3DAD68E2E95B986 , bda:LGC5A13DD300283089 , bda:LGEB00A887E3035045 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5704C9FD0915C0FA
+    bdr:CR0C712134C39E975E
         a                   :AgentAsCreator ;
         :agent              bdr:P2778 ;
         :role               bdr:R0ER0019 .
@@ -49,9 +55,10 @@ bdg:WA4CZ302710 {
         skos:altLabel       "grub chen thang stong rgyal po'i rdo rje'i gsung sa skya'i nad grol mar grags pa'i smon lam byin rlabs can/"@bo-x-ewts , "thang stong rgyal' po'i gsung thor bu/"@bo-x-ewts ;
         skos:prefLabel      "gsung thor bu/ thang stong rgyal po/"@bo-x-ewts ;
         :catalogInfo        "Miscellaneous Writings by Thangtong Gyalpo, Mahasiddha and iron-bridge builder"@en ;
-        :creator            bdr:CR5704C9FD0915C0FA ;
+        :creator            bdr:CR0C712134C39E975E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW4CZ302710 , bdr:W4CZ302710 .
+        :workHasInstance    bdr:MW4CZ302710 , bdr:W4CZ302710 ;
+        :workIsAbout        bdr:T383 .
 }

@@ -18,6 +18,12 @@ bdg:WA4CZ321179 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LG28CED0AB62332BC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T12:09:28.34Z"^^xsd:dateTime ;
+        adm:logMessage      "Added topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG60C8009DDED8E2CD
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-11-19T09:47:18.821Z"^^xsd:dateTime ;
@@ -46,15 +52,15 @@ bdg:WA4CZ321179 {
     bda:WA4CZ321179  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ321179 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "2c/WA4CZ321179.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ321179 ;
-        adm:logEntry        bda:LG134E7EBE5E3B2179 , bda:LG60C8009DDED8E2CD , bda:LG62506A0D7DEF9FE1 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG134E7EBE5E3B2179 , bda:LG28CED0AB62332BC3 , bda:LG60C8009DDED8E2CD , bda:LG62506A0D7DEF9FE1 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR28CED0AB62332BC3
+    bdr:CR1641CFE032E5BAA3
         a                   :AgentAsCreator ;
         :agent              bdr:P1656 ;
         :role               bdr:R0ER0019 .
@@ -63,9 +69,10 @@ bdg:WA4CZ321179 {
         skos:altLabel       "khyung sprul 'jigs med nam mkha'i rdo rje'i gsung thor bu/"@bo-x-ewts ;
         skos:prefLabel      "gsung thor bu/ khyung sprul 'jigs med nam mkha'i rdo rje/"@bo-x-ewts ;
         :catalogInfo        "Miscellaneous writings by one of the famous Bonpo author Jigmey Namkha Dorjee."@en ;
-        :creator            bdr:CR28CED0AB62332BC3 ;
+        :creator            bdr:CR1641CFE032E5BAA3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW4CZ321179 , bdr:W4CZ321179 .
+        :workHasInstance    bdr:MW4CZ321179 , bdr:W4CZ321179 ;
+        :workIsAbout        bdr:T247 .
 }

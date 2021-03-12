@@ -30,18 +30,24 @@ bdg:WA8LS31891 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGF36DB2EBA6B0DB1F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T08:38:26.514Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, topic"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS31891  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS31891 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "31/WA8LS31891.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS31891 ;
-        adm:logEntry        bda:LG4DC9619DDE82A78A , bda:LG7AB95FB847AA2DAA , bda:LG852A10DB8F169B46 ;
+        adm:logEntry        bda:LG4DC9619DDE82A78A , bda:LG7AB95FB847AA2DAA , bda:LG852A10DB8F169B46 , bda:LGF36DB2EBA6B0DB1F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF36DB2EBA6B0DB1F
+    bdr:CR814805AD46554E21
         a                   :AgentAsCreator ;
         :agent              bdr:P287 ;
         :role               bdr:R0ER0019 .
@@ -49,9 +55,10 @@ bdg:WA8LS31891 {
     bdr:WA8LS31891  a       :Work ;
         skos:prefLabel      "'gro mgon zhabs dkar ba'i sku tshe smad kyi rnam thar thog mthar bar du dge ba yid bzhin nor bu dgos 'dod kun byung /"@bo-x-ewts ;
         :catalogInfo        "Autobiography of Zhabkar Tshodruk Rangdrol, second part."@en ;
-        :creator            bdr:CRF36DB2EBA6B0DB1F ;
+        :creator            bdr:CR814805AD46554E21 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW8LS31891 , bdr:W8LS31891 .
+        :workHasInstance    bdr:MW8LS31891 , bdr:W8LS31891 ;
+        :workIsAbout        bdr:P287 , bdr:T1082 .
 }

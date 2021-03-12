@@ -29,6 +29,12 @@ bdg:WA8LS34529 {
         adm:logDate         "2018-06-13T15:35:35.284Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG997311C20B7475DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T14:48:06.202Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, translator, edtition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -39,21 +45,28 @@ bdg:WA8LS34529 {
     bda:WA8LS34529  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS34529 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "92/WA8LS34529.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS34529 ;
-        adm:logEntry        bda:LG0CF2898D14269B21 , bda:LG5B2DAB53BA567D04 , bda:LG7A9C634238A33BFE , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG0CF2898D14269B21 , bda:LG5B2DAB53BA567D04 , bda:LG7A9C634238A33BFE , bda:LG997311C20B7475DE , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR6784D303893C228A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75183 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS34529  a       :Work ;
         skos:altLabel       "dran par 'os pa'i a ma a bde'i 'bod sgra bud med cig gi bod rang dbang slad lo rgyus rang bzhin ldan pa'i 'thab rtsod/"@bo-x-ewts ;
         skos:prefLabel      "dran par 'os pa'i a ma a bde'i 'bod sgra/"@bo-x-ewts ;
-        :catalogInfo        "Tibetan version of Ama Adhe's life account, translated into Tibetan by Buchung Tsering."@en ;
+        :catalogInfo        "Tibetan version of Ama Adhe's life account; translated into Tibetan by Buchung Tsering."@en ;
+        :creator            bdr:CR6784D303893C228A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T3 ;
-        :workHasInstance    bdr:MW8LS34529 , bdr:W8LS34529 .
+        :workHasInstance    bdr:MW8LS34529 , bdr:W8LS34529 ;
+        :workIsAbout        bdr:P8LS75182 .
 }

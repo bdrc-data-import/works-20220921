@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM911 {
+    bda:LG4CD9ADA9BBAD75A7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T10:01:16.628Z"^^xsd:dateTime ;
+        adm:logMessage      "added Uncontroled topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG5F07470142E25013
         a                   adm:UpdateData ;
         adm:logDate         "2020-03-25T09:58:47.634Z"^^xsd:dateTime ;
@@ -51,15 +57,15 @@ bdg:WA1NLM911 {
     bda:WA1NLM911  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM911 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "6e/WA1NLM911.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM911 ;
-        adm:logEntry        bda:LG5F07470142E25013 , bda:LG6EB1B9813F62F315 , bda:LG9688A5B478DB243B , bda:LGB7FF51CC5CA09CA2 , bda:LGC810EB662B7D58B6 , bda:LGIM567371A3 ;
+        adm:logEntry        bda:LG4CD9ADA9BBAD75A7 , bda:LG5F07470142E25013 , bda:LG6EB1B9813F62F315 , bda:LG9688A5B478DB243B , bda:LGB7FF51CC5CA09CA2 , bda:LGC810EB662B7D58B6 , bda:LGIM567371A3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4CD9ADA9BBAD75A7
+    bdr:CR629425AF14C6B985
         a                   :AgentAsCreator ;
         :agent              bdr:P6418 ;
         :role               bdr:R0ER0019 .
@@ -68,9 +74,10 @@ bdg:WA1NLM911 {
         skos:altLabel       "mkhan chen chos kyi rgyal po'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "mkhan chen chos kyi rgyal po'i gsung skor/"@bo-x-ewts ;
         :catalogInfo        "Sellected Works by Lhatsun Nomihan Lobsang Tenzin Gyaltsan"@en ;
-        :creator            bdr:CR4CD9ADA9BBAD75A7 ;
+        :creator            bdr:CR629425AF14C6B985 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW1NLM911 , bdr:W1NLM911 .
+        :workHasInstance    bdr:MW1NLM911 , bdr:W1NLM911 ;
+        :workIsAbout        bdr:T819 .
 }

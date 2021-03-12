@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM592 {
+    bda:LG91F966B751B4AB8E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T10:01:15.613Z"^^xsd:dateTime ;
+        adm:logMessage      "added Uncontroled topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGA12F7F701001F9E3
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -33,15 +39,15 @@ bdg:WA1NLM592 {
     bda:WA1NLM592  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM592 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c6/WA1NLM592.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM592 ;
-        adm:logEntry        bda:LGA12F7F701001F9E3 , bda:LGE5015C3C372D99B2 , bda:LGIM567371A3 ;
+        adm:logEntry        bda:LG91F966B751B4AB8E , bda:LGA12F7F701001F9E3 , bda:LGE5015C3C372D99B2 , bda:LGIM567371A3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR91F966B751B4AB8E
+    bdr:CR0B3E6C9906FDF349
         a                   :AgentAsCreator ;
         :agent              bdr:P261 ;
         :role               bdr:R0ER0019 .
@@ -50,9 +56,10 @@ bdg:WA1NLM592 {
         skos:altLabel       "khal kha rje btsun sku phreng lnga pa'i gsung thor bu/"@bo-x-ewts ;
         skos:prefLabel      "gsung thor bu/ blo bzang tshul khrims 'jigs med bstan pa'i rgyal mtsham/"@bo-x-ewts ;
         :catalogInfo        "Miscellany writings of fifth Khalkha Jetsun Dampa."@en ;
-        :creator            bdr:CR91F966B751B4AB8E ;
+        :creator            bdr:CR0B3E6C9906FDF349 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW1NLM592 , bdr:W1NLM592 .
+        :workHasInstance    bdr:MW1NLM592 , bdr:W1NLM592 ;
+        :workIsAbout        bdr:T819 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM927 {
+    bda:LG39E03FC77C936617
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T10:01:17.105Z"^^xsd:dateTime ;
+        adm:logMessage      "added Uncontroled topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG8AD9BB8A70AD3057
         a                   adm:UpdateData ;
         adm:logDate         "2020-03-20T15:48:04.113Z"^^xsd:dateTime ;
@@ -39,15 +45,15 @@ bdg:WA1NLM927 {
     bda:WA1NLM927  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM927 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "2b/WA1NLM927.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM927 ;
-        adm:logEntry        bda:LG8AD9BB8A70AD3057 , bda:LGCD5CF429DC4677F8 , bda:LGDB4A45E6157B0BB6 , bda:LGIM567371A3 ;
+        adm:logEntry        bda:LG39E03FC77C936617 , bda:LG8AD9BB8A70AD3057 , bda:LGCD5CF429DC4677F8 , bda:LGDB4A45E6157B0BB6 , bda:LGIM567371A3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR39E03FC77C936617
+    bdr:CRB10930347082CF95
         a                   :AgentAsCreator ;
         :agent              bdr:P272 ;
         :role               bdr:R0ER0019 .
@@ -56,9 +62,10 @@ bdg:WA1NLM927 {
         skos:altLabel       "'jam mgon bla ma tsong kha pa chen po la phyag mchod gsol 'debs ji ltar bya ba'i chog bsgrigs yid dga' chos 'dzin du 'grod pa'i them skas/"@bo-x-ewts , "sems dang sems byung sdom du byas pa'i tshigs su bcad pa/"@bo-x-ewts ;
         skos:prefLabel      "ston pa thub pa'i dbang po'i 'khrungs rabs rnam thar rjes su dran pa'i sgo nas phyag mchod gsol 'debs byed pa'i chog legs tshogs 'byung gnas/"@bo-x-ewts ;
         :catalogInfo        "Works by prominent Buddhist master of 19th century Mongolia, Ngawang Pelden."@en ;
-        :creator            bdr:CR39E03FC77C936617 ;
+        :creator            bdr:CRB10930347082CF95 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW1NLM927 , bdr:W1NLM927 .
+        :workHasInstance    bdr:MW1NLM927 , bdr:W1NLM927 ;
+        :workIsAbout        bdr:T819 .
 }

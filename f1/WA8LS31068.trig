@@ -24,6 +24,12 @@ bdg:WA8LS31068 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGFDC83755F7FDE844
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T08:16:47.366Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, topic"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -40,15 +46,15 @@ bdg:WA8LS31068 {
     bda:WA8LS31068  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS31068 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f1/WA8LS31068.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS31068 ;
-        adm:logEntry        bda:LG6A1149C12CFC20FF , bda:LG9A34F62BB4AAACB2 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG6A1149C12CFC20FF , bda:LG9A34F62BB4AAACB2 , bda:LGFDC83755F7FDE844 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFDC83755F7FDE844
+    bdr:CR3DE59FC4C213CF68
         a                   :AgentAsCreator ;
         :agent              bdr:P711 ;
         :role               bdr:R0ER0019 .
@@ -56,11 +62,11 @@ bdg:WA8LS31068 {
     bdr:WA8LS31068  a       :Work ;
         skos:altLabel       "rong ston chos kyi rgyal po grub dbang skal ldan rgya mtsho'i gsung las bla ma'i rnam thar gyi rim pa 'jam dpal bstan pa'i mdzes rgyan/"@bo-x-ewts ;
         skos:prefLabel      "bla ma'i rnam thar gyi rim pa 'jam dpal bstan pa'i mdzes rgyan/"@bo-x-ewts ;
-        :catalogInfo        "A collection of biography of eminent Gelukpa master by Rongpo Drupchen Kelden Gyatsho."@en ;
-        :creator            bdr:CRFDC83755F7FDE844 ;
+        :catalogInfo        "Biography of Sera Jetsun Chokyi Gyaltshen and spiritual songs by Rongpo Drupchen Kelden Gyatsho."@en ;
+        :creator            bdr:CR3DE59FC4C213CF68 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T3 ;
+        :workGenre          bdr:T3 , bdr:T6 ;
         :workHasInstance    bdr:MW8LS31068 , bdr:W8LS31068 ;
-        :workIsAbout        bdr:T167 , bdr:T819 .
+        :workIsAbout        bdr:P477 , bdr:T58 , bdr:T819 .
 }

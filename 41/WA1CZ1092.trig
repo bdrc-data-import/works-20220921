@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1CZ1092 {
+    bda:LG1634408E7800E9CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-11T10:01:12.94Z"^^xsd:dateTime ;
+        adm:logMessage      "added Uncontroled topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG6C52EF2D3212CDE8
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-13T15:27:16.063Z"^^xsd:dateTime ;
@@ -48,15 +54,15 @@ bdg:WA1CZ1092 {
     bda:WA1CZ1092  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1CZ1092 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "41/WA1CZ1092.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1CZ1092 ;
-        adm:logEntry        bda:LG6C52EF2D3212CDE8 , bda:LG88A7FF887337E132 , bda:LG9054F42825B37C59 , bda:LG9402A1FF82E489BC , bda:LG9B2A227E2A5E4FDA , bda:LGA78E3F9ED8D1500F ;
+        adm:logEntry        bda:LG1634408E7800E9CF , bda:LG6C52EF2D3212CDE8 , bda:LG88A7FF887337E132 , bda:LG9054F42825B37C59 , bda:LG9402A1FF82E489BC , bda:LG9B2A227E2A5E4FDA , bda:LGA78E3F9ED8D1500F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1634408E7800E9CF
+    bdr:CR162D56F2676ADF43
         a                   :AgentAsCreator ;
         :agent              bdr:P2090 ;
         :role               bdr:R0ER0019 .
@@ -64,9 +70,11 @@ bdg:WA1CZ1092 {
     bdr:WA1CZ1092  a        :Work ;
         skos:altLabel       "chos rje rgod tshang pa'i gsung sgros gser gyi 'phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "gsung sgros gser gyi 'phreng ba/"@bo-x-ewts ;
-        :creator            bdr:CR1634408E7800E9CF ;
+        :catalogInfo        "Miscellaneous Writings by the great master Gotsangpa Gonpo Dorje (1189-1258"@en ;
+        :creator            bdr:CR162D56F2676ADF43 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW1CZ1092 , bdr:W1CZ1092 .
+        :workHasInstance    bdr:MW1CZ1092 , bdr:W1CZ1092 ;
+        :workIsAbout        bdr:T816 .
 }
