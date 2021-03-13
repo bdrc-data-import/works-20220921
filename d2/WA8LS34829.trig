@@ -23,6 +23,12 @@ bdg:WA8LS34829 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG9E8D73C14723EEDC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-12T08:28:23.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGB3B724E9E918F142
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-06-18T12:29:54.052Z"^^xsd:dateTime ;
@@ -39,21 +45,28 @@ bdg:WA8LS34829 {
     bda:WA8LS34829  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS34829 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "d2/WA8LS34829.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS34829 ;
-        adm:logEntry        bda:LG3505BB638E19B573 , bda:LG62718A0FB8928669 , bda:LGB3B724E9E918F142 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG3505BB638E19B573 , bda:LG62718A0FB8928669 , bda:LG9E8D73C14723EEDC , bda:LGB3B724E9E918F142 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRF62E761D8EB8B500
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75184 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS34829  a       :Work ;
         skos:altLabel       "nga'i pha yul dang zhi ba'i bcings grol/ rin bzang gi mu 'brel zin tho/"@bo-x-ewts ;
         skos:prefLabel      "nga'i pha yul dang zhi ba'i bcings grol/"@bo-x-ewts ;
         :catalogInfo        "The life account of Rinsang."@en ;
+        :creator            bdr:CRF62E761D8EB8B500 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW1TLMTGB000049 , bdr:MW8LS34829 , bdr:W8LS34829 .
+        :workHasInstance    bdr:MW1TLMTGB000049 , bdr:MW8LS34829 , bdr:W8LS34829 ;
+        :workIsAbout        bdr:P8LS75184 .
 }

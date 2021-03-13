@@ -30,18 +30,24 @@ bdg:WA2KG217491 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGF87E77296392CAB5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-12T18:37:25.688Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG217491  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG217491 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "0b/WA2KG217491.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG217491 ;
-        adm:logEntry        bda:LG71CC093846F34239 , bda:LG97B8E1B03703C02D , bda:LGBD242E412D4D2005 ;
+        adm:logEntry        bda:LG71CC093846F34239 , bda:LG97B8E1B03703C02D , bda:LGBD242E412D4D2005 , bda:LGF87E77296392CAB5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF87E77296392CAB5
+    bdr:CRF0E3521E39D7E862
         a                   :AgentAsCreator ;
         :agent              bdr:P4007 ;
         :role               bdr:R0ER0019 .
@@ -49,10 +55,11 @@ bdg:WA2KG217491 {
     bdr:WA2KG217491  a      :Work ;
         skos:altLabel       "pan grub gsum gyi rnam thar dpag bsam 'khril shing /"@bo-x-ewts , "paN grub gsum gyi rnam thar dpag bsam 'khri shing /"@bo-x-ewts ;
         skos:prefLabel      "khro phu lo tsA ba byams pa dpal gyi rang rnam/"@bo-x-ewts ;
-        :catalogInfo        "Autobiography of Tropu Lotsawa Jampa Pel (1173-1225), the later translator of the Tropu Kagyu order."@en ;
-        :creator            bdr:CRF87E77296392CAB5 ;
+        :catalogInfo        "Autobiography of Trophu Lotsawa Jampa Pel (1173-1225), the later translator of the Tropu Kagyu order."@en ;
+        :creator            bdr:CRF0E3521E39D7E862 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW2KG217491 , bdr:W2KG217491 .
+        :workHasInstance    bdr:MW2KG217491 , bdr:W2KG217491 ;
+        :workIsAbout        bdr:P4007 .
 }

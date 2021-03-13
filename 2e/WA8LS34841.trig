@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS34841 {
+    bda:LG195F928D7B3B96ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-12T11:09:53.463Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, topic, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG314B772C86DD17D4
         a                   adm:UpdateData ;
         adm:logDate         "2018-06-19T09:49:04.105Z"^^xsd:dateTime ;
@@ -45,26 +51,27 @@ bdg:WA8LS34841 {
     bda:WA8LS34841  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS34841 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "2e/WA8LS34841.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS34841 ;
-        adm:logEntry        bda:LG314B772C86DD17D4 , bda:LGA903B5E0EF2B50E1 , bda:LGAE126C7AB54FAB0E , bda:LGB315079A50228920 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG195F928D7B3B96ED , bda:LG314B772C86DD17D4 , bda:LGA903B5E0EF2B50E1 , bda:LGAE126C7AB54FAB0E , bda:LGB315079A50228920 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR195F928D7B3B96ED
+    bdr:CR6F84F87DB3DABB4D
         a                   :AgentAsCreator ;
         :agent              bdr:P6143 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA8LS34841  a       :Work ;
         skos:prefLabel      "rmi lam lta bu'i 'jig rten 'dir 'tsho tshul cung zad brjod pa dngos byung sems kyi rlabs ris/"@bo-x-ewts ;
-        :catalogInfo        "An autobiography of Washul Sogen Tulku Pema Lodro."@en ;
-        :creator            bdr:CR195F928D7B3B96ED ;
+        :catalogInfo        "An autobiography of Washul Sogen Tulku Pema Lodro; edited by Zodge Yeshe Gyatsho."@en ;
+        :creator            bdr:CR6F84F87DB3DABB4D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW8LS34841 , bdr:W8LS34841 .
+        :workHasInstance    bdr:MW8LS34841 , bdr:W8LS34841 ;
+        :workIsAbout        bdr:P6143 , bdr:T1082 .
 }

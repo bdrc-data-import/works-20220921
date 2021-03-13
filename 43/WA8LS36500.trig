@@ -46,6 +46,12 @@ bdg:WA8LS36500 {
         adm:logDate         "2018-10-25T09:37:53.134Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGCA23498C943399C4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-12T12:09:47.304Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGDD0F6ACA8ECD34D0
         a                   adm:UpdateData ;
         adm:logDate         "2018-10-25T09:41:16.114Z"^^xsd:dateTime ;
@@ -62,21 +68,28 @@ bdg:WA8LS36500 {
     bda:WA8LS36500  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS36500 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "43/WA8LS36500.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS36500 ;
-        adm:logEntry        bda:LG12DF97F602EAAA1D , bda:LG17BC7E90ED5B13F4 , bda:LG3376E154982DE8CE , bda:LG5A0B327891AFD1F2 , bda:LG79AC8AB0CF3A308E , bda:LG97AB09DEA83B25B9 , bda:LGDD0F6ACA8ECD34D0 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG12DF97F602EAAA1D , bda:LG17BC7E90ED5B13F4 , bda:LG3376E154982DE8CE , bda:LG5A0B327891AFD1F2 , bda:LG79AC8AB0CF3A308E , bda:LG97AB09DEA83B25B9 , bda:LGCA23498C943399C4 , bda:LGDD0F6ACA8ECD34D0 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR6A8B834642F0D5A9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75186 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS36500  a       :Work ;
         skos:altLabel       "yongs khyab rgyal po'i bod ljongs cig sgril mang gtso gtsang ma'i me long /"@bo-x-ewts ;
         skos:prefLabel      "bod ljongs cig sgril mang gtso gtsang ma'i me long /"@bo-x-ewts ;
         :catalogInfo        "Life account and Tibetan freedom movement by Phadruk Chophuk Nyima Gyalpo."@en ;
+        :creator            bdr:CR6A8B834642F0D5A9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1134 , bdr:T1CZ60 , bdr:T297 ;
-        :workHasInstance    bdr:MW8LS36500 , bdr:W8LS36500 .
+        :workGenre          bdr:T1134 , bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW8LS36500 , bdr:W8LS36500 ;
+        :workIsAbout        bdr:P8LS75186 .
 }

@@ -30,6 +30,12 @@ bdg:WA4CZ74082 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGDC19684648BD1BCC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-12T09:40:54.633Z"^^xsd:dateTime ;
+        adm:logMessage      "Added topics"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -40,19 +46,21 @@ bdg:WA4CZ74082 {
     bda:WA4CZ74082  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ74082 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "1c/WA4CZ74082.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ74082 ;
-        adm:logEntry        bda:LG089DF22A933F431F , bda:LG35F45A58C5F4EBDC , bda:LG7EA711D68F1B8187 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG089DF22A933F431F , bda:LG35F45A58C5F4EBDC , bda:LG7EA711D68F1B8187 , bda:LGDC19684648BD1BCC , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA4CZ74082  a       :Work ;
-        skos:prefLabel      "ko'u sde dgon rdzogs chen rnam rgyal gling du shing dpar dkon rigs/"@bo-x-ewts ;
+        skos:altLabel       "ko'u sde dgon rdzogs chen rnam rgyal gling du shing dpar dkon rigs dang cho ga'i skor/"@bo-x-ewts ;
+        skos:prefLabel      "rdzogs chen rnam rgyal gling du shing dpar dkon rigs dang cho ga'i skor/"@bo-x-ewts ;
         :catalogInfo        "Collection of rare wood blocks from Ko'ude Zogchen Namgyalling Monastery, Rebgong County, Huangnan Tibetan Autonomous Prefecture, Qinghai Province."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1081 , bdr:T413 ;
-        :workHasInstance    bdr:MW4CZ74082 , bdr:W4CZ74082 .
+        :workGenre          bdr:T1081 , bdr:T225 ;
+        :workHasInstance    bdr:MW4CZ74082 , bdr:W4CZ74082 ;
+        :workIsAbout        bdr:T354 .
 }
