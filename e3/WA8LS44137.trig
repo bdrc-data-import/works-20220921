@@ -18,6 +18,12 @@ bdg:WA8LS44137 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGCC1F43844342A412
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-15T10:17:31.051Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGCF332FF5B1EF75E8
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-04-01T14:56:15.735Z"^^xsd:dateTime ;
@@ -34,21 +40,27 @@ bdg:WA8LS44137 {
     bda:WA8LS44137  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS44137 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "e3/WA8LS44137.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS44137 ;
-        adm:logEntry        bda:LG0625A47944040156 , bda:LGCF332FF5B1EF75E8 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG0625A47944040156 , bda:LGCC1F43844342A412 , bda:LGCF332FF5B1EF75E8 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4B597B28237A093F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75191 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS44137  a       :Work ;
         skos:prefLabel      "la stod lhor 'khrungs pa'i pan grub khag gcig gi rnam thar phyogs bsdus/"@bo-x-ewts ;
         :catalogInfo        "A short of biography of scholar and practitioner from Latod Lho area of Western Tibet."@en ;
+        :creator            bdr:CR4B597B28237A093F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW8LS44137 , bdr:W8LS44137 ;
-        :workIsAbout        bdr:G4794 .
+        :workIsAbout        bdr:G4794 , bdr:P0RK1573 , bdr:P1046 , bdr:P1052 , bdr:P1179 , bdr:P1238 , bdr:P1448 , bdr:P1514 , bdr:P1798 , bdr:P1989 , bdr:P1GS88476 , bdr:P2085 , bdr:P2088 , bdr:P2201 , bdr:P2388 , bdr:P2455 , bdr:P2627 , bdr:P3143 , bdr:P4206 , bdr:P4CZ10557 , bdr:P5262 , bdr:P5297 , bdr:P8414 , bdr:P960 .
 }

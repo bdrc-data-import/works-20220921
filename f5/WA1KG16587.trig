@@ -12,11 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG16587 {
-    bda:LG061C6AFB026855E3
-        a                   adm:UpdateData ;
-        adm:logDate         "2017-04-20T00:04:41.344Z"^^xsd:dateTime ;
-        adm:logWho          bdu:U00021 .
-    
     bda:LG89152D6804F2BADC
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-02-03T11:46:54.615Z"^^xsd:dateTime ;
@@ -28,6 +23,12 @@ bdg:WA1KG16587 {
         adm:logDate         "2016-11-09T23:39:40.628Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGD1E17B79F9D7A56F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-15T15:56:54.721Z"^^xsd:dateTime ;
+        adm:logMessage      "added subject"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
@@ -56,7 +57,7 @@ bdg:WA1KG16587 {
         adm:gitPath         "f5/WA1KG16587.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG16587 ;
-        adm:logEntry        bda:LG061C6AFB026855E3 , bda:LG89152D6804F2BADC , bda:LGAA6C8BA4C3EF5255 , bda:LGIM6C9E48233B , bda:LGIM74A445C794 , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG89152D6804F2BADC , bda:LGAA6C8BA4C3EF5255 , bda:LGD1E17B79F9D7A56F , bda:LGIM6C9E48233B , bda:LGIM74A445C794 , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -71,6 +72,7 @@ bdg:WA1KG16587 {
         :creator            bdr:CR0BAA2A4092CC39E4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1081 , bdr:T208 ;
-        :workHasInstance    bdr:MW1KG16587 , bdr:W1KG16587 .
+        :workGenre          bdr:T1081 , bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW1KG16587 , bdr:W1KG16587 ;
+        :workIsAbout        bdr:T808 .
 }

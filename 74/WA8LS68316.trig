@@ -24,6 +24,12 @@ bdg:WA8LS68316 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LG87F6CB47DA83B1B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-16T14:27:55.288Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, editor"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGF037302559DE2083
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-02-04T15:09:46.413Z"^^xsd:dateTime ;
@@ -33,11 +39,11 @@ bdg:WA8LS68316 {
     bda:WA8LS68316  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68316 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "74/WA8LS68316.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68316 ;
-        adm:logEntry        bda:LG08EA26E9FDDDE1E6 , bda:LG1F666C51EA91060D , bda:LGF037302559DE2083 ;
+        adm:logEntry        bda:LG08EA26E9FDDDE1E6 , bda:LG1F666C51EA91060D , bda:LG87F6CB47DA83B1B0 , bda:LGF037302559DE2083 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -45,10 +51,10 @@ bdg:WA8LS68316 {
     
     bdr:WA8LS68316  a       :Work ;
         skos:prefLabel      "'khrab khrid pa drug cu/"@bo-x-ewts , "Sixty Movie Directors"@en ;
-        :catalogInfo        "A short biography of sixty world reknown movie director; translated by Jamtruk."@en ;
+        :catalogInfo        "A short account of world reknown movie director; edited by Jamtruk."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1157 , bdr:T3 ;
         :workHasInstance    bdr:MW8LS68316 , bdr:W8LS68316 ;
-        :workIsAbout        bdr:T256 .
+        :workIsAbout        bdr:P8LS75197 , bdr:T256 .
 }

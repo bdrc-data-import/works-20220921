@@ -18,9 +18,15 @@ bdg:WA24590 {
         adm:logMessage      "added catalogue info"@en ;
         adm:logWho          bdu:U00081 .
     
-    bda:LGA988B85DD539AD14
+    bda:LG918666F1FD92DC0D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGA988B85DD539AD14
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-16T16:45:31.392Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGB7794BD85442B7FF
         a                   adm:UpdateData ;
@@ -65,30 +71,36 @@ bdg:WA24590 {
     bda:WA24590  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA24590 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "37/WA24590.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA24590 ;
-        adm:logEntry        bda:LG4C4BCA5550C2633E , bda:LGA988B85DD539AD14 , bda:LGB7794BD85442B7FF , bda:LGEF46281EB5589DCE , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG4C4BCA5550C2633E , bda:LG918666F1FD92DC0D , bda:LGA988B85DD539AD14 , bda:LGB7794BD85442B7FF , bda:LGEF46281EB5589DCE , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR74D17832CA682C4B
-        a                   :AgentAsCreator ;
-        :agent              bdr:P7911 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR918666F1FD92DC0D
+    bdr:CR477FAD4FFAD88BB2
         a                   :AgentAsCreator ;
         :agent              bdr:P6928 ;
-        :role               bdr:R0ER0016 .
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR67BBBF960DB05F98
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7911 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR74D17832CA682C4B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7774 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA24590  a          :Work ;
         skos:prefLabel      "gangs ri dkar po'i srog mkhar 'dzin pa 'phrog byed dar ma'i nga ro/"@bo-x-ewts ;
         :catalogInfo        "A volume of several texts by Jigme Phuntsok, Tsultrim Lodro and Metrun Tenzin Gyatso, teachers in the huge, contemporary Nyingma monastic college known as Larung Gar."@en ;
-        :creator            bdr:CR74D17832CA682C4B , bdr:CR918666F1FD92DC0D ;
+        :creator            bdr:CR477FAD4FFAD88BB2 , bdr:CR67BBBF960DB05F98 , bdr:CR74D17832CA682C4B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T258 , bdr:T413 ;
-        :workHasInstance    bdr:MW24590 , bdr:W24590 .
+        :workGenre          bdr:T1081 , bdr:T2511 ;
+        :workHasInstance    bdr:MW24590 , bdr:W24590 ;
+        :workIsAbout        bdr:T00KG07620 , bdr:T58 .
 }

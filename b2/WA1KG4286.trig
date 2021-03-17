@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG4286 {
+    bda:LG210764EBEB6EEF76
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-15T15:56:55.114Z"^^xsd:dateTime ;
+        adm:logMessage      "added subject"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG4D3BFD6B39A7A221
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2010-03-10T17:02:40.288Z"^^xsd:dateTime ;
@@ -92,28 +98,29 @@ bdg:WA1KG4286 {
     bda:WA1KG4286  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4286 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "b2/WA1KG4286.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4286 ;
-        adm:logEntry        bda:LG4D3BFD6B39A7A221 , bda:LG81F053F5D41925A3 , bda:LG841E9C34CEB3D0B1 , bda:LG92184F0CD5C9B047 , bda:LGC0B121117ED35F2D , bda:LGF592B0B733F2AC69 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG210764EBEB6EEF76 , bda:LG4D3BFD6B39A7A221 , bda:LG81F053F5D41925A3 , bda:LG841E9C34CEB3D0B1 , bda:LG92184F0CD5C9B047 , bda:LGC0B121117ED35F2D , bda:LGF592B0B733F2AC69 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR210764EBEB6EEF76
+    bdr:CR4ECD8B6E18791C1D
         a                   :AgentAsCreator ;
         :agent              bdr:P219 ;
         :role               bdr:R0ER0019 .
     
-    bdr:MW1KG4286  skos:altLabel  "Mkhas dbaṅ Dge-ʼdun-chos-ʼphel gyi gsuṅ ʼbum bźugs so."@en-x-mixed .
+    bdr:MW1KG4286  skos:altLabel  "Mkhas dbaṅ Dge-ʼdun-chos-ʼphel gyi gsuṅ ʼbum bźugs so."@en-x-mixed , "更敦群培文集"@zh-hans .
     
     bdr:WA1KG4286  a        :Work ;
         skos:altLabel       "mkhas dbang dge 'dun chos 'phel gyi gsung 'bum/"@bo-x-ewts ;
-        skos:prefLabel      "gsung 'bum/_dge 'dun chos 'phel/"@bo-x-ewts , "Mkhas dbaṅ Dge-ʼdun-chos-ʼphel gyi gsuṅ ʼbum bźugs so."@en-x-mixed ;
-        :catalogInfo        "Collected Works by renowned modernist Gendun Chopel (1903-1951) frm Amdo. Writings are predominantly on Buddhist doctrine and history."@en ;
-        :creator            bdr:CR210764EBEB6EEF76 ;
+        skos:prefLabel      "gsung 'bum/_dge 'dun chos 'phel/"@bo-x-ewts , "Mkhas dbaṅ Dge-ʼdun-chos-ʼphel gyi gsuṅ ʼbum bźugs so."@en-x-mixed , "更敦群培文集"@zh-hans ;
+        :catalogInfo        "Collected Works by renowned modernist Gendun Chopel (1903-1951) from Amdo. Writings are predominantly on Buddhist doctrine and history."@en ;
+        :creator            bdr:CR4ECD8B6E18791C1D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW1KG4286 , bdr:MW27313 , bdr:W1KG4286 , bdr:W27313 .
+        :workHasInstance    bdr:MW1KG4286 , bdr:MW27313 , bdr:W1KG4286 , bdr:W27313 ;
+        :workIsAbout        bdr:T808 .
 }

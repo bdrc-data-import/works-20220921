@@ -24,6 +24,12 @@ bdg:WA3CN5087 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG8AEB883FC020B6A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-15T11:55:49.945Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected title & added P#"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM095CC38C9F
         a                   adm:UpdateData ;
         adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
@@ -41,26 +47,27 @@ bdg:WA3CN5087 {
     bda:WA3CN5087  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5087 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "ff/WA3CN5087.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5087 ;
-        adm:logEntry        bda:LG07F248D2DD2E5620 , bda:LG14F62D3C8252F98E , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG07F248D2DD2E5620 , bda:LG14F62D3C8252F98E , bda:LG8AEB883FC020B6A3 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8AEB883FC020B6A3
+    bdr:CRA55B0F1C7734009C
         a                   :AgentAsCreator ;
         :agent              bdr:P649 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA3CN5087  a        :Work ;
         skos:altLabel       "rA ga a sya'i rnam thar bsdus pa bya ma ring bsrel zhes bya ba tshigs su bcad pa zhal gsungs ma/"@bo-x-ewts ;
-        skos:prefLabel      "rnam thar bsdus pa bya ma ring bsrel/"@bo-x-ewts ;
+        skos:prefLabel      "rA ga a sya'i rnam thar bsdus pa bya ma ring bsrel/"@bo-x-ewts ;
         :catalogInfo        "An autobiography of Karma Chakme written in verses."@en ;
-        :creator            bdr:CR8AEB883FC020B6A3 ;
+        :creator            bdr:CRA55B0F1C7734009C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW3CN5087 , bdr:W3CN5087 .
+        :workHasInstance    bdr:MW3CN5087 , bdr:W3CN5087 ;
+        :workIsAbout        bdr:P649 .
 }

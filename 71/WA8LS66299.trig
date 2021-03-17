@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS66299 {
+    bda:LG395BDD0E48E702CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-15T14:09:20.716Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGB1262D7DBFF0508C
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-06-27T09:36:33.543Z"^^xsd:dateTime ;
@@ -34,16 +40,16 @@ bdg:WA8LS66299 {
     bda:WA8LS66299  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66299 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "71/WA8LS66299.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66299 ;
-        adm:logEntry        bda:LGB1262D7DBFF0508C , bda:LGDE81473D048F91A5 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG395BDD0E48E702CD , bda:LGB1262D7DBFF0508C , bda:LGDE81473D048F91A5 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR395BDD0E48E702CD
+    bdr:CRAF0CA823EB169D7B
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG21169 ;
         :role               bdr:R0ER0019 .
@@ -51,9 +57,10 @@ bdg:WA8LS66299 {
     bdr:WA8LS66299  a       :Work ;
         skos:prefLabel      "nga'i skye yul dang mi tshe'i 'gan 'khur/ stod cha dang smad cha/"@bo-x-ewts ;
         :catalogInfo        "The life account of Trekhang Namgyal Dorjee."@en ;
-        :creator            bdr:CR395BDD0E48E702CD ;
+        :creator            bdr:CRAF0CA823EB169D7B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW8LS66299 , bdr:W8LS66299 .
+        :workHasInstance    bdr:MW8LS66299 , bdr:W8LS66299 ;
+        :workIsAbout        bdr:P1KG21169 .
 }

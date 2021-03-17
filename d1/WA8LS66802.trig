@@ -36,26 +36,38 @@ bdg:WA8LS66802 {
         adm:logMessage      "added pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGE0B814C5FE19B6EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-16T10:15:18.664Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, topic, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS66802  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66802 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "d1/WA8LS66802.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66802 ;
-        adm:logEntry        bda:LG1D9BBADF750F9B8C , bda:LGA842D1FA1235C424 , bda:LGB2AEB01989F651D7 , bda:LGCAF2166114AE6F45 ;
+        adm:logEntry        bda:LG1D9BBADF750F9B8C , bda:LGA842D1FA1235C424 , bda:LGB2AEB01989F651D7 , bda:LGCAF2166114AE6F45 , bda:LGE0B814C5FE19B6EE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRB32D6147C417D7B1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75194 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW8LS66802  skos:altLabel  "On the Top of the World"@en .
     
     bdr:WA8LS66802  a       :Work ;
         skos:altLabel       "bod ljongs ri 'dzegs nyen zhib ru khag gis 'dzam gling gi gangs ri mtho shos bcu bzhi'i dbu rtser 'dzegs pa'i mdzad rnam/"@bo-x-ewts ;
         skos:prefLabel      "dbu rtse'i dpa' rtul/1993-2007"@bo-x-ewts , "On the Top of the World"@en ;
-        :catalogInfo        "An account of fourteen Tibetan mountaineers."@en ;
+        :catalogInfo        "An account of Tibetan mountaineers including author himself."@en ;
+        :creator            bdr:CRB32D6147C417D7B1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T3 ;
+        :workGenre          bdr:T1134 , bdr:T3 ;
         :workHasInstance    bdr:MW8LS66802 , bdr:W8LS66802 ;
-        :workIsAbout        bdr:T2MS13270 .
+        :workIsAbout        bdr:P8LS75194 , bdr:T2MS13270 .
 }

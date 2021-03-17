@@ -18,6 +18,12 @@ bdg:WA3CN5069 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG35C4437B6C640884
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-15T09:40:56.423Z"^^xsd:dateTime ;
+        adm:logMessage      "added P#"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGC0EF5BCF3CDD5572
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-30T09:43:37.196Z"^^xsd:dateTime ;
@@ -47,26 +53,28 @@ bdg:WA3CN5069 {
     bda:WA3CN5069  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5069 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "4b/WA3CN5069.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5069 ;
-        adm:logEntry        bda:LG109D4FDCA496A9B5 , bda:LGC0EF5BCF3CDD5572 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG109D4FDCA496A9B5 , bda:LG35C4437B6C640884 , bda:LGC0EF5BCF3CDD5572 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR35C4437B6C640884
+    bdr:CR91EC7FA03A421284
         a                   :AgentAsCreator ;
         :agent              bdr:P2CZ10190 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA3CN5069  a        :SerialMember , :Work ;
-        skos:prefLabel      "byang sems bdag nyid chen po g.yu thog 7karma bsod nams mchog gi rnam thar skal bzang snying gi gsos sman/"@bo-x-ewts ;
+        skos:altLabel       "byang sems bdag nyid chen po g.yu thog 7karma bsod nams mchog gi rnam thar skal bzang snying gi gsos sman/"@bo-x-ewts ;
+        skos:prefLabel      "g.yu thog karma bsod nams kyi rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography of Yuthok Karma Sonam by Rigzin Dargye."@en ;
-        :creator            bdr:CR35C4437B6C640884 ;
+        :creator            bdr:CR91EC7FA03A421284 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :serialMemberOf     bdr:WAS3CN5069 ;
         :workGenre          bdr:T3 ;
-        :workHasInstance    bdr:MW3CN5069 , bdr:W3CN5069 .
+        :workHasInstance    bdr:MW3CN5069 , bdr:W3CN5069 ;
+        :workIsAbout        bdr:P3CN26202 .
 }

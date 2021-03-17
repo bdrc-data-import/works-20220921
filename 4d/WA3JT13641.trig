@@ -36,6 +36,12 @@ bdg:WA3JT13641 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGD5DADFB4740F7ECB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-16T16:01:02.848Z"^^xsd:dateTime ;
+        adm:logMessage      "added p#"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGF0E64E1C656C6617
         a                   adm:UpdateData ;
         adm:logDate         "2020-08-18T17:48:57.698Z"^^xsd:dateTime ;
@@ -52,20 +58,20 @@ bdg:WA3JT13641 {
     bda:WA3JT13641  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3JT13641 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "4d/WA3JT13641.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3JT13641 ;
-        adm:logEntry        bda:LG0EDA646C895316AF , bda:LG436A89F31525AD2B , bda:LG575114B238795C04 , bda:LG81C3EB3EB2EE70A9 , bda:LGF0E64E1C656C6617 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG0EDA646C895316AF , bda:LG436A89F31525AD2B , bda:LG575114B238795C04 , bda:LG81C3EB3EB2EE70A9 , bda:LGD5DADFB4740F7ECB , bda:LGF0E64E1C656C6617 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD5DADFB4740F7ECB
+    bdr:CR37F68679F9358E3F
         a                   :AgentAsCreator ;
         :agent              bdr:P1685 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV37F68679F9358E3F
+    bdr:EVA137534A7355941C
         a                   :CompletedEvent ;
         :onYear             "1845"^^xsd:gYear .
     
@@ -73,10 +79,11 @@ bdg:WA3JT13641 {
         skos:altLabel       "dkar ru grub dbang bstan 'dzin rin chen gyi rnam thar/"@bo-x-ewts , "dpal snya chen rig 'dzin mchog gi rnam sprul bai'u ldong btsun grub pa'i dbang phyug bstan 'dzin rin chen rgyal mtshan bde chen snying po can gyi rnam par thar pa rmad 'byung yon tan yid bzhin nor bu'i gter/"@bo-x-ewts ;
         skos:prefLabel      "bstan 'dzin rin chen rgyal mtshan gyi rnam thar/"@bo-x-ewts , "The autobiography of Dkar-ru Grub-dbaṅ Bstan-ʼdzin-rin-chen (Dpal Sña chen rig ʼdzin mchog gi rnam sprul Baiʼu Ldoṅ btsun Grub paʼi dbaṅ phyug Bstan ʼdzin rin chen rgyal mtshan Bde chen sñiṅ po can gyi rnam par thar pa rmad ʼbyung yon tan yid bźin nor buʼi gter)."@en-x-mixed ;
         :catalogInfo        "The autobiography of a Bon master Karu Drupwang Tenzin Rinchen (b. 1801) who was the reincarnation of Bon master Nyachen Rigzin."@en ;
-        :creator            bdr:CRD5DADFB4740F7ECB ;
+        :creator            bdr:CR37F68679F9358E3F ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn ;
-        :workEvent          bdr:EV37F68679F9358E3F ;
+        :workEvent          bdr:EVA137534A7355941C ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW3JT13641 , bdr:W3JT13641 .
+        :workHasInstance    bdr:MW3JT13641 , bdr:W3JT13641 ;
+        :workIsAbout        bdr:P1685 .
 }

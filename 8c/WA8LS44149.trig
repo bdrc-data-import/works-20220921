@@ -18,6 +18,12 @@ bdg:WA8LS44149 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGA1DB7D20C865D6AF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-15T12:24:00.744Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author, topic, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGE71C975FC15C71D0
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-04-02T10:37:07.509Z"^^xsd:dateTime ;
@@ -34,21 +40,27 @@ bdg:WA8LS44149 {
     bda:WA8LS44149  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS44149 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "8c/WA8LS44149.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS44149 ;
-        adm:logEntry        bda:LG333CABE599EF2C9F , bda:LGE71C975FC15C71D0 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG333CABE599EF2C9F , bda:LGA1DB7D20C865D6AF , bda:LGE71C975FC15C71D0 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4006ADD3EB6DE372
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2CZ6614 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS44149  a       :Work ;
         skos:prefLabel      "nges don phyag rgya chen po'i bla ma brgyud pa'i rnam thar dang sngon 'gro dngos gzhi bcas/"@bo-x-ewts ;
         :catalogInfo        "Biography of teacher in the transmission lineage of Mahamudra, also preliminary and actual practice of Mahamudra."@en ;
+        :creator            bdr:CR4006ADD3EB6DE372 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW8LS44149 , bdr:W8LS44149 ;
-        :workIsAbout        bdr:T177 , bdr:T179 , bdr:T199 , bdr:T2352 .
+        :workIsAbout        bdr:P1844 , bdr:P1853 , bdr:P2636 , bdr:P3085 , bdr:P4024 , bdr:P909 , bdr:P910 , bdr:P912 , bdr:P920 , bdr:T177 , bdr:T179 , bdr:T199 , bdr:T2352 , bdr:T816 .
 }

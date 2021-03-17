@@ -29,6 +29,12 @@ bdg:WA8LS73755 {
         adm:logDate         "2020-11-16T10:44:47.973Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG8B84073CA2DE9B6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-16T15:18:53.083Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGAC2A2CC7598A95CD
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-11-16T10:26:36.754Z"^^xsd:dateTime ;
@@ -38,33 +44,34 @@ bdg:WA8LS73755 {
     bda:WA8LS73755  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS73755 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "a7/WA8LS73755.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS73755 ;
-        adm:logEntry        bda:LG10EEAA5A9B2C343B , bda:LG1BC4228E3B868FCA , bda:LG3CB2799312C13DAE , bda:LGAC2A2CC7598A95CD ;
+        adm:logEntry        bda:LG10EEAA5A9B2C343B , bda:LG1BC4228E3B868FCA , bda:LG3CB2799312C13DAE , bda:LG8B84073CA2DE9B6E , bda:LGAC2A2CC7598A95CD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR7691AC0ACAA132F2
         a                   :AgentAsCreator ;
-        :agent              bdr:P8LS73756 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR8B84073CA2DE9B6E
-        a                   :AgentAsCreator ;
         :agent              bdr:P6678 ;
         :role               bdr:R0ER0026 .
+    
+    bdr:CRA04FA6E9D4741AA7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS73756 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW8LS73755  skos:altLabel  "La Nuit (Night)"@en .
     
     bdr:WA8LS73755  a       :SerialMember , :Work ;
         skos:prefLabel      "mtshan mo/"@bo-x-ewts , "La Nuit (Night)"@en ;
-        :catalogInfo        "Tibetan traslation of Elie Wiesel's La Nuit (Night); translated by Pema Bhum."@en ;
-        :creator            bdr:CR7691AC0ACAA132F2 , bdr:CR8B84073CA2DE9B6E ;
+        :catalogInfo        "Tibetan version of Elie Wiesel's La Nuit (Night); translated by Pema Bhum."@en ;
+        :creator            bdr:CR7691AC0ACAA132F2 , bdr:CRA04FA6E9D4741AA7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS73755 ;
         :workGenre          bdr:T1157 , bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW8LS73755 , bdr:W8LS73755 .
+        :workHasInstance    bdr:MW8LS73755 , bdr:W8LS73755 ;
+        :workIsAbout        bdr:P8LS73756 .
 }

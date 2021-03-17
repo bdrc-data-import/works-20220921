@@ -24,33 +24,40 @@ bdg:WA3JT13606 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGBD35B0D97F2BEB61
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-16T15:55:07.347Z"^^xsd:dateTime ;
+        adm:logMessage      "added P# and catalogInfo"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3JT13606  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3JT13606 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "7f/WA3JT13606.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3JT13606 ;
-        adm:logEntry        bda:LG02A5AC89FA765AA3 , bda:LGA6165D0C5FC5525F ;
+        adm:logEntry        bda:LG02A5AC89FA765AA3 , bda:LGA6165D0C5FC5525F , bda:LGBD35B0D97F2BEB61 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRBD35B0D97F2BEB61
+    bdr:CR0EF35E340FD72381
         a                   :AgentAsCreator ;
         :agent              bdr:P5459 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV0EF35E340FD72381
+    bdr:EV8617CFD708C346B8
         a                   :CompletedEvent ;
         :onYear             "2005"^^xsd:gYear .
     
     bdr:WA3JT13606  a       :Work ;
-        skos:altLabel       "bla ma gsang sngags rang gi rtogs brjod mdor bsdus/"@bo-x-ewts ;
-        skos:prefLabel      "bla ma gsang sngags kyi rtogs brjod mdor bsdus/"@bo-x-ewts ;
-        :creator            bdr:CRBD35B0D97F2BEB61 ;
+        skos:prefLabel      "bla ma gsang sngags rang gi rtogs brjod mdor bsdus/"@bo-x-ewts ;
+        :catalogInfo        "Autobiography of Lama Sangngak from Bhutan."@en ;
+        :creator            bdr:CR0EF35E340FD72381 ;
         :isRoot             true ;
         :language           bdr:LangDz ;
-        :workEvent          bdr:EV0EF35E340FD72381 ;
-        :workGenre          bdr:T1779 , bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW3JT13606 , bdr:W3JT13606 .
+        :workEvent          bdr:EV8617CFD708C346B8 ;
+        :workGenre          bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW3JT13606 , bdr:W3JT13606 ;
+        :workIsAbout        bdr:P5459 .
 }

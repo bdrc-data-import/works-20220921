@@ -47,6 +47,12 @@ bdg:WA1KG1412 {
         adm:logMessage      "added lccn 2008308167"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LG8E296A33F151B7B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-15T13:11:34.396Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG95769C7B5998D772
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2009-01-21T12:37:54.121Z"^^xsd:dateTime ;
@@ -98,23 +104,30 @@ bdg:WA1KG1412 {
     bda:WA1KG1412  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG1412 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "5f/WA1KG1412.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG1412 ;
-        adm:logEntry        bda:LG0A40F50F8F0AC3D1 , bda:LG1E0F058995096097 , bda:LG5B1891BF0F69F9F1 , bda:LG6A911BC65EEC0A80 , bda:LG6BB027BED2925BC4 , bda:LG6D52140F785C9D51 , bda:LG95769C7B5998D772 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0A40F50F8F0AC3D1 , bda:LG1E0F058995096097 , bda:LG5B1891BF0F69F9F1 , bda:LG6A911BC65EEC0A80 , bda:LG6BB027BED2925BC4 , bda:LG6D52140F785C9D51 , bda:LG8E296A33F151B7B1 , bda:LG95769C7B5998D772 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRB4CB8377D381A35D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228514 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1KG1412  skos:altLabel  "Gaṅ can Bod kyi raṅ byuṅ bdud rtsi chab tshan khag gcig gi ṅo mtshar khyad chos gnad bsdus /Naṅ-chen ʼBroṅ-stod Skal-bzaṅ."@en-x-mixed .
     
     bdr:WA1KG1412  a        :SerialMember , :Work ;
         skos:prefLabel      "gangs can bod kyi rang byung bdud rtsi sman chab khag gcig gi ngo mtshar khyad chos gnad bsdus/"@bo-x-ewts , "Gaṅ can Bod kyi raṅ byuṅ bdud rtsi chab tshan khag gcig gi ṅo mtshar khyad chos gnad bsdus /Naṅ-chen ʼBroṅ-stod Skal-bzaṅ."@en-x-mixed ;
         :catalogInfo        "Explanation of hidden sacred sites in Sikkim and Tibet. Includes biographies, religious history, and references to medicinal spring water."@en ;
+        :creator            bdr:CRB4CB8377D381A35D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016612 ;
         :workGenre          bdr:T1134 , bdr:T25 , bdr:T3 ;
-        :workHasInstance    bdr:IE1KG1412 , bdr:MW1KG1412 , bdr:W1KG1412 .
+        :workHasInstance    bdr:IE1KG1412 , bdr:MW1KG1412 , bdr:W1KG1412 ;
+        :workIsAbout        bdr:P2KG228513 , bdr:P2KG228514 .
 }

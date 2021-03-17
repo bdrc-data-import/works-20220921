@@ -30,23 +30,35 @@ bdg:WA8LS68220 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGF5FE1B54CE6BE408
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-16T11:41:21.028Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS68220  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68220 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c7/WA8LS68220.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68220 ;
-        adm:logEntry        bda:LG807D9C3BA6EA694A , bda:LG808F05D20BC2FCA3 , bda:LGEC3BE951A3B269E6 ;
+        adm:logEntry        bda:LG807D9C3BA6EA694A , bda:LG808F05D20BC2FCA3 , bda:LGEC3BE951A3B269E6 , bda:LGF5FE1B54CE6BE408 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8928F596415D26EA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75195 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA8LS68220  a       :Work ;
         skos:prefLabel      "krung gung tang gi lo rgyus las grangs nyung mi rigs kyi mi sna/"@bo-x-ewts ;
         :catalogInfo        "Important figures of PRC's minority people."@en ;
+        :creator            bdr:CR8928F596415D26EA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW8LS68220 , bdr:W8LS68220 ;
-        :workIsAbout        bdr:G3198 , bdr:T2MS14902 .
+        :workIsAbout        bdr:G3198 , bdr:P6717 , bdr:T2MS14902 .
 }

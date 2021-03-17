@@ -13,6 +13,12 @@
 
 bdg:WA19792 {
     bda:LG6E848FBA46A2B858
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-15T15:56:53.758Z"^^xsd:dateTime ;
+        adm:logMessage      "added subject"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG727B9F8C494A5598
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -40,15 +46,15 @@ bdg:WA19792 {
     bda:WA19792  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19792 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "6f/WA19792.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19792 ;
-        adm:logEntry        bda:LG6E848FBA46A2B858 , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG6E848FBA46A2B858 , bda:LG727B9F8C494A5598 , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR727B9F8C494A5598
+    bdr:CR1ECDD3ECCD6BD4EE
         a                   :AgentAsCreator ;
         :agent              bdr:P6168 ;
         :role               bdr:R0ER0019 .
@@ -56,10 +62,12 @@ bdg:WA19792 {
     bdr:WA19792  a          :SerialMember , :Work ;
         skos:altLabel       "dpal yul gzi 'gags sprul sku'i gsung 'bum lhag bsdus/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum thor bu/_shes rab chos kyi snang ba/"@bo-x-ewts ;
-        :creator            bdr:CR727B9F8C494A5598 ;
+        :catalogInfo        "Collection of miscellaneous writings of Dzigak Trulku Jamyang Sherab Chokyi Nangwa."@en ;
+        :creator            bdr:CR1ECDD3ECCD6BD4EE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS20019 ;
         :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW19792 , bdr:W19792 .
+        :workHasInstance    bdr:MW19792 , bdr:W19792 ;
+        :workIsAbout        bdr:T1082 .
 }

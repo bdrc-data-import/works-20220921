@@ -19,6 +19,12 @@ bdg:WA20563 {
         adm:logWho          bdu:U00081 .
     
     bda:LG99E1E94FFE20D1ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-16T15:53:35.867Z"^^xsd:dateTime ;
+        adm:logMessage      "added subject"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGB8393955F02484BC
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -60,29 +66,30 @@ bdg:WA20563 {
     bda:WA20563  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20563 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "ea/WA20563.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20563 ;
-        adm:logEntry        bda:LG8CAC1E1DFDA47480 , bda:LG99E1E94FFE20D1ED , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG8CAC1E1DFDA47480 , bda:LG99E1E94FFE20D1ED , bda:LGB8393955F02484BC , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB8393955F02484BC
+    bdr:CR7C9B2E0157395393
         a                   :AgentAsCreator ;
         :agent              bdr:P6599 ;
         :role               bdr:R0ER0019 .
     
-    bdr:MW20563  skos:altLabel  "Skyabs rje Padma-skal-bzaṅ Rin-po-cheʼi sñan rtsom gces btus."@en-x-mixed , "zuo qin baimagesang wen xuan"@zh-x-ewts .
+    bdr:MW20563  skos:altLabel  "Skyabs rje Padma-skal-bzaṅ Rin-po-cheʼi sñan rtsom gces btus."@en-x-mixed , "zuo qin baimagesang wen xuan"@zh-latn-pinyin-x-ndia .
     
     bdr:WA20563  a          :SerialMember , :Work ;
         skos:altLabel       "skyabs rje pad+ma skal bzang rin po che'i snyan rtsom gces btus/"@bo-x-ewts ;
-        skos:prefLabel      "snyan rtsom gces btus/"@bo-x-ewts , "Skyabs rje Padma-skal-bzaṅ Rin-po-cheʼi sñan rtsom gces btus."@en-x-mixed , "zuo qin baimagesang wen xuan"@zh-x-ewts ;
-        :catalogInfo        "A collection of poems and Dzogchen history."@en ;
-        :creator            bdr:CRB8393955F02484BC ;
+        skos:prefLabel      "snyan rtsom gces btus/"@bo-x-ewts , "Skyabs rje Padma-skal-bzaṅ Rin-po-cheʼi sñan rtsom gces btus."@en-x-mixed , "zuo qin baimagesang wen xuan"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "A collection of writings of Nyingma master Kyabje Pema Kalsang of Dzogchen monastery,"@en ;
+        :creator            bdr:CR7C9B2E0157395393 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG6161 ;
-        :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW20563 , bdr:W20563 .
+        :workGenre          bdr:T1PD128746 ;
+        :workHasInstance    bdr:MW20563 , bdr:W20563 ;
+        :workIsAbout        bdr:T281 .
 }

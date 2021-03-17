@@ -18,6 +18,17 @@ bdg:WA8LS67504 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG581F2D3645B3F067
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-16T10:43:56.323Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGEE1AAAB763F00BB2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-16T15:00:31.836Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGF4E8A1E5657441F3
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-11-08T09:17:55.998Z"^^xsd:dateTime ;
@@ -34,21 +45,28 @@ bdg:WA8LS67504 {
     bda:WA8LS67504  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS67504 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "6c/WA8LS67504.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS67504 ;
-        adm:logEntry        bda:LG37B2AFF718BDA9BC , bda:LGF4E8A1E5657441F3 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG37B2AFF718BDA9BC , bda:LG581F2D3645B3F067 , bda:LGEE1AAAB763F00BB2 , bda:LGF4E8A1E5657441F3 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR1F04515CFE7B410B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75198 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA8LS67504  a       :Work ;
         skos:altLabel       "byis pa dang bud med kyi shes yon thob thang 'thab rtsod byas par tA la'i b+han gyis me mda' brgyab nas tshe srog shor grabs byas pa'i na chung bu mo ma lA lA'i lo rgyus/"@bo-x-ewts , "no wel gzengs rtags 'thob mkhan lo na chus shos/"@bo-x-ewts ;
         skos:prefLabel      "ma lA lA nga yin/"@bo-x-ewts ;
         :catalogInfo        "The youngest noble price winner Malala Yousafzai's life account; translated into Tibetan language by Tenzin Tenkyong Shastri."@en ;
+        :creator            bdr:CR1F04515CFE7B410B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW8LS67504 , bdr:W8LS67504 .
+        :workHasInstance    bdr:MW8LS67504 , bdr:W8LS67504 ;
+        :workIsAbout        bdr:P8LS75199 .
 }

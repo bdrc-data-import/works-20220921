@@ -24,6 +24,12 @@ bdg:WA3CN6391 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGE309A8E3EF2543DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-16T12:46:16.489Z"^^xsd:dateTime ;
+        adm:logMessage      "added P#"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -48,15 +54,15 @@ bdg:WA3CN6391 {
     bda:WA3CN6391  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN6391 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "7b/WA3CN6391.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN6391 ;
-        adm:logEntry        bda:LG0542F0F78FF3D50E , bda:LG85329D28D82378DF , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0542F0F78FF3D50E , bda:LG85329D28D82378DF , bda:LGE309A8E3EF2543DA , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE309A8E3EF2543DA
+    bdr:CRF31D2570A89CFB1F
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ75602 ;
         :role               bdr:R0ER0019 .
@@ -65,9 +71,10 @@ bdg:WA3CN6391 {
         skos:altLabel       "bla ma bsod dga' rin po che'i rang rnam/"@bo-x-ewts ;
         skos:prefLabel      "lam 'bras pa bsod dga' rin po che'i rang rnam/"@bo-x-ewts ;
         :catalogInfo        "Autobiography by the Sakya Lamdre Lama Soga rinpoche in Tibet."@en ;
-        :creator            bdr:CRE309A8E3EF2543DA ;
+        :creator            bdr:CRF31D2570A89CFB1F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW3CN6391 , bdr:W3CN6391 .
+        :workHasInstance    bdr:MW3CN6391 , bdr:W3CN6391 ;
+        :workIsAbout        bdr:P4CZ75602 .
 }

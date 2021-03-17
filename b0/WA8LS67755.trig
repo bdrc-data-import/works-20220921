@@ -18,6 +18,12 @@ bdg:WA8LS67755 {
         adm:logMessage      "new work record created"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG47027EFC3B76F9EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-16T11:27:58.864Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGDAB0459C6D9452FA
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -33,15 +39,15 @@ bdg:WA8LS67755 {
     bda:WA8LS67755  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS67755 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "b0/WA8LS67755.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS67755 ;
-        adm:logEntry        bda:LG391C8E8C5871B10A , bda:LGDAB0459C6D9452FA , bda:LGDDCFCF9663FF5ABB ;
+        adm:logEntry        bda:LG391C8E8C5871B10A , bda:LG47027EFC3B76F9EE , bda:LGDAB0459C6D9452FA , bda:LGDDCFCF9663FF5ABB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR47027EFC3B76F9EE
+    bdr:CR0EF3ABB630BCA228
         a                   :AgentAsCreator ;
         :agent              bdr:P1647 ;
         :role               bdr:R0ER0019 .
@@ -49,10 +55,11 @@ bdg:WA8LS67755 {
     bdr:WA8LS67755  a       :SerialMember , :Work ;
         skos:prefLabel      "rang gi byung brjod pa rang gsal A dar sha"@bo-x-ewts ;
         :catalogInfo        "Autobiography of Muge Samten Gyatsho. Translated into Chinese by Ngangtshang Bumkyap and Yeshe Tshering."@en ;
-        :creator            bdr:CR47027EFC3B76F9EE ;
+        :creator            bdr:CR0EF3ABB630BCA228 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :serialMemberOf     bdr:WAS8LS67755 ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW8LS67755 , bdr:W8LS67755 .
+        :workHasInstance    bdr:MW8LS67755 , bdr:W8LS67755 ;
+        :workIsAbout        bdr:P1647 .
 }

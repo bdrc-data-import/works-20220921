@@ -30,6 +30,12 @@ bdg:WA8LS44119 {
         adm:logMessage      "restricted in china"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGD3BB571306BB52AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-15T09:43:39.884Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, topic, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -40,16 +46,16 @@ bdg:WA8LS44119 {
     bda:WA8LS44119  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS44119 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "48/WA8LS44119.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS44119 ;
-        adm:logEntry        bda:LG165669202A93EA7C , bda:LG1BA1FD24EEE9ADFE , bda:LG6D8B37B19214582D , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG165669202A93EA7C , bda:LG1BA1FD24EEE9ADFE , bda:LG6D8B37B19214582D , bda:LGD3BB571306BB52AA , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD3BB571306BB52AA
+    bdr:CR4D74D6A750CF7871
         a                   :AgentAsCreator ;
         :agent              bdr:P1PD108086 ;
         :role               bdr:R0ER0019 .
@@ -58,9 +64,10 @@ bdg:WA8LS44119 {
         skos:altLabel       "dge ba'i bshes gnyen chen po rje btsun bsod nams phun tshogs mchog gi rang rnam 'gro ba'i gtan bde'i 'byung gnas dpag bsam ljong shing yal 'dab bco brgyad pa/"@bo-x-ewts ;
         skos:prefLabel      "dge ba'i bshes gnyen chen po rje btsun bsod nams phun tshogs mchog gi rang rnam/"@bo-x-ewts ;
         :catalogInfo        "Autobiography of Geshe Sonam Phuntsok."@en ;
-        :creator            bdr:CRD3BB571306BB52AA ;
+        :creator            bdr:CR4D74D6A750CF7871 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW8LS44119 , bdr:W8LS44119 .
+        :workHasInstance    bdr:MW8LS44119 , bdr:W8LS44119 ;
+        :workIsAbout        bdr:P1PD108086 , bdr:T819 .
 }

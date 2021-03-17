@@ -25,8 +25,10 @@ bdg:WA20338 {
         adm:logWho          bdu:U00013 .
     
     bda:LG55D26BE0658407B2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-16T15:53:35.12Z"^^xsd:dateTime ;
+        adm:logMessage      "added subject"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG573075540610ECB5
         a                   adm:UpdateData ;
@@ -50,6 +52,10 @@ bdg:WA20338 {
         adm:logDate         "2013-08-08T11:02:50.749Z"^^xsd:dateTime ;
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGE90691D5727072E4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -75,26 +81,28 @@ bdg:WA20338 {
     bda:WA20338  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20338 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "65/WA20338.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20338 ;
-        adm:logEntry        bda:LG01EAF9066306D0A1 , bda:LG20E82C02A2A59F15 , bda:LG55D26BE0658407B2 , bda:LG573075540610ECB5 , bda:LG616F84FE935E42E5 , bda:LG93865077028D479D , bda:LGA1DC325EF5E3D4C9 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG01EAF9066306D0A1 , bda:LG20E82C02A2A59F15 , bda:LG55D26BE0658407B2 , bda:LG573075540610ECB5 , bda:LG616F84FE935E42E5 , bda:LG93865077028D479D , bda:LGA1DC325EF5E3D4C9 , bda:LGE90691D5727072E4 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE90691D5727072E4
+    bdr:CR68EA6B917B47895B
         a                   :AgentAsCreator ;
         :agent              bdr:P697 ;
         :role               bdr:R0ER0019 .
     
+    bdr:MW20338  skos:altLabel  "the collected works rdzogs chen rgyal sras gzan phan mtha' yas"@en .
+    
     bdr:WA20338  a          :Work ;
-        skos:altLabel       "the collected works rdzogs chen rgyal sras gzan phan mtha' yas/"@bo-x-ewts ;
-        skos:prefLabel      "gsung 'bum/_gzhan phan mtha' yas/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_gzhan phan mtha' yas/"@bo-x-ewts , "the collected works rdzogs chen rgyal sras gzan phan mtha' yas"@en ;
         :catalogInfo        "Collected Works by Nyingma master Dzogchen Gyalse Zhenpen Taye (b. 1800). Collection is from the extant prints discovered in Bhutan."@en ;
-        :creator            bdr:CRE90691D5727072E4 ;
+        :creator            bdr:CR68EA6B917B47895B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW20338 , bdr:MW3CN12691 , bdr:MW3CN18521 , bdr:W20338 , bdr:W3CN12691 , bdr:W3CN18521 .
+        :workHasInstance    bdr:MW20338 , bdr:MW3CN12691 , bdr:MW3CN18521 , bdr:W20338 , bdr:W3CN12691 , bdr:W3CN18521 ;
+        :workIsAbout        bdr:T1082 .
 }
