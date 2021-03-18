@@ -27,6 +27,12 @@ bdg:WA1PD137842 {
         adm:logDate         "2016-11-18T22:49:39.968Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGC08F2F93B3C7BB5F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T09:17:51.824Z"^^xsd:dateTime ;
+        adm:logMessage      "added AboutUncontroled, cat info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD5285D5355F126AD
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-18T22:50:27.521Z"^^xsd:dateTime ;
@@ -50,15 +56,15 @@ bdg:WA1PD137842 {
     bda:WA1PD137842  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD137842 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "8f/WA1PD137842.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD137842 ;
-        adm:logEntry        bda:LG4CF1E08E66337E9D , bda:LG655BE6A1BAD0E771 , bda:LG9AEF69FCA368939C , bda:LGD5285D5355F126AD , bda:LGIM4599A38FCE , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG4CF1E08E66337E9D , bda:LG655BE6A1BAD0E771 , bda:LG9AEF69FCA368939C , bda:LGC08F2F93B3C7BB5F , bda:LGD5285D5355F126AD , bda:LGIM4599A38FCE , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC08F2F93B3C7BB5F
+    bdr:CR2C45F85A5F062BF0
         a                   :AgentAsCreator ;
         :agent              bdr:P8258 ;
         :role               bdr:R0ER0019 .
@@ -68,9 +74,11 @@ bdg:WA1PD137842 {
     bdr:WA1PD137842  a      :Work ;
         skos:altLabel       "zhu rang ba wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "hor ba drung rams pa smra dbang bstan 'dzin blo gros rgya mtsho'i gsung 'bum/"@bo-x-ewts , "朱让巴文集"@zh-hans ;
-        :creator            bdr:CRC08F2F93B3C7BB5F ;
+        :catalogInfo        "Collected works of Horpa Drungrampa Ngawang Tenzin Lodro."@en ;
+        :creator            bdr:CR2C45F85A5F062BF0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW1PD137842 , bdr:W1PD137842 .
+        :workHasInstance    bdr:MW1PD137842 , bdr:W1PD137842 ;
+        :workIsAbout        bdr:T247 .
 }

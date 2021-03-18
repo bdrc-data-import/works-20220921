@@ -13,14 +13,20 @@
 
 bdg:WA24591 {
     bda:LG236BE3E8242F5714
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T13:24:57.587Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG4F1FEEB13C29717F
         a                   adm:UpdateData ;
         adm:logDate         "2009-11-20T12:08:16.915Z"^^xsd:dateTime ;
         adm:logMessage      "add location"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LG54E4D776840846D5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG8F13CB47B68B1659
         a                   adm:UpdateData ;
@@ -52,15 +58,15 @@ bdg:WA24591 {
     bda:WA24591  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA24591 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "e3/WA24591.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA24591 ;
-        adm:logEntry        bda:LG236BE3E8242F5714 , bda:LG4F1FEEB13C29717F , bda:LG8F13CB47B68B1659 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG236BE3E8242F5714 , bda:LG4F1FEEB13C29717F , bda:LG54E4D776840846D5 , bda:LG8F13CB47B68B1659 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR54E4D776840846D5
+    bdr:CR19E6D2BBC9859332
         a                   :AgentAsCreator ;
         :agent              bdr:P7908 ;
         :role               bdr:R0ER0019 .
@@ -70,9 +76,11 @@ bdg:WA24591 {
     bdr:WA24591  a          :Work ;
         skos:altLabel       "mi nyag bu phrug gi gsung rtsom phyogs bsgrigs/"@bo-x-ewts ;
         skos:prefLabel      "dka' gnad sdom tshig si tu dgongs gsal/"@bo-x-ewts , "Dkaʼ gnad sdom tshig Si-tu dgoṅs gsal :Mi-ñag Bu-phrug gi gsuṅ rtsom phyogs bsgrigs /Kun-dgaʼ-rgyal-mtshan daṅ ʼPhrin-las-rgyal-mtshan gñis kyis dag bsgrigs byas."@en-x-mixed ;
-        :creator            bdr:CR54E4D776840846D5 ;
+        :catalogInfo        "Selected works of author's predominantly on Tibetan grammar according to Situ Penchen's interpretation; includes writings on Tibetan language and poetry."@en ;
+        :creator            bdr:CR19E6D2BBC9859332 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW24591 , bdr:W24591 .
+        :workGenre          bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW24591 , bdr:W24591 ;
+        :workIsAbout        bdr:T281 , bdr:T4CZ16893 .
 }

@@ -13,6 +13,12 @@
 
 bdg:WA30107 {
     bda:LG11F9C9EA0F236DFD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T15:23:50.93Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info and lang encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG2CD2B6C85FD42B3D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -76,25 +82,26 @@ bdg:WA30107 {
     bda:WA30107  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30107 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "95/WA30107.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30107 ;
-        adm:logEntry        bda:LG11F9C9EA0F236DFD , bda:LG4C7F284AD80F5683 , bda:LG7327EEA23E0642C3 , bda:LG98C7CC8B3C0DAD17 , bda:LGC14390746012C03E , bda:LGEF129382F92C7B6A , bda:LGF85DB3B9EE94A6BD , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG11F9C9EA0F236DFD , bda:LG2CD2B6C85FD42B3D , bda:LG4C7F284AD80F5683 , bda:LG7327EEA23E0642C3 , bda:LG98C7CC8B3C0DAD17 , bda:LGC14390746012C03E , bda:LGEF129382F92C7B6A , bda:LGF85DB3B9EE94A6BD , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2CD2B6C85FD42B3D
+    bdr:CREBE78844444EFA4A
         a                   :AgentAsCreator ;
         :agent              bdr:P194 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA30107  a          :Work ;
-        skos:prefLabel      "gsung 'bum/_blo bzang tshul khrims/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/_blo bzang tshul khrims byams pa rgya mtsho/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Purbu Chok Yongzin Jampa Gyatso (1825-1901), guru to Dalai Lama 13 Tubten Gyatso (1876-1933). Reproduced from a modern Lhasa printing which leaves something to be desired."@en ;
-        :creator            bdr:CR2CD2B6C85FD42B3D ;
+        :creator            bdr:CREBE78844444EFA4A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW30107 , bdr:W30107 .
+        :workHasInstance    bdr:MW30107 , bdr:W30107 ;
+        :workIsAbout        bdr:T819 .
 }

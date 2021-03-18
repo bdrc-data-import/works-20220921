@@ -34,6 +34,12 @@ bdg:WA1PD159404 {
         adm:logDate         "2016-11-25T03:05:00.655Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGB45BD3C0641EBBB6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T09:32:38.46Z"^^xsd:dateTime ;
+        adm:logMessage      "added about uncontroled, cat info, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGF3E3FD8B9ACF2C75
         a                   adm:UpdateData ;
         adm:logDate         "2013-03-29T11:55:12.205Z"^^xsd:dateTime ;
@@ -63,15 +69,15 @@ bdg:WA1PD159404 {
     bda:WA1PD159404  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159404 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "cc/WA1PD159404.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159404 ;
-        adm:logEntry        bda:LG0E589AEB190931B4 , bda:LG2CCF1E7D758F4736 , bda:LG59228081A98BF55C , bda:LG645BA445A95E4D6A , bda:LGF3E3FD8B9ACF2C75 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0E589AEB190931B4 , bda:LG2CCF1E7D758F4736 , bda:LG59228081A98BF55C , bda:LG645BA445A95E4D6A , bda:LGB45BD3C0641EBBB6 , bda:LGF3E3FD8B9ACF2C75 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB45BD3C0641EBBB6
+    bdr:CR28407430E78834A0
         a                   :AgentAsCreator ;
         :agent              bdr:P9635 ;
         :role               bdr:R0ER0019 .
@@ -81,9 +87,11 @@ bdg:WA1PD159404 {
     bdr:WA1PD159404  a      :Work ;
         skos:altLabel       "yu nang . a wang dan zeng yin ming lun wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "yul nang ngag dbang bstan 'dzin gyi tshad ma'i dpyad rtsom phyogs bsgrigs/"@bo-x-ewts , "玉囊 . 阿旺旦增因明论文集"@zh-hans ;
-        :creator            bdr:CRB45BD3C0641EBBB6 ;
+        :catalogInfo        "Selected writings of Yulnang Ngawang Tenzin."@en ;
+        :creator            bdr:CR28407430E78834A0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW1PD159404 , bdr:W1PD159404 .
+        :workGenre          bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW1PD159404 , bdr:W1PD159404 ;
+        :workIsAbout        bdr:T819 .
 }

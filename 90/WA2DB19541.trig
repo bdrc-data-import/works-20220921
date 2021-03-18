@@ -36,27 +36,35 @@ bdg:WA2DB19541 {
         adm:logMessage      "gsar du bcug"@en ;
         adm:logWho          bdu:U00003 .
     
+    bda:LGC6126A7FDE2453A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T10:34:38.556Z"^^xsd:dateTime ;
+        adm:logMessage      "added about uncontroled, cat info, print type"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA2DB19541  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2DB19541 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "90/WA2DB19541.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2DB19541 ;
-        adm:logEntry        bda:LG11FF9BCC697C1DB3 , bda:LG2D77B4BCF422BE0D , bda:LG57CEB4BF1CCD8313 , bda:LG8168215F56659441 ;
+        adm:logEntry        bda:LG11FF9BCC697C1DB3 , bda:LG2D77B4BCF422BE0D , bda:LG57CEB4BF1CCD8313 , bda:LG8168215F56659441 , bda:LGC6126A7FDE2453A3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC6126A7FDE2453A3
+    bdr:CRE15EC4B87FDB62B9
         a                   :AgentAsCreator ;
         :agent              bdr:P2DB19542 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2DB19541  a       :Work ;
         skos:prefLabel      "dge ba'i bshes gnyen chen mo rdo rje dgra 'dul gyi gsung pad+ma dkar po'i do shal/"@bo-x-ewts ;
-        :creator            bdr:CRC6126A7FDE2453A3 ;
+        :catalogInfo        "Selected writings of Kalayanmitra Dorjee Dadul."@en ;
+        :creator            bdr:CRE15EC4B87FDB62B9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW2DB19541 , bdr:W2DB19541 .
+        :workHasInstance    bdr:MW2DB19541 , bdr:W2DB19541 ;
+        :workIsAbout        bdr:T1082 .
 }

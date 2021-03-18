@@ -17,11 +17,22 @@ bdg:WA2MS813 {
         adm:logDate         "2008-04-22T11:35:46.578Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00020 .
     
+    bda:LG423E1357A6BD1D52
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T14:30:34.1Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG5D7148FE2C7BC5CF
         a                   adm:UpdateData ;
         adm:logDate         "2014-02-05T12:11:30.891Z"^^xsd:dateTime ;
         adm:logMessage      "བཅོས།"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LG78EF89A62F055847
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T14:28:51.41Z"^^xsd:dateTime ;
+        adm:logMessage      "added about uncontroled, cat info, topic, print type, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LG839A9B7C235F8E26
         a                   adm:ScanRequestCreation ;
@@ -80,15 +91,15 @@ bdg:WA2MS813 {
     bda:WA2MS813  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2MS813 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "bf/WA2MS813.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2MS813 ;
-        adm:logEntry        bda:LG0CD5AB59B54D78C9 , bda:LG5D7148FE2C7BC5CF , bda:LG839A9B7C235F8E26 , bda:LGB60792BE19D1B1DE , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0CD5AB59B54D78C9 , bda:LG423E1357A6BD1D52 , bda:LG5D7148FE2C7BC5CF , bda:LG78EF89A62F055847 , bda:LG839A9B7C235F8E26 , bda:LGB60792BE19D1B1DE , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR78EF89A62F055847
+    bdr:CRCCE8416C362BC320
         a                   :AgentAsCreator ;
         :agent              bdr:P6672 ;
         :role               bdr:R0ER0019 .
@@ -97,10 +108,11 @@ bdg:WA2MS813 {
     
     bdr:WA2MS813  a         :Work ;
         skos:prefLabel      "nam mkha'i nor bu'i gsung rtsom phyogs bsgrigs/"@bo-x-ewts , "nan ka luo bu xuan ji"@zh-latn-pinyin-x-ndia ;
-        :catalogInfo        "Miscellaneous works by the modern scholar and Dzogchen master Namkhai Norbu."@en ;
-        :creator            bdr:CR78EF89A62F055847 ;
+        :catalogInfo        "Collected writings of scholar and Dzogchen master Chogyal Namkhai Norbu."@en ;
+        :creator            bdr:CRCCE8416C362BC320 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW2MS813 , bdr:W2MS813 .
+        :workGenre          bdr:T1081 , bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW2MS813 , bdr:W2MS813 ;
+        :workIsAbout        bdr:T1082 .
 }

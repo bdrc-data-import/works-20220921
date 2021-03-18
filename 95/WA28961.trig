@@ -17,14 +17,20 @@ bdg:WA28961 {
         adm:logDate         "2008-04-16T16:24:39.247Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGC7F239D49861FB07
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGD3C212ED587E465C
         a                   adm:UpdateData ;
         adm:logDate         "2008-04-16T16:22:08.449Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
     bda:LGDD5975387F9A3A1E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T13:24:58.796Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGFAADACA032C91BDE
         a                   adm:ScanRequestCreation ;
@@ -70,15 +76,15 @@ bdg:WA28961 {
     bda:WA28961  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28961 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "95/WA28961.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28961 ;
-        adm:logEntry        bda:LG95D651A0BA604B1C , bda:LGD3C212ED587E465C , bda:LGDD5975387F9A3A1E , bda:LGFAADACA032C91BDE , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG95D651A0BA604B1C , bda:LGC7F239D49861FB07 , bda:LGD3C212ED587E465C , bda:LGDD5975387F9A3A1E , bda:LGFAADACA032C91BDE , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC7F239D49861FB07
+    bdr:CR7A1EBCE25E5FC8B9
         a                   :AgentAsCreator ;
         :agent              bdr:P4856 ;
         :role               bdr:R0ER0019 .
@@ -88,9 +94,11 @@ bdg:WA28961 {
     bdr:WA28961  a          :Work ;
         skos:altLabel       "mkhyen rab 'od gsal gyi gsung rtsom phyogs bsgrigs/"@bo-x-ewts ;
         skos:prefLabel      "gsung rtsom/_mkhyen rab 'od gsal/"@bo-x-ewts , "Mkhyen-rab-ʼod-gsal gyi gsuṅ rtsom phyogs bsgrigs."@en-x-mixed , "qinrao ese xuan ji"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CRC7F239D49861FB07 ;
+        :catalogInfo        "Selected works of author's predominantly on Tibetan grammar and history."@en ;
+        :creator            bdr:CR7A1EBCE25E5FC8B9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW28961 , bdr:W28961 .
+        :workGenre          bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW28961 , bdr:W28961 ;
+        :workIsAbout        bdr:G3196 , bdr:T4CZ16893 .
 }

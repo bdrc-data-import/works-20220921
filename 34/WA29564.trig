@@ -13,14 +13,20 @@
 
 bdg:WA29564 {
     bda:LG4149DFA2D5830E17
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T15:23:50.558Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info and lang encoding"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG9D9534957373D822
         a                   adm:UpdateData ;
         adm:logDate         "2009-11-20T12:41:32.755Z"^^xsd:dateTime ;
         adm:logMessage      "add location"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGF185DA7F7B3E34D2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -46,15 +52,15 @@ bdg:WA29564 {
     bda:WA29564  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29564 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "34/WA29564.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29564 ;
-        adm:logEntry        bda:LG4149DFA2D5830E17 , bda:LG9D9534957373D822 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG4149DFA2D5830E17 , bda:LG9D9534957373D822 , bda:LGF185DA7F7B3E34D2 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF185DA7F7B3E34D2
+    bdr:CRCD8F7B79DC5302A8
         a                   :AgentAsCreator ;
         :agent              bdr:P6600 ;
         :role               bdr:R0ER0019 .
@@ -64,10 +70,12 @@ bdg:WA29564 {
     bdr:WA29564  a          :SerialMember , :Work ;
         skos:altLabel       "rdzogs chen mkhan chen skyabs rje yongs 'dzin rin po che 'jigs med rta mgrin yon tan mgon po'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_yon tan mgon po/"@bo-x-ewts , "kan pu yun deng qong pu wen xuan"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CRF185DA7F7B3E34D2 ;
+        :catalogInfo        "Collected works of Nyingma master Dzogchen Khenchen Youten Gonpo predomiantly on spiritual advices and songs, doctrines, and liturgical texts."@en ;
+        :creator            bdr:CRCD8F7B79DC5302A8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG6161 ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW29564 , bdr:W29564 .
+        :workHasInstance    bdr:MW29564 , bdr:W29564 ;
+        :workIsAbout        bdr:T1082 .
 }

@@ -23,6 +23,10 @@ bdg:WA27313 {
         adm:logDate         "2009-11-25T14:14:09.212Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG2870EED98D6A5182
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG29E054874BDD8473
         a                   adm:UpdateData ;
         adm:logDate         "2008-07-10T12:47:57.971Z"^^xsd:dateTime ;
@@ -47,8 +51,10 @@ bdg:WA27313 {
         adm:logWho          bdu:U00016 .
     
     bda:LGE0DD1B48ED0D3414
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T15:23:49.794Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info and lang encoding"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGE9C759DCDD383B6A
         a                   adm:UpdateData ;
@@ -80,16 +86,16 @@ bdg:WA27313 {
     bda:WA27313  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27313 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "d4/WA27313.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27313 ;
-        adm:logEntry        bda:LG0A09B60C477DAF8B , bda:LG0EFDDDA2AA2F94A9 , bda:LG29E054874BDD8473 , bda:LG56F86A4A57FEDAC5 , bda:LG6A2E6A76E341A962 , bda:LGAA3BB2CA4ED908F3 , bda:LGE0DD1B48ED0D3414 , bda:LGE9C759DCDD383B6A , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG0A09B60C477DAF8B , bda:LG0EFDDDA2AA2F94A9 , bda:LG2870EED98D6A5182 , bda:LG29E054874BDD8473 , bda:LG56F86A4A57FEDAC5 , bda:LG6A2E6A76E341A962 , bda:LGAA3BB2CA4ED908F3 , bda:LGE0DD1B48ED0D3414 , bda:LGE9C759DCDD383B6A , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG4286 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR2870EED98D6A5182
+    bdr:CR1D36C12775720DBE
         a                   :AgentAsCreator ;
         :agent              bdr:P219 ;
         :role               bdr:R0ER0019 .
@@ -99,10 +105,12 @@ bdg:WA27313 {
     bdr:WA27313  a          :SerialMember , :Work ;
         skos:altLabel       "dge 'dun chos 'phel gyi gsung rtsom/"@bo-x-ewts , "ge dun qun pei zhu suo"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gsung 'bum/_dge 'dun chos 'phel/"@bo-x-ewts , "格敦群培著作"@zh-hant ;
-        :creator            bdr:CR2870EED98D6A5182 ;
+        :catalogInfo        "Collected works of Amdo Gendun Chophel; predominantly on Buddhist doctrines and history of Tibet."@en ;
+        :creator            bdr:CR1D36C12775720DBE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00KG09682 ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW27313 .
+        :workHasInstance    bdr:MW27313 ;
+        :workIsAbout        bdr:T808 .
 }

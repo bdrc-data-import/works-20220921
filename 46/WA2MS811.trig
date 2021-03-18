@@ -30,6 +30,12 @@ bdg:WA2MS811 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGD3B3747010A6D7A6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T12:04:04.203Z"^^xsd:dateTime ;
+        adm:logMessage      "added about uncontroled, cat info, topic, print type, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
         adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
@@ -68,25 +74,26 @@ bdg:WA2MS811 {
     bda:WA2MS811  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2MS811 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "46/WA2MS811.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2MS811 ;
-        adm:logEntry        bda:LG18EFA5FE52CF9FA9 , bda:LG59E7D2074F571BA6 , bda:LGACA633584596E22D , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG18EFA5FE52CF9FA9 , bda:LG59E7D2074F571BA6 , bda:LGACA633584596E22D , bda:LGD3B3747010A6D7A6 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD3B3747010A6D7A6
+    bdr:CR3F52ED665C5AC8B3
         a                   :AgentAsCreator ;
         :agent              bdr:P1166 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2MS811  a         :Work ;
         skos:prefLabel      "hor khang bsod nams dpal 'bar gyi gsung rtsom phyogs bsgrigs/"@bo-x-ewts , "huo er kang suo lang bian ba xuan ji"@zh-latn-pinyin-x-ndia ;
-        :catalogInfo        "Miscellaneous works by Sonam Pelbar (1919-1994)."@en ;
-        :creator            bdr:CRD3B3747010A6D7A6 ;
+        :catalogInfo        "Collected writings of Horkhang Sonam Pelbar (1919-1994)."@en ;
+        :creator            bdr:CR3F52ED665C5AC8B3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW2MS811 , bdr:W2MS811 .
+        :workGenre          bdr:T1081 , bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW2MS811 , bdr:W2MS811 ;
+        :workIsAbout        bdr:T819 .
 }

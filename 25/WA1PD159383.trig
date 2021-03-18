@@ -28,6 +28,12 @@ bdg:WA1PD159383 {
         adm:logDate         "2017-05-21T20:54:16.406Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG70AF856FEE1DC22E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T09:26:31.121Z"^^xsd:dateTime ;
+        adm:logMessage      "added AboutUncontroled, author, cat info, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG76502868DC7585C7
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-03-28T13:06:56.115Z"^^xsd:dateTime ;
@@ -61,21 +67,29 @@ bdg:WA1PD159383 {
     bda:WA1PD159383  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159383 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "25/WA1PD159383.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159383 ;
-        adm:logEntry        bda:LG5178B22E145ECD98 , bda:LG5D24629976B984BF , bda:LG6F21668EB369C1EC , bda:LG76502868DC7585C7 , bda:LGD50F278A6D338ADA , bda:LGE6540D648AF2545F , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG5178B22E145ECD98 , bda:LG5D24629976B984BF , bda:LG6F21668EB369C1EC , bda:LG70AF856FEE1DC22E , bda:LG76502868DC7585C7 , bda:LGD50F278A6D338ADA , bda:LGE6540D648AF2545F , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR631A61E6B6189A90
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG1389 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD159383  skos:altLabel  "ZEERQIG DANBEIJIANZAN WENJI"@en , "泽尔青旦贝坚赞文集"@zh-hans .
     
     bdr:WA1PD159383  a      :Work ;
         skos:altLabel       "ma hA paN+Di ta rje btsun tshul khrims bstan pa'i rgyal mtshan gyi gsung 'bum/"@bo-x-ewts , "ze er qing dan bie jian zan wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "rje btsun tshul khrims bstan pa'i rgyal mtshan gyi gsung 'bum/"@bo-x-ewts , "ZEERQIG DANBEIJIANZAN WENJI"@en , "泽尔青旦贝坚赞文集"@zh-hans ;
+        :catalogInfo        "Collected works of Mahapandita Tsultrim Tenpe Gyaltshen."@en ;
+        :creator            bdr:CR631A61E6B6189A90 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW1PD159383 , bdr:W1PD159383 .
+        :workHasInstance    bdr:MW1PD159383 , bdr:W1PD159383 ;
+        :workIsAbout        bdr:T247 .
 }

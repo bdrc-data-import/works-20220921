@@ -23,6 +23,12 @@ bdg:WA1PD137838 {
         adm:logDate         "2017-04-23T23:20:50.082Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG4539FE3237E79595
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T09:13:37.341Z"^^xsd:dateTime ;
+        adm:logMessage      "added AboutUncontroled, cat info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG800A303F26054EC4
         a                   adm:InitialDataCreation ;
         adm:logDate         "2012-08-30T15:07:30.571Z"^^xsd:dateTime ;
@@ -56,15 +62,15 @@ bdg:WA1PD137838 {
     bda:WA1PD137838  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD137838 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "48/WA1PD137838.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD137838 ;
-        adm:logEntry        bda:LG3694AA1062039C2A , bda:LG3E2196C9D4EBD647 , bda:LG800A303F26054EC4 , bda:LG86BD54EA47FFF242 , bda:LGA8B7F76E3B9ECB88 , bda:LGIM4599A38FCE , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3694AA1062039C2A , bda:LG3E2196C9D4EBD647 , bda:LG4539FE3237E79595 , bda:LG800A303F26054EC4 , bda:LG86BD54EA47FFF242 , bda:LGA8B7F76E3B9ECB88 , bda:LGIM4599A38FCE , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4539FE3237E79595
+    bdr:CR09F5D780A559FCB3
         a                   :AgentAsCreator ;
         :agent              bdr:P3PD992 ;
         :role               bdr:R0ER0019 .
@@ -74,9 +80,11 @@ bdg:WA1PD137838 {
     bdr:WA1PD137838  a      :Work ;
         skos:altLabel       "long re ling ba wen ji (shang xia)"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "g.yu khog rgya sprul rig 'dzin lung rig gling pa'i gsung 'bum gces bsdus/"@bo-x-ewts , "龙热领巴文集（上、下）"@zh-hans ;
-        :creator            bdr:CR4539FE3237E79595 ;
+        :catalogInfo        "Selected writings of Yukhok Gyatrul Rigzin Lungrik."@en ;
+        :creator            bdr:CR09F5D780A559FCB3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1PD128746 , bdr:T208 ;
-        :workHasInstance    bdr:MW1PD137838 , bdr:W1PD137838 .
+        :workHasInstance    bdr:MW1PD137838 , bdr:W1PD137838 ;
+        :workIsAbout        bdr:T1082 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1PD159532 {
+    bda:LG17A03E7D6EA435EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T09:36:59.666Z"^^xsd:dateTime ;
+        adm:logMessage      "added about uncontroled, author, cat info, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG20C0D6288E3CB6A5
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-18T16:40:13.095Z"^^xsd:dateTime ;
@@ -66,22 +72,30 @@ bdg:WA1PD159532 {
     bda:WA1PD159532  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159532 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "0a/WA1PD159532.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159532 ;
-        adm:logEntry        bda:LG20C0D6288E3CB6A5 , bda:LG44B7AB8AEF0C68C3 , bda:LG6637637CEE1CDD08 , bda:LG86CD18809BB5A181 , bda:LGC44E64D8974CD564 , bda:LGDBD80CD015EA9DBC , bda:LGE6720F97E5D0FB81 , bda:LGF35FBBD258376257 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG17A03E7D6EA435EE , bda:LG20C0D6288E3CB6A5 , bda:LG44B7AB8AEF0C68C3 , bda:LG6637637CEE1CDD08 , bda:LG86CD18809BB5A181 , bda:LGC44E64D8974CD564 , bda:LGDBD80CD015EA9DBC , bda:LGE6720F97E5D0FB81 , bda:LGF35FBBD258376257 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR4A2D698B5D9D5EFE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10078 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD159532  skos:altLabel  "Jonang Ewang Wisdom Publication Series"@en , "堪布更噶华尔登嘉措全集"@zh-hans .
     
     bdr:WA1PD159532  a      :SerialMember , :Work ;
         skos:altLabel       "kan bu geng ga hua er deng jia cuo quan ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "mkhan po kun dga' dpal ldan rgya mtsho'i gsung 'bum/"@bo-x-ewts , "Jonang Ewang Wisdom Publication Series"@en , "堪布更噶华尔登嘉措全集"@zh-hans ;
+        :catalogInfo        "Collected works of Jonang Khenpo Kunga Palden Gyatsho."@en ;
+        :creator            bdr:CR4A2D698B5D9D5EFE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS18958 ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW1PD159532 , bdr:W1PD159532 .
+        :workHasInstance    bdr:MW1PD159532 , bdr:W1PD159532 ;
+        :workIsAbout        bdr:T360 .
 }

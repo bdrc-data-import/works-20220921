@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29496 {
+    bda:LG0AA2F8B8AC8598C3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG22923F0165398188
         a                   adm:UpdateData ;
         adm:logDate         "2010-09-21T12:53:03.287Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA29496 {
         adm:logWho          bdu:U00001 .
     
     bda:LGE8185399FACE5E6E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T15:23:50.18Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info and lang encoding"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
@@ -59,26 +65,29 @@ bdg:WA29496 {
     bda:WA29496  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29496 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "e2/WA29496.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29496 ;
-        adm:logEntry        bda:LG22923F0165398188 , bda:LG95160DBDABCAB2D4 , bda:LGE8185399FACE5E6E , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG0AA2F8B8AC8598C3 , bda:LG22923F0165398188 , bda:LG95160DBDABCAB2D4 , bda:LGE8185399FACE5E6E , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0AA2F8B8AC8598C3
+    bdr:CRDB95F3DA179D71C8
         a                   :AgentAsCreator ;
         :agent              bdr:P7707 ;
         :role               bdr:R0ER0019 .
     
-    bdr:MW29496  skos:altLabel  "zang zu zhe xue si xiang wen hua lun ji"@zh-latn-pinyin-x-ndia .
+    bdr:MW29496  skos:altLabel  "藏族哲学思想文化论集"@zh-hans .
     
     bdr:WA29496  a          :Work ;
-        skos:prefLabel      "gzhung don mdor bstan gyi rnam bshad bsdus pa'i snying po/"@bo-x-ewts , "zang zu zhe xue si xiang wen hua lun ji"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR0AA2F8B8AC8598C3 ;
+        skos:altLabel       "zang zu zhe xue si xiang wen hua lun ji"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gzhung don mdor bstan gyi rnam bshad bsdus pa'i snying po/"@bo-x-ewts , "藏族哲学思想文化论集"@zh-hans ;
+        :catalogInfo        "Miscellaneous articles on Tibetan history and classical literature."@en ;
+        :creator            bdr:CRDB95F3DA179D71C8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW29496 , bdr:W29496 .
+        :workGenre          bdr:T2398 , bdr:T61 ;
+        :workHasInstance    bdr:MW29496 , bdr:W29496 ;
+        :workIsAbout        bdr:T36 , bdr:T59 .
 }

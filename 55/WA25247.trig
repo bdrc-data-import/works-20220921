@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA25247 {
-    bda:LG85FBED7D4FDA2468
+    bda:LG5B6E519B1B305634
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG85FBED7D4FDA2468
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T13:24:58.005Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat info"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
@@ -47,26 +53,25 @@ bdg:WA25247 {
     bda:WA25247  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25247 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "55/WA25247.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25247 ;
-        adm:logEntry        bda:LG85FBED7D4FDA2468 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG5B6E519B1B305634 , bda:LG85FBED7D4FDA2468 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5B6E519B1B305634
+    bdr:CR0B9B5D86F0006287
         a                   :AgentAsCreator ;
         :agent              bdr:P6620 ;
         :role               bdr:R0ER0019 .
     
-    bdr:MW25247  skos:altLabel  "xi bei min zu xue yuan zang zu xi jian xi 50 zhou nian xue shu yan jiu"@zh-latn-pinyin .
-    
     bdr:WA25247  a          :Work ;
         skos:prefLabel      "nub byang mi rigs slob grwa chen mo'i bod yig sde khang tshugs nas lo 'khor lnga bcu lon pa'i rigs gzhung dpyad rtsom/"@bo-x-ewts , "xi bei min zu xue yuan zang zu xi jian xi 50 zhou nian xue shu yan jiu"@zh-latn-pinyin ;
-        :creator            bdr:CR5B6E519B1B305634 ;
+        :catalogInfo        "Contributed miscellaneous articles on Tibetan studies published on golden jubilee celebration of Zang wen jiao yan zu of Xi bei min zu xue yuan."@en ;
+        :creator            bdr:CR0B9B5D86F0006287 ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
-        :workGenre          bdr:T413 ;
+        :language           bdr:LangBo , bdr:LangZh ;
+        :workGenre          bdr:T1081 , bdr:T258 ;
         :workHasInstance    bdr:MW25247 , bdr:W25247 .
 }

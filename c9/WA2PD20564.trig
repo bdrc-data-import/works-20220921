@@ -29,6 +29,12 @@ bdg:WA2PD20564 {
         adm:logDate         "2017-05-18T03:15:57.073Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGB72548A2C596E848
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-17T16:13:36.877Z"^^xsd:dateTime ;
+        adm:logMessage      "added aboutuncontroled"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGB9DB4F9A69E5EB67
         a                   adm:UpdateData ;
         adm:logDate         "2018-02-19T09:35:47.33Z"^^xsd:dateTime ;
@@ -49,25 +55,26 @@ bdg:WA2PD20564 {
     bda:WA2PD20564  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD20564 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "c9/WA2PD20564.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD20564 ;
-        adm:logEntry        bda:LG4B9A34871AED7B33 , bda:LG4CE59DF8A3CD2510 , bda:LG8C6040D6610547E1 , bda:LGB9DB4F9A69E5EB67 , bda:LGCB9EC5A8DC0B8E1C , bda:LGE5AC3941562DF47A ;
+        adm:logEntry        bda:LG4B9A34871AED7B33 , bda:LG4CE59DF8A3CD2510 , bda:LG8C6040D6610547E1 , bda:LGB72548A2C596E848 , bda:LGB9DB4F9A69E5EB67 , bda:LGCB9EC5A8DC0B8E1C , bda:LGE5AC3941562DF47A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB72548A2C596E848
+    bdr:CRD3420F34971C98BC
         a                   :AgentAsCreator ;
         :agent              bdr:P2JM443 ;
-        :role               bdr:R0ER0019 .
+        :role               bdr:R0ER0025 .
     
     bdr:WA2PD20564  a       :Work ;
         skos:prefLabel      "sprul pa'i gter ston rig 'dzin dpa' bo las rab rtsal gyi chos skor/"@bo-x-ewts ;
-        :catalogInfo        "Collected Works by Cheyo Rikdzin(18th century)."@en ;
-        :creator            bdr:CRB72548A2C596E848 ;
+        :catalogInfo        "Collected Works of Cheyol Rikdzin Pawo Leraptsal (18th century)."@en ;
+        :creator            bdr:CRD3420F34971C98BC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 , bdr:T448 ;
-        :workHasInstance    bdr:MW2PD20564 , bdr:W2PD20564 .
+        :workHasInstance    bdr:MW2PD20564 , bdr:W2PD20564 ;
+        :workIsAbout        bdr:T1082 .
 }
