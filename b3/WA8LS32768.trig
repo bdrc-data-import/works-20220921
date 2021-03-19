@@ -30,38 +30,45 @@ bdg:WA8LS32768 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGC1065E7EDB17B4B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-18T14:02:45.666Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS32768  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS32768 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "b3/WA8LS32768.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS32768 ;
-        adm:logEntry        bda:LG48EBDCFDF45093BC , bda:LG5964B3870FA12449 , bda:LG9DD3858E68BA03A0 ;
+        adm:logEntry        bda:LG48EBDCFDF45093BC , bda:LG5964B3870FA12449 , bda:LG9DD3858E68BA03A0 , bda:LGC1065E7EDB17B4B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR81B99C2EE5F779A8
+    bdr:CR3C32CC2D1123C9DA
         a                   :AgentAsCreator ;
-        :agent              bdr:P4333 ;
+        :agent              bdr:P168 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRC1065E7EDB17B4B0
+    bdr:CR81B99C2EE5F779A8
         a                   :AgentAsCreator ;
         :agent              bdr:P4954 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRE0517748A4739D41
         a                   :AgentAsCreator ;
-        :agent              bdr:P168 ;
+        :agent              bdr:P4333 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA8LS32768  a       :Work ;
         skos:prefLabel      "sman gzhung thor bu/"@bo-x-ewts ;
         :catalogInfo        "A compilation of miscellany medical text authored by Nagarjuna, Elder Yuthok Yonten Gonpo and Penchen Palden Yeshe."@en ;
-        :creator            bdr:CR81B99C2EE5F779A8 , bdr:CRC1065E7EDB17B4B0 , bdr:CRE0517748A4739D41 ;
+        :creator            bdr:CR3C32CC2D1123C9DA , bdr:CR81B99C2EE5F779A8 , bdr:CRE0517748A4739D41 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T10MS14651 , bdr:T413 ;
-        :workHasInstance    bdr:MW8LS32768 , bdr:W8LS32768 .
+        :workGenre          bdr:T10MS14651 ;
+        :workHasInstance    bdr:MW8LS32768 , bdr:W8LS32768 ;
+        :workIsAbout        bdr:T2MS13793 .
 }

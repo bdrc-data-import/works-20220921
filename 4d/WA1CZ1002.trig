@@ -35,6 +35,12 @@ bdg:WA1CZ1002 {
         adm:logMessage      "added authorship statement and date of writing"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LG6F9EF2912053C713
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-18T16:19:06.935Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed, added cat, pub info and author"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG728F3F071B01F019
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-05-18T12:56:08.375Z"^^xsd:dateTime ;
@@ -98,15 +104,20 @@ bdg:WA1CZ1002 {
     bda:WA1CZ1002  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1CZ1002 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      18 ;
         adm:gitPath         "4d/WA1CZ1002.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1CZ1002 ;
-        adm:logEntry        bda:LG01F9EAC8A8F07DEF , bda:LG0CC21755FBBFCECD , bda:LG3AD6234EB16E3553 , bda:LG558149F19544E8A9 , bda:LG728F3F071B01F019 , bda:LG797D9B2C913657EB , bda:LG7F997FDC45EF8663 , bda:LG916DE2506C67F3DE , bda:LG9403339838D652BB , bda:LGD110F2B9BEEAA2AA , bda:LGE307C486FEDD0579 , bda:LGEC438E67E021D55E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG01F9EAC8A8F07DEF , bda:LG0CC21755FBBFCECD , bda:LG3AD6234EB16E3553 , bda:LG558149F19544E8A9 , bda:LG6F9EF2912053C713 , bda:LG728F3F071B01F019 , bda:LG797D9B2C913657EB , bda:LG7F997FDC45EF8663 , bda:LG916DE2506C67F3DE , bda:LG9403339838D652BB , bda:LGD110F2B9BEEAA2AA , bda:LGE307C486FEDD0579 , bda:LGEC438E67E021D55E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:EV6F9EF2912053C713
+    bdr:CRFA9AA0FCC32A0FDB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1CZ1003 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:EV8F4CBC4DBE19BB46
         a                   :CompletedEvent ;
         :onOrAbout          "རྣམ་བྱུང་གི་ལོ་དབོའི་ཟླ་བའི་མར་ངོའི་ཚེས་བརྒྱད་ལ་གྲུབ་པར་སྦྱར་བ་རེ་ཞིག་རྫོགས་སོ༎" .
     
@@ -114,9 +125,10 @@ bdg:WA1CZ1002 {
         skos:altLabel       "bcom ldan 'das dpal dus kyi 'khor lo'i dkyil 'khor gyi mngon par rtogs pa yid bzhin gyi nor bu/"@bo-x-ewts ;
         skos:prefLabel      "dus 'khor sgrub thabs yid bzhin nor bu/"@bo-x-ewts ;
         :catalogInfo        "Explanation of the Kalachakra sadhana."@en ;
+        :creator            bdr:CRFA9AA0FCC32A0FDB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV6F9EF2912053C713 ;
+        :workEvent          bdr:EV8F4CBC4DBE19BB46 ;
         :workGenre          bdr:T1 ;
         :workHasInstance    bdr:MW1CZ1002 , bdr:W1CZ1002 ;
         :workIsAbout        bdr:T74 .

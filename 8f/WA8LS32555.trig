@@ -24,6 +24,12 @@ bdg:WA8LS32555 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGA7F4DBCB611B2380
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-18T10:46:50.983Z"^^xsd:dateTime ;
+        adm:logMessage      "added aboutuncontroled"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGEE920968956D1CA8
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-04T14:31:16.212Z"^^xsd:dateTime ;
@@ -33,15 +39,15 @@ bdg:WA8LS32555 {
     bda:WA8LS32555  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS32555 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "8f/WA8LS32555.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS32555 ;
-        adm:logEntry        bda:LG2C474FA5304777D9 , bda:LG2C7B645C54D29046 , bda:LGEE920968956D1CA8 ;
+        adm:logEntry        bda:LG2C474FA5304777D9 , bda:LG2C7B645C54D29046 , bda:LGA7F4DBCB611B2380 , bda:LGEE920968956D1CA8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA7F4DBCB611B2380
+    bdr:CR8456A64C12798D03
         a                   :AgentAsCreator ;
         :agent              bdr:P3117 ;
         :role               bdr:R0ER0019 .
@@ -50,9 +56,10 @@ bdg:WA8LS32555 {
         skos:altLabel       "sgrub khang blo bzang tshul khrims bstan pa'i rgyal mtshan gyi gsung 'bum/ka nas ki bar/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/ blo bzang tshul khrims bstan pa'i rgyal mtshan/ ka nas ki bar/"@bo-x-ewts ;
         :catalogInfo        "Collected works of Drupkhang Losang Tshultrim Tenpe Gyaltshen."@en ;
-        :creator            bdr:CRA7F4DBCB611B2380 ;
+        :creator            bdr:CR8456A64C12798D03 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW8LS32555 , bdr:W8LS32555 .
+        :workHasInstance    bdr:MW8LS32555 , bdr:W8LS32555 ;
+        :workIsAbout        bdr:T819 .
 }

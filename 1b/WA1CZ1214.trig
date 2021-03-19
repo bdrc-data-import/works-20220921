@@ -18,6 +18,12 @@ bdg:WA1CZ1214 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG425ACBF3987D1BF1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-18T16:19:12.175Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed, added cat, pub info and author"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG8AF137F4E8889ED4
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-07-10T10:08:54.298Z"^^xsd:dateTime ;
@@ -50,16 +56,23 @@ bdg:WA1CZ1214 {
     bda:WA1CZ1214  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1CZ1214 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "1b/WA1CZ1214.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1CZ1214 ;
-        adm:logEntry        bda:LG3686E3FE95044E85 , bda:LG8AF137F4E8889ED4 , bda:LG8DE0755796525E5E , bda:LGCA4F5B5A4170B245 , bda:LGCE2E46322A303804 , bda:LGF0F11EC627869472 ;
+        adm:logEntry        bda:LG3686E3FE95044E85 , bda:LG425ACBF3987D1BF1 , bda:LG8AF137F4E8889ED4 , bda:LG8DE0755796525E5E , bda:LGCA4F5B5A4170B245 , bda:LGCE2E46322A303804 , bda:LGF0F11EC627869472 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR80486352BEF10708
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1034 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1CZ1214  a        :Work ;
         skos:prefLabel      "dril bu lus dkyil gyi legs bshad/"@bo-x-ewts ;
+        :catalogInfo        "Body mandala sadhana of Cakrasamvara"@en ;
+        :creator            bdr:CR80486352BEF10708 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T245 ;

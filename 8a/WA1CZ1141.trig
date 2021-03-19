@@ -24,6 +24,12 @@ bdg:WA1CZ1141 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG30150FCA2748E96B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-18T16:19:09.878Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed, added cat, pub info and author"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG52BD8EF2F245E505
         a                   adm:UpdateData ;
         adm:logDate         "2007-06-22T11:21:46.26Z"^^xsd:dateTime ;
@@ -60,17 +66,24 @@ bdg:WA1CZ1141 {
     bda:WA1CZ1141  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1CZ1141 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "8a/WA1CZ1141.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1CZ1141 ;
-        adm:logEntry        bda:LG0D30FE4CCCBFC9A1 , bda:LG1DE2F748A994170C , bda:LG52BD8EF2F245E505 , bda:LG760F3DD513CF90AE , bda:LG9CD7516E0C1640AD , bda:LG9E8BAD482763B117 , bda:LGE8A6E8540078D4C2 , bda:LGED106766DB98D637 ;
+        adm:logEntry        bda:LG0D30FE4CCCBFC9A1 , bda:LG1DE2F748A994170C , bda:LG30150FCA2748E96B , bda:LG52BD8EF2F245E505 , bda:LG760F3DD513CF90AE , bda:LG9CD7516E0C1640AD , bda:LG9E8BAD482763B117 , bda:LGE8A6E8540078D4C2 , bda:LGED106766DB98D637 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR2EFA6F5ED29B8ED4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS12993 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1CZ1141  a        :Work ;
         skos:altLabel       "rje btsun rdo rje rnal 'byor ma nA ro mkha' spyod ma'i bsnyen pa bya tshul dngos grub myur du 'gug pa'i pho nya/"@bo-x-ewts ;
         skos:prefLabel      "nA ro mkha' spyod ma'i bsnyen pa bya tshul dngos grub myur du 'gug pa'i pho nya/"@bo-x-ewts ;
+        :catalogInfo        "method for performance of the sevasadhana to the practice of the Vajrayogini"@en ;
+        :creator            bdr:CR2EFA6F5ED29B8ED4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T151 ;

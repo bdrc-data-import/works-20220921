@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS36510 {
+    bda:LG38B3AAAF8A133F72
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-18T14:27:22.976Z"^^xsd:dateTime ;
+        adm:logMessage      "added aboutuncontroled"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG5A7A7DE5466C8862
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-07-31T09:55:12.887Z"^^xsd:dateTime ;
@@ -34,32 +40,33 @@ bdg:WA8LS36510 {
     bda:WA8LS36510  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS36510 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "03/WA8LS36510.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS36510 ;
-        adm:logEntry        bda:LG5A7A7DE5466C8862 , bda:LGB970BFF094E2F3DE , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG38B3AAAF8A133F72 , bda:LG5A7A7DE5466C8862 , bda:LGB970BFF094E2F3DE , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR38B3AAAF8A133F72
+    bdr:CR43D1DB8C71575C01
         a                   :AgentAsCreator ;
         :agent              bdr:P261 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR43D1DB8C71575C01
+    bdr:CRB81777B483410384
         a                   :AgentAsCreator ;
         :agent              bdr:P6557 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA8LS36510  a       :SerialMember , :Work ;
         skos:prefLabel      "rje btsun dam pa sku phreng lnga pa dang bdun pa'i gsung thor bu/"@bo-x-ewts ;
-        :catalogInfo        "Miscellany writings of fifth and seventh Khalkha Jetsun Dampa."@en ;
-        :creator            bdr:CR38B3AAAF8A133F72 , bdr:CR43D1DB8C71575C01 ;
+        :catalogInfo        "Miscellany writings of the fifth and seventh Khalkha Jetsun Dampa."@en ;
+        :creator            bdr:CR43D1DB8C71575C01 , bdr:CRB81777B483410384 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS36521 ;
         :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW8LS36510 , bdr:W8LS36510 .
+        :workHasInstance    bdr:MW8LS36510 , bdr:W8LS36510 ;
+        :workIsAbout        bdr:T819 .
 }
