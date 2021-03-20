@@ -13,8 +13,10 @@
 
 bdg:WA27505 {
     bda:LG3840C2DB78D80FB2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGAB1D34C0B47D0232
         a                   adm:UpdateData ;
@@ -28,14 +30,18 @@ bdg:WA27505 {
         adm:logMessage      "subject class changed from G4167 to G1KR1648"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGEFC8989D84FCBCEF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:WA27505  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27505 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "43/WA27505.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27505 ;
-        adm:logEntry        bda:LG3840C2DB78D80FB2 , bda:LGAB1D34C0B47D0232 , bda:LGCFEC9D155B0E6FA6 ;
+        adm:logEntry        bda:LG3840C2DB78D80FB2 , bda:LGAB1D34C0B47D0232 , bda:LGCFEC9D155B0E6FA6 , bda:LGEFC8989D84FCBCEF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

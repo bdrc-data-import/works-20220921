@@ -30,6 +30,10 @@ bdg:WA10302 {
         adm:logMessage      "completed"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG40765666C0E41B52
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG7A76E6D38D44E73A
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-05-04T12:45:31.814Z"^^xsd:dateTime ;
@@ -37,8 +41,10 @@ bdg:WA10302 {
         adm:logWho          bdu:U00016 .
     
     bda:LGC6CB3AAFC4734696
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGD1EB9D3B3DB0759D
         a                   adm:UpdateData ;
@@ -70,20 +76,20 @@ bdg:WA10302 {
     bda:WA10302  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA10302 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "a5/WA10302.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA10302 ;
-        adm:logEntry        bda:LG0795F5CD1C2F4AC4 , bda:LG11CE483F3C0815D9 , bda:LG3E7A5456FB692371 , bda:LG7A76E6D38D44E73A , bda:LGC6CB3AAFC4734696 , bda:LGD1EB9D3B3DB0759D , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0795F5CD1C2F4AC4 , bda:LG11CE483F3C0815D9 , bda:LG3E7A5456FB692371 , bda:LG40765666C0E41B52 , bda:LG7A76E6D38D44E73A , bda:LGC6CB3AAFC4734696 , bda:LGD1EB9D3B3DB0759D , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR40765666C0E41B52
+    bdr:CR621C07C7A033215D
         a                   :AgentAsCreator ;
         :agent              bdr:P787 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR621C07C7A033215D
+    bdr:CRF74784C1D1F3A420
         a                   :AgentAsCreator ;
         :agent              bdr:P431 ;
         :role               bdr:R0ER0011 .
@@ -94,7 +100,7 @@ bdg:WA10302 {
         skos:altLabel       "gsung ngag sngon 'gro'i khrid rigs snang gsum snying po'i legs bshad dang 'chad thabs blo gsal mgul rgyan dang / gsung ngag dngos gzhi'i khrid rim rgyud gsum snying po'i legs bshad bcas/"@bo-x-ewts , "bon chos kyi bstan pa shan dbye : a discussion of the doctrinal and practical differences between bon and chos"@en-x-mixed ;
         skos:prefLabel      "lam 'bras snang gsum rgyud gsum snying po'i legs bshad/"@bo-x-ewts , "gsung ngag lam 'bras snyan gsum rgyud gsum snying po'i legs bshad : a detailed presentation of the teachings of the sa-skya-pa lam 'bras practice"@en-x-mixed ;
         :catalogInfo        "Explanation of the Sakya Lamdre practice by Khenchen Ngawang Chodrak (1572-1641). Includes discussion of the doctrinal and practical differences between Bon and Chos by Rongton Sheja Kunrik (1367-1449). Part of the tshogs bshad yig cha."@en ;
-        :creator            bdr:CR40765666C0E41B52 , bdr:CR621C07C7A033215D ;
+        :creator            bdr:CR621C07C7A033215D , bdr:CRF74784C1D1F3A420 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW10302 , bdr:W10302 ;

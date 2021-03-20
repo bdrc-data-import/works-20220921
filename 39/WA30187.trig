@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30187 {
+    bda:LG133E814FD4A81D1E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG190D9038132CE371
         a                   adm:UpdateData ;
         adm:logDate         "2008-01-10T12:47:26.161Z"^^xsd:dateTime ;
@@ -31,8 +35,10 @@ bdg:WA30187 {
         adm:logWho          bdu:U00026 .
     
     bda:LGA59A87A064AF34C9
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGB391F286B152C5F3
         a                   adm:UpdateData ;
@@ -64,23 +70,23 @@ bdg:WA30187 {
     bda:WA30187  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30187 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "39/WA30187.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30187 ;
-        adm:logEntry        bda:LG190D9038132CE371 , bda:LG5B7CF935AA12DE12 , bda:LGA3F161BA2ADD1751 , bda:LGA59A87A064AF34C9 , bda:LGB391F286B152C5F3 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG133E814FD4A81D1E , bda:LG190D9038132CE371 , bda:LG5B7CF935AA12DE12 , bda:LGA3F161BA2ADD1751 , bda:LGA59A87A064AF34C9 , bda:LGB391F286B152C5F3 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1204B30E98912D6B
         a                   :AgentAsCreator ;
-        :agent              bdr:P364 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR133E814FD4A81D1E
-        a                   :AgentAsCreator ;
         :agent              bdr:P2943 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR2FFE14ED1F629E19
+        a                   :AgentAsCreator ;
+        :agent              bdr:P364 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW30187  skos:altLabel  "an exegesis of a rediscovered nyingma lamrim text"@en .
     
@@ -88,7 +94,7 @@ bdg:WA30187 {
         skos:altLabel       "gsang sngags lam gyi rim pa rin po che'i sgron me/"@bo-x-ewts , "Gsaṅ sṅags naṅ gi lam rim rgya cher ʼgrel pa Saṅs rgyas gñis paʼi dgoṅs rgyan :an exegesis of a rediscovered Nyingmapa Lamrim text /by Kaḥ-thog Dge-rtse Paṇḍita ʼGyur-med-tshe-dbaṅ-mchog-grub."@en-x-mixed ;
         skos:prefLabel      "gsang sngags nang gi lam rim rgya cher 'grel pa sangs rgyas gnyis pa'i dgongs rgyan/"@bo-x-ewts , "an exegesis of a rediscovered nyingma lamrim text"@en ;
         :catalogInfo        "Nyingma treatise on the path of tantra."@en ;
-        :creator            bdr:CR1204B30E98912D6B , bdr:CR133E814FD4A81D1E ;
+        :creator            bdr:CR1204B30E98912D6B , bdr:CR2FFE14ED1F629E19 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016202 ;

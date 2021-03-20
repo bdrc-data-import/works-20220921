@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA24031 {
+    bda:LG0321FD5DBC502805
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG0CDE95A02B348830
         a                   adm:UpdateData ;
         adm:logDate         "2008-02-04T11:20:23.551Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA24031 {
         adm:logWho          bdu:U00021 .
     
     bda:LG9CCB880C66B4E112
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -52,21 +58,21 @@ bdg:WA24031 {
     bda:WA24031  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA24031 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "f3/WA24031.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA24031 ;
-        adm:logEntry        bda:LG0CDE95A02B348830 , bda:LG1432696861FD643F , bda:LG9CCB880C66B4E112 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0321FD5DBC502805 , bda:LG0CDE95A02B348830 , bda:LG1432696861FD643F , bda:LG9CCB880C66B4E112 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA20428 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR0321FD5DBC502805
+    bdr:CRE2FC4B29F195A8DF
         a                   :AgentAsCreator ;
         :agent              bdr:P1712 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVE2FC4B29F195A8DF
+    bdr:EV75072355B546FFE6
         a                   :CompletedEvent ;
         :notAfter           "1809"^^xsd:gYear ;
         :notBefore          "1807"^^xsd:gYear .
@@ -77,11 +83,11 @@ bdg:WA24031 {
         skos:altLabel       "bstan pa'i snying po gsang chen snga 'gyur nges don zab mo'i chos kyi 'byung ba gsal bar byed pa'i legs bshad mkhas pa dga' byed ngo mtshar gtam gyi rol mtsho/"@bo-x-ewts , "chos 'byung ngo mtshar gtam gyi rol mtsho/"@bo-x-ewts , "gur bkra'i chos 'byung /"@bo-x-ewts , "Bstan paʼi sñiṅ po Gsaṅ chen Sṅa ʼgyur ṅes don zab moʼi chos kyi ʼbyuṅ ba gsal bar byed paʼi legs bśad mkhas pa dgaʼ byed ṅo mtshar gdam gyi rol mtsho :a detailed history of the Nyingmapa traditions of Tibetan Buddhism written in 1807-1809 /by Stag-sgaṅ Mkhas-mchog Ṅag-dbaṅ-blo-gros alias Gu-ru Bkra-śis."@en-x-mixed ;
         skos:prefLabel      "gu bkra'i chos 'byung /"@bo-x-ewts , "bstan pa'i snin po gsan chen sna 'gyur nes don zab mo'i chos kyi 'byun ba gsal bar byed pa'i legs bsad mkhas pa dga' byed no mtshar gtam gyi rol mtsho : a detailed history of the nyingmapa traditions of tibetan buddhism written in 1807-1809"@en-x-mixed ;
         :catalogInfo        "History of various orders of Tibetan Buddhism, chiefly Nyingma."@en ;
-        :creator            bdr:CR0321FD5DBC502805 ;
+        :creator            bdr:CRE2FC4B29F195A8DF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG12152 ;
-        :workEvent          bdr:EVE2FC4B29F195A8DF ;
+        :workEvent          bdr:EV75072355B546FFE6 ;
         :workGenre          bdr:T1134 ;
         :workHasInstance    bdr:MW24031 ;
         :workIsAbout        bdr:T1082 .

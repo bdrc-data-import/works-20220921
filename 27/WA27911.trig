@@ -19,8 +19,10 @@ bdg:WA27911 {
         adm:logWho          bdu:U00013 .
     
     bda:LG3DD3C9950645EBBC
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG65C08AD6A581F20E
         a                   adm:UpdateData ;
@@ -28,18 +30,22 @@ bdg:WA27911 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGFF065DCFB33FF69C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:WA27911  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27911 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "27/WA27911.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27911 ;
-        adm:logEntry        bda:LG0283101BBB48E484 , bda:LG3DD3C9950645EBBC , bda:LG65C08AD6A581F20E ;
+        adm:logEntry        bda:LG0283101BBB48E484 , bda:LG3DD3C9950645EBBC , bda:LG65C08AD6A581F20E , bda:LGFF065DCFB33FF69C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFF065DCFB33FF69C
+    bdr:CR79D5634E2490CE22
         a                   :AgentAsCreator ;
         :agent              bdr:P1922 ;
         :role               bdr:R0ER0019 .
@@ -49,7 +55,7 @@ bdg:WA27911 {
     bdr:WA27911  a          :Work ;
         skos:altLabel       "rje btsun bla ma rgyal dban sar rdza pa chen po bkra sis rgyal mtshan dpal bzan po'i rtogs brjod nun gsal du gleng ba no mtshar dpag bsam ljon pa'i dga' tshal"@bo-alalc97 , "rje btsun bla ma rgyal dbang shar rdza pa chen po bkra shis rgyal mtshan dpal bzang po'i rtogs brjod nyung gsal du gleng ba ngo mtshar dpag bsam ljon pa'i dga' tsahl/"@bo-x-ewts ;
         skos:prefLabel      "bkra shis rgyal mtshan gyi rnam thar bsdus pa/"@bo-x-ewts , "brief biography of the new bon (bon gsar) master, sar rdza bkra-sis-rgyal-mtshan"@en-x-mixed ;
-        :creator            bdr:CRFF065DCFB33FF69C ;
+        :creator            bdr:CR79D5634E2490CE22 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

@@ -13,8 +13,10 @@
 
 bdg:WA29008 {
     bda:LG4288499AFAA2E929
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG6534B7F48A251998
         a                   adm:ScanRequestCreation ;
@@ -27,6 +29,10 @@ bdg:WA29008 {
         adm:logDate         "2011-08-17T13:12:56.559Z"^^xsd:dateTime ;
         adm:logMessage      "completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGED4AF4C227444C7E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -45,15 +51,15 @@ bdg:WA29008 {
     bda:WA29008  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29008 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "8d/WA29008.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29008 ;
-        adm:logEntry        bda:LG4288499AFAA2E929 , bda:LG6534B7F48A251998 , bda:LGC3BFE157C7249357 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG4288499AFAA2E929 , bda:LG6534B7F48A251998 , bda:LGC3BFE157C7249357 , bda:LGED4AF4C227444C7E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRED4AF4C227444C7E
+    bdr:CR768137B7370EBCAD
         a                   :AgentAsCreator ;
         :agent              bdr:P425 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +70,7 @@ bdg:WA29008 {
         skos:altLabel       "gter chos/_nyi ma grags pa/"@bo-x-ewts ;
         skos:prefLabel      "gsung thor/_nyi ma grags pa/"@bo-x-ewts , "the collected rediscovered teachings of rig-'dzin ni-ma-grags-pa with rituals of the char ni-grags tradition"@en-x-mixed ;
         :catalogInfo        "Miscellaneous Writings by terton Nyima Drakpa (1647-1710)."@en ;
-        :creator            bdr:CRED4AF4C227444C7E ;
+        :creator            bdr:CR768137B7370EBCAD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

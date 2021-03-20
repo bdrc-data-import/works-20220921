@@ -19,8 +19,10 @@ bdg:WA30097 {
         adm:logWho          bdu:U00021 .
     
     bda:LG88C1A92CC860AB60
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG89FE4E180DCB67A7
         a                   adm:ScanRequestCreation ;
@@ -34,6 +36,10 @@ bdg:WA30097 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGB4105214FB165319
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGE443254F58D941B7
         a                   adm:UpdateData ;
         adm:logDate         "2012-08-29T14:28:03.108Z"^^xsd:dateTime ;
@@ -43,15 +49,15 @@ bdg:WA30097 {
     bda:WA30097  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30097 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "e3/WA30097.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30097 ;
-        adm:logEntry        bda:LG35C34D488C63433D , bda:LG88C1A92CC860AB60 , bda:LG89FE4E180DCB67A7 , bda:LGA2C53AD2E3AE64BA , bda:LGE443254F58D941B7 ;
+        adm:logEntry        bda:LG35C34D488C63433D , bda:LG88C1A92CC860AB60 , bda:LG89FE4E180DCB67A7 , bda:LGA2C53AD2E3AE64BA , bda:LGB4105214FB165319 , bda:LGE443254F58D941B7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB4105214FB165319
+    bdr:CR31E9EA7F3C5F1366
         a                   :AgentAsCreator ;
         :agent              bdr:P7420 ;
         :role               bdr:R0ER0019 .
@@ -61,7 +67,7 @@ bdg:WA30097 {
     bdr:WA30097  a          :Work ;
         skos:altLabel       "las mgon a tsa ra yi pra mo rno mtshon mngon shes 'khrul med srid pa'i me long chen mo legs nyes mngon sum rgyal byed mig mthong /"@bo-x-ewts ;
         skos:prefLabel      "a tsa ra yi man ngag rno mthong gsal ba'i sgron me/"@bo-x-ewts , "explanation of the prognostication of events to come using the throwing of dice after propitiation of mahakala in the form of an acarya"@en ;
-        :creator            bdr:CRB4105214FB165319 ;
+        :creator            bdr:CR31E9EA7F3C5F1366 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1171 ;

@@ -24,9 +24,15 @@ bdg:WA23875 {
         adm:logMessage      "ctc"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LGD899891785E5F2BA
+    bda:LG61109ACB4159D7C1
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGD899891785E5F2BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGE514FBD76C96703C
         a                   adm:UpdateData ;
@@ -51,35 +57,35 @@ bdg:WA23875 {
     bda:WA23875  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23875 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "5e/WA23875.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23875 ;
-        adm:logEntry        bda:LG0E316A8AC4EFE095 , bda:LG114190EC860E9F83 , bda:LGD899891785E5F2BA , bda:LGE514FBD76C96703C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0E316A8AC4EFE095 , bda:LG114190EC860E9F83 , bda:LG61109ACB4159D7C1 , bda:LGD899891785E5F2BA , bda:LGE514FBD76C96703C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1D6DDF8EF80EA493
         a                   :AgentAsCreator ;
-        :agent              bdr:P268 ;
-        :role               bdr:R0ER0016 .
+        :agent              bdr:P289 ;
+        :role               bdr:R0ER0019 .
     
     bdr:CR5AA9F14032A44048
         a                   :AgentAsCreator ;
-        :agent              bdr:P7811 ;
+        :agent              bdr:P268 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CR61109ACB4159D7C1
+    bdr:CR5EACFDB476E3F545
         a                   :AgentAsCreator ;
-        :agent              bdr:P289 ;
-        :role               bdr:R0ER0019 .
+        :agent              bdr:P7811 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW23875  skos:altLabel  "the utpattikrama and sampannakrama practice of the vajrabhairava tantra : a record of notes of the lectures of dnul-chu dharmabhadra"@en-x-mixed .
     
     bdr:WA23875  a          :SerialMember , :Work ;
         skos:prefLabel      "'jigs byed bskyed rim dang rdzogs rim gyi zin bris/"@bo-x-ewts , "the utpattikrama and sampannakrama practice of the vajrabhairava tantra : a record of notes of the lectures of dnul-chu dharmabhadra"@en-x-mixed ;
         :catalogInfo        "Lecture notes of the teachings of Ngulchu Dharmabhadra (1772-1851) on sadhana practice of Vajrabhairava. Made by Lobzang Tsering and Yangchen Drubpai Dorje (1808-1887). Impressions from the Lhasa New Zho Printery carvings."@en ;
-        :creator            bdr:CR1D6DDF8EF80EA493 , bdr:CR5AA9F14032A44048 , bdr:CR61109ACB4159D7C1 ;
+        :creator            bdr:CR1D6DDF8EF80EA493 , bdr:CR5AA9F14032A44048 , bdr:CR5EACFDB476E3F545 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016202 ;

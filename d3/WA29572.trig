@@ -36,6 +36,10 @@ bdg:WA29572 {
         adm:logMessage      "not scanned"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LG61CABA8B10AECBB0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG62173D8979446FBD
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-20T11:29:17.651Z"^^xsd:dateTime ;
@@ -49,8 +53,10 @@ bdg:WA29572 {
         adm:logWho          bdu:U00013 .
     
     bda:LGBA7ABC36DB21476E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -69,23 +75,23 @@ bdg:WA29572 {
     bda:WA29572  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29572 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "d3/WA29572.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29572 ;
-        adm:logEntry        bda:LG112EAE0316A71DCF , bda:LG1D6B8E2FCF06DB5A , bda:LG230D0008C00535FD , bda:LG52265ADA52F23741 , bda:LG62173D8979446FBD , bda:LGA7C295EABC5E8D11 , bda:LGBA7ABC36DB21476E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG112EAE0316A71DCF , bda:LG1D6B8E2FCF06DB5A , bda:LG230D0008C00535FD , bda:LG52265ADA52F23741 , bda:LG61CABA8B10AECBB0 , bda:LG62173D8979446FBD , bda:LGA7C295EABC5E8D11 , bda:LGBA7ABC36DB21476E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR008D48B8F43A54C9
         a                   :AgentAsCreator ;
-        :agent              bdr:P219 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR61CABA8B10AECBB0
-        a                   :AgentAsCreator ;
         :agent              bdr:P4857 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR172D29A91C2327BB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P219 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW29572  skos:altLabel  "a treatise reconciling various philosophical traditions on the basis of madhyamika dialectic based on the exegesis of a-mdo dge-'dun-chos-'phel"@en-x-mixed .
     
@@ -93,7 +99,7 @@ bdg:WA29572 {
         skos:altLabel       "dbu ma'i zab gnad snying por dril ba'i legs bshad klu sgrub dgongs rgyan/"@bo-x-ewts ;
         skos:prefLabel      "klu sgrub dgongs rgyan/"@bo-x-ewts , "a treatise reconciling various philosophical traditions on the basis of madhyamika dialectic based on the exegesis of a-mdo dge-'dun-chos-'phel"@en-x-mixed ;
         :catalogInfo        "Philosophical treatise on the intent of the Indian master Nagarjuna. Alleged to be authored by Gendun Chopel as set down by his student, Dawa Zangpo. Reproduced from a print of the Horkhang woodblocks."@en ;
-        :creator            bdr:CR008D48B8F43A54C9 , bdr:CR61CABA8B10AECBB0 ;
+        :creator            bdr:CR008D48B8F43A54C9 , bdr:CR172D29A91C2327BB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016202 ;

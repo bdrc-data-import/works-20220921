@@ -25,8 +25,10 @@ bdg:WA23751 {
         adm:logWho          bdu:U00012 .
     
     bda:LG1A4F4AEC8B5D9049
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG5D17612F020012EF
         a                   adm:UpdateData ;
@@ -39,6 +41,10 @@ bdg:WA23751 {
         adm:logDate         "2006-11-16T15:33:13.002Z"^^xsd:dateTime ;
         adm:logMessage      "changed volume map"@en ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LG9642FE16E1FAEF10
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGAEAFC41E27A5B649
         a                   adm:ScanRequestCreation ;
@@ -75,15 +81,15 @@ bdg:WA23751 {
     bda:WA23751  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23751 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "89/WA23751.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23751 ;
-        adm:logEntry        bda:LG0F01DA7022646914 , bda:LG16AE92FB5CBDF888 , bda:LG1A4F4AEC8B5D9049 , bda:LG5D17612F020012EF , bda:LG7DF193EB4FDF8DBF , bda:LGAEAFC41E27A5B649 , bda:LGCBD93864A0CE3964 , bda:LGD30D9A34FC569661 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0F01DA7022646914 , bda:LG16AE92FB5CBDF888 , bda:LG1A4F4AEC8B5D9049 , bda:LG5D17612F020012EF , bda:LG7DF193EB4FDF8DBF , bda:LG9642FE16E1FAEF10 , bda:LGAEAFC41E27A5B649 , bda:LGCBD93864A0CE3964 , bda:LGD30D9A34FC569661 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9642FE16E1FAEF10
+    bdr:CR1DE3711DE8655DBD
         a                   :AgentAsCreator ;
         :agent              bdr:P7776 ;
         :role               bdr:R0ER0019 .
@@ -93,7 +99,7 @@ bdg:WA23751 {
     bdr:WA23751  a          :Work ;
         skos:prefLabel      "zur lugs gsang snying yig cha'i skor/"@bo-x-ewts , "zur lugs gsan snin yig cha'i skor : a collection of texts explaining the guhyagarbha tantra, the fundamental example of the mahayoga class, according to the teachings of the zur tradition"@en-x-mixed ;
         :catalogInfo        "Rituals of the ancient Zur order of the Nyingma. Connected with the practice of the Guhyagarbha Tantra. Written by Zutso Tsunpa Konchok Tsultrim."@en ;
-        :creator            bdr:CR9642FE16E1FAEF10 ;
+        :creator            bdr:CR1DE3711DE8655DBD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T977 ;

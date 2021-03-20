@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA26677 {
+    bda:LG25F44C67FAB32AF2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG48DE77DB9516002B
         a                   adm:UpdateData ;
         adm:logDate         "2008-12-08T12:31:44.182Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA26677 {
         adm:logWho          bdu:U00017 .
     
     bda:LGF5862E054889AE16
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -52,15 +58,15 @@ bdg:WA26677 {
     bda:WA26677  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA26677 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "99/WA26677.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA26677 ;
-        adm:logEntry        bda:LG48DE77DB9516002B , bda:LG8B7C0A3DB9A82A5B , bda:LGF5862E054889AE16 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG25F44C67FAB32AF2 , bda:LG48DE77DB9516002B , bda:LG8B7C0A3DB9A82A5B , bda:LGF5862E054889AE16 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR25F44C67FAB32AF2
+    bdr:CR53737B4B1C09E26A
         a                   :AgentAsCreator ;
         :agent              bdr:P705 ;
         :role               bdr:R0ER0019 .
@@ -70,7 +76,7 @@ bdg:WA26677 {
     bdr:WA26677  a          :Work ;
         skos:prefLabel      "rdzogs chen khrid skor bdud 'joms gling pa'i gter chos/"@bo-x-ewts , "Rare Rdzogs-chen instructions from the revelations of Bdud-ʼjoms-gliṅ-pa."@en-x-mixed ;
         :catalogInfo        "Dzogchen instructions from the revelations of Dudjom Lingpa."@en ;
-        :creator            bdr:CR25F44C67FAB32AF2 ;
+        :creator            bdr:CR53737B4B1C09E26A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T200 ;

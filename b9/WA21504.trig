@@ -13,14 +13,20 @@
 
 bdg:WA21504 {
     bda:LG247FB66209E3CEF4
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG4BC92E1BD32582DE
         a                   adm:UpdateData ;
         adm:logDate         "2011-02-15T11:46:47.552Z"^^xsd:dateTime ;
         adm:logMessage      "added shad and other title"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG6037CF32ADB19625
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG6EBAB1B901CA61B6
         a                   adm:ScanRequestCreation ;
@@ -64,15 +70,15 @@ bdg:WA21504 {
     bda:WA21504  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21504 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "b9/WA21504.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21504 ;
-        adm:logEntry        bda:LG247FB66209E3CEF4 , bda:LG4BC92E1BD32582DE , bda:LG6EBAB1B901CA61B6 , bda:LG9A78C5C89A5074BD , bda:LGEF230D5225C07893 , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG247FB66209E3CEF4 , bda:LG4BC92E1BD32582DE , bda:LG6037CF32ADB19625 , bda:LG6EBAB1B901CA61B6 , bda:LG9A78C5C89A5074BD , bda:LGEF230D5225C07893 , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6037CF32ADB19625
+    bdr:CRED69CED8A0051DAE
         a                   :AgentAsCreator ;
         :agent              bdr:P123 ;
         :role               bdr:R0ER0019 .
@@ -81,7 +87,7 @@ bdg:WA21504 {
         skos:altLabel       "a khu ching shes rab rgya mtsho'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/ shes rab rgya mtsho/"@bo-x-ewts , "collected works of a khu ching shes rab rgya mtsho"@en-x-mixed ;
         :catalogInfo        "Collected Works by Geluk master Drungpa Sherab Gyatso (1803-1875)."@en ;
-        :creator            bdr:CR6037CF32ADB19625 ;
+        :creator            bdr:CRED69CED8A0051DAE ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn ;
         :workGenre          bdr:T208 ;

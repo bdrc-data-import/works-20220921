@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA25103 {
+    bda:LG41B3D0B8E58A0005
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG61609FB7D10DE18B
         a                   adm:UpdateData ;
         adm:logDate         "2013-03-08T09:42:58.344Z"^^xsd:dateTime ;
@@ -31,8 +35,10 @@ bdg:WA25103 {
         adm:logWho          bdu:U00026 .
     
     bda:LGAB6701F2F0F9B5BE
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -51,20 +57,20 @@ bdg:WA25103 {
     bda:WA25103  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25103 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "31/WA25103.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25103 ;
-        adm:logEntry        bda:LG61609FB7D10DE18B , bda:LGA212EE9130B62A40 , bda:LGA2C30AE7D3F9539E , bda:LGAB6701F2F0F9B5BE , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG41B3D0B8E58A0005 , bda:LG61609FB7D10DE18B , bda:LGA212EE9130B62A40 , bda:LGA2C30AE7D3F9539E , bda:LGAB6701F2F0F9B5BE , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR41B3D0B8E58A0005
+    bdr:CR73B2C757A3ADDE30
         a                   :AgentAsCreator ;
         :agent              bdr:P508 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR73B2C757A3ADDE30
+    bdr:CR79ECDA8D7B581C5E
         a                   :AgentAsCreator ;
         :agent              bdr:P545 ;
         :role               bdr:R0ER0016 .
@@ -74,7 +80,7 @@ bdg:WA25103 {
     bdr:WA25103  a          :Work ;
         skos:prefLabel      "gdan dus thun mong gi rtsis gzhi ; rtsis gzhung dus thun mong gi nges pa gsar du bkod pa dang bcas pa'i lag len lhan thabs gsal ba'i sgron me ; gdan dus thun mong gi dus rtsis bltas chog dpyod ldan rig pa/"@bo-x-ewts , "three works on the bhutanese system of calculations and the calendar"@en ;
         :catalogInfo        "Essential works for understanding the Bhutanese calendar and calculations."@en ;
-        :creator            bdr:CR41B3D0B8E58A0005 , bdr:CR73B2C757A3ADDE30 ;
+        :creator            bdr:CR73B2C757A3ADDE30 , bdr:CR79ECDA8D7B581C5E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T203 ;

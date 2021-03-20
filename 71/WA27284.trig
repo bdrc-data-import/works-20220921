@@ -25,14 +25,20 @@ bdg:WA27284 {
         adm:logWho          bdu:U00017 .
     
     bda:LG572BAA31747FF642
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGCEFA531D949157AA
         a                   adm:UpdateData ;
         adm:logDate         "2008-04-23T10:25:17.72Z"^^xsd:dateTime ;
         adm:logMessage      "scanned"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGFF7B9019D4064F60
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -51,15 +57,15 @@ bdg:WA27284 {
     bda:WA27284  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27284 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "71/WA27284.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27284 ;
-        adm:logEntry        bda:LG405C4744A86BE849 , bda:LG4821FE25A7D2959A , bda:LG572BAA31747FF642 , bda:LGCEFA531D949157AA , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG405C4744A86BE849 , bda:LG4821FE25A7D2959A , bda:LG572BAA31747FF642 , bda:LGCEFA531D949157AA , bda:LGFF7B9019D4064F60 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFF7B9019D4064F60
+    bdr:CR96CDB4B2F61644ED
         a                   :AgentAsCreator ;
         :agent              bdr:P5254 ;
         :role               bdr:R0ER0025 .
@@ -69,7 +75,7 @@ bdg:WA27284 {
     bdr:WA27284  a          :Work ;
         skos:prefLabel      "phyi sgrub thugs rje chen po 'gro ba kun grol ; nang sgrub rig 'dzin gdung sgrub/"@bo-x-ewts , "texts from the byan gter teachings of rig-'dzin rgod-kyi-ldem-'phru-can"@en-x-mixed ;
         :catalogInfo        "Rituals of the Jangter order of the Nyingma by Rigzin Godkyi Demtruchen. Two incomplete manuscripts on practices of Avalokitesvara and Rigzin Dundrub. From the library of Lama Dawa."@en ;
-        :creator            bdr:CRFF7B9019D4064F60 ;
+        :creator            bdr:CR96CDB4B2F61644ED ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

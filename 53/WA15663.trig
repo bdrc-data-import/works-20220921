@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA15663 {
+    bda:LG1DDD0D4DA2245856
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG2C4FF08DD5537442
         a                   adm:UpdateData ;
         adm:logDate         "2013-02-06T11:09:05.395Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA15663 {
         adm:logWho          bdu:U00013 .
     
     bda:LG87EA63A73A5CFADE
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGC17F9F4161E98476
         a                   adm:UpdateData ;
@@ -52,15 +58,15 @@ bdg:WA15663 {
     bda:WA15663  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA15663 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "53/WA15663.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA15663 ;
-        adm:logEntry        bda:LG2C4FF08DD5537442 , bda:LG87EA63A73A5CFADE , bda:LGC17F9F4161E98476 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1DDD0D4DA2245856 , bda:LG2C4FF08DD5537442 , bda:LG87EA63A73A5CFADE , bda:LGC17F9F4161E98476 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1DDD0D4DA2245856
+    bdr:CRE2DF0BA189461445
         a                   :AgentAsCreator ;
         :agent              bdr:P4069 ;
         :role               bdr:R0ER0019 .
@@ -70,7 +76,7 @@ bdg:WA15663 {
     bdr:WA15663  a          :Work ;
         skos:prefLabel      "tshul khrims yang dag par ldan pa'i mdo'i tshig don legs par bshad pa chos kyi gaNDi'i sgra dbyangs/"@bo-x-ewts , "tshul khrims yan dag par ldan pa'i mdo'i tshig don legs par bsad pa chos kyi gaNDi'i sgra dbyangs : a detailed commentary on the silasamyuktasutra"@en-x-mixed ;
         :catalogInfo        "Commentary on the canonical work of a 19th century Nyingma and Rime author."@en ;
-        :creator            bdr:CR1DDD0D4DA2245856 ;
+        :creator            bdr:CRE2DF0BA189461445 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T769 ;

@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29696 {
-    bda:LGAC6AC1FE9BEFCCB2
+    bda:LG76272452C4CE00D2
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGAC6AC1FE9BEFCCB2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGB06D7027CFE5C4C0
         a                   adm:UpdateData ;
@@ -31,15 +37,15 @@ bdg:WA29696 {
     bda:WA29696  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29696 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c0/WA29696.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29696 ;
-        adm:logEntry        bda:LGAC6AC1FE9BEFCCB2 , bda:LGB06D7027CFE5C4C0 , bda:LGF9F5EE13EA343D40 ;
+        adm:logEntry        bda:LG76272452C4CE00D2 , bda:LGAC6AC1FE9BEFCCB2 , bda:LGB06D7027CFE5C4C0 , bda:LGF9F5EE13EA343D40 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR76272452C4CE00D2
+    bdr:CR5593BA678C3F6624
         a                   :AgentAsCreator ;
         :agent              bdr:P640 ;
         :role               bdr:R0ER0025 .
@@ -49,7 +55,7 @@ bdg:WA29696 {
     bdr:WA29696  a          :Work ;
         skos:altLabel       "thugs chen 'khor ba las sgrol/"@bo-x-ewts , "zab pa skor bdun/"@bo-x-ewts ;
         skos:prefLabel      "thugs rje chen po 'khor ba las sgrol gyi chos skor/"@bo-x-ewts , "a collection of lamaist practices focusing apon mahakarunika avalokitesvara"@en-x-mixed ;
-        :creator            bdr:CR76272452C4CE00D2 ;
+        :creator            bdr:CR5593BA678C3F6624 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

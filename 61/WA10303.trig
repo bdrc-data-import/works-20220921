@@ -19,14 +19,20 @@ bdg:WA10303 {
         adm:logWho          bdu:U00026 .
     
     bda:LG8ADE04146216E02E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGA36EDF8E49A6BED7
         a                   adm:UpdateData ;
         adm:logDate         "2013-06-12T10:07:12.06Z"^^xsd:dateTime ;
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGAE1559FF3FC09BEF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -45,15 +51,15 @@ bdg:WA10303 {
     bda:WA10303  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA10303 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "61/WA10303.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA10303 ;
-        adm:logEntry        bda:LG41E695CE1850C84C , bda:LG8ADE04146216E02E , bda:LGA36EDF8E49A6BED7 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG41E695CE1850C84C , bda:LG8ADE04146216E02E , bda:LGA36EDF8E49A6BED7 , bda:LGAE1559FF3FC09BEF , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRAE1559FF3FC09BEF
+    bdr:CR3424F94904F0E29C
         a                   :AgentAsCreator ;
         :agent              bdr:P787 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +70,7 @@ bdg:WA10303 {
         skos:altLabel       "lung bstan rnams gung sgrigs pa lung bstan gsal byed dngul dkar me long /"@bo-x-ewts ;
         skos:prefLabel      "lung bstan rnams gung sgrigs pa dngul dkar me long /"@bo-x-ewts , "lun bstan rnams gun sgrigs pa lun bstan gsal byed dnul dkar me lon : a collection of rare prophecies of the Buddha's teaching in Tibet"@en-x-mixed ;
         :catalogInfo        "Prophecies by the Sakya master Yongzin Ngagwang Chodrak (1572-1641)."@en ;
-        :creator            bdr:CRAE1559FF3FC09BEF ;
+        :creator            bdr:CR3424F94904F0E29C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T33 ;

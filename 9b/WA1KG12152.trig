@@ -36,6 +36,12 @@ bdg:WA1KG12152 {
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGE6DE572148364442
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+    
     bda:LGIM569A8014B1
         a                   adm:UpdateData ;
         adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
@@ -67,25 +73,25 @@ bdg:WA1KG12152 {
     bda:WA1KG12152  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG12152 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "9b/WA1KG12152.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG12152 ;
-        adm:logEntry        bda:LG0315D73941A08550 , bda:LG2E3B95427EC21159 , bda:LG95C504C21BD60466 , bda:LGA7278B738465F045 , bda:LGIM569A8014B1 , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG0315D73941A08550 , bda:LG2E3B95427EC21159 , bda:LG95C504C21BD60466 , bda:LGA7278B738465F045 , bda:LGE6DE572148364442 , bda:LGIM569A8014B1 , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR45C5471CC410074E
         a                   :AgentAsCreator ;
+        :agent              bdr:P8105 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CR5D9BD78EC1CA2094
+        a                   :AgentAsCreator ;
         :agent              bdr:P37 ;
         :role               bdr:R0ER0016 .
     
     bdr:CR98838EB4507E4E00
-        a                   :AgentAsCreator ;
-        :agent              bdr:P8105 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRE6DE572148364442
         a                   :AgentAsCreator ;
         :agent              bdr:P671 ;
         :role               bdr:R0ER0019 .
@@ -95,7 +101,7 @@ bdg:WA1KG12152 {
     bdr:WA1KG12152  a       :SerialMember , :Work ;
         skos:altLabel       "sadhanas of the rig 'dzin 'dus pa and bla ma gsan 'dus"@en , "Sādhanas for the practice of the Bla ma rig ʼdzin ʼdzin ʼdus pa, Bkaʼ brgyad, and Bla ma gsaṅ ba ʼdus pa /arranged by O-rgyan Chos-rje-gliṅ-pa, Mkhan-chen O-ḍi-ya-na, and the Fifth Dalai Lama Ṅag-dbaṅ-blo-bzaṅ-rgya-mtsho."@en-x-mixed ;
         skos:prefLabel      "rig 'dzin 'dus pa dang bka' brgyad dang bla ma gsang 'dus sogs/"@bo-x-ewts , "sadhanas for the practice of the bla ma rig 'dzin 'dus pa, bka' brgyad, and bla ma gsang ba 'dus pa"@en ;
-        :creator            bdr:CR45C5471CC410074E , bdr:CR98838EB4507E4E00 , bdr:CRE6DE572148364442 ;
+        :creator            bdr:CR45C5471CC410074E , bdr:CR5D9BD78EC1CA2094 , bdr:CR98838EB4507E4E00 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG12152 ;

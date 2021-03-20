@@ -13,8 +13,16 @@
 
 bdg:WA30135 {
     bda:LG1F5C1B90F65467BE
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+    
+    bda:LG40AEF45F50F082B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:58:09.432Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01-part2" .
     
     bda:LG5367F53A6FCAF478
         a                   adm:UpdateData ;
@@ -27,6 +35,10 @@ bdg:WA30135 {
         adm:logDate         "2013-04-22T12:49:41.751Z"^^xsd:dateTime ;
         adm:logMessage      "added source printery"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LG5D6D128163C12675
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG6F1CFF7BD8A2FB17
         a                   adm:UpdateData ;
@@ -64,15 +76,15 @@ bdg:WA30135 {
     bda:WA30135  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30135 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "cd/WA30135.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30135 ;
-        adm:logEntry        bda:LG1F5C1B90F65467BE , bda:LG5367F53A6FCAF478 , bda:LG584F8C5D5895E382 , bda:LG6F1CFF7BD8A2FB17 , bda:LGF89F7AD0EDA936D6 , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG1F5C1B90F65467BE , bda:LG40AEF45F50F082B1 , bda:LG5367F53A6FCAF478 , bda:LG584F8C5D5895E382 , bda:LG5D6D128163C12675 , bda:LG6F1CFF7BD8A2FB17 , bda:LGF89F7AD0EDA936D6 , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR40AEF45F50F082B1
+    bdr:CRD26B3F217F8E011F
         a                   :AgentAsCreator ;
         :agent              bdr:P4994 ;
         :role               bdr:R0ER0019 .
@@ -82,7 +94,7 @@ bdg:WA30135 {
     bdr:WA30135  a          :Work ;
         skos:altLabel       "gso rig bstan bcos man ngag rin chen 'byun gnas/"@bo-x-ewts , "Gso rig bstan bcos mthaʾ dag gi sñiṅ po rnams phyogs gcig tu bsdus pa man ṅag rin chen ʾbyuṅ gnas :a treatise on Tibetan ayurvedic practice containing numerous instructions and medical formulae /by ʾJam-dpal-rdo-rje."@en-x-mixed ;
         skos:prefLabel      "gso rig bstan bcos mtha' dag gi snying po rnams phyogs gcig tu bsdus pa man ngag rin chen 'byung gnas/"@bo-x-ewts , "a treatise on tibetan ayurvedic practice containing numerous instructions and medical formulae"@en ;
-        :creator            bdr:CR40AEF45F50F082B1 ;
+        :creator            bdr:CRD26B3F217F8E011F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2DB13639_11AA1E , bdr:MW30135 , bdr:W30135 ;

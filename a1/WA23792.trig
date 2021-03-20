@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23792 {
+    bda:LG136C68860BD1F265
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGBA3BEB75C9E41158
         a                   adm:UpdateData ;
         adm:logDate         "2012-03-21T10:35:57.891Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23792 {
         adm:logWho          bdu:U00016 .
     
     bda:LGE87F6422AEF9EA37
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGEBC68C6CE15273C6
         a                   adm:UpdateData ;
@@ -52,22 +58,22 @@ bdg:WA23792 {
     bda:WA23792  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23792 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "a1/WA23792.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23792 ;
-        adm:logEntry        bda:LGBA3BEB75C9E41158 , bda:LGE87F6422AEF9EA37 , bda:LGEBC68C6CE15273C6 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG136C68860BD1F265 , bda:LGBA3BEB75C9E41158 , bda:LGE87F6422AEF9EA37 , bda:LGEBC68C6CE15273C6 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR136C68860BD1F265
+    bdr:CR0931D416EA6A63A8
         a                   :AgentAsCreator ;
-        :agent              bdr:P364 ;
+        :agent              bdr:P326 ;
         :role               bdr:R0ER0025 .
     
     bdr:CRB0549330D67927F0
         a                   :AgentAsCreator ;
-        :agent              bdr:P326 ;
+        :agent              bdr:P364 ;
         :role               bdr:R0ER0025 .
     
     bdr:MW23792  skos:altLabel  "loktri pa la'i chos skor : a collection of revealed texts concerned with the rites of propitiation of loktripala, a deity of the dmod pa drag snags class of the bka' brgyad"@en .
@@ -76,7 +82,7 @@ bdg:WA23792 {
         skos:altLabel       "sde brgyad 'joms byed loktri pA la'i chos skor/"@bo-x-ewts ;
         skos:prefLabel      "loktri pa la'i chos skor/"@bo-x-ewts , "loktri pa la'i chos skor : a collection of revealed texts concerned with the rites of propitiation of loktripala, a deity of the dmod pa drag snags class of the bka' brgyad"@en ;
         :catalogInfo        "Collection of revealed texts concerned with the rites of propitiation for worldly deities. Belongs to the eighth class of the Kagyu and Nyingma orders, as followed at Drikung Monastery and its affiliates."@en ;
-        :creator            bdr:CR136C68860BD1F265 , bdr:CRB0549330D67927F0 ;
+        :creator            bdr:CR0931D416EA6A63A8 , bdr:CRB0549330D67927F0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T10MS11187 , bdr:T448 ;

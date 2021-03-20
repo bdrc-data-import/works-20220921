@@ -13,8 +13,10 @@
 
 bdg:WA14669 {
     bda:LG00F2DDF3D0A16EC7
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG1A5A36710C04C89A
         a                   adm:UpdateData ;
@@ -34,6 +36,10 @@ bdg:WA14669 {
         adm:logMessage      "ctc"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGA164B387F27018A8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGB9C6F3AA8ABF85CC
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-11T10:15:08.274Z"^^xsd:dateTime ;
@@ -43,15 +49,15 @@ bdg:WA14669 {
     bda:WA14669  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA14669 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "ae/WA14669.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA14669 ;
-        adm:logEntry        bda:LG00F2DDF3D0A16EC7 , bda:LG1A5A36710C04C89A , bda:LG70AA120A947B5E8A , bda:LG82D948E912B2175E , bda:LGB9C6F3AA8ABF85CC ;
+        adm:logEntry        bda:LG00F2DDF3D0A16EC7 , bda:LG1A5A36710C04C89A , bda:LG70AA120A947B5E8A , bda:LG82D948E912B2175E , bda:LGA164B387F27018A8 , bda:LGB9C6F3AA8ABF85CC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA164B387F27018A8
+    bdr:CR72D9987E8B1BD7BF
         a                   :AgentAsCreator ;
         :agent              bdr:P2627 ;
         :role               bdr:R0ER0019 .
@@ -61,7 +67,7 @@ bdg:WA14669 {
     bdr:WA14669  a          :Work ;
         skos:altLabel       "skyes bu gsum gyi lam rim rgyas pa khrid du sbyar ba/"@bo-x-ewts ;
         skos:prefLabel      "lam rim rgyas pa khrid du sbyar ba/"@bo-x-ewts , "a detailed presentation of the lam rim teachings of the old bka'-gdams-pa tradition"@en ;
-        :creator            bdr:CRA164B387F27018A8 ;
+        :creator            bdr:CR72D9987E8B1BD7BF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T238 ;

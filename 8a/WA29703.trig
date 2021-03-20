@@ -18,6 +18,10 @@ bdg:WA29703 {
         adm:logMessage      "changed language"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LG2924DA2304F2DEB6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG83D7F1B96D83C224
         a                   adm:UpdateData ;
         adm:logDate         "2009-10-28T15:34:49.043Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA29703 {
         adm:logWho          bdu:U00026 .
     
     bda:LGCFDE49DB45D0342A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -38,16 +44,16 @@ bdg:WA29703 {
     bda:WA29703  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29703 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "8a/WA29703.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29703 ;
-        adm:logEntry        bda:LG037DE7C939BF51B3 , bda:LG83D7F1B96D83C224 , bda:LGCFDE49DB45D0342A , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG037DE7C939BF51B3 , bda:LG2924DA2304F2DEB6 , bda:LG83D7F1B96D83C224 , bda:LGCFDE49DB45D0342A , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG24716 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR2924DA2304F2DEB6
+    bdr:CR9F0CC57FA16646CE
         a                   :AgentAsCreator ;
         :agent              bdr:P435 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +63,7 @@ bdg:WA29703 {
     bdr:WA29703  a          :SerialMember , :Work ;
         skos:altLabel       "Gso rig dgos pa kun ʾbyung :an exhaustive treatise on Tibetan medicine /by Gong-sman Dkon-mchog-bde-legs."@en-x-mixed ;
         skos:prefLabel      "gso rig dgos pa kun 'byung /"@bo-x-ewts , "an exhaustive treatise on tibetan medicine"@en ;
-        :creator            bdr:CR2924DA2304F2DEB6 ;
+        :creator            bdr:CR9F0CC57FA16646CE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016202 ;

@@ -36,8 +36,10 @@ bdg:WA21578 {
         adm:logWho          bdu:U00012 .
     
     bda:LG7755970A1E2BAE75
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG776710D662944EFD
         a                   adm:UpdateData ;
@@ -56,6 +58,10 @@ bdg:WA21578 {
         adm:logMessage      "made public domain"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGD2C0DFFDB42504D9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -73,20 +79,20 @@ bdg:WA21578 {
     bda:WA21578  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21578 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "f9/WA21578.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21578 ;
-        adm:logEntry        bda:LG01DC57E3FB06CFD6 , bda:LG2EABA6133F174D6D , bda:LG51FEED75E5A883FC , bda:LG584F557778F172BD , bda:LG7755970A1E2BAE75 , bda:LG776710D662944EFD , bda:LG81F76921B89DEC6A , bda:LGAA62A76657958D41 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG01DC57E3FB06CFD6 , bda:LG2EABA6133F174D6D , bda:LG51FEED75E5A883FC , bda:LG584F557778F172BD , bda:LG7755970A1E2BAE75 , bda:LG776710D662944EFD , bda:LG81F76921B89DEC6A , bda:LGAA62A76657958D41 , bda:LGD2C0DFFDB42504D9 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD2C0DFFDB42504D9
+    bdr:CRD55ABB4FA699A2D5
         a                   :AgentAsCreator ;
         :agent              bdr:P659 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRD55ABB4FA699A2D5
+    bdr:CRFDE8C25DA75811B5
         a                   :AgentAsCreator ;
         :agent              bdr:P649 ;
         :role               bdr:R0ER0016 .
@@ -97,7 +103,7 @@ bdg:WA21578 {
         skos:altLabel       "gnam chos thugs kyi gter kha snyan brgyud zab mo'i skor/"@bo-x-ewts ;
         skos:prefLabel      "gnam chos/"@bo-x-ewts , "collection des tresors"@en ;
         :catalogInfo        "Visionary teachings received by Tulku Mingyur Dorje (1646-1667). Set down and annotated by Karma Chakme (1613-1678). Treasured teachings of the Peyu order."@en ;
-        :creator            bdr:CRD2C0DFFDB42504D9 , bdr:CRD55ABB4FA699A2D5 ;
+        :creator            bdr:CRD55ABB4FA699A2D5 , bdr:CRFDE8C25DA75811B5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW21578 , bdr:W21578 ;

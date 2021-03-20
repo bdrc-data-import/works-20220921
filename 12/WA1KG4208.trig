@@ -24,6 +24,12 @@ bdg:WA1KG4208 {
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGA1C50702A8EB581E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+    
     bda:LGBBFAA70F5270DBD2
         a                   adm:InitialDataCreation ;
         adm:logDate         "2010-01-21T15:40:29.974Z"^^xsd:dateTime ;
@@ -66,23 +72,23 @@ bdg:WA1KG4208 {
     bda:WA1KG4208  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4208 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "12/WA1KG4208.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4208 ;
-        adm:logEntry        bda:LG44DE9DDACE35694F , bda:LG7210770091E3FAAA , bda:LGBBFAA70F5270DBD2 , bda:LGE709F75F92692609 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG44DE9DDACE35694F , bda:LG7210770091E3FAAA , bda:LGA1C50702A8EB581E , bda:LGBBFAA70F5270DBD2 , bda:LGE709F75F92692609 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR268D31216E179EEE
         a                   :AgentAsCreator ;
-        :agent              bdr:P1PD82428 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRA1C50702A8EB581E
-        a                   :AgentAsCreator ;
         :agent              bdr:P6896 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR96723AA616EB4131
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1PD82428 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW1KG4208  skos:altLabel  "the life of the 11th si-tu of dpal-spungs"@en .
     
@@ -90,7 +96,7 @@ bdg:WA1KG4208 {
         skos:altLabel       "kun gzigs rdo rje 'chang skyabs mgon tA yi si tu pad+ma dbang mchog rgyal po'i rnam thar cha tsam brjod pa ngo mtshar nor bu'i ljon bzang /"@bo-x-ewts , "Kun gzigs Rdo rje ʾchaṅ Skyabs mgon Tā yi si tu Padma dbaṅ mchog rgyal poʾi rnam thar chi tsam brjod pa ṅo mtshar nor buʾi ljon bzaṅ :a biography of the 11th Si-tu of Dpal-spuṅs Padma-dbaṅ-[mchog-]rgyal-po /by Zur-maṅ Bstan-ʾdzin Sprul-sku Blo-gros-[rgya-]mtshoʾisgra-dbyaṅs-dri-med-ʾod-kyi-snaṅ-ba and Ku-se Gser-ljoṅs Mkhan-po ʾJam-dbyaṅs-dge-legs."@en-x-mixed ;
         skos:prefLabel      "tA yi si tu pad+ma dbang mchog rgyal po'i rnam thar ngo mtshar nor bu'i ljon bzang /"@bo-x-ewts , "the life of the 11th si-tu of dpal-spungs"@en ;
         :catalogInfo        "Biography of Situ Pema 11 Wangchok Gyalpo (1886-1952)."@en ;
-        :creator            bdr:CR268D31216E179EEE , bdr:CRA1C50702A8EB581E ;
+        :creator            bdr:CR268D31216E179EEE , bdr:CR96723AA616EB4131 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

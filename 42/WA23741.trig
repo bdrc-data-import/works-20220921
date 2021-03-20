@@ -13,8 +13,10 @@
 
 bdg:WA23741 {
     bda:LG2C646D31FC3585EF
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG3D921B180AC418DB
         a                   adm:UpdateData ;
@@ -27,6 +29,10 @@ bdg:WA23741 {
         adm:logDate         "2007-01-11T12:25:59.968Z"^^xsd:dateTime ;
         adm:logMessage      "added to ctc 4"@en ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LG82E57A2664C4FB88
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -45,16 +51,16 @@ bdg:WA23741 {
     bda:WA23741  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23741 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "42/WA23741.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23741 ;
-        adm:logEntry        bda:LG2C646D31FC3585EF , bda:LG3D921B180AC418DB , bda:LG3FA1B2C47DB74457 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2C646D31FC3585EF , bda:LG3D921B180AC418DB , bda:LG3FA1B2C47DB74457 , bda:LG82E57A2664C4FB88 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA19990 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR82E57A2664C4FB88
+    bdr:CRE93D8B3C53F2222A
         a                   :AgentAsCreator ;
         :agent              bdr:P182 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +70,7 @@ bdg:WA23741 {
     bdr:WA23741  a          :SerialMember , :Work ;
         skos:prefLabel      "dag yig mkhas pa'i 'byung gnas/"@bo-x-ewts , "dag yig mkhas pa'i 'byun gnas : the monumental buddhist terminological lexicon"@en-x-mixed ;
         :catalogInfo        "Terminological dictionary of the Tibetan language. Written with Mongolian equivalents for use in the transation of the canon. Compiled by Changkya Rolpai Dorje (1717-1786). Scanned with the generous support of Nathan Hill."@en ;
-        :creator            bdr:CR82E57A2664C4FB88 ;
+        :creator            bdr:CRE93D8B3C53F2222A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016202 ;

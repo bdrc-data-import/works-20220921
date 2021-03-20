@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29570 {
+    bda:LGB791737E72BF579B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGC3C00467910F519F
         a                   adm:UpdateData ;
         adm:logDate         "2009-11-10T14:49:38.798Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA29570 {
         adm:logWho          bdu:U00026 .
     
     bda:LGE176E02553E44AAA
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGE8C8EB2DE099C46A
         a                   adm:UpdateData ;
@@ -52,16 +58,16 @@ bdg:WA29570 {
     bda:WA29570  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29570 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "46/WA29570.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29570 ;
-        adm:logEntry        bda:LGC3C00467910F519F , bda:LGE176E02553E44AAA , bda:LGE8C8EB2DE099C46A , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LGB791737E72BF579B , bda:LGC3C00467910F519F , bda:LGE176E02553E44AAA , bda:LGE8C8EB2DE099C46A , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA21511 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRB791737E72BF579B
+    bdr:CR23EDC4E74D13B57C
         a                   :AgentAsCreator ;
         :agent              bdr:P3016 ;
         :role               bdr:R0ER0019 .
@@ -72,7 +78,7 @@ bdg:WA29570 {
         skos:altLabel       "Bye ba riṅ bsrel :a collection of instructions of Zur-mkhar Mñam-ñid-rdo-rje on medicine, containing a seemingly larger collection of the Kha thor collection than that found in the printed redaction."@en-x-mixed ;
         skos:prefLabel      "bye ba ring bsrel/"@bo-x-ewts , "rye ba ring bsrel : a collection of instructions of zur-mkhar mnam-nid-rdo-rje on medicine, containing a seemingly larger collection of the Kha thor collection than that found in the printed redaction"@en ;
         :catalogInfo        "Instructions on medical practices of the Zur tradition."@en ;
-        :creator            bdr:CRB791737E72BF579B ;
+        :creator            bdr:CR23EDC4E74D13B57C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016202 ;

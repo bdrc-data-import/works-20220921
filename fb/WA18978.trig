@@ -25,8 +25,10 @@ bdg:WA18978 {
         adm:logWho          bdu:U00001 .
     
     bda:LG967ED5A261027E6E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG9F59E52E54681C03
         a                   adm:UpdateData ;
@@ -39,6 +41,10 @@ bdg:WA18978 {
         adm:logDate         "2013-03-27T15:59:31.965Z"^^xsd:dateTime ;
         adm:logMessage      "addded print type and source printrey"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGD0219BBAC89B7551
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -64,15 +70,15 @@ bdg:WA18978 {
     bda:WA18978  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA18978 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "fb/WA18978.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA18978 ;
-        adm:logEntry        bda:LG31BFAD677ACC5F40 , bda:LG3BC220659CE917F2 , bda:LG967ED5A261027E6E , bda:LG9F59E52E54681C03 , bda:LGB8E5DD26BED13E42 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG31BFAD677ACC5F40 , bda:LG3BC220659CE917F2 , bda:LG967ED5A261027E6E , bda:LG9F59E52E54681C03 , bda:LGB8E5DD26BED13E42 , bda:LGD0219BBAC89B7551 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD0219BBAC89B7551
+    bdr:CR13FEB156025812F1
         a                   :AgentAsCreator ;
         :agent              bdr:P5340 ;
         :role               bdr:R0ER0019 .
@@ -83,7 +89,7 @@ bdg:WA18978 {
         skos:altLabel       "bla ma dgons 'dus"@bo-alalc97 , "bla ma dgons 'dus kyi chos skor"@bo-alalc97 ;
         skos:prefLabel      "bla ma dgongs 'dus/"@bo-x-ewts , "a cycle of precious teachings and practices of the nyingmapa tradition"@en ;
         :catalogInfo        "Collection of Nyingma terma revelations. Revealed by the 14th century terton Sangye Lingpa. Based on the Gaje Monastery blockprints."@en ;
-        :creator            bdr:CRD0219BBAC89B7551 ;
+        :creator            bdr:CR13FEB156025812F1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS11225 ;

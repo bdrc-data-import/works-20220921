@@ -18,9 +18,15 @@ bdg:WA23455 {
         adm:logMessage      "changed onhold to released"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGB537ADF990507630
+    bda:LG6F1EB7EE17B399C6
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGB537ADF990507630
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGF5FE00FB01B7AF26
         a                   adm:ScanRequestCreation ;
@@ -45,15 +51,15 @@ bdg:WA23455 {
     bda:WA23455  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23455 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "d9/WA23455.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23455 ;
-        adm:logEntry        bda:LG36F81D8362AD5D03 , bda:LGB537ADF990507630 , bda:LGF5FE00FB01B7AF26 , bda:LGIM320307B99D , bda:LGIME4B642616A ;
+        adm:logEntry        bda:LG36F81D8362AD5D03 , bda:LG6F1EB7EE17B399C6 , bda:LGB537ADF990507630 , bda:LGF5FE00FB01B7AF26 , bda:LGIM320307B99D , bda:LGIME4B642616A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6F1EB7EE17B399C6
+    bdr:CR5357DCE7557A20D2
         a                   :AgentAsCreator ;
         :agent              bdr:P326 ;
         :role               bdr:R0ER0025 .
@@ -62,7 +68,7 @@ bdg:WA23455 {
     
     bdr:WA23455  a          :SerialMember , :Work ;
         skos:prefLabel      "gsang 'dus bla ma'i thugs sgrub kyi skor/"@bo-x-ewts , "gsan 'dus bla ma'i thugs sgrub kyi skor : a collection of rare teachings from the revelations of gu-ru chos-kyi-dban-phyug"@en ;
-        :creator            bdr:CR6F1EB7EE17B399C6 ;
+        :creator            bdr:CR5357DCE7557A20D2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG12152 ;

@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30103 {
+    bda:LG3ACAD31621754DAD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG4B360A49084F6714
         a                   adm:UpdateData ;
         adm:logDate         "2008-08-05T11:27:23.902Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA30103 {
         adm:logWho          bdu:U00013 .
     
     bda:LG8AB488B5787CCD57
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGEC42A9EB19A0A364
         a                   adm:ScanRequestCreation ;
@@ -44,16 +50,16 @@ bdg:WA30103 {
     bda:WA30103  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30103 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "a9/WA30103.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30103 ;
-        adm:logEntry        bda:LG4B360A49084F6714 , bda:LG6338DEEF2001373D , bda:LG8AB488B5787CCD57 , bda:LGEC42A9EB19A0A364 , bda:LGIM4BF5F96E12 ;
+        adm:logEntry        bda:LG3ACAD31621754DAD , bda:LG4B360A49084F6714 , bda:LG6338DEEF2001373D , bda:LG8AB488B5787CCD57 , bda:LGEC42A9EB19A0A364 , bda:LGIM4BF5F96E12 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA22116 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR3ACAD31621754DAD
+    bdr:CRE472483511EA9D4A
         a                   :AgentAsCreator ;
         :agent              bdr:P939 ;
         :role               bdr:R0ER0019 .
@@ -62,7 +68,7 @@ bdg:WA30103 {
     
     bdr:WA30103  a          :SerialMember , :Work ;
         skos:prefLabel      "gsung 'bum/_ngag dbang bstan 'dzin 'phrin las/"@bo-x-ewts , "the collected works of skyid-sod zabs-drun sprul-sku nag-dban-bstan-'dzin-'phrin-las"@en-x-mixed ;
-        :creator            bdr:CR3ACAD31621754DAD ;
+        :creator            bdr:CRE472483511EA9D4A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS11818 ;

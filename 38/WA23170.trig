@@ -13,14 +13,20 @@
 
 bdg:WA23170 {
     bda:LG3F4128E9379A64EE
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG598D2EB40E763F6D
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-15T11:48:31.968Z"^^xsd:dateTime ;
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGECBD9D3B566A894D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -46,15 +52,15 @@ bdg:WA23170 {
     bda:WA23170  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23170 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "38/WA23170.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23170 ;
-        adm:logEntry        bda:LG3F4128E9379A64EE , bda:LG598D2EB40E763F6D , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3F4128E9379A64EE , bda:LG598D2EB40E763F6D , bda:LGECBD9D3B566A894D , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRECBD9D3B566A894D
+    bdr:CR535284A7DEE18995
         a                   :AgentAsCreator ;
         :agent              bdr:P791 ;
         :role               bdr:R0ER0019 .
@@ -65,7 +71,7 @@ bdg:WA23170 {
         skos:altLabel       "dpal dges pa rdo rje'i rnam bshad gsang sngags mdzes rgyan/"@bo-x-ewts , "dpal kyai rdo rje'i phyi nang gi bskyed rim gyi rnam par bshad pa dge legs nor bu'i phreng ba gsang sngags mdzes rgyan/"@bo-x-ewts , "Dpal Kyai rdo rjeʼi phyi naṅ gi bskyed rim gyi rnam par bśad pa dge legs nor buʼi phreṅ ba gsaṅ sṅags mdzes rgyan :a detailed explanation of the utpattikrama or visualization of the Hevajra Tantra /by ʼJam-mgon A-myes-źabs Ṅag-dbaṅ-kun-dgaʼ-bsod-nams."@en-x-mixed ;
         skos:prefLabel      "kyai rdo rje'i phyi nang gi bskyed rim gyi rnam par bshad pa dge legs nor bu'i phreng ba gsang sngags mdzes rgyan/"@bo-x-ewts , "dpal kyai rdo rje'i phyi nan gi bskyed rim gyi rnam par bsad pa dge legs nor bu'i phren ba gsan snags mdzes rgyan : a detailed explanation of the utpattikrama or visualization of the hevajra tantra"@en-x-mixed ;
         :catalogInfo        "Explanation of the visualization in the practice of the outer and inner mandalas of the Hevajra Tantra. Written by Jamgon Amye Zhab (1597-1659)."@en ;
-        :creator            bdr:CRECBD9D3B566A894D ;
+        :creator            bdr:CR535284A7DEE18995 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;

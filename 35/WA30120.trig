@@ -13,8 +13,10 @@
 
 bdg:WA30120 {
     bda:LG2371AF85E6DEE16A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG511479952D98424F
         a                   adm:UpdateData ;
@@ -27,6 +29,10 @@ bdg:WA30120 {
         adm:logDate         "2011-07-26T10:41:00.66Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGFE5DE8FE7A698200
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
@@ -45,11 +51,11 @@ bdg:WA30120 {
     bda:WA30120  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30120 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "35/WA30120.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30120 ;
-        adm:logEntry        bda:LG2371AF85E6DEE16A , bda:LG511479952D98424F , bda:LGECDD800ED9444911 , bda:LGIM4BF5F96E12 , bda:LGIMC3134826EB ;
+        adm:logEntry        bda:LG2371AF85E6DEE16A , bda:LG511479952D98424F , bda:LGECDD800ED9444911 , bda:LGFE5DE8FE7A698200 , bda:LGIM4BF5F96E12 , bda:LGIMC3134826EB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

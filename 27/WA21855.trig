@@ -13,14 +13,20 @@
 
 bdg:WA21855 {
     bda:LG0926B11712A2334B
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG39F48A48CF5B968F
         a                   adm:UpdateData ;
         adm:logDate         "2012-04-30T15:50:09.986Z"^^xsd:dateTime ;
         adm:logMessage      "corrected bib titles"@en ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LG50948D473381270D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGF473D2026F6DB479
         a                   adm:UpdateData ;
@@ -59,15 +65,15 @@ bdg:WA21855 {
     bda:WA21855  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21855 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "27/WA21855.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21855 ;
-        adm:logEntry        bda:LG0926B11712A2334B , bda:LG39F48A48CF5B968F , bda:LGF473D2026F6DB479 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0926B11712A2334B , bda:LG39F48A48CF5B968F , bda:LG50948D473381270D , bda:LGF473D2026F6DB479 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR50948D473381270D
+    bdr:CR84C8D091D4703074
         a                   :AgentAsCreator ;
         :agent              bdr:P694 ;
         :role               bdr:R0ER0025 .
@@ -78,7 +84,7 @@ bdg:WA21855 {
         skos:altLabel       "sbas yul sgo 'byed yid bzhin 'od 'phro'i sgrub skor/"@bo-x-ewts , "tshe sgrub 'od kyi drwa ba'i zab chos bdun pa/"@bo-x-ewts , "Zab chos bdun pa Sbas yul sgo ʾbyed Yid bźin ʾod ʾphroʾi sgrub skor las tshogs daṅ bcas pa :a collection of rare Nyingmapa teachings /rediscovered by Rdo-rje-thogs-med."@en-x-mixed ;
         skos:prefLabel      "zab chos bdun pa sbas yul sgo 'byed/"@bo-x-ewts , "zab chos bdun pa sbas yul sgo 'byed yid bzin 'od 'phro'i sgrub skor las tshogs dan bcas pa : a collection of rare nyingmapa teachings"@en-x-mixed ;
         :catalogInfo        "Cycle of teachings called the Zabcho Dunpa Beyu Goche from the Pemako area. Revealed by Dorje Tokme (1746-1796/7), a famed Nyingma visionary from Kongpo who is one of the terton responsible for opening the borderland of Pemako to Buddhist teachings."@en ;
-        :creator            bdr:CR50948D473381270D ;
+        :creator            bdr:CR84C8D091D4703074 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

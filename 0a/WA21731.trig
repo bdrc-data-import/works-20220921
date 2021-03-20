@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21731 {
+    bda:LG84BD2E36BCA411D8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGC46AFCEC690C8D60
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-11T10:46:51.089Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA21731 {
         adm:logWho          bdu:U00013 .
     
     bda:LGDB86CC682D1A4769
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -46,15 +52,15 @@ bdg:WA21731 {
     bda:WA21731  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21731 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "0a/WA21731.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21731 ;
-        adm:logEntry        bda:LGC46AFCEC690C8D60 , bda:LGDB86CC682D1A4769 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG84BD2E36BCA411D8 , bda:LGC46AFCEC690C8D60 , bda:LGDB86CC682D1A4769 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR84BD2E36BCA411D8
+    bdr:CRAB30D78107AAB849
         a                   :AgentAsCreator ;
         :agent              bdr:P470 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +70,7 @@ bdg:WA21731 {
     bdr:WA21731  a          :SerialMember , :Work ;
         skos:prefLabel      "rdzogs chen klong gsal snying thig : a cycle rdzogs chen practice/"@bo-x-ewts , "rdzogs chen klong gsal snin thig : a cycle of rdzogs-chen practice"@en ;
         :catalogInfo        "Cycle of Nyingma Dzogchen practices."@en ;
-        :creator            bdr:CR84BD2E36BCA411D8 ;
+        :creator            bdr:CRAB30D78107AAB849 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS21731 ;

@@ -13,8 +13,10 @@
 
 bdg:WA23346 {
     bda:LG06092AFC6C98561B
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG46C19CE21601CF92
         a                   adm:UpdateData ;
@@ -33,6 +35,10 @@ bdg:WA23346 {
         adm:logDate         "2006-11-15T11:50:01.938Z"^^xsd:dateTime ;
         adm:logMessage      "added to TBRC Core Text Collection 4"@en ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGFBE4FD213E206610
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -58,15 +64,15 @@ bdg:WA23346 {
     bda:WA23346  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23346 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "76/WA23346.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23346 ;
-        adm:logEntry        bda:LG06092AFC6C98561B , bda:LG46C19CE21601CF92 , bda:LG73409A5275696707 , bda:LGBE73B8DFAF214AE3 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG06092AFC6C98561B , bda:LG46C19CE21601CF92 , bda:LG73409A5275696707 , bda:LGBE73B8DFAF214AE3 , bda:LGFBE4FD213E206610 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFBE4FD213E206610
+    bdr:CR9967C8DE735956CE
         a                   :AgentAsCreator ;
         :agent              bdr:P1844 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +83,7 @@ bdg:WA23346 {
         skos:altLabel       "gsung thor bu/_sgam po pa/"@bo-x-ewts , "Selected writings of Sgam-po-pa Bsod-nams-rin-chen (Dwags-po Lha-rje) :with the biography written by his descendent Sgam-po-pa Bsod-nams-lhun-grub."@en-x-mixed ;
         skos:prefLabel      "gsung thor bu/_bsod nams rin chen/"@bo-x-ewts , "selected writings of sgam-po-pa bsod-nams-rin-chen (dwags-po lha-rje) with the biography written by his descendant sgam-po-pa bsod-nams-lhun-grub"@en-x-mixed ;
         :catalogInfo        "Miscellaneous Writings by Dakpo Kagyu master Gampopa Sonam Rinchen (1079-1153). Includes a biography of Gampopa by his descendant Sonam Lhundrub (1488-1552). Scanned from a reprint of a rare manuscript from Gemur in Lahul."@en ;
-        :creator            bdr:CRFBE4FD213E206610 ;
+        :creator            bdr:CR9967C8DE735956CE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;

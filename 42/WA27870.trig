@@ -13,8 +13,10 @@
 
 bdg:WA27870 {
     bda:LG0591359896ED30DB
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG0E3B7111F3066B03
         a                   adm:UpdateData ;
@@ -26,6 +28,10 @@ bdg:WA27870 {
         adm:logDate         "2011-01-11T11:13:47.709Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGE066654632240AFC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGE9CDC58928A7B65D
         a                   adm:UpdateData ;
         adm:logDate         "2010-12-09T13:48:40.165Z"^^xsd:dateTime ;
@@ -34,15 +40,15 @@ bdg:WA27870 {
     bda:WA27870  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27870 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "42/WA27870.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27870 ;
-        adm:logEntry        bda:LG0591359896ED30DB , bda:LG0E3B7111F3066B03 , bda:LG8DE0BBE99D1BF66A , bda:LGE9CDC58928A7B65D ;
+        adm:logEntry        bda:LG0591359896ED30DB , bda:LG0E3B7111F3066B03 , bda:LG8DE0BBE99D1BF66A , bda:LGE066654632240AFC , bda:LGE9CDC58928A7B65D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE066654632240AFC
+    bdr:CRC94305FEFD73187A
         a                   :AgentAsCreator ;
         :agent              bdr:P5254 ;
         :role               bdr:R0ER0025 .
@@ -51,7 +57,7 @@ bdg:WA27870 {
     
     bdr:WA27870  a          :Work ;
         skos:prefLabel      "byang gter thugs sgrub kyi skor/"@bo-x-ewts , "a collection of texts from the revelations of rig-'dzin rgod-kyi-ldem-'phru-can concerned with the gsan sgrub practice"@en-x-mixed ;
-        :creator            bdr:CRE066654632240AFC ;
+        :creator            bdr:CRC94305FEFD73187A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW27870 , bdr:W27870 ;

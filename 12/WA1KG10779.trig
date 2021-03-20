@@ -24,6 +24,12 @@ bdg:WA1KG10779 {
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGAAE6753A2688F9F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+    
     bda:LGD17B7C03E6FFD281
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-11-11T15:51:19.42Z"^^xsd:dateTime ;
@@ -66,30 +72,30 @@ bdg:WA1KG10779 {
     bda:WA1KG10779  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG10779 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "12/WA1KG10779.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG10779 ;
-        adm:logEntry        bda:LG40B5E1F396013E13 , bda:LGA4F70056B900CD03 , bda:LGD17B7C03E6FFD281 , bda:LGE0A326CCAE009E18 , bda:LGE1584531C88780AE , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG40B5E1F396013E13 , bda:LGA4F70056B900CD03 , bda:LGAAE6753A2688F9F9 , bda:LGD17B7C03E6FFD281 , bda:LGE0A326CCAE009E18 , bda:LGE1584531C88780AE , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR02296867CD7CDD9A
         a                   :AgentAsCreator ;
-        :agent              bdr:P4892 ;
-        :role               bdr:R0ER0014 .
-    
-    bdr:CRAAE6753A2688F9F9
-        a                   :AgentAsCreator ;
         :agent              bdr:P3442 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR876C366E3D337289
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4892 ;
+        :role               bdr:R0ER0014 .
     
     bdr:MW1KG10779  skos:altLabel  "dpe chos rin chen spungs pa'i 'bum 'grel : detailed explanations of the examples (dpe) used in po-to-ba rin-chen-gsal's dpe chos rtsa ba and dge-bshes wa-brag-dkar-ba's dpe chos rin chen spungs pa, popular presentations of the principles of the bka'-gdams-pa approach to lamaist practice"@en .
     
     bdr:WA1KG10779  a       :Work ;
         skos:prefLabel      "dpe chos rin chen spungs pa'i 'bum 'grel/"@bo-x-ewts , "dpe chos rin chen spungs pa'i 'bum 'grel : detailed explanations of the examples (dpe) used in po-to-ba rin-chen-gsal's dpe chos rtsa ba and dge-bshes wa-brag-dkar-ba's dpe chos rin chen spungs pa, popular presentations of the principles of the bka'-gdams-pa approach to lamaist practice"@en ;
         :catalogInfo        "Explanation of examples employed in Potowa Rinchen Sal's presentation, Dpe chos rtsa ba and Geshe Drakarwa's Dpe chos rin chen spungs pa. Popular presentations of the principles of the Kadam approach to practice by Chegom Sherab Dorje."@en ;
-        :creator            bdr:CR02296867CD7CDD9A , bdr:CRAAE6753A2688F9F9 ;
+        :creator            bdr:CR02296867CD7CDD9A , bdr:CR876C366E3D337289 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

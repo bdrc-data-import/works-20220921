@@ -19,8 +19,10 @@ bdg:WA27877 {
         adm:logWho          bdu:U00012 .
     
     bda:LG29323B0CFBF5A588
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG4A776C5CBCB6E9BD
         a                   adm:UpdateData ;
@@ -34,19 +36,23 @@ bdg:WA27877 {
         adm:logMessage      "changed language"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGAE39EA8E63812E8F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:WA27877  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27877 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "b4/WA27877.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27877 ;
-        adm:logEntry        bda:LG1200252A55B205CF , bda:LG29323B0CFBF5A588 , bda:LG4A776C5CBCB6E9BD , bda:LG6298E68F7A0572CB ;
+        adm:logEntry        bda:LG1200252A55B205CF , bda:LG29323B0CFBF5A588 , bda:LG4A776C5CBCB6E9BD , bda:LG6298E68F7A0572CB , bda:LGAE39EA8E63812E8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG12631 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRAE39EA8E63812E8F
+    bdr:CR9A42F603E0C25887
         a                   :AgentAsCreator ;
         :agent              bdr:P1697 ;
         :role               bdr:R0ER0025 .
@@ -56,7 +62,7 @@ bdg:WA27877 {
     bdr:WA27877  a          :Work ;
         skos:altLabel       "yan tig ye ses mthon grol gyi chos skor"@bo-alalc97 ;
         skos:prefLabel      "yang tig ye shes mthong grol gyi chos skor/"@bo-x-ewts , "a cycle of rdzogs-chen practice"@en ;
-        :creator            bdr:CRAE39EA8E63812E8F ;
+        :creator            bdr:CR9A42F603E0C25887 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T10MS11187 ;

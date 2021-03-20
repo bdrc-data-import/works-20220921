@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23186 {
+    bda:LG2427BEA1E87C83B3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG61EE675BE9227044
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-15T11:48:46.557Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23186 {
         adm:logWho          bdu:U00013 .
     
     bda:LGFAB03D634BE37C8F
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -39,15 +45,15 @@ bdg:WA23186 {
     bda:WA23186  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23186 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "bd/WA23186.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23186 ;
-        adm:logEntry        bda:LG61EE675BE9227044 , bda:LGFAB03D634BE37C8F , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2427BEA1E87C83B3 , bda:LG61EE675BE9227044 , bda:LGFAB03D634BE37C8F , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2427BEA1E87C83B3
+    bdr:CRF799799E104DA4A8
         a                   :AgentAsCreator ;
         :agent              bdr:P6601 ;
         :role               bdr:R0ER0019 .
@@ -58,7 +64,7 @@ bdg:WA23186 {
         skos:altLabel       "rje btsun khyab bdag chen po ran-rig-ras-chen gyi gsun mgur dan zal gdams 'chi med bdud rtsi'i rlabs 'phren"@bo-alalc97 ;
         skos:prefLabel      "rje btsun khyab bdag chen po rang rig ras chen gyi gsung mgur dang zhal gdams 'chi med bdud rtsi'i rlabs 'phreng /"@bo-x-ewts , "the collected songs of esoteric realization on buddhist practice of the 'brug-pa dkar-brgyud-pa yogi of spiti, ran-rig-ras-pa"@en-x-mixed ;
         :catalogInfo        "Songs of realization and instructions on contemplative practice by Rangrik Rechen, a master of the Drukpa Kargyu order."@en ;
-        :creator            bdr:CR2427BEA1E87C83B3 ;
+        :creator            bdr:CRF799799E104DA4A8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016202 ;

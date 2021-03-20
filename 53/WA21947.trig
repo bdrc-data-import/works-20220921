@@ -13,8 +13,10 @@
 
 bdg:WA21947 {
     bda:LG0465424383D5F8AA
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG268A6CE2837F854C
         a                   adm:UpdateData ;
@@ -45,6 +47,10 @@ bdg:WA21947 {
         adm:logMessage      "added cho ga as genre"@en ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGFC754AF5CE94BD24
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -55,15 +61,15 @@ bdg:WA21947 {
     bda:WA21947  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21947 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "53/WA21947.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21947 ;
-        adm:logEntry        bda:LG0465424383D5F8AA , bda:LG268A6CE2837F854C , bda:LG68EB319CCB5D4D2F , bda:LG6BD986B7E0BF39E9 , bda:LGF5A7DB6DF29D044C , bda:LGFB3EE9E48A9E33AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG0465424383D5F8AA , bda:LG268A6CE2837F854C , bda:LG68EB319CCB5D4D2F , bda:LG6BD986B7E0BF39E9 , bda:LGF5A7DB6DF29D044C , bda:LGFB3EE9E48A9E33AE , bda:LGFC754AF5CE94BD24 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFC754AF5CE94BD24
+    bdr:CR1901CCB5127E1656
         a                   :AgentAsCreator ;
         :agent              bdr:P1693 ;
         :role               bdr:R0ER0019 .
@@ -73,7 +79,7 @@ bdg:WA21947 {
     bdr:WA21947  a          :Work ;
         skos:altLabel       "Rituals for the propitiation of the various protective deities of the Bla ma nor bu rgya mtsho cycle of revelations of Padma-gliṅ-pa, arranged for convenient liturgical recitation."@en-x-mixed ;
         skos:prefLabel      "pad+ma gling pa'i cho ga'i skor lho 'brug lugs/"@bo-x-ewts , "rituals for the propitiation of the various protective deities of the bla ma nor bu rgya mtsho cycled of revelations of padma-glin-pa, arranged for convenient liturgical recitation"@en ;
-        :creator            bdr:CRFC754AF5CE94BD24 ;
+        :creator            bdr:CR1901CCB5127E1656 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T977 ;

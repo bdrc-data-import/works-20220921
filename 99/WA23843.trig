@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23843 {
+    bda:LG1022CF37F24FCF46
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG4BE708A76BE883DF
         a                   adm:UpdateData ;
         adm:logDate         "2012-04-30T15:50:13.414Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23843 {
         adm:logWho          bdu:U00012 .
     
     bda:LG4E6B715D88C2AA52
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG578767A260E2CF26
         a                   adm:UpdateData ;
@@ -64,15 +70,15 @@ bdg:WA23843 {
     bda:WA23843  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23843 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "99/WA23843.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23843 ;
-        adm:logEntry        bda:LG4BE708A76BE883DF , bda:LG4E6B715D88C2AA52 , bda:LG578767A260E2CF26 , bda:LG6F7867F7A1FF24F4 , bda:LG984D6FC71050CE6F , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1022CF37F24FCF46 , bda:LG4BE708A76BE883DF , bda:LG4E6B715D88C2AA52 , bda:LG578767A260E2CF26 , bda:LG6F7867F7A1FF24F4 , bda:LG984D6FC71050CE6F , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1022CF37F24FCF46
+    bdr:CR70367F2BC24BBDBB
         a                   :AgentAsCreator ;
         :agent              bdr:P621 ;
         :role               bdr:R0ER0019 .
@@ -83,7 +89,7 @@ bdg:WA23843 {
         skos:altLabel       "rig 'dzin mkhyen brtse klong grol rin po che'i rnam thar dang gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_mkhyen brtse klong grol/"@bo-x-ewts , "the autobiography and collected works of rig-'dzin mkhyen-brtse-klon-grol"@en-x-mixed ;
         :catalogInfo        "Collected Works by Nyingma master Khyentse Longdrol of southeast Tibet."@en ;
-        :creator            bdr:CR1022CF37F24FCF46 ;
+        :creator            bdr:CR70367F2BC24BBDBB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

@@ -13,8 +13,10 @@
 
 bdg:WA27408 {
     bda:LG1E6A32C1F7B248E2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG6052EA1F3CE9D919
         a                   adm:UpdateData ;
@@ -22,25 +24,29 @@ bdg:WA27408 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LG7220D5D248D660C0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:WA27408  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27408 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "b0/WA27408.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27408 ;
-        adm:logEntry        bda:LG1E6A32C1F7B248E2 , bda:LG6052EA1F3CE9D919 ;
+        adm:logEntry        bda:LG1E6A32C1F7B248E2 , bda:LG6052EA1F3CE9D919 , bda:LG7220D5D248D660C0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7220D5D248D660C0
+    bdr:CR9992633F210F6AEE
         a                   :AgentAsCreator ;
         :agent              bdr:P326 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA27408  a          :Work ;
         skos:prefLabel      "ma Ni mchod pa'i 'cham dbyangs rgyas pa/"@bo-x-ewts ;
-        :creator            bdr:CR7220D5D248D660C0 ;
+        :creator            bdr:CR9992633F210F6AEE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1166 , bdr:T1746 ;

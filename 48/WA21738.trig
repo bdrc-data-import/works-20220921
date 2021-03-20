@@ -13,14 +13,20 @@
 
 bdg:WA21738 {
     bda:LG57EA9660654CE91E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG6C074A6C07F783A3
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-11T10:47:01.465Z"^^xsd:dateTime ;
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LG7A05234EAD60E7F5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGE83B3A71BD369E48
         a                   adm:UpdateData ;
@@ -45,15 +51,15 @@ bdg:WA21738 {
     bda:WA21738  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21738 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "48/WA21738.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21738 ;
-        adm:logEntry        bda:LG57EA9660654CE91E , bda:LG6C074A6C07F783A3 , bda:LGE83B3A71BD369E48 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG57EA9660654CE91E , bda:LG6C074A6C07F783A3 , bda:LG7A05234EAD60E7F5 , bda:LGE83B3A71BD369E48 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7A05234EAD60E7F5
+    bdr:CR244819CC1D93F781
         a                   :AgentAsCreator ;
         :agent              bdr:P470 ;
         :role               bdr:R0ER0025 .
@@ -63,7 +69,7 @@ bdg:WA21738 {
     bdr:WA21738  a          :SerialMember , :Work ;
         skos:prefLabel      "dam can rdo rje legs pa/"@bo-x-ewts , "dam can rdo rje legs pa : a cycle of rnin-ma-pa buddhist practice focussing upon the protective deity rdo-rje-legs-pa"@en-x-mixed ;
         :catalogInfo        "Nyingma cycle of practice focusing on the protective deity Dorje Lekpa."@en ;
-        :creator            bdr:CR7A05234EAD60E7F5 ;
+        :creator            bdr:CR244819CC1D93F781 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS21732 ;

@@ -18,14 +18,20 @@ bdg:WA30140 {
         adm:logWho          bdu:U00012 .
     
     bda:LG18A6AA6BB782EC54
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG42482B2CAAF38B69
         a                   adm:UpdateData ;
         adm:logDate         "2007-01-11T12:31:02.237Z"^^xsd:dateTime ;
         adm:logMessage      "added to ctc 4"@en ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LG64D1AF6323E8D633
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGB0AADAF4E7049EF1
         a                   adm:UpdateData ;
@@ -56,23 +62,23 @@ bdg:WA30140 {
     bda:WA30140  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30140 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "28/WA30140.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30140 ;
-        adm:logEntry        bda:LG02DD06FD26955221 , bda:LG18A6AA6BB782EC54 , bda:LG42482B2CAAF38B69 , bda:LGB0AADAF4E7049EF1 , bda:LGF88A693DC5E701EF , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG02DD06FD26955221 , bda:LG18A6AA6BB782EC54 , bda:LG42482B2CAAF38B69 , bda:LG64D1AF6323E8D633 , bda:LGB0AADAF4E7049EF1 , bda:LGF88A693DC5E701EF , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR64D1AF6323E8D633
-        a                   :AgentAsCreator ;
-        :agent              bdr:P435 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR97E8343767C03C5F
+    bdr:CR382328CFF9BD4975
         a                   :AgentAsCreator ;
         :agent              bdr:P10195 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CR97E8343767C03C5F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P435 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW30140  skos:altLabel  "commentaries on the rtsa rgyud, bsad rgyud, and phyi ma rgyud (three of the four medical tantras)"@en .
     
@@ -80,7 +86,7 @@ bdg:WA30140 {
         skos:altLabel       "Commentaries on the Rtsa rgyud, Bśad rgyud, and Phyi ma rgyrud (three of the four medical tantras) /by Goṅ-sman Dkon-mchog-bde-legs."@en-x-mixed ;
         skos:prefLabel      "rgyud bzhi'i 'grel pa/"@bo-x-ewts , "commentaries on the rtsa rgyud, bsad rgyud, and phyi ma rgyud (three of the four medical tantras)"@en ;
         :catalogInfo        "Commentaries on three of the four medical tantras by Gonmen Konchok Delek; includes the commentary by Tashi Peljor Zangpo."@en ;
-        :creator            bdr:CR64D1AF6323E8D633 , bdr:CR97E8343767C03C5F ;
+        :creator            bdr:CR382328CFF9BD4975 , bdr:CR97E8343767C03C5F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016202 ;

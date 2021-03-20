@@ -13,8 +13,10 @@
 
 bdg:WA23169 {
     bda:LG48CFA38A3241F03A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG661123981D8C51C9
         a                   adm:UpdateData ;
@@ -33,6 +35,10 @@ bdg:WA23169 {
         adm:logDate         "2013-07-15T11:48:28.277Z"^^xsd:dateTime ;
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGD104ADC23B45AF08
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -58,15 +64,15 @@ bdg:WA23169 {
     bda:WA23169  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23169 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "1a/WA23169.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23169 ;
-        adm:logEntry        bda:LG48CFA38A3241F03A , bda:LG661123981D8C51C9 , bda:LG78DB9ED6B657DB1D , bda:LG8338CC28583EF34F , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG48CFA38A3241F03A , bda:LG661123981D8C51C9 , bda:LG78DB9ED6B657DB1D , bda:LG8338CC28583EF34F , bda:LGD104ADC23B45AF08 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD104ADC23B45AF08
+    bdr:CR5695400B9634218C
         a                   :AgentAsCreator ;
         :agent              bdr:P399 ;
         :role               bdr:R0ER0019 .
@@ -76,7 +82,7 @@ bdg:WA23169 {
     bdr:WA23169  a          :Work ;
         skos:prefLabel      "'bri gung rin chen phun tshogs kyi rnam thar/"@bo-x-ewts , "the autobiography of 'bri-gun-pa rin-chen-phun-tshogs (1509-1557) and its continuation by rin-chen-dpal with rin-chen-phun-tshogs' biographies of 'bri-gun-glin-pa ses-rab-'byun-gnas (1187-1254) and 'bri-gun-pa kun-dga'-rin-chen (1475-1524)"@en-x-mixed ;
         :catalogInfo        "Biography and account of previous embodiments of the Drikung Kagyu patriarch Rinchen Puntsok (1509-1557)."@en ;
-        :creator            bdr:CRD104ADC23B45AF08 ;
+        :creator            bdr:CR5695400B9634218C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

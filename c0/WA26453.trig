@@ -24,6 +24,10 @@ bdg:WA26453 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG5186D05CC22549BA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG7C04BCE5C086D8A3
         a                   adm:UpdateData ;
         adm:logDate         "2007-10-05T16:32:28.706Z"^^xsd:dateTime ;
@@ -31,8 +35,10 @@ bdg:WA26453 {
         adm:logWho          bdu:U00017 .
     
     bda:LGAF73A3798DB1F6C8
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:52:54.721Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
     
     bda:LGB16A7A1136298242
         a                   adm:UpdateData ;
@@ -57,15 +63,15 @@ bdg:WA26453 {
     bda:WA26453  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA26453 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "c0/WA26453.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA26453 ;
-        adm:logEntry        bda:LG0BE1157B6E6F6EB0 , bda:LG3B2DC0F2292DE037 , bda:LG7C04BCE5C086D8A3 , bda:LGAF73A3798DB1F6C8 , bda:LGB16A7A1136298242 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0BE1157B6E6F6EB0 , bda:LG3B2DC0F2292DE037 , bda:LG5186D05CC22549BA , bda:LG7C04BCE5C086D8A3 , bda:LGAF73A3798DB1F6C8 , bda:LGB16A7A1136298242 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5186D05CC22549BA
+    bdr:CR997DD1AEB8C0F4BD
         a                   :AgentAsCreator ;
         :agent              bdr:P8408 ;
         :role               bdr:R0ER0019 .
@@ -73,7 +79,7 @@ bdg:WA26453 {
     bdr:WA26453  a          :Work ;
         skos:prefLabel      "rtog ge rigs pa'i brgyan gyi snying po/"@bo-x-ewts ;
         :catalogInfo        "Work on Buddhist epistemology by Dharmaratna."@en ;
-        :creator            bdr:CR5186D05CC22549BA ;
+        :creator            bdr:CR997DD1AEB8C0F4BD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW26453 , bdr:W26453 ;

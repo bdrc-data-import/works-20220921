@@ -18,6 +18,10 @@ bdg:WA25101 {
         adm:logMessage      "add more info"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG6DA837F146784E16
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG98A8F2DF01617070
         a                   adm:UpdateData ;
         adm:logDate         "2009-09-01T16:27:31.069Z"^^xsd:dateTime ;
@@ -36,8 +40,10 @@ bdg:WA25101 {
         adm:logWho          bdu:U00017 .
     
     bda:LGF324A61570347CB0
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -70,16 +76,16 @@ bdg:WA25101 {
     bda:WA25101  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25101 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "e7/WA25101.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25101 ;
-        adm:logEntry        bda:LG3393AD496FEC287A , bda:LG98A8F2DF01617070 , bda:LGB3BD44BB5F6DF996 , bda:LGF10807564809CC40 , bda:LGF324A61570347CB0 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM84B17F7EDC , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3393AD496FEC287A , bda:LG6DA837F146784E16 , bda:LG98A8F2DF01617070 , bda:LGB3BD44BB5F6DF996 , bda:LGF10807564809CC40 , bda:LGF324A61570347CB0 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM84B17F7EDC , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6DA837F146784E16
+    bdr:CR41DC33A5D95174CC
         a                   :AgentAsCreator ;
         :agent              bdr:P2556 ;
         :role               bdr:R0ER0019 .
@@ -88,7 +94,7 @@ bdg:WA25101 {
         skos:altLabel       "rje 'brong rtse lha sras rgya mtsho'i mdzad pa'i be'u bum dkar po/"@bo-x-ewts ;
         skos:prefLabel      "'brong rtse'i be'u bum dkar po/"@bo-x-ewts ;
         :catalogInfo        "Collection of esoteric medical prescriptions and magical formulae for the alleviation of various ailments. Compiled and arranged by the 14th century figure Drongtse Lhase Gyatso."@en ;
-        :creator            bdr:CR6DA837F146784E16 ;
+        :creator            bdr:CR41DC33A5D95174CC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1202 ;

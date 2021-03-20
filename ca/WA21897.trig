@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21897 {
+    bda:LG130A0C6A6EC5F2CA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG240DE5ECB3C53D8B
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-11T11:46:03.427Z"^^xsd:dateTime ;
@@ -25,21 +29,23 @@ bdg:WA21897 {
         adm:logWho          bdu:U00032 .
     
     bda:LGDFF95B8BAE3ABA2A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:WA21897  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21897 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ca/WA21897.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21897 ;
-        adm:logEntry        bda:LG240DE5ECB3C53D8B , bda:LG9EA528340D21EAF2 , bda:LGDFF95B8BAE3ABA2A ;
+        adm:logEntry        bda:LG130A0C6A6EC5F2CA , bda:LG240DE5ECB3C53D8B , bda:LG9EA528340D21EAF2 , bda:LGDFF95B8BAE3ABA2A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR130A0C6A6EC5F2CA
+    bdr:CRB3E5264F1D8D30EA
         a                   :AgentAsCreator ;
         :agent              bdr:P660 ;
         :role               bdr:R0ER0019 .
@@ -48,7 +54,7 @@ bdg:WA21897 {
     
     bdr:WA21897  a          :Work ;
         skos:prefLabel      "gsung thor bu/_zil gnon dbang rgyal rdo rje/"@bo-x-ewts , "collected writings of zil-gnon-dban-rgyal-rdo-rje : a collection of texts by an exponent of the rnin-ma-pa tradition from the sino-nepalese borderland"@en-x-mixed ;
-        :creator            bdr:CR130A0C6A6EC5F2CA ;
+        :creator            bdr:CRB3E5264F1D8D30EA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

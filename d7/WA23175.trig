@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23175 {
+    bda:LGB2E2B4CF382FE1BA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGE509769FDDE4D3EB
         a                   adm:UpdateData ;
         adm:logDate         "2009-09-01T12:55:15.473Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23175 {
         adm:logWho          bdu:U00017 .
     
     bda:LGF18A59173456BABE
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -46,37 +52,37 @@ bdg:WA23175 {
     bda:WA23175  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23175 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "d7/WA23175.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23175 ;
-        adm:logEntry        bda:LGE509769FDDE4D3EB , bda:LGF18A59173456BABE , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LGB2E2B4CF382FE1BA , bda:LGE509769FDDE4D3EB , bda:LGF18A59173456BABE , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6BA3A6FFB083B8EC
-        a                   :AgentAsCreator ;
-        :agent              bdr:P264 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRADC09C4D6074C230
-        a                   :AgentAsCreator ;
-        :agent              bdr:P733 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRB11BA6A26AEAFF00
+    bdr:CR3083D3901EE9DDED
         a                   :AgentAsCreator ;
         :agent              bdr:P625 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRB2E2B4CF382FE1BA
+    bdr:CR6BA3A6FFB083B8EC
         a                   :AgentAsCreator ;
-        :agent              bdr:P258 ;
+        :agent              bdr:P629 ;
         :role               bdr:R0ER0025 .
+    
+    bdr:CRADC09C4D6074C230
+        a                   :AgentAsCreator ;
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CRB11BA6A26AEAFF00
+        a                   :AgentAsCreator ;
+        :agent              bdr:P733 ;
+        :role               bdr:R0ER0016 .
     
     bdr:CRCA958594E81C0858
         a                   :AgentAsCreator ;
-        :agent              bdr:P629 ;
+        :agent              bdr:P258 ;
         :role               bdr:R0ER0025 .
     
     bdr:MW23175  skos:altLabel  "mkha' 'gro gsan ba kun 'dus"@en-x-mixed .
@@ -84,7 +90,7 @@ bdg:WA23175 {
     bdr:WA23175  a          :Work ;
         skos:prefLabel      "mkha' 'gro gsang ba kun 'dus kyi chos skor/"@bo-x-ewts , "mkha' 'gro gsan ba kun 'dus"@en-x-mixed ;
         :catalogInfo        "Cycle of practice focusing on Vajravarahi. First revealed by Jomo Manmo and later rediscovered by Jamyang Khyentse Wangpo (1820-1892). Includes liturgical texts by Jamgon Kongtrul Lodro Taye, Dzongsar Jamyang Chokyi Lodro, Dilgo Khyentse Rabsal Dawa, and others."@en ;
-        :creator            bdr:CR6BA3A6FFB083B8EC , bdr:CRADC09C4D6074C230 , bdr:CRB11BA6A26AEAFF00 , bdr:CRB2E2B4CF382FE1BA , bdr:CRCA958594E81C0858 ;
+        :creator            bdr:CR3083D3901EE9DDED , bdr:CR6BA3A6FFB083B8EC , bdr:CRADC09C4D6074C230 , bdr:CRB11BA6A26AEAFF00 , bdr:CRCA958594E81C0858 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

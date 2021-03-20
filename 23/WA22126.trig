@@ -12,14 +12,20 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22126 {
+    bda:LG31FB27FE324D9A29
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG5BFE05EF5F0C465B
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-11T15:16:57.384Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00013 .
     
     bda:LG6EEA271BEDD89CB7
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -45,15 +51,15 @@ bdg:WA22126 {
     bda:WA22126  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22126 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "23/WA22126.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22126 ;
-        adm:logEntry        bda:LG5BFE05EF5F0C465B , bda:LG6EEA271BEDD89CB7 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG31FB27FE324D9A29 , bda:LG5BFE05EF5F0C465B , bda:LG6EEA271BEDD89CB7 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR31FB27FE324D9A29
+    bdr:CR484592E2BE2E2614
         a                   :AgentAsCreator ;
         :agent              bdr:P7481 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +70,7 @@ bdg:WA22126 {
         skos:altLabel       "rgya nag rtogs ldan byang chub 'phags dbang gi rnam thar/"@bo-x-ewts ;
         skos:prefLabel      "rgya nag rtogs ldan byan chub 'phags dbang gi rnam thar dad gsum chu 'phel ba'i zla gzon"@bo-alalc97 , "the biography of rgya-nag rtogs-ldan byan-chub-'phags-dban, the founder of the rgya-nag ma-ni near skye-rgu-mdo in sga"@en ;
         :catalogInfo        "Biography of yogin, Gyanak Tokden 01 Changchub Pakwang, founder of the Gyanak Mani near Kyegudo in Ga."@en ;
-        :creator            bdr:CR31FB27FE324D9A29 ;
+        :creator            bdr:CR484592E2BE2E2614 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

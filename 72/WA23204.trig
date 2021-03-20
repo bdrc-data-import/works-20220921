@@ -13,6 +13,12 @@
 
 bdg:WA23204 {
     bda:LG11F4031EA66BC6B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+    
+    bda:LG6F8CC1010C0DD03C
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -46,28 +52,28 @@ bdg:WA23204 {
     bda:WA23204  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23204 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "72/WA23204.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23204 ;
-        adm:logEntry        bda:LG11F4031EA66BC6B2 , bda:LGA9DC4E247E2C3F72 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG11F4031EA66BC6B2 , bda:LG6F8CC1010C0DD03C , bda:LGA9DC4E247E2C3F72 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1589863658D94D83
         a                   :AgentAsCreator ;
-        :agent              bdr:P649 ;
-        :role               bdr:R0ER0016 .
+        :agent              bdr:P2424 ;
+        :role               bdr:R0ER0025 .
     
     bdr:CR4CBA1AD58A7ED86F
         a                   :AgentAsCreator ;
-        :agent              bdr:P2710 ;
+        :agent              bdr:P649 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CR6F8CC1010C0DD03C
+    bdr:CRC96902B5030EF2FC
         a                   :AgentAsCreator ;
-        :agent              bdr:P2424 ;
-        :role               bdr:R0ER0025 .
+        :agent              bdr:P2710 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW23204  skos:altLabel  "bka' gsan zab chos mkha' khyab ran grol las skad cig gcig gis rdzogs sans rgyas pa'i myur lam sans rgyas kyi mtshan brjod nes ltung drun nas 'byin pa : a formula for the purification of spiritual defects with other confessional texts"@en-x-mixed .
     
@@ -75,7 +81,7 @@ bdg:WA23204 {
         skos:altLabel       "bka' gsang zab chos mkha' khyab rang grol las skad cig gcig gis rdzogs sangs rgyas pa'i myur lam sangs rgyas kyi mtshan brjod nyes ltung drung nas 'byin pa/"@bo-x-ewts ;
         skos:prefLabel      "nyes ltung bshags skor/"@bo-x-ewts , "bka' gsan zab chos mkha' khyab ran grol las skad cig gcig gis rdzogs sans rgyas pa'i myur lam sans rgyas kyi mtshan brjod nes ltung drun nas 'byin pa : a formula for the purification of spiritual defects with other confessional texts"@en-x-mixed ;
         :catalogInfo        "Anthology of confessional texts."@en ;
-        :creator            bdr:CR1589863658D94D83 , bdr:CR4CBA1AD58A7ED86F , bdr:CR6F8CC1010C0DD03C ;
+        :creator            bdr:CR1589863658D94D83 , bdr:CR4CBA1AD58A7ED86F , bdr:CRC96902B5030EF2FC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW23204 , bdr:W23204 ;

@@ -19,8 +19,10 @@ bdg:WA1648 {
         adm:logWho          bdu:U00026 .
     
     bda:LG5E52576B231F8871
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG7E08C632A00A3FA6
         a                   adm:UpdateData ;
@@ -33,6 +35,10 @@ bdg:WA1648 {
         adm:logDate         "2010-04-02T14:21:48.478Z"^^xsd:dateTime ;
         adm:logMessage      "added title page title"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGAB925068EB502ADD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGD3DC6502226104AB
         a                   adm:ScanRequestCreation ;
@@ -50,15 +56,15 @@ bdg:WA1648 {
     bda:WA1648  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1648 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "8f/WA1648.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1648 ;
-        adm:logEntry        bda:LG5BFEE7B1492D00E9 , bda:LG5E52576B231F8871 , bda:LG7E08C632A00A3FA6 , bda:LG822606A67866A3CC , bda:LGD3DC6502226104AB , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG5BFEE7B1492D00E9 , bda:LG5E52576B231F8871 , bda:LG7E08C632A00A3FA6 , bda:LG822606A67866A3CC , bda:LGAB925068EB502ADD , bda:LGD3DC6502226104AB , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRAB925068EB502ADD
+    bdr:CR2A2FD51B66538A38
         a                   :AgentAsCreator ;
         :agent              bdr:P131 ;
         :role               bdr:R0ER0019 .
@@ -68,7 +74,7 @@ bdg:WA1648 {
     bdr:WA1648  a           :Work ;
         skos:altLabel       "dam chos dgongs pa gcig pa'i 'grel chen/"@bo-x-ewts , "Dgoṅs gcig yig cha :detailed presentations ʾBri-guṅ ʾJig-rten-mgon-poʾi Dgoṅs gcig precepts of Māhāyana [sic] Buddhist philosophy /by Dbon-po Śes-rab-ʾbyuṅ-gnas."@en-x-mixed ;
         skos:prefLabel      "dgongs gcig yig cha/"@bo-x-ewts , "detailed presentations of 'bri-gun 'jig-rten-mgon-po'i dgons gcig precepts of mahayana buddhist philosophy"@en ;
-        :creator            bdr:CRAB925068EB502ADD ;
+        :creator            bdr:CR2A2FD51B66538A38 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1648 , bdr:W1648 ;

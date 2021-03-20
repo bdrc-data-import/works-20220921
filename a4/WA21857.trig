@@ -30,6 +30,10 @@ bdg:WA21857 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LG4CD14AF455AFA23A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG5B7F4CA073E80F9C
         a                   adm:UpdateData ;
         adm:logDate         "2010-10-12T10:46:52.757Z"^^xsd:dateTime ;
@@ -53,8 +57,10 @@ bdg:WA21857 {
         adm:logWho          bdu:U00003 .
     
     bda:LGF7FCBAA3E6A8D730
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -80,16 +86,16 @@ bdg:WA21857 {
     bda:WA21857  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21857 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "a4/WA21857.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21857 ;
-        adm:logEntry        bda:LG14616B27504374D5 , bda:LG330ED0E1BE9B7415 , bda:LG3791C30E7A9C9326 , bda:LG5B7F4CA073E80F9C , bda:LG81206CFBD075692C , bda:LGB0658024E927D384 , bda:LGD801C576603510D9 , bda:LGF7FCBAA3E6A8D730 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG14616B27504374D5 , bda:LG330ED0E1BE9B7415 , bda:LG3791C30E7A9C9326 , bda:LG4CD14AF455AFA23A , bda:LG5B7F4CA073E80F9C , bda:LG81206CFBD075692C , bda:LGB0658024E927D384 , bda:LGD801C576603510D9 , bda:LGF7FCBAA3E6A8D730 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1PD107142 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR4CD14AF455AFA23A
+    bdr:CRDDE8833F58C5BF7F
         a                   :AgentAsCreator ;
         :agent              bdr:P270 ;
         :role               bdr:R0ER0019 .
@@ -99,7 +105,7 @@ bdg:WA21857 {
     bdr:WA21857  a          :SerialMember , :Work ;
         skos:prefLabel      "gsung 'bum/_o rgyan 'jigs med chos kyi dbang po/"@bo-x-ewts , "the collected works of dpal-sprul o-rgyan-'jigs-med-chos-kyi-dbang-po"@en ;
         :catalogInfo        "Collected Works by Nyingma master Dza Patrul Orgyen Jigme Chokyi Wangpo (1808-1887)."@en ;
-        :creator            bdr:CR4CD14AF455AFA23A ;
+        :creator            bdr:CRDDE8833F58C5BF7F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS11225 ;

@@ -13,8 +13,10 @@
 
 bdg:WA9893 {
     bda:LG0E1134F7427CA362
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG41E2D471C620A22F
         a                   adm:UpdateData ;
@@ -26,6 +28,10 @@ bdg:WA9893 {
         a                   adm:UpdateData ;
         adm:logDate         "2012-10-25T12:04:05.129Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LG756357E56B7BE809
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG9177D83574BAC08F
         a                   adm:ScanRequestCreation ;
@@ -49,15 +55,15 @@ bdg:WA9893 {
     bda:WA9893  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA9893 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "1f/WA9893.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA9893 ;
-        adm:logEntry        bda:LG0E1134F7427CA362 , bda:LG41E2D471C620A22F , bda:LG42642BD2F3FCA389 , bda:LG9177D83574BAC08F , bda:LGFDB10ED13B8183E5 , bda:LGIM4BF5F96E12 ;
+        adm:logEntry        bda:LG0E1134F7427CA362 , bda:LG41E2D471C620A22F , bda:LG42642BD2F3FCA389 , bda:LG756357E56B7BE809 , bda:LG9177D83574BAC08F , bda:LGFDB10ED13B8183E5 , bda:LGIM4BF5F96E12 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR756357E56B7BE809
+    bdr:CRA3500B10C67376DD
         a                   :AgentAsCreator ;
         :agent              bdr:P724 ;
         :role               bdr:R0ER0019 .
@@ -66,7 +72,7 @@ bdg:WA9893 {
     
     bdr:WA9893  a           :Work ;
         skos:prefLabel      "dbu ma'i stong thun skal bzang mig 'byed kyi gsung rgyun zla ba'i zhal lung dang dbu ma 'jug pa'i 'bru 'grel blo gsal dga' ba'i me long /"@bo-x-ewts , "dbu ma'i ston thun skal bzan mig 'byed kyi gsun rgyun zla ba'i zal lun ; and, dbu ma 'jug pa'i 'bru 'grel blo gsal dga' ba'i me lon : two works elucidating the fundamentals of Madhyamika philosophy"@en ;
-        :creator            bdr:CR756357E56B7BE809 ;
+        :creator            bdr:CRA3500B10C67376DD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1488 ;

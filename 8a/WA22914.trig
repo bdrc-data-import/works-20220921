@@ -13,14 +13,20 @@
 
 bdg:WA22914 {
     bda:LG64EC03EF9039D6B3
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:58:09.432Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01-part2" .
     
     bda:LG8139C4472633B08A
         a                   adm:UpdateData ;
         adm:logDate         "2014-11-03T16:40:43.694Z"^^xsd:dateTime ;
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGC5B3BBDC80007B55
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGDC7A2155C5A4317C
         a                   adm:ScanRequestCreation ;
@@ -31,15 +37,15 @@ bdg:WA22914 {
     bda:WA22914  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22914 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "8a/WA22914.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22914 ;
-        adm:logEntry        bda:LG64EC03EF9039D6B3 , bda:LG8139C4472633B08A , bda:LGDC7A2155C5A4317C ;
+        adm:logEntry        bda:LG64EC03EF9039D6B3 , bda:LG8139C4472633B08A , bda:LGC5B3BBDC80007B55 , bda:LGDC7A2155C5A4317C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC5B3BBDC80007B55
+    bdr:CRF1A3565D94674C24
         a                   :AgentAsCreator ;
         :agent              bdr:P3217 ;
         :role               bdr:R0ER0019 .
@@ -48,7 +54,7 @@ bdg:WA22914 {
         skos:altLabel       "Ācāryakriyāsamuccaya"@sa-x-ndia ;
         skos:prefLabel      "rdo rje slob dpon gyi bya ba kun las btus pa/"@bo-x-ewts , "kriya-samuccaya : a sanskrit manuscript from nepal containing a collection of tantric ritual by jagaddarpana"@en , "kriyasamuccaya"@sa-alalc97 ;
         :catalogInfo        "Collection of important rituals and Tantric initiations."@en ;
-        :creator            bdr:CRC5B3BBDC80007B55 ;
+        :creator            bdr:CRF1A3565D94674C24 ;
         :isRoot             true ;
         :language           bdr:LangEn , bdr:LangSa ;
         :serialMemberOf     bdr:WAS00KG09211 ;

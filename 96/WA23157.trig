@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23157 {
+    bda:LG55C4B40EFF79CD5B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG79ADF36EDBE7A7B8
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-12T15:29:02.891Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23157 {
         adm:logWho          bdu:U00013 .
     
     bda:LGE870237684DDD88C
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -39,15 +45,15 @@ bdg:WA23157 {
     bda:WA23157  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23157 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "96/WA23157.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23157 ;
-        adm:logEntry        bda:LG79ADF36EDBE7A7B8 , bda:LGE870237684DDD88C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG55C4B40EFF79CD5B , bda:LG79ADF36EDBE7A7B8 , bda:LGE870237684DDD88C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR55C4B40EFF79CD5B
+    bdr:CRB6DA5BD9A1D62C2F
         a                   :AgentAsCreator ;
         :agent              bdr:P924 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +63,7 @@ bdg:WA23157 {
     bdr:WA23157  a          :Work ;
         skos:prefLabel      "khams sprul ngag dbang bstan pa'i nyi ma'i gsan yig"@bo-x-ewts , "mdo khams pa bstan pa'i ni ma'i gsan yig sku thog drug pa : record of teachings received (gsan yig) of the sixth khams-sprul nag-dban-mi-pham-bstan-pa'i-ni-ma-rnam-dag-chos-kyi-rgya-mtsho-phrin-las-rnam-par-rgyal-ba'i sde (1849-1907)"@en-x-mixed ;
         :catalogInfo        "Record of teachings received by Khamtrul 06 Ngawang Tenpai Nyima (1849-1907) of Khampa Gar, a master of the Drukpa Kagyu order."@en ;
-        :creator            bdr:CR55C4B40EFF79CD5B ;
+        :creator            bdr:CRB6DA5BD9A1D62C2F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T192 ;

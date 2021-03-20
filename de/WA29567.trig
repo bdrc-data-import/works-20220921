@@ -13,8 +13,10 @@
 
 bdg:WA29567 {
     bda:LG15D98BE53921E987
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG4936D92008A58E33
         a                   adm:ScanRequestCreation ;
@@ -27,6 +29,10 @@ bdg:WA29567 {
         adm:logDate         "2011-07-25T16:56:58.33Z"^^xsd:dateTime ;
         adm:logMessage      "changed scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG5BB7E0343C42D095
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG990D44E9ADDFD160
         a                   adm:UpdateData ;
@@ -95,23 +101,23 @@ bdg:WA29567 {
     bda:WA29567  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29567 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "de/WA29567.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29567 ;
-        adm:logEntry        bda:LG15D98BE53921E987 , bda:LG4936D92008A58E33 , bda:LG4A0B27F78FA7FE11 , bda:LG990D44E9ADDFD160 , bda:LG9A05F27B854E0A9A , bda:LGA2677ED866EB769E , bda:LGB12A57EC458A803D , bda:LGC9CF188C1ADDA65E , bda:LGCCDECDDC7CA9CDFE , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG15D98BE53921E987 , bda:LG4936D92008A58E33 , bda:LG4A0B27F78FA7FE11 , bda:LG5BB7E0343C42D095 , bda:LG990D44E9ADDFD160 , bda:LG9A05F27B854E0A9A , bda:LGA2677ED866EB769E , bda:LGB12A57EC458A803D , bda:LGC9CF188C1ADDA65E , bda:LGCCDECDDC7CA9CDFE , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR5A774A7200E28E4D
         a                   :AgentAsCreator ;
-        :agent              bdr:P1615 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR5BB7E0343C42D095
-        a                   :AgentAsCreator ;
         :agent              bdr:P3293 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRB12FB2ED07F95402
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1615 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW29567  skos:altLabel  "the essence (mula) of the lam-'bras teachings of sa-skya-pa buddhism"@en-x-mixed .
     
@@ -119,7 +125,7 @@ bdg:WA29567 {
         skos:altLabel       "sras don ma/"@bo-x-ewts , "Rdo rjeʾi tshig rkang :the essence (mula) of the Lam-ʾbras teachings of Sa-skya-pa Buddhism /by Virupa ; together with the explanation \"Sras don ma\" given orally by Sa-chen Kun-dgaʾ-snying-po and handed down in an unbroken transmission to Yar-ston Byang-chub-grags."@en-x-mixed ;
         skos:prefLabel      "rdo rje'i tshig rkang /"@bo-x-ewts , "the essence (mula) of the lam-'bras teachings of sa-skya-pa buddhism"@en-x-mixed ;
         :catalogInfo        "Commentary on the essence of the Lamdre teachings according to the Sakya order."@en ;
-        :creator            bdr:CR5A774A7200E28E4D , bdr:CR5BB7E0343C42D095 ;
+        :creator            bdr:CR5A774A7200E28E4D , bdr:CRB12FB2ED07F95402 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016202 ;

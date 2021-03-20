@@ -13,14 +13,20 @@
 
 bdg:WA23624 {
     bda:LG5A23CFE18B3D4381
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG73041541E4F9E8BC
         a                   adm:UpdateData ;
         adm:logDate         "2007-01-11T17:14:48.812Z"^^xsd:dateTime ;
         adm:logMessage      "added topic"@en ;
         adm:logWho          bdu:U00002 .
+    
+    bda:LG83E076BC78B3F51E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -46,20 +52,20 @@ bdg:WA23624 {
     bda:WA23624  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23624 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "f5/WA23624.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23624 ;
-        adm:logEntry        bda:LG5A23CFE18B3D4381 , bda:LG73041541E4F9E8BC , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG5A23CFE18B3D4381 , bda:LG73041541E4F9E8BC , bda:LG83E076BC78B3F51E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR83E076BC78B3F51E
+    bdr:CRDF474D81AFC1B26B
         a                   :AgentAsCreator ;
         :agent              bdr:P314 ;
         :role               bdr:R0ER0025 .
     
-    bdr:CRDF474D81AFC1B26B
+    bdr:CRF8B1A15F33D8C8E8
         a                   :AgentAsCreator ;
         :agent              bdr:P1693 ;
         :role               bdr:R0ER0025 .
@@ -70,7 +76,7 @@ bdg:WA23624 {
         skos:altLabel       "chanting and musical notations for the performance of the bla ma rig 'dzin 'dus pa practice from the klon chen snin thig cycle of visions of 'jigs-med-glin-pa, with the illustrations of the gtor-ma cakes and chanting notations for the rituals..."@en ;
         skos:prefLabel      "klong chen snying thig gi bla ma rig 'dzin 'dus pa'i gdang rol nyung ngu blo gsal mgul rgyan gtor ma'i dpe'u ris bcas dang pad gling gi dbyangs yig"@bo-x-ewts , "chanting manual from bhutan"@en ;
         :catalogInfo        "Chanting and musical notations for the Lama Rigzin Dupa practice from the Longchen Nyingtik cycle of visions by Jigme Lingpa. Includes illustrations of the torma cakes and chanting notations for rituals by Pema Lingpa."@en ;
-        :creator            bdr:CR83E076BC78B3F51E , bdr:CRDF474D81AFC1B26B ;
+        :creator            bdr:CRDF474D81AFC1B26B , bdr:CRF8B1A15F33D8C8E8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1746 ;

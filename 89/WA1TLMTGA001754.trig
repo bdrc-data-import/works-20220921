@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1TLMTGA001754 {
+    bda:LG1B46BECA79687C87
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+    
     bda:LG506460C80F2A1B20
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-07-08T08:56:25.098Z"^^xsd:dateTime ;
@@ -22,15 +28,15 @@ bdg:WA1TLMTGA001754 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1TLMTGA001754 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "89/WA1TLMTGA001754.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1TLMTGA001754 ;
-        adm:logEntry        bda:LG506460C80F2A1B20 ;
+        adm:logEntry        bda:LG1B46BECA79687C87 , bda:LG506460C80F2A1B20 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusEditing .
     
-    bdr:CR1B46BECA79687C87
+    bdr:CRA4BA0BD5637D7881
         a                   :AgentAsCreator ;
         :agent              bdr:P1TLMTGA001311 ;
         :role               bdr:R0ER0019 .
@@ -38,7 +44,7 @@ bdg:WA1TLMTGA001754 {
     bdr:WA1TLMTGA001754
         a                   :Work ;
         skos:prefLabel      "sdom pa gsum gyi rgyan ces bya ba'i rgya cher 'grel pa le'u dang po/"@bo-x-ewts ;
-        :creator            bdr:CR1B46BECA79687C87 ;
+        :creator            bdr:CRA4BA0BD5637D7881 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGA001754 .

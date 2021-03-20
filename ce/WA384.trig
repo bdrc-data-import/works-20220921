@@ -54,8 +54,10 @@ bdg:WA384 {
         adm:logWho          bdu:U00026 .
     
     bda:LGB3E95FEE638B74B1
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGDD807CA0AA7D73E4
         a                   adm:UpdateData ;
@@ -73,6 +75,10 @@ bdg:WA384 {
         adm:logDate         "2008-11-07T10:58:22.732Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGF8E12E169504F55A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -98,16 +104,16 @@ bdg:WA384 {
     bda:WA384  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA384 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "ce/WA384.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA384 ;
-        adm:logEntry        bda:LG0F11022B991C3C94 , bda:LG1A0566BEECF14C7D , bda:LG46226210C4EA6EDA , bda:LG5ACCE3A774F6E708 , bda:LG7906617863AD0376 , bda:LG9AC2FE8288AA8177 , bda:LG9B5FE0983D02BDC2 , bda:LGB3E95FEE638B74B1 , bda:LGDD807CA0AA7D73E4 , bda:LGE51922CDE152BCA7 , bda:LGE7BDF2AC6D511AD1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0F11022B991C3C94 , bda:LG1A0566BEECF14C7D , bda:LG46226210C4EA6EDA , bda:LG5ACCE3A774F6E708 , bda:LG7906617863AD0376 , bda:LG9AC2FE8288AA8177 , bda:LG9B5FE0983D02BDC2 , bda:LGB3E95FEE638B74B1 , bda:LGDD807CA0AA7D73E4 , bda:LGE51922CDE152BCA7 , bda:LGE7BDF2AC6D511AD1 , bda:LGF8E12E169504F55A , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG10279 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRF8E12E169504F55A
+    bdr:CR0702F36F8B98020B
         a                   :AgentAsCreator ;
         :agent              bdr:P55 ;
         :role               bdr:R0ER0019 .
@@ -117,7 +123,7 @@ bdg:WA384 {
     bdr:WA384  a            :Work ;
         skos:prefLabel      "gsung 'bum/_mkhas grub rje/"@bo-x-ewts , "the collected works (gsung 'um) of the lord mkhas grub rje dge legs dpal bzang po"@en ;
         :catalogInfo        "Collected Works by Khedrup Je Gelek Pelzang (1385-1438), one of the two main disciples of Je Tsongkhapa. Reproduced from a set of prints from the 1897 old Zhol woodblocks."@en ;
-        :creator            bdr:CRF8E12E169504F55A ;
+        :creator            bdr:CR0702F36F8B98020B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

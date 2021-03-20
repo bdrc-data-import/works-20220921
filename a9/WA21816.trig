@@ -13,8 +13,10 @@
 
 bdg:WA21816 {
     bda:LG26A7E726EADF66AD
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG2B53F6758C4B2D36
         a                   adm:UpdateData ;
@@ -34,6 +36,10 @@ bdg:WA21816 {
         adm:logMessage      "add publi info"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGBC010F6B46A4855E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -51,15 +57,15 @@ bdg:WA21816 {
     bda:WA21816  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21816 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "a9/WA21816.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21816 ;
-        adm:logEntry        bda:LG26A7E726EADF66AD , bda:LG2B53F6758C4B2D36 , bda:LG4E3E214BF5F37177 , bda:LG662D9D19C0DD6172 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG26A7E726EADF66AD , bda:LG2B53F6758C4B2D36 , bda:LG4E3E214BF5F37177 , bda:LG662D9D19C0DD6172 , bda:LGBC010F6B46A4855E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRBC010F6B46A4855E
+    bdr:CR020AF0B6225D8357
         a                   :AgentAsCreator ;
         :agent              bdr:P7356 ;
         :role               bdr:R0ER0019 .
@@ -70,7 +76,7 @@ bdg:WA21816 {
         skos:altLabel       "man nag mgur ma'i ban mdzod dpal ldan bla ma'i zal lun bde chen chos sku'i mdzub tshugs rin chen thar pa'i them skas"@bo-alalc97 , "man ngag mgur ma'i bang mdzod dpal ldan bla ma'i zhal lung bde chen chos sku'i mdzub tshugs rin chen thar pa'i them skas/"@bo-x-ewts , "mgur 'bum ge bcags rtogs ldan/"@bo-x-ewts ;
         skos:prefLabel      "mgur 'bum/_tshangs dbyangs rgya mtsho/"@bo-x-ewts , "the collected songs of esoteric revelation (mgur 'bum) of ge-bcags rtogs-ldan tshans-dbyans-rgya-mtsho"@en-x-mixed ;
         :catalogInfo        "Songs of realization by a Kagyu and Nyingma master from Nangchen. Author is reembodiment of Tsangpa Gyare."@en ;
-        :creator            bdr:CRBC010F6B46A4855E ;
+        :creator            bdr:CR020AF0B6225D8357 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T184 ;

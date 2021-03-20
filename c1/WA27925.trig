@@ -24,27 +24,33 @@ bdg:WA27925 {
         adm:logMessage      "ctc"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LGE8BD0893649E3F28
+    bda:LGBF10B8C2E6316524
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGE8BD0893649E3F28
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:WA27925  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27925 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "c1/WA27925.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27925 ;
-        adm:logEntry        bda:LGAF4DD5580C745E2F , bda:LGB4DC876AE44E5827 , bda:LGE8BD0893649E3F28 ;
+        adm:logEntry        bda:LGAF4DD5580C745E2F , bda:LGB4DC876AE44E5827 , bda:LGBF10B8C2E6316524 , bda:LGE8BD0893649E3F28 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9407C2A3195CAF4E
+    bdr:CR07ABE1AA11EA1444
         a                   :AgentAsCreator ;
         :agent              bdr:P675 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRBF10B8C2E6316524
+    bdr:CR9407C2A3195CAF4E
         a                   :AgentAsCreator ;
         :agent              bdr:P1699 ;
         :role               bdr:R0ER0025 .
@@ -54,7 +60,7 @@ bdg:WA27925 {
     bdr:WA27925  a          :Work ;
         skos:altLabel       "gnod sbyin chen po tsi'u dmar po'i gzun dan sgrub skor"@bo-alalc97 , "gnod sbyin chen po tsi'u dmar po'i gzhung dang sgrub skor/"@bo-x-ewts ;
         skos:prefLabel      "tsi'u dmar po'i gter gzhung dang grub skor/"@bo-x-ewts , "the corpus of materials for the propitiation of the protective deity tsi'u-dmar-po"@en-x-mixed ;
-        :creator            bdr:CR9407C2A3195CAF4E , bdr:CRBF10B8C2E6316524 ;
+        :creator            bdr:CR07ABE1AA11EA1444 , bdr:CR9407C2A3195CAF4E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW27925 , bdr:W27925 ;

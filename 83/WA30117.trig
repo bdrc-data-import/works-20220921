@@ -18,6 +18,10 @@ bdg:WA30117 {
         adm:logMessage      "published"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG4C7FE8D94BBA19E2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG96738DC6ED1CD8AA
         a                   adm:UpdateData ;
         adm:logDate         "2011-06-01T11:19:59.584Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA30117 {
         adm:logWho          bdu:U00016 .
     
     bda:LGE1A6B08491320AB8
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGFEEFBBC5846C0A9B
         a                   adm:ScanRequestCreation ;
@@ -51,25 +57,25 @@ bdg:WA30117 {
     bda:WA30117  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30117 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "83/WA30117.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30117 ;
-        adm:logEntry        bda:LG4B82DE902E2BC02F , bda:LG96738DC6ED1CD8AA , bda:LGE1A6B08491320AB8 , bda:LGFEEFBBC5846C0A9B , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG4B82DE902E2BC02F , bda:LG4C7FE8D94BBA19E2 , bda:LG96738DC6ED1CD8AA , bda:LGE1A6B08491320AB8 , bda:LGFEEFBBC5846C0A9B , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4C7FE8D94BBA19E2
-        a                   :AgentAsCreator ;
-        :agent              bdr:P671 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRDE173D83F5D96B75
+    bdr:CR45F69E5C28E9CDC9
         a                   :AgentAsCreator ;
         :agent              bdr:P694 ;
         :role               bdr:R0ER0016 .
     
-    bdr:EV45F69E5C28E9CDC9
+    bdr:CRDE173D83F5D96B75
+        a                   :AgentAsCreator ;
+        :agent              bdr:P671 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:EV968453EE4EF3B032
         a                   :CompletedEvent ;
         :onYear             "1687"^^xsd:gYear .
     
@@ -79,10 +85,10 @@ bdg:WA30117 {
         skos:altLabel       "o rgyan chos rje gling pa'i gter byon dpal chen rdo rje phur pa'i sgrub chog khag dang/ o rgyan khyung 'bar rdo rje grags stsal gyi zab gter 'chi med tshe sgrub 'od kyi drwa ba las/ yang gsang thugs kyi thig le'i dpal rdo rje phur pa'i las tshogs bcas/"@bo-x-ewts ;
         skos:prefLabel      "rdo rje phur pa'i sgrub chog"@bo-x-ewts , "two cycle of vajrakila sadhana from the revelations of chos-rje gling-pa and rdo-rje-thogs med"@en-x-mixed ;
         :catalogInfo        "Two collections of terma teachings related to Vajrakila practice."@en ;
-        :creator            bdr:CR4C7FE8D94BBA19E2 , bdr:CRDE173D83F5D96B75 ;
+        :creator            bdr:CR45F69E5C28E9CDC9 , bdr:CRDE173D83F5D96B75 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV45F69E5C28E9CDC9 ;
+        :workEvent          bdr:EV968453EE4EF3B032 ;
         :workGenre          bdr:T1 , bdr:T448 ;
         :workHasInstance    bdr:MW30117 , bdr:W30117 ;
         :workIsAbout        bdr:T1786 .

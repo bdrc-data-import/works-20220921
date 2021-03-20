@@ -18,14 +18,20 @@ bdg:WA21506 {
         adm:logMessage      "added shad and annotation"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG40DFB87F9C6E42CB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG44A90AB7A22A8352
         a                   adm:UpdateData ;
         adm:logDate         "2012-01-10T14:32:31.334Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
     bda:LG9647F0A9448C77D5
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG9A50F841611696CB
         a                   adm:UpdateData ;
@@ -70,15 +76,15 @@ bdg:WA21506 {
     bda:WA21506  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21506 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "15/WA21506.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21506 ;
-        adm:logEntry        bda:LG35CC06324E8D4AA8 , bda:LG44A90AB7A22A8352 , bda:LG9647F0A9448C77D5 , bda:LG9A50F841611696CB , bda:LGF6636A30D37F885E , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG35CC06324E8D4AA8 , bda:LG40DFB87F9C6E42CB , bda:LG44A90AB7A22A8352 , bda:LG9647F0A9448C77D5 , bda:LG9A50F841611696CB , bda:LGF6636A30D37F885E , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR40DFB87F9C6E42CB
+    bdr:CRCD28812DF9035B43
         a                   :AgentAsCreator ;
         :agent              bdr:P170 ;
         :role               bdr:R0ER0019 .
@@ -88,7 +94,7 @@ bdg:WA21506 {
     bdr:WA21506  a          :SerialMember , :Work ;
         skos:prefLabel      "gsung 'bum/_blo bzang chos kyi nyi ma/"@bo-x-ewts , "collected works of thu'u bkwan blo bzang chos kyi nyi ma"@en ;
         :catalogInfo        "Collected Works by Geluk master Tukwan Lobzang Chokyi Nyima (1737-1802)."@en ;
-        :creator            bdr:CR40DFB87F9C6E42CB ;
+        :creator            bdr:CRCD28812DF9035B43 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS11818 ;

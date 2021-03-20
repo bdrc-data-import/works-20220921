@@ -13,8 +13,10 @@
 
 bdg:WA23416 {
     bda:LG16B6685BD04DFCF8
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG32632DDDAA3185B0
         a                   adm:UpdateData ;
@@ -33,6 +35,10 @@ bdg:WA23416 {
         adm:logDate         "2012-04-30T15:22:16.555Z"^^xsd:dateTime ;
         adm:logMessage      "reworked bib title positions and encodings"@en ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LG88870540066328B7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG90F1AD3D29079214
         a                   adm:UpdateData ;
@@ -57,15 +63,15 @@ bdg:WA23416 {
     bda:WA23416  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23416 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "4c/WA23416.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23416 ;
-        adm:logEntry        bda:LG16B6685BD04DFCF8 , bda:LG32632DDDAA3185B0 , bda:LG39B3AE1F4E0028AF , bda:LG789F51FC46544E3F , bda:LG90F1AD3D29079214 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG16B6685BD04DFCF8 , bda:LG32632DDDAA3185B0 , bda:LG39B3AE1F4E0028AF , bda:LG789F51FC46544E3F , bda:LG88870540066328B7 , bda:LG90F1AD3D29079214 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR88870540066328B7
+    bdr:CR6C1C6D84C3E9EACA
         a                   :AgentAsCreator ;
         :agent              bdr:P1618 ;
         :role               bdr:R0ER0019 .
@@ -76,7 +82,7 @@ bdg:WA23416 {
         skos:altLabel       "writings on the hevajra & cakrasamvara"@en ;
         skos:prefLabel      "kyai rdor dang bde mchog skor gyi yi ge"@bo-x-ewts , "miscellaneous writings on the hevajra and cakrasamvara tantras"@en-x-mixed ;
         :catalogInfo        "Writngs by Sakya Trizin 04 of the Sakya order, Sonam Tsemo."@en ;
-        :creator            bdr:CR88870540066328B7 ;
+        :creator            bdr:CR6C1C6D84C3E9EACA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW23416 , bdr:W23416 ;

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS66875 {
+    bda:LG04420D26DDEFD646
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T09:30:12.627Z"^^xsd:dateTime ;
+        adm:logMessage      "added aboutuncontroled"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG436CC572C101619D
         a                   adm:UpdateData ;
         adm:logDate         "2020-02-11T14:24:15.621Z"^^xsd:dateTime ;
@@ -39,15 +45,15 @@ bdg:WA8LS66875 {
     bda:WA8LS66875  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66875 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "94/WA8LS66875.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66875 ;
-        adm:logEntry        bda:LG436CC572C101619D , bda:LG62C5AC9472F2FF39 , bda:LG7220A1034C0C5598 , bda:LGAB7042B8A88B49B5 ;
+        adm:logEntry        bda:LG04420D26DDEFD646 , bda:LG436CC572C101619D , bda:LG62C5AC9472F2FF39 , bda:LG7220A1034C0C5598 , bda:LGAB7042B8A88B49B5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR04420D26DDEFD646
+    bdr:CR5282D4D0AC57514D
         a                   :AgentAsCreator ;
         :agent              bdr:P6280 ;
         :role               bdr:R0ER0019 .
@@ -56,10 +62,11 @@ bdg:WA8LS66875 {
         skos:altLabel       "'jam dbyangs grags pa'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/ 'jam dbyangs grags pa/"@bo-x-ewts ;
         :catalogInfo        "Collected writings of Rebkong Jamyang Dakpa."@en ;
-        :creator            bdr:CR04420D26DDEFD646 ;
+        :creator            bdr:CR5282D4D0AC57514D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS66875 ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW8LS66875 , bdr:W8LS66875 .
+        :workHasInstance    bdr:MW8LS66875 , bdr:W8LS66875 ;
+        :workIsAbout        bdr:T819 .
 }

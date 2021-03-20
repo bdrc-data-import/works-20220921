@@ -25,6 +25,12 @@ bdg:WA27412 {
         adm:logWho          bdu:U00013 .
     
     bda:LG5716F16406D99416
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+    
+    bda:LG71C52DA160F18D66
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -37,29 +43,29 @@ bdg:WA27412 {
     bda:WA27412  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27412 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "ac/WA27412.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27412 ;
-        adm:logEntry        bda:LG348E263440A01029 , bda:LG3CF7759495C464E1 , bda:LG5716F16406D99416 , bda:LG9B467F8AF695F929 ;
+        adm:logEntry        bda:LG348E263440A01029 , bda:LG3CF7759495C464E1 , bda:LG5716F16406D99416 , bda:LG71C52DA160F18D66 , bda:LG9B467F8AF695F929 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR71C52DA160F18D66
-        a                   :AgentAsCreator ;
-        :agent              bdr:P470 ;
-        :role               bdr:R0ER0025 .
-    
-    bdr:CRD8E350E27E0B68CE
+    bdr:CRC2181834CEE251B0
         a                   :AgentAsCreator ;
         :agent              bdr:P264 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRD8E350E27E0B68CE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P470 ;
+        :role               bdr:R0ER0025 .
     
     bdr:MW27412  skos:altLabel  "rituals of the bhutanese state for the performance of the vajrakila practices from the rdo rje phur pa yan gsan bla med cycle of ratna-glin-pa"@en-x-mixed .
     
     bdr:WA27412  a          :Work ;
         skos:prefLabel      "rdo rje phur pa yang gsang bla med kyi sgrub skor/"@bo-x-ewts , "rituals of the bhutanese state for the performance of the vajrakila practices from the rdo rje phur pa yan gsan bla med cycle of ratna-glin-pa"@en-x-mixed ;
-        :creator            bdr:CR71C52DA160F18D66 , bdr:CRD8E350E27E0B68CE ;
+        :creator            bdr:CRC2181834CEE251B0 , bdr:CRD8E350E27E0B68CE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW27412 , bdr:W27412 ;

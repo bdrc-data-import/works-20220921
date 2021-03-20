@@ -13,14 +13,20 @@
 
 bdg:WA23793 {
     bda:LG358BD4264DD6C096
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG451FA68E07B65FA8
         a                   adm:UpdateData ;
         adm:logDate         "2013-03-06T15:13:18.854Z"^^xsd:dateTime ;
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LG4D6CC75FAA3DAE9B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGCE0D3DC8E2D0DB1F
         a                   adm:UpdateData ;
@@ -31,15 +37,15 @@ bdg:WA23793 {
     bda:WA23793  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23793 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "49/WA23793.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23793 ;
-        adm:logEntry        bda:LG358BD4264DD6C096 , bda:LG451FA68E07B65FA8 , bda:LGCE0D3DC8E2D0DB1F ;
+        adm:logEntry        bda:LG358BD4264DD6C096 , bda:LG451FA68E07B65FA8 , bda:LG4D6CC75FAA3DAE9B , bda:LGCE0D3DC8E2D0DB1F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4D6CC75FAA3DAE9B
+    bdr:CR28D23C6C25AB5170
         a                   :AgentAsCreator ;
         :agent              bdr:P1781 ;
         :role               bdr:R0ER0019 .
@@ -48,7 +54,7 @@ bdg:WA23793 {
     
     bdr:WA23793  a          :Work ;
         skos:prefLabel      "sa lam gyi rnam gzhag skal bzang mig 'byed/"@bo-x-ewts , "sa lam gyi rnam gzag skal bzan mig 'byed : an introduction to the dasabhumi and pancamarga theory presented as a manual for use in the thos-bsam-glin college of bkra-shis-lhun-po and its affiliates"@en-x-mixed ;
-        :creator            bdr:CR4D6CC75FAA3DAE9B ;
+        :creator            bdr:CR28D23C6C25AB5170 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW23793 , bdr:W23793 ;

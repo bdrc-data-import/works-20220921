@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30339 {
+    bda:LG5DB16B93E3536548
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG64338E62F02D2AC9
         a                   adm:UpdateData ;
         adm:logDate         "2013-08-08T11:03:17.906Z"^^xsd:dateTime ;
@@ -24,8 +28,10 @@ bdg:WA30339 {
         adm:logWho          bdu:U00026 .
     
     bda:LGBBC35423442931DF
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGE2B4F8EEF259E4F5
         a                   adm:UpdateData ;
@@ -43,15 +49,15 @@ bdg:WA30339 {
     bda:WA30339  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30339 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "ea/WA30339.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30339 ;
-        adm:logEntry        bda:LG64338E62F02D2AC9 , bda:LG94B76C61E084C42C , bda:LGBBC35423442931DF , bda:LGE2B4F8EEF259E4F5 , bda:LGIMC3134826EB ;
+        adm:logEntry        bda:LG5DB16B93E3536548 , bda:LG64338E62F02D2AC9 , bda:LG94B76C61E084C42C , bda:LGBBC35423442931DF , bda:LGE2B4F8EEF259E4F5 , bda:LGIMC3134826EB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5DB16B93E3536548
+    bdr:CR7EA1CC2B4E5BC211
         a                   :AgentAsCreator ;
         :agent              bdr:P724 ;
         :role               bdr:R0ER0019 .
@@ -61,7 +67,7 @@ bdg:WA30339 {
     bdr:WA30339  a          :Work ;
         skos:altLabel       "Rdzogs pa chen po ye shes bla maʼi spyi don snying thig ma buʼi lde mig kun bzang thugs kyi tikka :an exegesis of the essential import of Kun-Mkhyen ʼJigs-med-gling-pa's Khrid yig ye shes bla ma /by Mkhan-Po ngag-dgaʼ of Kah-thog."@en-x-mixed ;
         skos:prefLabel      "rdzogs pa chen po ye shes bla ma'i spyi don snying thig ma bu'i lde mig kun bzang thugs kyi TI k+ka"@bo-x-ewts , "an exegesis of the essential import of kun-mkhyen 'jigs-med-gling-pa's khrid yig ye shes bla ma"@en ;
-        :creator            bdr:CR5DB16B93E3536548 ;
+        :creator            bdr:CR7EA1CC2B4E5BC211 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

@@ -24,8 +24,10 @@ bdg:WA23872 {
         adm:logMessage      "added WMDL06"@en .
     
     bda:LG47054B8DBCCBE789
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG6ACB02F08AE0327A
         a                   adm:UpdateData ;
@@ -49,18 +51,22 @@ bdg:WA23872 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGC63BAF52DCD25BB3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:WA23872  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23872 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "57/WA23872.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23872 ;
-        adm:logEntry        bda:LG034095A5391AA61A , bda:LG2CBA23BCD0AA949C , bda:LG47054B8DBCCBE789 , bda:LG6ACB02F08AE0327A , bda:LG94431DEE331FD391 , bda:LGB386AF8BFA09DB3C , bda:LGBD9A9E6CB44E4F4E ;
+        adm:logEntry        bda:LG034095A5391AA61A , bda:LG2CBA23BCD0AA949C , bda:LG47054B8DBCCBE789 , bda:LG6ACB02F08AE0327A , bda:LG94431DEE331FD391 , bda:LGB386AF8BFA09DB3C , bda:LGBD9A9E6CB44E4F4E , bda:LGC63BAF52DCD25BB3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC63BAF52DCD25BB3
+    bdr:CRAF536A4380323676
         a                   :AgentAsCreator ;
         :agent              bdr:P311 ;
         :role               bdr:R0ER0019 .
@@ -69,7 +75,7 @@ bdg:WA23872 {
     
     bdr:WA23872  a          :Work ;
         skos:prefLabel      "gsung 'bum/_blo bzang tshul khrims/"@bo-x-ewts , "collected works (gsun 'bum) of 'bron-rtse yons-'dzin blo-bzan-tshul-khrims"@en-x-mixed ;
-        :creator            bdr:CRC63BAF52DCD25BB3 ;
+        :creator            bdr:CRAF536A4380323676 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

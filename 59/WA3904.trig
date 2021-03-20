@@ -19,6 +19,12 @@ bdg:WA3904 {
         adm:logWho          bdu:U00013 .
     
     bda:LGE130E8CE1D43F503
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+    
+    bda:LGF6328FDF5111FDFB
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -32,20 +38,20 @@ bdg:WA3904 {
     bda:WA3904  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3904 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "59/WA3904.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3904 ;
-        adm:logEntry        bda:LG7C76AE968044E6D6 , bda:LGE130E8CE1D43F503 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG7C76AE968044E6D6 , bda:LGE130E8CE1D43F503 , bda:LGF6328FDF5111FDFB , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF6328FDF5111FDFB
+    bdr:CR1F60F205720089B6
         a                   :AgentAsCreator ;
         :agent              bdr:P235 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV1F60F205720089B6
+    bdr:EVC1EDB6A6A7EE1ED6
         a                   :CompletedEvent ;
         :onOrAbout          "ཤིང་གླང་ཟླ་ཚེས་བདེན་བཞིའི་ཆོས་འཁོར་བསྐོར་བའི་དུས་ཆེན་ཉིན་བྲིས་པ་མངྒ་ལཾ།།" .
     
@@ -54,10 +60,10 @@ bdg:WA3904 {
     bdr:WA3904  a           :Work ;
         skos:altLabel       "snga 'gyur theg pa dgu'i tshogs bshad mdor bsdus nor bu'i tam bu ra sogs/"@bo-x-ewts , "Sṅa ʾgyur theg dguʾi tshogs bśad mdor bsdus nor buʾ:tambu ra sogs : formal discourses on the nine vehicle concept of the Nyingmapa tradition and on the nature of the various spiritual disciplines /by Źe-chen Rgyal-tshab Padma-rnam-rgyal."@en-x-mixed ;
         skos:prefLabel      "theg pa dgu'i tshogs bshad mdor bsdus/"@bo-x-ewts , "formal discourses on the nine vehicle concept of the nyingmapa tradition and on the nature of the various spiritual disciplines"@en ;
-        :creator            bdr:CRF6328FDF5111FDFB ;
+        :creator            bdr:CR1F60F205720089B6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV1F60F205720089B6 ;
+        :workEvent          bdr:EVC1EDB6A6A7EE1ED6 ;
         :workHasInstance    bdr:MW3904 , bdr:W3904 ;
         :workIsAbout        bdr:T32 .
 }

@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA9366 {
+    bda:LG0B8AA32D5B62AE23
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG21CD68408699A2EB
         a                   adm:UpdateData ;
         adm:logDate         "2012-07-06T11:40:04.012Z"^^xsd:dateTime ;
@@ -43,8 +47,10 @@ bdg:WA9366 {
         adm:logWho          bdu:U00021 .
     
     bda:LGE8EF878CD3EB5D1F
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -77,21 +83,21 @@ bdg:WA9366 {
     bda:WA9366  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA9366 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "a7/WA9366.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA9366 ;
-        adm:logEntry        bda:LG21CD68408699A2EB , bda:LG40B01CE2E931A63A , bda:LG497B36150E2AE534 , bda:LGC45BF2B67FB8436B , bda:LGC47D8D3A44B342FA , bda:LGE8EF878CD3EB5D1F , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG0B8AA32D5B62AE23 , bda:LG21CD68408699A2EB , bda:LG40B01CE2E931A63A , bda:LG497B36150E2AE534 , bda:LGC45BF2B67FB8436B , bda:LGC47D8D3A44B342FA , bda:LGE8EF878CD3EB5D1F , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA24826 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR0B8AA32D5B62AE23
+    bdr:CRC68ABBB461F8AED7
         a                   :AgentAsCreator ;
         :agent              bdr:P675 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVC68ABBB461F8AED7
+    bdr:EV2B1DB242719A2265
         a                   :CompletedEvent ;
         :onYear             "1734"^^xsd:gYear .
     
@@ -101,11 +107,11 @@ bdg:WA9366 {
         skos:altLabel       "dam can bstan srung rgya mtsho'i rnam par thar pa cha shas tsam brjod pa sngon med legs bshad/"@bo-x-ewts ;
         skos:prefLabel      "dam can bstan srung rgya mtsho'i rnam thar/"@bo-x-ewts , "Dam can Bstan sruṅ rgya mtshoʼi rnam par thar pa cha śas tsam brjod pa sṅon med legs bśad :an account of the origins and iconography of the protective deities of Tibetan Buddhism /by Sle-luṅ Rje-druṅ Bźad-paʼi-rdo-rje."@en-x-mixed ;
         :catalogInfo        "Account of various protective deities. Written by Geluk master Lelung Jedrung Zhepai Dorje (b. 1697), one of the three powerful incarnation lineages of Drepung. He began to receive visions and almost the whole of his Collected Works is a prolonged account of his experiences, worldly and esoteric. One of his most famous works is this \"\"biographical account\"\" of the protective deities of Tibet. This is an important work for understanding the role of dharma protectors in the Buddhism of Tibet. Original manuscript from the library of the late Trijang Rinpoche, junior tutor to Dalai Lama 14 Tenzin Gyatso (b. 1935)."@en ;
-        :creator            bdr:CR0B8AA32D5B62AE23 ;
+        :creator            bdr:CRC68ABBB461F8AED7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016202 ;
-        :workEvent          bdr:EVC68ABBB461F8AED7 ;
+        :workEvent          bdr:EV2B1DB242719A2265 ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW9366 ;
         :workIsAbout        bdr:T406 .

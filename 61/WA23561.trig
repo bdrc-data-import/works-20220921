@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23561 {
-    bda:LG96FFA3BA619BED36
+    bda:LG2CF4AF58AC37CAED
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG96FFA3BA619BED36
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -40,15 +46,15 @@ bdg:WA23561 {
     bda:WA23561  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23561 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "61/WA23561.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23561 ;
-        adm:logEntry        bda:LG96FFA3BA619BED36 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG2CF4AF58AC37CAED , bda:LG96FFA3BA619BED36 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2CF4AF58AC37CAED
+    bdr:CR98BBC2C9404D7313
         a                   :AgentAsCreator ;
         :agent              bdr:P7691 ;
         :role               bdr:R0ER0019 .
@@ -58,7 +64,7 @@ bdg:WA23561 {
     bdr:WA23561  a          :Work ;
         skos:prefLabel      "'phrin las rgya mtsho'i gsung rnam/"@bo-x-ewts , "the autobiography and collected instructions of the sikkimese lama rig-'dzin 'phrin-las-rgya-mtsho"@en-x-mixed ;
         :catalogInfo        "Autobiography and instructions by a Sikkimese master of the Nyingma order, Trinle Gyatso."@en ;
-        :creator            bdr:CR2CF4AF58AC37CAED ;
+        :creator            bdr:CR98BBC2C9404D7313 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

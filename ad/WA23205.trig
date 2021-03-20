@@ -35,6 +35,10 @@ bdg:WA23205 {
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGCD10F3A5B5F31B16
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGE8CDC4CE6AC2D114
         a                   adm:UpdateData ;
         adm:logDate         "2013-01-11T15:18:19.938Z"^^xsd:dateTime ;
@@ -42,8 +46,10 @@ bdg:WA23205 {
         adm:logWho          bdu:U00021 .
     
     bda:LGF8E9E0580FE57638
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGFACC8954965476AC
         a                   adm:UpdateData ;
@@ -67,15 +73,15 @@ bdg:WA23205 {
     bda:WA23205  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23205 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "ad/WA23205.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23205 ;
-        adm:logEntry        bda:LG4F52893BFDEFBDDC , bda:LG586FB49CBE3E6A61 , bda:LG5F4CE361ABABAA3B , bda:LGA46B95885E9C89F3 , bda:LGE8CDC4CE6AC2D114 , bda:LGF8E9E0580FE57638 , bda:LGFACC8954965476AC , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG4F52893BFDEFBDDC , bda:LG586FB49CBE3E6A61 , bda:LG5F4CE361ABABAA3B , bda:LGA46B95885E9C89F3 , bda:LGCD10F3A5B5F31B16 , bda:LGE8CDC4CE6AC2D114 , bda:LGF8E9E0580FE57638 , bda:LGFACC8954965476AC , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCD10F3A5B5F31B16
+    bdr:CR6D86CCE7260BECB4
         a                   :AgentAsCreator ;
         :agent              bdr:P987 ;
         :role               bdr:R0ER0019 .
@@ -85,7 +91,7 @@ bdg:WA23205 {
     bdr:WA23205  a          :SerialMember , :Work ;
         skos:prefLabel      "'dul ba mdo rtsa ba'i spyi don legs bshad 'od kyi snang ba'i tshig don rab gsal/"@bo-x-ewts , "'dul ba mdo rtsa ba'i spyi don legs bsad 'od kyi snan ba'i tshig don rab gsal : exegesis of the fundamentals of buddhist monastic disciplines as set forth in the vinayasutra of gunaprabha"@en-x-mixed ;
         :catalogInfo        "A commentary on the Vinaya Sutra that is part of a supplemental collection of four texts, carved after the Collected Works of Gorampa were completed at Degge. The author of this commentary, Kongton Wangchuk Drubpa, was one of Gorampa's biographers. Collection includes writings of the disciples of Gorampa, larglely reflecting the great Sakya master's teachings."@en ;
-        :creator            bdr:CRCD10F3A5B5F31B16 ;
+        :creator            bdr:CR6D86CCE7260BECB4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS19604 ;

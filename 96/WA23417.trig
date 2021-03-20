@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23417 {
+    bda:LG04C3BC840D3F75AD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG7E0E7D2DAA5DF267
         a                   adm:UpdateData ;
         adm:logDate         "2012-02-09T15:02:59.829Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23417 {
         adm:logWho          bdu:U00016 .
     
     bda:LG876BDD5550CC07B2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -46,15 +52,15 @@ bdg:WA23417 {
     bda:WA23417  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23417 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "96/WA23417.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23417 ;
-        adm:logEntry        bda:LG7E0E7D2DAA5DF267 , bda:LG876BDD5550CC07B2 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG04C3BC840D3F75AD , bda:LG7E0E7D2DAA5DF267 , bda:LG876BDD5550CC07B2 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR04C3BC840D3F75AD
+    bdr:CR7F5E9912E6D552A4
         a                   :AgentAsCreator ;
         :agent              bdr:P1662 ;
         :role               bdr:R0ER0025 .
@@ -64,7 +70,7 @@ bdg:WA23417 {
     bdr:WA23417  a          :Work ;
         skos:prefLabel      "byams ma'i snying thig"@bo-x-ewts , "byams ma'i snin thig : a cycle of new bon (bon gsar) gcod practice"@en ;
         :catalogInfo        "Cycle of New Bon chod teachings. Revealed by Sanngak Lingpa (b. 1864). Scanned under a training project with the Bon Foundation of America and Menri Monastery. Made available through Tibetan Buddhist Resource Center with authorization by Menri Trizin 33 Lungtok Tenpai Nyima and the gracious support of the Bon Foundation."@en ;
-        :creator            bdr:CR04C3BC840D3F75AD ;
+        :creator            bdr:CR7F5E9912E6D552A4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW23417 , bdr:W23417 ;

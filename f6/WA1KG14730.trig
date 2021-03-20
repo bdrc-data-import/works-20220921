@@ -42,6 +42,12 @@ bdg:WA1KG14730 {
         adm:logMessage      "added lccn 68020203"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGEF33159DAD43737A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -52,24 +58,24 @@ bdg:WA1KG14730 {
     bda:WA1KG14730  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14730 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "f6/WA1KG14730.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14730 ;
-        adm:logEntry        bda:LG08D8445ABCD8A052 , bda:LG188E8357CEC9E3FC , bda:LG4962AA69ADD83757 , bda:LG7C895B7CD3C108E8 , bda:LG88C7C7575271686A , bda:LGIM4BF5F96E12 ;
+        adm:logEntry        bda:LG08D8445ABCD8A052 , bda:LG188E8357CEC9E3FC , bda:LG4962AA69ADD83757 , bda:LG7C895B7CD3C108E8 , bda:LG88C7C7575271686A , bda:LGEF33159DAD43737A , bda:LGIM4BF5F96E12 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG10779 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:CR60C4E61EE39EFA79
         a                   :AgentAsCreator ;
-        :agent              bdr:P4892 ;
-        :role               bdr:R0ER0014 .
-    
-    bdr:CREF33159DAD43737A
-        a                   :AgentAsCreator ;
         :agent              bdr:P3442 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CREC7562731E77E099
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4892 ;
+        :role               bdr:R0ER0014 .
     
     bdr:MW1KG14730  skos:altLabel  "Dpe chos rin chen spuṅs pa bźugs so /[Po-to-baʾi man ṅag]"@en-x-mixed .
     
@@ -77,7 +83,7 @@ bdg:WA1KG14730 {
         skos:altLabel       "byang chub lam rab gsal byed dpe chos rin chen sprungs pa'i dpe don rnam bshad/"@bo-x-ewts , "dpe chos rin chen spungs pa/"@bo-x-ewts ;
         skos:prefLabel      "dpe chos rin chen spungs pa'i 'bum 'grel/"@bo-x-ewts , "Dpe chos rin chen spuṅs pa bźugs so /[Po-to-baʾi man ṅag]"@en-x-mixed ;
         :catalogInfo        "Detailed explanations of the examples used in Potowa Rinchensal's dpe chos rtsa ba and Geshe Drakarwa's dpe chos rin chen spungs pa, popular presentation of the principles of the Kadampa approach to practice by Chegom Sherab Dorje"@en ;
-        :creator            bdr:CR60C4E61EE39EFA79 , bdr:CREF33159DAD43737A ;
+        :creator            bdr:CR60C4E61EE39EFA79 , bdr:CREC7562731E77E099 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

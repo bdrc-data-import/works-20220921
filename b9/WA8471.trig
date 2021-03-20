@@ -25,14 +25,20 @@ bdg:WA8471 {
         adm:logWho          bdu:U00016 .
     
     bda:LG65423AE23E134860
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG7114D736E0DDF2F1
         a                   adm:UpdateData ;
         adm:logDate         "2013-03-26T09:28:05.636Z"^^xsd:dateTime ;
         adm:logMessage      "addded print type and source printrey"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LG714ABA20CC67B707
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGA60F6DB18E116C38
         a                   adm:UpdateData ;
@@ -57,15 +63,15 @@ bdg:WA8471 {
     bda:WA8471  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8471 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "b9/WA8471.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8471 ;
-        adm:logEntry        bda:LG07FF7373B3D9EDCA , bda:LG08AEC9A710B82F8C , bda:LG65423AE23E134860 , bda:LG7114D736E0DDF2F1 , bda:LGA60F6DB18E116C38 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG07FF7373B3D9EDCA , bda:LG08AEC9A710B82F8C , bda:LG65423AE23E134860 , bda:LG7114D736E0DDF2F1 , bda:LG714ABA20CC67B707 , bda:LGA60F6DB18E116C38 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR714ABA20CC67B707
+    bdr:CR8046E257FE689C5E
         a                   :AgentAsCreator ;
         :agent              bdr:P431 ;
         :role               bdr:R0ER0019 .
@@ -75,7 +81,7 @@ bdg:WA8471 {
     bdr:WA8471  a           :Work ;
         skos:prefLabel      "dbu ma rigs tshogs lnga'i dka' gnad/"@bo-x-ewts , "dbu ma rigs pa'i tshogs kyi dka' ba'i gnad bstan pa'i rigs lam kun gsal : exegesis on difficult points in the fundamental treatises of the madhyamika"@en-x-mixed ;
         :catalogInfo        "Exegesis of the difficult points in some of the fundamental sources of Madhyamaka philosophy. Written by an author of the Sakya order."@en ;
-        :creator            bdr:CR714ABA20CC67B707 ;
+        :creator            bdr:CR8046E257FE689C5E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

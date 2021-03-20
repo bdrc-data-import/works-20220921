@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23817 {
+    bda:LG506283D09045FA43
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG51E283CC21EEB353
         a                   adm:UpdateData ;
         adm:logDate         "2008-12-09T14:21:45.789Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA23817 {
         adm:logWho          bdu:U00016 .
     
     bda:LG71CF4BF2BA498D3A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -45,16 +51,16 @@ bdg:WA23817 {
     bda:WA23817  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23817 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "78/WA23817.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23817 ;
-        adm:logEntry        bda:LG51E283CC21EEB353 , bda:LG59AD5A1FDAEE3C47 , bda:LG71CF4BF2BA498D3A , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG506283D09045FA43 , bda:LG51E283CC21EEB353 , bda:LG59AD5A1FDAEE3C47 , bda:LG71CF4BF2BA498D3A , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG1869 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR506283D09045FA43
+    bdr:CR7D6DDF64F611955D
         a                   :AgentAsCreator ;
         :agent              bdr:P139 ;
         :role               bdr:R0ER0019 .
@@ -65,7 +71,7 @@ bdg:WA23817 {
         skos:altLabel       "ri chos nges don rgya mtsho zhes bya ba'i bstan bcos dang bsdus don/"@bo-x-ewts ;
         skos:prefLabel      "ri chos nges don rgya mtsho/"@bo-x-ewts , "ri chos nges don rgya mtsho zhes bya ba'i bstan bcos dang bsdus don: a fundamental treatise on esoteric meditation on jnana."@en-x-mixed ;
         :catalogInfo        "Synthetic work on the zhentong philosophical view of emptiness by Jonang author, Dolpopa Sherab Gyaltsen (1292-1361). An anthology of sutra and tantra quotes. Considered a masterpiece of the Jonang order."@en ;
-        :creator            bdr:CR506283D09045FA43 ;
+        :creator            bdr:CR7D6DDF64F611955D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workIsAbout        bdr:T1109 , bdr:T1169 , bdr:T360 .

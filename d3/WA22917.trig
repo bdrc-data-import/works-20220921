@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22917 {
+    bda:LG631EED87B666DD96
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG71A2A527E11BC41B
         a                   adm:UpdateData ;
         adm:logDate         "2013-03-04T10:52:37.153Z"^^xsd:dateTime ;
@@ -42,31 +46,33 @@ bdg:WA22917 {
         adm:logWho          bdu:U00016 .
     
     bda:LGE44A85D752E6990A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:WA22917  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22917 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "d3/WA22917.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22917 ;
-        adm:logEntry        bda:LG71A2A527E11BC41B , bda:LG8F5E83A859045BC4 , bda:LGA8845FE4488E1FE2 , bda:LGAEDB90FD1AC54DAC , bda:LGCB14F596322C4DCC , bda:LGE44A85D752E6990A ;
+        adm:logEntry        bda:LG631EED87B666DD96 , bda:LG71A2A527E11BC41B , bda:LG8F5E83A859045BC4 , bda:LGA8845FE4488E1FE2 , bda:LGAEDB90FD1AC54DAC , bda:LGCB14F596322C4DCC , bda:LGE44A85D752E6990A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR631EED87B666DD96
+    bdr:CR7239A2A00A0C83FD
         a                   :AgentAsCreator ;
         :agent              bdr:P7610 ;
         :role               bdr:R0ER0025 .
     
-    bdr:CR7239A2A00A0C83FD
+    bdr:CR7B224992FCFB06D7
         a                   :AgentAsCreator ;
         :agent              bdr:P708 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CR7B224992FCFB06D7
+    bdr:CRD3FAF065FEA3C612
         a                   :AgentAsCreator ;
         :agent              bdr:P7611 ;
         :role               bdr:R0ER0016 .
@@ -76,7 +82,7 @@ bdg:WA22917 {
     bdr:WA22917  a          :Work ;
         skos:altLabel       "rtsa gsum gsang thig dgongs 'dus/"@bo-x-ewts ;
         skos:prefLabel      "pad+ma'i gsang thig dgongs 'dus/"@bo-x-ewts , "pad+ma'i gsan thig dgons 'dus or rtsa gsum gsan thig dgons 'dus : a cycle of rnin-ma-pa practice leading up to rdzogs-chen realization"@en-x-mixed ;
-        :creator            bdr:CR631EED87B666DD96 , bdr:CR7239A2A00A0C83FD , bdr:CR7B224992FCFB06D7 ;
+        :creator            bdr:CR7239A2A00A0C83FD , bdr:CR7B224992FCFB06D7 , bdr:CRD3FAF065FEA3C612 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGA003017 , bdr:MW22917 , bdr:W22917 ;

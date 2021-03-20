@@ -24,6 +24,12 @@ bdg:WA23424 {
         adm:logWho          bdu:U00021 .
     
     bda:LGD8E4A85F97E65A6C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+    
+    bda:LGE96015DF9AE68FDB
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -51,35 +57,35 @@ bdg:WA23424 {
     bda:WA23424  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23424 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "8f/WA23424.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23424 ;
-        adm:logEntry        bda:LG2AD2C3DCFB20F8C2 , bda:LG695B440D9FADDAAB , bda:LGD8E4A85F97E65A6C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG2AD2C3DCFB20F8C2 , bda:LG695B440D9FADDAAB , bda:LGD8E4A85F97E65A6C , bda:LGE96015DF9AE68FDB , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRBD6CD385C4521C39
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1655 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRD0B81DD9D1F5026B
+    bdr:CR3B824DA66CD5DB65
         a                   :AgentAsCreator ;
         :agent              bdr:P1654 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRE96015DF9AE68FDB
+    bdr:CRBD6CD385C4521C39
         a                   :AgentAsCreator ;
         :agent              bdr:P1675 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRD0B81DD9D1F5026B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1655 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW23424  skos:altLabel  "bonpo obligatory texts for the study of the rules of monastic discipline"@en .
     
     bdr:WA23424  a          :SerialMember , :Work ;
         skos:prefLabel      "bon po'i yig cha las 'dul ba'i skor/"@bo-x-ewts , "bonpo obligatory texts for the study of the rules of monastic discipline"@en ;
         :catalogInfo        "Bon monastic rules and practice by Nyame Sherab Gyaltsen (1356-1415). Scanned under a training project with the Bon Foundation of America and Menri Monastery. Made available through the Tibetan Buddhist Resource Center with authorization by Menri Trizin 33 Lungtok Tenpai Nyima and the gracious support of the Bon Foundation."@en ;
-        :creator            bdr:CRBD6CD385C4521C39 , bdr:CRD0B81DD9D1F5026B , bdr:CRE96015DF9AE68FDB ;
+        :creator            bdr:CR3B824DA66CD5DB65 , bdr:CRBD6CD385C4521C39 , bdr:CRD0B81DD9D1F5026B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS23424 ;

@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA24013 {
+    bda:LG19052CC3A2B16A6A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG49532E5A5465926D
         a                   adm:UpdateData ;
         adm:logDate         "2008-12-08T12:23:42.399Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA24013 {
         adm:logWho          bdu:U00026 .
     
     bda:LGC9CF5B17BE35FFF2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGE67DB53E5E055202
         a                   adm:UpdateData ;
@@ -58,15 +64,15 @@ bdg:WA24013 {
     bda:WA24013  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA24013 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "2b/WA24013.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA24013 ;
-        adm:logEntry        bda:LG49532E5A5465926D , bda:LGC9CF5B17BE35FFF2 , bda:LGE67DB53E5E055202 , bda:LGE7D414BE970672A9 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG19052CC3A2B16A6A , bda:LG49532E5A5465926D , bda:LGC9CF5B17BE35FFF2 , bda:LGE67DB53E5E055202 , bda:LGE7D414BE970672A9 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR19052CC3A2B16A6A
+    bdr:CR24D84CB8F625A858
         a                   :AgentAsCreator ;
         :agent              bdr:P550 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +83,7 @@ bdg:WA24013 {
         skos:altLabel       "rje mkhan khri bcu pa bstan 'dzin chos rgyal gyi rtogs brjod/"@bo-x-ewts ;
         skos:prefLabel      "pandi ta bstan 'dzin chos kyi rgyal po'i rtogs pa brjod pa sgyu ma chen po'i gar stabs/"@bo-x-ewts , "the biography of the tenth rje mkhan-po of bhutan, bstan-'dzin-chos-rgyal (1700-1767)"@en-x-mixed ;
         :catalogInfo        "Biography of Bhutanese prelate and Je Khenpo, Pandita Tenzin Chokyi Gyalpo."@en ;
-        :creator            bdr:CR19052CC3A2B16A6A ;
+        :creator            bdr:CR24D84CB8F625A858 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

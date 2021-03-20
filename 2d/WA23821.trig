@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23821 {
-    bda:LGD79A74494EC89B15
+    bda:LGC8CFBB993B93EC86
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGD79A74494EC89B15
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGFA177B6354BDE2E5
         a                   adm:UpdateData ;
@@ -39,23 +45,23 @@ bdg:WA23821 {
     bda:WA23821  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23821 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "2d/WA23821.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23821 ;
-        adm:logEntry        bda:LGD79A74494EC89B15 , bda:LGFA177B6354BDE2E5 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LGC8CFBB993B93EC86 , bda:LGD79A74494EC89B15 , bda:LGFA177B6354BDE2E5 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR652ED6B361969A38
         a                   :AgentAsCreator ;
-        :agent              bdr:P649 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRC8CFBB993B93EC86
-        a                   :AgentAsCreator ;
         :agent              bdr:P659 ;
         :role               bdr:R0ER0025 .
+    
+    bdr:CRD8DA32E95B72ADD3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P649 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW23821  skos:altLabel  "gnam chos thugs kyi gter kha snan rgyud zab mo thugs rje chen po lus dkyil gyi skor gyi khrid sans rgyas lag 'chan gi 'grel chen : a commentary on the teachings concerned with the kayamandala of mahakarunika avalokitesvara from the gnam chos visions..."@en-x-mixed .
     
@@ -63,7 +69,7 @@ bdg:WA23821 {
         skos:altLabel       "sangs rgyas lag 'chang gi 'grel chen/"@bo-x-ewts , "thugs rje chen po lus dkyil gyi khrid sangs rgyas lag 'chang gi 'grel chen/"@bo-x-ewts ;
         skos:prefLabel      "gnam chos thugs kyi gter kha snyan rgyud zab mo thugs rje chen po lus dkyil gyi skor gyi khrid sangs rgyas lag 'chang gi 'grel chen/"@bo-x-ewts , "gnam chos thugs kyi gter kha snan rgyud zab mo thugs rje chen po lus dkyil gyi skor gyi khrid sans rgyas lag 'chan gi 'grel chen : a commentary on the teachings concerned with the kayamandala of mahakarunika avalokitesvara from the gnam chos visions..."@en-x-mixed ;
         :catalogInfo        "Manual for practicing Avalokitesvara Mahakarunika according to the Namcho visions of Tulku Mingyur Dorje."@en ;
-        :creator            bdr:CR652ED6B361969A38 , bdr:CRC8CFBB993B93EC86 ;
+        :creator            bdr:CR652ED6B361969A38 , bdr:CRD8DA32E95B72ADD3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T200 ;

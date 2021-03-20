@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA676 {
+    bda:LG09DC2E34901D48EE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG104381767B211A83
         a                   adm:UpdateData ;
         adm:logDate         "2009-05-28T10:52:10.609Z"^^xsd:dateTime ;
@@ -31,8 +35,10 @@ bdg:WA676 {
         adm:logWho          bdu:U00013 .
     
     bda:LG7A7FA25B63F5A94A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG8AC4D315CC5FE63C
         a                   adm:UpdateData ;
@@ -82,16 +88,16 @@ bdg:WA676 {
     bda:WA676  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA676 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "ba/WA676.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA676 ;
-        adm:logEntry        bda:LG104381767B211A83 , bda:LG2F84BFB2A3550AFF , bda:LG7A147F6302393E4C , bda:LG7A7FA25B63F5A94A , bda:LG8AC4D315CC5FE63C , bda:LGC7890A72EA5F1988 , bda:LGCBE1E7D8B2E3CF58 , bda:LGCD45CA48106098B6 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG09DC2E34901D48EE , bda:LG104381767B211A83 , bda:LG2F84BFB2A3550AFF , bda:LG7A147F6302393E4C , bda:LG7A7FA25B63F5A94A , bda:LG8AC4D315CC5FE63C , bda:LGC7890A72EA5F1988 , bda:LGCBE1E7D8B2E3CF58 , bda:LGCD45CA48106098B6 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG15910 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR09DC2E34901D48EE
+    bdr:CR5417E948C4B980C6
         a                   :AgentAsCreator ;
         :agent              bdr:P65 ;
         :role               bdr:R0ER0019 .
@@ -101,7 +107,7 @@ bdg:WA676 {
     bdr:WA676  a            :Work ;
         skos:prefLabel      "gsung 'bum/_rgyal tshab rje/"@bo-x-ewts , "the collected works (gsung 'bum) of the lord rgyal tshab rje dar ma rin chen"@en ;
         :catalogInfo        "Collected Works by Gyaltsab Je Darma Rinchen (1364-1432), one of the two main disciples of Je Tsongkhapa. Printed from the 1897 Lhasa Old Zhol blockprints."@en ;
-        :creator            bdr:CR09DC2E34901D48EE ;
+        :creator            bdr:CR5417E948C4B980C6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

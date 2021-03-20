@@ -24,8 +24,10 @@ bdg:WA23576 {
         adm:logWho          bdu:U00016 .
     
     bda:LG8EDFB0E0BE3C294F
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGCF9D326328B6F60A
         a                   adm:UpdateData ;
@@ -38,6 +40,10 @@ bdg:WA23576 {
         adm:logDate         "2010-05-20T09:06:28.958Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGFA52C4E4AE1056C1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -70,20 +76,20 @@ bdg:WA23576 {
     bda:WA23576  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23576 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "16/WA23576.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23576 ;
-        adm:logEntry        bda:LG17F93CC561BCAFC5 , bda:LG78FD4DB3AF08AFC4 , bda:LG8EDFB0E0BE3C294F , bda:LGCF9D326328B6F60A , bda:LGDC849D377F1F8803 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG17F93CC561BCAFC5 , bda:LG78FD4DB3AF08AFC4 , bda:LG8EDFB0E0BE3C294F , bda:LGCF9D326328B6F60A , bda:LGDC849D377F1F8803 , bda:LGFA52C4E4AE1056C1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB605895C6700D03F
+    bdr:CR244B016F6FF3359E
         a                   :AgentAsCreator ;
         :agent              bdr:P5340 ;
         :role               bdr:R0ER0025 .
     
-    bdr:CRFA52C4E4AE1056C1
+    bdr:CRB605895C6700D03F
         a                   :AgentAsCreator ;
         :agent              bdr:P7695 ;
         :role               bdr:R0ER0019 .
@@ -94,7 +100,7 @@ bdg:WA23576 {
         skos:altLabel       "zhal gdams snying thur/"@bo-x-ewts , "O rgyan źal gdams sñiṅ thur :a collection of esoteric instructions on the practice of Buddhism /by Ye-śes-mtsho-rgyal."@en-x-mixed ;
         skos:prefLabel      "o rgyan zhal gdams snying thur/"@bo-x-ewts , "a collection of esoteric instructions on the practice of buddhism"@en ;
         :catalogInfo        "Collection of instructions on various aspects of Buddhist teachings. Recorded by Yeshe Tsogyal and revealed by Sanggye Lingpa (1340-1396)."@en ;
-        :creator            bdr:CRB605895C6700D03F , bdr:CRFA52C4E4AE1056C1 ;
+        :creator            bdr:CR244B016F6FF3359E , bdr:CRB605895C6700D03F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW23576 , bdr:W23576 ;

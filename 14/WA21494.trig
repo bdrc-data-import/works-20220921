@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21494 {
+    bda:LG0D765CDCD83305BC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG1160646A205AF80B
         a                   adm:UpdateData ;
         adm:logDate         "2008-12-08T15:24:14.38Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA21494 {
         adm:logWho          bdu:U00026 .
     
     bda:LG272AF7C47894CAE1
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG54539A25D87260F3
         a                   adm:UpdateData ;
@@ -37,15 +43,15 @@ bdg:WA21494 {
     bda:WA21494  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21494 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "14/WA21494.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21494 ;
-        adm:logEntry        bda:LG1160646A205AF80B , bda:LG272AF7C47894CAE1 , bda:LG54539A25D87260F3 , bda:LG82D483AC73CEB9BD ;
+        adm:logEntry        bda:LG0D765CDCD83305BC , bda:LG1160646A205AF80B , bda:LG272AF7C47894CAE1 , bda:LG54539A25D87260F3 , bda:LG82D483AC73CEB9BD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0D765CDCD83305BC
+    bdr:CRD823D3C2F3CB5BFD
         a                   :AgentAsCreator ;
         :agent              bdr:P539 ;
         :role               bdr:R0ER0019 .
@@ -55,7 +61,7 @@ bdg:WA21494 {
     bdr:WA21494  a          :Work ;
         skos:altLabel       "bstan bcos bsam 'phel nor bu/"@bo-x-ewts ;
         skos:prefLabel      "rang blo gsal ba'i me long las mngon brjod kyi bstan bcos bsam 'phel nor bu/"@bo-x-ewts , "a detailed dictionary of sanskrit equivalents for various tibetan terms"@en ;
-        :creator            bdr:CR0D765CDCD83305BC ;
+        :creator            bdr:CRD823D3C2F3CB5BFD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T240 ;

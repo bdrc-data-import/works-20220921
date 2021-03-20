@@ -24,6 +24,12 @@ bdg:WA1KG12661 {
         adm:logMessage      "changed accessioned to released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG6A62954941A97BB9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+    
     bda:LGC151A89C0C4DAB26
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2012-08-08T14:20:28.264Z"^^xsd:dateTime ;
@@ -53,30 +59,30 @@ bdg:WA1KG12661 {
     bda:WA1KG12661  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG12661 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "60/WA1KG12661.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG12661 ;
-        adm:logEntry        bda:LG0F855F94660D025F , bda:LG3498FBB2C7671790 , bda:LGC151A89C0C4DAB26 , bda:LGD66F93D72E7C2FDB , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 ;
+        adm:logEntry        bda:LG0F855F94660D025F , bda:LG3498FBB2C7671790 , bda:LG6A62954941A97BB9 , bda:LGC151A89C0C4DAB26 , bda:LGD66F93D72E7C2FDB , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR2D9D450DEA704D09
         a                   :AgentAsCreator ;
-        :agent              bdr:P399 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR6A62954941A97BB9
-        a                   :AgentAsCreator ;
         :agent              bdr:P466 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR82A04D741E5411AA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P399 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW1KG12661  skos:altLabel  "'bri-gun bka'-brgyud-pa exegesis of mahamudra and na-ro chos drug practice"@en .
     
     bdr:WA1KG12661  a       :Work ;
         skos:prefLabel      "lnga ldan nor 'phreng gi gsal byed dang / chos drug gi khrid rim gsal byed rin po che dbang gi rgyal po'i 'phreng ba sogs/"@bo-x-ewts , "'bri-gun bka'-brgyud-pa exegesis of mahamudra and na-ro chos drug practice"@en ;
         :catalogInfo        "Collection of writings on Mahamudra and six yogas of Naropa."@en ;
-        :creator            bdr:CR2D9D450DEA704D09 , bdr:CR6A62954941A97BB9 ;
+        :creator            bdr:CR2D9D450DEA704D09 , bdr:CR82A04D741E5411AA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1AT670 ;

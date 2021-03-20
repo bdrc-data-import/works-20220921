@@ -13,14 +13,20 @@
 
 bdg:WA27482 {
     bda:LG1594B3BDF08AF5AB
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG4B16CDFEA385A7E7
         a                   adm:UpdateData ;
         adm:logDate         "2009-10-29T11:35:45.935Z"^^xsd:dateTime ;
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LGA0670AE42FC77012
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -46,30 +52,30 @@ bdg:WA27482 {
     bda:WA27482  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27482 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "f7/WA27482.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27482 ;
-        adm:logEntry        bda:LG1594B3BDF08AF5AB , bda:LG4B16CDFEA385A7E7 , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG1594B3BDF08AF5AB , bda:LG4B16CDFEA385A7E7 , bda:LGA0670AE42FC77012 , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA0670AE42FC77012
-        a                   :AgentAsCreator ;
-        :agent              bdr:P513 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CREB89616ED038452D
+    bdr:CR29FB4E43D07C65DD
         a                   :AgentAsCreator ;
         :agent              bdr:P2591 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CREB89616ED038452D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P513 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW27482  skos:altLabel  "the autobiography of gtsan mkhan-chen 'jam-dbyans dpal-ldan-rgya-mtsho"@en-x-mixed .
     
     bdr:WA27482  a          :Work ;
         skos:altLabel       "dpal ldan bla ma dam pa grags pa rgya mtsho'i rnam par thar pa dad pa'i sgo rab tu byed par byed pa'i dge ba'i lde mig"@bo-x-ewts , "autobiographies gtsan mkhan chen and grags pa rgya mtsho"@en-x-mixed , "Bstan pa d̓zin pai̓ skyes bu thams cad kyi rnam par thar pa la gus śiṅ rjes su j̓ug pai̓ rtogs brjod pha rol tu phyin pa daṅ gzuṅs daṅ tiṅ ne d̓zin gyi sgo maṅ po rim par phye bai̓ gtam :the autobiography of Gtsaṅ Mkhan-chen J̓am -dbyaṅs Dpal-ldan-rgya-mtsho. Dpal ldan bla ma dam pa Grags pa rgya mtshoi̓ rnam par thar pa dad pai̓ sgo rab tu byed par byed pai̓ dge bai̓ lde mig : the autobiography of Gtsaṅ Mkhan-chen's disciple Grags-pa-rgya-mtsho."@en-x-mixed , "the autobiography of gtsan mkhan-chen's disciple grags-pa-rgya-mtsho"@en-x-mixed ;
         skos:prefLabel      "bstan pa 'dzin pa'i skyes bu thams cad kyi rnam par thar pa la gus shing rjes su 'jug pa'i rtogs brjod pha rol tu phyin pa dang gzungs dang ting nge 'dzin gyi sgo mang po rim par phye ba'i gtam/"@bo-x-ewts , "the autobiography of gtsan mkhan-chen 'jam-dbyans dpal-ldan-rgya-mtsho"@en-x-mixed ;
-        :creator            bdr:CRA0670AE42FC77012 , bdr:CREB89616ED038452D ;
+        :creator            bdr:CR29FB4E43D07C65DD , bdr:CREB89616ED038452D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

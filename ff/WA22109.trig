@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22109 {
+    bda:LG280830C4278DF332
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG2FF8A050849B4CC0
         a                   adm:UpdateData ;
         adm:logDate         "2011-09-22T10:22:21.508Z"^^xsd:dateTime ;
@@ -30,8 +34,10 @@ bdg:WA22109 {
         adm:logWho          bdu:U00013 .
     
     bda:LGBEF410F516D72AC2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -57,16 +63,16 @@ bdg:WA22109 {
     bda:WA22109  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22109 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "ff/WA22109.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22109 ;
-        adm:logEntry        bda:LG2FF8A050849B4CC0 , bda:LG461CAC4FF191C25B , bda:LG56AA4A74A7B5124E , bda:LGBEF410F516D72AC2 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG280830C4278DF332 , bda:LG2FF8A050849B4CC0 , bda:LG461CAC4FF191C25B , bda:LG56AA4A74A7B5124E , bda:LGBEF410F516D72AC2 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA20510 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR280830C4278DF332
+    bdr:CR123CA9C42B1C8EF1
         a                   :AgentAsCreator ;
         :agent              bdr:P64 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +83,7 @@ bdg:WA22109 {
         skos:altLabel       "the collected works (gsun 'bum) of rje rin-po-che"@en-x-mixed ;
         skos:prefLabel      "gsung 'bum/_tsong kha pa/"@bo-x-ewts , "the collected works (gsun 'bum) of rje tson-kha-pa blo-bzan-grags-pa"@en-x-mixed ;
         :catalogInfo        "Collected Works by Tsongkhapa Lobzang Drakpa (1357-1419), founder of the Geluk order. Old edition of Tashi Lhunpo print is highly regarded."@en ;
-        :creator            bdr:CR280830C4278DF332 ;
+        :creator            bdr:CR123CA9C42B1C8EF1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS11818 ;

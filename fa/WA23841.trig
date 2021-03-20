@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23841 {
-    bda:LG34622F27824A7322
+    bda:LG0D120F6942C71584
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG34622F27824A7322
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG5558631560243987
         a                   adm:UpdateData ;
@@ -58,16 +64,16 @@ bdg:WA23841 {
     bda:WA23841  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23841 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "fa/WA23841.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23841 ;
-        adm:logEntry        bda:LG34622F27824A7322 , bda:LG5558631560243987 , bda:LG850AC71CB001D84B , bda:LG94AEBE9366F1BB2B , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG0D120F6942C71584 , bda:LG34622F27824A7322 , bda:LG5558631560243987 , bda:LG850AC71CB001D84B , bda:LG94AEBE9366F1BB2B , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA17319 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR0D120F6942C71584
+    bdr:CR43C4E480A8DD702E
         a                   :AgentAsCreator ;
         :agent              bdr:P4943 ;
         :role               bdr:R0ER0025 .
@@ -77,7 +83,7 @@ bdg:WA23841 {
     bdr:WA23841  a          :Work ;
         skos:prefLabel      "bka' thang sde lnga/"@bo-x-ewts , "bka' than sde lna : accounts of the deeds of gods, kings, queens, ministers, and translators during the glorious period of the royal dynasty of tibet"@en ;
         :catalogInfo        "Accounts of deeds of gods, kings, queens, ministers and translators during the Royal Dynastic period. Concealed and later recovered during the 14th century."@en ;
-        :creator            bdr:CR0D120F6942C71584 ;
+        :creator            bdr:CR43C4E480A8DD702E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T448 .

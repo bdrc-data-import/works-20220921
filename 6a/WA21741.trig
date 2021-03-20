@@ -13,14 +13,20 @@
 
 bdg:WA21741 {
     bda:LG3C745B724546E84E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGA8719B73CCD7C5A9
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-11T11:45:45.044Z"^^xsd:dateTime ;
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGB873DB7B9653AD4A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -39,15 +45,15 @@ bdg:WA21741 {
     bda:WA21741  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21741 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "6a/WA21741.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21741 ;
-        adm:logEntry        bda:LG3C745B724546E84E , bda:LGA8719B73CCD7C5A9 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3C745B724546E84E , bda:LGA8719B73CCD7C5A9 , bda:LGB873DB7B9653AD4A , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB873DB7B9653AD4A
+    bdr:CR904A2CBD86A05309
         a                   :AgentAsCreator ;
         :agent              bdr:P470 ;
         :role               bdr:R0ER0025 .
@@ -57,7 +63,7 @@ bdg:WA21741 {
     bdr:WA21741  a          :SerialMember , :Work ;
         skos:prefLabel      "phur pa yang gsang bla med/"@bo-x-ewts , "phur pa yan gsan bla med : a cycle of practice focussing upon a form of vajrakila"@en-x-mixed ;
         :catalogInfo        "Nyingma cycle of practice focusing on a form of Vajrakila."@en ;
-        :creator            bdr:CRB873DB7B9653AD4A ;
+        :creator            bdr:CR904A2CBD86A05309 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS21731 ;

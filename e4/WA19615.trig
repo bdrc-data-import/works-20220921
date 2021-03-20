@@ -17,9 +17,15 @@ bdg:WA19615 {
         adm:logDate         "2008-06-16T09:53:18.153Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00026 .
     
-    bda:LGC6393C25182296CB
+    bda:LGC3E629CAFD7C6108
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGC6393C25182296CB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGD44C9ABA9D1885A5
         a                   adm:UpdateData ;
@@ -43,25 +49,25 @@ bdg:WA19615 {
     bda:WA19615  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19615 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "e4/WA19615.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19615 ;
-        adm:logEntry        bda:LGC24ABA4B9F64A26A , bda:LGC6393C25182296CB , bda:LGD44C9ABA9D1885A5 , bda:LGE81489FE010CFFAF , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LGC24ABA4B9F64A26A , bda:LGC3E629CAFD7C6108 , bda:LGC6393C25182296CB , bda:LGD44C9ABA9D1885A5 , bda:LGE81489FE010CFFAF , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1DB342AA9285B060
         a                   :AgentAsCreator ;
-        :agent              bdr:P314 ;
-        :role               bdr:R0ER0025 .
-    
-    bdr:CRC3E629CAFD7C6108
-        a                   :AgentAsCreator ;
         :agent              bdr:P5955 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVE8873754C8A9633F
+    bdr:CRE8873754C8A9633F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P314 ;
+        :role               bdr:R0ER0025 .
+    
+    bdr:EV4E2913C03A143CAC
         a                   :CompletedEvent ;
         :notAfter           "1921"^^xsd:gYear ;
         :notBefore          "1861"^^xsd:gYear .
@@ -71,11 +77,11 @@ bdg:WA19615 {
     bdr:WA19615  a          :SerialMember , :Work ;
         skos:altLabel       "klong chen snying gi thig le'i mkha' 'gro bde chen rgyal mo'i sgrub gzhung gi 'grel pa rgyud don snang ba/"@bo-x-ewts , "klong snying mkha' 'gro sgrub gzhung 'grel pa/"@bo-x-ewts , "mkha' 'gro bde chen rgyal mo'i 'grub gzhung gi 'grel pa/"@bo-x-ewts , "Klong chen snying gi thig leʼi Mkhaʼ ʼgro Bde chen rgyal moʼi sgrub gzhung gi ʼgrel pa Rgyud don snang ba :a commentary on the \"Mkhaʼ ʼgro bde chen rgyal moʼi sgrub gzhung\" of the Klong chen snying thig visions of Kun-mkhyen ʼJigs-med-gling-pa /by Ngag-dbang-bstan-ʼdzin-rdo-rje."@en-x-mixed ;
         skos:prefLabel      "bde chen rgyal mo'i sgrub gzhung gi 'grel pa/"@bo-x-ewts , "a commentary on the mkha' 'gro bde chen rgyal mo'i sgrub gzhung of the klong chen snying thig visions of kun-mkhyen 'jigs-med-gling-pa"@en ;
-        :creator            bdr:CR1DB342AA9285B060 , bdr:CRC3E629CAFD7C6108 ;
+        :creator            bdr:CR1DB342AA9285B060 , bdr:CRE8873754C8A9633F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS11225 ;
-        :workEvent          bdr:EVE8873754C8A9633F ;
+        :workEvent          bdr:EV4E2913C03A143CAC ;
         :workHasInstance    bdr:MW19615 , bdr:W19615 ;
         :workIsAbout        bdr:T328 , bdr:T354 .
 }

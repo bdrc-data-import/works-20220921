@@ -18,6 +18,10 @@ bdg:WA30158 {
         adm:logMessage      "CTC5"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LG93D5DE039CBB0D35
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGB156F066E97C4864
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-15T15:09:06.084Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA30158 {
         adm:logWho          bdu:U00013 .
     
     bda:LGB4C90F15E9CFAED5
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGDEB8DF4B4863D206
         a                   adm:UpdateData ;
@@ -72,24 +78,24 @@ bdg:WA30158 {
     bda:WA30158  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30158 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "67/WA30158.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30158 ;
-        adm:logEntry        bda:LG4268F72F71B08988 , bda:LGB156F066E97C4864 , bda:LGB4C90F15E9CFAED5 , bda:LGDEB8DF4B4863D206 , bda:LGIM5A753E00B7 , bda:LGIM84B17F7EDC , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG4268F72F71B08988 , bda:LG93D5DE039CBB0D35 , bda:LGB156F066E97C4864 , bda:LGB4C90F15E9CFAED5 , bda:LGDEB8DF4B4863D206 , bda:LGIM5A753E00B7 , bda:LGIM84B17F7EDC , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1280FA49736C4729
         a                   :AgentAsCreator ;
-        :agent              bdr:P1656 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR93D5DE039CBB0D35
-        a                   :AgentAsCreator ;
         :agent              bdr:P859 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR5F432C1EB3312D0E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1656 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW30158  skos:altLabel  "the biography of khyun-sprul 'jigs-med-nam-mkha'i-rdo-rje"@en-x-mixed .
     
@@ -97,7 +103,7 @@ bdg:WA30158 {
         skos:altLabel       "being the text of \"khyab bdag 'khor lo'i mgon po mkhas grub 'jigs med nam mkha'i rnam thar dad brgya'i rma bya rnam par rtse ba\""@en-x-mixed , "The biography of Khyuṅ-sprul ʼJigs-med-nam-mkhaʼi-rdo-rje :being the text of \"Khyab bdag ʼkhor loʼi mgon po mkhas grub ʼJigs med nam mkhaʼi rnam thar dad brgyaʼi rma bya rnam par rtse ba\" /written by the late Dpal-ldan-tshul-khrims ; together with the Źal gdams and Ñams mgur of Khyuṅ-sprul."@en-x-mixed ;
         skos:prefLabel      "khyab bdag 'khor lo'i mgon po mkhas grub 'jigs med nam mkha'i rnam thar dad brgya'i rma bya rnam par rtse ba/"@bo-x-ewts , "the biography of khyun-sprul 'jigs-med-nam-mkha'i-rdo-rje"@en-x-mixed ;
         :catalogInfo        "Biography of a Tibetan master from western Tibet who taught both Buddhism and Bon."@en ;
-        :creator            bdr:CR1280FA49736C4729 , bdr:CR93D5DE039CBB0D35 ;
+        :creator            bdr:CR1280FA49736C4729 , bdr:CR5F432C1EB3312D0E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

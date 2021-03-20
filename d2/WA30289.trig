@@ -13,14 +13,20 @@
 
 bdg:WA30289 {
     bda:LG892ACC4934BC3697
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGADE587EE7EFFCD93
         a                   adm:UpdateData ;
         adm:logDate         "2007-01-09T13:50:58.945Z"^^xsd:dateTime ;
         adm:logMessage      "included in ctc 4"@en ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGBC5DD80A7ADCDD32
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGEA637CDD6DED6ABB
         a                   adm:UpdateData ;
@@ -58,22 +64,22 @@ bdg:WA30289 {
     bda:WA30289  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30289 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "d2/WA30289.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30289 ;
-        adm:logEntry        bda:LG892ACC4934BC3697 , bda:LGADE587EE7EFFCD93 , bda:LGEA637CDD6DED6ABB , bda:LGF580DD7942EB58B2 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG892ACC4934BC3697 , bda:LGADE587EE7EFFCD93 , bda:LGBC5DD80A7ADCDD32 , bda:LGEA637CDD6DED6ABB , bda:LGF580DD7942EB58B2 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR6BBA7D311876C1AE
         a                   :AgentAsCreator ;
-        :agent              bdr:P66 ;
+        :agent              bdr:P385 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRBC5DD80A7ADCDD32
+    bdr:CRDD8A5B0714D85593
         a                   :AgentAsCreator ;
-        :agent              bdr:P385 ;
+        :agent              bdr:P66 ;
         :role               bdr:R0ER0019 .
     
     bdr:MW30289  skos:altLabel  "rare karma-pa texts on the practice of the mahamudra, the six doctrines of naropa, and other esoteric precepts"@en .
@@ -82,7 +88,7 @@ bdg:WA30289 {
         skos:altLabel       "rdo rje rnal 'byor ma'i dkyil chog/ bde mchog/ rgyal ba rgya mtsho/ rgyud sde spyi'i sbyin sreg phag mo'i rnam bshad le tshan bcas/"@bo-x-ewts , "Rare Karma-pa texts on the practice of the Mahamudra ; the six doctrines of Naropa ; and other esoteric precepts."@en-x-mixed ;
         skos:prefLabel      "rdo rje rnal 'byor ma'i dkyil chog dang bde mchog lha lnga'i cho ga sogs/"@bo-x-ewts , "rare karma-pa texts on the practice of the mahamudra, the six doctrines of naropa, and other esoteric precepts"@en ;
         :catalogInfo        "Select writings on the practice of Mahamudra, the Six Dharmas of Naropa, and other esoteric precepts."@en ;
-        :creator            bdr:CR6BBA7D311876C1AE , bdr:CRBC5DD80A7ADCDD32 ;
+        :creator            bdr:CR6BBA7D311876C1AE , bdr:CRDD8A5B0714D85593 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;

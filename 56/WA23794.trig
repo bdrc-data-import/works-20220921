@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23794 {
+    bda:LG5AB00015935C2BA8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG80F606AC824B145B
         a                   adm:UpdateData ;
         adm:logDate         "2011-05-18T15:04:56.581Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA23794 {
         adm:logWho          bdu:U00026 .
     
     bda:LGDC45843EE6106118
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -59,23 +65,23 @@ bdg:WA23794 {
     bda:WA23794  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23794 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "56/WA23794.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23794 ;
-        adm:logEntry        bda:LG80F606AC824B145B , bda:LGBA3FF3FCF7E780A7 , bda:LGDC45843EE6106118 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG5AB00015935C2BA8 , bda:LG80F606AC824B145B , bda:LGBA3FF3FCF7E780A7 , bda:LGDC45843EE6106118 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5AB00015935C2BA8
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1056 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRD6602C187AAA8FDA
+    bdr:CR7EAC01DAEDFD119F
         a                   :AgentAsCreator ;
         :agent              bdr:P7785 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRD6602C187AAA8FDA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1056 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW23794  skos:altLabel  "bshes pa'i 'phrin yig gi ti ka and 'phags pa klu sgrub kyi rtogs brjod mdor bsdus : commentary on the suhrllekha of nagarjuna with a brief biography"@en-x-mixed .
     
@@ -83,7 +89,7 @@ bdg:WA23794 {
         skos:altLabel       "bshes pa'i spring yig gi TI ka"@bo-x-ewts , "byis pa bde blag tu 'jug pa'i rnam par bshad pa mkhas pa 'jug pa'i sgo"@bo-x-ewts , "klu sgrub kyi rtogs brjod mdor bsdus/"@bo-x-ewts , "mkhas pa 'jug pa'i sgo"@bo-x-ewts , "Bśes paʼi ʼphriṅ yig gi ṭī ka and ʼPhags pa Klu sgrub kyi rtogs brjod mdor bsdus :commentary on the Suhṛllekha of Nāgārjuna with a brief biography ; by Ṅag-gi-dbaṅ-phyug-dge-legs-rgya-mtshoʼi-sde. Byis pa bde blag tu ʼjug paʼi rnam par bśad pa mkhas pa ʼjug paʼi sgo : an introduction to the principles of Tibetan Buddhist scholasticism /by Sa-skya Paṇḍita Kun-dgaʼ-rgyal-mtshan."@en-x-mixed ;
         skos:prefLabel      "bshes pa'i 'phrin yig gi TI ka"@bo-x-ewts , "bshes pa'i 'phrin yig gi ti ka and 'phags pa klu sgrub kyi rtogs brjod mdor bsdus : commentary on the suhrllekha of nagarjuna with a brief biography"@en-x-mixed ;
         :catalogInfo        "Commentary on Nagarjuna's Letter to a Friend. Includes brief biography and instruction to the principles of Tibetan Buddhist scholasticism."@en ;
-        :creator            bdr:CR5AB00015935C2BA8 , bdr:CRD6602C187AAA8FDA ;
+        :creator            bdr:CR7EAC01DAEDFD119F , bdr:CRD6602C187AAA8FDA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

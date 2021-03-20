@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23347 {
+    bda:LG14FF96DDF1571516
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG5AC64410AD6A2940
         a                   adm:UpdateData ;
         adm:logDate         "2012-03-26T15:30:47.011Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23347 {
         adm:logWho          bdu:U00021 .
     
     bda:LG9D2B7EFA42EA2540
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -46,30 +52,30 @@ bdg:WA23347 {
     bda:WA23347  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23347 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "99/WA23347.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23347 ;
-        adm:logEntry        bda:LG5AC64410AD6A2940 , bda:LG9D2B7EFA42EA2540 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG14FF96DDF1571516 , bda:LG5AC64410AD6A2940 , bda:LG9D2B7EFA42EA2540 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR14FF96DDF1571516
-        a                   :AgentAsCreator ;
-        :agent              bdr:P7662 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRCAE51F99E9989431
+    bdr:CR0B20F8F7D9A92288
         a                   :AgentAsCreator ;
         :agent              bdr:P6164 ;
         :role               bdr:R0ER0025 .
+    
+    bdr:CRCAE51F99E9989431
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7662 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW23347  skos:altLabel  "gter chen rdo rje glin pa'i rnam thar dan zal gdams bcas : the brief biography of gter-chen rdo rje-glin-pa (1346-1405) ... with a selection of the subject'a instructions on buddhist practice"@en-x-mixed .
     
     bdr:WA23347  a          :SerialMember , :Work ;
         skos:prefLabel      "gter chen rdo rje gling pa'i rnam thar dang zhal gdams bcas/"@bo-x-ewts , "gter chen rdo rje glin pa'i rnam thar dan zal gdams bcas : the brief biography of gter-chen rdo rje-glin-pa (1346-1405) ... with a selection of the subject'a instructions on buddhist practice"@en-x-mixed ;
         :catalogInfo        "Biography and select instructions by terton Dorje Lingpa (1346-1405)."@en ;
-        :creator            bdr:CR14FF96DDF1571516 , bdr:CRCAE51F99E9989431 ;
+        :creator            bdr:CR0B20F8F7D9A92288 , bdr:CRCAE51F99E9989431 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS23208 ;

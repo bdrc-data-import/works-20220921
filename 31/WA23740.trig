@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23740 {
+    bda:LG2EEA270CED42EBE6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG74644472B4CAC741
         a                   adm:UpdateData ;
         adm:logDate         "2008-12-09T16:31:28.605Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23740 {
         adm:logWho          bdu:U00026 .
     
     bda:LGC0D4C6A6DE8BAD4E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -46,15 +52,15 @@ bdg:WA23740 {
     bda:WA23740  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23740 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "31/WA23740.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23740 ;
-        adm:logEntry        bda:LG74644472B4CAC741 , bda:LGC0D4C6A6DE8BAD4E , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2EEA270CED42EBE6 , bda:LG74644472B4CAC741 , bda:LGC0D4C6A6DE8BAD4E , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2EEA270CED42EBE6
+    bdr:CR0CCDB7FB0DE4CFD6
         a                   :AgentAsCreator ;
         :agent              bdr:P663 ;
         :role               bdr:R0ER0025 .
@@ -65,7 +71,7 @@ bdg:WA23740 {
         skos:altLabel       "gu ru drag po Rdo rje drag rtsal /teachings from the miraculous rediscoveries of Stag-sham Nus-ldan-rdo-rje."@en-x-mixed ;
         skos:prefLabel      "gu ru drag po rdo rje drag rtsal/"@bo-x-ewts , "teachings from the miraculous rediscoveries of stag-sham nus-ldan-rdo-rje"@en-x-mixed ;
         :catalogInfo        "Rediscovered teachings connected with the wrathful guru. Revealed by the Nyingma terton Taksham Nuden Dorje (b. 1655)."@bo-x-ewts ;
-        :creator            bdr:CR2EEA270CED42EBE6 ;
+        :creator            bdr:CR0CCDB7FB0DE4CFD6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

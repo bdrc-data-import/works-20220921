@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23172 {
-    bda:LG11BA23E1C6C44695
+    bda:LG012A254B8C29E745
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG11BA23E1C6C44695
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGF8F6063F75609374
         a                   adm:UpdateData ;
@@ -46,15 +52,15 @@ bdg:WA23172 {
     bda:WA23172  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23172 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "00/WA23172.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23172 ;
-        adm:logEntry        bda:LG11BA23E1C6C44695 , bda:LGF8F6063F75609374 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG012A254B8C29E745 , bda:LG11BA23E1C6C44695 , bda:LGF8F6063F75609374 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR012A254B8C29E745
+    bdr:CRB106CAC98E9B8226
         a                   :AgentAsCreator ;
         :agent              bdr:P4578 ;
         :role               bdr:R0ER0019 .
@@ -65,7 +71,7 @@ bdg:WA23172 {
         skos:altLabel       "rje dkon mchog rat+na 'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_dkon mchog rin chen/"@bo-x-ewts , "collected writings of the 'bri-gun-pa hierarch dkon-mchog-rin-chen"@en-x-mixed ;
         :catalogInfo        "Collected Works by Drikung Kagyu master Tokden Rinpoche Konchok Rinchen from Lhadak."@en ;
-        :creator            bdr:CR012A254B8C29E745 ;
+        :creator            bdr:CRB106CAC98E9B8226 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

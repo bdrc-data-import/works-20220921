@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23801 {
-    bda:LG6A57441DC5318EEC
+    bda:LG59A859645A3D6F05
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG6A57441DC5318EEC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG718CBE8102A29CBA
         a                   adm:UpdateData ;
@@ -46,15 +52,15 @@ bdg:WA23801 {
     bda:WA23801  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23801 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "4a/WA23801.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23801 ;
-        adm:logEntry        bda:LG6A57441DC5318EEC , bda:LG718CBE8102A29CBA , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG59A859645A3D6F05 , bda:LG6A57441DC5318EEC , bda:LG718CBE8102A29CBA , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR59A859645A3D6F05
+    bdr:CR6C50A23E645119DC
         a                   :AgentAsCreator ;
         :agent              bdr:P834 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +70,7 @@ bdg:WA23801 {
     bdr:WA23801  a          :Work ;
         skos:prefLabel      "sgam po mchog sprul o rgyan 'gro 'dul gling pa'i rnam thar/"@bo-x-ewts , "the autobiography the fifth mchog sprul dwags la sgam po o rgyan 'gro 'dul glin pa (b. 1757)"@en-x-mixed ;
         :catalogInfo        "Biography of a Nyingma master from southeastern Tibet, Gampo Choktrul Orgyen Drodul Lingpa."@en ;
-        :creator            bdr:CR59A859645A3D6F05 ;
+        :creator            bdr:CR6C50A23E645119DC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

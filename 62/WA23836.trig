@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23836 {
+    bda:LG65AAB4F38E88A4E3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGC1F47E5C1A5C07DA
         a                   adm:UpdateData ;
         adm:logDate         "2008-12-09T14:57:01.252Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23836 {
         adm:logWho          bdu:U00026 .
     
     bda:LGF99F7A0827ADC995
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -39,23 +45,23 @@ bdg:WA23836 {
     bda:WA23836  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23836 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "62/WA23836.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23836 ;
-        adm:logEntry        bda:LGC1F47E5C1A5C07DA , bda:LGF99F7A0827ADC995 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG65AAB4F38E88A4E3 , bda:LGC1F47E5C1A5C07DA , bda:LGF99F7A0827ADC995 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR65AAB4F38E88A4E3
-        a                   :AgentAsCreator ;
-        :agent              bdr:P973 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRF4C85D71C594B804
+    bdr:CRDE27774FF09037CC
         a                   :AgentAsCreator ;
         :agent              bdr:P3256 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRF4C85D71C594B804
+        a                   :AgentAsCreator ;
+        :agent              bdr:P973 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW23836  skos:altLabel  "rnal 'byor gyi dban phyug lu hi pa'i bzed srol dpal 'khor lo bde mchog gi dkyil chog sindu'i klun chen khyu mchog kha 'babs : the method for the mandala and initiation of the luipada tradition of cakrasamvara"@en-x-mixed .
     
@@ -63,7 +69,7 @@ bdg:WA23836 {
         skos:altLabel       "gdugs dkar can gyi mdos chog"@bo-x-ewts , "bcom ldan 'das ma gdugs dkar mo can gyi mdos chog gi lag len ra ma na yi sgyu 'phrul : a method for the ritual of the mdos of sitatapatraparajit for elimination of obstacles"@en-x-mixed ;
         skos:prefLabel      "bde mchog lU hi pa'i lugs kyi dkyil chog"@bo-x-ewts , "rnal 'byor gyi dban phyug lu hi pa'i bzed srol dpal 'khor lo bde mchog gi dkyil chog sindu'i klun chen khyu mchog kha 'babs : the method for the mandala and initiation of the luipada tradition of cakrasamvara"@en-x-mixed ;
         :catalogInfo        "Rituals of the Sakya order on Chakrasamvara according to the luyipa system. Includes thread-crossing ceremony focusing on the worship of Sitatapatra."@en ;
-        :creator            bdr:CR65AAB4F38E88A4E3 , bdr:CRF4C85D71C594B804 ;
+        :creator            bdr:CRDE27774FF09037CC , bdr:CRF4C85D71C594B804 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T159 , bdr:T48 , bdr:T98 ;

@@ -18,6 +18,12 @@ bdg:WA3CN22331 {
         adm:logMessage      "edited"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG685B410D42840450
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T13:03:37.441Z"^^xsd:dateTime ;
+        adm:logMessage      "added T#"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG8F406C23285621FD
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-03-29T01:43:37.861Z"^^xsd:dateTime ;
@@ -39,31 +45,32 @@ bdg:WA3CN22331 {
     bda:WA3CN22331  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN22331 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "29/WA3CN22331.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN22331 ;
-        adm:logEntry        bda:LG2B614E1BDEFAEF75 , bda:LG8F406C23285621FD , bda:LG91E562B0BCE1BCDF , bda:LG9FE38A6F521AD27E ;
+        adm:logEntry        bda:LG2B614E1BDEFAEF75 , bda:LG685B410D42840450 , bda:LG8F406C23285621FD , bda:LG91E562B0BCE1BCDF , bda:LG9FE38A6F521AD27E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR685B410D42840450
-        a                   :AgentAsCreator ;
-        :agent              bdr:P8067 ;
-        :role               bdr:R0ER0011 .
-    
-    bdr:CRD1BFBBE23060B107
+    bdr:CRC052913BBBB23015
         a                   :AgentAsCreator ;
         :agent              bdr:P3CN21160 ;
         :role               bdr:R0ER0025 .
+    
+    bdr:CRD1BFBBE23060B107
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8067 ;
+        :role               bdr:R0ER0011 .
     
     bdr:WA3CN22331  a       :Work ;
         skos:altLabel       "chos rgyal srong btsan sgam po'i bka' 'bum/"@bo-x-ewts , "ma Ni bka' 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/ srong btsan sgam po/"@bo-x-ewts ;
         :catalogInfo        "Collection of teachings focusing on Avalokitesvara. Attributed to King Songtsen Gampo (7th Cent.) and revealed as a terma by Drobthop Ngudrup (12th Cent.) and others."@en ;
-        :creator            bdr:CR685B410D42840450 , bdr:CRD1BFBBE23060B107 ;
+        :creator            bdr:CRC052913BBBB23015 , bdr:CRD1BFBBE23060B107 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 , bdr:T448 ;
-        :workHasInstance    bdr:MW3CN22331 , bdr:W3CN22331 .
+        :workHasInstance    bdr:MW3CN22331 , bdr:W3CN22331 ;
+        :workIsAbout        bdr:T1082 .
 }

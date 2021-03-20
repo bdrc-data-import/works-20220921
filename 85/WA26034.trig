@@ -18,6 +18,10 @@ bdg:WA26034 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG159B09C230891661
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG413528DA097E9D30
         a                   adm:UpdateData ;
         adm:logDate         "2009-10-28T12:48:19.166Z"^^xsd:dateTime ;
@@ -31,8 +35,10 @@ bdg:WA26034 {
         adm:logWho          bdu:U00013 .
     
     bda:LG851E0D61E3105433
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGD28A0645D87E8344
         a                   adm:UpdateData ;
@@ -43,16 +49,16 @@ bdg:WA26034 {
     bda:WA26034  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA26034 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "85/WA26034.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA26034 ;
-        adm:logEntry        bda:LG0BA196000EB8E40B , bda:LG413528DA097E9D30 , bda:LG60228F4331FEE296 , bda:LG851E0D61E3105433 , bda:LGD28A0645D87E8344 ;
+        adm:logEntry        bda:LG0BA196000EB8E40B , bda:LG159B09C230891661 , bda:LG413528DA097E9D30 , bda:LG60228F4331FEE296 , bda:LG851E0D61E3105433 , bda:LGD28A0645D87E8344 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG25311 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR159B09C230891661
+    bdr:CR98E08709A62EF6D5
         a                   :AgentAsCreator ;
         :agent              bdr:P1846 ;
         :role               bdr:R0ER0019 .
@@ -62,7 +68,7 @@ bdg:WA26034 {
     bdr:WA26034  a          :Work ;
         skos:altLabel       "dwags po sgom chen ngag dbang grags pa'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_ngag dbang grags pa/"@bo-x-ewts , "collected works of dwags po sgom chen nag dban grags pa"@en-x-mixed ;
-        :creator            bdr:CR159B09C230891661 ;
+        :creator            bdr:CR98E08709A62EF6D5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

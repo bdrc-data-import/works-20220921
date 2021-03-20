@@ -18,6 +18,10 @@ bdg:WA29911 {
         adm:logMessage      "added bibliographical title in tibetan"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG6361652DFE8F3E5A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG82AA350A9FFD9934
         a                   adm:UpdateData ;
         adm:logDate         "2007-11-19T14:07:16.107Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA29911 {
         adm:logWho          bdu:U00026 .
     
     bda:LGACF90C1CF36F6A57
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGBEC1DB6FCEB73CE2
         a                   adm:UpdateData ;
@@ -64,23 +70,23 @@ bdg:WA29911 {
     bda:WA29911  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29911 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "3c/WA29911.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29911 ;
-        adm:logEntry        bda:LG46BC90FE3418A902 , bda:LG82AA350A9FFD9934 , bda:LGACF90C1CF36F6A57 , bda:LGBEC1DB6FCEB73CE2 , bda:LGFA62C74AB9938D7C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
+        adm:logEntry        bda:LG46BC90FE3418A902 , bda:LG6361652DFE8F3E5A , bda:LG82AA350A9FFD9934 , bda:LGACF90C1CF36F6A57 , bda:LGBEC1DB6FCEB73CE2 , bda:LGFA62C74AB9938D7C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6361652DFE8F3E5A
-        a                   :AgentAsCreator ;
-        :agent              bdr:P791 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR958BBD0ECBECFA82
+    bdr:CR3C68E9F9E04FE3D6
         a                   :AgentAsCreator ;
         :agent              bdr:P460 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CR958BBD0ECBECFA82
+        a                   :AgentAsCreator ;
+        :agent              bdr:P791 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW29911  skos:altLabel  "the vajrakila rites as practiced by the 'khon lineage sa skya"@en .
     
@@ -88,7 +94,7 @@ bdg:WA29911 {
         skos:altLabel       "'khon lugs phur pa'i rnam bshad/ 'chams yig brjed byang /"@bo-x-ewts , "being the detailed exegeses of the sadhana and gtor bzlog of 'jam mgon a myes zabs kun dga' bsod nams and notes on the sacred dance ('chams) of sngags 'chang kun dga' rin chen"@en , "The Vajrakīla rites as practiced by the ʼKhon lineage of Sa-skya :being the detailed exegesis of the sādhana and gtor-bzlog of ʼJam-mgon A-myes-źabs Kun-dgaʼ-bsod-nams and the notes on the sacred dance (ʼchams) of Sṅags-ʼchaṅ Kun-dgaʼ-rin-chen."@en-x-mixed ;
         skos:prefLabel      "'khon lugs phur pa'i chos skor/"@bo-x-ewts , "the vajrakila rites as practiced by the 'khon lineage sa skya"@en ;
         :catalogInfo        "Exegeses on Vajrakila sadhana and torma aversion (gtor bzlog) practices of the Sakya order. Includes notes on sacred dance."@en ;
-        :creator            bdr:CR6361652DFE8F3E5A , bdr:CR958BBD0ECBECFA82 ;
+        :creator            bdr:CR3C68E9F9E04FE3D6 , bdr:CR958BBD0ECBECFA82 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1 , bdr:T1166 ;

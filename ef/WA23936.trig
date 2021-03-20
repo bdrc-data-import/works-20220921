@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23936 {
+    bda:LG53D765D632C0524C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG9E5811D390B0F70C
         a                   adm:UpdateData ;
         adm:logDate         "2008-12-08T11:46:48.977Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23936 {
         adm:logWho          bdu:U00026 .
     
     bda:LG9E85DD5145752674
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -46,15 +52,15 @@ bdg:WA23936 {
     bda:WA23936  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23936 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "ef/WA23936.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23936 ;
-        adm:logEntry        bda:LG9E5811D390B0F70C , bda:LG9E85DD5145752674 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG53D765D632C0524C , bda:LG9E5811D390B0F70C , bda:LG9E85DD5145752674 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR53D765D632C0524C
+    bdr:CR425CBCD31327374A
         a                   :AgentAsCreator ;
         :agent              bdr:P786 ;
         :role               bdr:R0ER0019 .
@@ -65,7 +71,7 @@ bdg:WA23936 {
         skos:altLabel       "rje btsun rdo rje 'chan chen po kun spans chos rje'i rnam thar no mtshar dad pa'i spu lon g.yo ba"@bo-alalc97 , "rdo ring pa kun bzang chos kyi nyi ma'i rnam thar/"@bo-x-ewts , "rje btsun kun spangs chos rje'i rnam thar/"@bo-x-ewts ;
         skos:prefLabel      "rje btsun rdo rje 'chang chen po kun spangs chos rje'i rnam thar ngo mtshar dad pa'i spu long g.yo ba/"@bo-x-ewts , "the biography of the sa-skya-pa lam-'bras master, rdo-rin-pa kun-spans chen-po kun-bzan-chos-kyi-ni-ma (1449-1524)"@en-x-mixed ;
         :catalogInfo        "Biography of Sakya Lamdre master, Doringpa Kunpang Chenpo Kunzang Chokyi Nyima (1449-1524)."@en ;
-        :creator            bdr:CR53D765D632C0524C ;
+        :creator            bdr:CR425CBCD31327374A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

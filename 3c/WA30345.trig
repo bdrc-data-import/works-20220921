@@ -17,6 +17,10 @@ bdg:WA30345 {
         adm:logDate         "2007-12-12T16:59:21.695Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00026 .
     
+    bda:LG2588FCEC5E3FDBFC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG5160CFE2D30E5DF2
         a                   adm:UpdateData ;
         adm:logDate         "2007-07-17T13:57:35.961Z"^^xsd:dateTime ;
@@ -41,8 +45,10 @@ bdg:WA30345 {
         adm:logWho          bdu:U00012 .
     
     bda:LGF395E759D2E6C99A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -68,23 +74,23 @@ bdg:WA30345 {
     bda:WA30345  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30345 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "3c/WA30345.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30345 ;
-        adm:logEntry        bda:LG06285A61A1E11D3C , bda:LG5160CFE2D30E5DF2 , bda:LG95CCCB4BACD8C671 , bda:LG9A204DAC60A79FF7 , bda:LGAC47C3AF0247FF1E , bda:LGF395E759D2E6C99A , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG06285A61A1E11D3C , bda:LG2588FCEC5E3FDBFC , bda:LG5160CFE2D30E5DF2 , bda:LG95CCCB4BACD8C671 , bda:LG9A204DAC60A79FF7 , bda:LGAC47C3AF0247FF1E , bda:LGF395E759D2E6C99A , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2588FCEC5E3FDBFC
-        a                   :AgentAsCreator ;
-        :agent              bdr:P2710 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRC339EF18631413F6
+    bdr:CR5FB0B33BA99D0A6C
         a                   :AgentAsCreator ;
         :agent              bdr:P654 ;
         :role               bdr:R0ER0025 .
+    
+    bdr:CRC339EF18631413F6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2710 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW30345  skos:altLabel  "a collection teachings connected with the ritual and practice the rdo rje gro lod revelations yons dge gter ston mi 'gyur rdo rje"@en .
     
@@ -92,7 +98,7 @@ bdg:WA30345 {
         skos:altLabel       "Gro lod rgyab chos phyogs sgrigs :a collection of teachings connected with the ritual and practice of the Rdo rje gro lod revelations of Yoṅs-dge Gter-ston Mi-ʼgyur-rdo-rje /by Mkhan-po Karma-rin-chen-dar-rgyas."@en-x-mixed ;
         skos:prefLabel      "gro lod rgyab chos phyogs sgrigs/"@bo-x-ewts , "a collection teachings connected with the ritual and practice the rdo rje gro lod revelations yons dge gter ston mi 'gyur rdo rje"@en ;
         :catalogInfo        "Teachings connected with the propitiation of Padmasambhava in the form Dorje Drolo. From the revelations of Yonge Mingyur Dorje."@en ;
-        :creator            bdr:CR2588FCEC5E3FDBFC , bdr:CRC339EF18631413F6 ;
+        :creator            bdr:CR5FB0B33BA99D0A6C , bdr:CRC339EF18631413F6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

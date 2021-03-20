@@ -24,8 +24,10 @@ bdg:WA18 {
         adm:logWho          bdu:U00016 .
     
     bda:LG61D490C485BBAE7D
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG8AC9D48F870CC6B9
         a                   adm:UpdateData ;
@@ -42,6 +44,10 @@ bdg:WA18 {
         adm:logDate         "2013-02-06T14:25:17.841Z"^^xsd:dateTime ;
         adm:logMessage      "added print type and soyrce printery"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGE6FD1F62D6D4D5C3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -67,29 +73,29 @@ bdg:WA18 {
     bda:WA18  a             adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA18 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "50/WA18.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA18 ;
-        adm:logEntry        bda:LG0AE4DF660F202E7F , bda:LG60A53D7317722EC6 , bda:LG61D490C485BBAE7D , bda:LG8AC9D48F870CC6B9 , bda:LG8CD254803E368722 , bda:LG90B8E2D38ED35C11 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0AE4DF660F202E7F , bda:LG60A53D7317722EC6 , bda:LG61D490C485BBAE7D , bda:LG8AC9D48F870CC6B9 , bda:LG8CD254803E368722 , bda:LG90B8E2D38ED35C11 , bda:LGE6FD1F62D6D4D5C3 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE6FD1F62D6D4D5C3
-        a                   :AgentAsCreator ;
-        :agent              bdr:P7 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRFCE77427CB451386
+    bdr:CR8D1DC669A0C0650D
         a                   :AgentAsCreator ;
         :agent              bdr:P667 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRFCE77427CB451386
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA18  a             :Work ;
         skos:altLabel       "'dod 'jo bum bzang /"@bo-x-ewts ;
         skos:prefLabel      "sgrub thabs 'dod 'jo'i 'bum bzang /"@bo-x-ewts ;
         :catalogInfo        "Collection of Nyingma sadhana practice texts compiled by Terdak Lingpa Gyurme Dorje and his brother Minling Lochen Dharmashri."@en ;
-        :creator            bdr:CRE6FD1F62D6D4D5C3 , bdr:CRFCE77427CB451386 ;
+        :creator            bdr:CR8D1DC669A0C0650D , bdr:CRFCE77427CB451386 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1 ;

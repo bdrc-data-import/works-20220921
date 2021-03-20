@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA15436 {
+    bda:LG3B1A8AD96A12864C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG51B34F477EA9511B
         a                   adm:UpdateData ;
         adm:logDate         "2012-05-11T10:50:36.399Z"^^xsd:dateTime ;
@@ -31,8 +35,10 @@ bdg:WA15436 {
         adm:logWho          bdu:U00013 .
     
     bda:LGE3EA38C24874E360
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -44,15 +50,15 @@ bdg:WA15436 {
     bda:WA15436  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA15436 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "b1/WA15436.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA15436 ;
-        adm:logEntry        bda:LG51B34F477EA9511B , bda:LG53E69F36A82299D7 , bda:LGD060DCA912E18AEF , bda:LGE3EA38C24874E360 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG3B1A8AD96A12864C , bda:LG51B34F477EA9511B , bda:LG53E69F36A82299D7 , bda:LGD060DCA912E18AEF , bda:LGE3EA38C24874E360 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3B1A8AD96A12864C
+    bdr:CR45D2A927EE870A96
         a                   :AgentAsCreator ;
         :agent              bdr:P3458 ;
         :role               bdr:R0ER0019 .
@@ -62,7 +68,7 @@ bdg:WA15436 {
     bdr:WA15436  a          :Work ;
         skos:altLabel       "gsang ba 'dus pa'i stong thun/"@bo-x-ewts , "Gsaṅ ʼdus stoṅ thun :one of the earliest indigenous Tibetan exegeses of the Guhyasamāja /by ʼGos Lo-tsā-ba Khug-pa Lhas-btsas."@en-x-mixed ;
         skos:prefLabel      "gsang 'dus stong thun/"@bo-x-ewts , "one of the earliest indigenous tibetan exegeses of the guhyasamaja"@en-x-mixed ;
-        :creator            bdr:CR3B1A8AD96A12864C ;
+        :creator            bdr:CR45D2A927EE870A96 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:IE1KG11901 , bdr:MW15436 , bdr:MW1KG11901 , bdr:W15436 , bdr:W1KG11901 ;

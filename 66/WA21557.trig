@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21557 {
+    bda:LG33B774F0BC88779E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG397D4D1C4444A6A2
         a                   adm:UpdateData ;
         adm:logDate         "2012-03-15T15:26:12.074Z"^^xsd:dateTime ;
@@ -31,8 +35,10 @@ bdg:WA21557 {
         adm:logWho          bdu:U00013 .
     
     bda:LGF7EA419F635660DF
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -51,15 +57,15 @@ bdg:WA21557 {
     bda:WA21557  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21557 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "66/WA21557.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21557 ;
-        adm:logEntry        bda:LG397D4D1C4444A6A2 , bda:LG479AC12917BB1C0D , bda:LGF0AFD10FFBF63AB0 , bda:LGF7EA419F635660DF , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG33B774F0BC88779E , bda:LG397D4D1C4444A6A2 , bda:LG479AC12917BB1C0D , bda:LGF0AFD10FFBF63AB0 , bda:LGF7EA419F635660DF , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR33B774F0BC88779E
+    bdr:CR447AF2CE7A71D0B5
         a                   :AgentAsCreator ;
         :agent              bdr:P286 ;
         :role               bdr:R0ER0019 .
@@ -69,7 +75,7 @@ bdg:WA21557 {
     bdr:WA21557  a          :Work ;
         skos:prefLabel      "pad+ma dbang chen rta mgrin yang gsang khros pa'i chos skor/"@bo-x-ewts , "pad+ma dban chen rta mgrin yan gsan khros pa'i chos skor : collected liturgico contemplative teachings focussing upon hayagriva"@en ;
         :catalogInfo        "Three volume corpus of the Geluk order for practice of the Guhyasadhana of Hayagriva, a special system of Sera Monastery. Compiled by the Kalka Mongol Damtsig Dorje (1781-1855)."@en ;
-        :creator            bdr:CR33B774F0BC88779E ;
+        :creator            bdr:CR447AF2CE7A71D0B5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T10MS11187 ;

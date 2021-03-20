@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27869 {
+    bda:LG8252C3C4D52BDF2A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG8B8F12259E0BE488
         a                   adm:UpdateData ;
         adm:logDate         "2012-03-14T16:13:02.039Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA27869 {
         adm:logWho          bdu:U00016 .
     
     bda:LG91398FA1CEB39344
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -39,15 +45,15 @@ bdg:WA27869 {
     bda:WA27869  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27869 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "2e/WA27869.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27869 ;
-        adm:logEntry        bda:LG8B8F12259E0BE488 , bda:LG91398FA1CEB39344 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG8252C3C4D52BDF2A , bda:LG8B8F12259E0BE488 , bda:LG91398FA1CEB39344 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8252C3C4D52BDF2A
+    bdr:CR82B1CB85F8920D11
         a                   :AgentAsCreator ;
         :agent              bdr:P7628 ;
         :role               bdr:R0ER0025 .
@@ -57,7 +63,7 @@ bdg:WA27869 {
     bdr:WA27869  a          :Work ;
         skos:prefLabel      "mkha' 'gro snying thig gi chos skor/"@bo-x-ewts , "collected revelations of rdzogs-chen practice"@en ;
         :catalogInfo        "Khandro Nyingtik. Collection of revelations on Dzogchen practice."@en ;
-        :creator            bdr:CR8252C3C4D52BDF2A ;
+        :creator            bdr:CR82B1CB85F8920D11 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T10MS11187 ;

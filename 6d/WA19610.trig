@@ -18,9 +18,15 @@ bdg:WA19610 {
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGCAFBFCF636BA5A4B
+    bda:LG83370F2EA3A73C42
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGCAFBFCF636BA5A4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGF869C83EE41EC238
         a                   adm:UpdateData ;
@@ -31,22 +37,22 @@ bdg:WA19610 {
     bda:WA19610  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19610 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "6d/WA19610.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19610 ;
-        adm:logEntry        bda:LG52BB7C821A15C041 , bda:LGCAFBFCF636BA5A4B , bda:LGF869C83EE41EC238 ;
+        adm:logEntry        bda:LG52BB7C821A15C041 , bda:LG83370F2EA3A73C42 , bda:LGCAFBFCF636BA5A4B , bda:LGF869C83EE41EC238 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR83370F2EA3A73C42
+    bdr:CR0305D26BA8F6A257
         a                   :AgentAsCreator ;
         :agent              bdr:P5951 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA19610  a          :Work ;
         skos:prefLabel      "sdom gsum rab dbye'i 'grel pa chen po/"@bo-x-ewts ;
-        :creator            bdr:CR83370F2EA3A73C42 ;
+        :creator            bdr:CR0305D26BA8F6A257 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

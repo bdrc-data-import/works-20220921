@@ -13,8 +13,10 @@
 
 bdg:WA27519 {
     bda:LG0260976F9B5AC481
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG32519AE994F505F6
         a                   adm:UpdateData ;
@@ -34,18 +36,22 @@ bdg:WA27519 {
         adm:logMessage      "ctc"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGEFF3BA8F1552B346
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:WA27519  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27519 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "fc/WA27519.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27519 ;
-        adm:logEntry        bda:LG0260976F9B5AC481 , bda:LG32519AE994F505F6 , bda:LG91FE01419008AF2F , bda:LGC759CC160E1BED9D ;
+        adm:logEntry        bda:LG0260976F9B5AC481 , bda:LG32519AE994F505F6 , bda:LG91FE01419008AF2F , bda:LGC759CC160E1BED9D , bda:LGEFF3BA8F1552B346 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CREFF3BA8F1552B346
+    bdr:CR8A3CE012A86C6521
         a                   :AgentAsCreator ;
         :agent              bdr:P699 ;
         :role               bdr:R0ER0019 .
@@ -55,7 +61,7 @@ bdg:WA27519 {
     bdr:WA27519  a          :SerialMember , :Work ;
         skos:altLabel       "kun gzigs ma ha pandi ta rje bla ma gzan phan chos kyi snan ba'i gsun thor bu las zal gdams 'bel gtam gyi skor rnams"@bo-alalc97 ;
         skos:prefLabel      "zhal gdams 'bel gtam gyi skor/"@bo-x-ewts , "collected instructions and useful explanations of buddhist philosophical concepts"@en ;
-        :creator            bdr:CREFF3BA8F1552B346 ;
+        :creator            bdr:CR8A3CE012A86C6521 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS10206 ;

@@ -24,9 +24,15 @@ bdg:WA20953 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGC832F8473AA38A61
+    bda:LG7188124944FA625D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGC832F8473AA38A61
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGEB31969B82A021D6
         a                   adm:UpdateData ;
@@ -43,32 +49,32 @@ bdg:WA20953 {
     bda:WA20953  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20953 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "8d/WA20953.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20953 ;
-        adm:logEntry        bda:LG4874E3BF67FD6636 , bda:LG70B0132729BA0569 , bda:LGC832F8473AA38A61 , bda:LGEB31969B82A021D6 , bda:LGF78378DFC917D6DA ;
+        adm:logEntry        bda:LG4874E3BF67FD6636 , bda:LG70B0132729BA0569 , bda:LG7188124944FA625D , bda:LGC832F8473AA38A61 , bda:LGEB31969B82A021D6 , bda:LGF78378DFC917D6DA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7188124944FA625D
-        a                   :AgentAsCreator ;
-        :agent              bdr:P7033 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR9D86D9ECA29D07CD
+    bdr:CR935C1FDD1D4DD5E4
         a                   :AgentAsCreator ;
         :agent              bdr:P264 ;
         :role               bdr:R0ER0016 .
     
+    bdr:CR9D86D9ECA29D07CD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1360 ;
+        :role               bdr:R0ER0016 .
+    
     bdr:CRFADACFC4A00458F1
         a                   :AgentAsCreator ;
-        :agent              bdr:P7034 ;
-        :role               bdr:R0ER0016 .
+        :agent              bdr:P7033 ;
+        :role               bdr:R0ER0019 .
     
     bdr:CRFC038989BBDC4B6F
         a                   :AgentAsCreator ;
-        :agent              bdr:P1360 ;
+        :agent              bdr:P7034 ;
         :role               bdr:R0ER0016 .
     
     bdr:MW20953  skos:altLabel  "explanation of difficult terms occurring in the sde-srid's man nag lhan thabs"@en-x-mixed .
@@ -76,7 +82,7 @@ bdg:WA20953 {
     bdr:WA20953  a          :SerialMember , :Work ;
         skos:altLabel       "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag yon tan rgyud kyi lhan thabs zug rngu'i tsha gdung sel ba'i katpU ra dus min 'chi zhags gcod pa'i ral gri zhes bya ba'i gsang sman gab tshig zhal shes sbyor tshad sogs ma sbas lhug par bshad pa/"@bo-x-ewts , "gces bsdus 'chi med nor bu'i 'phreng ba/"@bo-x-ewts , "zin tig mdzes rgyan bdud rtsi sman mdzod/"@bo-x-ewts ;
         skos:prefLabel      "man ngag lhan thabs kyi lde mig"@bo-x-ewts , "explanation of difficult terms occurring in the sde-srid's man nag lhan thabs"@en-x-mixed ;
-        :creator            bdr:CR7188124944FA625D , bdr:CR9D86D9ECA29D07CD , bdr:CRFADACFC4A00458F1 , bdr:CRFC038989BBDC4B6F ;
+        :creator            bdr:CR935C1FDD1D4DD5E4 , bdr:CR9D86D9ECA29D07CD , bdr:CRFADACFC4A00458F1 , bdr:CRFC038989BBDC4B6F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016202 ;

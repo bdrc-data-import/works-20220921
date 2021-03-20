@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22131 {
+    bda:LG66861E5A6DA6F059
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG97F376EDA70D4823
         a                   adm:UpdateData ;
         adm:logDate         "2013-09-05T12:31:26.958Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA22131 {
         adm:logWho          bdu:U00013 .
     
     bda:LGE4F8B352C2652D77
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGE82AA8F57383071F
         a                   adm:UpdateData ;
@@ -52,15 +58,15 @@ bdg:WA22131 {
     bda:WA22131  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22131 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "31/WA22131.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22131 ;
-        adm:logEntry        bda:LG97F376EDA70D4823 , bda:LGE4F8B352C2652D77 , bda:LGE82AA8F57383071F , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG66861E5A6DA6F059 , bda:LG97F376EDA70D4823 , bda:LGE4F8B352C2652D77 , bda:LGE82AA8F57383071F , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR66861E5A6DA6F059
+    bdr:CR4006AA9D74E03F01
         a                   :AgentAsCreator ;
         :agent              bdr:P8332 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +77,7 @@ bdg:WA22131 {
         skos:altLabel       "spyan ras gzigs kyi sprul pa 'das log byang chub seng+ge'i dmyal snang shar ba las dge sdig gi shan 'byed dang gshin rje chos kyi rgyal po'i 'phrin yig rgyas pa/"@bo-x-ewts , "account of the return from death ('das log) of byan-chub-senge, his visions of hell, and the message from the lord of death to those living to mend their ways"@en-x-mixed ;
         skos:prefLabel      "'das log byang chub seng+ge'i rnam thar/"@bo-x-ewts , "the visions of hell of byan-chub-senge"@en-x-mixed ;
         :catalogInfo        "Autobiographical account of a return from death experience. Manuscript calligraphed in 1960."@en ;
-        :creator            bdr:CR66861E5A6DA6F059 ;
+        :creator            bdr:CR4006AA9D74E03F01 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW22131 , bdr:W22131 ;

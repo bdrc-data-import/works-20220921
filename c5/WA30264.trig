@@ -13,8 +13,10 @@
 
 bdg:WA30264 {
     bda:LG09515CCA34F30535
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG2D4E3947CBDC809F
         a                   adm:UpdateData ;
@@ -39,6 +41,10 @@ bdg:WA30264 {
         adm:logDate         "2013-09-24T10:52:10.501Z"^^xsd:dateTime ;
         adm:logMessage      "added authorship statement and date of writing"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGED3C8C898000AA33
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGFD4CD13C9A292498
         a                   adm:UpdateData ;
@@ -77,20 +83,20 @@ bdg:WA30264 {
     bda:WA30264  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30264 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "c5/WA30264.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30264 ;
-        adm:logEntry        bda:LG09515CCA34F30535 , bda:LG2D4E3947CBDC809F , bda:LG833E36F5BF2C6CC6 , bda:LG9A37C681304090E5 , bda:LGA5AEDBFCF3FC37EE , bda:LGFD4CD13C9A292498 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG09515CCA34F30535 , bda:LG2D4E3947CBDC809F , bda:LG833E36F5BF2C6CC6 , bda:LG9A37C681304090E5 , bda:LGA5AEDBFCF3FC37EE , bda:LGED3C8C898000AA33 , bda:LGFD4CD13C9A292498 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRED3C8C898000AA33
+    bdr:CRB882EBF37E6FCADA
         a                   :AgentAsCreator ;
         :agent              bdr:P10294 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVB882EBF37E6FCADA
+    bdr:EV615C1F4271D73382
         a                   :CompletedEvent ;
         :onOrAbout          "ཐུབ་པའི་དབང་པོ་གཟུགས་སྐུ་ཆོས་ཀྱི་དབྱིངས་སུ་ཐིམ་ནས་ལོ་ཉིས་སྟོང་བཞི་བརྒྱ་དང་སུམ་ཅུ་འདས་ཤིང་ཤམྦྷ་ལར་རིགས་ལྡན་ཆེན་པོ་དཔལ་སྐྱོངས་ཀྱི་ཆོས་སྲིད་བཟུང་ནས་ལོ་ཉེར་གསུམ་འདས་པ་འཕགས་པའི་ཡུལ་དུ་སཱ་དྷཱ་ར་ཎ་ཐུན་མོང་བྱ་བ་ལྕགས་ཕོ་ཁྱིའི་ལོ་ཆུ་སྟོད་ཟླ་བའི་དཀར་ཕྱོགས་ཀྱི་དགའ་བ་དང་པོའི་ཚེས་ལ་སྦྱར་བའོ།།" .
     
@@ -100,11 +106,11 @@ bdg:WA30264 {
         skos:altLabel       "Dbyangs ʼchar ʼgrel pa gzhan phan ngo mtshar brgyan gyi me tog :a treatise on the principles of Tibetan astrology and prognostication /By Pad-dkar-yid-bzhin-dbang-po."@en-x-mixed ;
         skos:prefLabel      "dbyangs 'char 'grel pa gzhan phan ngo mtshar brgyan gyi me tog"@bo-x-ewts , "a treatise on the principles of tibetan astrology and prognostication"@en ;
         :catalogInfo        "Astrological calculations according to the Svarodaya."@en ;
-        :creator            bdr:CRED3C8C898000AA33 ;
+        :creator            bdr:CRB882EBF37E6FCADA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS11225 ;
-        :workEvent          bdr:EVB882EBF37E6FCADA ;
+        :workEvent          bdr:EV615C1F4271D73382 ;
         :workGenre          bdr:T1171 , bdr:T132 , bdr:T203 ;
         :workHasInstance    bdr:MW30264 , bdr:W30264 ;
         :workIsAbout        bdr:WA30265 .

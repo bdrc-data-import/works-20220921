@@ -30,6 +30,12 @@ bdg:WA1KG10288 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGC33FDDBE59BEC2A4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -54,27 +60,27 @@ bdg:WA1KG10288 {
     bda:WA1KG10288  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG10288 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "01/WA1KG10288.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG10288 ;
-        adm:logEntry        bda:LG036698A0FD693588 , bda:LG485ECE43DE40C9AB , bda:LG97025C15AF12435F , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG036698A0FD693588 , bda:LG485ECE43DE40C9AB , bda:LG97025C15AF12435F , bda:LGC33FDDBE59BEC2A4 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR8563CB99C56B1410
         a                   :AgentAsCreator ;
-        :agent              bdr:P2666 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRC33FDDBE59BEC2A4
-        a                   :AgentAsCreator ;
         :agent              bdr:P2236 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRF28C70E0543D650D
+    bdr:CR97856449C6173FB0
         a                   :AgentAsCreator ;
         :agent              bdr:P4578 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CRF28C70E0543D650D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2666 ;
         :role               bdr:R0ER0016 .
     
     bdr:MW1KG10288  skos:altLabel  "'bri-gung bkar-brgyud-pa texts : comprising a collection of rare books on 'bri-gun bkar-brgyud-pa practice"@en-x-mixed .
@@ -82,7 +88,7 @@ bdg:WA1KG10288 {
     bdr:WA1KG10288  a       :Work ;
         skos:prefLabel      "phyag chen lnga ldan d+harma kIrti zhal lung dang chos drug nA ro'i zhal lung /"@bo-x-ewts , "'bri-gung bkar-brgyud-pa texts : comprising a collection of rare books on 'bri-gun bkar-brgyud-pa practice"@en-x-mixed ;
         :catalogInfo        "Anthology of rare texts on Mahamudra according to the Drikung Kagyu order."@en ;
-        :creator            bdr:CR8563CB99C56B1410 , bdr:CRC33FDDBE59BEC2A4 , bdr:CRF28C70E0543D650D ;
+        :creator            bdr:CR8563CB99C56B1410 , bdr:CR97856449C6173FB0 , bdr:CRF28C70E0543D650D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T1478 , bdr:T200 ;

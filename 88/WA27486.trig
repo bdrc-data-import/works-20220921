@@ -18,6 +18,10 @@ bdg:WA27486 {
         adm:logMessage      "added WMDL and WMDL12"@en ;
         adm:logWho          bdu:U00032 .
     
+    bda:LG4A8E19238348DBA0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG5B57602865326E2E
         a                   adm:UpdateData ;
         adm:logDate         "2009-06-18T09:44:43.203Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA27486 {
         adm:logWho          bdu:U00001 .
     
     bda:LG88AAB9DC2ECB4C36
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG909A2FE929632B07
         a                   adm:UpdateData ;
@@ -43,20 +49,20 @@ bdg:WA27486 {
     bda:WA27486  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27486 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "88/WA27486.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27486 ;
-        adm:logEntry        bda:LG428A0443066E9179 , bda:LG5B57602865326E2E , bda:LG88AAB9DC2ECB4C36 , bda:LG909A2FE929632B07 , bda:LGF50EA6B45DDF311E ;
+        adm:logEntry        bda:LG428A0443066E9179 , bda:LG4A8E19238348DBA0 , bda:LG5B57602865326E2E , bda:LG88AAB9DC2ECB4C36 , bda:LG909A2FE929632B07 , bda:LGF50EA6B45DDF311E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4A8E19238348DBA0
+    bdr:CR98ABF38252099997
         a                   :AgentAsCreator ;
         :agent              bdr:P8753 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR98ABF38252099997
+    bdr:CRA209099CA07FED87
         a                   :AgentAsCreator ;
         :agent              bdr:P8754 ;
         :role               bdr:R0ER0016 .
@@ -66,7 +72,7 @@ bdg:WA27486 {
     bdr:WA27486  a          :Work ;
         skos:altLabel       "mkhas dang grub pa'i khyu mchog skyo brag mi 'gyur gyi gsung 'bum nor bu'i phreng ba thos pa rang grol/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_karma mi 'gyur/"@bo-x-ewts , "the collected works of karma-mi-'gyur (1914-1974)"@en ;
-        :creator            bdr:CR4A8E19238348DBA0 , bdr:CR98ABF38252099997 ;
+        :creator            bdr:CR98ABF38252099997 , bdr:CRA209099CA07FED87 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

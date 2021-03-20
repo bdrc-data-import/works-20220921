@@ -19,8 +19,10 @@ bdg:WA30336 {
         adm:logWho          bdu:U00016 .
     
     bda:LG61797689EAB2CFC6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG901EB4218CB31570
         a                   adm:UpdateData ;
@@ -33,6 +35,10 @@ bdg:WA30336 {
         adm:logDate         "2008-12-17T16:24:12.025Z"^^xsd:dateTime ;
         adm:logMessage      "delete previous scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG95F7A83AACD5BC29
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG994BA8C401DDE1C2
         a                   adm:UpdateData ;
@@ -88,32 +94,32 @@ bdg:WA30336 {
     bda:WA30336  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30336 ;
-        adm:facetIndex      17 ;
+        adm:facetIndex      18 ;
         adm:gitPath         "2f/WA30336.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30336 ;
-        adm:logEntry        bda:LG53F7CACE5C12DC82 , bda:LG61797689EAB2CFC6 , bda:LG901EB4218CB31570 , bda:LG95CF333BCF56720A , bda:LG994BA8C401DDE1C2 , bda:LGABA291899F214B8F , bda:LGC2CFFB984FCB3209 , bda:LGDBC9FDE5D3042F76 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG53F7CACE5C12DC82 , bda:LG61797689EAB2CFC6 , bda:LG901EB4218CB31570 , bda:LG95CF333BCF56720A , bda:LG95F7A83AACD5BC29 , bda:LG994BA8C401DDE1C2 , bda:LGABA291899F214B8F , bda:LGC2CFFB984FCB3209 , bda:LGDBC9FDE5D3042F76 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR95F7A83AACD5BC29
-        a                   :AgentAsCreator ;
-        :agent              bdr:P3816 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRB5B6ED82ACC56F34
+    bdr:CR8063278A431641A2
         a                   :AgentAsCreator ;
         :agent              bdr:P10501 ;
         :role               bdr:R0ER0016 .
     
+    bdr:CRB5B6ED82ACC56F34
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10500 ;
+        :role               bdr:R0ER0016 .
+    
     bdr:CRDD8AF69282CE998F
         a                   :AgentAsCreator ;
-        :agent              bdr:P8248 ;
-        :role               bdr:R0ER0016 .
+        :agent              bdr:P3816 ;
+        :role               bdr:R0ER0019 .
     
     bdr:CREC3759113A783474
         a                   :AgentAsCreator ;
-        :agent              bdr:P10500 ;
+        :agent              bdr:P8248 ;
         :role               bdr:R0ER0016 .
     
     bdr:MW30336  skos:altLabel  "commentaries on the guhyagarbha tantra and other rare nyingmapa texts from the library of dudjom rimpoche"@en-x-mixed .
@@ -122,7 +128,7 @@ bdg:WA30336 {
         skos:altLabel       "gsang ba'i snying po de kho na nyid nges pa'i rgyud kyi 'grel bshad rgyud don gsal bar byed pa'i sgron me yid bzhin nor bu/"@bo-x-ewts , "gsang bdag dgongs rgyan gyi bsdus don sa bcad/"@bo-x-ewts , "theg pa chen po'i tshul la 'jug pa/"@bo-x-ewts , "Commentaries on the Guhyagarbha tantra and other rare Nyingmapa texts from the library of Dudjom Rimpoche."@en-x-mixed ;
         skos:prefLabel      "gsang 'grel spar khab/"@bo-x-ewts , "commentaries on the guhyagarbha tantra and other rare nyingmapa texts from the library of dudjom rimpoche"@en-x-mixed ;
         :catalogInfo        "Commentaries on the chief Nyingma tantra of the Mahayoga class."@en ;
-        :creator            bdr:CR95F7A83AACD5BC29 , bdr:CRB5B6ED82ACC56F34 , bdr:CRDD8AF69282CE998F , bdr:CREC3759113A783474 ;
+        :creator            bdr:CR8063278A431641A2 , bdr:CRB5B6ED82ACC56F34 , bdr:CRDD8AF69282CE998F , bdr:CREC3759113A783474 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

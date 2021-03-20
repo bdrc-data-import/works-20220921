@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA10110 {
+    bda:LG08550DBB027CB7A2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG1FBE4474D209EBC3
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-05-27T10:48:11.941Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA10110 {
         adm:logWho          bdu:U00013 .
     
     bda:LG300374D04DF561E7
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG466538B3A5B9E2AA
         a                   adm:UpdateData ;
@@ -58,20 +64,20 @@ bdg:WA10110 {
     bda:WA10110  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA10110 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "31/WA10110.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA10110 ;
-        adm:logEntry        bda:LG1FBE4474D209EBC3 , bda:LG291EE40F414B0216 , bda:LG300374D04DF561E7 , bda:LG466538B3A5B9E2AA , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG08550DBB027CB7A2 , bda:LG1FBE4474D209EBC3 , bda:LG291EE40F414B0216 , bda:LG300374D04DF561E7 , bda:LG466538B3A5B9E2AA , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR08550DBB027CB7A2
+    bdr:CR815E38CE88F12FE6
         a                   :AgentAsCreator ;
         :agent              bdr:P724 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR815E38CE88F12FE6
+    bdr:CRE15BC182C6DAE1F7
         a                   :AgentAsCreator ;
         :agent              bdr:P1014 ;
         :role               bdr:R0ER0016 .
@@ -82,7 +88,7 @@ bdg:WA10110 {
         skos:altLabel       "gzhan phan bslab bya'i rims pa mi 'gyur snying gi bdud rtsi/"@bo-x-ewts , "thugs dam nar ma nang gi nyams bzhes kyi yig chung gabs pa snying gi rgya can gyi u pa de sha"@bo-x-ewts , "Instructions on Nyingmapa contemplative practice /by ʼOd-gsal-rin-chen-sñiṅ-po Padma-las-ʼbrel rtsal [i.e. Ṅag-dbaṅ-dpal-bzaṅ] and Rdo-dmar Źabs-druṅ Mi-ʼgyur-rdo-rje."@en-x-mixed ;
         skos:prefLabel      "nar ma nang gi nyams bzhes kyi yig chung sogs/"@bo-x-ewts , "instructions on nyingmapa contemplative practice"@en ;
         :catalogInfo        "Instructions on Nyingmapa contemplative practice."@en ;
-        :creator            bdr:CR08550DBB027CB7A2 , bdr:CR815E38CE88F12FE6 ;
+        :creator            bdr:CR815E38CE88F12FE6 , bdr:CRE15BC182C6DAE1F7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW10110 , bdr:W10110 ;

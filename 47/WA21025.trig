@@ -18,6 +18,10 @@ bdg:WA21025 {
         adm:logMessage      "completed"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG39A5696D70632F0E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG880B1004534A2073
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-05-18T11:44:52.558Z"^^xsd:dateTime ;
@@ -31,8 +35,10 @@ bdg:WA21025 {
         adm:logWho          bdu:U00013 .
     
     bda:LGC58D08CB0953F667
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -51,15 +57,15 @@ bdg:WA21025 {
     bda:WA21025  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21025 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "47/WA21025.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21025 ;
-        adm:logEntry        bda:LG08201A514E3E040B , bda:LG880B1004534A2073 , bda:LGBECB05D1BC17EA9E , bda:LGC58D08CB0953F667 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG08201A514E3E040B , bda:LG39A5696D70632F0E , bda:LG880B1004534A2073 , bda:LGBECB05D1BC17EA9E , bda:LGC58D08CB0953F667 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR39A5696D70632F0E
+    bdr:CR556775AA13E4BF8B
         a                   :AgentAsCreator ;
         :agent              bdr:P2724 ;
         :role               bdr:R0ER0019 .
@@ -69,7 +75,7 @@ bdg:WA21025 {
     bdr:WA21025  a          :Work ;
         skos:prefLabel      "thob yig zin bris su bkod pa yid bzhin nor bu'i gter mdzod/"@bo-x-ewts , "a list of teachings received with transmission lineages of a lama of the rdo-dmar tradition"@en-x-mixed ;
         :catalogInfo        "Record of teachings received with transmission lineages of the 18th century Nyingma master Yangchuk Dorje of the Domar (rdo dmar) order."@en ;
-        :creator            bdr:CR39A5696D70632F0E ;
+        :creator            bdr:CR556775AA13E4BF8B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T192 ;

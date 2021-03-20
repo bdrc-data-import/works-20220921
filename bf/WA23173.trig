@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23173 {
+    bda:LG04342A573BDCEBB3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG1CDB9A81490BCCB1
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-15T11:48:35.668Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23173 {
         adm:logWho          bdu:U00013 .
     
     bda:LGDAF75F8E254F5BB3
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGE11ACC81FCE0916C
         a                   adm:UpdateData ;
@@ -51,15 +57,15 @@ bdg:WA23173 {
     bda:WA23173  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23173 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "bf/WA23173.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23173 ;
-        adm:logEntry        bda:LG1CDB9A81490BCCB1 , bda:LGDAF75F8E254F5BB3 , bda:LGE11ACC81FCE0916C , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG04342A573BDCEBB3 , bda:LG1CDB9A81490BCCB1 , bda:LGDAF75F8E254F5BB3 , bda:LGE11ACC81FCE0916C , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR04342A573BDCEBB3
+    bdr:CR2E601E4A1183564E
         a                   :AgentAsCreator ;
         :agent              bdr:P7636 ;
         :role               bdr:R0ER0019 .
@@ -70,7 +76,7 @@ bdg:WA23173 {
         skos:altLabel       "khri pa dkon mchog don grub chos dbang gi gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_dkon mchog don grub chos dbang /"@bo-x-ewts , "the collected works (gsun 'bum) of nin-rdzon khri-pa dkon-mchog-don-grub-chos-dban"@en-x-mixed ;
         :catalogInfo        "Collected Works by Drikung Kagyu master Nyinzong Tripa Konchok Dondrub Chowang."@en ;
-        :creator            bdr:CR04342A573BDCEBB3 ;
+        :creator            bdr:CR2E601E4A1183564E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

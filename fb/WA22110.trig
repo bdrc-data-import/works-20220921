@@ -13,14 +13,20 @@
 
 bdg:WA22110 {
     bda:LG15B1BBBBF3A0EB86
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG1C47387818F2F950
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-31T12:13:22.457Z"^^xsd:dateTime ;
         adm:logMessage      "added note"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG20701D0EEC63FC63
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG3FC4883B9B7C84F5
         a                   adm:UpdateData ;
@@ -61,23 +67,23 @@ bdg:WA22110 {
     bda:WA22110  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22110 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "fb/WA22110.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22110 ;
-        adm:logEntry        bda:LG15B1BBBBF3A0EB86 , bda:LG1C47387818F2F950 , bda:LG3FC4883B9B7C84F5 , bda:LG6BD731D9DAE2B407 , bda:LGCE36DEDA61BE6C25 , bda:LGDBB0BEB881308EF4 , bda:LGE7B5B79B5B5ADDCB , bda:LGF673A3C492B9C4D1 ;
+        adm:logEntry        bda:LG15B1BBBBF3A0EB86 , bda:LG1C47387818F2F950 , bda:LG20701D0EEC63FC63 , bda:LG3FC4883B9B7C84F5 , bda:LG6BD731D9DAE2B407 , bda:LGCE36DEDA61BE6C25 , bda:LGDBB0BEB881308EF4 , bda:LGE7B5B79B5B5ADDCB , bda:LGF673A3C492B9C4D1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG15910 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR20701D0EEC63FC63
+    bdr:CR5C6D13A1F83A828B
         a                   :AgentAsCreator ;
         :agent              bdr:P65 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA22110  a          :SerialMember , :Work ;
         skos:prefLabel      "gsung 'bum/_rgyal tshab rje/"@bo-x-ewts ;
-        :creator            bdr:CR20701D0EEC63FC63 ;
+        :creator            bdr:CR5C6D13A1F83A828B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS11818 ;

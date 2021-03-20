@@ -19,8 +19,10 @@ bdg:WA19466 {
         adm:logWho          bdu:U00016 .
     
     bda:LG4B8212211BD2AACA
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG7FC45A37F4022C68
         a                   adm:ScanRequestCreation ;
@@ -28,28 +30,32 @@ bdg:WA19466 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGF53A1E5352708DF6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:WA19466  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19466 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "c8/WA19466.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19466 ;
-        adm:logEntry        bda:LG14CAF6ABE38D046D , bda:LG4B8212211BD2AACA , bda:LG7FC45A37F4022C68 ;
+        adm:logEntry        bda:LG14CAF6ABE38D046D , bda:LG4B8212211BD2AACA , bda:LG7FC45A37F4022C68 , bda:LGF53A1E5352708DF6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR75F234294B4062BF
         a                   :AgentAsCreator ;
+        :agent              bdr:P1KG8854 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR97F10D1C44A1067C
+        a                   :AgentAsCreator ;
         :agent              bdr:P8205 ;
         :role               bdr:R0ER0026 .
     
     bdr:CRC742F4D17808179B
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1KG8854 ;
-        :role               bdr:R0ER0018 .
-    
-    bdr:CRF53A1E5352708DF6
         a                   :AgentAsCreator ;
         :agent              bdr:P8209 ;
         :role               bdr:R0ER0018 .
@@ -58,7 +64,7 @@ bdg:WA19466 {
         skos:altLabel       "'phags pa gser 'od dam pa mdo sde'i dbang po'i rgyal po zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts ;
         skos:prefLabel      "gser 'od dam pa/"@bo-x-ewts ;
         :catalogInfo        "The Golden Light Sutra, Mahayana Buddhist canonical text that focuses on the confession of faults."@en ;
-        :creator            bdr:CR75F234294B4062BF , bdr:CRC742F4D17808179B , bdr:CRF53A1E5352708DF6 ;
+        :creator            bdr:CR75F234294B4062BF , bdr:CR97F10D1C44A1067C , bdr:CRC742F4D17808179B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW19466 , bdr:MW1NLM471 , bdr:MW1NLM935 , bdr:MW3CN2385 , bdr:MW4PD975_944DDE , bdr:MW4PD975_F1F655 , bdr:W19466 , bdr:W1NLM471 , bdr:W1NLM935 , bdr:W3CN2385 ;

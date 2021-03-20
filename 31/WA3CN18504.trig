@@ -17,6 +17,12 @@ bdg:WA3CN18504 {
         adm:logDate         "2019-05-26T13:53:41.325Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG4D17C47773AF3E7B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T13:03:36.121Z"^^xsd:dateTime ;
+        adm:logMessage      "added T#"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG52B3DFD6A549BCC9
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -49,15 +55,15 @@ bdg:WA3CN18504 {
     bda:WA3CN18504  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN18504 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "31/WA3CN18504.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN18504 ;
-        adm:logEntry        bda:LG466ABF3ECC32A13E , bda:LG52B3DFD6A549BCC9 , bda:LG6B1B5D4E5D96CC53 , bda:LG9D7DE553ADD805C6 , bda:LGF43C44B77D6C9EC3 , bda:LGFB0C32B4E740867D ;
+        adm:logEntry        bda:LG466ABF3ECC32A13E , bda:LG4D17C47773AF3E7B , bda:LG52B3DFD6A549BCC9 , bda:LG6B1B5D4E5D96CC53 , bda:LG9D7DE553ADD805C6 , bda:LGF43C44B77D6C9EC3 , bda:LGFB0C32B4E740867D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4D17C47773AF3E7B
+    bdr:CR33FB189277B5258A
         a                   :AgentAsCreator ;
         :agent              bdr:P3CN2946 ;
         :role               bdr:R0ER0019 .
@@ -66,9 +72,10 @@ bdg:WA3CN18504 {
         skos:altLabel       "dpal ldan bla ma dam pa chos legs mtshan can gyi rnam thar yon tan 'brug sgra/"@bo-x-ewts , "grol lam gsal bar byed pa'i snying gtam rin po che'i phreng ba lta sgom spyod 'bras skabs so so'i rnam gzhag dang bcas pa/"@bo-x-ewts ;
         skos:prefLabel      "bla ma dam pa chos legs kyi rnam thar dang grol lam gsal byed snying gtam rin chen phreng ba/"@bo-x-ewts ;
         :catalogInfo        "Collected Works of mahamudra lineage master Choylek (15th cent.)."@en ;
-        :creator            bdr:CR4D17C47773AF3E7B ;
+        :creator            bdr:CR33FB189277B5258A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 , bdr:T3 ;
-        :workHasInstance    bdr:MW3CN18504 , bdr:W3CN18504 .
+        :workHasInstance    bdr:MW3CN18504 , bdr:W3CN18504 ;
+        :workIsAbout        bdr:P3CN2946 .
 }

@@ -19,14 +19,20 @@ bdg:WA10298 {
         adm:logWho          bdu:U00013 .
     
     bda:LG2276104ABCC454ED
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG5974ED6704326D9C
         a                   adm:UpdateData ;
         adm:logDate         "2015-02-05T16:38:57.578Z"^^xsd:dateTime ;
         adm:logMessage      "changed language"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGF281BF12C12B812D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -45,20 +51,20 @@ bdg:WA10298 {
     bda:WA10298  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA10298 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "b9/WA10298.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA10298 ;
-        adm:logEntry        bda:LG0E29A4ABA851DEFE , bda:LG2276104ABCC454ED , bda:LG5974ED6704326D9C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0E29A4ABA851DEFE , bda:LG2276104ABCC454ED , bda:LG5974ED6704326D9C , bda:LGF281BF12C12B812D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF281BF12C12B812D
+    bdr:CR65EBAE3C498345FE
         a                   :AgentAsCreator ;
         :agent              bdr:P787 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV65EBAE3C498345FE
+    bdr:EVE9B9CFF72A4137DE
         a                   :CompletedEvent ;
         :onYear             "1629"^^xsd:gYear .
     
@@ -66,10 +72,10 @@ bdg:WA10298 {
         skos:altLabel       "bod kyi mkhas pa snga phyi dag gi grub mtha'i shan 'byed mtha' dpyod dan bcas pa'i 'bel ba'i gtam skyes dpyod ldan mkhas pa lus rgyan rin chen mdzes pa'i phra tshom bkod pa/"@bo-x-ewts ;
         skos:prefLabel      "pod chen drug gi 'bel gtam/"@bo-x-ewts ;
         :catalogInfo        "Survey of the Indian philosophical positions (siddhanta) and major Buddhist subjects taught in Tibet by Tibetan masters. Written by the great Sakyapa master Ngagwang Chodrag (1572-1651)."@en ;
-        :creator            bdr:CRF281BF12C12B812D ;
+        :creator            bdr:CR65EBAE3C498345FE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV65EBAE3C498345FE ;
+        :workEvent          bdr:EVE9B9CFF72A4137DE ;
         :workHasInstance    bdr:MW10298 , bdr:MW10305_4203BA , bdr:W10298 ;
         :workIsAbout        bdr:T770 .
 }

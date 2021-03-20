@@ -43,6 +43,12 @@ bdg:WA00KG02530 {
         adm:logDate         "2008-03-04T15:15:02.793Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG8A52DEDD8942FFCF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T16:52:24.987Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and lang encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGAC9335544A999A5F
         a                   adm:UpdateData ;
         adm:logDate         "2008-07-14T12:53:59.207Z"^^xsd:dateTime ;
@@ -100,18 +106,20 @@ bdg:WA00KG02530 {
     bda:WA00KG02530  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG02530 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "d4/WA00KG02530.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG02530 ;
-        adm:logEntry        bda:LG0C83FD57C22BBD3C , bda:LG49E5E70C023586C7 , bda:LG6226CB3FC54AAA16 , bda:LG6763C17ABA16A143 , bda:LG7A48C5019FEEF722 , bda:LG8598DBF78FF31546 , bda:LGAC9335544A999A5F , bda:LGAEDE05ABC57F05A3 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0C83FD57C22BBD3C , bda:LG49E5E70C023586C7 , bda:LG6226CB3FC54AAA16 , bda:LG6763C17ABA16A143 , bda:LG7A48C5019FEEF722 , bda:LG8598DBF78FF31546 , bda:LG8A52DEDD8942FFCF , bda:LGAC9335544A999A5F , bda:LGAEDE05ABC57F05A3 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:MW00KG02530  skos:altLabel  "雅隆藏医"@zh-hans .
+    
     bdr:WA00KG02530  a      :Work ;
         skos:altLabel       "bod ljongs lho kha sa khul gyi bod sman ched rtsom phyogs bsgrigs/"@bo-x-ewts ;
-        skos:prefLabel      "yar klungs gso rig"@bo-x-ewts ;
-        :catalogInfo        "Collection of articles on Tibetan medicine and practice."@en ;
+        skos:prefLabel      "yar klungs gso rig"@bo-x-ewts , "雅隆藏医"@zh-hans ;
+        :catalogInfo        "Collection of contributed articles on diverse writings on traditional Tibetan medicine and practice from Lhokha prefecture"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;

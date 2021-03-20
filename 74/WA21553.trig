@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21553 {
+    bda:LG6D2E5EC3BD1F3FB9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG6F486B830043D901
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-11T10:46:40.034Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA21553 {
         adm:logWho          bdu:U00013 .
     
     bda:LGC5832906FADF970C
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -39,15 +45,15 @@ bdg:WA21553 {
     bda:WA21553  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21553 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "74/WA21553.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21553 ;
-        adm:logEntry        bda:LG6F486B830043D901 , bda:LGC5832906FADF970C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG6D2E5EC3BD1F3FB9 , bda:LG6F486B830043D901 , bda:LGC5832906FADF970C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6D2E5EC3BD1F3FB9
+    bdr:CR8D171AD52895B1C6
         a                   :AgentAsCreator ;
         :agent              bdr:P399 ;
         :role               bdr:R0ER0019 .
@@ -58,7 +64,7 @@ bdg:WA21553 {
         skos:altLabel       "mgon po phyag bzhi pa'i gtor bzlog"@bo-x-ewts ;
         skos:prefLabel      "gtor bzlog bya mgo ma'i las 'grigs bstan bsrungs mtshon cha/"@bo-x-ewts , "gtor bzlog bya mgo ma'i las 'grigs bstan bsruns mtshon cha : the 'bri gun pa liturgy for the gtor bzlog devoted to the four armed mahakala"@en-x-mixed ;
         :catalogInfo        "Explanation of the performance of the rituals connected with the casting of torma in propitiation of a special Drikung Kargyu form of Mahakala. Set down by Drikung Rigzin Rinchen Puntsok (1509-1557)."@en ;
-        :creator            bdr:CR6D2E5EC3BD1F3FB9 ;
+        :creator            bdr:CR8D171AD52895B1C6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW21553 , bdr:W21553 ;

@@ -19,14 +19,20 @@ bdg:WA19702 {
         adm:logWho          bdu:U00016 .
     
     bda:LGC5DA48E8D0710E36
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGE091D440F480505E
         a                   adm:UpdateData ;
         adm:logDate         "2013-06-19T14:27:14.559Z"^^xsd:dateTime ;
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGEE98213FEF838568
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGF6F322F55D65E77C
         a                   adm:UpdateData ;
@@ -50,15 +56,15 @@ bdg:WA19702 {
     bda:WA19702  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19702 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "71/WA19702.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19702 ;
-        adm:logEntry        bda:LG51A3851A6256F534 , bda:LGC5DA48E8D0710E36 , bda:LGE091D440F480505E , bda:LGF6F322F55D65E77C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG51A3851A6256F534 , bda:LGC5DA48E8D0710E36 , bda:LGE091D440F480505E , bda:LGEE98213FEF838568 , bda:LGF6F322F55D65E77C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CREE98213FEF838568
+    bdr:CRB62F640C1E432E6F
         a                   :AgentAsCreator ;
         :agent              bdr:P6094 ;
         :role               bdr:R0ER0019 .
@@ -66,7 +72,7 @@ bdg:WA19702 {
     bdr:WA19702  a          :Work ;
         skos:prefLabel      "bskal bzang thar pa'i them skas/"@bo-x-ewts ;
         :catalogInfo        "Instructions for meditation on the nature of mind according to Dzogchen methods. Taught by Shabkar Tsokdruk Rangdrol."@en ;
-        :creator            bdr:CREE98213FEF838568 ;
+        :creator            bdr:CRB62F640C1E432E6F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW19702 , bdr:W19702 ;

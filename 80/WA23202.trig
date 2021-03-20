@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23202 {
+    bda:LG5BBA52CED416D07E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGE0BDFC9B6EFA77BA
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-17T09:17:00.428Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23202 {
         adm:logWho          bdu:U00013 .
     
     bda:LGE554A0E60F20AFE3
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -53,16 +59,16 @@ bdg:WA23202 {
     bda:WA23202  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23202 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "80/WA23202.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23202 ;
-        adm:logEntry        bda:LGE0BDFC9B6EFA77BA , bda:LGE554A0E60F20AFE3 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
+        adm:logEntry        bda:LG5BBA52CED416D07E , bda:LGE0BDFC9B6EFA77BA , bda:LGE554A0E60F20AFE3 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA23196 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR5BBA52CED416D07E
+    bdr:CR0C7341D08FEF8866
         a                   :AgentAsCreator ;
         :agent              bdr:P7646 ;
         :role               bdr:R0ER0019 .
@@ -73,7 +79,7 @@ bdg:WA23202 {
         skos:altLabel       "Collected works (gsuṅ ʾbum) of Padma-chos-ʾphel."@en-x-mixed ;
         skos:prefLabel      "gsung 'bum/_pad+ma chos 'phel"@bo-x-ewts , "collected works (gsun 'bum) of padma-chos-'phel"@en-x-mixed ;
         :catalogInfo        "Collected Works by Pema Chopel, meditation master of the Nyingma order living in the southern Tibetan borderlands. Works are chiefly practical instructions for meditators. Some of them are quite earthy."@en ;
-        :creator            bdr:CR5BBA52CED416D07E ;
+        :creator            bdr:CR0C7341D08FEF8866 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

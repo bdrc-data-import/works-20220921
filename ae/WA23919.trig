@@ -13,13 +13,19 @@
 
 bdg:WA23919 {
     bda:LG3C303B5CDB80C647
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG63EAE83E80909F43
         a                   adm:UpdateData ;
         adm:logDate         "2010-10-22T15:15:10.097Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGB559E1CC664CED6A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGCEF53BFBA305F16E
         a                   adm:UpdateData ;
@@ -57,16 +63,16 @@ bdg:WA23919 {
     bda:WA23919  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23919 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "ae/WA23919.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23919 ;
-        adm:logEntry        bda:LG3C303B5CDB80C647 , bda:LG63EAE83E80909F43 , bda:LGCEF53BFBA305F16E , bda:LGF0CBA8BEC6D02A3B , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3C303B5CDB80C647 , bda:LG63EAE83E80909F43 , bda:LGB559E1CC664CED6A , bda:LGCEF53BFBA305F16E , bda:LGF0CBA8BEC6D02A3B , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA23918 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRB559E1CC664CED6A
+    bdr:CR52DF6BD32D24D325
         a                   :AgentAsCreator ;
         :agent              bdr:P2778 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +83,7 @@ bdg:WA23919 {
         skos:altLabel       "grub mchog rgyal po thang stong pa'i zab gter chos mdzod rin po che/"@bo-x-ewts , "ma gcig gsang spyod kyi snyan brgyud/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_thang stong rgyal po/"@bo-x-ewts , "the collected works (gsun 'bum) of thang stong rgyal po"@en ;
         :catalogInfo        "Collected Works by Shangpa Kagyu master Tangton Gyalpo (1361/1365-1480/1486), mahasiddha and iron-bridge builder."@en ;
-        :creator            bdr:CRB559E1CC664CED6A ;
+        :creator            bdr:CR52DF6BD32D24D325 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 , bdr:T448 ;

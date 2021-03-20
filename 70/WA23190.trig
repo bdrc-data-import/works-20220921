@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23190 {
-    bda:LG12D03068E74977CF
+    bda:LG10DB5B0B11B820B0
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG12D03068E74977CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG401825ECCD93765C
         a                   adm:UpdateData ;
@@ -70,20 +76,20 @@ bdg:WA23190 {
     bda:WA23190  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23190 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "70/WA23190.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23190 ;
-        adm:logEntry        bda:LG12D03068E74977CF , bda:LG401825ECCD93765C , bda:LG6AC36735720D1B00 , bda:LG778AFCFFAD72AA97 , bda:LG82C3DC8D26CE43EF , bda:LGB37EB668CD30EE31 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG10DB5B0B11B820B0 , bda:LG12D03068E74977CF , bda:LG401825ECCD93765C , bda:LG6AC36735720D1B00 , bda:LG778AFCFFAD72AA97 , bda:LG82C3DC8D26CE43EF , bda:LGB37EB668CD30EE31 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR10DB5B0B11B820B0
+    bdr:CR7F78F5FD0F9B8039
         a                   :AgentAsCreator ;
         :agent              bdr:P7641 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR7F78F5FD0F9B8039
+    bdr:CRDD774615308DBEEA
         a                   :AgentAsCreator ;
         :agent              bdr:P5011 ;
         :role               bdr:R0ER0019 .
@@ -94,7 +100,7 @@ bdg:WA23190 {
         skos:altLabel       "The Five Bhāvanakrama of Kamalaśīla and Vimalamitra :a collection of texts on the nature and practice of Buddhist contemplative realisation."@en-x-mixed ;
         skos:prefLabel      "sgom rim thog mtha' bar gsum dang rim gyis 'jug pa'i bsgom don sogs/"@bo-x-ewts , "the five bhavanakrama of kamalasila and vimalamitra : a collection of texts on the nature and practice of buddhist contemplative realisation"@en ;
         :catalogInfo        "Five basic treatises on meditation and the Madhyamaka approach by Kamalashila and Vimalamitra. Blockprint edition from Dzongsar. Printers colophon is signed by Dzogchen Rinpoche 05 Tubten Chokyi Dorje (1872-1935)."@en ;
-        :creator            bdr:CR10DB5B0B11B820B0 , bdr:CR7F78F5FD0F9B8039 ;
+        :creator            bdr:CR7F78F5FD0F9B8039 , bdr:CRDD774615308DBEEA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW23190 , bdr:W23190 ;

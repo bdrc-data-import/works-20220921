@@ -25,14 +25,20 @@ bdg:WA29575 {
         adm:logWho          bdu:U00026 .
     
     bda:LG51AB97771901C022
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG92B2BF0783C6EE0A
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-13T16:37:22.658Z"^^xsd:dateTime ;
         adm:logMessage      "CTC5"@en ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LGC2A00118B484C57D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGE5BE7BE2599989C2
         a                   adm:UpdateData ;
@@ -57,23 +63,23 @@ bdg:WA29575 {
     bda:WA29575  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29575 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "15/WA29575.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29575 ;
-        adm:logEntry        bda:LG18F0929EBBD6DF63 , bda:LG47DC128B96819ACB , bda:LG51AB97771901C022 , bda:LG92B2BF0783C6EE0A , bda:LGE5BE7BE2599989C2 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG18F0929EBBD6DF63 , bda:LG47DC128B96819ACB , bda:LG51AB97771901C022 , bda:LG92B2BF0783C6EE0A , bda:LGC2A00118B484C57D , bda:LGE5BE7BE2599989C2 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR794BF6452425CCD6
         a                   :AgentAsCreator ;
-        :agent              bdr:P7529 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRC2A00118B484C57D
-        a                   :AgentAsCreator ;
         :agent              bdr:P1544 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CREB2561C980EE6AA6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7529 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW29575  skos:altLabel  "a work on the creation of buddhist images"@en .
     
@@ -81,7 +87,7 @@ bdg:WA29575 {
         skos:altLabel       "bde bar gshegs pa'i sku gzugs kyi tshad kyi rab tu byed pa yid bzhin nor bu/"@bo-x-ewts , "bzo rig pa'i bstan bcos mdo rgyud gsal ba'i me long /"@bo-x-ewts , "a treatise on the canonical proportions of various icons"@en ;
         skos:prefLabel      "bde gshegs sku gzugs kyi tshad kyi rab tu byed pa/"@bo-x-ewts , "a work on the creation of buddhist images"@en ;
         :catalogInfo        "Iconometric proportions of Tibetan Buddhist images."@en ;
-        :creator            bdr:CR794BF6452425CCD6 , bdr:CRC2A00118B484C57D ;
+        :creator            bdr:CR794BF6452425CCD6 , bdr:CREB2561C980EE6AA6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016202 ;

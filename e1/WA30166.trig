@@ -24,9 +24,15 @@ bdg:WA30166 {
         adm:logMessage      "CTC5"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LG8EFA7C1D07BA3B94
+    bda:LG730DD7998DB85F11
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG8EFA7C1D07BA3B94
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG9847677DA832B350
         a                   adm:UpdateData ;
@@ -58,23 +64,23 @@ bdg:WA30166 {
     bda:WA30166  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30166 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "e1/WA30166.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30166 ;
-        adm:logEntry        bda:LG5F6B741F02DCD674 , bda:LG6524EE63D40D2232 , bda:LG8EFA7C1D07BA3B94 , bda:LG9847677DA832B350 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG5F6B741F02DCD674 , bda:LG6524EE63D40D2232 , bda:LG730DD7998DB85F11 , bda:LG8EFA7C1D07BA3B94 , bda:LG9847677DA832B350 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR3245432062C56AB1
         a                   :AgentAsCreator ;
-        :agent              bdr:P10215 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR730DD7998DB85F11
-        a                   :AgentAsCreator ;
         :agent              bdr:P1635 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR86A2ADD52135DDBC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10215 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW30166  skos:altLabel  "a continuation of the autobiograpy of sel-dkar bka'-'gyur bla ma"@en-x-mixed .
     
@@ -82,7 +88,7 @@ bdg:WA30166 {
         skos:altLabel       "la stod sel dkar rdzong 'og ding ri ba chos kyi rgyal mtshan nas rgyal ba'i gsung rab zab mo par bskrun zhus pa'i dkar chag dad ldan thar lam 'dren pa'i shing rta/"@bo-x-ewts , "an account of the career of a tibetan master block carver din-ri-ba chos-kyi-rgyal-mtshan"@en-x-mixed , "Dge-sloṅ Ṅag-dbaṅ-blo-bzaṅ-bstan-ʼdzin-tshul-khrims-rgyal-mtshan gyi spyod tshul draṅ por brjod pa myoṅ snaṅ ʼkhrul paʼi zlos gar gyi kha skoṅ :a continuation of the autobiography of Śel-dkar Bkaʼ-ʼgyur Bla-ma /edited by Chu-bzaṅ Sprul-sku Blo-bzaṅ-saṅs-rgyas-bstan-paʼi-sgron-me. Together with La-stod Śel-dkar Rdzoṅ-ʼog Diṅ-ri-ba Chos-kyi-rgyal-mtshan nas rgyal baʼi gsuṅ rab zab mo par bskrun zhus paʼi dkar chag dad ldan thar lam ʼdren paʼi śiṅ rta : an account of the career of a Tibetan master block carver Diṅ-ri-ba Chos-kyi-rgyal-mtshan."@en-x-mixed , "last years of sel-dkar bka'-'gyur bla-ma"@en-x-mixed ;
         skos:prefLabel      "dge slong ngag dbang lo bzang tshul khrims gyi spyod tshul drang por brjod pa myong snang 'khrul pa'i zlos gar gyi kha skong /"@bo-x-ewts , "a continuation of the autobiograpy of sel-dkar bka'-'gyur bla ma"@en-x-mixed ;
         :catalogInfo        "Extension to the autobiography of Shelkar Kangyur Lama Ngawang Lobzang Tenzin Tsultrim Gyaltsen (1856-1932). Edited by Chuzang Tullku Lobzang Sanggye Tenpai Dronme. Includes account of the career of a Tibetan master woodblock carver, Dingriwa Chokyi Gyaltsen (b. 1897)."@en ;
-        :creator            bdr:CR3245432062C56AB1 , bdr:CR730DD7998DB85F11 ;
+        :creator            bdr:CR3245432062C56AB1 , bdr:CR86A2ADD52135DDBC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

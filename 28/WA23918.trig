@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23918 {
-    bda:LG2B3DFA81CE217C98
+    bda:LG1313337121B35A1B
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG2B3DFA81CE217C98
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG465A222230AA5AB2
         a                   adm:UpdateData ;
@@ -58,28 +64,28 @@ bdg:WA23918 {
     bda:WA23918  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23918 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "28/WA23918.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23918 ;
-        adm:logEntry        bda:LG2B3DFA81CE217C98 , bda:LG465A222230AA5AB2 , bda:LG7BDB76D64CC59CB0 , bda:LGE2DFF4BE4CC9320D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1313337121B35A1B , bda:LG2B3DFA81CE217C98 , bda:LG465A222230AA5AB2 , bda:LG7BDB76D64CC59CB0 , bda:LGE2DFF4BE4CC9320D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1313337121B35A1B
-        a                   :AgentAsCreator ;
-        :agent              bdr:P2778 ;
-        :role               bdr:R0ER0019 .
-    
     bdr:CR83E021780D27D3CA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7845 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CRA0D606DCF2FBF134
         a                   :AgentAsCreator ;
         :agent              bdr:P7844 ;
         :role               bdr:R0ER0016 .
     
     bdr:CRD851C55DA2AAFD9C
         a                   :AgentAsCreator ;
-        :agent              bdr:P7845 ;
-        :role               bdr:R0ER0016 .
+        :agent              bdr:P2778 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW23918  skos:altLabel  "the collected works (gsun 'bum) of than-ston rgyal-po"@en-x-mixed .
     
@@ -87,7 +93,7 @@ bdg:WA23918 {
         skos:altLabel       "grub chen thang stong rgyal po'i bka' 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_thang stong rgyal po/"@bo-x-ewts , "the collected works (gsun 'bum) of than-ston rgyal-po"@en-x-mixed ;
         :catalogInfo        "Collected Works by Shangpa Kagyu master Tangton Gyalpo (1361/1365-1480/1486), mahasidda and iron-bridge builder."@en ;
-        :creator            bdr:CR1313337121B35A1B , bdr:CR83E021780D27D3CA , bdr:CRD851C55DA2AAFD9C ;
+        :creator            bdr:CR83E021780D27D3CA , bdr:CRA0D606DCF2FBF134 , bdr:CRD851C55DA2AAFD9C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

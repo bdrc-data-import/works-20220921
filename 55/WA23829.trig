@@ -13,8 +13,10 @@
 
 bdg:WA23829 {
     bda:LG1580AA1D12CE21A8
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG382639A9838C0539
         a                   adm:ScanRequestCreation ;
@@ -27,6 +29,10 @@ bdg:WA23829 {
         adm:logDate         "2011-05-11T15:25:39.397Z"^^xsd:dateTime ;
         adm:logMessage      "completed"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG7BBE16812AB16F19
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGC30026FAFC1145A5
         a                   adm:UpdateData ;
@@ -71,15 +77,15 @@ bdg:WA23829 {
     bda:WA23829  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23829 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "55/WA23829.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23829 ;
-        adm:logEntry        bda:LG1580AA1D12CE21A8 , bda:LG382639A9838C0539 , bda:LG547CFAADB38710A1 , bda:LGC30026FAFC1145A5 , bda:LGF3321ABECFF5C67D , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1580AA1D12CE21A8 , bda:LG382639A9838C0539 , bda:LG547CFAADB38710A1 , bda:LG7BBE16812AB16F19 , bda:LGC30026FAFC1145A5 , bda:LGF3321ABECFF5C67D , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7BBE16812AB16F19
+    bdr:CR99E77F9032760D7A
         a                   :AgentAsCreator ;
         :agent              bdr:P470 ;
         :role               bdr:R0ER0019 .
@@ -89,7 +95,7 @@ bdg:WA23829 {
     bdr:WA23829  a          :Work ;
         skos:prefLabel      "thugs rje chen po gsang ba 'dus pa'i chos skor/"@bo-x-ewts , "thugs rje chen po gsan ba 'dus pa'i chos skor : a collection of texts concerned with buddhist practice focussing upon mahakarunika in the form gsang ba 'dus pa"@en-x-mixed ;
         :catalogInfo        "Collection of liturgical texts focusing on the practice of Mahakarunika in the form Guhyasamaja."@en ;
-        :creator            bdr:CR7BBE16812AB16F19 ;
+        :creator            bdr:CR99E77F9032760D7A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

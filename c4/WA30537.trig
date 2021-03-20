@@ -13,8 +13,10 @@
 
 bdg:WA30537 {
     bda:LG4A20A577FEB93A30
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG6C9A272F95E9319B
         a                   adm:UpdateData ;
@@ -32,6 +34,10 @@ bdg:WA30537 {
         a                   adm:UpdateData ;
         adm:logDate         "2007-06-04T11:25:43.211Z"^^xsd:dateTime ;
         adm:logMessage      "image group marked true"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGCA2E394C27C569C5
+        a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:LGCE4548253691BEE6
@@ -83,27 +89,27 @@ bdg:WA30537 {
     bda:WA30537  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30537 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "c4/WA30537.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30537 ;
-        adm:logEntry        bda:LG4A20A577FEB93A30 , bda:LG6C9A272F95E9319B , bda:LG793CCB62DFC20231 , bda:LG8E532ED9A025ECA2 , bda:LGCE4548253691BEE6 , bda:LGD07A462D2A78A61E , bda:LGE696B5ACCDEE68F0 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG4A20A577FEB93A30 , bda:LG6C9A272F95E9319B , bda:LG793CCB62DFC20231 , bda:LG8E532ED9A025ECA2 , bda:LGCA2E394C27C569C5 , bda:LGCE4548253691BEE6 , bda:LGD07A462D2A78A61E , bda:LGE696B5ACCDEE68F0 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR0CBCF57EFBD767AD
         a                   :AgentAsCreator ;
-        :agent              bdr:P10721 ;
+        :agent              bdr:P9315 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRCA2E394C27C569C5
+    bdr:CRD9DF72A16703D823
         a                   :AgentAsCreator ;
-        :agent              bdr:P9315 ;
+        :agent              bdr:P10720 ;
         :role               bdr:R0ER0016 .
     
     bdr:CRE76A87689BA6D080
         a                   :AgentAsCreator ;
-        :agent              bdr:P10720 ;
+        :agent              bdr:P10721 ;
         :role               bdr:R0ER0016 .
     
     bdr:MW30537  skos:altLabel  "three bonpo visionary accounts of hell"@en .
@@ -112,7 +118,7 @@ bdg:WA30537 {
         skos:altLabel       "the contemplative insights of gsen-sprul thugs-rje-ni-ma and the eye-witness accounts of la-phyi sprul-sku and dbu-za rin-chen-sgron-gsal, two who have returned from death"@en-x-mixed , "Three Bonpo visionary accounts of hell :the contemplative insights of Gśen-sprul Thugs-rje-ñi-ma and the eye-witness accounts of La-phyi Sprul-sku and Dbu-za Rin-chen-sgron-gsal, two who has returned from death (ʼdas-log) /compiled and reproduced from various manuscript collections in India by Tenzin Namdak."@en-x-mixed ;
         skos:prefLabel      "bon po'i 'das log skor/"@bo-x-ewts , "three bonpo visionary accounts of hell"@en ;
         :catalogInfo        "Bon accounts of the death experience. Parallel to the rich delok literature."@en ;
-        :creator            bdr:CR0CBCF57EFBD767AD , bdr:CRCA2E394C27C569C5 , bdr:CRE76A87689BA6D080 ;
+        :creator            bdr:CR0CBCF57EFBD767AD , bdr:CRD9DF72A16703D823 , bdr:CRE76A87689BA6D080 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW30537 , bdr:W30537 ;

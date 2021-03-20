@@ -13,8 +13,10 @@
 
 bdg:WA24766 {
     bda:LG3313894CBE5EC488
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG6239B2AA756FDD66
         a                   adm:UpdateData ;
@@ -27,6 +29,10 @@ bdg:WA24766 {
         adm:logDate         "2013-03-07T16:37:39.076Z"^^xsd:dateTime ;
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGA425C7BE55A40BD6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGB20FCE2657BC5262
         a                   adm:UpdateData ;
@@ -57,16 +63,16 @@ bdg:WA24766 {
     bda:WA24766  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA24766 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "e6/WA24766.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA24766 ;
-        adm:logEntry        bda:LG3313894CBE5EC488 , bda:LG6239B2AA756FDD66 , bda:LG7A06EE35192392DB , bda:LGB20FCE2657BC5262 , bda:LGEC76649653A24382 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3313894CBE5EC488 , bda:LG6239B2AA756FDD66 , bda:LG7A06EE35192392DB , bda:LGA425C7BE55A40BD6 , bda:LGB20FCE2657BC5262 , bda:LGEC76649653A24382 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG8898 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRA425C7BE55A40BD6
+    bdr:CR109F1C9E30A979D3
         a                   :AgentAsCreator ;
         :agent              bdr:P7997 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +83,7 @@ bdg:WA24766 {
         skos:altLabel       "g.yag ston sher phyin TI ka"@bo-x-ewts ;
         skos:prefLabel      "g.yag TIk"@bo-x-ewts , "the complete yig cha for the study of the prajnaparamita literature"@en ;
         :catalogInfo        "Syllabus of the Sakya order for the study of Prajnaparamita."@en ;
-        :creator            bdr:CRA425C7BE55A40BD6 ;
+        :creator            bdr:CR109F1C9E30A979D3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

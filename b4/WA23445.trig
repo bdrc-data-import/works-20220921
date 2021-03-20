@@ -19,8 +19,10 @@ bdg:WA23445 {
         adm:logWho          bdu:U00012 .
     
     bda:LG1965C3FE8497D0E6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG42DFCA7C4C653EF9
         a                   adm:UpdateData ;
@@ -45,6 +47,10 @@ bdg:WA23445 {
         adm:logDate         "2016-01-18T14:17:18.467Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGCA6D37277A950690
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -62,16 +68,16 @@ bdg:WA23445 {
     bda:WA23445  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23445 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "b4/WA23445.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23445 ;
-        adm:logEntry        bda:LG02B51BC044CDDC05 , bda:LG1965C3FE8497D0E6 , bda:LG42DFCA7C4C653EF9 , bda:LG54A0E5642EAFF6E5 , bda:LG5EB23E587AD56D47 , bda:LG96B87A8FA0186040 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG02B51BC044CDDC05 , bda:LG1965C3FE8497D0E6 , bda:LG42DFCA7C4C653EF9 , bda:LG54A0E5642EAFF6E5 , bda:LG5EB23E587AD56D47 , bda:LG96B87A8FA0186040 , bda:LGCA6D37277A950690 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA18978 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRCA6D37277A950690
+    bdr:CRAB7FBC8CDCA081F0
         a                   :AgentAsCreator ;
         :agent              bdr:P5340 ;
         :role               bdr:R0ER0025 .
@@ -81,7 +87,7 @@ bdg:WA23445 {
     bdr:WA23445  a          :Work ;
         skos:prefLabel      "bla ma dgongs 'dus/"@bo-x-ewts , "bla ma dgons 'dus : a complete cycle of buddhist practice"@en-x-mixed ;
         :catalogInfo        "Voluminous treasure cycle structured in terms of the Kama triad of Mahayoga, Anuyoga, and Atiyoga Revealed by Sanggye Lingpa (1340-1396). Dilgo Khyentse Rinpoche was reponsible for publication of this rare manuscript from Tsamdrak Monastery in Bhutan. Scanned with the generous support of Master Tam Shek-wing of the Vajrayana Buddhism Associaton."@en ;
-        :creator            bdr:CRCA6D37277A950690 ;
+        :creator            bdr:CRAB7FBC8CDCA081F0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23433 {
+    bda:LG0DE8D37A664C0B59
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG3A33A06EE7AF8BF9
         a                   adm:UpdateData ;
         adm:logDate         "2008-11-14T12:02:45.348Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23433 {
         adm:logWho          bdu:U00001 .
     
     bda:LGA38BF87F85CE8F78
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGB5C43CF682E84E78
         a                   adm:UpdateData ;
@@ -45,15 +51,15 @@ bdg:WA23433 {
     bda:WA23433  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23433 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "03/WA23433.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23433 ;
-        adm:logEntry        bda:LG3A33A06EE7AF8BF9 , bda:LGA38BF87F85CE8F78 , bda:LGB5C43CF682E84E78 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0DE8D37A664C0B59 , bda:LG3A33A06EE7AF8BF9 , bda:LGA38BF87F85CE8F78 , bda:LGB5C43CF682E84E78 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0DE8D37A664C0B59
+    bdr:CRFCDF3A353AEE7AB8
         a                   :AgentAsCreator ;
         :agent              bdr:P5340 ;
         :role               bdr:R0ER0025 .
@@ -64,7 +70,7 @@ bdg:WA23433 {
         skos:altLabel       "ma 'ongs lung bstan bka' rgya ma'i skor/"@bo-x-ewts ;
         skos:prefLabel      "bla ma dgongs pa 'dus pa las ma 'ongs lung bstan bka' rgya ma'i skor/"@bo-x-ewts , "bla ma dgons pa 'dus pa las ma 'ons lun bstan bka' rgya ma'i skor : the collected prophecies from the bla ma dgons 'dus revelations of gter-chen sans-rgyas-glin-pa"@en-x-mixed ;
         :catalogInfo        "Prophecies connected with the Lama Gongdu cycle of revelations by Sanggye Lingpa (1340-1396). Reproduced from a rare manuscript from Namtse Monastery in Sikkim."@en ;
-        :creator            bdr:CR0DE8D37A664C0B59 ;
+        :creator            bdr:CRFCDF3A353AEE7AB8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T33 ;

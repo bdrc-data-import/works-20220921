@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23199 {
-    bda:LG9B4C23E53CFB732A
+    bda:LG5EA042036537A1A3
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG9B4C23E53CFB732A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGEDE17E0B18A81310
         a                   adm:UpdateData ;
@@ -39,15 +45,15 @@ bdg:WA23199 {
     bda:WA23199  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23199 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "31/WA23199.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23199 ;
-        adm:logEntry        bda:LG9B4C23E53CFB732A , bda:LGEDE17E0B18A81310 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG5EA042036537A1A3 , bda:LG9B4C23E53CFB732A , bda:LGEDE17E0B18A81310 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5EA042036537A1A3
+    bdr:CR3331669B32EEA6D3
         a                   :AgentAsCreator ;
         :agent              bdr:P1699 ;
         :role               bdr:R0ER0025 .
@@ -57,7 +63,7 @@ bdg:WA23199 {
     bdr:WA23199  a          :Work ;
         skos:prefLabel      "bla ma bka' brgyad yongs 'dus chos skor/"@bo-x-ewts , "bla ma bka' brgyad yons 'dus chos skor : a selection of rediscovered texts (gter chos)"@en-x-mixed ;
         :catalogInfo        "Revealed teachings concerned with Lama Kagye of Ngari Panchen Pema Wangyal (1497-1542). Reproduced from a rare manuscript from the library of Tulku Tsewang."@en ;
-        :creator            bdr:CR5EA042036537A1A3 ;
+        :creator            bdr:CR3331669B32EEA6D3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

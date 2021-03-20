@@ -37,8 +37,10 @@ bdg:WA19351 {
         adm:logWho          bdu:U00001 .
     
     bda:LGD5588B6B2DD10331
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGEA68672ADA235470
         a                   adm:UpdateData ;
@@ -46,18 +48,22 @@ bdg:WA19351 {
         adm:logMessage      "ctc"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGEB7FB031F715D7EC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:WA19351  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19351 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "ef/WA19351.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19351 ;
-        adm:logEntry        bda:LG08CDA389E31390CF , bda:LG2C16543534095C92 , bda:LG487EFAAD3B0ACC03 , bda:LGAFDBB4FF7046CD13 , bda:LGD5588B6B2DD10331 , bda:LGEA68672ADA235470 ;
+        adm:logEntry        bda:LG08CDA389E31390CF , bda:LG2C16543534095C92 , bda:LG487EFAAD3B0ACC03 , bda:LGAFDBB4FF7046CD13 , bda:LGD5588B6B2DD10331 , bda:LGEA68672ADA235470 , bda:LGEB7FB031F715D7EC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CREB7FB031F715D7EC
+    bdr:CR427DA8DA4A2E9547
         a                   :AgentAsCreator ;
         :agent              bdr:P5632 ;
         :role               bdr:R0ER0019 .
@@ -67,7 +73,7 @@ bdg:WA19351 {
     bdr:WA19351  a          :SerialMember , :Work ;
         skos:altLabel       "bde chen zhing gi smon lam gyi 'grel pa/"@bo-x-ewts , "rnam dag bde chen zhing gi smon lam gyi 'byed 'grel bde chen zhing du bgrod pa'i them skas bzang po/"@bo-x-ewts ;
         skos:prefLabel      "bde chen smon lam gyi 'byed 'grel/"@bo-x-ewts , "a commentary on the rnam dag bde chen zin gi smon lam of karma-chags-med"@en-x-mixed ;
-        :creator            bdr:CREB7FB031F715D7EC ;
+        :creator            bdr:CR427DA8DA4A2E9547 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS10206 ;

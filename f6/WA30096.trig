@@ -24,6 +24,10 @@ bdg:WA30096 {
         adm:logMessage      "reviewd"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG86F5B7A45344A98E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGA0AD8A063B621C9D
         a                   adm:UpdateData ;
         adm:logDate         "2012-06-12T11:24:01.785Z"^^xsd:dateTime ;
@@ -31,8 +35,10 @@ bdg:WA30096 {
         adm:logWho          bdu:U00016 .
     
     bda:LGCC5A6E4C79D68EF2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM320307B99D
         a                   adm:UpdateData ;
@@ -44,15 +50,15 @@ bdg:WA30096 {
     bda:WA30096  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30096 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "f6/WA30096.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30096 ;
-        adm:logEntry        bda:LG70053CA919525B53 , bda:LG82DF94AE0816D6D7 , bda:LGA0AD8A063B621C9D , bda:LGCC5A6E4C79D68EF2 , bda:LGIM320307B99D ;
+        adm:logEntry        bda:LG70053CA919525B53 , bda:LG82DF94AE0816D6D7 , bda:LG86F5B7A45344A98E , bda:LGA0AD8A063B621C9D , bda:LGCC5A6E4C79D68EF2 , bda:LGIM320307B99D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR86F5B7A45344A98E
+    bdr:CR40A85DBB1D9E4812
         a                   :AgentAsCreator ;
         :agent              bdr:P7420 ;
         :role               bdr:R0ER0019 .
@@ -62,7 +68,7 @@ bdg:WA30096 {
     bdr:WA30096  a          :Work ;
         skos:prefLabel      "gter chen 'bar ba'i rdo rje'i chos skor/"@bo-x-ewts , "collected texts of the bde-chen-'bar-ba'i-rdo-rje tradition"@en ;
         :catalogInfo        "gter chen 'bar ba'i rdo rje'i gter chos phyogs bsgrigs/"@bo-x-ewts ;
-        :creator            bdr:CR86F5B7A45344A98E ;
+        :creator            bdr:CR40A85DBB1D9E4812 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW30096 , bdr:W30096 ;

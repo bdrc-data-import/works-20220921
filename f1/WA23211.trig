@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23211 {
-    bda:LGECB1FA30B6A1F57D
+    bda:LG8F00DEABB774592A
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGECB1FA30B6A1F57D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -33,15 +39,15 @@ bdg:WA23211 {
     bda:WA23211  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23211 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "f1/WA23211.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23211 ;
-        adm:logEntry        bda:LGECB1FA30B6A1F57D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG8F00DEABB774592A , bda:LGECB1FA30B6A1F57D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8F00DEABB774592A
+    bdr:CRD47917267D88FF9E
         a                   :AgentAsCreator ;
         :agent              bdr:P6164 ;
         :role               bdr:R0ER0025 .
@@ -51,7 +57,7 @@ bdg:WA23211 {
     bdr:WA23211  a          :SerialMember , :Work ;
         skos:prefLabel      "pha rgyud lta ba klong yangs/"@bo-x-ewts , "pha rgyud lta ba klon yans : a cycle of rediscovered teachings of the rdzogs-chen tradition"@en-x-mixed ;
         :catalogInfo        "Dzogchen teachings revealed by terton Dorje Lingpa (1346-1405), a master of both Buddhist and Bon traditions. Scanning funded through a grant from Master Tam Shek-Wing of the Vajrayana Buddhist Association."@en ;
-        :creator            bdr:CR8F00DEABB774592A ;
+        :creator            bdr:CRD47917267D88FF9E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS23208 ;

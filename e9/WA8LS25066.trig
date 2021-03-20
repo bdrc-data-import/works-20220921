@@ -18,6 +18,12 @@ bdg:WA8LS25066 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG9D7FFACB68F6CAF3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+    
     bda:LGDC7517A4CED11E1B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-09-11T08:51:12.656Z"^^xsd:dateTime ;
@@ -34,34 +40,34 @@ bdg:WA8LS25066 {
     bda:WA8LS25066  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS25066 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "e9/WA8LS25066.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS25066 ;
-        adm:logEntry        bda:LG93D732863760931C , bda:LGDC7517A4CED11E1B , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG93D732863760931C , bda:LG9D7FFACB68F6CAF3 , bda:LGDC7517A4CED11E1B , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1B75613795DF25DA
         a                   :AgentAsCreator ;
-        :agent              bdr:P343 ;
+        :agent              bdr:P3811 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR9D7FFACB68F6CAF3
+    bdr:CR229BDF054F579E40
         a                   :AgentAsCreator ;
-        :agent              bdr:P676 ;
+        :agent              bdr:P343 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRDCB6729957FDFEF5
         a                   :AgentAsCreator ;
-        :agent              bdr:P3811 ;
+        :agent              bdr:P676 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA8LS25066  a       :SerialMember , :Work ;
         skos:prefLabel      "bod rje lha btsan po'i gdung rabs dang / rtogs brjod sogs phyogs bsdus/"@bo-x-ewts ;
         :catalogInfo        "1 rgyal ba'i bstan pa rin po che byang phyogs su 'byung ba'i rtsa lag/ bod rje lha btsan po'i gdung rabs tshigs nyung don gsal yid kyi me long / 2 skya seng bu lnga'i byung ba brjod pa blo ldan yig dbang 'dren byed rmad byung 'phrul gyi shing rta/ 3 dI rghayu rindra dzi na'i byung ba bjrod pa zol med ngag gi rol mo/ 4 yum rgyas pa 'bum gyi glegs bam rnam par spel ba'i phyi mo bskrn pa'i tshul ngo mtshar gtam gyi gling bu/"@en , "Rare Tibetan historical and literary texts from the library of Tsepon W.D. Shakabpa; compiled by T. Tsepal Taikhang."@en ;
-        :creator            bdr:CR1B75613795DF25DA , bdr:CR9D7FFACB68F6CAF3 , bdr:CRDCB6729957FDFEF5 ;
+        :creator            bdr:CR1B75613795DF25DA , bdr:CR229BDF054F579E40 , bdr:CRDCB6729957FDFEF5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS25066 ;

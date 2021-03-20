@@ -19,8 +19,10 @@ bdg:WA635 {
         adm:logWho          bdu:U00032 .
     
     bda:LG1F95007556BBF406
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG3B0CAC068C3C841C
         a                   adm:UpdateData ;
@@ -39,6 +41,10 @@ bdg:WA635 {
         adm:logDate         "2009-10-25T14:23:18.203Z"^^xsd:dateTime ;
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LG865CD1E50485C1B9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGA335B1BFF090859D
         a                   adm:ScanRequestCreation ;
@@ -76,16 +82,16 @@ bdg:WA635 {
     bda:WA635  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA635 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "af/WA635.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA635 ;
-        adm:logEntry        bda:LG173F3FD9EE412013 , bda:LG1F95007556BBF406 , bda:LG3B0CAC068C3C841C , bda:LG552579AE11CEDA66 , bda:LG5D198F92497A38A5 , bda:LGA335B1BFF090859D , bda:LGA67A3D93DE8DF7CB , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG173F3FD9EE412013 , bda:LG1F95007556BBF406 , bda:LG3B0CAC068C3C841C , bda:LG552579AE11CEDA66 , bda:LG5D198F92497A38A5 , bda:LG865CD1E50485C1B9 , bda:LGA335B1BFF090859D , bda:LGA67A3D93DE8DF7CB , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA20510 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR865CD1E50485C1B9
+    bdr:CR6F9863E5090E6A5E
         a                   :AgentAsCreator ;
         :agent              bdr:P64 ;
         :role               bdr:R0ER0019 .
@@ -96,7 +102,7 @@ bdg:WA635 {
         skos:altLabel       "khams gsum chos kyi rgyal po shar rgyal ba tsong kha pa chen po'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_tsong kha pa"@bo-x-ewts , "the collected works (gsung 'bum) of the incomparable lord tsong kha pa blo bzang grags pa"@en ;
         :catalogInfo        "Collected Works by Tsongkhapa Lobzang Drakpa (1357-1419), founder of the Geluk order. Scanned from a set of blockprints at the Lhasa Zho Printery."@en ;
-        :creator            bdr:CR865CD1E50485C1B9 ;
+        :creator            bdr:CR6F9863E5090E6A5E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

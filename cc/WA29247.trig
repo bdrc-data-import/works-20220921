@@ -24,9 +24,15 @@ bdg:WA29247 {
         adm:logMessage      "annotated"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LGA8A041DCA136746D
+    bda:LG833484375303CFA7
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGA8A041DCA136746D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -45,16 +51,16 @@ bdg:WA29247 {
     bda:WA29247  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29247 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "cc/WA29247.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29247 ;
-        adm:logEntry        bda:LG35C02CE4F910CB8E , bda:LG67A6E61A2392BFE2 , bda:LGA8A041DCA136746D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG35C02CE4F910CB8E , bda:LG67A6E61A2392BFE2 , bda:LG833484375303CFA7 , bda:LGA8A041DCA136746D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA00CHZ0103341 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR833484375303CFA7
+    bdr:CR157409FC582405F4
         a                   :AgentAsCreator ;
         :agent              bdr:P1226 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +70,7 @@ bdg:WA29247 {
     bdr:WA29247  a          :SerialMember , :Work ;
         skos:prefLabel      "rgyal rabs gsal ba'i me long /"@bo-x-ewts , "the history of the royal lha dynasty of tibet"@en ;
         :catalogInfo        "History of Tibet during the Imperial Period."@en ;
-        :creator            bdr:CR833484375303CFA7 ;
+        :creator            bdr:CR157409FC582405F4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS10206 ;

@@ -19,8 +19,10 @@ bdg:WA27411 {
         adm:logWho          bdu:U00021 .
     
     bda:LG3D0D0CA35AB513D5
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG5F61C0A9B2B3A5DC
         a                   adm:UpdateData ;
@@ -32,6 +34,10 @@ bdg:WA27411 {
         a                   adm:UpdateData ;
         adm:logDate         "2009-07-14T17:02:31.125Z"^^xsd:dateTime ;
         adm:logMessage      "annotation created"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9E22685DB2B475A1
+        a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:LGB44705448A279806
@@ -77,15 +83,15 @@ bdg:WA27411 {
     bda:WA27411  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27411 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "a6/WA27411.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27411 ;
-        adm:logEntry        bda:LG2C763132226BE770 , bda:LG3D0D0CA35AB513D5 , bda:LG5F61C0A9B2B3A5DC , bda:LG61D490FDB9B254B3 , bda:LGB44705448A279806 , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2C763132226BE770 , bda:LG3D0D0CA35AB513D5 , bda:LG5F61C0A9B2B3A5DC , bda:LG61D490FDB9B254B3 , bda:LG9E22685DB2B475A1 , bda:LGB44705448A279806 , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9E22685DB2B475A1
+    bdr:CREB18A7675CBCCFF2
         a                   :AgentAsCreator ;
         :agent              bdr:P649 ;
         :role               bdr:R0ER0016 .
@@ -95,7 +101,7 @@ bdg:WA27411 {
     bdr:WA27411  a          :Work ;
         skos:prefLabel      "mdos chog nyer mkho phyogs bsdus dgos 'dod kun 'byung /"@bo-x-ewts , "Gto ʾbum :a collection of various gto and mdos rituals from the famed rediscovered teachings of the past."@en ;
         :catalogInfo        "Collection of exorcism rituals practiced in Bhutan. The most recent of these rituals is by Dudjom Jigdral Yeshe Dorje (1904-1988)."@en ;
-        :creator            bdr:CR9E22685DB2B475A1 ;
+        :creator            bdr:CREB18A7675CBCCFF2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW27411 , bdr:MW4CZ294435 , bdr:W27411 , bdr:W4CZ294435 ;

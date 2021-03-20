@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21807 {
+    bda:LG30BAA51FFD60BFEB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG450DAF2FEB89AC63
         a                   adm:UpdateData ;
         adm:logDate         "2009-08-17T15:10:24.845Z"^^xsd:dateTime ;
@@ -41,8 +45,10 @@ bdg:WA21807 {
         adm:logWho          bdu:U00020 .
     
     bda:LG681C703CA3257A7B
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGA2916B63DA8B01C5
         a                   adm:UpdateData ;
@@ -98,15 +104,15 @@ bdg:WA21807 {
     bda:WA21807  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21807 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "43/WA21807.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21807 ;
-        adm:logEntry        bda:LG450DAF2FEB89AC63 , bda:LG517E40498BA0C0DA , bda:LG56F094AC91C91F2B , bda:LG646E76B666CC6ECE , bda:LG651221EFA265D9F3 , bda:LG681C703CA3257A7B , bda:LGA2916B63DA8B01C5 , bda:LGBABC8BDFC60D89EA , bda:LGEC419A4EA5F5221E , bda:LGF163BF1D1CBAAF4A , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG30BAA51FFD60BFEB , bda:LG450DAF2FEB89AC63 , bda:LG517E40498BA0C0DA , bda:LG56F094AC91C91F2B , bda:LG646E76B666CC6ECE , bda:LG651221EFA265D9F3 , bda:LG681C703CA3257A7B , bda:LGA2916B63DA8B01C5 , bda:LGBABC8BDFC60D89EA , bda:LGEC419A4EA5F5221E , bda:LGF163BF1D1CBAAF4A , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR30BAA51FFD60BFEB
+    bdr:CRF8101730DCF42A87
         a                   :AgentAsCreator ;
         :agent              bdr:P258 ;
         :role               bdr:R0ER0019 .
@@ -117,7 +123,7 @@ bdg:WA21807 {
         skos:altLabel       "'jam dbyangs mkhyen brtse'i dbang po bka' 'bum/"@bo-x-ewts , "The collected works (gsuṅ ʾbum) of the great ʾJam-dbyaṅs Mkhyen-brtseʾi-dbaṅ-po."@en-x-mixed ;
         skos:prefLabel      "gsung 'bum/_mkhyen brtse'i dbang po/"@bo-x-ewts , "the collected works (gsun 'bum) of the great 'jam dbyans mkhyen brtse'i dban po"@en ;
         :catalogInfo        "The collected works of Jamyang Khyentse Wangpo (1820-1892). Together with Jamgon Kongtrul and Chogyur Lingpa, he stands as one of the three pillars of the Rime movement. Volumes contain writings of all of the orders of Tibetan Buddhism."@en ;
-        :creator            bdr:CR30BAA51FFD60BFEB ;
+        :creator            bdr:CRF8101730DCF42A87 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

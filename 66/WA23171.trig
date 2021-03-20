@@ -13,14 +13,20 @@
 
 bdg:WA23171 {
     bda:LG2F9632ED1578968E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG4C54A8D8A64A015A
         a                   adm:UpdateData ;
         adm:logDate         "2012-03-26T14:28:57.457Z"^^xsd:dateTime ;
         adm:logMessage      "mtshan byang bcos"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGDBDC4919E0C7BCD1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGE4F937D6A4A86953
         a                   adm:UpdateData ;
@@ -50,15 +56,15 @@ bdg:WA23171 {
     bda:WA23171  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23171 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "66/WA23171.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23171 ;
-        adm:logEntry        bda:LG2F9632ED1578968E , bda:LG4C54A8D8A64A015A , bda:LGE4F937D6A4A86953 , bda:LGEB9CF0A385955D99 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2F9632ED1578968E , bda:LG4C54A8D8A64A015A , bda:LGDBDC4919E0C7BCD1 , bda:LGE4F937D6A4A86953 , bda:LGEB9CF0A385955D99 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDBDC4919E0C7BCD1
+    bdr:CR1E1436CDC764769B
         a                   :AgentAsCreator ;
         :agent              bdr:P7635 ;
         :role               bdr:R0ER0019 .
@@ -69,7 +75,7 @@ bdg:WA23171 {
         skos:altLabel       "rtogs ldan dkon mchog thub bstan bstan pa'i rgyal mtshan gyi gsung thor bu/"@bo-x-ewts ;
         skos:prefLabel      "gsung thor bu/_dkon mchog thub bstan bstan pa'i rgyal mtshan/"@bo-x-ewts , "the collected works (gsun 'bum thor bu) of la-dwags rtogs-ldan rin-po-che dkon-mchog-thub-bstan-bstan-pa'i-rgyal-mtshan"@en-x-mixed ;
         :catalogInfo        "Miscellaneous Writings by master of the Drikung Kagyu order, Tokden Rinpoche of Ladakh, Konchok Tubten Tenpai Gyaltsen."@en ;
-        :creator            bdr:CRDBDC4919E0C7BCD1 ;
+        :creator            bdr:CR1E1436CDC764769B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

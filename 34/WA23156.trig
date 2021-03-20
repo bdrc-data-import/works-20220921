@@ -13,13 +13,19 @@
 
 bdg:WA23156 {
     bda:LG0774238669A73CB5
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG8EED2E65C9DB8D9F
         a                   adm:UpdateData ;
         adm:logDate         "2012-08-17T18:37:58.06Z"^^xsd:dateTime ;
         adm:logMessage      "added 2 WMDL11"@en .
+    
+    bda:LGCFAE1AFB908259EB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -45,15 +51,15 @@ bdg:WA23156 {
     bda:WA23156  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23156 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "34/WA23156.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23156 ;
-        adm:logEntry        bda:LG0774238669A73CB5 , bda:LG8EED2E65C9DB8D9F , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0774238669A73CB5 , bda:LG8EED2E65C9DB8D9F , bda:LGCFAE1AFB908259EB , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCFAE1AFB908259EB
+    bdr:CR80C186FF2BF8A560
         a                   :AgentAsCreator ;
         :agent              bdr:P704 ;
         :role               bdr:R0ER0019 .
@@ -63,7 +69,7 @@ bdg:WA23156 {
     bdr:WA23156  a          :Work ;
         skos:prefLabel      "gsung 'bum/_pad+ma bde chen rgyal po/"@bo-x-ewts , "the collected works (gsun 'bum) of etarAja alias bde ba'i rgyal po"@en-x-mixed ;
         :catalogInfo        "Collected Works by Etaraja or Dewai Gyalpo (1873-1933), an adept who followed the Dudjom Lingpa teachings of the Nyingma order and was responsible for spreading them in the nomadic areas of the western borderlands. There are many legends about this phenomenally realized practitioner of chod."@en ;
-        :creator            bdr:CRCFAE1AFB908259EB ;
+        :creator            bdr:CR80C186FF2BF8A560 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

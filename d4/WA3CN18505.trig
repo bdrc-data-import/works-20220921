@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN18505 {
+    bda:LG36B287ADEAD9D9C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T13:03:37.073Z"^^xsd:dateTime ;
+        adm:logMessage      "added T#"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG6F3F21CAA5DC046E
         a                   adm:UpdateData ;
         adm:logDate         "2019-03-11T12:41:29.348Z"^^xsd:dateTime ;
@@ -51,15 +57,15 @@ bdg:WA3CN18505 {
     bda:WA3CN18505  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN18505 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "d4/WA3CN18505.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN18505 ;
-        adm:logEntry        bda:LG6F3F21CAA5DC046E , bda:LGA7D2906C21E9C5E8 , bda:LGAB51F842F7AC0607 , bda:LGC8AE9ABA5CA3CCAB , bda:LGD398D4CF6A47A688 , bda:LGEA1077DB112ECDA7 ;
+        adm:logEntry        bda:LG36B287ADEAD9D9C9 , bda:LG6F3F21CAA5DC046E , bda:LGA7D2906C21E9C5E8 , bda:LGAB51F842F7AC0607 , bda:LGC8AE9ABA5CA3CCAB , bda:LGD398D4CF6A47A688 , bda:LGEA1077DB112ECDA7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR36B287ADEAD9D9C9
+    bdr:CR43A709439C358C45
         a                   :AgentAsCreator ;
         :agent              bdr:P3CN19940 ;
         :role               bdr:R0ER0019 .
@@ -67,9 +73,10 @@ bdg:WA3CN18505 {
     bdr:WA3CN18505  a       :Work ;
         skos:prefLabel      "gsung 'bum/ chos rje gling pa/"@bo-x-ewts ;
         :catalogInfo        "Collected works of Choje Lingpa (18th cent.)."@en ;
-        :creator            bdr:CR36B287ADEAD9D9C9 ;
+        :creator            bdr:CR43A709439C358C45 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 , bdr:T448 ;
-        :workHasInstance    bdr:MW3CN18505 , bdr:W3CN18505 .
+        :workHasInstance    bdr:MW3CN18505 , bdr:W3CN18505 ;
+        :workIsAbout        bdr:T1082 .
 }

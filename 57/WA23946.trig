@@ -13,8 +13,10 @@
 
 bdg:WA23946 {
     bda:LG089138A0A76B90A7
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG3B26BBCAC6DEBC08
         a                   adm:UpdateData ;
@@ -40,6 +42,10 @@ bdg:WA23946 {
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGD75F1F85F3917953
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -64,15 +70,15 @@ bdg:WA23946 {
     bda:WA23946  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23946 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "57/WA23946.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23946 ;
-        adm:logEntry        bda:LG089138A0A76B90A7 , bda:LG3B26BBCAC6DEBC08 , bda:LG517D88E268BE53CD , bda:LG6CB4B661C63D2863 , bda:LGA61E354707E15F75 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG089138A0A76B90A7 , bda:LG3B26BBCAC6DEBC08 , bda:LG517D88E268BE53CD , bda:LG6CB4B661C63D2863 , bda:LGA61E354707E15F75 , bda:LGD75F1F85F3917953 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD75F1F85F3917953
+    bdr:CR9DD288CD0C706FE6
         a                   :AgentAsCreator ;
         :agent              bdr:P6962 ;
         :role               bdr:R0ER0019 .
@@ -82,7 +88,7 @@ bdg:WA23946 {
     bdr:WA23946  a          :Work ;
         skos:prefLabel      "gsung 'bum/_kun bzang dpal ldan/"@bo-x-ewts , "the collected works (gsun 'bum) of mkhan-po kun bzan-dpal-ldan"@en-x-mixed ;
         :catalogInfo        "Collected Works by renowned Khenpo Kunpal (1862-1943), a Nyingma scholar from Kham. Original woodblocks seem not to have been carved at Dege, but instead at Shechen and Jarto Kyibuk Drubde in southern Tibet."@en ;
-        :creator            bdr:CRD75F1F85F3917953 ;
+        :creator            bdr:CR9DD288CD0C706FE6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

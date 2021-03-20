@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21520 {
+    bda:LG02BD4C7CFE55D0D5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG241FE8A1AF75AA0C
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2008-12-12T10:41:33.511Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA21520 {
         adm:logWho          bdu:U00013 .
     
     bda:LG9AC54D36AC281026
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGB549297D01BD4AF5
         a                   adm:UpdateData ;
@@ -37,11 +43,11 @@ bdg:WA21520 {
     bda:WA21520  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21520 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "bd/WA21520.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21520 ;
-        adm:logEntry        bda:LG241FE8A1AF75AA0C , bda:LG61BA53E6E546E4C9 , bda:LG9AC54D36AC281026 , bda:LGB549297D01BD4AF5 ;
+        adm:logEntry        bda:LG02BD4C7CFE55D0D5 , bda:LG241FE8A1AF75AA0C , bda:LG61BA53E6E546E4C9 , bda:LG9AC54D36AC281026 , bda:LGB549297D01BD4AF5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

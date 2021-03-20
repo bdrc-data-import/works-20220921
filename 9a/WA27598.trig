@@ -19,13 +19,19 @@ bdg:WA27598 {
         adm:logWho          bdu:U00013 .
     
     bda:LG19A2BB183C3A8735
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG49EE474CD8ED135D
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-27T14:41:40.474Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LG6FC50375A110DA37
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGD734E225718E4A44
         a                   adm:UpdateData ;
@@ -36,15 +42,15 @@ bdg:WA27598 {
     bda:WA27598  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27598 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "9a/WA27598.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27598 ;
-        adm:logEntry        bda:LG04CBC95CEE449637 , bda:LG19A2BB183C3A8735 , bda:LG49EE474CD8ED135D , bda:LGD734E225718E4A44 ;
+        adm:logEntry        bda:LG04CBC95CEE449637 , bda:LG19A2BB183C3A8735 , bda:LG49EE474CD8ED135D , bda:LG6FC50375A110DA37 , bda:LGD734E225718E4A44 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6FC50375A110DA37
+    bdr:CR8996E1305B88A62E
         a                   :AgentAsCreator ;
         :agent              bdr:P727 ;
         :role               bdr:R0ER0019 .
@@ -54,7 +60,7 @@ bdg:WA27598 {
     bdr:WA27598  a          :Work ;
         skos:altLabel       "gnas lugs rdzogs pa chen po'i khrid yig yang zab yid bzhin nor bu/"@bo-x-ewts ;
         skos:prefLabel      "rdzogs chen khrid yig yang zab yid bzhin nor bu/"@bo-x-ewts , "an introductory manual to the practice of rnin-ma-pa rdzogs-chen according to the tradition of rtogs-ldan sakya-sri"@en-x-mixed ;
-        :creator            bdr:CR6FC50375A110DA37 ;
+        :creator            bdr:CR8996E1305B88A62E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T200 ;

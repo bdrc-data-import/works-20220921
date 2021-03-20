@@ -18,6 +18,12 @@ bdg:WA3JT13588 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LG088B82F337ABE59D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:52:54.721Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+    
     bda:LGBA4DD63BEDF38650
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-11-17T15:46:19.476Z"^^xsd:dateTime ;
@@ -27,22 +33,22 @@ bdg:WA3JT13588 {
     bda:WA3JT13588  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3JT13588 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "86/WA3JT13588.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3JT13588 ;
-        adm:logEntry        bda:LG0420B49C4EEF7E02 , bda:LGBA4DD63BEDF38650 ;
+        adm:logEntry        bda:LG0420B49C4EEF7E02 , bda:LG088B82F337ABE59D , bda:LGBA4DD63BEDF38650 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR088B82F337ABE59D
+    bdr:CR64B58332C1D2E7CB
         a                   :AgentAsCreator ;
         :agent              bdr:P139 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA3JT13588  a       :Work ;
         skos:prefLabel      "stong nyid kyi rab tu dbye ba khyad par du 'phags pa/"@bo-x-ewts ;
-        :creator            bdr:CR088B82F337ABE59D ;
+        :creator            bdr:CR64B58332C1D2E7CB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW23727_F09673 , bdr:MW3JT13588 , bdr:W3JT13588 ;

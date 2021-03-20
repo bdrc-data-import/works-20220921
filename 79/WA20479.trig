@@ -19,8 +19,10 @@ bdg:WA20479 {
         adm:logWho          bdu:U00001 .
     
     bda:LG82D4558CB5A5E976
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG93AFFE8FC875CE20
         a                   adm:UpdateData ;
@@ -50,6 +52,10 @@ bdg:WA20479 {
         adm:logMessage      "addded print type and source printrey"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGDB8364D46A06D302
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -74,16 +80,16 @@ bdg:WA20479 {
     bda:WA20479  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20479 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "79/WA20479.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20479 ;
-        adm:logEntry        bda:LG6E4CAC8DB65CB3CC , bda:LG82D4558CB5A5E976 , bda:LG93AFFE8FC875CE20 , bda:LG9963C7914BD98B18 , bda:LG9DD8487B5698389B , bda:LGAEAD2979F9C5A242 , bda:LGDAFC31497B951CA6 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG6E4CAC8DB65CB3CC , bda:LG82D4558CB5A5E976 , bda:LG93AFFE8FC875CE20 , bda:LG9963C7914BD98B18 , bda:LG9DD8487B5698389B , bda:LGAEAD2979F9C5A242 , bda:LGDAFC31497B951CA6 , bda:LGDB8364D46A06D302 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG9862 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRDB8364D46A06D302
+    bdr:CRFAAC765447B5D161
         a                   :AgentAsCreator ;
         :agent              bdr:P250 ;
         :role               bdr:R0ER0019 .
@@ -93,7 +99,7 @@ bdg:WA20479 {
     bdr:WA20479  a          :Work ;
         skos:prefLabel      "gsung 'bum/_blo bzang tshul khrims bstan pa'i rgyal mtshan/"@bo-x-ewts , "the collected works (gsun 'bum) of tre-bo khan-gsar blo-bzan-tshul-khrim -bstan-pa'i-rgyal-mtshan"@en-x-mixed ;
         :catalogInfo        "Collected Works by Kangsar Tsultrim Tenpai Gyaltsen (1838-1897), a teacher in Kandze Monastery in Kham."@en ;
-        :creator            bdr:CRDB8364D46A06D302 ;
+        :creator            bdr:CRFAAC765447B5D161 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

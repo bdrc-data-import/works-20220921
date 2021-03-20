@@ -13,14 +13,20 @@
 
 bdg:WA21732 {
     bda:LG13DBAFE01269FF55
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG64A049161793D326
         a                   adm:UpdateData ;
         adm:logDate         "2012-05-08T21:11:56.48Z"^^xsd:dateTime ;
         adm:logMessage      "corrected title"@en ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGCD3E4A70AF67BBEB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGF29D547A0112B55B
         a                   adm:UpdateData ;
@@ -45,15 +51,15 @@ bdg:WA21732 {
     bda:WA21732  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21732 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "fc/WA21732.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21732 ;
-        adm:logEntry        bda:LG13DBAFE01269FF55 , bda:LG64A049161793D326 , bda:LGF29D547A0112B55B , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG13DBAFE01269FF55 , bda:LG64A049161793D326 , bda:LGCD3E4A70AF67BBEB , bda:LGF29D547A0112B55B , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCD3E4A70AF67BBEB
+    bdr:CRB98A5A5E3F7A21E2
         a                   :AgentAsCreator ;
         :agent              bdr:P470 ;
         :role               bdr:R0ER0025 .
@@ -64,7 +70,7 @@ bdg:WA21732 {
         skos:altLabel       "tshe sgrub rdo rje phren ba ; and, tshe sgrub gsan ba 'dus pa : two cycles of rnin-ma-pa buddhist practice used in life prolongation rituals"@en-x-mixed ;
         skos:prefLabel      "tshe sgrub rdo rje phreng ba dang tshe sgrub gsang ba 'dus pa/"@bo-x-ewts , "tshe sgrub rdo rje phreng ba and tshe sgrub gsang ba 'dus pa : two cycles of rnin-ma-pa buddhist practice used in life prolongation rituals"@en-x-mixed ;
         :catalogInfo        "Two cycles of practice focusing on life prolongation from the Nyingma revelations of Ratnalingpa."@en ;
-        :creator            bdr:CRCD3E4A70AF67BBEB ;
+        :creator            bdr:CRB98A5A5E3F7A21E2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS21732 ;

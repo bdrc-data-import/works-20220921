@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27518 {
+    bda:LG26399CEDAFFBD6E3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGB001D365805B21D1
         a                   adm:UpdateData ;
         adm:logDate         "2008-12-08T12:48:46.887Z"^^xsd:dateTime ;
@@ -19,21 +23,23 @@ bdg:WA27518 {
         adm:logWho          bdu:U00026 .
     
     bda:LGF93C8D8348CBB413
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:WA27518  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27518 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "56/WA27518.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27518 ;
-        adm:logEntry        bda:LGB001D365805B21D1 , bda:LGF93C8D8348CBB413 ;
+        adm:logEntry        bda:LG26399CEDAFFBD6E3 , bda:LGB001D365805B21D1 , bda:LGF93C8D8348CBB413 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR26399CEDAFFBD6E3
+    bdr:CR8527BA28AF92FAB7
         a                   :AgentAsCreator ;
         :agent              bdr:P8761 ;
         :role               bdr:R0ER0019 .
@@ -42,7 +48,7 @@ bdg:WA27518 {
     
     bdr:WA27518  a          :Work ;
         skos:prefLabel      "chos kyi rnam dbye mun sel sgron me/"@bo-x-ewts , "a survey of the forms of buddhism and the concepts found in india and tibet"@en-x-mixed ;
-        :creator            bdr:CR26399CEDAFFBD6E3 ;
+        :creator            bdr:CR8527BA28AF92FAB7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW27518 , bdr:W27518 ;

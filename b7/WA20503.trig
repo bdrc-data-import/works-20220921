@@ -18,6 +18,10 @@ bdg:WA20503 {
         adm:logMessage      "edited catalogue info"@en ;
         adm:logWho          bdu:U00081 .
     
+    bda:LG36FA297C55510654
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG4588F908C3A68EDC
         a                   adm:UpdateData ;
         adm:logDate         "2013-02-26T11:55:34.452Z"^^xsd:dateTime ;
@@ -36,8 +40,10 @@ bdg:WA20503 {
         adm:logWho          bdu:U00032 .
     
     bda:LGA6914F214C11FD1B
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGAD9BB5ECE9C15F4C
         a                   adm:UpdateData ;
@@ -69,30 +75,30 @@ bdg:WA20503 {
     bda:WA20503  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20503 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "b7/WA20503.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20503 ;
-        adm:logEntry        bda:LG248FDC0D71238883 , bda:LG4588F908C3A68EDC , bda:LG7C2C71942873177B , bda:LG88F4E85A439EB92B , bda:LGA6914F214C11FD1B , bda:LGAD9BB5ECE9C15F4C , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG248FDC0D71238883 , bda:LG36FA297C55510654 , bda:LG4588F908C3A68EDC , bda:LG7C2C71942873177B , bda:LG88F4E85A439EB92B , bda:LGA6914F214C11FD1B , bda:LGAD9BB5ECE9C15F4C , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR36FA297C55510654
-        a                   :AgentAsCreator ;
-        :agent              bdr:P253 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRC4D20D8E2C00ABAF
+    bdr:CR92406B0E74EDDFB3
         a                   :AgentAsCreator ;
         :agent              bdr:P1954 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRC4D20D8E2C00ABAF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P253 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW20503  skos:altLabel  "collected works (gsun 'bum) of sgo-man mkhan-chen mkhyen-rab-bstan-pa-chos-'phel"@en-x-mixed .
     
     bdr:WA20503  a          :Work ;
         skos:prefLabel      "gsung 'bum/_mkhyen rab bstan pa chos 'phel/"@bo-x-ewts , "collected works (gsun 'bum) of sgo-man mkhan-chen mkhyen-rab-bstan-pa-chos-'phel"@en-x-mixed ;
         :catalogInfo        "Collected Works by Gomang Khyenrab Tenpa Chopel (1840-1907/1908), an important teacher and former abbot of the Yonghegong Temple in Beijing. Scanned from tracings of the Drepung blockprints."@en ;
-        :creator            bdr:CR36FA297C55510654 , bdr:CRC4D20D8E2C00ABAF ;
+        :creator            bdr:CR92406B0E74EDDFB3 , bdr:CRC4D20D8E2C00ABAF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

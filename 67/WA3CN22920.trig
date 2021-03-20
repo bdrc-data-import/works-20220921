@@ -24,6 +24,12 @@ bdg:WA3CN22920 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGBADF945DCEE6A71A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T13:03:37.818Z"^^xsd:dateTime ;
+        adm:logMessage      "added T#"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGE61FCE62A9B01363
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-06-30T21:43:13.954Z"^^xsd:dateTime ;
@@ -33,20 +39,27 @@ bdg:WA3CN22920 {
     bda:WA3CN22920  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN22920 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "67/WA3CN22920.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN22920 ;
-        adm:logEntry        bda:LG86DA51DDB436FED0 , bda:LG99F0F021B6429BC1 , bda:LGE61FCE62A9B01363 ;
+        adm:logEntry        bda:LG86DA51DDB436FED0 , bda:LG99F0F021B6429BC1 , bda:LGBADF945DCEE6A71A , bda:LGE61FCE62A9B01363 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRAEBDB7C84055AF51
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12037 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN22920  a       :Work ;
         skos:altLabel       "mdzod dge nyi ma'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/ mdzod dge nyi ma/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Dzoge Nyima."@en ;
+        :creator            bdr:CRAEBDB7C84055AF51 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW3CN22920 , bdr:W3CN22920 .
+        :workHasInstance    bdr:MW3CN22920 , bdr:W3CN22920 ;
+        :workIsAbout        bdr:T234 , bdr:T819 .
 }

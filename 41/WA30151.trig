@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30151 {
+    bda:LG0EF4077376C01114
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG37F17F02AD65F66B
         a                   adm:UpdateData ;
         adm:logDate         "2011-12-02T16:49:19.59Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA30151 {
         adm:logWho          bdu:U00021 .
     
     bda:LG7A32B7076D678BDC
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG9C253D8BF24B3AC7
         a                   adm:UpdateData ;
@@ -51,6 +57,12 @@ bdg:WA30151 {
         adm:logDate         "2007-12-18T10:46:43.216Z"^^xsd:dateTime ;
         adm:logMessage      "annotated"@en ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LGCF0169783EC18FCD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:58:09.432Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR1LOKESH01"@en ;
+        adm:logWhoStr       "add-works-to-PR1LOKESH01-part2" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -97,15 +109,15 @@ bdg:WA30151 {
     bda:WA30151  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30151 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "41/WA30151.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30151 ;
-        adm:logEntry        bda:LG37F17F02AD65F66B , bda:LG440F0A59D1EE8BE5 , bda:LG7A32B7076D678BDC , bda:LG9C253D8BF24B3AC7 , bda:LGA587E705F5E53800 , bda:LGB826005F50C2486B , bda:LGBE938FD5126EF2F8 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG0EF4077376C01114 , bda:LG37F17F02AD65F66B , bda:LG440F0A59D1EE8BE5 , bda:LG7A32B7076D678BDC , bda:LG9C253D8BF24B3AC7 , bda:LGA587E705F5E53800 , bda:LGB826005F50C2486B , bda:LGBE938FD5126EF2F8 , bda:LGCF0169783EC18FCD , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCF0169783EC18FCD
+    bdr:CRC780A0CDA7B76509
         a                   :AgentAsCreator ;
         :agent              bdr:P5779 ;
         :role               bdr:R0ER0019 .
@@ -116,7 +128,7 @@ bdg:WA30151 {
         skos:altLabel       "Life and works of Jibcundampa I."@en-x-mixed ;
         skos:prefLabel      "khal kha rje btsun dam pa sku phreng rim byon gyi rnam thar/"@bo-x-ewts , "life and works jibcundampa 1"@en ;
         :catalogInfo        "Biographies and select writings by Jetsun Dampa 01 Hutuktu (1635-1723) of Urga, Mongolia."@en ;
-        :creator            bdr:CRCF0169783EC18FCD ;
+        :creator            bdr:CRC780A0CDA7B76509 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00KG09211 ;

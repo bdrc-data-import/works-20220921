@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23846 {
+    bda:LG292F5AF5DE1F6A92
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG2BD30443D67B538B
         a                   adm:UpdateData ;
         adm:logDate         "2008-12-09T15:03:00.392Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23846 {
         adm:logWho          bdu:U00026 .
     
     bda:LG7B9E4EF02DAFE6C1
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGF09AACA4C360D64D
         a                   adm:UpdateData ;
@@ -52,20 +58,20 @@ bdg:WA23846 {
     bda:WA23846  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23846 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "84/WA23846.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23846 ;
-        adm:logEntry        bda:LG2BD30443D67B538B , bda:LG7B9E4EF02DAFE6C1 , bda:LGF09AACA4C360D64D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG292F5AF5DE1F6A92 , bda:LG2BD30443D67B538B , bda:LG7B9E4EF02DAFE6C1 , bda:LGF09AACA4C360D64D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR292F5AF5DE1F6A92
+    bdr:CR0D735A4E205744B2
         a                   :AgentAsCreator ;
         :agent              bdr:P688 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV0D735A4E205744B2
+    bdr:EV8CE0F56CF5D0578B
         a                   :CompletedEvent ;
         :onOrAbout          "རང་ལོ་དྲུག་ཅུ་རྩ་བརྒྱད་སོན་པ་དགེ་བྱེད་ཞེས་པ།ཆུ་སྟག་ནག་ཟླའི་ཚེས་བཅུ་རྗེ་བླ་མ་དམ་པའི་དུས་དྲན་སྐུ་མཆོད་ཀྱི་ཉིན་བཤེས་གཉེན་གྲྭ་སྟོན་དབང་ཕྱུག་འབར་གྱིས་བྱིན་གྱིས་རློབས་པའི་གྲྭ་ནང་སའི་ཐིག་ལེ་གནམ་བསྐོས་ཡང་རྩེའི་སྒོམ་ཁང་དུ་གྲུབ་པར་བགྱིས་པའོ།།" .
     
@@ -75,10 +81,10 @@ bdg:WA23846 {
         skos:altLabel       "rje btsun mi 'gyur dpal sgyi sgron ma'i rnam thar dad pa'i gdun sel : the biography of smin-glin rje-btsun mi-'gyur-dpal-sgron, 1699-1769"@en-x-mixed ;
         skos:prefLabel      "rje btsun mi 'gyur dpal gyi sgron ma'i rnam thar dad pa'i gdung sel/"@bo-x-ewts , "biography of rje-btsun mi-'gyur-dpal-sgron"@en ;
         :catalogInfo        "Biography of a female Nyingma master of the Mindroling tradition, Jetsun Mingyur Peldron (1699-1769)."@en ;
-        :creator            bdr:CR292F5AF5DE1F6A92 ;
+        :creator            bdr:CR0D735A4E205744B2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV0D735A4E205744B2 ;
+        :workEvent          bdr:EV8CE0F56CF5D0578B ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW23846 , bdr:W23846 ;
         :workIsAbout        bdr:P678 , bdr:T1082 .

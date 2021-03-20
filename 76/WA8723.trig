@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8723 {
+    bda:LG647AA314F89600DF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG8847D954DCF43BB2
         a                   adm:UpdateData ;
         adm:logDate         "2011-03-21T15:34:26.214Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA8723 {
         adm:logWho          bdu:U00016 .
     
     bda:LGDC2E8DCD0C95BC4E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
@@ -45,30 +51,30 @@ bdg:WA8723 {
     bda:WA8723  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8723 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "76/WA8723.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8723 ;
-        adm:logEntry        bda:LG8847D954DCF43BB2 , bda:LGAF7A1A09525AC40E , bda:LGDC2E8DCD0C95BC4E , bda:LGIM4BF5F96E12 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG647AA314F89600DF , bda:LG8847D954DCF43BB2 , bda:LGAF7A1A09525AC40E , bda:LGDC2E8DCD0C95BC4E , bda:LGIM4BF5F96E12 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR647AA314F89600DF
+    bdr:CR93E76B744A8C80EA
         a                   :AgentAsCreator ;
         :agent              bdr:P533 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV93E76B744A8C80EA
+    bdr:EV48EEF5440977EACB
         a                   :CompletedEvent ;
         :onYear             "1768"^^xsd:gYear .
     
     bdr:WA8723  a           :Work ;
         skos:altLabel       "grub pa'i dbang phyug lha btsun kun dga' chos kyi rgya mtsho'i rnam par thar pa mdo tsam brjod pa rmad byung yon tan rgya mtsho'i 'jigs zab skal bzang dga' ba bskyed pa'i 'dod 'jo/"@bo-x-ewts ;
         skos:prefLabel      "kun dga' chos kyi rgya mtsho'i rnam thar/"@bo-x-ewts , "Grub paʼi dbaṅ phyug Lha btsun Kun dgaʼ chos kyi rgya mtsohʼi rnam par thar pa mdo tsam brjod pa =the biography of Lha-btsun Kun-dgaʼ-chos-kyi-rgya-mtsho /by Dreʼu-lhas Grub-dbaṅ Kun-dgaʼ-mi-ʼgyur-rdo-rje ; and Rig ʼdzin Rdo rje gsaṅ ba rtsal gyi rtogs pa brjod pa = autobiography of Kun-bzaṅ-ṅes-don-kloṅ-yaṅs (Rdo-rje-gsaṅ-ba-rtsal)."@en-x-mixed ;
-        :creator            bdr:CR647AA314F89600DF ;
+        :creator            bdr:CR93E76B744A8C80EA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV93E76B744A8C80EA ;
+        :workEvent          bdr:EV48EEF5440977EACB ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW8723 , bdr:W8723 ;
         :workIsAbout        bdr:P1013 .

@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23371 {
+    bda:LG159A418177FED385
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG95684C6D321F9340
         a                   adm:UpdateData ;
         adm:logDate         "2012-03-15T15:22:32.68Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23371 {
         adm:logWho          bdu:U00016 .
     
     bda:LGE6FA808D27D67544
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -39,15 +45,15 @@ bdg:WA23371 {
     bda:WA23371  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23371 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "7c/WA23371.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23371 ;
-        adm:logEntry        bda:LG95684C6D321F9340 , bda:LGE6FA808D27D67544 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG159A418177FED385 , bda:LG95684C6D321F9340 , bda:LGE6FA808D27D67544 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR159A418177FED385
+    bdr:CR263633F5EB19AE5C
         a                   :AgentAsCreator ;
         :agent              bdr:P6164 ;
         :role               bdr:R0ER0025 .
@@ -57,7 +63,7 @@ bdg:WA23371 {
     bdr:WA23371  a          :SerialMember , :Work ;
         skos:prefLabel      "rdo rje sems dpa'i chos skor/"@bo-x-ewts , "rdo rje sems dpa'i chos skor : teachings relating to a practice focussing upon vajrasattva"@en ;
         :catalogInfo        "Vajrasattva practices from the revelations of the visionary Dorje Lingpa (1346-1405), a terton of both Buddhist and Bon teachings."@en ;
-        :creator            bdr:CR159A418177FED385 ;
+        :creator            bdr:CR263633F5EB19AE5C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS23208 ;

@@ -18,6 +18,10 @@ bdg:WA17210 {
         adm:logMessage      "added pub info"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG48D55C551B897E18
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG89784C637BF26979
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-06-30T13:00:23.447Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA17210 {
         adm:logWho          bdu:U00016 .
     
     bda:LG8EC1EAAFADB32243
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
@@ -52,25 +58,25 @@ bdg:WA17210 {
     bda:WA17210  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA17210 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "cb/WA17210.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA17210 ;
-        adm:logEntry        bda:LG1BF1A9222A10E943 , bda:LG89784C637BF26979 , bda:LG8EC1EAAFADB32243 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1BF1A9222A10E943 , bda:LG48D55C551B897E18 , bda:LG89784C637BF26979 , bda:LG8EC1EAAFADB32243 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR32D78F0F57296225
+    bdr:CR02CD5A67352B410F
         a                   :AgentAsCreator ;
         :agent              bdr:P4857 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CR48D55C551B897E18
+    bdr:CR32D78F0F57296225
         a                   :AgentAsCreator ;
         :agent              bdr:P219 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV02CD5A67352B410F
+    bdr:EV830E79845289EE15
         a                   :CompletedEvent ;
         :onYear             "1951"^^xsd:gYear .
     
@@ -78,10 +84,10 @@ bdg:WA17210 {
         skos:altLabel       "dbu ma'i zab gnad snying por dril ba'i legs bshad klu sgrub dgongs rgyan/"@bo-x-ewts , "dbu ma klu sgrub dgongs rgyan/"@bo-x-ewts ;
         skos:prefLabel      "klu sgrub dgongs rgyan/"@bo-x-ewts ;
         :catalogInfo        "Treatise reconciling various philosophical tenets on the basis of the Madhyamaka dialectic according to the exegesis of Gendun Chopel."@en ;
-        :creator            bdr:CR32D78F0F57296225 , bdr:CR48D55C551B897E18 ;
+        :creator            bdr:CR02CD5A67352B410F , bdr:CR32D78F0F57296225 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV02CD5A67352B410F ;
+        :workEvent          bdr:EV830E79845289EE15 ;
         :workHasInstance    bdr:MW17210 , bdr:W17210 ;
         :workIsAbout        bdr:T102 , bdr:T233 .
 }

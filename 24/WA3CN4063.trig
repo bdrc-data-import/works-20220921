@@ -30,6 +30,12 @@ bdg:WA3CN4063 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGBEE352D00E4F4B01
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T13:19:34.746Z"^^xsd:dateTime ;
+        adm:logMessage      "added T#"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -40,15 +46,15 @@ bdg:WA3CN4063 {
     bda:WA3CN4063  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN4063 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "24/WA3CN4063.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN4063 ;
-        adm:logEntry        bda:LG1DE195AB6CA71D6F , bda:LG2B8F258C578EE77C , bda:LG8A8BB8C1DA139A2C , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1DE195AB6CA71D6F , bda:LG2B8F258C578EE77C , bda:LG8A8BB8C1DA139A2C , bda:LGBEE352D00E4F4B01 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRBEE352D00E4F4B01
+    bdr:CRF810C82B1DD47F98
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS13400 ;
         :role               bdr:R0ER0019 .
@@ -56,9 +62,10 @@ bdg:WA3CN4063 {
     bdr:WA3CN4063  a        :Work ;
         skos:prefLabel      "mthong gling pad+ma 'od zer gyi gsung thor bu/"@bo-x-ewts ;
         :catalogInfo        "Miscellany writings of the Thongling Pema Ozer."@en ;
-        :creator            bdr:CRBEE352D00E4F4B01 ;
+        :creator            bdr:CRF810C82B1DD47F98 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW3CN4063 , bdr:W3CN4063 .
+        :workHasInstance    bdr:MW3CN4063 , bdr:W3CN4063 ;
+        :workIsAbout        bdr:T1190 .
 }

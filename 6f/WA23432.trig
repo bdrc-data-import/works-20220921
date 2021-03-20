@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23432 {
-    bda:LG5C70B2339E1A9E67
+    bda:LG538B07F864B9C15D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG5C70B2339E1A9E67
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGE4BAD9C2ED6371CC
         a                   adm:UpdateData ;
@@ -46,24 +52,24 @@ bdg:WA23432 {
     bda:WA23432  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23432 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "6f/WA23432.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23432 ;
-        adm:logEntry        bda:LG5C70B2339E1A9E67 , bda:LGE4BAD9C2ED6371CC , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG538B07F864B9C15D , bda:LG5C70B2339E1A9E67 , bda:LGE4BAD9C2ED6371CC , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1PD83964 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR538B07F864B9C15D
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1853 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR8867605DC3833772
+    bdr:CR5C02D469CD27C0C5
         a                   :AgentAsCreator ;
         :agent              bdr:P66 ;
         :role               bdr:R0ER0011 .
+    
+    bdr:CR8867605DC3833772
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1853 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW23432  skos:altLabel  "rnal 'byor gyi dbang phyug mi la bzad pa rdo rje'i gsun mgur mdzod nag ma/"@en-x-mixed .
     
@@ -71,7 +77,7 @@ bdg:WA23432 {
         skos:altLabel       "the life and songs of realization of mi-la-ras-pa"@en ;
         skos:prefLabel      "rje btsun mi la ras pa'i gsung mgur mdzod nag ma/"@bo-x-ewts , "rnal 'byor gyi dbang phyug mi la bzad pa rdo rje'i gsun mgur mdzod nag ma/"@en-x-mixed ;
         :catalogInfo        "Biography of poet adept Milarepa (1052-1135). Attributed to Karmapa 03 Rangjung Dorje (1284-1339)."@en ;
-        :creator            bdr:CR538B07F864B9C15D , bdr:CR8867605DC3833772 ;
+        :creator            bdr:CR5C02D469CD27C0C5 , bdr:CR8867605DC3833772 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 , bdr:T6 ;

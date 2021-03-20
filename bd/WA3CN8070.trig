@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN8070 {
+    bda:LG19BFF8AF64CCB6A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T19:46:15.05Z"^^xsd:dateTime ;
+        adm:logMessage      "added T#"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG7AD389A16BB9FE09
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-15T16:43:21.672Z"^^xsd:dateTime ;
@@ -34,15 +40,15 @@ bdg:WA3CN8070 {
     bda:WA3CN8070  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN8070 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "bd/WA3CN8070.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN8070 ;
-        adm:logEntry        bda:LG7AD389A16BB9FE09 , bda:LGAD7052B66897ED61 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG19BFF8AF64CCB6A8 , bda:LG7AD389A16BB9FE09 , bda:LGAD7052B66897ED61 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR19BFF8AF64CCB6A8
+    bdr:CR9955ED3BDE14C5A2
         a                   :AgentAsCreator ;
         :agent              bdr:P2370 ;
         :role               bdr:R0ER0019 .
@@ -51,10 +57,11 @@ bdg:WA3CN8070 {
         skos:altLabel       "kaHthog mkhan chen nus ldan gyi gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/ kaHthog mkhan chen nus ldan/"@bo-x-ewts ;
         :catalogInfo        "The collected writings of Kathok Khenchen Nuden Khyentse Lodroe."@en ;
-        :creator            bdr:CR19BFF8AF64CCB6A8 ;
+        :creator            bdr:CR9955ED3BDE14C5A2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS3CN21518 ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW3CN8070 , bdr:W3CN8070 .
+        :workHasInstance    bdr:MW3CN8070 , bdr:W3CN8070 ;
+        :workIsAbout        bdr:T1082 .
 }

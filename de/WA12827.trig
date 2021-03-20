@@ -13,8 +13,10 @@
 
 bdg:WA12827 {
     bda:LG1BA992840D185589
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG69935EE2CCAF3CF6
         a                   adm:UpdateData ;
@@ -27,6 +29,10 @@ bdg:WA12827 {
         adm:logDate         "2018-02-07T06:49:16.329Z"^^xsd:dateTime ;
         adm:logMessage      "note TBRC -> BDRC"@en ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGCCA0F8278DA83F1E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGDC4590A3319737CA
         a                   adm:UpdateData ;
@@ -80,15 +86,15 @@ bdg:WA12827 {
     bda:WA12827  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA12827 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "de/WA12827.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA12827 ;
-        adm:logEntry        bda:LG1BA992840D185589 , bda:LG69935EE2CCAF3CF6 , bda:LG8470666019478C37 , bda:LGDC4590A3319737CA , bda:LGE6CEED156D0AD84E , bda:LGE84CBDBA976577C0 , bda:LGEA57C160226B7CD3 , bda:LGEE18BCDA89925B43 , bda:LGF8588E5404FFD9E5 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1BA992840D185589 , bda:LG69935EE2CCAF3CF6 , bda:LG8470666019478C37 , bda:LGCCA0F8278DA83F1E , bda:LGDC4590A3319737CA , bda:LGE6CEED156D0AD84E , bda:LGE84CBDBA976577C0 , bda:LGEA57C160226B7CD3 , bda:LGEE18BCDA89925B43 , bda:LGF8588E5404FFD9E5 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCCA0F8278DA83F1E
+    bdr:CR55948F3FDC9CACD3
         a                   :AgentAsCreator ;
         :agent              bdr:P1583 ;
         :role               bdr:R0ER0019 .
@@ -96,7 +102,7 @@ bdg:WA12827 {
     bdr:WA12827  a          :Work ;
         skos:prefLabel      "snying thig ya bzhi/"@bo-x-ewts ;
         :catalogInfo        "The Nyingtik Yabzhi of Longchen Rabjam Drime Ozer (1308-1364). Collection of profound Dzogchen teachings. Consists of the Kandro Nyingtik, Kandro Yangtik, Bima Nyingtik, Lama Yangtik, and Zabmo Yangtik. Scanned with the generous support of Master Tam Shek-Wing of the Vajrayana Buddhist Association."@en ;
-        :creator            bdr:CRCCA0F8278DA83F1E ;
+        :creator            bdr:CR55948F3FDC9CACD3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW12827 , bdr:MW1KG12048 , bdr:MW1KG9720 , bdr:MW2PD19078 , bdr:MW4PD2043 , bdr:MW4PD2049 , bdr:W12827 , bdr:W1KG12048 , bdr:W1KG9720 , bdr:W2PD19078 , bdr:W4PD2043 , bdr:W4PD2049 ;

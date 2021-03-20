@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23900 {
+    bda:LG0239B0DF4555896D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG909A2C379CF2927E
         a                   adm:UpdateData ;
         adm:logDate         "2008-06-09T12:32:52.862Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23900 {
         adm:logWho          bdu:U00003 .
     
     bda:LGBF4EF75776471283
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGE97DFC08A78873B3
         a                   adm:UpdateData ;
@@ -52,20 +58,20 @@ bdg:WA23900 {
     bda:WA23900  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23900 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "8c/WA23900.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23900 ;
-        adm:logEntry        bda:LG909A2C379CF2927E , bda:LGBF4EF75776471283 , bda:LGE97DFC08A78873B3 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0239B0DF4555896D , bda:LG909A2C379CF2927E , bda:LGBF4EF75776471283 , bda:LGE97DFC08A78873B3 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0239B0DF4555896D
+    bdr:CR11073C317D11E570
         a                   :AgentAsCreator ;
         :agent              bdr:P101 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR11073C317D11E570
+    bdr:CR50A7A7A918BDE17B
         a                   :AgentAsCreator ;
         :agent              bdr:P3500 ;
         :role               bdr:R0ER0016 .
@@ -76,7 +82,7 @@ bdg:WA23900 {
         skos:altLabel       "bka' gdams gsar rnying gi chos 'byung yid kyi mdzes rgyan/"@bo-x-ewts , "bka' gdams rin po che'i chos 'byung rnam thar nyin mor byed pa'i 'od snang /"@bo-x-ewts , "two histories of the bka'-gdams-pa tradition"@en-x-mixed , "Two histories of the Bkaʾ-gdams-pa tradition from the library of Burmiok Athing."@en-x-mixed ;
         skos:prefLabel      "bka' gdams chos 'byung skor/"@bo-x-ewts , "two histories of the bka'-gdams-pa tradition from the library of burmiok athing"@en-x-mixed ;
         :catalogInfo        "Two history texts of the Kadam order."@en ;
-        :creator            bdr:CR0239B0DF4555896D , bdr:CR11073C317D11E570 ;
+        :creator            bdr:CR11073C317D11E570 , bdr:CR50A7A7A918BDE17B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T12 ;

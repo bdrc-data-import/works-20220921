@@ -13,14 +13,20 @@
 
 bdg:WA23839 {
     bda:LG071575AEDCFE2260
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG17B6569FE999932A
         a                   adm:UpdateData ;
         adm:logDate         "2007-06-09T09:25:49.8Z"^^xsd:dateTime ;
         adm:logMessage      "spelling correction; jann"@en ;
         adm:logWho          bdu:U00011 .
+    
+    bda:LG5B2542B27CED04A8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGB0E414D4ABFFC66E
         a                   adm:UpdateData ;
@@ -58,15 +64,15 @@ bdg:WA23839 {
     bda:WA23839  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23839 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "d4/WA23839.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23839 ;
-        adm:logEntry        bda:LG071575AEDCFE2260 , bda:LG17B6569FE999932A , bda:LGB0E414D4ABFFC66E , bda:LGB29565323A8574FF , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG071575AEDCFE2260 , bda:LG17B6569FE999932A , bda:LG5B2542B27CED04A8 , bda:LGB0E414D4ABFFC66E , bda:LGB29565323A8574FF , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5B2542B27CED04A8
+    bdr:CRE9D6DEDF7510A92E
         a                   :AgentAsCreator ;
         :agent              bdr:P252 ;
         :role               bdr:R0ER0019 .
@@ -76,7 +82,7 @@ bdg:WA23839 {
     bdr:WA23839  a          :Work ;
         skos:prefLabel      "yon tan rin chen sdud pa'i 'grel pa rgyal ba'i yum gyi dgongs don la phyin ci ma log par 'jug pa'i legs bshad sogs/"@bo-x-ewts , "yon tan rin chen sdud pa'i 'grel pa rgyal ba'i yum gyi dgons don la phyin ci ma log par 'jug pa'i legs bsad sogs : exegesis of the prajnaparamitasancayagatha and prajnaparamita literature"@en-x-mixed ;
         :catalogInfo        "Commentary on a Prajnaparamita text, the Sancayagatha."@en ;
-        :creator            bdr:CR5B2542B27CED04A8 ;
+        :creator            bdr:CRE9D6DEDF7510A92E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

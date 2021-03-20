@@ -42,6 +42,10 @@ bdg:WA30335 {
         adm:logMessage      "annotated"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGA9C82AD7573AB8F1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGB7E18275968EA239
         a                   adm:UpdateData ;
         adm:logDate         "2008-11-10T12:29:16.414Z"^^xsd:dateTime ;
@@ -49,8 +53,10 @@ bdg:WA30335 {
         adm:logWho          bdu:U00001 .
     
     bda:LGCB027304ABF06E8B
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -83,27 +89,27 @@ bdg:WA30335 {
     bda:WA30335  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30335 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "fd/WA30335.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30335 ;
-        adm:logEntry        bda:LG03527655CB20C0FC , bda:LG1AC4AD8C05780886 , bda:LG3604514F13C07E7D , bda:LG604DB76B276A6D9D , bda:LG6ECD1399C20722E2 , bda:LGB7E18275968EA239 , bda:LGCB027304ABF06E8B , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG03527655CB20C0FC , bda:LG1AC4AD8C05780886 , bda:LG3604514F13C07E7D , bda:LG604DB76B276A6D9D , bda:LG6ECD1399C20722E2 , bda:LGA9C82AD7573AB8F1 , bda:LGB7E18275968EA239 , bda:LGCB027304ABF06E8B , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR8573BFC6FE74A12C
         a                   :AgentAsCreator ;
-        :agent              bdr:P10499 ;
+        :agent              bdr:P742 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRA9C82AD7573AB8F1
+    bdr:CRF9C972FBA5B6B439
         a                   :AgentAsCreator ;
         :agent              bdr:P705 ;
         :role               bdr:R0ER0025 .
     
-    bdr:CRF9C972FBA5B6B439
+    bdr:CRFF9EB107B118798C
         a                   :AgentAsCreator ;
-        :agent              bdr:P742 ;
+        :agent              bdr:P10499 ;
         :role               bdr:R0ER0016 .
     
     bdr:MW30335  skos:altLabel  "three rare rdzogs chen texts of the bdud-'joms tradition"@en .
@@ -112,7 +118,7 @@ bdg:WA30335 {
         skos:altLabel       "rang bzhin rdzogs pa chen po'i rang zhal mngon du byed pa'i gdams pa zab gsang snying po/"@bo-x-ewts , "rang bzhin rdzogs pa chen po ma sgom sangs rgyas kyi zin bris dpal ldan bla ma'i zhal rgyun nag 'gros su bkod pa tshig don rab gsal skal ldan dgyes pa'i mgul rgyan/"@bo-x-ewts , "shes rig rdo rje rnon po'i rgyud kyi 'grel chung don gsal snying po/"@bo-x-ewts , "Three rare Rdzogs chen texts of the Bdud-ʼjoms tradition."@en-x-mixed ;
         skos:prefLabel      "bdud 'joms gling pa'i brgyud pa'i rdzogs chen skor/"@bo-x-ewts , "three rare rdzogs chen texts of the bdud-'joms tradition"@en ;
         :catalogInfo        "Commentaries on Dzogchen teachings from the Dudjom Lingpa tradition of the Nyingma order."@en ;
-        :creator            bdr:CR8573BFC6FE74A12C , bdr:CRA9C82AD7573AB8F1 , bdr:CRF9C972FBA5B6B439 ;
+        :creator            bdr:CR8573BFC6FE74A12C , bdr:CRF9C972FBA5B6B439 , bdr:CRFF9EB107B118798C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW30335 , bdr:W30335 ;

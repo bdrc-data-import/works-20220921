@@ -13,8 +13,10 @@
 
 bdg:WA21949 {
     bda:LG311CD588506412B6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG987AECA516598049
         a                   adm:ScanRequestCreation ;
@@ -27,6 +29,10 @@ bdg:WA21949 {
         adm:logDate         "2012-08-30T10:53:21.353Z"^^xsd:dateTime ;
         adm:logMessage      "changed onhold to released"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGD5AC365873F41D11
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM320307B99D
         a                   adm:UpdateData ;
@@ -45,11 +51,11 @@ bdg:WA21949 {
     bda:WA21949  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21949 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "e1/WA21949.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21949 ;
-        adm:logEntry        bda:LG311CD588506412B6 , bda:LG987AECA516598049 , bda:LGD0AC9F1400FC34FA , bda:LGIM320307B99D , bda:LGIM74A445C794 ;
+        adm:logEntry        bda:LG311CD588506412B6 , bda:LG987AECA516598049 , bda:LGD0AC9F1400FC34FA , bda:LGD5AC365873F41D11 , bda:LGIM320307B99D , bda:LGIM74A445C794 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

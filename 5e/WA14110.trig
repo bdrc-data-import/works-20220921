@@ -30,6 +30,10 @@ bdg:WA14110 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LG74267C0CD8C31A4E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG75F941AC7846B659
         a                   adm:UpdateData ;
         adm:logDate         "2009-06-03T17:08:40.609Z"^^xsd:dateTime ;
@@ -37,8 +41,10 @@ bdg:WA14110 {
         adm:logWho          bdu:U00001 .
     
     bda:LG9983CA82C47B49D1
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGB75C476F55E70559
         a                   adm:UpdateData ;
@@ -81,29 +87,29 @@ bdg:WA14110 {
     bda:WA14110  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA14110 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "5e/WA14110.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA14110 ;
-        adm:logEntry        bda:LG175C4F96DB2A15CB , bda:LG1B7AC23989B3A666 , bda:LG1D7AF8F2D8539463 , bda:LG75F941AC7846B659 , bda:LG9983CA82C47B49D1 , bda:LGB75C476F55E70559 , bda:LGC7FF4E4CD2FDB6A1 , bda:LGF7C43DE0C2C0A3F0 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG175C4F96DB2A15CB , bda:LG1B7AC23989B3A666 , bda:LG1D7AF8F2D8539463 , bda:LG74267C0CD8C31A4E , bda:LG75F941AC7846B659 , bda:LG9983CA82C47B49D1 , bda:LGB75C476F55E70559 , bda:LGC7FF4E4CD2FDB6A1 , bda:LGF7C43DE0C2C0A3F0 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR74267C0CD8C31A4E
-        a                   :AgentAsCreator ;
-        :agent              bdr:P2063 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRB9788023C968AF9F
+    bdr:CRB4543F0B1A11CEEB
         a                   :AgentAsCreator ;
         :agent              bdr:P1195 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRB9788023C968AF9F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2063 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA14110  a          :Work ;
         skos:altLabel       "gsung 'bum/_mkhyen rab yon tan rgya mtsho/"@bo-x-ewts , "thub bstan yongs rdzogs kyi bdag po rje btsun blo bzang thugs rje dpal bzang po'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_blo bzang thugs rje/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by 18th and 19th century Geluk authors from Lhasa: Panglung Lobzang Tukje (1770-1835?) and Khenrab Yonten Gyatso (b. 1837?). Printed from tracings of the central Tibet prints. Preserved at the Sera Panglung Hermitage and the Lhasa Zho Printery."@en ;
-        :creator            bdr:CR74267C0CD8C31A4E , bdr:CRB9788023C968AF9F ;
+        :creator            bdr:CRB4543F0B1A11CEEB , bdr:CRB9788023C968AF9F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

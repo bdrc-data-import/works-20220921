@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23957 {
+    bda:LG25D55CE169C83BCA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG51CB48DC43032A17
         a                   adm:UpdateData ;
         adm:logDate         "2011-05-10T13:33:16.067Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23957 {
         adm:logWho          bdu:U00016 .
     
     bda:LGE4230B854F89D7DE
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGF1EE959BAA0DD5F7
         a                   adm:UpdateData ;
@@ -45,15 +51,15 @@ bdg:WA23957 {
     bda:WA23957  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23957 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "1d/WA23957.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23957 ;
-        adm:logEntry        bda:LG51CB48DC43032A17 , bda:LGE4230B854F89D7DE , bda:LGF1EE959BAA0DD5F7 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG25D55CE169C83BCA , bda:LG51CB48DC43032A17 , bda:LGE4230B854F89D7DE , bda:LGF1EE959BAA0DD5F7 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR25D55CE169C83BCA
+    bdr:CR98C934480834CD5A
         a                   :AgentAsCreator ;
         :agent              bdr:P421 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +70,7 @@ bdg:WA23957 {
         skos:altLabel       "dpal ldan mnyam med ri bo dge ldan pa'i chos 'byung baiDUr ser po/"@bo-x-ewts , "dpal ldan mnyam med ri bo dge ldan pa'i chos 'byung baiDUr ser po'i me long /"@bo-x-ewts ;
         skos:prefLabel      "bai DUr ser po/"@bo-x-ewts , "baiDUr ser po : a history of dga'-ldan"@en-x-mixed ;
         :catalogInfo        "History of the Geluk order. Includes accounts of the monasteries of the order by Desi Sanggye Gyatso (1653-1705)."@en ;
-        :creator            bdr:CR25D55CE169C83BCA ;
+        :creator            bdr:CR98C934480834CD5A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS11818 ;

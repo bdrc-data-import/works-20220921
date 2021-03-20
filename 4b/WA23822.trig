@@ -19,14 +19,20 @@ bdg:WA23822 {
         adm:logWho          bdu:U00007 .
     
     bda:LGAF39B6A320B944CD
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGC18D188FF52ECA6E
         a                   adm:UpdateData ;
         adm:logDate         "2008-12-09T14:34:37.124Z"^^xsd:dateTime ;
         adm:logMessage      "ctc"@en ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LGD45EC59656A938E6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
@@ -45,15 +51,15 @@ bdg:WA23822 {
     bda:WA23822  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23822 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "4b/WA23822.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23822 ;
-        adm:logEntry        bda:LG15E37582D199A6D1 , bda:LGAF39B6A320B944CD , bda:LGC18D188FF52ECA6E , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG15E37582D199A6D1 , bda:LGAF39B6A320B944CD , bda:LGC18D188FF52ECA6E , bda:LGD45EC59656A938E6 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD45EC59656A938E6
+    bdr:CR22FD2B3A4A905204
         a                   :AgentAsCreator ;
         :agent              bdr:P882 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +70,7 @@ bdg:WA23822 {
         skos:altLabel       "autobiographical writings of rig-'dzin 'ja'-tshon-snin-po"@en-x-mixed ;
         skos:prefLabel      "'ja' tshon snying po'i rang rnam/"@bo-x-ewts , "autobiographical writings of 'ja'-tshon-snin-po"@en-x-mixed ;
         :catalogInfo        "Autobiography by the Nyingma visionary Jatson Nyingpo."@en ;
-        :creator            bdr:CRD45EC59656A938E6 ;
+        :creator            bdr:CR22FD2B3A4A905204 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS23822 ;

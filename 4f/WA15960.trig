@@ -13,14 +13,20 @@
 
 bdg:WA15960 {
     bda:LG2AD9CA52DE97A4CA
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG362F69387CFF9A1E
         a                   adm:UpdateData ;
         adm:logDate         "2011-03-23T15:51:42.354Z"^^xsd:dateTime ;
         adm:logMessage      "corrected typos"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG48AB8CE261151D74
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG61F6637BD2EF140C
         a                   adm:UpdateData ;
@@ -79,15 +85,15 @@ bdg:WA15960 {
     bda:WA15960  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA15960 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "4f/WA15960.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA15960 ;
-        adm:logEntry        bda:LG2AD9CA52DE97A4CA , bda:LG362F69387CFF9A1E , bda:LG61F6637BD2EF140C , bda:LGC51F3DEEFB6F9CAF , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG2AD9CA52DE97A4CA , bda:LG362F69387CFF9A1E , bda:LG48AB8CE261151D74 , bda:LG61F6637BD2EF140C , bda:LGC51F3DEEFB6F9CAF , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR48AB8CE261151D74
+    bdr:CR461A9C61030EA60D
         a                   :AgentAsCreator ;
         :agent              bdr:P4247 ;
         :role               bdr:R0ER0019 .
@@ -98,7 +104,7 @@ bdg:WA15960 {
         skos:altLabel       "blo bzang chos 'phel dpal bzang po'i zhal snga nas kyi rnam par thar pa dge ldan bstan pa'i nyi 'od/"@bo-x-ewts , "The biography of Dbyaṅs-can-grub-paʾi-rdo-rje of Dngul-chu :being the text of Rigs dang dkyil ʾkhor rgya mtshoʾi mngaʾ bdag Rdo rje sems dpaʾi ngo bo bkaʾ drin gsum ldan rje btsun bla ma thams cad mkhyen pa Blo bzang chos ʾphel bzang poʾi zhal snga nas kyi rnam par thar pa Dge ldan bstan paʾi nyi ʾod /by Dbyangs-can-dgyes-paʾi-rdo-rje alias Blo-bzang-ʾjigs-med-dbang-po of Dngul-chu ; edited by Ngawang Gelek Demo."@en-x-mixed ;
         skos:prefLabel      "dbyangs can grub pa'i rdo rje'i rnam thar/"@bo-x-ewts , "the biography of dbyangs can grub pa'i rdo rje of dngul chu"@en ;
         :catalogInfo        "Biography of Ngulchu Yangchen Drubpai Dorje (1809-1887)."@en ;
-        :creator            bdr:CR48AB8CE261151D74 ;
+        :creator            bdr:CR461A9C61030EA60D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS11818 ;

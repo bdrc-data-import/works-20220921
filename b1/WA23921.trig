@@ -18,6 +18,10 @@ bdg:WA23921 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGB247B55457FE833E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGD0AA1FA8067CB2DB
         a                   adm:UpdateData ;
         adm:logDate         "2012-03-29T14:23:29.621Z"^^xsd:dateTime ;
@@ -31,8 +35,10 @@ bdg:WA23921 {
         adm:logWho          bdu:U00026 .
     
     bda:LGD9AD28864CC17A26
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -44,15 +50,15 @@ bdg:WA23921 {
     bda:WA23921  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23921 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "b1/WA23921.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23921 ;
-        adm:logEntry        bda:LG0A6162AF21A37FA5 , bda:LGD0AA1FA8067CB2DB , bda:LGD2532B6F09014E32 , bda:LGD9AD28864CC17A26 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG0A6162AF21A37FA5 , bda:LGB247B55457FE833E , bda:LGD0AA1FA8067CB2DB , bda:LGD2532B6F09014E32 , bda:LGD9AD28864CC17A26 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB247B55457FE833E
+    bdr:CR3821DF70AC3165B0
         a                   :AgentAsCreator ;
         :agent              bdr:P2778 ;
         :role               bdr:R0ER0025 .
@@ -62,7 +68,7 @@ bdg:WA23921 {
     bdr:WA23921  a          :Work ;
         skos:altLabel       "gsang spyod snyan brgyud zab mo'i chos skor/"@bo-x-ewts , "ma cig gsang spyod snyan brgyud kyi be bum/"@bo-x-ewts , "Thaṅ stoṅ sñan brgyud;a treasured collection of Gcod practices received by Thaṅ-stoṅ Rgyal-po in a vision of Vārāhī in the Raśmīśvara Cemetery in Kashmir.Reproduced from MSS. in the possession of Gongna Tulku of Derge Gonsar Monastery by Trayang."@en-x-mixed ;
         skos:prefLabel      "thang stong snyan brgyud/"@bo-x-ewts , "thang stong snan brgyud : a treasured collection of gcod practices received by thang-stong rgyal-po in a vision of varahi in the rasmisvara cemetary in kashmir"@en-x-mixed ;
-        :creator            bdr:CRB247B55457FE833E ;
+        :creator            bdr:CR3821DF70AC3165B0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

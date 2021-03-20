@@ -13,8 +13,10 @@
 
 bdg:WA30149 {
     bda:LG06A14A1AF29BF48C
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG19C8325089DA5403
         a                   adm:ScanRequestCreation ;
@@ -39,6 +41,10 @@ bdg:WA30149 {
         adm:logDate         "2009-12-29T10:58:08.228Z"^^xsd:dateTime ;
         adm:logMessage      "removed scan request information"@en ;
         adm:logWho          bdu:U00020 .
+    
+    bda:LG685693C76CA09CFF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG6E092F7476FE44DC
         a                   adm:ScanRequestCreation ;
@@ -98,23 +104,23 @@ bdg:WA30149 {
     bda:WA30149  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30149 ;
-        adm:facetIndex      17 ;
+        adm:facetIndex      18 ;
         adm:gitPath         "f7/WA30149.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30149 ;
-        adm:logEntry        bda:LG06A14A1AF29BF48C , bda:LG19C8325089DA5403 , bda:LG1E1BEC75852BEA1F , bda:LG280E1AAD0883405F , bda:LG3FC8D3C4B17CE503 , bda:LG6E092F7476FE44DC , bda:LGB740116E358BFB8A , bda:LGD1D9CFE709A446FD , bda:LGF53BC4BA7C4A3687 , bda:LGF59F8BDFF6B1BF52 , bda:LGF6CAB0D5E54F56EB , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG06A14A1AF29BF48C , bda:LG19C8325089DA5403 , bda:LG1E1BEC75852BEA1F , bda:LG280E1AAD0883405F , bda:LG3FC8D3C4B17CE503 , bda:LG685693C76CA09CFF , bda:LG6E092F7476FE44DC , bda:LGB740116E358BFB8A , bda:LGD1D9CFE709A446FD , bda:LGF53BC4BA7C4A3687 , bda:LGF59F8BDFF6B1BF52 , bda:LGF6CAB0D5E54F56EB , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR685693C76CA09CFF
-        a                   :AgentAsCreator ;
-        :agent              bdr:P10203 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRB2CEC88236A12223
+    bdr:CR7AE5FEBEF1E5CA9D
         a                   :AgentAsCreator ;
         :agent              bdr:P1056 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRB2CEC88236A12223
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10203 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW30149  skos:altLabel  "an exegesis of lam 'bras and its root text, the rdo rje'i tshig rkan"@en-x-mixed .
     
@@ -122,7 +128,7 @@ bdg:WA30149 {
         skos:altLabel       "lam 'bras pod dmar ma/"@bo-x-ewts ;
         skos:prefLabel      "lam 'bras po ti dmar ma/"@bo-x-ewts , "an exegesis of lam 'bras and its root text, the rdo rje'i tshig rkan"@en-x-mixed ;
         :catalogInfo        "Collection also known as the Puti Marchung or “The Little Red Volume.” Compiled by Ngorchen Kunga Zangpo. Index was written by his nephew, Gyaltsab Kunga Wangchuk, who was the fourth abbot of Ngor Monastery. Texts by Ngorchen and Muchen Konchok Gyaltsen were added at the end of the original grouping of texts. Title page attribution of the collection to Marton Chogyal is probably incorrect."@en ;
-        :creator            bdr:CR685693C76CA09CFF , bdr:CRB2CEC88236A12223 ;
+        :creator            bdr:CR7AE5FEBEF1E5CA9D , bdr:CRB2CEC88236A12223 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW30149 , bdr:W30149 ;

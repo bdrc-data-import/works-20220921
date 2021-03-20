@@ -17,6 +17,12 @@ bdg:WA1KG3971 {
         adm:logDate         "2009-12-07T14:32:59.314Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG47E80B45D57E0232
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+    
     bda:LG6133AA96246B03E0
         a                   adm:InitialDataCreation ;
         adm:logDate         "2009-11-24T12:01:32.8Z"^^xsd:dateTime ;
@@ -85,30 +91,30 @@ bdg:WA1KG3971 {
     bda:WA1KG3971  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG3971 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "38/WA1KG3971.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG3971 ;
-        adm:logEntry        bda:LG1BBBF4E03478723A , bda:LG6133AA96246B03E0 , bda:LGB04E03363C0E4D88 , bda:LGBBA9E4E05214D089 , bda:LGDD6A7C5FF71CE2A5 , bda:LGF4DB2A94D47C8200 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1BBBF4E03478723A , bda:LG47E80B45D57E0232 , bda:LG6133AA96246B03E0 , bda:LGB04E03363C0E4D88 , bda:LGBBA9E4E05214D089 , bda:LGDD6A7C5FF71CE2A5 , bda:LGF4DB2A94D47C8200 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR27321D450405D90A
         a                   :AgentAsCreator ;
-        :agent              bdr:P7674 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR47E80B45D57E0232
-        a                   :AgentAsCreator ;
         :agent              bdr:P6873 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRB576948458C732E7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7674 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW1KG3971  skos:altLabel  "Zab mo sku gsum bcud dril gyi khrid gźuṅ sogs kyi gsuṅ pod :a collection of instructions and teachings belonging to the \"New\" Bon (Bon-gsar)."@en-x-mixed .
     
     bdr:WA1KG3971  a        :Work ;
         skos:prefLabel      "zab mo sku gsum bcud dril gyi khrid gzhung sogs kyi gsung pod/"@bo-x-ewts , "Zab mo sku gsum bcud dril gyi khrid gźuṅ sogs kyi gsuṅ pod :a collection of instructions and teachings belonging to the \"New\" Bon (Bon-gsar)."@en-x-mixed ;
         :catalogInfo        "Collection of instructions and teachings belonging to the New Bon by Bonpo Terton Sanggye Lingpa (1705-?) and other. Made available through Tibetan Buddhist Resource Center with authorization by Menri Trizin 33 Lungtok Tenpai Nyima and the gracious support of the Bon Foundation."@en ;
-        :creator            bdr:CR27321D450405D90A , bdr:CR47E80B45D57E0232 ;
+        :creator            bdr:CR27321D450405D90A , bdr:CRB576948458C732E7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T977 ;

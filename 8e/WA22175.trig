@@ -18,6 +18,10 @@ bdg:WA22175 {
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LG3E892C32F1BFF744
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGBD2C261C4B227C26
         a                   adm:UpdateData ;
         adm:logDate         "2013-09-26T11:47:23.881Z"^^xsd:dateTime ;
@@ -25,26 +29,28 @@ bdg:WA22175 {
         adm:logWho          bdu:U00013 .
     
     bda:LGEC3A60E0C0803DCC
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:WA22175  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22175 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "8e/WA22175.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22175 ;
-        adm:logEntry        bda:LG0D488C61C56264CD , bda:LGBD2C261C4B227C26 , bda:LGEC3A60E0C0803DCC ;
+        adm:logEntry        bda:LG0D488C61C56264CD , bda:LG3E892C32F1BFF744 , bda:LGBD2C261C4B227C26 , bda:LGEC3A60E0C0803DCC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3E892C32F1BFF744
+    bdr:CR44244ED793DE71D6
         a                   :AgentAsCreator ;
         :agent              bdr:P7495 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV44244ED793DE71D6
+    bdr:EVCD1DF666E6581F42
         a                   :CompletedEvent ;
         :onOrAbout          "ཆུ་བྱི་ཟླ་བ་བདུན་པའི་ཡར་ངོ་རྒྱལ་བ་གཉིས་པ་གཟའ་སྐར་ཕུན་སུམ་ཚོགས་པའི་ཉིན་དོལ་པོའི་ཡུལ་གྱི་ཆར་ཤམ་བྲག་དགོན་དུ་གྲུབ་པར་བགྱིས་པའོ།།" .
     
@@ -52,10 +58,10 @@ bdg:WA22175 {
     
     bdr:WA22175  a          :Work ;
         skos:prefLabel      "grub dbang pad+ma lung rtogs rgya mtsho mchog gi rnam thar byang chub lam bstan/"@bo-x-ewts , "the biography of the golok buddhist yogi, padma-lung-rtogs-rgya-mtsho, 1891-1964"@en ;
-        :creator            bdr:CR3E892C32F1BFF744 ;
+        :creator            bdr:CR44244ED793DE71D6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV44244ED793DE71D6 ;
+        :workEvent          bdr:EVCD1DF666E6581F42 ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW22175 , bdr:W22175 ;
         :workIsAbout        bdr:P731 .

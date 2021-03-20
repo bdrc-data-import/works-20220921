@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23859 {
+    bda:LG0364B160CC7A723F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG2509BFC4CB5BB07A
         a                   adm:UpdateData ;
         adm:logDate         "2011-08-11T10:12:58.163Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA23859 {
         adm:logWho          bdu:U00012 .
     
     bda:LG9303CAE935BF4B50
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGCD5267AA32945375
         a                   adm:ScanRequestCreation ;
@@ -51,23 +57,23 @@ bdg:WA23859 {
     bda:WA23859  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23859 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "bc/WA23859.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23859 ;
-        adm:logEntry        bda:LG2509BFC4CB5BB07A , bda:LG2FECDC564B7FC60C , bda:LG9303CAE935BF4B50 , bda:LGCD5267AA32945375 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0364B160CC7A723F , bda:LG2509BFC4CB5BB07A , bda:LG2FECDC564B7FC60C , bda:LG9303CAE935BF4B50 , bda:LGCD5267AA32945375 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0364B160CC7A723F
-        a                   :AgentAsCreator ;
-        :agent              bdr:P5604 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR808438A9E1E8D0D3
+    bdr:CR2801D06525200774
         a                   :AgentAsCreator ;
         :agent              bdr:P5605 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CR808438A9E1E8D0D3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5604 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW23859  skos:altLabel  "brtag thabs padma dkar po'i chun po : a reproduction of an incomplete manuscript of a verse work on the appraisal and appreciation of omens, precious objects, weapons, and other possessions"@en-x-mixed .
     
@@ -75,7 +81,7 @@ bdg:WA23859 {
         skos:altLabel       "gyi ling rta yi spu gtsug bzang ngan gyi brtags pa/"@bo-x-ewts , "gyi lin rta yi spu gtsug bzan nan gyi brtags pa : a work on the examination and criteria for judgement of horses"@en-x-mixed ;
         skos:prefLabel      "brtag thabs pad+ma dkar po'i chun po/"@bo-x-ewts , "brtag thabs padma dkar po'i chun po : a reproduction of an incomplete manuscript of a verse work on the appraisal and appreciation of omens, precious objects, weapons, and other possessions"@en-x-mixed ;
         :catalogInfo        "Writings on the examination and criteria for omens, precious objects, weapons, and horses."@en ;
-        :creator            bdr:CR0364B160CC7A723F , bdr:CR808438A9E1E8D0D3 ;
+        :creator            bdr:CR2801D06525200774 , bdr:CR808438A9E1E8D0D3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW23859 , bdr:W23859 ;

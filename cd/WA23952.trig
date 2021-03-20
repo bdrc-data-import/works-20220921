@@ -12,14 +12,20 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23952 {
+    bda:LG0BA3BAE4C0CB33DF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG1D91513A1E320834
         a                   adm:UpdateData ;
         adm:logDate         "2008-11-18T10:02:15.658Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
     
     bda:LG728BD8D2FB41A3A8
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG733830E1FDDF6C4B
         a                   adm:UpdateData ;
@@ -74,27 +80,27 @@ bdg:WA23952 {
     bda:WA23952  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23952 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "cd/WA23952.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23952 ;
-        adm:logEntry        bda:LG1D91513A1E320834 , bda:LG728BD8D2FB41A3A8 , bda:LG733830E1FDDF6C4B , bda:LG82E0C7E258A17FF3 , bda:LG8A09D78D49C40E4D , bda:LGA91215229BAA654C , bda:LGB77D98B7061E9A90 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG0BA3BAE4C0CB33DF , bda:LG1D91513A1E320834 , bda:LG728BD8D2FB41A3A8 , bda:LG733830E1FDDF6C4B , bda:LG82E0C7E258A17FF3 , bda:LG8A09D78D49C40E4D , bda:LGA91215229BAA654C , bda:LGB77D98B7061E9A90 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0BA3BAE4C0CB33DF
+    bdr:CR7EA411CDAC96DE81
         a                   :AgentAsCreator ;
         :agent              bdr:P7855 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR7EA411CDAC96DE81
+    bdr:CR9ADD2BC1073F329E
         a                   :AgentAsCreator ;
-        :agent              bdr:P7856 ;
+        :agent              bdr:P7498 ;
         :role               bdr:R0ER0016 .
     
     bdr:CRF1BA4F81F5EC64AF
         a                   :AgentAsCreator ;
-        :agent              bdr:P7498 ;
+        :agent              bdr:P7856 ;
         :role               bdr:R0ER0016 .
     
     bdr:MW23952  skos:altLabel  "three biographical works by 'brug-pa dkar-brgyud-pa masters of zans-dkar, bzad-pa-rdo-rje, karma-bstan-'dzin, and kun-dga'-chos-legs"@en .
@@ -103,7 +109,7 @@ bdg:WA23952 {
         skos:altLabel       "three lamas of zangskar"@en ;
         skos:prefLabel      "'brug zangs dkar gyi bla ma bzhad pa rdo rje dang karma bstan 'dzin/ kun dga' chos legs gsum gyi gsung phyogs bsgrigs/"@bo-x-ewts , "three biographical works by 'brug-pa dkar-brgyud-pa masters of zans-dkar, bzad-pa-rdo-rje, karma-bstan-'dzin, and kun-dga'-chos-legs"@en ;
         :catalogInfo        "Biographical materials and other writings by three 18th and 19th century Drukpa Kagyu teachers from Zangskar: Zhepa Dorje, Karma Tenzin, and Kunga Cholek. Reproduced from manuscripts preserved at Dzongkhul Monastery."@en ;
-        :creator            bdr:CR0BA3BAE4C0CB33DF , bdr:CR7EA411CDAC96DE81 , bdr:CRF1BA4F81F5EC64AF ;
+        :creator            bdr:CR7EA411CDAC96DE81 , bdr:CR9ADD2BC1073F329E , bdr:CRF1BA4F81F5EC64AF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

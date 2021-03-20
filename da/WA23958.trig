@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23958 {
+    bda:LG1CC4A46E8193F966
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGD8927567693480CA
         a                   adm:UpdateData ;
         adm:logDate         "2010-03-24T14:29:48.811Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA23958 {
         adm:logWho          bdu:U00021 .
     
     bda:LGF334BB761B40A268
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -39,15 +45,15 @@ bdg:WA23958 {
     bda:WA23958  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23958 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "da/WA23958.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23958 ;
-        adm:logEntry        bda:LGD8927567693480CA , bda:LGF334BB761B40A268 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1CC4A46E8193F966 , bda:LGD8927567693480CA , bda:LGF334BB761B40A268 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1CC4A46E8193F966
+    bdr:CR1A68FBE45FF2C0B1
         a                   :AgentAsCreator ;
         :agent              bdr:P6979 ;
         :role               bdr:R0ER0019 .
@@ -56,7 +62,7 @@ bdg:WA23958 {
         skos:altLabel       "rgya bod yig tshang chen mo/"@bo-x-ewts ;
         skos:prefLabel      "rgya bod kyi yig tshang mkhas pa dga' byed chen mo 'dzam gling gsal ba'i me long /"@bo-x-ewts ;
         :catalogInfo        "History of Buddhism in India and Tibet."@en ;
-        :creator            bdr:CR1CC4A46E8193F966 ;
+        :creator            bdr:CR1A68FBE45FF2C0B1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

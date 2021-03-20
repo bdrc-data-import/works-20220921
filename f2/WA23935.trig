@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23935 {
+    bda:LG53BAEB53519920AA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG786639E779FDBA5E
         a                   adm:UpdateData ;
         adm:logDate         "2015-02-02T12:07:46.299Z"^^xsd:dateTime ;
@@ -25,36 +29,38 @@ bdg:WA23935 {
         adm:logWho          bdu:U00026 .
     
     bda:LGF0B0CC5D6692E1A1
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:WA23935  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23935 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f2/WA23935.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23935 ;
-        adm:logEntry        bda:LG786639E779FDBA5E , bda:LGC18436003AEA3DB2 , bda:LGF0B0CC5D6692E1A1 ;
+        adm:logEntry        bda:LG53BAEB53519920AA , bda:LG786639E779FDBA5E , bda:LGC18436003AEA3DB2 , bda:LGF0B0CC5D6692E1A1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR53BAEB53519920AA
-        a                   :AgentAsCreator ;
-        :agent              bdr:P7271 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRF91929B270D1C701
+    bdr:CR4A5AF66482BA4E6A
         a                   :AgentAsCreator ;
         :agent              bdr:P7846 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRF91929B270D1C701
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7271 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW23935  skos:altLabel  "the biography of dmar sgom bsod nams blo gros (1456-1521)[sic]"@en-x-mixed .
     
     bdr:WA23935  a          :Work ;
         skos:altLabel       "mkhas grub chen po bsod nams blo gros kyi rnam par thar pa mthon ba don ldan dad pa'i gsal 'debs dan gsan ba'i rnam thar dan mgur 'bum"@bo-alalc97 , "bsod nams blo gros kyi rnam thar gsang ba'i rnam thar dang mgur 'bum/"@bo-x-ewts ;
         skos:prefLabel      "mkhas grub chen po bsod nams blo gros kyi rnam par thar pa mthong ba don ldan dad pa'i gsal 'debs dang gsang ba'i rnam thar dang mgur 'bum/"@bo-x-ewts , "the biography of dmar sgom bsod nams blo gros (1456-1521)[sic]"@en-x-mixed ;
-        :creator            bdr:CR53BAEB53519920AA , bdr:CRF91929B270D1C701 ;
+        :creator            bdr:CR4A5AF66482BA4E6A , bdr:CRF91929B270D1C701 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

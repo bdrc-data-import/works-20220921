@@ -13,14 +13,20 @@
 
 bdg:WA21140 {
     bda:LG48F38055EE5A52F6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG535E369259FE31D6
         a                   adm:UpdateData ;
         adm:logDate         "2013-02-27T08:51:54.056Z"^^xsd:dateTime ;
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LG96FA9760123334E4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -39,15 +45,15 @@ bdg:WA21140 {
     bda:WA21140  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21140 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "3b/WA21140.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21140 ;
-        adm:logEntry        bda:LG48F38055EE5A52F6 , bda:LG535E369259FE31D6 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG48F38055EE5A52F6 , bda:LG535E369259FE31D6 , bda:LG96FA9760123334E4 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR96FA9760123334E4
+    bdr:CRA04D0F843FAFA4DF
         a                   :AgentAsCreator ;
         :agent              bdr:P1702 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +63,7 @@ bdg:WA21140 {
     bdr:WA21140  a          :Work ;
         skos:prefLabel      "bde mchog spyi bshad theg mchog bdud rtsi'i dga' ston ye shes chen po'i sman mchog"@bo-x-ewts , "bcom ldan 'das dpal 'khor lo sdom pa'i spyi bsad theg mchog bdud rtsi'i dga' ston ye ses chen po'i sman mchog : a detailed explanation of the cakrasamvara and its history according to the snan brgyud transmission"@en-x-mixed ;
         :catalogInfo        "History and exegesis of the Chakrasamvara by Godtsangpa Natsok Rangdrol (1494-1570) according to spoken transmission."@en ;
-        :creator            bdr:CR96FA9760123334E4 ;
+        :creator            bdr:CRA04D0F843FAFA4DF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW21140 , bdr:W21140 ;

@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA14371 {
+    bda:LG0FF4CCF028752FB2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG17F5C7B653CFDBF8
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-22T10:46:42.868Z"^^xsd:dateTime ;
@@ -30,8 +34,10 @@ bdg:WA14371 {
         adm:logWho          bdu:U00016 .
     
     bda:LG47021FA56E15909C
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG630D363A5C551DC1
         a                   adm:ScanRequestCreation ;
@@ -75,20 +81,20 @@ bdg:WA14371 {
     bda:WA14371  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA14371 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "eb/WA14371.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA14371 ;
-        adm:logEntry        bda:LG17F5C7B653CFDBF8 , bda:LG2BCD208AA5EAFD2B , bda:LG2ED363DEE47C9EC8 , bda:LG47021FA56E15909C , bda:LG630D363A5C551DC1 , bda:LG7984DB74487AA1A0 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG0FF4CCF028752FB2 , bda:LG17F5C7B653CFDBF8 , bda:LG2BCD208AA5EAFD2B , bda:LG2ED363DEE47C9EC8 , bda:LG47021FA56E15909C , bda:LG630D363A5C551DC1 , bda:LG7984DB74487AA1A0 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0FF4CCF028752FB2
+    bdr:CRDBC25D23B514C418
         a                   :AgentAsCreator ;
         :agent              bdr:P2419 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVDBC25D23B514C418
+    bdr:EVFEE29FAE32E14A41
         a                   :CompletedEvent ;
         :onYear             "1533"^^xsd:gYear .
     
@@ -98,10 +104,10 @@ bdg:WA14371 {
         skos:altLabel       "rnal 'byor gyi dbang phyug grags pa mtha' yas dpal bzang po'i rnam thar mgur 'bum ngo mtshar nor bu'i phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "grags pa mtha' yas kyi rnam thar/"@bo-x-ewts , "Rnal ʼbyor gyi dbaṅ phyug Grags pa mthaʼ yas dpal bzaṅ poʼi rnam thar mgur ʼbum ṅo mtshar nor buʼi ʼphreṅ ba :the biography (with interspersed songs of esoteric realization) of the 15th century ʼBrug-pa Dkar-brgyud-pa master, Grub-dbaṅ Grags-pa-mthaʼ-yas /by Ma-pham-rdorje."@en-x-mixed ;
         :catalogInfo        "Biography with interspersed songs of esoteric realization from the 15th century Drukpa Kagyu master, Drupwang Drakpa Taye (1469-1531)."@en ;
-        :creator            bdr:CR0FF4CCF028752FB2 ;
+        :creator            bdr:CRDBC25D23B514C418 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVDBC25D23B514C418 ;
+        :workEvent          bdr:EVFEE29FAE32E14A41 ;
         :workGenre          bdr:T184 , bdr:T3 ;
         :workHasInstance    bdr:MW14371 , bdr:MW14371_4BB99D , bdr:W14371 ;
         :workIsAbout        bdr:P826 .

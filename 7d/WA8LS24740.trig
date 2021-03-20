@@ -29,6 +29,12 @@ bdg:WA8LS24740 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG9D8476568C76A183
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-19T09:24:38.805Z"^^xsd:dateTime ;
+        adm:logMessage      "added about person, author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -39,21 +45,28 @@ bdg:WA8LS24740 {
     bda:WA8LS24740  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS24740 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "7d/WA8LS24740.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS24740 ;
-        adm:logEntry        bda:LG420A2E3E46024496 , bda:LG6DBBAF35EB73A257 , bda:LG8FC36CF0F60A59C4 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG420A2E3E46024496 , bda:LG6DBBAF35EB73A257 , bda:LG8FC36CF0F60A59C4 , bda:LG9D8476568C76A183 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRBF12E946CF26DB0F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75200 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS24740  a       :Work ;
         skos:altLabel       "dngos myong mi tshe'i ri mo/ chab srid btson zur bstan 'dzin chos grags kyi mi tshe'i lo rgyus/"@bo-x-ewts ;
         skos:prefLabel      "bstan 'dzin chos grags kyi mi tshe'i lo rgyus/"@bo-x-ewts ;
         :catalogInfo        "The life account of political prisoner Tenzin Chodrak."@en ;
+        :creator            bdr:CRBF12E946CF26DB0F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW8LS24740 , bdr:W8LS24740 .
+        :workHasInstance    bdr:MW8LS24740 , bdr:W8LS24740 ;
+        :workIsAbout        bdr:P8LS75200 .
 }
