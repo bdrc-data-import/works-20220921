@@ -32,6 +32,12 @@ bdg:WA1AC364 {
         adm:logDate         "2014-11-13T17:27:30.415Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00029 .
     
+    bda:LG72F5D6C4768945D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T13:32:51.702Z"^^xsd:dateTime ;
+        adm:logMessage      "added T# & bibTitle..."@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGCA21984AB5324B56
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-12T02:46:02.622Z"^^xsd:dateTime ;
@@ -59,15 +65,15 @@ bdg:WA1AC364 {
     bda:WA1AC364  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC364 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "e5/WA1AC364.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC364 ;
-        adm:logEntry        bda:LG08BE2E8ED25BC792 , bda:LG20C8341A066EF9F2 , bda:LG5203E52B85D0A24E , bda:LG5A7EAC1FC2D076C1 , bda:LGCA21984AB5324B56 , bda:LGFAB3E26F158DE1E5 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG08BE2E8ED25BC792 , bda:LG20C8341A066EF9F2 , bda:LG5203E52B85D0A24E , bda:LG5A7EAC1FC2D076C1 , bda:LG72F5D6C4768945D0 , bda:LGCA21984AB5324B56 , bda:LGFAB3E26F158DE1E5 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR72F5D6C4768945D0
+    bdr:CR2C27A012536FB8A7
         a                   :AgentAsCreator ;
         :agent              bdr:P477 ;
         :role               bdr:R0ER0019 .
@@ -75,13 +81,14 @@ bdg:WA1AC364 {
     bdr:MW1AC364  skos:altLabel  "杰尊确吉坚赞文集"@zh-hans .
     
     bdr:WA1AC364  a         :SerialMember , :Work ;
-        skos:altLabel       "jie zun que ji jian zan wen ji"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "rje btsun chos kyi rgyal mtshan gyi gsung 'bum/"@bo-x-ewts , "杰尊确吉坚赞文集"@zh-hans ;
+        skos:altLabel       "rje btsun chos kyi rgyal mtshan gyi gsung 'bum/"@bo-x-ewts , "jie zun que ji jian zan wen ji"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "gsung 'bum/ chos kyi rgyal mtshan/"@bo-x-ewts , "杰尊确吉坚赞文集"@zh-hans ;
         :catalogInfo        "Collected works of Sera Jetsun Chokyi Gyaltsen (1469-1544/1546)"@en ;
-        :creator            bdr:CR72F5D6C4768945D0 ;
+        :creator            bdr:CR2C27A012536FB8A7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS140 ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW1AC364 , bdr:W1AC364 .
+        :workHasInstance    bdr:MW1AC364 , bdr:W1AC364 ;
+        :workIsAbout        bdr:T819 .
 }

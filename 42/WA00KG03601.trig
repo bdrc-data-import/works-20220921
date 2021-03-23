@@ -30,6 +30,12 @@ bdg:WA00KG03601 {
         adm:logMessage      "cataloged and released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG3B545DD83B1B1D83
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T12:20:18.068Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and Language encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGC0794F782720A5B0
         a                   adm:UpdateData ;
         adm:logDate         "2008-04-30T14:13:09.462Z"^^xsd:dateTime ;
@@ -58,21 +64,20 @@ bdg:WA00KG03601 {
     bda:WA00KG03601  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG03601 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "42/WA00KG03601.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG03601 ;
-        adm:logEntry        bda:LG2A351E4F29DF21F0 , bda:LG2BED670ADBB3D592 , bda:LG2F9B864752886425 , bda:LGC0794F782720A5B0 , bda:LGF99B40970B6AE49C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2A351E4F29DF21F0 , bda:LG2BED670ADBB3D592 , bda:LG2F9B864752886425 , bda:LG3B545DD83B1B1D83 , bda:LGC0794F782720A5B0 , bda:LGF99B40970B6AE49C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:MW00KG03601  skos:altLabel  "gan nan zang qu si lu lv you wen hua"@zh-latn-pinyin-x-ndia .
-    
     bdr:WA00KG03601  a      :SerialMember , :Work ;
-        skos:prefLabel      "kan lho'i bod khul dar lam ljongs rgyu'i rig gnas/"@bo-x-ewts , "gan nan zang qu si lu lv you wen hua"@zh-latn-pinyin-x-ndia ;
+        skos:altLabel       "gan nan zang qu si lu lv you wen hua"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "kan lho'i bod khul dar lam ljongs rgyu'i rig gnas/"@bo-x-ewts , "甘南藏族丝路旅游文化"@zh-hans ;
         :catalogInfo        "Monograhic series about the travel along the Silk Route area of Southern Gansu Autonomous Tibetan Prefecture."@en ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
+        :language           bdr:LangBo , bdr:LangZh ;
         :serialMemberOf     bdr:WAS00KG03597 ;
         :workGenre          bdr:T297 ;
         :workHasInstance    bdr:MW00KG03601 , bdr:W00KG03601 ;

@@ -30,6 +30,12 @@ bdg:WA1CZ2852 {
         adm:logMessage      "new catalog"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG8AE0D50ECC04D1FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T16:04:12.389Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, cat, pub info"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGE4074AD0BC7D634E
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2008-03-26T10:48:18.296Z"^^xsd:dateTime ;
@@ -67,19 +73,25 @@ bdg:WA1CZ2852 {
     bda:WA1CZ2852  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1CZ2852 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "ac/WA1CZ2852.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1CZ2852 ;
-        adm:logEntry        bda:LG27A43E15A3CCFF35 , bda:LG672BE70A3FB9FA28 , bda:LG70F342EB92961C47 , bda:LGE4074AD0BC7D634E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG27A43E15A3CCFF35 , bda:LG672BE70A3FB9FA28 , bda:LG70F342EB92961C47 , bda:LG8AE0D50ECC04D1FB , bda:LGE4074AD0BC7D634E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRA0A808A60C08EA82
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1649 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1CZ2852  a        :Work ;
         skos:altLabel       "bcom ldan 'das gshin rje gshed dmar po lha bcu gsum gyi dbang gi brgyud 'debs dang sgrub thabs mngon rtogs kyi rim pa/"@bo-x-ewts ;
         skos:prefLabel      "gshed dmar lha bcu gsum gyi dbang gi brgyud 'debs dang sgrub thabs mngon rtogs kyi rim pa/"@bo-x-ewts ;
         :catalogInfo        "Abhisamaya for the visualization of the thirteen deities of the Red Yamari. Includes list of masters in the transmission lineage."@en ;
+        :creator            bdr:CRA0A808A60C08EA82 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1 , bdr:T5 ;

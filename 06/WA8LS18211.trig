@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS18211 {
+    bda:LG0514D7BD07A51DA3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T09:29:05.841Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG268DA37336F3514B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-10-12T08:41:14.315Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS18211 {
     bda:WA8LS18211  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18211 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "06/WA8LS18211.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18211 ;
-        adm:logEntry        bda:LG268DA37336F3514B , bda:LG4C85CBE74899A1CC , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG0514D7BD07A51DA3 , bda:LG268DA37336F3514B , bda:LG4C85CBE74899A1CC , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR68881B22A6FB218A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75206 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS18211  a       :Work ;
         skos:prefLabel      "kun rtog sgyu ma'i shugs glu/"@bo-x-ewts ;
         :catalogInfo        "A collection of poetry composed by Tenzin Sherap."@en ;
+        :creator            bdr:CR68881B22A6FB218A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS18211 , bdr:W8LS18211 ;

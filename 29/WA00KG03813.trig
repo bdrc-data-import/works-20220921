@@ -30,6 +30,12 @@ bdg:WA00KG03813 {
         adm:logMessage      "cataloged and published"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG5A431D728B2EDFC0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T16:48:36.749Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and lang encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG6268D9873EC8719A
         a                   adm:UpdateData ;
         adm:logDate         "2009-07-20T09:18:41.208Z"^^xsd:dateTime ;
@@ -92,18 +98,19 @@ bdg:WA00KG03813 {
     bda:WA00KG03813  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG03813 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "29/WA00KG03813.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG03813 ;
-        adm:logEntry        bda:LG1488CDE20F36C18C , bda:LG1C43C7D0FC7435E2 , bda:LG25B7210EE5F079D3 , bda:LG6268D9873EC8719A , bda:LGB3D0443DF4799AA4 , bda:LGD987261EF08D285B , bda:LGF298B8FA5303FEBF , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1488CDE20F36C18C , bda:LG1C43C7D0FC7435E2 , bda:LG25B7210EE5F079D3 , bda:LG5A431D728B2EDFC0 , bda:LG6268D9873EC8719A , bda:LGB3D0443DF4799AA4 , bda:LGD987261EF08D285B , bda:LGF298B8FA5303FEBF , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:MW00KG03813  skos:altLabel  "thun ren rdzong gi deb ther/"@bo-x-ewts .
     
     bdr:WA00KG03813  a      :SerialMember , :Work ;
-        skos:prefLabel      "thun ren rdzong gi deb ther/"@bo-x-ewts , "tong ren xian zhi"@zh-latn-pinyin-x-ndia ;
+        skos:altLabel       "tong ren xian zhi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "thun ren rdzong gi deb ther/"@bo-x-ewts , "同仁县志"@zh-hans ;
         :catalogInfo        "On the natural resources, environment, economy, and political stuation in Tongren County, Tsongon Province."@en ;
         :isRoot             true ;
         :language           bdr:LangZh ;

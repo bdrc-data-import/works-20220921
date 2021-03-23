@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1CZ1282 {
+    bda:LG2CA1D8F373A141B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T16:04:08.791Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, cat, pub info"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG3FB55191626F9C99
         a                   adm:UpdateData ;
         adm:logDate         "2013-06-21T13:58:46.43Z"^^xsd:dateTime ;
@@ -38,17 +44,23 @@ bdg:WA1CZ1282 {
     bda:WA1CZ1282  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1CZ1282 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "3d/WA1CZ1282.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1CZ1282 ;
-        adm:logEntry        bda:LG3FB55191626F9C99 , bda:LG502FAA8AC3062B32 , bda:LG535978277C726141 , bda:LGE1AD354DC9473059 ;
+        adm:logEntry        bda:LG2CA1D8F373A141B8 , bda:LG3FB55191626F9C99 , bda:LG502FAA8AC3062B32 , bda:LG535978277C726141 , bda:LGE1AD354DC9473059 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRA8D8BE6F4698A32E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P797 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1CZ1282  a        :Work ;
         skos:altLabel       "bcom ldan 'das ma gdugs dkar gyi sgo nas byad 'grol bya tshul gsal ba'i sgron me/"@bo-x-ewts ;
         skos:prefLabel      "gdugs dkar gyi sgo nas byad 'grol bya tshul/"@bo-x-ewts ;
+        :creator            bdr:CRA8D8BE6F4698A32E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1CZ1282 , bdr:W1CZ1282 ;

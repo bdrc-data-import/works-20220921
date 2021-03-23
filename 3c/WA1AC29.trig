@@ -17,6 +17,12 @@ bdg:WA1AC29 {
         adm:logDate         "2014-10-24T13:34:50.508Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00029 .
     
+    bda:LG06D1F6916F06FFBC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T11:20:43.17Z"^^xsd:dateTime ;
+        adm:logMessage      "added T#, cataInfo..."@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG1857F99365FC1169
         a                   adm:UpdateData ;
         adm:logDate         "2014-10-29T17:47:30.668Z"^^xsd:dateTime ;
@@ -50,25 +56,28 @@ bdg:WA1AC29 {
     bda:WA1AC29  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC29 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "3c/WA1AC29.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC29 ;
-        adm:logEntry        bda:LG0048E4A9E1A9090A , bda:LG1857F99365FC1169 , bda:LG3CD7E8377B846B7C , bda:LG74C1E7F7E690FB57 , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0048E4A9E1A9090A , bda:LG06D1F6916F06FFBC , bda:LG1857F99365FC1169 , bda:LG3CD7E8377B846B7C , bda:LG74C1E7F7E690FB57 , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR06D1F6916F06FFBC
+    bdr:CRD88DE04216623DAB
         a                   :AgentAsCreator ;
         :agent              bdr:P7992 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1AC29  a          :SerialMember , :Work ;
-        skos:prefLabel      "tshe brtan lha rams pa'i gsung 'bum/__"@bo-x-ewts ;
-        :creator            bdr:CR06D1F6916F06FFBC ;
+        skos:altLabel       "tshe brtan lha rams pa'i gsung 'bum/ (stod cha) dang (smad cha)"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ blo bzang tshe brtan/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Mongolian Geluk master Tseten Lharampa (18-19th Cent.)."@en ;
+        :creator            bdr:CRD88DE04216623DAB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS140 ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW1AC29 , bdr:W1AC29 .
+        :workHasInstance    bdr:MW1AC29 , bdr:W1AC29 ;
+        :workIsAbout        bdr:T819 .
 }

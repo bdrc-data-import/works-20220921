@@ -27,6 +27,12 @@ bdg:WA1AC32 {
         adm:logDate         "2014-10-24T13:52:16.33Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00029 .
     
+    bda:LG8AF11716868F01E2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T13:28:46.967Z"^^xsd:dateTime ;
+        adm:logMessage      "added T# & cataInfo, bibTitle ...."@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGFAE04B6AE7D1B211
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-18T05:24:59.832Z"^^xsd:dateTime ;
@@ -50,25 +56,28 @@ bdg:WA1AC32 {
     bda:WA1AC32  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC32 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "9d/WA1AC32.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC32 ;
-        adm:logEntry        bda:LG17D76043338473B5 , bda:LG4CD143A8F1693C1F , bda:LG75ECF4E16FA553EB , bda:LGFAE04B6AE7D1B211 , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG17D76043338473B5 , bda:LG4CD143A8F1693C1F , bda:LG75ECF4E16FA553EB , bda:LG8AF11716868F01E2 , bda:LGFAE04B6AE7D1B211 , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8AF11716868F01E2
+    bdr:CRD0007EDDFD7B2B4C
         a                   :AgentAsCreator ;
         :agent              bdr:P1988 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1AC32  a          :SerialMember , :Work ;
-        skos:prefLabel      "byams me dpon bla blo bzang bstan pa'i nyi ma'i gsung 'bum/"@bo-x-ewts ;
-        :creator            bdr:CR8AF11716868F01E2 ;
+        skos:altLabel       "byams me dpon bla blo bzang bstan pa'i nyi ma'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ blo bzang bstan pa'i nyi ma/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by Geluk master Jamme Lobsang Tenpe Nyima (19th Cent.) from Amdo Kubum monastery."@en ;
+        :creator            bdr:CRD0007EDDFD7B2B4C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS140 ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW1AC32 , bdr:W1AC32 .
+        :workHasInstance    bdr:MW1AC32 , bdr:W1AC32 ;
+        :workIsAbout        bdr:T819 .
 }

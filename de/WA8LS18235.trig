@@ -18,6 +18,12 @@ bdg:WA8LS18235 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG87558A4C8886E398
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T11:16:21.863Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGA6903BAA3DECDC53
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-10-14T09:10:03.535Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS18235 {
     bda:WA8LS18235  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18235 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "de/WA8LS18235.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18235 ;
-        adm:logEntry        bda:LG154FB3CFE39C901B , bda:LGA6903BAA3DECDC53 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG154FB3CFE39C901B , bda:LG87558A4C8886E398 , bda:LGA6903BAA3DECDC53 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRC9474CB5058848D6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG25930 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS18235  a       :Work ;
         skos:prefLabel      "snyan ngag me long las 'phros pa'i gtam/"@bo-x-ewts ;
         :catalogInfo        "LIterary criticism of Kavyadarsha by Joleb Chophel."@en ;
+        :creator            bdr:CRC9474CB5058848D6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS18235 , bdr:W8LS18235 ;

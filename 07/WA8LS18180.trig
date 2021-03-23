@@ -24,6 +24,12 @@ bdg:WA8LS18180 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGFAEC69C2E8867E25
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T09:09:21.721Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGFB22CCA47FB9EC25
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -47,20 +53,26 @@ bdg:WA8LS18180 {
     bda:WA8LS18180  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18180 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "07/WA8LS18180.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18180 ;
-        adm:logEntry        bda:LG440431970D5FEC10 , bda:LG90A39B814A247B35 , bda:LGFB22CCA47FB9EC25 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG440431970D5FEC10 , bda:LG90A39B814A247B35 , bda:LGFAEC69C2E8867E25 , bda:LGFB22CCA47FB9EC25 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR7933B7AAE18092BB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75204 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS18180  a       :Work ;
         skos:altLabel       "dbal srod rlung gi dra rtsom legs btus/ mi dge ba/"@bo-x-ewts ;
         skos:prefLabel      "mi dge ba/"@bo-x-ewts ;
-        :catalogInfo        "A collection of essays composed by Welsey Lung."@en ;
+        :catalogInfo        "Selected essays composed by Welsey Lung."@en ;
+        :creator            bdr:CR7933B7AAE18092BB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T258 ;
+        :workGenre          bdr:T1PD128746 , bdr:T258 ;
         :workHasInstance    bdr:MW8LS18180 , bdr:W8LS18180 .
 }

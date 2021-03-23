@@ -24,6 +24,12 @@ bdg:WA8LS18472 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGF7822CC3C9F64029
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T16:07:04.626Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
@@ -48,17 +54,23 @@ bdg:WA8LS18472 {
     bda:WA8LS18472  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18472 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "6b/WA8LS18472.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18472 ;
-        adm:logEntry        bda:LGDBE25B6B534A6A09 , bda:LGEEC1C9372C3BF5FC , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LGDBE25B6B534A6A09 , bda:LGEEC1C9372C3BF5FC , bda:LGF7822CC3C9F64029 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR936ACDF74D621CDC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6635 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS18472  a       :Work ;
         skos:prefLabel      "dmangs srol rig pa spyi bshad/"@bo-x-ewts ;
         :catalogInfo        "Survey of Tibetan folk culture by Gang Gyaltsen Tsering."@en ;
+        :creator            bdr:CR936ACDF74D621CDC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS18472 , bdr:W8LS18472 ;

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA00KG03610 {
+    bda:LG2C96D5E1DDE33AB3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T16:48:33.08Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and lang encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG46F53281A5360154
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-10-24T14:02:12.037Z"^^xsd:dateTime ;
@@ -67,23 +73,21 @@ bdg:WA00KG03610 {
     bda:WA00KG03610  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG03610 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "2e/WA00KG03610.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG03610 ;
-        adm:logEntry        bda:LG46F53281A5360154 , bda:LG6F0D70CE9CC10789 , bda:LG7D2775F4BD8FED75 , bda:LG837B3E09F55140B1 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG2C96D5E1DDE33AB3 , bda:LG46F53281A5360154 , bda:LG6F0D70CE9CC10789 , bda:LG7D2775F4BD8FED75 , bda:LG837B3E09F55140B1 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
-    
-    bdr:MW00KG03610  skos:altLabel  "status of the tibetan media"@en .
     
     bdr:WA00KG03610  a      :Work ;
         skos:altLabel       "bod kyi gsar 'god pa'i rgyal spyi'i tshogs chen thengs dang po'i gsung bshad dang rtsom yig khag"@bo-x-ewts ;
         skos:prefLabel      "bod kyi gsar 'god las rigs dang de'i lag len/"@bo-x-ewts , "status of the tibetan media"@en ;
         :catalogInfo        "Collected articles and lectures from the First International Convention of Tibetan Journalists, Dharamsala."@en ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
+        :language           bdr:LangBo , bdr:LangEn ;
         :workGenre          bdr:T003JR155 ;
         :workHasInstance    bdr:MW00KG03610 , bdr:W00KG03610 ;
         :workIsAbout        bdr:T1983 .

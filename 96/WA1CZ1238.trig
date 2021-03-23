@@ -30,24 +30,43 @@ bdg:WA1CZ1238 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG608B5B630E9099B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T16:26:00.738Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG8027DAF63BFAC1E1
         a                   adm:UpdateData ;
         adm:logDate         "2009-06-26T15:19:06.088Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGC188C144BCE4A446
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T16:04:08.045Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, cat, pub info"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA1CZ1238  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1CZ1238 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "96/WA1CZ1238.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1CZ1238 ;
-        adm:logEntry        bda:LG19643B273EF04E90 , bda:LG5675E8EC50B32A5B , bda:LG5F417188CE03674D , bda:LG8027DAF63BFAC1E1 ;
+        adm:logEntry        bda:LG19643B273EF04E90 , bda:LG5675E8EC50B32A5B , bda:LG5F417188CE03674D , bda:LG608B5B630E9099B8 , bda:LG8027DAF63BFAC1E1 , bda:LGC188C144BCE4A446 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CREE79FCD31B425E35
+        a                   :AgentAsCreator ;
+        :agent              bdr:P461 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1CZ1238  a        :Work ;
         skos:prefLabel      "rnam rgyal stong mchod bya tshul/"@bo-x-ewts ;
+        :catalogInfo        "Thousand-fold offering puja of Usnisavijaya"@en ;
+        :creator            bdr:CREE79FCD31B425E35 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1CZ1238 , bdr:W1CZ1238 ;

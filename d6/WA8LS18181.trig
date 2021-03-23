@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS18181 {
+    bda:LG1C34B54EAF483352
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T09:13:03.145Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG21F6BC3B3D9A88A6
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-10-03T15:07:22.647Z"^^xsd:dateTime ;
@@ -47,18 +53,24 @@ bdg:WA8LS18181 {
     bda:WA8LS18181  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18181 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "d6/WA8LS18181.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18181 ;
-        adm:logEntry        bda:LG21F6BC3B3D9A88A6 , bda:LGA05D79931A30C7AD , bda:LGAFEB3DC4BA2782E5 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG1C34B54EAF483352 , bda:LG21F6BC3B3D9A88A6 , bda:LGA05D79931A30C7AD , bda:LGAFEB3DC4BA2782E5 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRA7E84987A56ACA36
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG1684 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS18181  a       :Work ;
         skos:altLabel       "gtam rgyud gser thang le'u dang po'i slob khrid sgra bshus/ hi ma la ya'i phar tshur/"@bo-x-ewts ;
         skos:prefLabel      "hi ma la ya'i phar tshur/"@bo-x-ewts ;
         :catalogInfo        "An explanation on the first chapter of Gedun Chophel's book titled Tamgyu Sergyi Thang ma by Go Sherap Gyatsho."@en ;
+        :creator            bdr:CRA7E84987A56ACA36 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T276 , bdr:T3 ;

@@ -34,6 +34,12 @@ bdg:WA00KG02744 {
         adm:logMessage      "changed access to restrictedInChina"@en ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGE053F0C67756E9D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-22T12:20:16.741Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and Language encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGF496D779FDF59C27
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-08-07T11:19:31.993Z"^^xsd:dateTime ;
@@ -70,18 +76,19 @@ bdg:WA00KG02744 {
     bda:WA00KG02744  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG02744 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "96/WA00KG02744.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG02744 ;
-        adm:logEntry        bda:LG108CD42893D707EA , bda:LG3721DF43CE12D43A , bda:LG5DA44D1A0DAA71CE , bda:LG5FEEBF9C16AFAFD2 , bda:LGF496D779FDF59C27 , bda:LGFD917574131DB209 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG108CD42893D707EA , bda:LG3721DF43CE12D43A , bda:LG5DA44D1A0DAA71CE , bda:LG5FEEBF9C16AFAFD2 , bda:LGE053F0C67756E9D2 , bda:LGF496D779FDF59C27 , bda:LGFD917574131DB209 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA00KG02744  a      :Work ;
         skos:prefLabel      "'dzom pa'i zhwa bshad/"@bo-x-ewts , "the praise of the hat"@en , "zang ba zan mao"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "The praise and explanation of the hats of 'dzom pa of ling gesar; include's translation in Chinese and English."@en ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
+        :language           bdr:LangBo , bdr:LangEn , bdr:LangZh ;
         :workGenre          bdr:T1029 ;
         :workHasInstance    bdr:MW00KG02744 , bdr:W00KG02744 ;
         :workIsAbout        bdr:T1312 .
