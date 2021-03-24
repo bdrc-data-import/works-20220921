@@ -24,6 +24,12 @@ bdg:WA8LS18532 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGD0B76A4334172F25
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-23T12:03:49.375Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -55,18 +61,24 @@ bdg:WA8LS18532 {
     bda:WA8LS18532  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18532 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "cc/WA8LS18532.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18532 ;
-        adm:logEntry        bda:LG608487791AB9F70F , bda:LGB840E0FFC3D5B68C , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LG608487791AB9F70F , bda:LGB840E0FFC3D5B68C , bda:LGD0B76A4334172F25 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CREB655D8A96663BCA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75221 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS18532  a       :SerialMember , :Work ;
         skos:altLabel       "dus rabs 21 pa'i bod lugs gso rig dngos tshan slob gso'i 'char 'god slob deb/thor nad gso ba/ bcos sgrig ma/"@bo-x-ewts ;
         skos:prefLabel      "thor nad gso ba/ bcos sgrig ma/"@bo-x-ewts ;
         :catalogInfo        "Treatment of small pox or pustule according to Tibetan medical pratice, text book edited by Nyima."@en ;
+        :creator            bdr:CREB655D8A96663BCA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1GS58453 ;

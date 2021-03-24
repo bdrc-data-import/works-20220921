@@ -18,6 +18,12 @@ bdg:WA8LS18556 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGC1293158465E4800
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-23T14:27:18.537Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGC7EEF6860CAB0EE2
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-29T11:14:47.325Z"^^xsd:dateTime ;
@@ -55,19 +61,20 @@ bdg:WA8LS18556 {
     bda:WA8LS18556  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18556 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "56/WA8LS18556.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18556 ;
-        adm:logEntry        bda:LG3BAD79EA06474AF3 , bda:LGC7EEF6860CAB0EE2 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LG3BAD79EA06474AF3 , bda:LGC1293158465E4800 , bda:LGC7EEF6860CAB0EE2 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA8LS18556  a       :Work ;
+    bdr:WA8LS18556  a       :SerialMember , :Work ;
         skos:prefLabel      "cha byad dpyad/ bcos sgrig ma/"@bo-x-ewts ;
-        :catalogInfo        "A textbook on Tibetan medical science edited by Losang Damchoe."@en ;
+        :catalogInfo        "A textbook on Tibetan medical science; edited by Losang Damchoe."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS8LS18556 ;
         :workGenre          bdr:T266 ;
         :workHasInstance    bdr:MW8LS18556 , bdr:MW8LS68406 , bdr:W8LS18556 , bdr:W8LS68406 ;
         :workIsAbout        bdr:T85 .

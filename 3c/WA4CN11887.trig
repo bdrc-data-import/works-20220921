@@ -18,6 +18,12 @@ bdg:WA4CN11887 {
         adm:logMessage      "cataloged & released"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG49865EFC69FD4200
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-23T15:41:44.819Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG99795C264C97514D
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2021-03-01T19:11:23.727Z"^^xsd:dateTime ;
@@ -33,17 +39,23 @@ bdg:WA4CN11887 {
     bda:WA4CN11887  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CN11887 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "3c/WA4CN11887.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CN11887 ;
-        adm:logEntry        bda:LG21D5889656C1CF9A , bda:LG99795C264C97514D , bda:LGEA015D7C5B86140E ;
+        adm:logEntry        bda:LG21D5889656C1CF9A , bda:LG49865EFC69FD4200 , bda:LG99795C264C97514D , bda:LGEA015D7C5B86140E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR76D897D54A427867
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12044 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA4CN11887  a       :Work ;
         skos:prefLabel      "lam gyi skar tshom/"@bo-x-ewts ;
-        :catalogInfo        "Collection of poetry."@en ;
+        :catalogInfo        "Collection of poetry by Kunga Yeshey."@en ;
+        :creator            bdr:CR76D897D54A427867 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW4CN11887 , bdr:W4CN11887 ;

@@ -30,6 +30,12 @@ bdg:WA8LS18481 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGE03DC858334226BD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-23T09:27:31.048Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, edition statement"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
@@ -54,18 +60,29 @@ bdg:WA8LS18481 {
     bda:WA8LS18481  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18481 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "44/WA8LS18481.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18481 ;
-        adm:logEntry        bda:LG7127FE9BBB9FE84E , bda:LGA3DB218C47F45881 , bda:LGBA9BBE1F521894F0 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LG7127FE9BBB9FE84E , bda:LGA3DB218C47F45881 , bda:LGBA9BBE1F521894F0 , bda:LGE03DC858334226BD , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR4228D46790FBE054
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75215 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR47D30343F550F0D4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75216 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS18481  a       :Work ;
         skos:altLabel       "nad thog lag len dngos kyi sman pa'i blta bde'i lag deb gzhon skyes dga' ba'i me long /"@bo-x-ewts ;
         skos:prefLabel      "nad thog sman pa'i lag deb/"@bo-x-ewts ;
-        :catalogInfo        "Handbook for Tibetan physician; edited by Gyang Gak Losang Tenzin and Menpa Bude Tsering."@en ;
+        :catalogInfo        "Tibetan physician handbook by Gyang Gak Losang Tenzin and Menpa Bude Tsering."@en ;
+        :creator            bdr:CR4228D46790FBE054 , bdr:CR47D30343F550F0D4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG15794 ;

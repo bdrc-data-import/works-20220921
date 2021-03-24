@@ -24,6 +24,12 @@ bdg:WA4CN11891 {
         adm:logMessage      "cataloged & released"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG384BCDB0365685C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-23T16:37:14.589Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG845C2AD1B3A1C711
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-01T12:52:07.518Z"^^xsd:dateTime ;
@@ -33,19 +39,26 @@ bdg:WA4CN11891 {
     bda:WA4CN11891  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CN11891 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c1/WA4CN11891.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CN11891 ;
-        adm:logEntry        bda:LG0B1C3A452ED61BA5 , bda:LG2135AC39D99DED44 , bda:LG845C2AD1B3A1C711 ;
+        adm:logEntry        bda:LG0B1C3A452ED61BA5 , bda:LG2135AC39D99DED44 , bda:LG384BCDB0365685C0 , bda:LG845C2AD1B3A1C711 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA4CN11891  a       :Work ;
+    bdr:CR35787D7048000B17
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12046 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA4CN11891  a       :SerialMember , :Work ;
         skos:prefLabel      "kha ba'i me tog"@bo-x-ewts ;
-        :catalogInfo        "A personal collection of poetry by Kunzang Nyima."@en ;
+        :catalogInfo        "A personal collection of poetry by Kunzang Nyima from Kham Dege."@en ;
+        :creator            bdr:CR35787D7048000B17 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS4CN11891 ;
         :workHasInstance    bdr:MW4CN11891 , bdr:W4CN11891 ;
         :workIsAbout        bdr:T281 .
 }

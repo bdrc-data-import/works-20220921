@@ -24,6 +24,12 @@ bdg:WA4CN11894 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG5E6FF3AC27ED8C8A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-23T17:47:23.141Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGB79095549A850BD7
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-01T13:02:35.803Z"^^xsd:dateTime ;
@@ -39,19 +45,26 @@ bdg:WA4CN11894 {
     bda:WA4CN11894  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CN11894 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "4a/WA4CN11894.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CN11894 ;
-        adm:logEntry        bda:LG17984B048EB1B014 , bda:LG42BBBD9C8ABE1E1E , bda:LGB79095549A850BD7 , bda:LGCA3624164C527C98 ;
+        adm:logEntry        bda:LG17984B048EB1B014 , bda:LG42BBBD9C8ABE1E1E , bda:LG5E6FF3AC27ED8C8A , bda:LGB79095549A850BD7 , bda:LGCA3624164C527C98 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA4CN11894  a       :Work ;
+    bdr:CRC7944D1793F70045
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12048 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA4CN11894  a       :SerialMember , :Work ;
         skos:prefLabel      "snang ba'i mu tig brgya rtsa ma/"@bo-x-ewts ;
-        :catalogInfo        "A personal collection of poetry by Tongnyima."@en ;
+        :catalogInfo        "A personal collection of prose by modern Tibetan female author Norbu Lhakyi."@en ;
+        :creator            bdr:CRC7944D1793F70045 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CN11894 , bdr:W4CN11894 ;
-        :workIsAbout        bdr:T281 .
+        :serialMemberOf     bdr:WAS4CN11894 ;
+        :workGenre          bdr:T1884 ;
+        :workHasInstance    bdr:MW4CN11894 , bdr:W4CN11894 .
 }

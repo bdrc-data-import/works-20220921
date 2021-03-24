@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS18553 {
+    bda:LG0DB27E90C3D6BD75
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-23T14:13:20.993Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG5D405B22BBC15A87
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-29T11:14:13.974Z"^^xsd:dateTime ;
@@ -55,19 +61,20 @@ bdg:WA8LS18553 {
     bda:WA8LS18553  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18553 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "54/WA8LS18553.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18553 ;
-        adm:logEntry        bda:LG5D405B22BBC15A87 , bda:LGFFE8DD2BCBE6612F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LG0DB27E90C3D6BD75 , bda:LG5D405B22BBC15A87 , bda:LGFFE8DD2BCBE6612F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA8LS18553  a       :Work ;
+    bdr:WA8LS18553  a       :SerialMember , :Work ;
         skos:prefLabel      "sum rtags rtsa 'grel/"@bo-x-ewts ;
         :catalogInfo        "Root text and commentary of Tibetan grammar; edited by Bende Tsering."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS8LS18553 ;
         :workGenre          bdr:T132 , bdr:T1KG8787 ;
         :workHasInstance    bdr:MW8LS18553 , bdr:W8LS18553 ;
         :workIsAbout        bdr:T186 .

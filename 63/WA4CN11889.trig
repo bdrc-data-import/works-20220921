@@ -24,6 +24,12 @@ bdg:WA4CN11889 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG24B838E05F8E9FFC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-23T15:59:48.343Z"^^xsd:dateTime ;
+        adm:logMessage      "added author & pg#"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG57937C88FC1CB0B2
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-02-22T14:10:15.231Z"^^xsd:dateTime ;
@@ -33,19 +39,26 @@ bdg:WA4CN11889 {
     bda:WA4CN11889  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CN11889 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "63/WA4CN11889.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CN11889 ;
-        adm:logEntry        bda:LG167541F14E1351B4 , bda:LG2256A6FC70BC7DC2 , bda:LG57937C88FC1CB0B2 ;
+        adm:logEntry        bda:LG167541F14E1351B4 , bda:LG2256A6FC70BC7DC2 , bda:LG24B838E05F8E9FFC , bda:LG57937C88FC1CB0B2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA4CN11889  a       :Work ;
+    bdr:CRCDDB8765D1B3A22D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12045 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA4CN11889  a       :SerialMember , :Work ;
         skos:prefLabel      "rmi lam nang gi mes po/"@bo-x-ewts ;
-        :catalogInfo        "Collection of poetry ny Nyima Nurphu."@en ;
+        :catalogInfo        "Collection of fictions by Nyima Norbu from Kham Trakgo."@en ;
+        :creator            bdr:CRCDDB8765D1B3A22D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CN11889 , bdr:W4CN11889 ;
-        :workIsAbout        bdr:T281 .
+        :serialMemberOf     bdr:WAS4CN11889 ;
+        :workGenre          bdr:T260 ;
+        :workHasInstance    bdr:MW4CN11889 , bdr:W4CN11889 .
 }
