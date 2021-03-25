@@ -24,6 +24,12 @@ bdg:WA00KG0541 {
         adm:logMessage      "changed spelling"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG6661329C788C4FF6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-24T08:27:42.409Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and lang encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG9005033B69021408
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-27T11:08:48.175Z"^^xsd:dateTime ;
@@ -86,18 +92,34 @@ bdg:WA00KG0541 {
     bda:WA00KG0541  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG0541 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "b5/WA00KG0541.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG0541 ;
-        adm:logEntry        bda:LG55DE280199C37BB3 , bda:LG5E77B291246815F4 , bda:LG9005033B69021408 , bda:LGA2AE85E5B346252E , bda:LGAD6707C992A59D43 , bda:LGAE8897337E5522F2 , bda:LGB2822E0B5778F8D4 , bda:LGB374BA14612272E0 , bda:LGDD278BCD6D7533FE , bda:LGE19EF0E5BE25C010 , bda:LGIM206EC9B06D , bda:LGIM74A445C794 ;
+        adm:logEntry        bda:LG55DE280199C37BB3 , bda:LG5E77B291246815F4 , bda:LG6661329C788C4FF6 , bda:LG9005033B69021408 , bda:LGA2AE85E5B346252E , bda:LGAD6707C992A59D43 , bda:LGAE8897337E5522F2 , bda:LGB2822E0B5778F8D4 , bda:LGB374BA14612272E0 , bda:LGDD278BCD6D7533FE , bda:LGE19EF0E5BE25C010 , bda:LGIM206EC9B06D , bda:LGIM74A445C794 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR679E46A7A2DBB0ED
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRB5A0145A957DA481
+        a                   :AgentAsCreator ;
+        :agent              bdr:P270 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRC04E0792DF825D9C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P287 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA00KG0541  a       :Work ;
         skos:altLabel       "nges don rdzogs pa chen po'i man ngag phyogs bsgrigs zab don nor bu'i mdzod khang /"@bo-x-ewts , "rdzogs skor phyogs bsgrigs/"@bo-x-ewts ;
         skos:prefLabel      "nges don rdzogs pa chen po'i man ngag phyogs bsgrigs/"@bo-x-ewts ;
-        :catalogInfo        "Collection of instructions on Dzogchen practice by various Nyingma masters"@en ;
+        :catalogInfo        "Collection of instructions on Dzogchen practice by various Nyingma masters."@en ;
+        :creator            bdr:CR679E46A7A2DBB0ED , bdr:CRB5A0145A957DA481 , bdr:CRC04E0792DF825D9C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T456 ;

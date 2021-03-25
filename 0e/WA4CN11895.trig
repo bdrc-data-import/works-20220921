@@ -18,6 +18,12 @@ bdg:WA4CN11895 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG74029FA7CCE59650
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-24T16:44:12.124Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG84F41C41EE1252C5
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-02-23T09:23:16.108Z"^^xsd:dateTime ;
@@ -33,19 +39,21 @@ bdg:WA4CN11895 {
     bda:WA4CN11895  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CN11895 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "0e/WA4CN11895.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CN11895 ;
-        adm:logEntry        bda:LG3EC2890B8879DD56 , bda:LG84F41C41EE1252C5 , bda:LGE773D1298F176791 ;
+        adm:logEntry        bda:LG3EC2890B8879DD56 , bda:LG74029FA7CCE59650 , bda:LG84F41C41EE1252C5 , bda:LGE773D1298F176791 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA4CN11895  a       :Work ;
+        skos:altLabel       "bod kyi rtsom pa po grags can rnams la bcar 'dri byas pa'i reg zig (deb lnga pa)"@bo-x-ewts ;
         skos:prefLabel      "nga dang nga'i rtsom rig gi lta tshul/"@bo-x-ewts ;
-        :catalogInfo        "Prose about Literary theory by Bamey Gyallo Tsering."@en ;
+        :catalogInfo        "Record about famoust Tibetan Writer's Interview by Gyalo Tsering."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1884 ;
-        :workHasInstance    bdr:MW4CN11895 , bdr:W4CN11895 .
+        :workGenre          bdr:T1478 ;
+        :workHasInstance    bdr:MW4CN11895 , bdr:W4CN11895 ;
+        :workIsAbout        bdr:T1KG6100 .
 }

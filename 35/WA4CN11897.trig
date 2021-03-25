@@ -30,22 +30,35 @@ bdg:WA4CN11897 {
         adm:logMessage      "added info"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGF3FA221D6A9891D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-24T18:26:24.325Z"^^xsd:dateTime ;
+        adm:logMessage      "added P#"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA4CN11897  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CN11897 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "35/WA4CN11897.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CN11897 ;
-        adm:logEntry        bda:LG006B746FA1ED3500 , bda:LG224C94E9979DDED8 , bda:LG84871F04C81B92BE ;
+        adm:logEntry        bda:LG006B746FA1ED3500 , bda:LG224C94E9979DDED8 , bda:LG84871F04C81B92BE , bda:LGF3FA221D6A9891D3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA4CN11897  a       :Work ;
-        skos:prefLabel      "mchod rten 'gram gyi byabs pa/"@bo-x-ewts ;
-        :catalogInfo        "A novel by Botsegyal."@en ;
+    bdr:CR3AB9BA092D08C347
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12050 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA4CN11897  a       :SerialMember , :Work ;
+        skos:prefLabel      "mchod rten 'gram gyi byams pa/"@bo-x-ewts ;
+        :catalogInfo        "Collection of novel by Tsegyal."@en ;
+        :creator            bdr:CR3AB9BA092D08C347 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS4CN11897 ;
         :workGenre          bdr:T260 ;
         :workHasInstance    bdr:MW4CN11897 , bdr:W4CN11897 .
 }

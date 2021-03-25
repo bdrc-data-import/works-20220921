@@ -18,6 +18,12 @@ bdg:WA8LS18670 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGB341A0656903CCB9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-24T15:28:05.21Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD0CE8CF50DC9657A
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-18T16:11:37.679Z"^^xsd:dateTime ;
@@ -55,20 +61,26 @@ bdg:WA8LS18670 {
     bda:WA8LS18670  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18670 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "0e/WA8LS18670.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18670 ;
-        adm:logEntry        bda:LG57F3D923EB8967BD , bda:LGD0CE8CF50DC9657A , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LG57F3D923EB8967BD , bda:LGB341A0656903CCB9 , bda:LGD0CE8CF50DC9657A , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR5E7EE081107A2E51
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1GS60371 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS18670  a       :Work ;
         skos:prefLabel      "grong gseb kyi sa cha'i lam lugs skor gyi bca' khrims shes bya'i dri ba dris lan/"@bo-x-ewts ;
-        :catalogInfo        "Questions and responses concerning the village land law of PRC; edited by Liu Nin and translated into Tibetan by Sonam Tsho."@en ;
+        :catalogInfo        "Questions and responses concerning the village land law of PRC; translated into Tibetan by Sonam Tsho."@en ;
+        :creator            bdr:CR5E7EE081107A2E51 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T28 ;
+        :workGenre          bdr:T1157 , bdr:T28 ;
         :workHasInstance    bdr:MW8LS18670 , bdr:W8LS18670 ;
         :workIsAbout        bdr:T4PD930 .
 }

@@ -24,6 +24,12 @@ bdg:WA8LS18607 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGB0D3566955229DCD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-24T10:35:36.948Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -55,19 +61,26 @@ bdg:WA8LS18607 {
     bda:WA8LS18607  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18607 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "0d/WA8LS18607.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18607 ;
-        adm:logEntry        bda:LG19B526A58C29CBFB , bda:LG8A06C878C0E598D4 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LG19B526A58C29CBFB , bda:LG8A06C878C0E598D4 , bda:LGB0D3566955229DCD , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR318E5415EA43DBE8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3735 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS18607  a       :Work ;
-        skos:prefLabel      "lo tsA'i gzhung lugs gser 'grel/"@bo-x-ewts ;
-        :catalogInfo        "Translator and its activities by Yeshe Dondup."@en ;
+        skos:prefLabel      "lo tsA'i gzhung lugs gsar 'grel/"@bo-x-ewts ;
+        :catalogInfo        "An explanation of translator and its activities by Yeshe Dondup."@en ;
+        :creator            bdr:CR318E5415EA43DBE8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW8LS18607 , bdr:W8LS18607 ;
         :workIsAbout        bdr:T1251 .
 }

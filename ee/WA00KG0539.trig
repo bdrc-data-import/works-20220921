@@ -17,6 +17,12 @@ bdg:WA00KG0539 {
         adm:logDate         "2008-06-03T16:21:00.702Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG159BEB6EF4618ED9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-24T08:27:41.999Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and lang encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGA9D7254B4BB8BE59
         a                   adm:UpdateData ;
         adm:logDate         "2007-03-13T15:25:24.769Z"^^xsd:dateTime ;
@@ -43,22 +49,24 @@ bdg:WA00KG0539 {
     bda:WA00KG0539  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG0539 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "ee/WA00KG0539.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG0539 ;
-        adm:logEntry        bda:LG10D2C2C3F4247441 , bda:LGA9D7254B4BB8BE59 , bda:LGC106E9532F2AB01E , bda:LGDB1A761AE6E55FB9 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG10D2C2C3F4247441 , bda:LG159BEB6EF4618ED9 , bda:LGA9D7254B4BB8BE59 , bda:LGC106E9532F2AB01E , bda:LGDB1A761AE6E55FB9 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:MW00KG0539  skos:altLabel  "guowai zangyi yaoxue yanjiu"@zh-latn-pinyin-x-ndia .
+    bdr:MW00KG0539  skos:altLabel  "国外藏医药学研究"@zh-hans .
     
     bdr:WA00KG0539  a       :SerialMember , :Work ;
-        skos:prefLabel      "rgyal phyi'i bod kyi gso rig zhib 'jug"@bo-x-ewts , "guowai zangyi yaoxue yanjiu"@zh-latn-pinyin-x-ndia ;
+        skos:altLabel       "guowai zangyi yaoxue yanjiu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgyal phyi'i bod kyi gso rig zhib 'jug"@bo-x-ewts , "国外藏医药学研究"@zh-hans ;
         :catalogInfo        "Articles on Tibetan medicine in the international context."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1017123 ;
+        :workGenre          bdr:T258 ;
         :workHasInstance    bdr:MW00KG0539 ;
         :workIsAbout        bdr:T85 .
 }

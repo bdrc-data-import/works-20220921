@@ -24,6 +24,12 @@ bdg:WA8LS18664 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGD9D392D753D4CA82
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-24T15:05:21.242Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -55,20 +61,31 @@ bdg:WA8LS18664 {
     bda:WA8LS18664  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18664 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "fd/WA8LS18664.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18664 ;
-        adm:logEntry        bda:LG802D631BAE3F73F7 , bda:LGA15845BFB5747309 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LG802D631BAE3F73F7 , bda:LGA15845BFB5747309 , bda:LGD9D392D753D4CA82 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR1EFCE5244F8099A7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75231 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRDE53679FC482B540
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1CZ809 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA8LS18664  a       :Work ;
         skos:prefLabel      "zas rigs kyi bde 'jags dang 'phrod bsten/"@bo-x-ewts ;
         :catalogInfo        "Questions and responses concerning health and hygiene; translated by Yeshe Dolma and Jamyang Dondrup."@en ;
+        :creator            bdr:CR1EFCE5244F8099A7 , bdr:CRDE53679FC482B540 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T28 ;
+        :workGenre          bdr:T1157 , bdr:T28 ;
         :workHasInstance    bdr:MW8LS18664 , bdr:W8LS18664 ;
         :workIsAbout        bdr:T1142 .
 }

@@ -18,6 +18,12 @@ bdg:WA8LS18631 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG38AEBE732F2D4562
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-24T14:12:44.443Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG9090FBB78DF353A3
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-12T09:28:32.757Z"^^xsd:dateTime ;
@@ -55,17 +61,23 @@ bdg:WA8LS18631 {
     bda:WA8LS18631  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18631 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "6c/WA8LS18631.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18631 ;
-        adm:logEntry        bda:LG25AB6315C4A8D613 , bda:LG9090FBB78DF353A3 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LG25AB6315C4A8D613 , bda:LG38AEBE732F2D4562 , bda:LG9090FBB78DF353A3 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRA46C325AFC71E1AD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8114 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS18631  a       :Work ;
         skos:prefLabel      "phyugs las lag rtsal go chod ma/"@bo-x-ewts ;
-        :catalogInfo        "Technology of animal husbandry; translated by Tsewang Thar."@en ;
+        :catalogInfo        "Technology for animal husbandry; translated by Tsewang Thar."@en ;
+        :creator            bdr:CRA46C325AFC71E1AD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS18631 , bdr:W8LS18631 ;

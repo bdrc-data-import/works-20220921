@@ -24,6 +24,12 @@ bdg:WA4CN11902 {
         adm:logMessage      "cataloged & released"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGEDE46860D6B3B99A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-24T20:11:50.546Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGF31E3333E8785D4C
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-01T17:06:17.172Z"^^xsd:dateTime ;
@@ -33,17 +39,24 @@ bdg:WA4CN11902 {
     bda:WA4CN11902  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CN11902 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ca/WA4CN11902.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CN11902 ;
-        adm:logEntry        bda:LGD95E2E0DDF04D032 , bda:LGDE901EA7D9EB95D5 , bda:LGF31E3333E8785D4C ;
+        adm:logEntry        bda:LGD95E2E0DDF04D032 , bda:LGDE901EA7D9EB95D5 , bda:LGEDE46860D6B3B99A , bda:LGF31E3333E8785D4C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusProvisional .
     
+    bdr:CR5AD819A10BA3641C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG5469 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA4CN11902  a       :Work ;
-        skos:prefLabel      "legs par sbyar ba gser gyi me tog las 'dab ma dang po ngag gi rgyan zhes bya ba me long ma'i 'grel pa/"@bo-x-ewts ;
+        skos:altLabel       "legs par sbyar ba gser gyi me tog las 'dab ma dang po ngag gi rgyan zhes bya ba me long ma'i 'grel ba/"@bo-x-ewts ;
+        skos:prefLabel      "snyan nga me long ma'i 'grel pa ngag gi rgyan/"@bo-x-ewts ;
         :catalogInfo        "Commentary on Kavyadarsa written by Tropa."@en ;
+        :creator            bdr:CR5AD819A10BA3641C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

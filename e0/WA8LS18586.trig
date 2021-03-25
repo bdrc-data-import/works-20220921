@@ -24,6 +24,12 @@ bdg:WA8LS18586 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGFB0F748C78408019
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-24T09:35:14.663Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor and edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -55,17 +61,23 @@ bdg:WA8LS18586 {
     bda:WA8LS18586  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18586 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "e0/WA8LS18586.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18586 ;
-        adm:logEntry        bda:LGBDEACC43EE20B820 , bda:LGC22130951DF2F0F0 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LGBDEACC43EE20B820 , bda:LGC22130951DF2F0F0 , bda:LGFB0F748C78408019 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR458FAF5CC89CCD2B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3725 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS18586  a       :Work ;
         skos:prefLabel      "skad brda'i bya rim jus 'god/"@bo-x-ewts ;
-        :catalogInfo        "Formulation of C language of computer science; edited and translated by Tashi Gyal."@en ;
+        :catalogInfo        "Language formulation of computer science; edited and translated by Tashi Gyal."@en ;
+        :creator            bdr:CR458FAF5CC89CCD2B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS18586 , bdr:W8LS18586 ;
