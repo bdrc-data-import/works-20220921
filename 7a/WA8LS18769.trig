@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS18769 {
+    bda:LG1828497112AEADEB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-25T14:08:27.271Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, editor"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG20F7B413EC0856B9
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-29T12:48:18.494Z"^^xsd:dateTime ;
@@ -55,17 +61,23 @@ bdg:WA8LS18769 {
     bda:WA8LS18769  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18769 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "7a/WA8LS18769.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18769 ;
-        adm:logEntry        bda:LG20F7B413EC0856B9 , bda:LGCC1CD4C68B8D8D11 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1828497112AEADEB , bda:LG20F7B413EC0856B9 , bda:LGCC1CD4C68B8D8D11 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRC823F899FFB102F7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6627 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS18769  a       :Work ;
         skos:prefLabel      "grong gseb kyi slob gso'i skor gyi khrims lugs dang srid jus/"@bo-x-ewts ;
-        :catalogInfo        "Rules and strategy of education in village; edited by Zhung Kho and translated by Nyingpo Gyal."@en ;
+        :catalogInfo        "Rules and policy of education in village; translated by Nyingpo Gyal."@en ;
+        :creator            bdr:CRC823F899FFB102F7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS18769 , bdr:W8LS18769 ;

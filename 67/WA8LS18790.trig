@@ -24,6 +24,12 @@ bdg:WA8LS18790 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGD443124A12D4F8F7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-25T15:05:44.996Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD56A6E427FC8D406
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-19T09:19:55.883Z"^^xsd:dateTime ;
@@ -60,17 +66,23 @@ bdg:WA8LS18790 {
     bda:WA8LS18790  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18790 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "67/WA8LS18790.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18790 ;
-        adm:logEntry        bda:LG2599B710DEDFD6A9 , bda:LG5DE767AF5EA2CC9B , bda:LGD56A6E427FC8D406 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2599B710DEDFD6A9 , bda:LG5DE767AF5EA2CC9B , bda:LGD443124A12D4F8F7 , bda:LGD56A6E427FC8D406 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR45AB6F18C0869EE7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1107 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS18790  a       :Work ;
         skos:prefLabel      "'dzad spyod pa'i khe dbang srung skyob byed phyogs skor kyi bca' khrims dpe 'grel/"@bo-x-ewts ;
-        :catalogInfo        "A commentary on the consumer's protection rights; edited by Lichen and Trang Ya translated by Rinchen Gyatsho."@en ;
+        :catalogInfo        "A commentary on the consumer's protection rights; translated by Rinchen Gyatsho."@en ;
+        :creator            bdr:CR45AB6F18C0869EE7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3JT5054 ;

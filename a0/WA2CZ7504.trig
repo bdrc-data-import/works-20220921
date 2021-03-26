@@ -41,6 +41,12 @@ bdg:WA2CZ7504 {
         adm:logDate         "2009-04-22T15:01:50.441Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGA0F5CD4AA7D9627B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-25T16:51:56.657Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, cat, pub info"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGB5BBD7BD61757C4A
         a                   adm:UpdateData ;
         adm:logDate         "2009-04-22T12:46:14.257Z"^^xsd:dateTime ;
@@ -77,25 +83,30 @@ bdg:WA2CZ7504 {
     bda:WA2CZ7504  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2CZ7504 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "a0/WA2CZ7504.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2CZ7504 ;
-        adm:logEntry        bda:LG258C4E0CC0EB2D1B , bda:LG4981DA9AC1401991 , bda:LG4CCEE7AB43B9BF1B , bda:LG95CE3682403DFDCA , bda:LG9B796935DFCB7FDE , bda:LGB5BBD7BD61757C4A , bda:LGD116829F8C12B1C2 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG258C4E0CC0EB2D1B , bda:LG4981DA9AC1401991 , bda:LG4CCEE7AB43B9BF1B , bda:LG95CE3682403DFDCA , bda:LG9B796935DFCB7FDE , bda:LGA0F5CD4AA7D9627B , bda:LGB5BBD7BD61757C4A , bda:LGD116829F8C12B1C2 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:EVA0F5CD4AA7D9627B
-        a                   :CompletedEvent ;
-        :onOrAbout          "རང་ལོ་ཞེ་གཉིས་ལྕགས་ཕོ་སྤྲེའུ་ལོར་བྲིས་པའོ།།" .
+    bdr:CR52760CB4022B6F36
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2CZ7506 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:EV762E037780A7F1D0
+        a                   :CompletedEvent .
     
     bdr:WA2CZ7504  a        :Work ;
         skos:altLabel       "rje btsun tsong kha pa'i rnam thar 'khrungs rabs/"@bo-x-ewts ;
         skos:prefLabel      "tsong kha pa'i rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography of Tsongkhapa Lobzang Drakpa (1357-1419). Includes account of the development of the Geluk order."@en ;
+        :creator            bdr:CR52760CB4022B6F36 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVA0F5CD4AA7D9627B ;
+        :workEvent          bdr:EV762E037780A7F1D0 ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW2CZ7504 , bdr:W2CZ7504 ;
         :workIsAbout        bdr:P64 , bdr:T819 .

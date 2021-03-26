@@ -18,6 +18,12 @@ bdg:WA00KG09831 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG619D3B511E226748
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-25T16:58:24.505Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and lang encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGABC5560063F1863B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2008-06-20T14:53:12.982Z"^^xsd:dateTime ;
@@ -73,22 +79,20 @@ bdg:WA00KG09831 {
     bda:WA00KG09831  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG09831 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "cc/WA00KG09831.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG09831 ;
-        adm:logEntry        bda:LG57929FACBB95E2FE , bda:LGABC5560063F1863B , bda:LGBBEEB2AD6DF35E41 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG57929FACBB95E2FE , bda:LG619D3B511E226748 , bda:LGABC5560063F1863B , bda:LGBBEEB2AD6DF35E41 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bdr:MW00KG09831  skos:altLabel  "zang wen bian yi zhi"@zh-latn-pinyin-x-ndia .
     
     bdr:WA00KG09831  a      :Work ;
         skos:altLabel       "rnga ba bod rigs cha'ng rigs rang skyong khul gyi bod yig rtsom sgyur lo rgyus/"@bo-x-ewts ;
         skos:prefLabel      "bod yig rtsom sgyur lo rgyus/"@bo-x-ewts , "zang wen bian yi zhi"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "History of Tibetan literature and translation. In the Chinese language."@en ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
+        :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T1134 ;
         :workHasInstance    bdr:MW00KG09831 , bdr:W00KG09831 ;
         :workIsAbout        bdr:T217 .

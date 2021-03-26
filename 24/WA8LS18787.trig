@@ -29,6 +29,12 @@ bdg:WA8LS18787 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGE5965BB48C9C3A37
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-25T14:55:06.428Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -60,17 +66,23 @@ bdg:WA8LS18787 {
     bda:WA8LS18787  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18787 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "24/WA8LS18787.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18787 ;
-        adm:logEntry        bda:LG46A9EA32850C7AD9 , bda:LG5023B717DEC28034 , bda:LGAAC0AEE49F46774E , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG46A9EA32850C7AD9 , bda:LG5023B717DEC28034 , bda:LGAAC0AEE49F46774E , bda:LGE5965BB48C9C3A37 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRF60F3E7C8154536E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6658 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS18787  a       :Work ;
         skos:prefLabel      "bca' khrims rogs skyor thad kyi nyer mkho'i khrid ston dpe deb/"@bo-x-ewts ;
-        :catalogInfo        "A supplementary readings for rules and regulations; edited by Zhuhran and translated by Tsering Kyid."@en ;
+        :catalogInfo        "A supplementary readings for rules and regulations; translated by Tsering Kyid."@en ;
+        :creator            bdr:CRF60F3E7C8154536E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T00AG0572 ;

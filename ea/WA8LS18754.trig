@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS18754 {
+    bda:LG5D7FED07777502F8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-25T10:38:28.652Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG7EE2070C046BCA77
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-14T16:16:18.479Z"^^xsd:dateTime ;
@@ -55,17 +61,23 @@ bdg:WA8LS18754 {
     bda:WA8LS18754  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18754 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "ea/WA8LS18754.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18754 ;
-        adm:logEntry        bda:LG7EE2070C046BCA77 , bda:LGF52010D805AC0D63 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG5D7FED07777502F8 , bda:LG7EE2070C046BCA77 , bda:LGF52010D805AC0D63 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRE789AEF341F30AAB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2JM105 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS18754  a       :Work ;
         skos:prefLabel      "dmangs don kha mchu'i skor gyi bca' khrims shes bu'i dri ba dris lan/"@bo-x-ewts ;
-        :catalogInfo        "Questions and responses concering the rules and regulations of lawsuit, edited by Liu Nying and translated by Yonten Dolma."@en ;
+        :catalogInfo        "Questions and responses concering the rules and regulations of lawsuit; translated by Yonten Dolma."@en ;
+        :creator            bdr:CRE789AEF341F30AAB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 ;

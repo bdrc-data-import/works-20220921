@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2CZ9111 {
+    bda:LG1839FC0122D2D0EF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-25T16:51:59.525Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, cat, pub info"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG30FF05E027C826A2
         a                   adm:UpdateData ;
         adm:logDate         "2010-02-08T09:29:13.819Z"^^xsd:dateTime ;
@@ -66,19 +72,25 @@ bdg:WA2CZ9111 {
     bda:WA2CZ9111  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2CZ9111 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "53/WA2CZ9111.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2CZ9111 ;
-        adm:logEntry        bda:LG30FF05E027C826A2 , bda:LG86361B177B144034 , bda:LGA36B21E1DD61D831 , bda:LGAAE9D8FF95A969C5 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG1839FC0122D2D0EF , bda:LG30FF05E027C826A2 , bda:LG86361B177B144034 , bda:LGA36B21E1DD61D831 , bda:LGAAE9D8FF95A969C5 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRB16111A372FB7E2A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2CZ9105 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2CZ9111  a        :Work ;
         skos:altLabel       "yongs 'dzin zhes pa 'byung ba gsum ldan chu pho byi lo'i le'u tho byed grub zung 'brel snang ba'i dga' ston/"@bo-x-ewts ;
         skos:prefLabel      "yongs 'dzin zhes pa chu pho byi lo'i lo tho/"@bo-x-ewts ;
         :catalogInfo        "Calendar for the Water Mouse year, 1972."@en ;
+        :creator            bdr:CRB16111A372FB7E2A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T222 ;

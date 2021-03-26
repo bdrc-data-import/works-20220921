@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS18685 {
+    bda:LGB72FBC214DDB4459
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-25T09:25:38.821Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGDB717617F31A50AF
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-13T09:54:36.19Z"^^xsd:dateTime ;
@@ -55,19 +61,20 @@ bdg:WA8LS18685 {
     bda:WA8LS18685  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18685 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "aa/WA8LS18685.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18685 ;
-        adm:logEntry        bda:LGDB717617F31A50AF , bda:LGE6780E203866C28E , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LGB72FBC214DDB4459 , bda:LGDB717617F31A50AF , bda:LGE6780E203866C28E , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG25676 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:WA8LS18685  a       :Work ;
         skos:prefLabel      "krung hwa mi dmangs spyi mthun rgyal khab kyi khrims yig phyogs bsgrigs/"@bo-x-ewts ;
-        :catalogInfo        "A collection of written laws of People's Republic of China."@en ;
+        :catalogInfo        "A collection of written laws of People's Republic of China; translated by translation bereau."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
         :workIsAbout        bdr:G3198 , bdr:T384 .
 }

@@ -36,6 +36,12 @@ bdg:WA4CZ294738 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG6AD962B15E175C9D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-25T16:52:02.463Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, cat, pub info"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGF8FB40389296B330
         a                   adm:UpdateData ;
         adm:logDate         "2017-09-20T12:57:45.679Z"^^xsd:dateTime ;
@@ -52,18 +58,24 @@ bdg:WA4CZ294738 {
     bda:WA4CZ294738  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ294738 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "de/WA4CZ294738.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ294738 ;
-        adm:logEntry        bda:LG1D75359AD8F068CB , bda:LG1FC033341752819A , bda:LG2300102D0B4CE741 , bda:LG5EBA1548F66A9382 , bda:LGF8FB40389296B330 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG1D75359AD8F068CB , bda:LG1FC033341752819A , bda:LG2300102D0B4CE741 , bda:LG5EBA1548F66A9382 , bda:LG6AD962B15E175C9D , bda:LGF8FB40389296B330 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRC1123197B3ECB877
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG10031 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA4CZ294738  a      :Work ;
         skos:altLabel       "dpal ldan 'ba' rom bka' brgyud kyi rnam thar chos 'byung gsal byed sgron me/"@bo-x-ewts , "dpal ldan 'ba' rom bka' brgyud kyi rnam thar snying por dril ba ke ta ke'i phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "'ba' rom bka' brgyud kyi chos 'byung gsal byed sgron me dang ke ta ke'i phreng ba/"@bo-x-ewts ;
         :catalogInfo        "Two Extensive religious history of the Barom Kagyu tradition."@en ;
+        :creator            bdr:CRC1123197B3ECB877 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T12 ;

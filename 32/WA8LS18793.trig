@@ -24,6 +24,12 @@ bdg:WA8LS18793 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG6D079D3725CFF38F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-25T15:54:51.547Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -55,20 +61,26 @@ bdg:WA8LS18793 {
     bda:WA8LS18793  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18793 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "32/WA8LS18793.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18793 ;
-        adm:logEntry        bda:LG5AF4DF35D39C735F , bda:LG5BC350BA14C4BDE8 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG5AF4DF35D39C735F , bda:LG5BC350BA14C4BDE8 , bda:LG6D079D3725CFF38F , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR71A80D90721C9AA5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7438 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS18793  a       :Work ;
         skos:altLabel       "ri mo'i lam nas ya kho'i skor gleng ba/ legs 'grub yong ba ji ltar bya dgos/"@bo-x-ewts ;
         skos:prefLabel      "legs 'grub yong ba ji ltar bya dgos/"@bo-x-ewts ;
-        :catalogInfo        "A story of Yakho with comic; edited by Wang Pingyan and translated by Loten."@en ;
+        :catalogInfo        "A story of Yakho with comic; translated by Loten."@en ;
+        :creator            bdr:CR71A80D90721C9AA5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T216 ;
+        :workGenre          bdr:T1157 , bdr:T216 ;
         :workHasInstance    bdr:MW8LS18793 , bdr:W8LS18793 .
 }

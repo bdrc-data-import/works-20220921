@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS18775 {
+    bda:LG039B3479AAF575B9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-25T14:23:46.142Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG55F72BD6D0058993
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-19T08:55:50.999Z"^^xsd:dateTime ;
@@ -55,17 +61,23 @@ bdg:WA8LS18775 {
     bda:WA8LS18775  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18775 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "db/WA8LS18775.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18775 ;
-        adm:logEntry        bda:LG55F72BD6D0058993 , bda:LG9CE9848C3992235C , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG039B3479AAF575B9 , bda:LG55F72BD6D0058993 , bda:LG9CE9848C3992235C , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1A58BBD6C31541F6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75230 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS18775  a       :Work ;
         skos:prefLabel      "grong khyer dang grong gseb kyi 'char gzhi bzo 'god byed phyogs skor gyi krung hwa mi dmangs spyi mthun rgyal khab kyi bca' khrims/ don 'grel/"@bo-x-ewts ;
-        :catalogInfo        "A commentary on the PRC's regualations on formulating town and village plan, translated by Dondrup Dolma."@en ;
+        :catalogInfo        "A commentary on PRC's regualations on town and village plan, translated by Dondrup Dolma."@en ;
+        :creator            bdr:CR1A58BBD6C31541F6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3JT5054 ;

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ1116 {
+    bda:LG1AA3156332B78872
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-25T16:52:00.068Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, cat, pub info"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG43D0A11803EA79A6
         a                   adm:UpdateData ;
         adm:logDate         "2010-08-23T14:01:22.671Z"^^xsd:dateTime ;
@@ -61,19 +67,18 @@ bdg:WA4CZ1116 {
     bda:WA4CZ1116  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ1116 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "f2/WA4CZ1116.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ1116 ;
-        adm:logEntry        bda:LG43D0A11803EA79A6 , bda:LG48AD9AB081821A75 , bda:LG53EFF975A750CE3D , bda:LG5A4D147B72D3F131 , bda:LG6E97BFF73C9C8756 , bda:LG9C5EC558956B6683 , bda:LGD7D290DE4BE0853C , bda:LGIM569A8014B1 ;
+        adm:logEntry        bda:LG1AA3156332B78872 , bda:LG43D0A11803EA79A6 , bda:LG48AD9AB081821A75 , bda:LG53EFF975A750CE3D , bda:LG5A4D147B72D3F131 , bda:LG6E97BFF73C9C8756 , bda:LG9C5EC558956B6683 , bda:LGD7D290DE4BE0853C , bda:LGIM569A8014B1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:MW4CZ1116  skos:altLabel  "arya angulimaliya nama mahayanasutra"@sa-x-ndia .
-    
     bdr:WA4CZ1116  a        :Work ;
         skos:altLabel       "'phags pa sor mo'i phreng ba la phan pa zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts ;
-        skos:prefLabel      "sor mo'i phreng ba la phan pa'i mdo/"@bo-x-ewts , "arya angulimaliya nama mahayanasutra"@sa-x-ndia ;
+        skos:prefLabel      "sor mo'i phreng ba la phan pa'i mdo/"@bo-x-ewts ;
+        :catalogInfo        "The Arya angulimaliya nama Mahayanasutra"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T4CZ71 , bdr:T769 ;
