@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS18907 {
+    bda:LG871A72E0F086BE75
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-26T09:49:20.684Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG92120A7BAA4FEBF2
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-21T09:07:40.835Z"^^xsd:dateTime ;
@@ -55,19 +61,26 @@ bdg:WA8LS18907 {
     bda:WA8LS18907  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18907 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "61/WA8LS18907.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18907 ;
-        adm:logEntry        bda:LG92120A7BAA4FEBF2 , bda:LGEB0E01405A3C2612 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG871A72E0F086BE75 , bda:LG92120A7BAA4FEBF2 , bda:LGEB0E01405A3C2612 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR3AF2CBF4B1CB1E61
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4PD3059 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS18907  a       :Work ;
         skos:prefLabel      "grong gseb las byed pa'i bca' khrims dang srid jus kyi mdzub ston/"@bo-x-ewts ;
-        :catalogInfo        "Regulations and guidance of village policy in PRC."@en ;
+        :catalogInfo        "Regulations and guidance of village policy in PRC; translated by Lhapel Tsering."@en ;
+        :creator            bdr:CR3AF2CBF4B1CB1E61 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 ;
         :workHasInstance    bdr:MW8LS18907 , bdr:W8LS18907 ;
         :workIsAbout        bdr:T4PD930 .
 }

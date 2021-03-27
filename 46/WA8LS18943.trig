@@ -18,6 +18,12 @@ bdg:WA8LS18943 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG78BE02E7EEF57F62
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-26T14:50:07.322Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG98F87C3DC7E60C60
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-24T09:49:51.139Z"^^xsd:dateTime ;
@@ -55,20 +61,26 @@ bdg:WA8LS18943 {
     bda:WA8LS18943  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18943 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "46/WA8LS18943.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18943 ;
-        adm:logEntry        bda:LG10B677583ABF1028 , bda:LG98F87C3DC7E60C60 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG10B677583ABF1028 , bda:LG78BE02E7EEF57F62 , bda:LG98F87C3DC7E60C60 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA8LS18673 ;
         adm:status          bda:StatusWithdrawn .
     
+    bdr:CR67DC5E2590B544D8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9917 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS18943  a       :Work ;
         skos:altLabel       "ri mo'i lam nas heng li ha+phu the'i skor gleng ba/ legs 'grub yong ba ji ltar byed/"@bo-x-ewts ;
         skos:prefLabel      "legs 'grub yong ba ji ltar byed/"@bo-x-ewts ;
-        :catalogInfo        "Hengley Hupthe Powo's story; edited by Pao Zhaomai and translated into Tibetan by Trinley."@en ;
+        :catalogInfo        "Hengley Hupthe Powo's story; translated into Tibetan by Trinley."@en ;
+        :creator            bdr:CR67DC5E2590B544D8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T216 .
+        :workGenre          bdr:T1157 , bdr:T216 .
 }

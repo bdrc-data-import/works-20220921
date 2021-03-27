@@ -24,6 +24,12 @@ bdg:WA8LS18940 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGBEDAD2E8E5FD71FA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-26T14:37:17.541Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGE2FC52DA8C07692F
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-24T09:38:00.672Z"^^xsd:dateTime ;
@@ -60,20 +66,26 @@ bdg:WA8LS18940 {
     bda:WA8LS18940  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18940 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "33/WA8LS18940.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18940 ;
-        adm:logEntry        bda:LG232B477DC1D29447 , bda:LG3368D00160D6CF0F , bda:LGE2FC52DA8C07692F , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG232B477DC1D29447 , bda:LG3368D00160D6CF0F , bda:LGBEDAD2E8E5FD71FA , bda:LGE2FC52DA8C07692F , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR16775F791A0F71CD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75240 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS18940  a       :Work ;
         skos:prefLabel      "mchin tshad kha pa'i nang dug 'khyer mkhan gyi klog deb/"@bo-x-ewts ;
-        :catalogInfo        "Liver ailment treatment text book; edited by Trang Zhuching and Ku Tranghe and translated by Lhakhar Gyal."@en ;
+        :catalogInfo        "Liver ailment treatment, text book; translated by Lhakhar Gyal."@en ;
+        :creator            bdr:CR16775F791A0F71CD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T266 ;
+        :workGenre          bdr:T1157 , bdr:T266 ;
         :workHasInstance    bdr:MW8LS18940 , bdr:W8LS18940 ;
         :workIsAbout        bdr:T2460 .
 }

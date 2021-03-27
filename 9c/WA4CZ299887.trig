@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ299887 {
+    bda:LG0B285D2A9F8CE19A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-26T16:35:55.205Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, added cat, pub info"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG393AF411C5776120
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-12-21T15:10:31.065Z"^^xsd:dateTime ;
@@ -58,14 +64,19 @@ bdg:WA4CZ299887 {
     bda:WA4CZ299887  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ299887 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "9c/WA4CZ299887.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ299887 ;
-        adm:logEntry        bda:LG393AF411C5776120 , bda:LGA2C4E39231B2B464 , bda:LGA471B9818975BF3F , bda:LGAC2A087723BB3C31 , bda:LGAFD42A8265A12495 , bda:LGFC2E2DA956CE8118 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG0B285D2A9F8CE19A , bda:LG393AF411C5776120 , bda:LGA2C4E39231B2B464 , bda:LGA471B9818975BF3F , bda:LGAC2A087723BB3C31 , bda:LGAFD42A8265A12495 , bda:LGFC2E2DA956CE8118 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRF29954887EAA00D3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1649 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW4CZ299887  skos:altLabel  "Freedom In Exile"@en-x-mixed .
     
@@ -73,6 +84,7 @@ bdg:WA4CZ299887 {
         skos:altLabel       "gong sa skyabs mgon tA la'i bla ma mchog gi rang rnam/"@bo-x-ewts , "lhar bcas srid zhi'i gtsug rgyan gong sa skyabs mgon sku phreng bcu bzhi pa chen po rje btsun 'jam dpal ngag dbang blo bzang ye shes bstan 'dzin rgya mtsho ssrid gsum dbang bsgyur mtshungs pa med pa'i sde dpal bzang po mchog gi rang rnam gsar pa/"@bo-x-ewts ;
         skos:prefLabel      "btsan byol nang gi rang dbang /"@bo-x-ewts , "Freedom In Exile"@en-x-mixed ;
         :catalogInfo        "The biography of His Holiness The 14th Dalai Lama translated into Tibetan by Tenzin Sherab"@en ;
+        :creator            bdr:CRF29954887EAA00D3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG14132 ;

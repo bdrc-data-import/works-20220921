@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS18913 {
+    bda:LG769A5562497B19D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-26T14:08:48.178Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGE5CBC32EBF0E2460
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-29T14:23:00.742Z"^^xsd:dateTime ;
@@ -55,19 +61,26 @@ bdg:WA8LS18913 {
     bda:WA8LS18913  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18913 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "56/WA8LS18913.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18913 ;
-        adm:logEntry        bda:LGE5CBC32EBF0E2460 , bda:LGF95922347DCA9C6D , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG769A5562497B19D0 , bda:LGE5CBC32EBF0E2460 , bda:LGF95922347DCA9C6D , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR0BB0E8F3932CE2BD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8083 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS18913  a       :Work ;
         skos:prefLabel      "grong gseb kyi rgyun 'byung byas nyes dang de dag gi sngon 'gog thabs lam/"@bo-x-ewts ;
-        :catalogInfo        "Method of eradicating misdeeds and its remedy in village area; edited by Liu We and translated by Taklha."@en ;
+        :catalogInfo        "Method of eradicating misdeeds and its remedy in village area; translated by Taklha."@en ;
+        :creator            bdr:CR0BB0E8F3932CE2BD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 ;
         :workHasInstance    bdr:MW8LS18913 , bdr:W8LS18913 ;
         :workIsAbout        bdr:T012AG03496 .
 }

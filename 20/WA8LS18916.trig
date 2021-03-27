@@ -17,6 +17,12 @@ bdg:WA8LS18916 {
         adm:logDate         "2017-04-21T09:52:59.214Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG97FE28D857CA45F7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-26T14:23:15.826Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGBF65FBF83134C8B7
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-21T09:51:20.338Z"^^xsd:dateTime ;
@@ -60,19 +66,26 @@ bdg:WA8LS18916 {
     bda:WA8LS18916  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18916 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "20/WA8LS18916.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18916 ;
-        adm:logEntry        bda:LG313F2BF8A4A937A8 , bda:LGBF65FBF83134C8B7 , bda:LGE63CC2B997714712 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG313F2BF8A4A937A8 , bda:LG97FE28D857CA45F7 , bda:LGBF65FBF83134C8B7 , bda:LGE63CC2B997714712 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR6CA02ACF7B7762AA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2JM306 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS18916  a       :Work ;
         skos:prefLabel      "sa zhing bshug sprod dang khang pa nyo 'tshong /"@bo-x-ewts ;
-        :catalogInfo        "Land deal and real estate; edited by Lita We and translated by Gonpo Gyal."@en ;
+        :catalogInfo        "Land deal and real estate; translated by Gonpo Gyal."@en ;
+        :creator            bdr:CR6CA02ACF7B7762AA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 ;
         :workHasInstance    bdr:MW8LS18916 , bdr:W8LS18916 ;
         :workIsAbout        bdr:T2208 .
 }

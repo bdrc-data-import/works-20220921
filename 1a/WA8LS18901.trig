@@ -17,6 +17,12 @@ bdg:WA8LS18901 {
         adm:logDate         "2017-04-20T10:31:48.968Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG3B960C3190FCA4D5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-26T09:20:09.458Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG5E6D2601FF3C0C5D
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-29T14:21:28.261Z"^^xsd:dateTime ;
@@ -60,19 +66,26 @@ bdg:WA8LS18901 {
     bda:WA8LS18901  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18901 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "1a/WA8LS18901.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18901 ;
-        adm:logEntry        bda:LG29E2E01FA998155F , bda:LG5E6D2601FF3C0C5D , bda:LGBEB17F9BBDC80DB0 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG29E2E01FA998155F , bda:LG3B960C3190FCA4D5 , bda:LG5E6D2601FF3C0C5D , bda:LGBEB17F9BBDC80DB0 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRDFDBD313B62CF9E3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7376 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS18901  a       :Work ;
         skos:prefLabel      "krung go'i gung khran tang gi skabs bco brgyad pa'i krung dbyang u yon lhan khang gi tshang 'dzoms gros tshogs thengs bzhi pa'i yig cha phyogs bsgrigs/"@bo-x-ewts ;
-        :catalogInfo        "A compilation of documents of 18th session of central party meeting of PRC."@en ;
+        :catalogInfo        "A compilation of documents of 18th session of central party meeting of PRC; translated by China's people translation center."@en ;
+        :creator            bdr:CRDFDBD313B62CF9E3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;
-        :workHasInstance    bdr:MW8LS18901 , bdr:W8LS18901 .
+        :workHasInstance    bdr:MW8LS18901 , bdr:W8LS18901 ;
+        :workIsAbout        bdr:T1172 .
 }

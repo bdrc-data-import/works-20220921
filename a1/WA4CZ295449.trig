@@ -24,6 +24,12 @@ bdg:WA4CZ295449 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG0F659C17E1F0153C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-26T16:35:50.325Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, added cat, pub info"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG38A8CBC4F7269668
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-09-06T10:27:59.424Z"^^xsd:dateTime ;
@@ -44,17 +50,23 @@ bdg:WA4CZ295449 {
     bda:WA4CZ295449  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ295449 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "a1/WA4CZ295449.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ295449 ;
-        adm:logEntry        bda:LG047559222EE09CED , bda:LG049B18852AFC0E59 , bda:LG38A8CBC4F7269668 , bda:LGB645A2BB0432D184 , bda:LGB758ABAEA932D578 ;
+        adm:logEntry        bda:LG047559222EE09CED , bda:LG049B18852AFC0E59 , bda:LG0F659C17E1F0153C , bda:LG38A8CBC4F7269668 , bda:LGB645A2BB0432D184 , bda:LGB758ABAEA932D578 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR86CB7A0E6E69ABD9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366353 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA4CZ295449  a      :Work ;
         skos:prefLabel      "gangs ri la bcangs pa'i brtse sems/"@bo-x-ewts ;
-        :catalogInfo        "Selected poems of a 20th century Tibetan author LHundrub Dorjee"@en ;
+        :catalogInfo        "Selected poems of a 20th century Tibetan author Lhundrub Dorjee"@en ;
+        :creator            bdr:CR86CB7A0E6E69ABD9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;
