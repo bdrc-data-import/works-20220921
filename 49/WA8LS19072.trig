@@ -23,6 +23,12 @@ bdg:WA8LS19072 {
         adm:logDate         "2017-04-27T14:51:49.539Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGC477D946383C93A0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-29T09:16:28.192Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGDAA023C129B69DC9
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-27T14:50:12.671Z"^^xsd:dateTime ;
@@ -60,19 +66,20 @@ bdg:WA8LS19072 {
     bda:WA8LS19072  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19072 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "49/WA8LS19072.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19072 ;
-        adm:logEntry        bda:LG30B13CDF71787CFB , bda:LGB9026196C5819661 , bda:LGDAA023C129B69DC9 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG30B13CDF71787CFB , bda:LGB9026196C5819661 , bda:LGC477D946383C93A0 , bda:LGDAA023C129B69DC9 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA8LS19072  a       :Work ;
-        skos:prefLabel      "skye ldan rdzas 'gyur rig pa/_smad cha/"@bo-x-ewts ;
-        :catalogInfo        "A translation of Chemistry book into Tibetan language edited by Choksum."@en ;
+        skos:prefLabel      "skye ldan rdzas 'gyur rig pa/ smad cha/"@bo-x-ewts ;
+        :catalogInfo        "A translation of Chemistry book into Tibetan language; edited by Choksum."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 , bdr:T266 ;
         :workHasInstance    bdr:MW8LS19072 , bdr:W8LS19072 ;
         :workIsAbout        bdr:T1179 .
 }

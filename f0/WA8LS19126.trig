@@ -18,6 +18,12 @@ bdg:WA8LS19126 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG4AEA2608DA96E845
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-29T12:07:50.302Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG69CD4AABF0250F30
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-29T15:03:33.673Z"^^xsd:dateTime ;
@@ -55,17 +61,23 @@ bdg:WA8LS19126 {
     bda:WA8LS19126  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19126 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "f0/WA8LS19126.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19126 ;
-        adm:logEntry        bda:LG0313AFC6347C2E91 , bda:LG69CD4AABF0250F30 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0313AFC6347C2E91 , bda:LG4AEA2608DA96E845 , bda:LG69CD4AABF0250F30 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRE6B764998C621FBD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75254 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS19126  a       :Work ;
         skos:prefLabel      "gsar 'gyur rig pa'i gzhung lugs kyi bslab gzhi/"@bo-x-ewts ;
-        :catalogInfo        "Text book for journalistic writings; edited by Traling Losang."@en ;
+        :catalogInfo        "Text book on journalism by Traling Losang."@en ;
+        :creator            bdr:CRE6B764998C621FBD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T266 ;

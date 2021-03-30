@@ -30,6 +30,12 @@ bdg:WA8LS19132 {
         adm:logMessage      "added topic"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGDC47C787F56713B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-29T14:32:55.021Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -61,19 +67,35 @@ bdg:WA8LS19132 {
     bda:WA8LS19132  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19132 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "a9/WA8LS19132.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19132 ;
-        adm:logEntry        bda:LG0014618E0C530F58 , bda:LG1C5204DD0F3F558C , bda:LG9A3E79B152C146E7 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0014618E0C530F58 , bda:LG1C5204DD0F3F558C , bda:LG9A3E79B152C146E7 , bda:LGDC47C787F56713B1 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR5DEABA9B27BC5270
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG865 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR8243566D6FB618A1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG15512 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRF64686278DE7EB13
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75255 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS19132  a       :Work ;
         skos:prefLabel      "shug gseb btsun ma'i dgon gyi gcod rta'i 'byung khams dang rnam par dpyad pa/"@bo-x-ewts ;
         :catalogInfo        "An analysis of the notation of Chod in Shukseb monastery by Jokar and Gedun Phelgye."@en ;
+        :creator            bdr:CR5DEABA9B27BC5270 , bdr:CR8243566D6FB618A1 , bdr:CRF64686278DE7EB13 ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
+        :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T1746 ;
         :workHasInstance    bdr:MW8LS19132 , bdr:W8LS19132 ;
         :workIsAbout        bdr:G521 , bdr:T194 , bdr:T299 .

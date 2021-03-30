@@ -14,22 +14,28 @@
 bdg:WA2KG228698 {
     bda:LG6869063B1A06A516
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-03-26T16:00:59.339Z"^^xsd:dateTime ;
+        adm:logDate         "2021-03-29T16:16:00.403Z"^^xsd:dateTime ;
         adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8EC6B4AC6142A4A9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-03-29T16:21:44.807Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG228698  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG228698 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9d/WA2KG228698.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG228698 ;
-        adm:logEntry        bda:LG6869063B1A06A516 ;
+        adm:logEntry        bda:LG6869063B1A06A516 , bda:LG8EC6B4AC6142A4A9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8EC6B4AC6142A4A9
+    bdr:CR69CD1572AFC67597
         a                   :AgentAsCreator ;
         :agent              bdr:P2KG228704 ;
         :role               bdr:R0ER0019 .
@@ -39,9 +45,9 @@ bdg:WA2KG228698 {
     bdr:WA2KG228698  a      :Work ;
         skos:prefLabel      "khams phyogs kyi rdo rko'i rig gnas kyi byung 'phel dang khyad chos rab gsal sgron me/"@bo-x-ewts , "康区石刻文化研究"@zh-hans ;
         :catalogInfo        "About the emerge and developments of skills and specialty of stone carvers of Kham area."@en ;
-        :creator            bdr:CR8EC6B4AC6142A4A9 ;
+        :creator            bdr:CR69CD1572AFC67597 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T2433 ;
-        :workHasInstance    bdr:MW2KG228698 .
+        :workHasInstance    bdr:MW2KG228698 , bdr:W2KG228698 .
 }

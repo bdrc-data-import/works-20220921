@@ -24,6 +24,12 @@ bdg:WA8LS19117 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG879A39C828834761
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-29T11:37:41.368Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGA8699ED81FFB2DA3
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-28T14:48:34.619Z"^^xsd:dateTime ;
@@ -60,20 +66,26 @@ bdg:WA8LS19117 {
     bda:WA8LS19117  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19117 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "dc/WA8LS19117.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19117 ;
-        adm:logEntry        bda:LG1FB8778379CAC033 , bda:LG2866F110E0C19F51 , bda:LGA8699ED81FFB2DA3 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1FB8778379CAC033 , bda:LG2866F110E0C19F51 , bda:LG879A39C828834761 , bda:LGA8699ED81FFB2DA3 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1B9586B08E999053
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75251 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS19117  a       :Work ;
         skos:prefLabel      "rang gi khe las 'dzugs gnyer byed thabs/"@bo-x-ewts ;
-        :catalogInfo        "Text book for business investment."@en ;
+        :catalogInfo        "Investment method, text book; translated by Tsering Norbu."@en ;
+        :creator            bdr:CR1B9586B08E999053 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T266 ;
+        :workGenre          bdr:T1157 , bdr:T266 ;
         :workHasInstance    bdr:MW8LS19117 , bdr:MW8LS19120 , bdr:W8LS19117 , bdr:W8LS19120 ;
         :workIsAbout        bdr:T2208 .
 }

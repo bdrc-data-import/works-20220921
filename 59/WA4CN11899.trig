@@ -24,6 +24,12 @@ bdg:WA4CN11899 {
         adm:logMessage      "cataloged & released"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG525FB35A958ACA10
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-29T20:32:28.806Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGCAA94903619397F6
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2021-03-01T19:38:36.288Z"^^xsd:dateTime ;
@@ -33,19 +39,29 @@ bdg:WA4CN11899 {
     bda:WA4CN11899  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CN11899 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "59/WA4CN11899.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CN11899 ;
-        adm:logEntry        bda:LG325D36C0E38F8685 , bda:LG49F93D7BC86227A9 , bda:LGCAA94903619397F6 ;
+        adm:logEntry        bda:LG325D36C0E38F8685 , bda:LG49F93D7BC86227A9 , bda:LG525FB35A958ACA10 , bda:LGCAA94903619397F6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRAD6A8312971D2830
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12057 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:MW4CN11899  skos:altLabel  "口述藏族文化史－藏学名家访谈录 (第一卷到第四卷)"@zh-hans .
+    
     bdr:WA4CN11899  a       :Work ;
-        skos:prefLabel      "zhal gsung gser gyi phreng ba/"@bo-x-ewts ;
-        :catalogInfo        "Collected Works by Kharbu Tsewang Dorje."@en ;
+        skos:altLabel       "bod kyi shes rig zhib 'jug gi ngag brjod lo rgyus bsdus pa/ (1900-2000)"@bo-x-ewts ;
+        skos:prefLabel      "zhal gsung gser gyi phreng ba/"@bo-x-ewts , "口述藏族文化史－藏学名家访谈录 (第一卷到第四卷)"@zh-hans ;
+        :catalogInfo        "Record of interviews with famous Tibetology scholars by Kharbu Tsewang Dorje."@en ;
+        :creator            bdr:CRAD6A8312971D2830 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW4CN11899 , bdr:W4CN11899 .
+        :workGenre          bdr:T1478 ;
+        :workHasInstance    bdr:MW4CN11899 , bdr:W4CN11899 ;
+        :workIsAbout        bdr:T212 .
 }

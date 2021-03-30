@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS19249 {
+    bda:LG0B3FBAB349E6B9E6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-29T16:13:44.957Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG32926FAC5F0AD16A
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-27T10:45:57.542Z"^^xsd:dateTime ;
@@ -84,19 +90,31 @@ bdg:WA8LS19249 {
     bda:WA8LS19249  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19249 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "30/WA8LS19249.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19249 ;
-        adm:logEntry        bda:LG32926FAC5F0AD16A , bda:LG65765CF4B9E38DB9 , bda:LG920F8EDD513A8F57 , bda:LG9A7EF1E5F1C7DA1A , bda:LGB6D79F01917EAE8E , bda:LGF1AE9286B2501600 , bda:LGF24F2EDF47924435 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0B3FBAB349E6B9E6 , bda:LG32926FAC5F0AD16A , bda:LG65765CF4B9E38DB9 , bda:LG920F8EDD513A8F57 , bda:LG9A7EF1E5F1C7DA1A , bda:LGB6D79F01917EAE8E , bda:LGF1AE9286B2501600 , bda:LGF24F2EDF47924435 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR3A67BDFD25E958CD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8311 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRDFD804E7079E1BF4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6929 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA8LS19249  a       :Work ;
         skos:prefLabel      "skye 'phel/"@bo-x-ewts ;
         :catalogInfo        "A development of animal husbandry translated by Lhakpa Tsering and Pempa Gyatsho."@en ;
+        :creator            bdr:CR3A67BDFD25E958CD , bdr:CRDFD804E7079E1BF4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 ;
         :workHasInstance    bdr:MW8LS19249 , bdr:W8LS19249 ;
         :workIsAbout        bdr:T301 .
 }

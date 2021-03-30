@@ -17,6 +17,12 @@ bdg:WA8LS19111 {
         adm:logDate         "2017-04-28T12:37:16.175Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG408141038B026CC7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-29T11:15:25.817Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGCB4BBBE83C7F4A80
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-28T12:36:02.343Z"^^xsd:dateTime ;
@@ -53,19 +59,20 @@ bdg:WA8LS19111 {
     bda:WA8LS19111  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19111 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "34/WA8LS19111.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19111 ;
-        adm:logEntry        bda:LG0CA8B4147E37CC46 , bda:LGCB4BBBE83C7F4A80 , bda:LGE0E6A7771A7BA8F6 , bda:LGIM065AD95F26 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG0CA8B4147E37CC46 , bda:LG408141038B026CC7 , bda:LGCB4BBBE83C7F4A80 , bda:LGE0E6A7771A7BA8F6 , bda:LGIM065AD95F26 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1AC459 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:WA8LS19111  a       :Work ;
         skos:prefLabel      "tshe rig"@bo-x-ewts ;
-        :catalogInfo        "A study on the Tibetan healing science."@en ;
+        :catalogInfo        "A collection of paper on Tibetan healing science; edited by Dolma Kyid and Namlha Gyal."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T003JR155 ;
         :workIsAbout        bdr:T85 .
 }
