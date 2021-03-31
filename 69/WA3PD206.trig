@@ -35,6 +35,12 @@ bdg:WA3PD206 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGA3C496538E216440
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T16:46:10.066Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -52,17 +58,18 @@ bdg:WA3PD206 {
     bda:WA3PD206  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3PD206 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "69/WA3PD206.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3PD206 ;
-        adm:logEntry        bda:LG2060B95B6F11BBD8 , bda:LG26972D46D1C62713 , bda:LG67F70F7E0269C40E , bda:LG6B82556F8F25D759 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG2060B95B6F11BBD8 , bda:LG26972D46D1C62713 , bda:LG67F70F7E0269C40E , bda:LG6B82556F8F25D759 , bda:LGA3C496538E216440 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA3PD206  a         :Work ;
         skos:altLabel       "zhong guo zang xue nian jian 2009"@zh-latn-pinyin ;
         skos:prefLabel      "中国藏学年鉴 2009"@zh-hans ;
+        :catalogInfo        "Journal of Tibetan study at 2009."@en ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workHasInstance    bdr:MW3PD206 , bdr:W3PD206 ;

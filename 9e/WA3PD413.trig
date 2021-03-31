@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3PD413 {
+    bda:LG5F6DF15529E3097B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T16:49:35.123Z"^^xsd:dateTime ;
+        adm:logMessage      "modifiled catalog"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG6181C95174EE0CF4
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-23T02:11:57.904Z"^^xsd:dateTime ;
@@ -50,17 +56,18 @@ bdg:WA3PD413 {
     bda:WA3PD413  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3PD413 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "9e/WA3PD413.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3PD413 ;
-        adm:logEntry        bda:LG6181C95174EE0CF4 , bda:LG64A4E9635736C7DB , bda:LG7CF264C7DB08301A , bda:LG864071291BCD219B , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG5F6DF15529E3097B , bda:LG6181C95174EE0CF4 , bda:LG64A4E9635736C7DB , bda:LG7CF264C7DB08301A , bda:LG864071291BCD219B , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA3PD413  a         :Work ;
         skos:altLabel       "kang ba zang zu min jian tu an ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "khams pa'i dmangs khrod mdzes ris gces btus/"@bo-x-ewts , "kangba Tibetan Folk Graphic Pattern Collection"@en , "康巴藏族民间图案集"@zh-hans ;
+        :catalogInfo        "Collection of folk pattern of Khampa Tibetan."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1PD128746 ;

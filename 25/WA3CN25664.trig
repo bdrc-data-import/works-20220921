@@ -30,6 +30,12 @@ bdg:WA3CN25664 {
         adm:logMessage      "added info"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG52C8D233CA0AF877
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T17:55:37.193Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG6A3E292869B1BAC5
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -45,17 +51,23 @@ bdg:WA3CN25664 {
     bda:WA3CN25664  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25664 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "25/WA3CN25664.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25664 ;
-        adm:logEntry        bda:LG096492CEDAA8953C , bda:LG2447066E999BEF94 , bda:LG4122DD28CD6F047E , bda:LG6A3E292869B1BAC5 , bda:LGE229D53A344B88E1 ;
+        adm:logEntry        bda:LG096492CEDAA8953C , bda:LG2447066E999BEF94 , bda:LG4122DD28CD6F047E , bda:LG52C8D233CA0AF877 , bda:LG6A3E292869B1BAC5 , bda:LGE229D53A344B88E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR1D41E3BF305F9DBC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12064 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN25664  a       :Work ;
         skos:prefLabel      "rgya bod bka' bstan dkar chag bsdur zhib/"@bo-x-ewts , "汉藏大藏经目录异同研究"@zh-hans ;
         :catalogInfo        "Comparative research on catalog of Buddhist canonical works of Chinese and Tibetan languege by Huang Mingxin."@en ;
+        :creator            bdr:CR1D41E3BF305F9DBC ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workHasInstance    bdr:MW3CN25664 , bdr:W3CN25664 ;

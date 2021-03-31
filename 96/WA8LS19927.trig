@@ -24,6 +24,12 @@ bdg:WA8LS19927 {
         adm:logMessage      "corrected CW"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGBCDF558DE26BD16A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T15:44:55.878Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGCCC130B03E0BAE07
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-12T12:50:12.65Z"^^xsd:dateTime ;
@@ -40,18 +46,24 @@ bdg:WA8LS19927 {
     bda:WA8LS19927  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19927 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "96/WA8LS19927.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19927 ;
-        adm:logEntry        bda:LG302ADFA5A5AA5BB7 , bda:LGA05A7A8940E3BB83 , bda:LGCCC130B03E0BAE07 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG302ADFA5A5AA5BB7 , bda:LGA05A7A8940E3BB83 , bda:LGBCDF558DE26BD16A , bda:LGCCC130B03E0BAE07 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRBC7DBEB7F6FF652B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75260 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS19927  a       :Work ;
         skos:altLabel       "byams pa'i smon lam gyi rnam bshad zab yangs chos kyi dbal be'u/"@bo-x-ewts ;
         skos:prefLabel      "byams pa'i smon lam gyi rnam bshad/"@bo-x-ewts ;
         :catalogInfo        "A detailed commentary of Maitreyapranidhana; author signed as Bende Pelgyi Senge."@en ;
+        :creator            bdr:CRBC7DBEB7F6FF652B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;

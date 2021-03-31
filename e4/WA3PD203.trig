@@ -33,6 +33,12 @@ bdg:WA3PD203 {
         adm:logDate         "2017-09-23T10:37:40.494Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGCA0EEC9AFF8ECF63
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T16:31:03.647Z"^^xsd:dateTime ;
+        adm:logMessage      "modified catalog"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGCA106AB70AB72A4D
         a                   adm:UpdateData ;
         adm:logDate         "2014-11-03T15:15:01.07Z"^^xsd:dateTime ;
@@ -67,21 +73,22 @@ bdg:WA3PD203 {
     bda:WA3PD203  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3PD203 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "e4/WA3PD203.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3PD203 ;
-        adm:logEntry        bda:LG13845BCE2BC1360A , bda:LG3F5B6211D41ED99B , bda:LG94E0EB0FE98CA67D , bda:LGBEEC2D5637F02A93 , bda:LGCA106AB70AB72A4D , bda:LGCAE28AF23FA68026 , bda:LGCBF76A9753729B0A , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG13845BCE2BC1360A , bda:LG3F5B6211D41ED99B , bda:LG94E0EB0FE98CA67D , bda:LGBEEC2D5637F02A93 , bda:LGCA0EEC9AFF8ECF63 , bda:LGCA106AB70AB72A4D , bda:LGCAE28AF23FA68026 , bda:LGCBF76A9753729B0A , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA3PD203  a         :SerialMember , :Work ;
-        skos:altLabel       "xi zang zi zhi qu -- nong ye zhi"@zh-latn-pinyin-x-ndia ;
+        skos:altLabel       "xi zang zi zhi qu - nong ye zhi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod rang skyong ljongs kyi dkar chag las zhing las kyi dkar chag"@bo-x-ewts , "西藏自治区志：农业志"@zh-hans ;
+        :catalogInfo        "Regional History of TAR agriculture. Compiled by the Regional History Compilation Committee of TAR."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS3PD203 ;
         :workGenre          bdr:T13 ;
         :workHasInstance    bdr:MW3PD203 , bdr:W3PD203 ;
-        :workIsAbout        bdr:G1PD108961 , bdr:T1177 .
+        :workIsAbout        bdr:G1PD108961 , bdr:T1177 , bdr:T1449 .
 }

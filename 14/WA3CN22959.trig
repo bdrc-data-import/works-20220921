@@ -18,6 +18,12 @@ bdg:WA3CN22959 {
         adm:logMessage      "corrected info"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG29CB89AF8A751FE9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T17:33:57.663Z"^^xsd:dateTime ;
+        adm:logMessage      "added translater"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG9F4917C6EDED31F1
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-07-13T10:39:40.261Z"^^xsd:dateTime ;
@@ -45,17 +51,23 @@ bdg:WA3CN22959 {
     bda:WA3CN22959  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN22959 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "14/WA3CN22959.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN22959 ;
-        adm:logEntry        bda:LG03810CD52D194AF1 , bda:LG9F4917C6EDED31F1 , bda:LGB63B511015D6F0F7 , bda:LGE10870CFC4A2BEDE , bda:LGFA9CFCF8C33DA032 ;
+        adm:logEntry        bda:LG03810CD52D194AF1 , bda:LG29CB89AF8A751FE9 , bda:LG9F4917C6EDED31F1 , bda:LGB63B511015D6F0F7 , bda:LGE10870CFC4A2BEDE , bda:LGFA9CFCF8C33DA032 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRAFBEB198C19A49E2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12062 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA3CN22959  a       :Work ;
         skos:prefLabel      "ga las 'jigs med/ le'u 9nas 14bar/"@bo-x-ewts , "Abhayakaragupta's Abhayapaddhati Chapters 9 to 14"@en , "《无畏藏护<无畏疏>第9-14章》（梵文、藏文、英文）"@zh-hans ;
         :catalogInfo        "Abhayakaragupta's Abhayapaddhati Chapters 9 to 14. Critically edited and translated by Luo Hong with a preface by Harunaga Isaacson and Alexis Sanderson."@en ;
+        :creator            bdr:CRAFBEB198C19A49E2 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn , bdr:LangSa ;
         :workGenre          bdr:T003JR155 ;

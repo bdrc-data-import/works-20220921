@@ -18,6 +18,12 @@ bdg:WA8LS19918 {
         adm:logMessage      "added cat info, topics and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG2B81EA2402010B92
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T15:21:16.35Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG771BE42133DA79D2
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-12T12:33:32.506Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS19918 {
     bda:WA8LS19918  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19918 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "25/WA8LS19918.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19918 ;
-        adm:logEntry        bda:LG18193D9D02727EAE , bda:LG771BE42133DA79D2 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG18193D9D02727EAE , bda:LG2B81EA2402010B92 , bda:LG771BE42133DA79D2 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR442248BCC66DF487
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2PD20791 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS19918  a       :Work ;
         skos:altLabel       "dag snang ye shes dra ba'i skor las/ shes rig rdo rje rnon po'i rgyud kyi 'grel ba tshig don rab gsal bai dUr ya'i chun po/"@bo-x-ewts ;
         skos:prefLabel      "shes rig rdo rje rnon po'i rgyud kyi 'grel ba/"@bo-x-ewts ;
         :catalogInfo        "Commentary of Tantra Shrerik Dorje Nonpo from the visionary; author signed as Gelek Pelzang."@en ;
+        :creator            bdr:CR442248BCC66DF487 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T2129 ;

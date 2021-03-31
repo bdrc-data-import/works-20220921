@@ -24,6 +24,12 @@ bdg:WA8LS19470 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG374B1F2346DF2B69
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T09:21:13.595Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -34,20 +40,26 @@ bdg:WA8LS19470 {
     bda:WA8LS19470  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19470 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "11/WA8LS19470.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19470 ;
-        adm:logEntry        bda:LG052825683AEEA3E2 , bda:LG083CA6E004293062 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG052825683AEEA3E2 , bda:LG083CA6E004293062 , bda:LG374B1F2346DF2B69 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR2DAA9ED17A925E17
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75256 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS19470  a       :Work ;
         skos:altLabel       "bu rang lha sras kyi mdzad pa'i ltas phra mo brtag byed/"@bo-x-ewts ;
         skos:prefLabel      "ltas phra mo brtag byed/"@bo-x-ewts ;
-        :catalogInfo        "Examination of subtle omens by Burang Lhatsun."@en ;
+        :catalogInfo        "Examination of subtle omens by Burang Lhase."@en ;
+        :creator            bdr:CR2DAA9ED17A925E17 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS19470 , bdr:W8LS19470 ;
-        :workIsAbout        bdr:T1756 .
+        :workIsAbout        bdr:T1234 , bdr:T1756 .
 }

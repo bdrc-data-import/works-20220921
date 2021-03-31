@@ -18,6 +18,12 @@ bdg:WA3CN12957 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG7F279E764D512489
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T17:21:29.58Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGDE83175A12913264
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-01-24T13:02:54.777Z"^^xsd:dateTime ;
@@ -40,19 +46,25 @@ bdg:WA3CN12957 {
     bda:WA3CN12957  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN12957 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "fc/WA3CN12957.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN12957 ;
-        adm:logEntry        bda:LG48D2B68698A6B1DA , bda:LGDE83175A12913264 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG48D2B68698A6B1DA , bda:LG7F279E764D512489 , bda:LGDE83175A12913264 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA20559 ;
         adm:status          bda:StatusWithdrawn .
     
+    bdr:CR0D2399E540323F45
+        a                   :AgentAsCreator ;
+        :agent              bdr:P314 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA3CN12957  a       :Work ;
         skos:altLabel       "gtam tshogs yon tan rgya mtsho'i spyi don theg pa'i gru gzings/"@bo-x-ewts ;
         skos:prefLabel      "gtam tshogs theg pa'i rgya mtsho/"@bo-x-ewts ;
-        :catalogInfo        "Journal of buddhist practices."@en ;
+        :catalogInfo        "Prose about buddhist practices by Jigme Lingpa."@en ;
+        :creator            bdr:CR0D2399E540323F45 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workIsAbout        bdr:T445 , bdr:T541 .

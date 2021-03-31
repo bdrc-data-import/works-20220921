@@ -24,6 +24,12 @@ bdg:WA8LS19670 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGF2B8F2B72DD6AD12
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T12:10:50.378Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS19670 {
     bda:WA8LS19670  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19670 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "4f/WA8LS19670.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19670 ;
-        adm:logEntry        bda:LG144B404F8A417562 , bda:LG4E2112438A487959 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG144B404F8A417562 , bda:LG4E2112438A487959 , bda:LGF2B8F2B72DD6AD12 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR4D8CD32D775F8E30
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6021 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS19670  a       :Work ;
         skos:altLabel       "bla ma gsang ba 'dus pa'i sgrub thabs kyi bshad pa sbas don lta ba'i mig 'byed/"@bo-x-ewts ;
         skos:prefLabel      "bla ma gsang ba 'dus pa'i sgrub thabs kyi bshad pa/"@bo-x-ewts ;
         :catalogInfo        "Explanation of Lama Sangdue's Sadhana; author signed as Tshultrim."@en ;
+        :creator            bdr:CR4D8CD32D775F8E30 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1 , bdr:T1029 ;

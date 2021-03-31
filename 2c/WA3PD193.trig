@@ -27,6 +27,12 @@ bdg:WA3PD193 {
         adm:logDate         "2017-09-23T09:32:19.457Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG5A5123635002A88F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T13:22:10.411Z"^^xsd:dateTime ;
+        adm:logMessage      "modified catalog"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG74B43225D3C1D238
         a                   adm:UpdateData ;
         adm:logDate         "2014-11-01T19:02:12.317Z"^^xsd:dateTime ;
@@ -61,11 +67,11 @@ bdg:WA3PD193 {
     bda:WA3PD193  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3PD193 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "2c/WA3PD193.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3PD193 ;
-        adm:logEntry        bda:LG002BAE20E6F6DBFD , bda:LG28C60695E49871CD , bda:LG4C56C8C3DEAF662C , bda:LG74B43225D3C1D238 , bda:LGD9E2876827E96BDC , bda:LGFB5FDB5FAC5151AF , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG002BAE20E6F6DBFD , bda:LG28C60695E49871CD , bda:LG4C56C8C3DEAF662C , bda:LG5A5123635002A88F , bda:LG74B43225D3C1D238 , bda:LGD9E2876827E96BDC , bda:LGFB5FDB5FAC5151AF , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -74,10 +80,11 @@ bdg:WA3PD193 {
     bdr:WA3PD193  a         :SerialMember , :Work ;
         skos:altLabel       "ding jie xian zhi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gting skyes rdzong gi dkar chag"@bo-x-ewts , "定结县志"@zh-hans ;
+        :catalogInfo        "Regional History of Tingkye county. Compiled by the Regional History Compilation Committee."@en ;
         :isRoot             true ;
         :language           bdr:LangZh ;
         :serialMemberOf     bdr:WAS1KG15003 ;
-        :workGenre          bdr:T13 ;
+        :workGenre          bdr:T1134 , bdr:T13 ;
         :workHasInstance    bdr:MW3PD193 , bdr:W3PD193 ;
         :workIsAbout        bdr:G2166 .
 }

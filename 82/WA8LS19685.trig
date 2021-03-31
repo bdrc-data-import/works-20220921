@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS19685 {
+    bda:LG58C39DE0AEBF2695
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T14:39:26.621Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG70B2B95D8D8A6079
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-08T12:27:40.781Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS19685 {
     bda:WA8LS19685  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19685 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "82/WA8LS19685.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19685 ;
-        adm:logEntry        bda:LG70B2B95D8D8A6079 , bda:LGDF02D36D4BDBF214 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG58C39DE0AEBF2695 , bda:LG70B2B95D8D8A6079 , bda:LGDF02D36D4BDBF214 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR9257314664250887
+        a                   :AgentAsCreator ;
+        :agent              bdr:P862 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS19685  a       :Work ;
         skos:altLabel       "byang chub bka' 'bum las legs par bshad pa yon tan gter mdzod/"@bo-x-ewts ;
         skos:prefLabel      "legs par bshad pa yon tan gter mdzod/"@bo-x-ewts ;
-        :catalogInfo        "Didadic work; author signed as Karma Vajra."@en ;
+        :catalogInfo        "Didadic work by Drukpa Jangchub Tsundu."@en ;
+        :creator            bdr:CR9257314664250887 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T245 ;

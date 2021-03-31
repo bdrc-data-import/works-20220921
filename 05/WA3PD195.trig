@@ -44,6 +44,12 @@ bdg:WA3PD195 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGB1D7D0DF21D1F841
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T16:10:56.806Z"^^xsd:dateTime ;
+        adm:logMessage      "modified catalog"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
@@ -61,11 +67,11 @@ bdg:WA3PD195 {
     bda:WA3PD195  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3PD195 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "05/WA3PD195.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3PD195 ;
-        adm:logEntry        bda:LG20FCC02B6F9A73BF , bda:LG24B9655C15C824E2 , bda:LG3CC1D2A00C642246 , bda:LG554BF3D2655CD2A9 , bda:LG7407EA340AE93627 , bda:LG9B86BED9E54B8802 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG20FCC02B6F9A73BF , bda:LG24B9655C15C824E2 , bda:LG3CC1D2A00C642246 , bda:LG554BF3D2655CD2A9 , bda:LG7407EA340AE93627 , bda:LG9B86BED9E54B8802 , bda:LGB1D7D0DF21D1F841 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -74,10 +80,11 @@ bdg:WA3PD195 {
     bdr:WA3PD195  a         :SerialMember , :Work ;
         skos:altLabel       "xie tong men xian zhi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bzhad mthong smon rdzong gi dkar chag"@bo-x-ewts , "谢通门县志"@zh-hans ;
+        :catalogInfo        "Regional History of Jed Tongmon county. Compiled by the Regional History Compilation Committee."@en ;
         :isRoot             true ;
         :language           bdr:LangZh ;
         :serialMemberOf     bdr:WAS1KG15003 ;
         :workGenre          bdr:T13 ;
         :workHasInstance    bdr:MW3PD195 , bdr:W3PD195 ;
-        :workIsAbout        bdr:G2164 .
+        :workIsAbout        bdr:G2164 , bdr:T1449 .
 }

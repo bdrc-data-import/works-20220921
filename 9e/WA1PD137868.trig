@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1PD137868 {
+    bda:LG0C5D88EB8F79985E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T12:05:05.788Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and added infos"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG267FE4335C9CD3FE
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-25T05:14:17.932Z"^^xsd:dateTime ;
@@ -68,21 +74,27 @@ bdg:WA1PD137868 {
     bda:WA1PD137868  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD137868 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "9e/WA1PD137868.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD137868 ;
-        adm:logEntry        bda:LG267FE4335C9CD3FE , bda:LG45C0018F7F6EBCF3 , bda:LG6D473D779C65F993 , bda:LGABE75F73C231FAF5 , bda:LGC01D4147117D44EB , bda:LGCA44115E46BDBF27 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0C5D88EB8F79985E , bda:LG267FE4335C9CD3FE , bda:LG45C0018F7F6EBCF3 , bda:LG6D473D779C65F993 , bda:LGABE75F73C231FAF5 , bda:LGC01D4147117D44EB , bda:LGCA44115E46BDBF27 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1PD137867 ;
         adm:status          bda:StatusWithdrawn .
+    
+    bdr:CRED405D2F32CAB3EC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12058 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD137868  skos:altLabel  "si khron bod rig pa'i zhib 'jug (4)"@bo-x-ewts .
     
     bdr:WA1PD137868  a      :SerialMember , :Work ;
         skos:altLabel       "si chuan zang xue yan jiu (4)"@zh-latn-pinyin ;
         skos:prefLabel      "si khron bod rig pa'i zhib 'jug"@bo-x-ewts , "四川藏学研究（四）"@zh-hans ;
-        :catalogInfo        "collection of research articles on tibetan studies"@en ;
+        :catalogInfo        "Collection of research articles on tibetan studies. Edited by Yangling Dorje."@en ;
+        :creator            bdr:CRED405D2F32CAB3EC ;
         :isRoot             true ;
         :language           bdr:LangZh ;
         :serialMemberOf     bdr:WAS1PD137871 ;

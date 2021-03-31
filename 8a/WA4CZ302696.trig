@@ -30,16 +30,31 @@ bdg:WA4CZ302696 {
         adm:logMessage      "added Work to PR1NLM00"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
     
+    bda:LGF5796C56916EE1CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T09:45:44.493Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ302696  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ302696 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "8a/WA4CZ302696.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ302696 ;
-        adm:logEntry        bda:LG34C96C3BBA6F3949 , bda:LG70894EB3313C577C , bda:LGE294F6149E32F22B ;
+        adm:logEntry        bda:LG34C96C3BBA6F3949 , bda:LG70894EB3313C577C , bda:LGE294F6149E32F22B , bda:LGF5796C56916EE1CD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRACFD368B154E8870
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366357 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CRB944B291083FB5C8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW4CZ302696  skos:altLabel  "arya-suvarnaprabhasottamasutrendraraja-namamahayanasutra"@sa-x-ndia .
     
@@ -47,6 +62,7 @@ bdg:WA4CZ302696 {
         skos:altLabel       "'phags pa gser 'od dam pa mdo sde'i dbang po'i rgyal po zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts ;
         skos:prefLabel      "gser 'od dam pa mdo sde'i dbang po'i rgyal po/"@bo-x-ewts , "arya-suvarnaprabhasottamasutrendraraja-namamahayanasutra"@sa-x-ndia ;
         :catalogInfo        "The Golden Light Sutra, Mahayana Buddhist canonical text that focuses on the confession of faults. stog number: 240 / 515 sde dge number: 556"@en ;
+        :creator            bdr:CRACFD368B154E8870 , bdr:CRB944B291083FB5C8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T769 ;

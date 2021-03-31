@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS19476 {
+    bda:LG416339B1B9269CC8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T09:52:22.948Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGF7819C2C46938EDF
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-30T16:04:16.336Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS19476 {
     bda:WA8LS19476  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19476 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "7a/WA8LS19476.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19476 ;
-        adm:logEntry        bda:LGF7819C2C46938EDF , bda:LGFF624DB458F09678 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG416339B1B9269CC8 , bda:LGF7819C2C46938EDF , bda:LGFF624DB458F09678 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRB5D6AEBCCD9D689F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75257 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS19476  a       :Work ;
         skos:altLabel       "rig 'dzin bla ma sku gsum gling pa'i 'da' kha'i zhal chems kyi bsdus 'grel chos nyid 'khor lo/"@bo-x-ewts ;
         skos:prefLabel      "'da' kha'i zhal chems kyi bsdus 'grel chos nyid 'khor lo/"@bo-x-ewts ;
         :catalogInfo        "A summary of Kusum LIngpa's testament, author signed as Rasmi badzra."@en ;
+        :creator            bdr:CRB5D6AEBCCD9D689F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T2398 ;

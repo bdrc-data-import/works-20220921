@@ -18,6 +18,12 @@ bdg:WA8LS19930 {
         adm:logMessage      "added cat info, topics and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG6DB01456E3104454
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T15:49:21.756Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGC96ADDD09762D36E
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-12T12:55:11.851Z"^^xsd:dateTime ;
@@ -34,17 +40,23 @@ bdg:WA8LS19930 {
     bda:WA8LS19930  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19930 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ef/WA8LS19930.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19930 ;
-        adm:logEntry        bda:LG4FB2F6CEBA2F0F86 , bda:LGC96ADDD09762D36E , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG4FB2F6CEBA2F0F86 , bda:LG6DB01456E3104454 , bda:LGC96ADDD09762D36E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRCE8E21E53A9247CA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75260 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS19930  a       :Work ;
         skos:prefLabel      "slob ma la springs pa'i rnam 'grel bam chos bdud rtsi'i lam gnas legs bshad baidUr bum bzang /"@bo-x-ewts ;
         :catalogInfo        "A commentary of instructions written in the form of letter writing; author signed as Bende Pelgyi Senge."@en ;
+        :creator            bdr:CRCE8E21E53A9247CA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T14 ;

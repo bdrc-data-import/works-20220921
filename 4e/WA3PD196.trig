@@ -39,6 +39,12 @@ bdg:WA3PD196 {
         adm:logDate         "2017-05-22T21:03:02.165Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGAAFE0E2489FA8E52
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T16:13:22.608Z"^^xsd:dateTime ;
+        adm:logMessage      "modified catalog"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGBA75BFB63D4B778D
         a                   adm:UpdateData ;
         adm:logDate         "2014-11-01T20:04:40.492Z"^^xsd:dateTime ;
@@ -73,11 +79,11 @@ bdg:WA3PD196 {
     bda:WA3PD196  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3PD196 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "4e/WA3PD196.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3PD196 ;
-        adm:logEntry        bda:LG20F07319960046FC , bda:LG3218E645C53EF787 , bda:LG6F41722C60B1F9FE , bda:LG745EBEC392835862 , bda:LG80178648E8CBFBD0 , bda:LGBA75BFB63D4B778D , bda:LGCAF19D289E51F860 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG20F07319960046FC , bda:LG3218E645C53EF787 , bda:LG6F41722C60B1F9FE , bda:LG745EBEC392835862 , bda:LG80178648E8CBFBD0 , bda:LGAAFE0E2489FA8E52 , bda:LGBA75BFB63D4B778D , bda:LGCAF19D289E51F860 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -86,10 +92,11 @@ bdg:WA3PD196 {
     bdr:WA3PD196  a         :SerialMember , :Work ;
         skos:altLabel       "pu lan xian zhi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "spu hreng rdzong gi lo rgyus/"@bo-x-ewts , "普兰县志"@zh-hans ;
+        :catalogInfo        "Regional History of Purang county. Compiled by the Regional History Compilation Committee."@en ;
         :isRoot             true ;
         :language           bdr:LangZh ;
         :serialMemberOf     bdr:WAS1KG15003 ;
         :workGenre          bdr:T13 ;
         :workHasInstance    bdr:MW3PD196 , bdr:W3PD196 ;
-        :workIsAbout        bdr:G2154 .
+        :workIsAbout        bdr:G2154 , bdr:T1449 .
 }

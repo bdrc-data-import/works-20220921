@@ -24,6 +24,17 @@ bdg:WA8LS19993 {
         adm:logMessage      "added biblio title, cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG72F9AA059C6AE49E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T16:01:28.661Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG8C2D0DE7BDB6009D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T16:41:45.284Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -34,18 +45,24 @@ bdg:WA8LS19993 {
     bda:WA8LS19993  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19993 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "cb/WA8LS19993.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19993 ;
-        adm:logEntry        bda:LG0912344D9387D223 , bda:LG5D8C1CBD78AFC82B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0912344D9387D223 , bda:LG5D8C1CBD78AFC82B , bda:LG72F9AA059C6AE49E , bda:LG8C2D0DE7BDB6009D , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR43E89B6A7BEE4AD8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7890 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS19993  a       :Work ;
-        skos:altLabel       "klong snying las/ thabs lam sbas don gyi 'bru 'grel hab don mngon gsal/"@bo-x-ewts ;
+        skos:altLabel       "klong snying las/ thabs lam sbas don gyi 'bru 'grel gab don mngon gsal/"@bo-x-ewts ;
         skos:prefLabel      "thabs lam sbas don gyi 'bru 'grel gab don mngon gsal/"@bo-x-ewts ;
         :catalogInfo        "1 'phags pa rten cing 'brel bar 'byung ba zhes bya ba theg pa chen po'i mdo/ 2 sgyu 'phrul gling slong gi dka' gnad re zung /"@bo-x-ewts , "Syllable by syllable explanation of Tibetan tantric practice by Namkha Gyatsho."@en ;
+        :creator            bdr:CR43E89B6A7BEE4AD8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1488 ;

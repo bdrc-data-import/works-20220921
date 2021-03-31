@@ -24,6 +24,12 @@ bdg:WA8LS19473 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGAFB35F9A2BC52136
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-30T09:39:39.042Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -34,19 +40,26 @@ bdg:WA8LS19473 {
     bda:WA8LS19473  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19473 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "e0/WA8LS19473.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19473 ;
-        adm:logEntry        bda:LG3B4E4158B2E3DF94 , bda:LG61B2C2BB5BDD1388 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3B4E4158B2E3DF94 , bda:LG61B2C2BB5BDD1388 , bda:LGAFB35F9A2BC52136 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR52082AAF0C1BB06C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7962 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS19473  a       :Work ;
         skos:prefLabel      "zab chos zhi khro dgongs pa rang grol gyi tshig don kha shas 'dri ba'i tha ram gnang ba'i lan du dgongs pa bkrol ba'i lde mig"@bo-x-ewts ;
-        :catalogInfo        "Response to questions being asked regarding the word and meaning of zhitro Gongpa Rangdrol; author signed as Namkha Dorje."@en ;
+        :catalogInfo        "Response to question regarding the word and meaning of the self liberated mind of the peaceful and wrathful ones by Namkha Dorje."@en ;
+        :creator            bdr:CR52082AAF0C1BB06C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 ;
-        :workHasInstance    bdr:MW3PD888_2D5AC8 , bdr:MW8LS19473 , bdr:W8LS19473 .
+        :workHasInstance    bdr:MW3PD888_2D5AC8 , bdr:MW8LS19473 , bdr:W8LS19473 ;
+        :workIsAbout        bdr:T351 .
 }
