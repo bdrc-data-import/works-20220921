@@ -18,6 +18,12 @@ bdg:WA8LS20201 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG838E2290E113047C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T14:35:23.301Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG8453C88C622467C9
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-04T09:45:57.306Z"^^xsd:dateTime ;
@@ -34,17 +40,23 @@ bdg:WA8LS20201 {
     bda:WA8LS20201  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20201 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "2f/WA8LS20201.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20201 ;
-        adm:logEntry        bda:LG70B67A088412FC25 , bda:LG8453C88C622467C9 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG70B67A088412FC25 , bda:LG838E2290E113047C , bda:LG8453C88C622467C9 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4DFCD46843FEAC82
+        a                   :AgentAsCreator ;
+        :agent              bdr:P558 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS20201  a       :Work ;
-        skos:prefLabel      "mkha' 'gro seng gdon gi zur gsal sbrang rtsi'i zeg ma/"@bo-x-ewts ;
+        skos:prefLabel      "mkha' 'gro seng gdong gi zur gsal sbrang rtsi'i zeg ma/"@bo-x-ewts ;
         :catalogInfo        "Supplementary to the rituals for the Sevasadhana of Jnanadakini; author signed as bidza."@en ;
+        :creator            bdr:CR4DFCD46843FEAC82 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T00AG0572 , bdr:T1CZ28 ;

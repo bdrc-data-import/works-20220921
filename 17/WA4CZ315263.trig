@@ -18,6 +18,12 @@ bdg:WA4CZ315263 {
         adm:logMessage      "new catalog and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG4A6F98587AE4F663
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T17:06:21.091Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, Added Author"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG514D3DDC8AC0C02E
         a                   adm:UpdateData ;
         adm:logDate         "2018-08-06T10:00:12.998Z"^^xsd:dateTime ;
@@ -40,21 +46,27 @@ bdg:WA4CZ315263 {
     bda:WA4CZ315263  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ315263 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "17/WA4CZ315263.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ315263 ;
-        adm:logEntry        bda:LG44841D171C884CF9 , bda:LG514D3DDC8AC0C02E , bda:LGDFD4CD259B051EA6 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG44841D171C884CF9 , bda:LG4A6F98587AE4F663 , bda:LG514D3DDC8AC0C02E , bda:LGDFD4CD259B051EA6 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR2CAD256CC139D3E7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366519 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA4CZ315263  a      :SerialMember , :Work ;
         skos:prefLabel      "yid dga' lha mo'i dmangs kyi lo rgyus rgyu cha/"@bo-x-ewts ;
-        :catalogInfo        "The Public Historical Resources of Ama Yiga Lhamoby Ga Sonam Gyalba (1959-2017)"@en ;
+        :catalogInfo        "The Public Historical Resources of Ama Yiga Lhamo by Ga Sonam Gyalba (1959-2017)"@en ;
+        :creator            bdr:CR2CAD256CC139D3E7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016612 ;
         :workHasInstance    bdr:MW4CZ315263 , bdr:W4CZ315263 ;
-        :workIsAbout        bdr:G4144 , bdr:T2382 .
+        :workIsAbout        bdr:P4CZ366520 , bdr:T2382 .
 }

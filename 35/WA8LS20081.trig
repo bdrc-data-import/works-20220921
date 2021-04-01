@@ -24,6 +24,12 @@ bdg:WA8LS20081 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG198CEB95D94633CB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T10:14:33.103Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -34,17 +40,23 @@ bdg:WA8LS20081 {
     bda:WA8LS20081  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20081 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "35/WA8LS20081.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20081 ;
-        adm:logEntry        bda:LG02DBF144232D372A , bda:LG16DF4ED9314FFF6B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG02DBF144232D372A , bda:LG16DF4ED9314FFF6B , bda:LG198CEB95D94633CB , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR8829E8034A7F91BB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75263 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS20081  a       :Work ;
         skos:prefLabel      "rdzogs pa chen po'i khrid kyi bsdus don me tog phreng ba/"@bo-x-ewts ;
-        :catalogInfo        "Summary of an instructional manual of great perfection by Lingtrul Thupten Pedma Gyatsho."@en ;
+        :catalogInfo        "Summary of an instructional manual of great perfection by Lingtrul."@en ;
+        :creator            bdr:CR8829E8034A7F91BB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T200 , bdr:T2398 ;

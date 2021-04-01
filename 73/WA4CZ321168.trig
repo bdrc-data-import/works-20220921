@@ -18,6 +18,12 @@ bdg:WA4CZ321168 {
         adm:logMessage      "new realeased"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG6BE3D0763A834895
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T17:06:23.962Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, Added Author"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGAE3CA2C4DBCCAA27
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-07-31T12:03:01.478Z"^^xsd:dateTime ;
@@ -40,19 +46,25 @@ bdg:WA4CZ321168 {
     bda:WA4CZ321168  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ321168 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "73/WA4CZ321168.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ321168 ;
-        adm:logEntry        bda:LG372B6A69F73D17E1 , bda:LGAE3CA2C4DBCCAA27 , bda:LGB1CC5A50BA9576AA , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG372B6A69F73D17E1 , bda:LG6BE3D0763A834895 , bda:LGAE3CA2C4DBCCAA27 , bda:LGB1CC5A50BA9576AA , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR05E07D41D5C92E96
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ321335 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA4CZ321168  a      :Work ;
         skos:altLabel       "shir la lhun grub dbang rgyal gyi myong tshor ngo ma/"@bo-x-ewts ;
         skos:prefLabel      "mun nag khrod kyi bod mi zhig gi mi tshe/"@bo-x-ewts ;
         :catalogInfo        "The life account of Shirla Lhundrub Wangyal"@en ;
+        :creator            bdr:CR05E07D41D5C92E96 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

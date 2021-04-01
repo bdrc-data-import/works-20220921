@@ -18,6 +18,12 @@ bdg:WA8LS20002 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG56D9978D38236DA1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T09:15:39.883Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGA43A04AFBAE3F97D
         a                   adm:UpdateData ;
         adm:logDate         "2017-03-28T11:06:18.542Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS20002 {
     bda:WA8LS20002  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20002 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "33/WA8LS20002.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20002 ;
-        adm:logEntry        bda:LG4ACDCC8554E15961 , bda:LGA43A04AFBAE3F97D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG4ACDCC8554E15961 , bda:LG56D9978D38236DA1 , bda:LGA43A04AFBAE3F97D , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRA8E203516B727E07
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75261 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20002  a       :Work ;
         skos:altLabel       "dag snang thugs kyi gter kha las gso ba'i gdams pa rtsa yi lag len/"@bo-x-ewts ;
         skos:prefLabel      "gso ba'i gdams pa rtsa yi lag len/"@bo-x-ewts ;
         :catalogInfo        "1 dag snang thugs kyi gter kha las rtsa dang nad kyi ngos 'dzin gsal byed sgron me/ 2 ma cig mkha' 'gro'i snyan rgyud lasH zhal gdams skyo shas glu dbyangs nor bu do shal/ 3 dag snang yid bzhin nam mkha'i mdzod lash rigs lnga mkha' 'gro'i sun bzlog ki'i brda glu dang rigs lnga'i zhing dang dpal dri mthong tshul dad pa'i 'jug ngogs/"@en , "A pulse examination instructions from the visionary experiences, author signed as Den Bima."@en ;
+        :creator            bdr:CRA8E203516B727E07 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS20002 , bdr:W8LS20002 ;

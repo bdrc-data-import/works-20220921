@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS20195 {
+    bda:LGB920E003A2549FA8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T14:29:47.671Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGE49AAE8BEF6F32F7
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-04T09:11:54.505Z"^^xsd:dateTime ;
@@ -34,17 +40,23 @@ bdg:WA8LS20195 {
     bda:WA8LS20195  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20195 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a6/WA8LS20195.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20195 ;
-        adm:logEntry        bda:LGE49AAE8BEF6F32F7 , bda:LGF22EEB42CAEB11D8 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LGB920E003A2549FA8 , bda:LGE49AAE8BEF6F32F7 , bda:LGF22EEB42CAEB11D8 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRFAC6065EDDE1BC01
+        a                   :AgentAsCreator ;
+        :agent              bdr:P558 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20195  a       :Work ;
         skos:prefLabel      "thugs chen bsnyen yig thos grol snying po/"@bo-x-ewts ;
         :catalogInfo        "Rituals for the Sevasadhana of Mahakarunika; author signed as bidza."@en ;
+        :creator            bdr:CRFAC6065EDDE1BC01 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ28 ;

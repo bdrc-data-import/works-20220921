@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS20230 {
+    bda:LG02AE6EFAFDC46977
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T14:51:59.821Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGACAC2260ACD21FEE
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-09T14:34:58.873Z"^^xsd:dateTime ;
@@ -53,17 +59,33 @@ bdg:WA8LS20230 {
     bda:WA8LS20230  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20230 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "ab/WA8LS20230.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20230 ;
-        adm:logEntry        bda:LGACAC2260ACD21FEE , bda:LGB46C58DBB4BF6284 , bda:LGC808CEA337EFC3CE , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG02AE6EFAFDC46977 , bda:LGACAC2260ACD21FEE , bda:LGB46C58DBB4BF6284 , bda:LGC808CEA337EFC3CE , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR2D873D1A12C3DEA6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10689 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRADEFA20A20729302
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75226 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRF6E0591CAF4B9036
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75228 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS20230  a       :Work ;
         skos:prefLabel      "rtsis 'khor gyi rmang gzhi'i shes bya ris mtshon ma[ Excel2007]'jug ngogs/"@bo-x-ewts ;
-        :catalogInfo        "An basic usage introduction of excel 2007; compiled by Sonam Gyatsho, Wangdrak Kyab and Konbhe."@en ;
+        :catalogInfo        "A basic introduction of excel 2007; compiled by Sonam Gyatsho, Wangdrak Kyab and Konbhe."@en ;
+        :creator            bdr:CR2D873D1A12C3DEA6 , bdr:CRADEFA20A20729302 , bdr:CRF6E0591CAF4B9036 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS20230 , bdr:W8LS20230 ;

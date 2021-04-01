@@ -23,6 +23,12 @@ bdg:WA8LS20266 {
         adm:logDate         "2017-05-12T09:53:46.99Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG88E39FD7BE9424CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T16:17:48.586Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGE23908CC55FF6F15
         a                   adm:UpdateData ;
         adm:logDate         "2016-12-15T09:46:12.801Z"^^xsd:dateTime ;
@@ -65,17 +71,23 @@ bdg:WA8LS20266 {
     bda:WA8LS20266  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20266 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "e6/WA8LS20266.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20266 ;
-        adm:logEntry        bda:LG2D09F6EAADDEF3D1 , bda:LG5B13644A3412C424 , bda:LGE23908CC55FF6F15 , bda:LGE983AE17DCE57253 , bda:LGF2BC15E9C4C9FDAD , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2D09F6EAADDEF3D1 , bda:LG5B13644A3412C424 , bda:LG88E39FD7BE9424CF , bda:LGE23908CC55FF6F15 , bda:LGE983AE17DCE57253 , bda:LGF2BC15E9C4C9FDAD , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR57D2D437DC3798D1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75249 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA8LS20266  a       :Work ;
         skos:prefLabel      "rgya'i yig tshang du 'khod pa'i bod dang 'brel ba'i lo rgyus/ deb/ 1-4"@bo-x-ewts ;
         :catalogInfo        "Tibet history from Chinese records during the period of Tang and Sung dynasty, translated and annotated by Jamyang Dargye."@en ;
+        :creator            bdr:CR57D2D437DC3798D1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

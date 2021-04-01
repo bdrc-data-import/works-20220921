@@ -23,6 +23,12 @@ bdg:WA8LS20257 {
         adm:logDate         "2017-05-11T14:53:20.938Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG2619608BAD974E4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T16:03:06.142Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG77ADB2141510ACB2
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-11T14:51:58.399Z"^^xsd:dateTime ;
@@ -53,17 +59,23 @@ bdg:WA8LS20257 {
     bda:WA8LS20257  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20257 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "0d/WA8LS20257.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20257 ;
-        adm:logEntry        bda:LG10D0B8431EB68AD0 , bda:LG1748D31A1697B6EF , bda:LG77ADB2141510ACB2 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG10D0B8431EB68AD0 , bda:LG1748D31A1697B6EF , bda:LG2619608BAD974E4C , bda:LG77ADB2141510ACB2 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR919B0592401F1A15
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75270 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS20257  a       :Work ;
         skos:prefLabel      "sman gyi 'khrungs dpe gnad bsdus bdud rtsi'i thigs pa/"@bo-x-ewts ;
-        :catalogInfo        "A materia medica by Jamyang nyi ma."@en ;
+        :catalogInfo        "Tibetan materia medica by Jamyang Nyima."@en ;
+        :creator            bdr:CR919B0592401F1A15 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS20257 , bdr:W8LS20257 ;

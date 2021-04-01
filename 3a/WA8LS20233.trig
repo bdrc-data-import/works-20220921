@@ -18,6 +18,12 @@ bdg:WA8LS20233 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGACB24E880D1529D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T15:03:17.564Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGE268D4AA2884EF70
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-09T16:02:34.26Z"^^xsd:dateTime ;
@@ -48,17 +54,28 @@ bdg:WA8LS20233 {
     bda:WA8LS20233  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20233 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "3a/WA8LS20233.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20233 ;
-        adm:logEntry        bda:LG49FCE19FF30F311B , bda:LGE268D4AA2884EF70 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG49FCE19FF30F311B , bda:LGACB24E880D1529D6 , bda:LGE268D4AA2884EF70 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR0BF5F8B97B3CD1C0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75228 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR8092C63FF5929634
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG010091 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20233  a       :Work ;
         skos:prefLabel      "jo mo glang ma'i bod yig yig gzugs/"@bo-x-ewts ;
         :catalogInfo        "Jomolangma Tibetan computer fonts, compiled by Tashi Tsering and Wangdrak Kyab."@en ;
+        :creator            bdr:CR0BF5F8B97B3CD1C0 , bdr:CR8092C63FF5929634 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS20233 , bdr:W8LS20233 ;

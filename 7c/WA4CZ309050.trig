@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ309050 {
+    bda:LG612ED29C5C93E63C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T17:06:18.841Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, Added Author"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG8B62C1D197F0234B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-07-30T11:49:17.048Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA4CZ309050 {
     bda:WA4CZ309050  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ309050 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "7c/WA4CZ309050.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ309050 ;
-        adm:logEntry        bda:LG8B62C1D197F0234B , bda:LGB002A878241FDDDB , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG612ED29C5C93E63C , bda:LG8B62C1D197F0234B , bda:LGB002A878241FDDDB , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRBE79B2883564E837
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6908 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA4CZ309050  a      :Work ;
         skos:prefLabel      "bod zas bdud rtsi'i bum pa/"@bo-x-ewts ;
         :catalogInfo        "Instruction on theTibetan traditional food and drink."@en ;
+        :creator            bdr:CRBE79B2883564E837 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T10MS14464 ;

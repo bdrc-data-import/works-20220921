@@ -24,6 +24,12 @@ bdg:WA8LS20236 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGB2D8DE493233335A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T15:37:42.257Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGCB107564532F7818
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-05-09T16:17:23.738Z"^^xsd:dateTime ;
@@ -47,17 +53,28 @@ bdg:WA8LS20236 {
     bda:WA8LS20236  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20236 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "8c/WA8LS20236.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20236 ;
-        adm:logEntry        bda:LG55D843D8F13E398E , bda:LGA501D9F4578E5A49 , bda:LGCB107564532F7818 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG55D843D8F13E398E , bda:LGA501D9F4578E5A49 , bda:LGB2D8DE493233335A , bda:LGCB107564532F7818 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR5F1F7D57FB606E3D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75267 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRCE6A1C759767AFCD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75268 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20236  a       :Work ;
         skos:prefLabel      "skom sel bdud rtsi'i chu rgyun/ deb dang po nas dgu pa/"@bo-x-ewts ;
         :catalogInfo        "A supplementary textbook compiled by Kelo and Jamyang Tashi."@en ;
+        :creator            bdr:CR5F1F7D57FB606E3D , bdr:CRCE6A1C759767AFCD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T00AG0572 , bdr:T266 ;

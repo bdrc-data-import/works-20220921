@@ -17,6 +17,12 @@ bdg:WA8LS20174 {
         adm:logDate         "2017-04-03T11:39:52.899Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG6F550271398B5173
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T10:41:31.583Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD0B0962CBA34AF8E
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-03T11:13:53.256Z"^^xsd:dateTime ;
@@ -39,18 +45,24 @@ bdg:WA8LS20174 {
     bda:WA8LS20174  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20174 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "e4/WA8LS20174.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20174 ;
-        adm:logEntry        bda:LG1C7304D9D49FC170 , bda:LGD0B0962CBA34AF8E , bda:LGDF33700A398715B3 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1C7304D9D49FC170 , bda:LG6F550271398B5173 , bda:LGD0B0962CBA34AF8E , bda:LGDF33700A398715B3 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR28A4263BD8ED81DE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75264 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20174  a       :Work ;
         skos:altLabel       "rdzogs pa chen po klong gsal snying thig gi thim med skor las/ gsang ba 'od zer gyi 'khor lo zhes sbas pa'i khrid yig gab pa gsal byed kyi zin bris mun sel sgron me la sogs/"@bo-x-ewts ;
         skos:prefLabel      "gsang ba 'od zer gyi 'khor lo zhes sbas pa'i khrid yig gab pa gsal byed kyi zin bris mun sel sgron me la sogs/"@bo-x-ewts ;
-        :catalogInfo        "Notes on the instrucation manual of great perfection; author signes as Bende basa magaprajnana."@en ;
+        :catalogInfo        "Notes on the instrucation manual of great perfection; author signes as Bende bawasa maghabha prajnana."@en ;
+        :creator            bdr:CR28A4263BD8ED81DE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1478 , bdr:T200 ;

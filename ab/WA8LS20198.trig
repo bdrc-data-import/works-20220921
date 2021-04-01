@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS20198 {
+    bda:LG5D0E22899F2CB7C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T14:32:31.712Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG60FA22F2029B900E
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-04T09:27:49.162Z"^^xsd:dateTime ;
@@ -34,17 +40,23 @@ bdg:WA8LS20198 {
     bda:WA8LS20198  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20198 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ab/WA8LS20198.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20198 ;
-        adm:logEntry        bda:LG60FA22F2029B900E , bda:LGF2AA0FE06838B300 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG5D0E22899F2CB7C5 , bda:LG60FA22F2029B900E , bda:LGF2AA0FE06838B300 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRE4E005E51315B4C1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P558 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20198  a       :Work ;
         skos:prefLabel      "bka' brgyad bde bshegs yongs 'dus kyi bsnyen yig don gsal me long /"@bo-x-ewts ;
         :catalogInfo        "Rituals for the Sevasadhana of Kagye Deshek Yongdue of Nyang Ral tradition; author signed as bidza."@en ;
+        :creator            bdr:CRE4E005E51315B4C1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ28 ;

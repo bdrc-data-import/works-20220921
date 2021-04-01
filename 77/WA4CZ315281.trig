@@ -18,6 +18,12 @@ bdg:WA4CZ315281 {
         adm:logMessage      "new realeased"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG58E364EA40F9F2ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-03-31T17:06:22.686Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, Added Author"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGCC5064F6DE6CEBBC
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-02T11:03:29.533Z"^^xsd:dateTime ;
@@ -40,19 +46,25 @@ bdg:WA4CZ315281 {
     bda:WA4CZ315281  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ315281 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "77/WA4CZ315281.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ315281 ;
-        adm:logEntry        bda:LG45425DB5A7767633 , bda:LGCC5064F6DE6CEBBC , bda:LGFD945A2D369E5932 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG45425DB5A7767633 , bda:LG58E364EA40F9F2ED , bda:LGCC5064F6DE6CEBBC , bda:LGFD945A2D369E5932 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR08F6AE5AFBCB0375
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366523 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA4CZ315281  a      :Work ;
         skos:altLabel       "ston pa thugs rje can gyi bka' lung ltar spyi nor gong sa skyabs mgon chen po'i mdzad 'phrin las 'phros pa'i 'brel yod lo rgyus mdo tsam gleng ba/"@bo-x-ewts ;
         skos:prefLabel      "gong sa skyabs mgon chen po'i mdzad 'phrin las 'phros pa'i 'brel yod lo rgyus mdo tsam gleng ba/"@bo-x-ewts ;
         :catalogInfo        "Memoirs and short biographies of H.H.Holines 14th Dalai Lama. By court physician Lobsang Wngyal"@en ;
+        :creator            bdr:CR08F6AE5AFBCB0375 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW4CZ315281 , bdr:W4CZ315281 ;
