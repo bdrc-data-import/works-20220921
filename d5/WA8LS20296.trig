@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS20296 {
+    bda:LG257455303EA6EC52
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-01T10:02:26.107Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG3D194301B8391B2C
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-12T12:23:27.158Z"^^xsd:dateTime ;
@@ -48,19 +54,26 @@ bdg:WA8LS20296 {
     bda:WA8LS20296  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20296 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "d5/WA8LS20296.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20296 ;
-        adm:logEntry        bda:LG3D194301B8391B2C , bda:LG7C12E82ACAB9ECED , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG257455303EA6EC52 , bda:LG3D194301B8391B2C , bda:LG7C12E82ACAB9ECED , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRBE1AD6E42B3BBFD5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7376 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS20296  a       :Work ;
         skos:prefLabel      "krung go mi dmangs 'thus mi'i tshogs chen gyi lam lugs/"@bo-x-ewts ;
-        :catalogInfo        "A procedural system of People's Congress general meeting of PRC, written by Lichin Hreng and translated by Sonam Dorjee."@en ;
+        :catalogInfo        "A procedural of People's Congress general meeting of PRC; translated by Sonam Dorjee."@en ;
+        :creator            bdr:CRBE1AD6E42B3BBFD5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 ;
         :workHasInstance    bdr:MW8LS20296 , bdr:W8LS20296 ;
         :workIsAbout        bdr:T409 .
 }

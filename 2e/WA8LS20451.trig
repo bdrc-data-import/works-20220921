@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS20451 {
+    bda:LG220C84EAFE226DE2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-01T15:25:17.186Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG9F4D8B86B6539991
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-15T10:19:25.708Z"^^xsd:dateTime ;
@@ -48,17 +54,23 @@ bdg:WA8LS20451 {
     bda:WA8LS20451  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20451 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "2e/WA8LS20451.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20451 ;
-        adm:logEntry        bda:LG9F4D8B86B6539991 , bda:LGF10064D92E705FED , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG220C84EAFE226DE2 , bda:LG9F4D8B86B6539991 , bda:LGF10064D92E705FED , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR6870A36969387360
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75285 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS20451  a       :Work ;
         skos:prefLabel      "sman shul rigs rus cho 'brang mtha' bral phyogs khyab kun gsal me long /"@bo-x-ewts ;
-        :catalogInfo        "A history of Badzong Menshul area of Kham by Menshul Sonam Tsering."@en ;
+        :catalogInfo        "A clan history of Badzong Menshul area of Kham by Menshul Sonam Tsering."@en ;
+        :creator            bdr:CR6870A36969387360 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

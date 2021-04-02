@@ -29,6 +29,12 @@ bdg:WA8LS20293 {
         adm:logDate         "2017-05-12T12:14:57.515Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG9CA79B968590D3C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-01T09:55:01.369Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -53,19 +59,26 @@ bdg:WA8LS20293 {
     bda:WA8LS20293  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20293 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "f2/WA8LS20293.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20293 ;
-        adm:logEntry        bda:LG395E3877D5D76C97 , bda:LG6C95FDF133BA84B7 , bda:LG9069F53537244E10 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG395E3877D5D76C97 , bda:LG6C95FDF133BA84B7 , bda:LG9069F53537244E10 , bda:LG9CA79B968590D3C0 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRC44E21E8F97889C8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7376 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS20293  a       :Work ;
         skos:prefLabel      "krung go'i mi rigs sa khongs rang skyong lam lugs/"@bo-x-ewts ;
-        :catalogInfo        "A textbook on the ethnicity autonomous system in PRC, written by zhao Himao and Liyangti translated by Sonam Dorjee."@en ;
+        :catalogInfo        "A textbook on the ethnicity of PRC's autonomous system; translated by Sonam Dorjee."@en ;
+        :creator            bdr:CRC44E21E8F97889C8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T266 ;
-        :workHasInstance    bdr:MW8LS20293 , bdr:W8LS20293 .
+        :workGenre          bdr:T1157 , bdr:T266 ;
+        :workHasInstance    bdr:MW8LS20293 , bdr:W8LS20293 ;
+        :workIsAbout        bdr:T2MS14902 .
 }

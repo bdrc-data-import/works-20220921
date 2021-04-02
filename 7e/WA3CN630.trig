@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN630 {
+    bda:LG11A320309E0B9C95
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-02T00:18:04.705Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG601A5556068D0503
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-03T08:59:25.64Z"^^xsd:dateTime ;
@@ -26,19 +32,19 @@ bdg:WA3CN630 {
     bda:WA3CN630  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN630 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "7e/WA3CN630.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN630 ;
-        adm:logEntry        bda:LG601A5556068D0503 , bda:LGB2F10C8DB75A43AA ;
+        adm:logEntry        bda:LG11A320309E0B9C95 , bda:LG601A5556068D0503 , bda:LGB2F10C8DB75A43AA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusProvisional .
     
     bdr:WA3CN630  a         :Work ;
         skos:prefLabel      "bka' 'gyur/"@bo-x-ewts ;
+        :catalogInfo        "Collection of canonical Buddhist literature in red ink printed woodblock version."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T4CZ71 ;
         :workHasInstance    bdr:MW3CN630 ;
         :workIsAbout        bdr:T2423 .
 }

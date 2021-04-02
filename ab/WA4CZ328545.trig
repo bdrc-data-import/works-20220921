@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ328545 {
+    bda:LG10274E24A0C64019
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-01T17:16:05.14Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG4A399A3DB8C1373E
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-01-25T15:38:13.312Z"^^xsd:dateTime ;
@@ -34,20 +40,26 @@ bdg:WA4CZ328545 {
     bda:WA4CZ328545  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ328545 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ab/WA4CZ328545.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ328545 ;
-        adm:logEntry        bda:LG4A399A3DB8C1373E , bda:LG5928B29CD5E764AA , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG10274E24A0C64019 , bda:LG4A399A3DB8C1373E , bda:LG5928B29CD5E764AA , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA4CZ295763 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
+    bdr:CR2751AA1FCDAF9145
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366527 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA4CZ328545  a      :Work ;
         skos:altLabel       "2016 lo'i spyi nor gong sa skyabs mgon chen po mchog gi mdzad 'phrin lo deb/"@bo-x-ewts ;
         skos:prefLabel      "rgyal ba rin po che/"@bo-x-ewts ;
         :catalogInfo        "2016 Whole year's schedules of H.H.Holiness 14th Dalai Lama."@en ;
+        :creator            bdr:CR2751AA1FCDAF9145 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workIsAbout        bdr:P1649 , bdr:T1KG24275 .

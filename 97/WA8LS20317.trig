@@ -24,6 +24,12 @@ bdg:WA8LS20317 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGC000C7968C0B86CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-01T11:45:49.54Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, editor, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -48,20 +54,26 @@ bdg:WA8LS20317 {
     bda:WA8LS20317  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20317 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "97/WA8LS20317.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20317 ;
-        adm:logEntry        bda:LG994A85A44DC1DF02 , bda:LGAEB2278143E3BC1B , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG994A85A44DC1DF02 , bda:LGAEB2278143E3BC1B , bda:LGC000C7968C0B86CA , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR7221A8F0569EC372
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75278 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS20317  a       :Work ;
         skos:prefLabel      "yul skor gyi rgyun shes klog deb/"@bo-x-ewts ;
-        :catalogInfo        "A textbook on tourism compiled by the Karze translation centre."@en ;
+        :catalogInfo        "A textbook on tourism; translated by Yangtsho and edited by Tromathar."@en ;
+        :creator            bdr:CR7221A8F0569EC372 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
-        :workGenre          bdr:T266 ;
+        :workGenre          bdr:T1157 , bdr:T266 ;
         :workHasInstance    bdr:MW8LS20317 , bdr:W8LS20317 ;
         :workIsAbout        bdr:T1184 .
 }

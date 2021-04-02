@@ -18,6 +18,12 @@ bdg:WA8LS20320 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG286A34C7D71F5ED2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-01T11:56:11.669Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, editor, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG2CE87DD3E79F898E
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-16T12:42:27.623Z"^^xsd:dateTime ;
@@ -53,20 +59,26 @@ bdg:WA8LS20320 {
     bda:WA8LS20320  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20320 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "96/WA8LS20320.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20320 ;
-        adm:logEntry        bda:LG0098C774659EF1CD , bda:LG2CE87DD3E79F898E , bda:LG64319BA6A6DFCE63 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0098C774659EF1CD , bda:LG286A34C7D71F5ED2 , bda:LG2CE87DD3E79F898E , bda:LG64319BA6A6DFCE63 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRA5FB0337B1CB2B71
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75280 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS20320  a       :Work ;
         skos:prefLabel      "'phrod bsten gyi rgyun shes klog deb/"@bo-x-ewts ;
-        :catalogInfo        "A textbook on health and hygiene compiled by the Karze translation centre."@en ;
+        :catalogInfo        "A textbook on health and hygiene; translated by Jangchub and edited by Tromathar."@en ;
+        :creator            bdr:CRA5FB0337B1CB2B71 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
-        :workGenre          bdr:T266 ;
+        :workGenre          bdr:T1157 , bdr:T266 ;
         :workHasInstance    bdr:MW8LS20320 , bdr:W8LS20320 ;
         :workIsAbout        bdr:T1142 .
 }

@@ -24,6 +24,12 @@ bdg:WA4CZ328520 {
         adm:logMessage      "new catalog and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGA2590C335AB55BBE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-01T17:16:04.419Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA4CZ328520 {
     bda:WA4CZ328520  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ328520 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "db/WA4CZ328520.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ328520 ;
-        adm:logEntry        bda:LG3BC6E292000F82AD , bda:LG7DC49265F350C7B1 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG3BC6E292000F82AD , bda:LG7DC49265F350C7B1 , bda:LGA2590C335AB55BBE , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB308F9825687059B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2PD20576 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA4CZ328520  a      :SerialMember , :Work ;
         skos:prefLabel      "slob dpon chen po paN chen rin po che/"@bo-x-ewts ;
-        :catalogInfo        "The life of Panchen Lama 10the Ertini Choekyi GYaltsen"@en ;
+        :catalogInfo        "The life of Panchen Lama 10the Panchen Ertini Choekyi Gyaltsen"@en ;
+        :creator            bdr:CRB308F9825687059B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS4CZ328521 ;

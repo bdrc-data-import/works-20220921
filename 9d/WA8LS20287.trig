@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS20287 {
+    bda:LGA9FF1AFA47B37555
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-01T09:38:04.538Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD62742E2B75A74DF
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-12T11:16:03.119Z"^^xsd:dateTime ;
@@ -48,19 +54,25 @@ bdg:WA8LS20287 {
     bda:WA8LS20287  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20287 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "9d/WA8LS20287.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20287 ;
-        adm:logEntry        bda:LGD62742E2B75A74DF , bda:LGE436952CAC4A3160 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LGA9FF1AFA47B37555 , bda:LGD62742E2B75A74DF , bda:LGE436952CAC4A3160 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRDEF1A026FEF6E0CD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75274 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS20287  a       :Work ;
         skos:prefLabel      "kran cin wu'u dang bod ljongs gsar ba/"@bo-x-ewts ;
-        :catalogInfo        "Tang Chinwu and Tibet; written by Tang Hwa Tron and translated into Tibetan by Canglo Can Phuntsok Namgyal."@en ;
+        :catalogInfo        "Tang Chinwu and Tibet; translated into Tibetan by Changlo Chan Phuntsok Namgyal."@en ;
+        :creator            bdr:CRDEF1A026FEF6E0CD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1134 ;
+        :workGenre          bdr:T1134 , bdr:T1157 ;
         :workHasInstance    bdr:MW8LS20287 , bdr:W8LS20287 .
 }

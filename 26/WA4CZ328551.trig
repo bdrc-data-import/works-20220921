@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ328551 {
+    bda:LG6C70854285A46354
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-01T17:16:06.495Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGC6A507DD84F957AA
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-08-05T12:20:18.331Z"^^xsd:dateTime ;
@@ -34,19 +40,25 @@ bdg:WA4CZ328551 {
     bda:WA4CZ328551  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ328551 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "26/WA4CZ328551.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ328551 ;
-        adm:logEntry        bda:LGC6A507DD84F957AA , bda:LGDB92A2FDEEACEDB6 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG6C70854285A46354 , bda:LGC6A507DD84F957AA , bda:LGDB92A2FDEEACEDB6 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR978F5716B9D25716
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6280 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA4CZ328551  a      :Work ;
         skos:altLabel       "gangs can bon gyi brda sprod pa'i bstan bcos sum bcu ba dang rtags 'jug gi rnam gzhag rgya cher bshad pa thon mi'i zhal lung gi zin bris sam dka' gnad gsal bar byed pa gangs ri'i chu rgyun/"@bo-x-ewts ;
         skos:prefLabel      "thon mi'i zhal lung gi dka' zin gangs ri'i chu rgyun/"@bo-x-ewts ;
         :catalogInfo        "Commentary on difficulty points on Tibetan grammar Bon tradition by Jamyang Drakpa"@en ;
+        :creator            bdr:CR978F5716B9D25716 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1491 ;

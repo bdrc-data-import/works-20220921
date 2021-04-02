@@ -24,6 +24,12 @@ bdg:WA8LS20326 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGE5FEE33C522EAC54
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-01T13:57:31.715Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -48,19 +54,26 @@ bdg:WA8LS20326 {
     bda:WA8LS20326  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20326 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "96/WA8LS20326.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20326 ;
-        adm:logEntry        bda:LG15A4062A1E98F109 , bda:LG6A07ECDF5A1BFB2A , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG15A4062A1E98F109 , bda:LG6A07ECDF5A1BFB2A , bda:LGE5FEE33C522EAC54 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR50F9D4FF1DD04685
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75281 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS20326  a       :Work ;
         skos:prefLabel      "gnya' khri btsan po zhib 'jug"@bo-x-ewts ;
-        :catalogInfo        "A detail research on the first Tibetan king Nyatri Tsanpo by Yangmo Tsho."@en ;
+        :catalogInfo        "A detailed research on Nyatri Tsanpo , the first king of Tibet by Yangmo Tsho."@en ;
+        :creator            bdr:CR50F9D4FF1DD04685 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T793 ;
         :workHasInstance    bdr:MW8LS20326 , bdr:W8LS20326 ;
         :workIsAbout        bdr:P6407 , bdr:T11MS60 .
 }
