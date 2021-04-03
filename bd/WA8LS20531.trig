@@ -24,6 +24,12 @@ bdg:WA8LS20531 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGDDBFAA8CA2DE1D4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-02T15:09:41.897Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -41,21 +47,21 @@ bdg:WA8LS20531 {
     bda:WA8LS20531  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20531 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "bd/WA8LS20531.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20531 ;
-        adm:logEntry        bda:LG0F673B1C5C52481E , bda:LG539808EB66F9236C , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG0F673B1C5C52481E , bda:LG539808EB66F9236C , bda:LGDDBFAA8CA2DE1D4C , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA8LS20531  a       :SerialMember , :Work ;
         skos:altLabel       "srid pa'i khed bshad/ srid pa'i khed bshad blo dang rig pa'i rtsed 'jo/"@bo-x-ewts ;
         skos:prefLabel      "srid pa'i khed bshad blo dang rig pa'i rtsed 'jo/"@bo-x-ewts ;
-        :catalogInfo        "An explanation of riddles collected from the Tshojang area of Amdo."@en ;
+        :catalogInfo        "An explanation of riddles; compiled and edited by Drukmo."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS20531 ;
         :workHasInstance    bdr:MW8LS20531 , bdr:W8LS20531 ;
-        :workIsAbout        bdr:T1144 , bdr:T1159 .
+        :workIsAbout        bdr:G2312 , bdr:T1144 , bdr:T1159 .
 }

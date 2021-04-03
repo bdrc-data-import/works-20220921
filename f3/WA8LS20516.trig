@@ -18,6 +18,12 @@ bdg:WA8LS20516 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG7269BB5BB8FD75DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-02T15:02:46.678Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG90B501E4BD24F94F
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-15T11:01:18.991Z"^^xsd:dateTime ;
@@ -48,18 +54,24 @@ bdg:WA8LS20516 {
     bda:WA8LS20516  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20516 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "f3/WA8LS20516.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20516 ;
-        adm:logEntry        bda:LG3212B16F2B20B119 , bda:LG90B501E4BD24F94F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3212B16F2B20B119 , bda:LG7269BB5BB8FD75DE , bda:LG90B501E4BD24F94F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR277D0D7627BA1180
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75294 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20516  a       :Work ;
         skos:altLabel       "bod dpyad spyi rgya rlabs gcod/ gna' bo'i zhang zhung dang 'brel ba'i g.yung drung bon gyi rig gzhung skor gyi dpyad rtsom bdams bsgrigs/"@bo-x-ewts ;
         skos:prefLabel      "bod dpyad spyi rgya rlabs gcod/"@bo-x-ewts ;
-        :catalogInfo        "A collection of research paper concering Bonpo culture by Tri Soten."@en ;
+        :catalogInfo        "A selected research paper concering Bonpo culture; edited by Tri Soten."@en ;
+        :creator            bdr:CR277D0D7627BA1180 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 , bdr:T1PD128746 ;

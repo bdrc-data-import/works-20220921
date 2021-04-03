@@ -18,6 +18,12 @@ bdg:WA8LS20510 {
         adm:logMessage      "title changed"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG256A609FFFA36EF1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-02T14:31:12.699Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG78EDFF648F843899
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-15T12:24:59.143Z"^^xsd:dateTime ;
@@ -47,19 +53,19 @@ bdg:WA8LS20510 {
     bda:WA8LS20510  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20510 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "99/WA8LS20510.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20510 ;
-        adm:logEntry        bda:LG1A03D5F22DBAFC1C , bda:LG78EDFF648F843899 , bda:LGDB82E1BCAA5A9629 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG1A03D5F22DBAFC1C , bda:LG256A609FFFA36EF1 , bda:LG78EDFF648F843899 , bda:LGDB82E1BCAA5A9629 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA8LS20510  a       :Work ;
         skos:prefLabel      "grub mchog dag yig"@bo-x-ewts ;
-        :catalogInfo        "An orthographical dictionary edited by Druprik Khyuchok."@en ;
+        :catalogInfo        "An orthography dictionary by 8th Adeu Rinpoche Druprik Khyuchok."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T218 ;
+        :workGenre          bdr:T218 , bdr:T220 ;
         :workHasInstance    bdr:MW8LS20510 , bdr:W8LS20510 .
 }

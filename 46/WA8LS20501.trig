@@ -24,6 +24,12 @@ bdg:WA8LS20501 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG4972A9287B750A3C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-02T11:05:44.866Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -48,19 +54,26 @@ bdg:WA8LS20501 {
     bda:WA8LS20501  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20501 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "46/WA8LS20501.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20501 ;
-        adm:logEntry        bda:LG09E796584D43588C , bda:LG427067EBABB1649C , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG09E796584D43588C , bda:LG427067EBABB1649C , bda:LG4972A9287B750A3C , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR588B728639118288
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75292 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20501  a       :Work ;
         skos:prefLabel      "me 'bar ba'i pha bong /"@bo-x-ewts ;
         :catalogInfo        "A collection of short stories composed by Achok Choden."@en ;
+        :creator            bdr:CR588B728639118288 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T260 ;
-        :workHasInstance    bdr:MW8LS20501 , bdr:W8LS20501 .
+        :workHasInstance    bdr:MW8LS20501 , bdr:W8LS20501 ;
+        :workIsAbout        bdr:T1KG6100 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS20486 {
+    bda:LG25A2349AB57367E8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-02T10:27:15.024Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG5F3B286EAB6DABA3
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-15T10:40:07.442Z"^^xsd:dateTime ;
@@ -48,20 +54,20 @@ bdg:WA8LS20486 {
     bda:WA8LS20486  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20486 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "10/WA8LS20486.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20486 ;
-        adm:logEntry        bda:LG5F3B286EAB6DABA3 , bda:LG6D345B319B0A3D1E , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG25A2349AB57367E8 , bda:LG5F3B286EAB6DABA3 , bda:LG6D345B319B0A3D1E , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA8LS20486  a       :Work ;
         skos:altLabel       "gangs ljongs 'jigs med shes rig nor bu'i slob gling gi lo 'khor nyi shu'i phyir dran rtsom yig gces btus phyir mig"@bo-x-ewts ;
         skos:prefLabel      "phyir mig"@bo-x-ewts ;
-        :catalogInfo        "A collection of essays compiled on the occassion of 20th year establishment of Gangjong Jigme Sherig Nobui Lobling."@en ;
+        :catalogInfo        "A collection of essays edited by Sherap Tender."@en ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn , bdr:LangZh ;
-        :workGenre          bdr:T258 ;
+        :workGenre          bdr:T1081 , bdr:T258 ;
         :workHasInstance    bdr:MW8LS20486 , bdr:W8LS20486 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS20495 {
+    bda:LG1E2AC7C0E3EDD4E9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-02T10:54:05.025Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, editor, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG9D445ACD2094D639
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-15T11:48:05.413Z"^^xsd:dateTime ;
@@ -53,21 +59,27 @@ bdg:WA8LS20495 {
     bda:WA8LS20495  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20495 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "fb/WA8LS20495.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20495 ;
-        adm:logEntry        bda:LG9D445ACD2094D639 , bda:LGDCCCF247D40F77AE , bda:LGEBFEE1007F07C7EC , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1E2AC7C0E3EDD4E9 , bda:LG9D445ACD2094D639 , bda:LGDCCCF247D40F77AE , bda:LGEBFEE1007F07C7EC , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR45C9FBC386105965
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6662 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20495  a       :Work ;
         skos:altLabel       "mchog sprul nag po skal bzang gi gsung rtsom phyogs bsgrigs/"@bo-x-ewts ;
         skos:prefLabel      "nag po skal bzang gi gsung rtsom phyogs bsgrigs/"@bo-x-ewts ;
-        :catalogInfo        "Writings of Tulku Nakpo Kelsang compiled by Tenzain Sherap."@en ;
+        :catalogInfo        "Writings of Tulku Nakpo Kelsang; compiled and edited by Tenzin Sherap."@en ;
+        :creator            bdr:CR45C9FBC386105965 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1KG21749 ;
+        :workGenre          bdr:T1081 , bdr:T1KG21749 ;
         :workHasInstance    bdr:MW8LS20495 , bdr:W8LS20495 ;
         :workIsAbout        bdr:P6662 .
 }

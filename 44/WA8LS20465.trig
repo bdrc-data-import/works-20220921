@@ -18,6 +18,12 @@ bdg:WA8LS20465 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGCCFF1519AD251493
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-02T09:25:51.952Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGF636FFED4A7DEDA4
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-15T10:24:33.468Z"^^xsd:dateTime ;
@@ -48,19 +54,25 @@ bdg:WA8LS20465 {
     bda:WA8LS20465  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20465 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "44/WA8LS20465.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20465 ;
-        adm:logEntry        bda:LG0BE4116239646784 , bda:LGF636FFED4A7DEDA4 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0BE4116239646784 , bda:LGCCFF1519AD251493 , bda:LGF636FFED4A7DEDA4 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRA9CED64F00CF5713
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS73437 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20465  a       :Work ;
         skos:prefLabel      "bden pa don gnyer/"@bo-x-ewts ;
         :catalogInfo        "A collection of poetry composed by Ala Kelsang Phuntshok."@en ;
+        :creator            bdr:CRA9CED64F00CF5713 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS20465 , bdr:W8LS20465 ;
-        :workIsAbout        bdr:T281 .
+        :workIsAbout        bdr:T1KG6100 , bdr:T281 .
 }

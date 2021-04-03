@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS20504 {
+    bda:LG9FA702E70B6C1789
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-02T11:08:42.434Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGA53A7BF86BF67ED3
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-15T12:10:03.778Z"^^xsd:dateTime ;
@@ -34,17 +40,23 @@ bdg:WA8LS20504 {
     bda:WA8LS20504  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20504 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "90/WA8LS20504.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20504 ;
-        adm:logEntry        bda:LGA53A7BF86BF67ED3 , bda:LGC540C7620293AA5D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG9FA702E70B6C1789 , bda:LGA53A7BF86BF67ED3 , bda:LGC540C7620293AA5D , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRFCF219CC4AE38413
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG80790 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20504  a       :Work ;
         skos:prefLabel      "rlabs chen gyi bya bzhag 'dis rlabs chen gyi mi sna mtshon/"@bo-x-ewts ;
         :catalogInfo        "A collection of an essays written by Giling Jikme."@en ;
+        :creator            bdr:CRFCF219CC4AE38413 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;

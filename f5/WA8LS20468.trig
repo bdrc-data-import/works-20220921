@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS20468 {
+    bda:LG00015D46F5B1C851
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-02T09:37:39.14Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG13AD8D961BCABE42
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-15T10:39:20.031Z"^^xsd:dateTime ;
@@ -48,19 +54,25 @@ bdg:WA8LS20468 {
     bda:WA8LS20468  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20468 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "f5/WA8LS20468.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20468 ;
-        adm:logEntry        bda:LG13AD8D961BCABE42 , bda:LGB7C60EEE15150B69 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG00015D46F5B1C851 , bda:LG13AD8D961BCABE42 , bda:LGB7C60EEE15150B69 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR019AD7375360EBB4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75289 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20468  a       :Work ;
         skos:prefLabel      "byang thang smug pa kher rgyug"@bo-x-ewts ;
         :catalogInfo        "A collection of poetry composed by Jang Dranyan."@en ;
+        :creator            bdr:CR019AD7375360EBB4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS20468 , bdr:W8LS20468 ;
-        :workIsAbout        bdr:T281 .
+        :workIsAbout        bdr:T1KG6100 , bdr:T281 .
 }

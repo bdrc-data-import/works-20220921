@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS20507 {
+    bda:LG584295948640B832
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-02T14:05:00.862Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG713BC540533C26FB
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-15T12:19:07.158Z"^^xsd:dateTime ;
@@ -48,20 +54,20 @@ bdg:WA8LS20507 {
     bda:WA8LS20507  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20507 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "e2/WA8LS20507.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20507 ;
-        adm:logEntry        bda:LG713BC540533C26FB , bda:LGD21BE79D66DF834A , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG584295948640B832 , bda:LG713BC540533C26FB , bda:LGD21BE79D66DF834A , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA8LS20507  a       :Work ;
         skos:prefLabel      "thon mi'i slob gso'i bgro gleng gi dpyad rtsom phyogs bsgrigs/thon mi'i slob gso/"@bo-x-ewts ;
-        :catalogInfo        "A compilation of research paper on education."@en ;
+        :catalogInfo        "A compilation of research paper on education; edited by Gyiling Jikme."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T003JR155 ;
+        :workGenre          bdr:T003JR155 , bdr:T1081 ;
         :workHasInstance    bdr:MW8LS20507 , bdr:W8LS20507 ;
         :workIsAbout        bdr:T234 .
 }
