@@ -24,6 +24,12 @@ bdg:WA8LS20582 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGA068DA83BD7563EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T14:27:40.175Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -48,20 +54,31 @@ bdg:WA8LS20582 {
     bda:WA8LS20582  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20582 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "82/WA8LS20582.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20582 ;
-        adm:logEntry        bda:LG3302BB8D99BECCA5 , bda:LG4684232947F483C6 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3302BB8D99BECCA5 , bda:LG4684232947F483C6 , bda:LGA068DA83BD7563EC , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR737EC027D9FDF7E1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75302 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRCB5B2765359C5BAD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75301 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA8LS20582  a       :Work ;
         skos:prefLabel      "rgyal khab gsar 'dzugs kyi dmag dpon rnams kyi gtam rgyud/"@bo-x-ewts ;
         :catalogInfo        "A story related to army general during cultural revolution; translated by Chophel and Pedma Gyal."@en ;
+        :creator            bdr:CR737EC027D9FDF7E1 , bdr:CRCB5B2765359C5BAD ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
-        :workGenre          bdr:T276 ;
+        :workGenre          bdr:T1157 , bdr:T276 ;
         :workHasInstance    bdr:MW8LS20582 , bdr:W8LS20582 ;
         :workIsAbout        bdr:T1KG6182 , bdr:T294 .
 }

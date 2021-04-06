@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ332947 {
+    bda:LG2D847FCAA653903D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T17:59:22.985Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGBF35AC4CA68C8CF8
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-05-30T16:49:55.596Z"^^xsd:dateTime ;
@@ -34,19 +39,25 @@ bdg:WA4CZ332947 {
     bda:WA4CZ332947  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ332947 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "9d/WA4CZ332947.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ332947 ;
-        adm:logEntry        bda:LGBF35AC4CA68C8CF8 , bda:LGF9EDA1BED7803C19 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG2D847FCAA653903D , bda:LGBF35AC4CA68C8CF8 , bda:LGF9EDA1BED7803C19 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8FDCAE0F518F6449
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366695 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA4CZ332947  a      :Work ;
         skos:altLabel       "'dzam gling gi 'byor ldan ang dang po glog klad bzo skrun pa mkhas chen b+hel rga tshi/"@bo-x-ewts ;
         skos:prefLabel      "mdun lam/"@bo-x-ewts ;
         :catalogInfo        "Bill Gates The Road Ahead, translated in to Tibetan by Bido Drakpa Gyatso."@en ;
+        :creator            bdr:CR8FDCAE0F518F6449 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1157 , bdr:T258 ;

@@ -30,22 +30,34 @@ bdg:WA1KG12912 {
         adm:logMessage      "fixed the LC classification"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG89DC7FE096C627F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T08:48:18.849Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and lang encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA1KG12912  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG12912 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c1/WA1KG12912.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG12912 ;
-        adm:logEntry        bda:LG0211F35B6BCD1BE5 , bda:LG1994C032E0D5E24E , bda:LG32E40942E2F2F9ED ;
+        adm:logEntry        bda:LG0211F35B6BCD1BE5 , bda:LG1994C032E0D5E24E , bda:LG32E40942E2F2F9ED , bda:LG89DC7FE096C627F9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR1CD0882E70EEBB07
+        a                   :AgentAsCreator ;
+        :agent              bdr:P676 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1KG12912  skos:altLabel  "rare writings on the esoteric teachings of the bka'-brgyud-pa tradition"@en .
     
     bdr:WA1KG12912  a       :Work ;
         skos:prefLabel      "bka' brgyud pa'i chos skor dpe dkon bris ma khag cig"@bo-x-ewts , "rare writings on the esoteric teachings of the bka'-brgyud-pa tradition"@en ;
         :catalogInfo        "Collection of rare writings on the esoteric teachings of the Kagyu tradition by Ringzin Tsewang Norbu and others."@en ;
+        :creator            bdr:CR1CD0882E70EEBB07 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1PD128746 ;

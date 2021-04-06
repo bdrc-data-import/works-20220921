@@ -18,6 +18,12 @@ bdg:WA8LS20546 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG7B04EBD737FAFA70
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T09:50:48.293Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD1D5E0A38B69B82E
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-16T10:47:02.698Z"^^xsd:dateTime ;
@@ -41,21 +47,21 @@ bdg:WA8LS20546 {
     bda:WA8LS20546  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20546 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "36/WA8LS20546.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20546 ;
-        adm:logEntry        bda:LG79FABF165E3767FD , bda:LGD1D5E0A38B69B82E , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG79FABF165E3767FD , bda:LG7B04EBD737FAFA70 , bda:LGD1D5E0A38B69B82E , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA8LS20546  a       :Work ;
         skos:altLabel       "srid pa'i bshad pa yid 'phrog gtam gyi bang mdzod/"@bo-x-ewts ;
         skos:prefLabel      "srid pa'i bshad pa/"@bo-x-ewts ;
-        :catalogInfo        "A narration of cosmos in the Tshojang area of Amdo, collected by Dorjee Jamp."@en ;
+        :catalogInfo        "A collection of songs from the Tshojang area of Amdo; compiled and edited by Dorjee Jamp."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1029 ;
+        :workGenre          bdr:T1029 , bdr:T246 ;
         :workHasInstance    bdr:MW8LS20546 , bdr:W8LS20546 ;
         :workIsAbout        bdr:G2312 , bdr:T1144 , bdr:T2551 .
 }

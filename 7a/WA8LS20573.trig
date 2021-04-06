@@ -24,6 +24,12 @@ bdg:WA8LS20573 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGEF0C4221AD38DF2D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T12:34:38.374Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -48,20 +54,31 @@ bdg:WA8LS20573 {
     bda:WA8LS20573  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20573 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "7a/WA8LS20573.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20573 ;
-        adm:logEntry        bda:LG376282094318F067 , bda:LGD248B0D91A7FCB72 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG376282094318F067 , bda:LGD248B0D91A7FCB72 , bda:LGEF0C4221AD38DF2D , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR419D62B92EEC672A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75302 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRC5B82F05EAACF70C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75301 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA8LS20573  a       :Work ;
         skos:prefLabel      "teng zha'o phin gyi gtam rgyud/"@bo-x-ewts ;
         :catalogInfo        "A story related to Deng Xaoping; translated by Chophel and Pedma Gyal."@en ;
+        :creator            bdr:CR419D62B92EEC672A , bdr:CRC5B82F05EAACF70C ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
-        :workGenre          bdr:T276 ;
+        :workGenre          bdr:T1157 , bdr:T276 ;
         :workHasInstance    bdr:MW8LS20573 , bdr:W8LS20573 ;
         :workIsAbout        bdr:P7434 .
 }

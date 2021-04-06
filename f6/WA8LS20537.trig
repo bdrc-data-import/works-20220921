@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS20537 {
+    bda:LG5B589F2734CF7368
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T09:27:41.465Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG7CDE257EB339142D
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-15T11:51:52.576Z"^^xsd:dateTime ;
@@ -41,18 +47,29 @@ bdg:WA8LS20537 {
     bda:WA8LS20537  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20537 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "f6/WA8LS20537.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20537 ;
-        adm:logEntry        bda:LG7CDE257EB339142D , bda:LGA8AC1D260205B8FE , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG5B589F2734CF7368 , bda:LG7CDE257EB339142D , bda:LGA8AC1D260205B8FE , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8381AE4D6A7DF420
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75296 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRA1426082B4608F2E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75295 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20537  a       :SerialMember , :Work ;
         skos:altLabel       "srid pa'i glu chung / srid pa'i glu chung khrom pa dgyes pa'i dga' ston/"@bo-x-ewts ;
         skos:prefLabel      "srid pa'i glu chung khrom pa dgyes pa'i dga' ston/"@bo-x-ewts ;
-        :catalogInfo        "A folk songs collected from the Tshojang area of Amdo."@en ;
+        :catalogInfo        "A folk songs collected from the Tshojang area of Amdo; compiled and edited by Dorjee Jam and Sonam Dondup."@en ;
+        :creator            bdr:CR8381AE4D6A7DF420 , bdr:CRA1426082B4608F2E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS20531 ;

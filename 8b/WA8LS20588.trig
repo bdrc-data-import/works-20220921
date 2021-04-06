@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS20588 {
+    bda:LG4186638FAE557A11
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T14:37:07.554Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG50F7859FA9B2B3C3
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-15T12:00:06.65Z"^^xsd:dateTime ;
@@ -48,20 +54,31 @@ bdg:WA8LS20588 {
     bda:WA8LS20588  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20588 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "8b/WA8LS20588.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20588 ;
-        adm:logEntry        bda:LG50F7859FA9B2B3C3 , bda:LGA068AF7739859BA9 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG4186638FAE557A11 , bda:LG50F7859FA9B2B3C3 , bda:LGA068AF7739859BA9 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1F84C4B9D57DE0FC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75302 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR70CB6446179EDCCE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75301 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS20588  a       :Work ;
         skos:prefLabel      "krung go gung khran tang gi snga dus kyi 'go khrid mi sna'i gtam rgyud/"@bo-x-ewts ;
-        :catalogInfo        "A story related to leader of early cummunist party of PRC; translated by Chophel and Pedma Gyal."@en ;
+        :catalogInfo        "A story related to early cummunist party leader of PRC; translated by Chophel and Pedma Gyal."@en ;
+        :creator            bdr:CR1F84C4B9D57DE0FC , bdr:CR70CB6446179EDCCE ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
-        :workGenre          bdr:T276 ;
+        :workGenre          bdr:T1157 , bdr:T266 , bdr:T276 ;
         :workHasInstance    bdr:MW8LS20588 , bdr:W8LS20588 ;
         :workIsAbout        bdr:T294 .
 }

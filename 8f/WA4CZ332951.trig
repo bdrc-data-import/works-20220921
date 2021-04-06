@@ -24,6 +24,11 @@ bdg:WA4CZ332951 {
         adm:logMessage      "new and checked"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGFE7EDBBCBBC76F09
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T17:59:23.538Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -34,19 +39,25 @@ bdg:WA4CZ332951 {
     bda:WA4CZ332951  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ332951 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "8f/WA4CZ332951.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ332951 ;
-        adm:logEntry        bda:LGDBBA17D0757F7CCE , bda:LGF47DFB03029A5B5B , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LGDBBA17D0757F7CCE , bda:LGF47DFB03029A5B5B , bda:LGFE7EDBBCBBC76F09 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRA02248B104A14A7F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366697 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA4CZ332951  a      :Work ;
         skos:altLabel       "sras rgyud grwa tshang dang / sras rgyud rdo rje 'chang rgan byams pa dbang rgyal mchog gi rnam thar dad pa'i chu skyes 'dzum pa'i nyin byed/"@bo-x-ewts ;
         skos:prefLabel      "sras rgyud grwa tshang dang / sras rgyud rdo rje 'chang rgan byams pa dbang rgyal mchog gi rnam thar/"@bo-x-ewts ;
         :catalogInfo        "History of Segyued Monastery and Historical biography of Segyue Dorjee Chang Jampa Wangyal RInpoche"@en ;
+        :creator            bdr:CRA02248B104A14A7F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

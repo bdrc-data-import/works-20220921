@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS20567 {
+    bda:LG11EE62E93FE470AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T12:17:42.258Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG59303209521BD5C1
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-15T16:13:29.498Z"^^xsd:dateTime ;
@@ -48,20 +54,31 @@ bdg:WA8LS20567 {
     bda:WA8LS20567  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20567 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "7e/WA8LS20567.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20567 ;
-        adm:logEntry        bda:LG59303209521BD5C1 , bda:LGC2BF9A0A0EC719AB , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG11EE62E93FE470AA , bda:LG59303209521BD5C1 , bda:LGC2BF9A0A0EC719AB , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR341A95FB9C966E01
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75302 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRBCFF8307FF2C7CF3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75301 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA8LS20567  a       :Work ;
         skos:prefLabel      "kru'u ta'e yi gtam rgyud/"@bo-x-ewts ;
         :catalogInfo        "A story related to Zhude; translated by Chophel and Pedma Gyal."@en ;
+        :creator            bdr:CR341A95FB9C966E01 , bdr:CRBCFF8307FF2C7CF3 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
-        :workGenre          bdr:T276 ;
+        :workGenre          bdr:T1157 , bdr:T276 ;
         :workHasInstance    bdr:MW8LS20567 , bdr:W8LS20567 ;
         :workIsAbout        bdr:P1KG18646 .
 }

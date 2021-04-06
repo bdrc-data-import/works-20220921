@@ -24,6 +24,11 @@ bdg:WA4CZ346649 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG816322F309E3E661
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T17:59:24.983Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGB0ECA673D918B38A
         a                   adm:UpdateData ;
         adm:logDate         "2019-08-26T14:56:31.986Z"^^xsd:dateTime ;
@@ -40,18 +45,24 @@ bdg:WA4CZ346649 {
     bda:WA4CZ346649  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ346649 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "88/WA4CZ346649.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ346649 ;
-        adm:logEntry        bda:LG4898AFB22F90DBD5 , bda:LG655D7E06B10183D4 , bda:LGB0ECA673D918B38A , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG4898AFB22F90DBD5 , bda:LG655D7E06B10183D4 , bda:LG816322F309E3E661 , bda:LGB0ECA673D918B38A , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR297DA538306A552F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366699 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA4CZ346649  a      :Work ;
         skos:prefLabel      "bden pa dang 'tshe ba med pa'i sbyor ba phyag bzhes/"@bo-x-ewts ;
         :catalogInfo        "Experiments with Trus and Non violence; China Challenged Dr. Bhaskar Vyas and Dr. Rajni Vyas"@en ;
+        :creator            bdr:CR297DA538306A552F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

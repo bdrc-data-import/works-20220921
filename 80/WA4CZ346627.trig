@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ346627 {
+    bda:LG56F7CFDD1844782D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T17:59:24.543Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG9B3C1F3F705B5408
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-07-01T10:53:34.855Z"^^xsd:dateTime ;
@@ -34,18 +39,24 @@ bdg:WA4CZ346627 {
     bda:WA4CZ346627  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ346627 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "80/WA4CZ346627.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ346627 ;
-        adm:logEntry        bda:LG9B3C1F3F705B5408 , bda:LGC594122568AF1BBE , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG56F7CFDD1844782D , bda:LG9B3C1F3F705B5408 , bda:LGC594122568AF1BBE , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRF265603A5B9BF74D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG24205 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA4CZ346627  a      :SerialMember , :Work ;
         skos:prefLabel      "paN chen rin po che 'tshol zhib/"@bo-x-ewts ;
         :catalogInfo        "The Search for Gedhun Chokyi Nyima by Isable Hilton, translated in to Tibetan by Jampa Tenzin"@en ;
+        :creator            bdr:CRF265603A5B9BF74D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG13996 ;

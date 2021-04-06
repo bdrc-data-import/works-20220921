@@ -35,6 +35,12 @@ bdg:WA8LS20594 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGC123E99B26937C6F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T14:47:07.155Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
@@ -52,19 +58,25 @@ bdg:WA8LS20594 {
     bda:WA8LS20594  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20594 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "8d/WA8LS20594.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20594 ;
-        adm:logEntry        bda:LG019CDD7640710B45 , bda:LG29C6ADD9F7D4D330 , bda:LG9552E4FD85D873C8 , bda:LG9BC56EA81156BD51 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG019CDD7640710B45 , bda:LG29C6ADD9F7D4D330 , bda:LG9552E4FD85D873C8 , bda:LG9BC56EA81156BD51 , bda:LGC123E99B26937C6F , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRF2748049E4ECE1F4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75303 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS20594  a       :Work ;
         skos:prefLabel      "byis pa'i nus pa skyed sring skor gyi dpe tshogs/"@bo-x-ewts ;
-        :catalogInfo        "A children's comic book compiled by group of France educationist; translated into Chinese by Truche and in Tibetan by Tashi Norbu."@en ;
+        :catalogInfo        "A children's comic book compiled by group of France educationist; translated into Tibetan by Tashi Norbu."@en ;
+        :creator            bdr:CRF2748049E4ECE1F4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1KG26395 ;
+        :workGenre          bdr:T1157 , bdr:T1KG26395 ;
         :workHasInstance    bdr:MW8LS20594 , bdr:W8LS20594 .
 }

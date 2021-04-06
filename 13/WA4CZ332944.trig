@@ -18,6 +18,11 @@ bdg:WA4CZ332944 {
         adm:logMessage      "new and checked"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG7B3355271F792DF6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T17:59:22.549Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGD99FB5784AC9F59A
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-05-30T16:28:09.888Z"^^xsd:dateTime ;
@@ -34,20 +39,26 @@ bdg:WA4CZ332944 {
     bda:WA4CZ332944  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ332944 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "13/WA4CZ332944.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ332944 ;
-        adm:logEntry        bda:LG60B52F19B2F6EFE6 , bda:LGD99FB5784AC9F59A , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG60B52F19B2F6EFE6 , bda:LG7B3355271F792DF6 , bda:LGD99FB5784AC9F59A , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR43EA7F3FA3857597
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366694 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW4CZ332944  skos:altLabel  "tang seng qu jing"@zh-latn-pinyin-x-ndia .
     
     bdr:WA4CZ332944  a      :Work ;
         skos:prefLabel      "thang sin bla ma'i rnam thar/"@bo-x-ewts , "tang seng qu jing"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Biography of Xuanzang (602-664), a famous Chinese monk and scholar who traveled through South Asia."@en ;
+        :creator            bdr:CR43EA7F3FA3857597 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

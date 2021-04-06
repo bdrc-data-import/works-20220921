@@ -18,6 +18,12 @@ bdg:WA1KG13001 {
         adm:logMessage      "trying to publish records using username tbrc -mo"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG42762D70478B7102
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-05T08:48:19.321Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and lang encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG54CCBA03B9D9BED9
         a                   adm:UpdateData ;
         adm:logDate         "2013-01-04T13:09:00.968Z"^^xsd:dateTime ;
@@ -39,17 +45,24 @@ bdg:WA1KG13001 {
     bda:WA1KG13001  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG13001 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "c6/WA1KG13001.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG13001 ;
-        adm:logEntry        bda:LG11F3329FAED03EDA , bda:LG54CCBA03B9D9BED9 , bda:LGC31F1C9D60E03CD6 , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG11F3329FAED03EDA , bda:LG42762D70478B7102 , bda:LG54CCBA03B9D9BED9 , bda:LGC31F1C9D60E03CD6 , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR891F04ACB334333F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P269 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG13001  a       :SerialMember , :Work ;
         skos:altLabel       "bsnyung gnas phyogs bsgrigs/"@bo-x-ewts ;
         skos:prefLabel      "bsnyung gnas kyi rnam bshad dang phan yon skor phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of detailed commentary on the ritual of fasting and silence and its benefits."@en ;
+        :creator            bdr:CR891F04ACB334333F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1017177 ;
