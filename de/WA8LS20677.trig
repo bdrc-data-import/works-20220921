@@ -24,6 +24,12 @@ bdg:WA8LS20677 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGD2565CA189AA205E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T14:04:06.506Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -34,19 +40,26 @@ bdg:WA8LS20677 {
     bda:WA8LS20677  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20677 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "de/WA8LS20677.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20677 ;
-        adm:logEntry        bda:LG2D65E17DC2619641 , bda:LGBCB5E50A95739F07 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2D65E17DC2619641 , bda:LGBCB5E50A95739F07 , bda:LGD2565CA189AA205E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CREDC7703AAD4ECB58
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75318 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS20677  a       :Work ;
         skos:prefLabel      "bod skad yig rmang gzhi bslab deb/"@bo-x-ewts ;
-        :catalogInfo        "A basic Tibetan language text book."@en ;
+        :catalogInfo        "A basic Tibetan language text book by Rigzin Gyaltshen."@en ;
+        :creator            bdr:CREDC7703AAD4ECB58 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T266 ;
-        :workHasInstance    bdr:MW8LS20677 , bdr:W8LS20677 .
+        :workHasInstance    bdr:MW8LS20677 , bdr:W8LS20677 ;
+        :workIsAbout        bdr:T265 .
 }

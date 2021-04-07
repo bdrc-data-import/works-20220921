@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS20752 {
+    bda:LG0F24B2A090803FF7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T15:07:24.287Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG60339ED8B4F54C10
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-01-05T09:42:48.213Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS20752 {
     bda:WA8LS20752  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20752 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "fd/WA8LS20752.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20752 ;
-        adm:logEntry        bda:LG60339ED8B4F54C10 , bda:LGBA4A22A4BE4A8CC4 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG0F24B2A090803FF7 , bda:LG60339ED8B4F54C10 , bda:LGBA4A22A4BE4A8CC4 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR271BF457A654975D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75320 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS20752  a       :SerialMember , :Work ;
         skos:prefLabel      "dpyad gtam shel dkar phreng ba/"@bo-x-ewts ;
         :catalogInfo        "A collection of essays written by Ngawang Phuntsok."@en ;
+        :creator            bdr:CR271BF457A654975D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG13998 ;

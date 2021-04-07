@@ -18,6 +18,11 @@ bdg:WA8LS20861 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG57C1C2C2409EB9AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T15:16:07.861Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGDF9FD2C16832E19E
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-07-17T10:45:06.945Z"^^xsd:dateTime ;
@@ -27,17 +32,25 @@ bdg:WA8LS20861 {
     bda:WA8LS20861  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20861 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "3f/WA8LS20861.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20861 ;
-        adm:logEntry        bda:LG38D2D1A58DB3A943 , bda:LGDF9FD2C16832E19E ;
+        adm:logEntry        bda:LG38D2D1A58DB3A943 , bda:LG57C1C2C2409EB9AB , bda:LGDF9FD2C16832E19E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRDAEDA2C016B35941
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75321 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:MW8LS20861  skos:altLabel  "ne pAl li pi prakash/"@sa-x-ndia .
+    
     bdr:WA8LS20861  a       :Work ;
-        skos:prefLabel      "ne pAl li pi prakash/"@sa-x-ndia ;
+        skos:prefLabel      "ne pAl li pi prakash"@bo-x-ewts , "ne pAl li pi prakash/"@sa-x-ndia ;
         :catalogInfo        "A collection of script found in Nepal, compiled by Hemraj Shakya."@en ;
+        :creator            bdr:CRDAEDA2C016B35941 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS20861 , bdr:W8LS20861 ;

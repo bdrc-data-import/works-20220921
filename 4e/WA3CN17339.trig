@@ -24,6 +24,12 @@ bdg:WA3CN17339 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGD889905054C3B091
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T21:23:12.85Z"^^xsd:dateTime ;
+        adm:logMessage      "added translater"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -40,17 +46,23 @@ bdg:WA3CN17339 {
     bda:WA3CN17339  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN17339 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "4e/WA3CN17339.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN17339 ;
-        adm:logEntry        bda:LG10445B55316F16CC , bda:LG84A8A82CA47B89CF , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG10445B55316F16CC , bda:LG84A8A82CA47B89CF , bda:LGD889905054C3B091 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR2614CAAF73FA0569
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12068 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA3CN17339  a       :SerialMember , :Work ;
         skos:prefLabel      "tung han rgyal rabs kyi gtam rgyud/"@bo-x-ewts ;
         :catalogInfo        "Stories from Chinese history, translated from Chinese to Tibetan by Lobsang Tsering."@en ;
+        :creator            bdr:CR2614CAAF73FA0569 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS3CN17339 ;

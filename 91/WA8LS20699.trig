@@ -18,6 +18,12 @@ bdg:WA8LS20699 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG6E36A0E9807D0E9D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T14:32:27.898Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGC7CF8629F7F1EE4E
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-18T11:25:58.153Z"^^xsd:dateTime ;
@@ -48,18 +54,24 @@ bdg:WA8LS20699 {
     bda:WA8LS20699  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20699 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "91/WA8LS20699.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20699 ;
-        adm:logEntry        bda:LG096EEEC53D46A098 , bda:LGC7CF8629F7F1EE4E , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG096EEEC53D46A098 , bda:LG6E36A0E9807D0E9D , bda:LGC7CF8629F7F1EE4E , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR60DEEBDEAF9A38DE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75319 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20699  a       :Work ;
         skos:altLabel       "chung 'bring slob ma'i rgyugs len sbyang gzhi/ skad yig skad yig lo rim gsum pa/ ljongs zhing lnga'i mnyam bsgrigs slob gzhi'i lhan thabs/(stod smad/)"@bo-x-ewts ;
         skos:prefLabel      "chung 'bring slob ma'i rgyugs len sbyang gzhi/ skad yig lo rim gsum pa/"@bo-x-ewts ;
         :catalogInfo        "A supplementary Tibetan language book for the third grade, compiled by Jazhung Wangchen Tsering."@en ;
+        :creator            bdr:CR60DEEBDEAF9A38DE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1453 , bdr:T266 ;

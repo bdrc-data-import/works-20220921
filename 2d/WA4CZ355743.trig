@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ355743 {
+    bda:LG2827739C4E07438D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T17:06:45.009Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG2C8D507F271669C5
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-01-29T14:32:04.158Z"^^xsd:dateTime ;
@@ -33,19 +39,25 @@ bdg:WA4CZ355743 {
     bda:WA4CZ355743  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ355743 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "2d/WA4CZ355743.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ355743 ;
-        adm:logEntry        bda:LG2C8D507F271669C5 , bda:LG9475E1419916A85D , bda:LGE91E5415BD71423A ;
+        adm:logEntry        bda:LG2827739C4E07438D , bda:LG2C8D507F271669C5 , bda:LG9475E1419916A85D , bda:LGE91E5415BD71423A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR92D9FEE204B01A0E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366706 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW4CZ355743  skos:altLabel  "youth of pen holder"@en .
     
     bdr:WA4CZ355743  a      :Work ;
         skos:prefLabel      "sor smyug gi lang tsho/"@bo-x-ewts , "youth of pen holder"@en ;
         :catalogInfo        "Youth of pen holder: A collection of poetry composed by Gangtsang Drogtsang."@en ;
+        :creator            bdr:CR92D9FEE204B01A0E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

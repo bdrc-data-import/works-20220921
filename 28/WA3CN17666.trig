@@ -18,6 +18,12 @@ bdg:WA3CN17666 {
         adm:logMessage      "marked as restrectedInChina"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG604612E15F7ACB45
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T21:38:31.659Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG844648682846A621
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-09-14T10:55:48.94Z"^^xsd:dateTime ;
@@ -46,19 +52,25 @@ bdg:WA3CN17666 {
     bda:WA3CN17666  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN17666 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "28/WA3CN17666.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN17666 ;
-        adm:logEntry        bda:LG120259646484CAE5 , bda:LG844648682846A621 , bda:LGD92D741E14B9FE14 , bda:LGF46C63614ADB8818 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG120259646484CAE5 , bda:LG604612E15F7ACB45 , bda:LG844648682846A621 , bda:LGD92D741E14B9FE14 , bda:LGF46C63614ADB8818 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR7D22F89731F159DE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG208016 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN17666  a       :SerialMember , :Work ;
         skos:altLabel       "bod gzhis byes gnyis su rang gi mthong thos myong gyur gyi dngos byung lo rgyus brjod pa/ la stod shel ding khul gyi byung rim/ (deb phreng dang po/)"@bo-x-ewts ;
         skos:prefLabel      "la stod shel ding khul gyi byung rim/"@bo-x-ewts ;
         :catalogInfo        "History of Shelding region by Yonten Gyatso."@en ;
+        :creator            bdr:CR7D22F89731F159DE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS2KG207576 ;

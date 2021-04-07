@@ -18,6 +18,12 @@ bdg:WA8LS20640 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG396B13281BA06713
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T10:05:45.219Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG4CF561DD4B939ED4
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-17T14:11:02.995Z"^^xsd:dateTime ;
@@ -46,19 +52,26 @@ bdg:WA8LS20640 {
     bda:WA8LS20640  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20640 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "c6/WA8LS20640.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20640 ;
-        adm:logEntry        bda:LG38549C61BA0CA022 , bda:LG4CF561DD4B939ED4 , bda:LG51905274141635D6 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG38549C61BA0CA022 , bda:LG396B13281BA06713 , bda:LG4CF561DD4B939ED4 , bda:LG51905274141635D6 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRAF6D4322F9354BBA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75279 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS20640  a       :Work ;
         skos:prefLabel      "rtsa sman kha shas 'debs 'dzugs lag rtsal/"@bo-x-ewts ;
-        :catalogInfo        "Plantation practices of herbal medicine."@en ;
+        :catalogInfo        "Plantation practices of herbal medicine; traslated by ho hro'u hwa."@en ;
+        :creator            bdr:CRAF6D4322F9354BBA ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
+        :workGenre          bdr:T1157 ;
         :workHasInstance    bdr:MW8LS20640 , bdr:W8LS20640 ;
         :workIsAbout        bdr:T86 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN15719 {
+    bda:LG755FA72A0C827FBD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T20:41:07.948Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG8C5436195FE91FFB
         a                   adm:UpdateData ;
         adm:logDate         "2018-05-24T16:15:40.56Z"^^xsd:dateTime ;
@@ -40,18 +46,24 @@ bdg:WA3CN15719 {
     bda:WA3CN15719  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN15719 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "4c/WA3CN15719.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN15719 ;
-        adm:logEntry        bda:LG8C5436195FE91FFB , bda:LGB6BC610BCE86CF42 , bda:LGB7D02925A343FB01 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG755FA72A0C827FBD , bda:LG8C5436195FE91FFB , bda:LGB6BC610BCE86CF42 , bda:LGB7D02925A343FB01 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRDA042262DE6C0512
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6082 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA3CN15719  a       :Work ;
         skos:prefLabel      "dmangs kyi ring lugs/"@bo-x-ewts ;
         :catalogInfo        "Introduction of democratic politics and laws by Tashi Rabgey."@en ;
+        :creator            bdr:CRDA042262DE6C0512 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN15719 , bdr:W3CN15719 ;

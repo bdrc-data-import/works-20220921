@@ -18,6 +18,12 @@ bdg:WA8LS20703 {
         adm:logMessage      "added isbn, authorship and edition"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG3452A878D3F18AF2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T14:39:55.301Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD1954824396BFBB7
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-05-18T11:36:21.701Z"^^xsd:dateTime ;
@@ -47,17 +53,23 @@ bdg:WA8LS20703 {
     bda:WA8LS20703  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20703 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "c3/WA8LS20703.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20703 ;
-        adm:logEntry        bda:LG0F89A1E9A705F2B8 , bda:LGD1954824396BFBB7 , bda:LGD8D5E13F347DC374 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG0F89A1E9A705F2B8 , bda:LG3452A878D3F18AF2 , bda:LGD1954824396BFBB7 , bda:LGD8D5E13F347DC374 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRC3E97C7502196605
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10689 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS20703  a       :Work ;
         skos:prefLabel      "bod skad/_lo rim bzhi pa/"@bo-x-ewts ;
-        :catalogInfo        "Tibetan language textbook for the fourth and sixth grade; compiled by Sonam Gyatsho."@en ;
+        :catalogInfo        "Tibetan language textbook for the fourth grade; compiled by Sonam Gyatsho."@en ;
+        :creator            bdr:CRC3E97C7502196605 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T266 ;

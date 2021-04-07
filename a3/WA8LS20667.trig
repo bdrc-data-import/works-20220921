@@ -24,6 +24,12 @@ bdg:WA8LS20667 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG682F8968F0D537B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T12:08:08.84Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator, topic, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -34,19 +40,25 @@ bdg:WA8LS20667 {
     bda:WA8LS20667  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20667 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a3/WA8LS20667.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20667 ;
-        adm:logEntry        bda:LG0011FC80CCE97035 , bda:LG5F981AAF11CF1A8A , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0011FC80CCE97035 , bda:LG5F981AAF11CF1A8A , bda:LG682F8968F0D537B1 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR3312E60F7EEBEF08
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75316 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS20667  a       :Work ;
         skos:prefLabel      "rgyal sras kyi gtam rgyud/"@bo-x-ewts ;
-        :catalogInfo        "A story of prince translated by Drukmo Tshokyid."@en ;
+        :catalogInfo        "A story of prince translated by Druktsho kyid."@en ;
+        :creator            bdr:CR3312E60F7EEBEF08 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T216 ;
+        :workGenre          bdr:T1157 , bdr:T1KG26395 , bdr:T216 ;
         :workHasInstance    bdr:MW8LS20667 , bdr:W8LS20667 .
 }

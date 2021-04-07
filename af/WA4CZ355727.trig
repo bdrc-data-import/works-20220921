@@ -30,20 +30,32 @@ bdg:WA4CZ355727 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGA994348192911C03
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T17:06:43.343Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ355727  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ355727 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "af/WA4CZ355727.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ355727 ;
-        adm:logEntry        bda:LG5DF208D444E5DD5B , bda:LG6CA99E96CE4DD91C , bda:LG8832D7CF39A50749 ;
+        adm:logEntry        bda:LG5DF208D444E5DD5B , bda:LG6CA99E96CE4DD91C , bda:LG8832D7CF39A50749 , bda:LGA994348192911C03 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR24A540E8A2970B54
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75292 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA4CZ355727  a      :Work ;
         skos:prefLabel      "gser sbyong ba/"@bo-x-ewts ;
         :catalogInfo        "Tibetan translation of the Alchemist by Paulo Coelho"@en ;
+        :creator            bdr:CR24A540E8A2970B54 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1157 ;

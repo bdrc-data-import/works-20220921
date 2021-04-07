@@ -17,6 +17,12 @@ bdg:WA8LS20695 {
         adm:logDate         "2017-05-18T10:49:08.724Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG6CBAF99642BDBBC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T14:28:11.185Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, edition"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGB47B0F15DEC660A1
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-18T10:48:02.694Z"^^xsd:dateTime ;
@@ -53,18 +59,24 @@ bdg:WA8LS20695 {
     bda:WA8LS20695  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20695 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "61/WA8LS20695.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20695 ;
-        adm:logEntry        bda:LG0174FD47EC13C223 , bda:LGB47B0F15DEC660A1 , bda:LGEBB7C90F99E131BA , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0174FD47EC13C223 , bda:LG6CBAF99642BDBBC3 , bda:LGB47B0F15DEC660A1 , bda:LGEBB7C90F99E131BA , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR45995B132F0B7F52
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75319 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20695  a       :Work ;
         skos:altLabel       "chung 'bring slob ma'i rgyugs len sbyang gzhi/ skad yig_lo rim dang po dang gnyis pa/(_stod smad/)"@bo-x-ewts ;
         skos:prefLabel      "chung 'bring slob ma'i rgyugs len sbyang gzhi/ skad yig"@bo-x-ewts ;
-        :catalogInfo        "A Tibetan language textbook for middle school, compiled by Jazhung Wangchen Tsering."@en ;
+        :catalogInfo        "A Tibetan language book for middle school; compiled by Jazhung Wangchen Tsering."@en ;
+        :creator            bdr:CR45995B132F0B7F52 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T266 ;

@@ -18,6 +18,12 @@ bdg:WA8LS20611 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG5C6213256D78F5E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T09:28:23.206Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGC5BFF7A32A4D984F
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-27T11:15:19.067Z"^^xsd:dateTime ;
@@ -34,19 +40,31 @@ bdg:WA8LS20611 {
     bda:WA8LS20611  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20611 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "d7/WA8LS20611.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20611 ;
-        adm:logEntry        bda:LG0C4A04AC393CAE74 , bda:LGC5BFF7A32A4D984F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0C4A04AC393CAE74 , bda:LG5C6213256D78F5E5 , bda:LGC5BFF7A32A4D984F , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR43313017119A1222
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75307 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRF7613873BED6197B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8032 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS20611  a       :Work ;
         skos:prefLabel      "a mdo'i dmangs glu phyogs bsgrigs/"@bo-x-ewts ;
-        :catalogInfo        "A folk songs of Amdo."@en ;
+        :catalogInfo        "A collection of folk songs from Amdo; compiled by Tadim Kyap and Tsemo Kyid."@en ;
+        :creator            bdr:CR43313017119A1222 , bdr:CRF7613873BED6197B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
         :workHasInstance    bdr:MW8LS20611 , bdr:W8LS20611 ;
         :workIsAbout        bdr:G1202 , bdr:T1674 .
 }

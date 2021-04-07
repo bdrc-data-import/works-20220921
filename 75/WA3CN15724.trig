@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN15724 {
+    bda:LG44332DA27C961EF5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-06T20:56:15.697Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG5FCEADD6CE3316CA
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-05-18T16:24:09.051Z"^^xsd:dateTime ;
@@ -40,20 +46,26 @@ bdg:WA3CN15724 {
     bda:WA3CN15724  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN15724 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "75/WA3CN15724.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN15724 ;
-        adm:logEntry        bda:LG5FCEADD6CE3316CA , bda:LGC1477A498B5550D7 , bda:LGC59B1D18D1A448E0 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG44332DA27C961EF5 , bda:LG5FCEADD6CE3316CA , bda:LGC1477A498B5550D7 , bda:LGC59B1D18D1A448E0 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8B7A065569B80E00
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG15487 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW3CN15724  skos:altLabel  "民主在流亡中转型"@zh-hans .
     
     bdr:WA3CN15724  a       :Work ;
         skos:prefLabel      "btsan byol du dmangs gtso spo sgyur/"@bo-x-ewts , "民主在流亡中转型"@zh-hans ;
         :catalogInfo        "Democracy transformation in-Exial by Sujia Huang and translated to Tibetan by Nangwa Thaye."@en ;
+        :creator            bdr:CR8B7A065569B80E00 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN15724 , bdr:W3CN15724 ;
