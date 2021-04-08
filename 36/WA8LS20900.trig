@@ -18,6 +18,12 @@ bdg:WA8LS20900 {
         adm:logMessage      "changed access to fairUse"@en ;
         adm:logWho          bdu:U00006 .
     
+    bda:LG6F5A0DCB7A2B2617
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-07T12:46:21.42Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG83233A94BC8F76C6
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:14:39.089Z"^^xsd:dateTime ;
@@ -39,17 +45,23 @@ bdg:WA8LS20900 {
     bda:WA8LS20900  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20900 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "36/WA8LS20900.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20900 ;
-        adm:logEntry        bda:LG6205D4DF10EE5CD4 , bda:LG83233A94BC8F76C6 , bda:LGDC217B0DC6EB1110 , bda:LGF1C1BAB9C7963BEE ;
+        adm:logEntry        bda:LG6205D4DF10EE5CD4 , bda:LG6F5A0DCB7A2B2617 , bda:LG83233A94BC8F76C6 , bda:LGDC217B0DC6EB1110 , bda:LGF1C1BAB9C7963BEE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB2F809C67FF48350
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75325 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS20900  a       :Work ;
         skos:prefLabel      "sgrig lam rnam gzhag lag len 'thab thangs/"@bo-x-ewts ;
-        :catalogInfo        "A manual of Bhutanese etiquette, compiled by Gangkar Wangdu."@en ;
+        :catalogInfo        "A manual of Bhutanese etiquette; compiled by Gangkar Wangdu."@en ;
+        :creator            bdr:CRB2F809C67FF48350 ;
         :isRoot             true ;
         :language           bdr:LangDz , bdr:LangEn ;
         :workHasInstance    bdr:MW8LS20900 , bdr:W8LS20900 ;

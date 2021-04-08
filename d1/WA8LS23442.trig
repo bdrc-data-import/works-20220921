@@ -18,6 +18,12 @@ bdg:WA8LS23442 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGAEA4E5ED6A7A8A53
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-07T16:53:55.362Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGDE35BDC394EF9F54
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-08-08T15:46:36.904Z"^^xsd:dateTime ;
@@ -27,17 +33,23 @@ bdg:WA8LS23442 {
     bda:WA8LS23442  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS23442 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "d1/WA8LS23442.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS23442 ;
-        adm:logEntry        bda:LG3E58B3F41BDB6703 , bda:LGDE35BDC394EF9F54 ;
+        adm:logEntry        bda:LG3E58B3F41BDB6703 , bda:LGAEA4E5ED6A7A8A53 , bda:LGDE35BDC394EF9F54 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRF29B4B01CFB711B5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75333 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS23442  a       :SerialMember , :Work ;
         skos:prefLabel      "an na kha re ne na/"@bo-x-ewts ;
-        :catalogInfo        "The translation of Anna Karenina into Tibetan language."@en ;
+        :catalogInfo        "The translation of Anna Karenina; translated by Ketho."@en ;
+        :creator            bdr:CRF29B4B01CFB711B5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS23442 ;

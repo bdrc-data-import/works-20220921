@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS20884 {
+    bda:LG061AC7272884AA8B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-07T10:06:56.377Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, isbn"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG2A551206BC0CFE00
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-07-18T10:36:29.321Z"^^xsd:dateTime ;
@@ -27,17 +33,23 @@ bdg:WA8LS20884 {
     bda:WA8LS20884  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20884 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "82/WA8LS20884.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20884 ;
-        adm:logEntry        bda:LG2A551206BC0CFE00 , bda:LG967AE4065AD09BCB ;
+        adm:logEntry        bda:LG061AC7272884AA8B , bda:LG2A551206BC0CFE00 , bda:LG967AE4065AD09BCB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR0A7AF8EE5EB6D81D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75323 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20884  a       :Work ;
         skos:prefLabel      "me sag lam srol gyi rtsa ba na+ya'i gro d+ha'i sa bon/"@bo-x-ewts , "From Yak Herding to Enlightenment"@en ;
         :catalogInfo        "The legend of Thopa Gali, a heritage of the Merak Sakteng community by Gengop Karchung."@en ;
+        :creator            bdr:CR0A7AF8EE5EB6D81D ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn ;
         :workGenre          bdr:T1134 ;

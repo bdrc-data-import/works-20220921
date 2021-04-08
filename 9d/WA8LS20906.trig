@@ -30,20 +30,32 @@ bdg:WA8LS20906 {
         adm:logMessage      "added topic"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGDE0603F3F82D2D4E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-07T14:19:46.885Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS20906  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20906 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "9d/WA8LS20906.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20906 ;
-        adm:logEntry        bda:LG03FD128CFD0554C1 , bda:LG912761E7FF401C9F , bda:LGB517428F4ABA5B29 ;
+        adm:logEntry        bda:LG03FD128CFD0554C1 , bda:LG912761E7FF401C9F , bda:LGB517428F4ABA5B29 , bda:LGDE0603F3F82D2D4E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR40E423925B6D8204
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75326 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS20906  a       :Work ;
         skos:prefLabel      "rang lugs rdza bzo rig pa'i rnam bshad/"@bo-x-ewts ;
-        :catalogInfo        "A detailed explanation of traditional art of pottery in Bhutan."@en ;
+        :catalogInfo        "A detailed explanation of traditional art of making pottery in Bhutan by Dangdung Kunzang Dorjee."@en ;
+        :creator            bdr:CR40E423925B6D8204 ;
         :isRoot             true ;
         :language           bdr:LangDz ;
         :workGenre          bdr:T61 ;

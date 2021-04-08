@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN21627 {
+    bda:LG5086BDDE205560FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-07T13:53:43.176Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG5413FFB699E61187
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-04-07T13:54:22.592Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG59468A284E1CBB9B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-11-07T14:40:30.39Z"^^xsd:dateTime ;
@@ -21,17 +33,22 @@ bdg:WA3CN21627 {
     bda:WA3CN21627  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21627 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d0/WA3CN21627.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21627 ;
-        adm:logEntry        bda:LG59468A284E1CBB9B ;
+        adm:logEntry        bda:LG5086BDDE205560FF , bda:LG5413FFB699E61187 , bda:LG59468A284E1CBB9B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:MW3CN21627  skos:altLabel  "苯教远古祭祀仪文汇编"@zh-hans .
+    
     bdr:WA3CN21627  a       :Work ;
         skos:prefLabel      "tshangs pa lha yi yo bcos rgyas pa/"@bo-x-ewts , "苯教远古祭祀仪文汇编"@zh-hans ;
+        :catalogInfo        "Detailed exorcise rituals of Bon."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW3CN21627 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW3CN21627 , bdr:W3CN21627 ;
+        :workIsAbout        bdr:T247 , bdr:T2625 .
 }

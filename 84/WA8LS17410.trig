@@ -24,52 +24,58 @@ bdg:WA8LS17410 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGC7C78B9C1EE431E1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-07T15:02:37.782Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+    
     bda:WA8LS17410  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS17410 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "84/WA8LS17410.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS17410 ;
-        adm:logEntry        bda:LG14A50102B33DD6D8 , bda:LG1B5ECBA0D574B25E ;
+        adm:logEntry        bda:LG14A50102B33DD6D8 , bda:LG1B5ECBA0D574B25E , bda:LGC7C78B9C1EE431E1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR405EC3E318811641
         a                   :AgentAsCreator ;
-        :agent              bdr:P4420 ;
+        :agent              bdr:P4CZ15243 ;
         :role               bdr:R0ER0026 .
     
     bdr:CR49C65809C8BEA86B
         a                   :AgentAsCreator ;
-        :agent              bdr:P2614 ;
+        :agent              bdr:P4420 ;
         :role               bdr:R0ER0026 .
     
     bdr:CR674EE0EC8855F9F7
         a                   :AgentAsCreator ;
-        :agent              bdr:P4CZ15242 ;
+        :agent              bdr:P5651 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR984ABAD1FF74FF0D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2614 ;
         :role               bdr:R0ER0026 .
     
     bdr:CRAA4E6843F622430D
         a                   :AgentAsCreator ;
-        :agent              bdr:P5651 ;
-        :role               bdr:R0ER0026 .
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
     
     bdr:CRB9369D52067BC229
         a                   :AgentAsCreator ;
-        :agent              bdr:P4CZ15243 ;
+        :agent              bdr:P4CZ15242 ;
         :role               bdr:R0ER0026 .
-    
-    bdr:CRC7C78B9C1EE431E1
-        a                   :AgentAsCreator ;
-        :agent              bdr:P4954 ;
-        :role               bdr:R0ER0019 .
     
     bdr:WA8LS17410  a       :Work ;
         skos:altLabel       "rigs pa drug bcu pa'i tshig le'ur byas pa/ brtsod pa bzlog pa'i tshig le'ur byas pa dang stong nyid bdun bcu pa'i tshig le'ur byas pa/"@bo-x-ewts ;
         skos:prefLabel      "rigs pa drug bcu pa/ rtsod pa bzlog pa dang stong nyid bdun bcu pa'i tshig le'ur byas pa/"@bo-x-ewts ;
         :catalogInfo        "The root text of Yuktishataka, Vigraha vyavartani karika and Shunyatasamtikarika by Acharya Nagarjuna. All three texts are on Madhyamika philosophy and annotated by unknown master."@en ;
-        :creator            bdr:CR405EC3E318811641 , bdr:CR49C65809C8BEA86B , bdr:CR674EE0EC8855F9F7 , bdr:CRAA4E6843F622430D , bdr:CRB9369D52067BC229 , bdr:CRC7C78B9C1EE431E1 ;
+        :creator            bdr:CR405EC3E318811641 , bdr:CR49C65809C8BEA86B , bdr:CR674EE0EC8855F9F7 , bdr:CR984ABAD1FF74FF0D , bdr:CRAA4E6843F622430D , bdr:CRB9369D52067BC229 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS17410 , bdr:W8LS17410 ;

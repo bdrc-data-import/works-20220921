@@ -18,6 +18,12 @@ bdg:WA8LS20912 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG792F539F989BA14E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-07T14:36:01.662Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG79A28B0846D2D835
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-07-19T08:52:40.678Z"^^xsd:dateTime ;
@@ -27,18 +33,24 @@ bdg:WA8LS20912 {
     bda:WA8LS20912  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20912 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "19/WA8LS20912.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20912 ;
-        adm:logEntry        bda:LG28C92EF5A2336F96 , bda:LG79A28B0846D2D835 ;
+        adm:logEntry        bda:LG28C92EF5A2336F96 , bda:LG792F539F989BA14E , bda:LG79A28B0846D2D835 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR9E9F19AA98692EF5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75324 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20912  a       :Work ;
         skos:altLabel       "dran gtam zla ba'i bdud rtsi/ mkhas grub chen po bla ma smon lam rab bzang gi mdzad rnam/"@bo-x-ewts ;
         skos:prefLabel      "mkhas grub chen po bla ma smon lam rab bzang gi mdzad rnam/"@bo-x-ewts ;
         :catalogInfo        "Biography of Lama Monlam Rabzang by Dzongkha scholar Dorje Gyaltsen."@en ;
+        :creator            bdr:CR9E9F19AA98692EF5 ;
         :isRoot             true ;
         :language           bdr:LangDz ;
         :workGenre          bdr:T3 ;

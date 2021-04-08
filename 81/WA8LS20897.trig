@@ -18,6 +18,12 @@ bdg:WA8LS20897 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG90060390E838B07C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-07T12:37:13.235Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD1B6649DEA180D8A
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-07-18T14:08:33.282Z"^^xsd:dateTime ;
@@ -27,18 +33,24 @@ bdg:WA8LS20897 {
     bda:WA8LS20897  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20897 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "81/WA8LS20897.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20897 ;
-        adm:logEntry        bda:LG39F62B7F8A9D6C89 , bda:LGD1B6649DEA180D8A ;
+        adm:logEntry        bda:LG39F62B7F8A9D6C89 , bda:LG90060390E838B07C , bda:LGD1B6649DEA180D8A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8056EC8B1DFCCB36
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9933 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS20897  a       :Work ;
         skos:altLabel       "sdong dkar la gter ston tshe ring rdo rje'i 'khrungs rabs rnam thar yid kyi mun sel/"@bo-x-ewts ;
         skos:prefLabel      "gter ston tshe ring rdo rje'i 'khrungs rabs rnam thar/"@bo-x-ewts ;
-        :catalogInfo        "The successive birth stories of Terton Tsheing Dorje of Dongkarla."@en ;
+        :catalogInfo        "The successive birth stories of Terton Tsheing Dorje of Dongkarla; scribed by his disciple Tongden Phurpa Dorjee."@en ;
+        :creator            bdr:CR8056EC8B1DFCCB36 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1342 , bdr:T3 ;
