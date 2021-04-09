@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS23478 {
+    bda:LG938E4D14CF748C4E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-08T11:48:52.889Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGBFC4204B437B3E1D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-08-14T08:47:28.377Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS23478 {
     bda:WA8LS23478  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS23478 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "92/WA8LS23478.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS23478 ;
-        adm:logEntry        bda:LGBFC4204B437B3E1D , bda:LGCDB7224E07EE46DB , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG938E4D14CF748C4E , bda:LGBFC4204B437B3E1D , bda:LGCDB7224E07EE46DB , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR5EB6BE50EED1A1A2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75339 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS23478  a       :SerialMember , :Work ;
         skos:prefLabel      "rus pa'i skar ma/"@bo-x-ewts ;
         :catalogInfo        "Poetry collection of Khawa Kampo."@en ;
+        :creator            bdr:CR5EB6BE50EED1A1A2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS23478 ;

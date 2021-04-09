@@ -18,6 +18,12 @@ bdg:WA8LS23472 {
         adm:logMessage      "publication year changed"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG35656F44D0F3FF27
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-08T11:37:21.515Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGC42D5C4D4F1D04EC
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-08-10T09:37:29.978Z"^^xsd:dateTime ;
@@ -40,18 +46,24 @@ bdg:WA8LS23472 {
     bda:WA8LS23472  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS23472 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "ee/WA8LS23472.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS23472 ;
-        adm:logEntry        bda:LG2B255B106E396B45 , bda:LGC42D5C4D4F1D04EC , bda:LGD5D35186CE76502F , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG2B255B106E396B45 , bda:LG35656F44D0F3FF27 , bda:LGC42D5C4D4F1D04EC , bda:LGD5D35186CE76502F , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRD61452D3D860BD64
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75338 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS23472  a       :SerialMember , :Work ;
         skos:prefLabel      "dbyangs can dgyes pa'i zur mig"@bo-x-ewts ;
         :catalogInfo        "Poetry collection of Nyingmik."@en ;
+        :creator            bdr:CRD61452D3D860BD64 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS23472 ;

@@ -24,6 +24,12 @@ bdg:WA00EGS1016764 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LG2AF6B3262F4B1B86
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-08T16:36:12.376Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, Language encoding, print type"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG40ED5406F11CA731
         a                   adm:InitialDataCreation ;
         adm:logDate         "2006-12-05T08:17:54.843Z"^^xsd:dateTime ;
@@ -67,13 +73,18 @@ bdg:WA00EGS1016764 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00EGS1016764 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "2f/WA00EGS1016764.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00EGS1016764 ;
-        adm:logEntry        bda:LG00E76D523792D962 , bda:LG09D5D15A4ECFB912 , bda:LG40ED5406F11CA731 , bda:LG4163F052742FDE3A , bda:LG924543CFBD4971DF , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG00E76D523792D962 , bda:LG09D5D15A4ECFB912 , bda:LG2AF6B3262F4B1B86 , bda:LG40ED5406F11CA731 , bda:LG4163F052742FDE3A , bda:LG924543CFBD4971DF , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR1EF3D778750E1139
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1043 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW00EGS1016764
         skos:altLabel       "replies to zur-mkhar blo-gros-rgyal-po's queries regarding the four tantra, medical texts, being a buddhist literature"@en-x-mixed .
@@ -83,6 +94,7 @@ bdg:WA00EGS1016764 {
         skos:altLabel       "gso rig gzi lam 'bras bu'i rnam gzag la dpyad pa'i dri lan legs bsad rin po che'i snan ba gsar pa/"@bo-x-ewts , "Gso rig gźi lam ʼbras buʼi rnam gźag la dpyad paʼi dri lan legs bśad rin po cheʼi snaṅ ba gsar pa :replies to Zur-mkhar Blo-gros-rgyal-poʼs queries regarding the four Tantra medical texts being a Buddhist literature /by Bod-mkhas-pa Mi-pham-dge-legs-rnam-rgyal."@en-x-mixed ;
         skos:prefLabel      "gso rig gzhi lam 'bras bu'i rnam gzhag la dpyad pa'i dri lan legs bshad rin po che'i snang ba gsar pa/"@bo-x-ewts , "replies to zur-mkhar blo-gros-rgyal-po's queries regarding the four tantra, medical texts, being a buddhist literature"@en-x-mixed ;
         :catalogInfo        "Polemical responses by Bokhepa Mipam Gelek (1618-1685), Drukpa Kagyu master of grammar and medicine, to interpretations of the Four Medical Tantras. Written against the teachings of Zurkhar Lodro Gyelpo (b. 1509)."@en ;
+        :creator            bdr:CR1EF3D778750E1139 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 ;

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS24002 {
+    bda:LG0250118B15B16099
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-08T12:45:07.737Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG97A85B2197DF4031
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-08-14T14:51:15.015Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS24002 {
     bda:WA8LS24002  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS24002 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a7/WA8LS24002.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS24002 ;
-        adm:logEntry        bda:LG97A85B2197DF4031 , bda:LGDA841B1C8EA3940D , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG0250118B15B16099 , bda:LG97A85B2197DF4031 , bda:LGDA841B1C8EA3940D , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR399F92015BD30201
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75344 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS24002  a       :Work ;
         skos:prefLabel      "dran tho mu tig tshom bu/"@bo-x-ewts ;
         :catalogInfo        "A collection of poetry composed by Labsum Norbu."@en ;
+        :creator            bdr:CR399F92015BD30201 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS24002 , bdr:W8LS24002 ;

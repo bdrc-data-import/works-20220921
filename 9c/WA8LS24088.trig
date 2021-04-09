@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS24088 {
+    bda:LG52EAB6F1D8CCF6F0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-08T15:17:54.906Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG7DCAAC2A543ABC16
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-08-16T14:19:06.222Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS24088 {
     bda:WA8LS24088  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS24088 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "9c/WA8LS24088.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS24088 ;
-        adm:logEntry        bda:LG7DCAAC2A543ABC16 , bda:LGD8FEBE75D8C80082 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG52EAB6F1D8CCF6F0 , bda:LG7DCAAC2A543ABC16 , bda:LGD8FEBE75D8C80082 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1A1411F797AF05D5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75348 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS24088  a       :Work ;
         skos:prefLabel      "bod khyim byis pa'i klog deb/ 'dzin grwa bzhi pa/"@bo-x-ewts ;
-        :catalogInfo        "Children's comic book for class four standard compiled by TCV school."@en ;
+        :catalogInfo        "Children's comic book for class four standard; compiled by Drakne Mingchung."@en ;
+        :creator            bdr:CR1A1411F797AF05D5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG26395 , bdr:T266 ;

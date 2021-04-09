@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS23996 {
+    bda:LG423676EBAD26A9D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-08T12:05:44.46Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG927A9DCA104E4CE5
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-08-14T11:50:45.11Z"^^xsd:dateTime ;
@@ -34,21 +40,28 @@ bdg:WA8LS23996 {
     bda:WA8LS23996  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS23996 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a3/WA8LS23996.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS23996 ;
-        adm:logEntry        bda:LG927A9DCA104E4CE5 , bda:LG99F4D20D4068E125 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG423676EBAD26A9D6 , bda:LG927A9DCA104E4CE5 , bda:LG99F4D20D4068E125 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1EDE1002DB154785
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75342 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS23996  a       :SerialMember , :Work ;
         skos:prefLabel      "gzhon pa'i lang tsho/"@bo-x-ewts ;
         :catalogInfo        "A poetry collection of Tshultrim Norbu."@en ;
+        :creator            bdr:CR1EDE1002DB154785 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS23996 ;
+        :workGenre          bdr:T1081 ;
         :workHasInstance    bdr:MW8LS23996 , bdr:W8LS23996 ;
         :workIsAbout        bdr:T281 .
 }

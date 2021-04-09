@@ -24,6 +24,12 @@ bdg:WA8LS24043 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGF0A479023C54C5AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-08T14:51:50.166Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS24043 {
     bda:WA8LS24043  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS24043 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "27/WA8LS24043.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS24043 ;
-        adm:logEntry        bda:LG1EF9586361B38116 , bda:LG9DCBC2967AC39154 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG1EF9586361B38116 , bda:LG9DCBC2967AC39154 , bda:LGF0A479023C54C5AB , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR8A268C3E10646F8C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1017011 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS24043  a       :Work ;
         skos:prefLabel      "bod kyi shes yon lam lugs dang srid byus/"@bo-x-ewts ;
         :catalogInfo        "Tibetan education system and its policy by Redo Senge."@en ;
+        :creator            bdr:CR8A268C3E10646F8C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;

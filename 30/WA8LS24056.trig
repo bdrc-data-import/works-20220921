@@ -18,6 +18,12 @@ bdg:WA8LS24056 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG7438FB6F9221251A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-08T14:53:24.188Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD11BB415D21C5706
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-08-16T09:51:10.869Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS24056 {
     bda:WA8LS24056  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS24056 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "30/WA8LS24056.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS24056 ;
-        adm:logEntry        bda:LG092055632AEA51F5 , bda:LGD11BB415D21C5706 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG092055632AEA51F5 , bda:LG7438FB6F9221251A , bda:LGD11BB415D21C5706 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRF65B509B8077F268
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG207969 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS24056  a       :Work ;
         skos:prefLabel      "'dzam gling zhi bde/ rang yul bde skyid/ rang nyid rang dbang /"@bo-x-ewts ;
         :catalogInfo        "A collection of essays written by Tenzin Phendey."@en ;
+        :creator            bdr:CRF65B509B8077F268 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T258 ;

@@ -24,6 +24,12 @@ bdg:WA4CZ58742 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG4E29353A28B92146
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-08T11:47:31.31Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG62EC2D074829B328
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -33,18 +39,24 @@ bdg:WA4CZ58742 {
     bda:WA4CZ58742  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ58742 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "64/WA4CZ58742.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ58742 ;
-        adm:logEntry        bda:LG055C2DA42A9786A1 , bda:LG1E4CC6CE88193573 , bda:LG62EC2D074829B328 ;
+        adm:logEntry        bda:LG055C2DA42A9786A1 , bda:LG1E4CC6CE88193573 , bda:LG4E29353A28B92146 , bda:LG62EC2D074829B328 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR86E21037DA26CD3A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366713 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA4CZ58742  a       :Work ;
         skos:altLabel       "a dkar dri med kyi gdung sbyong lag len man ngag gnad dkrol gsal sgron/"@bo-x-ewts ;
         skos:prefLabel      "gdung sbyong lag len man ngag gnad dkrol gsal sgron/"@bo-x-ewts ;
         :catalogInfo        "Funeral rite of Sarvavid according Bon tradition."@en ;
+        :creator            bdr:CR86E21037DA26CD3A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T810 ;

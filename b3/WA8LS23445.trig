@@ -24,6 +24,12 @@ bdg:WA8LS23445 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG8C5BF1FDAFBA18AF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-08T09:13:57.733Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS23445 {
     bda:WA8LS23445  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS23445 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "b3/WA8LS23445.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS23445 ;
-        adm:logEntry        bda:LG5B87ACF5E1A244EB , bda:LG5F372E694A5CF2B5 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG5B87ACF5E1A244EB , bda:LG5F372E694A5CF2B5 , bda:LG8C5BF1FDAFBA18AF , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR0D27D34A8FF88F38
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75335 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS23445  a       :SerialMember , :Work ;
         skos:prefLabel      "tshor ba'i pha bong /"@bo-x-ewts ;
-        :catalogInfo        "Selected essays of Lutshang Losang Yeshe."@en ;
+        :catalogInfo        "Selected essays and poems written by Lutshang Losang Yeshe."@en ;
+        :creator            bdr:CR0D27D34A8FF88F38 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS23442 ;

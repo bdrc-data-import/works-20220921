@@ -12,26 +12,47 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG208438 {
+    bda:LG2213C4B7A1497DC2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-04-08T16:05:06.258Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGF9332C08F35A478A
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-04-07T14:34:13.654Z"^^xsd:dateTime ;
+        adm:logDate         "2021-04-08T15:27:21.626Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG208438  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG208438 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "ba/WA2KG208438.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG208438 ;
-        adm:logEntry        bda:LGF9332C08F35A478A ;
+        adm:logEntry        bda:LG2213C4B7A1497DC2 , bda:LGF9332C08F35A478A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR9094A34DD7C8BCD3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P937 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:EVFDE78B0B5154240F
+        a                   :CompletedEvent ;
+        :onYear             "1943"^^xsd:gYear .
+    
     bdr:WA2KG208438  a      :Work ;
-        skos:prefLabel      "扎日圣地指南"@zh-hans ;
+        skos:altLabel       "dpal rdo rje sems dpa' thugs kyi sgrub pa'i sngon 'gro'i zin bris rnam grol them skas/"@bo-x-ewts ;
+        skos:prefLabel      "rdor sems thugs kyi sgrub pa'i sngon 'gro'i zin bris rnam grol them skas sogs/"@bo-x-ewts ;
+        :catalogInfo        "Annotations on preliminary practices texts focusing on Vajrasattva. Performed at Mindroling Monastery."@en ;
+        :creator            bdr:CR9094A34DD7C8BCD3 ;
         :isRoot             true ;
-        :workGenre          bdr:T25 ;
-        :workHasInstance    bdr:MW2KG208438 ;
-        :workIsAbout        bdr:G4631 .
+        :language           bdr:LangBo ;
+        :workEvent          bdr:EVFDE78B0B5154240F ;
+        :workGenre          bdr:T1478 , bdr:T448 ;
+        :workHasInstance    bdr:MW2KG208438 , bdr:W2KG208438 ;
+        :workIsAbout        bdr:T00AG01245 .
 }

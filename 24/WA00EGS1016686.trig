@@ -54,6 +54,12 @@ bdg:WA00EGS1016686 {
         adm:logMessage      "outline associated with the text; jann"@en ;
         adm:logWho          bdu:U00011 .
     
+    bda:LG6DDA6E3834139DE4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-08T16:36:11.05Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, Language encoding, print type"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG7205B96F9D496385
         a                   adm:UpdateData ;
         adm:logDate         "2007-03-03T10:12:12.861Z"^^xsd:dateTime ;
@@ -96,18 +102,24 @@ bdg:WA00EGS1016686 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00EGS1016686 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "24/WA00EGS1016686.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00EGS1016686 ;
-        adm:logEntry        bda:LG1D63E4DF4535812D , bda:LG24D48314EE72FC3B , bda:LG39B8F7E876B72099 , bda:LG4CAA94C4D31313CC , bda:LG4FA5FBE19AAC9D71 , bda:LG50ED47CFC0082FDF , bda:LG5312E14A4895F0DD , bda:LG7205B96F9D496385 , bda:LG7EBECE7E965A54B7 , bda:LGCA7F8329FBA19CE4 , bda:LGCDF1C61F4D9BE01E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1D63E4DF4535812D , bda:LG24D48314EE72FC3B , bda:LG39B8F7E876B72099 , bda:LG4CAA94C4D31313CC , bda:LG4FA5FBE19AAC9D71 , bda:LG50ED47CFC0082FDF , bda:LG5312E14A4895F0DD , bda:LG6DDA6E3834139DE4 , bda:LG7205B96F9D496385 , bda:LG7EBECE7E965A54B7 , bda:LGCA7F8329FBA19CE4 , bda:LGCDF1C61F4D9BE01E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR55FEB89FA90158AE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366715 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA00EGS1016686
         a                   :Work ;
         skos:prefLabel      "khams sgom sde nang chen pa'i dgon khag rnams kyi byung ba phyogs bsgrigs rin chen sgrom brgya 'byed pa'i deb ther gser gyi lde mig"@bo-x-ewts ;
         :catalogInfo        "Historical surveys of monasteries in the Nangchen Dzong of Kham in Yushu Prefecture, Qinghai Province. Published by the Nangchen Printery."@en ;
+        :creator            bdr:CR55FEB89FA90158AE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW00EGS1016686 , bdr:W00EGS1016686 ;

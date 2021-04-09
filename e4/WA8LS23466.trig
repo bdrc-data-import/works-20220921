@@ -24,20 +24,32 @@ bdg:WA8LS23466 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGF1E627B706E1461F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-08T11:00:34.898Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS23466  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS23466 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "e4/WA8LS23466.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS23466 ;
-        adm:logEntry        bda:LG189481B92153FC86 , bda:LG20E4E423F6977EF5 ;
+        adm:logEntry        bda:LG189481B92153FC86 , bda:LG20E4E423F6977EF5 , bda:LGF1E627B706E1461F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR0273D653BF38D00A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG23412 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS23466  a       :Work ;
         skos:prefLabel      "srol rgyun rtsom lugs byis pa 'jug pa'i rtsed ra/"@bo-x-ewts ;
         :catalogInfo        "A collection of essays written by Lamo Logyam."@en ;
+        :creator            bdr:CR0273D653BF38D00A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T258 ;

@@ -24,6 +24,12 @@ bdg:WA8LS24077 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG71D3FA239EDA8335
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-08T14:59:33.292Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGB176D8B292D9A29C
         a                   adm:UpdateData ;
         adm:logDate         "2017-08-16T12:36:51.275Z"^^xsd:dateTime ;
@@ -39,18 +45,24 @@ bdg:WA8LS24077 {
     bda:WA8LS24077  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS24077 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "31/WA8LS24077.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS24077 ;
-        adm:logEntry        bda:LG1ABC4B1CAD056A8C , bda:LG221B73BF2CC8DCC8 , bda:LGB176D8B292D9A29C , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG1ABC4B1CAD056A8C , bda:LG221B73BF2CC8DCC8 , bda:LG71D3FA239EDA8335 , bda:LGB176D8B292D9A29C , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR633B03E9050DF5F4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75348 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS24077  a       :Work ;
         skos:prefLabel      "bod khyim byis pa'i klog deb/ 'dzin grwa gsum pa/"@bo-x-ewts ;
-        :catalogInfo        "Children's comic book for class three standard compiled by TCV school."@en ;
+        :catalogInfo        "Children's comic book for class three standard; compiled by Drakne Minchung."@en ;
+        :creator            bdr:CR633B03E9050DF5F4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG26395 , bdr:T266 ;

@@ -18,6 +18,12 @@ bdg:WA8LS23999 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGB88162241E02F0DB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-08T12:41:09.657Z"^^xsd:dateTime ;
+        adm:logMessage      "addea author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGCEBFF836A4360FEC
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-08-14T12:17:42.229Z"^^xsd:dateTime ;
@@ -27,17 +33,23 @@ bdg:WA8LS23999 {
     bda:WA8LS23999  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS23999 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "06/WA8LS23999.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS23999 ;
-        adm:logEntry        bda:LG924CB273E0298F09 , bda:LGCEBFF836A4360FEC ;
+        adm:logEntry        bda:LG924CB273E0298F09 , bda:LGB88162241E02F0DB , bda:LGCEBFF836A4360FEC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRF1A8F86153677F33
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75343 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS23999  a       :Work ;
         skos:prefLabel      "gsar skyes kyi myu gu/"@bo-x-ewts ;
         :catalogInfo        "A poetry collection of Driru Kelsang Tshedron."@en ;
+        :creator            bdr:CRF1A8F86153677F33 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS23999 , bdr:W8LS23999 ;
