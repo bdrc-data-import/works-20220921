@@ -18,6 +18,12 @@ bdg:WA8LS30622 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG5EDED4F9A598B9D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-09T15:44:39.077Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGE0E474386D2DB25B
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-01-02T10:21:03.905Z"^^xsd:dateTime ;
@@ -40,18 +46,29 @@ bdg:WA8LS30622 {
     bda:WA8LS30622  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS30622 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "37/WA8LS30622.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS30622 ;
-        adm:logEntry        bda:LG08C4F38FBC7089F0 , bda:LGE0E474386D2DB25B , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG08C4F38FBC7089F0 , bda:LG5EDED4F9A598B9D2 , bda:LGE0E474386D2DB25B , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRE408018C818996C5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75359 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRFCDEF6EF508CFF22
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75358 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS30622  a       :Work ;
         skos:altLabel       "The Pali Text Society's Pali-English dictionary"@en ;
         skos:prefLabel      "Pali-English dictionary"@en ;
         :catalogInfo        "Pali-English dictionary edited by Rhys Davids and William Stede."@en ;
+        :creator            bdr:CRE408018C818996C5 , bdr:CRFCDEF6EF508CFF22 ;
         :isRoot             true ;
         :language           bdr:LangEn ;
         :workGenre          bdr:T220 , bdr:T240 ;

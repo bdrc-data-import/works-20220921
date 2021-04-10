@@ -24,6 +24,12 @@ bdg:WA8LS25039 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGDBE64B7ABB2646B4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-09T10:06:57.283Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -34,19 +40,25 @@ bdg:WA8LS25039 {
     bda:WA8LS25039  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS25039 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "4a/WA8LS25039.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS25039 ;
-        adm:logEntry        bda:LG1F298E7302277DDA , bda:LG5F40D94B0ED7D30A , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG1F298E7302277DDA , bda:LG5F40D94B0ED7D30A , bda:LGDBE64B7ABB2646B4 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR40C38E87C76D3E2A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75352 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS25039  a       :Work ;
         skos:altLabel       "slob deb rig pa'i gter mdzod/ btsun dgon 'jam dbyangs chos gling gi phar phyin 'dzin grwa'i snyan ngag slob deb/"@bo-x-ewts , "snyan ngag lo rim dang po'i slob deb/"@bo-x-ewts ;
         skos:prefLabel      "slob deb rig pa'i gter mdzod/ stod cha/"@bo-x-ewts ;
-        :catalogInfo        "Poetry textbook for the Pharchin class of Jamyang choling nunnery."@en ;
+        :catalogInfo        "Poetry textbook for the Pharchin class of Jamyang choling nunnery by Konchok Gyatsho."@en ;
+        :creator            bdr:CR40C38E87C76D3E2A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T266 ;

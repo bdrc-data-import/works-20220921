@@ -24,6 +24,12 @@ bdg:WA8LS26167 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGFBC53321F592AD10
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-09T15:13:32.978Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS26167 {
     bda:WA8LS26167  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS26167 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "e2/WA8LS26167.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS26167 ;
-        adm:logEntry        bda:LGBD7B9558DA898139 , bda:LGF7528C1EA5728A99 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LGBD7B9558DA898139 , bda:LGF7528C1EA5728A99 , bda:LGFBC53321F592AD10 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR7A323E568A5429CC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75355 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS26167  a       :Work ;
         skos:prefLabel      "nyi hong gi rgyal rabs mdor bsdus/"@bo-x-ewts ;
         :catalogInfo        "A short history of Japan by Rikha Losang Tenzin."@en ;
+        :creator            bdr:CR7A323E568A5429CC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T793 ;

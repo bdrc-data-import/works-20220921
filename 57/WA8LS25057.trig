@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS25057 {
+    bda:LG09B693C885806DEE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-09T10:14:56.838Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG2AA9B057C5034365
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-09-06T12:26:25.825Z"^^xsd:dateTime ;
@@ -27,17 +33,23 @@ bdg:WA8LS25057 {
     bda:WA8LS25057  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS25057 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "57/WA8LS25057.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS25057 ;
-        adm:logEntry        bda:LG2AA9B057C5034365 , bda:LGCAC02F6A0F6D6222 ;
+        adm:logEntry        bda:LG09B693C885806DEE , bda:LG2AA9B057C5034365 , bda:LGCAC02F6A0F6D6222 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR0D2905D40164E5C3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75353 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS25057  a       :Work ;
         skos:prefLabel      "tshangs dbyangs rgya mtsho bskyar du 'tshol ba/"@bo-x-ewts ;
         :catalogInfo        "A research on the biography of 6th Dalai Lama by Mewod."@en ;
+        :creator            bdr:CR0D2905D40164E5C3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

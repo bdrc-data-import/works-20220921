@@ -36,23 +36,35 @@ bdg:WA3CN21508 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGF852A8B44651AF5F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-09T16:51:29.237Z"^^xsd:dateTime ;
+        adm:logMessage      "added translater"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3CN21508  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21508 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "8b/WA3CN21508.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21508 ;
-        adm:logEntry        bda:LG537832BEB3307EFA , bda:LG80A6FDDA7B8633C0 , bda:LGC2408256CAFF9D2D , bda:LGD10BB2966405F934 ;
+        adm:logEntry        bda:LG537832BEB3307EFA , bda:LG80A6FDDA7B8633C0 , bda:LGC2408256CAFF9D2D , bda:LGD10BB2966405F934 , bda:LGF852A8B44651AF5F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA20202 ;
         adm:status          bda:StatusWithdrawn .
+    
+    bdr:CREEBFB502A39CFB2E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6605 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW3CN21508  skos:altLabel  "西藏是祖国领土不可分割的一部分"@zh-hans .
     
     bdr:WA3CN21508  a       :SerialMember , :Work ;
         skos:prefLabel      "bod sa gnas ni krung go'i cha shas kha bral thabs med pa zhig yin/"@bo-x-ewts , "西藏是祖国领土不可分割的一部分"@zh-hans ;
         :catalogInfo        "Tibet is an inalienable part of the motherland’s territory"@en ;
+        :creator            bdr:CREEBFB502A39CFB2E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS3CN21508 ;

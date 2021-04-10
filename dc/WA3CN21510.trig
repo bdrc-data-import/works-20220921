@@ -18,6 +18,12 @@ bdg:WA3CN21510 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG26ADC5AF22C3E02F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-09T17:00:13.396Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG2BCA33FA5DEAC443
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-11-05T13:01:04.888Z"^^xsd:dateTime ;
@@ -39,19 +45,25 @@ bdg:WA3CN21510 {
     bda:WA3CN21510  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21510 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "dc/WA3CN21510.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21510 ;
-        adm:logEntry        bda:LG0A179BF192C6B3C1 , bda:LG2BCA33FA5DEAC443 , bda:LG84805A2B8AAA906A , bda:LGD1C8B410C70C0D4C ;
+        adm:logEntry        bda:LG0A179BF192C6B3C1 , bda:LG26ADC5AF22C3E02F , bda:LG2BCA33FA5DEAC443 , bda:LG84805A2B8AAA906A , bda:LGD1C8B410C70C0D4C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR1A8D5BDA298102AF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26255 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW3CN21510  skos:altLabel  "藏族报告文学初探"@zh-hans .
     
     bdr:WA3CN21510  a       :SerialMember , :Work ;
         skos:prefLabel      "bod kyi snyan zhu'i rtsom rig skor gyi zhib 'jug"@bo-x-ewts , "藏族报告文学初探"@zh-hans ;
         :catalogInfo        "A Probe into Tibetan Reportage by Lhakpa Tsering."@en ;
+        :creator            bdr:CR1A8D5BDA298102AF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS3CN21508 ;

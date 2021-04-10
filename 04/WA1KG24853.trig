@@ -24,6 +24,12 @@ bdg:WA1KG24853 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGDD65571CA3CF8D16
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-09T22:55:49.419Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM065AD95F26
         a                   adm:UpdateData ;
         adm:logDate         "2016-12-05T22:11:09.047Z"^^xsd:dateTime ;
@@ -48,18 +54,24 @@ bdg:WA1KG24853 {
     bda:WA1KG24853  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24853 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "04/WA1KG24853.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24853 ;
-        adm:logEntry        bda:LGA2CBADBCEA7F6852 , bda:LGD47A83915FC4ED81 , bda:LGIM065AD95F26 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LGA2CBADBCEA7F6852 , bda:LGD47A83915FC4ED81 , bda:LGDD65571CA3CF8D16 , bda:LGIM065AD95F26 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRCA3246729A81BD3A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS68169 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG24853  a       :Work ;
         skos:altLabel       "'bru 'grel 'phrul lde'i gsal 'grel thu mi'i dgongs gnad gsal ba'i me long gi bsam gzhig dang sbyong gzhi dag gi dpyad gzhi'i lan yig"@bo-x-ewts ;
         skos:prefLabel      "'bru 'grel 'phrul lde'i bsam gzhig dang sbyong gzhi dag gi dpyad gzhi'i lan yig"@bo-x-ewts ;
         :catalogInfo        "Answers for the related questions in Tibetan Grammar text 'bru 'grel 'phrul lde'i gsal 'grel thu mi'i dgongs gnad gsal ba'i me long."@en ;
+        :creator            bdr:CRCA3246729A81BD3A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T28 ;

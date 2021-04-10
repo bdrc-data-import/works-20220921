@@ -18,6 +18,12 @@ bdg:WA8LS25036 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG417F1251B004234C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-09T09:27:07.392Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG422358C59FB112E2
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-09-05T15:49:13.242Z"^^xsd:dateTime ;
@@ -27,21 +33,27 @@ bdg:WA8LS25036 {
     bda:WA8LS25036  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS25036 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "a4/WA8LS25036.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS25036 ;
-        adm:logEntry        bda:LG0FD851087E2D0321 , bda:LG422358C59FB112E2 ;
+        adm:logEntry        bda:LG0FD851087E2D0321 , bda:LG417F1251B004234C , bda:LG422358C59FB112E2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR065C0C60325C04E2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75351 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS25036  a       :Work ;
         skos:altLabel       "mkhas dang grub pa'i dbang phyug chen po chos rje sa skya paN chen gyi rnam thar/"@bo-x-ewts ;
         skos:prefLabel      "chos rje sa skya paN chen gyi rnam thar/"@bo-x-ewts ;
-        :catalogInfo        "Biography of Sakya Panchen by Jampel Raldri, in comic book form."@en ;
+        :catalogInfo        "Biography of Sakya Panchen, comic book form by Jampel Raldri."@en ;
+        :creator            bdr:CR065C0C60325C04E2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T3 ;
+        :workGenre          bdr:T1KG26395 , bdr:T3 ;
         :workHasInstance    bdr:MW8LS25036 , bdr:W8LS25036 ;
         :workIsAbout        bdr:P1056 .
 }
