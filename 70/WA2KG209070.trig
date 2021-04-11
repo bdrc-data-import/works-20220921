@@ -12,19 +12,26 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG209070 {
+    bda:LGBAD5043FE57C94FB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-04-10T16:23:34.198Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGD53A661CA5A0D751
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2020-02-28T16:02:51.051Z"^^xsd:dateTime ;
+        adm:logDate         "2021-04-10T16:22:15.809Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG209070  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG209070 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "70/WA2KG209070.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG209070 ;
-        adm:logEntry        bda:LGD53A661CA5A0D751 ;
+        adm:logEntry        bda:LGBAD5043FE57C94FB , bda:LGD53A661CA5A0D751 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,5 +41,5 @@ bdg:WA2KG209070 {
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T220 , bdr:T240 ;
-        :workHasInstance    bdr:MW2KG209070 , bdr:MW8LS68454 , bdr:W8LS68454 .
+        :workHasInstance    bdr:MW2KG209070 , bdr:MW8LS68454 , bdr:W2KG209070 , bdr:W8LS68454 .
 }
