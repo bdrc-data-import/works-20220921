@@ -30,20 +30,32 @@ bdg:WA8LS32770 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGC2260EA27077F034
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-12T10:18:57.482Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS32770  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS32770 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "5b/WA8LS32770.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS32770 ;
-        adm:logEntry        bda:LG03BA5C3341077D87 , bda:LG414DAE3B7ECA029D , bda:LG7A11E94F07B45902 ;
+        adm:logEntry        bda:LG03BA5C3341077D87 , bda:LG414DAE3B7ECA029D , bda:LG7A11E94F07B45902 , bda:LGC2260EA27077F034 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR56F047150D8C7A50
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1583 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS32770  a       :Work ;
         skos:prefLabel      "theg pa'i mchog rin po che'i mdzod/"@bo-x-ewts ;
-        :catalogInfo        "An analysis of Thekchok Dzod, author signed as Ngag gi Wangpo."@en ;
+        :catalogInfo        "An analysis of Thekchok Dzod by Ngag gi Wangpo."@en ;
+        :creator            bdr:CR56F047150D8C7A50 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T1CZ56 ;

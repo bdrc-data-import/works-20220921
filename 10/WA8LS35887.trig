@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS35887 {
+    bda:LG0549F55A422DC722
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-12T15:09:20.726Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG1CA6F4E3EC30E1BC
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-07-09T14:31:24.7Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS35887 {
     bda:WA8LS35887  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS35887 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "10/WA8LS35887.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS35887 ;
-        adm:logEntry        bda:LG1CA6F4E3EC30E1BC , bda:LG3E07AE2D8133ABF2 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG0549F55A422DC722 , bda:LG1CA6F4E3EC30E1BC , bda:LG3E07AE2D8133ABF2 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB1ED993181FF75AB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75372 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS35887  a       :SerialMember , :Work ;
         skos:prefLabel      "mahayana bauddha dharma ka sadhana krama aur kaya vyavastha"@sa-x-ndia ;
-        :catalogInfo        "The order of Sadhana practice and Kaya system according to Mahayana buddhism by Tashi Paljor."@en ;
+        :catalogInfo        "The order of Sadhana practice and Kaya system according to Mahayana buddhism by Dr. Tashi Paljor."@en ;
+        :creator            bdr:CRB1ED993181FF75AB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS24037 ;

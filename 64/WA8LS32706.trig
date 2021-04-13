@@ -41,6 +41,12 @@ bdg:WA8LS32706 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGCB842C867F8AC336
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-12T10:00:12.35Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -51,18 +57,23 @@ bdg:WA8LS32706 {
     bda:WA8LS32706  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS32706 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "64/WA8LS32706.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS32706 ;
-        adm:logEntry        bda:LG4230E396144D0EFF , bda:LG4BE6DF6A3659FEED , bda:LG5D20B1D6216375FB , bda:LG73091258ACCECBAB , bda:LGBA296E7AC030C522 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG4230E396144D0EFF , bda:LG4BE6DF6A3659FEED , bda:LG5D20B1D6216375FB , bda:LG73091258ACCECBAB , bda:LGBA296E7AC030C522 , bda:LGCB842C867F8AC336 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR7243148F397BCA69
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75364 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS32706  a       :Work ;
         skos:prefLabel      "yar 'brog bsam sdings dgon gyi byung ba brjod pa yid kyi shing rta/"@bo-x-ewts ;
         :catalogInfo        "History of Yardrok Samding monastery by Sharzhon Tsering Dawa."@en ;
+        :creator            bdr:CR7243148F397BCA69 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

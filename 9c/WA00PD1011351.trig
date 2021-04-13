@@ -24,15 +24,21 @@ bdg:WA00PD1011351 {
         adm:logMessage      "gsar du bcug pa"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGC567F6B6AC478713
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-12T15:06:21.061Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, v Language encoding, print type"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA00PD1011351
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00PD1011351 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9c/WA00PD1011351.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00PD1011351 ;
-        adm:logEntry        bda:LG4AD32A8E83D7A016 , bda:LG51FC644053CFBF60 ;
+        adm:logEntry        bda:LG4AD32A8E83D7A016 , bda:LG51FC644053CFBF60 , bda:LGC567F6B6AC478713 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -42,8 +48,10 @@ bdg:WA00PD1011351 {
     bdr:WA00PD1011351
         a                   :Work ;
         skos:prefLabel      "deng rtsom gces bsgrigs/"@bo-x-ewts , "xiandai wenxue"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Collections of modern Tibetan literature."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
         :workHasInstance    bdr:MW00PD1011351 ;
         :workIsAbout        bdr:T1979 .
 }

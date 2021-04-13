@@ -24,6 +24,12 @@ bdg:WA00EGS1017196 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LG7C911453E12E49F7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-12T15:06:18.461Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, v Language encoding, print type"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM320307B99D
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-19T11:05:48.485Z"^^xsd:dateTime ;
@@ -56,14 +62,19 @@ bdg:WA00EGS1017196 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00EGS1017196 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "c2/WA00EGS1017196.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00EGS1017196 ;
-        adm:logEntry        bda:LG1A9F1EC82037DB05 , bda:LG2FB3E21C59C47A75 , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 ;
+        adm:logEntry        bda:LG1A9F1EC82037DB05 , bda:LG2FB3E21C59C47A75 , bda:LG7C911453E12E49F7 , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR6AF82AE98ACD5B4A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9639 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW00EGS1017196
         skos:altLabel       "yum tsho"@en .
@@ -73,6 +84,7 @@ bdg:WA00EGS1017196 {
         skos:altLabel       "bod kyi bud med rig pa'i dus deb/"@bo-x-ewts ;
         skos:prefLabel      "g.yu mtsho/"@bo-x-ewts , "yum tsho"@en ;
         :catalogInfo        "First three volumes of a journal of Tibetan women's studies. Published by the Amnye Machen Institute, Dharamsala."@en ;
+        :creator            bdr:CR6AF82AE98ACD5B4A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T297 ;

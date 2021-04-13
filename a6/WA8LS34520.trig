@@ -18,6 +18,12 @@ bdg:WA8LS34520 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG283EADBBC356E65D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-12T12:08:03.726Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG34E69783743FB636
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-06-13T12:10:31.076Z"^^xsd:dateTime ;
@@ -40,19 +46,25 @@ bdg:WA8LS34520 {
     bda:WA8LS34520  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS34520 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "a6/WA8LS34520.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS34520 ;
-        adm:logEntry        bda:LG095FD361AE6CD7CB , bda:LG34E69783743FB636 , bda:LG6E80C26809962010 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG095FD361AE6CD7CB , bda:LG283EADBBC356E65D , bda:LG34E69783743FB636 , bda:LG6E80C26809962010 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8334F7A1575D0E19
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9825 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS34520  a       :SerialMember , :Work ;
         skos:altLabel       "bstan 'gyur gyi dkar chag sna tshogs nor bu'i phung po/ tshal pa drung chen smon lam rdo rjes bzhengs pa'i tshal pa bstan 'gyur dkar chag"@bo-x-ewts ;
         skos:prefLabel      "bstan 'gyur gyi dkar chag sna tshogs nor bu'i phung po/"@bo-x-ewts ;
         :catalogInfo        "Catalogue of the Tshalpa edition of Tengyur compiled by Gedun Rinchen; edited and annotated by Jampa Samten Shastri."@en ;
+        :creator            bdr:CR8334F7A1575D0E19 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS24037 ;

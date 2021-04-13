@@ -24,6 +24,12 @@ bdg:WA00EGS1016980 {
         adm:logMessage      "published for creation of scan request"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LGFBF78A8C524CE3AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-12T15:06:16.143Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, v Language encoding, print type"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -49,11 +55,11 @@ bdg:WA00EGS1016980 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00EGS1016980 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "22/WA00EGS1016980.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00EGS1016980 ;
-        adm:logEntry        bda:LG43F1862F77616265 , bda:LGF7E5CEFE7CEABFB4 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 ;
+        adm:logEntry        bda:LG43F1862F77616265 , bda:LGF7E5CEFE7CEABFB4 , bda:LGFBF78A8C524CE3AA , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -62,11 +68,12 @@ bdg:WA00EGS1016980 {
         skos:altLabel       "the waves sound of dza chu : bumsar monastery"@en .
     
     bdr:WA00EGS1016980
-        a                   :Work ;
+        a                   :SerialMember , :Work ;
         skos:prefLabel      "rdza chu'i rlabs sgra/"@bo-x-ewts , "the waves sound of dza chu : bumsar monastery"@en ;
         :catalogInfo        "Monastery magazine from Bumsar Monastery in Sershul. Special issue commemorating the Panchen Lama 10 (1938-1989)."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS00EGS1016980 ;
         :workGenre          bdr:T297 ;
         :workHasInstance    bdr:MW00EGS1016980 , bdr:W00EGS1016980 ;
         :workIsAbout        bdr:G3923 .

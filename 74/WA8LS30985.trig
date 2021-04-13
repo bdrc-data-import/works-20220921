@@ -18,6 +18,12 @@ bdg:WA8LS30985 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGB36431BE69426F80
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-12T09:19:56.4Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD0776FA5C5A8D17C
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-01-08T09:52:21.331Z"^^xsd:dateTime ;
@@ -40,20 +46,27 @@ bdg:WA8LS30985 {
     bda:WA8LS30985  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS30985 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "74/WA8LS30985.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS30985 ;
-        adm:logEntry        bda:LGA02B697D8CDBC478 , bda:LGD0776FA5C5A8D17C , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LGA02B697D8CDBC478 , bda:LGB36431BE69426F80 , bda:LGD0776FA5C5A8D17C , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRF21A40ADD3D16945
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75362 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS30985  a       :Work ;
         skos:altLabel       "sprul sku o rgyan stobs rgyal nas bed spyod gnang ba'i khams ri bo che pa'i tshig mdzod/"@bo-x-ewts ;
         skos:prefLabel      "khams ri bo che pa'i tshig mdzod/"@bo-x-ewts ;
         :catalogInfo        "Tibetan dictionary based on the Kham Riwoche dialect, compiled by Tulku Orgyen Topgyal."@en ;
+        :creator            bdr:CRF21A40ADD3D16945 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T220 ;
-        :workHasInstance    bdr:MW8LS30985 , bdr:W8LS30985 .
+        :workHasInstance    bdr:MW8LS30985 , bdr:W8LS30985 ;
+        :workIsAbout        bdr:G2186 .
 }

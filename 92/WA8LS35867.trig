@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS35867 {
+    bda:LG119A12A4D3ACB2FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-12T14:37:46.336Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG1E3CA05FDD61E94C
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-07-03T10:53:53.183Z"^^xsd:dateTime ;
@@ -39,19 +45,25 @@ bdg:WA8LS35867 {
     bda:WA8LS35867  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS35867 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "92/WA8LS35867.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS35867 ;
-        adm:logEntry        bda:LG1E3CA05FDD61E94C , bda:LG50945D22C2E91FBE , bda:LG6C72FD8EB4B962F2 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG119A12A4D3ACB2FC , bda:LG1E3CA05FDD61E94C , bda:LG50945D22C2E91FBE , bda:LG6C72FD8EB4B962F2 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1B7B7151012F80CD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75370 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS35867  a       :Work ;
         skos:altLabel       "mdo khams gling tshang chos rgyal rje 'bangs rim byon rnams kyi lo rgyus gzur gnas blo ldan 'jug pa'i gru gzings/"@bo-x-ewts ;
         skos:prefLabel      "gling tshang chos rgyal rje 'bangs rim byon rnams kyi lo rgyus/"@bo-x-ewts ;
-        :catalogInfo        "A successive Lingtshang king's history by Khenpo Gyaltshen chodrak."@en ;
+        :catalogInfo        "A history of Lingtshang kingdom and its successive king by Khenpo Gyaltshen chodrak."@en ;
+        :creator            bdr:CR1B7B7151012F80CD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;
