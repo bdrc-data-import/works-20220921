@@ -30,22 +30,34 @@ bdg:WA3CN21696 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGD3D5B26BD09BDD30
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T10:47:43.331Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3CN21696  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21696 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "8f/WA3CN21696.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21696 ;
-        adm:logEntry        bda:LG1D76A1BB91AAFA5E , bda:LG3ADDB9119D09759E , bda:LG4A65141215B081F4 ;
+        adm:logEntry        bda:LG1D76A1BB91AAFA5E , bda:LG3ADDB9119D09759E , bda:LG4A65141215B081F4 , bda:LGD3D5B26BD09BDD30 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR562BA631F2440BA6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26262 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW3CN21696  skos:altLabel  "客者与谈歌"@zh-hans .
     
     bdr:WA3CN21696  a       :Work ;
         skos:prefLabel      "mgron po dang gzhas 'khyags pa/"@bo-x-ewts , "客者与谈歌"@zh-hans ;
         :catalogInfo        "Guests and cold emotions, a collection of poetry by Nengon, Nambu & Nepa."@en ;
+        :creator            bdr:CR562BA631F2440BA6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN21696 , bdr:W3CN21696 ;

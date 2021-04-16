@@ -30,16 +30,27 @@ bdg:WA3CN21708 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LGF9589A151119132D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T16:53:07.475Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3CN21708  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21708 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "4e/WA3CN21708.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21708 ;
-        adm:logEntry        bda:LG6721A45E741365DD , bda:LG7C8E6F767226D81B , bda:LGE7A16F5C1A3F1081 ;
+        adm:logEntry        bda:LG6721A45E741365DD , bda:LG7C8E6F767226D81B , bda:LGE7A16F5C1A3F1081 , bda:LGF9589A151119132D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR6B5ACAB3797444B0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2CZ8014 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW3CN21708  skos:altLabel  "虚幻的歌声"@zh-hans .
     
@@ -47,6 +58,7 @@ bdg:WA3CN21708 {
         skos:altLabel       "lha chab sbyin pa'i snyan ngag gces btus/"@bo-x-ewts ;
         skos:prefLabel      "sgyu 'phrul gyi glu skad/"@bo-x-ewts , "虚幻的歌声"@zh-hans ;
         :catalogInfo        "A magical song, a personal collection of modern poetics by Lhachab Jinpa."@en ;
+        :creator            bdr:CR6B5ACAB3797444B0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS3CN21707 ;

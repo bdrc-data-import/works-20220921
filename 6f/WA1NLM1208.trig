@@ -24,6 +24,12 @@ bdg:WA1NLM1208 {
         adm:logMessage      "added topic, content, cat and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGDB5CD1988990602E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T17:00:33.794Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
@@ -33,17 +39,24 @@ bdg:WA1NLM1208 {
     bda:WA1NLM1208  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1208 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "6f/WA1NLM1208.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1208 ;
-        adm:logEntry        bda:LG620DFAFCE54A8BEE , bda:LGCEC03EE341E22F42 , bda:LGIMEDE14CA9 ;
+        adm:logEntry        bda:LG620DFAFCE54A8BEE , bda:LGCEC03EE341E22F42 , bda:LGDB5CD1988990602E , bda:LGIMEDE14CA9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRBAC8674A98094E80
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG3532 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1208  a       :Work ;
-        skos:prefLabel      "shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan gyi snying po'i don gsal bar byed pa blo bzang rgyal ba'i dgongs rgyan sogs/"@bo-x-ewts ;
+        skos:altLabel       "shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan gyi snying po'i don gsal bar byed pa blo bzang rgyal ba'i dgongs rgyan sogs/"@bo-x-ewts ;
+        skos:prefLabel      "mngon par rtogs pa'i rgyan gyi snying po'i don gsal bar byed pa blo bzang rgyal ba'i dgongs rgyan sogs/"@bo-x-ewts ;
         :catalogInfo        "1 shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan gyi snying po'i don gsal bar byed pa blo bzang rgyal ba'i dgongs rgyan ces bya ba las skabs gnyis pa'i bshad pa/ 2 shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan gyi snying po'i don gsal bar byed pa blo bzang rgyal ba'i dgongs rgyan ces bya ba las skabs gsum pa'i bshad pa/ 3 shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan gyi snying po'i don gsal bar byed pa blo bzang rgyal ba'i dgongs rgyan ces bya ba las skabs bzhi pa'i bshad pa/ 4 shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan gyi snying po'i don gsal bar byed pa blo bzang rgyal ba'i dgongs rgyan ces bya ba las skabs drug pa dang bdun pa'i bshad pa/ 5 shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan gyi snying po'i don gsal bar byed pa blo bzang rgyal ba'i dgongs rgyan ces bya ba las skabs brgyad pa'i bshad pa/"@bo-x-ewts , "Explanation of Abhisamayalankara by Kachu Losang Dorjee."@en ;
+        :creator            bdr:CRBAC8674A98094E80 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1029 , bdr:T132 ;

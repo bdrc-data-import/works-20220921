@@ -30,6 +30,12 @@ bdg:WA8LS41946 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGD633459FD5C338D4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T16:01:26.085Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -40,20 +46,26 @@ bdg:WA8LS41946 {
     bda:WA8LS41946  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS41946 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "12/WA8LS41946.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS41946 ;
-        adm:logEntry        bda:LG20A705E264E558D6 , bda:LG47F0130F23617462 , bda:LG5713870DB7C9D4C9 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG20A705E264E558D6 , bda:LG47F0130F23617462 , bda:LG5713870DB7C9D4C9 , bda:LGD633459FD5C338D4 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CREEBC31EAE38274BF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75387 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS41946  a       :Work ;
         skos:prefLabel      "nga dga' ldan pa'i dam sri kho yin/"@bo-x-ewts ;
         :catalogInfo        "The origination of Shugden deity and its related issues by Phuntsok Tashi."@en ;
+        :creator            bdr:CREEBC31EAE38274BF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS41946 , bdr:W8LS41946 ;
-        :workIsAbout        bdr:T1201 .
+        :workIsAbout        bdr:T102 , bdr:T1201 .
 }

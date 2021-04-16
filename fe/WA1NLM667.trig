@@ -24,6 +24,12 @@ bdg:WA1NLM667 {
         adm:logMessage      "added topic, cat and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGECF17F9DC940514A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T16:09:41.975Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, Added Author, Editor, add biblio titile"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM567371A3  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
@@ -33,17 +39,23 @@ bdg:WA1NLM667 {
     bda:WA1NLM667  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM667 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "fe/WA1NLM667.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM667 ;
-        adm:logEntry        bda:LG2DD3B54DEC458D99 , bda:LG54225BF41DA63538 , bda:LGIM567371A3 ;
+        adm:logEntry        bda:LG2DD3B54DEC458D99 , bda:LG54225BF41DA63538 , bda:LGECF17F9DC940514A , bda:LGIM567371A3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8B194DC32733BCF1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4147 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1NLM667  a        :Work ;
         skos:prefLabel      "dpal ldan lha mo'i bzlog bsgyur sogs/"@bo-x-ewts ;
         :catalogInfo        "Repelling ritual of Shridevi and other liturgical texts."@en ;
+        :creator            bdr:CR8B194DC32733BCF1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1NLM667 , bdr:W1NLM667 ;

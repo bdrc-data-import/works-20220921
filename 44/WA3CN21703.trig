@@ -24,6 +24,12 @@ bdg:WA3CN21703 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG9D00C95453805DBA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T15:31:40.159Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGA1CC7C97F52D1AA4
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -33,17 +39,25 @@ bdg:WA3CN21703 {
     bda:WA3CN21703  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21703 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "44/WA3CN21703.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21703 ;
-        adm:logEntry        bda:LG1A7BA91B74AAFD84 , bda:LG8A51B1445A2A6DD9 , bda:LGA1CC7C97F52D1AA4 ;
+        adm:logEntry        bda:LG1A7BA91B74AAFD84 , bda:LG8A51B1445A2A6DD9 , bda:LG9D00C95453805DBA , bda:LGA1CC7C97F52D1AA4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR6E3A0456FD5A4800
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26268 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:MW3CN21703  skos:altLabel  "青春集"@zh-hans .
+    
     bdr:WA3CN21703  a       :Work ;
-        skos:prefLabel      "lang tsho'i zil pa/"@bo-x-ewts ;
-        :catalogInfo        "Personal prose colection of Ramey Trinpa."@en ;
+        skos:prefLabel      "lang tsho'i zil pa/"@bo-x-ewts , "青春集"@zh-hans ;
+        :catalogInfo        "Personal prose colection (1st part) of Ramey Trinpa."@en ;
+        :creator            bdr:CR6E3A0456FD5A4800 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1884 ;

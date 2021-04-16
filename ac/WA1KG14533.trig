@@ -18,6 +18,12 @@ bdg:WA1KG14533 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG361FB67BFE7F85CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T12:20:51.371Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG6CF08ACDBA86910F
         a                   adm:UpdateData ;
         adm:logDate         "2014-01-06T14:27:52.249Z"^^xsd:dateTime ;
@@ -47,18 +53,29 @@ bdg:WA1KG14533 {
     bda:WA1KG14533  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14533 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "ac/WA1KG14533.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14533 ;
-        adm:logEntry        bda:LG324DF1B473CA32C2 , bda:LG6CF08ACDBA86910F , bda:LGAF59DB7D20054E86 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG324DF1B473CA32C2 , bda:LG361FB67BFE7F85CA , bda:LG6CF08ACDBA86910F , bda:LGAF59DB7D20054E86 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRCC5CD184A0B2EABD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228808 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRCD9B788FB5150FC0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228807 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA1KG14533  a       :SerialMember , :Work ;
         skos:altLabel       "ma ke si wen bo wen xuan/"@bo-x-ewts , "马克斯 韦伯文选"@bo-x-ewts ;
         skos:prefLabel      "'jig rten la 'jug pa'i blo sbyong /"@bo-x-ewts ;
         :catalogInfo        "Translation of Science as a Vocation (Wissenschaft als Beruf) and Politics as a Vocation (Politik als Beruf)"@en ;
+        :creator            bdr:CRCC5CD184A0B2EABD , bdr:CRCD9B788FB5150FC0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG14532 ;

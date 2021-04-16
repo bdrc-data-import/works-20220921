@@ -24,6 +24,12 @@ bdg:WA8LS41707 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGCB0DB8F069DB01FD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T12:38:04.872Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS41707 {
     bda:WA8LS41707  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS41707 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "8b/WA8LS41707.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS41707 ;
-        adm:logEntry        bda:LG32C16E7E619F9C86 , bda:LG509245D60B2A128F , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG32C16E7E619F9C86 , bda:LG509245D60B2A128F , bda:LGCB0DB8F069DB01FD , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR716016F7881AE038
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75379 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS41707  a       :SerialMember , :Work ;
         skos:prefLabel      "sa nag gi nga ro/"@bo-x-ewts ;
-        :catalogInfo        "A colletion of poetry by Chokri Phurbu Tsering."@en ;
+        :catalogInfo        "A colletion of poems composed by Chokri Phurbu Tsering."@en ;
+        :creator            bdr:CR716016F7881AE038 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS41706 ;

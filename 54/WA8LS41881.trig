@@ -18,6 +18,12 @@ bdg:WA8LS41881 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG9F73CDFFF88FB529
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T15:52:32.449Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGF78A89E54B40F178
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-11-02T09:35:25.541Z"^^xsd:dateTime ;
@@ -34,20 +40,27 @@ bdg:WA8LS41881 {
     bda:WA8LS41881  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS41881 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "54/WA8LS41881.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS41881 ;
-        adm:logEntry        bda:LG6B4F611D8E390519 , bda:LGF78A89E54B40F178 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG6B4F611D8E390519 , bda:LG9F73CDFFF88FB529 , bda:LGF78A89E54B40F178 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRDC414D7CC5B41B4F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75386 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS41881  a       :Work ;
         skos:prefLabel      "'di ka sder zhig ma red/"@bo-x-ewts ;
         :catalogInfo        "Explaining through arts concerning language, culture, endanger culture, human rights, equality and peace; translated by Gangka Tshering Dondup."@en ;
+        :creator            bdr:CRDC414D7CC5B41B4F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1029 ;
         :workHasInstance    bdr:MW8LS41881 , bdr:W8LS41881 ;
         :workIsAbout        bdr:T1845 .
 }

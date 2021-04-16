@@ -30,6 +30,12 @@ bdg:WA3CN21851 {
         adm:logMessage      "full cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG9820B6D5D0DAFCCE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T19:13:28.661Z"^^xsd:dateTime ;
+        adm:logMessage      "added tarnslater"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGC0A93F508FB1C2ED
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-12-11T10:49:40.682Z"^^xsd:dateTime ;
@@ -39,17 +45,23 @@ bdg:WA3CN21851 {
     bda:WA3CN21851  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21851 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "73/WA3CN21851.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21851 ;
-        adm:logEntry        bda:LG01DAC5DC67F72696 , bda:LG1D8B969ACD1DFE55 , bda:LG3C2BD15AF5E177EA , bda:LGC0A93F508FB1C2ED ;
+        adm:logEntry        bda:LG01DAC5DC67F72696 , bda:LG1D8B969ACD1DFE55 , bda:LG3C2BD15AF5E177EA , bda:LG9820B6D5D0DAFCCE , bda:LGC0A93F508FB1C2ED ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4D6BEBD443DF2E9B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26282 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA3CN21851  a       :SerialMember , :Work ;
         skos:prefLabel      "'tsho ba'i rtsub sha 'jam sha"@bo-x-ewts ;
-        :catalogInfo        "Smooth and rough of the livelihood, translted to Tibetan by Rumang Lukharbum."@en ;
+        :catalogInfo        "Smooth and rough of the livelihood, translted to Tibetan by Rumang Lukhargyal."@en ;
+        :creator            bdr:CR4D6BEBD443DF2E9B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS3CN7985 ;

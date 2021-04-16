@@ -30,22 +30,39 @@ bdg:WA3CN21839 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGE9D6FCF8D1B72A2A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T18:38:19.292Z"^^xsd:dateTime ;
+        adm:logMessage      "added translater"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3CN21839  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21839 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "b7/WA3CN21839.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21839 ;
-        adm:logEntry        bda:LG2C7117EC4A7333FF , bda:LG48B85589890FF216 , bda:LG5B678F01920CA343 ;
+        adm:logEntry        bda:LG2C7117EC4A7333FF , bda:LG48B85589890FF216 , bda:LG5B678F01920CA343 , bda:LGE9D6FCF8D1B72A2A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR251EEA7327457582
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26278 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR66A49AD2242FFDED
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26277 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW3CN21839  skos:altLabel  "永不放弃"@zh-hans .
     
     bdr:WA3CN21839  a       :Work ;
         skos:prefLabel      "mA yon gyi rgyal kha'i gsang ba/"@bo-x-ewts , "永不放弃"@zh-hans ;
         :catalogInfo        "Ma Yun's secret of success, translated to Tibetan by Kunsang Gyaltsen and Gonthar Gyal."@en ;
+        :creator            bdr:CR251EEA7327457582 , bdr:CR66A49AD2242FFDED ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN21839 , bdr:W3CN21839 ;

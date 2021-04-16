@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS41971 {
+    bda:LG7394E81067DFDF40
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T14:56:52.826Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG87A66089CD52E0C8
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-11-06T09:30:44.941Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS41971 {
     bda:WA8LS41971  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS41971 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "5a/WA8LS41971.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS41971 ;
-        adm:logEntry        bda:LG87A66089CD52E0C8 , bda:LGC38BB3D5EE751292 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG7394E81067DFDF40 , bda:LG87A66089CD52E0C8 , bda:LGC38BB3D5EE751292 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CREB34950168594B87
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75392 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS41971  a       :Work ;
         skos:prefLabel      "bod kyi srog chags sde brgyad/"@bo-x-ewts ;
         :catalogInfo        "Eight types of Tibetan animals; compiled by Sonam Gyatsho."@en ;
+        :creator            bdr:CREB34950168594B87 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS41971 , bdr:W8LS41971 ;

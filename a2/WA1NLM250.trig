@@ -24,6 +24,12 @@ bdg:WA1NLM250 {
         adm:logMessage      "added topic, cat and pub info, content"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGDA253D5CC191E7A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T16:09:38.523Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, Added Author, Editor, add biblio titile"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGFC997960721E619F
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -39,17 +45,28 @@ bdg:WA1NLM250 {
     bda:WA1NLM250  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM250 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "a2/WA1NLM250.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM250 ;
-        adm:logEntry        bda:LG5F7E48C10541929F , bda:LG7D8FB1E5D57FA682 , bda:LGFC997960721E619F , bda:LGIM48AAB853 ;
+        adm:logEntry        bda:LG5F7E48C10541929F , bda:LG7D8FB1E5D57FA682 , bda:LGDA253D5CC191E7A3 , bda:LGFC997960721E619F , bda:LGIM48AAB853 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR0E5771318DD4F598
+        a                   :AgentAsCreator ;
+        :agent              bdr:P410 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR18822C61A102EC2E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4727 ;
+        :role               bdr:R0ER0014 .
     
     bdr:WA1NLM250  a        :Work ;
         skos:prefLabel      "shing rta'i srol 'byed dang skyes bu gsum gyi rnam bzhag gi 'bru bsnon dogs dpyod dang bcas pa blo gsar dga' bskyed sogs/"@bo-x-ewts ;
         :catalogInfo        "1 shing rta srol 'byed rtsom 'phro/ 2 xxxxxx kun phan nyi ma'i 'od zer/"@en , "Analysis and clarification of tradition founder and three types of person by shasana dhipam."@en ;
+        :creator            bdr:CR0E5771318DD4F598 , bdr:CR18822C61A102EC2E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 , bdr:T2023 ;

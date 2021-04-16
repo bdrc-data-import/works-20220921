@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS36509 {
+    bda:LG30E7FBAF5A8F62B9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T09:33:12.065Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG6A92E7B2DDB6FB4D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-07-31T09:32:17.98Z"^^xsd:dateTime ;
@@ -34,18 +40,23 @@ bdg:WA8LS36509 {
     bda:WA8LS36509  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS36509 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "51/WA8LS36509.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS36509 ;
-        adm:logEntry        bda:LG6A92E7B2DDB6FB4D , bda:LGCD6603495FAEF3A4 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG30E7FBAF5A8F62B9 , bda:LG6A92E7B2DDB6FB4D , bda:LGCD6603495FAEF3A4 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR6CE8275E21D7405F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P105 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS36509  a       :Work ;
         skos:prefLabel      "rnam snang mngon byang gyi brgyud 'debs/"@bo-x-ewts ;
-        :catalogInfo        "Prayers to teachers in the transmission lineage of Abhisambodhikakarunodgata vairocana by Bikshu Losel Gyatsho. Also included related rituals and proportions of Mandala."@en ;
+        :catalogInfo        "Prayers to teachers in the transmission lineage of Abhisambodhikakarunodgata vairocana by Bikshu Yeshe Gyaltshen. Also included related ritual and proportion of Vairocana Mandala."@en ;
+        :creator            bdr:CR6CE8275E21D7405F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T11 , bdr:T977 ;

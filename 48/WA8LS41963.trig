@@ -24,6 +24,12 @@ bdg:WA8LS41963 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGDA1F84E8BF5479EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T12:41:05.392Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGE562BEB72EC5A3C2
         a                   adm:UpdateData ;
         adm:logDate         "2018-11-06T09:29:15.721Z"^^xsd:dateTime ;
@@ -40,18 +46,24 @@ bdg:WA8LS41963 {
     bda:WA8LS41963  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS41963 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "48/WA8LS41963.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS41963 ;
-        adm:logEntry        bda:LG810E70EC39ECB7A5 , bda:LGB5D6E56EE7727464 , bda:LGE562BEB72EC5A3C2 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG810E70EC39ECB7A5 , bda:LGB5D6E56EE7727464 , bda:LGDA1F84E8BF5479EE , bda:LGE562BEB72EC5A3C2 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR213D1E579B59E4E5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75391 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS41963  a       :Work ;
         skos:prefLabel      "drang po'i gzhung zhig bzo rgyu'i thabs lam/"@bo-x-ewts ;
-        :catalogInfo        "A collection poetry by Kelsang Topden."@en ;
+        :catalogInfo        "A collection poems composed by Kelsang Topden."@en ;
+        :creator            bdr:CR213D1E579B59E4E5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS41963 , bdr:W8LS41963 ;

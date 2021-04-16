@@ -24,6 +24,12 @@ bdg:WA4CZ296777 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG2E9A7A3EED90C2BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T21:08:44.715Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG7EBAAC769D48AFF8
         a                   adm:UpdateData ;
         adm:logDate         "2020-12-21T11:05:53.471Z"^^xsd:dateTime ;
@@ -70,14 +76,24 @@ bdg:WA4CZ296777 {
     bda:WA4CZ296777  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ296777 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "99/WA4CZ296777.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ296777 ;
-        adm:logEntry        bda:LG10AB482EECEC62AC , bda:LG16D54B9B50D56953 , bda:LG7EBAAC769D48AFF8 , bda:LGA8CE31E677EF749C , bda:LGB6AC0F8272447CFE , bda:LGD3C1A13261382E27 , bda:LGF01EAC7CDB8C3CE2 , bda:LGF75427D07A8A6F5E , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG10AB482EECEC62AC , bda:LG16D54B9B50D56953 , bda:LG2E9A7A3EED90C2BF , bda:LG7EBAAC769D48AFF8 , bda:LGA8CE31E677EF749C , bda:LGB6AC0F8272447CFE , bda:LGD3C1A13261382E27 , bda:LGF01EAC7CDB8C3CE2 , bda:LGF75427D07A8A6F5E , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRC9DB3DB91F78FC4B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26286 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE100E39FC3D1316D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG20933 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW4CZ296777  skos:altLabel  "Old Path White Clouds"@en .
     
@@ -85,6 +101,7 @@ bdg:WA4CZ296777 {
         skos:altLabel       "sangs rgyas bcom ldan 'das kyi rnam par thar pa/ sprin dkar lam rnying /"@bo-x-ewts ;
         skos:prefLabel      "sprin dkar lam rnying /"@bo-x-ewts , "Old Path White Clouds"@en ;
         :catalogInfo        "Life story of Gautama Buddha by Thich Nhat Hanh, translat by Ngedon Gyatso"@en ;
+        :creator            bdr:CRC9DB3DB91F78FC4B , bdr:CRE100E39FC3D1316D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG14132 ;

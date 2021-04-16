@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM500 {
+    bda:LG57258DA90A17B264
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T16:09:41.116Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, Added Author, Editor, add biblio titile"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG8D65B337651CCB31
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -39,17 +45,23 @@ bdg:WA1NLM500 {
     bda:WA1NLM500  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM500 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "1d/WA1NLM500.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM500 ;
-        adm:logEntry        bda:LG8D65B337651CCB31 , bda:LG92B5A551AD47021F , bda:LGF62F9B60160ADCF4 , bda:LGIM48AAB853 ;
+        adm:logEntry        bda:LG57258DA90A17B264 , bda:LG8D65B337651CCB31 , bda:LG92B5A551AD47021F , bda:LGF62F9B60160ADCF4 , bda:LGIM48AAB853 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRBB279549FFE8F09D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS12235 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1NLM500  a        :Work ;
         skos:prefLabel      "bsdus grwa'i rnam bzhag cha tshang ba rigs gnas legs bshad bang mdzod/"@bo-x-ewts ;
         :catalogInfo        "A complete presentation of elementary class in logic by Ngawang Trinley Lhundrup."@en ;
+        :creator            bdr:CRBB279549FFE8F09D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 ;

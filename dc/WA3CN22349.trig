@@ -24,6 +24,12 @@ bdg:WA3CN22349 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG56CF00210A4D6DD4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T20:13:16.741Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG95C01933EE477D64
         a                   adm:UpdateData ;
         adm:logDate         "2020-07-14T21:08:59.501Z"^^xsd:dateTime ;
@@ -39,18 +45,24 @@ bdg:WA3CN22349 {
     bda:WA3CN22349  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN22349 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "dc/WA3CN22349.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN22349 ;
-        adm:logEntry        bda:LG19E9ED9DEE089AD8 , bda:LG47314EA99BFDCA92 , bda:LG95C01933EE477D64 , bda:LGBAF44B9FFECE8C0D ;
+        adm:logEntry        bda:LG19E9ED9DEE089AD8 , bda:LG47314EA99BFDCA92 , bda:LG56CF00210A4D6DD4 , bda:LG95C01933EE477D64 , bda:LGBAF44B9FFECE8C0D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRED424A088E3B9AF6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26253 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN22349  a       :Work ;
         skos:altLabel       "slob chung mtho rim 'dzin grwa'i rtsom 'bri'i sbyong brdar sprod thabs/ byis pa'i gyer rtsom/"@bo-x-ewts ;
         skos:prefLabel      "slob chung mtho rim 'dzin grwa'i rtsom 'bri'i sbyong brdar sprod thabs/"@bo-x-ewts ;
         :catalogInfo        "Instruction of advanced writing for small school students by Lhapa Tashi."@en ;
+        :creator            bdr:CRED424A088E3B9AF6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T266 ;

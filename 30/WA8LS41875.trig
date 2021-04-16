@@ -24,6 +24,12 @@ bdg:WA8LS41875 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG8234C33DD0957136
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T15:36:29.765Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGB97371875A84BD61
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-19T09:38:37.202Z"^^xsd:dateTime ;
@@ -40,20 +46,31 @@ bdg:WA8LS41875 {
     bda:WA8LS41875  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS41875 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "30/WA8LS41875.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS41875 ;
-        adm:logEntry        bda:LG04DF443EC7B4953A , bda:LG1090CCC5DCB5ABF7 , bda:LGB97371875A84BD61 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG04DF443EC7B4953A , bda:LG1090CCC5DCB5ABF7 , bda:LG8234C33DD0957136 , bda:LGB97371875A84BD61 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR68F388855093823D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75384 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRF5F658FA99CD79AC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75385 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS41875  a       :Work ;
         skos:prefLabel      "chu nang gi mdzes pa/"@bo-x-ewts ;
-        :catalogInfo        "A collection of poetry by Gang chab and Cang myugzin."@en ;
+        :catalogInfo        "A collection of poems composed by Gang chab and Cang Nyukzin."@en ;
+        :creator            bdr:CR68F388855093823D , bdr:CRF5F658FA99CD79AC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T258 ;
-        :workHasInstance    bdr:MW8LS41875 , bdr:W8LS41875 .
+        :workHasInstance    bdr:MW8LS41875 , bdr:W8LS41875 ;
+        :workIsAbout        bdr:T281 .
 }

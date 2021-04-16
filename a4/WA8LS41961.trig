@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS41961 {
+    bda:LG052F930610A65718
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T09:40:33.986Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG76A4CA4613EF8D38
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-11-05T10:02:43.182Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS41961 {
     bda:WA8LS41961  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS41961 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a4/WA8LS41961.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS41961 ;
-        adm:logEntry        bda:LG76A4CA4613EF8D38 , bda:LG889B3D046BE608F3 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG052F930610A65718 , bda:LG76A4CA4613EF8D38 , bda:LG889B3D046BE608F3 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR8DA833C212EAD8CF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75389 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS41961  a       :SerialMember , :Work ;
         skos:prefLabel      "skra ring ma'i skya rengs/"@bo-x-ewts ;
-        :catalogInfo        "A collection of essays."@en ;
+        :catalogInfo        "A collection of essays; edited by Wangchuk Tsering."@en ;
+        :creator            bdr:CR8DA833C212EAD8CF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS41961 ;

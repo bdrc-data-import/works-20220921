@@ -24,6 +24,12 @@ bdg:WA8LS36503 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGAA3B7753115EFFEE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T09:22:10.618Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS36503 {
     bda:WA8LS36503  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS36503 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "4d/WA8LS36503.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS36503 ;
-        adm:logEntry        bda:LG04583E483AE9707C , bda:LG1ABFF1D0164C3ED4 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG04583E483AE9707C , bda:LG1ABFF1D0164C3ED4 , bda:LGAA3B7753115EFFEE , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR29CB6BE0D1520B58
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75320 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS36503  a       :SerialMember , :Work ;
         skos:prefLabel      "gangs phrug gi gtam rgyud/"@bo-x-ewts ;
         :catalogInfo        "Legend of a snow child, a fiction by Ngawang Phuntsok."@en ;
+        :creator            bdr:CR29CB6BE0D1520B58 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG13995 ;

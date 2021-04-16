@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS41722 {
+    bda:LG2AA94F6274B1950D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T14:59:37.745Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG5DF0D4AD1B56FC0D
         a                   adm:UpdateData ;
         adm:logDate         "2018-10-29T10:11:27.36Z"^^xsd:dateTime ;
@@ -40,18 +46,29 @@ bdg:WA8LS41722 {
     bda:WA8LS41722  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS41722 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "af/WA8LS41722.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS41722 ;
-        adm:logEntry        bda:LG5DF0D4AD1B56FC0D , bda:LGBEB16726E4061258 , bda:LGE65B7CAB33DBA6A5 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG2AA94F6274B1950D , bda:LG5DF0D4AD1B56FC0D , bda:LGBEB16726E4061258 , bda:LGE65B7CAB33DBA6A5 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR9005388CA839A2F5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75381 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRA384180D110560CF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75382 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS41722  a       :Work ;
         skos:prefLabel      "gu yangs srid byus la blta stangs/"@bo-x-ewts ;
-        :catalogInfo        "A view on the lenency policy adopted by the Chinese government in Tibet."@en ;
+        :catalogInfo        "A view on the lenency policy adopted by the Chinese government in Tibet by Tsering Dorjee and Tsering Dondrup."@en ;
+        :creator            bdr:CR9005388CA839A2F5 , bdr:CRA384180D110560CF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS41722 , bdr:W8LS41722 ;

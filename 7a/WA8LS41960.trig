@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS41960 {
+    bda:LG352C88F89D3F6FA3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T16:08:59.191Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG8C27075D563DBF87
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-11-05T09:17:28.709Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS41960 {
     bda:WA8LS41960  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS41960 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "7a/WA8LS41960.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS41960 ;
-        adm:logEntry        bda:LG8C27075D563DBF87 , bda:LGE5CCA3AFB4AC36EC , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG352C88F89D3F6FA3 , bda:LG8C27075D563DBF87 , bda:LGE5CCA3AFB4AC36EC , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR100F9590FF9EDBB6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG1688 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS41960  a       :Work ;
         skos:prefLabel      "bden pa mi gtso phan pa gtso/"@bo-x-ewts ;
         :catalogInfo        "A collection of essays concerning buddhism by Nyentse Tulku Losang Damcho Nyima."@en ;
+        :creator            bdr:CR100F9590FF9EDBB6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T258 ;

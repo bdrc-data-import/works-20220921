@@ -30,22 +30,34 @@ bdg:WA3CN21711 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LGFD61B8B91F7BBFD5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T17:05:54.816Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3CN21711  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21711 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "76/WA3CN21711.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21711 ;
-        adm:logEntry        bda:LG00382EC544C90B0A , bda:LG09E8C715D9ED5045 , bda:LGD9DC586ACEDEB76F ;
+        adm:logEntry        bda:LG00382EC544C90B0A , bda:LG09E8C715D9ED5045 , bda:LGD9DC586ACEDEB76F , bda:LGFD61B8B91F7BBFD5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR2AD75E3CCC4EB0B9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26273 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW3CN21711  skos:altLabel  "弱冠之眸"@zh-hans .
     
     bdr:WA3CN21711  a       :Work ;
         skos:prefLabel      "gson mig gi lang tsho/"@bo-x-ewts , "弱冠之眸"@zh-hans ;
         :catalogInfo        "Youth verse of life, a personal collection of modern poetics by Kyura Longbu."@en ;
+        :creator            bdr:CR2AD75E3CCC4EB0B9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN21711 , bdr:W3CN21711 ;

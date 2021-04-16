@@ -18,6 +18,12 @@ bdg:WA3CN21705 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG3BB6EBC012F4A4BD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T15:51:03.262Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG64BACC66700A19DC
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -33,17 +39,23 @@ bdg:WA3CN21705 {
     bda:WA3CN21705  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21705 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "82/WA3CN21705.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21705 ;
-        adm:logEntry        bda:LG25B8F3954F444D2B , bda:LG64BACC66700A19DC , bda:LG875B54A0B40640D1 ;
+        adm:logEntry        bda:LG25B8F3954F444D2B , bda:LG3BB6EBC012F4A4BD , bda:LG64BACC66700A19DC , bda:LG875B54A0B40640D1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRA4E4C8EAA395CE12
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5347 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN21705  a       :Work ;
         skos:prefLabel      "grub mtha' rtsa ba'i gsal 'grel dang dpa' ris rab gsal gyi rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Commentary of siddhanta and biography of Palri Rabsal by Konchok Gyatso Gengya."@en ;
+        :creator            bdr:CRA4E4C8EAA395CE12 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T3 , bdr:T385 ;

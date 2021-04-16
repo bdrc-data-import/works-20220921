@@ -24,6 +24,12 @@ bdg:WA1NLM352 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG975C6284D65076D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T16:09:40.648Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, Added Author, Editor, add biblio titile"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGF902F7DE6E4DE0F7
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-09T12:32:15.831Z"^^xsd:dateTime ;
@@ -39,18 +45,24 @@ bdg:WA1NLM352 {
     bda:WA1NLM352  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM352 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "d3/WA1NLM352.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM352 ;
-        adm:logEntry        bda:LG23CF8F31814CB932 , bda:LG3318DC13E0CE73D6 , bda:LGF902F7DE6E4DE0F7 , bda:LGIM48AAB853 ;
+        adm:logEntry        bda:LG23CF8F31814CB932 , bda:LG3318DC13E0CE73D6 , bda:LG975C6284D65076D3 , bda:LGF902F7DE6E4DE0F7 , bda:LGIM48AAB853 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR74B941BB31E29B1D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366760 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1NLM352  a        :Work ;
         skos:altLabel       "bslab pa yongs su sbyong ba gzhi gsum gyi brjed tho/"@bo-x-ewts ;
         skos:prefLabel      "gzhi gsum gyi brjed tho/"@bo-x-ewts ;
         :catalogInfo        "On the three disciplinary codes practiced by Buddhist monks and nuns during gso sbyong (posoda), dbyar gnas (varsika), and dgag dbye (pravarana) observance periods."@en ;
+        :creator            bdr:CR74B941BB31E29B1D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1446 ;

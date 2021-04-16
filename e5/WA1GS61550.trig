@@ -18,6 +18,12 @@ bdg:WA1GS61550 {
         adm:logMessage      "added volume to volume map corrected archive info.  this was missing image group information"@en ;
         adm:logWho          bdu:U00012 .
     
+    bda:LG9F665BA33249B36A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-13T17:03:21.076Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, add Language encoding, print type and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGC29F248252E24526
         a                   adm:InitialDataCreation ;
         adm:logDate         "2007-09-28T14:40:56.832Z"^^xsd:dateTime ;
@@ -53,18 +59,34 @@ bdg:WA1GS61550 {
     bda:WA1GS61550  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1GS61550 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "e5/WA1GS61550.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1GS61550 ;
-        adm:logEntry        bda:LG230F1BB8F413392A , bda:LGC29F248252E24526 , bda:LGE98C82CA54BD9E4E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG230F1BB8F413392A , bda:LG9F665BA33249B36A , bda:LGC29F248252E24526 , bda:LGE98C82CA54BD9E4E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR317700302774D3E3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR7CEE5F2741A248BB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2557 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRBC47A3EDE24D56B0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P79 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1GS61550  a       :Work ;
         skos:altLabel       "bka' gdams thig le'i zab khrid phyogs sgrigs/"@bo-x-ewts ;
         skos:prefLabel      "bka' gdams thig le bcu drug gi zab khrid man ngag phyogs bsgrigs dang gsang 'dus 'jam dpal rdo rje'i bskyed rdzogs/"@bo-x-ewts ;
         :catalogInfo        "Collection of practice texts for the Sodasabindu teachings of the Kadam order and the practice of the Guhysamaja in the form Manjuvajra."@en ;
+        :creator            bdr:CR317700302774D3E3 , bdr:CR7CEE5F2741A248BB , bdr:CRBC47A3EDE24D56B0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T200 ;

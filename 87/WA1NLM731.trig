@@ -24,6 +24,12 @@ bdg:WA1NLM731 {
         adm:logMessage      "added topic, cat and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGBB84647D3EFB9F93
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T16:09:42.335Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, Added Author, Editor, add biblio titile"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM567371A3  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2019-07-26T18:50:28.143Z"^^xsd:dateTime ;
@@ -33,17 +39,24 @@ bdg:WA1NLM731 {
     bda:WA1NLM731  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM731 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "87/WA1NLM731.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM731 ;
-        adm:logEntry        bda:LG04347ACDC4D3C1F4 , bda:LG49CCCEDDD1B69D03 , bda:LGIM567371A3 ;
+        adm:logEntry        bda:LG04347ACDC4D3C1F4 , bda:LG49CCCEDDD1B69D03 , bda:LGBB84647D3EFB9F93 , bda:LGIM567371A3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR87C62862A2F2EED3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9737 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM731  a        :Work ;
-        skos:prefLabel      "grub dbang dam pa'i man ngag me tog phreng mdzes las rten 'brel dang 'khyug dpyad sogs phyogs gcig tu bsdom pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "grub dbang dam pa'i man ngag me tog phreng mdzes las rten 'brel dang 'khyug dpyad sogs phyogs gcig tu bsdom pa sogs/"@bo-x-ewts ;
+        skos:prefLabel      "dam pa'i man ngag me tog phreng mdzes las rten 'brel dang 'khyug dpyad sogs phyogs gcig tu bsdom pa sogs/"@bo-x-ewts ;
         :catalogInfo        "A compilation of method of practices and examinations by Gyerap Dorjee and other ritual text."@en ;
+        :creator            bdr:CR87C62862A2F2EED3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T456 ;

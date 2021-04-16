@@ -30,16 +30,27 @@ bdg:WA3CN21707 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGF17F4DE549A953AC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T16:45:52.598Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3CN21707  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21707 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "b0/WA3CN21707.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21707 ;
-        adm:logEntry        bda:LG3A7D1B8DA25A2CC0 , bda:LG76D713EE6EB072AA , bda:LGB7DC8069542F7D52 ;
+        adm:logEntry        bda:LG3A7D1B8DA25A2CC0 , bda:LG76D713EE6EB072AA , bda:LGB7DC8069542F7D52 , bda:LGF17F4DE549A953AC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR7A978D319DB734BD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26271 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW3CN21707  skos:altLabel  "闪电"@zh-hans .
     
@@ -47,6 +58,7 @@ bdg:WA3CN21707 {
         skos:altLabel       "a 'jam gyi snyan ngag gces btus/"@bo-x-ewts ;
         skos:prefLabel      "glog 'khyug pa/"@bo-x-ewts , "闪电"@zh-hans ;
         :catalogInfo        "The lightning, a personal collection of modern poetics by Ajam."@en ;
+        :creator            bdr:CR7A978D319DB734BD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS3CN21707 ;

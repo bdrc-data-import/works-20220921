@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN21840 {
+    bda:LG38C9CB1FDC3E441D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T18:47:07.947Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG7896CF981AE9AFCC
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-12-10T10:27:34.239Z"^^xsd:dateTime ;
@@ -39,18 +45,29 @@ bdg:WA3CN21840 {
     bda:WA3CN21840  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21840 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "76/WA3CN21840.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21840 ;
-        adm:logEntry        bda:LG7896CF981AE9AFCC , bda:LG7A2E5611411ADBA0 , bda:LGAFE15579322C381A , bda:LGF7C25F74AF101F53 ;
+        adm:logEntry        bda:LG38C9CB1FDC3E441D , bda:LG7896CF981AE9AFCC , bda:LG7A2E5611411ADBA0 , bda:LGAFE15579322C381A , bda:LGF7C25F74AF101F53 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR87F8C9216DA75BAA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26279 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRA5DE13CA2DA54C7F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26261 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA3CN21840  a       :Work ;
         skos:altLabel       "a las pa pa'i tshong las gtan tshigs dang rgya cha'i bkod 'doms/ ma yon nang gros gsung bshad/ 3.0"@bo-x-ewts ;
         skos:prefLabel      "ma yon gyis 'byung 'gyur gleng ba/"@bo-x-ewts ;
         :catalogInfo        "Jack Ma future is coming, a collection of speech by Jack Ma and translated to Tibetan by Yeshe Tenzin."@en ;
+        :creator            bdr:CR87F8C9216DA75BAA , bdr:CRA5DE13CA2DA54C7F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN21840 , bdr:W3CN21840 ;

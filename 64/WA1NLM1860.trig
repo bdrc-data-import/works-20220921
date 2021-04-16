@@ -18,6 +18,18 @@ bdg:WA1NLM1860 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG4274C6547CFAAE72
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T16:09:36.727Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, Added Author, Editor, add biblio titile"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG4D0B6CD7D49D88BB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-15T09:08:16.676Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG7005CF06BE6DE2A3
         a                   adm:UpdateData ;
         adm:logDate         "2020-10-21T15:21:12.636Z"^^xsd:dateTime ;
@@ -33,20 +45,27 @@ bdg:WA1NLM1860 {
     bda:WA1NLM1860  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1860 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "64/WA1NLM1860.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1860 ;
-        adm:logEntry        bda:LG32A84AD9695E59FA , bda:LG7005CF06BE6DE2A3 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG32A84AD9695E59FA , bda:LG4274C6547CFAAE72 , bda:LG4D0B6CD7D49D88BB , bda:LG7005CF06BE6DE2A3 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRAFE4131415833BAD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1NLM1860  a       :Work ;
         skos:altLabel       "rje bla ma'i mdzad pa'i cha shas 'ga' res las brtsams pa bstan pa'i sgo 'byed/"@bo-x-ewts ;
         skos:prefLabel      "bla ma'i mdzad pa'i cha shas 'ga' res las brtsams pa bstan pa'i sgo 'byed/"@bo-x-ewts ;
-        :catalogInfo        "Life story of Dolon Nor Kajur Hothogthu Ngawang Lobsang Tenpa'i Nyima, unknown author"@en ;
+        :catalogInfo        "Life story of Dolon Nor Kajur Hothogthu Ngawang Lobsang Tenpa'i Nyima, written by Tukwan Choekyi Nyima aka Dharma Vajra."@en ;
+        :creator            bdr:CRAFE4131415833BAD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
-        :workHasInstance    bdr:MW1NLM1860 , bdr:W1NLM1860 .
+        :workHasInstance    bdr:MW1NLM1860 , bdr:W1NLM1860 ;
+        :workIsAbout        bdr:P4945 .
 }

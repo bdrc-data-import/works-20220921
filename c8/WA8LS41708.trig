@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS41708 {
+    bda:LG04D982D5BBA57A85
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-14T14:41:05.388Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG4C9FE2753ADCEE47
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-10-29T09:54:23.29Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS41708 {
     bda:WA8LS41708  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS41708 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c8/WA8LS41708.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS41708 ;
-        adm:logEntry        bda:LG4C9FE2753ADCEE47 , bda:LGD3A10507DDCB2FEC , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG04D982D5BBA57A85 , bda:LG4C9FE2753ADCEE47 , bda:LGD3A10507DDCB2FEC , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRDCACA37A81A2B7E2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75380 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS41708  a       :SerialMember , :Work ;
         skos:prefLabel      "brang gzhung gi nga ro/"@bo-x-ewts ;
-        :catalogInfo        "A collection of poetry by Bapa Kelsang Trinley."@en ;
+        :catalogInfo        "A collection of poems composed by Bapa Kelsang Trinley."@en ;
+        :creator            bdr:CRDCACA37A81A2B7E2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS41706 ;
