@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS41995 {
+    bda:LG3CF8B4F360FCDEDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-16T14:24:51.25Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG78CC80409A73FB48
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-11-07T14:19:36.32Z"^^xsd:dateTime ;
@@ -34,18 +40,34 @@ bdg:WA8LS41995 {
     bda:WA8LS41995  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS41995 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "e2/WA8LS41995.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS41995 ;
-        adm:logEntry        bda:LG78CC80409A73FB48 , bda:LG92B0FEC7490A8785 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG3CF8B4F360FCDEDA , bda:LG78CC80409A73FB48 , bda:LG92B0FEC7490A8785 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR2F09E9AE2A194F03
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75228 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR66F64AB43CB704EE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3725 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR752EA5951D70F69F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75226 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS41995  a       :Work ;
         skos:prefLabel      "in Tar neT 'jug ngogs/"@bo-x-ewts ;
         :catalogInfo        "A basic usage of internet."@en ;
+        :creator            bdr:CR2F09E9AE2A194F03 , bdr:CR66F64AB43CB704EE , bdr:CR752EA5951D70F69F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS41995 , bdr:W8LS41995 ;

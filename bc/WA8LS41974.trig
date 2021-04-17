@@ -24,6 +24,12 @@ bdg:WA8LS41974 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG93A15E76EE1E12D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-16T11:04:35.915Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS41974 {
     bda:WA8LS41974  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS41974 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "bc/WA8LS41974.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS41974 ;
-        adm:logEntry        bda:LG0506F433C453F368 , bda:LG0D619C9F74B2AC86 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG0506F433C453F368 , bda:LG0D619C9F74B2AC86 , bda:LG93A15E76EE1E12D6 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CREE9222D68B81D09D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8976 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS41974  a       :Work ;
         skos:prefLabel      "dam chos dogs sel las bzhad pa'i lung rigs me tog"@bo-x-ewts ;
         :catalogInfo        "A clarification of difficult point in Buddhist philosophy by Geshe Yeshe Thapkhey."@en ;
+        :creator            bdr:CREE9222D68B81D09D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T2023 ;

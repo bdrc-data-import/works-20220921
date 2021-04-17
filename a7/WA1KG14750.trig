@@ -35,6 +35,12 @@ bdg:WA1KG14750 {
         adm:logMessage      "corrected authorship statement"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGA88C916F17D4913D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-16T16:30:23.493Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGE7651E3BFE059412
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-15T02:23:14.684Z"^^xsd:dateTime ;
@@ -51,18 +57,24 @@ bdg:WA1KG14750 {
     bda:WA1KG14750  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14750 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "a7/WA1KG14750.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14750 ;
-        adm:logEntry        bda:LG0CF362D36DE2661C , bda:LG7CC2A5D7FF192027 , bda:LG92C697006BE45241 , bda:LG982CC61E60C1FBD2 , bda:LGE7651E3BFE059412 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0CF362D36DE2661C , bda:LG7CC2A5D7FF192027 , bda:LG92C697006BE45241 , bda:LG982CC61E60C1FBD2 , bda:LGA88C916F17D4913D , bda:LGE7651E3BFE059412 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRBC0CDEAABF1BA320
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1018102 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA1KG14750  a       :SerialMember , :Work ;
         skos:altLabel       "bod kyi lha mo'i 'khrab gzhung dpe tshogs/ gzugs kyi nyi ma'i rnam thar/"@bo-x-ewts , "ba da chuan tong zang xi xi lie cong shu-su ji ni ma"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gzugs kyi nyi ma'i rnam thar/"@bo-x-ewts , "八大传统藏戏系列丛书-苏吉尼玛"@zh-hans ;
-        :catalogInfo        "Version of the Tibetan dramatic story of gzugs kyi nyi ma."@en ;
+        :catalogInfo        "Version of the Tibetan dramatic story of gzugs kyi nyi ma; translated into Chinese by Trinley Chodrak."@en ;
+        :creator            bdr:CRBC0CDEAABF1BA320 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :serialMemberOf     bdr:WAS1KG14739 ;

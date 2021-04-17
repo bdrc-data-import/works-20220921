@@ -18,6 +18,12 @@ bdg:WA3CN25666 {
         adm:logMessage      "added info"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG6A1DB074AA858DC4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-16T18:41:07.226Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG75098B76D71BF742
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -45,19 +51,25 @@ bdg:WA3CN25666 {
     bda:WA3CN25666  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25666 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "13/WA3CN25666.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25666 ;
-        adm:logEntry        bda:LG43667030F8A3ADD6 , bda:LG75098B76D71BF742 , bda:LG87A95A7609E1AE16 , bda:LGB29E62FA443C1F2D , bda:LGE6CC8EDE6E7ECD45 ;
+        adm:logEntry        bda:LG43667030F8A3ADD6 , bda:LG6A1DB074AA858DC4 , bda:LG75098B76D71BF742 , bda:LG87A95A7609E1AE16 , bda:LGB29E62FA443C1F2D , bda:LGE6CC8EDE6E7ECD45 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRA92A4D613E5152CF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75317 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW3CN25666  skos:altLabel  "冈底斯游记（藏文）"@zh-hans .
     
     bdr:WA3CN25666  a       :Work ;
         skos:prefLabel      "gangs mtsho gnas gsum gyi lam yig dang gnas bshad/"@bo-x-ewts , "冈底斯游记（藏文）"@zh-hans ;
         :catalogInfo        "Guide of the sacred place Mount Kailash and Lake Manasarovar."@en ;
+        :creator            bdr:CRA92A4D613E5152CF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T25 ;

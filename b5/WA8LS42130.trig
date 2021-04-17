@@ -18,6 +18,12 @@ bdg:WA8LS42130 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG8F88B626B76FC658
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-16T15:26:59.882Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG954BA042ACD0CC44
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-11-20T11:21:45.06Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS42130 {
     bda:WA8LS42130  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS42130 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "b5/WA8LS42130.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS42130 ;
-        adm:logEntry        bda:LG0D70F83A3BECC1C1 , bda:LG954BA042ACD0CC44 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG0D70F83A3BECC1C1 , bda:LG8F88B626B76FC658 , bda:LG954BA042ACD0CC44 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR8CCB7FB97CFB2991
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75400 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS42130  a       :Work ;
-        skos:prefLabel      "snag gsal yid kyi 'dzum bag"@bo-x-ewts ;
+        skos:prefLabel      "snang gsal yid kyi 'dzum bag"@bo-x-ewts ;
         :catalogInfo        "A collection of poetry by Name Lakhang Tsering Dondrup."@en ;
+        :creator            bdr:CR8CCB7FB97CFB2991 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS42130 , bdr:W8LS42130 ;

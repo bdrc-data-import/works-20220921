@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN22994 {
+    bda:LG2DBB9EA7F89ED428
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-16T18:27:45.325Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG3AF58DB7F42E324F
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-07-21T13:47:36.231Z"^^xsd:dateTime ;
@@ -39,18 +45,24 @@ bdg:WA3CN22994 {
     bda:WA3CN22994  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN22994 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "7b/WA3CN22994.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN22994 ;
-        adm:logEntry        bda:LG3AF58DB7F42E324F , bda:LG3C69C1842EE2337D , bda:LGA391833003E16CEC , bda:LGAC3344BCEFC2CEE5 ;
+        adm:logEntry        bda:LG2DBB9EA7F89ED428 , bda:LG3AF58DB7F42E324F , bda:LG3C69C1842EE2337D , bda:LGA391833003E16CEC , bda:LGAC3344BCEFC2CEE5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRCB857AA3FB87865F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12065 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW3CN22994  skos:altLabel  "大慈法王释迦也失(汉藏对照）"@zh-hans .
     
     bdr:WA3CN22994  a       :Work ;
         skos:prefLabel      "byams chen chos rje shAkya ye shes/"@bo-x-ewts , "大慈法王释迦也失(汉藏对照）"@zh-hans ;
+        :creator            bdr:CRCB857AA3FB87865F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
