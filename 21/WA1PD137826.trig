@@ -17,6 +17,12 @@ bdg:WA1PD137826 {
         adm:logDate         "2016-11-15T05:42:13.576Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG3F7ED0EEE8287CD2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T12:15:19.26Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, Editor, biblio titile and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG6121C540E8024E19
         a                   adm:UpdateData ;
         adm:logDate         "2016-12-01T22:35:44.983Z"^^xsd:dateTime ;
@@ -68,19 +74,25 @@ bdg:WA1PD137826 {
     bda:WA1PD137826  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD137826 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "21/WA1PD137826.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD137826 ;
-        adm:logEntry        bda:LG0FB1118C870BCBA1 , bda:LG6121C540E8024E19 , bda:LG671990FE039E312A , bda:LG8C9906D7BB3E9F66 , bda:LGC3EC512BA2D6560A , bda:LGED5AAC86207600E1 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0FB1118C870BCBA1 , bda:LG3F7ED0EEE8287CD2 , bda:LG6121C540E8024E19 , bda:LG671990FE039E312A , bda:LG8C9906D7BB3E9F66 , bda:LGC3EC512BA2D6560A , bda:LGED5AAC86207600E1 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR876890EE609226A2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6653 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD137826  skos:altLabel  "仁卓（文学刊）"@zh-hans .
     
     bdr:WA1PD137826  a      :SerialMember , :Work ;
-        skos:altLabel       "ren zhuo（wen xue kan）"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "bod kyi nying btus rtsom rig dus deb/ rang grol/"@bo-x-ewts , "仁卓（文学刊）"@zh-hans ;
+        skos:altLabel       "bod kyi nying btus rtsom rig dus deb/"@bo-x-ewts , "ren zhuo（wen xue kan）"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rang grol/"@bo-x-ewts , "仁卓（文学刊）"@zh-hans ;
+        :creator            bdr:CR876890EE609226A2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1PD137826 ;

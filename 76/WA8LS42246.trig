@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS42246 {
+    bda:LG1580EAEC453F416B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T14:36:03.426Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG515FAC1F332D625E
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-01-03T09:39:03.735Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS42246 {
     bda:WA8LS42246  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS42246 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "76/WA8LS42246.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS42246 ;
-        adm:logEntry        bda:LG515FAC1F332D625E , bda:LGA4D343A94ABB2BD4 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG1580EAEC453F416B , bda:LG515FAC1F332D625E , bda:LGA4D343A94ABB2BD4 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRFF1C945E1DFAAE5B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75416 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS42246  a       :Work ;
         skos:prefLabel      "zhang kang gi 'pho 'gyur che long tsam brjod pa/"@bo-x-ewts ;
         :catalogInfo        "History and development of Hongkong by Ho Hung cin."@en ;
+        :creator            bdr:CRFF1C945E1DFAAE5B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

@@ -24,6 +24,12 @@ bdg:WA1PD137803 {
         adm:logMessage      "status changed from acquiring to accessioned"@en ;
         adm:logWho          bdu:U00046 .
     
+    bda:LGA5EB9D2D131E4952
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T12:15:18.538Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, Editor, biblio titile and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGB06DF557A8BF5498
         a                   adm:UpdateData ;
         adm:logDate         "2017-07-17T14:45:31.417Z"^^xsd:dateTime ;
@@ -44,18 +50,24 @@ bdg:WA1PD137803 {
     bda:WA1PD137803  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD137803 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "86/WA1PD137803.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD137803 ;
-        adm:logEntry        bda:LG068CA557F31F8A90 , bda:LG408E01033FE35C4C , bda:LGB06DF557A8BF5498 , bda:LGE18E9D6CD8A96515 , bda:LGE2F34FDA1D55331E ;
+        adm:logEntry        bda:LG068CA557F31F8A90 , bda:LG408E01033FE35C4C , bda:LGA5EB9D2D131E4952 , bda:LGB06DF557A8BF5498 , bda:LGE18E9D6CD8A96515 , bda:LGE2F34FDA1D55331E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR77B30E0E54A78270
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75212 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1PD137803  a      :Work ;
         skos:altLabel       "rje btsun 'brog mi byams pa blo gros dpal bzang po'i rnam thar/"@bo-x-ewts ;
         skos:prefLabel      "'brog mi byams pa blo gros dpal bzang po'i rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography of Drokmi Jampa Lodro by Dorje Wangdu."@en ;
+        :creator            bdr:CR77B30E0E54A78270 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

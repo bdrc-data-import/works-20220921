@@ -23,6 +23,12 @@ bdg:WA1PD137781 {
         adm:logDate         "2016-12-02T21:40:37.275Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG82D17EEA2E345341
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T12:15:15.003Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, Editor, biblio titile and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG8579C50B8674BDB8
         a                   adm:UpdateData ;
         adm:logDate         "2012-08-30T12:21:15.125Z"^^xsd:dateTime ;
@@ -61,19 +67,25 @@ bdg:WA1PD137781 {
     bda:WA1PD137781  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD137781 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "f2/WA1PD137781.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD137781 ;
-        adm:logEntry        bda:LG17022EAB544C433A , bda:LG5CDB9B54098A4DEA , bda:LG8579C50B8674BDB8 , bda:LG8CE1BFCA37BACC3C , bda:LG9A7333D4BA1943B9 , bda:LGAF7AEFA762ECF172 , bda:LGCF810AB7EA7A5817 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG17022EAB544C433A , bda:LG5CDB9B54098A4DEA , bda:LG82D17EEA2E345341 , bda:LG8579C50B8674BDB8 , bda:LG8CE1BFCA37BACC3C , bda:LG9A7333D4BA1943B9 , bda:LGAF7AEFA762ECF172 , bda:LGCF810AB7EA7A5817 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR04152CC38B449B22
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG220180 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD137781  skos:altLabel  "苯教母续根本经及其注释"@zh-hans .
     
     bdr:WA1PD137781  a      :Work ;
         skos:altLabel       "ben jiao mu xu gen ben jing ji qi zhu shi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "theg pa chen po gsang sngags ma rgyud thugs rje nyi ma'i rgyud gsum/"@bo-x-ewts , "苯教母续根本经及其注释"@zh-hans ;
+        :creator            bdr:CR04152CC38B449B22 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

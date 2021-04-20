@@ -24,6 +24,12 @@ bdg:WA8LS42256 {
         adm:logMessage      "marked as restricted in china"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGC832E16318DC50C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T14:43:12.811Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGE103EF14A62C6667
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-01-07T09:36:53.673Z"^^xsd:dateTime ;
@@ -40,18 +46,24 @@ bdg:WA8LS42256 {
     bda:WA8LS42256  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS42256 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "ac/WA8LS42256.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS42256 ;
-        adm:logEntry        bda:LG6704F6D3C32735AD , bda:LG7E8173E45C38590C , bda:LGE103EF14A62C6667 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG6704F6D3C32735AD , bda:LG7E8173E45C38590C , bda:LGC832E16318DC50C3 , bda:LGE103EF14A62C6667 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRA3FC24B9FFD20B6E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75417 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS42256  a       :Work ;
         skos:prefLabel      "khyim mtshes dang cha shas/"@bo-x-ewts ;
         :catalogInfo        "Tibet and Tang dynasty relationship, occupation of Tibet, 17 point agreement and Tibetan pupulation status by Khyungse Garikthar."@en ;
+        :creator            bdr:CRA3FC24B9FFD20B6E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

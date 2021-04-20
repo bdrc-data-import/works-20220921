@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS42243 {
+    bda:LG414D01BC9CFAAAD8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T14:25:46.972Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG719BF38181F5930A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-01-02T10:02:19.804Z"^^xsd:dateTime ;
@@ -34,19 +40,25 @@ bdg:WA8LS42243 {
     bda:WA8LS42243  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS42243 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "80/WA8LS42243.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS42243 ;
-        adm:logEntry        bda:LG719BF38181F5930A , bda:LGE1ED912987547BA6 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG414D01BC9CFAAAD8 , bda:LG719BF38181F5930A , bda:LGE1ED912987547BA6 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR4716E556D1BE3FFD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75415 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS42243  a       :Work ;
         skos:altLabel       "lo rgyus shes bya'i klog deb/ du nag dmag 'khrug"@bo-x-ewts ;
         skos:prefLabel      "du nag dmag 'khrug"@bo-x-ewts ;
         :catalogInfo        "A textbook focussed on opium war by Tsung Hwa Hri."@en ;
+        :creator            bdr:CR4716E556D1BE3FFD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T266 ;

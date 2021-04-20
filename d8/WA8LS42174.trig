@@ -30,6 +30,12 @@ bdg:WA8LS42174 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGFC248A5DD4F9ED0D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T10:37:35.005Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -40,18 +46,24 @@ bdg:WA8LS42174 {
     bda:WA8LS42174  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS42174 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "d8/WA8LS42174.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS42174 ;
-        adm:logEntry        bda:LG288F0AF71317A424 , bda:LG323A5F0128AF1C97 , bda:LGAFC8360A2B276920 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG288F0AF71317A424 , bda:LG323A5F0128AF1C97 , bda:LGAFC8360A2B276920 , bda:LGFC248A5DD4F9ED0D , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR0351FB436EB58F56
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75406 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS42174  a       :SerialMember , :Work ;
         skos:prefLabel      "rgya dmar gyi srid jus spel stangs dang de'i rgyab ljongs la dpyad pa/"@bo-x-ewts ;
         :catalogInfo        "Chinese communist policy; its background and implementation."@en ;
+        :creator            bdr:CR0351FB436EB58F56 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS42174 ;

@@ -18,10 +18,21 @@ bdg:WA8LS42205 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG71720C5C04665885
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T12:20:30.866Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG7FE20492B0396F63
         a                   adm:UpdateData ;
         adm:logDate         "2018-12-17T14:36:48.873Z"^^xsd:dateTime ;
         adm:logMessage      "marked as restricted in china"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGAADE6549EF8DA298
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T12:22:01.594Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
     bda:LGF2E53C70613982A2
@@ -40,19 +51,25 @@ bdg:WA8LS42205 {
     bda:WA8LS42205  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS42205 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "73/WA8LS42205.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS42205 ;
-        adm:logEntry        bda:LG3EDE929B3804177A , bda:LG7FE20492B0396F63 , bda:LGF2E53C70613982A2 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG3EDE929B3804177A , bda:LG71720C5C04665885 , bda:LG7FE20492B0396F63 , bda:LGAADE6549EF8DA298 , bda:LGF2E53C70613982A2 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR6B28A7F9148013A5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG2163 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS42205  a       :SerialMember , :Work ;
         skos:altLabel       "shes rab bla 'bod/ spyi tshogs la phyogs pa'i bsam blo/ mi rigs la sems pa'i 'du shes/ legs bcos la 'bod pa'i dung sgra/"@bo-x-ewts ;
         skos:prefLabel      "shes rab bla 'bod/"@bo-x-ewts ;
         :catalogInfo        "A collection of essays composed by Sershul Rinchen Dondrup."@en ;
+        :creator            bdr:CR6B28A7F9148013A5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS42205 ;

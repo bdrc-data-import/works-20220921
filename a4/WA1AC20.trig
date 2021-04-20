@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1AC20 {
+    bda:LG098610AC976938D7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T16:20:57.91Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, Language encoding and print type"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG25F75CDA431EEED4
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-17T03:22:50.274Z"^^xsd:dateTime ;
@@ -58,16 +64,28 @@ bdg:WA1AC20 {
     bda:WA1AC20  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC20 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "a4/WA1AC20.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC20 ;
-        adm:logEntry        bda:LG25F75CDA431EEED4 , bda:LG473DB27B378FA052 , bda:LG54AF1E285DE5FAEE , bda:LG7B11C98E48B30E8F , bda:LGAA7300FE2F40A703 , bda:LGC8A1ED2A9FCC8F6F , bda:LGF9087C1ADF211885 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG098610AC976938D7 , bda:LG25F75CDA431EEED4 , bda:LG473DB27B378FA052 , bda:LG54AF1E285DE5FAEE , bda:LG7B11C98E48B30E8F , bda:LGAA7300FE2F40A703 , bda:LGC8A1ED2A9FCC8F6F , bda:LGF9087C1ADF211885 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR0ED54479E8C7A1DB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5364 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR8A811675BD6A0447
+        a                   :AgentAsCreator ;
+        :agent              bdr:P31 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1AC20  a          :SerialMember , :Work ;
-        skos:prefLabel      "phar phyin skabs bzhi pa'i sdom 'grel dang shes khyad byed ngo'i mtshan nyid bzhi'i rnam gzhag"@bo-x-ewts ;
+        skos:altLabel       "phar phyin skabs bzhi pa'i sdom 'grel dang shes khyad byed ngo'i mtshan nyid bzhi'i rnam gzhag"@bo-x-ewts ;
+        skos:prefLabel      "skabs bzhi pa'i sdom 'grel dang shes khyad byed ngo'i mtshan nyid bzhi'i rnam gzhag"@bo-x-ewts ;
+        :creator            bdr:CR0ED54479E8C7A1DB , bdr:CR8A811675BD6A0447 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS140 ;

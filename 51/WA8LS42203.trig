@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS42203 {
+    bda:LG2982F301DEF21E31
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T12:07:07.738Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG7262D15C8756F36C
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-12-17T09:48:31.052Z"^^xsd:dateTime ;
@@ -40,18 +46,24 @@ bdg:WA8LS42203 {
     bda:WA8LS42203  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS42203 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "51/WA8LS42203.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS42203 ;
-        adm:logEntry        bda:LG7262D15C8756F36C , bda:LG87BD3BB14FBED09A , bda:LGC49CE4CCA766E6FC , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG2982F301DEF21E31 , bda:LG7262D15C8756F36C , bda:LG87BD3BB14FBED09A , bda:LGC49CE4CCA766E6FC , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR14633555ABE58A2F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75410 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS42203  a       :Work ;
         skos:prefLabel      "bod la thabs rtsal dgos/"@bo-x-ewts ;
-        :catalogInfo        "A collection of essays translated from Chinese to Tibetan by Nakshod Sedmi Yeshe Tenzin."@en ;
+        :catalogInfo        "A collection of essays translated from Chinese to Tibetan by Yeshe Tenzin."@en ;
+        :creator            bdr:CR14633555ABE58A2F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1157 , bdr:T258 ;

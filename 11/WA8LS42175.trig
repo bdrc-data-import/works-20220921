@@ -18,6 +18,12 @@ bdg:WA8LS42175 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGB558894C5B6442B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T10:40:51.712Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGDD6C87B579F9BB34
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-11-27T10:13:24.136Z"^^xsd:dateTime ;
@@ -34,19 +40,25 @@ bdg:WA8LS42175 {
     bda:WA8LS42175  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS42175 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "11/WA8LS42175.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS42175 ;
-        adm:logEntry        bda:LG296F9EFAFB9F0CD3 , bda:LGDD6C87B579F9BB34 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG296F9EFAFB9F0CD3 , bda:LGB558894C5B6442B5 , bda:LGDD6C87B579F9BB34 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8981E97752171EE6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9901 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS42175  a       :Work ;
         skos:altLabel       "chog shes/ shAkya thub pa'i rtsa khrims/"@bo-x-ewts ;
         skos:prefLabel      "chog shes/"@bo-x-ewts ;
         :catalogInfo        "Contentment: A global Buddhsit thoughts by Tulku Orgyen Nyima."@en ;
+        :creator            bdr:CR8981E97752171EE6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS42175 , bdr:W8LS42175 ;

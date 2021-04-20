@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS42150 {
+    bda:LG3F3BFDAB663CA32F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T10:29:36.346Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, title"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG71373989B9C0440B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2018-11-21T09:53:46.67Z"^^xsd:dateTime ;
@@ -34,18 +40,26 @@ bdg:WA8LS42150 {
     bda:WA8LS42150  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS42150 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "84/WA8LS42150.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS42150 ;
-        adm:logEntry        bda:LG71373989B9C0440B , bda:LG799035F4348F4B3A , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG3F3BFDAB663CA32F , bda:LG71373989B9C0440B , bda:LG799035F4348F4B3A , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR120AC67E2BA78587
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75405 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:MW8LS42150  skos:altLabel  "The Future of Tibet"@en .
+    
     bdr:WA8LS42150  a       :Work ;
-        skos:prefLabel      "ma 'ongs bod/"@bo-x-ewts ;
+        skos:prefLabel      "ma 'ongs bod/"@bo-x-ewts , "The Future of Tibet"@en ;
         :catalogInfo        "A collection of research paper authored by Setshang Kelsang Lodroe."@en ;
+        :creator            bdr:CR120AC67E2BA78587 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;

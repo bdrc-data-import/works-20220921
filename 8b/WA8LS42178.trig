@@ -18,6 +18,12 @@ bdg:WA8LS42178 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG74B31F652D74D052
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-19T10:44:27.032Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGAFF29EF4DE35B0BE
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-12-14T10:43:35.356Z"^^xsd:dateTime ;
@@ -40,18 +46,24 @@ bdg:WA8LS42178 {
     bda:WA8LS42178  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS42178 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "8b/WA8LS42178.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS42178 ;
-        adm:logEntry        bda:LG3216149C9F535CEE , bda:LGAFF29EF4DE35B0BE , bda:LGE5FCFF8B7CBAEE4A , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG3216149C9F535CEE , bda:LG74B31F652D74D052 , bda:LGAFF29EF4DE35B0BE , bda:LGE5FCFF8B7CBAEE4A , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRF695DF6701A84D6B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366527 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS42178  a       :SerialMember , :Work ;
         skos:prefLabel      "mer bsregs kyi gtan tshigs/"@bo-x-ewts ;
         :catalogInfo        "Causes of self-immolation protestors against Chinese government by Jigme Tsering or Repa."@en ;
+        :creator            bdr:CRF695DF6701A84D6B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS42178 ;
