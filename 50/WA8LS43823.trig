@@ -18,6 +18,12 @@ bdg:WA8LS43823 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGB938A9C0C032BD13
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-20T14:07:42.118Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGCA230D32275853F5
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-03-15T15:24:06.866Z"^^xsd:dateTime ;
@@ -34,18 +40,29 @@ bdg:WA8LS43823 {
     bda:WA8LS43823  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS43823 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "50/WA8LS43823.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS43823 ;
-        adm:logEntry        bda:LG1937C38CD77F9010 , bda:LGCA230D32275853F5 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG1937C38CD77F9010 , bda:LGB938A9C0C032BD13 , bda:LGCA230D32275853F5 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRCC900858CAF522E7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75433 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE0A01D0D011AD3DB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75432 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS43823  a       :SerialMember , :Work ;
         skos:prefLabel      "'phan yul gyi dgon sde'i gnas bshad dge legs kun 'byung ma/"@bo-x-ewts ;
         :catalogInfo        "Guide of monastery in Phenpo area."@en ;
+        :creator            bdr:CRCC900858CAF522E7 , bdr:CRE0A01D0D011AD3DB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG23750 ;

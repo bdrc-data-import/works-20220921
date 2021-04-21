@@ -24,6 +24,12 @@ bdg:WA8LS43799 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG54B96736924A48A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-20T10:13:35.54Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -34,19 +40,30 @@ bdg:WA8LS43799 {
     bda:WA8LS43799  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS43799 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "93/WA8LS43799.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS43799 ;
-        adm:logEntry        bda:LG36524623B5F38625 , bda:LG4D9C91A853EB0A42 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG36524623B5F38625 , bda:LG4D9C91A853EB0A42 , bda:LG54B96736924A48A3 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRDD86F5987DEA77AD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75426 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRF307A8A25F850054
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75427 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA8LS43799  a       :Work ;
         skos:altLabel       "yul mdo smad kyi gnas mchog brag dkar sprel rdzong gi gnas bshad rags bsdus dad ldan rna ba'i bdud rtsi/"@bo-x-ewts ;
         skos:prefLabel      "brag dkar sprel rdzong gi gnas bshad/"@bo-x-ewts ;
         :catalogInfo        "Guide of Dakar Trelzong in Amdo."@en ;
+        :creator            bdr:CRDD86F5987DEA77AD , bdr:CRF307A8A25F850054 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T25 ;

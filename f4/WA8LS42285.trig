@@ -36,6 +36,12 @@ bdg:WA8LS42285 {
         adm:logMessage      "restricted in china"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGE0F0A6E9AB5ECF9E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-20T09:35:14.947Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -46,18 +52,24 @@ bdg:WA8LS42285 {
     bda:WA8LS42285  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS42285 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "f4/WA8LS42285.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS42285 ;
-        adm:logEntry        bda:LG6DA2608968A1AFE7 , bda:LG7A4518C2FB11F8CA , bda:LG871925DFC59F6F4D , bda:LG9F63597514323AD0 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG6DA2608968A1AFE7 , bda:LG7A4518C2FB11F8CA , bda:LG871925DFC59F6F4D , bda:LG9F63597514323AD0 , bda:LGE0F0A6E9AB5ECF9E , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRE23E4A19D5630980
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75422 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS42285  a       :Work ;
         skos:prefLabel      "bod kyi bud med lhan tshogs kyi sa gnas yan lag khag gi lo rgyus/"@bo-x-ewts ;
-        :catalogInfo        "History of Tibetan Women's association and its branch."@en ;
+        :catalogInfo        "History of Tibetan Women's association and its branch in India; edited by Pema Chodron."@en ;
+        :creator            bdr:CRE23E4A19D5630980 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

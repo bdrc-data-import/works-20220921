@@ -30,6 +30,12 @@ bdg:WA1KG15893 {
         adm:logMessage      "full cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGA5C5E371F4CDE6FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-20T18:54:02.134Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGD13F233B2647FB9C
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T16:22:18.199Z"^^xsd:dateTime ;
@@ -58,20 +64,26 @@ bdg:WA1KG15893 {
     bda:WA1KG15893  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG15893 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "07/WA1KG15893.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG15893 ;
-        adm:logEntry        bda:LG29892ABEBA7EEB3F , bda:LG38A41C2CD2EBBCDE , bda:LG8C418308F6133A96 , bda:LGD13F233B2647FB9C , bda:LGDF5254D6B85AC420 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG29892ABEBA7EEB3F , bda:LG38A41C2CD2EBBCDE , bda:LG8C418308F6133A96 , bda:LGA5C5E371F4CDE6FE , bda:LGD13F233B2647FB9C , bda:LGDF5254D6B85AC420 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR23CD9608EC5854F1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228813 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1KG15893  skos:altLabel  "history of mustang"@en .
     
     bdr:WA1KG15893  a       :Work ;
-        skos:altLabel       "mol tshig bstan pa'i 'phrengs mdzes/"@bo-x-ewts ;
+        skos:altLabel       "mol tshig bstan pa'i 'phrengs mdzes/"@bo-x-ewts , "tsa drangs gi mol gtams/"@bo-x-ewts ;
         skos:prefLabel      "mol tshig bstan pa'i 'phreng mdzes/"@bo-x-ewts , "history of mustang"@en ;
         :catalogInfo        "A history of Mustang."@en ;
+        :creator            bdr:CR23CD9608EC5854F1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

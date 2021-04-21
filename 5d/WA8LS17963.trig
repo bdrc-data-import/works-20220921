@@ -18,6 +18,12 @@ bdg:WA8LS17963 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG58A66659884B58D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-20T16:23:55.719Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to Restricted by Quality and added biblio note"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGD333D47669817EAE
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-10-04T12:11:17.344Z"^^xsd:dateTime ;
@@ -27,34 +33,34 @@ bdg:WA8LS17963 {
     bda:WA8LS17963  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS17963 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "5d/WA8LS17963.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS17963 ;
-        adm:logEntry        bda:LG55E17BFF302B2F05 , bda:LGD333D47669817EAE ;
+        adm:logEntry        bda:LG55E17BFF302B2F05 , bda:LG58A66659884B58D6 , bda:LGD333D47669817EAE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR05383E9018091709
         a                   :AgentAsCreator ;
+        :agent              bdr:P8151 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR776151A8B39F39C5
+        a                   :AgentAsCreator ;
         :agent              bdr:P3285 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CR58A66659884B58D6
+    bdr:CR8001ACD6B741D936
         a                   :AgentAsCreator ;
         :agent              bdr:P8335 ;
         :role               bdr:R0ER0019 .
-    
-    bdr:CR8001ACD6B741D936
-        a                   :AgentAsCreator ;
-        :agent              bdr:P8151 ;
-        :role               bdr:R0ER0026 .
     
     bdr:WA8LS17963  a       :Work ;
         skos:altLabel       "kye'i rdo rje'i sgrub pa'i thabs/"@bo-x-ewts ;
         skos:prefLabel      "sgrub thabs mtsho skyes/"@bo-x-ewts ;
         :catalogInfo        "Sadhana of Hevajra by Acharya Tshokye Dorje; translated into Tibetan by Gayadhara and Gelong Shakya Yeshe."@en ;
-        :creator            bdr:CR05383E9018091709 , bdr:CR58A66659884B58D6 , bdr:CR8001ACD6B741D936 ;
+        :creator            bdr:CR05383E9018091709 , bdr:CR776151A8B39F39C5 , bdr:CR8001ACD6B741D936 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1 ;

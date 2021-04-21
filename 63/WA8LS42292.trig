@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS42292 {
+    bda:LG019F1FFD4D80391C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-20T09:42:49.465Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG67E9FD79721C1C09
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-01-10T11:19:43.378Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS42292 {
     bda:WA8LS42292  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS42292 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "63/WA8LS42292.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS42292 ;
-        adm:logEntry        bda:LG67E9FD79721C1C09 , bda:LGC30867EB3E677424 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG019F1FFD4D80391C , bda:LG67E9FD79721C1C09 , bda:LGC30867EB3E677424 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRE35B0863C6BE7885
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75423 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS42292  a       :Work ;
         skos:prefLabel      "nga yi mthong thos/"@bo-x-ewts ;
         :catalogInfo        "Local history of Lamo Dazhi by Lamo Dazhi Dakpa."@en ;
+        :creator            bdr:CRE35B0863C6BE7885 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;
