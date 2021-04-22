@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG16582 {
+    bda:LG1EEEAB2CAABFE074
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-21T09:32:57.065Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG810BEBE8213F25B4
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-02-03T11:46:53.392Z"^^xsd:dateTime ;
@@ -28,22 +33,23 @@ bdg:WA1KG16582 {
     bda:WA1KG16582  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG16582 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "e6/WA1KG16582.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG16582 ;
-        adm:logEntry        bda:LG810BEBE8213F25B4 , bda:LGIM74A445C794 ;
+        adm:logEntry        bda:LG1EEEAB2CAABFE074 , bda:LG810BEBE8213F25B4 , bda:LGIM74A445C794 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:MW1KG16582  skos:altLabel  "《果惹擦宗》《少帅扎拉次吉》《森达海螺宗》《扎拉铠甲宗》《阿达拉姆秘传》"@zh-hans .
+    bdr:MW1KG16582  skos:altLabel  "扎拉铠甲宗"@zh-hans .
     
-    bdr:WA1KG16582  a       :Work ;
-        skos:altLabel       "《guo re ca zong》《shao shuai zha la ci ji》《sen da hai luo zong》《zha la kai jia zong》《a da la mi chuan》"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "mtsho sngon zhing chen gyi ge sar sgrung ba grags can gyi dpe tshogs/ go ra tshwa rdzong / lha sras dgra lha rtse rgyal/ seng stag dung dkar stag rjong / dgra lha'i khrab rjong / a stag lha mo'i gsang rnam/"@bo-x-ewts , "《果惹擦宗》《少帅扎拉次吉》《森达海螺宗》《扎拉铠甲宗》《阿达拉姆秘传》"@zh-hans ;
+    bdr:WA1KG16582  a       :SerialMember , :Work ;
+        skos:altLabel       "zha la kai jia zong"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dgra lha'i khrab rjong /"@bo-x-ewts , "扎拉铠甲宗"@zh-hans ;
         :catalogInfo        "Collection of episodes from the epic of King Gesar."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS1KG16582 ;
         :workHasInstance    bdr:MW1KG16582 ;
         :workIsAbout        bdr:T1863 , bdr:T248 .
 }

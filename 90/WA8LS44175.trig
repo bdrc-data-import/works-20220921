@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS44175 {
+    bda:LG08126C5085D3AE5F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-21T09:50:32.648Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG33790B676382CF0F
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-04-04T09:06:08.347Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS44175 {
     bda:WA8LS44175  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS44175 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "90/WA8LS44175.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS44175 ;
-        adm:logEntry        bda:LG33790B676382CF0F , bda:LGA5750B71BEE2A459 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG08126C5085D3AE5F , bda:LG33790B676382CF0F , bda:LGA5750B71BEE2A459 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR91C83F59732BBAED
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG15512 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS44175  a       :Work ;
         skos:prefLabel      "bod kyi rol dbyangs lo rgyus bsdus gsal dpyid kyi pho nya/"@bo-x-ewts ;
         :catalogInfo        "History of Tibetan musical instrument and notation."@en ;
+        :creator            bdr:CR91C83F59732BBAED ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

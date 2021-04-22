@@ -18,6 +18,12 @@ bdg:WA8LS44188 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG8E1F6DD8361C4339
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-21T10:05:43.329Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGB8DF61581B19D806
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-04-04T11:30:10.962Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS44188 {
     bda:WA8LS44188  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS44188 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "40/WA8LS44188.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS44188 ;
-        adm:logEntry        bda:LG11699B06F8EAF714 , bda:LGB8DF61581B19D806 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG11699B06F8EAF714 , bda:LG8E1F6DD8361C4339 , bda:LGB8DF61581B19D806 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB9498EC769396CC7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75442 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS44188  a       :Work ;
         skos:prefLabel      "slob ra'i glu dbyangs rna ba'i bdud rtsi/"@bo-x-ewts ;
         :catalogInfo        "Collection of songs and musical notation."@en ;
+        :creator            bdr:CRB9498EC769396CC7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1746 , bdr:T246 ;

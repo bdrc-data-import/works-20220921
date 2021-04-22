@@ -24,6 +24,12 @@ bdg:WA8LS66251 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG5F2D921482308958
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-21T14:52:51.543Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -34,19 +40,25 @@ bdg:WA8LS66251 {
     bda:WA8LS66251  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66251 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "2b/WA8LS66251.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66251 ;
-        adm:logEntry        bda:LG00407F853820587C , bda:LG028F26CC16A3C184 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG00407F853820587C , bda:LG028F26CC16A3C184 , bda:LG5F2D921482308958 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8E29F50D1E78CB5D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75449 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66251  a       :Work ;
         skos:altLabel       "khams stod sa skyong nang chen chos rgyal chen po'i rgyal rabs legs btsus mu tig phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "nang chen chos rgyal chen po'i rgyal rabs/"@bo-x-ewts ;
         :catalogInfo        "Royal chronicle of Nangchen in Kham."@en ;
+        :creator            bdr:CR8E29F50D1E78CB5D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T793 ;

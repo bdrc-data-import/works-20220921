@@ -18,6 +18,12 @@ bdg:WA8LS44185 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG44B87275119FF1CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-21T09:59:47.098Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD6AF9CB4C9E5F29F
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-04-04T11:05:28.106Z"^^xsd:dateTime ;
@@ -34,20 +40,27 @@ bdg:WA8LS44185 {
     bda:WA8LS44185  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS44185 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "e4/WA8LS44185.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS44185 ;
-        adm:logEntry        bda:LG25F824D215A9A215 , bda:LGD6AF9CB4C9E5F29F , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG25F824D215A9A215 , bda:LG44B87275119FF1CE , bda:LGD6AF9CB4C9E5F29F , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR08ABD81D44B12B94
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75441 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS44185  a       :Work ;
         skos:prefLabel      "bod kyi gus srol/"@bo-x-ewts ;
-        :catalogInfo        "Tibetan etiquette and customs."@en ;
+        :catalogInfo        "Tibetan etiquette and customs; translated by Dorjee Pel."@en ;
+        :creator            bdr:CR08ABD81D44B12B94 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1157 ;
         :workHasInstance    bdr:MW8LS44185 , bdr:W8LS44185 ;
         :workIsAbout        bdr:G3196 , bdr:T00EGS1017187 .
 }

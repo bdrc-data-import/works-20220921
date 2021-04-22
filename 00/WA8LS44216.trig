@@ -24,6 +24,12 @@ bdg:WA8LS44216 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGFF3A54DF114D7DF3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-21T10:37:06.246Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS44216 {
     bda:WA8LS44216  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS44216 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "00/WA8LS44216.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS44216 ;
-        adm:logEntry        bda:LG7A4B5B73D96CBD09 , bda:LGD30B253A43ED5FED , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG7A4B5B73D96CBD09 , bda:LGD30B253A43ED5FED , bda:LGFF3A54DF114D7DF3 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB4BAFF9A10E5B792
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75444 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS44216  a       :Work ;
         skos:prefLabel      "snying sdug pho mo'i mdza' glu/"@bo-x-ewts ;
-        :catalogInfo        "Collection of love poetry by Tendell Zangmo."@en ;
+        :catalogInfo        "Collection of love songs by Tendell Zangmo."@en ;
+        :creator            bdr:CRB4BAFF9A10E5B792 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS44216 , bdr:W8LS44216 ;
