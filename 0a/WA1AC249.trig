@@ -28,6 +28,12 @@ bdg:WA1AC249 {
         adm:logDate         "2014-11-03T09:50:30.597Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00029 .
     
+    bda:LG99B7FEB9F3796925
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T10:47:06.282Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,  aditor, Cat info and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG9B1873D878EA5B43
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-10-31T14:43:04.905Z"^^xsd:dateTime ;
@@ -68,19 +74,26 @@ bdg:WA1AC249 {
     bda:WA1AC249  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC249 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "0a/WA1AC249.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC249 ;
-        adm:logEntry        bda:LG64DA68F50C08C0BD , bda:LG6CA5B8D40700DF83 , bda:LG7C46C9DBFF782B3F , bda:LG9B1873D878EA5B43 , bda:LGD3BDFD3B08F733B7 , bda:LGF2EEE227742006A1 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG64DA68F50C08C0BD , bda:LG6CA5B8D40700DF83 , bda:LG7C46C9DBFF782B3F , bda:LG99B7FEB9F3796925 , bda:LG9B1873D878EA5B43 , bda:LGD3BDFD3B08F733B7 , bda:LGF2EEE227742006A1 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR5BB4898C788D81CF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1PD93 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1AC249  skos:altLabel  "藏医经典《月王文药诊》研究"@zh-hans .
     
     bdr:WA1AC249  a         :SerialMember , :Work ;
         skos:altLabel       "zang yi jing dian(yue wang wen yao zhen) yan jiu"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "sman dpyad zla ba'i rgyal po'i gzhung don la dpyad pa/"@bo-x-ewts , "藏医经典《月王文药诊》研究"@zh-hans ;
+        :catalogInfo        "Clarification writings of the somarajabhaisajasadhana, classic Tibetan medical work supposedly translated from Sanskrit"@en ;
+        :creator            bdr:CR5BB4898C788D81CF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC249 ;

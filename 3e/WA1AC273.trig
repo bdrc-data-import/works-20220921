@@ -22,6 +22,12 @@ bdg:WA1AC273 {
         adm:logDate         "2017-03-25T02:52:22.746Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG7211F428EBF2745B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T16:36:56.511Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog,Added Author, Cat info, Language encoding and print type"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG9A766F2F20722E7C
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-01-20T04:03:54.406Z"^^xsd:dateTime ;
@@ -55,11 +61,11 @@ bdg:WA1AC273 {
     bda:WA1AC273  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC273 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "3e/WA1AC273.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC273 ;
-        adm:logEntry        bda:LG509ECCFFDBB51BF2 , bda:LG6C8F88EF4D131EEE , bda:LG9A766F2F20722E7C , bda:LGA45B8DBC93EC7621 , bda:LGF5AC2B388CAE0B50 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG509ECCFFDBB51BF2 , bda:LG6C8F88EF4D131EEE , bda:LG7211F428EBF2745B , bda:LG9A766F2F20722E7C , bda:LGA45B8DBC93EC7621 , bda:LGF5AC2B388CAE0B50 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -68,6 +74,7 @@ bdg:WA1AC273 {
     bdr:WA1AC273  a         :SerialMember , :Work ;
         skos:altLabel       "bai yun you you"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "sprin dkar gyi 'dab ma/"@bo-x-ewts , "白云悠悠"@zh-hans ;
+        :catalogInfo        "Collection of poems written by Tibetan authors from inside of Tibet"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC270 ;

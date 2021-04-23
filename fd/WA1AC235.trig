@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1AC235 {
+    bda:LG2A3586D1F6B76C20
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T10:47:00.76Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,  aditor, Cat info and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG8E60E873263FB80F
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-10-31T11:05:11.317Z"^^xsd:dateTime ;
@@ -55,19 +61,26 @@ bdg:WA1AC235 {
     bda:WA1AC235  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC235 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "fd/WA1AC235.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC235 ;
-        adm:logEntry        bda:LG8E60E873263FB80F , bda:LG912E8B05C89C8197 , bda:LGA1E6574DEB9C983C , bda:LGD0C91D8D75F2CEF3 , bda:LGDE4114AD26B999CA , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2A3586D1F6B76C20 , bda:LG8E60E873263FB80F , bda:LG912E8B05C89C8197 , bda:LGA1E6574DEB9C983C , bda:LGD0C91D8D75F2CEF3 , bda:LGDE4114AD26B999CA , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR3DDABC45D86972F5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366781 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1AC235  skos:altLabel  "青藏高原常见中草药"@zh-hans .
     
     bdr:WA1AC235  a         :Work ;
         skos:altLabel       "qing zang gao yuan chang jianzhong cao yao"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "mtsho bod sa mtho'i rgyun mthong sngo sman/"@bo-x-ewts , "青藏高原常见中草药"@zh-hans ;
+        :catalogInfo        "Medicinal herb from Kokonor Tibet"@en ;
+        :creator            bdr:CR3DDABC45D86972F5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1AC235 , bdr:W1AC235 ;

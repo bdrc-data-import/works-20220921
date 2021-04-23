@@ -17,6 +17,12 @@ bdg:WA1AC265 {
         adm:logDate         "2014-11-03T16:50:27.886Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00029 .
     
+    bda:LG6787785E6543C74C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T16:36:53.913Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog,Added Author, Cat info, Language encoding and print type"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG7E8424C8D14EE937
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-09T03:19:26.857Z"^^xsd:dateTime ;
@@ -50,17 +56,18 @@ bdg:WA1AC265 {
     bda:WA1AC265  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC265 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "30/WA1AC265.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC265 ;
-        adm:logEntry        bda:LG21FEED9B0E5CCE2A , bda:LG7E8424C8D14EE937 , bda:LGBBD0CE53E694A75F , bda:LGEE9E49B1348146FB , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG21FEED9B0E5CCE2A , bda:LG6787785E6543C74C , bda:LG7E8424C8D14EE937 , bda:LGBBD0CE53E694A75F , bda:LGEE9E49B1348146FB , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1AC265  a         :SerialMember , :Work ;
         skos:altLabel       "hua xue"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "rdzas 'gyur rig pa/"@bo-x-ewts , "chemistry"@en , "化学"@zh-hans ;
+        :catalogInfo        "Chemistry"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC265 ;

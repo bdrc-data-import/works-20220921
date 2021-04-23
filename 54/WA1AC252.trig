@@ -23,6 +23,12 @@ bdg:WA1AC252 {
         adm:logMessage      "added subject"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG529BD5B4DB0E24FD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T10:47:08.245Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,  aditor, Cat info and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG5E2FD612BBED7A8C
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-10T05:05:25.545Z"^^xsd:dateTime ;
@@ -63,19 +69,26 @@ bdg:WA1AC252 {
     bda:WA1AC252  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC252 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "54/WA1AC252.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC252 ;
-        adm:logEntry        bda:LG3553F9C381D9FBE4 , bda:LG3A944FD41EF7F82B , bda:LG5E2FD612BBED7A8C , bda:LG6E9206FDA077BF6D , bda:LG73F74B4C8464B129 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3553F9C381D9FBE4 , bda:LG3A944FD41EF7F82B , bda:LG529BD5B4DB0E24FD , bda:LG5E2FD612BBED7A8C , bda:LG6E9206FDA077BF6D , bda:LG73F74B4C8464B129 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRBDBC4F2B10A5B9C7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366784 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1AC252  skos:altLabel  "节日风俗"@zh-hans .
     
     bdr:WA1AC252  a         :SerialMember , :Work ;
         skos:altLabel       "jie ri feng su"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod kyi srol rgyun dus chen skal bzang mig gi dga' ston/"@bo-x-ewts , "节日风俗"@zh-hans ;
+        :catalogInfo        "Festivals of Tibet"@en ;
+        :creator            bdr:CRBDBC4F2B10A5B9C7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC252 ;

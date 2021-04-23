@@ -33,6 +33,12 @@ bdg:WA1AC227 {
         adm:logMessage      "added subject"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGC6FA885FCC2EBEF6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T10:47:00.249Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,  aditor, Cat info and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGD10BE726EAA309AE
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-22T03:26:54.417Z"^^xsd:dateTime ;
@@ -73,19 +79,26 @@ bdg:WA1AC227 {
     bda:WA1AC227  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC227 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "c1/WA1AC227.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC227 ;
-        adm:logEntry        bda:LG5F50C9F694070205 , bda:LG64F8515A868429D9 , bda:LG8000CB7263984C42 , bda:LGAB5323F32D265AF9 , bda:LGD10BE726EAA309AE , bda:LGF08E5F3FCCC2C0F9 , bda:LGFF9FD44A07F136CB , bda:LGIM206EC9B06D , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG5F50C9F694070205 , bda:LG64F8515A868429D9 , bda:LG8000CB7263984C42 , bda:LGAB5323F32D265AF9 , bda:LGC6FA885FCC2EBEF6 , bda:LGD10BE726EAA309AE , bda:LGF08E5F3FCCC2C0F9 , bda:LGFF9FD44A07F136CB , bda:LGIM206EC9B06D , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRA13D2E6B46989894
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6903 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1AC227  skos:altLabel  "江孜法王传"@zh-hans .
     
     bdr:WA1AC227  a         :SerialMember , :Work ;
         skos:altLabel       "jiang zi fa wang zhuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "chos rgyal rab brtan kun bzang 'phags kyi rnam thar/"@bo-x-ewts , "江孜法王传"@zh-hans ;
+        :catalogInfo        "Biography of Situ Rabten Kunzang Pak (1389-1442)."@en ;
+        :creator            bdr:CRA13D2E6B46989894 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC227 ;

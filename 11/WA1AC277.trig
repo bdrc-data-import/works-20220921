@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1AC277 {
+    bda:LG695A3C0348C865F0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T16:36:58.128Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog,Added Author, Cat info, Language encoding and print type"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG6B5E7A5F7729B093
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-18T22:36:56.874Z"^^xsd:dateTime ;
@@ -55,11 +61,11 @@ bdg:WA1AC277 {
     bda:WA1AC277  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC277 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "11/WA1AC277.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC277 ;
-        adm:logEntry        bda:LG6B5E7A5F7729B093 , bda:LG866093DA826717E2 , bda:LGA1EA8171237B13CF , bda:LGA472F991F44C9301 , bda:LGFDE9065C03056ED0 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG695A3C0348C865F0 , bda:LG6B5E7A5F7729B093 , bda:LG866093DA826717E2 , bda:LGA1EA8171237B13CF , bda:LGA472F991F44C9301 , bda:LGFDE9065C03056ED0 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -68,6 +74,7 @@ bdg:WA1AC277 {
     bdr:WA1AC277  a         :SerialMember , :Work ;
         skos:altLabel       "liu tang zai xin zhong de ge"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "sems khong gi glu dbyangs/"@bo-x-ewts , "流淌在心中的歌"@zh-hans ;
+        :catalogInfo        "Collection of poems written by Tibetan authors from inside of Tibet"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC270 ;

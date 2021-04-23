@@ -33,6 +33,12 @@ bdg:WA1AC254 {
         adm:logDate         "2017-05-17T21:44:23.787Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGB61FD68913E60B07
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T10:47:09.325Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,  aditor, Cat info and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -57,19 +63,26 @@ bdg:WA1AC254 {
     bda:WA1AC254  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC254 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "7b/WA1AC254.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC254 ;
-        adm:logEntry        bda:LG36339C7177B243C3 , bda:LG4DB5C670703CE810 , bda:LG725B4D2468055911 , bda:LG9A12131EB9BD8221 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG36339C7177B243C3 , bda:LG4DB5C670703CE810 , bda:LG725B4D2468055911 , bda:LG9A12131EB9BD8221 , bda:LGB61FD68913E60B07 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR80C131807AF39F99
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ10506 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW1AC254  skos:altLabel  "藏传佛教法器及仪轨图集"@zh-hans .
     
     bdr:WA1AC254  a         :Work ;
         skos:altLabel       "zang chuan fo jiao fa qi ji yi gui tu ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod brgyud nang bstan spyi dang bka' brgyud pa'i phyag bzhes phyogs bsgrigs che mo/"@bo-x-ewts , "藏传佛教法器及仪轨图集"@zh-hans ;
+        :catalogInfo        "The genera Tibetan Buddhism and Collection of ritual texts used in the Kargyur tradition"@en ;
+        :creator            bdr:CR80C131807AF39F99 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T977 ;

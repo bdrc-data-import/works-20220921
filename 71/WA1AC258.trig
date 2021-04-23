@@ -33,6 +33,12 @@ bdg:WA1AC258 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGD9BA80DA2BC215A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T10:47:10.815Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,  aditor, Cat info and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -57,17 +63,24 @@ bdg:WA1AC258 {
     bda:WA1AC258  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC258 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "71/WA1AC258.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC258 ;
-        adm:logEntry        bda:LG097ABD518F3ABDBD , bda:LG7F60E9C159B42BAD , bda:LG9FFA5594BC941880 , bda:LGCCEF97D4CC8AFA09 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG097ABD518F3ABDBD , bda:LG7F60E9C159B42BAD , bda:LG9FFA5594BC941880 , bda:LGCCEF97D4CC8AFA09 , bda:LGD9BA80DA2BC215A8 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR6EABA7CEB4DB7CEE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ75604 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1AC258  a         :SerialMember , :Work ;
         skos:altLabel       "si kao yu qiu zheng"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "mno bsam dang brgal brtag"@bo-x-ewts , "Contemporary Tibetan Studies Selected Papers"@en , "思考与求证"@zh-hans ;
+        :catalogInfo        "Contemporary Tibetan Studies Selected Papers"@en ;
+        :creator            bdr:CR6EABA7CEB4DB7CEE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC241 ;

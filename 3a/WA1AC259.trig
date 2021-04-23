@@ -34,6 +34,12 @@ bdg:WA1AC259 {
         adm:logDate         "2014-11-03T14:22:29.585Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00029 .
     
+    bda:LGD92076167B225B3C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T10:47:11.2Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,  aditor, Cat info and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGE5822ED1D0E5BB56
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-17T21:44:34.709Z"^^xsd:dateTime ;
@@ -66,19 +72,26 @@ bdg:WA1AC259 {
     bda:WA1AC259  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC259 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "3a/WA1AC259.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC259 ;
-        adm:logEntry        bda:LG280384D1F3C08A1F , bda:LG51F3D57A5070D5F5 , bda:LG6D99E4832747A2A1 , bda:LG88BE1376CA8D9CB1 , bda:LGE5822ED1D0E5BB56 , bda:LGF3E07A0E70201EF6 , bda:LGF6E859EF50AC9440 , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG280384D1F3C08A1F , bda:LG51F3D57A5070D5F5 , bda:LG6D99E4832747A2A1 , bda:LG88BE1376CA8D9CB1 , bda:LGD92076167B225B3C , bda:LGE5822ED1D0E5BB56 , bda:LGF3E07A0E70201EF6 , bda:LGF6E859EF50AC9440 , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR3DC4D56B04D48C26
+        a                   :AgentAsCreator ;
+        :agent              bdr:P956 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1AC259  skos:altLabel  "藏梵语诗学明镜-四川民族学院藏文辅助教材"@zh-hans .
     
     bdr:WA1AC259  a         :SerialMember , :Work ;
         skos:altLabel       "slob dpon dbyug pa can gyis mdzad pa'i snyan ngag me long zhes bya ba skad gnyis shan sbyar dang snyan ngag gi dper brjod gsar bu dgyes pa'i rol mo/"@bo-x-ewts , "zang fan yu shi min jing－si chuan min zu xue yuan zang wen fu zhu jiao cai"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "snyan ngag me long ma skad gnyis shan sbyar dang dper brjod/"@bo-x-ewts , "藏梵语诗学明镜-四川民族学院藏文辅助教材"@zh-hans ;
+        :catalogInfo        "Situ Chokyi Jungney's translation of Kavyadarsha."@en ;
+        :creator            bdr:CR3DC4D56B04D48C26 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC259 ;

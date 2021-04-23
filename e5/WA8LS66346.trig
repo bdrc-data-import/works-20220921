@@ -24,6 +24,12 @@ bdg:WA8LS66346 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG66508C757FCF0B3B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T13:58:02.456Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS66346 {
     bda:WA8LS66346  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66346 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "e5/WA8LS66346.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66346 ;
-        adm:logEntry        bda:LG285BA34D21B41A87 , bda:LG583AFD0644B255FD , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG285BA34D21B41A87 , bda:LG583AFD0644B255FD , bda:LG66508C757FCF0B3B , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4F30B091A98A0597
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75453 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS66346  a       :SerialMember , :Work ;
         skos:prefLabel      "dbugs thung len/"@bo-x-ewts ;
         :catalogInfo        "Collection of poetry by Dakpa Gyaltsen."@en ;
+        :creator            bdr:CR4F30B091A98A0597 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS66346 , bdr:W8LS66346 ;

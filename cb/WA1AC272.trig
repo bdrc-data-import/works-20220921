@@ -33,6 +33,12 @@ bdg:WA1AC272 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGAB39C303FE15A3F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T16:36:56.151Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog,Added Author, Cat info, Language encoding and print type"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGB80D32F1C3D32EB1
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-20T04:01:52.809Z"^^xsd:dateTime ;
@@ -60,11 +66,11 @@ bdg:WA1AC272 {
     bda:WA1AC272  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC272 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "cb/WA1AC272.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC272 ;
-        adm:logEntry        bda:LG028714BBAAB0695A , bda:LG63A04803D489AA18 , bda:LG7430474269D0B1F2 , bda:LG820AB79A5805511E , bda:LGB80D32F1C3D32EB1 , bda:LGFB75F2F1390C3A89 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG028714BBAAB0695A , bda:LG63A04803D489AA18 , bda:LG7430474269D0B1F2 , bda:LG820AB79A5805511E , bda:LGAB39C303FE15A3F4 , bda:LGB80D32F1C3D32EB1 , bda:LGFB75F2F1390C3A89 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -73,6 +79,7 @@ bdg:WA1AC272 {
     bdr:WA1AC272  a         :SerialMember , :Work ;
         skos:altLabel       "xin ling de hui gui"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "sems kyi log phebs/"@bo-x-ewts , "心灵的回归"@zh-hans ;
+        :catalogInfo        "Collection of poems written by Tibetan authors from inside of Tibet"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC270 ;

@@ -23,6 +23,12 @@ bdg:WA1AC244 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGB8AFD20D19A3E26A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T10:47:04.349Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,  aditor, Cat info and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGDA0C4D523CFEE959
         a                   adm:UpdateData ;
         adm:logDate         "2017-09-23T10:36:49.504Z"^^xsd:dateTime ;
@@ -57,19 +63,26 @@ bdg:WA1AC244 {
     bda:WA1AC244  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC244 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "1a/WA1AC244.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC244 ;
-        adm:logEntry        bda:LG6CD1BB12AC37162A , bda:LG989DA7B5B5016FFD , bda:LGDA0C4D523CFEE959 , bda:LGE0BBB86D9DDAB75A , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG6CD1BB12AC37162A , bda:LG989DA7B5B5016FFD , bda:LGB8AFD20D19A3E26A , bda:LGDA0C4D523CFEE959 , bda:LGE0BBB86D9DDAB75A , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR94EA463328387E84
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366783 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1AC244  skos:altLabel  "久美多杰医学文集"@zh-hans .
     
     bdr:WA1AC244  a         :Work ;
         skos:altLabel       "jiu mei duo jie yi xue wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "'jigs med rdo rje'i gso rig brtsams chos gces bsdus/"@bo-x-ewts , "久美多杰医学文集"@zh-hans ;
+        :catalogInfo        "Collection of research articles on the science of medicine in Tibet"@en ;
+        :creator            bdr:CR94EA463328387E84 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1PD128746 ;

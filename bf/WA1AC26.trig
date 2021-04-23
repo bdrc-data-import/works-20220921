@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1AC26 {
+    bda:LG7E66F4907126CF91
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T10:47:11.909Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,  aditor, Cat info and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG7F186F4D4D922AE2
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-17T21:44:37.745Z"^^xsd:dateTime ;
@@ -43,16 +49,23 @@ bdg:WA1AC26 {
     bda:WA1AC26  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC26 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "bf/WA1AC26.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC26 ;
-        adm:logEntry        bda:LG7F186F4D4D922AE2 , bda:LGA03CD597A1F9BB58 , bda:LGAF3A75ED2D3CE50E , bda:LGC64007E61DBF0935 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG7E66F4907126CF91 , bda:LG7F186F4D4D922AE2 , bda:LGA03CD597A1F9BB58 , bda:LGAF3A75ED2D3CE50E , bda:LGC64007E61DBF0935 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR58FC25BE30A22414
+        a                   :AgentAsCreator ;
+        :agent              bdr:P272 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1AC26  a          :SerialMember , :Work ;
         skos:prefLabel      "dbu ma la 'jug pa'i tshig 'grel legs bshad rjes 'brang /"@bo-x-ewts ;
+        :catalogInfo        "Word by word commentary of Madhyamakavatara"@en ;
+        :creator            bdr:CR58FC25BE30A22414 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS140 ;

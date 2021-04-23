@@ -27,6 +27,12 @@ bdg:WA1AC222 {
         adm:logDate         "2014-10-30T15:40:18.069Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00029 .
     
+    bda:LGA61FCA6CBE0BDAB1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T10:46:59.171Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,  aditor, Cat info and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGA80CC2933FB6F7B5
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-17T02:50:37.013Z"^^xsd:dateTime ;
@@ -60,19 +66,26 @@ bdg:WA1AC222 {
     bda:WA1AC222  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC222 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "ea/WA1AC222.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC222 ;
-        adm:logEntry        bda:LG3A8446629EF2CC2C , bda:LG61A604899118F222 , bda:LG7234A112333DC34C , bda:LGA80CC2933FB6F7B5 , bda:LGE816087A10E8A85C , bda:LGEF87EB6309D55EFA , bda:LGIM4599A38FCE , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3A8446629EF2CC2C , bda:LG61A604899118F222 , bda:LG7234A112333DC34C , bda:LGA61FCA6CBE0BDAB1 , bda:LGA80CC2933FB6F7B5 , bda:LGE816087A10E8A85C , bda:LGEF87EB6309D55EFA , bda:LGIM4599A38FCE , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8E48659882275926
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1AC222  skos:altLabel  "古印度中观释论精选"@zh-hans .
     
     bdr:WA1AC222  a         :SerialMember , :Work ;
         skos:altLabel       "gu yin du zhong guan shi lun jing xuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "dbu ma'i skor gyi rgya gzhung rtsa 'grel bdams sgrig"@bo-x-ewts , "古印度中观释论精选"@zh-hans ;
+        :catalogInfo        "Collection of root text and commentaries on madhyamaka"@en ;
+        :creator            bdr:CR8E48659882275926 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS140 ;

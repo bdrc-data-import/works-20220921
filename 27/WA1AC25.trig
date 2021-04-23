@@ -17,6 +17,12 @@ bdg:WA1AC25 {
         adm:logDate         "2014-10-24T11:48:11.422Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00029 .
     
+    bda:LG236509C3441E8545
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T10:47:07.204Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,  aditor, Cat info and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG5AA4600FA446FF9C
         a                   adm:UpdateData ;
         adm:logDate         "2014-10-29T13:55:46.585Z"^^xsd:dateTime ;
@@ -67,16 +73,28 @@ bdg:WA1AC25 {
     bda:WA1AC25  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC25 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "27/WA1AC25.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC25 ;
-        adm:logEntry        bda:LG0053B4198817AD76 , bda:LG5AA4600FA446FF9C , bda:LGA622A4EB3ACA7C89 , bda:LGC531B112AEE4F322 , bda:LGCCE826BF6522AB9A , bda:LGDB3A6725C23725B0 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0053B4198817AD76 , bda:LG236509C3441E8545 , bda:LG5AA4600FA446FF9C , bda:LGA622A4EB3ACA7C89 , bda:LGC531B112AEE4F322 , bda:LGCCE826BF6522AB9A , bda:LGDB3A6725C23725B0 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR177FECC757477756
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1002 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRD02DA64E16C71DFB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1830 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1AC25  a          :SerialMember , :Work ;
         skos:prefLabel      "sngags chen lam rim dang blo sbyong don bdun ma'i 'grel pa/"@bo-x-ewts ;
+        :catalogInfo        "Summary instructional manual on Lamrim teaching and Commentary on the Seven Points of Mind Training"@en ;
+        :creator            bdr:CR177FECC757477756 , bdr:CRD02DA64E16C71DFB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS140 ;

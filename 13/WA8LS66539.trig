@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS66539 {
+    bda:LG23B0B0DB6B8BDE7D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-22T16:19:26.206Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG81CABEEC7403AF82
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-08-13T10:28:08.926Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS66539 {
     bda:WA8LS66539  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66539 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "13/WA8LS66539.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66539 ;
-        adm:logEntry        bda:LG81CABEEC7403AF82 , bda:LG93E9B32236B9E01B , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG23B0B0DB6B8BDE7D , bda:LG81CABEEC7403AF82 , bda:LG93E9B32236B9E01B , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRC1BCEAF937EB062F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75456 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS66539  a       :Work ;
         skos:prefLabel      "tshad ma'i snying po de kho na nyid kun las btus pa rig pa'i gter mdzod las le'u dang po'i mchan 'grel gzhung don gsal ba'i sgron me/"@bo-x-ewts ;
         :catalogInfo        "Annotated commentary of Bonpo logic by karampa Tsharong Kelsang Phuntsok."@en ;
+        :creator            bdr:CRC1BCEAF937EB062F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T304 ;
