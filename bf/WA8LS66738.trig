@@ -24,6 +24,12 @@ bdg:WA8LS66738 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG2BB2A008AE62D4EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-23T14:41:02.395Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG2D31251311476101
         a                   adm:UpdateData ;
         adm:logDate         "2019-11-26T09:17:07.416Z"^^xsd:dateTime ;
@@ -45,17 +51,23 @@ bdg:WA8LS66738 {
     bda:WA8LS66738  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66738 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "bf/WA8LS66738.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66738 ;
-        adm:logEntry        bda:LG248E26B81C62D5D1 , bda:LG28082C46721EB031 , bda:LG2D31251311476101 , bda:LG46F8CC76067D6628 , bda:LG57BAFE1B1464D1D7 ;
+        adm:logEntry        bda:LG248E26B81C62D5D1 , bda:LG28082C46721EB031 , bda:LG2BB2A008AE62D4EC , bda:LG2D31251311476101 , bda:LG46F8CC76067D6628 , bda:LG57BAFE1B1464D1D7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR034D916BA60B38B6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75464 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66738  a       :SerialMember , :Work ;
         skos:prefLabel      "grong khyer lha sa'i sa ming lo rgyus mdor bsdus/"@bo-x-ewts ;
         :catalogInfo        "History of Lhasa's place names written by Bentshar Dawa."@en ;
+        :creator            bdr:CR034D916BA60B38B6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS66738 ;

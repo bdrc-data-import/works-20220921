@@ -23,6 +23,12 @@ bdg:WA8LS66732 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGCE3FDDBF9A843210
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-23T10:41:59.439Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGE190E5B2824AF597
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-09-30T09:42:27.046Z"^^xsd:dateTime ;
@@ -39,18 +45,24 @@ bdg:WA8LS66732 {
     bda:WA8LS66732  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66732 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "a2/WA8LS66732.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66732 ;
-        adm:logEntry        bda:LG35F244176C5F8C07 , bda:LGB2C092F67365A6CD , bda:LGE190E5B2824AF597 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG35F244176C5F8C07 , bda:LGB2C092F67365A6CD , bda:LGCE3FDDBF9A843210 , bda:LGE190E5B2824AF597 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR0EA8302B1ED3D013
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75461 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS66732  a       :Work ;
         skos:prefLabel      "rgya mtsho dang ri bo sngon po/"@bo-x-ewts ;
         :catalogInfo        "A pictorial book illustrating His Holiness Dalai Lama's visit to Arunachal Pradesh."@en ;
+        :creator            bdr:CR0EA8302B1ED3D013 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS66732 , bdr:W8LS66732 ;

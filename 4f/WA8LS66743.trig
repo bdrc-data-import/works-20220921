@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS66743 {
+    bda:LG60D9D2230439CD35
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-23T15:01:05.019Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG72C7708583790CD4
         a                   adm:UpdateData ;
         adm:logDate         "2019-11-22T14:51:16.939Z"^^xsd:dateTime ;
@@ -45,17 +51,23 @@ bdg:WA8LS66743 {
     bda:WA8LS66743  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66743 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "4f/WA8LS66743.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66743 ;
-        adm:logEntry        bda:LG72C7708583790CD4 , bda:LGB4414FD5F33FE957 , bda:LGBBA0EE7140AA16F9 , bda:LGBD211D4DC4E348A1 , bda:LGC58A26E15FC20817 ;
+        adm:logEntry        bda:LG60D9D2230439CD35 , bda:LG72C7708583790CD4 , bda:LGB4414FD5F33FE957 , bda:LGBBA0EE7140AA16F9 , bda:LGBD211D4DC4E348A1 , bda:LGC58A26E15FC20817 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR05BC5480EA1BFC10
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75466 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66743  a       :Work ;
         skos:prefLabel      "rgyun spyod bod skad/"@bo-x-ewts , "Shi Yong Zang Yu"@en ;
         :catalogInfo        "Tibetan language book."@en ;
+        :creator            bdr:CR05BC5480EA1BFC10 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T266 ;

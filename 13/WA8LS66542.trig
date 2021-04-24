@@ -30,6 +30,12 @@ bdg:WA8LS66542 {
         adm:logMessage      "added Work to CTC 17"@en ;
         adm:logWhoStr       "add-works-to-PR1CTC17" .
     
+    bda:LGE9DEDD24615D480E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-23T09:11:24.552Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -40,19 +46,25 @@ bdg:WA8LS66542 {
     bda:WA8LS66542  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66542 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "13/WA8LS66542.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66542 ;
-        adm:logEntry        bda:LG71B09B5BFC691C40 , bda:LGBF4AA27B9A9036BA , bda:LGD4E67AC78AC3DBC5 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG71B09B5BFC691C40 , bda:LGBF4AA27B9A9036BA , bda:LGD4E67AC78AC3DBC5 , bda:LGE9DEDD24615D480E , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRAC4BF0BFF48E37FD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75457 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66542  a       :Work ;
         skos:altLabel       "yab chen dpon gsas dran pa'i 'phar chen gyi rang sgra/"@bo-x-ewts ;
         skos:prefLabel      "skyabs rje rgyal ba sman ri ba'i khri 'dzin so gsum pa dang so bzhi'i rnam thar/"@bo-x-ewts ;
         :catalogInfo        "A short biography of the 33rd Menri Tripa Lungtok Tenpe Nyima and 34th Menri Tripa Lungtok Dawa Dargye also included collection of poetry."@en ;
+        :creator            bdr:CRAC4BF0BFF48E37FD ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn ;
         :workGenre          bdr:T3 ;
