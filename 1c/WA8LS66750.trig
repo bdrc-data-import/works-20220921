@@ -36,20 +36,32 @@ bdg:WA8LS66750 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGA2A599025CD7CD7E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-26T09:36:35.576Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS66750  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66750 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "1c/WA8LS66750.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66750 ;
-        adm:logEntry        bda:LG06E2C8490629E7DA , bda:LG667E1AF8970397CB , bda:LG7B0FEB11F753D067 , bda:LG7D362941B7D63672 ;
+        adm:logEntry        bda:LG06E2C8490629E7DA , bda:LG667E1AF8970397CB , bda:LG7B0FEB11F753D067 , bda:LG7D362941B7D63672 , bda:LGA2A599025CD7CD7E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRF45367499D65AF48
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75473 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA8LS66750  a       :Work ;
         skos:prefLabel      "phyogs yongs bzhi slob sbyong skor dri ba dri lan/"@bo-x-ewts ;
         :catalogInfo        "Questions and responses concerning education; translated by Dondrup."@en ;
+        :creator            bdr:CRF45367499D65AF48 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 ;

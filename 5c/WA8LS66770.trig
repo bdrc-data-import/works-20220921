@@ -18,6 +18,12 @@ bdg:WA8LS66770 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG82D112C48E09C871
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-26T15:43:03.24Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG9774321B11FED278
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -39,17 +45,23 @@ bdg:WA8LS66770 {
     bda:WA8LS66770  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66770 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "5c/WA8LS66770.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66770 ;
-        adm:logEntry        bda:LG10E1A2CC527EBA0B , bda:LG9774321B11FED278 , bda:LGBCDE75E34296FA25 , bda:LGC883FBE98C881801 ;
+        adm:logEntry        bda:LG10E1A2CC527EBA0B , bda:LG82D112C48E09C871 , bda:LG9774321B11FED278 , bda:LGBCDE75E34296FA25 , bda:LGC883FBE98C881801 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR22BC67F54941BA82
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75481 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS66770  a       :Work ;
         skos:prefLabel      "sprang phrug"@bo-x-ewts ;
-        :catalogInfo        "Collection of short stories composed by thaye wangwa la tung cing."@en ;
+        :catalogInfo        "Collection of short stories translated by Tazang."@en ;
+        :creator            bdr:CR22BC67F54941BA82 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T260 ;

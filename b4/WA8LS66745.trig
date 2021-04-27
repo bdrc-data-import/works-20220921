@@ -24,6 +24,12 @@ bdg:WA8LS66745 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LG459E157F57E06C8F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-26T08:59:22.697Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG70E13B7837ED8EF0
         a                   adm:UpdateData ;
         adm:logDate         "2019-11-22T15:28:34.781Z"^^xsd:dateTime ;
@@ -39,17 +45,23 @@ bdg:WA8LS66745 {
     bda:WA8LS66745  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66745 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "b4/WA8LS66745.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66745 ;
-        adm:logEntry        bda:LG14A39266A95110DD , bda:LG30C6FCD21C74FCBA , bda:LG70E13B7837ED8EF0 , bda:LGA2CF24016AF8ACCE ;
+        adm:logEntry        bda:LG14A39266A95110DD , bda:LG30C6FCD21C74FCBA , bda:LG459E157F57E06C8F , bda:LG70E13B7837ED8EF0 , bda:LGA2CF24016AF8ACCE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR03E60B4CD19F1B06
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75469 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66745  a       :Work ;
         skos:prefLabel      "slob chung rtsom 'jug byis pa'i lag sgron/"@bo-x-ewts ;
         :catalogInfo        "An essay writing lesson for primary school."@en ;
+        :creator            bdr:CR03E60B4CD19F1B06 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T258 ;

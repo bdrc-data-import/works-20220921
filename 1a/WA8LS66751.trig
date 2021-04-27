@@ -30,6 +30,12 @@ bdg:WA8LS66751 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LGE3F63E885301E21D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-26T09:55:39.525Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGFC1DC043721EEE2D
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-11-25T09:19:06.308Z"^^xsd:dateTime ;
@@ -39,17 +45,23 @@ bdg:WA8LS66751 {
     bda:WA8LS66751  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66751 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "1a/WA8LS66751.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66751 ;
-        adm:logEntry        bda:LG7957542309C041FF , bda:LG9A3E291202BF3728 , bda:LGA2E0FEC0E8E1D3C3 , bda:LGFC1DC043721EEE2D ;
+        adm:logEntry        bda:LG7957542309C041FF , bda:LG9A3E291202BF3728 , bda:LGA2E0FEC0E8E1D3C3 , bda:LGE3F63E885301E21D , bda:LGFC1DC043721EEE2D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRF7EF2972EE7EFF6D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75474 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66751  a       :Work ;
         skos:prefLabel      "bod yig yig gzugs sbyong deb/ 1-5"@bo-x-ewts ;
         :catalogInfo        "Tibetan calligraphy book."@en ;
+        :creator            bdr:CRF7EF2972EE7EFF6D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS66751 , bdr:W8LS66751 ;
