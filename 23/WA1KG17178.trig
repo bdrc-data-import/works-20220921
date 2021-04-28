@@ -24,6 +24,11 @@ bdg:WA1KG17178 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGD9B87818B32F2BE2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T20:04:04.096Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGE5C366F4659B2FE8
         a                   adm:UpdateData ;
         adm:logDate         "2014-06-25T15:21:24.536Z"^^xsd:dateTime ;
@@ -47,18 +52,29 @@ bdg:WA1KG17178 {
     bda:WA1KG17178  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG17178 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "23/WA1KG17178.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG17178 ;
-        adm:logEntry        bda:LGAAB9554580514E1E , bda:LGCF6BF5F1F1DEEC6C , bda:LGE5C366F4659B2FE8 , bda:LGIM4D99209C62 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LGAAB9554580514E1E , bda:LGCF6BF5F1F1DEEC6C , bda:LGD9B87818B32F2BE2 , bda:LGE5C366F4659B2FE8 , bda:LGIM4D99209C62 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR0260AB5BA80189E2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG6251 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR077DD1FD28792A7B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG6252 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA1KG17178  a       :Work ;
         skos:altLabel       "gling ge sar rgyal po'i sgrung las shan 'dan nang 'khrug"@bo-x-ewts , "xin ba he dan ma"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "shan 'dan nang 'khrug"@bo-x-ewts , "辛巴和丹玛"@zh-hans ;
         :catalogInfo        "An episode from the epic of Gesar. On the schism between Sh enpa and Denma."@en ;
+        :creator            bdr:CR0260AB5BA80189E2 , bdr:CR077DD1FD28792A7B ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workHasInstance    bdr:MW1KG17178 , bdr:W1KG17178 ;

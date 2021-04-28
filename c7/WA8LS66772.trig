@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS66772 {
+    bda:LG1B1A60FEAF6D35DF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T09:09:01.777Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG20A48445C614824B
         a                   adm:UpdateData ;
         adm:logDate         "2019-11-26T16:56:03.384Z"^^xsd:dateTime ;
@@ -39,18 +45,24 @@ bdg:WA8LS66772 {
     bda:WA8LS66772  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66772 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "c7/WA8LS66772.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66772 ;
-        adm:logEntry        bda:LG20A48445C614824B , bda:LG2F3E0BFBB78414E1 , bda:LGA6C47945C3BC5014 , bda:LGD51E37225A18D419 ;
+        adm:logEntry        bda:LG1B1A60FEAF6D35DF , bda:LG20A48445C614824B , bda:LG2F3E0BFBB78414E1 , bda:LGA6C47945C3BC5014 , bda:LGD51E37225A18D419 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR88BB599474DF96AA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75483 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66772  a       :Work ;
         skos:altLabel       "bod kyi lo rgyus rig gnas shes bya'i skor gyi dri ba dris lan/ rang byung sa khams/"@bo-x-ewts ;
         skos:prefLabel      "rang byung sa khams/"@bo-x-ewts ;
         :catalogInfo        "Questions and responses regarding enviornment."@en ;
+        :creator            bdr:CR88BB599474DF96AA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 ;

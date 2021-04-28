@@ -18,6 +18,12 @@ bdg:WA8LS66798 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LG56C061E5B78E5350
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T14:06:51.504Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG6110D64F33F324E5
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-10-08T12:12:15.948Z"^^xsd:dateTime ;
@@ -39,18 +45,24 @@ bdg:WA8LS66798 {
     bda:WA8LS66798  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66798 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "ac/WA8LS66798.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66798 ;
-        adm:logEntry        bda:LG2511D1E4125464C4 , bda:LG6110D64F33F324E5 , bda:LGCAA63058594F722C , bda:LGDA195B4482C5DD52 ;
+        adm:logEntry        bda:LG2511D1E4125464C4 , bda:LG56C061E5B78E5350 , bda:LG6110D64F33F324E5 , bda:LGCAA63058594F722C , bda:LGDA195B4482C5DD52 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRB91047E612F8D298
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG15512 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66798  a       :Work ;
         skos:altLabel       "bod kyi lo rgyus rig gnas shes bya'i skor gyi dri ba dris lan/rtsom rig dang sgyu rtsal/"@bo-x-ewts ;
         skos:prefLabel      "rtsom rig dang sgyu rtsal/"@bo-x-ewts ;
         :catalogInfo        "Questions and responses concering literature and arts."@en ;
+        :creator            bdr:CRB91047E612F8D298 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 ;

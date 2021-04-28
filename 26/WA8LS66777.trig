@@ -30,6 +30,12 @@ bdg:WA8LS66777 {
         adm:logMessage      "added title page title, topic, author statement and page number"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGB9E231BF279AA478
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T09:36:23.848Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGC4468F16858EDD1C
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-11-27T10:49:47.897Z"^^xsd:dateTime ;
@@ -39,18 +45,24 @@ bdg:WA8LS66777 {
     bda:WA8LS66777  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66777 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "26/WA8LS66777.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66777 ;
-        adm:logEntry        bda:LG20E3A4171267D69A , bda:LG3F814F09B4341A65 , bda:LG93F2DA1863102EB3 , bda:LGC4468F16858EDD1C ;
+        adm:logEntry        bda:LG20E3A4171267D69A , bda:LG3F814F09B4341A65 , bda:LG93F2DA1863102EB3 , bda:LGB9E231BF279AA478 , bda:LGC4468F16858EDD1C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRB010DD5F85AF9262
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9688 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66777  a       :Work ;
         skos:altLabel       "bod kyi lo rgyus rig gnas shes bya'i skor gyi dri ba dris lan/rig dngos gna' shul/"@bo-x-ewts ;
         skos:prefLabel      "rig dngos gna' shul/"@bo-x-ewts ;
         :catalogInfo        "Questions and responses regarding monument and archeology."@en ;
+        :creator            bdr:CRB010DD5F85AF9262 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 ;

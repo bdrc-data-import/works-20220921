@@ -42,21 +42,38 @@ bdg:WA8LS66774 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LGF5CD6E90A2C59A48
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-27T09:17:11.026Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS66774  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66774 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "b7/WA8LS66774.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66774 ;
-        adm:logEntry        bda:LG4EB513D0B6223E96 , bda:LG730F74626CF3253D , bda:LGAADBF004270E92DB , bda:LGD0C2E1ED05CA4802 , bda:LGECCED1AE94E85BE7 ;
+        adm:logEntry        bda:LG4EB513D0B6223E96 , bda:LG730F74626CF3253D , bda:LGAADBF004270E92DB , bda:LGD0C2E1ED05CA4802 , bda:LGECCED1AE94E85BE7 , bda:LGF5CD6E90A2C59A48 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR4235F9FF634E926C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7489 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR8369D8A4BE8E44CF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75484 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66774  a       :Work ;
         skos:altLabel       "bod kyi lo rgyus rig gnas shes bya'i skor gyi dri ba dris lan/ dus chen dang rgyan gos/ gso rig dang gnam rig skar rtsis/"@bo-x-ewts ;
         skos:prefLabel      "gso rig dang gnam rig skar rtsis/"@bo-x-ewts ;
         :catalogInfo        "Questions and responses concerning science of medicine and astrology."@en ;
+        :creator            bdr:CR4235F9FF634E926C , bdr:CR8369D8A4BE8E44CF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 ;
