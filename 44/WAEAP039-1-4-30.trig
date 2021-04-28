@@ -12,8 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WAEAP039-1-4-30 {
-    bda:MWEAP039-1-4-30
-        adm:metadataLegal   bda:LD_EAP_metadata .
+    bda:WAEAP039-1-4-30
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WAEAP039-1-4-30 ;
+        adm:gitPath         "44/WAEAP039-1-4-30.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WAEAP039-1-4-30 ;
+        adm:metadataLegal   bda:LD_EAP_metadata ;
+        adm:status          bda:StatusReleased .
     
     bdr:WAEAP039-1-4-30
         a                   :Work ;
