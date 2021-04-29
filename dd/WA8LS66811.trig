@@ -30,6 +30,12 @@ bdg:WA8LS66811 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LG9BEC77B5DE43D643
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T09:16:29.846Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGBFC802D66BC52C51
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-12-05T12:36:32.251Z"^^xsd:dateTime ;
@@ -39,17 +45,23 @@ bdg:WA8LS66811 {
     bda:WA8LS66811  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66811 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "dd/WA8LS66811.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66811 ;
-        adm:logEntry        bda:LG023296E18B7B45D2 , bda:LG6DFF0F1D37BAFB7E , bda:LG9A1C40767B78FC92 , bda:LGBFC802D66BC52C51 ;
+        adm:logEntry        bda:LG023296E18B7B45D2 , bda:LG6DFF0F1D37BAFB7E , bda:LG9A1C40767B78FC92 , bda:LG9BEC77B5DE43D643 , bda:LGBFC802D66BC52C51 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR4F9E7347F13A19DD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75501 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66811  a       :Work ;
         skos:prefLabel      "ka kha'i 'gyur khug"@bo-x-ewts ;
         :catalogInfo        "Collection of poetry composed by Karma Sherap or Lhalung Karma Sherap."@en ;
+        :creator            bdr:CR4F9E7347F13A19DD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS66811 , bdr:W8LS66811 ;

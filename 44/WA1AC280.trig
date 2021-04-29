@@ -28,6 +28,12 @@ bdg:WA1AC280 {
         adm:logDate         "2017-05-17T22:57:24.348Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGB5F0FA52D4438278
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T16:45:54.833Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, add Cat info, Language encoding, print type and soelings"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGEA32B48B5843A51B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-11-04T11:56:23.692Z"^^xsd:dateTime ;
@@ -50,11 +56,11 @@ bdg:WA1AC280 {
     bda:WA1AC280  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC280 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "44/WA1AC280.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC280 ;
-        adm:logEntry        bda:LG339D78E1154BA624 , bda:LG3880F7012C419E99 , bda:LGA67819C1498FF84D , bda:LGEA32B48B5843A51B , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG339D78E1154BA624 , bda:LG3880F7012C419E99 , bda:LGA67819C1498FF84D , bda:LGB5F0FA52D4438278 , bda:LGEA32B48B5843A51B , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -63,6 +69,7 @@ bdg:WA1AC280 {
     bdr:WA1AC280  a         :SerialMember , :Work ;
         skos:altLabel       "you mo gu shi juan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "dgod gtam thos pa 'dzum shor/"@bo-x-ewts , "幽默故事卷"@zh-hans ;
+        :catalogInfo        "A Tibetan comedy humorous songs in prose"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC279 ;

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1AC285 {
+    bda:LG5019850BCA9BC9C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T16:45:57.003Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, add Cat info, Language encoding, print type and soelings"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGA0C5A841FD0CB61F
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-11-04T14:23:23.264Z"^^xsd:dateTime ;
@@ -57,19 +63,26 @@ bdg:WA1AC285 {
     bda:WA1AC285  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC285 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "a2/WA1AC285.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC285 ;
-        adm:logEntry        bda:LGA0C5A841FD0CB61F , bda:LGBE79E8610962F52A , bda:LGE5CF9CCEAA02D5C9 , bda:LGFFB11A3865D72EF3 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG5019850BCA9BC9C0 , bda:LGA0C5A841FD0CB61F , bda:LGBE79E8610962F52A , bda:LGE5CF9CCEAA02D5C9 , bda:LGFFB11A3865D72EF3 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR90FCFD0D19A3B8F3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9644 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1AC285  skos:altLabel  "笨教文化与藏区和谐社会建设"@zh-hans .
     
     bdr:WA1AC285  a         :Work ;
         skos:altLabel       "ben jiao wen hua yu zang qu he xie she hui jian she"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bon gyi rig gnas dang bod spyi tshogs kyi 'cham mthun/"@bo-x-ewts , "笨教文化与藏区和谐社会建设"@zh-hans ;
+        :catalogInfo        "Articles on Tibetan culture and social unity"@en ;
+        :creator            bdr:CR90FCFD0D19A3B8F3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1AC285 , bdr:W1AC285 ;

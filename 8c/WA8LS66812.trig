@@ -30,6 +30,12 @@ bdg:WA8LS66812 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LGE4BBCF6E06826ED1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T09:21:37.833Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGF6D03B9BF831B4AB
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-12-05T14:32:43.813Z"^^xsd:dateTime ;
@@ -39,17 +45,23 @@ bdg:WA8LS66812 {
     bda:WA8LS66812  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66812 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "8c/WA8LS66812.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66812 ;
-        adm:logEntry        bda:LG20E5F8A0B1A949AB , bda:LG5894C2065D9CEF1D , bda:LG8AA6191FBAA76A8C , bda:LGF6D03B9BF831B4AB ;
+        adm:logEntry        bda:LG20E5F8A0B1A949AB , bda:LG5894C2065D9CEF1D , bda:LG8AA6191FBAA76A8C , bda:LGE4BBCF6E06826ED1 , bda:LGF6D03B9BF831B4AB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR5D38C010E8A8996B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75502 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66812  a       :Work ;
         skos:prefLabel      "smug sprin klong gi mi tshe/"@bo-x-ewts ;
         :catalogInfo        "Short stories composed by Shartsha."@en ;
+        :creator            bdr:CR5D38C010E8A8996B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T257 ;

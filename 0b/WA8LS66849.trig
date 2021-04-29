@@ -24,6 +24,12 @@ bdg:WA8LS66849 {
         adm:logMessage      "new work record created"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG917B09F4C0FFBD81
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T14:38:04.699Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGDCDFFDE693733923
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-02-07T15:00:16.67Z"^^xsd:dateTime ;
@@ -39,18 +45,29 @@ bdg:WA8LS66849 {
     bda:WA8LS66849  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66849 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "0b/WA8LS66849.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66849 ;
-        adm:logEntry        bda:LG23B25FF1688CD204 , bda:LG3581392A0109095D , bda:LGDCDFFDE693733923 , bda:LGF44D6391B7169BAE ;
+        adm:logEntry        bda:LG23B25FF1688CD204 , bda:LG3581392A0109095D , bda:LG917B09F4C0FFBD81 , bda:LGDCDFFDE693733923 , bda:LGF44D6391B7169BAE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR553D634709AF53D9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75512 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRF037BA1224C02C93
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75513 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66849  a       :Work ;
         skos:altLabel       "bod brgyud nang bstan gyi ris 'grel bi shwa karma'i zhal lung /"@bo-x-ewts ;
         skos:prefLabel      "bod brgyud nang bstan gyi ris 'grel/"@bo-x-ewts ;
         :catalogInfo        "An explanation of Tibetan religious symbols by Zamtsha Tsering Dondrup and Garap Dorjee Thar."@en ;
+        :creator            bdr:CR553D634709AF53D9 , bdr:CRF037BA1224C02C93 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1029 ;

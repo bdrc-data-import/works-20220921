@@ -18,6 +18,12 @@ bdg:WA1AC3 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00029 .
     
+    bda:LG3A02683B56D2BED4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T16:45:59.636Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, add Cat info, Language encoding, print type and soelings"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG6BAD8E6364FD31A2
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-28T23:26:19.907Z"^^xsd:dateTime ;
@@ -57,17 +63,24 @@ bdg:WA1AC3 {
     bda:WA1AC3  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC3 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "61/WA1AC3.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC3 ;
-        adm:logEntry        bda:LG107E459B0D021134 , bda:LG6BAD8E6364FD31A2 , bda:LGB8E00568D92804F5 , bda:LGFA1278645979DD32 , bda:LGFF5D3A582C2392D9 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG107E459B0D021134 , bda:LG3A02683B56D2BED4 , bda:LG6BAD8E6364FD31A2 , bda:LGB8E00568D92804F5 , bda:LGFA1278645979DD32 , bda:LGFF5D3A582C2392D9 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR849EDFED9B708BCE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN22972 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1AC3  a           :Work ;
         skos:altLabel       "zang chuan fo jiao jiao yi chan shi yan jiu wen ji （di yi ji）"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod brgyud nang bstan gyi dgongs 'grel skor gyi dpyad rtsom phyogs bsgrigs/"@bo-x-ewts , "藏传佛教教义阐释研究文集 （第一辑）"@zh-hans ;
+        :catalogInfo        "Collection of research paper on the Tibetan Buddhist commentary intent, edited by Dr. Dradul."@en ;
+        :creator            bdr:CR849EDFED9B708BCE ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T003JR155 ;

@@ -28,6 +28,12 @@ bdg:WA1AC287 {
         adm:logDate         "2017-05-17T22:25:47.82Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGD224CD1897CE65C4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T16:45:57.384Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, add Cat info, Language encoding, print type and soelings"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -52,17 +58,24 @@ bdg:WA1AC287 {
     bda:WA1AC287  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC287 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "a4/WA1AC287.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC287 ;
-        adm:logEntry        bda:LG209C1B5C6A202C87 , bda:LG54A280EEE64275EF , bda:LGD0498B606FD58D08 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG209C1B5C6A202C87 , bda:LG54A280EEE64275EF , bda:LGD0498B606FD58D08 , bda:LGD224CD1897CE65C4 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRBA1AE01700339538
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366912 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1AC287  a         :SerialMember , :Work ;
         skos:altLabel       "zang zu shu fa zi tie"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "yig gzugs mig gi bdud rtsi/"@bo-x-ewts , "藏族书法字帖"@zh-hans ;
+        :catalogInfo        "Calligraphy of Tibetan letters"@en ;
+        :creator            bdr:CRBA1AE01700339538 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC252 ;

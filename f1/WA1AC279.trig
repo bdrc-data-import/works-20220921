@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1AC279 {
+    bda:LG14C913B67D8A1318
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T16:45:53.336Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, add Cat info, Language encoding, print type and soelings"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG2A6200817EAB715E
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-17T22:25:25.789Z"^^xsd:dateTime ;
@@ -51,17 +57,18 @@ bdg:WA1AC279 {
     bda:WA1AC279  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC279 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "f1/WA1AC279.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC279 ;
-        adm:logEntry        bda:LG2A6200817EAB715E , bda:LG714702943D414050 , bda:LG7B9080BDCF8F18EC , bda:LGE18CE2B951699BDD , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG14C913B67D8A1318 , bda:LG2A6200817EAB715E , bda:LG714702943D414050 , bda:LG7B9080BDCF8F18EC , bda:LGE18CE2B951699BDD , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1AC279  a         :SerialMember , :Work ;
         skos:altLabel       "dong wu gu shi juan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "byis sgrung blo rig sgo 'byed/"@bo-x-ewts , "动物故事卷"@zh-hans ;
+        :catalogInfo        "A children's story book"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC279 ;

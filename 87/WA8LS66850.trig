@@ -30,6 +30,12 @@ bdg:WA8LS66850 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG8A52600305EF3E1B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T14:50:51.998Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGCB0B0B51A31FD1F0
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-10-16T15:30:35.385Z"^^xsd:dateTime ;
@@ -39,20 +45,26 @@ bdg:WA8LS66850 {
     bda:WA8LS66850  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66850 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "87/WA8LS66850.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66850 ;
-        adm:logEntry        bda:LG38B877CF4414F1AE , bda:LG45719736855FB5D0 , bda:LG79CAE5EACB0219C0 , bda:LGCB0B0B51A31FD1F0 ;
+        adm:logEntry        bda:LG38B877CF4414F1AE , bda:LG45719736855FB5D0 , bda:LG79CAE5EACB0219C0 , bda:LG8A52600305EF3E1B , bda:LGCB0B0B51A31FD1F0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR71320D1D2879894F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75514 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66850  a       :Work ;
         skos:prefLabel      "gshen rab rnam par rgyal ba yid bzhin nor bu rin po che dang dpal mgon rgyal po'i gzungs/"@bo-x-ewts ;
         :catalogInfo        "Dharani of Shenrap and Palgon Gyal."@en ;
+        :creator            bdr:CR71320D1D2879894F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T933 ;
         :workHasInstance    bdr:MW8LS66850 , bdr:W8LS66850 ;
-        :workIsAbout        bdr:T247 .
+        :workIsAbout        bdr:P2MS13220 , bdr:T247 .
 }

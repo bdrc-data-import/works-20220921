@@ -18,6 +18,12 @@ bdg:WA8LS66834 {
         adm:logMessage      "new work record created"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGA1B00A05F571D943
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T10:31:55.176Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGC034BC36781D3B1E
         a                   adm:UpdateData ;
         adm:logDate         "2019-12-09T15:58:45.046Z"^^xsd:dateTime ;
@@ -39,18 +45,24 @@ bdg:WA8LS66834 {
     bda:WA8LS66834  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66834 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "af/WA8LS66834.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66834 ;
-        adm:logEntry        bda:LG4AE1F5B23BC9D1ED , bda:LGC034BC36781D3B1E , bda:LGCE833FA7AABB3D38 , bda:LGDE8180E3E4B8A89E ;
+        adm:logEntry        bda:LG4AE1F5B23BC9D1ED , bda:LGA1B00A05F571D943 , bda:LGC034BC36781D3B1E , bda:LGCE833FA7AABB3D38 , bda:LGDE8180E3E4B8A89E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR4598582FD0B91E16
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75508 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66834  a       :Work ;
         skos:altLabel       "bod kyi lo rgyus rig gnas shes bya'i skor gyi dri ba dris lan/ri mo dang brkos dkrol/"@bo-x-ewts ;
         skos:prefLabel      "ri mo dang brkos dkrol/"@bo-x-ewts ;
         :catalogInfo        "Questions and responses concerning drawing and curving."@en ;
+        :creator            bdr:CR4598582FD0B91E16 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 ;

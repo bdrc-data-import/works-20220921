@@ -33,6 +33,12 @@ bdg:WA1AC283 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG96F207D3C444EC34
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T16:45:56.179Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, add Cat info, Language encoding, print type and soelings"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
@@ -50,11 +56,11 @@ bdg:WA1AC283 {
     bda:WA1AC283  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC283 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "ad/WA1AC283.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC283 ;
-        adm:logEntry        bda:LG3B3886F5C41E122E , bda:LG4E6934CC32BFD659 , bda:LG50CDB59491062CDB , bda:LG82646A28714968FC , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3B3886F5C41E122E , bda:LG4E6934CC32BFD659 , bda:LG50CDB59491062CDB , bda:LG82646A28714968FC , bda:LG96F207D3C444EC34 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -63,6 +69,7 @@ bdg:WA1AC283 {
     bdr:WA1AC283  a         :SerialMember , :Work ;
         skos:altLabel       "jie ri wen hua juan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "dus ston bkra shis kha g.yang /"@bo-x-ewts , "节日文化卷"@zh-hans ;
+        :catalogInfo        "Tibetan offical festivals and festivals celebrated in Tibet"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC279 ;

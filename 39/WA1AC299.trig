@@ -23,6 +23,12 @@ bdg:WA1AC299 {
         adm:logDate         "2014-11-07T11:56:43.166Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00029 .
     
+    bda:LG8BEFCD49DAF90A71
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T16:45:59.057Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, add Cat info, Language encoding, print type and soelings"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGA3FAD50CBB96F8DB
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-17T23:55:32.687Z"^^xsd:dateTime ;
@@ -52,19 +58,26 @@ bdg:WA1AC299 {
     bda:WA1AC299  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC299 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "39/WA1AC299.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC299 ;
-        adm:logEntry        bda:LG38CD1A4360AAF057 , bda:LG7D278E27C4F6C59D , bda:LGA3FAD50CBB96F8DB , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG38CD1A4360AAF057 , bda:LG7D278E27C4F6C59D , bda:LG8BEFCD49DAF90A71 , bda:LGA3FAD50CBB96F8DB , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRBBD9496F5EB42532
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366914 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1AC299  skos:altLabel  "批评与宽容"@zh-hans .
     
     bdr:WA1AC299  a         :SerialMember , :Work ;
         skos:altLabel       "pi oing yu kuan rong"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "dgag gzhag dang dkyel yangs/"@bo-x-ewts , "批评与宽容"@zh-hans ;
+        :catalogInfo        "Translation of collection of didatic works written by world authorities"@en ;
+        :creator            bdr:CRBBD9496F5EB42532 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC299 ;

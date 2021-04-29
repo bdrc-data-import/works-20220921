@@ -17,6 +17,12 @@ bdg:WA1AC296 {
         adm:logDate         "2014-11-05T11:53:38.254Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00029 .
     
+    bda:LG1386F8C5B77A4CC1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T16:45:58.667Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, add Cat info, Language encoding, print type and soelings"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG26B06FD6858B4040
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-11-05T11:26:46.809Z"^^xsd:dateTime ;
@@ -57,17 +63,24 @@ bdg:WA1AC296 {
     bda:WA1AC296  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC296 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "c9/WA1AC296.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC296 ;
-        adm:logEntry        bda:LG0E6C7037A8FB0A8E , bda:LG26B06FD6858B4040 , bda:LGA4B148FA3A9F409C , bda:LGE93B24DC1F966F07 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0E6C7037A8FB0A8E , bda:LG1386F8C5B77A4CC1 , bda:LG26B06FD6858B4040 , bda:LGA4B148FA3A9F409C , bda:LGE93B24DC1F966F07 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR52B694072B906796
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366913 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1AC296  a         :SerialMember , :Work ;
         skos:altLabel       "dun huang tu bo zhan bu wen shu yan jiu"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "tun hong yig rnying gi mo yig skor la dpyad pa/"@bo-x-ewts , "敦煌吐蕃占卜文书研究"@zh-hans ;
+        :catalogInfo        "Research on Dunghuang manuscript"@en ;
+        :creator            bdr:CR52B694072B906796 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC296 ;

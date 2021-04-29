@@ -33,6 +33,12 @@ bdg:WA1AC309 {
         adm:logDate         "2014-11-07T15:24:03.814Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00029 .
     
+    bda:LGB89F7814A53ECB84
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T16:46:01.22Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, add Cat info, Language encoding, print type and soelings"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGB8B09A68D0B256D3
         a                   adm:UpdateData ;
         adm:logDate         "2016-09-12T15:15:27.344Z"^^xsd:dateTime ;
@@ -72,19 +78,46 @@ bdg:WA1AC309 {
     bda:WA1AC309  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC309 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "9f/WA1AC309.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC309 ;
-        adm:logEntry        bda:LG3A7C1A35ED5461BC , bda:LG84AE0CCD3B4A4FA8 , bda:LG98F2811C784B513F , bda:LGAE40295D40AEFE21 , bda:LGB8B09A68D0B256D3 , bda:LGC6CAD5B24CC8651D , bda:LGDDFF86C918D02D4E , bda:LGFC6AD4BAC93600BC , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3A7C1A35ED5461BC , bda:LG84AE0CCD3B4A4FA8 , bda:LG98F2811C784B513F , bda:LGAE40295D40AEFE21 , bda:LGB89F7814A53ECB84 , bda:LGB8B09A68D0B256D3 , bda:LGC6CAD5B24CC8651D , bda:LGDDFF86C918D02D4E , bda:LGFC6AD4BAC93600BC , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR1DA085E4049A1253
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7589 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR742B07F908723655
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5335 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR886819D195056B2D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1844 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRC2F8F045DF13598C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1CZ1005 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRDBC63EF1EAE050FF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5091 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1AC309  skos:altLabel  "刚波瓦师徒文集"@zh-hans .
     
     bdr:WA1AC309  a         :SerialMember , :Work ;
         skos:altLabel       "gang bo wa shi tu wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "sgam po'i gdan rabs rim byon gyi gsung 'bum/"@bo-x-ewts , "刚波瓦师徒文集"@zh-hans ;
+        :catalogInfo        "Collection of writings by Gampo masters of the Kagyue order."@en ;
+        :creator            bdr:CR1DA085E4049A1253 , bdr:CR742B07F908723655 , bdr:CR886819D195056B2D , bdr:CRC2F8F045DF13598C , bdr:CRDBC63EF1EAE050FF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC308 ;

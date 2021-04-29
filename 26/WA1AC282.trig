@@ -23,6 +23,12 @@ bdg:WA1AC282 {
         adm:logDate         "2017-05-17T22:25:36.437Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGA1DEDB613C909496
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-28T16:45:55.658Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, add Cat info, Language encoding, print type and soelings"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGA805FA50AFAA9BE8
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-11-04T11:56:30.089Z"^^xsd:dateTime ;
@@ -57,11 +63,11 @@ bdg:WA1AC282 {
     bda:WA1AC282  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC282 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "26/WA1AC282.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC282 ;
-        adm:logEntry        bda:LG2B99E1648DC8914E , bda:LG54BDB81276E9302A , bda:LGA805FA50AFAA9BE8 , bda:LGD73C8754B2AD4F12 , bda:LGIM206EC9B06D , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2B99E1648DC8914E , bda:LG54BDB81276E9302A , bda:LGA1DEDB613C909496 , bda:LGA805FA50AFAA9BE8 , bda:LGD73C8754B2AD4F12 , bda:LGIM206EC9B06D , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -70,6 +76,7 @@ bdg:WA1AC282 {
     bdr:WA1AC282  a         :SerialMember , :Work ;
         skos:altLabel       "zang xi ju ben juan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "zlos gar pad ma'i dga' tshal/"@bo-x-ewts , "藏戏剧本卷"@zh-hans ;
+        :catalogInfo        "Collection of Tibetan folk sosngs"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC279 ;
