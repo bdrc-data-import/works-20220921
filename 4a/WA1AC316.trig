@@ -22,6 +22,12 @@ bdg:WA1AC316 {
         adm:logDate         "2014-11-07T17:16:16.139Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00029 .
     
+    bda:LG841F8CAE63FB5880
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-29T17:37:46.636Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, Editor, add Cat info and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGBD5B535D2FFF67C3
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-14T21:56:50.417Z"^^xsd:dateTime ;
@@ -57,19 +63,31 @@ bdg:WA1AC316 {
     bda:WA1AC316  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC316 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "4a/WA1AC316.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC316 ;
-        adm:logEntry        bda:LG4FD23972386AF067 , bda:LG5496E3BE75637287 , bda:LGBD5B535D2FFF67C3 , bda:LGFBE9D5781B0D5AAD , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG4FD23972386AF067 , bda:LG5496E3BE75637287 , bda:LG841F8CAE63FB5880 , bda:LGBD5B535D2FFF67C3 , bda:LGFBE9D5781B0D5AAD , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR2FB7CE96CE03B049
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75255 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR84F1C8913DF39270
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG865 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW1AC316  skos:altLabel  "藏族传统音乐的结构形态研究"@zh-hans .
     
     bdr:WA1AC316  a         :Work ;
         skos:altLabel       "zang zu chun tong yin yue de jie gou xin tai yan jiu"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod kyi srol rgyun rol dbyangs kyi grub gzhi dang rnam par dpyad pa/"@bo-x-ewts , "藏族传统音乐的结构形态研究"@zh-hans ;
+        :catalogInfo        "Studies in the Tibetan tradition musical instrument and notation"@en ;
+        :creator            bdr:CR2FB7CE96CE03B049 , bdr:CR84F1C8913DF39270 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1AC316 , bdr:W1AC316 ;

@@ -24,6 +24,12 @@ bdg:WA8LS66860 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG8EDDFF30276D5834
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-29T09:43:18.752Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGDDF38DAABA89AC11
         a                   adm:UpdateData ;
         adm:logDate         "2020-02-10T12:03:49.293Z"^^xsd:dateTime ;
@@ -39,17 +45,23 @@ bdg:WA8LS66860 {
     bda:WA8LS66860  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66860 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "a4/WA8LS66860.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66860 ;
-        adm:logEntry        bda:LG3E0E514C0AC70540 , bda:LG70B847367CE89011 , bda:LGDDF38DAABA89AC11 , bda:LGEB6E1CAC9D825D5B ;
+        adm:logEntry        bda:LG3E0E514C0AC70540 , bda:LG70B847367CE89011 , bda:LG8EDDFF30276D5834 , bda:LGDDF38DAABA89AC11 , bda:LGEB6E1CAC9D825D5B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRB0B9DB11EA99B568
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75518 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66860  a       :Work ;
         skos:prefLabel      "sher phyin mngon rtogs rgyan gyi mchod brjod kyi dgongs pa la dpyad pa kun mkhyen dgongs rgyan/"@bo-x-ewts ;
         :catalogInfo        "An analysis of Abhisamayalankara's verses of offering section by Tsedong Lodro Yonten."@en ;
+        :creator            bdr:CRB0B9DB11EA99B568 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS66860 , bdr:W8LS66860 ;

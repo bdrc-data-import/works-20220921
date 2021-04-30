@@ -24,6 +24,12 @@ bdg:WA8LS66872 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG4F8812ADC120A3A4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-29T11:08:50.163Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG59E6D00141BBA99D
         a                   adm:UpdateData ;
         adm:logDate         "2019-11-22T16:16:41.238Z"^^xsd:dateTime ;
@@ -39,18 +45,24 @@ bdg:WA8LS66872 {
     bda:WA8LS66872  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66872 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "2d/WA8LS66872.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66872 ;
-        adm:logEntry        bda:LG43E826236BAB73C2 , bda:LG4E6B7463A068E8E9 , bda:LG59E6D00141BBA99D , bda:LGA396B8F96124DF04 ;
+        adm:logEntry        bda:LG43E826236BAB73C2 , bda:LG4E6B7463A068E8E9 , bda:LG4F8812ADC120A3A4 , bda:LG59E6D00141BBA99D , bda:LGA396B8F96124DF04 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR16882470B7A4F126
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75521 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS66872  a       :Work ;
         skos:altLabel       "nyer mkho'i rtsa ba blo gros ku mu ta'i kha 'byed/"@bo-x-ewts ;
         skos:prefLabel      "blo gsar 'jug pa'i do ra/"@bo-x-ewts ;
         :catalogInfo        "Collection of Tibetan orthography, nataka, grammar and logic."@en ;
+        :creator            bdr:CR16882470B7A4F126 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T218 ;

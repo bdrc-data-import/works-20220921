@@ -18,6 +18,12 @@ bdg:WA8LS67614 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG6B65E02DB7A0D6F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-29T15:00:25.088Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGF261F6EAD4F4D6CA
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-11-18T14:25:48.375Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS67614 {
     bda:WA8LS67614  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS67614 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "b2/WA8LS67614.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS67614 ;
-        adm:logEntry        bda:LG4614264243AB3B69 , bda:LGF261F6EAD4F4D6CA , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG4614264243AB3B69 , bda:LG6B65E02DB7A0D6F1 , bda:LGF261F6EAD4F4D6CA , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRC81B45A8E6F39FA1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75524 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA8LS67614  a       :Work ;
         skos:prefLabel      "a ha+phan thi'i gtam rgyud/"@bo-x-ewts ;
-        :catalogInfo        "Folk tales of Ugyur."@en ;
+        :catalogInfo        "Folk tales of Uigur; translated Sherap Odzer."@en ;
+        :creator            bdr:CRC81B45A8E6F39FA1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T276 ;

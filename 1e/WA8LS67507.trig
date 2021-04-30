@@ -24,6 +24,12 @@ bdg:WA8LS67507 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGDF53D3E87BDCB4D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-29T14:12:09.737Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA8LS67507 {
     bda:WA8LS67507  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS67507 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "1e/WA8LS67507.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS67507 ;
-        adm:logEntry        bda:LG7218B17D6A615818 , bda:LGC342C58404B2E00F , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG7218B17D6A615818 , bda:LGC342C58404B2E00F , bda:LGDF53D3E87BDCB4D6 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CREA62297A6785AC4F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366353 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS67507  a       :Work ;
         skos:prefLabel      "gdung 'bod yid kyi chu gter las 'phyur ba'i rlabs sgra/"@bo-x-ewts ;
         :catalogInfo        "Collection of poetry and essays written by Lhundrup Dorjee. Also included his translation into Tibetan language."@en ;
+        :creator            bdr:CREA62297A6785AC4F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T258 ;

@@ -33,6 +33,12 @@ bdg:WA1AC313 {
         adm:logDate         "2017-03-25T05:10:39.076Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGF0635ACCCFFC5074
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-29T17:37:45.768Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, Editor, add Cat info and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -57,17 +63,24 @@ bdg:WA1AC313 {
     bda:WA1AC313  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC313 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "96/WA1AC313.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC313 ;
-        adm:logEntry        bda:LG393E077950736BEE , bda:LG42F00196A464FDC9 , bda:LG925ED10566C4ABA5 , bda:LGAD125AD10DCF0237 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG393E077950736BEE , bda:LG42F00196A464FDC9 , bda:LG925ED10566C4ABA5 , bda:LGAD125AD10DCF0237 , bda:LGF0635ACCCFFC5074 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR6208A62D6AED8886
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9018 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA1AC313  a         :SerialMember , :Work ;
         skos:altLabel       "hong lou meng"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "khang chen dmar po'i rmi lam/"@bo-x-ewts , "红楼梦"@zh-hans ;
+        :catalogInfo        "Translation of Chinese fiction known as dream of Red roof"@en ;
+        :creator            bdr:CR6208A62D6AED8886 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC313 ;
