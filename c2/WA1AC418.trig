@@ -23,6 +23,12 @@ bdg:WA1AC418 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG7F12C10343648724
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-30T13:08:44.877Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, Cat info and bibliographical title"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG82EF99E88F278CC3
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-12-10T16:40:20.535Z"^^xsd:dateTime ;
@@ -49,19 +55,26 @@ bdg:WA1AC418 {
     bda:WA1AC418  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC418 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "c2/WA1AC418.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC418 ;
-        adm:logEntry        bda:LG5AFA67D9640B52C8 , bda:LG5F0426AB46E25FBA , bda:LG82EF99E88F278CC3 , bda:LGB8A25CB3E33D7B52 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG5AFA67D9640B52C8 , bda:LG5F0426AB46E25FBA , bda:LG7F12C10343648724 , bda:LG82EF99E88F278CC3 , bda:LGB8A25CB3E33D7B52 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR460E74AA035A1BF8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4453 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1AC418  skos:altLabel  "医书无垢灿烂之注释、躯干解剖精论. 明灯、秘诀方剂. 长寿甘露、所需皆俱旁注"@zh-hans .
     
     bdr:WA1AC418  a         :SerialMember , :Work ;
-        skos:altLabel       "yi shu wu gou can lan zhi zhu shi\\ qu gan jie pou jing lun. ming deng\\ mi jue fang ji. chang shou gan lu\\ suo xu jie ju pang zhu"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "gzhung dri med gzi brjid kyi 'grel pa nyi ma'i 'od zer/_byang khog dmar byang gsal ba'i sgron me/_man ngag sman sbyor 'chi med bdud rtsi/_dgos pa kun 'byung gi mchan bu/"@bo-x-ewts , "医书无垢灿烂之注释、躯干解剖精论. 明灯、秘诀方剂. 长寿甘露、所需皆俱旁注"@zh-hans ;
+        skos:altLabel       "gzhung dri med gzi brjid kyi 'grel pa nyi ma'i 'od zer/_byang khog dmar byang gsal ba'i sgron me/_man ngag sman sbyor 'chi med bdud rtsi/_dgos pa kun 'byung gi mchan bu/"@bo-x-ewts , "yi shu wu gou can lan zhi zhu shi\\ qu gan jie pou jing lun. ming deng\\ mi jue fang ji. chang shou gan lu\\ suo xu jie ju pang zhu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "dri med gzi brjid kyi 'grel pa nyi ma'i 'od zer/_byang khog dmar byang gsal ba'i sgron me/ man ngag sman sbyor 'chi med bdud rtsi/_dgos pa kun 'byung gi mchan bu/"@bo-x-ewts , "医书无垢灿烂之注释、躯干解剖精论. 明灯、秘诀方剂. 长寿甘露、所需皆俱旁注"@zh-hans ;
+        :catalogInfo        "Commentary on Do Drime Siji Bon canonical work recounting the life of Miwo Shenrab"@en ;
+        :creator            bdr:CR460E74AA035A1BF8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC418 ;

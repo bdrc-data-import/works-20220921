@@ -11,43 +11,41 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA3CN26257 {
-    bda:LG10CCB0A3F8BD106F
+bdg:WA3CN26331 {
+    bda:LG973A0B0CE5250720
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-04-13T17:13:35.049Z"^^xsd:dateTime ;
+        adm:logDate         "2021-04-30T18:45:34.716Z"^^xsd:dateTime ;
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG862152D027B85065
+    bda:LGCEC5F281348EDC95
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2021-04-30T21:08:42.294Z"^^xsd:dateTime ;
+        adm:logDate         "2021-04-30T18:46:40.834Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG9B5B3BFA595E6A68
-        a                   adm:UpdateData ;
-        adm:logDate         "2021-04-16T18:46:07.926Z"^^xsd:dateTime ;
-        adm:logMessage      "added author"@en ;
-        adm:logWho          bdu:U00007 .
-    
-    bda:WA3CN26257  a       adm:AdminData ;
+    bda:WA3CN26331  a       adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA3CN26257 ;
+        adm:adminAbout      bdr:WA3CN26331 ;
         adm:facetIndex      4 ;
-        adm:gitPath         "41/WA3CN26257.trig" ;
+        adm:gitPath         "3b/WA3CN26331.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA3CN26257 ;
-        adm:logEntry        bda:LG10CCB0A3F8BD106F , bda:LG862152D027B85065 , bda:LG9B5B3BFA595E6A68 ;
+        adm:graphId         bdg:WA3CN26331 ;
+        adm:logEntry        bda:LG973A0B0CE5250720 , bda:LGCEC5F281348EDC95 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA3CN26257  a       :SerialMember , :Work ;
-        skos:prefLabel      "sa skya rdzong lugs kyi chos skor phyogs bsdus chen mo/"@bo-x-ewts ;
-        :catalogInfo        "Collection of Texts that belonged to Zongpa branch in Sakya tradition."@en ;
+    bdr:CR9FF32E6EA00BF209
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6672 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA3CN26331  a       :Work ;
+        skos:prefLabel      "nor bu'i do shal dang gzi yi phreng ba/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Writings by Namkhai Norbu (1938-2018)."@en ;
+        :creator            bdr:CR9FF32E6EA00BF209 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :serialMemberOf     bdr:WAS3CN26257 ;
-        :workGenre          bdr:T1081 ;
-        :workHasInstance    bdr:MW3CN26257 , bdr:W3CN26257 ;
-        :workIsAbout        bdr:T8LS16959 .
+        :workGenre          bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW3CN26331 , bdr:W3CN26331 .
 }

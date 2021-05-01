@@ -18,6 +18,12 @@ bdg:WA1AC415 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG111128050F79DA02
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-04-30T13:08:44.471Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, Cat info and bibliographical title"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG1317F76CF93A2866
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-12-10T16:40:09.683Z"^^xsd:dateTime ;
@@ -50,19 +56,31 @@ bdg:WA1AC415 {
     bda:WA1AC415  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC415 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "f8/WA1AC415.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC415 ;
-        adm:logEntry        bda:LG03741DBDA3F57944 , bda:LG1317F76CF93A2866 , bda:LG18B3F0FE66933206 , bda:LGA84FCD9C7EE3227B , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG03741DBDA3F57944 , bda:LG111128050F79DA02 , bda:LG1317F76CF93A2866 , bda:LG18B3F0FE66933206 , bda:LGA84FCD9C7EE3227B , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR4B90B9D5D43EDFA9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3013 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRCC3A890E9DED3EE2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5008 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1AC415  skos:altLabel  "四部医典总论. 知识明灯：教言利乐文库"@zh-hans .
     
     bdr:WA1AC415  a         :SerialMember , :Work ;
         skos:altLabel       "si bu yi dian zong lun. zhi shi ming deng: jiao yan li le wen ku"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "spyi don shes bya rab gsal/ gsung sgros phan byed rig pa'i mdzod/"@bo-x-ewts , "四部医典总论. 知识明灯：教言利乐文库"@zh-hans ;
+        :catalogInfo        "Treatise on the Four Medical Tantras and medical instructions"@en ;
+        :creator            bdr:CR4B90B9D5D43EDFA9 , bdr:CRCC3A890E9DED3EE2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC418 ;
