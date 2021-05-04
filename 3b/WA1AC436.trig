@@ -28,6 +28,12 @@ bdg:WA1AC436 {
         adm:logDate         "2017-04-19T04:01:23.269Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGC512E4AB934EB9EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-03T17:21:21.955Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, Cat info and speling"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGC6E95B2E6443939D
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-16T04:38:25.507Z"^^xsd:dateTime ;
@@ -63,13 +69,18 @@ bdg:WA1AC436 {
     bda:WA1AC436  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC436 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "3b/WA1AC436.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC436 ;
-        adm:logEntry        bda:LG800D6C18574DAAB8 , bda:LG95AFF4DF84ADCC81 , bda:LGB73F12ECA6A5E945 , bda:LGC6E95B2E6443939D , bda:LGDD813539CFA4DE76 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG800D6C18574DAAB8 , bda:LG95AFF4DF84ADCC81 , bda:LGB73F12ECA6A5E945 , bda:LGC512E4AB934EB9EC , bda:LGC6E95B2E6443939D , bda:LGDD813539CFA4DE76 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR3631661A51CE2E98
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12053 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1AC436  skos:altLabel  "藏族现代诗学"@zh-hans .
     
@@ -77,6 +88,7 @@ bdg:WA1AC436 {
         skos:altLabel       "zang zu xian dai shi xue"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod kyi deng rabs snyan ngag rig pa/"@bo-x-ewts , "藏族现代诗学"@zh-hans ;
         :catalogInfo        "A study of Tibetan contemporary poetry by Chakdor Gyal."@en ;
+        :creator            bdr:CR3631661A51CE2E98 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG25476 ;

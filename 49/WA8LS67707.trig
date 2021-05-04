@@ -24,6 +24,12 @@ bdg:WA8LS67707 {
         adm:logMessage      "new work record created"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGBE1A4B3FCEE06A57
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-03T13:42:55.455Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGE852F36C021A4AD8
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-11-20T15:23:43.922Z"^^xsd:dateTime ;
@@ -33,17 +39,23 @@ bdg:WA8LS67707 {
     bda:WA8LS67707  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS67707 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "49/WA8LS67707.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS67707 ;
-        adm:logEntry        bda:LG3F58419CBB589BF3 , bda:LG87D301E251359584 , bda:LGE852F36C021A4AD8 ;
+        adm:logEntry        bda:LG3F58419CBB589BF3 , bda:LG87D301E251359584 , bda:LGBE1A4B3FCEE06A57 , bda:LGE852F36C021A4AD8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR469C5B9C4298865B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75527 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS67707  a       :SerialMember , :Work ;
         skos:prefLabel      "tshig gis stong pa'i sems pa/"@bo-x-ewts ;
         :catalogInfo        "Collection of essays written by Ador."@en ;
+        :creator            bdr:CR469C5B9C4298865B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS67704 ;

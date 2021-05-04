@@ -24,6 +24,12 @@ bdg:WA1KG22041 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG843ADDEBB6D7ACF6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-03T18:17:28.498Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGE3D632C37B0C7FB0
         a                   adm:UpdateData ;
         adm:logDate         "2015-06-12T11:55:12.734Z"^^xsd:dateTime ;
@@ -33,18 +39,24 @@ bdg:WA1KG22041 {
     bda:WA1KG22041  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG22041 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "31/WA1KG22041.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG22041 ;
-        adm:logEntry        bda:LG4BC614B7E2F75FD3 , bda:LG4D6CAB3B45973FF5 , bda:LGE3D632C37B0C7FB0 ;
+        adm:logEntry        bda:LG4BC614B7E2F75FD3 , bda:LG4D6CAB3B45973FF5 , bda:LG843ADDEBB6D7ACF6 , bda:LGE3D632C37B0C7FB0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRC3B0945055B1EC67
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7588 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG22041  a       :Work ;
         skos:altLabel       "bo d+hi sa twa dzA tak s+ya d+ham+ma gaN+Di/"@bo-x-ewts , "bud+d+ha ca ri tra/"@bo-x-ewts , "byang chub sems dpa'i skyes pa rabs kyi chos kyi gaN+Di/"@bo-x-ewts ;
         skos:prefLabel      "byang chub sems dpa'i skyes rabs kyi chos kyi gaN+Di/"@bo-x-ewts ;
-        :catalogInfo        "The life story of Buddha Shakya Muni."@en ;
+        :catalogInfo        "The life story of Buddha Shakya Muni written by Indian master Aryasura."@en ;
+        :creator            bdr:CRC3B0945055B1EC67 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

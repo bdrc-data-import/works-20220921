@@ -18,6 +18,12 @@ bdg:WA1KG22946 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG268BFDE85A3EFADD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-03T18:18:24.336Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGCB935A978FAF6247
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-02-26T14:36:42.839Z"^^xsd:dateTime ;
@@ -34,13 +40,28 @@ bdg:WA1KG22946 {
     bda:WA1KG22946  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG22946 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "16/WA1KG22946.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG22946 ;
-        adm:logEntry        bda:LG21EBA545D5FE1D5A , bda:LGCB935A978FAF6247 , bda:LGIM4D99209C62 ;
+        adm:logEntry        bda:LG21EBA545D5FE1D5A , bda:LG268BFDE85A3EFADD , bda:LGCB935A978FAF6247 , bda:LGIM4D99209C62 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR3C9DB70BE488D371
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75286 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR770BA79D047D8683
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75287 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR8F2DF72D12817BFB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG03802 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1KG22946  skos:altLabel  "黄南民间故事"@zh-hans .
     
@@ -48,6 +69,7 @@ bdg:WA1KG22946 {
         skos:altLabel       "gtam rgyud/ rma lho'i dmangs khrod rig gnas dpe tshgos gser gyi thang ma/"@bo-x-ewts , "huang na ming jian gu shi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gtam rgyud/"@bo-x-ewts , "黄南民间故事"@zh-hans ;
         :catalogInfo        "Collection of short stories."@en ;
+        :creator            bdr:CR3C9DB70BE488D371 , bdr:CR770BA79D047D8683 , bdr:CR8F2DF72D12817BFB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG22946 ;
