@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN25706 {
+    bda:LG2E4E8629A1122A9D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-04T16:31:54.7Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, about commentaryon and about place"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG2F98C5F62E3C0415
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -39,17 +45,23 @@ bdg:WA3CN25706 {
     bda:WA3CN25706  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25706 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "3a/WA3CN25706.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25706 ;
-        adm:logEntry        bda:LG2F98C5F62E3C0415 , bda:LG8CB434E7A63F2936 , bda:LGA83048262FA23C5A , bda:LGF2C0A3EE2D16BF51 ;
+        adm:logEntry        bda:LG2E4E8629A1122A9D , bda:LG2F98C5F62E3C0415 , bda:LG8CB434E7A63F2936 , bda:LGA83048262FA23C5A , bda:LGF2C0A3EE2D16BF51 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR01D6E69BD608517E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366930 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN25706  a       :Work ;
         skos:prefLabel      "jo bo rje dpal ldan a ti sha'i rnam thar phyogs bsdus dad pa'i 'jug ngogs/"@bo-x-ewts ;
         :catalogInfo        "Collected biography of Atisha, edited by Phuntshok Tseten."@en ;
+        :creator            bdr:CR01D6E69BD608517E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

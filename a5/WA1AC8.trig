@@ -23,6 +23,12 @@ bdg:WA1AC8 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG260824FDD3A908BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-04T16:31:53.066Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, about commentaryon and about place"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG4D04A39DC90C96A2
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-10-28T16:38:38.135Z"^^xsd:dateTime ;
@@ -57,17 +63,24 @@ bdg:WA1AC8 {
     bda:WA1AC8  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC8 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "a5/WA1AC8.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC8 ;
-        adm:logEntry        bda:LG18388C8EE4CA4C0E , bda:LG1A04E84AE492B2D9 , bda:LG4D04A39DC90C96A2 , bda:LG501470DD912768B8 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG18388C8EE4CA4C0E , bda:LG1A04E84AE492B2D9 , bda:LG260824FDD3A908BE , bda:LG4D04A39DC90C96A2 , bda:LG501470DD912768B8 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRBC1002AAA3F1633A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366929 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1AC8  a           :SerialMember , :Work ;
         skos:altLabel       "xi zang zong jiao li shi wen hua zhi sa jia pai"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "sa skya pa'i grub mtha' spyi bshad/"@bo-x-ewts , "Sakyapa School"@en , "西藏宗教历史文化之萨迦派"@zh-hans ;
+        :catalogInfo        "A general explanation of the Sakyapa School"@en ;
+        :creator            bdr:CRBC1002AAA3F1633A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC4 ;

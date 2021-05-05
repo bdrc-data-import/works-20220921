@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1AC453 {
+    bda:LG1232EBAEACC3287E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-04T16:31:48.302Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, about commentaryon and about place"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG1F58046D61D432C3
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-20T04:48:18.613Z"^^xsd:dateTime ;
@@ -67,11 +73,11 @@ bdg:WA1AC453 {
     bda:WA1AC453  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC453 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "02/WA1AC453.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC453 ;
-        adm:logEntry        bda:LG1F58046D61D432C3 , bda:LG56BA6D58B52F6300 , bda:LGA4CBEF472B95C5D7 , bda:LGA61C1C28A00CBFC3 , bda:LGC74D3B9414467221 , bda:LGF0135F575503EC76 , bda:LGIM206EC9B06D , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1232EBAEACC3287E , bda:LG1F58046D61D432C3 , bda:LG56BA6D58B52F6300 , bda:LGA4CBEF472B95C5D7 , bda:LGA61C1C28A00CBFC3 , bda:LGC74D3B9414467221 , bda:LGF0135F575503EC76 , bda:LGIM206EC9B06D , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -80,6 +86,7 @@ bdg:WA1AC453 {
     bdr:WA1AC453  a         :Work ;
         skos:altLabel       "zang zu ming jia ming pian"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod kyi mkhas pa'i legs rtsom phyogs bsgrigs blo gsal 'jug ngogs/"@bo-x-ewts , "藏族名家名篇"@zh-hans ;
+        :catalogInfo        "Selected writings of most popular modern Tibetan literature."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

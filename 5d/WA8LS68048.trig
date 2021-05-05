@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS68048 {
+    bda:LG98BE575C3DB406AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-04T10:00:41.592Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGF531C17F460AC14A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-12-17T09:10:29.095Z"^^xsd:dateTime ;
@@ -40,17 +46,23 @@ bdg:WA8LS68048 {
     bda:WA8LS68048  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68048 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "5d/WA8LS68048.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68048 ;
-        adm:logEntry        bda:LGF531C17F460AC14A , bda:LGFA8B4C0609E09079 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG98BE575C3DB406AE , bda:LGF531C17F460AC14A , bda:LGFA8B4C0609E09079 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR32A53729230498CA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75533 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS68048  a       :SerialMember , :Work ;
-        skos:prefLabel      "Tibetische Handschriften Und Blockdrucke"@bo-x-ewts ;
+        skos:prefLabel      "Tibetische Handschriften Und Blockdrucke"@en ;
         :catalogInfo        "Tibetan handwritten and woodblock prints preserved in Germany compiled by Manfred Taube."@en ;
+        :creator            bdr:CR32A53729230498CA ;
         :isRoot             true ;
         :language           bdr:LangEn ;
         :serialMemberOf     bdr:WAS8LS68048 ;

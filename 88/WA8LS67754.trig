@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS67754 {
+    bda:LG355A7C2F2203FFEA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-04T09:23:14.273Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG5C9A1C4B3BAF1194
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-11-22T10:00:09.231Z"^^xsd:dateTime ;
@@ -33,17 +39,23 @@ bdg:WA8LS67754 {
     bda:WA8LS67754  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS67754 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "88/WA8LS67754.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS67754 ;
-        adm:logEntry        bda:LG5C9A1C4B3BAF1194 , bda:LG67284E582F059492 , bda:LG79CFFCEDE9A2B416 ;
+        adm:logEntry        bda:LG355A7C2F2203FFEA , bda:LG5C9A1C4B3BAF1194 , bda:LG67284E582F059492 , bda:LG79CFFCEDE9A2B416 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR1CE5272B820604A9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75531 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS67754  a       :Work ;
         skos:prefLabel      "bod lugs gso rig gi 'bam bcos dgongs don zhib 'jug"@bo-x-ewts ;
         :catalogInfo        "Research on the treatment of swelling leg according to Tibetan healing science by Sod Kho."@en ;
+        :creator            bdr:CR1CE5272B820604A9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS67754 , bdr:W8LS67754 ;

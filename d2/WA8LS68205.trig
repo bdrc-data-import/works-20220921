@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS68205 {
+    bda:LG089456FFE0CEA4D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-04T14:32:04.494Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG50230646C260D8D1
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -33,17 +39,23 @@ bdg:WA8LS68205 {
     bda:WA8LS68205  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68205 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "d2/WA8LS68205.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68205 ;
-        adm:logEntry        bda:LG50230646C260D8D1 , bda:LG795B35012D402BA8 , bda:LGA458B232E9DBCE22 ;
+        adm:logEntry        bda:LG089456FFE0CEA4D9 , bda:LG50230646C260D8D1 , bda:LG795B35012D402BA8 , bda:LGA458B232E9DBCE22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR618C0C510C2BD3EB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75538 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS68205  a       :Work ;
         skos:prefLabel      "bod yig cha 'phrin lag rtsal gyi zhib 'jug gnas bab/"@bo-x-ewts ;
         :catalogInfo        "Research on the status of information technology; compiled by Trishar Sonam Tshering."@en ;
+        :creator            bdr:CR618C0C510C2BD3EB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS68205 , bdr:W8LS68205 ;

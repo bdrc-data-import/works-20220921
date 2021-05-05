@@ -39,6 +39,12 @@ bdg:WA1AC464 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGBF0B39B202D224E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-04T16:31:50.367Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, about commentaryon and about place"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGC152B8DDB8E309A6
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-19T05:03:56.909Z"^^xsd:dateTime ;
@@ -68,19 +74,31 @@ bdg:WA1AC464 {
     bda:WA1AC464  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC464 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "f0/WA1AC464.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC464 ;
-        adm:logEntry        bda:LG0FE9A8B2C19292D8 , bda:LG40B9520FE483EA0D , bda:LG48ADA0476147CA59 , bda:LG53F00B39A2FD6007 , bda:LGAD5837086AEC8B3E , bda:LGC152B8DDB8E309A6 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0FE9A8B2C19292D8 , bda:LG40B9520FE483EA0D , bda:LG48ADA0476147CA59 , bda:LG53F00B39A2FD6007 , bda:LGAD5837086AEC8B3E , bda:LGBF0B39B202D224E7 , bda:LGC152B8DDB8E309A6 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR4F1A888E2702E2F3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG0636 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRD9EF5197351016F5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75249 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW1AC464  skos:altLabel  "我有一个梦: 中外名家演讲译集"@zh-hans .
     
     bdr:WA1AC464  a         :Work ;
         skos:altLabel       "wo you yi ge meng: zhong wai ming jia yan jiang yi ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bdag la re ba'i rmi lam zhig yod/ 'dzam gling gi gtam bshad grags can 'dems sgyur/"@bo-x-ewts , "我有一个梦: 中外名家演讲译集"@zh-hans ;
+        :catalogInfo        "I had a dream, Anthology of talks by Martin Luther King Jr. and otherauthorities translated into Tibetan."@en ;
+        :creator            bdr:CR4F1A888E2702E2F3 , bdr:CRD9EF5197351016F5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG5001 , bdr:T1PD128746 ;

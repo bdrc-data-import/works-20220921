@@ -33,6 +33,12 @@ bdg:WA1AC451 {
         adm:logDate         "2017-04-17T23:55:18.934Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGED7A592CB221B61F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-04T16:31:47.901Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, about commentaryon and about place"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -57,19 +63,26 @@ bdg:WA1AC451 {
     bda:WA1AC451  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC451 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "37/WA1AC451.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC451 ;
-        adm:logEntry        bda:LG32599E577EFADBD8 , bda:LG5F7AE81EBA9BB749 , bda:LG692FA44C08F8F11A , bda:LGBCF6735A68A65BD4 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG32599E577EFADBD8 , bda:LG5F7AE81EBA9BB749 , bda:LG692FA44C08F8F11A , bda:LGBCF6735A68A65BD4 , bda:LGED7A592CB221B61F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR55747CF23367A07F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366926 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1AC451  skos:altLabel  "藏语词汇学教程"@zh-hans .
     
     bdr:WA1AC451  a         :Work ;
         skos:altLabel       "zang yu ci hui xue jiao cheng"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod skad ming brda rig pa'i bslab gzhi/"@bo-x-ewts , "藏语词汇学教程"@zh-hans ;
+        :catalogInfo        "A textbook on terminology"@en ;
+        :creator            bdr:CR55747CF23367A07F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1AC451 , bdr:W1AC451 ;

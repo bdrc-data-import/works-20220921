@@ -30,20 +30,32 @@ bdg:WA8LS67737 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGCD0535D279010B50
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-04T09:05:23.043Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS67737  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS67737 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a1/WA8LS67737.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS67737 ;
-        adm:logEntry        bda:LG211D921CBC1C62C3 , bda:LG4F238F6F76DAEE7A , bda:LG6AE5C175229ECB46 ;
+        adm:logEntry        bda:LG211D921CBC1C62C3 , bda:LG4F238F6F76DAEE7A , bda:LG6AE5C175229ECB46 , bda:LGCD0535D279010B50 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR5C36906287B9F9A0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26282 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA8LS67737  a       :Work ;
         skos:prefLabel      "ha war Ti gtsug lag slob chen gyi tho rengs chu tshod bzhi dang phyed ka"@bo-x-ewts ;
         :catalogInfo        "Harvard University's study program, experiences, perseverance, culture and its impact."@en ;
+        :creator            bdr:CR5C36906287B9F9A0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS67737 , bdr:W8LS67737 ;
