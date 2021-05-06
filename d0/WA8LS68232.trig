@@ -24,6 +24,12 @@ bdg:WA8LS68232 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGA3F813370495CC01
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-05T14:06:41.254Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD5755DF8EA16B902
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-01-29T12:35:47.845Z"^^xsd:dateTime ;
@@ -33,17 +39,23 @@ bdg:WA8LS68232 {
     bda:WA8LS68232  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68232 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "d0/WA8LS68232.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68232 ;
-        adm:logEntry        bda:LG1D337EDF7A4CBB26 , bda:LG5A3D75A68A2B4A7B , bda:LGD5755DF8EA16B902 ;
+        adm:logEntry        bda:LG1D337EDF7A4CBB26 , bda:LG5A3D75A68A2B4A7B , bda:LGA3F813370495CC01 , bda:LGD5755DF8EA16B902 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR1A14786EEFB2A328
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75539 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS68232  a       :Work ;
         skos:prefLabel      "g.yang las 'phros pa'i gtam/"@bo-x-ewts ;
         :catalogInfo        "Research on prosperity by Yangtsha Tamdin."@en ;
+        :creator            bdr:CR1A14786EEFB2A328 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS68232 , bdr:W8LS68232 ;

@@ -30,20 +30,37 @@ bdg:WA8LS68286 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG943AFA26AB2F7C64
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-05T15:20:01.166Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS68286  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68286 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "80/WA8LS68286.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68286 ;
-        adm:logEntry        bda:LG083272E7659A9E08 , bda:LG1EA43A8D1F4640B2 , bda:LG3BE2C26318AFE192 ;
+        adm:logEntry        bda:LG083272E7659A9E08 , bda:LG1EA43A8D1F4640B2 , bda:LG3BE2C26318AFE192 , bda:LG943AFA26AB2F7C64 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR0F470008445FD30D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75542 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR862F339E7154434A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1602 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS68286  a       :Work ;
         skos:prefLabel      "bod kyi gso rig las dpyad bcos rig pa/"@bo-x-ewts ;
         :catalogInfo        "Tibetan acupuncture, moxibustion and other method of treatment by Tsering Samdrup."@en ;
+        :creator            bdr:CR0F470008445FD30D , bdr:CR862F339E7154434A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS68286 , bdr:W8LS68286 ;

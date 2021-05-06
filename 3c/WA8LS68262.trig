@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS68262 {
+    bda:LG1146F44585076DAA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-05T14:37:27.942Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG1BFA22AB75039696
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -33,17 +39,23 @@ bdg:WA8LS68262 {
     bda:WA8LS68262  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68262 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "3c/WA8LS68262.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68262 ;
-        adm:logEntry        bda:LG1BFA22AB75039696 , bda:LG4A49E4DD4399CE66 , bda:LG5E50AAC2A1DE9642 ;
+        adm:logEntry        bda:LG1146F44585076DAA , bda:LG1BFA22AB75039696 , bda:LG4A49E4DD4399CE66 , bda:LG5E50AAC2A1DE9642 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR44D9923139AD330E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75541 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS68262  a       :SerialMember , :Work ;
         skos:prefLabel      "mdo dbus mtho sgang gi 'brog sde'i phyugs las la nye bar mkho ba'i lag rtsal stabs bde/"@bo-x-ewts ;
         :catalogInfo        "Practical manual of animal husbandry for nomadic group by Tshebe."@en ;
+        :creator            bdr:CR44D9923139AD330E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS68262 ;
