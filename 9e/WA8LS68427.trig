@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS68427 {
+    bda:LG3C63582DE4E64A0A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T10:13:25.455Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGA5D5A9BCB8C3A90A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-02-13T12:17:04.987Z"^^xsd:dateTime ;
@@ -33,17 +39,28 @@ bdg:WA8LS68427 {
     bda:WA8LS68427  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68427 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "9e/WA8LS68427.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68427 ;
-        adm:logEntry        bda:LGA5D5A9BCB8C3A90A , bda:LGAB04DC576A0A1D23 , bda:LGF5C4A9AA1DAC022A ;
+        adm:logEntry        bda:LG3C63582DE4E64A0A , bda:LGA5D5A9BCB8C3A90A , bda:LGAB04DC576A0A1D23 , bda:LGF5C4A9AA1DAC022A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR3F1FB2C39164A3F2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN21602 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR56F3522F54D25397
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6658 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA8LS68427  a       :SerialMember , :Work ;
         skos:prefLabel      "nyes don gtug bsher bca' khrim kyi don 'grel/"@bo-x-ewts ;
         :catalogInfo        "Commentary of criminal law, text book; translated by Tsering Kyid and Rikzin."@en ;
+        :creator            bdr:CR3F1FB2C39164A3F2 , bdr:CR56F3522F54D25397 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS68427 ;

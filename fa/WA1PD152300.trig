@@ -18,6 +18,12 @@ bdg:WA1PD152300 {
         adm:logMessage      "accessioned"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG75DAA5C12C9E2613
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T15:47:02.9Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,editor, add Cat info"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG7BCBB059412B0539
         a                   adm:UpdateData ;
         adm:logDate         "2012-09-12T12:23:35.988Z"^^xsd:dateTime ;
@@ -74,19 +80,26 @@ bdg:WA1PD152300 {
     bda:WA1PD152300  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD152300 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "fa/WA1PD152300.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD152300 ;
-        adm:logEntry        bda:LG233E57F398772B72 , bda:LG7BCBB059412B0539 , bda:LG7F5FFBB5F557DB99 , bda:LG9A73BB4D85398DDE , bda:LGC476B809559D2988 , bda:LGD15B41A962FF6F19 , bda:LGD75AD47A65D6B0B0 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG233E57F398772B72 , bda:LG75DAA5C12C9E2613 , bda:LG7BCBB059412B0539 , bda:LG7F5FFBB5F557DB99 , bda:LG9A73BB4D85398DDE , bda:LGC476B809559D2988 , bda:LGD15B41A962FF6F19 , bda:LGD75AD47A65D6B0B0 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRA733CC870380A86A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8032 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD152300  skos:altLabel  "藏族诗歌集"@zh-hans .
     
     bdr:WA1PD152300  a      :SerialMember , :Work ;
         skos:altLabel       "zang zu shi ge ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod yul la springs pa'i 'phrin/"@bo-x-ewts , "藏族诗歌集"@zh-hans ;
+        :catalogInfo        "A compilation of poetry, Letters from Tadrin Kyab to hometown Tibet"@en ;
+        :creator            bdr:CRA733CC870380A86A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1PD152300 ;

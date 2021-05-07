@@ -30,21 +30,33 @@ bdg:WA8LS68415 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LGE02CE3259510F410
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T09:44:24.674Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS68415  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68415 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "82/WA8LS68415.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68415 ;
-        adm:logEntry        bda:LG1B4C6E5442A69F3F , bda:LG2D8099C6A2FFF215 , bda:LGADFCC834465414A9 ;
+        adm:logEntry        bda:LG1B4C6E5442A69F3F , bda:LG2D8099C6A2FFF215 , bda:LGADFCC834465414A9 , bda:LGE02CE3259510F410 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR6728F2886B7E047E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG21288 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS68415  a       :SerialMember , :Work ;
         skos:altLabel       "dus rabs 21 pa'i bod lugs gso rig dngos tshan slob gso'i 'char 'god slob deb/ khong nad gso ba/ bcos sgrig ma/"@bo-x-ewts ;
         skos:prefLabel      "khong nad gso ba/ bcos sgrig ma/"@bo-x-ewts ;
         :catalogInfo        "Text book on the Tibetan science of medicine; edited by Togyal."@en ;
+        :creator            bdr:CR6728F2886B7E047E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1GS58453 ;

@@ -24,6 +24,12 @@ bdg:WA1KG24735 {
         adm:logMessage      "completed cataloging and released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGE916F40D140E628B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T11:54:24.487Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -55,17 +61,23 @@ bdg:WA1KG24735 {
     bda:WA1KG24735  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24735 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "24/WA1KG24735.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24735 ;
-        adm:logEntry        bda:LG949D9EF608B1D39A , bda:LGD7D7E2354A5BE29A , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG949D9EF608B1D39A , bda:LGD7D7E2354A5BE29A , bda:LGE916F40D140E628B , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8A7BA37A0CC12C22
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1GS44053 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA1KG24735  a       :SerialMember , :Work ;
         skos:prefLabel      "zhing pa'i yig skur ngo gtug skor gyi bca' khrims mdzub ston/"@bo-x-ewts ;
         :catalogInfo        "Daily necessary reference law book for the farmers to fill an application and lawsuits; translated from Chinese by Sonam Dargye."@en ;
+        :creator            bdr:CR8A7BA37A0CC12C22 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG24735 ;

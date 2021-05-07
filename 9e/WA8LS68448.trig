@@ -30,20 +30,32 @@ bdg:WA8LS68448 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGA5726041C6833DE0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T12:01:06.625Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS68448  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68448 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "9e/WA8LS68448.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68448 ;
-        adm:logEntry        bda:LG24A1182838ADFE96 , bda:LG5B482F0F9A394183 , bda:LG97610E26D42015C7 ;
+        adm:logEntry        bda:LG24A1182838ADFE96 , bda:LG5B482F0F9A394183 , bda:LG97610E26D42015C7 , bda:LGA5726041C6833DE0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRAFBE1A071D251B31
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75549 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS68448  a       :Work ;
-        skos:prefLabel      "bod yul ge sar dad mos kyi yul dngos brtag dpyad snang gsla me long /"@bo-x-ewts ;
+        skos:prefLabel      "bod yul ge sar dad mos kyi yul dngos brtag dpyad snang gsal me long /"@bo-x-ewts ;
         :catalogInfo        "Examination of places connected to the Gesar epic by Sodgyal Bhum."@en ;
+        :creator            bdr:CRAFBE1A071D251B31 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS68448 , bdr:W8LS68448 ;

@@ -24,6 +24,12 @@ bdg:WA1KG24738 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG75FA8912EE743653
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T11:54:48.981Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM065AD95F26
         a                   adm:UpdateData ;
         adm:logDate         "2016-12-05T22:11:09.047Z"^^xsd:dateTime ;
@@ -41,18 +47,24 @@ bdg:WA1KG24738 {
     bda:WA1KG24738  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24738 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f2/WA1KG24738.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24738 ;
-        adm:logEntry        bda:LG2485037133DBB1AD , bda:LG2542ACE49C68657E , bda:LGIM065AD95F26 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2485037133DBB1AD , bda:LG2542ACE49C68657E , bda:LG75FA8912EE743653 , bda:LGIM065AD95F26 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRBFFEACA773A21434
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228839 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG24738  a       :Work ;
         skos:altLabel       "yongs rdzogs bstan pa'i mnga' bdag rje btsun blo bzang bshad sgrub rgya mtsho dpal bzang po'i byung ba mdor bsdus su brjod pa dad gsum ku mud bzhad pa'i zla zer/"@bo-x-ewts ;
         skos:prefLabel      "rje btsun blo bzang bshad sgrub rgya mtsho dpal bzang po'i byung ba mdor bsdus su brjod pa dad gsum ku mud bzhad pa'i zla zer/"@bo-x-ewts ;
         :catalogInfo        "Biography of a Gelug master Shardong Lobzang Shedrup (1922-2001)."@en ;
+        :creator            bdr:CRBFFEACA773A21434 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

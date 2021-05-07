@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS68439 {
+    bda:LG102968512B6E45DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T11:49:25.462Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG3F64BEF71BA1F250
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -33,17 +39,28 @@ bdg:WA8LS68439 {
     bda:WA8LS68439  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68439 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "d4/WA8LS68439.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68439 ;
-        adm:logEntry        bda:LG3F64BEF71BA1F250 , bda:LG6BA789353B65ADED , bda:LGBC18DA87B2C4E7F4 ;
+        adm:logEntry        bda:LG102968512B6E45DE , bda:LG3F64BEF71BA1F250 , bda:LG6BA789353B65ADED , bda:LGBC18DA87B2C4E7F4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR3D5AEC3B36B62C65
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75548 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRFC501906050073A6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG21602 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS68439  a       :Work ;
         skos:prefLabel      "bod lugs gso rig gi mo nad gso ba'i dpyad gleng sna tshogs/"@bo-x-ewts ;
         :catalogInfo        "Research on the treatment of gnecology; compiled by Palden Trinley and Lumo Tsho."@en ;
+        :creator            bdr:CR3D5AEC3B36B62C65 , bdr:CRFC501906050073A6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS68439 , bdr:W8LS68439 ;

@@ -18,6 +18,12 @@ bdg:WA8LS73668 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGB2FDA3E3F1B677B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T14:22:11.257Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGB8C2824E2499DB3E
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-10-02T09:09:31.375Z"^^xsd:dateTime ;
@@ -27,18 +33,24 @@ bdg:WA8LS73668 {
     bda:WA8LS73668  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS73668 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "26/WA8LS73668.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS73668 ;
-        adm:logEntry        bda:LG67DAFEA3E0BAF917 , bda:LGB8C2824E2499DB3E ;
+        adm:logEntry        bda:LG67DAFEA3E0BAF917 , bda:LGB2FDA3E3F1B677B8 , bda:LGB8C2824E2499DB3E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRCB4FEA500135892B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75551 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS73668  a       :Work ;
         skos:altLabel       "las mgon thod nag gi rgyud kyi 'grel pa bdud 'joms thog gi gter sogs/"@bo-x-ewts ;
         skos:prefLabel      "las mgon thod nag gi rgyud 'grel skor/"@bo-x-ewts ;
         :catalogInfo        "A collection of texts explaining the Mahakala tantra literature by Ghirti Shri Bhatra."@en ;
+        :creator            bdr:CRCB4FEA500135892B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T2129 ;

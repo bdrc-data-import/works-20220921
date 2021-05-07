@@ -24,20 +24,32 @@ bdg:WA8LS73800 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGFCDE58D9F1DC0515
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T15:03:49.659Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS73800  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS73800 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "3c/WA8LS73800.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS73800 ;
-        adm:logEntry        bda:LG4C670C5E5AAD297C , bda:LGFC4C26FB2B182055 ;
+        adm:logEntry        bda:LG4C670C5E5AAD297C , bda:LGFC4C26FB2B182055 , bda:LGFCDE58D9F1DC0515 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRD71DDA928C1E0D75
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75555 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS73800  a       :Work ;
         skos:prefLabel      "rgya bod ngag sgyur gyi gzhung lugs dang lag len skor bshad pa smra mkhan ne tso'i tshig 'jam/"@bo-x-ewts ;
         :catalogInfo        "Explanation on the theory and practical oral translation of Chinese and Tibetan by Gedun Tenzin."@en ;
+        :creator            bdr:CRD71DDA928C1E0D75 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1029 ;

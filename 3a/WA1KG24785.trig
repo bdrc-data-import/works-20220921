@@ -18,6 +18,12 @@ bdg:WA1KG24785 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG36FD16836C0E1950
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T11:57:02.86Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGC0C58B1746A9891A
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-04T17:01:36.157Z"^^xsd:dateTime ;
@@ -55,17 +61,23 @@ bdg:WA1KG24785 {
     bda:WA1KG24785  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24785 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "3a/WA1KG24785.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24785 ;
-        adm:logEntry        bda:LG30FC4863F988D9A1 , bda:LGC0C58B1746A9891A , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG30FC4863F988D9A1 , bda:LG36FD16836C0E1950 , bda:LGC0C58B1746A9891A , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR27473A2C1C59DFAC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228841 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG24785  a       :Work ;
         skos:prefLabel      "gro mo'i phag ri jo mo'i gnas yig dad pa'i pad ma bzhad pa'i ldum ra/"@bo-x-ewts ;
         :catalogInfo        "A guidebook to a sacred place Phagri Jomo in Dromo."@en ;
+        :creator            bdr:CR27473A2C1C59DFAC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T25 ;

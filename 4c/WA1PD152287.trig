@@ -24,6 +24,12 @@ bdg:WA1PD152287 {
         adm:logMessage      "new created"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG812809CC871B5DC3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T15:46:59.974Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,editor, add Cat info"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGF16ADDCDDFAE592F
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2013-01-22T14:46:12.541Z"^^xsd:dateTime ;
@@ -61,20 +67,21 @@ bdg:WA1PD152287 {
     bda:WA1PD152287  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD152287 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "4c/WA1PD152287.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD152287 ;
-        adm:logEntry        bda:LG01F8DC6C964360ED , bda:LG1B468413A9509FCB , bda:LGF16ADDCDDFAE592F , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG01F8DC6C964360ED , bda:LG1B468413A9509FCB , bda:LG812809CC871B5DC3 , bda:LGF16ADDCDDFAE592F , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG5420 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:MW1PD152287  skos:altLabel  "An Anthology of selective readings of Tibetan literture with notes"@en , "藏族历代文学作品选注"@zh-hans .
+    bdr:MW1PD152287  skos:altLabel  "藏族历代文学作品选注"@zh-hans .
     
     bdr:WA1PD152287  a      :Work ;
         skos:altLabel       "bod kyi dus rabs rim byung gi rtsom yig gces bsdus mu tig phreng ba'i do shal/"@bo-x-ewts , "zang zu li dai wenxue zuo pin xuan zhu"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "bod kyi dus rabs rim byung gi rtsom yig gces bsdus/"@bo-x-ewts , "An Anthology of selective readings of Tibetan literture with notes"@en , "藏族历代文学作品选注"@zh-hans ;
+        skos:prefLabel      "bod kyi dus rabs rim byung gi rtsom yig gces bsdus/"@bo-x-ewts , "藏族历代文学作品选注"@zh-hans ;
+        :catalogInfo        "An Anthology of selective readings of Tibetan literture with notes"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS68310 {
+    bda:LG03BE7561EFBC59C6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T09:14:34.025Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG07BCA95D203AFC25
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -33,17 +39,23 @@ bdg:WA8LS68310 {
     bda:WA8LS68310  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68310 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "e7/WA8LS68310.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68310 ;
-        adm:logEntry        bda:LG07BCA95D203AFC25 , bda:LG1B154D19A7A7304A , bda:LG9CA4EFAE911DCFF3 ;
+        adm:logEntry        bda:LG03BE7561EFBC59C6 , bda:LG07BCA95D203AFC25 , bda:LG1B154D19A7A7304A , bda:LG9CA4EFAE911DCFF3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8B5221EB8322CB06
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75545 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA8LS68310  a       :Work ;
         skos:prefLabel      "grangs nyung mi rigs kyi bya gzhag lnga tshan bcu gcig pa'i 'char 'god/"@bo-x-ewts ;
         :catalogInfo        "The eleventh five year plan of PRC' minority translated by Ngawang Phuntsok."@en ;
+        :creator            bdr:CR8B5221EB8322CB06 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1157 ;

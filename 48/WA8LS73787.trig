@@ -24,6 +24,12 @@ bdg:WA8LS73787 {
         adm:logMessage      "added topic"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG61AD2D0D1403DEED
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T14:35:42.755Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGB4D41078FD7BE22A
         a                   adm:UpdateData ;
         adm:logDate         "2020-12-09T10:34:56.288Z"^^xsd:dateTime ;
@@ -38,17 +44,23 @@ bdg:WA8LS73787 {
     bda:WA8LS73787  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS73787 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "48/WA8LS73787.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS73787 ;
-        adm:logEntry        bda:LG2A182BF3693F66EF , bda:LG4AC29B3327390D78 , bda:LGB4D41078FD7BE22A , bda:LGB6DDB8468F605B0C ;
+        adm:logEntry        bda:LG2A182BF3693F66EF , bda:LG4AC29B3327390D78 , bda:LG61AD2D0D1403DEED , bda:LGB4D41078FD7BE22A , bda:LGB6DDB8468F605B0C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR610E58CAA82E6D60
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75552 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS73787  a       :SerialMember , :Work ;
         skos:prefLabel      "srid pa'i la gzhas thos pa 'dzum shor/"@bo-x-ewts ;
-        :catalogInfo        "A collection of Tibetan love songs from Nakshod area of Kham; collected and edited by Khamrikpa Kheu."@en ;
+        :catalogInfo        "A collection of Tibetan love songs from Nakshod area of Kham; collected and edited by Gonpo Topgyal."@en ;
+        :creator            bdr:CR610E58CAA82E6D60 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS8LS73787 ;

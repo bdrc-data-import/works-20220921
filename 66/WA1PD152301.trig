@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1PD152301 {
+    bda:LG053CB7A89D65FE77
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T15:47:03.285Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,editor, add Cat info"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG178921BB204D8621
         a                   adm:InitialDataCreation ;
         adm:logDate         "2012-09-11T13:59:38.995Z"^^xsd:dateTime ;
@@ -75,19 +81,26 @@ bdg:WA1PD152301 {
     bda:WA1PD152301  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD152301 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "66/WA1PD152301.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD152301 ;
-        adm:logEntry        bda:LG178921BB204D8621 , bda:LG6BD5F03728C0B841 , bda:LG6DE2BB88AC827FCD , bda:LG81ACC3F981BBE4EF , bda:LG83C04A94174E2B13 , bda:LG914629E31522DE33 , bda:LGFAC64C0B7DF98263 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG053CB7A89D65FE77 , bda:LG178921BB204D8621 , bda:LG6BD5F03728C0B841 , bda:LG6DE2BB88AC827FCD , bda:LG81ACC3F981BBE4EF , bda:LG83C04A94174E2B13 , bda:LG914629E31522DE33 , bda:LGFAC64C0B7DF98263 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRAF06C623034EDB6B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG983 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD152301  skos:altLabel  "藏医诊治肝性消化不良症"@zh-hans .
     
     bdr:WA1PD152301  a      :Work ;
         skos:altLabel       "zang yi zhen gan xing xiao hua bu liang zheng"@zh-hans ;
         skos:prefLabel      "mchin pa'i ma zhu ba las 'phros pa'i mchin nad 'ga'i gyur tshul dang brtag bcos/"@bo-x-ewts , "藏医诊治肝性消化不良症"@zh-hans ;
+        :catalogInfo        "Treatment of liver disease"@en ;
+        :creator            bdr:CRAF06C623034EDB6B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1PD152301 , bdr:W1PD152301 ;

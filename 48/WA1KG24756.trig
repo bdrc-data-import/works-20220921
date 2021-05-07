@@ -18,6 +18,12 @@ bdg:WA1KG24756 {
         adm:logMessage      "completed cataloging and released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGD6586C8A7238C9DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T11:56:20.018Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGF3FABD6E0B832256
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-29T14:11:44.686Z"^^xsd:dateTime ;
@@ -55,17 +61,23 @@ bdg:WA1KG24756 {
     bda:WA1KG24756  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24756 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "48/WA1KG24756.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24756 ;
-        adm:logEntry        bda:LGA226DCF241334BB0 , bda:LGF3FABD6E0B832256 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LGA226DCF241334BB0 , bda:LGD6586C8A7238C9DE , bda:LGF3FABD6E0B832256 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR75A4E0A5E357881A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228840 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG24756  a       :Work ;
         skos:prefLabel      "khams sde dge skad kyi brda sprod/"@bo-x-ewts , "德格话语法"@zh-hans ;
         :catalogInfo        "A study of grammar in Derge dialect."@en ;
+        :creator            bdr:CR75A4E0A5E357881A ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workHasInstance    bdr:MW1KG24756 , bdr:W1KG24756 ;

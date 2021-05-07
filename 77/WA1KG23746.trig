@@ -30,6 +30,12 @@ bdg:WA1KG23746 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGAA1BE0AEA3DF6A70
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T11:48:38.033Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGAE93C6E201A4D8C6
         a                   adm:UpdateData ;
         adm:logDate         "2017-09-20T16:30:42.146Z"^^xsd:dateTime ;
@@ -52,18 +58,24 @@ bdg:WA1KG23746 {
     bda:WA1KG23746  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG23746 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "77/WA1KG23746.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG23746 ;
-        adm:logEntry        bda:LG3E19174E152CB8D3 , bda:LG44FCD9D81301731D , bda:LG9370EF7AFBE102CA , bda:LGAE93C6E201A4D8C6 , bda:LGEED454C9CF8BAD1E , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG3E19174E152CB8D3 , bda:LG44FCD9D81301731D , bda:LG9370EF7AFBE102CA , bda:LGAA1BE0AEA3DF6A70 , bda:LGAE93C6E201A4D8C6 , bda:LGEED454C9CF8BAD1E , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CREC1EDA367C6FBBE1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3JM118 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1KG23746  a       :Work ;
         skos:prefLabel      "rgyal rtse dpal 'khor chos sde'i rten gsum gyi dkar chag dad pa'i sa bon/"@bo-x-ewts ;
         :catalogInfo        "Catalog of religious objects in the stupa of Gyaltse Palkhor Choede in Tibet."@en ;
+        :creator            bdr:CREC1EDA367C6FBBE1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG23746 , bdr:W1KG23746 ;

@@ -18,6 +18,12 @@ bdg:WA8LS68436 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG33A0CF47BA741981
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T11:33:45.359Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG92451071C45E15F6
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -33,17 +39,23 @@ bdg:WA8LS68436 {
     bda:WA8LS68436  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68436 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "2f/WA8LS68436.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68436 ;
-        adm:logEntry        bda:LG0AF615525593E00F , bda:LG92451071C45E15F6 , bda:LGE83F97E15446CF68 ;
+        adm:logEntry        bda:LG0AF615525593E00F , bda:LG33A0CF47BA741981 , bda:LG92451071C45E15F6 , bda:LGE83F97E15446CF68 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8A030C3FA29F1F83
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7123 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS68436  a       :Work ;
         skos:prefLabel      "rtsom rig mtha' dpyod kyi rigs lam/"@bo-x-ewts ;
         :catalogInfo        "Analysis of literature by Rasa Tenzin Chodrak."@en ;
+        :creator            bdr:CR8A030C3FA29F1F83 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS68436 , bdr:W8LS68436 ;

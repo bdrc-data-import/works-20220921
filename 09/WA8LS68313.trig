@@ -24,6 +24,12 @@ bdg:WA8LS68313 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGD9B7B854358F154D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T09:21:59.27Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGEEF109E93F91F3EF
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-02-04T11:38:13.482Z"^^xsd:dateTime ;
@@ -33,17 +39,23 @@ bdg:WA8LS68313 {
     bda:WA8LS68313  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68313 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "09/WA8LS68313.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68313 ;
-        adm:logEntry        bda:LG20F890EE53506F3B , bda:LG5BAA2271B0292837 , bda:LGEEF109E93F91F3EF ;
+        adm:logEntry        bda:LG20F890EE53506F3B , bda:LG5BAA2271B0292837 , bda:LGD9B7B854358F154D , bda:LGEEF109E93F91F3EF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRA9B258A7BB2F2CAF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75546 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS68313  a       :Work ;
         skos:prefLabel      "gtsug lag khang sogs la brkos ris bzo tshul gyi ma phyi blo ldan mig gi dga' ston/"@bo-x-ewts ;
         :catalogInfo        "Method of drawing and painting in temple and other places by Chokhor Tenzin Gyatsho."@en ;
+        :creator            bdr:CRA9B258A7BB2F2CAF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS68313 , bdr:W8LS68313 ;

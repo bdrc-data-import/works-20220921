@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS68409 {
+    bda:LG15F3498F614CDE0E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-06T09:41:07.158Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG7F0788EBE4DCED38
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-02-12T09:48:05.883Z"^^xsd:dateTime ;
@@ -33,18 +39,24 @@ bdg:WA8LS68409 {
     bda:WA8LS68409  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68409 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ee/WA8LS68409.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68409 ;
-        adm:logEntry        bda:LG7F0788EBE4DCED38 , bda:LG9CA0FFA72765C6FC , bda:LGFB1AAAE4AEFEC107 ;
+        adm:logEntry        bda:LG15F3498F614CDE0E , bda:LG7F0788EBE4DCED38 , bda:LG9CA0FFA72765C6FC , bda:LGFB1AAAE4AEFEC107 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR1D0D1CEEB1B5B55D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN8472 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS68409  a       :SerialMember , :Work ;
         skos:altLabel       "dus rabs 21 pa'i bod lugs gso rig dngos tshan slob gso'i 'char 'god slob deb/ byis pa gso ba/ bcos sgrig ma/"@bo-x-ewts ;
         skos:prefLabel      "byis pa gso ba/ bcos sgrig ma/"@bo-x-ewts ;
-        :catalogInfo        "Children's treatment, text book on the Tibetan science of medicine; edited by Drimed Odzer."@en ;
+        :catalogInfo        "Children's treatment, text book on the Tibetan science of medicine by Drimed Odzer."@en ;
+        :creator            bdr:CR1D0D1CEEB1B5B55D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1GS58453 ;
