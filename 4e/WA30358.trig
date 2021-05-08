@@ -12,26 +12,36 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30358 {
-    bda:LG68E856F7F84B424A
+    bda:LG473F2FE439EDEA57
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG68E856F7F84B424A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-07T16:11:05.25Z"^^xsd:dateTime ;
+        adm:logMessage      "released from onhold"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:WA30358  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30358 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "4e/WA30358.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30358 ;
-        adm:logEntry        bda:LG68E856F7F84B424A ;
+        adm:logEntry        bda:LG473F2FE439EDEA57 , bda:LG68E856F7F84B424A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusOnHold .
+        adm:status          bda:StatusReleased .
+    
+    bdr:MW30358  skos:altLabel  "大藏经甘珠尔目录"@zh-hans .
     
     bdr:WA30358  a          :Work ;
-        skos:prefLabel      "rgyal ba'i bka' 'gyur la bde blag tu 'jug pa'i dkar chag gsal ba'i me long : bod rgya shan sbyar/"@bo-x-ewts , "da zang jing gan zhu er mu lu"@zh-latn-pinyin-x-ndia ;
+        skos:altLabel       "da zang jing gan zhu er mu lu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rgyal ba'i bka' 'gyur la bde blag tu 'jug pa'i dkar chag gsal ba'i me long : bod rgya shan sbyar/"@bo-x-ewts , "大藏经甘珠尔目录"@zh-hans ;
+        :catalogInfo        "A bilingual table of contents of Kangyur."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T13 ;
         :workHasInstance    bdr:MW30358 ;
-        :workIsAbout        bdr:T1129 .
+        :workIsAbout        bdr:T2423 .
 }

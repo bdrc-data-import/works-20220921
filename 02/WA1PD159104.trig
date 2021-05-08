@@ -18,6 +18,12 @@ bdg:WA1PD159104 {
         adm:logMessage      "added Work to CTC 10"@en ;
         adm:logWho          bdu:U00006 .
     
+    bda:LG4FB711DA48D2579E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-07T15:32:38.901Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, pub date and note"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG822CC4311783DA68
         a                   adm:UpdateData ;
         adm:logDate         "2013-08-21T10:36:45.33Z"^^xsd:dateTime ;
@@ -64,21 +70,23 @@ bdg:WA1PD159104 {
     bda:WA1PD159104  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159104 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "02/WA1PD159104.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159104 ;
-        adm:logEntry        bda:LG30313809DF44281C , bda:LG822CC4311783DA68 , bda:LGB7177282FE98E691 , bda:LGD78D98B6BF3D838C , bda:LGDE3E2E8DE22DA867 , bda:LGFB67BF19E3648C46 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG30313809DF44281C , bda:LG4FB711DA48D2579E , bda:LG822CC4311783DA68 , bda:LGB7177282FE98E691 , bda:LGD78D98B6BF3D838C , bda:LGDE3E2E8DE22DA867 , bda:LGFB67BF19E3648C46 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:MW1PD159104  skos:altLabel  "甘珠尔·般若部"@zh-hans .
     
     bdr:WA1PD159104  a      :Work ;
-        skos:prefLabel      "bka' 'gyur las 'bum nyi khri brgyad stong /"@bo-x-ewts , "甘珠尔·般若部"@zh-hans ;
+        skos:altLabel       "gan zhu er · ban ruo bu"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bka' 'gyur las 'bum/ nyi khri/ brgyad stong /"@bo-x-ewts , "甘珠尔·般若部"@zh-hans ;
+        :catalogInfo        "Selected Prajnaparamita Sutra texts from Buddha's teaching Kangyur."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T769 ;
         :workHasInstance    bdr:MW1PD159104 , bdr:W1PD159104 ;
-        :workIsAbout        bdr:T2423 .
+        :workIsAbout        bdr:T2005 , bdr:T2423 .
 }
