@@ -31,23 +31,35 @@ bdg:WA29477 {
         adm:logWho          bdu:U00012 .
     
     bda:LG6FCEAABC459B20D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-10T09:35:56.445Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG761E12576BB54A71
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:WA29477  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29477 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "59/WA29477.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29477 ;
-        adm:logEntry        bda:LG1981DC91F7B35836 , bda:LG2492F58725BD00F0 , bda:LG3FCEC64C1418D7ED , bda:LG6FCEAABC459B20D3 ;
+        adm:logEntry        bda:LG1981DC91F7B35836 , bda:LG2492F58725BD00F0 , bda:LG3FCEC64C1418D7ED , bda:LG6FCEAABC459B20D3 , bda:LG761E12576BB54A71 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR017818B723ACC2E8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9747 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA29477  a          :Work ;
         skos:altLabel       "mi dbang pho lha ba'i gser bris bstan 'gyur srid zhi'i rgyan gcig gi dkar chag"@bo-x-ewts ;
         skos:prefLabel      "gser bris bstan 'gyur gyi dkar chag"@bo-x-ewts ;
+        :creator            bdr:CR017818B723ACC2E8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T13 ;

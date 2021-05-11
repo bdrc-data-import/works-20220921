@@ -18,6 +18,12 @@ bdg:WA1KG24832 {
         adm:logMessage      "completed cataloging and released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG7F7090DB3A4E3FCD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-10T22:14:31.439Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGC7570B6457C60B5D
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-29T15:23:21.396Z"^^xsd:dateTime ;
@@ -55,17 +61,26 @@ bdg:WA1KG24832 {
     bda:WA1KG24832  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24832 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "43/WA1KG24832.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24832 ;
-        adm:logEntry        bda:LG66FB27DE7CD160FE , bda:LGC7570B6457C60B5D , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG66FB27DE7CD160FE , bda:LG7F7090DB3A4E3FCD , bda:LGC7570B6457C60B5D , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR658D9A997156F6DC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228847 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:MW1KG24832  skos:altLabel  "游子亲笔"@zh-hans .
+    
     bdr:WA1KG24832  a       :Work ;
-        skos:prefLabel      "'khyam po'i zin bris/"@bo-x-ewts ;
+        skos:altLabel       "you zi qin bi"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "'khyam po'i zin bris/"@bo-x-ewts , "游子亲笔"@zh-hans ;
         :catalogInfo        "Collection of short stories."@en ;
+        :creator            bdr:CR658D9A997156F6DC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1478 , bdr:T257 ;

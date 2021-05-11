@@ -22,6 +22,12 @@ bdg:WA1PD159372 {
         adm:logDate         "2016-11-29T21:57:40.863Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGC156C0122DBB4857
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-10T16:50:22.498Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor. Cat info and subject"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGD6220974975B1A25
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-02T15:45:10.552Z"^^xsd:dateTime ;
@@ -69,19 +75,26 @@ bdg:WA1PD159372 {
     bda:WA1PD159372  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159372 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "de/WA1PD159372.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159372 ;
-        adm:logEntry        bda:LG62F9E5445B630D5E , bda:LG674C9045AAB3D9D4 , bda:LGD6220974975B1A25 , bda:LGD7A886657CDE6D5F , bda:LGE90C7219B9F24CC5 , bda:LGF6A672556ACD02B8 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG62F9E5445B630D5E , bda:LG674C9045AAB3D9D4 , bda:LGC156C0122DBB4857 , bda:LGD6220974975B1A25 , bda:LGD7A886657CDE6D5F , bda:LGE90C7219B9F24CC5 , bda:LGF6A672556ACD02B8 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8C57829FAF8439EB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366931 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD159372  skos:altLabel  "藏族传统歌曲精选（附钢琴伴奏）"@zh-hans .
     
     bdr:WA1PD159372  a      :SerialMember , :Work ;
         skos:altLabel       "bod kyi srol rgyun glu gzhas gces bsdus/——h+phi ya rno ram dkrol rol dbyangs zur bkod/"@bo , "zang zu chuan tong ge qu jing xuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod kyi srol rgyun glu gzhas gces bsdus/"@bo-x-ewts , "藏族传统歌曲精选（附钢琴伴奏）"@zh-hans ;
+        :catalogInfo        "Collection of Tibetan folk sosngs"@en ;
+        :creator            bdr:CR8C57829FAF8439EB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1PD159372 ;

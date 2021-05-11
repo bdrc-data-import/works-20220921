@@ -39,6 +39,12 @@ bdg:WA1PD159407 {
         adm:logDate         "2017-05-21T21:07:47.383Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGA6DBC046CD707D84
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-10T16:50:28.405Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor. Cat info and subject"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGBC81A0913247B47C
         a                   adm:UpdateData ;
         adm:logDate         "2016-11-25T03:37:38.828Z"^^xsd:dateTime ;
@@ -68,19 +74,26 @@ bdg:WA1PD159407 {
     bda:WA1PD159407  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159407 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "19/WA1PD159407.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159407 ;
-        adm:logEntry        bda:LG4C7E6FF7E5865434 , bda:LG59EF9D3B941D6A84 , bda:LG668058280E85D67C , bda:LG875384F3F3D32527 , bda:LG93A5E14133F79AB8 , bda:LGBC81A0913247B47C , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG4C7E6FF7E5865434 , bda:LG59EF9D3B941D6A84 , bda:LG668058280E85D67C , bda:LG875384F3F3D32527 , bda:LG93A5E14133F79AB8 , bda:LGA6DBC046CD707D84 , bda:LGBC81A0913247B47C , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRAB0299DF30991F9A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6442 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD159407  skos:altLabel  "藏族寓言评析"@zh-hans .
     
     bdr:WA1PD159407  a      :SerialMember , :Work ;
         skos:altLabel       "zang zu yu yan ping xi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gshib bsdur gyi lam nas bod kyi dpe chos rtsom yig la 'jug pa/"@bo-x-ewts , "藏族寓言评析"@zh-hans ;
+        :catalogInfo        "A survey of Tibetan literature explanations of the examples"@en ;
+        :creator            bdr:CRAB0299DF30991F9A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1PD159407 ;

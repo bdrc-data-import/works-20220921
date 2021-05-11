@@ -18,6 +18,12 @@ bdg:WA1KG24823 {
         adm:logMessage      "completed cataloging and released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGA6862299DEE054DF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-10T22:14:31.042Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGF3F4413F52D31FE9
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-29T15:19:19.286Z"^^xsd:dateTime ;
@@ -55,17 +61,25 @@ bdg:WA1KG24823 {
     bda:WA1KG24823  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24823 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "eb/WA1KG24823.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24823 ;
-        adm:logEntry        bda:LG06D34F61C66996AA , bda:LGF3F4413F52D31FE9 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG06D34F61C66996AA , bda:LGA6862299DEE054DF , bda:LGF3F4413F52D31FE9 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR8D7F2C4FAEB28918
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228846 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:MW1KG24823  skos:altLabel  "藏医临床实用集要"@zh-hans .
+    
     bdr:WA1KG24823  a       :Work ;
-        skos:prefLabel      "nyer mkho'i gso rig bdud rtsi'i bum bzang /"@bo-x-ewts ;
+        skos:prefLabel      "nyer mkho'i gso rig bdud rtsi'i bum bzang /"@bo-x-ewts , "藏医临床实用集要"@zh-hans ;
         :catalogInfo        "Requisites knowledge and expriences to practice healing art of Tibetan medicine."@en ;
+        :creator            bdr:CR8D7F2C4FAEB28918 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG24823 , bdr:W1KG24823 ;

@@ -33,6 +33,12 @@ bdg:WA1PD159403 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGECF11787C200FFBE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-10T16:50:28.012Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor. Cat info and subject"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -57,19 +63,26 @@ bdg:WA1PD159403 {
     bda:WA1PD159403  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159403 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "f8/WA1PD159403.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159403 ;
-        adm:logEntry        bda:LG0C313F16BFB1C3F6 , bda:LG12613100F494104C , bda:LG384B0A97A4B61051 , bda:LGCE68F5552AD76761 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0C313F16BFB1C3F6 , bda:LG12613100F494104C , bda:LG384B0A97A4B61051 , bda:LGCE68F5552AD76761 , bda:LGECF11787C200FFBE , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR49CFAD5215CBFA94
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366935 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD159403  skos:altLabel  "嘎玛赤列文集"@zh-hans .
     
     bdr:WA1PD159403  a      :SerialMember , :Work ;
         skos:altLabel       "ga ma chi lie wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "mkhar bla karma phrin las kyi dpyad rtsom phyogs bsgrigs/"@bo-x-ewts , "嘎玛赤列文集"@zh-hans ;
+        :catalogInfo        "A collection of essays written by Karma Trinle Geleg"@en ;
+        :creator            bdr:CR49CFAD5215CBFA94 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1PD159407 ;

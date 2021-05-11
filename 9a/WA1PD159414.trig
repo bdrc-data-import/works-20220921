@@ -23,6 +23,12 @@ bdg:WA1PD159414 {
         adm:logDate         "2017-05-21T21:38:06.387Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG409902EA422F806D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-10T16:50:29.298Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor. Cat info and subject"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG8F2205F80DD4A79D
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-02T15:45:22.407Z"^^xsd:dateTime ;
@@ -63,19 +69,26 @@ bdg:WA1PD159414 {
     bda:WA1PD159414  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159414 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "9a/WA1PD159414.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159414 ;
-        adm:logEntry        bda:LG30E3AAC8DFC2DBD2 , bda:LG3AEA7948D8747BF3 , bda:LG8F2205F80DD4A79D , bda:LGA3969D9C09183A70 , bda:LGF99CEEAF12D37728 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG30E3AAC8DFC2DBD2 , bda:LG3AEA7948D8747BF3 , bda:LG409902EA422F806D , bda:LG8F2205F80DD4A79D , bda:LGA3969D9C09183A70 , bda:LGF99CEEAF12D37728 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRD65558A9FB906B03
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN11883 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD159414  skos:altLabel  "藏语语法精要集"@zh-hans .
     
     bdr:WA1PD159414  a      :SerialMember , :Work ;
         skos:altLabel       "bod skad brda sprod skor gyi dpe rgyun dkon rigs kyi bstan bcos thung ngu 'ga' phyogs gcig tu bsgrigs pa mu thi la'i phreng ba/"@bo-x-ewts , "zang yu yu fa jing yao ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "brda sprod mu thi la'i phreng ba/"@bo-x-ewts , "藏语语法精要集"@zh-hans ;
+        :catalogInfo        "Tibetan grammartical text by Dudla Buchung"@en ;
+        :creator            bdr:CRD65558A9FB906B03 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1PD159407 ;

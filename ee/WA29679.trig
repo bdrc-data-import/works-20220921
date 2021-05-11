@@ -13,8 +13,10 @@
 
 bdg:WA29679 {
     bda:LG38E3E76CB43DC97F
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-10T13:56:56.469Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LGA093BA5EDFB1B378
         a                   adm:UpdateData ;
@@ -22,23 +24,26 @@ bdg:WA29679 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGAC6C3D112449A30D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:WA29679  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29679 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ee/WA29679.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29679 ;
-        adm:logEntry        bda:LG38E3E76CB43DC97F , bda:LGA093BA5EDFB1B378 ;
+        adm:logEntry        bda:LG38E3E76CB43DC97F , bda:LGA093BA5EDFB1B378 , bda:LGAC6C3D112449A30D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:MW29679  skos:altLabel  "history of palri phodrang"@en .
-    
     bdr:WA29679  a          :SerialMember , :Work ;
         skos:prefLabel      "dpal ri pad+ma 'od gling gi lo rgyus bde chen dag pa'i zhing bkod kyi rgyan/"@bo-x-ewts , "history of palri phodrang"@en ;
+        :catalogInfo        "History of palri phodrang."@en ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
+        :language           bdr:LangBo , bdr:LangEn ;
         :serialMemberOf     bdr:WAS29679 ;
         :workGenre          bdr:T1134 ;
         :workHasInstance    bdr:MW29679 , bdr:W29679 .

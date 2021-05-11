@@ -13,12 +13,18 @@
 
 bdg:WA29627 {
     bda:LG3927742A00626ECF
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-10T10:59:31.883Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LG706F1065D73709FA
         a                   adm:UpdateData ;
         adm:logDate         "2007-02-05T09:26:55.95Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7ACAEAEBD0175AD6
+        a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:LGA17DDF6DFAFEFECC
@@ -75,18 +81,24 @@ bdg:WA29627 {
     bda:WA29627  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29627 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "34/WA29627.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29627 ;
-        adm:logEntry        bda:LG3927742A00626ECF , bda:LG706F1065D73709FA , bda:LGA17DDF6DFAFEFECC , bda:LGE952307D271702B5 , bda:LGFB556F61A012FCA7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3927742A00626ECF , bda:LG706F1065D73709FA , bda:LG7ACAEAEBD0175AD6 , bda:LGA17DDF6DFAFEFECC , bda:LGE952307D271702B5 , bda:LGFB556F61A012FCA7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRD6B115E83F41978C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4333 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA29627  a          :SerialMember , :Work ;
-        skos:altLabel       "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag gi rgyud/"@bo-x-ewts , "rgyud bzhi (grwa thang par ma)"@bo-x-ewts ;
+        skos:altLabel       "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag gi rgyud/"@bo-x-ewts , "rgyud bzhi/ (grwa thang par ma)"@bo-x-ewts ;
         skos:prefLabel      "grwa thang rgyud bzhi/"@bo-x-ewts ;
         :catalogInfo        "Transcription of one of the older printed versions of the Four Medical Tantras."@en ;
+        :creator            bdr:CRD6B115E83F41978C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1017462 ;
