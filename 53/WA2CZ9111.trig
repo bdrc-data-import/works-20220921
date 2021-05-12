@@ -41,6 +41,12 @@ bdg:WA2CZ9111 {
         adm:logMessage      "new catalog"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGB16111A372FB7E2A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-11T10:13:42.21Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -72,25 +78,30 @@ bdg:WA2CZ9111 {
     bda:WA2CZ9111  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2CZ9111 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "53/WA2CZ9111.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2CZ9111 ;
-        adm:logEntry        bda:LG1839FC0122D2D0EF , bda:LG30FF05E027C826A2 , bda:LG86361B177B144034 , bda:LGA36B21E1DD61D831 , bda:LGAAE9D8FF95A969C5 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG1839FC0122D2D0EF , bda:LG30FF05E027C826A2 , bda:LG86361B177B144034 , bda:LGA36B21E1DD61D831 , bda:LGAAE9D8FF95A969C5 , bda:LGB16111A372FB7E2A , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB16111A372FB7E2A
+    bdr:CR570D3406F06D6C60
         a                   :AgentAsCreator ;
         :agent              bdr:P2CZ9105 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRC907F0BB11B90654
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2CZ9113 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2CZ9111  a        :Work ;
         skos:altLabel       "yongs 'dzin zhes pa 'byung ba gsum ldan chu pho byi lo'i le'u tho byed grub zung 'brel snang ba'i dga' ston/"@bo-x-ewts ;
         skos:prefLabel      "yongs 'dzin zhes pa chu pho byi lo'i lo tho/"@bo-x-ewts ;
         :catalogInfo        "Calendar for the Water Mouse year, 1972."@en ;
-        :creator            bdr:CRB16111A372FB7E2A ;
+        :creator            bdr:CR570D3406F06D6C60 , bdr:CRC907F0BB11B90654 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T222 ;

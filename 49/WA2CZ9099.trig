@@ -23,6 +23,12 @@ bdg:WA2CZ9099 {
         adm:logMessage      "new catalog"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG547FCCDD53DF33E0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-11T10:11:02.141Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGC0EC74E5D42B4E2B
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-25T16:51:59.076Z"^^xsd:dateTime ;
@@ -81,18 +87,24 @@ bdg:WA2CZ9099 {
     bda:WA2CZ9099  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2CZ9099 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "49/WA2CZ9099.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2CZ9099 ;
-        adm:logEntry        bda:LG427715BD9EAE7B63 , bda:LG447E611B72234EE2 , bda:LGC0EC74E5D42B4E2B , bda:LGC909FD77960CFDC8 , bda:LGCE3B3075BBB230AF , bda:LGDE6CDF4B250E0D50 , bda:LGDF07E41BE940C2D6 , bda:LGE575F0E9B61A3794 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 ;
+        adm:logEntry        bda:LG427715BD9EAE7B63 , bda:LG447E611B72234EE2 , bda:LG547FCCDD53DF33E0 , bda:LGC0EC74E5D42B4E2B , bda:LGC909FD77960CFDC8 , bda:LGCE3B3075BBB230AF , bda:LGDE6CDF4B250E0D50 , bda:LGDF07E41BE940C2D6 , bda:LGE575F0E9B61A3794 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRA3DFB3B49A443732
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5615 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2CZ9099  a        :Work ;
         skos:altLabel       "byed grub zung sbrel gyi lo tho rgyas pa/"@bo-x-ewts , "khro mo zhes pa 'byung ba gsum ldan shing pho 'brug lo'i le'u tho byed grub zung 'brel dang bcas pa gtsug lag gser rtsis do shal/"@bo-x-ewts ;
         skos:prefLabel      "khro mo zhes pa shing 'brug lo'i lo tho/"@bo-x-ewts ;
         :catalogInfo        "Tibetan calendar for the Wood Dragon year, 1964."@en ;
+        :creator            bdr:CRA3DFB3B49A443732 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T222 ;

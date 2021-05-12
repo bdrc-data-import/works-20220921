@@ -28,6 +28,12 @@ bdg:WA2CZ7699 {
         adm:logDate         "2009-05-06T16:23:55.271Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG369A994F7F08953A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-11T09:45:40.892Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG4E9F61FC55B6F9F9
         a                   adm:UpdateData ;
         adm:logDate         "2009-06-09T11:27:53.749Z"^^xsd:dateTime ;
@@ -81,18 +87,24 @@ bdg:WA2CZ7699 {
     bda:WA2CZ7699  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2CZ7699 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "a7/WA2CZ7699.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2CZ7699 ;
-        adm:logEntry        bda:LG13582F4BE1A0319D , bda:LG137FF435A7F0BB45 , bda:LG2EA740348ACF136E , bda:LG4E9F61FC55B6F9F9 , bda:LG5BDDA1BD1124A2D8 , bda:LG805D58915706C4C2 , bda:LGB2C60819406E992F , bda:LGB42C61526CA9C9BE , bda:LGBB8973574BF1DC40 , bda:LGCCF039D13B94FFB8 , bda:LGEFE90011372E3A39 , bda:LGF23A152F4C1EF0B9 ;
+        adm:logEntry        bda:LG13582F4BE1A0319D , bda:LG137FF435A7F0BB45 , bda:LG2EA740348ACF136E , bda:LG369A994F7F08953A , bda:LG4E9F61FC55B6F9F9 , bda:LG5BDDA1BD1124A2D8 , bda:LG805D58915706C4C2 , bda:LGB2C60819406E992F , bda:LGB42C61526CA9C9BE , bda:LGBB8973574BF1DC40 , bda:LGCCF039D13B94FFB8 , bda:LGEFE90011372E3A39 , bda:LGF23A152F4C1EF0B9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8339F49A642ED60A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75561 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2CZ7699  a        :Work ;
         skos:altLabel       "rngog rabs/"@bo-x-ewts ;
         skos:prefLabel      "rngog rabs gsal ba'i me long /"@bo-x-ewts ;
-        :catalogInfo        "History of the abbatial succession at Ngog"@en ;
+        :catalogInfo        "History of the abbatial succession at Ngog by Namkha Sonam."@en ;
+        :creator            bdr:CR8339F49A642ED60A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1673 ;

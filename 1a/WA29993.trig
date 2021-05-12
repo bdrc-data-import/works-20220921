@@ -13,8 +13,10 @@
 
 bdg:WA29993 {
     bda:LG36B804DED8A882B6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-11T09:08:42.225Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LG72BAC42D6EE52A07
         a                   adm:ScanRequestCreation ;
@@ -39,6 +41,10 @@ bdg:WA29993 {
         adm:logDate         "2012-05-07T23:28:46.609Z"^^xsd:dateTime ;
         adm:logMessage      "reviewed"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGCC9D6940FBBE7F6F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -78,11 +84,11 @@ bdg:WA29993 {
     bda:WA29993  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29993 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "1a/WA29993.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29993 ;
-        adm:logEntry        bda:LG36B804DED8A882B6 , bda:LG72BAC42D6EE52A07 , bda:LG926B66BF83EE53F1 , bda:LGAED9EE188C32E736 , bda:LGBA3004B20B39CCBD , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG36B804DED8A882B6 , bda:LG72BAC42D6EE52A07 , bda:LG926B66BF83EE53F1 , bda:LGAED9EE188C32E736 , bda:LGBA3004B20B39CCBD , bda:LGCC9D6940FBBE7F6F , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -96,5 +102,5 @@ bdg:WA29993 {
         :language           bdr:LangBo ;
         :workGenre          bdr:T1PD128746 ;
         :workHasInstance    bdr:MW29993 , bdr:W29993 ;
-        :workIsAbout        bdr:T1979 .
+        :workIsAbout        bdr:T1979 , bdr:T1KG6100 .
 }

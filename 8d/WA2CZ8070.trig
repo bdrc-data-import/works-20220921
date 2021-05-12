@@ -41,6 +41,12 @@ bdg:WA2CZ8070 {
         adm:logDate         "2010-03-05T12:20:36.072Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGEC67F1874900E100
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-11T10:06:23.827Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -65,18 +71,24 @@ bdg:WA2CZ8070 {
     bda:WA2CZ8070  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2CZ8070 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "8d/WA2CZ8070.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2CZ8070 ;
-        adm:logEntry        bda:LG25E06C104C46425D , bda:LG5F77B8DA9DAAD684 , bda:LG711A2AFB3E429B9E , bda:LGA5D8829226EBE51F , bda:LGCFBCBCD265713991 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG25E06C104C46425D , bda:LG5F77B8DA9DAAD684 , bda:LG711A2AFB3E429B9E , bda:LGA5D8829226EBE51F , bda:LGCFBCBCD265713991 , bda:LGEC67F1874900E100 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR54900D27BAD862E0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG209127 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2CZ8070  a        :Work ;
         skos:altLabel       "'dir rgyu dang 'bras bu'i theg chen gnyis kar dgos pa'i lam gyi rim pa'i dmigs rnam skyong tshul rgyal ba yab sras gnyis kyi gsung 'khrid las byung ba'i man ngag zab mo yon tan rin chen bsdus don/"@bo-x-ewts ;
         skos:prefLabel      "lam rim gyi dmigs rnam skyong tshul/"@bo-x-ewts ;
         :catalogInfo        "On the focus and mental attitude during the training along the gradual lamrim path."@en ;
+        :creator            bdr:CR54900D27BAD862E0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T238 ;

@@ -34,6 +34,12 @@ bdg:WA1PD159444 {
         adm:logDate         "2017-05-21T22:58:13.716Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG86853200F261A0FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-11T16:45:56.592Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, add cat info and subject"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG96BBE219637BBB25
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-03T12:37:47.163Z"^^xsd:dateTime ;
@@ -64,16 +70,23 @@ bdg:WA1PD159444 {
     bda:WA1PD159444  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159444 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "a4/WA1PD159444.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159444 ;
-        adm:logEntry        bda:LG3453962638B9DD70 , bda:LG53E37B0ADDE4B03C , bda:LG5F03C4C6AE80937A , bda:LG82925F5DBF31B4AA , bda:LG96BBE219637BBB25 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3453962638B9DD70 , bda:LG53E37B0ADDE4B03C , bda:LG5F03C4C6AE80937A , bda:LG82925F5DBF31B4AA , bda:LG86853200F261A0FE , bda:LG96BBE219637BBB25 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR0956EC0D237FDF5D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366943 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1PD159444  a      :SerialMember , :Work ;
         skos:prefLabel      "khams kyi ma yum 'bum mtsho phyug mo'i gnas yig ngo mtshar bye ba'i rlabs phreng /"@bo-x-ewts ;
+        :catalogInfo        "Guidebook to sacred Lake Bumtso Phyugmo"@en ;
+        :creator            bdr:CR0956EC0D237FDF5D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1PD159444 ;

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1PD159417 {
+    bda:LG12F55AB6ED326F7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-11T16:45:52.326Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, add cat info and subject"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG280842E0154B5E67
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-21T21:38:14.531Z"^^xsd:dateTime ;
@@ -64,19 +70,26 @@ bdg:WA1PD159417 {
     bda:WA1PD159417  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159417 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "0c/WA1PD159417.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159417 ;
-        adm:logEntry        bda:LG280842E0154B5E67 , bda:LG2E32F48703AFCAD7 , bda:LG65AF6CEEBDD03ADF , bda:LGBC3A0A8DD8CD72F5 , bda:LGD5BE06C38CAD69A1 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG12F55AB6ED326F7F , bda:LG280842E0154B5E67 , bda:LG2E32F48703AFCAD7 , bda:LG65AF6CEEBDD03ADF , bda:LGBC3A0A8DD8CD72F5 , bda:LGD5BE06C38CAD69A1 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CREA81EFE5DC48858C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366937 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD159417  skos:altLabel  "本教文化随笔"@zh-hans .
     
     bdr:WA1PD159417  a      :Work ;
         skos:altLabel       "bon dang bon po'i rig gzhung skor gyi ched bkod brtsams chos nyung bsdus/ bon bshad po ti phra mo/"@bo-x-ewts , "ben jiao wen hua sui bi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bon bshad po ti phra mo/"@bo-x-ewts , "本教文化随笔"@zh-hans ;
+        :catalogInfo        "Talks and preface of Bon"@en ;
+        :creator            bdr:CREA81EFE5DC48858C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1PD159417 , bdr:W1PD159417 ;

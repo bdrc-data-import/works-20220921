@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1PD159439 {
+    bda:LG17538C21D9F31B0F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-11T16:45:54.501Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, add cat info and subject"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG17A7E50E72DB09A5
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-04-03T12:17:39.953Z"^^xsd:dateTime ;
@@ -50,19 +56,26 @@ bdg:WA1PD159439 {
     bda:WA1PD159439  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159439 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "62/WA1PD159439.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159439 ;
-        adm:logEntry        bda:LG17A7E50E72DB09A5 , bda:LG2A2D6CA48C4895BC , bda:LG350B498996425AF4 , bda:LG798DE1DDB81F3561 , bda:LG7D40A3744E833FBB , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG17538C21D9F31B0F , bda:LG17A7E50E72DB09A5 , bda:LG2A2D6CA48C4895BC , bda:LG350B498996425AF4 , bda:LG798DE1DDB81F3561 , bda:LG7D40A3744E833FBB , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR989F3255EEDFDBE8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366939 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD159439  skos:altLabel  "藏传佛教八关斋戒"@zh-hans .
     
     bdr:WA1PD159439  a      :Work ;
         skos:altLabel       "zang chuan fo jiao ba guan zhai jie"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "smyung gnas kyi rnam gzhag"@bo-x-ewts , "藏传佛教八关斋戒"@zh-hans ;
+        :catalogInfo        "Instructions of ritual details on the practice of the fasting"@en ;
+        :creator            bdr:CR989F3255EEDFDBE8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 ;

@@ -17,6 +17,12 @@ bdg:WA1PD159415 {
         adm:logDate         "2017-05-21T21:38:09.029Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG6C563436D7427C22
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-11T16:45:51.421Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, add cat info and subject"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGA227F9818F84297A
         a                   adm:UpdateData ;
         adm:logDate         "2016-11-24T05:06:05.975Z"^^xsd:dateTime ;
@@ -69,17 +75,24 @@ bdg:WA1PD159415 {
     bda:WA1PD159415  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159415 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "1a/WA1PD159415.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159415 ;
-        adm:logEntry        bda:LG5C5C9FDBBE5A55A6 , bda:LGA227F9818F84297A , bda:LGA5A2C002F906B34A , bda:LGA6880DA76AC78CD5 , bda:LGD584CDE499025B58 , bda:LGF84A6D20F8250F3F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG5C5C9FDBBE5A55A6 , bda:LG6C563436D7427C22 , bda:LGA227F9818F84297A , bda:LGA5A2C002F906B34A , bda:LGA6880DA76AC78CD5 , bda:LGD584CDE499025B58 , bda:LGF84A6D20F8250F3F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRCB6696B34ECA6851
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG010091 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1PD159415  a      :Work ;
         skos:altLabel       "san yu xin ci dian（ying zang han）"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "skad gsum tshig mdzod gsar pa/"@bo-x-ewts , "New Trilingual Dictionary (English-Tibetan-Chinese)"@en , "三语新词典 （英藏汉）"@zh-hans ;
+        :catalogInfo        "New Trilingual Dictionary (English-Tibetan-Chinese) Word Definitions sentence Examples"@en ;
+        :creator            bdr:CRCB6696B34ECA6851 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn , bdr:LangZh ;
         :workGenre          bdr:T220 , bdr:T240 ;

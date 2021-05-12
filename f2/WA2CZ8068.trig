@@ -30,6 +30,12 @@ bdg:WA2CZ8068 {
         adm:logMessage      "Added Author, cat, pub info"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG7351468C1F5FCCEE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-11T09:57:13.957Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG7B2D1C3FEB461D58
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2010-01-12T16:24:06.298Z"^^xsd:dateTime ;
@@ -76,18 +82,24 @@ bdg:WA2CZ8068 {
     bda:WA2CZ8068  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2CZ8068 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "f2/WA2CZ8068.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2CZ8068 ;
-        adm:logEntry        bda:LG0261483CB7F1F7DD , bda:LG23ABCF9C97B34B55 , bda:LG2B03C0965D2874AF , bda:LG7B2D1C3FEB461D58 , bda:LG88C113CC6B1486F7 , bda:LGA3C53C85DB349DF9 , bda:LGC1F99DA8CE66ADFB , bda:LGCADF0D91DE8EA74E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0261483CB7F1F7DD , bda:LG23ABCF9C97B34B55 , bda:LG2B03C0965D2874AF , bda:LG7351468C1F5FCCEE , bda:LG7B2D1C3FEB461D58 , bda:LG88C113CC6B1486F7 , bda:LGA3C53C85DB349DF9 , bda:LGC1F99DA8CE66ADFB , bda:LGCADF0D91DE8EA74E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR2965D1512F2A2EB2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75562 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2CZ8068  a        :Work ;
         skos:altLabel       "me bya lo khyab bdag rdo rje sems dpa' chen po paN chen chos kyi rgyal pos gangs can lha gcig phyag na pad+mo ngur smrig gar gyi rnam par rol pa rgyal ba'i dbang po thams cad mkhyen gzigs chen por byang chub bde lam gyi khrid lung lung rigs kyi mtha' dpyod dang bcas te rgyas par stsal skabs gzhung gi tshig zin la mi gsal ba'i gsung bshad phal mo che'i zin bris bde lam yang gsal sgron me/"@bo-x-ewts ;
         skos:prefLabel      "byang chub bde lam gyi zin bris yang gsal sgron me/"@bo-x-ewts ;
         :catalogInfo        "Notes on the 1777 Panchen Lama lectures on the Lamrim Delam to Dalai Lama 08 in Lhasa. Signed by Mithung Kukye."@en ;
+        :creator            bdr:CR2965D1512F2A2EB2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1478 , bdr:T238 ;

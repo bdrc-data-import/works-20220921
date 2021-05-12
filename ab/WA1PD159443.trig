@@ -24,6 +24,12 @@ bdg:WA1PD159443 {
         adm:logMessage      "accessioned"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG73A660CD7A6151EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-11T16:45:56.135Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, add cat info and subject"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG9193AF08FA773A3D
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-21T22:58:11.113Z"^^xsd:dateTime ;
@@ -64,16 +70,23 @@ bdg:WA1PD159443 {
     bda:WA1PD159443  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159443 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "ab/WA1PD159443.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159443 ;
-        adm:logEntry        bda:LG29C2D4B6833259BA , bda:LG5EA72F6826FD6ACD , bda:LG9193AF08FA773A3D , bda:LGEC9687265BC2F1BD , bda:LGF309A175284427EC , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG29C2D4B6833259BA , bda:LG5EA72F6826FD6ACD , bda:LG73A660CD7A6151EC , bda:LG9193AF08FA773A3D , bda:LGEC9687265BC2F1BD , bda:LGF309A175284427EC , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR3EBDEEF4D4179458
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366942 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1PD159443  a      :Work ;
         skos:prefLabel      "kirti'i ma dgon kA la ri'i ngo sprod shel gyi me long /"@bo-x-ewts ;
+        :catalogInfo        "History of Kirti kA la ri Monastery"@en ;
+        :creator            bdr:CR3EBDEEF4D4179458 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;
