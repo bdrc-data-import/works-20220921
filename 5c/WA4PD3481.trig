@@ -29,6 +29,12 @@ bdg:WA4PD3481 {
         adm:logDate         "2018-03-21T15:55:34.972Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGA7814D4506136D2D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-05-12T12:54:47.309Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGB78ED6E6A4176243
         a                   adm:UpdateData ;
         adm:logDate         "2016-11-06T11:56:33.562Z"^^xsd:dateTime ;
@@ -46,6 +52,12 @@ bdg:WA4PD3481 {
         adm:logMessage      "gsar du bcug"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGE0CF976C35A5FE96
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-12T12:52:15.351Z"^^xsd:dateTime ;
+        adm:logMessage      "removed old scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGEF5728C459E003DB
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-06T12:04:51.87Z"^^xsd:dateTime ;
@@ -55,20 +67,24 @@ bdg:WA4PD3481 {
     bda:WA4PD3481  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4PD3481 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "5c/WA4PD3481.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4PD3481 ;
-        adm:logEntry        bda:LG04E0BA203322260E , bda:LG1E18BDDBC8BE0863 , bda:LG4E5891918DF9D22E , bda:LGB78ED6E6A4176243 , bda:LGBB6EECE41EB4E1F4 , bda:LGBCD8D39E388C58E5 , bda:LGEF5728C459E003DB ;
+        adm:logEntry        bda:LG04E0BA203322260E , bda:LG1E18BDDBC8BE0863 , bda:LG4E5891918DF9D22E , bda:LGA7814D4506136D2D , bda:LGB78ED6E6A4176243 , bda:LGBB6EECE41EB4E1F4 , bda:LGBCD8D39E388C58E5 , bda:LGE0CF976C35A5FE96 , bda:LGEF5728C459E003DB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA4PD3481  a        :Work ;
+    bdr:MW4PD3481  skos:altLabel  "六大集成之般若集"@zh-hans .
+    
+    bdr:WA4PD3481  a        :SerialMember , :Work ;
         skos:altLabel       "dpal sa skya'i bzhed gzhung pod chen drug gam grags chen bco brgyad las/ phar phyin skor/"@bo-x-ewts , "liu da ji cheng zhi ban ruo ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "dpal sa skya'i pod chen drug las/ phar phyin skor/"@bo-x-ewts , "六大集成之般若集"@zh-hans ;
+        :catalogInfo        "Comprehensive collection of various philosophical doctrines of 18 reknowned scriptures of the Sakya order."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS4PD3481 ;
         :workGenre          bdr:T1081 ;
         :workHasInstance    bdr:MW4PD3481 , bdr:W4PD3481 ;
-        :workIsAbout        bdr:T617 .
+        :workIsAbout        bdr:T1KG4314 , bdr:T617 .
 }

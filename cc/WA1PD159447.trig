@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1PD159447 {
+    bda:LG4577ABF31EB8F9F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-12T16:56:11.342Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,editor, add cat info and spelings"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG887C5A7DE705DA49
         a                   adm:UpdateData ;
         adm:logDate         "2016-11-24T05:28:41.035Z"^^xsd:dateTime ;
@@ -64,17 +70,24 @@ bdg:WA1PD159447 {
     bda:WA1PD159447  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159447 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "cc/WA1PD159447.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159447 ;
-        adm:logEntry        bda:LG887C5A7DE705DA49 , bda:LG9C03D0F54DE1DDDE , bda:LGAB0EE41FDE572B1B , bda:LGC2AB6D171D7957BA , bda:LGCBC88348F15204E4 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG4577ABF31EB8F9F6 , bda:LG887C5A7DE705DA49 , bda:LG9C03D0F54DE1DDDE , bda:LGAB0EE41FDE572B1B , bda:LGC2AB6D171D7957BA , bda:LGCBC88348F15204E4 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR3E1CF22EB8D01938
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG18514 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1PD159447  a      :Work ;
         skos:altLabel       "dge tshul slong gi bslab bya 'dul ba blo gsar 'jug pa'i them skas/"@bo-x-ewts ;
         skos:prefLabel      "'dul ba blo gsar 'jug pa'i them skas/"@bo-x-ewts ;
+        :catalogInfo        "On the vows to be observed by the novice monk, the Sramanerasiksapad"@en ;
+        :creator            bdr:CR3E1CF22EB8D01938 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1PD159447 , bdr:W1PD159447 ;

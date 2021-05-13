@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1PD159522 {
+    bda:LG6CCAD6DF7E932E3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-12T16:56:13.818Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,editor, add cat info and spelings"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG83B1C4C7BD63A8D7
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-04-18T16:20:48.199Z"^^xsd:dateTime ;
@@ -64,11 +70,11 @@ bdg:WA1PD159522 {
     bda:WA1PD159522  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159522 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "6f/WA1PD159522.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159522 ;
-        adm:logEntry        bda:LG83B1C4C7BD63A8D7 , bda:LG8C193FFC09C40087 , bda:LG8EE47DFC3DD43ACD , bda:LGA5B19A29A467BDD6 , bda:LGFC49FD4FA4693A17 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG6CCAD6DF7E932E3F , bda:LG83B1C4C7BD63A8D7 , bda:LG8C193FFC09C40087 , bda:LG8EE47DFC3DD43ACD , bda:LGA5B19A29A467BDD6 , bda:LGFC49FD4FA4693A17 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -77,6 +83,7 @@ bdg:WA1PD159522 {
     bdr:WA1PD159522  a      :SerialMember , :Work ;
         skos:altLabel       "2011 nian du xiao shuo"@zh-latn-pinyin ;
         skos:prefLabel      "2011 lo'i sgrung gtam/"@bo-x-ewts , "2011年度小说"@zh-hans ;
+        :catalogInfo        "Collection of storeis from 2011"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1PD159521 ;

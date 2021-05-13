@@ -18,6 +18,11 @@ bdg:WA1KG24880 {
         adm:logMessage      "completed cataloging and released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG227247EAC0741CA0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-12T17:38:27.815Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG4BC814BA18379FD0
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-29T16:06:05.7Z"^^xsd:dateTime ;
@@ -55,17 +60,25 @@ bdg:WA1KG24880 {
     bda:WA1KG24880  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24880 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "05/WA1KG24880.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24880 ;
-        adm:logEntry        bda:LG138D494433740241 , bda:LG4BC814BA18379FD0 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG138D494433740241 , bda:LG227247EAC0741CA0 , bda:LG4BC814BA18379FD0 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR76A96DF9595BD8EE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228851 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:MW1KG24880  skos:altLabel  "藏医药学史上\"十大名医\"研究"@zh-hans .
+    
     bdr:WA1KG24880  a       :Work ;
-        skos:prefLabel      "bod kyi gso ba rig par mdzad che ba'i mkhas chen bcu'i lo rgyus zhib 'jug"@bo-x-ewts ;
-        :catalogInfo        "Studies on history of the ten great accomplishment scholars of Tibetan medicine. Biography of ten renown masters who have contributed in the advancement of Tibetan traditional Ayurvedic medicine."@en ;
+        skos:prefLabel      "bod kyi gso ba rig par mdzad che ba'i mkhas chen bcu'i lo rgyus zhib 'jug"@bo-x-ewts , "藏医药学史上\"十大名医\"研究"@zh-hans ;
+        :catalogInfo        "Biography of ten renown masters who have contributed in the advancement of Tibetan traditional Ayurvedic medicine."@en ;
+        :creator            bdr:CR76A96DF9595BD8EE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

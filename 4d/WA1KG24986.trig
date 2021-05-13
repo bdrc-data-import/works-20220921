@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG24986 {
+    bda:LG01B8D9BCE55DC36C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-12T17:38:30.81Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG9F9326300E8E38F0
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-30T10:14:28.879Z"^^xsd:dateTime ;
@@ -55,18 +60,24 @@ bdg:WA1KG24986 {
     bda:WA1KG24986  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24986 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "4d/WA1KG24986.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24986 ;
-        adm:logEntry        bda:LG9F9326300E8E38F0 , bda:LGD07FD53CDFAA0468 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG01B8D9BCE55DC36C , bda:LG9F9326300E8E38F0 , bda:LGD07FD53CDFAA0468 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRF34A178108284263
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228937 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG24986  a       :Work ;
         skos:altLabel       "gnam sngon po sa dmar po/ hi ma la ya sa khul gyi sgrung zhig"@bo-x-ewts ;
         skos:prefLabel      "gnam sngon po sa dmar po/"@bo-x-ewts ;
         :catalogInfo        "A story from Himalaya region."@en ;
+        :creator            bdr:CRF34A178108284263 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T216 ;

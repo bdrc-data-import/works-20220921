@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1PD159451 {
+    bda:LG0504176AC63E60C1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-12T16:56:11.79Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author,editor, add cat info and spelings"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG2CF41EEA9539F4E4
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-01-04T17:26:10.599Z"^^xsd:dateTime ;
@@ -66,11 +72,11 @@ bdg:WA1PD159451 {
     bda:WA1PD159451  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159451 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "80/WA1PD159451.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159451 ;
-        adm:logEntry        bda:LG2CF41EEA9539F4E4 , bda:LG67618631B5762A1C , bda:LGA7D84C93F62509FC , bda:LGA9E4ABBE67CF7B91 , bda:LGB2B9F9969419BE15 , bda:LGC43D3D6DCF3A9068 , bda:LGD51C9CDA345FC2D1 , bda:LGD9BFB95B677EDCFB , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0504176AC63E60C1 , bda:LG2CF41EEA9539F4E4 , bda:LG67618631B5762A1C , bda:LGA7D84C93F62509FC , bda:LGA9E4ABBE67CF7B91 , bda:LGB2B9F9969419BE15 , bda:LGC43D3D6DCF3A9068 , bda:LGD51C9CDA345FC2D1 , bda:LGD9BFB95B677EDCFB , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -79,6 +85,7 @@ bdg:WA1PD159451 {
     bdr:WA1PD159451  a      :SerialMember , :Work ;
         skos:altLabel       "rmang gzhi'i skor/"@bo-x-ewts ;
         skos:prefLabel      "dus rabs 21 pa'i bod lugs gso rig dngos tshan slob gso'i 'char 'god slob deb/ nad thog gi skor/"@bo-x-ewts , "21世纪藏医本科教育规划教材- 基础部分［修订本］"@zh-hans ;
+        :catalogInfo        "Collection of experimental textbook for Tibetan Ayurvedic medical study"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1PD159451 ;
