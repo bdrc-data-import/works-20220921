@@ -40,6 +40,12 @@ bdg:WA1PD159531 {
         adm:logDate         "2017-05-21T22:59:10.556Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGCE42A2812D2F3C21
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-13T17:05:47.54Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, cat info and language encoding and subject"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGE539AC965CB1F366
         a                   adm:UpdateData ;
         adm:logDate         "2016-11-25T03:51:09.34Z"^^xsd:dateTime ;
@@ -69,23 +75,30 @@ bdg:WA1PD159531 {
     bda:WA1PD159531  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159531 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "93/WA1PD159531.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159531 ;
-        adm:logEntry        bda:LG31C133F64A177CED , bda:LG3838605FE8DC750C , bda:LG63AEE130081F534E , bda:LG8E4895E639E0A455 , bda:LGC0CC37DDE99B162A , bda:LGE539AC965CB1F366 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG31C133F64A177CED , bda:LG3838605FE8DC750C , bda:LG63AEE130081F534E , bda:LG8E4895E639E0A455 , bda:LGC0CC37DDE99B162A , bda:LGCE42A2812D2F3C21 , bda:LGE539AC965CB1F366 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRDEF6E259C6801563
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366935 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD159531  skos:altLabel  "萨迦格言解读"@zh-hans .
     
     bdr:WA1PD159531  a      :SerialMember , :Work ;
         skos:altLabel       "legs par bshad pa rin po che'i gter gyi tshigs su bcad pa'i 'grel gsar mkhas pa mgu ba'i mchod sprin/"@bo-x-ewts , "sa jia ge yan jie du"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "sa skya legs bshad kyi 'grel gsar mkhas pa mgu ba'i mchod sprin/"@bo-x-ewts , "萨迦格言解读"@zh-hans ;
+        :catalogInfo        "New commentary on Elegant Sayings, by Sakya Pandita"@en ;
+        :creator            bdr:CRDEF6E259C6801563 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1PD159407 ;
-        :workGenre          bdr:T132 , bdr:T245 ;
+        :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW1PD159531 , bdr:W1PD159531 ;
-        :workIsAbout        bdr:G210 .
+        :workIsAbout        bdr:WA11399 .
 }

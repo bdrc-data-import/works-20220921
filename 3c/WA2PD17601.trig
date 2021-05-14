@@ -22,6 +22,12 @@ bdg:WA2PD17601 {
         adm:logDate         "2016-12-01T22:33:19.217Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG97814CCEE8DAC2FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-13T14:41:35.867Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and cat info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGB57840BB2FFE1A0D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-10T02:25:54.82Z"^^xsd:dateTime ;
@@ -50,19 +56,26 @@ bdg:WA2PD17601 {
     bda:WA2PD17601  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17601 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "3c/WA2PD17601.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17601 ;
-        adm:logEntry        bda:LG04D691D06646B32B , bda:LG052ABD8AC53B0007 , bda:LGB57840BB2FFE1A0D , bda:LGF366D0CC4F592DCB , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG04D691D06646B32B , bda:LG052ABD8AC53B0007 , bda:LG97814CCEE8DAC2FE , bda:LGB57840BB2FFE1A0D , bda:LGF366D0CC4F592DCB , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRA28E205071CE8278
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG07604 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW2PD17601  skos:altLabel  "曼巴当增论文集"@zh-hans .
     
     bdr:WA2PD17601  a       :Work ;
         skos:altLabel       "man ba dang zeng lun wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "mgo log dbang chen 'bum gyi sman pa ting 'dzin gyi dpyad rtsom thor bu/"@bo-x-ewts , "曼巴当增论文集"@zh-hans ;
+        :catalogInfo        "Selected writings of physician Tingzin."@en ;
+        :creator            bdr:CRA28E205071CE8278 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;

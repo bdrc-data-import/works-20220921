@@ -28,6 +28,12 @@ bdg:WA1PD159543 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG7383AC59FD2FCC4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-13T17:05:49.502Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, cat info and language encoding and subject"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGBBAEE0EBB01280DB
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-20T21:45:29.225Z"^^xsd:dateTime ;
@@ -62,19 +68,26 @@ bdg:WA1PD159543 {
     bda:WA1PD159543  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159543 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "69/WA1PD159543.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159543 ;
-        adm:logEntry        bda:LG2BD6B848810CE24F , bda:LG2FA69CE308D34814 , bda:LG6F6E202D482DF2B3 , bda:LGBBAEE0EBB01280DB , bda:LGD8CF0238D41542F5 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2BD6B848810CE24F , bda:LG2FA69CE308D34814 , bda:LG6F6E202D482DF2B3 , bda:LG7383AC59FD2FCC4C , bda:LGBBAEE0EBB01280DB , bda:LGD8CF0238D41542F5 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:MW1PD159543  skos:altLabel  "pudlic Health Perspectives on Maternal and Child Health in the Tibetan Context"@en , "藏医妇幼保健"@zh-hans .
+    bdr:CRD3FF48524781306C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:MW1PD159543  skos:altLabel  "藏医妇幼保健"@zh-hans .
     
     bdr:WA1PD159543  a      :SerialMember , :Work ;
         skos:altLabel       "zang yi fu you bao jian"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "ma bu bde srung /"@bo-x-ewts , "pudlic Health Perspectives on Maternal and Child Health in the Tibetan Context"@en , "藏医妇幼保健"@zh-hans ;
+        skos:prefLabel      "ma bu bde srung /"@bo-x-ewts , "藏医妇幼保健"@zh-hans ;
+        :catalogInfo        "Pblic Health Perspectives on Maternal and Child Health in the Tibetan Context"@en ;
+        :creator            bdr:CRD3FF48524781306C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1PD159543 ;

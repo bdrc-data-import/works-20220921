@@ -17,6 +17,12 @@ bdg:WA2PD17394 {
         adm:logDate         "2017-05-10T04:40:44.482Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG5CBCE5F2327CD82C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-13T09:45:27.428Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and editor"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGA71DC9080AD84E1C
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-09-14T11:18:27.85Z"^^xsd:dateTime ;
@@ -45,19 +51,30 @@ bdg:WA2PD17394 {
     bda:WA2PD17394  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17394 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "fe/WA2PD17394.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17394 ;
-        adm:logEntry        bda:LG4B9DB7C7620B9689 , bda:LGA71DC9080AD84E1C , bda:LGED7611C073761769 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG4B9DB7C7620B9689 , bda:LG5CBCE5F2327CD82C , bda:LGA71DC9080AD84E1C , bda:LGED7611C073761769 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR25864BC6BC8CA063
+        a                   :AgentAsCreator ;
+        :agent              bdr:P168 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR81EB2F3AB456C861
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW2PD17394  skos:altLabel  "第一世至第四世班禅大师传"@zh-hans .
     
     bdr:WA2PD17394  a       :SerialMember , :Work ;
         skos:altLabel       "di yi shi zhi di si shi ban chan da shi zhuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "paN chen sku phreng dang po nas sku phreng bzhi pa'i bar gyi rnam thar/"@bo-x-ewts , "第一世至第四世班禅大师传"@zh-hans ;
+        :creator            bdr:CR25864BC6BC8CA063 , bdr:CR81EB2F3AB456C861 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS2PD17394 ;

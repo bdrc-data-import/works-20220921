@@ -29,6 +29,12 @@ bdg:WA1PD159528 {
         adm:logDate         "2017-05-21T22:59:02.124Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG2C0A5108E7F1244E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-13T17:05:46.234Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, cat info and language encoding and subject"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG2C1D904918020445
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-04-18T16:21:17.127Z"^^xsd:dateTime ;
@@ -69,11 +75,11 @@ bdg:WA1PD159528 {
     bda:WA1PD159528  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159528 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "7d/WA1PD159528.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159528 ;
-        adm:logEntry        bda:LG096EE9D4B62E6059 , bda:LG2634C1A1B52B9868 , bda:LG2804F917B1D5C51A , bda:LG2C1D904918020445 , bda:LGCD5CDF523F61367A , bda:LGFAE1C11B1271B1F5 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG096EE9D4B62E6059 , bda:LG2634C1A1B52B9868 , bda:LG2804F917B1D5C51A , bda:LG2C0A5108E7F1244E , bda:LG2C1D904918020445 , bda:LGCD5CDF523F61367A , bda:LGFAE1C11B1271B1F5 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -82,6 +88,7 @@ bdg:WA1PD159528 {
     bdr:WA1PD159528  a      :SerialMember , :Work ;
         skos:altLabel       "kou shu dang dai xi zang di yi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "deng rabs bod ljongs kyi ang dang po'i skor gyi ngag brjod/"@bo-x-ewts , "口述当代西藏第一"@zh-hans ;
+        :catalogInfo        "Collection of short life stories of oral traditions from insaide Tibet"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC368 ;

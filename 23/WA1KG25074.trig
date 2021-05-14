@@ -18,6 +18,12 @@ bdg:WA1KG25074 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG86FFFB1522D27764
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-13T10:42:33.193Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGCB944358FAE5683A
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-19T10:33:11.588Z"^^xsd:dateTime ;
@@ -41,18 +47,24 @@ bdg:WA1KG25074 {
     bda:WA1KG25074  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25074 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "23/WA1KG25074.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25074 ;
-        adm:logEntry        bda:LG58F6DC0EE7F31196 , bda:LGCB944358FAE5683A , bda:LGIM065AD95F26 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG58F6DC0EE7F31196 , bda:LG86FFFB1522D27764 , bda:LGCB944358FAE5683A , bda:LGIM065AD95F26 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRC7777C30F01FAA79
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1494 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1KG25074  a       :SerialMember , :Work ;
-        skos:altLabel       "gser phreng tshig sdom don rgan slong thabs tshig gi shel mkhar dwangs byed nor bu/"@bo-x-ewts ;
-        skos:prefLabel      "gser phreng tshig sdom shel mkhar dwangs byed nor bu/"@bo-x-ewts ;
+        skos:altLabel       "gser 'phreng tshig sdom don rgan bslong thabs tshig gi shel 'khar dwangs byed nor bu/"@bo-x-ewts , "gser phreng tshig sdom don rgan slong thabs tshig gi shel 'khar dwangs byed nor bu/"@bo-x-ewts ;
+        skos:prefLabel      "gser phreng tshig sdom shel 'khar dwangs byed nor bu/"@bo-x-ewts ;
         :catalogInfo        "Interpretating essence of Abhisamayalankara, path to the perfection of wisdom according to Tsogkapa’s Legshe Sertreng."@en ;
+        :creator            bdr:CRC7777C30F01FAA79 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS140 ;

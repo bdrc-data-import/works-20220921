@@ -39,6 +39,12 @@ bdg:WA1PD159533 {
         adm:logDate         "2016-12-07T05:58:40.787Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG9383945D9586C898
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-13T17:05:48.406Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, cat info and language encoding and subject"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGA55E4CC00E11658C
         a                   adm:UpdateData ;
         adm:logDate         "2017-09-23T17:58:59.529Z"^^xsd:dateTime ;
@@ -74,19 +80,26 @@ bdg:WA1PD159533 {
     bda:WA1PD159533  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159533 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "28/WA1PD159533.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159533 ;
-        adm:logEntry        bda:LG00F5C4A75C1B8A57 , bda:LG0945F3F0C955FE2F , bda:LG340ABD575D912ACC , bda:LG3DAAE38E0D7B6742 , bda:LG6464BA12F4417CCF , bda:LGA55E4CC00E11658C , bda:LGFBF3E47C3CC5E5E0 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG00F5C4A75C1B8A57 , bda:LG0945F3F0C955FE2F , bda:LG340ABD575D912ACC , bda:LG3DAAE38E0D7B6742 , bda:LG6464BA12F4417CCF , bda:LG9383945D9586C898 , bda:LGA55E4CC00E11658C , bda:LGFBF3E47C3CC5E5E0 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRA185940D1FB04152
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG6090 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD159533  skos:altLabel  "藏医历史知识问答"@zh-hans .
     
     bdr:WA1PD159533  a      :Work ;
         skos:altLabel       "zang yi li shi zhi shi wen da"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod kyi gso rig lo rgyus skor gyi dris lan rgya mtshor 'jug pa'i gru gzings/"@bo-x-ewts , "藏医历史知识问答"@zh-hans ;
+        :catalogInfo        "Response to queries on history of Tibetan ayurvedic medicine."@en ;
+        :creator            bdr:CRA185940D1FB04152 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T28 ;

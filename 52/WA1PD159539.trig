@@ -41,6 +41,12 @@ bdg:WA1PD159539 {
         adm:logDate         "2017-09-23T17:59:19.492Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGD98F811B0F079EE3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-13T17:05:49.135Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Author, editor, cat info and language encoding and subject"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGDBE2568E8EE773B6
         a                   adm:UpdateData ;
         adm:logDate         "2016-11-19T02:25:05.668Z"^^xsd:dateTime ;
@@ -75,19 +81,26 @@ bdg:WA1PD159539 {
     bda:WA1PD159539  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159539 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "52/WA1PD159539.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159539 ;
-        adm:logEntry        bda:LG22A4CA2EB6876BE9 , bda:LG3722A887873D89C6 , bda:LG5E241806A51CE3D2 , bda:LG7890B7943408FB2A , bda:LGC438C44FD4F7413D , bda:LGDBE2568E8EE773B6 , bda:LGF7F66FA6A0A18644 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG22A4CA2EB6876BE9 , bda:LG3722A887873D89C6 , bda:LG5E241806A51CE3D2 , bda:LG7890B7943408FB2A , bda:LGC438C44FD4F7413D , bda:LGD98F811B0F079EE3 , bda:LGDBE2568E8EE773B6 , bda:LGF7F66FA6A0A18644 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRDAA47DCDC24A908B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10096 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD159539  skos:altLabel  "律海详释（上下册、修订版）"@zh-hans .
     
     bdr:WA1PD159539  a      :Work ;
         skos:altLabel       "lu hai yang shi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "dam pa'i chos 'dul ba rgya mtsho'i snying po bsdus pa thar 'dod yid kyi mun sel zhes bya ba'i 'grel pa tshig don rab gsal/"@bo-x-ewts , "律海详释（上下册、修订版）"@zh-hans ;
+        :catalogInfo        "Commentary on Vinaya text Dulwa Gyatsho Nyingpo"@en ;
+        :creator            bdr:CRDAA47DCDC24A908B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;
