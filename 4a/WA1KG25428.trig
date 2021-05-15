@@ -24,6 +24,12 @@ bdg:WA1KG25428 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGE33D88AE8970BF9C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-14T16:47:03.043Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -48,18 +54,24 @@ bdg:WA1KG25428 {
     bda:WA1KG25428  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25428 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "4a/WA1KG25428.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25428 ;
-        adm:logEntry        bda:LG02D08592B8D7F106 , bda:LG75A0A9924299A305 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG02D08592B8D7F106 , bda:LG75A0A9924299A305 , bda:LGE33D88AE8970BF9C , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR32409DE85FCE70A9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228945 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG25428  a       :Work ;
         skos:altLabel       "rtsa thang gi co ga/ pir thogs kyi rtsom yig gces bsdus/"@bo-x-ewts ;
         skos:prefLabel      "rtsa thang gi co ga"@bo-x-ewts ;
         :catalogInfo        "Collection of author's literary composition of short stories, prose, poems, and essays."@en ;
+        :creator            bdr:CR32409DE85FCE70A9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1PD128746 , bdr:T258 ;

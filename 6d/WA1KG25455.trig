@@ -18,6 +18,12 @@ bdg:WA1KG25455 {
         adm:logMessage      "completed cataloging and released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG39B326B8A82F96E9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-14T16:48:21.477Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG4507B452F6B7EE93
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-13T10:53:06.093Z"^^xsd:dateTime ;
@@ -48,13 +54,18 @@ bdg:WA1KG25455 {
     bda:WA1KG25455  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25455 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "6d/WA1KG25455.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25455 ;
-        adm:logEntry        bda:LG020F8E086A51CF83 , bda:LG4507B452F6B7EE93 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG020F8E086A51CF83 , bda:LG39B326B8A82F96E9 , bda:LG4507B452F6B7EE93 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR7F4C0C7547A9661D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7367 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW1KG25455  skos:altLabel  "世界童话故事精选"@zh-hans .
     
@@ -62,6 +73,7 @@ bdg:WA1KG25455 {
         skos:altLabel       "'dzam gling byis sgrung grags can gces bsdus/"@bo-x-ewts , "shi jie tong hua gu shi jing xuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "'dzam gling byis pa'i gtam rgyud gces bsdus/"@bo-x-ewts , "世界童话故事精选"@zh-hans ;
         :catalogInfo        "Selection of renowed children's fairy tales from the wolrd."@en ;
+        :creator            bdr:CR7F4C0C7547A9661D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC252 ;

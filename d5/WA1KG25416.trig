@@ -18,6 +18,12 @@ bdg:WA1KG25416 {
         adm:logMessage      "completed cataloging and released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG55C8A50EFE698BD2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-14T16:45:07.057Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG89A4B13ADA509AB7
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-12T16:19:21.458Z"^^xsd:dateTime ;
@@ -41,17 +47,23 @@ bdg:WA1KG25416 {
     bda:WA1KG25416  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25416 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "d5/WA1KG25416.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25416 ;
-        adm:logEntry        bda:LG365DD36D8027CB08 , bda:LG89A4B13ADA509AB7 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG365DD36D8027CB08 , bda:LG55C8A50EFE698BD2 , bda:LG89A4B13ADA509AB7 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR46CFCFF0143EE67D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366912 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG25416  a       :SerialMember , :Work ;
         skos:prefLabel      "yig gzugs 'bri tshul/ yig gzugs mig gi bdud rtsi/"@bo-x-ewts ;
         :catalogInfo        "Tibetan typeface and callagraphic writing."@en ;
+        :creator            bdr:CR46CFCFF0143EE67D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC252 ;

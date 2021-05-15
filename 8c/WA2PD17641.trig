@@ -28,6 +28,12 @@ bdg:WA2PD17641 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG7F51CE8C0B568860
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-14T10:38:29.4Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGA72AFCE3FD62591F
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-02T02:37:40.151Z"^^xsd:dateTime ;
@@ -51,16 +57,37 @@ bdg:WA2PD17641 {
     bda:WA2PD17641  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17641 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "8c/WA2PD17641.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17641 ;
-        adm:logEntry        bda:LG2DD520C050836439 , bda:LG40AE194DFA673532 , bda:LG4EE9D039D769823D , bda:LGA72AFCE3FD62591F , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2DD520C050836439 , bda:LG40AE194DFA673532 , bda:LG4EE9D039D769823D , bda:LG7F51CE8C0B568860 , bda:LGA72AFCE3FD62591F , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR274DCF5E6904A785
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6126 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR8112A2DA8F1B03BF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS15064 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRAEFD873381F02528
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5949 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRDC8AC61DF7201453
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA2PD17641  a       :SerialMember , :Work ;
         skos:prefLabel      "bzang spyod 'grel ba phyogs bsgrigs/"@bo-x-ewts ;
+        :creator            bdr:CR274DCF5E6904A785 , bdr:CR8112A2DA8F1B03BF , bdr:CRAEFD873381F02528 , bdr:CRDC8AC61DF7201453 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS2PD17640 ;

@@ -28,6 +28,12 @@ bdg:WA2PD17639 {
         adm:logDate         "2017-05-11T05:31:34.843Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGD8B2628C6BAB02F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-14T09:17:09.643Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGDE92A2F2E2DFA4FC
         a                   adm:UpdateData ;
         adm:logDate         "2016-12-02T02:41:39.465Z"^^xsd:dateTime ;
@@ -57,19 +63,25 @@ bdg:WA2PD17639 {
     bda:WA2PD17639  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17639 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "c8/WA2PD17639.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17639 ;
-        adm:logEntry        bda:LG8E037743EF686ADC , bda:LG9D5A1DBC0C222C48 , bda:LGAB39CC4C2D0F0FD9 , bda:LGDE92A2F2E2DFA4FC , bda:LGIM206EC9B06D , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG8E037743EF686ADC , bda:LG9D5A1DBC0C222C48 , bda:LGAB39CC4C2D0F0FD9 , bda:LGD8B2628C6BAB02F9 , bda:LGDE92A2F2E2DFA4FC , bda:LGIM206EC9B06D , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR3290DB01CD414DE3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366935 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW2PD17639  skos:altLabel  "雪域历史名人唐卡画传"@zh-hans .
     
     bdr:WA2PD17639  a       :Work ;
         skos:altLabel       "xue yu li shi ming ren tang ka hua zhuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gangs ljongs mi sna grags can gyi lo rgyus mdzad byang /"@bo-x-ewts , "雪域历史名人唐卡画传"@zh-hans ;
+        :creator            bdr:CR3290DB01CD414DE3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

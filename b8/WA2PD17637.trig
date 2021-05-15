@@ -18,6 +18,12 @@ bdg:WA2PD17637 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG3D9A7FD885EBA361
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-14T09:00:30.03Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG854888788A9273DD
         a                   adm:UpdateData ;
         adm:logDate         "2016-12-02T02:49:23.763Z"^^xsd:dateTime ;
@@ -50,19 +56,30 @@ bdg:WA2PD17637 {
     bda:WA2PD17637  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17637 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "b8/WA2PD17637.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17637 ;
-        adm:logEntry        bda:LG14CF40BC7B51FBE3 , bda:LG854888788A9273DD , bda:LGC7D321B6D3BA4E1F , bda:LGFA3884BB331B8433 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG14CF40BC7B51FBE3 , bda:LG3D9A7FD885EBA361 , bda:LG854888788A9273DD , bda:LGC7D321B6D3BA4E1F , bda:LGFA3884BB331B8433 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR1E45FC606B1E2AAC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6265 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR4FA60AB47B336C8C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228514 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW2PD17637  skos:altLabel  "藏历木羊年日历 二O一五年"@zh-hans .
     
     bdr:WA2PD17637  a       :Work ;
         skos:altLabel       "zang li mu yang nian ri li 2015"@zh-latn-pinyin ;
         skos:prefLabel      "rab byung bcu bdun pa'i shing lug lo'i lo tho/ spyi lo 2015lo/"@bo-x-ewts , "藏历木羊年日历 二O一五年"@zh-hans ;
+        :creator            bdr:CR1E45FC606B1E2AAC , bdr:CR4FA60AB47B336C8C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T222 ;
