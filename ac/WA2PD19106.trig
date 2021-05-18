@@ -22,6 +22,12 @@ bdg:WA2PD19106 {
         adm:logDate         "2017-01-17T22:14:54.156Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG54D27AFD2E038183
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-17T14:03:16.199Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG61360FAAAE266AB6
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-21T23:41:52.562Z"^^xsd:dateTime ;
@@ -62,19 +68,25 @@ bdg:WA2PD19106 {
     bda:WA2PD19106  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD19106 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "ac/WA2PD19106.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD19106 ;
-        adm:logEntry        bda:LG23F284E96C40559B , bda:LG43655A20AD6A79B4 , bda:LG61360FAAAE266AB6 , bda:LG6CA7561B5580581A , bda:LG7B74B1B3CA0331EE , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG23F284E96C40559B , bda:LG43655A20AD6A79B4 , bda:LG54D27AFD2E038183 , bda:LG61360FAAAE266AB6 , bda:LG6CA7561B5580581A , bda:LG7B74B1B3CA0331EE , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR0BE698CC29A3F287
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75571 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW2PD19106  skos:altLabel  "世界自然万象"@zh-hans .
     
     bdr:WA2PD19106  a       :SerialMember , :Work ;
         skos:altLabel       "shi jie zi ran wan xiang"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "'dzam gling gi ngo mtshar yul ljongs/"@bo-x-ewts , "世界自然万象"@zh-hans ;
+        :creator            bdr:CR0BE698CC29A3F287 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS2PD19112 ;

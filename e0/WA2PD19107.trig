@@ -27,6 +27,12 @@ bdg:WA2PD19107 {
         adm:logDate         "2016-11-30T21:56:16.261Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG9481271E8E0D5B19
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-17T14:04:44.311Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD6546F4D4894D29E
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-17T22:07:33.275Z"^^xsd:dateTime ;
@@ -62,17 +68,23 @@ bdg:WA2PD19107 {
     bda:WA2PD19107  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD19107 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "e0/WA2PD19107.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD19107 ;
-        adm:logEntry        bda:LG24E8502300C7ECA6 , bda:LG414E901CF34D8E1D , bda:LG4C3ACFE6AFDDBF4A , bda:LGD6546F4D4894D29E , bda:LGF02FBEEED8F09C1C , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG24E8502300C7ECA6 , bda:LG414E901CF34D8E1D , bda:LG4C3ACFE6AFDDBF4A , bda:LG9481271E8E0D5B19 , bda:LGD6546F4D4894D29E , bda:LGF02FBEEED8F09C1C , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR0E3089E8D19D30A6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6662 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2PD19107  a       :SerialMember , :Work ;
         skos:altLabel       "qing zang gao yuan zhen xi ye sheng dong wu"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "mdo dbus mtho sgang gi ri dwags rtsa chen skor/"@bo-x-ewts , "青藏高原珍稀野生动物"@zh-hans ;
+        :creator            bdr:CR0E3089E8D19D30A6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS2PD19112 ;

@@ -23,6 +23,12 @@ bdg:WA2PD19091 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG4F9022C23D7C8EE2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-17T09:30:25.474Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG619532FDE1CE6010
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-17T21:06:26.041Z"^^xsd:dateTime ;
@@ -62,19 +68,25 @@ bdg:WA2PD19091 {
     bda:WA2PD19091  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD19091 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "cf/WA2PD19091.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD19091 ;
-        adm:logEntry        bda:LG10FE0C264800C135 , bda:LG3FC6E2BFDBE061F9 , bda:LG619532FDE1CE6010 , bda:LG9471EAE3F4C8AD75 , bda:LGE5FA30E6ED4E0E3A , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG10FE0C264800C135 , bda:LG3FC6E2BFDBE061F9 , bda:LG4F9022C23D7C8EE2 , bda:LG619532FDE1CE6010 , bda:LG9471EAE3F4C8AD75 , bda:LGE5FA30E6ED4E0E3A , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRF5A6C556FBEEEA27
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7367 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW2PD19091  skos:altLabel  "世界童话故事精选"@zh-hans .
     
     bdr:WA2PD19091  a       :SerialMember , :Work ;
         skos:altLabel       "shi jie tong hua gu shi jing xuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "'dzam gling byis sgrung grags can gces btus/"@bo-x-ewts , "世界童话故事精选"@zh-hans ;
+        :creator            bdr:CRF5A6C556FBEEEA27 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS2PD19112 ;

@@ -27,6 +27,12 @@ bdg:WA2PD17648 {
         adm:logDate         "2016-11-10T02:28:54.058Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGEB4FE422C27679FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-17T09:13:49.283Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and cat info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGEE2EE01AAB6FC97F
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-01T22:41:44.293Z"^^xsd:dateTime ;
@@ -57,16 +63,23 @@ bdg:WA2PD17648 {
     bda:WA2PD17648  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17648 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "fd/WA2PD17648.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17648 ;
-        adm:logEntry        bda:LG1106488ED8404F13 , bda:LG31649E086A34CE94 , bda:LGBAE6C031CCB3664E , bda:LGEE2EE01AAB6FC97F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1106488ED8404F13 , bda:LG31649E086A34CE94 , bda:LGBAE6C031CCB3664E , bda:LGEB4FE422C27679FC , bda:LGEE2EE01AAB6FC97F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRD170C285A19BF971
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75570 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA2PD17648  a       :Work ;
         skos:prefLabel      "rgya kong rig 'dzin mthar phyin gyis lam sang bris pa'i snyan rtsom/"@bo-x-ewts ;
+        :catalogInfo        "A collection of poem composed by Gyakong Rikzin Tharchin."@en ;
+        :creator            bdr:CRD170C285A19BF971 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2PD17648 , bdr:W2PD17648 ;

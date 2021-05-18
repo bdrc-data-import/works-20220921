@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG25485 {
+    bda:LG664C95978FCFE214
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-17T19:54:50.966Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG9F3B8D67B19F9928
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-13T12:44:43.771Z"^^xsd:dateTime ;
@@ -48,17 +54,23 @@ bdg:WA1KG25485 {
     bda:WA1KG25485  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25485 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "3a/WA1KG25485.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25485 ;
-        adm:logEntry        bda:LG9F3B8D67B19F9928 , bda:LGFF927DE9ADB2DA64 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG664C95978FCFE214 , bda:LG9F3B8D67B19F9928 , bda:LGFF927DE9ADB2DA64 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRE0D3247C0DF42463
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7459 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG25485  a       :SerialMember , :Work ;
         skos:prefLabel      "shes bya dris brgya ba/ sa rgyus shes bya/"@bo-x-ewts ;
         :catalogInfo        "On world geography and admosphere education in questions and answers format."@en ;
+        :creator            bdr:CRE0D3247C0DF42463 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC252 ;
