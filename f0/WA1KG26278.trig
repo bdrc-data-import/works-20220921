@@ -24,6 +24,12 @@ bdg:WA1KG26278 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGD10668253C756292
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-18T17:15:43.919Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -41,13 +47,18 @@ bdg:WA1KG26278 {
     bda:WA1KG26278  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG26278 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f0/WA1KG26278.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG26278 ;
-        adm:logEntry        bda:LGB2A7F40B26FBFF6B , bda:LGCC6A18BA56F594A3 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LGB2A7F40B26FBFF6B , bda:LGCC6A18BA56F594A3 , bda:LGD10668253C756292 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR3ED9AAA676AA54D9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75571 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW1KG26278  skos:altLabel  "中国名山胜地"@zh-hans .
     
@@ -55,6 +66,7 @@ bdg:WA1KG26278 {
         skos:altLabel       "zhong guo ming shan sheng di"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "krung go'i ngo mtshar yul ljongs/"@bo-x-ewts , "中国名山胜地"@zh-hans ;
         :catalogInfo        "Collection of writings on wondrous scenery in China."@en ;
+        :creator            bdr:CR3ED9AAA676AA54D9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS2PD19112 ;

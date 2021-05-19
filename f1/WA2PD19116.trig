@@ -28,6 +28,12 @@ bdg:WA2PD19116 {
         adm:logDate         "2016-11-30T23:26:44.397Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG565C58804BEE5AFC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-18T09:48:55.151Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGAE1189CB29F93A76
         a                   adm:UpdateData ;
         adm:logDate         "2016-12-01T05:44:46.863Z"^^xsd:dateTime ;
@@ -57,16 +63,22 @@ bdg:WA2PD19116 {
     bda:WA2PD19116  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD19116 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "f1/WA2PD19116.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD19116 ;
-        adm:logEntry        bda:LG10B72465D23DD4BB , bda:LG44387CC7F0BD32AD , bda:LG4EA930ED199A3FA6 , bda:LGAE1189CB29F93A76 , bda:LGIM4599A38FCE , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG10B72465D23DD4BB , bda:LG44387CC7F0BD32AD , bda:LG4EA930ED199A3FA6 , bda:LG565C58804BEE5AFC , bda:LGAE1189CB29F93A76 , bda:LGIM4599A38FCE , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRCEBA517B0A8D2B10
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6612 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA2PD19116  a       :Work ;
         skos:prefLabel      "bzo rig lag rtsal she mong rgyas pa la mkho ba'i spris ma gsar pa'i mchod khag gcig"@bo-x-ewts ;
+        :creator            bdr:CRCEBA517B0A8D2B10 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2PD19116 , bdr:W2PD19116 ;

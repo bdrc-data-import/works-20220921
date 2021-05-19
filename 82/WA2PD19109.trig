@@ -22,6 +22,12 @@ bdg:WA2PD19109 {
         adm:logDate         "2017-01-17T22:45:47.971Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG717363D7566E8C6E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-18T09:06:04.37Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG9D241577D9BE17FD
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-17T22:48:42.842Z"^^xsd:dateTime ;
@@ -62,19 +68,25 @@ bdg:WA2PD19109 {
     bda:WA2PD19109  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD19109 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "82/WA2PD19109.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD19109 ;
-        adm:logEntry        bda:LG0A0BFD85FECAF0DA , bda:LG563E8B430BDC52A7 , bda:LG9D241577D9BE17FD , bda:LGA54EC4554426C5CE , bda:LGA9162EAA6E4701A7 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0A0BFD85FECAF0DA , bda:LG563E8B430BDC52A7 , bda:LG717363D7566E8C6E , bda:LG9D241577D9BE17FD , bda:LGA54EC4554426C5CE , bda:LGA9162EAA6E4701A7 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR26D7CE6217E58214
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG26413 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW2PD19109  skos:altLabel  "唐卡绘画技法"@zh-hans .
     
     bdr:WA2PD19109  a       :SerialMember , :Work ;
         skos:altLabel       "tang ka hui hua ji fa"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "thang ga 'bri tshul/"@bo-x-ewts , "唐卡绘画技法"@zh-hans ;
+        :creator            bdr:CR26D7CE6217E58214 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS2PD19112 ;

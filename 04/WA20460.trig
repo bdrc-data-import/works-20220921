@@ -25,14 +25,20 @@ bdg:WA20460 {
         adm:logWho          bdu:U00016 .
     
     bda:LG89C694B01D7B4AAE
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-18T06:56:21.266Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGE427103AA651CBD6
         a                   adm:UpdateData ;
         adm:logDate         "2013-01-23T15:41:33.541Z"^^xsd:dateTime ;
         adm:logMessage      "released from onhold"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGE65A86B2ADBB27D9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
@@ -72,17 +78,17 @@ bdg:WA20460 {
     bda:WA20460  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20460 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "04/WA20460.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20460 ;
-        adm:logEntry        bda:LG0C85F0D80AFA08D4 , bda:LG36604DA9AD2C6886 , bda:LG89C694B01D7B4AAE , bda:LGE427103AA651CBD6 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG0C85F0D80AFA08D4 , bda:LG36604DA9AD2C6886 , bda:LG89C694B01D7B4AAE , bda:LGE427103AA651CBD6 , bda:LGE65A86B2ADBB27D9 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE65A86B2ADBB27D9
+    bdr:CR4AF24D84119B026E
         a                   :AgentAsCreator ;
-        :agent              bdr:P6855 ;
+        :agent              bdr:P00EGS1017951 ;
         :role               bdr:R0ER0019 .
     
     bdr:MW20460  skos:altLabel  "格顿论文集"@zh-hans .
@@ -91,7 +97,7 @@ bdg:WA20460 {
         skos:altLabel       "bod kyi lha mo'i 'khrab gzhung brgyad kyi nang don snying bsdus bstan pa shel dkar phreng ba/"@bo-x-ewts , "ge dun lun wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "lha mo'i 'khrab gzhung gi nang don snying bsdus/"@bo-x-ewts , "格顿论文集"@zh-hans ;
         :catalogInfo        "Brief explanation of eight characters from Tibetan folk operas."@en ;
-        :creator            bdr:CRE65A86B2ADBB27D9 ;
+        :creator            bdr:CR4AF24D84119B026E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW20460 , bdr:W20460 ;

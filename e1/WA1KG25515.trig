@@ -18,6 +18,12 @@ bdg:WA1KG25515 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG2FFB2376A348CF16
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-18T17:09:18.283Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGB44AE26BA3B444FB
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-17T09:43:35.145Z"^^xsd:dateTime ;
@@ -48,17 +54,23 @@ bdg:WA1KG25515 {
     bda:WA1KG25515  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25515 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "e1/WA1KG25515.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25515 ;
-        adm:logEntry        bda:LG0C0519AE1C72B9FD , bda:LGB44AE26BA3B444FB , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0C0519AE1C72B9FD , bda:LG2FFB2376A348CF16 , bda:LGB44AE26BA3B444FB , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR2B5B986675E551A9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228948 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG25515  a       :SerialMember , :Work ;
         skos:prefLabel      "gyang chag"@bo-x-ewts ;
         :catalogInfo        "Collection of short stories and poetry written by Naro."@en ;
+        :creator            bdr:CR2B5B986675E551A9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG14512 ;

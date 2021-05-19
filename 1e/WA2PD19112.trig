@@ -28,6 +28,12 @@ bdg:WA2PD19112 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGEB8A5755B66FDBB5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-18T09:10:16.044Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGEBABC01546F5DBC3
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-21T23:42:09.884Z"^^xsd:dateTime ;
@@ -62,19 +68,25 @@ bdg:WA2PD19112 {
     bda:WA2PD19112  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD19112 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "1e/WA2PD19112.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD19112 ;
-        adm:logEntry        bda:LG08828253504D5E60 , bda:LG84E3BD1ADF673711 , bda:LGDC83400925800C32 , bda:LGEBABC01546F5DBC3 , bda:LGF4C0FF005CF54288 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG08828253504D5E60 , bda:LG84E3BD1ADF673711 , bda:LGDC83400925800C32 , bda:LGEB8A5755B66FDBB5 , bda:LGEBABC01546F5DBC3 , bda:LGF4C0FF005CF54288 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR112405FB2832AB70
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10669 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW2PD19112  skos:altLabel  "魔幻故事"@zh-hans .
     
     bdr:WA2PD19112  a       :SerialMember , :Work ;
         skos:altLabel       "mo huan gu shi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "sgyu 'phrul gtam rgyud/"@bo-x-ewts , "魔幻故事"@zh-hans ;
+        :creator            bdr:CR112405FB2832AB70 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS2PD19112 ;

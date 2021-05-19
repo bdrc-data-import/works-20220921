@@ -24,6 +24,12 @@ bdg:WA1KG25596 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGE7FBBC0C756C13E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-18T17:15:28.936Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -48,17 +54,23 @@ bdg:WA1KG25596 {
     bda:WA1KG25596  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25596 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "11/WA1KG25596.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25596 ;
-        adm:logEntry        bda:LG474921E492B369A5 , bda:LGB9E0EC636F50313F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG474921E492B369A5 , bda:LGB9E0EC636F50313F , bda:LGE7FBBC0C756C13E5 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR4DADDC02E3928071
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228952 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG25596  a       :SerialMember , :Work ;
         skos:prefLabel      "mar ngo'i zla ba/"@bo-x-ewts ;
         :catalogInfo        "A novel written by Gome Tsering Tashi."@en ;
+        :creator            bdr:CR4DADDC02E3928071 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG25533 ;

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG24838 {
+    bda:LG3F4BA2D294EAD1C5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-18T17:06:15.356Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG46C20AB3DC217C5E
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-29T15:28:08.242Z"^^xsd:dateTime ;
@@ -55,17 +61,23 @@ bdg:WA1KG24838 {
     bda:WA1KG24838  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24838 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "d8/WA1KG24838.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24838 ;
-        adm:logEntry        bda:LG46C20AB3DC217C5E , bda:LGF1F4170B2BA81F24 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3F4BA2D294EAD1C5 , bda:LG46C20AB3DC217C5E , bda:LGF1F4170B2BA81F24 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRE810BA31B5D5828C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228839 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG24838  a       :Work ;
         skos:prefLabel      "bod kyi sangs rgyas chos lugs kyi byung 'phel lo rgyus/"@bo-x-ewts ;
         :catalogInfo        "History of Tibetan Buddhism and its development."@en ;
+        :creator            bdr:CRE810BA31B5D5828C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

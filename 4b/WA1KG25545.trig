@@ -24,6 +24,12 @@ bdg:WA1KG25545 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGE9E9E81C0DAFAAD9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-18T17:12:47.462Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -48,18 +54,24 @@ bdg:WA1KG25545 {
     bda:WA1KG25545  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25545 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "4b/WA1KG25545.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25545 ;
-        adm:logEntry        bda:LG3A97237B42E15F14 , bda:LG42518FD2F848BD63 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3A97237B42E15F14 , bda:LG42518FD2F848BD63 , bda:LGE9E9E81C0DAFAAD9 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR874856CADB8C13DD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75487 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG25545  a       :Work ;
         skos:altLabel       "shes bya dris brgya ba/ krung go'i zhing ljongs dang grong khyer/"@bo-x-ewts ;
         skos:prefLabel      "krung go'i zhing ljongs dang grong khyer/"@bo-x-ewts ;
         :catalogInfo        "On the account of geography, ethnicity and population of China in questions and answers format."@en ;
+        :creator            bdr:CR874856CADB8C13DD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 ;
