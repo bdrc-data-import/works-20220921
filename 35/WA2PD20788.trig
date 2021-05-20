@@ -29,19 +29,31 @@ bdg:WA2PD20788 {
         adm:logDate         "2017-08-11T05:47:18.169Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGD28AB2D0813B141C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-19T14:23:52.713Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA2PD20788  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD20788 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "35/WA2PD20788.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD20788 ;
-        adm:logEntry        bda:LG130A0D5506EADD72 , bda:LG1DAF821A007A7903 , bda:LG644B3B25CD80DE68 ;
+        adm:logEntry        bda:LG130A0D5506EADD72 , bda:LG1DAF821A007A7903 , bda:LG644B3B25CD80DE68 , bda:LGD28AB2D0813B141C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR0AB8131139758951
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7843 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA2PD20788  a       :Work ;
         skos:prefLabel      "rdo rje khro bo nag po'i cho ga sogs mdos sna'i skor/"@bo-x-ewts ;
+        :creator            bdr:CR0AB8131139758951 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T977 , bdr:T98 ;

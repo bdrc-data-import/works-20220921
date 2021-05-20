@@ -17,6 +17,12 @@ bdg:WA2PD19201 {
         adm:logDate         "2016-12-01T22:05:18.921Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG39BC35B53B307F12
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-19T09:17:51.962Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG6081E8A7804D2727
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-22T00:01:41.028Z"^^xsd:dateTime ;
@@ -51,17 +57,28 @@ bdg:WA2PD19201 {
     bda:WA2PD19201  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD19201 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "1e/WA2PD19201.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD19201 ;
-        adm:logEntry        bda:LG0DCF59AAEEA19F4D , bda:LG6081E8A7804D2727 , bda:LG7F27EA9972747D05 , bda:LG83A0B7852CCE951A , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG0DCF59AAEEA19F4D , bda:LG39BC35B53B307F12 , bda:LG6081E8A7804D2727 , bda:LG7F27EA9972747D05 , bda:LG83A0B7852CCE951A , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR2AEB77020D3B7BCD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8133 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CR76F21D647129CC23
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6006 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2PD19201  a       :Work ;
         skos:prefLabel      "rje dbon pd+ma kun grol rnam rgyal gyi rang rnam/"@bo-x-ewts ;
         :catalogInfo        "Autobiography of a Nyingma master Padma Kundrol Namgyal."@en ;
+        :creator            bdr:CR2AEB77020D3B7BCD , bdr:CR76F21D647129CC23 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;

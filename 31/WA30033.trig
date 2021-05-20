@@ -25,6 +25,12 @@ bdg:WA30033 {
         adm:logWho          bdu:U00016 .
     
     bda:LGEAF536608EC5B83B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-19T14:37:30.758Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGF0B4589F2A86A1F1
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -45,13 +51,18 @@ bdg:WA30033 {
     bda:WA30033  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30033 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "31/WA30033.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30033 ;
-        adm:logEntry        bda:LG1F5314C61E952909 , bda:LGA881F3C7080E8474 , bda:LGEAF536608EC5B83B , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG1F5314C61E952909 , bda:LGA881F3C7080E8474 , bda:LGEAF536608EC5B83B , bda:LGF0B4589F2A86A1F1 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRCE80AC6F2907B4CF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10058 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW30033  skos:altLabel  "散文卷"@zh-hans .
     
@@ -59,6 +70,7 @@ bdg:WA30033 {
         skos:altLabel       "san wen juan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "lhug rtsom pad+ma'i ze'u 'bru/"@bo-x-ewts , "散文卷"@zh-hans ;
         :catalogInfo        "Collection of prose writings previously published in sbrang char journal (1981-2001)."@en ;
+        :creator            bdr:CRCE80AC6F2907B4CF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS28829 ;

@@ -19,14 +19,20 @@ bdg:WA30032 {
         adm:logWho          bdu:U00001 .
     
     bda:LG6FAB4ECBA94FCCA9
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-19T14:31:50.82Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LGBA5840368A6850D2
         a                   adm:UpdateData ;
         adm:logDate         "2013-03-20T16:52:09.583Z"^^xsd:dateTime ;
         adm:logMessage      "added contain"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LGF48A06BD76DCC2A2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGFF8412DAD536E82F
         a                   adm:ScanRequestCreation ;
@@ -72,19 +78,19 @@ bdg:WA30032 {
     bda:WA30032  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30032 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "ca/WA30032.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30032 ;
-        adm:logEntry        bda:LG55B35A5B98F0CD87 , bda:LG6FAB4ECBA94FCCA9 , bda:LGBA5840368A6850D2 , bda:LGFF8412DAD536E82F , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG55B35A5B98F0CD87 , bda:LG6FAB4ECBA94FCCA9 , bda:LGBA5840368A6850D2 , bda:LGF48A06BD76DCC2A2 , bda:LGFF8412DAD536E82F , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:MW30032  skos:altLabel  "literature selections of henan county"@en .
+    bdr:MW30032  skos:altLabel  "Rma-lho Sog-rdzoṅ gi rtsom rig brtsams chos bdams bsgrigs /Tshe-riṅ-don-ʼgrub daṅ Bde-skyid-sgrol-mas bsgrigs."@en-x-mixed .
     
     bdr:WA30032  a          :Work ;
-        skos:altLabel       "Rma-lho Sog-rdzoṅ gi rtsom rig brtsams chos bdams bsgrigs /Tshe-riṅ-don-ʼgrub daṅ Bde-skyid-sgrol-mas bsgrigs."@en-x-mixed ;
-        skos:prefLabel      "rma lho sog rdzong gi rtsom rig brtsams chos bdams bsgrigs/"@bo-x-ewts , "literature selections of henan county"@en ;
+        skos:prefLabel      "rma lho sog rdzong gi rtsom rig brtsams chos bdams bsgrigs/"@bo-x-ewts , "Rma-lho Sog-rdzoṅ gi rtsom rig brtsams chos bdams bsgrigs /Tshe-riṅ-don-ʼgrub daṅ Bde-skyid-sgrol-mas bsgrigs."@en-x-mixed ;
+        :catalogInfo        "literary writings selection from Henan county."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW30032 , bdr:W30032 ;

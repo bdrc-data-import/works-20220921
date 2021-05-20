@@ -33,6 +33,12 @@ bdg:WA2PD19891 {
         adm:logDate         "2016-12-16T03:20:16.072Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGDE881699E3E0A89F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-19T10:03:02.337Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and cat info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -43,16 +49,23 @@ bdg:WA2PD19891 {
     bda:WA2PD19891  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD19891 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "80/WA2PD19891.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD19891 ;
-        adm:logEntry        bda:LG3ADC97E1B2B6631B , bda:LG45E9F4BCA8738676 , bda:LG578B7245ECB2B5C3 , bda:LG792A0A6F13504320 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3ADC97E1B2B6631B , bda:LG45E9F4BCA8738676 , bda:LG578B7245ECB2B5C3 , bda:LG792A0A6F13504320 , bda:LGDE881699E3E0A89F , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR99AB6745C5AB0882
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75578 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA2PD19891  a       :Work ;
         skos:prefLabel      "rnam shes 'khyams po'i myong byang /"@bo-x-ewts ;
+        :catalogInfo        "Colletion of poetry composed Kelsang Nyima."@en ;
+        :creator            bdr:CR99AB6745C5AB0882 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2PD19891 , bdr:W2PD19891 ;

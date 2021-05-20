@@ -23,6 +23,12 @@ bdg:WA2PD19374 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG5D5E93DB409FA549
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-19T09:28:39.865Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG7BE90C494EC6958D
         a                   adm:UpdateData ;
         adm:logDate         "2017-09-25T10:03:52.074Z"^^xsd:dateTime ;
@@ -50,16 +56,23 @@ bdg:WA2PD19374 {
     bda:WA2PD19374  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD19374 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "33/WA2PD19374.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD19374 ;
-        adm:logEntry        bda:LG1324D06CE8E9F624 , bda:LG4247586BCCAA2804 , bda:LG7BE90C494EC6958D , bda:LGDA198A73E4F9579A , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1324D06CE8E9F624 , bda:LG4247586BCCAA2804 , bda:LG5D5E93DB409FA549 , bda:LG7BE90C494EC6958D , bda:LGDA198A73E4F9579A , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR44B0EA3573C2EEF1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7774 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA2PD19374  a       :SerialMember , :Work ;
         skos:prefLabel      "rgyal sras lag len gyi zin bris smra seng chos rje'i zhal khrid/"@bo-x-ewts ;
+        :catalogInfo        "A note on the thirty seven practices of Boddhisatva way of life."@en ;
+        :creator            bdr:CR44B0EA3573C2EEF1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1017177 ;
