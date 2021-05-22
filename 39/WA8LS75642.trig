@@ -11,43 +11,48 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA8LS75641 {
-    bda:LG4F50356F96DFB3BB
+bdg:WA8LS75642 {
+    bda:LG09D146208F529439
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2021-05-21T13:54:18.827Z"^^xsd:dateTime ;
+        adm:logDate         "2021-05-21T09:08:49.663Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG831F5B82C102EF68
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-05-21T13:53:41.264Z"^^xsd:dateTime ;
-        adm:logMessage      "volume number edited"@en ;
+    bda:LG1887250E536C9F7A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-21T13:58:26.78Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
-    bda:WA8LS75641  a       adm:AdminData ;
+    bda:LG9063E17B9A7893C4
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-21T09:06:26.26Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:WA8LS75642  a       adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA8LS75641 ;
-        adm:facetIndex      4 ;
-        adm:gitPath         "8e/WA8LS75641.trig" ;
+        adm:adminAbout      bdr:WA8LS75642 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "39/WA8LS75642.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA8LS75641 ;
-        adm:logEntry        bda:LG4F50356F96DFB3BB , bda:LG831F5B82C102EF68 ;
+        adm:graphId         bdg:WA8LS75642 ;
+        adm:logEntry        bda:LG09D146208F529439 , bda:LG1887250E536C9F7A , bda:LG9063E17B9A7893C4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR62C59D7D2D65564A
+    bdr:CR27B45D6C3E10EC63
         a                   :AgentAsCreator ;
-        :agent              bdr:P4CZ366940 ;
+        :agent              bdr:P7770 ;
         :role               bdr:R0ER0019 .
     
-    bdr:WA8LS75641  a       :Work ;
-        skos:altLabel       "lha rams pa tre hor zla ba tshe ring gi gsung 'bum/"@bo-x-ewts ;
-        skos:prefLabel      "gsung 'bum/ tre hor zla ba tshe ring /"@bo-x-ewts ;
-        :catalogInfo        "Collected works of Lharampa Trehor Dawa Tshering."@en ;
-        :creator            bdr:CR62C59D7D2D65564A ;
+    bdr:WA8LS75642  a       :Work ;
+        skos:altLabel       "blo gling dge bshes dpal ldan grags pa'i gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ dge bshes dpal ldan grags pa/"@bo-x-ewts ;
+        :catalogInfo        "Collected works of Loling Geshe Palden Dakpa."@en ;
+        :creator            bdr:CR27B45D6C3E10EC63 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW8LS75641 , bdr:W8LS75641 ;
+        :workHasInstance    bdr:MW8LS75642 , bdr:W8LS75642 ;
         :workIsAbout        bdr:T819 .
 }

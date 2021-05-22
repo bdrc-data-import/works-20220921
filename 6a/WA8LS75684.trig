@@ -11,43 +11,49 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA8LS75641 {
-    bda:LG4F50356F96DFB3BB
+bdg:WA8LS75684 {
+    bda:LG1E71E9920AA63742
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2021-05-21T13:54:18.827Z"^^xsd:dateTime ;
+        adm:logDate         "2021-05-21T11:06:04.633Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG831F5B82C102EF68
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-05-21T13:53:41.264Z"^^xsd:dateTime ;
-        adm:logMessage      "volume number edited"@en ;
+    bda:LG3E739535EC1E2B4F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-21T14:08:15.943Z"^^xsd:dateTime ;
+        adm:logMessage      "page number changed"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:WA8LS75641  a       adm:AdminData ;
+    bda:LG9BE02C1DA67CB475
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-05-21T11:05:24.433Z"^^xsd:dateTime ;
+        adm:logMessage      "new work record created"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:WA8LS75684  a       adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA8LS75641 ;
-        adm:facetIndex      4 ;
-        adm:gitPath         "8e/WA8LS75641.trig" ;
+        adm:adminAbout      bdr:WA8LS75684 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "6a/WA8LS75684.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA8LS75641 ;
-        adm:logEntry        bda:LG4F50356F96DFB3BB , bda:LG831F5B82C102EF68 ;
+        adm:graphId         bdg:WA8LS75684 ;
+        adm:logEntry        bda:LG1E71E9920AA63742 , bda:LG3E739535EC1E2B4F , bda:LG9BE02C1DA67CB475 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR62C59D7D2D65564A
+    bdr:CRD3D71B4260DDD2B6
         a                   :AgentAsCreator ;
-        :agent              bdr:P4CZ366940 ;
+        :agent              bdr:P4552 ;
         :role               bdr:R0ER0019 .
     
-    bdr:WA8LS75641  a       :Work ;
-        skos:altLabel       "lha rams pa tre hor zla ba tshe ring gi gsung 'bum/"@bo-x-ewts ;
-        skos:prefLabel      "gsung 'bum/ tre hor zla ba tshe ring /"@bo-x-ewts ;
-        :catalogInfo        "Collected works of Lharampa Trehor Dawa Tshering."@en ;
-        :creator            bdr:CR62C59D7D2D65564A ;
+    bdr:WA8LS75684  a       :Work ;
+        skos:altLabel       "dge slong rnam rgyal dbang chen gyi gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ dge bshes rnam rgyal dbang chen/"@bo-x-ewts ;
+        :catalogInfo        "Collected works of Drepung Phara Geshe Namgyal Wangchen."@en ;
+        :creator            bdr:CRD3D71B4260DDD2B6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW8LS75641 , bdr:W8LS75641 ;
+        :workHasInstance    bdr:MW8LS75684 , bdr:W8LS75684 ;
         :workIsAbout        bdr:T819 .
 }
