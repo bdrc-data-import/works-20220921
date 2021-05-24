@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN26327 {
+    bda:LG23F326D34D56088A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-23T16:56:15.771Z"^^xsd:dateTime ;
+        adm:logMessage      "added C. title"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG83120B640B1B6E41
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2021-04-30T18:32:48.758Z"^^xsd:dateTime ;
@@ -27,23 +33,25 @@ bdg:WA3CN26327 {
     bda:WA3CN26327  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN26327 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "bb/WA3CN26327.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN26327 ;
-        adm:logEntry        bda:LG83120B640B1B6E41 , bda:LG9FB4EC30BE63ACB4 ;
+        adm:logEntry        bda:LG23F326D34D56088A , bda:LG83120B640B1B6E41 , bda:LG9FB4EC30BE63ACB4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR23F326D34D56088A
+    bdr:CR7261C51D212C383B
         a                   :AgentAsCreator ;
         :agent              bdr:P270 ;
         :role               bdr:R0ER0019 .
     
+    bdr:MW3CN26327  skos:altLabel  "巴珠诗文集"@zh-hans .
+    
     bdr:WA3CN26327  a       :Work ;
-        skos:prefLabel      "dpal sprul snyan rtsom/"@bo-x-ewts ;
+        skos:prefLabel      "dpal sprul snyan rtsom/"@bo-x-ewts , "巴珠诗文集"@zh-hans ;
         :catalogInfo        "Collection of poetry by Dza Patrul Rinpoche."@en ;
-        :creator            bdr:CR23F326D34D56088A ;
+        :creator            bdr:CR7261C51D212C383B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN26327 , bdr:W3CN26327 ;
