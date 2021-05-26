@@ -18,9 +18,15 @@ bdg:WA30034 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG2F2E3D5A2BFC5A25
+    bda:LG1920EA3F0B4E5393
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG2F2E3D5A2BFC5A25
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-25T10:49:42.204Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LG2F77516C2687E84C
         a                   adm:UpdateData ;
@@ -45,13 +51,18 @@ bdg:WA30034 {
     bda:WA30034  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30034 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "5c/WA30034.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30034 ;
-        adm:logEntry        bda:LG0BCF0CEFF72FBB73 , bda:LG2F2E3D5A2BFC5A25 , bda:LG2F77516C2687E84C , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG0BCF0CEFF72FBB73 , bda:LG1920EA3F0B4E5393 , bda:LG2F2E3D5A2BFC5A25 , bda:LG2F77516C2687E84C , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRABC39BE688CD3CCC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10058 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW30034  skos:altLabel  "诗歌卷"@zh-hans .
     
@@ -59,6 +70,7 @@ bdg:WA30034 {
         skos:altLabel       "shi ge juan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "snyan rtsom co ka'i drug 'gyur/"@bo-x-ewts , "诗歌卷"@zh-hans ;
         :catalogInfo        "Collection of poetry previous published in the sbrang char journal (1981-2001)."@en ;
+        :creator            bdr:CRABC39BE688CD3CCC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS28829 ;

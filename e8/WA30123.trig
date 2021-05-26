@@ -25,14 +25,20 @@ bdg:WA30123 {
         adm:logWho          bdu:U00001 .
     
     bda:LG228624D450F33EE6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-25T14:08:37.31Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LG32E1E8B7128A675D
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-13T15:12:22.11Z"^^xsd:dateTime ;
         adm:logMessage      "CTC5"@en ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LG3C197B258075F4F9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG7D83B1B1B109133B
         a                   adm:UpdateData ;
@@ -89,13 +95,18 @@ bdg:WA30123 {
     bda:WA30123  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30123 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "e8/WA30123.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30123 ;
-        adm:logEntry        bda:LG0AD7202FFAA6A039 , bda:LG0D979D668DC9DFEA , bda:LG228624D450F33EE6 , bda:LG32E1E8B7128A675D , bda:LG7D83B1B1B109133B , bda:LGB7BA6431ED1ED00B , bda:LGE1440640F89804D7 , bda:LGF5DF6D91A0FEBBF4 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG0AD7202FFAA6A039 , bda:LG0D979D668DC9DFEA , bda:LG228624D450F33EE6 , bda:LG32E1E8B7128A675D , bda:LG3C197B258075F4F9 , bda:LG7D83B1B1B109133B , bda:LGB7BA6431ED1ED00B , bda:LGE1440640F89804D7 , bda:LGF5DF6D91A0FEBBF4 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRB44D0E25654493B4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10193 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW30123  skos:altLabel  "a golden rosary of lives of eminent gurus"@en .
     
@@ -103,6 +114,7 @@ bdg:WA30123 {
         skos:altLabel       "Dkar brgyud gser ʼphreng :a golden rosary of lives of eminent gurus /compiled by Mon-rtse-pa Kun-dgaʼ-dpal-ldan and edited by Kun-dgaʼ-ʼbrug-dpal."@en-x-mixed ;
         skos:prefLabel      "dkar brgyud gser 'phreng /"@bo-x-ewts , "a golden rosary of lives of eminent gurus"@en ;
         :catalogInfo        "Biographies of Bara Kagyu masters of the Drukpa Kagyu order. Manuscript is a rare illustrated version, presumably of the 15th century."@en ;
+        :creator            bdr:CRB44D0E25654493B4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016202 ;
