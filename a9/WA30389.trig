@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30389 {
-    bda:LGA6A715533ADDE37C
+    bda:LG13BA6E15CCEC1465
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGA6A715533ADDE37C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-26T09:40:01.555Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LGEC8D0AC746E1FB53
         a                   adm:ScanRequestCreation ;
@@ -38,11 +44,11 @@ bdg:WA30389 {
     bda:WA30389  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30389 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a9/WA30389.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30389 ;
-        adm:logEntry        bda:LGA6A715533ADDE37C , bda:LGEC8D0AC746E1FB53 , bda:LGEDC08537C5F92A9D , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG13BA6E15CCEC1465 , bda:LGA6A715533ADDE37C , bda:LGEC8D0AC746E1FB53 , bda:LGEDC08537C5F92A9D , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA11826 ;
         adm:status          bda:StatusWithdrawn .
@@ -55,5 +61,6 @@ bdg:WA30389 {
         :catalogInfo        "Collection of Tibetan proverbs."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
         :workIsAbout        bdr:T190 .
 }

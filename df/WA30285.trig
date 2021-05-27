@@ -48,6 +48,10 @@ bdg:WA30285 {
         adm:logMessage      "SCAN COMPLETE"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LG54EDE597E24464BC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG5A7DB7E87D3F071F
         a                   adm:UpdateData ;
         adm:logDate         "2008-03-07T11:54:01.03Z"^^xsd:dateTime ;
@@ -67,8 +71,10 @@ bdg:WA30285 {
         adm:logWhoStr       "add-works-to-PR1LOKESH01-part2" .
     
     bda:LG813636A8072B84A8
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-26T08:56:44.711Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed and added topic"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LG8493BF2ADB2D769C
         a                   adm:UpdateData ;
@@ -103,11 +109,11 @@ bdg:WA30285 {
     bda:WA30285  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30285 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "df/WA30285.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30285 ;
-        adm:logEntry        bda:LG2B797488C741EB84 , bda:LG2BF92E8F58C1A11B , bda:LG2F37DDE92A2EC25F , bda:LG3B745F8413E048C7 , bda:LG421ED0FD60127B75 , bda:LG429693C226F4C2BC , bda:LG5A7DB7E87D3F071F , bda:LG71D83F4DFF0E4F7B , bda:LG7B21F98849A0BE04 , bda:LG813636A8072B84A8 , bda:LG8493BF2ADB2D769C , bda:LGDBAF838706785E74 , bda:LGDD46E83865FD5388 , bda:LGEB86700E7B14BBF8 , bda:LGEDC3EE113E5A67E6 ;
+        adm:logEntry        bda:LG2B797488C741EB84 , bda:LG2BF92E8F58C1A11B , bda:LG2F37DDE92A2EC25F , bda:LG3B745F8413E048C7 , bda:LG421ED0FD60127B75 , bda:LG429693C226F4C2BC , bda:LG54EDE597E24464BC , bda:LG5A7DB7E87D3F071F , bda:LG71D83F4DFF0E4F7B , bda:LG7B21F98849A0BE04 , bda:LG813636A8072B84A8 , bda:LG8493BF2ADB2D769C , bda:LGDBAF838706785E74 , bda:LGDD46E83865FD5388 , bda:LGEB86700E7B14BBF8 , bda:LGEDC3EE113E5A67E6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -117,5 +123,6 @@ bdg:WA30285 {
         :language           bdr:LangBo , bdr:LangMn , bdr:LangSa , bdr:LangZh ;
         :serialMemberOf     bdr:WAS00KG09211 ;
         :workGenre          bdr:T240 ;
-        :workHasInstance    bdr:MW30285 , bdr:W30285 .
+        :workHasInstance    bdr:MW30285 , bdr:W30285 ;
+        :workIsAbout        bdr:T770 .
 }

@@ -13,8 +13,10 @@
 
 bdg:WA30361 {
     bda:LG3135A86501148E22
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-26T09:09:51.076Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LG92C696CDE1D5711B
         a                   adm:UpdateData ;
@@ -40,6 +42,10 @@ bdg:WA30361 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGC0069ED12EEF07FF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
         adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
@@ -64,11 +70,11 @@ bdg:WA30361 {
     bda:WA30361  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30361 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "64/WA30361.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30361 ;
-        adm:logEntry        bda:LG3135A86501148E22 , bda:LG92C696CDE1D5711B , bda:LG92CA6D21CF3155FF , bda:LGADC4E2F00E3D085C , bda:LGBCC56746836BD363 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG3135A86501148E22 , bda:LG92C696CDE1D5711B , bda:LG92CA6D21CF3155FF , bda:LGADC4E2F00E3D085C , bda:LGBCC56746836BD363 , bda:LGC0069ED12EEF07FF , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -77,6 +83,7 @@ bdg:WA30361 {
     bdr:WA30361  a          :Work ;
         skos:altLabel       "zang yu guang bo lun wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod skad rlung 'phrin gyi ched rtsom phyogs bsgrigs/"@bo-x-ewts , "藏语广播论文集"@zh-hans ;
+        :catalogInfo        "Collection of essays written by the member of Tibetan boradcating service."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 , bdr:T1081 ;

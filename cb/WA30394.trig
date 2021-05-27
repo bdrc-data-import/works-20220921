@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30394 {
-    bda:LGEB956C0AB19046BA
+    bda:LG8FC57B6E1F00C722
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGEB956C0AB19046BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-26T09:43:47.592Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
@@ -47,17 +53,18 @@ bdg:WA30394 {
     bda:WA30394  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30394 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "cb/WA30394.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30394 ;
-        adm:logEntry        bda:LGEB956C0AB19046BA , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG8FC57B6E1F00C722 , bda:LGEB956C0AB19046BA , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA30394  a          :Work ;
         skos:altLabel       "a step-by-step analysis of finding the right master and walking in his footsteps"@en ;
         skos:prefLabel      "how to follow a spiritual master"@en ;
+        :catalogInfo        "Analysis of finding a spriritual master."@en ;
         :isRoot             true ;
         :language           bdr:LangEn ;
         :workHasInstance    bdr:MW30394 , bdr:W30394 ;
