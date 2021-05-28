@@ -24,9 +24,15 @@ bdg:WA30517 {
         adm:logMessage      "released from onhold"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGA4E4AB15D1027442
+    bda:LG20630E3E18B7E45A
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGA4E4AB15D1027442
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-27T14:07:56.339Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LGFE50D9DDE89DDDFD
         a                   adm:UpdateData ;
@@ -37,11 +43,11 @@ bdg:WA30517 {
     bda:WA30517  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30517 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "57/WA30517.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30517 ;
-        adm:logEntry        bda:LG088D5411B6C52666 , bda:LG0A6ADB290F73559E , bda:LGA4E4AB15D1027442 , bda:LGFE50D9DDE89DDDFD ;
+        adm:logEntry        bda:LG088D5411B6C52666 , bda:LG0A6ADB290F73559E , bda:LG20630E3E18B7E45A , bda:LGA4E4AB15D1027442 , bda:LGFE50D9DDE89DDDFD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -50,7 +56,7 @@ bdg:WA30517 {
     bdr:WA30517  a          :Work ;
         skos:altLabel       "zang cheng yao jie shao"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "sman sbyor nus pa phyogs bsdus phan bde'i legs bshad/"@bo-x-ewts , "藏成药介绍"@zh-hans ;
-        :catalogInfo        "Effectiveness of Tibetan medicinal pills."@en ;
+        :catalogInfo        "Effectiveness of Tibetan medicinal pills; compiled by research department of Lhasa Tibetan medical college."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW30517 , bdr:W30517 ;

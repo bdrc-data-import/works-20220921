@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG25761 {
+    bda:LG41443AC48B3DF444
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-27T11:53:28.665Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG600A8296BCF22222
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-23T16:58:17.283Z"^^xsd:dateTime ;
@@ -48,17 +53,23 @@ bdg:WA1KG25761 {
     bda:WA1KG25761  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25761 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "5e/WA1KG25761.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25761 ;
-        adm:logEntry        bda:LG600A8296BCF22222 , bda:LGBE22A82F6DA26134 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG41443AC48B3DF444 , bda:LG600A8296BCF22222 , bda:LGBE22A82F6DA26134 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR3F1EE18147B119D3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75282 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG25761  a       :SerialMember , :Work ;
         skos:prefLabel      "'dod khams/"@bo-x-ewts ;
         :catalogInfo        "Selection of contemporary Tibetan literature. A collection of contemporary Tibetan poems written by Kyatsa Yonten Gyatso."@en ;
+        :creator            bdr:CR3F1EE18147B119D3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG18575 ;

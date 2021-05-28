@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG25743 {
+    bda:LGB9B560FFB5F76B7B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-27T11:53:28.08Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGF3A94896DA8CA468
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-15T11:47:05.519Z"^^xsd:dateTime ;
@@ -41,19 +46,25 @@ bdg:WA1KG25743 {
     bda:WA1KG25743  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25743 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "88/WA1KG25743.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25743 ;
-        adm:logEntry        bda:LGF3A94896DA8CA468 , bda:LGFE038C045C5F61AF , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LGB9B560FFB5F76B7B , bda:LGF3A94896DA8CA468 , bda:LGFE038C045C5F61AF , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:MW1KG25743  skos:altLabel  "lost horizone"@en .
+    bdr:CR907909095FB80CC2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228958 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:MW1KG25743  skos:altLabel  "lost horizon"@en .
     
     bdr:WA1KG25743  a       :SerialMember , :Work ;
-        skos:prefLabel      "nub par gyur pa'i zhing khams/"@bo-x-ewts , "lost horizone"@en ;
-        :catalogInfo        "Tibetan translation of James Hilton's novel \"Lost Horizone\"."@en ;
+        skos:prefLabel      "nub par gyur pa'i zhing khams/"@bo-x-ewts , "lost horizon"@en ;
+        :catalogInfo        "Tibetan translation of James Hilton's novel \"Lost Horizon\"."@en ;
+        :creator            bdr:CR907909095FB80CC2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1KG25734 ;

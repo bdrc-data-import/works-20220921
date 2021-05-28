@@ -18,6 +18,11 @@ bdg:WA1KG25710 {
         adm:logMessage      "completed cataloging and released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG3A2E2C5DA01A19FD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-27T11:53:27.007Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG77D3490F4716E16E
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-15T09:42:54.343Z"^^xsd:dateTime ;
@@ -48,17 +53,23 @@ bdg:WA1KG25710 {
     bda:WA1KG25710  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25710 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "79/WA1KG25710.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25710 ;
-        adm:logEntry        bda:LG32554C1106612092 , bda:LG77D3490F4716E16E , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG32554C1106612092 , bda:LG3A2E2C5DA01A19FD , bda:LG77D3490F4716E16E , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR384200D1543CD6D3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75251 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA1KG25710  a       :Work ;
         skos:prefLabel      "srid gzhung gi las don snyan zhu/"@bo-x-ewts ;
         :catalogInfo        "A breif report on past, present and future works of the government, the People's Republic of China."@en ;
+        :creator            bdr:CR384200D1543CD6D3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG25710 , bdr:W1KG25710 ;

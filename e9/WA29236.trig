@@ -12,9 +12,21 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29236 {
-    bda:LG98A61C9E51558E38
+    bda:LG800857952D47264B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-27T10:36:17.108Z"^^xsd:dateTime ;
+        adm:logMessage      "removed Product Info pl480"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8DDA3E1D4F7B7EA8
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG98A61C9E51558E38
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-27T13:21:21.664Z"^^xsd:dateTime ;
+        adm:logMessage      "add to PR1PL480"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGE4EF88492BFC95B5
         a                   adm:UpdateData ;
@@ -53,24 +65,26 @@ bdg:WA29236 {
     bda:WA29236  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29236 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "e9/WA29236.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29236 ;
-        adm:logEntry        bda:LG98A61C9E51558E38 , bda:LGE4EF88492BFC95B5 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG800857952D47264B , bda:LG8DDA3E1D4F7B7EA8 , bda:LG98A61C9E51558E38 , bda:LGE4EF88492BFC95B5 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR800857952D47264B
+    bdr:CRD9A43E778763C5AC
         a                   :AgentAsCreator ;
         :agent              bdr:P9601 ;
         :role               bdr:R0ER0019 .
     
-    bdr:MW29236  skos:altLabel  "qiu zhen jing shen"@zh-latn-pinyin-x-ndia .
+    bdr:MW29236  skos:altLabel  "求真精神"@zh-hans .
     
     bdr:WA29236  a          :SerialMember , :Work ;
-        skos:prefLabel      "bden 'tshol snying stobs/"@bo-x-ewts , "qiu zhen jing shen"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR800857952D47264B ;
+        skos:altLabel       "qiu zhen jing shen"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bden 'tshol snying stobs/"@bo-x-ewts , "求真精神"@zh-hans ;
+        :catalogInfo        "Critical essays by and interviews with the author, who is originally from A-mdo (Amdo) and works in Xining (capital of Qinghai Province), regarding traditional Tibetan culture and the role of modern thought; includes translations (by the author) of Western philosophical writings."@en ;
+        :creator            bdr:CRD9A43E778763C5AC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS29235 ;

@@ -24,6 +24,11 @@ bdg:WA1KG25652 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGADDEAC50D466D43E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-27T11:53:25.503Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -48,17 +53,23 @@ bdg:WA1KG25652 {
     bda:WA1KG25652  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25652 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "f2/WA1KG25652.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25652 ;
-        adm:logEntry        bda:LG0B3EAD0657600006 , bda:LG1B8167368A66A818 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0B3EAD0657600006 , bda:LG1B8167368A66A818 , bda:LGADDEAC50D466D43E , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CREEA6BB2F42542F4B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5117 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG25652  a       :Work ;
         skos:prefLabel      "gzhon nu'i yig rtsal sbyong deb/"@bo-x-ewts ;
         :catalogInfo        "A copybook to studying different Tibetan calligraphies."@en ;
+        :creator            bdr:CREEA6BB2F42542F4B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG25652 , bdr:W1KG25652 ;

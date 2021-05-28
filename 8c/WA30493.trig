@@ -13,14 +13,20 @@
 
 bdg:WA30493 {
     bda:LG5792B777D90C08C2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-27T11:01:39.649Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00019 .
     
     bda:LGA5C41FA01FA767F0
         a                   adm:UpdateData ;
         adm:logDate         "2008-06-05T14:34:36.654Z"^^xsd:dateTime ;
         adm:logMessage      "added lc call number and lccn"@en ;
         adm:logWho          bdu:U00003 .
+    
+    bda:LGB66428DBAF7A612D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGC2D0ACF7981E430E
         a                   adm:ScanRequestCreation ;
@@ -66,19 +72,20 @@ bdg:WA30493 {
     bda:WA30493  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30493 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "8c/WA30493.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30493 ;
-        adm:logEntry        bda:LG5792B777D90C08C2 , bda:LGA5C41FA01FA767F0 , bda:LGC2D0ACF7981E430E , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG5792B777D90C08C2 , bda:LGA5C41FA01FA767F0 , bda:LGB66428DBAF7A612D , bda:LGC2D0ACF7981E430E , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:MW30493  skos:altLabel  "selections of tibetan drams"@en , "zang xi ju ben ji jin"@zh-latn-pinyin-x-ndia .
+    bdr:MW30493  skos:altLabel  "selections of tibetan dramas"@en , "zang xi ju ben ji jin"@zh-latn-pinyin-x-ndia .
     
     bdr:WA30493  a          :Work ;
-        skos:altLabel       "Bod kyi zlos gar ʼkhrab gźuṅ ʼjig rten dgyes paʼi mchod sprin /Rdo-rje-thar, Dpal-ʼbum-rgyal, Kaʼo-pheṅ gis brtsams."@en-x-mixed ;
-        skos:prefLabel      "bod kyi zlos gar 'khrab gzhung 'jig rten dgyes pa'i mchod sprin/"@bo-x-ewts , "selections of tibetan drams"@en , "zang xi ju ben ji jin"@zh-latn-pinyin-x-ndia ;
+        skos:altLabel       "Bod kyi zlos gar ʼkhrab gźuṅ ʼjig rten dgyes paʼi mchod sprin /Rdo-rje-thar, Dpal-ʼbum-rgyal, Kaʼo-pheṅ gis brtsams/"@en-x-mixed ;
+        skos:prefLabel      "bod kyi zlos gar 'khrab gzhung 'jig rten dgyes pa'i mchod sprin/"@bo-x-ewts , "selections of tibetan dramas"@en , "zang xi ju ben ji jin"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Selection of Tibetan opera's script."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW30493 , bdr:W30493 ;
