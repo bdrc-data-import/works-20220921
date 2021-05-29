@@ -29,6 +29,12 @@ bdg:WA3JT13768 {
         adm:logMessage      "added biblio note"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LG34D4411C94534FFC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-28T09:31:27.031Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG40BFB4155A0A46DF
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-09T19:08:30.468Z"^^xsd:dateTime ;
@@ -56,17 +62,23 @@ bdg:WA3JT13768 {
     bda:WA3JT13768  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3JT13768 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "d0/WA3JT13768.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3JT13768 ;
-        adm:logEntry        bda:LG06E03558968361D9 , bda:LG178FDD443CB7DFA4 , bda:LG25DF8E1A19729A9C , bda:LG40BFB4155A0A46DF , bda:LG93694D2C65EC0416 , bda:LGF2A4C6B2F050D297 , bda:LGF7DE5015AE35A9CE ;
+        adm:logEntry        bda:LG06E03558968361D9 , bda:LG178FDD443CB7DFA4 , bda:LG25DF8E1A19729A9C , bda:LG34D4411C94534FFC , bda:LG40BFB4155A0A46DF , bda:LG93694D2C65EC0416 , bda:LGF2A4C6B2F050D297 , bda:LGF7DE5015AE35A9CE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR4BDF191C816D3190
+        a                   :AgentAsCreator ;
+        :agent              bdr:P740 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3JT13768  a       :Work ;
         skos:altLabel       "'phags pa shes rab kyi pha rol tu phyin pa brgyad stong pa cha mi tshang ba zhig dang / lo tsA ba rin chen bzang po'i sku bstod/ lo chen sprul sku 'jigs med rgyal mtshan gyi yang srid myur byon gyi gsol 'debs sogs/gyi gsol 'debs sogs/"@bo-x-ewts ;
         skos:prefLabel      "brgyad stong pa cha mi tshang ba zhig dang / lo tsA ba'i sku bstod/ lo chen 'jigs med rgyal mtshan gyi yang srid myur byon gyi gsol 'debs sogs/"@bo-x-ewts ;
+        :creator            bdr:CR4BDF191C816D3190 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T17 , bdr:T67 ;

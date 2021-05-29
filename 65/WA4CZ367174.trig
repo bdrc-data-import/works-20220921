@@ -12,30 +12,42 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ367174 {
+    bda:LG29942532F8CDEE70
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-28T16:23:52.486Z"^^xsd:dateTime ;
+        adm:logMessage      "marked as restricted in china"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGAC0B6F8A53226F49
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-05-28T16:08:51.904Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGF119D6D155429685
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-05-26T17:04:09.635Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
+        adm:logDate         "2021-05-28T12:35:20.805Z"^^xsd:dateTime ;
+        adm:logMessage      "QC and released"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ367174  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ367174 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "65/WA4CZ367174.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ367174 ;
-        adm:logEntry        bda:LGF119D6D155429685 ;
+        adm:logEntry        bda:LG29942532F8CDEE70 , bda:LGAC0B6F8A53226F49 , bda:LGF119D6D155429685 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA4CZ367174  a      :Work ;
-        skos:altLabel       "<<g+ho ra >> gleng ba/"@bo-x-ewts ;
         skos:prefLabel      "g+ho ra gleng ba/"@bo-x-ewts ;
-        :catalogInfo        "Discussion on Thegor and his pomes"@en ;
+        :catalogInfo        "Discussion on Thegore and his Poems"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1157 ;
-        :workHasInstance    bdr:MW4CZ367174 ;
+        :workHasInstance    bdr:MW4CZ367174 , bdr:W4CZ367174 ;
         :workIsAbout        bdr:T299 .
 }

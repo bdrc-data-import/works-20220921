@@ -24,6 +24,12 @@ bdg:WA1KG14790 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGC624E45A76CA4566
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-28T17:50:19.24Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P9594 to P1KG856"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIMB5991979B0
         a                   adm:UpdateData ;
         adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
@@ -41,28 +47,28 @@ bdg:WA1KG14790 {
     bda:WA1KG14790  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14790 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "d8/WA1KG14790.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14790 ;
-        adm:logEntry        bda:LG4826E5960BEAEC5C , bda:LGC518CE4B16EB81FC , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG4826E5960BEAEC5C , bda:LGC518CE4B16EB81FC , bda:LGC624E45A76CA4566 , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR2142BF7A4DF1A666
         a                   :AgentAsCreator ;
-        :agent              bdr:P7854 ;
-        :role               bdr:R0ER0019 .
+        :agent              bdr:P1KG856 ;
+        :role               bdr:R0ER0026 .
     
     bdr:CR23AC42768361573F
         a                   :AgentAsCreator ;
-        :agent              bdr:P9594 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CRC624E45A76CA4566
-        a                   :AgentAsCreator ;
         :agent              bdr:P9593 ;
         :role               bdr:R0ER0026 .
+    
+    bdr:CR82C2C23484878BF6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7854 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1KG14790  skos:altLabel  "pha 'brug sgom zhig po'i rnam thar/"@bo-x-ewts .
     
@@ -70,7 +76,7 @@ bdg:WA1KG14790 {
         skos:altLabel       "pha 'brug sgom zhig po'i rnam thar thugs rje'i chu rgyun/"@bo-x-ewts ;
         skos:prefLabel      "pha 'brug sgom zhig po'i rnam thar/"@bo-x-ewts , "the biography of pha 'brug-sgom zhig-po called the current of compassion"@en ;
         :catalogInfo        "Biography of Padrukgom Zhikpo (12th cent.)."@en ;
-        :creator            bdr:CR2142BF7A4DF1A666 , bdr:CR23AC42768361573F , bdr:CRC624E45A76CA4566 ;
+        :creator            bdr:CR2142BF7A4DF1A666 , bdr:CR23AC42768361573F , bdr:CR82C2C23484878BF6 ;
         :isRoot             true ;
         :language           bdr:LangEn ;
         :workGenre          bdr:T3 ;

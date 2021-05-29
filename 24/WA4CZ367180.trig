@@ -11,49 +11,51 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA4CZ364081 {
-    bda:LG20BC569BEE5F38C2
+bdg:WA4CZ367180 {
+    bda:LG7A00F149C67E1A6F
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-05-28T12:35:12.685Z"^^xsd:dateTime ;
+        adm:logDate         "2021-05-28T12:35:23.106Z"^^xsd:dateTime ;
         adm:logMessage      "QC and released"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LG997A16E34492834D
+    bda:LG9E595FE5C916BF0C
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2021-05-28T15:57:48.135Z"^^xsd:dateTime ;
+        adm:logDate         "2021-05-28T16:12:18.692Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGA0B5B5F38268E7A8
+    bda:LGF44D0A3A5D2F5FC0
         a                   adm:UpdateData ;
-        adm:logDate         "2021-05-28T16:23:50.237Z"^^xsd:dateTime ;
+        adm:logDate         "2021-05-28T16:23:54.556Z"^^xsd:dateTime ;
         adm:logMessage      "marked as restricted in china"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:WA4CZ364081  a      adm:AdminData ;
+    bda:WA4CZ367180  a      adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA4CZ364081 ;
+        adm:adminAbout      bdr:WA4CZ367180 ;
         adm:facetIndex      5 ;
-        adm:gitPath         "cb/WA4CZ364081.trig" ;
+        adm:gitPath         "24/WA4CZ367180.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA4CZ364081 ;
-        adm:logEntry        bda:LG20BC569BEE5F38C2 , bda:LG997A16E34492834D , bda:LGA0B5B5F38268E7A8 ;
+        adm:graphId         bdg:WA4CZ367180 ;
+        adm:logEntry        bda:LG7A00F149C67E1A6F , bda:LG9E595FE5C916BF0C , bda:LGF44D0A3A5D2F5FC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5E1EA23C6E61C84E
+    bdr:CRD6FEE3E789EDB2D1
         a                   :AgentAsCreator ;
-        :agent              bdr:P1413 ;
-        :role               bdr:R0ER0019 .
+        :agent              bdr:P4CZ367195 ;
+        :role               bdr:R0ER0026 .
     
-    bdr:WA4CZ364081  a      :SerialMember , :Work ;
-        skos:altLabel       "kaM tshang bka' brgyud gser 'phreng /"@bo-x-ewts ;
-        skos:prefLabel      "kam tshang bka' brgyud gser 'phreng /"@bo-x-ewts ;
-        :catalogInfo        "Golden Rosary of the Kamtshang Kagyu. Anthology of the successive life stories of masters in the Kamtshang Kagyu order."@en ;
-        :creator            bdr:CR5E1EA23C6E61C84E ;
+    bdr:MW4CZ367180  skos:altLabel  "The Dhammapada verses and brief stories"@en .
+    
+    bdr:WA4CZ367180  a      :Work ;
+        skos:prefLabel      "chos kyi tshigs su bcad pa'i mdo don gyi gtam/"@bo-x-ewts , "The Dhammapada verses and brief stories"@en ;
+        :catalogInfo        "An edition of the Dhammapada,་verses and brief stories. Translated into Tibetan by Geshe Thubten Jamyang"@en ;
+        :creator            bdr:CRD6FEE3E789EDB2D1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :serialMemberOf     bdr:WAS4CZ364081 ;
-        :workHasInstance    bdr:MW4CZ364081 , bdr:W4CZ364081 ;
-        :workIsAbout        bdr:T1386 , bdr:T2620 .
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW4CZ367180 , bdr:W4CZ367180 ;
+        :workIsAbout        bdr:T1343 .
 }

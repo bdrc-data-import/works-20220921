@@ -14,18 +14,24 @@
 bdg:WA4CZ364085 {
     bda:LG5834E304AACA672E
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-05-24T16:14:02.01Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
+        adm:logDate         "2021-05-28T12:35:14.455Z"^^xsd:dateTime ;
+        adm:logMessage      "QC and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG6682F98ADB75DC28
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-05-28T15:59:00.495Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ364085  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ364085 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "0c/WA4CZ364085.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ364085 ;
-        adm:logEntry        bda:LG5834E304AACA672E ;
+        adm:logEntry        bda:LG5834E304AACA672E , bda:LG6682F98ADB75DC28 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,6 +41,6 @@ bdg:WA4CZ364085 {
         :catalogInfo        "Conversation of PRC's minority people by communist leaders"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ364085 ;
+        :workHasInstance    bdr:MW4CZ364085 , bdr:W4CZ364085 ;
         :workIsAbout        bdr:T1172 , bdr:T1KG18753 .
 }

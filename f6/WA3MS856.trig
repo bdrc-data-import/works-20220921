@@ -18,6 +18,12 @@ bdg:WA3MS856 {
         adm:logMessage      "added cat info, topics and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG5571E408D2A7390F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-28T09:44:33.302Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and editor"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG57DD0087DED50723
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2015-09-23T11:50:50.676Z"^^xsd:dateTime ;
@@ -40,20 +46,26 @@ bdg:WA3MS856 {
     bda:WA3MS856  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3MS856 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f6/WA3MS856.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3MS856 ;
-        adm:logEntry        bda:LG252C724C712A2D43 , bda:LG57DD0087DED50723 , bda:LGC39BDCF9F2AB98F4 , bda:LGIM095CC38C9F ;
+        adm:logEntry        bda:LG252C724C712A2D43 , bda:LG5571E408D2A7390F , bda:LG57DD0087DED50723 , bda:LGC39BDCF9F2AB98F4 , bda:LGIM095CC38C9F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRF75F67801C4E5E1B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7224 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3MS856  a         :Work ;
         skos:prefLabel      "rgyal ba'i gsung rab kyi bang mdzod sgo brgya 'byed pa'i khog phubs man ngag gser gyi lde mig"@bo-x-ewts ;
         :catalogInfo        "Religious activities of 25 disciple of Padmasambhava and Dharma King of Cone area by Jangchub Zhonu Pawa Norzang, edited by Chozed Ngawang Zodpa Gyatso."@en ;
+        :creator            bdr:CRF75F67801C4E5E1B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1134 , bdr:T12 ;
+        :workGenre          bdr:T1134 , bdr:T12 , bdr:T1372 ;
         :workHasInstance    bdr:MW3MS856 , bdr:W3MS856 ;
         :workIsAbout        bdr:G1164 .
 }
