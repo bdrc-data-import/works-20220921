@@ -28,6 +28,12 @@ bdg:WA2PD17618 {
         adm:logDate         "2017-05-10T22:26:36.607Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGCBABFABBF77F4527
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-31T23:14:06.43Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -38,17 +44,24 @@ bdg:WA2PD17618 {
     bda:WA2PD17618  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17618 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "0e/WA2PD17618.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17618 ;
-        adm:logEntry        bda:LG8CCE892CE3EC0953 , bda:LG97F2F0B3BBC13F31 , bda:LGC034977C3223087E , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG8CCE892CE3EC0953 , bda:LG97F2F0B3BBC13F31 , bda:LGC034977C3223087E , bda:LGCBABFABBF77F4527 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR7C5C8285B76A89AD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12076 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA2PD17618  a       :SerialMember , :Work ;
         skos:altLabel       "shi san shi da lai la ma de jin shi tu deng gong pei"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "十三世达赖喇嘛的近侍 土登贡培"@zh-hans ;
+        skos:prefLabel      "十三世达赖喇嘛的近侍土登贡培"@zh-hans ;
+        :catalogInfo        "About Thupten Kunphel, the 13th Dalai Lama's serven."@en ;
+        :creator            bdr:CR7C5C8285B76A89AD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS2PD17618 ;

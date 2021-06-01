@@ -28,6 +28,12 @@ bdg:WA2PD17633 {
         adm:logDate         "2016-11-10T02:26:18.288Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG3403D514A4067F50
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-31T21:42:59.713Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and cataInfo"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGD812E50E4F19059A
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-11T05:31:04.779Z"^^xsd:dateTime ;
@@ -56,19 +62,26 @@ bdg:WA2PD17633 {
     bda:WA2PD17633  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17633 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "58/WA2PD17633.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17633 ;
-        adm:logEntry        bda:LG01DEC639B301549F , bda:LG058E9D4F63D07F17 , bda:LG0E1A46345197DAFD , bda:LGD812E50E4F19059A , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG01DEC639B301549F , bda:LG058E9D4F63D07F17 , bda:LG0E1A46345197DAFD , bda:LG3403D514A4067F50 , bda:LGD812E50E4F19059A , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR9A5376D66DB8AE20
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12072 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW2PD17633  skos:altLabel  "DRAWIG REALISTC PORTRAITS AND FIGD FIGURES"@en , "肖像写实素描"@zh-hans .
     
     bdr:WA2PD17633  a       :Work ;
         skos:altLabel       "xiao xiang xie shi shu miao"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "nub lugs kyi ri mo 'bri stangs ngo mtshar snang brnyan/"@bo-x-ewts , "DRAWIG REALISTC PORTRAITS AND FIGD FIGURES"@en , "肖像写实素描"@zh-hans ;
+        :catalogInfo        "Drawing realistic portraits and figures by Kristel Ouwehand (Tenzin Dolma). Translated to Tibetan by Konchok Tsering and Karma Kyi."@en ;
+        :creator            bdr:CR9A5376D66DB8AE20 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2PD17633 , bdr:W2PD17633 ;

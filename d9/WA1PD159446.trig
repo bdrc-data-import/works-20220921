@@ -23,6 +23,12 @@ bdg:WA1PD159446 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGC78E5885ACF741F9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-31T23:23:33.529Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGD02F93783EB3D8D3
         a                   adm:UpdateData ;
         adm:logDate         "2016-11-29T22:16:01.679Z"^^xsd:dateTime ;
@@ -69,17 +75,23 @@ bdg:WA1PD159446 {
     bda:WA1PD159446  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159446 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "d9/WA1PD159446.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159446 ;
-        adm:logEntry        bda:LG5D90E1DDD5277E6E , bda:LG9065909F1101AD32 , bda:LGD02F93783EB3D8D3 , bda:LGD38C2BDEDDB37ADB , bda:LGF480AACF2F6254E4 , bda:LGFDB92E20E7504CE5 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG5D90E1DDD5277E6E , bda:LG9065909F1101AD32 , bda:LGC78E5885ACF741F9 , bda:LGD02F93783EB3D8D3 , bda:LGD38C2BDEDDB37ADB , bda:LGF480AACF2F6254E4 , bda:LGFDB92E20E7504CE5 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR6652E63AA8878405
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1018102 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1PD159446  a      :Work ;
         skos:altLabel       "ba da chuan tong zang xi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "八大传统藏戏 （汉文版）"@zh-hans ;
+        :creator            bdr:CR6652E63AA8878405 ;
         :isRoot             true ;
         :language           bdr:LangZh ;
         :workHasInstance    bdr:MW1PD159446 , bdr:W1PD159446 ;

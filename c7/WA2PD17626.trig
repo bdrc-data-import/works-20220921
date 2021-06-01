@@ -17,6 +17,12 @@ bdg:WA2PD17626 {
         adm:logDate         "2016-11-05T04:39:20.691Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG3AFE5E4240870488
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-31T22:22:19.391Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG48B1168E9187C620
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-11T05:30:33.285Z"^^xsd:dateTime ;
@@ -55,19 +61,26 @@ bdg:WA2PD17626 {
     bda:WA2PD17626  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17626 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "c7/WA2PD17626.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17626 ;
-        adm:logEntry        bda:LG2572FD656EC526A0 , bda:LG48B1168E9187C620 , bda:LGB5CAED0B63CCECA6 , bda:LGBA2664CCC3A828D3 , bda:LGEDEF5225E81389F5 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2572FD656EC526A0 , bda:LG3AFE5E4240870488 , bda:LG48B1168E9187C620 , bda:LGB5CAED0B63CCECA6 , bda:LGBA2664CCC3A828D3 , bda:LGEDEF5225E81389F5 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR9AD2BF170920C4A0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12074 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW2PD17626  skos:altLabel  "Chinese-English and English-Chinese Dictionary for Translation Of Tibetological Terminology"@en .
     
     bdr:WA2PD17626  a       :Work ;
         skos:altLabel       "han ying-ying han zang xue fan yi ci dian"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "Chinese-English and English-Chinese Dictionary for Translation Of Tibetological Terminology"@en , "汉英－英汉藏学翻译词典"@zh-hans ;
+        :catalogInfo        "Chinese-English and English-Chinese Dictionary for Translation Of Tibetological Terminology"@en ;
+        :creator            bdr:CR9AD2BF170920C4A0 ;
         :isRoot             true ;
         :language           bdr:LangZh ;
         :workGenre          bdr:T220 ;

@@ -32,6 +32,12 @@ bdg:WA1AC339 {
         adm:logDate         "2016-11-02T23:32:02.183Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG923C06AA28DDA844
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-31T15:53:25.537Z"^^xsd:dateTime ;
+        adm:logMessage      "added author & cataInfo"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGB644489DC980563F
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-24T18:29:48.991Z"^^xsd:dateTime ;
@@ -60,17 +66,25 @@ bdg:WA1AC339 {
     bda:WA1AC339  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC339 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "49/WA1AC339.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC339 ;
-        adm:logEntry        bda:LG0EF534EC4CDD48F3 , bda:LG2F81C910F43EBB52 , bda:LG6757F2D656697021 , bda:LG830126D439B841B7 , bda:LGB644489DC980563F , bda:LGD6399B8AFB055AF1 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0EF534EC4CDD48F3 , bda:LG2F81C910F43EBB52 , bda:LG6757F2D656697021 , bda:LG830126D439B841B7 , bda:LG923C06AA28DDA844 , bda:LGB644489DC980563F , bda:LGD6399B8AFB055AF1 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR655A8B1BC9767433
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CN12070 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:MW1AC339  skos:altLabel  "gongga huo fo"@en , "贡噶活佛"@zh-hans .
+    
     bdr:WA1AC339  a         :Work ;
-        skos:altLabel       "mi zong dao ci di xin yao jiang shou--gong ga huo fo"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "gongga huo fo"@en , "《密宗道次第心要》讲授--贡噶活佛"@zh-hans ;
+        skos:prefLabel      "'bo gangs dkar sprul sku/"@bo-x-ewts , "gongga huo fo"@en , "贡噶活佛"@zh-hans ;
+        :catalogInfo        "Biography of Bo Gangkar Tulku by Wang-Desheng."@en ;
+        :creator            bdr:CR655A8B1BC9767433 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T238 ;

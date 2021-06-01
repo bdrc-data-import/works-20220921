@@ -17,6 +17,12 @@ bdg:WA2PD17621 {
         adm:logDate         "2017-05-10T22:26:45.978Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG86CA1274C2B78FE3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-31T22:37:20.868Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG88B437263645FE79
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-11-05T04:39:03.695Z"^^xsd:dateTime ;
@@ -45,20 +51,31 @@ bdg:WA2PD17621 {
     bda:WA2PD17621  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17621 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "59/WA2PD17621.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17621 ;
-        adm:logEntry        bda:LG29C3CEC34B9C7C6D , bda:LG88B437263645FE79 , bda:LGA5F1A9EB21BFD698 , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG29C3CEC34B9C7C6D , bda:LG86CA1274C2B78FE3 , bda:LG88B437263645FE79 , bda:LGA5F1A9EB21BFD698 , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR126988367BF94B40
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7818 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR18D11BF4B1A9D617
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9266 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW2PD17621  skos:altLabel  "bon gyi lo rgyus mdor bstan gnad kyi phreng ba/"@bo-x-ewts , "A CONISE HSTORY OF THE BON RELIGION"@en .
     
     bdr:WA2PD17621  a       :SerialMember , :Work ;
         skos:altLabel       "ben jiao shi gang yao"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bon gyi lo rgyus mdor bstan gnad kyi phreng ba/"@bo-x-ewts , "A CONISE HSTORY OF THE BON RELIGION"@en , "本教史纲要"@zh-hans ;
-        :catalogInfo        "Collected Works by Dodrup 01 Jigme Trinle Ozer (1745-1821)."@en ;
+        :catalogInfo        "A conise history of the Bon religion by Tsering Thar and Dondrup Lhagyal."@en , "Collected Works by Dodrup 01 Jigme Trinle Ozer (1745-1821)."@en ;
+        :creator            bdr:CR126988367BF94B40 , bdr:CR18D11BF4B1A9D617 ;
         :isRoot             true ;
         :language           bdr:LangZh ;
         :serialMemberOf     bdr:WAS2PD17621 ;

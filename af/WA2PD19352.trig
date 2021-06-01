@@ -17,6 +17,12 @@ bdg:WA2PD19352 {
         adm:logDate         "2016-12-05T23:14:02.704Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG43AB2AD30255C677
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-31T21:22:52.25Z"^^xsd:dateTime ;
+        adm:logMessage      "added catainfo"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG4EF5527120550268
         a                   adm:UpdateData ;
         adm:logDate         "2017-09-25T10:03:42.277Z"^^xsd:dateTime ;
@@ -62,19 +68,21 @@ bdg:WA2PD19352 {
     bda:WA2PD19352  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD19352 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "af/WA2PD19352.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD19352 ;
-        adm:logEntry        bda:LG15044E1400470223 , bda:LG4EF5527120550268 , bda:LG62CBFFB650EEFD6A , bda:LG967CB47D68384543 , bda:LGCF64292151B22B5D , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG15044E1400470223 , bda:LG43AB2AD30255C677 , bda:LG4EF5527120550268 , bda:LG62CBFFB650EEFD6A , bda:LG967CB47D68384543 , bda:LGCF64292151B22B5D , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA2PD19352  a       :Work ;
         skos:altLabel       "zhong guo zang xue lun wen zi liao suo yin"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "中国藏学论文资料索引"@zh-hans ;
+        :catalogInfo        "Index of research paper of China Tibetology study."@en ;
         :isRoot             true ;
         :language           bdr:LangZh ;
+        :workGenre          bdr:T13 ;
         :workHasInstance    bdr:MW2PD19352 , bdr:W2PD19352 ;
         :workIsAbout        bdr:T212 .
 }

@@ -33,6 +33,12 @@ bdg:WA1KG14722 {
         adm:logDate         "2016-12-03T02:53:50.454Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGD732B07B1A2415BE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-31T14:35:05.202Z"^^xsd:dateTime ;
+        adm:logMessage      "added authors"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -57,17 +63,28 @@ bdg:WA1KG14722 {
     bda:WA1KG14722  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14722 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "6f/WA1KG14722.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14722 ;
-        adm:logEntry        bda:LG1C3429CBA6DA29B2 , bda:LG660FD3B724A68A5E , bda:LG6DE2922DBC7BCFE5 , bda:LGA2C87A7167D9519B , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1C3429CBA6DA29B2 , bda:LG660FD3B724A68A5E , bda:LG6DE2922DBC7BCFE5 , bda:LGA2C87A7167D9519B , bda:LGD732B07B1A2415BE , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR13A45465E84B7444
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7998 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR2ECBC839379CE09E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7908 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1KG14722  a       :Work ;
-        skos:altLabel       "琉璃明镜：藏文大脏景之源流，特点，版本及对堪出版"@zh-hans , "liu li ming jing"@zh-latn-pinyin-x-ndia ;
+        skos:altLabel       "琉璃明镜：藏文大藏经之源流特点版本暨对堪出版"@zh-hans , "liu li ming jing"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "琉璃明镜"@zh-hans ;
+        :creator            bdr:CR13A45465E84B7444 , bdr:CR2ECBC839379CE09E ;
         :isRoot             true ;
         :language           bdr:LangZh ;
         :workGenre          bdr:T10MS14464 ;

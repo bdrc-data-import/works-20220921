@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2PD17632 {
+    bda:LG59B4B48F20F5C9D0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-05-31T21:46:31.161Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG733C9B457337A661
         a                   adm:UpdateData ;
         adm:logDate         "2016-12-02T03:28:23.485Z"^^xsd:dateTime ;
@@ -49,13 +55,18 @@ bdg:WA2PD17632 {
     bda:WA2PD17632  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17632 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "54/WA2PD17632.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17632 ;
-        adm:logEntry        bda:LG733C9B457337A661 , bda:LG79929A18618CD228 , bda:LGB0F40557D904D3CC , bda:LGB5545888C4052ACF , bda:LGF2B0C3F80624F682 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG59B4B48F20F5C9D0 , bda:LG733C9B457337A661 , bda:LG79929A18618CD228 , bda:LGB0F40557D904D3CC , bda:LGB5545888C4052ACF , bda:LGF2B0C3F80624F682 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR545C81D1DB675FEB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6962 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW2PD17632  skos:altLabel  "《入行论》详释"@zh-hans .
     
@@ -63,6 +74,7 @@ bdg:WA2PD17632 {
         skos:altLabel       "<ru xing lun>xiang shi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "byang chub sems dpa'i spyod pa la 'jug pa rtsa ba dang 'grel pa/"@bo-x-ewts , "《入行论》详释"@zh-hans ;
         :catalogInfo        "Commentary on Shantideva's Bodhicaryavatara."@en ;
+        :creator            bdr:CR545C81D1DB675FEB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;
