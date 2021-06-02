@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21781 {
-    bda:LG2D058C395B62B2FF
+    bda:LG106C740C16F65D01
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG2D058C395B62B2FF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-01T15:56:01.185Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Editor, add cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG6769F0233780DB5C
         a                   adm:UpdateData ;
@@ -44,11 +50,11 @@ bdg:WA21781 {
     bda:WA21781  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21781 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "fb/WA21781.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21781 ;
-        adm:logEntry        bda:LG2D058C395B62B2FF , bda:LG6769F0233780DB5C , bda:LGD2A5501351665728 , bda:LGF62F06EC14086B61 , bda:LGIME8C00CAB64 ;
+        adm:logEntry        bda:LG106C740C16F65D01 , bda:LG2D058C395B62B2FF , bda:LG6769F0233780DB5C , bda:LGD2A5501351665728 , bda:LGF62F06EC14086B61 , bda:LGIME8C00CAB64 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
@@ -58,6 +64,7 @@ bdg:WA21781 {
     bdr:WA21781  a          :Work ;
         skos:altLabel       "wu cai gong"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "'od lnga'i gur khang /"@bo-x-ewts , "五彩宫"@zh-hans ;
+        :catalogInfo        "Selected poems"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1884 ;

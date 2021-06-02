@@ -18,9 +18,15 @@ bdg:WA21773 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGAFA76E400FC86BD0
+    bda:LG94F143D5623AFD15
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGAFA76E400FC86BD0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-01T15:56:00.78Z"^^xsd:dateTime ;
+        adm:logMessage      "Added Editor, add cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGEB933C59B62009D2
         a                   adm:UpdateData ;
@@ -44,11 +50,11 @@ bdg:WA21773 {
     bda:WA21773  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21773 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "9b/WA21773.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21773 ;
-        adm:logEntry        bda:LG61AF00F644165551 , bda:LGAFA76E400FC86BD0 , bda:LGEB933C59B62009D2 , bda:LGFAEAD9CE84367A36 , bda:LGIM206EC9B06D ;
+        adm:logEntry        bda:LG61AF00F644165551 , bda:LG94F143D5623AFD15 , bda:LGAFA76E400FC86BD0 , bda:LGEB933C59B62009D2 , bda:LGFAEAD9CE84367A36 , bda:LGIM206EC9B06D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -57,7 +63,7 @@ bdg:WA21773 {
     bdr:WA21773  a          :Work ;
         skos:altLabel       "zang wen zao ci xiang shi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "mngon brjod kyi 'grel pa btus bsgrigs legs bshad 'dren pa'i dung sgra/"@bo-x-ewts , "藏文藻词详释"@zh-hans ;
-        :catalogInfo        "Literal commentary on the mngon brjod kyi bstan bcos rgya mtsho'i chu thigs of Ngulchu Dharmabhadra's text on Tibetan synonyms."@en ;
+        :catalogInfo        "Literal commentary on the Synonyms of Ngulchu Dharmabhadra's text on Tibetan synonyms."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T372 ;
