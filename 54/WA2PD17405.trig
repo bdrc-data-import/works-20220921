@@ -35,6 +35,12 @@ bdg:WA2PD17405 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGCB0525E484E498F0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T11:51:29.869Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -59,17 +65,24 @@ bdg:WA2PD17405 {
     bda:WA2PD17405  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17405 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "54/WA2PD17405.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17405 ;
-        adm:logEntry        bda:LG45CC1C8F5AB7DEE7 , bda:LG4FBB269361BDA178 , bda:LG5CC9DA837569E956 , bda:LG854402785B57AAAC , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG45CC1C8F5AB7DEE7 , bda:LG4FBB269361BDA178 , bda:LG5CC9DA837569E956 , bda:LG854402785B57AAAC , bda:LGCB0525E484E498F0 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRBC68FF6C85F29093
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26529 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2PD17405  a       :Work ;
         skos:altLabel       "xi zang gong xiang xing jing ji fa zhan fang shi yan jiu: 1980-2010"@zh-latn-pinyin ;
         skos:prefLabel      "西藏共享型经济发展方式研究：1980-2010年"@zh-hans ;
+        :catalogInfo        "Research on the Development Mode of Tibet's Sharing Economy: 1980-2010"@en ;
+        :creator            bdr:CRBC68FF6C85F29093 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2PD17405 , bdr:W2PD17405 ;

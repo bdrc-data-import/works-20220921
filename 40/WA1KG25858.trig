@@ -18,6 +18,12 @@ bdg:WA1KG25858 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG9166733E2956C9D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T15:21:28.354Z"^^xsd:dateTime ;
+        adm:logMessage      "added bard"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG975DA6CFABD0688F
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-01T11:26:02.087Z"^^xsd:dateTime ;
@@ -48,13 +54,18 @@ bdg:WA1KG25858 {
     bda:WA1KG25858  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25858 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "40/WA1KG25858.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25858 ;
-        adm:logEntry        bda:LG321BCD59AD203A6E , bda:LG975DA6CFABD0688F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG321BCD59AD203A6E , bda:LG9166733E2956C9D6 , bda:LG975DA6CFABD0688F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CREE027F7608F69FB8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228964 ;
+        :role               bdr:R0ER0012 .
     
     bdr:MW1KG25858  skos:altLabel  "格萨尔王转. 十三骏马之源"@zh-latn-pinyin-x-ndia .
     
@@ -62,6 +73,7 @@ bdg:WA1KG25858 {
         skos:altLabel       "gling rje ge sar rgyal po'i sgrung / gyi ling bcu gsum 'byung khungs skor/"@bo-x-ewts , "ge sa er wang zhuan . shi san jun ma zhi yuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gyi ling bcu gsum 'byung khungs skor/"@bo-x-ewts , "格萨尔王转. 十三骏马之源"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "On the life of King Geser, a Tibetan legendary character."@en ;
+        :creator            bdr:CREE027F7608F69FB8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG25858 , bdr:W1KG25858 ;

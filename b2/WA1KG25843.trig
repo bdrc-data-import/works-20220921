@@ -24,6 +24,12 @@ bdg:WA1KG25843 {
         adm:logMessage      "completed cataloging and released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGFEC0FBF34F13A51D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T15:20:08.94Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -48,17 +54,23 @@ bdg:WA1KG25843 {
     bda:WA1KG25843  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25843 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "b2/WA1KG25843.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25843 ;
-        adm:logEntry        bda:LG1D6726D7B04728C2 , bda:LG49BB2B37461088E8 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1D6726D7B04728C2 , bda:LG49BB2B37461088E8 , bda:LGFEC0FBF34F13A51D , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR051C82B3E7D55B33
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228962 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG25843  a       :Work ;
         skos:prefLabel      "bod khul gyi dmigs bsal rig gnas dang khor yug bstun pa'i e 'gog nyin re lan re/"@bo-x-ewts ;
         :catalogInfo        "General education on prevention and treatment of Aids disease."@en ;
+        :creator            bdr:CR051C82B3E7D55B33 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG25843 , bdr:W1KG25843 ;

@@ -19,6 +19,12 @@ bdg:WA21797 {
         adm:logWho          bdu:U00016 .
     
     bda:LG880B4F01B276978D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T16:41:47.351Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog,add  author, editor, cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGC3F77DDA870DD97B
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -65,17 +71,23 @@ bdg:WA21797 {
     bda:WA21797  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21797 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "30/WA21797.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21797 ;
-        adm:logEntry        bda:LG5B193AF8A1FA6CFA , bda:LG880B4F01B276978D , bda:LGC7B098C46F3FB6AF , bda:LGCBAAEE0956402B72 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG5B193AF8A1FA6CFA , bda:LG880B4F01B276978D , bda:LGC3F77DDA870DD97B , bda:LGC7B098C46F3FB6AF , bda:LGCBAAEE0956402B72 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRA0E52BD26683D093
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA21797  a          :Work ;
         skos:prefLabel      "'bel gtam 'dems sgrig"@bo-x-ewts ;
         :catalogInfo        "Select satirical writings on life."@en ;
+        :creator            bdr:CRA0E52BD26683D093 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW21797 , bdr:W21797 ;

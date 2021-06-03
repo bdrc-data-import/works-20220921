@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21863 {
-    bda:LG620682AFF91BE214
+    bda:LG1F5CE62FDC71E7F7
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG620682AFF91BE214
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T16:41:49.441Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog,add  author, editor, cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -33,16 +39,17 @@ bdg:WA21863 {
     bda:WA21863  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21863 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "6c/WA21863.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21863 ;
-        adm:logEntry        bda:LG620682AFF91BE214 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG1F5CE62FDC71E7F7 , bda:LG620682AFF91BE214 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA21863  a          :Work ;
         skos:prefLabel      "shes rab rgan po'i 'bel gtam/"@bo-x-ewts ;
+        :catalogInfo        "Periodical of general knowledge on miscellaneous topics"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 ;

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG25867 {
+    bda:LG081C245F51FCD9D8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T15:22:03.736Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG1FEAE759FCAF69D0
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-01T16:32:25.939Z"^^xsd:dateTime ;
@@ -48,18 +54,29 @@ bdg:WA1KG25867 {
     bda:WA1KG25867  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25867 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "0f/WA1KG25867.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25867 ;
-        adm:logEntry        bda:LG1FEAE759FCAF69D0 , bda:LGB5B6D21DCD33B41A , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG081C245F51FCD9D8 , bda:LG1FEAE759FCAF69D0 , bda:LGB5B6D21DCD33B41A , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR70CFB748C26DF183
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4PD3014 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRA9525591BCFD608E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228967 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA1KG25867  a       :SerialMember , :Work ;
         skos:altLabel       "hai di liang wang li"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "mtsho gting gi le dbar nyi khri/"@bo-x-ewts , "海底两万里"@zh-hans ;
-        :catalogInfo        "A textbook for children to study about the creatures under sea."@en ;
+        :catalogInfo        "A textbook for children to study about the creatures under the sea (Invasion of the Sea) written by Jules Verne (1828-1905), translated into Tibetan by Kalsang Yeshe and Norgyun Tso."@en ;
+        :creator            bdr:CR70CFB748C26DF183 , bdr:CRA9525591BCFD608E ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :serialMemberOf     bdr:WAS1KG25867 ;

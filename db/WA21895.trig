@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21895 {
-    bda:LGB37FFB515BEB9C57
+    bda:LG0DB7D630C496C8FA
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGB37FFB515BEB9C57
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T16:41:51.394Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog,add  author, editor, cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGD745E608E48DC0D6
         a                   adm:UpdateData ;
@@ -59,18 +65,19 @@ bdg:WA21895 {
     bda:WA21895  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21895 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "db/WA21895.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21895 ;
-        adm:logEntry        bda:LGB37FFB515BEB9C57 , bda:LGD745E608E48DC0D6 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG0DB7D630C496C8FA , bda:LGB37FFB515BEB9C57 , bda:LGD745E608E48DC0D6 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:MW21895  skos:altLabel  "Gliṅ sgruṅ gces btus /gtso sgrig pa, ʼJam-dpal-rgya-mtsho."@en-x-mixed .
+    bdr:MW21895  skos:altLabel  "Gliṅ sgruṅ gces btus /gtso sgrig pa, ʼJam-dpal-rgya-mtsho"@en-x-mixed .
     
     bdr:WA21895  a          :SerialMember , :Work ;
-        skos:prefLabel      "gling rje'i 'khrungs rabs/"@bo-x-ewts , "Gliṅ sgruṅ gces btus /gtso sgrig pa, ʼJam-dpal-rgya-mtsho."@en-x-mixed ;
+        skos:prefLabel      "gling rje'i 'khrungs rabs/"@bo-x-ewts , "Gliṅ sgruṅ gces btus /gtso sgrig pa, ʼJam-dpal-rgya-mtsho"@en-x-mixed ;
+        :catalogInfo        "The live story of the King Gesar"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1AC410 ;

@@ -24,6 +24,12 @@ bdg:WA2PD17404 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGB78A15D881F3CE4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T11:45:52.87Z"^^xsd:dateTime ;
+        adm:logMessage      "added editer"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGF5D91B15F1F2E166
         a                   adm:InitialDataCreation ;
         adm:logDate         "2015-06-06T01:03:39.27Z"^^xsd:dateTime ;
@@ -54,17 +60,23 @@ bdg:WA2PD17404 {
     bda:WA2PD17404  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17404 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "da/WA2PD17404.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17404 ;
-        adm:logEntry        bda:LG53636120E2FE649D , bda:LG7FC8A93E9BEF7B31 , bda:LGF5D91B15F1F2E166 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG53636120E2FE649D , bda:LG7FC8A93E9BEF7B31 , bda:LGB78A15D881F3CE4B , bda:LGF5D91B15F1F2E166 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR17B31D1CB382BAAB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26528 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2PD17404  a       :Work ;
         skos:altLabel       "zhong guo zang xue yan jiu zhong xin zhuan jia fang tan lu"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "中国藏学研究中心专家学者访谈录"@zh-hans ;
+        :creator            bdr:CR17B31D1CB382BAAB ;
         :isRoot             true ;
         :language           bdr:LangZh ;
         :workHasInstance    bdr:MW2PD17404 , bdr:W2PD17404 ;

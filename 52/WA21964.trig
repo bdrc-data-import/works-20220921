@@ -18,6 +18,12 @@ bdg:WA21964 {
         adm:logWho          bdu:U00016 .
     
     bda:LG5B4D3177B6D2ECB5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T16:41:53.845Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog,add  author, editor, cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG875974D5DB335F47
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -36,19 +42,26 @@ bdg:WA21964 {
     bda:WA21964  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21964 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "52/WA21964.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21964 ;
-        adm:logEntry        bda:LG4B6C926AE728E0A6 , bda:LG5B4D3177B6D2ECB5 , bda:LGAC0969F699C10D6E , bda:LGD11774D64B9E9A15 ;
+        adm:logEntry        bda:LG4B6C926AE728E0A6 , bda:LG5B4D3177B6D2ECB5 , bda:LG875974D5DB335F47 , bda:LGAC0969F699C10D6E , bda:LGD11774D64B9E9A15 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR30C94363C969EC7D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9787 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW21964  skos:altLabel  "旅游经济学"@zh-hans .
     
     bdr:WA21964  a          :SerialMember , :Work ;
         skos:altLabel       "lv you jing ji xue"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gnas skor dpal 'byor rig pa/"@bo-x-ewts , "旅游经济学"@zh-hans ;
+        :catalogInfo        "A general education on pilgrimage economy"@en ;
+        :creator            bdr:CR30C94363C969EC7D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS21964 ;

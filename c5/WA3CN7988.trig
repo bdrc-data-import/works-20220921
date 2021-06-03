@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN7988 {
+    bda:LG59F2050EB8F867E0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T11:38:03.451Z"^^xsd:dateTime ;
+        adm:logMessage      "added editer"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGB651373CF229510C
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-08T12:53:04.525Z"^^xsd:dateTime ;
@@ -40,19 +46,25 @@ bdg:WA3CN7988 {
     bda:WA3CN7988  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN7988 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "c5/WA3CN7988.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN7988 ;
-        adm:logEntry        bda:LGB651373CF229510C , bda:LGC003967CDE67A275 , bda:LGC1F0A567283E8A5C , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG59F2050EB8F867E0 , bda:LGB651373CF229510C , bda:LGC003967CDE67A275 , bda:LGC1F0A567283E8A5C , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8E1C5A6863529C77
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26527 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW3CN7988  skos:altLabel  "犹太人商业学"@zh-hans .
     
     bdr:WA3CN7988  a        :Work ;
         skos:prefLabel      "ya hu dA pa'i tshong las rig pa/"@bo-x-ewts , "犹太人商业学"@zh-hans ;
         :catalogInfo        "Jewish entrepreneurs explain how to succeed in business."@en ;
+        :creator            bdr:CR8E1C5A6863529C77 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN7988 , bdr:W3CN7988 ;

@@ -13,6 +13,12 @@
 
 bdg:WA21970 {
     bda:LGB067DEB332E93F90
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T16:41:54.708Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog,add  author, editor, cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGDD92DF1D364382A2
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -47,16 +53,17 @@ bdg:WA21970 {
     bda:WA21970  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21970 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "a1/WA21970.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21970 ;
-        adm:logEntry        bda:LGB067DEB332E93F90 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LGB067DEB332E93F90 , bda:LGDD92DF1D364382A2 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA21970  a          :Work ;
         skos:prefLabel      "nyer mkho'i rtsis kyi rnam bzhag pad dkar chun po/"@bo-x-ewts ;
+        :catalogInfo        "Study on Tibetan astrology and astronomy."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T203 ;

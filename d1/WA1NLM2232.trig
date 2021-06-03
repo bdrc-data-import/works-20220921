@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2232 {
+    bda:LG8A9271AB77CDE537
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T12:15:40.74Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGA09E423434A6A7A3
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM2232 {
     bda:WA1NLM2232  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2232 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d1/WA1NLM2232.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2232 ;
-        adm:logEntry        bda:LGA09E423434A6A7A3 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG8A9271AB77CDE537 , bda:LGA09E423434A6A7A3 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2232  a       :Work ;
         skos:prefLabel      "thob yig brgyud rim sogs/"@bo-x-ewts ;
+        :catalogInfo        "Record of teachings received and transmission lineage"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2232 , bdr:W1NLM2232 .
+        :workGenre          bdr:T192 ;
+        :workHasInstance    bdr:MW1NLM2232 , bdr:W1NLM2232 ;
+        :workIsAbout        bdr:T177 .
 }

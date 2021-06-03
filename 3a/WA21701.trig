@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21701 {
-    bda:LG35818A64D49DDC3F
+    bda:LG14D782C7645E4E24
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG35818A64D49DDC3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T13:29:16.263Z"^^xsd:dateTime ;
+        adm:logMessage      "removed copyright message"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -47,32 +53,33 @@ bdg:WA21701 {
     bda:WA21701  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21701 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "3a/WA21701.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21701 ;
-        adm:logEntry        bda:LG35818A64D49DDC3F , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE , bda:LGIMC3134826EB ;
+        adm:logEntry        bda:LG14D782C7645E4E24 , bda:LG35818A64D49DDC3F , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE , bda:LGIMC3134826EB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR14D782C7645E4E24
-        a                   :AgentAsCreator ;
-        :agent              bdr:P2424 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRAEA1382513F6306F
+    bdr:CR8A39E067CF0E9A42
         a                   :AgentAsCreator ;
         :agent              bdr:P5114 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRAEA1382513F6306F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2424 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW21701  skos:altLabel  "Ñag-bla Padma-bdud-ʾdul gyi rnam thar daṅ mgur ʾbum bʹzugs /Ye-ʹses-rdo-rjes mdzad."@en-x-mixed , "pai ma tui tu chi tao ko"@zh-latn-wadegile .
     
     bdr:WA21701  a          :Work ;
         skos:prefLabel      "nyag bla pad+ma bdud 'dul gyi rnam thar dang mgur 'bum/"@bo-x-ewts , "Ñag-bla Padma-bdud-ʾdul gyi rnam thar daṅ mgur ʾbum bʹzugs /Ye-ʹses-rdo-rjes mdzad."@en-x-mixed , "pai ma tui tu chi tao ko"@zh-latn-wadegile ;
-        :creator            bdr:CR14D782C7645E4E24 , bdr:CRAEA1382513F6306F ;
+        :catalogInfo        "A biography and collection of spiritual songs by Nyingma master Nyakla Pema Dudul (1816-1872)."@en ;
+        :creator            bdr:CR8A39E067CF0E9A42 , bdr:CRAEA1382513F6306F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T184 , bdr:T3 ;
         :workHasInstance    bdr:MW21701 , bdr:W21701 ;
-        :workIsAbout        bdr:P2424 .
+        :workIsAbout        bdr:P2424 , bdr:T1082 .
 }

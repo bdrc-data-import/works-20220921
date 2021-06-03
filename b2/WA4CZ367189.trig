@@ -18,25 +18,30 @@ bdg:WA4CZ367189 {
         adm:logMessage      "QC and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGBCF92C7043D099B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-02T16:41:55.46Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog,add  author, editor, cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ367189  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ367189 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b2/WA4CZ367189.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ367189 ;
-        adm:logEntry        bda:LGA90FE3DABBEDC413 ;
+        adm:logEntry        bda:LGA90FE3DABBEDC413 , bda:LGBCF92C7043D099B5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusProvisional .
     
-    bdr:CRBCF92C7043D099B5
+    bdr:CRCBD5DC06FE2AD2F6
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS75335 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA4CZ367189  a      :Work ;
-        skos:prefLabel      "tshor ba'i pha bong /"@bo-x-ewts ;
-        :creator            bdr:CRBCF92C7043D099B5 ;
+        :creator            bdr:CRCBD5DC06FE2AD2F6 ;
         :isRoot             true ;
         :workHasInstance    bdr:MW4CZ367189 .
 }
