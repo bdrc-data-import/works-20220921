@@ -12,25 +12,47 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS68378 {
+    bda:LG35A1F8F01838418E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-06-03T09:39:25.864Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG4F054ED78E9E7BD4
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-04-12T09:46:58.258Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGE984A4879104720B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-03T09:38:21.36Z"^^xsd:dateTime ;
+        adm:logMessage      "added title, topic, author, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS68378  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS68378 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "bf/WA8LS68378.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS68378 ;
-        adm:logEntry        bda:LG4F054ED78E9E7BD4 ;
+        adm:logEntry        bda:LG35A1F8F01838418E , bda:LG4F054ED78E9E7BD4 , bda:LGE984A4879104720B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRD2B3FE8FBDD22F13
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75767 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS68378  a       :Work ;
+        skos:altLabel       "rje btsun bla ma shing bza' rdo rje 'chang chen po blo bzang dar rgyas rgya mtsho dpal bzang po'i rnam par thar pa mdo tsam du brjod pa dad pa'i pad+mo 'byed pa'i nyin byed/"@bo-x-ewts ;
         skos:prefLabel      "er ti ni mahA paN+di ta shing bza' blo bzang dar rgyas rgya mtsho'i rnam thar/"@bo-x-ewts ;
+        :catalogInfo        "Biography of the 7th Shingsa Pandita Losang Dargye by Gonrong Geshe Ngawang Dargye."@en ;
+        :creator            bdr:CRD2B3FE8FBDD22F13 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW8LS68378 .
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW8LS68378 , bdr:W8LS68378 ;
+        :workIsAbout        bdr:P167 .
 }
