@@ -24,9 +24,15 @@ bdg:WA23911 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LG9587577D8CDE3A81
+    bda:LG86826458A6D56865
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG9587577D8CDE3A81
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-04T15:19:04.702Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, author, editor,add biblio title, pub info, and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGC2068C42298ECFD5
         a                   adm:ScanRequestCreation ;
@@ -50,11 +56,11 @@ bdg:WA23911 {
     bda:WA23911  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23911 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "40/WA23911.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23911 ;
-        adm:logEntry        bda:LG03BB00E5B3D37832 , bda:LG3518E0FFFD2F068C , bda:LG9587577D8CDE3A81 , bda:LGC2068C42298ECFD5 , bda:LGC62EA021B1398B54 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG03BB00E5B3D37832 , bda:LG3518E0FFFD2F068C , bda:LG86826458A6D56865 , bda:LG9587577D8CDE3A81 , bda:LGC2068C42298ECFD5 , bda:LGC62EA021B1398B54 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -63,6 +69,7 @@ bdg:WA23911 {
     bdr:WA23911  a          :Work ;
         skos:altLabel       "zhi byed snga bar phyi gsum gyi skor"@bo-alalc97 , "The Tradition of Pha Dam-pa Saṅs-rgyas :a treasured collection of his teachings transmitted /by Thugs-sras-Kun-dgaʼ ; edited with an English introduction by Barbara Nimri Aziz."@en-x-mixed ;
         skos:prefLabel      "zhi byed snga bar phyi gsum gyi skor/"@bo-x-ewts , "the tradition of pha dam-pa sans-rgyas : a treasured collection of his teachings transmitted"@en-x-mixed ;
+        :catalogInfo        "The Tradition of Pha Dampa Sangye: A Treasured Collection of His Teachings Transmitted by Thuse Kunga."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW23911 , bdr:W23911 ;

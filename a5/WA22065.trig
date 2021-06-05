@@ -25,14 +25,20 @@ bdg:WA22065 {
         adm:logWho          bdu:U00016 .
     
     bda:LG139AAF65A7DE167D
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-04T09:49:11.771Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, added cat, pub info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG42FCCC0A72801AEA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-11T11:10:55.31Z"^^xsd:dateTime ;
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGB4926701317CCCE3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGD6B43D23D27E2B93
         a                   adm:ScanRequestCreation ;
@@ -64,11 +70,11 @@ bdg:WA22065 {
     bda:WA22065  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22065 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "a5/WA22065.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22065 ;
-        adm:logEntry        bda:LG044E2B65E669745F , bda:LG12E7118DFC44992B , bda:LG139AAF65A7DE167D , bda:LG42FCCC0A72801AEA , bda:LGD6B43D23D27E2B93 , bda:LGIMA1F3FB78EA , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG044E2B65E669745F , bda:LG12E7118DFC44992B , bda:LG139AAF65A7DE167D , bda:LG42FCCC0A72801AEA , bda:LGB4926701317CCCE3 , bda:LGD6B43D23D27E2B93 , bda:LGIMA1F3FB78EA , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -80,6 +86,6 @@ bdg:WA22065 {
         :catalogInfo        "An episode from the epic of Gesar."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW22065 , bdr:MW26078_98BDCA , bdr:W22065 ;
+        :workHasInstance    bdr:MW22065 , bdr:W22065 ;
         :workIsAbout        bdr:T248 .
 }

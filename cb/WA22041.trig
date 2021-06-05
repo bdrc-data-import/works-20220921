@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22041 {
+    bda:LG6547A81E5410E66A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG7B60DE0E47DC1E17
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2013-11-06T12:33:33.921Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA22041 {
         adm:logWho          bdu:U00017 .
     
     bda:LGE8B8382A94140D60
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-04T09:49:10.418Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, added cat, pub info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGFFCCD87B83F4832A
         a                   adm:UpdateData ;
@@ -51,11 +57,11 @@ bdg:WA22041 {
     bda:WA22041  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22041 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "cb/WA22041.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22041 ;
-        adm:logEntry        bda:LG7B60DE0E47DC1E17 , bda:LGE8532C63F3D30799 , bda:LGE8B8382A94140D60 , bda:LGFFCCD87B83F4832A , bda:LGIM4BF5F96E12 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG6547A81E5410E66A , bda:LG7B60DE0E47DC1E17 , bda:LGE8532C63F3D30799 , bda:LGE8B8382A94140D60 , bda:LGFFCCD87B83F4832A , bda:LGIM4BF5F96E12 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

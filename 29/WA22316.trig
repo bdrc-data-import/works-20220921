@@ -18,8 +18,10 @@ bdg:WA22316 {
         adm:logWho          bdu:U00013 .
     
     bda:LG4738AACA2CDF7E51
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-04T09:49:15.549Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, added cat, pub info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG53F8C4636DF9B110
         a                   adm:UpdateData ;
@@ -51,6 +53,10 @@ bdg:WA22316 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00003 .
     
+    bda:LGB6692E8C57FEA2DD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGE888CEE67190B1C3
         a                   adm:UpdateData ;
         adm:logDate         "2012-05-07T14:32:45.542Z"^^xsd:dateTime ;
@@ -66,19 +72,41 @@ bdg:WA22316 {
     bda:WA22316  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22316 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "29/WA22316.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22316 ;
-        adm:logEntry        bda:LG3C76071C15698DF8 , bda:LG4738AACA2CDF7E51 , bda:LG53F8C4636DF9B110 , bda:LG5559AF5312CDB595 , bda:LG65A8C1FFD8C5F108 , bda:LG7CAA0C626076885D , bda:LG9C133583ADC54866 , bda:LGE888CEE67190B1C3 , bda:LGE9F095F875ABD483 ;
+        adm:logEntry        bda:LG3C76071C15698DF8 , bda:LG4738AACA2CDF7E51 , bda:LG53F8C4636DF9B110 , bda:LG5559AF5312CDB595 , bda:LG65A8C1FFD8C5F108 , bda:LG7CAA0C626076885D , bda:LG9C133583ADC54866 , bda:LGB6692E8C57FEA2DD , bda:LGE888CEE67190B1C3 , bda:LGE9F095F875ABD483 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR6150C6393E483BDD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3458 ;
+        :role               bdr:R0ER0023 .
+    
+    bdr:CR88B29BED434B3CBE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P753 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRAAF39E9E7391A032
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8194 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CREEAC3998D1B6C1EB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7048 ;
+        :role               bdr:R0ER0018 .
     
     bdr:MW22316  skos:altLabel  "cakrasamvara tantra"@sa-alalc97 .
     
     bdr:WA22316  a          :Work ;
         skos:altLabel       "'khor lo sdom pa zhes bya ba rnal 'byor chen po'i rgyud kyi rgyal po/"@bo-x-ewts , "bde mchog nyung ngu/"@bo-x-ewts , "khrag 'thung gi rgyal po 'khor lo sdom par brjod pa rnal 'byor ma bla na med pa rgyud thams cad kyi rgyal po/"@bo-x-ewts , "rgyud kyi rgyal po dpal bde mchog nyung ngu/"@bo-x-ewts ;
         skos:prefLabel      "dpal 'khor lo sdom pa zhes bya ba rnal 'byor chen mo'i rgyud kyi rgyal po/"@bo-x-ewts , "cakrasamvara tantra"@sa-alalc97 ;
+        :catalogInfo        "Laghucakrasamvaratantra, the root tantra of the Cakrasamvara tantra"@en ;
+        :creator            bdr:CR6150C6393E483BDD , bdr:CR88B29BED434B3CBE , bdr:CRAAF39E9E7391A032 , bdr:CREEAC3998D1B6C1EB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T2129 ;

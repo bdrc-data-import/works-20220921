@@ -23,9 +23,15 @@ bdg:WA22319 {
         adm:logDate         "2012-05-07T15:53:17.217Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG4B029C8E5134074E
+    bda:LG40EC10FCF918607A
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG4B029C8E5134074E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-04T09:49:16.023Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, added cat, pub info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG5CF5D996B75138C4
         a                   adm:UpdateData ;
@@ -54,19 +60,20 @@ bdg:WA22319 {
     bda:WA22319  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22319 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "61/WA22319.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22319 ;
-        adm:logEntry        bda:LG1C875F7F05DAAB37 , bda:LG210F66A342DC446C , bda:LG4B029C8E5134074E , bda:LG5CF5D996B75138C4 , bda:LG924AC24005AB7436 , bda:LGABC35A0E1E6A8694 , bda:LGE428AEE3C4047EF8 ;
+        adm:logEntry        bda:LG1C875F7F05DAAB37 , bda:LG210F66A342DC446C , bda:LG40EC10FCF918607A , bda:LG4B029C8E5134074E , bda:LG5CF5D996B75138C4 , bda:LG924AC24005AB7436 , bda:LGABC35A0E1E6A8694 , bda:LGE428AEE3C4047EF8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA22319  a          :Work ;
         skos:prefLabel      "gser 'od g.yang skyabs/"@bo-x-ewts ;
+        :catalogInfo        "The Arya Suvarshas Mahayana sutra"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T769 ;
-        :workHasInstance    bdr:MW1KG12113_CDFC19 , bdr:MW1PD86474_D891C1 , bdr:MW22319 , bdr:MW3CN2358 , bdr:W22319 , bdr:W3CN2358 ;
+        :workHasInstance    bdr:MW22319 , bdr:MW3CN2358 , bdr:W22319 , bdr:W3CN2358 ;
         :workIsAbout        bdr:T22 .
 }

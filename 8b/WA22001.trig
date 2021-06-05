@@ -13,8 +13,10 @@
 
 bdg:WA22001 {
     bda:LG39EBA4648DD7A677
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-04T09:49:07.146Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, added cat, pub info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG4F8EA4B1A7AB8483
         a                   adm:ScanRequestCreation ;
@@ -27,6 +29,10 @@ bdg:WA22001 {
         adm:logDate         "2007-12-12T10:26:40.922Z"^^xsd:dateTime ;
         adm:logMessage      "added note"@en ;
         adm:logWho          bdu:U00003 .
+    
+    bda:LGF88F961E3BFC622F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
@@ -59,11 +65,11 @@ bdg:WA22001 {
     bda:WA22001  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22001 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "8b/WA22001.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22001 ;
-        adm:logEntry        bda:LG39EBA4648DD7A677 , bda:LG4F8EA4B1A7AB8483 , bda:LG8990F87B53471DCA , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG39EBA4648DD7A677 , bda:LG4F8EA4B1A7AB8483 , bda:LG8990F87B53471DCA , bda:LGF88F961E3BFC622F , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -72,8 +78,9 @@ bdg:WA22001 {
     bdr:WA22001  a          :Work ;
         skos:altLabel       "gdug pa spun bdun/"@bo-x-ewts , "gling rje ge sar rgyal po'i rnam thar srid le'u yi smad cha shar bdud gdug pa spun bdun dang g.yu rtse rgyal po btul nas rin chen g.yang bdun phab tshul rnam par rgyal ba'i ru mtshon/"@bo-x-ewts ;
         skos:prefLabel      "gling ge sar rgyal po'i sgrung gdug pa spun bdun/"@bo-x-ewts , "ts'ang pao ch'i hsiung mei"@zh-latn-wadegile ;
+        :catalogInfo        "Episodes from the Gesar epics"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:IE22001 , bdr:MW22001 , bdr:W22001 ;
+        :workHasInstance    bdr:MW22001 , bdr:W22001 ;
         :workIsAbout        bdr:T248 .
 }

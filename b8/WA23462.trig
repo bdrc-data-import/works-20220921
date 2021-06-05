@@ -24,9 +24,15 @@ bdg:WA23462 {
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGC608C1FDF98D0BEA
+    bda:LG781848FB4E0F09BC
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGC608C1FDF98D0BEA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-04T15:18:56.848Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, author, editor,add biblio title, pub info, and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGD4F192DD2F25F65B
         a                   adm:ScanRequestCreation ;
@@ -37,17 +43,24 @@ bdg:WA23462 {
     bda:WA23462  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23462 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "b8/WA23462.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23462 ;
-        adm:logEntry        bda:LG10A0893456F17429 , bda:LG5F00AA6DDAC5C692 , bda:LGC608C1FDF98D0BEA , bda:LGD4F192DD2F25F65B ;
+        adm:logEntry        bda:LG10A0893456F17429 , bda:LG5F00AA6DDAC5C692 , bda:LG781848FB4E0F09BC , bda:LGC608C1FDF98D0BEA , bda:LGD4F192DD2F25F65B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR05F775F527B1CE29
+        a                   :AgentAsCreator ;
+        :agent              bdr:P295 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA23462  a          :Work ;
         skos:altLabel       "spyan ras gzigs kyi sgo nas mig gnyis skyon sel ba'i gdams pa zung rngu tsha gdung sel ba'i zla zer/"@bo-x-ewts ;
         skos:prefLabel      "'phags pa spyan ras gzigs kyi sgo nas mig gnyis skyon sel ba'i gdams pa zung rngu tsha gdung sel ba'i zla zer/"@bo-x-ewts ;
+        :catalogInfo        "Treatment of eye disease through practice focusing on the Avalokitesvara's Mantara"@en ;
+        :creator            bdr:CR05F775F527B1CE29 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW23462 , bdr:W23462 ;

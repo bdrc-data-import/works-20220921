@@ -17,6 +17,10 @@ bdg:WA22343 {
         adm:logDate         "2012-05-07T12:55:53.911Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00013 .
     
+    bda:LG24FA8A0801F9F70A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG3E59E9F1F709A27A
         a                   adm:UpdateData ;
         adm:logDate         "2011-12-02T15:11:05.153Z"^^xsd:dateTime ;
@@ -30,8 +34,10 @@ bdg:WA22343 {
         adm:logWho          bdu:U00016 .
     
     bda:LGCD8042490736562F
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-04T09:49:16.491Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, added cat, pub info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGF082906DD72403C8
         a                   adm:UpdateData ;
@@ -77,13 +83,23 @@ bdg:WA22343 {
     bda:WA22343  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22343 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "45/WA22343.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22343 ;
-        adm:logEntry        bda:LG109AFD1E14611C61 , bda:LG3E59E9F1F709A27A , bda:LGB33CD2C868B5AA20 , bda:LGCD8042490736562F , bda:LGF082906DD72403C8 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG109AFD1E14611C61 , bda:LG24FA8A0801F9F70A , bda:LG3E59E9F1F709A27A , bda:LGB33CD2C868B5AA20 , bda:LGCD8042490736562F , bda:LGF082906DD72403C8 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR39124B0BE25397E5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8266 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRBD0DD226CBC9493D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG8854 ;
+        :role               bdr:R0ER0018 .
     
     bdr:MW22343  skos:altLabel  "samadhirajasutra"@sa-alalc97 , "山摩地王经"@zh-hans .
     
@@ -91,6 +107,7 @@ bdg:WA22343 {
         skos:altLabel       "byang chub sems dpa' zla 'od gzhon nus zhus pa'i mdo ting nge 'dzin gyi rgyal po/"@bo-x-ewts , "shan mo di wang jing"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "mdo ting nge 'dzin gyi rgyal po/"@bo-x-ewts , "samadhirajasutra"@sa-alalc97 , "山摩地王经"@zh-hans ;
         :catalogInfo        "The King of Samadhi Sutra. A canonical teaching on meditation."@en ;
+        :creator            bdr:CR39124B0BE25397E5 , bdr:CRBD0DD226CBC9493D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T769 ;

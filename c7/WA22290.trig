@@ -13,6 +13,12 @@
 
 bdg:WA22290 {
     bda:LG0A48288E89B0045C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-04T09:49:14.993Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, added cat, pub info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGFC7EE52AD59D0712
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -40,11 +46,11 @@ bdg:WA22290 {
     bda:WA22290  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22290 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c7/WA22290.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22290 ;
-        adm:logEntry        bda:LG0A48288E89B0045C , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG0A48288E89B0045C , bda:LGFC7EE52AD59D0712 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -53,8 +59,9 @@ bdg:WA22290 {
     bdr:WA22290  a          :Work ;
         skos:altLabel       "qi jing ci hui bian"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bsang mchod bkra shis 'khyil ba/"@bo-x-ewts , "Bsaṅ mchod bkra śis ʾkhyil ba /[dpe sgrig ʾgan ʾkhur ba Saṅs-rgyas]."@en-x-mixed , "chih ching tz'u hui pien"@zh-latn-wadegile ;
+        :catalogInfo        "An incense offering ritual"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW00KG06_5DEB31 , bdr:MW22290 , bdr:MW25186_C94A4C , bdr:W22290 ;
+        :workHasInstance    bdr:MW22290 , bdr:W22290 ;
         :workIsAbout        bdr:T18 .
 }
