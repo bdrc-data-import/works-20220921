@@ -25,6 +25,12 @@ bdg:WA27926 {
         adm:logWho          bdu:U00026 .
     
     bda:LGC8D52D8D1F7DBFA7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-07T16:19:29.894Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, add, author, editor,cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGEE77A05476076568
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -38,19 +44,20 @@ bdg:WA27926 {
     bda:WA27926  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27926 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "41/WA27926.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27926 ;
-        adm:logEntry        bda:LG351DBDACF5E37E41 , bda:LG47C4E9946C39FEEC , bda:LGC8D52D8D1F7DBFA7 , bda:LGIMC3134826EB ;
+        adm:logEntry        bda:LG351DBDACF5E37E41 , bda:LG47C4E9946C39FEEC , bda:LGC8D52D8D1F7DBFA7 , bda:LGEE77A05476076568 , bda:LGIMC3134826EB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:MW27926  skos:altLabel  "ge sar and his cult : tibetan texts concerned with the worship of the epic hero"@en .
     
     bdr:WA27926  a          :Work ;
-        skos:altLabel       "the gling gesar tibet and his cult"@en , "The Gling Gesar of Tibet and his cult :Tibetan texts concerned with the worship of the epic hero /compiled by the 8th Khamtul, Don-brgyud-nyi-ma."@en-x-mixed ;
+        skos:altLabel       "the gling gesar tibet and his cult"@en ;
         skos:prefLabel      "gling ge sar gyi sgrub skor/"@bo-x-ewts , "ge sar and his cult : tibetan texts concerned with the worship of the epic hero"@en ;
+        :catalogInfo        "The Gling Gesar of Tibet and his cult :Tibetan texts concerned with the worship of the epic hero, compiled by the 8th Khamtul, Dongyue Nyima"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW27926 , bdr:W27926 ;

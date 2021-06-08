@@ -13,6 +13,12 @@
 
 bdg:WA28803 {
     bda:LG2A8DDDC49ED5D408
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-07T16:19:30.809Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, add, author, editor,cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG41FB429F7C579F71
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -71,11 +77,11 @@ bdg:WA28803 {
     bda:WA28803  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28803 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "f5/WA28803.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28803 ;
-        adm:logEntry        bda:LG2A8DDDC49ED5D408 , bda:LGBE58DF4919396115 , bda:LGCC967677F643BECE , bda:LGE5980B9AA3E7A2F7 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG2A8DDDC49ED5D408 , bda:LG41FB429F7C579F71 , bda:LGBE58DF4919396115 , bda:LGCC967677F643BECE , bda:LGE5980B9AA3E7A2F7 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -84,6 +90,7 @@ bdg:WA28803 {
     bdr:WA28803  a          :SerialMember , :Work ;
         skos:altLabel       "reb kong sngags mang gi lo rgyus phyogs bsgrigs dpal chen khrag 'thung khros pa'i rdo rje'i gad rkyangs/"@bo-x-ewts ;
         skos:prefLabel      "reb kong sngags mang gi lo rgyus phyogs bsgrigs/"@bo-x-ewts , "Reb-koṅ sṅags maṅ gi lo rgyus phyogs bsgrigs dpal chen khrag ʼthuṅ khros paʼi rdo rjeʼi gad rgyaṅs źes bya ba bźugs so /Lce-nag-tshaṅ Hūm̐-chen daṅ Ye-śes-ʼod-zer-sgrol-mas bsgrigs."@en-x-mixed ;
+        :catalogInfo        "Collection of history associated with Rebgong Ngakmang"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1017421 ;

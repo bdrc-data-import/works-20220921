@@ -11,48 +11,53 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA8LS75789 {
-    bda:LG0C5118E8A4B0D79E
+bdg:WA8LS75859 {
+    bda:LG611F76574013093F
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2021-06-04T12:19:15.526Z"^^xsd:dateTime ;
+        adm:logDate         "2021-06-07T13:59:44.742Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG19FB4883C7F012B9
+    bda:LGAA5F593B75881BF2
         a                   adm:UpdateData ;
-        adm:logDate         "2021-06-07T10:09:51.679Z"^^xsd:dateTime ;
+        adm:logDate         "2021-06-07T14:00:28.702Z"^^xsd:dateTime ;
         adm:logMessage      "restricted in china"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG4926FC69B9CBA88D
+    bda:LGFE1F65A35859C20E
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-06-04T12:18:49.248Z"^^xsd:dateTime ;
+        adm:logDate         "2021-06-07T13:58:52.728Z"^^xsd:dateTime ;
         adm:logMessage      "new work record created"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:WA8LS75789  a       adm:AdminData ;
+    bda:WA8LS75859  a       adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA8LS75789 ;
-        adm:facetIndex      5 ;
-        adm:gitPath         "0c/WA8LS75789.trig" ;
+        adm:adminAbout      bdr:WA8LS75859 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "0a/WA8LS75859.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA8LS75789 ;
-        adm:logEntry        bda:LG0C5118E8A4B0D79E , bda:LG19FB4883C7F012B9 , bda:LG4926FC69B9CBA88D ;
+        adm:graphId         bdg:WA8LS75859 ;
+        adm:logEntry        bda:LG611F76574013093F , bda:LGAA5F593B75881BF2 , bda:LGFE1F65A35859C20E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRBD5C85BE43E5572B
+    bdr:CR98D31137F3C72A8F
         a                   :AgentAsCreator ;
-        :agent              bdr:P8LS75790 ;
+        :agent              bdr:P8LS75860 ;
         :role               bdr:R0ER0026 .
     
-    bdr:WA8LS75789  a       :Work ;
-        skos:prefLabel      "gtam rgyud lnga pa las byis pa'i ched du nyer btus ri mo'i sgrung deb dang po/"@bo-x-ewts ;
-        :catalogInfo        "Translation of narrative concerning children from the Panchtantra; translated by Dumkhang Phuntsok Namgyal and edited by Doboom Tulku."@en ;
-        :creator            bdr:CRBD5C85BE43E5572B ;
+    bdr:CRE3A1ACEF58EE1A89
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS68679 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA8LS75859  a       :Work ;
+        skos:prefLabel      "bod kyi dran pa/"@bo-x-ewts ;
+        :catalogInfo        "Tibetan memoirs during cultural revolution in Tibet; written by Tsering Odzer and translated by Kunga Tashi."@en ;
+        :creator            bdr:CR98D31137F3C72A8F , bdr:CRE3A1ACEF58EE1A89 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1KG26395 , bdr:T276 ;
-        :workHasInstance    bdr:MW8LS75789 , bdr:W8LS75789 .
+        :workHasInstance    bdr:MW8LS75859 , bdr:W8LS75859 ;
+        :workIsAbout        bdr:T294 , bdr:T349 .
 }

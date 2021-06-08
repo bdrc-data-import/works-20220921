@@ -13,6 +13,12 @@
 
 bdg:WA27912 {
     bda:LG89DD5ADF74BFE19C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-07T16:19:28.926Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, add, author, editor,cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG9C4731D7FD3033BA
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -25,11 +31,11 @@ bdg:WA27912 {
     bda:WA27912  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27912 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a6/WA27912.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27912 ;
-        adm:logEntry        bda:LG89DD5ADF74BFE19C , bda:LGF46FE0341542B4C9 ;
+        adm:logEntry        bda:LG89DD5ADF74BFE19C , bda:LG9C4731D7FD3033BA , bda:LGF46FE0341542B4C9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -37,9 +43,10 @@ bdg:WA27912 {
     
     bdr:WA27912  a          :Work ;
         skos:prefLabel      "chos spyod bsdus pa phan bde'i dga' ston/"@bo-x-ewts , "collected rituals and liturgical practices for use in rnin-ma-pa religious establishments in india"@en-x-mixed ;
+        :catalogInfo        "Collected rituals and liturgical practices for use in Nyingma pa religious establishments in India"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T225 ;
-        :workHasInstance    bdr:MW27912 , bdr:W27912 ;
+        :workHasInstance    bdr:MW27912 ;
         :workIsAbout        bdr:T1082 .
 }

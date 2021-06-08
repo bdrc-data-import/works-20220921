@@ -18,6 +18,10 @@ bdg:WA27936 {
         adm:logMessage      "corrected bib titles"@en ;
         adm:logWho          bdu:U00012 .
     
+    bda:LG1EE29EBD49D881D4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG4EA875C0F7E53FBF
         a                   adm:UpdateData ;
         adm:logDate         "2009-11-10T16:51:26.193Z"^^xsd:dateTime ;
@@ -31,17 +35,19 @@ bdg:WA27936 {
         adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG8EF3C82C5D1D6734
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-07T16:19:30.376Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, add, author, editor,cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:WA27936  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27936 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "2f/WA27936.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27936 ;
-        adm:logEntry        bda:LG1EDE3C9A4DFCDD15 , bda:LG4EA875C0F7E53FBF , bda:LG65CFD70926051100 , bda:LG8EF3C82C5D1D6734 ;
+        adm:logEntry        bda:LG1EDE3C9A4DFCDD15 , bda:LG1EE29EBD49D881D4 , bda:LG4EA875C0F7E53FBF , bda:LG65CFD70926051100 , bda:LG8EF3C82C5D1D6734 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -49,6 +55,7 @@ bdg:WA27936 {
     
     bdr:WA27936  a          :Work ;
         skos:prefLabel      "kha ton gces btus/"@bo-x-ewts , "buddhist prayers and devotional pieces from tibet"@en ;
+        :catalogInfo        "Buddhist prayers and devotional pieces from Tibet, reproduced from rare eastern tibetan prints and manuscripts for the use of the faithful by sherab gyaltsen lama"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T225 ;

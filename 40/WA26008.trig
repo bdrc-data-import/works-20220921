@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA26008 {
+    bda:LG1CE2949B2659E10C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG1DD879B95D9BC4A4
         a                   adm:UpdateData ;
         adm:logDate         "2008-01-09T11:00:47.859Z"^^xsd:dateTime ;
@@ -37,8 +41,10 @@ bdg:WA26008 {
         adm:logWho          bdu:U00021 .
     
     bda:LGBAD5F48D097BAE3C
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-07T16:19:25.737Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, add, author, editor,cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -64,11 +70,11 @@ bdg:WA26008 {
     bda:WA26008  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA26008 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "40/WA26008.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA26008 ;
-        adm:logEntry        bda:LG1DD879B95D9BC4A4 , bda:LGAC15811EA38B8880 , bda:LGAD35A59689A52E3C , bda:LGB3731E89704F2E2D , bda:LGBAD5F48D097BAE3C , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG1CE2949B2659E10C , bda:LG1DD879B95D9BC4A4 , bda:LGAC15811EA38B8880 , bda:LGAD35A59689A52E3C , bda:LGB3731E89704F2E2D , bda:LGBAD5F48D097BAE3C , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -77,6 +83,7 @@ bdg:WA26008 {
     bdr:WA26008  a          :SerialMember , :Work ;
         skos:altLabel       "sgra sbyor bam po gnyis pa/"@bo-x-ewts , "sheng ming yao ling er juan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "dkar chag 'phang thang ma/"@bo-x-ewts , "Dkar chag ʼPhaṅ-thaṅ-ma.Sgra sbyor bam po gñis pa /[Bod-ljoṅs rten rdzas bśams mdzod khaṅ nas bsgrigs]."@en-x-mixed , "pang tang mu lu"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Earliest catalog of the Tibetan canonical texts Kanjur and Tenjur from the ninth century and Tibeto-Sanskrit Buddhist terminological dictionary"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS26008 ;

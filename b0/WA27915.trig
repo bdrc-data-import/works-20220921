@@ -13,8 +13,10 @@
 
 bdg:WA27915 {
     bda:LG816CBBEB2145C879
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-07T16:19:29.437Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, add, author, editor,cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG85576312F0CA5F23
         a                   adm:UpdateData ;
@@ -22,14 +24,18 @@ bdg:WA27915 {
         adm:logMessage      "added Work to PL480"@en ;
         adm:logWhoStr       "add-works-to-PR1PL480" .
     
+    bda:LGFB0455F3DB179773
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:WA27915  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27915 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b0/WA27915.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27915 ;
-        adm:logEntry        bda:LG816CBBEB2145C879 , bda:LG85576312F0CA5F23 ;
+        adm:logEntry        bda:LG816CBBEB2145C879 , bda:LG85576312F0CA5F23 , bda:LGFB0455F3DB179773 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -37,6 +43,7 @@ bdg:WA27915 {
     
     bdr:WA27915  a          :Work ;
         skos:prefLabel      "thub bstan rdo rje brag e wam lcog sgar ba'i 'dus sde rnams kyi chos spyod rab gsal/"@bo-x-ewts , "the standard rituals used in the liturgy followed by rdo-rje-brag and its affiliates"@en-x-mixed ;
+        :catalogInfo        "The standard rituals used in the liturgy followed by Dorje Drak and its affiliates"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T225 ;

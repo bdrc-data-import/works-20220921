@@ -13,6 +13,12 @@
 
 bdg:WA28868 {
     bda:LG21BFD1171C236FC7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-07T16:19:32.998Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, add, author, editor,cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGC7503D18D8015CCA
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -40,11 +46,11 @@ bdg:WA28868 {
     bda:WA28868  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28868 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "68/WA28868.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28868 ;
-        adm:logEntry        bda:LG21BFD1171C236FC7 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG21BFD1171C236FC7 , bda:LGC7503D18D8015CCA , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -53,6 +59,7 @@ bdg:WA28868 {
     bdr:WA28868  a          :Work ;
         skos:altLabel       "bod kyi gso ba rig pa/"@bo-x-ewts ;
         skos:prefLabel      "krung go'i gso rig kun 'dus las bod kyi gso rig pa/"@bo-x-ewts , "yi xue bai ke quan shu, zang yi fen juan"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Select writings on the principles of Tibetan medicine"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW28868 , bdr:W28868 ;
