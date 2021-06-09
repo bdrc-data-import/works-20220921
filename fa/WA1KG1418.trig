@@ -38,7 +38,8 @@ bdg:WA1KG1418 {
     
     bda:LGFD10FDFA9FB65EC1
         a                   adm:UpdateData ;
-        adm:logDate         "2021-04-13T20:40:10.558Z"^^xsd:dateTime ;
+        adm:logDate         "2021-06-08T17:44:00.195Z"^^xsd:dateTime ;
+        adm:logMessage      "added bard"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGIM093A1A0447
@@ -79,7 +80,7 @@ bdg:WA1KG1418 {
     bda:WA1KG1418  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG1418 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "fa/WA1KG1418.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG1418 ;
@@ -88,20 +89,30 @@ bdg:WA1KG1418 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR489C5D13EA06D48D
+    bdr:CR427C7894A17130B5
         a                   :AgentAsCreator ;
         :agent              bdr:P1165 ;
         :role               bdr:R0ER0012 .
     
+    bdr:CR489C5D13EA06D48D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228981 ;
+        :role               bdr:R0ER0012 .
+    
+    bdr:CR946D79872259B29C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228983 ;
+        :role               bdr:R0ER0012 .
+    
     bdr:CRB1438FB1582262B7
         a                   :AgentAsCreator ;
-        :agent              bdr:P9812 ;
+        :agent              bdr:P2KG228982 ;
         :role               bdr:R0ER0012 .
     
     bdr:WA1KG1418  a        :SerialMember , :Work ;
         skos:prefLabel      "dus 'gyur ma byung gong bod du chab srid skyong rim/"@bo-x-ewts ;
         :catalogInfo        "On pre-1959 Tibetan government administration in Tibet."@en ;
-        :creator            bdr:CR489C5D13EA06D48D , bdr:CRB1438FB1582262B7 ;
+        :creator            bdr:CR427C7894A17130B5 , bdr:CR489C5D13EA06D48D , bdr:CR946D79872259B29C , bdr:CRB1438FB1582262B7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS00EGS1016612 ;

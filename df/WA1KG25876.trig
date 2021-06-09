@@ -24,6 +24,12 @@ bdg:WA1KG25876 {
         adm:logMessage      "completed cataloging and released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGA93E3A379FD9EC4A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-08T16:18:11.635Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -48,18 +54,24 @@ bdg:WA1KG25876 {
     bda:WA1KG25876  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25876 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "df/WA1KG25876.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25876 ;
-        adm:logEntry        bda:LG07A658F32C810D33 , bda:LG918F8E87FCE28459 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG07A658F32C810D33 , bda:LG918F8E87FCE28459 , bda:LGA93E3A379FD9EC4A , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR223429611646C46B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228972 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA1KG25876  a       :SerialMember , :Work ;
         skos:altLabel       "ming ren tong nian gu shi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "mi sna grags can gyi byis dus gtam rgyud/"@bo-x-ewts , "名人童年故事"@zh-hans ;
         :catalogInfo        "Collection of childhood stories of some of the renowned persons."@en ;
+        :creator            bdr:CR223429611646C46B ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :serialMemberOf     bdr:WAS1KG25867 ;

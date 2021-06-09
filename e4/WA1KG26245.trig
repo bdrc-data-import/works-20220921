@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG26245 {
+    bda:LG713AE872FFF80057
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-08T16:18:43.407Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG8BF112CEF4E08F23
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-03-24T13:22:11.579Z"^^xsd:dateTime ;
@@ -27,18 +33,24 @@ bdg:WA1KG26245 {
     bda:WA1KG26245  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG26245 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "e4/WA1KG26245.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG26245 ;
-        adm:logEntry        bda:LG8BF112CEF4E08F23 , bda:LGC9BBDC469DD6C8AF ;
+        adm:logEntry        bda:LG713AE872FFF80057 , bda:LG8BF112CEF4E08F23 , bda:LGC9BBDC469DD6C8AF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR1285F0BE37927037
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228976 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG26245  a       :Work ;
         skos:altLabel       "भोटप्रकाश:"@bo-x-ewts ;
         skos:prefLabel      "bod kyi brda'i rab 'byed/"@bo-x-ewts , "bhota-prakasa; a tibetan chrestomathy, With introduction, skeleton grammar, notes, texts and vocabularies."@en ;
         :catalogInfo        "Tibetan-Sanskrit-English and Sanskrit-Tibetan-English vocabularies."@en ;
+        :creator            bdr:CR1285F0BE37927037 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn , bdr:LangSa ;
         :workHasInstance    bdr:MW1KG26245 , bdr:W1KG26245 ;

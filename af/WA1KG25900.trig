@@ -24,6 +24,12 @@ bdg:WA1KG25900 {
         adm:logMessage      "completed cataloging and released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGE9B6A4C3EB5C65F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-08T16:18:13.212Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -48,17 +54,28 @@ bdg:WA1KG25900 {
     bda:WA1KG25900  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25900 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "af/WA1KG25900.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25900 ;
-        adm:logEntry        bda:LG1E2AB3540F39A502 , bda:LGE65D4EE1D2857A03 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1E2AB3540F39A502 , bda:LGE65D4EE1D2857A03 , bda:LGE9B6A4C3EB5C65F1 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR301B3844A6D13610
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228974 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR7C4F556E0F7B7E66
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75307 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA1KG25900  a       :SerialMember , :Work ;
         skos:prefLabel      "gtam rgyud chung chung/ gnas lugs chen po/"@bo-x-ewts ;
         :catalogInfo        "Collection of short stories."@en ;
+        :creator            bdr:CR301B3844A6D13610 , bdr:CR7C4F556E0F7B7E66 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :serialMemberOf     bdr:WAS1KG25867 ;

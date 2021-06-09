@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG209059 {
+    bda:LG03CF8EC46B35CC59
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-08T09:16:10.143Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG6A3936015BEDCF1D
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -33,18 +39,24 @@ bdg:WA2KG209059 {
     bda:WA2KG209059  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG209059 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "57/WA2KG209059.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG209059 ;
-        adm:logEntry        bda:LG6A3936015BEDCF1D , bda:LGC2FF3D69E4A4556C , bda:LGE81F78E31AA1A230 ;
+        adm:logEntry        bda:LG03CF8EC46B35CC59 , bda:LG6A3936015BEDCF1D , bda:LGC2FF3D69E4A4556C , bda:LGE81F78E31AA1A230 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRECAEF575AF3B7668
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2JM306 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA2KG209059  a      :Work ;
         skos:altLabel       "mtho rim slob grwa'i bod rgya skad gnyis bca' khrims rig pa'i slob deb phreng bstar ma/ rtas khrims rig pa/"@bo-x-ewts ;
         skos:prefLabel      "rtsa khrims rig pa/"@bo-x-ewts , "宪法学"@zh-hans ;
         :catalogInfo        "A curriculum text for high school to learn the constitution of China."@en ;
+        :creator            bdr:CRECAEF575AF3B7668 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T266 ;

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG25870 {
+    bda:LGACB5325C3D5859CB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-08T16:16:12.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and translators"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGF7F6B868DA560FC4
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-01T16:32:26.289Z"^^xsd:dateTime ;
@@ -48,17 +54,33 @@ bdg:WA1KG25870 {
     bda:WA1KG25870  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25870 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "84/WA1KG25870.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25870 ;
-        adm:logEntry        bda:LGF7F6B868DA560FC4 , bda:LGFD776FE0D1BA93AE , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LGACB5325C3D5859CB , bda:LGF7F6B868DA560FC4 , bda:LGFD776FE0D1BA93AE , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR87E062EDFC4BDD46
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228969 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRA75E209992F452BE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228968 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRDDA7BDD054C17342
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228970 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA1KG25870  a       :SerialMember , :Work ;
         skos:prefLabel      "rgyal khab gsum gyi gtam rgyud/"@bo-x-ewts , "san guo yan yi"@en-x-mixed , "三国演义"@zh-hans ;
-        :catalogInfo        "Story of three kingdoms."@en ;
+        :catalogInfo        "Romance of the three kingdoms is a 14th century Chinese historical novel."@en ;
+        :creator            bdr:CR87E062EDFC4BDD46 , bdr:CRA75E209992F452BE , bdr:CRDDA7BDD054C17342 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :serialMemberOf     bdr:WAS1KG25867 ;

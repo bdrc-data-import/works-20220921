@@ -30,23 +30,35 @@ bdg:WA1KG26250 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGC7F3C49F529FBD6C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-08T16:19:44.453Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA1KG26250  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG26250 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ec/WA1KG26250.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG26250 ;
-        adm:logEntry        bda:LG334FA8D70D912C72 , bda:LG4B9C275EFD6B6C9C , bda:LG4D77BF7980D79470 ;
+        adm:logEntry        bda:LG334FA8D70D912C72 , bda:LG4B9C275EFD6B6C9C , bda:LG4D77BF7980D79470 , bda:LGC7F3C49F529FBD6C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR16D451B2CFE70557
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228977 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1KG26250  skos:altLabel  "the tragedy of my homeland"@en .
     
     bdr:WA1KG26250  a       :Work ;
         skos:prefLabel      "nga'i pha yul gyi ya nga ba'i lo rgyus/"@bo-x-ewts , "the tragedy of my homeland"@en ;
-        :catalogInfo        "Autobiographical reminiscences chiefly on political persecution in Amdo region of Tibet, China; includes her brief history."@en ;
+        :catalogInfo        "Autobiographical reminiscences chiefly on political persecution in Amdo region of Tibet, China; includes a brief history."@en ;
+        :creator            bdr:CR16D451B2CFE70557 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

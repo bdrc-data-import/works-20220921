@@ -24,28 +24,36 @@ bdg:WA3CN26487 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGC0D446EFA9FE47EC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-08T15:55:17.405Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3CN26487  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN26487 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "a1/WA3CN26487.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN26487 ;
-        adm:logEntry        bda:LG0DEE899519837C41 , bda:LG43572A50FD5A525E ;
+        adm:logEntry        bda:LG0DEE899519837C41 , bda:LG43572A50FD5A525E , bda:LGC0D446EFA9FE47EC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC0D446EFA9FE47EC
+    bdr:CR29C2CA5314355E13
         a                   :AgentAsCreator ;
         :agent              bdr:P3CN26489 ;
         :role               bdr:R0ER0019 .
     
-    bdr:WA3CN26487  a       :Work ;
+    bdr:WA3CN26487  a       :SerialMember , :Work ;
+        skos:altLabel       "bzhag pa 'jam dbyangs mkhas grub kyi gsung rtsom dpe tshogs pod dang po/"@bo-x-ewts ;
         skos:prefLabel      "slob dpon klu sgrub thogs med rta dbyangs gsum gyi rnam thar rgyas bsdus sna tshogs/"@bo-x-ewts ;
         :catalogInfo        "Biographies of Nagarjuna, Asanga and Vagbhata by Jamyang Khedrup."@en ;
-        :creator            bdr:CRC0D446EFA9FE47EC ;
+        :creator            bdr:CR29C2CA5314355E13 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :serialMemberOf     bdr:WAS3CN26487 ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW3CN26487 , bdr:W3CN26487 ;
         :workIsAbout        bdr:P1638 , bdr:P4954 , bdr:P6117 .

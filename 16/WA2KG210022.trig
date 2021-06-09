@@ -42,21 +42,33 @@ bdg:WA2KG210022 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGE481FA88877EA0BD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-08T07:22:01.476Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG210022  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG210022 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "16/WA2KG210022.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG210022 ;
-        adm:logEntry        bda:LG17521CC90A7F9950 , bda:LG4DD518B4C938D92A , bda:LG51B0D7D52BEB892E , bda:LG5F97D73F1846794F , bda:LG74140151D7E3EDE8 ;
+        adm:logEntry        bda:LG17521CC90A7F9950 , bda:LG4DD518B4C938D92A , bda:LG51B0D7D52BEB892E , bda:LG5F97D73F1846794F , bda:LG74140151D7E3EDE8 , bda:LGE481FA88877EA0BD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRA4B3678B2250419E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75230 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA2KG210022  a      :SerialMember , :Work ;
         skos:altLabel       "khyod 'chi dus su zhig ngu srid/"@bo-x-ewts ;
         skos:prefLabel      "khyod 'chi dus su ngu srid/"@bo-x-ewts ;
         :catalogInfo        "Who will cry when you die? Translated by Dondrup Drolma."@en ;
+        :creator            bdr:CRA4B3678B2250419E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS4CZ355751 ;
