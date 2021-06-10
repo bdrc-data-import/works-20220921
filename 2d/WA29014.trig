@@ -13,6 +13,12 @@
 
 bdg:WA29014 {
     bda:LG50DCCB8A83A23084
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T10:13:39.361Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, add author, editor, cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGB57BBB510441A8A3
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -53,11 +59,11 @@ bdg:WA29014 {
     bda:WA29014  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29014 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "2d/WA29014.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29014 ;
-        adm:logEntry        bda:LG50DCCB8A83A23084 , bda:LGCD78555F88B33081 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG50DCCB8A83A23084 , bda:LGB57BBB510441A8A3 , bda:LGCD78555F88B33081 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -65,6 +71,7 @@ bdg:WA29014 {
     
     bdr:WA29014  a          :Work ;
         skos:prefLabel      "dus rabs kyi bsam gzhigs/"@bo-x-ewts , "shi dai de si kao"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Selection of articles by author."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T297 ;

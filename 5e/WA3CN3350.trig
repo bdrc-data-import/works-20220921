@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN3350 {
+    bda:LG11A64BBFCE7C74AB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T13:15:40.39Z"^^xsd:dateTime ;
+        adm:logMessage      "adde author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG139A5F4A467FB4CA
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-10T16:54:01.704Z"^^xsd:dateTime ;
@@ -40,17 +46,23 @@ bdg:WA3CN3350 {
     bda:WA3CN3350  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN3350 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "5e/WA3CN3350.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN3350 ;
-        adm:logEntry        bda:LG139A5F4A467FB4CA , bda:LG602B5456001C0FF5 , bda:LG89BCB3D65814999C , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG11A64BBFCE7C74AB , bda:LG139A5F4A467FB4CA , bda:LG602B5456001C0FF5 , bda:LG89BCB3D65814999C , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR1918E6116F98CBCE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26548 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN3350  a        :Work ;
         skos:prefLabel      "ri mo'i lam nas dag yig slob pa/"@bo-x-ewts ;
         :catalogInfo        "Tibetan grammar charts, composed by Tsotri Sengge Lhakyab."@en ;
+        :creator            bdr:CR1918E6116F98CBCE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T218 ;

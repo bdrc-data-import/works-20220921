@@ -13,6 +13,12 @@
 
 bdg:WA28927 {
     bda:LG34C9D8061DC0A934
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T10:13:36.057Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, add author, editor, cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGE6D8EFE43390358F
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -47,17 +53,18 @@ bdg:WA28927 {
     bda:WA28927  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28927 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "38/WA28927.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28927 ;
-        adm:logEntry        bda:LG34C9D8061DC0A934 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG34C9D8061DC0A934 , bda:LGE6D8EFE43390358F , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA28927  a          :SerialMember , :Work ;
         skos:altLabel       "ljongs zhing lnga'i slob chung gi bod kyi skad yig bslab gzhi'i ming tshig dka' gnad 'grel bshad slob bu'i 'bab stegs/"@bo-x-ewts ;
         skos:prefLabel      "slob chung gi bod kyi skad yig bslab gzhi'i ming tshig 'grel bshad/"@bo-x-ewts ;
+        :catalogInfo        "Tibetan language textbooks for Junior schools"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS28927 ;

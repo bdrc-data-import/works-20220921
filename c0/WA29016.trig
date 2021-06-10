@@ -25,6 +25,12 @@ bdg:WA29016 {
         adm:logWho          bdu:U00003 .
     
     bda:LG66898B1E607ABBD3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T10:13:39.789Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, add author, editor, cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG836C6A4ACA022858
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -71,17 +77,23 @@ bdg:WA29016 {
     bda:WA29016  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29016 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "c0/WA29016.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29016 ;
-        adm:logEntry        bda:LG207F4A44DDC65A48 , bda:LG410FB3CD38E416E4 , bda:LG66898B1E607ABBD3 , bda:LG9A1BFDFABE701ED1 , bda:LGE6AD3CCB2DC0D758 , bda:LGIM093A1A0447 , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG207F4A44DDC65A48 , bda:LG410FB3CD38E416E4 , bda:LG66898B1E607ABBD3 , bda:LG836C6A4ACA022858 , bda:LG9A1BFDFABE701ED1 , bda:LGE6AD3CCB2DC0D758 , bda:LGIM093A1A0447 , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR87403E79B477C757
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG15978 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA29016  a          :Work ;
         skos:prefLabel      "dbu ma'i spyi don skal bzang mgul rgyan gyi dgongs don gsal bar byed pa'i yang gsal sgron me/"@bo-x-ewts ;
         :catalogInfo        "Commentary of the intended meaning of Sera Jetsun Chokyi Gyaltsen's commentary on Madhyamaka."@en ;
+        :creator            bdr:CR87403E79B477C757 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T10MS12837 ;

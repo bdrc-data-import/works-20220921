@@ -30,6 +30,12 @@ bdg:WA3CN25668 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LGDB0BDF40335EA920
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T10:17:42.351Z"^^xsd:dateTime ;
+        adm:logMessage      "added 2 authors & infos"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGFA1BAEA2A2DF36F4
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-09-11T23:08:13.959Z"^^xsd:dateTime ;
@@ -39,19 +45,35 @@ bdg:WA3CN25668 {
     bda:WA3CN25668  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25668 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "3e/WA3CN25668.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25668 ;
-        adm:logEntry        bda:LG0603BD8C9FE33CE5 , bda:LG421653D4C71E07AA , bda:LG4813DE7450BD80D1 , bda:LGFA1BAEA2A2DF36F4 ;
+        adm:logEntry        bda:LG0603BD8C9FE33CE5 , bda:LG421653D4C71E07AA , bda:LG4813DE7450BD80D1 , bda:LGDB0BDF40335EA920 , bda:LGFA1BAEA2A2DF36F4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR1DAC4C51F9B129B8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26543 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR73A35155F9F374E7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6656 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR90BE2BA69F6A503B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P32 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW3CN25668  skos:altLabel  "道帷格西·喜饶嘉措大师（藏汉对照）"@zh-hans .
     
     bdr:WA3CN25668  a       :Work ;
         skos:prefLabel      "rje shes rab rgya mtsho'i rnam thar/"@bo-x-ewts , "道帷格西·喜饶嘉措大师（藏汉对照）"@zh-hans ;
         :catalogInfo        "Biography of famous Geluk master Geshe Sherab Gyatso (1884-1968)."@en ;
+        :creator            bdr:CR1DAC4C51F9B129B8 , bdr:CR73A35155F9F374E7 , bdr:CR90BE2BA69F6A503B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

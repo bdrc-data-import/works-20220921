@@ -13,6 +13,12 @@
 
 bdg:WA21679 {
     bda:LG4BD05A03181BDD5B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T10:13:34.794Z"^^xsd:dateTime ;
+        adm:logMessage      "Reviewed Catalog, add author, editor, cat info, print tyep and language encoding"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG97F8F6BD9E174DA7
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -40,11 +46,11 @@ bdg:WA21679 {
     bda:WA21679  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21679 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "9d/WA21679.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21679 ;
-        adm:logEntry        bda:LG4BD05A03181BDD5B , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG4BD05A03181BDD5B , bda:LG97F8F6BD9E174DA7 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -53,6 +59,7 @@ bdg:WA21679 {
     bdr:WA21679  a          :Work ;
         skos:altLabel       "xizang min su jing xuan ben"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod kyi dmangs srol gces btus/"@bo-x-ewts , "hsi tsang min su ching hsuan pen"@zh-latn-wadegile ;
+        :catalogInfo        "Tibetan Cultural Heritage"@bo-x-ewts ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW21679 , bdr:W21679 ;

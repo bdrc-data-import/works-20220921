@@ -24,6 +24,12 @@ bdg:WA3CN9048 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGB74E8E35B6C74EE0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T14:51:31.863Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGEE3A5576FB15880E
         a                   adm:UpdateData ;
         adm:logDate         "2017-08-01T11:40:34.935Z"^^xsd:dateTime ;
@@ -40,19 +46,25 @@ bdg:WA3CN9048 {
     bda:WA3CN9048  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN9048 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "20/WA3CN9048.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN9048 ;
-        adm:logEntry        bda:LG4723F50C82E98925 , bda:LG4B3E2B0F6ADE0121 , bda:LGEE3A5576FB15880E , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG4723F50C82E98925 , bda:LG4B3E2B0F6ADE0121 , bda:LGB74E8E35B6C74EE0 , bda:LGEE3A5576FB15880E , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR0611D53804B5DB8E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26550 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN9048  a        :Work ;
         skos:altLabel       "mtshur phu'i drung pa go sh+ri rgyal tshab rin po che'i rnam thar snying btus/"@bo-x-ewts ;
         skos:prefLabel      "gsang bdag gi rol gar/"@bo-x-ewts ;
         :catalogInfo        "Biography of Tshuphu Gyaltsab Rinpoche reincarnation line."@en ;
+        :creator            bdr:CR0611D53804B5DB8E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

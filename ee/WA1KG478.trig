@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG478 {
+    bda:LG2B49707020F64DC9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T11:07:13.994Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG3DE202CE20E7298B
         a                   adm:UpdateData ;
         adm:logDate         "2012-05-11T12:27:09.842Z"^^xsd:dateTime ;
@@ -68,21 +74,20 @@ bdg:WA1KG478 {
     bda:WA1KG478  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG478 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "ee/WA1KG478.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG478 ;
-        adm:logEntry        bda:LG3DE202CE20E7298B , bda:LG4DA19E83FED0FE92 , bda:LGA74BA2B3ACC20AE5 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2B49707020F64DC9 , bda:LG3DE202CE20E7298B , bda:LG4DA19E83FED0FE92 , bda:LGA74BA2B3ACC20AE5 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:MW1KG478  skos:altLabel  "huang nan ke ji du ben"@zh-latn-pinyin-x-ndia .
-    
     bdr:WA1KG478  a         :Work ;
-        skos:prefLabel      "rma lho'i tshan rtsal klog deb/"@bo-x-ewts , "huang nan ke ji du ben"@zh-latn-pinyin-x-ndia ;
-        :catalogInfo        "Study on agricultural and farm products development in the Malho region of Tibet."@en ;
+        skos:altLabel       "huang nan ke ji du ben"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "rma lho'i tshan rtsal klog deb/"@bo-x-ewts , "黄南科技读本"@zh-hans ;
+        :catalogInfo        "Study on agricultural and farm products development in Huangnan (Malho) region of Tibet."@en ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
+        :language           bdr:LangBo , bdr:LangZh ;
         :workHasInstance    bdr:IE1KG478 , bdr:MW1KG478 , bdr:W1KG478 ;
         :workIsAbout        bdr:T1235 , bdr:T1420 , bdr:T2378 .
 }

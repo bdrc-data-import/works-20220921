@@ -35,6 +35,12 @@ bdg:WA1PD159437 {
         adm:logMessage      "Added Author, editor, add cat info and subject"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGA726CADDFE4938B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T10:04:56.463Z"^^xsd:dateTime ;
+        adm:logMessage      "added editer"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGB05C08645EAE2122
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-03T12:37:41.571Z"^^xsd:dateTime ;
@@ -81,17 +87,22 @@ bdg:WA1PD159437 {
     bda:WA1PD159437  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159437 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "a6/WA1PD159437.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159437 ;
-        adm:logEntry        bda:LG16C71777C751E783 , bda:LG24538DD4E7855627 , bda:LG6AED8C72AE8BD13B , bda:LG6E0AE1268BB4D2BE , bda:LGB05C08645EAE2122 , bda:LGBA40FB75FFCC3108 , bda:LGE8DBA0303D311909 , bda:LGFDA8B2F85E792818 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG16C71777C751E783 , bda:LG24538DD4E7855627 , bda:LG6AED8C72AE8BD13B , bda:LG6E0AE1268BB4D2BE , bda:LGA726CADDFE4938B7 , bda:LGB05C08645EAE2122 , bda:LGBA40FB75FFCC3108 , bda:LGE8DBA0303D311909 , bda:LGFDA8B2F85E792818 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA726CADDFE4938B7
+    bdr:CR7A94410E6D0FE6B2
         a                   :AgentAsCreator ;
         :agent              bdr:P4913 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR810E8DB1FA6DD739
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG20673 ;
         :role               bdr:R0ER0019 .
     
     bdr:MW1PD159437  skos:altLabel  "日喜日嘎的故事"@zh-hans .
@@ -100,7 +111,7 @@ bdg:WA1PD159437 {
         skos:altLabel       "ri xi ri ga de gu shi"@zh-hans ;
         skos:prefLabel      "stod kyi ri shi ri dkar dang smad kyi ri shi ri dmar/"@bo-x-ewts , "日喜日嘎的故事"@zh-hans ;
         :catalogInfo        "A collection of stories narrated , Tibet Intangible Cultural Heritage Book Series"@en ;
-        :creator            bdr:CRA726CADDFE4938B7 ;
+        :creator            bdr:CR7A94410E6D0FE6B2 , bdr:CR810E8DB1FA6DD739 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :serialMemberOf     bdr:WAS1PD159437 ;

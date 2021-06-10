@@ -18,6 +18,11 @@ bdg:WA1KG4245 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG59E81CB137255C90
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T11:05:13.237Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG76A4389B7569AC57
         a                   adm:UpdateData ;
         adm:logDate         "2010-04-30T11:54:23.609Z"^^xsd:dateTime ;
@@ -58,18 +63,24 @@ bdg:WA1KG4245 {
     bda:WA1KG4245  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4245 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "a8/WA1KG4245.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4245 ;
-        adm:logEntry        bda:LG1D03423ED62BADC9 , bda:LG76A4389B7569AC57 , bda:LGB7C0F961D19AEA28 , bda:LGB8453E770A0E9084 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG1D03423ED62BADC9 , bda:LG59E81CB137255C90 , bda:LG76A4389B7569AC57 , bda:LGB7C0F961D19AEA28 , bda:LGB8453E770A0E9084 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRBB4A587BB5DCB8B7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1017394 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG4245  a        :Work ;
         skos:altLabel       "lung rtogs bstan pa'i mnga' bdag kun dga' tshul khrims dpal bzang po gang gi rnam par thar pa cha shas tsam brjod pa grub gnyis 'jo ba'i bum bzang /"@bo-x-ewts ;
         skos:prefLabel      "dpal ldan bla ma kun dga' tshul khrims dpal bzang po'i rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography of Jonang master Kunga Tsultrim Gyatso (1922-1998)."@en ;
+        :creator            bdr:CRBB4A587BB5DCB8B7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

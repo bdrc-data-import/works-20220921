@@ -18,6 +18,11 @@ bdg:WA1KG3997 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG8706909BF5284092
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T11:05:12.986Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGA7AD8594B0F9A5E8
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-12T09:46:19.774Z"^^xsd:dateTime ;
@@ -33,17 +38,23 @@ bdg:WA1KG3997 {
     bda:WA1KG3997  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG3997 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a2/WA1KG3997.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG3997 ;
-        adm:logEntry        bda:LG26765F02FD605179 , bda:LGA7AD8594B0F9A5E8 , bda:LGB8B68B0B75A6864B ;
+        adm:logEntry        bda:LG26765F02FD605179 , bda:LG8706909BF5284092 , bda:LGA7AD8594B0F9A5E8 , bda:LGB8B68B0B75A6864B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRBF8B9DF5FC875CF4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P169 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG3997  a        :Work ;
         skos:altLabel       "byang chub dpal ba'i tshad bsdus legs bshad rig pa'i 'od zer/"@bo-x-ewts , "tshad ma rig pa'i 'od zer/"@bo-x-ewts ;
         skos:prefLabel      "grub mtha'i rnam bzhag mdor bsdus nor bu'i 'phreng ba/"@bo-x-ewts ;
+        :creator            bdr:CRBF8B9DF5FC875CF4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 , bdr:T2398 , bdr:T385 ;

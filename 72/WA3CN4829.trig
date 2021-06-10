@@ -18,6 +18,12 @@ bdg:WA3CN4829 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG3EB328A95D8BAA13
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T18:21:12.886Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGFF162C70DF3FCF66
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-23T10:23:16.03Z"^^xsd:dateTime ;
@@ -41,18 +47,24 @@ bdg:WA3CN4829 {
     bda:WA3CN4829  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN4829 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "72/WA3CN4829.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN4829 ;
-        adm:logEntry        bda:LG1E0795A260146A8F , bda:LGFF162C70DF3FCF66 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1E0795A260146A8F , bda:LG3EB328A95D8BAA13 , bda:LGFF162C70DF3FCF66 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CREA5234CB411583D1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26554 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN4829  a        :Work ;
         skos:altLabel       "yig gzugs kyi rnam grangs tshang zhing thig 'grel dang smyug 'gros gsal ba'i ma phyi blo gsar mdzes rgyan/"@bo-x-ewts ;
         skos:prefLabel      "yig gzugs kyi rnam grangs tshang zhing thig 'grel dang smyug 'gros gsal ba'i ma phyi/"@bo-x-ewts ;
         :catalogInfo        "Tibetan calligraphy by Tsultrim Dargye."@en ;
+        :creator            bdr:CREA5234CB411583D1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN4829 , bdr:W3CN4829 ;

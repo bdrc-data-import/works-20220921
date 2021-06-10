@@ -29,6 +29,12 @@ bdg:WA3PD287 {
         adm:logDate         "2014-12-01T14:40:15.585Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG4E900BFE4391B0B0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T14:26:55.462Z"^^xsd:dateTime ;
+        adm:logMessage      "reviewed"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG5EB789B026C4B2C4
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2014-12-01T14:14:53.114Z"^^xsd:dateTime ;
@@ -57,13 +63,18 @@ bdg:WA3PD287 {
     bda:WA3PD287  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3PD287 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "29/WA3PD287.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3PD287 ;
-        adm:logEntry        bda:LG1F688889BE593D90 , bda:LG3023C0AD866F68CF , bda:LG427FB8B6F5240355 , bda:LG5EB789B026C4B2C4 , bda:LGEE3EB69B2AB27AA6 , bda:LGF5AA3B2C15BD87A4 , bda:LGIM4599A38FCE ;
+        adm:logEntry        bda:LG1F688889BE593D90 , bda:LG3023C0AD866F68CF , bda:LG427FB8B6F5240355 , bda:LG4E900BFE4391B0B0 , bda:LG5EB789B026C4B2C4 , bda:LGEE3EB69B2AB27AA6 , bda:LGF5AA3B2C15BD87A4 , bda:LGIM4599A38FCE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRE8669969B9DB00D9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P139 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW3PD287  skos:altLabel  "时轮金刚汇编"@zh-hans .
     
@@ -71,6 +82,7 @@ bdg:WA3PD287 {
         skos:altLabel       "dus 'khor phyogs bsgrigs/"@bo-x-ewts , "shi lun jin gang hui bian"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "dus 'khor phyogs bsgrigs chen mo/"@bo-x-ewts , "时轮金刚汇编"@zh-hans ;
         :catalogInfo        "A new collection on Kalacakra. Facsimile edition of the original manuscripts and wood block prints."@en ;
+        :creator            bdr:CRE8669969B9DB00D9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

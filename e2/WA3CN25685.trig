@@ -36,6 +36,12 @@ bdg:WA3CN25685 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGDC76CFFEDB7F7F88
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T10:52:42.262Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGE6327D1C282AE7ED
         a                   adm:UpdateData ;
         adm:logDate         "2020-10-05T15:45:55.126Z"^^xsd:dateTime ;
@@ -45,19 +51,25 @@ bdg:WA3CN25685 {
     bda:WA3CN25685  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25685 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "e2/WA3CN25685.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25685 ;
-        adm:logEntry        bda:LG1FEAA3E50B4214E2 , bda:LG26E2E4441951C847 , bda:LG4145593CDE15995D , bda:LG9F89C62FB402C30B , bda:LGE6327D1C282AE7ED ;
+        adm:logEntry        bda:LG1FEAA3E50B4214E2 , bda:LG26E2E4441951C847 , bda:LG4145593CDE15995D , bda:LG9F89C62FB402C30B , bda:LGDC76CFFEDB7F7F88 , bda:LGE6327D1C282AE7ED ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRC5218F3EF7129724
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1017418 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW3CN25685  skos:altLabel  "随想心语（藏汉对照）"@zh-hans .
     
     bdr:WA3CN25685  a       :Work ;
         skos:prefLabel      "gang dran lhug por brjod pa'i gtam/"@bo-x-ewts , "随想心语（藏汉对照）"@zh-hans ;
         :catalogInfo        "The advice of from daily life by Khentul Konchok Tenzin."@en ;
+        :creator            bdr:CRC5218F3EF7129724 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN25685 , bdr:W3CN25685 ;

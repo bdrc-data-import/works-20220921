@@ -30,6 +30,12 @@ bdg:WA3CN3040 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGD4710B7F34256EBC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T11:26:42.265Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -40,18 +46,24 @@ bdg:WA3CN3040 {
     bda:WA3CN3040  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN3040 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "96/WA3CN3040.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN3040 ;
-        adm:logEntry        bda:LGA55D99C05A7A1E22 , bda:LGB78929F76D367BC1 , bda:LGCD3F43F3BA52CC3C , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LGA55D99C05A7A1E22 , bda:LGB78929F76D367BC1 , bda:LGCD3F43F3BA52CC3C , bda:LGD4710B7F34256EBC , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRF2F705F0EA4F64F4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26547 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN3040  a        :Work ;
         skos:altLabel       "1956lor paN chen sku phreng bcu pa chen pos btsugs gnang mdzad pa'i bkras dgon rtse slob grwa'i yig gzugs bris rgyun/"@bo-x-ewts ;
         skos:prefLabel      "bkras dgon rtse slob grwa'i yig gzugs bris rgyun/"@bo-x-ewts ;
         :catalogInfo        "Model of Tibetan calligraphy by Tashi Lhunpo Tselobtra School tradition."@en ;
+        :creator            bdr:CRF2F705F0EA4F64F4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN3040 , bdr:W3CN3040 ;

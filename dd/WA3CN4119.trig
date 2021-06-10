@@ -30,6 +30,12 @@ bdg:WA3CN4119 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGEB843098DAF7E8D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T17:22:47.309Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -40,18 +46,24 @@ bdg:WA3CN4119 {
     bda:WA3CN4119  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN4119 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "dd/WA3CN4119.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN4119 ;
-        adm:logEntry        bda:LG12E6464BEAF1675D , bda:LG6C936BE7F3859FC1 , bda:LGC42C4A45B2694A37 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG12E6464BEAF1675D , bda:LG6C936BE7F3859FC1 , bda:LGC42C4A45B2694A37 , bda:LGEB843098DAF7E8D2 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR33739038677D650D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26551 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN4119  a        :Work ;
         skos:altLabel       "dpal ldan bla ma dam pa rje btsun blo bzang skal bzang yon tan dpal bzang po'i rnam par thar pa drang srong bla ma'i zhal lung /"@bo-x-ewts ;
         skos:prefLabel      "rje btsun blo bzang skal bzang yon tan gyi rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography of Jetsun Lobsang Kalzang Yonten."@en ;
+        :creator            bdr:CR33739038677D650D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

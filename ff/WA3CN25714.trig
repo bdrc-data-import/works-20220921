@@ -24,6 +24,12 @@ bdg:WA3CN25714 {
         adm:logMessage      "added info"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG953ACD724709396E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-09T11:07:48.655Z"^^xsd:dateTime ;
+        adm:logMessage      "added authors"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG9DB4FDF02FBD05FB
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-09-11T22:41:20.272Z"^^xsd:dateTime ;
@@ -39,19 +45,30 @@ bdg:WA3CN25714 {
     bda:WA3CN25714  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN25714 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "ff/WA3CN25714.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN25714 ;
-        adm:logEntry        bda:LG384A1C29920DF032 , bda:LG79312BECEA5D5282 , bda:LG9DB4FDF02FBD05FB , bda:LGD7A5F82545A9C87E ;
+        adm:logEntry        bda:LG384A1C29920DF032 , bda:LG79312BECEA5D5282 , bda:LG953ACD724709396E , bda:LG9DB4FDF02FBD05FB , bda:LGD7A5F82545A9C87E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRCB43F450B8FC66B6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26545 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE50FA67FF4086CC0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1GS66315 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW3CN25714  skos:altLabel  "西藏民俗通论"@zh-hans .
     
     bdr:WA3CN25714  a       :Work ;
         skos:prefLabel      "bod kyi gna' srol rnam bshad mu tig phreng mdzes/"@bo-x-ewts , "西藏民俗通论"@zh-hans ;
         :catalogInfo        "Tibetan folk culture by Mikmar Tsering and Mikmar Lhamo."@en ;
+        :creator            bdr:CRCB43F450B8FC66B6 , bdr:CRE50FA67FF4086CC0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;
