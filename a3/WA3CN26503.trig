@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN26503 {
+    bda:LG38A9E6829F2A04B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-17T01:15:37.109Z"^^xsd:dateTime ;
+        adm:logMessage      "added isbn"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG6FF41B72164453EE
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2021-06-01T13:43:49.731Z"^^xsd:dateTime ;
@@ -27,18 +33,24 @@ bdg:WA3CN26503 {
     bda:WA3CN26503  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN26503 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "a3/WA3CN26503.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN26503 ;
-        adm:logEntry        bda:LG6FF41B72164453EE , bda:LGC45563F13E91830F ;
+        adm:logEntry        bda:LG38A9E6829F2A04B2 , bda:LG6FF41B72164453EE , bda:LGC45563F13E91830F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRC62C80CEDE564B56
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26610 ;
+        :role               bdr:R0ER0016 .
     
     bdr:WA3CN26503  a       :Work ;
         skos:altLabel       "so sor thar pa'i mdo'i mchan 'grel drang srong zhal lung dang byang chub smes dpa'i sdom pa nyi shu pa'i 'grel pa byang chub chen po'i zhal lung /"@bo-x-ewts ;
         skos:prefLabel      "so sor thar pa'i mdo'i mchan 'grel dang byang sdom nyi shu pa'i 'grel pa/"@bo-x-ewts ;
         :catalogInfo        "Commentary on pratimoksa sutra and commentary on bodhisattvasamvaravimsaka."@en ;
+        :creator            bdr:CRC62C80CEDE564B56 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

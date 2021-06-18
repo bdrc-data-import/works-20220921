@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG5619 {
+    bda:LG1B9E96EC741AF4B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-15T16:28:01.322Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG6E546784A7019D97
         a                   adm:InitialDataCreation ;
         adm:logDate         "2010-07-15T15:45:24.863Z"^^xsd:dateTime ;
@@ -90,23 +96,22 @@ bdg:WA1KG5619 {
     bda:WA1KG5619  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG5619 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "82/WA1KG5619.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG5619 ;
-        adm:logEntry        bda:LG6E546784A7019D97 , bda:LGEE2FB69459999EB7 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM74A445C794 , bda:LGIM84B17F7EDC , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1B9E96EC741AF4B1 , bda:LG6E546784A7019D97 , bda:LGEE2FB69459999EB7 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM74A445C794 , bda:LGIM84B17F7EDC , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW1KG5619  skos:altLabel  "Chos ʼbyuṅ nor buʼi phreṅ ba :dge rgan ʼos sbyoṅ daṅ poʼi skabs kyi phyogs sgrig."@en-x-mixed .
     
-    bdr:WA1KG5619  a        :SerialMember , :Work ;
+    bdr:WA1KG5619  a        :Work ;
         skos:prefLabel      "chos 'byung nor bu'i phreng ba : dge rgan 'os sbyong dang po'i skabs kyi phyogs sgrig"@bo-x-ewts , "Chos ʼbyuṅ nor buʼi phreṅ ba :dge rgan ʼos sbyoṅ daṅ poʼi skabs kyi phyogs sgrig."@en-x-mixed ;
         :catalogInfo        "Collected biographies of early Indian Buddhist masters. Compiled by the first teachers living in exile."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :serialMemberOf     bdr:WAS1KG14132 ;
         :workGenre          bdr:T12 ;
         :workHasInstance    bdr:IE1KG5619 , bdr:MW1KG5619 , bdr:W1KG5619 .
 }

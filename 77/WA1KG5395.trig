@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG5395 {
+    bda:LG06D77015076FC35C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-15T16:27:55.621Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG1809D45E5FF39300
         a                   adm:InitialDataCreation ;
         adm:logDate         "2010-06-18T12:27:26.597Z"^^xsd:dateTime ;
@@ -48,20 +54,19 @@ bdg:WA1KG5395 {
     bda:WA1KG5395  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG5395 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "77/WA1KG5395.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG5395 ;
-        adm:logEntry        bda:LG1809D45E5FF39300 , bda:LGBAFA01258FB834BE , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG06D77015076FC35C , bda:LG1809D45E5FF39300 , bda:LGBAFA01258FB834BE , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA1KG5395  a        :SerialMember , :Work ;
+    bdr:WA1KG5395  a        :Work ;
         skos:prefLabel      "byang sems blo sbyong gi rim pa gces bsdus gzhan phan zla ba'i 'od snang /"@bo-x-ewts ;
-        :catalogInfo        "Select texts on mind training and Bodhicitta."@en ;
+        :catalogInfo        "Selected texts on mind training and Bodhicitta."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :serialMemberOf     bdr:WAS1KG5688 ;
         :workGenre          bdr:T1081 ;
         :workHasInstance    bdr:MW1KG5395 , bdr:W1KG5395 ;
         :workIsAbout        bdr:T393 .

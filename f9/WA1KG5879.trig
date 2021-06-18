@@ -41,6 +41,12 @@ bdg:WA1KG5879 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00020 .
     
+    bda:LGED5BDEDF4CE58FB6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-15T16:28:05.343Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type and encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
         adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
@@ -93,22 +99,21 @@ bdg:WA1KG5879 {
     bda:WA1KG5879  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG5879 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "f9/WA1KG5879.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG5879 ;
-        adm:logEntry        bda:LG367C25295BDB0D1D , bda:LG3A225D63D124EAD6 , bda:LG58057DB4AD19E878 , bda:LG613E8FCF584AE226 , bda:LGB2762C1333FB15E5 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG367C25295BDB0D1D , bda:LG3A225D63D124EAD6 , bda:LG58057DB4AD19E878 , bda:LG613E8FCF584AE226 , bda:LGB2762C1333FB15E5 , bda:LGED5BDEDF4CE58FB6 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA1KG5879  a        :SerialMember , :Work ;
-        skos:altLabel       "catalogue of the collection of tibetan manuscripts and xylographys"@en , "catalogue of the collection of tibetan manuscripts and xylographys \"chos grwa\""@en , "Catalogue of the collection of Tibetan manuscripts and xylographs \"Chos grwa\" (parts: Tshad ma, grub mthaʼ) of the Institute of Mongolian, Buddhist, and Tibetan Studies of Russian Academy of Sciences (Siberian Branch) /compiled by Andrey Bazarov."@en-x-mixed ;
-        skos:prefLabel      "catalogue of the collection of tibetan manuscripts and xylographys \"chos grwa\" (part: tshad ma, grub mtha' ) of the institute of mongolian, buddhist and tibetan studies of russian academy of sciences (siberian branch)"@en ;
+    bdr:WA1KG5879  a        :Work ;
+        skos:altLabel       "catalogue of the collection of tibetan manuscripts and xylographys"@en , "catalogue of the collection of tibetan manuscripts and xylographys \"chos grwa\" (part: tshad ma, grub mtha' ) of the institute of mongolian, buddhist and tibetan studies of russian academy of sciences (siberian branch)"@en , "Catalogue of the collection of Tibetan manuscripts and xylographs \"Chos grwa\" (parts: Tshad ma, grub mthaʼ) of the Institute of Mongolian, Buddhist, and Tibetan Studies of Russian Academy of Sciences (Siberian Branch) /compiled by Andrey Bazarov."@en-x-mixed ;
+        skos:prefLabel      "catalogue of the collection of tibetan manuscripts and xylographys \"chos grwa\""@en ;
         :catalogInfo        "Catalog of the collection of Tibetan manuscripts and xylographs of the Institute of Mongolian Buddhist and Tibetan Studies of the Russian Academy of Sciences, Siberia."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :serialMemberOf     bdr:WAS1KG5879 ;
         :workGenre          bdr:T2196 , bdr:T385 ;
         :workHasInstance    bdr:MW1KG5879 , bdr:W1KG5879 ;
         :workIsAbout        bdr:T370 .
