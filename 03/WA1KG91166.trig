@@ -18,6 +18,12 @@ bdg:WA1KG91166 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG5AF3FDB0D5E95475
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-22T17:43:27.65Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGE1F61CA29D59BDE4
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-07-26T15:08:15.371Z"^^xsd:dateTime ;
@@ -34,19 +40,25 @@ bdg:WA1KG91166 {
     bda:WA1KG91166  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG91166 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "03/WA1KG91166.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG91166 ;
-        adm:logEntry        bda:LG2E9B4677EC3A0CBA , bda:LGE1F61CA29D59BDE4 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG2E9B4677EC3A0CBA , bda:LG5AF3FDB0D5E95475 , bda:LGE1F61CA29D59BDE4 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRBE9BF05554C20898
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228985 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG91166  a       :Work ;
         skos:altLabel       "sgo shes rab la phul ba/ nga tsho'i mi rigs dang nga tsho'i bsam blo/"@bo-x-ewts ;
         skos:prefLabel      "nga tsho'i mi rigs dang nga tsho'i bsam blo/"@bo-x-ewts ;
         :catalogInfo        "Collection of writings of Lobsang Dondrup."@en ;
+        :creator            bdr:CRBE9BF05554C20898 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T258 ;
