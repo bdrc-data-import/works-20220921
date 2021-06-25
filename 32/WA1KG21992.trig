@@ -24,6 +24,12 @@ bdg:WA1KG21992 {
         adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG5F3F31260CB40EC9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-24T16:39:30.87Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG965AF48C9E13A753
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2015-05-27T14:34:44.791Z"^^xsd:dateTime ;
@@ -39,19 +45,25 @@ bdg:WA1KG21992 {
     bda:WA1KG21992  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG21992 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "32/WA1KG21992.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG21992 ;
-        adm:logEntry        bda:LG29756732724CEF6B , bda:LG3D7486F6B64F6FDB , bda:LG965AF48C9E13A753 , bda:LGDE82E9077E23723F ;
+        adm:logEntry        bda:LG29756732724CEF6B , bda:LG3D7486F6B64F6FDB , bda:LG5F3F31260CB40EC9 , bda:LG965AF48C9E13A753 , bda:LGDE82E9077E23723F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG12382 ;
         adm:status          bda:StatusWithdrawn .
+    
+    bdr:CR7BFAB78CB2AEA33D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228996 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG21992  a       :Work ;
         skos:altLabel       "grangs med sras bcas rgyal ba'i mtshan 'bum ke ta ka'i phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "rgyal ba'i mtshan 'bum ke ta ka'i phreng ba/"@bo-x-ewts ;
         :catalogInfo        "Anthology of the names of Buddhas and Bodhisattva found in the Kangyur."@en ;
+        :creator            bdr:CR7BFAB78CB2AEA33D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T01JR185 ;
