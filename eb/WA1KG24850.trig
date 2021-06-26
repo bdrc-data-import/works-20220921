@@ -24,6 +24,12 @@ bdg:WA1KG24850 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGDD390BA1B3FB3FAD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-25T14:55:15.275Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -55,18 +61,24 @@ bdg:WA1KG24850 {
     bda:WA1KG24850  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24850 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "eb/WA1KG24850.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24850 ;
-        adm:logEntry        bda:LG1C643EC0B1FBE6AC , bda:LG568228880DA62058 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1C643EC0B1FBE6AC , bda:LG568228880DA62058 , bda:LGDD390BA1B3FB3FAD , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR3ECA0BEB7CC48829
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG229007 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG24850  a       :Work ;
         skos:altLabel       "bod kyi brda sprod pa'i bstan bcos sum cu pa dang rtags kyi 'jug pa gnyis stabs cig tu slob pa/"@bo-x-ewts ;
         skos:prefLabel      "sum rtags bsdus don/"@bo-x-ewts ;
         :catalogInfo        "A Tibetan grammar text to learn both the sum cu pa and rtags kyi 'jug pa at simultaneous."@en ;
+        :creator            bdr:CR3ECA0BEB7CC48829 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T2398 ;

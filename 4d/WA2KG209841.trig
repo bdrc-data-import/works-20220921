@@ -36,20 +36,32 @@ bdg:WA2KG209841 {
         adm:logMessage      "added cat info"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGEF8EC9AB15E60ACC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-25T17:13:09.037Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG209841  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG209841 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "4d/WA2KG209841.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG209841 ;
-        adm:logEntry        bda:LG3154C623E636B166 , bda:LG6999EB4166F9B0EB , bda:LG75C0D0A05147F752 , bda:LGBA0BEB7E545A83F0 ;
+        adm:logEntry        bda:LG3154C623E636B166 , bda:LG6999EB4166F9B0EB , bda:LG75C0D0A05147F752 , bda:LGBA0BEB7E545A83F0 , bda:LGEF8EC9AB15E60ACC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR9ED74B23A4C41627
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG229018 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2KG209841  a      :Work ;
         skos:prefLabel      "mkhas dbang 'ga' zhig gi rnam thar dang 'brel ba'i rtsom yig phyogs bsgrigs/"@bo-x-ewts ;
         :catalogInfo        "Collection of articles related to the biographies of several scholars, research papers on history; and poetry."@en ;
+        :creator            bdr:CR9ED74B23A4C41627 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T258 , bdr:T3 ;

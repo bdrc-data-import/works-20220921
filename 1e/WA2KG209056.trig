@@ -30,6 +30,12 @@ bdg:WA2KG209056 {
         adm:logMessage      "simple cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG703EA1EFF4F9FF02
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-25T16:43:50.65Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG82EFAD31A6015FAF
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2020-01-06T11:22:04.629Z"^^xsd:dateTime ;
@@ -39,19 +45,25 @@ bdg:WA2KG209056 {
     bda:WA2KG209056  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG209056 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "1e/WA2KG209056.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG209056 ;
-        adm:logEntry        bda:LG1234BA20FBBD603A , bda:LG28F19753ECFF605C , bda:LG5956918614819CC6 , bda:LG82EFAD31A6015FAF ;
+        adm:logEntry        bda:LG1234BA20FBBD603A , bda:LG28F19753ECFF605C , bda:LG5956918614819CC6 , bda:LG703EA1EFF4F9FF02 , bda:LG82EFAD31A6015FAF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRC8CC4F76926A8083
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6823 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW2KG209056  skos:altLabel  "格萨尔王传-达色施财"@zh-hans .
     
     bdr:WA2KG209056  a      :Work ;
         skos:altLabel       "gling ge sar rgyal po'i sgrung stag gzig nor 'gyed/"@bo-x-ewts ;
         skos:prefLabel      "stag gzig nor 'gyed/"@bo-x-ewts , "格萨尔王传-达色施财"@zh-hans ;
+        :creator            bdr:CRC8CC4F76926A8083 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2KG209056 , bdr:W2KG209056 ;

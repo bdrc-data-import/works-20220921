@@ -24,6 +24,12 @@ bdg:WA2KG209046 {
         adm:logMessage      "simple cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG95EF49A651450119
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-06-25T16:33:41.635Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGA0BACD1763D999A4
         a                   adm:UpdateData ;
         adm:logDate         "2020-11-02T20:41:38.144Z"^^xsd:dateTime ;
@@ -39,13 +45,18 @@ bdg:WA2KG209046 {
     bda:WA2KG209046  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG209046 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "85/WA2KG209046.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG209046 ;
-        adm:logEntry        bda:LG16794BF30ED7FD5A , bda:LG912BE936ACCBF2A0 , bda:LGA0BACD1763D999A4 , bda:LGAE71FE54F2FECF63 ;
+        adm:logEntry        bda:LG16794BF30ED7FD5A , bda:LG912BE936ACCBF2A0 , bda:LG95EF49A651450119 , bda:LGA0BACD1763D999A4 , bda:LGAE71FE54F2FECF63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR7F33D65D604E8D57
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG229012 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW2KG209046  skos:altLabel  "八大藏戏剧本"@zh-hans .
     
@@ -53,6 +64,7 @@ bdg:WA2KG209046 {
         skos:altLabel       "bod kyi lha mo'i 'khrab gzhung brgyad/"@bo-x-ewts ;
         skos:prefLabel      "bod kyi nor gzhung brgyad kyi 'khrab dpe gsal ba'i me long /"@bo-x-ewts , "八大藏戏剧本"@zh-hans ;
         :catalogInfo        "The scripts of the eight different performing arts played in Tibet."@en ;
+        :creator            bdr:CR7F33D65D604E8D57 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2KG209046 , bdr:W2KG209046 ;
