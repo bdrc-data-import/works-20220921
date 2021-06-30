@@ -12,43 +12,29 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG209072 {
-    bda:LGBA6A6492F78E9CF3
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2021-03-29T16:39:31.775Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
-        adm:logWho          bdu:U00016 .
-    
     bda:LGEF9C14D58D422283
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-03-29T16:38:48.233Z"^^xsd:dateTime ;
-        adm:logMessage      "cataloged"@en ;
+        adm:logDate         "2021-06-29T23:20:54.152Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG209072  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG209072 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "03/WA2KG209072.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG209072 ;
-        adm:logEntry        bda:LGBA6A6492F78E9CF3 , bda:LGEF9C14D58D422283 ;
+        adm:logEntry        bda:LGEF9C14D58D422283 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
-    
-    bdr:CR68DBB9C5EE85C76B
-        a                   :AgentAsCreator ;
-        :agent              bdr:P2KG228725 ;
-        :role               bdr:R0ER0019 .
+        adm:status          bda:StatusAcquiring .
     
     bdr:MW2KG209072  skos:altLabel  "高云诗集"@zh-hans .
     
     bdr:WA2KG209072  a      :Work ;
-        skos:altLabel       "gao yun shi ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "snang tshor ro mnyam/"@bo-x-ewts , "高云诗集"@zh-hans ;
-        :catalogInfo        "Collection of poem by Goyon."@en ;
-        :creator            bdr:CR68DBB9C5EE85C76B ;
+        :catalogInfo        "Collection of poetry by Goyon."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG209072 , bdr:W2KG209072 ;
+        :workHasInstance    bdr:MW2KG209072 ;
         :workIsAbout        bdr:T281 .
 }

@@ -14,23 +14,30 @@
 bdg:WA2KG209057 {
     bda:LG11E71CA8C87A4699
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-10-11T10:06:16.836Z"^^xsd:dateTime ;
+        adm:logDate         "2021-06-29T23:20:51.93Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG209057  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG209057 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "23/WA2KG209057.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG209057 ;
         adm:logEntry        bda:LG11E71CA8C87A4699 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusEditing .
+        adm:status          bda:StatusAcquiring .
+    
+    bdr:CRA61E92639005882B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6328 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2KG209057  a      :Work ;
         skos:prefLabel      "sman gyi 'khrungs dpe dri med shel gyi me long /"@bo-x-ewts , "藏药晶镜本草"@zh-hans ;
+        :creator            bdr:CRA61E92639005882B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG209057 .
+        :workHasInstance    bdr:MW2KG209057 ;
+        :workIsAbout        bdr:T237 , bdr:T2MS13793 .
 }
