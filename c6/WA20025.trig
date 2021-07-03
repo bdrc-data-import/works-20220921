@@ -13,6 +13,12 @@
 
 bdg:WA20025 {
     bda:LG0E6DD8C9D01E19BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-02T16:48:56.123Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, print type, and encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGA5B634F9B981009D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -40,11 +46,11 @@ bdg:WA20025 {
     bda:WA20025  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20025 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c6/WA20025.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20025 ;
-        adm:logEntry        bda:LG0E6DD8C9D01E19BA , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG0E6DD8C9D01E19BA , bda:LGA5B634F9B981009D , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -53,6 +59,7 @@ bdg:WA20025 {
     bdr:WA20025  a          :Work ;
         skos:altLabel       "tsang chuan fo chiao ko chiao p`ai tsung shu chi chu shih"@zh-latn-wadegile ;
         skos:prefLabel      "sgrub brgyud shing rta chen mo brgyad kyi bsdus 'grel gangs can rig brgya'i nyin byed mdun bsu'i skya rengs dang po/"@bo-x-ewts , "zang zhuan fo jiao ge jiao pai zong shu ji zhu shi"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Interpretation of Buddhist doctrines according to different schools of Tibet."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW20025 , bdr:W20025 ;

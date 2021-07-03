@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20011 {
-    bda:LG48D7B6EB6C544FA9
+    bda:LG05DB6C9541D8A8E3
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG48D7B6EB6C544FA9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-02T16:48:35.719Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor, cat info, print type, and encoding"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGD7670ADC2ECCAAD6
         a                   adm:UpdateData ;
@@ -46,16 +52,17 @@ bdg:WA20011 {
     bda:WA20011  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20011 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "95/WA20011.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20011 ;
-        adm:logEntry        bda:LG48D7B6EB6C544FA9 , bda:LGD7670ADC2ECCAAD6 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG05DB6C9541D8A8E3 , bda:LG48D7B6EB6C544FA9 , bda:LGD7670ADC2ECCAAD6 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA20011  a          :Work ;
         skos:prefLabel      "kan lho bod kyi sman rtsis ched rtsom phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of articles on Tibetan medicine and astrology."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 , bdr:T1081 , bdr:T203 ;

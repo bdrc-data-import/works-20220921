@@ -12,26 +12,34 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20074 {
-    bda:LG7F505C6092077443
+    bda:LG333A6887722EF4B2
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG7F505C6092077443
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-02T16:50:12.439Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, print type, and encoding"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:WA20074  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20074 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "d2/WA20074.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20074 ;
-        adm:logEntry        bda:LG7F505C6092077443 ;
+        adm:logEntry        bda:LG333A6887722EF4B2 , bda:LG7F505C6092077443 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA20074  a          :Work ;
         skos:altLabel       "gangs ljongs mkhas pa rim byon gyi bslab bya nyer mkho rnams phyogs gcig tu bsgrigs pa drang srong bden tshig"@bo-x-ewts ;
         skos:prefLabel      "bslab bya nyer mkho phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of advices on spiritual life by various Tibetan Buddhist scholars."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
         :workHasInstance    bdr:MW20074 , bdr:W20074 ;
         :workIsAbout        bdr:T58 .
 }
