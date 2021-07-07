@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20128 {
-    bda:LGA5678C7944E02E45
+    bda:LG906B520627A22D4D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGA5678C7944E02E45
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-06T13:03:07.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, print type, and encoding"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGA9666CDBEB85D453
         a                   adm:UpdateData ;
@@ -53,11 +59,11 @@ bdg:WA20128 {
     bda:WA20128  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20128 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "f5/WA20128.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20128 ;
-        adm:logEntry        bda:LGA5678C7944E02E45 , bda:LGA9666CDBEB85D453 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG906B520627A22D4D , bda:LGA5678C7944E02E45 , bda:LGA9666CDBEB85D453 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -66,6 +72,7 @@ bdg:WA20128 {
     bdr:WA20128  a          :Work ;
         skos:altLabel       "khrab gzhung gi skor/"@bo-x-ewts , "nan lai di feng"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "lho yi dri bzhon/"@bo-x-ewts , "南来的风"@zh-hans ;
+        :catalogInfo        "Compilation of modern Tibetan plays."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW20128 , bdr:W20128 ;

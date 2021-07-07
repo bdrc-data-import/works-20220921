@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20087 {
-    bda:LG7F09A7B8699BE8C1
+    bda:LG5438EA93D77FA9EF
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG7F09A7B8699BE8C1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-06T13:02:16.892Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, print type, and encoding"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG9D932EA9039A8CAD
         a                   adm:UpdateData ;
@@ -52,11 +58,11 @@ bdg:WA20087 {
     bda:WA20087  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20087 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "f0/WA20087.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20087 ;
-        adm:logEntry        bda:LG7F09A7B8699BE8C1 , bda:LG9D932EA9039A8CAD , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG5438EA93D77FA9EF , bda:LG7F09A7B8699BE8C1 , bda:LG9D932EA9039A8CAD , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -65,6 +71,7 @@ bdg:WA20087 {
     bdr:WA20087  a          :Work ;
         skos:altLabel       "gling ge sar rgyal po'i sgrung bhe ra ra rdzong /"@bo-x-ewts , "gesa'er wang zhuan. bi re shan yang zong"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bhe ra ra rdzong /"@bo-x-ewts , "ko sa erh wang chuan pi je shan yang tsung"@zh-latn-wadegile ;
+        :catalogInfo        "An episode from Gesar epic on the king Gesar, a legendary character."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW20087 , bdr:MW26007 , bdr:W20087 , bdr:W26007 ;

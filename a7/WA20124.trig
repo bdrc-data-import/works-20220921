@@ -13,6 +13,12 @@
 
 bdg:WA20124 {
     bda:LG42DF544CECEA25CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-06T13:03:07.118Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, print type, and encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG4DB5AAAF42187895
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -54,11 +60,11 @@ bdg:WA20124 {
     bda:WA20124  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20124 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "a7/WA20124.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20124 ;
-        adm:logEntry        bda:LG42DF544CECEA25CA , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG42DF544CECEA25CA , bda:LG4DB5AAAF42187895 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -66,8 +72,9 @@ bdg:WA20124 {
     
     bdr:WA20124  a          :Work ;
         skos:prefLabel      "sprin gyi sgra dbyangs/"@bo-x-ewts , "Sprin gyi sgra dbyaṅs /ʾGyur-med kyis bsgrigs."@en-x-mixed , "chun lei"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Poems by various 20th cent. authors."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGA000854 , bdr:MW20124 , bdr:W20124 ;
-        :workIsAbout        bdr:T204 .
+        :workIsAbout        bdr:T281 .
 }

@@ -36,6 +36,12 @@ bdg:WA20183 {
         adm:logWho          bdu:U00020 .
     
     bda:LG5956E9612C58C2FD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-06T14:37:00.351Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, print type, and encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG9FB8D927E7556C41
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -87,21 +93,20 @@ bdg:WA20183 {
     bda:WA20183  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20183 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "f8/WA20183.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20183 ;
-        adm:logEntry        bda:LG032A170594B6C567 , bda:LG2E6BE4ED595D2619 , bda:LG34C269710938D77F , bda:LG53470D89C4FA34EB , bda:LG5956E9612C58C2FD , bda:LGB6C2209668CD52E6 , bda:LGEC5660C869F6F7C7 , bda:LGFF5E3B12EEE2484E , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG032A170594B6C567 , bda:LG2E6BE4ED595D2619 , bda:LG34C269710938D77F , bda:LG53470D89C4FA34EB , bda:LG5956E9612C58C2FD , bda:LG9FB8D927E7556C41 , bda:LGB6C2209668CD52E6 , bda:LGEC5660C869F6F7C7 , bda:LGFF5E3B12EEE2484E , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:MW20183  skos:altLabel  "tibetan traditional food and drink dictionary"@en , "zang zu chang yong yin shi ci dian"@zh-latn-pinyin-x-ndia .
-    
     bdr:WA20183  a          :Work ;
         skos:prefLabel      "bod kyi nyer mkho'i zas rigs tshig mdzod/"@bo-x-ewts , "tibetan traditional food and drink dictionary"@en , "zang zu chang yong yin shi ci dian"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Tibetan traditional food and drink dictionary in trilingual."@en ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
-        :workGenre          bdr:T220 ;
+        :language           bdr:LangBo , bdr:LangEn , bdr:LangZh ;
+        :workGenre          bdr:T240 ;
         :workHasInstance    bdr:MW20183 , bdr:W20183 ;
         :workIsAbout        bdr:T424 .
 }

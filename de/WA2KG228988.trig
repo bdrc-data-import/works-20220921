@@ -14,22 +14,33 @@
 bdg:WA2KG228988 {
     bda:LG510DDADF5F4E14EA
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-06-23T13:26:17.276Z"^^xsd:dateTime ;
+        adm:logDate         "2021-07-06T08:50:23.686Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG511DC22F46F38E4F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-07-06T09:03:56.265Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG228988  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG228988 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "de/WA2KG228988.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG228988 ;
-        adm:logEntry        bda:LG510DDADF5F4E14EA ;
+        adm:logEntry        bda:LG510DDADF5F4E14EA , bda:LG511DC22F46F38E4F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA2KG228988  a      :Work ;
+        skos:prefLabel      "gsol 'debs bar chad lam sel dang bsam pa lhun grub ma bcas pa'i kha skong /"@bo-x-ewts ;
+        :catalogInfo        "Supplication prayers for Guru Rinpoche, 25 disciples, and hundred tertöns to clearing the obstacles of the path and fulfills all aspirations."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG228988 .
+        :workGenre          bdr:T140 ;
+        :workHasInstance    bdr:MW2KG228988 , bdr:W2KG228988 ;
+        :workIsAbout        bdr:T00AG01095 , bdr:T1375 , bdr:T2MS12423 , bdr:T450 .
 }
