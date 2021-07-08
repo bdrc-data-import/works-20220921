@@ -18,6 +18,10 @@ bdg:WA20244 {
         adm:logMessage      "changed onhold to released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG3BC906A8A72A1631
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG5B6A7C7CE3E3F7DF
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2013-05-31T16:25:50.413Z"^^xsd:dateTime ;
@@ -25,17 +29,19 @@ bdg:WA20244 {
         adm:logWho          bdu:U00016 .
     
     bda:LGA3B5D60B85BFBB40
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-07T12:25:34.081Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:WA20244  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20244 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "28/WA20244.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20244 ;
-        adm:logEntry        bda:LG163FBD5A0A9DEF40 , bda:LG5B6A7C7CE3E3F7DF , bda:LGA3B5D60B85BFBB40 ;
+        adm:logEntry        bda:LG163FBD5A0A9DEF40 , bda:LG3BC906A8A72A1631 , bda:LG5B6A7C7CE3E3F7DF , bda:LGA3B5D60B85BFBB40 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

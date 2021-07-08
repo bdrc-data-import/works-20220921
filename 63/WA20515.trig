@@ -40,6 +40,10 @@ bdg:WA20515 {
         adm:logMessage      "added Work to PL480"@en ;
         adm:logWhoStr       "add-works-to-PR1PL480" .
     
+    bda:LG77F8E42086AEF790
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG7A9926471535E30B
         a                   adm:UpdateData ;
         adm:logDate         "2018-02-03T17:24:47.172Z"^^xsd:dateTime ;
@@ -88,8 +92,10 @@ bdg:WA20515 {
         adm:logWho          bdu:U00021 .
     
     bda:LGF6436A8DBA220D5B
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-07T15:33:19.156Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected lang encoding"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -101,22 +107,20 @@ bdg:WA20515 {
     bda:WA20515  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20515 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "63/WA20515.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20515 ;
-        adm:logEntry        bda:LG2F5B348925150E2F , bda:LG36CAAD9BD4D001D1 , bda:LG3752479DEC1AE501 , bda:LG73690527C5FD27BD , bda:LG746D5E38C1653353 , bda:LG7A9926471535E30B , bda:LG84434B422374CA41 , bda:LG8A5D6EE0C6A1DBA5 , bda:LG935ABFB9476D0D22 , bda:LGAFAB569CF5CA5C25 , bda:LGBDBD61FAC62F1208 , bda:LGE582AF17A980ADA0 , bda:LGEFB04298AC4ECCEC , bda:LGF6436A8DBA220D5B , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG2F5B348925150E2F , bda:LG36CAAD9BD4D001D1 , bda:LG3752479DEC1AE501 , bda:LG73690527C5FD27BD , bda:LG746D5E38C1653353 , bda:LG77F8E42086AEF790 , bda:LG7A9926471535E30B , bda:LG84434B422374CA41 , bda:LG8A5D6EE0C6A1DBA5 , bda:LG935ABFB9476D0D22 , bda:LGAFAB569CF5CA5C25 , bda:LGBDBD61FAC62F1208 , bda:LGE582AF17A980ADA0 , bda:LGEFB04298AC4ECCEC , bda:LGF6436A8DBA220D5B , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bdr:MW20515  skos:altLabel  "the literary arts in ladakh : a reproduction of a collection of bhotia manuscripts on poetics, prosody, sanskrit grammar, lexicography, etc. from the library of the former ruling family"@en .
     
     bdr:WA20515  a          :Work ;
         skos:altLabel       "sdeb sbyor dang snyan ngag gi skor/"@bo-x-ewts , "snyan ngag gyi skor rin po che'i phreng ba/"@bo-x-ewts , "The literary arts in Ladakh :a reproduction of a collection of Bhotia manuscripts on poetics, prosody, Sanskrit grammar, lexicography, etc., from the library of the former ruling family."@en-x-mixed ;
         skos:prefLabel      "sgra snyan ngag sdeb sbyor lo rgyus sogs/"@bo-x-ewts , "the literary arts in ladakh : a reproduction of a collection of bhotia manuscripts on poetics, prosody, sanskrit grammar, lexicography, etc. from the library of the former ruling family"@en ;
         :catalogInfo        "A collection of texts from the library of the king of Tong Gyalpo (stong rgyal po), of the Ladakhi royal family. These volumes are concerned with the customs of Sanskrit grammer and poetics, and their application in Tibetan literature. Volume 5 also contains a few short works on other subjects, like omens, the Tibetan calendar, and astrology."@en ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
+        :language           bdr:LangBo , bdr:LangEn ;
         :workHasInstance    bdr:MW20515 , bdr:W20515 ;
         :workIsAbout        bdr:T204 , bdr:T206 , bdr:T282 .
 }

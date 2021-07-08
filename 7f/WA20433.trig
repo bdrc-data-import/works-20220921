@@ -13,6 +13,12 @@
 
 bdg:WA20433 {
     bda:LG4B780359A65F3BC2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-07T15:25:05.044Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info, print type, and encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG594152E65DAAAC90
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -51,17 +57,18 @@ bdg:WA20433 {
     bda:WA20433  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20433 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "7f/WA20433.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20433 ;
-        adm:logEntry        bda:LG4B780359A65F3BC2 , bda:LG59BAB5164760E390 , bda:LGB760FBDBB94B8730 , bda:LGFD0D0D279A796D90 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG4B780359A65F3BC2 , bda:LG594152E65DAAAC90 , bda:LG59BAB5164760E390 , bda:LGB760FBDBB94B8730 , bda:LGFD0D0D279A796D90 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA20433  a          :Work ;
         skos:altLabel       "'dzam gling yang rtse bod ljongs byang phyogs nag chu sa khul gyi gnas tshul rags bsdus ngo sprod/"@bo-x-ewts ;
         skos:prefLabel      "khyad du 'phags pa'i byang thang ngo mtshar 'os pa'i thon khungs/"@bo-x-ewts ;
+        :catalogInfo        "A brief introduction of Nagchu prefecture's distinguished northern plains and its resources."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW20433 , bdr:W20433 ;

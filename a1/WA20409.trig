@@ -13,8 +13,10 @@
 
 bdg:WA20409 {
     bda:LG02D95740AF89AD37
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-07T15:24:11.646Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type, and encoding"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG16FB1343A03F57ED
         a                   adm:ScanRequestCreation ;
@@ -27,6 +29,10 @@ bdg:WA20409 {
         adm:logDate         "2015-08-31T14:51:51.121Z"^^xsd:dateTime ;
         adm:logMessage      "subject class changed from T284 to T1884"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG558F2B25BB3BC8B0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
@@ -59,16 +65,20 @@ bdg:WA20409 {
     bda:WA20409  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20409 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "a1/WA20409.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20409 ;
-        adm:logEntry        bda:LG02D95740AF89AD37 , bda:LG16FB1343A03F57ED , bda:LG1FB6458E4A9D3ECD , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG02D95740AF89AD37 , bda:LG16FB1343A03F57ED , bda:LG1FB6458E4A9D3ECD , bda:LG558F2B25BB3BC8B0 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:MW20409  skos:altLabel  "帮锦梅朵"@zh-hans .
+    
     bdr:WA20409  a          :Work ;
-        skos:prefLabel      "spang rgyan me tog"@bo-x-ewts ;
+        skos:altLabel       "bang jin mei duo"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "spang rgyan me tog"@bo-x-ewts , "帮锦梅朵"@zh-hans ;
+        :catalogInfo        "Collection of articles by Tibetan authors."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1884 ;
