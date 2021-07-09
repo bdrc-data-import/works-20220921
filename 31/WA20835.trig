@@ -18,6 +18,10 @@ bdg:WA20835 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGA57A55247B21359D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGBAD669AE235531AD
         a                   adm:UpdateData ;
         adm:logDate         "2008-06-02T16:07:51.427Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA20835 {
         adm:logWho          bdu:U00016 .
     
     bda:LGDC06256153B784AE
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-08T22:52:34.305Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type, and encoding"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGF2F166D8C2265FF8
         a                   adm:ScanRequestCreation ;
@@ -37,21 +43,20 @@ bdg:WA20835 {
     bda:WA20835  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20835 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "31/WA20835.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20835 ;
-        adm:logEntry        bda:LG8436A0D9C806F34D , bda:LGBAD669AE235531AD , bda:LGDC06256153B784AE , bda:LGF2F166D8C2265FF8 ;
+        adm:logEntry        bda:LG8436A0D9C806F34D , bda:LGA57A55247B21359D , bda:LGBAD669AE235531AD , bda:LGDC06256153B784AE , bda:LGF2F166D8C2265FF8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bdr:MW20835  skos:altLabel  "an duo he zuo mi la ri ba fo ge"@zh-latn-pinyin-x-ndia .
     
     bdr:WA20835  a          :Work ;
         skos:altLabel       "mdo smad gtsos sras mkhar dgu thog mthong grol lha khang chen mo gsar bzhengs kyi lo rgyus phan bde 'dod 'jo/"@bo-x-ewts ;
         skos:prefLabel      "gtsos sras mkhar dgu thog mthong grol lha khang chen mo gser bzhangs kyi lo rgyus/"@bo-x-ewts , "an duo he zuo mi la ri ba fo ge"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Bilingual history of gtsos sras mkhar dgu thog in Amdo."@en ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
+        :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T1134 ;
         :workHasInstance    bdr:MW20835 , bdr:W20835 ;
         :workIsAbout        bdr:G4650 .

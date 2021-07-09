@@ -30,6 +30,12 @@ bdg:WA20557 {
         adm:logWho          bdu:U00081 .
     
     bda:LG75C4E691F9D76288
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-08T22:52:29.073Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type, and encoding"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD9B8C971B53472E0
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -64,11 +70,11 @@ bdg:WA20557 {
     bda:WA20557  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20557 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "85/WA20557.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20557 ;
-        adm:logEntry        bda:LG0F12B41CB96950ED , bda:LG3BE3DFD4A8849E5E , bda:LG41472D100AD51997 , bda:LG75C4E691F9D76288 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG0F12B41CB96950ED , bda:LG3BE3DFD4A8849E5E , bda:LG41472D100AD51997 , bda:LG75C4E691F9D76288 , bda:LGD9B8C971B53472E0 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -77,9 +83,10 @@ bdg:WA20557 {
     bdr:WA20557  a          :Work ;
         skos:altLabel       "legs sbyar brda sprod 'jug sgo"@bo-x-ewts , "fan wen ru men"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "legs sbyar brda sprod rig par 'jug pa'i sgo"@bo-x-ewts , "ran wen ru men"@zh-latn-pinyin-x-ndia ;
-        :catalogInfo        "A Tibetan textbook on Sanskrit grammar for university students."@en ;
+        :catalogInfo        "Experimental textbook on Sanskrit grammar for university students."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T266 ;
         :workHasInstance    bdr:MW20557 , bdr:W20557 ;
         :workIsAbout        bdr:T282 .
 }

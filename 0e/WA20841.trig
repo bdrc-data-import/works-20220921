@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20841 {
-    bda:LGC71F1334CF48FB27
+    bda:LG5DD01A90A1A6E877
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGC71F1334CF48FB27
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-08T23:05:21.067Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type, and encoding"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -46,11 +52,11 @@ bdg:WA20841 {
     bda:WA20841  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20841 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "0e/WA20841.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20841 ;
-        adm:logEntry        bda:LGC71F1334CF48FB27 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG5DD01A90A1A6E877 , bda:LGC71F1334CF48FB27 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -59,6 +65,7 @@ bdg:WA20841 {
     bdr:WA20841  a          :Work ;
         skos:altLabel       "mkhas dang grub pa'i 'byung gnas byang ngam ring chos sde chen po'i chos 'byung rna ba'i bdud rtsi'i snying po/"@bo-x-ewts ;
         skos:prefLabel      "ngam ring chos sde'i lo rgyus/"@bo-x-ewts , "angren si jian jie"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "History of the Ngam-ring-chos-sde Monastery, founded as a Sa-skya monastery in the 13th century in Tibet, and later converted to a Gelukpa monastery."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20571 {
+    bda:LG5DEFDF703FC35EFD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG619AFFCA6EE02E21
         a                   adm:UpdateData ;
         adm:logDate         "2008-01-09T10:49:02.935Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA20571 {
         adm:logWho          bdu:U00021 .
     
     bda:LGBAA8062891E40D42
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-08T22:52:31.647Z"^^xsd:dateTime ;
+        adm:logMessage      "added print type, and encoding"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGC4F7F96D177F05E8
         a                   adm:ScanRequestCreation ;
@@ -45,21 +51,27 @@ bdg:WA20571 {
     bda:WA20571  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20571 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "5e/WA20571.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20571 ;
-        adm:logEntry        bda:LG619AFFCA6EE02E21 , bda:LGBAA8062891E40D42 , bda:LGC4F7F96D177F05E8 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG5DEFDF703FC35EFD , bda:LG619AFFCA6EE02E21 , bda:LGBAA8062891E40D42 , bda:LGC4F7F96D177F05E8 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRD75AFCEC4ECB8AAB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10713 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW20571  skos:altLabel  "zang chuan yin ming si lu fang fa"@zh-latn-pinyin-x-ndia .
     
     bdr:WA20571  a          :Work ;
         skos:prefLabel      "bsdus gzhung lung rigs nyi ma'i zur bkol sogs nyer mkho'i yig cha skor zhig"@bo-x-ewts , "zang chuan yin ming si lu fang fa"@zh-latn-pinyin-x-ndia ;
+        :catalogInfo        "Study on fundamental of Buddhist logic and dialectical studies explaining the difficult points."@en ;
+        :creator            bdr:CRD75AFCEC4ECB8AAB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T413 ;
         :workHasInstance    bdr:MW20571 , bdr:W20571 ;
         :workIsAbout        bdr:T96 .
 }
