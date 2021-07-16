@@ -11,28 +11,30 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA0XL469E4A230E9B {
-    bda:WA0XL469E4A230E9B
-        a                   adm:AdminData ;
+bdg:WA4CN12081 {
+    bda:LG7072AACD0465FE03
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-07-15T16:28:57.614Z"^^xsd:dateTime ;
+        adm:logMessage      "Catalog by Simon Lian and Chungdak"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:WA4CN12081  a       adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA0XL469E4A230E9B ;
+        adm:adminAbout      bdr:WA4CN12081 ;
         adm:facetIndex      2 ;
-        adm:gitPath         "f7/WA0XL469E4A230E9B.trig" ;
+        adm:gitPath         "96/WA4CN12081.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA0XL469E4A230E9B ;
+        adm:graphId         bdg:WA4CN12081 ;
+        adm:logEntry        bda:LG7072AACD0465FE03 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR38F70AA9BA12B27F
-        a                   :AgentAsCreator ;
-        :agent              bdr:P215 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:WA0XL469E4A230E9B
-        a                   :Work ;
-        skos:prefLabel      "bla ma yi dam chos srung rnams la tshogs 'khor 'bul tshul dngos grub 'gugs pa'i pho nya/"@bo-x-ewts ;
-        :creator            bdr:CR38F70AA9BA12B27F ;
+    bdr:WA4CN12081  a       :Work ;
+        skos:prefLabel      "gdugs dkar dpe chung par rnying /"@bo-x-ewts ;
+        :catalogInfo        "This is a mini daily chanting book about gdugs dkar. This is a very unique wood-block version Tibetan book."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1KG9580_469E4A .
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW4CN12081 ;
+        :workIsAbout        bdr:T1725 .
 }
