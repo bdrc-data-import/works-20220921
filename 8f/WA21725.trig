@@ -23,8 +23,10 @@ bdg:WA21725 {
         adm:logWho          bdu:U00021 .
     
     bda:LG9DDAB6015F9136BC
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-07-22T20:56:48.462Z"^^xsd:dateTime ;
+        adm:logMessage      "removed series name and number that not exist on book"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGA16060EB81824F89
         a                   adm:ScanRequestCreation ;
@@ -38,6 +40,10 @@ bdg:WA21725 {
         adm:logMessage      "corrected T#s"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGDDF6DD86235A73B0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -48,15 +54,15 @@ bdg:WA21725 {
     bda:WA21725  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21725 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "8f/WA21725.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21725 ;
-        adm:logEntry        bda:LG14D83438CCAA1AD8 , bda:LG7750C4CCED9FF00F , bda:LG9DDAB6015F9136BC , bda:LGA16060EB81824F89 , bda:LGC9D1BED41B5447A6 , bda:LGIM4BF5F96E12 ;
+        adm:logEntry        bda:LG14D83438CCAA1AD8 , bda:LG7750C4CCED9FF00F , bda:LG9DDAB6015F9136BC , bda:LGA16060EB81824F89 , bda:LGC9D1BED41B5447A6 , bda:LGDDF6DD86235A73B0 , bda:LGIM4BF5F96E12 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDDF6DD86235A73B0
+    bdr:CRA36B7076F9CE67FD
         a                   :AgentAsCreator ;
         :agent              bdr:P105 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +70,7 @@ bdg:WA21725 {
     bdr:WA21725  a          :Work ;
         skos:altLabel       "lam rim bla brgyud thub bstan mdzes rgyan las ston pa'i rnam par thar pa/"@bo-x-ewts ;
         skos:prefLabel      "ston pa'i rnam thar/"@bo-x-ewts ;
-        :creator            bdr:CRDDF6DD86235A73B0 ;
+        :creator            bdr:CRA36B7076F9CE67FD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
