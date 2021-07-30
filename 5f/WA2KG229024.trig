@@ -14,33 +14,40 @@
 bdg:WA2KG229024 {
     bda:LG3D9D8C7DF4F1982A
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-07-09T08:24:21.37Z"^^xsd:dateTime ;
+        adm:logDate         "2021-07-29T16:17:55.033Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGDF8A3312CB144A8B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-07-29T16:19:26.209Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG229024  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG229024 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "5f/WA2KG229024.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG229024 ;
-        adm:logEntry        bda:LG3D9D8C7DF4F1982A ;
+        adm:logEntry        bda:LG3D9D8C7DF4F1982A , bda:LGDF8A3312CB144A8B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusEditing .
+        adm:status          bda:StatusReleased .
     
-    bdr:CRDF8A3312CB144A8B
+    bdr:CRFA6A5D23620B1573
         a                   :AgentAsCreator ;
-        :agent              bdr:P364 ;
+        :agent              bdr:P5785 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2KG229024  a      :Work ;
-        skos:altLabel       "nyang chos 'byung /"@bo-x-ewts ;
-        skos:prefLabel      "chos 'byung me tog snying po'i sbrang rtsi'i bcud/"@bo-x-ewts ;
-        :catalogInfo        "History of Buddhism and its development in Tibet during the Royal Dynastic Period."@en ;
-        :creator            bdr:CRDF8A3312CB144A8B ;
+        skos:altLabel       "mkhan chen kun dga' dbang phyug gi gsung 'bum/"@bo-x-ewts , "mkhan chen kun dga' dbang phyug gsung 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ mkhan chen kun dga' dbang phyug"@bo-x-ewts ;
+        :catalogInfo        "Collected works of a Sakya master Khenchen Kunga Wangchuk."@en ;
+        :creator            bdr:CRFA6A5D23620B1573 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T12 ;
-        :workHasInstance    bdr:MW2KG229024 ;
-        :workIsAbout        bdr:G3188 , bdr:G3196 .
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW2KG229024 , bdr:W2KG229024 ;
+        :workIsAbout        bdr:T617 .
 }
