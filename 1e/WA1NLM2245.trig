@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2245 {
+    bda:LGC29BDDE909080BE6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-05T10:43:26.621Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, creator, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGFA21AD4E0562B7C6
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,31 @@ bdg:WA1NLM2245 {
     bda:WA1NLM2245  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2245 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "1e/WA1NLM2245.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2245 ;
-        adm:logEntry        bda:LGFA21AD4E0562B7C6 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGC29BDDE909080BE6 , bda:LGFA21AD4E0562B7C6 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR01E716A75B7CBBA2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4401 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR09191E1AA9F65083
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15276 ;
+        :role               bdr:R0ER0018 .
+    
     bdr:WA1NLM2245  a       :Work ;
         skos:prefLabel      "gdugs dkar mchog tu grub pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'phags pa 'jam dpal gyi mtshan yang dang par brjod pa/ 2 rnam dag ma gser skyems/ 3 gcod kyi sngon du bro gar byed tshul 'khrul snang dbyings 'grol/"@bo-x-ewts , "Dharani of Ushnishasitatapatra, translated by Kashmiri Pandita Datadaheta and Lotsava Zu Gawa Dorjee; other text also included."@en ;
+        :creator            bdr:CR01E716A75B7CBBA2 , bdr:CR09191E1AA9F65083 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2245 , bdr:W1NLM2245 .
+        :workGenre          bdr:T933 ;
+        :workHasInstance    bdr:MW1NLM2245 , bdr:W1NLM2245 ;
+        :workIsAbout        bdr:T703 .
 }
