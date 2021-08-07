@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA2KG229147 {
+    bda:LG0F284A9499C976BE
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-08-06T17:33:29.676Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:WA2KG229147  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA2KG229147 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "eb/WA2KG229147.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA2KG229147 ;
+        adm:logEntry        bda:LG0F284A9499C976BE ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR6B69BD616A4FC419
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6848 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA2KG229147  a      :Work ;
+        skos:prefLabel      "grub dbang o rgyan sku gsum gling pa'i zab gter nor bu chun po'i kha skong /"@bo-x-ewts ;
+        :catalogInfo        "A supplemental volume of the treasures and other writings of HH Orgyen Kusum Lingpa that were not previously published in the 30-volume set."@en ;
+        :creator            bdr:CR6B69BD616A4FC419 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T00AG0572 , bdr:T448 ;
+        :workHasInstance    bdr:MW2KG229147 ;
+        :workIsAbout        bdr:WA2PD19399 .
+}
