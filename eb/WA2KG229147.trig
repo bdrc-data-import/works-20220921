@@ -14,21 +14,28 @@
 bdg:WA2KG229147 {
     bda:LG0F284A9499C976BE
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-08-06T17:33:29.676Z"^^xsd:dateTime ;
+        adm:logDate         "2021-08-10T21:13:03.834Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG6B69BD616A4FC419
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-08-10T21:13:43.434Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG229147  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG229147 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "eb/WA2KG229147.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG229147 ;
-        adm:logEntry        bda:LG0F284A9499C976BE ;
+        adm:logEntry        bda:LG0F284A9499C976BE , bda:LG6B69BD616A4FC419 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6B69BD616A4FC419
+    bdr:CR97A8BB642A790A46
         a                   :AgentAsCreator ;
         :agent              bdr:P6848 ;
         :role               bdr:R0ER0019 .
@@ -36,10 +43,10 @@ bdg:WA2KG229147 {
     bdr:WA2KG229147  a      :Work ;
         skos:prefLabel      "grub dbang o rgyan sku gsum gling pa'i zab gter nor bu chun po'i kha skong /"@bo-x-ewts ;
         :catalogInfo        "A supplemental volume of the treasures and other writings of HH Orgyen Kusum Lingpa that were not previously published in the 30-volume set."@en ;
-        :creator            bdr:CR6B69BD616A4FC419 ;
+        :creator            bdr:CR97A8BB642A790A46 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T00AG0572 , bdr:T448 ;
-        :workHasInstance    bdr:MW2KG229147 ;
+        :workHasInstance    bdr:MW2KG229147 , bdr:W2KG229147 ;
         :workIsAbout        bdr:WA2PD19399 .
 }
