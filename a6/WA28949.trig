@@ -13,14 +13,20 @@
 
 bdg:WA28949 {
     bda:LG05B70D574F9AA564
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-11T09:58:49.849Z"^^xsd:dateTime ;
+        adm:logMessage      "added bibliographical and other title"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG1C83A3FA33B14F99
         a                   adm:UpdateData ;
         adm:logDate         "2011-11-11T16:02:34.847Z"^^xsd:dateTime ;
         adm:logMessage      "added copyright title page"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG90DEC323E0B657C2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGF93E7FFEC048D9CC
         a                   adm:ScanRequestCreation ;
@@ -73,22 +79,23 @@ bdg:WA28949 {
     bda:WA28949  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28949 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "a6/WA28949.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28949 ;
-        adm:logEntry        bda:LG05B70D574F9AA564 , bda:LG1C83A3FA33B14F99 , bda:LGF93E7FFEC048D9CC , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG05B70D574F9AA564 , bda:LG1C83A3FA33B14F99 , bda:LG90DEC323E0B657C2 , bda:LGF93E7FFEC048D9CC , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:MW28949  skos:altLabel  "ʼBras-spuṅs dgon du bźugs su gsol baʼi dpe rñiṅ dkar chag /Dpal brtsegs Bod yig dpe rñiṅ źib ʼjug khaṅ nas bsgrigs."@en-x-mixed , "哲蚌寺藏古籍目录"@zh-hans .
     
     bdr:WA28949  a          :Work ;
-        skos:prefLabel      "'bras spungs dgon du bzhugs su gsol ba'i dpe rnying dkar chag"@bo-x-ewts , "ʼBras-spuṅs dgon du bźugs su gsol baʼi dpe rñiṅ dkar chag /Dpal brtsegs Bod yig dpe rñiṅ źib ʼjug khaṅ nas bsgrigs."@en-x-mixed , "哲蚌寺藏古籍目录"@zh-hans ;
-        :catalogInfo        "Bibliography of rare texts housed at Drepung Monastery."@en ;
+        skos:altLabel       "'bras spungs dgon du bzhugs su gsol ba'i dpe rnying dkar chag"@bo-x-ewts , "'bras spungs dkar chag"@bo-x-ewts ;
+        skos:prefLabel      "'bras spungs dpe rnying dkar chag"@bo-x-ewts , "ʼBras-spuṅs dgon du bźugs su gsol baʼi dpe rñiṅ dkar chag /Dpal brtsegs Bod yig dpe rñiṅ źib ʼjug khaṅ nas bsgrigs."@en-x-mixed , "哲蚌寺藏古籍目录"@zh-hans ;
+        :catalogInfo        "Bibliographical catalog of rare texts of Drepung Monastery in Tibet."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T13 ;
+        :workGenre          bdr:T13 , bdr:T4CZ71 ;
         :workHasInstance    bdr:MW28949 , bdr:W28949 ;
         :workIsAbout        bdr:G108 .
 }
