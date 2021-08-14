@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1PD137852 {
+    bda:LG1A43BCF3F3002656
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-13T18:15:12.977Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and cat info"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG45D2932937D9645E
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-25T05:13:23.018Z"^^xsd:dateTime ;
@@ -56,19 +62,31 @@ bdg:WA1PD137852 {
     bda:WA1PD137852  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD137852 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "0f/WA1PD137852.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD137852 ;
-        adm:logEntry        bda:LG45D2932937D9645E , bda:LG9252587B015426DC , bda:LGBCEF1359F759016C , bda:LGCA4B200F1D0204EB , bda:LGD40CDDDDB469C035 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1A43BCF3F3002656 , bda:LG45D2932937D9645E , bda:LG9252587B015426DC , bda:LGBCEF1359F759016C , bda:LGCA4B200F1D0204EB , bda:LGD40CDDDDB469C035 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR5671D4227DE9B847
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG229171 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE057623CC9FEBA12
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG229170 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1PD137852  skos:altLabel  "安多谚语精选"@zh-hans .
     
     bdr:WA1PD137852  a      :Work ;
         skos:altLabel       "an duo yan yu jing xuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "a mdo'i gtam dpe mkhas pa'i mgrin rgyan/"@bo-x-ewts , "安多谚语精选"@zh-hans ;
+        :catalogInfo        "Tibetan sayings and idioms collection from Amdo region."@en ;
+        :creator            bdr:CR5671D4227DE9B847 , bdr:CRE057623CC9FEBA12 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1PD137852 , bdr:W1PD137852 ;
