@@ -18,6 +18,12 @@ bdg:WA4CZ307987 {
         adm:logMessage      "changed restrictedinchina"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG4D9B2729785608ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-16T11:49:43.428Z"^^xsd:dateTime ;
+        adm:logMessage      "fixed typo and added editor"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGE16F4A4D6F692701
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-05-22T14:45:07.291Z"^^xsd:dateTime ;
@@ -40,30 +46,30 @@ bdg:WA4CZ307987 {
     bda:WA4CZ307987  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ307987 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "55/WA4CZ307987.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ307987 ;
-        adm:logEntry        bda:LG45E608A7B4A5405F , bda:LGE16F4A4D6F692701 , bda:LGFB9420512C4FE80A , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG45E608A7B4A5405F , bda:LG4D9B2729785608ED , bda:LGE16F4A4D6F692701 , bda:LGFB9420512C4FE80A , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR203B72DC7467B29B
         a                   :AgentAsCreator ;
-        :agent              bdr:P3820 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR4D9B2729785608ED
-        a                   :AgentAsCreator ;
         :agent              bdr:P7401 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CR38EF5DFB8EE7E101
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3820 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA4CZ307987  a      :Work ;
-        skos:altLabel       "slob dpon 'phags pa lhas mdzad pa'i yes shes snying po kun las btus pa dang slob dpon byang chub bzang pos mdzad pa'i yse shes snying po kun las btus pa'ibshad sbyar/"@bo-x-ewts ;
-        skos:prefLabel      "yes shes snying po kun las btus pa dang de'i bshad sbyar/"@bo-x-ewts , "jnanasarasamuccaya and nanasarasamuccayanamanibandhana"@sa-x-ndia ;
-        :catalogInfo        "Acarya Aryadeva's Jnanasarasamuccaya with the commentary of Acarya Bodhibhadra"@en ;
-        :creator            bdr:CR203B72DC7467B29B , bdr:CR4D9B2729785608ED ;
+        skos:altLabel       "slob dpon 'phags pa lhas mdzad pa'i ye shes snying po kun las btus pa dang slob dpon byang chub bzang pos mdzad pa'i ye shes snying po kun las btus pa'i bshad sbyar/"@bo-x-ewts ;
+        skos:prefLabel      "ye shes snying po kun las btus pa dang de'i bshad sbyar/"@bo-x-ewts , "jnanasarasamuccaya and nanasarasamuccayanamanibandhana"@sa-x-ndia ;
+        :catalogInfo        "Acarya Aryadeva's Jnanasarasamuccaya with the commentary of Acarya Bodhibhadra; restored, translated and critically edited by dr. Penpa Dorjee."@en ;
+        :creator            bdr:CR203B72DC7467B29B , bdr:CR38EF5DFB8EE7E101 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangHi ;
         :workGenre          bdr:T132 ;

@@ -18,6 +18,12 @@ bdg:WA3CN4939 {
         adm:logMessage      "detail cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG1E65AFF8812B2ED3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-16T10:47:59.408Z"^^xsd:dateTime ;
+        adm:logMessage      "added translater"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG716F64B9A024A83B
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-01T12:08:16.445Z"^^xsd:dateTime ;
@@ -41,17 +47,23 @@ bdg:WA3CN4939 {
     bda:WA3CN4939  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN4939 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "c6/WA3CN4939.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN4939 ;
-        adm:logEntry        bda:LG030CC77477139050 , bda:LG716F64B9A024A83B , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG030CC77477139050 , bda:LG1E65AFF8812B2ED3 , bda:LG716F64B9A024A83B , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR6BDA71ED8682E301
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26625 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA3CN4939  a        :Work ;
         skos:prefLabel      "slob ma'i bslab bya/"@bo-x-ewts ;
         :catalogInfo        "Student education, translated from Chinese to Tibetan by Sonam Dargye."@en ;
+        :creator            bdr:CR6BDA71ED8682E301 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN4939 , bdr:W3CN4939 ;

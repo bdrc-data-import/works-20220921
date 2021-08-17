@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2270 {
+    bda:LGA6659704B8566B12
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-16T14:41:24.955Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGBD5C2488ED2AF84C
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM2270 {
     bda:WA1NLM2270  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2270 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "72/WA1NLM2270.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2270 ;
-        adm:logEntry        bda:LGBD5C2488ED2AF84C , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGA6659704B8566B12 , bda:LGBD5C2488ED2AF84C , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR6B545D137406AAEE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2270  a       :Work ;
         skos:prefLabel      "'dod khams dbang phyug ma dmag zor rgyal mo'i sgrub thabs gtor chog sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 hang ka' rgyal po bkra shis mchod dkar bsangs/ 2 hang ka'i bsangs mchod/ 3 dpal ldan lha mo la brten nas las bzhi'i bsgrub pa'i maN+Dal bzhi ba 'dod dgu'i mchog stsol/ dpal ldan lha mo'i sgo nas maN+Dal bzhi 'bul tshul dgos 'dod kun gnyis ka 4 'jigs byed dpa' bo gcig pa sgrub thabs/ 5 lha chen tshangs pa chen po mchod gtor 'bul ba'i rim pa/ 6 sna tshogs yum/ 7 dpal ldan lha mo'i sgo nas maN+Dal bzhi ba 'bul tshul dgos 'dod kun 'byung / 8 zhi pa'i lha las brten nas nad sogs zhi pa'i thabs kyi bum pa bsgrub tshul ye shes bdud rtsi'i chu rgyun/ dpal ldan lha mo dmag zor ma'i sgo nas bka' bsgo byed tshul 'jigs med ye shes gur khang / 10 dpal ldan dmag zor rgyal mo re ma ti'i rgyus dus kyi man ngag ma mo'i gsang mdzod/ 11 slob dpon klu sgrub kyis mdzad pa'i ril bu mi mthun kun 'joms/ 12 skyes pa pho mo'i lo gza' rtogs tshul/ 13 phyi lam bcad/"@en , "Sadhana and bali offering ritual of wrathful Shridevi; other text also included."@en ;
+        :creator            bdr:CR6B545D137406AAEE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2270 , bdr:W1NLM2270 .
+        :workGenre          bdr:T1 , bdr:T1458 ;
+        :workHasInstance    bdr:MW1NLM2270 , bdr:W1NLM2270 ;
+        :workIsAbout        bdr:T926 .
 }
