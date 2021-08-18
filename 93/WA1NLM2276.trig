@@ -12,6 +12,17 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2276 {
+    bda:LG2F53E485C39BEF4D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-17T11:27:57.598Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG9DED0A353F886EFD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-17T11:25:58.312Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD29A8B67546EAF8C
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +38,20 @@ bdg:WA1NLM2276 {
     bda:WA1NLM2276  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2276 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "93/WA1NLM2276.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2276 ;
-        adm:logEntry        bda:LGD29A8B67546EAF8C , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG2F53E485C39BEF4D , bda:LG9DED0A353F886EFD , bda:LGD29A8B67546EAF8C , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2276  a       :Work ;
         skos:prefLabel      "sman gyi rgyal po sman gyi lha mo gnyis bzung su 'brel ba'i sgrubs thabs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'phags pa de bzhin gshegs pa'i gtsug tor na gdugs dkar po can gzhan gyis mi thub pa phyir zlog mo mchog tu grub grub pa zhes bya ba'i gzungs/ 2 'jam dpal dkar po'i sgrub thabs/ 3 mi skar mi chen lnga p gser skyems/ 4 gsol 'debs/ 5 beg rtse'i las bhi 'phrin bcol gnyer gtad dang bcas pa/ 6 bar do'i 'phrang sgrol gyi gsol 'debs 'jigs sgrol gyi dpa' bo/ 7 thar pa chen po/ 8 bdud tshar gcod pa'i gzungs sngags zab mo bzla/ 9 me lha'i bsang / 10 mnol bsangs/ 11 sa bdag chab gtor ma cha lag dang bcas pa/ 12 thams cad mkhyen pas mdzad pa'i gtor ma brgya rtsa bsur dang bcas/ 13 yi ge brgya lan gsum bzlas nas/ 14 rlung rta'i bsangs mchod/ 15 rlung rta'i bsangs/"@en , "Sadhana of medicine Buddha combined with two deity by unknown author; included other text also."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2276 , bdr:W1NLM2276 .
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM2276 , bdr:W1NLM2276 ;
+        :workIsAbout        bdr:T568 .
 }
