@@ -18,6 +18,12 @@ bdg:WA3CN1542 {
         adm:logMessage      "added catalog info"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG5A1A705C84DAB89A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-18T07:43:13.443Z"^^xsd:dateTime ;
+        adm:logMessage      "add to PR1NCLK"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LG6347DED4F64ADE55
         a                   adm:InitialDataCreation ;
         adm:logDate         "2015-03-16T16:28:28.9Z"^^xsd:dateTime ;
@@ -39,29 +45,29 @@ bdg:WA3CN1542 {
     bda:WA3CN1542  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN1542 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "ef/WA3CN1542.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN1542 ;
-        adm:logEntry        bda:LG192C3417E8ADFC68 , bda:LG6347DED4F64ADE55 , bda:LG71F49885C58C63C2 , bda:LGE93E0B87A7F36028 ;
+        adm:logEntry        bda:LG192C3417E8ADFC68 , bda:LG5A1A705C84DAB89A , bda:LG6347DED4F64ADE55 , bda:LG71F49885C58C63C2 , bda:LGE93E0B87A7F36028 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR3059F90783BBC809
         a                   :AgentAsCreator ;
-        :agent              bdr:P1061 ;
-        :role               bdr:R0ER0021 .
-    
-    bdr:CR5A1A705C84DAB89A
-        a                   :AgentAsCreator ;
         :agent              bdr:P1056 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR7055DF14D645A28C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1061 ;
+        :role               bdr:R0ER0021 .
     
     bdr:WA3CN1542  a        :Work ;
         skos:altLabel       "glo bo lo tsa+tsha ba shes rab rin chen gyi dris lan/"@bo-x-ewts ;
         skos:prefLabel      "glo bo lo tsA ba'i zhus lan/"@bo-x-ewts ;
         :catalogInfo        "A letter to respond to translator Lowo Lotsawa's inquiry by Sakya Pandita."@en ;
-        :creator            bdr:CR3059F90783BBC809 , bdr:CR5A1A705C84DAB89A ;
+        :creator            bdr:CR3059F90783BBC809 , bdr:CR7055DF14D645A28C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 , bdr:T4CZ71 ;

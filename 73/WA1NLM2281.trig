@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2281 {
+    bda:LGBA3397A22D919CEE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-18T14:57:58.03Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGC60E351CC38FC595
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM2281 {
     bda:WA1NLM2281  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2281 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "73/WA1NLM2281.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2281 ;
-        adm:logEntry        bda:LGC60E351CC38FC595 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGBA3397A22D919CEE , bda:LGC60E351CC38FC595 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRFF28FA2F09397056
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2281  a       :Work ;
         skos:prefLabel      "bsangs kyi cho ga dngos grub kyi gzi 'od 'bar ba ngo mtshar rin po che'i 'phreng ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 btsan mdos bcos thabs mdos chog 2 'phags ma gtsug tor mo'i bzlog bsgyur mi mthun g.yul las rnam rgyal/ 3 dgra lha'i bskang gso/ 4 chos skyong lcam sring gi grib sel/ 5 bai DUr dkar po nang nas btus pas blang thor bu rtsis sa bdag rnams/ 6 'phags pa gtsug gtor dkar po'i bzlog bsgyur mi mthun g.yul las rnam rgyal/ 7 dpal rdo rje sder mo'i bzlog bsgyur/ 8 'go ba'i lha lnga gsol mchod bya tshul/ 9 mgon po yid bzhin nor bu'i sgrub thabs/ 10 mgon dkar yid bzhin nor bu'i gtor 'bul 'dod dgu'i char 'bebs/ 11 gsang ba'i bdag po dpal phyag na rdo rje'i bskangs bshags bstod bskul dang bcas pa/ 12 rdo rje rnam 'joms ma'i sgrub thabs/"@en , "Incense offering ritual; other text also included."@en ;
+        :creator            bdr:CRFF28FA2F09397056 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2281 , bdr:W1NLM2281 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2281 , bdr:W1NLM2281 ;
+        :workIsAbout        bdr:T173 .
 }
