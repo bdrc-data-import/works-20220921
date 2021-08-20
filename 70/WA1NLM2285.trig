@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2285 {
+    bda:LG38E33B3BA3C4A900
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-19T11:55:30.513Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, contetn, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD6679CF8E164C32B
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM2285 {
     bda:WA1NLM2285  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2285 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "70/WA1NLM2285.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2285 ;
-        adm:logEntry        bda:LGD6679CF8E164C32B , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG38E33B3BA3C4A900 , bda:LGD6679CF8E164C32B , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR89D000A17EBDC204
+        a                   :AgentAsCreator ;
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2285  a       :Work ;
         skos:prefLabel      "bka' rdzogs pa chen po yang zab dkon mchog spyi 'dus kyi las byang don gsal khyer bder bsgrigs pa phrin las kun khyab sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dam can mgar ba nag po'i mdos/ 2 klu gtor/ 3 lha mo'i sho/ 4 'o ma mar khu'i g.yang skyabs 'dod dgu'i char 'bebs/ 5 lha mo 'od zer can ma'i gsur gtong tshul 'dod don kun sgrub/ 6 'go ba'i lha lnga'i srog gi 'khor lo dgos 'dod 'byung ba'i yid bzhin gyi nor bu/ 7 rje rin po che'i zhal gdams lam rim/ 8 klu sgrub kyis mdzad pa lhag pa'i smon lam/ 9 ye shes mkha' 'gro dur khrod bdag mo'i rgyun gyi rnal 'byor bya tshul nyung ngu / 10 sgrol ma'i rgyun khyer/ 11 rgyal ba bye ba/ 12 skyabs 'gro'i mdos glud/ 13 rje btsun sgrol ma'i brgya bzhi/ 14 bar chad bzlog pa'i gser skyems/ 15 seng gdong gser skyems/"@bo-x-ewts , "Sadhana of Konchok Chithu cycle of teachings; other text also included."@en ;
+        :creator            bdr:CR89D000A17EBDC204 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2285 , bdr:W1NLM2285 .
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM2285 , bdr:W1NLM2285 ;
+        :workIsAbout        bdr:T1686 , bdr:T354 .
 }
