@@ -18,6 +18,12 @@ bdg:WA3CN5147 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG6A81AFD735DE4F53
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-20T19:39:46.405Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG9B6F169AB8BBC822
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:17:10.07Z"^^xsd:dateTime ;
@@ -53,17 +59,23 @@ bdg:WA3CN5147 {
     bda:WA3CN5147  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5147 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "ea/WA3CN5147.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5147 ;
-        adm:logEntry        bda:LG51D9D47D6DD097C2 , bda:LG9B6F169AB8BBC822 , bda:LGE47C4F8ED83B5BEF , bda:LGFA0B177D3BD15F29 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG51D9D47D6DD097C2 , bda:LG6A81AFD735DE4F53 , bda:LG9B6F169AB8BBC822 , bda:LGE47C4F8ED83B5BEF , bda:LGFA0B177D3BD15F29 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR0B62B3D1628D53B3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26630 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN5147  a        :Work ;
         skos:prefLabel      "myang chu'i 'gyur khug"@bo-x-ewts ;
         :catalogInfo        "A collection of poetry composed by Nyang Thupten Norbu."@en ;
+        :creator            bdr:CR0B62B3D1628D53B3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN5147 , bdr:W3CN5147 ;
