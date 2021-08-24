@@ -12,6 +12,17 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2288 {
+    bda:LG7BFAB4494860A5E0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-23T10:04:36.764Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG8FFB8BDE49EDB121
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-23T10:05:32.785Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG9748093AF55B9633
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +38,26 @@ bdg:WA1NLM2288 {
     bda:WA1NLM2288  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2288 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "07/WA1NLM2288.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2288 ;
-        adm:logEntry        bda:LG9748093AF55B9633 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG7BFAB4494860A5E0 , bda:LG8FFB8BDE49EDB121 , bda:LG9748093AF55B9633 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR6335CA13B7B9E86C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P411 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2288  a       :Work ;
         skos:prefLabel      "bslab pa yongs su sbyong ba'i cho ga sdom brtson dgyes byed sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 gser gyi mdog can/ 2 smon lam gyi rgyal po dga' ldan chos srid ma/ 3 bka' drin gsol 'debs thugs rgyud bskul ba'i gdung dbyangs/ 4 bar do 'phrang sgrol gyi gsol 'debs 'jigs sgrol gyi dpa' bo/ 5 ngan song sbyong ba la cher bsngags pa gzungs chen sde lnga'i 'don thabs/ 6 bcom ldan 'das klu'i dbang phyug rgyal po'i sgo nas bum chu sgrub tshul gyi cho ga gdung sel zla ba'i 'khri shing /"@bo-x-ewts , "A purification ritual of the three vows; other text also included."@en ;
+        :creator            bdr:CR6335CA13B7B9E86C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2288 , bdr:W1NLM2288 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2288 , bdr:W1NLM2288 ;
+        :workIsAbout        bdr:T201 , bdr:T8LS16583 .
 }
