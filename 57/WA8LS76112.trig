@@ -1,0 +1,86 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA8LS76112 {
+    bda:LG07AD7CDDBD3A7914
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-08-24T14:23:23.253Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGD843647184B3A9B9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-08-24T14:27:05.182Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:WA8LS76112  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA8LS76112 ;
+        adm:facetIndex      11 ;
+        adm:gitPath         "57/WA8LS76112.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA8LS76112 ;
+        adm:logEntry        bda:LG07AD7CDDBD3A7914 , bda:LGD843647184B3A9B9 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR53A47519083A0528
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR6B26BB4490083A4C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P477 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR7F714C17E5E7D0A9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR8D963BB08188CE5F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P101 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR8F6A0D0CE4CDF0D5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRD8872B121A50B57F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE21DD3F5CF263554
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1042 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRECDA62E4BED669E4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P821 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA8LS76112  a       :Work ;
+        skos:prefLabel      "ris med tshad gzhung kun btus/"@bo-x-ewts ;
+        :catalogInfo        "Selected works on Tibetan Buddhist logic."@en ;
+        :creator            bdr:CR53A47519083A0528 , bdr:CR6B26BB4490083A4C , bdr:CR7F714C17E5E7D0A9 , bdr:CR8D963BB08188CE5F , bdr:CR8F6A0D0CE4CDF0D5 , bdr:CRD8872B121A50B57F , bdr:CRE21DD3F5CF263554 , bdr:CRECDA62E4BED669E4 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW8LS76112 , bdr:W8LS76112 ;
+        :workIsAbout        bdr:T370 , bdr:T808 .
+}
