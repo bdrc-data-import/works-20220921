@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN5225 {
+    bda:LG58B5B3AE4E3206C9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-26T16:33:47.704Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG949F416480D61D6E
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-30T08:51:03.583Z"^^xsd:dateTime ;
@@ -47,17 +53,23 @@ bdg:WA3CN5225 {
     bda:WA3CN5225  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5225 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "8d/WA3CN5225.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5225 ;
-        adm:logEntry        bda:LG949F416480D61D6E , bda:LGBD89D00A6994D2A7 , bda:LGD5CE9B293A1592A8 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG58B5B3AE4E3206C9 , bda:LG949F416480D61D6E , bda:LGBD89D00A6994D2A7 , bda:LGD5CE9B293A1592A8 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRE4DC24B4F70DAF79
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG4288 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN5225  a        :Work ;
         skos:prefLabel      "phyag chen sngon 'gro'i khrid yig bdud rtsi'i thigs pa/"@bo-x-ewts ;
         :catalogInfo        "Instructional manual for preliminary practice of Mahamudra in Drukpa Kagyu order."@en ;
+        :creator            bdr:CRE4DC24B4F70DAF79 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T200 ;

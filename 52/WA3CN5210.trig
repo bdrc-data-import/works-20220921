@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN5210 {
+    bda:LG6476D6E30C93D7E7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-26T13:46:41.301Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGE11EFD122D7D24A8
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-01T16:37:21.484Z"^^xsd:dateTime ;
@@ -41,17 +47,23 @@ bdg:WA3CN5210 {
     bda:WA3CN5210  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5210 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "52/WA3CN5210.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5210 ;
-        adm:logEntry        bda:LGE11EFD122D7D24A8 , bda:LGEB96B1644CAE1691 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG6476D6E30C93D7E7 , bda:LGE11EFD122D7D24A8 , bda:LGEB96B1644CAE1691 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRE2AEA6C917EC7925
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26636 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA3CN5210  a        :Work ;
         skos:prefLabel      "dus rabs kyi lam ston gzhon nu'i mdun ljongs/"@bo-x-ewts ;
-        :catalogInfo        "Advice for young Tibetan by Lobsang Khedup."@en ;
+        :catalogInfo        "Advice for young Tibetan by Lobsang Khedup from Litang monastery."@en ;
+        :creator            bdr:CRE2AEA6C917EC7925 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN5210 , bdr:W3CN5210 ;

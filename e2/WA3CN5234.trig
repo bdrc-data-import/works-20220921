@@ -24,6 +24,12 @@ bdg:WA3CN5234 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGC490EAF2CAA1C9D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-26T16:38:20.139Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM095CC38C9F
         a                   adm:UpdateData ;
         adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
@@ -41,17 +47,23 @@ bdg:WA3CN5234 {
     bda:WA3CN5234  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5234 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "e2/WA3CN5234.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5234 ;
-        adm:logEntry        bda:LG6FF3639247472534 , bda:LGB14DE748B6084086 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG6FF3639247472534 , bda:LGB14DE748B6084086 , bda:LGC490EAF2CAA1C9D3 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRC7F695AF09623CE2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228846 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN5234  a        :Work ;
         skos:prefLabel      "nang bstan gso dpyad ke la sha'i chu rgyun/"@bo-x-ewts ;
         :catalogInfo        "Method of medical treatment on the basis of Budhist philosophy by Drodul Namgyal."@en ;
+        :creator            bdr:CRC7F695AF09623CE2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN5234 , bdr:W3CN5234 ;
