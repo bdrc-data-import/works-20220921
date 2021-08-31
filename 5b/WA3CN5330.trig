@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN5330 {
+    bda:LG1066FDD1A53E5840
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-30T17:16:45.077Z"^^xsd:dateTime ;
+        adm:logMessage      "added editer"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG58780689D9B3846B
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-02T11:24:47.83Z"^^xsd:dateTime ;
@@ -41,17 +47,23 @@ bdg:WA3CN5330 {
     bda:WA3CN5330  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5330 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "5b/WA3CN5330.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5330 ;
-        adm:logEntry        bda:LG58780689D9B3846B , bda:LG62D1DCFC2C0BC083 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1066FDD1A53E5840 , bda:LG58780689D9B3846B , bda:LG62D1DCFC2C0BC083 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR40A790EAB7745D12
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26648 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN5330  a        :Work ;
         skos:prefLabel      "ltung ba sde lnga'i skabs kyi gleng gzhi dang dgag bya ngo bo ltung ba'i yan lag rnams mdor tsam bkod pa blo gsar gzhon nu'i mgul rgyan/"@bo-x-ewts ;
         :catalogInfo        "An explanation of five transgression of Vinaya compiled by Thupten Wangchuk."@en ;
+        :creator            bdr:CR40A790EAB7745D12 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1029 ;

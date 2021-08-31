@@ -24,6 +24,12 @@ bdg:WA3CN5315 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGFAFACCFC80CEDA28
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-30T15:01:43.612Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM095CC38C9F
         a                   adm:UpdateData ;
         adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
@@ -41,17 +47,23 @@ bdg:WA3CN5315 {
     bda:WA3CN5315  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5315 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "af/WA3CN5315.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5315 ;
-        adm:logEntry        bda:LGA3D8C0761FAFFF53 , bda:LGEC5EAC1C9B50EEEE , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LGA3D8C0761FAFFF53 , bda:LGEC5EAC1C9B50EEEE , bda:LGFAFACCFC80CEDA28 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRC2BE3AF978604836
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26647 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN5315  a        :Work ;
         skos:prefLabel      "a ma'i nu rin/"@bo-x-ewts ;
         :catalogInfo        "Miscellaneous Writings by Arya Dewa from Yachen monastery."@en ;
+        :creator            bdr:CRC2BE3AF978604836 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG21749 ;

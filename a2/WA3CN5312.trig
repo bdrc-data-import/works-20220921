@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN5312 {
+    bda:LG027162EABA58BB9B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-30T13:54:38.115Z"^^xsd:dateTime ;
+        adm:logMessage      "added author & editer"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGC853236B78479B6A
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-01T16:53:22.604Z"^^xsd:dateTime ;
@@ -48,17 +54,23 @@ bdg:WA3CN5312 {
     bda:WA3CN5312  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5312 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "a2/WA3CN5312.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5312 ;
-        adm:logEntry        bda:LGC853236B78479B6A , bda:LGE5FE7046BCB5F96A , bda:LGIM095CC38C9F , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG027162EABA58BB9B , bda:LGC853236B78479B6A , bda:LGE5FE7046BCB5F96A , bda:LGIM095CC38C9F , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRCFA4BE9F6DF1F919
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9608 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN5312  a        :Work ;
         skos:prefLabel      "dga' ldan phun tshogs gling gi byung ba/"@bo-x-ewts ;
         :catalogInfo        "History of Gaden Phuntshok Ling monastery."@en ;
+        :creator            bdr:CRCFA4BE9F6DF1F919 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN5312 , bdr:W3CN5312 ;

@@ -24,6 +24,12 @@ bdg:WA3CN5423 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG8DE06AB977AA2B99
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-30T15:08:33.782Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM095CC38C9F
         a                   adm:UpdateData ;
         adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
@@ -47,18 +53,24 @@ bdg:WA3CN5423 {
     bda:WA3CN5423  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5423 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "42/WA3CN5423.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5423 ;
-        adm:logEntry        bda:LG16CD78512DF9EE18 , bda:LG1C815391C69250E5 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG16CD78512DF9EE18 , bda:LG1C815391C69250E5 , bda:LG8DE06AB977AA2B99 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR867A6037E236EB0A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26647 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN5423  a        :Work ;
         skos:altLabel       "gsang chen snga 'gyur rdzogs pa chen po'i rig 'dzin brgyud pa'i ring lugs dri ma med pa'i chos sde chen po dpal ya chen o rgyan bsam gtan gling gi don dam gyi snying stobs rig pa'i rang sgra/"@bo-x-ewts ;
         skos:prefLabel      "ya chen o rgyan bsam gtan gling gi chos 'byung /"@bo-x-ewts ;
         :catalogInfo        "Religious history of Yachen Ugyen Samten Ling monastery in Pelyung Dzong by Aryadeva."@en ;
+        :creator            bdr:CR867A6037E236EB0A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T12 ;

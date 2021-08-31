@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN5367 {
+    bda:LG2BD4CAB9774664CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-08-30T17:38:55.054Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGB5BDD9F3B9C518FF
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-24T10:07:57.233Z"^^xsd:dateTime ;
@@ -41,17 +47,23 @@ bdg:WA3CN5367 {
     bda:WA3CN5367  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5367 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "5a/WA3CN5367.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5367 ;
-        adm:logEntry        bda:LGB5BDD9F3B9C518FF , bda:LGDD25DA06B2273DC0 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2BD4CAB9774664CD , bda:LGB5BDD9F3B9C518FF , bda:LGDD25DA06B2273DC0 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRFEE65FB4FBFAC3C7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26650 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN5367  a        :Work ;
         skos:prefLabel      "spyi don rin chen mdzod kyi lde mig gi zin bris skor/"@bo-x-ewts ;
         :catalogInfo        "A note of Chidon Rinchen Dzode by Lama Aped of Nyaktsho Khagon."@en ;
+        :creator            bdr:CRFEE65FB4FBFAC3C7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1478 ;
