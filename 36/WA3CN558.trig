@@ -30,6 +30,12 @@ bdg:WA3CN558 {
         adm:logMessage      "detial cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGB672A1BB55ABD3F2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-02T17:48:01.09Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -46,17 +52,23 @@ bdg:WA3CN558 {
     bda:WA3CN558  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN558 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "36/WA3CN558.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN558 ;
-        adm:logEntry        bda:LG1FAD3551314F0EFD , bda:LG326A6C57E5415F7C , bda:LG4538F85FA16BAD97 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG1FAD3551314F0EFD , bda:LG326A6C57E5415F7C , bda:LG4538F85FA16BAD97 , bda:LGB672A1BB55ABD3F2 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR6BA4369B3390B0EA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26701 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN558  a         :Work ;
         skos:prefLabel      "sum rtags kyi 'grel pa blo gsar 'jug ngogs/"@bo-x-ewts ;
         :catalogInfo        "Commentary on sum rtags presentation of Tibetan grammar"@en ;
+        :creator            bdr:CR6BA4369B3390B0EA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

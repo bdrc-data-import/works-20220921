@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN5621 {
+    bda:LG70CCD4ED4F08DC3D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-02T20:16:50.694Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG8518BB9C139338F3
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-08T13:01:52.339Z"^^xsd:dateTime ;
@@ -48,18 +54,24 @@ bdg:WA3CN5621 {
     bda:WA3CN5621  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5621 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "39/WA3CN5621.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5621 ;
-        adm:logEntry        bda:LG8518BB9C139338F3 , bda:LG9B27C317506D0E85 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG70CCD4ED4F08DC3D , bda:LG8518BB9C139338F3 , bda:LG9B27C317506D0E85 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR31BE2409BB34B1B2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26706 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN5621  a        :Work ;
         skos:altLabel       "lam zab mo kun gyi spyi gzhung rdo rje slob dpon sgrub pa'i man ngag mchog thun dngos grub bcud 'bebs kyi khrid yig byang chub lam bzang /"@bo-x-ewts ;
         skos:prefLabel      "lam zab sngon 'gro'i khrid yig byang chub lam bzang /"@bo-x-ewts ;
         :catalogInfo        "An instructional manual of preliminary practices by Gyetrul Jigdrel Jangchub Chokyi Senge."@en ;
+        :creator            bdr:CR31BE2409BB34B1B2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T200 ;

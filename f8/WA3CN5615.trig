@@ -18,6 +18,12 @@ bdg:WA3CN5615 {
         adm:logMessage      "full catalog and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG19D75E1827DF8B91
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-02T18:20:27.93Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG2B3351F71A187874
         a                   adm:UpdateData ;
         adm:logDate         "2020-04-13T09:43:26.349Z"^^xsd:dateTime ;
@@ -60,17 +66,23 @@ bdg:WA3CN5615 {
     bda:WA3CN5615  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5615 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "f8/WA3CN5615.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5615 ;
-        adm:logEntry        bda:LG14ED565E48A9AC20 , bda:LG2B3351F71A187874 , bda:LGAE62081F2422E6A0 , bda:LGAF464E04610947F6 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG14ED565E48A9AC20 , bda:LG19D75E1827DF8B91 , bda:LG2B3351F71A187874 , bda:LGAE62081F2422E6A0 , bda:LGAF464E04610947F6 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRAAFCC4F4EED7F5DE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26704 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA3CN5615  a        :Work ;
         skos:prefLabel      "khe las gsar pa'i byung 'phel/"@bo-x-ewts , "new business development"@en ;
         :catalogInfo        "On method of new business development, Author is unknown."@en ;
+        :creator            bdr:CRAAFCC4F4EED7F5DE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1029 ;

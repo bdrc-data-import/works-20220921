@@ -18,6 +18,12 @@ bdg:WA3CN5465 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG8C87D8E15251AB24
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-02T12:32:14.572Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGA31E5D81DF8E6909
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-02T12:40:25.256Z"^^xsd:dateTime ;
@@ -47,17 +53,24 @@ bdg:WA3CN5465 {
     bda:WA3CN5465  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5465 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "ef/WA3CN5465.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5465 ;
-        adm:logEntry        bda:LG494FBA88455CCC6D , bda:LGA31E5D81DF8E6909 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG494FBA88455CCC6D , bda:LG8C87D8E15251AB24 , bda:LGA31E5D81DF8E6909 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR9E531253FCCF79F8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26699 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA3CN5465  a        :Work ;
+        skos:altLabel       "legs bshad ljon dbang dang dka' gnad gsal me'i rnam bshad/"@bo-x-ewts ;
         skos:prefLabel      "bod kyi brda sprod rig pa/"@bo-x-ewts ;
         :catalogInfo        "A detailed commentary of Tibetan grammar also responses to questions concering the Tibetan grammar by Denshul Tsewang Tashi."@en ;
+        :creator            bdr:CR9E531253FCCF79F8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 , bdr:T61 ;

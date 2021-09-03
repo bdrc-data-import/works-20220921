@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2297 {
+    bda:LG2EF9772AB95E7522
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-02T12:01:28.303Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD9CB66F693E51D04
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM2297 {
     bda:WA1NLM2297  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2297 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "4f/WA1NLM2297.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2297 ;
-        adm:logEntry        bda:LGD9CB66F693E51D04 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG2EF9772AB95E7522 , bda:LGD9CB66F693E51D04 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR07B0ABE518C5C032
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2297  a       :Work ;
         skos:prefLabel      "rje btsun byams pa mgon po la brten pa'i 'pho ba'i rnam par bzhag dga' ldan zhing du bgrod pa'i bde lam sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 gtsug tor gdugs dkar gyi bzlog bsgyur mi mthun g.yul las rgyal byed/ 2 phyi lam bcad pa'i bcos thab/ 3 bla tshe 'bod pa'i 'chi med tshe byin gser gyi rdo rje/ 4 klu'i dbang phyug mgno rtogs/ 5 sems can mgu bar bya ba bstod pa/ 6 snying la 'chigng rgyu'i bslab bya gnad 'gag shin tu tshang ba/ 7 spyan ras gzigs kyi gsol 'debs byin brlabs myur 'jug 8 mi rtag sgom tshul gyi bslab bya tshigs su bcad pa/ 9 byang chub lam gyi rim pa'i zab 'khrid phan bde'i lam bzang gi dag 'don sogs kyi rim pa gsal bar snang ba'i me long / 10 dad por bar du tha mar brgyaHrnams/ 11 bag rtsis kyi re'u mig bltas cog kun gsal las steb tu rung ba'i shog khra/ 12 mkha' 'gro dmar po gsangs sngags kyi sgrub thabs dang lha mo shra maNa sgrub thabs dang man ngag sna tshogs sngags dang bcas/ 13 dpal rdo rje 'jigs byed chen po'i sgo nas dus min kha char bcad ba'i mang dag me rlung 'khyil ba/"@en , "Analysis of transferrence on the basis of Maitreyanath as deity by Gungthang Konchok Tenpe Dronme; other text also included."@en ;
+        :creator            bdr:CR07B0ABE518C5C032 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2297 , bdr:W1NLM2297 .
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW1NLM2297 , bdr:W1NLM2297 ;
+        :workIsAbout        bdr:T15 , bdr:T681 .
 }

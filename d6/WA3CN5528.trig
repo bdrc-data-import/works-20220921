@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN5528 {
+    bda:LG4EAD5510161BD813
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-02T18:08:43.426Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGD495F1F71819594C
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-06T10:02:49.124Z"^^xsd:dateTime ;
@@ -48,13 +54,18 @@ bdg:WA3CN5528 {
     bda:WA3CN5528  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5528 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "d6/WA3CN5528.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5528 ;
-        adm:logEntry        bda:LGD495F1F71819594C , bda:LGD9800789850CBEC6 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG4EAD5510161BD813 , bda:LGD495F1F71819594C , bda:LGD9800789850CBEC6 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR18A77BB680B3ED1D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26703 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW3CN5528  skos:altLabel  "the intention experiment"@en .
     
@@ -62,6 +73,7 @@ bdg:WA3CN5528 {
         skos:altLabel       "rnam shes kyi nus pa'i gsang ba/ khyod kyi nang gnas kyi nus pa phyir mngon par gyis/"@bo-x-ewts ;
         skos:prefLabel      "rnam shes kyi nus pa'i gsang ba/"@bo-x-ewts , "the intention experiment"@en ;
         :catalogInfo        "The Bond: Conecting through the space between us. Translated from English to Chinese and Chinese to Tibetan."@en ;
+        :creator            bdr:CR18A77BB680B3ED1D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN5528 , bdr:W3CN5528 ;

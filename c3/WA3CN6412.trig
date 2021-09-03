@@ -18,6 +18,12 @@ bdg:WA3CN6412 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG6110B84168E37510
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-02T20:35:38.158Z"^^xsd:dateTime ;
+        adm:logMessage      "added author & modified catalog"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGC9F0D77B5EDFFA6A
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-09T17:04:39.083Z"^^xsd:dateTime ;
@@ -41,17 +47,23 @@ bdg:WA3CN6412 {
     bda:WA3CN6412  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN6412 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "c3/WA3CN6412.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN6412 ;
-        adm:logEntry        bda:LG2DFB70F69EB38A84 , bda:LGC9F0D77B5EDFFA6A , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG2DFB70F69EB38A84 , bda:LG6110B84168E37510 , bda:LGC9F0D77B5EDFFA6A , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR2BD64D25E9513310
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26708 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN6412  a        :Work ;
         skos:prefLabel      "sum rtags kyi dris lan gsar sbyong dga' ba'i bu ram/"@bo-x-ewts ;
         :catalogInfo        "Questions and responses on the Tibetan grammar and spelling"@en ;
+        :creator            bdr:CR2BD64D25E9513310 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 ;

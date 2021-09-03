@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN6021 {
+    bda:LG2FCCB7597B7DF425
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-02T20:29:38.206Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG6860729C4D1B2835
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-08T15:44:15.993Z"^^xsd:dateTime ;
@@ -28,6 +34,12 @@ bdg:WA3CN6021 {
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-08T16:30:53.042Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC5BE98A87B3F1D36
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-02T20:22:13.28Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGIM6C9E48233B
@@ -47,17 +59,23 @@ bdg:WA3CN6021 {
     bda:WA3CN6021  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN6021 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "32/WA3CN6021.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN6021 ;
-        adm:logEntry        bda:LG6860729C4D1B2835 , bda:LG7C0510CBFE8B0206 , bda:LG9DEB140772EB65ED , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG2FCCB7597B7DF425 , bda:LG6860729C4D1B2835 , bda:LG7C0510CBFE8B0206 , bda:LG9DEB140772EB65ED , bda:LGC5BE98A87B3F1D36 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR896B592765402BB1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26707 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA3CN6021  a        :Work ;
         skos:prefLabel      "skyes chen dam pa'i rtogs brjod thor bu/"@bo-x-ewts ;
         :catalogInfo        "Collection of short story of eastern and western authorities, translated from Chinese to Tiebtan."@en ;
+        :creator            bdr:CR896B592765402BB1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T3 ;
