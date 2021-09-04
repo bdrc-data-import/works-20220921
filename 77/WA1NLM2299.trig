@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2299 {
+    bda:LG6B30CDFA2DED403A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-03T09:12:23.885Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG787207345A44DD0D
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM2299 {
     bda:WA1NLM2299  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2299 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "77/WA1NLM2299.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2299 ;
-        adm:logEntry        bda:LG787207345A44DD0D , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG6B30CDFA2DED403A , bda:LG787207345A44DD0D , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR3FB85A8DAC6DABA9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P166 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2299  a       :Work ;
         skos:prefLabel      "sa skya legs bshad sogs kyi brda don 'ga' zhig dgrol ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'phags pa gdugs dkar mchog grub/ 2 lha bsangs rnam dag chos sku ma/ 3 rje btsun mi g.yo mgon po la bstod pa byin rlabs kyi chu gter/ 4 'phags pa thar pa chen po/ 5 sa bdag chab gtor lha thabs/ 6 rgyal po sku lnga'i tshogs mchod/ 7 shes rab kyi pha rol tu phyin pa'i snying po/ 8 'jam dpal gyi bstod pa ye shes yn tan bzang po/ 9 sgra dbyangs lha mo la bstod pa blo bzang grags pa'i dpal gyis mdzad pa/ 10 rdo rje sems pa'i sgom bzlas/ 11 dpal ldan lha mo la gtor ma 'bul tshul gyi rim pa/ 12 dkon mchog rjes dran gyi mdo/ 13 rje btsun sgrol ma phyag 'tshal nyi shu rtsa gcig ma/ 14 srog chags grog ma la sbyin pa gtong tshul/ 15 'dul ba rgya mtsho'i snying po bsdus pa/"@en , "An explanation of difficult words in the Sapan's elegant sayings and other by Akya Yongzin or Yangchen Gawe Lodro; other text also included."@en ;
+        :creator            bdr:CR3FB85A8DAC6DABA9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2299 , bdr:W1NLM2299 .
+        :workGenre          bdr:T1893 ;
+        :workHasInstance    bdr:MW1NLM2299 , bdr:W1NLM2299 ;
+        :workIsAbout        bdr:WA11399 .
 }
