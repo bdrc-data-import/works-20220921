@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2309 {
+    bda:LG01D3B87254B2A3DD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-09T09:21:52.213Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGB4FAA29EAAEFC889
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM2309 {
     bda:WA1NLM2309  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2309 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "c6/WA1NLM2309.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2309 ;
-        adm:logEntry        bda:LGB4FAA29EAAEFC889 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG01D3B87254B2A3DD , bda:LGB4FAA29EAAEFC889 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR38EBC2FE7CC35EBE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2309  a       :Work ;
         skos:prefLabel      "dpal gsang ba 'dus pa mi bskyod pa'i zhi ba dang rgyas pa'i sbyin bsreg gi cho ga lag tu blang bde ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "Fire offering ritual of Guhyasamaja; other text also included."@en ;
+        :creator            bdr:CR38EBC2FE7CC35EBE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2309 , bdr:W1NLM2309 .
+        :workGenre          bdr:T8 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2309 , bdr:W1NLM2309 ;
+        :workIsAbout        bdr:T417 .
 }
