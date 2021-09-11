@@ -42,6 +42,11 @@ bdg:WA3CN1335 {
         adm:logMessage      "added Work to Vienna"@en ;
         adm:logWhoStr       "add-works-to-PR1VIENNA00" .
     
+    bda:LG9E96B9BA16D961F4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-10T22:42:28.732Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGCE82112C4C72674E
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2015-01-26T13:17:10.012Z"^^xsd:dateTime ;
@@ -51,27 +56,32 @@ bdg:WA3CN1335 {
     bda:WA3CN1335  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN1335 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "4f/WA3CN1335.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN1335 ;
-        adm:logEntry        bda:LG23F7B88739D14AB2 , bda:LG2FCD2BC2A3574A20 , bda:LG40458C2DD59683AB , bda:LG53F742B7E87AF96C , bda:LG69729A42FF728ED2 , bda:LGCE82112C4C72674E ;
+        adm:logEntry        bda:LG23F7B88739D14AB2 , bda:LG2FCD2BC2A3574A20 , bda:LG40458C2DD59683AB , bda:LG53F742B7E87AF96C , bda:LG69729A42FF728ED2 , bda:LG9E96B9BA16D961F4 , bda:LGCE82112C4C72674E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG15807 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR9E96B9BA16D961F4
+    bdr:CR92737D8F14942C88
         a                   :AgentAsCreator ;
         :agent              bdr:P8067 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CRDE3B86D93B5C327F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P364 ;
+        :role               bdr:R0ER0025 .
+    
     bdr:WA3CN1335  a        :Work ;
-        skos:altLabel       "chos skyong ba'i rgyal po bsrong btsan rgam po'i bka' 'bum las smad kyi cha lag zhal gdams bzhugs so/"@bo-x-ewts ;
+        skos:altLabel       "chos skyong ba'i rgyal po bsrong btsan rgam po'i bka' 'bum las smad kyi cha lag zhal gdams/"@bo-x-ewts ;
         skos:prefLabel      "srong btsan sgam po'i bka' 'bum las smad kyi cha lag zhal gdams/"@bo-x-ewts ;
         :catalogInfo        "A part of collected oral instructions from Songtsan Gampo"@en ;
-        :creator            bdr:CR9E96B9BA16D961F4 ;
+        :creator            bdr:CR92737D8F14942C88 , bdr:CRDE3B86D93B5C327F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T413 , bdr:T4CZ71 ;
-        :workIsAbout        bdr:P8067 .
+        :workGenre          bdr:T448 , bdr:T4CZ71 ;
+        :workIsAbout        bdr:T106 , bdr:T58 .
 }

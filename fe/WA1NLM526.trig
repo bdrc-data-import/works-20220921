@@ -24,6 +24,11 @@ bdg:WA1NLM526 {
         adm:logMessage      "added donor's name"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG9DFE1380B1E5CBA7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-10T22:42:28.043Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGD3796E1A37A96179
         a                   adm:UpdateData ;
         adm:logDate         "2019-11-04T10:37:32.051Z"^^xsd:dateTime ;
@@ -39,27 +44,42 @@ bdg:WA1NLM526 {
     bda:WA1NLM526  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM526 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "fe/WA1NLM526.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM526 ;
-        adm:logEntry        bda:LG4E9271A3E96AD953 , bda:LG5ED26B8C0DA75D6B , bda:LGD3796E1A37A96179 , bda:LGIM567371A3 ;
+        adm:logEntry        bda:LG4E9271A3E96AD953 , bda:LG5ED26B8C0DA75D6B , bda:LG9DFE1380B1E5CBA7 , bda:LGD3796E1A37A96179 , bda:LGIM567371A3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG15807 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR9DFE1380B1E5CBA7
+    bdr:CR758BA3896A4FB010
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN21160 ;
+        :role               bdr:R0ER0025 .
+    
+    bdr:CR915DF745C01F8294
         a                   :AgentAsCreator ;
         :agent              bdr:P8067 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR9485F2DC19E86C93
+        a                   :AgentAsCreator ;
+        :agent              bdr:P364 ;
+        :role               bdr:R0ER0025 .
+    
+    bdr:CRCAC0254F158CC61D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P366 ;
+        :role               bdr:R0ER0025 .
     
     bdr:WA1NLM526  a        :Work ;
         skos:altLabel       "chos skyong ba'i rgyal po srong btsan sgam po'i bka' 'bum/"@bo-x-ewts ;
         skos:prefLabel      "ma Ni bka' 'bum/"@bo-x-ewts ;
         :catalogInfo        "Collection of teachings focusing on Avalokitesvara. Attributed to King Songtsen Gampo and revealed as a terma by Drubtob Ngudrup and others."@en ;
-        :creator            bdr:CR9DFE1380B1E5CBA7 ;
+        :creator            bdr:CR758BA3896A4FB010 , bdr:CR915DF745C01F8294 , bdr:CR9485F2DC19E86C93 , bdr:CRCAC0254F158CC61D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T208 , bdr:T3 ;
-        :workIsAbout        bdr:T106 .
+        :workGenre          bdr:T1 , bdr:T1134 , bdr:T3 , bdr:T448 ;
+        :workIsAbout        bdr:T106 , bdr:T58 .
 }

@@ -24,6 +24,11 @@ bdg:WA8LS31182 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGEA883804D29040AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-10T22:42:29.814Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -40,16 +45,31 @@ bdg:WA8LS31182 {
     bda:WA8LS31182  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS31182 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "ea/WA8LS31182.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS31182 ;
-        adm:logEntry        bda:LG0BAF4468E91B4BBD , bda:LG993D6D1FEADF1D48 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG0BAF4468E91B4BBD , bda:LG993D6D1FEADF1D48 , bda:LGEA883804D29040AE , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG15807 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CREA883804D29040AE
+    bdr:CR27D4F7C7840CAF31
+        a                   :AgentAsCreator ;
+        :agent              bdr:P366 ;
+        :role               bdr:R0ER0025 .
+    
+    bdr:CR6FD65F6888979795
+        a                   :AgentAsCreator ;
+        :agent              bdr:P364 ;
+        :role               bdr:R0ER0025 .
+    
+    bdr:CRD636461BB8596773
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN21160 ;
+        :role               bdr:R0ER0025 .
+    
+    bdr:CREBD46C7BAEE4F36F
         a                   :AgentAsCreator ;
         :agent              bdr:P8067 ;
         :role               bdr:R0ER0019 .
@@ -58,9 +78,9 @@ bdg:WA8LS31182 {
         skos:altLabel       "chos skyong ba'i rgyal po srong btsan sgam po'i bka' 'bum las/ bla ma brgyud pa'i gsol 'debs lo rgyus dkar chag"@bo-x-ewts ;
         skos:prefLabel      "ma Ni bka' 'bum/"@bo-x-ewts ;
         :catalogInfo        "A rediscovered teaching cycle focussing upon the tutelary deity Avalokiteshvara attributed to Songtsen Gampo."@en ;
-        :creator            bdr:CREA883804D29040AE ;
+        :creator            bdr:CR27D4F7C7840CAF31 , bdr:CR6FD65F6888979795 , bdr:CRD636461BB8596773 , bdr:CREBD46C7BAEE4F36F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T10MS11187 , bdr:T1134 , bdr:T3 ;
-        :workIsAbout        bdr:T106 .
+        :workGenre          bdr:T1 , bdr:T1134 , bdr:T3 , bdr:T448 ;
+        :workIsAbout        bdr:T106 , bdr:T58 .
 }

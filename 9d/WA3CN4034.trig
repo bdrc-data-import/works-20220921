@@ -36,6 +36,12 @@ bdg:WA3CN4034 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGB960422539CE2E3A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-10T17:27:07.604Z"^^xsd:dateTime ;
+        adm:logMessage      "added terton and topics"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGCA7CD79CF0CB402F
         a                   adm:UpdateData ;
         adm:logDate         "2017-04-05T17:00:26.75Z"^^xsd:dateTime ;
@@ -52,31 +58,41 @@ bdg:WA3CN4034 {
     bda:WA3CN4034  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN4034 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "9d/WA3CN4034.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN4034 ;
-        adm:logEntry        bda:LG291E99F64C627914 , bda:LG4566908B4FF73B27 , bda:LG5A43ED83CCD80C07 , bda:LG9DD9AF6BD0140B9C , bda:LGCA7CD79CF0CB402F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG291E99F64C627914 , bda:LG4566908B4FF73B27 , bda:LG5A43ED83CCD80C07 , bda:LG9DD9AF6BD0140B9C , bda:LGB960422539CE2E3A , bda:LGCA7CD79CF0CB402F , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR4D5760A4B25099D4
         a                   :AgentAsCreator ;
+        :agent              bdr:P8067 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR9E502DBC3A403CF8
+        a                   :AgentAsCreator ;
         :agent              bdr:P3CN21160 ;
         :role               bdr:R0ER0025 .
     
-    bdr:CRB960422539CE2E3A
+    bdr:CRCB204436E6EF1E77
         a                   :AgentAsCreator ;
-        :agent              bdr:P8067 ;
-        :role               bdr:R0ER0011 .
+        :agent              bdr:P364 ;
+        :role               bdr:R0ER0025 .
+    
+    bdr:CRED314BBE28541AFC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P366 ;
+        :role               bdr:R0ER0025 .
     
     bdr:WA3CN4034  a        :Work ;
         skos:prefLabel      "chos rgyal srong btsan sgam po'i ma Ni bka' 'bum/"@bo-x-ewts ;
         :catalogInfo        "Collection of teachings focusing on Avalokitesvara. Attributed to King Songtsen Gampo and revealed as a terma by Drubtob Ngudrup and others."@en ;
-        :creator            bdr:CR4D5760A4B25099D4 , bdr:CRB960422539CE2E3A ;
+        :creator            bdr:CR4D5760A4B25099D4 , bdr:CR9E502DBC3A403CF8 , bdr:CRCB204436E6EF1E77 , bdr:CRED314BBE28541AFC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1134 ;
+        :workGenre          bdr:T1 , bdr:T1134 , bdr:T448 ;
         :workHasInstance    bdr:MW3CN4034 , bdr:W3CN4034 ;
-        :workIsAbout        bdr:T1596 .
+        :workIsAbout        bdr:T106 , bdr:T58 .
 }

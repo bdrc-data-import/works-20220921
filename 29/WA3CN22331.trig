@@ -42,6 +42,11 @@ bdg:WA3CN22331 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGC052913BBBB23015
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-10T22:42:28.997Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGD1BFBBE23060B107
         a                   adm:UpdateData ;
         adm:logDate         "2021-09-09T15:44:17.545Z"^^xsd:dateTime ;
@@ -51,32 +56,42 @@ bdg:WA3CN22331 {
     bda:WA3CN22331  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN22331 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "29/WA3CN22331.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN22331 ;
-        adm:logEntry        bda:LG2B614E1BDEFAEF75 , bda:LG685B410D42840450 , bda:LG8F406C23285621FD , bda:LG91E562B0BCE1BCDF , bda:LG9FE38A6F521AD27E , bda:LGD1BFBBE23060B107 ;
+        adm:logEntry        bda:LG2B614E1BDEFAEF75 , bda:LG685B410D42840450 , bda:LG8F406C23285621FD , bda:LG91E562B0BCE1BCDF , bda:LG9FE38A6F521AD27E , bda:LGC052913BBBB23015 , bda:LGD1BFBBE23060B107 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG15807 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR406033555AEC17DD
+    bdr:CR02C698EC54173864
         a                   :AgentAsCreator ;
         :agent              bdr:P3CN21160 ;
         :role               bdr:R0ER0025 .
     
-    bdr:CRC052913BBBB23015
+    bdr:CR406033555AEC17DD
         a                   :AgentAsCreator ;
         :agent              bdr:P8067 ;
         :role               bdr:R0ER0011 .
+    
+    bdr:CR82DCBBA0EA8CEAFF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P366 ;
+        :role               bdr:R0ER0025 .
+    
+    bdr:CRBE3D66C04C6819EC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P364 ;
+        :role               bdr:R0ER0025 .
     
     bdr:WA3CN22331  a       :Work ;
         skos:altLabel       "chos rgyal srong btsan sgam po'i bka' 'bum/"@bo-x-ewts ;
         skos:prefLabel      "ma Ni bka' 'bum/"@bo-x-ewts ;
         :catalogInfo        "Collection of teachings focusing on Avalokitesvara. Attributed to King Songtsen Gampo (7th Cent.) and revealed as a terma by Drobthop Ngudrup (12th Cent.) and others."@en ;
-        :creator            bdr:CR406033555AEC17DD , bdr:CRC052913BBBB23015 ;
+        :creator            bdr:CR02C698EC54173864 , bdr:CR406033555AEC17DD , bdr:CR82DCBBA0EA8CEAFF , bdr:CRBE3D66C04C6819EC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T208 , bdr:T448 ;
-        :workIsAbout        bdr:T106 .
+        :workGenre          bdr:T1 , bdr:T1134 , bdr:T448 ;
+        :workIsAbout        bdr:T106 , bdr:T58 .
 }

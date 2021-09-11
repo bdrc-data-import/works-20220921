@@ -44,8 +44,7 @@ bdg:WA19225 {
     
     bda:LG82DBA979C410D84C
         a                   adm:UpdateData ;
-        adm:logDate         "2021-09-07T22:24:19.432Z"^^xsd:dateTime ;
-        adm:logMessage      "added author"@en ;
+        adm:logDate         "2021-09-10T22:42:25.836Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
     bda:LG8400E0BB44A4B4E6
@@ -108,7 +107,7 @@ bdg:WA19225 {
     bda:WA19225  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19225 ;
-        adm:facetIndex      17 ;
+        adm:facetIndex      20 ;
         adm:gitPath         "ac/WA19225.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19225 ;
@@ -116,6 +115,21 @@ bdg:WA19225 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG15807 ;
         adm:status          bda:StatusWithdrawn .
+    
+    bdr:CR10858A845CF10ECD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P366 ;
+        :role               bdr:R0ER0025 .
+    
+    bdr:CR28F19A9B0FABAE75
+        a                   :AgentAsCreator ;
+        :agent              bdr:P364 ;
+        :role               bdr:R0ER0025 .
+    
+    bdr:CR3D1D1ADFE57E2A3F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN21160 ;
+        :role               bdr:R0ER0025 .
     
     bdr:CRB48EEDE38927FBE0
         a                   :AgentAsCreator ;
@@ -128,10 +142,10 @@ bdg:WA19225 {
         skos:altLabel       "Ma ṇi bkaʾ ʾbum :a collection of rediscovered teachings focussing upon the tutelary deity Avalokiteśvara (Mahākaruṇika)."@en-x-mixed ;
         skos:prefLabel      "ma Ni bka' 'bum/"@bo-x-ewts , "ma ni bka' 'bum : a collection of rediscovered teachings focussing upon the tutelary deity avaloketesvara (mahakarunika)"@en-x-mixed ;
         :catalogInfo        "Mani Kabum. Collection of teachings and practices focused on Avalokiteshvara."@en ;
-        :creator            bdr:CRB48EEDE38927FBE0 ;
+        :creator            bdr:CR10858A845CF10ECD , bdr:CR28F19A9B0FABAE75 , bdr:CR3D1D1ADFE57E2A3F , bdr:CRB48EEDE38927FBE0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1 ;
+        :workGenre          bdr:T1 , bdr:T1134 , bdr:T3 , bdr:T448 ;
         :workHasInstance    bdr:MW4PD5166 ;
-        :workIsAbout        bdr:T106 , bdr:T2395 , bdr:T525 .
+        :workIsAbout        bdr:T106 , bdr:T58 .
 }

@@ -30,6 +30,12 @@ bdg:WA1KG15807 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGF9957098C90D1FF1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-10T17:27:06.484Z"^^xsd:dateTime ;
+        adm:logMessage      "added terton and topics"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIMB5991979B0
         a                   adm:UpdateData ;
         adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
@@ -47,26 +53,41 @@ bdg:WA1KG15807 {
     bda:WA1KG15807  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG15807 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "27/WA1KG15807.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG15807 ;
-        adm:logEntry        bda:LG556406A061EE6DDC , bda:LGD492B422E0447FC9 , bda:LGE10FCE4353DED564 , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG556406A061EE6DDC , bda:LGD492B422E0447FC9 , bda:LGE10FCE4353DED564 , bda:LGF9957098C90D1FF1 , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF9957098C90D1FF1
+    bdr:CR252B4D68865FEA7E
         a                   :AgentAsCreator ;
         :agent              bdr:P8067 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CR6EBBD21F16273122
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN21160 ;
+        :role               bdr:R0ER0025 .
+    
+    bdr:CR8E5742E68B56C086
+        a                   :AgentAsCreator ;
+        :agent              bdr:P366 ;
+        :role               bdr:R0ER0025 .
+    
+    bdr:CRBAF27805994B020A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P364 ;
+        :role               bdr:R0ER0025 .
+    
     bdr:WA1KG15807  a       :Work ;
         skos:prefLabel      "ma Ni bka' 'bum/"@bo-x-ewts ;
         :catalogInfo        "Collection of teachings focusing on Avalokitesvara. Attributed to King Songtsen Gampo and revealed as a terma by Drubtob Ngudrup and others."@en ;
-        :creator            bdr:CRF9957098C90D1FF1 ;
+        :creator            bdr:CR252B4D68865FEA7E , bdr:CR6EBBD21F16273122 , bdr:CR8E5742E68B56C086 , bdr:CRBAF27805994B020A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1 ;
+        :workGenre          bdr:T1 , bdr:T1134 , bdr:T448 ;
         :workHasInstance    bdr:MW19225 , bdr:MW1KG10871 , bdr:MW1KG15807 , bdr:MW1KG26281_2B7B93 , bdr:MW1NLM526 , bdr:MW27939 , bdr:MW2PD17412 , bdr:MW2PD17514_C5AE46 , bdr:MW3CN1335 , bdr:MW3CN22331 , bdr:MW3CN5561 , bdr:MW3MS214_6A1B9E , bdr:MW4CZ46031 , bdr:MW4CZ78 , bdr:MW8LS31182 , bdr:W19225 , bdr:W1KG10871 , bdr:W1KG15807 , bdr:W1NLM526 , bdr:W27939 , bdr:W2PD17412 , bdr:W3CN1335 , bdr:W3CN22331 , bdr:W3CN5561 , bdr:W4CZ46031 , bdr:W4CZ78 , bdr:W8LS31182 ;
         :workIsAbout        bdr:T106 , bdr:T2395 , bdr:T525 , bdr:T58 .
 }

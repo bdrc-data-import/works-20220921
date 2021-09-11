@@ -20,8 +20,8 @@ bdg:WA27939 {
     
     bda:LG81F7C87FBA322F64
         a                   adm:UpdateData ;
-        adm:logDate         "2021-09-07T22:24:20.617Z"^^xsd:dateTime ;
-        adm:logMessage      "added author"@en ;
+        adm:logDate         "2021-09-10T17:27:06.839Z"^^xsd:dateTime ;
+        adm:logMessage      "added terton and topics"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGE4809771770DA949
@@ -58,7 +58,7 @@ bdg:WA27939 {
     bda:WA27939  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27939 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "4a/WA27939.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27939 ;
@@ -66,6 +66,11 @@ bdg:WA27939 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG15807 ;
         adm:status          bda:StatusWithdrawn .
+    
+    bdr:CR1A29E858AF5FC889
+        a                   :AgentAsCreator ;
+        :agent              bdr:P364 ;
+        :role               bdr:R0ER0025 .
     
     bdr:CRA5E64130510B3FD2
         a                   :AgentAsCreator ;
@@ -76,8 +81,9 @@ bdg:WA27939 {
         skos:altLabel       "chos skyong ba'i rgyal po srong btsan rgam po'i bka' 'bum las smad kyi cha zhal gdams kyi bskor/"@bo-x-ewts ;
         skos:prefLabel      "ma Ni bka' 'bum las smad kyi cha zhal gdams kyi skor/"@bo-x-ewts ;
         :catalogInfo        "Collection of instructions from the Mani Kabum."@en ;
-        :creator            bdr:CRA5E64130510B3FD2 ;
+        :creator            bdr:CR1A29E858AF5FC889 , bdr:CRA5E64130510B3FD2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T448 ;
         :workIsAbout        bdr:T525 , bdr:T58 .
 }
