@@ -12,23 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG229167 {
+    bda:LG765553916806982A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-11T12:58:57.104Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGB4ACE322804AD843
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-09-10T10:16:40.87Z"^^xsd:dateTime ;
+        adm:logDate         "2021-09-11T12:48:34.387Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG229167  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG229167 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "cb/WA2KG229167.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG229167 ;
-        adm:logEntry        bda:LGB4ACE322804AD843 ;
+        adm:logEntry        bda:LG765553916806982A , bda:LGB4ACE322804AD843 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR765553916806982A
+    bdr:CRDF964B7A4747B90F
         a                   :AgentAsCreator ;
         :agent              bdr:P2KG229479 ;
         :role               bdr:R0ER0019 .
@@ -37,10 +44,10 @@ bdg:WA2KG229167 {
         skos:altLabel       "la stod shel dkar chos sde dga' ldan legs bshad gling gi ngag rgyun lo rgyus dwangs gsal gtam gyi chun po/ dus rabs nyi shu pa'i 'go stod nas 1959 bar dang btsan byol du dgon pa slar gso ji ltar gnang ba'i skor/"@bo-x-ewts ;
         skos:prefLabel      "la stod shel dkar chos sde dga' ldan legs bshad gling gi ngag rgyun lo rgyus dwangs gsal gtam gyi chun po/"@bo-x-ewts , "oral history of la stod shel dkar ga' ldan legs bshad gling monastery called bunch of crystal speech. (from the beginning of 20th century till 1959 and the restoration of the monastery in exile)"@en ;
         :catalogInfo        "Oral history of Lato Shelkar Choede Gaden Leksheling Monastery from the beginning of 20th century till 1959 and the restoration of the monastery in exile."@en ;
-        :creator            bdr:CR765553916806982A ;
+        :creator            bdr:CRDF964B7A4747B90F ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn ;
         :workGenre          bdr:T1134 ;
-        :workHasInstance    bdr:MW2KG229167 ;
+        :workHasInstance    bdr:MW2KG229167 , bdr:W2KG229167 ;
         :workIsAbout        bdr:G221 .
 }
