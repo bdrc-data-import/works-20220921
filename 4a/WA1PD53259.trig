@@ -42,6 +42,18 @@ bdg:WA1PD53259 {
         adm:logMessage      "gsar du bcug"@en ;
         adm:logWho          bdu:U00003 .
     
+    bda:LGCB8C240EEC6BCEF8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-13T14:19:37.815Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF58B10E74819B428
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-13T14:17:49.244Z"^^xsd:dateTime ;
+        adm:logMessage      "removed old SR"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -80,15 +92,15 @@ bdg:WA1PD53259 {
     bda:WA1PD53259  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD53259 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "4a/WA1PD53259.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD53259 ;
-        adm:logEntry        bda:LG33648717F3BBDB7F , bda:LG34598C667FE7995F , bda:LG42D9813E8AB62867 , bda:LG60EEA6B41F49E710 , bda:LGB347A1BD3BD084C9 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG33648717F3BBDB7F , bda:LG34598C667FE7995F , bda:LG42D9813E8AB62867 , bda:LG60EEA6B41F49E710 , bda:LGB347A1BD3BD084C9 , bda:LGCB8C240EEC6BCEF8 , bda:LGF58B10E74819B428 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF58B10E74819B428
+    bdr:CR08376112597E1DDB
         a                   :AgentAsCreator ;
         :agent              bdr:P9603 ;
         :role               bdr:R0ER0019 .
@@ -97,9 +109,10 @@ bdg:WA1PD53259 {
     
     bdr:WA1PD53259  a       :Work ;
         skos:prefLabel      "rig gnas dang mi gshis/"@bo-x-ewts , "Rig gnas daṅ mi gśis /Saṅs-rgyas-don-grub kyis brtsams."@en-x-mixed , "wen hua de shan bian yu jia zhi xuan ze"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CRF58B10E74819B428 ;
+        :catalogInfo        "Collection of writings predominantly on Tibetan cultural aspects, identity, and personality."@en ;
+        :creator            bdr:CR08376112597E1DDB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1PD53259 , bdr:W1PD53259 ;
-        :workIsAbout        bdr:T1PD53279 , bdr:T247 , bdr:T770 .
+        :workIsAbout        bdr:T1113 , bdr:T229 , bdr:T2MS14902 .
 }
