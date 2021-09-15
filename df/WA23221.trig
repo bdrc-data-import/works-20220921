@@ -19,6 +19,12 @@ bdg:WA23221 {
         adm:logWho          bdu:U00013 .
     
     bda:LG78E2804AC6EC6790
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-14T08:05:58.802Z"^^xsd:dateTime ;
+        adm:logMessage      "added rtsa ba on title"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG8A319AB3D053A519
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -39,32 +45,32 @@ bdg:WA23221 {
     bda:WA23221  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23221 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "df/WA23221.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23221 ;
-        adm:logEntry        bda:LG414BD3C10B868865 , bda:LG78E2804AC6EC6790 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG414BD3C10B868865 , bda:LG78E2804AC6EC6790 , bda:LG8A319AB3D053A519 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bdr:CR8A319AB3D053A519
-        a                   :AgentAsCreator ;
-        :agent              bdr:P6961 ;
-        :role               bdr:R0ER0016 .
     
     bdr:CR8DC0E0B07CA8EF21
         a                   :AgentAsCreator ;
         :agent              bdr:P1699 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CRE3EF0CDF0F392841
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6961 ;
+        :role               bdr:R0ER0014 .
+    
     bdr:WA23221  a          :Work ;
         skos:altLabel       "rang bzhin rdzogs pa chen po'i lam gyi cha lag sdom pa gsum rnam par nges pa zhes bya ba'i bstan bcos/"@bo-x-ewts , "sdom gsum rnam nges rtsa ba/"@bo-x-ewts ;
-        skos:prefLabel      "sdom pa gsum rnam par nges pa'i mchan 'grel rig pa 'dzin pa'i 'jug ngogs/"@bo-x-ewts ;
+        skos:prefLabel      "sdom pa gsum rnam par nges pa'i rtsa ba dang mchan 'grel rig pa 'dzin pa'i 'jug ngogs/"@bo-x-ewts ;
         :catalogInfo        "Treatise according to Nyingma tradition on the three disciplines, i.e. those of Vinaya, bodhisattva, and tantrika. Written by Ngari Panchen Pema Wangyal. Includes annotations by Khenpo Yongga."@en ;
-        :creator            bdr:CR8A319AB3D053A519 , bdr:CR8DC0E0B07CA8EF21 ;
+        :creator            bdr:CR8DC0E0B07CA8EF21 , bdr:CRE3EF0CDF0F392841 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T132 , bdr:T304 ;
+        :workGenre          bdr:T132 , bdr:T1KG8787 , bdr:T304 ;
         :workHasInstance    bdr:MW23221 , bdr:MW23610 , bdr:W23221 , bdr:W23610 ;
         :workIsAbout        bdr:T201 , bdr:WA3JT13389 .
 }
