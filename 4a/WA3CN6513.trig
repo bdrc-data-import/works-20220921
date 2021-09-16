@@ -30,6 +30,12 @@ bdg:WA3CN6513 {
         adm:logMessage      "changed access to fairUse"@en ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGA2C8244115FFF011
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T15:53:04.592Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGF140DF2F8C6F91F3
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-10T16:37:34.848Z"^^xsd:dateTime ;
@@ -60,18 +66,24 @@ bdg:WA3CN6513 {
     bda:WA3CN6513  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN6513 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "4a/WA3CN6513.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN6513 ;
-        adm:logEntry        bda:LG156AF56131584789 , bda:LG52645357D564DADC , bda:LG7A714B2E2533DFC3 , bda:LGF140DF2F8C6F91F3 , bda:LGIM4599A38FCE , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG156AF56131584789 , bda:LG52645357D564DADC , bda:LG7A714B2E2533DFC3 , bda:LGA2C8244115FFF011 , bda:LGF140DF2F8C6F91F3 , bda:LGIM4599A38FCE , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRDCE84C021F9EEE54
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26730 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN6513  a        :Work ;
         skos:altLabel       "mal dro'i lo rgyus dwangs gsal chu mo'i rgyun bzang /"@bo-x-ewts ;
         skos:prefLabel      "mal dro gung dkar gyi lo rgyus dwangs gsal chu mo'i rgyun bzang /"@bo-x-ewts ;
         :catalogInfo        "Historical gazetteer containing information on the history and oral culture of Maldro Gungkar,"@en ;
+        :creator            bdr:CRDCE84C021F9EEE54 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN6513 , bdr:W3CN6513 ;

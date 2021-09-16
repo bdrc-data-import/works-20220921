@@ -18,6 +18,18 @@ bdg:WA1KG12422 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG5E2E6086CDBC86DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T10:06:43.944Z"^^xsd:dateTime ;
+        adm:logMessage      "changed title and add pinyin"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG968E8021B0FC614F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T09:22:37.368Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected title"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG9ABB1AF6E161CFC9
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2012-05-22T09:43:37.208Z"^^xsd:dateTime ;
@@ -54,18 +66,18 @@ bdg:WA1KG12422 {
     bda:WA1KG12422  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG12422 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "57/WA1KG12422.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG12422 ;
-        adm:logEntry        bda:LG2B7DB3E41841A666 , bda:LG9ABB1AF6E161CFC9 , bda:LGC01E574B7DE7ACE2 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2B7DB3E41841A666 , bda:LG5E2E6086CDBC86DA , bda:LG968E8021B0FC614F , bda:LG9ABB1AF6E161CFC9 , bda:LGC01E574B7DE7ACE2 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1KG12422  a       :Work ;
-        skos:altLabel       "zang han yi ming da ci dian"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "bod rgya ming bsgyur gyi tshig mdzod chen mo/"@bo-x-ewts , "藏汉译名大词典"@zh-hans ;
-        :catalogInfo        "Tibetan to Chinese dictionary."@en ;
+        skos:altLabel       "zang han yi ming da ci dian"@zh-latn-pinyin-x-ndia , "zang han yiming da cihui"@zh-latn-pinyin-x-ndia ;
+        skos:prefLabel      "bod rgya ming bsgyur gyi tshig mdzod chen mo/"@bo-x-ewts , "藏漢譯名大辭彙"@zh-hant ;
+        :catalogInfo        "The Great Tibetan-Chinese Vocabulary"@en ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T220 , bdr:T240 ;

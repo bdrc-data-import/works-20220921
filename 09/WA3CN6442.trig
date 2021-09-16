@@ -18,6 +18,12 @@ bdg:WA3CN6442 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGC2ED15CED42EC56A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T14:25:20.505Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGC6129E883F311C7B
         a                   adm:UpdateData ;
         adm:logDate         "2017-02-17T14:12:24.332Z"^^xsd:dateTime ;
@@ -53,18 +59,24 @@ bdg:WA3CN6442 {
     bda:WA3CN6442  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN6442 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "09/WA3CN6442.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN6442 ;
-        adm:logEntry        bda:LG5233C2C0F59F1DB4 , bda:LGC6129E883F311C7B , bda:LGCCA9D3BA518EC505 , bda:LGDFFF923808F70217 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG5233C2C0F59F1DB4 , bda:LGC2ED15CED42EC56A , bda:LGC6129E883F311C7B , bda:LGCCA9D3BA518EC505 , bda:LGDFFF923808F70217 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRF50AB3760B33795D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26728 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN6442  a        :Work ;
         skos:altLabel       "bstod tshogs chun po/"@bo-x-ewts ;
         skos:prefLabel      "tshor ba'i zin tho/"@bo-x-ewts ;
         :catalogInfo        "Collection of poetry written by Trinkar"@en ;
+        :creator            bdr:CRF50AB3760B33795D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

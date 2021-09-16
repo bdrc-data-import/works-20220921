@@ -18,14 +18,20 @@ bdg:WA22075 {
         adm:logWho          bdu:U00016 .
     
     bda:LGAECF69F1153E648E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T18:19:29.494Z"^^xsd:dateTime ;
+        adm:logMessage      "added G#"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGC876215D97DCF1ED
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2009-01-21T11:57:18.386Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGEE3D76974D10816F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGFB6A14392C4B9464
         a                   adm:UpdateData ;
@@ -64,16 +70,16 @@ bdg:WA22075 {
     bda:WA22075  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22075 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "d9/WA22075.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22075 ;
-        adm:logEntry        bda:LG8AD01BEBEB7F2798 , bda:LGAECF69F1153E648E , bda:LGC876215D97DCF1ED , bda:LGFB6A14392C4B9464 , bda:LGIM093A1A0447 , bda:LGIM84B17F7EDC , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG8AD01BEBEB7F2798 , bda:LGAECF69F1153E648E , bda:LGC876215D97DCF1ED , bda:LGEE3D76974D10816F , bda:LGFB6A14392C4B9464 , bda:LGIM093A1A0447 , bda:LGIM84B17F7EDC , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CREE3D76974D10816F
+    bdr:CR6F4DD351A9DC481A
         a                   :AgentAsCreator ;
         :agent              bdr:P6719 ;
         :role               bdr:R0ER0019 .
@@ -83,9 +89,9 @@ bdg:WA22075 {
     bdr:WA22075  a          :Work ;
         skos:altLabel       "bod gzhung rtse yig tshang dang/ phyi rgyal las khungs kyi 'dzin skyong/ sa gter sogs lo rgyus phyogs bsdebs/"@bo-x-ewts ;
         skos:prefLabel      "bod gzhung rtse yig tshang dang phyi rgyal las khungs/"@bo-x-ewts , "Bod gźuṅ rtse yig tshaṅ daṅ phyi rgyal las khuṅs kyi ʾzin skyoṅ, sa gter sogs lo rgyus phyogs bsdebs /Sneʾu-śar Thub-bstan-thar-pa."@en-x-mixed ;
-        :creator            bdr:CREE3D76974D10816F ;
+        :creator            bdr:CR6F4DD351A9DC481A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW22075 , bdr:W22075 ;
-        :workIsAbout        bdr:G3196 , bdr:T2203 .
+        :workIsAbout        bdr:G3196 , bdr:G3CN26733 .
 }

@@ -18,6 +18,12 @@ bdg:WA3CN6540 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG8C277097A5AD3F84
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T17:21:24.469Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG8F4570C1DE47E4C0
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-13T10:27:21.512Z"^^xsd:dateTime ;
@@ -41,13 +47,18 @@ bdg:WA3CN6540 {
     bda:WA3CN6540  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN6540 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "43/WA3CN6540.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN6540 ;
-        adm:logEntry        bda:LG8147AFE46BBFE9BC , bda:LG8F4570C1DE47E4C0 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG8147AFE46BBFE9BC , bda:LG8C277097A5AD3F84 , bda:LG8F4570C1DE47E4C0 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR73014DC9F60ABD5B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26731 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW3CN6540  skos:altLabel  "藏医诊治临床经验汇编"@zh-hans .
     
@@ -55,6 +66,7 @@ bdg:WA3CN6540 {
         skos:altLabel       "nad sman sprod pa'i man ngag phyogs bsdus blo gsar dgyes pa'i sgron me/"@bo-x-ewts ;
         skos:prefLabel      "nad sman sprod pa'i man ngag phyogs bsdus/"@bo-x-ewts , "藏医诊治临床经验汇编"@zh-hans ;
         :catalogInfo        "Compilation of clinical experience of Tibetan medicine diagnosis and treatment."@en ;
+        :creator            bdr:CR73014DC9F60ABD5B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T456 ;

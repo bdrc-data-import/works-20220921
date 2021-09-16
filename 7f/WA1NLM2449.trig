@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2449 {
+    bda:LG720E91BB5CBAE373
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T15:29:44.807Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGC183AF2CFA282D3B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T16:12:17.034Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGD7180F0A51A45402
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +39,21 @@ bdg:WA1NLM2449 {
     bda:WA1NLM2449  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2449 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "7f/WA1NLM2449.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2449 ;
-        adm:logEntry        bda:LGD7180F0A51A45402 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG720E91BB5CBAE373 , bda:LGC183AF2CFA282D3B , bda:LGD7180F0A51A45402 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2449  a       :Work ;
-        skos:prefLabel      "rgyal ba dben sa pa yab sras kyi man ngag gtor ma'i cho ga phun tshogs 'dod yon ma'i rnam bshad phun tshogs dgongs rgyan sogs/"@bo-x-ewts ;
+        skos:altLabel       "rgyal ba dben sa pa yab sras kyi man ngag gtor ma'i cho ga phun tshogs 'dod yon ma'i rnam bshad phun tshogs dgongs rgyan sogs/"@bo-x-ewts ;
+        skos:prefLabel      "dben sa pa yab sras kyi man ngag gtor ma'i cho ga phun tshogs 'dod yon ma'i rnam bshad phun tshogs dgongs rgyan sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2449 , bdr:W1NLM2449 .
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW1NLM2449 , bdr:W1NLM2449 ;
+        :workIsAbout        bdr:T170 .
 }

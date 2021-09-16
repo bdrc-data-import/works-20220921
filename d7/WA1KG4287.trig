@@ -18,6 +18,18 @@ bdg:WA1KG4287 {
         adm:logMessage      "first released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG331B75CB26742BB0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T16:15:33.048Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG762695366F241298
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T16:12:00.551Z"^^xsd:dateTime ;
+        adm:logMessage      "removed old SR and modify cat info"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG92FF4E239CC7B15A
         a                   adm:UpdateData ;
         adm:logDate         "2010-03-10T12:43:54.624Z"^^xsd:dateTime ;
@@ -27,6 +39,12 @@ bdg:WA1KG4287 {
     bda:LG9B228A8A69D7CD2A
         a                   adm:UpdateData ;
         adm:logDate         "2010-05-26T11:11:19.238Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGAC71C32C534DB8B8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-15T16:14:24.208Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGC1FD8A3D60D6A72E
@@ -65,28 +83,30 @@ bdg:WA1KG4287 {
     bda:WA1KG4287  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4287 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "d7/WA1KG4287.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4287 ;
-        adm:logEntry        bda:LG0D83D9DD260BCA5E , bda:LG92FF4E239CC7B15A , bda:LG9B228A8A69D7CD2A , bda:LGC1FD8A3D60D6A72E , bda:LGE54A9AF852E9414C , bda:LGIM5A753E00B7 , bda:LGIM84B17F7EDC , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0D83D9DD260BCA5E , bda:LG331B75CB26742BB0 , bda:LG762695366F241298 , bda:LG92FF4E239CC7B15A , bda:LG9B228A8A69D7CD2A , bda:LGAC71C32C534DB8B8 , bda:LGC1FD8A3D60D6A72E , bda:LGE54A9AF852E9414C , bda:LGIM5A753E00B7 , bda:LGIM84B17F7EDC , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR762695366F241298
+    bdr:CR04F9729D6D7D574E
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG4288 ;
         :role               bdr:R0ER0019 .
     
+    bdr:MW1KG4287  skos:altLabel  "phyag-chen snon-'gro thun-mon ma-yin pa'i khrid-yig bdud-rtsi'i thigs-pa"@en .
+    
     bdr:WA1KG4287  a        :Work ;
-        skos:altLabel       "skyabs rje seng+ge brag pa'i gsung sgra 'dzin 'khor lo las zhal bshus/ phyag chen sngon 'gro'i khrid yig bdud rtsi'i thigs pa/"@bo-x-ewts ;
-        skos:prefLabel      "phyag chen sngon 'gro'i khrid yig bdud rtsi'i thigs pa/"@bo-x-ewts ;
-        :catalogInfo        "Instructional manual to preliminary practices for Mahamudra."@en ;
-        :creator            bdr:CR762695366F241298 ;
+        skos:altLabel       "skyabs rje seng+ge brag pa'i gsung sgra 'dzin 'khor lo las zhal bshus/ phyag chen sngon 'gro thun mong ma yin pa'i khrid yig bdud rtsi'i thigs pa/"@bo-x-ewts ;
+        skos:prefLabel      "phyag chen sngon 'gro thun mong ma yin pa'i khrid yig bdud rtsi'i thigs pa/"@bo-x-ewts , "phyag-chen snon-'gro thun-mon ma-yin pa'i khrid-yig bdud-rtsi'i thigs-pa"@en ;
+        :catalogInfo        "Instructional manual of the preliminary practices for Mahamudra."@en ;
+        :creator            bdr:CR04F9729D6D7D574E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T200 ;
         :workHasInstance    bdr:MW1KG4287 , bdr:W1KG4287 ;
-        :workIsAbout        bdr:T199 .
+        :workIsAbout        bdr:T1254 , bdr:T199 .
 }

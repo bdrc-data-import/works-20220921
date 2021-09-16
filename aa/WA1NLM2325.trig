@@ -18,6 +18,12 @@ bdg:WA1NLM2325 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG99DC70088F9BA973
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T12:11:41.081Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM2325 {
     bda:WA1NLM2325  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2325 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "aa/WA1NLM2325.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2325 ;
-        adm:logEntry        bda:LG7DF21510E16944C8 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG7DF21510E16944C8 , bda:LG99DC70088F9BA973 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB76EF24B752F3DA5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4107 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2325  a       :Work ;
-        skos:prefLabel      "gso ba rigs pa'i man ngag kun gyi gces bsdus phan bde snying po sogs/"@bo-x-ewts ;
+        skos:prefLabel      "gso ba rigs pa'i man ngag kun gyi gces bsdus phan bde snying po/"@bo-x-ewts ;
+        :catalogInfo        "Practical instruction on Tibetan science of medicine by Konchok Drophen Wangpo."@en ;
+        :creator            bdr:CRB76EF24B752F3DA5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2325 , bdr:W1NLM2325 .
+        :workGenre          bdr:T456 ;
+        :workHasInstance    bdr:MW1NLM2325 , bdr:W1NLM2325 ;
+        :workIsAbout        bdr:T85 .
 }

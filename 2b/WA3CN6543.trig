@@ -24,6 +24,12 @@ bdg:WA3CN6543 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG9FAD35ACDB62F1C4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T18:37:45.23Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and normalized infos"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGD78B5CB474ADE7B2
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-11T16:16:33.61Z"^^xsd:dateTime ;
@@ -47,21 +53,27 @@ bdg:WA3CN6543 {
     bda:WA3CN6543  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN6543 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "2b/WA3CN6543.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN6543 ;
-        adm:logEntry        bda:LG1812AA6D76AD3BDA , bda:LG8AD638602A0BA79F , bda:LGD78B5CB474ADE7B2 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG1812AA6D76AD3BDA , bda:LG8AD638602A0BA79F , bda:LG9FAD35ACDB62F1C4 , bda:LGD78B5CB474ADE7B2 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR5DEC8C2D41200F8F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26732 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN6543  a        :Work ;
         skos:altLabel       "tubo wen xian xue gai lun"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "spu rgyal btsan po'i dus kyi yig tshang rnam bshad blo gsal mgul rgyan/"@bo-x-ewts , "吐蕃文献学概论"@zh-hans ;
         :catalogInfo        "Study of the preservation and indexing of historical documents from the Tibetan imperial period (7th-9th centuries), with an introduction to available manuscript collections, archives, inscriptions, and other sources."@en ;
+        :creator            bdr:CR5DEC8C2D41200F8F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;
         :workHasInstance    bdr:MW3CN6543 , bdr:W3CN6543 ;
-        :workIsAbout        bdr:G3196 , bdr:T1PD108901 .
+        :workIsAbout        bdr:G3CN466 , bdr:T2203 .
 }

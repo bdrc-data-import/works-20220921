@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2443 {
+    bda:LGBDEA3E86EF9CA173
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T16:12:15.094Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGCEF9A08EF92F4DFC
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2443 {
     bda:WA1NLM2443  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2443 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "1d/WA1NLM2443.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2443 ;
-        adm:logEntry        bda:LGCEF9A08EF92F4DFC , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGBDEA3E86EF9CA173 , bda:LGCEF9A08EF92F4DFC , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2443  a       :Work ;
-        skos:prefLabel      "rlung rta'i mchod chog phan bde'i pad+ma dkar po'i mdzes rgyan rung ba gzhon nu'i klu dbyangs sogs/"@bo-x-ewts ;
+        skos:altLabel       "rlung rta'i mchod chog phan bde'i pad+ma dkar po'i mdzes rgyan rung ba gzhon nu'i klu dbyangs sogs/"@bo-x-ewts ;
+        skos:prefLabel      "rlung rta'i mchod chog phan bde'i pad+ma dkar po'i mdzes rgyan/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2443 , bdr:W1NLM2443 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2445 {
+    bda:LG5B2A81ECBA620F48
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T09:11:38.875Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG9B57FCE5C933651C
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM2445 {
     bda:WA1NLM2445  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2445 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "94/WA1NLM2445.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2445 ;
-        adm:logEntry        bda:LG9B57FCE5C933651C , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG5B2A81ECBA620F48 , bda:LG9B57FCE5C933651C , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2445  a       :Work ;
         skos:prefLabel      "sman chog bsdus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2445 , bdr:W1NLM2445 .
 }

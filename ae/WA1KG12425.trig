@@ -14,14 +14,26 @@
 bdg:WA1KG12425 {
     bda:LG096000EA6F7E466C
         a                   adm:UpdateData ;
-        adm:logDate         "2021-09-15T00:26:51.1Z"^^xsd:dateTime ;
-        adm:logMessage      "added author"@en ;
+        adm:logDate         "2021-09-14T14:36:51.1Z"^^xsd:dateTime ;
+        adm:logMessage      "added editer"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG1BD3645AF283ADDF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T09:38:03.53Z"^^xsd:dateTime ;
+        adm:logMessage      "normalized"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LG58A924ED48B8E776
         a                   adm:InitialDataCreation ;
         adm:logDate         "2012-05-18T15:42:34.421Z"^^xsd:dateTime ;
         adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG69DDA112C9E31738
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T09:58:46.181Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected chinese title"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG84B233C3594593AB
@@ -60,24 +72,18 @@ bdg:WA1KG12425 {
     bda:WA1KG12425  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG12425 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "ae/WA1KG12425.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG12425 ;
-        adm:logEntry        bda:LG096000EA6F7E466C , bda:LG58A924ED48B8E776 , bda:LG84B233C3594593AB , bda:LGCD2153F81DAAC44F , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG096000EA6F7E466C , bda:LG1BD3645AF283ADDF , bda:LG58A924ED48B8E776 , bda:LG69DDA112C9E31738 , bda:LG84B233C3594593AB , bda:LGCD2153F81DAAC44F , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1BD3645AF283ADDF
-        a                   :AgentAsCreator ;
-        :agent              bdr:P9710 ;
-        :role               bdr:R0ER0019 .
-    
     bdr:WA1KG12425  a       :Work ;
         skos:altLabel       "zang han ji lun ci dian"@zh-latn-pinyin-x-ndia ;
-        skos:prefLabel      "bod rgya kun btus tshig mdzod/"@bo-x-ewts , "藏汉集论辞典"@zh-hans ;
+        skos:prefLabel      "bod rgya kun btus tshig mdzod/"@bo-x-ewts , "撤漢集谕辭彙"@zh-hant ;
         :catalogInfo        "Dictionary of Buddhist terminology in Tibetan and Chinese languages."@en ;
-        :creator            bdr:CR1BD3645AF283ADDF ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T220 , bdr:T240 ;

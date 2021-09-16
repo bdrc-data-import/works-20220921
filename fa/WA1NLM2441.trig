@@ -18,6 +18,12 @@ bdg:WA1NLM2441 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG7747234B6544F7B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-15T16:12:13.628Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2441 {
     bda:WA1NLM2441  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2441 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "fa/WA1NLM2441.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2441 ;
-        adm:logEntry        bda:LG5274971A519ED650 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG5274971A519ED650 , bda:LG7747234B6544F7B7 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2441  a       :Work ;
         skos:prefLabel      "sgrol ma'i maN+Dal bzhi ba'i cho ga dpag bsam snye ma sogs/"@bo-x-ewts ;
+        :catalogInfo        "Ritual method for the performance of the four-fold mandala offering to the tutelary Tara and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2441 , bdr:W1NLM2441 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2441 , bdr:W1NLM2441 ;
+        :workIsAbout        bdr:T1709 .
 }
