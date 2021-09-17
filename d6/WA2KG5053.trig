@@ -17,19 +17,28 @@ bdg:WA2KG5053 {
         adm:logDate         "2020-11-04T12:36:21.732Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGC648281CEAED21DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-16T18:15:18.551Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG5053  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG5053 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "d6/WA2KG5053.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG5053 ;
-        adm:logEntry        bda:LG597DEBA42CBD38D8 ;
+        adm:logEntry        bda:LG597DEBA42CBD38D8 , bda:LGC648281CEAED21DA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusEditing .
+        adm:status          bda:StatusReleased .
     
     bdr:WA2KG5053  a        :Work ;
+        skos:prefLabel      "sgrol ma'i 'grel pa phyogs sgrig me tog ut+pala'i chun po/"@bo-x-ewts ;
+        :catalogInfo        "Collection of commentaries on the praise to the twenty-one Taras."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG5053 .
+        :workGenre          bdr:T1081 , bdr:T132 ;
+        :workHasInstance    bdr:MW2KG5053 ;
+        :workIsAbout        bdr:T619 , bdr:T744 .
 }

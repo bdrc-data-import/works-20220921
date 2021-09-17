@@ -17,19 +17,39 @@ bdg:WA2KG5052 {
         adm:logDate         "2020-11-04T12:36:21.359Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGBF43CE406F893DD4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-16T18:15:18.339Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG5052  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG5052 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "8d/WA2KG5052.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG5052 ;
-        adm:logEntry        bda:LG8410AA068D7AA3EF ;
+        adm:logEntry        bda:LG8410AA068D7AA3EF , bda:LGBF43CE406F893DD4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusEditing .
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR34E40C7E91942EDE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P827 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRA35F0FD14CE25083
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10581 ;
+        :role               bdr:R0ER0014 .
     
     bdr:WA2KG5052  a        :Work ;
+        skos:prefLabel      "dwags po bkra shis rnam rgyal gyi gsung sngon 'gro'i rtsa bar 'grel bshad blo chos su 'gro ba/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Dakpo Penchen Tashi Namgyal's four-session practice manual for the preliminaries practice."@en ;
+        :creator            bdr:CR34E40C7E91942EDE , bdr:CRA35F0FD14CE25083 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG5052 .
+        :workGenre          bdr:T132 , bdr:T1KG8787 ;
+        :workHasInstance    bdr:MW2KG5052 ;
+        :workIsAbout        bdr:T179 .
 }

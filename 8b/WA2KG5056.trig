@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG5056 {
+    bda:LG79AFB56551BB9B43
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-16T18:15:19.191Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGDCB7735B9C1C4934
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-11-04T12:36:22.927Z"^^xsd:dateTime ;
@@ -20,16 +25,31 @@ bdg:WA2KG5056 {
     bda:WA2KG5056  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG5056 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "8b/WA2KG5056.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG5056 ;
-        adm:logEntry        bda:LGDCB7735B9C1C4934 ;
+        adm:logEntry        bda:LG79AFB56551BB9B43 , bda:LGDCB7735B9C1C4934 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusEditing .
+        adm:status          bda:StatusReleased .
+    
+    bdr:CRE55A1968737ED900
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10580 ;
+        :role               bdr:R0ER0014 .
+    
+    bdr:CREB74CC4E40AC65E7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P649 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2KG5056  a        :Work ;
+        skos:prefLabel      "'jam dbyangs sgrub thabs rmongs pa mun sel gyi 'grel pa yes shes sgron me/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Karma Chakme's sadhana of Manjugosha."@en ;
+        :creator            bdr:CRE55A1968737ED900 , bdr:CREB74CC4E40AC65E7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG5056 .
+        :workGenre          bdr:T1 , bdr:T132 ;
+        :workHasInstance    bdr:MW2KG5056 ;
+        :workIsAbout        bdr:T69 .
 }

@@ -17,19 +17,34 @@ bdg:WA2KG5049 {
         adm:logDate         "2020-11-04T12:37:39.091Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGF23282897E571E05
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-16T18:15:17.675Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG5049  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG5049 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "97/WA2KG5049.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG5049 ;
-        adm:logEntry        bda:LG344FAF9041D33B7C ;
+        adm:logEntry        bda:LG344FAF9041D33B7C , bda:LGF23282897E571E05 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusEditing .
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR2450CF8ABA479B41
+        a                   :AgentAsCreator ;
+        :agent              bdr:P850 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2KG5049  a        :Work ;
+        skos:prefLabel      "skyabs rje bstan dga' rin po che'i gsung phyogs sgrig pad+ma 'dzum 'byed/"@bo-x-ewts ;
+        :catalogInfo        "Collection of writings of a Kagyu master Tenga Rinpoche (1932-2012)."@en ;
+        :creator            bdr:CR2450CF8ABA479B41 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG5049 .
+        :workGenre          bdr:T1081 , bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW2KG5049 ;
+        :workIsAbout        bdr:T1187 .
 }

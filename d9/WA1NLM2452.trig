@@ -18,6 +18,12 @@ bdg:WA1NLM2452 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGEF2B3ECD3AB97086
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-16T16:33:56.75Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloed"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2452 {
     bda:WA1NLM2452  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2452 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d9/WA1NLM2452.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2452 ;
-        adm:logEntry        bda:LG31D6E86C0051D4E9 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG31D6E86C0051D4E9 , bda:LGEF2B3ECD3AB97086 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2452  a       :Work ;
-        skos:prefLabel      "'byung 'dus kyi gtsug lag gsal bar byed pa gso rtsis zhe bdun ma'i bskor mgo kha dmar dang bcas pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "'byung 'dus kyi gtsug lag gsal bar byed pa gso rtsis zhe bdun ma'i bskor mgo kha dmar dang bcas pa sogs/"@bo-x-ewts ;
+        skos:prefLabel      "gso rtsis zhe bdun ma'i bskor mgo kha dmar dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "An explanation of element divination and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2452 , bdr:W1NLM2452 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2452 , bdr:W1NLM2452 ;
+        :workIsAbout        bdr:T1443 .
 }

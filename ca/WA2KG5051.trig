@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG5051 {
+    bda:LG2AB31525988C204F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-16T18:15:18.114Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG642AC5B6D47D834A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-11-04T12:36:21.001Z"^^xsd:dateTime ;
@@ -20,16 +25,31 @@ bdg:WA2KG5051 {
     bda:WA2KG5051  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG5051 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "ca/WA2KG5051.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG5051 ;
-        adm:logEntry        bda:LG642AC5B6D47D834A ;
+        adm:logEntry        bda:LG2AB31525988C204F , bda:LG642AC5B6D47D834A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusEditing .
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR2EFF18195E125F15
+        a                   :AgentAsCreator ;
+        :agent              bdr:P625 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRB9534FA06DE2B8D3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2KG5051  a        :Work ;
+        skos:prefLabel      "tshig bdun bla sgrub dang dmigs rim dang tshig bdun gsol 'debs kyi 'grel pa phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of commentaries on the seven-line supplication, guru yoga practice, and visualization of Guru Padmasambhava."@en ;
+        :creator            bdr:CR2EFF18195E125F15 , bdr:CRB9534FA06DE2B8D3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG5051 .
+        :workGenre          bdr:T1081 , bdr:T132 ;
+        :workHasInstance    bdr:MW2KG5051 ;
+        :workIsAbout        bdr:T2297 , bdr:T475 , bdr:WA27607 .
 }
