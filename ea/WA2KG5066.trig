@@ -17,19 +17,33 @@ bdg:WA2KG5066 {
         adm:logDate         "2021-02-04T16:49:04.891Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGF6E3FE1268A59F6B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-17T18:02:22.061Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG5066  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG5066 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ea/WA2KG5066.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG5066 ;
-        adm:logEntry        bda:LGC10949D52C0C4DEB ;
+        adm:logEntry        bda:LGC10949D52C0C4DEB , bda:LGF6E3FE1268A59F6B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusEditing .
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR170C3EE5D79759F3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10581 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2KG5066  a        :Work ;
+        skos:prefLabel      "phal pa'i ngag lam nas bkral ba'i bden bzhi'i ngo sprod mdor bsdus/"@bo-x-ewts , "a concise introduction to the four noble truths, explained in ordinary language"@en , "साधारण भाषामा ब्याख्या गरिएको चार आर्यसत्यको संक्षेप परिचय"@sa-Deva ;
+        :creator            bdr:CR170C3EE5D79759F3 ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG5066 .
+        :language           bdr:LangBo , bdr:LangEn ;
+        :workGenre          bdr:T1029 , bdr:T10MS14464 ;
+        :workHasInstance    bdr:MW2KG5066 ;
+        :workIsAbout        bdr:T2627 .
 }

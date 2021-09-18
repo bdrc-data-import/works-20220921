@@ -17,19 +17,34 @@ bdg:WA2KG5063 {
         adm:logDate         "2021-02-04T16:48:50.663Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGD9D6A9C1E27E12BF
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-17T17:34:01.265Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG5063  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG5063 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "96/WA2KG5063.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG5063 ;
-        adm:logEntry        bda:LG2E82E621CEC4DD8E ;
+        adm:logEntry        bda:LG2E82E621CEC4DD8E , bda:LGD9D6A9C1E27E12BF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusEditing .
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR0E7D96BDBFB4D3B1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10580 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2KG5063  a        :Work ;
+        skos:prefLabel      "gzhan stong gi lta grub mdor bsdus brjod pa nges don ngag gi rol mo/"@bo-x-ewts ;
+        :catalogInfo        "A brief explanation on Shentong view."@en ;
+        :creator            bdr:CR0E7D96BDBFB4D3B1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG5063 .
+        :workGenre          bdr:T1029 ;
+        :workHasInstance    bdr:MW2KG5063 ;
+        :workIsAbout        bdr:T1169 .
 }

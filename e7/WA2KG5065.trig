@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG5065 {
+    bda:LG0D11D2F5658E63C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-17T17:34:01.664Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG1F7890EE76F8035D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-02-04T16:49:00.297Z"^^xsd:dateTime ;
@@ -20,16 +25,55 @@ bdg:WA2KG5065 {
     bda:WA2KG5065  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG5065 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "e7/WA2KG5065.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG5065 ;
-        adm:logEntry        bda:LG1F7890EE76F8035D ;
+        adm:logEntry        bda:LG0D11D2F5658E63C3 , bda:LG1F7890EE76F8035D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusEditing .
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR0161EEE91DCEC65C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG229524 ;
+        :role               bdr:R0ER0014 .
+    
+    bdr:CR0762A073DFCF701B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2710 ;
+        :role               bdr:R0ER0014 .
+    
+    bdr:CR4A3EC7F5F187A756
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2486 ;
+        :role               bdr:R0ER0014 .
+    
+    bdr:CR7EDF12C06B8D53F0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P467 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRC5BE78D0742BF62C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P385 ;
+        :role               bdr:R0ER0014 .
+    
+    bdr:CRF96A62404CDB51E3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P563 ;
+        :role               bdr:R0ER0014 .
+    
+    bdr:CRFF92052B5BEC42CE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P649 ;
+        :role               bdr:R0ER0014 .
     
     bdr:WA2KG5065  a        :Work ;
+        skos:prefLabel      "rdo rje 'chang thung ma'i 'grel pa phyogs bsgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collected commentaries of Kagyu lineage master's prayer written by Jamphel Zangpo."@en ;
+        :creator            bdr:CR0161EEE91DCEC65C , bdr:CR0762A073DFCF701B , bdr:CR4A3EC7F5F187A756 , bdr:CR7EDF12C06B8D53F0 , bdr:CRC5BE78D0742BF62C , bdr:CRF96A62404CDB51E3 , bdr:CRFF92052B5BEC42CE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T132 , bdr:T140 , bdr:T1KG8787 ;
         :workHasInstance    bdr:MW2KG5065 .
 }

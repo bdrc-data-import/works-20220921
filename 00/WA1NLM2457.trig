@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2457 {
+    bda:LG6CB5CC3CBD1DBD4D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-17T15:25:34.225Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGE40CE17FE8B4A643
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2457 {
     bda:WA1NLM2457  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2457 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "00/WA1NLM2457.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2457 ;
-        adm:logEntry        bda:LGE40CE17FE8B4A643 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG6CB5CC3CBD1DBD4D , bda:LGE40CE17FE8B4A643 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2457  a       :Work ;
-        skos:prefLabel      "bcom ldan 'das sman bla'i mdo chog gi snying po bsdu ba yid bzhin gyi nor bu sogs/"@bo-x-ewts ;
+        skos:altLabel       "bcom ldan 'das sman bla'i mdo chog gi snying po bsdu ba yid bzhin gyi nor bu/"@bo-x-ewts ;
+        skos:prefLabel      "sman bla'i mdo chog gi snying po bsdus pa yid bzhin gyi nor bu sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of ritual texts of Medicine Buddha and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2457 , bdr:W1NLM2457 .
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW1NLM2457 , bdr:W1NLM2457 ;
+        :workIsAbout        bdr:T870 .
 }

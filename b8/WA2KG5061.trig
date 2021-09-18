@@ -17,19 +17,28 @@ bdg:WA2KG5061 {
         adm:logDate         "2021-02-04T16:48:34.49Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGACA8B1346C08CBBA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-17T17:34:00.862Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG5061  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG5061 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "b8/WA2KG5061.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG5061 ;
-        adm:logEntry        bda:LG6B526F564320463F ;
+        adm:logEntry        bda:LG6B526F564320463F , bda:LGACA8B1346C08CBBA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusEditing .
+        adm:status          bda:StatusReleased .
     
     bdr:WA2KG5061  a        :Work ;
+        skos:prefLabel      "phan yon phyogs sgrig 'dod 'jo'i bum bzang /"@bo-x-ewts ;
+        :catalogInfo        "Collection of texts on benefit and virtue by paying homage and making offerings."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG5061 .
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW2KG5061 ;
+        :workIsAbout        bdr:T161 .
 }
