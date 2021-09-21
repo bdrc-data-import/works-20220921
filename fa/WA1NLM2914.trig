@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2914 {
+    bda:LG46BB2D80F5237596
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-20T09:46:44.001Z"^^xsd:dateTime ;
+        adm:logMessage      "added title, topic, author, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG930672A45F102B04
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,32 @@ bdg:WA1NLM2914 {
     bda:WA1NLM2914  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2914 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "fa/WA1NLM2914.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2914 ;
-        adm:logEntry        bda:LG930672A45F102B04 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG46BB2D80F5237596 , bda:LG930672A45F102B04 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR416E406496430F57
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2557 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CRF07EBC1296397E3E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3379 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2914  a       :Work ;
-        skos:prefLabel      "jo bo a ti sha'i rnam thar bla ma'i yon tan chos kyi 'byung gnas/"@bo-x-ewts ;
+        skos:altLabel       "jo bo a ti sha'i rnam thar bla ma'i yon tan chos kyi 'byung gnas/"@bo-x-ewts ;
+        skos:prefLabel      "bka' gdams pha chos/"@bo-x-ewts ;
+        :catalogInfo        "Atisha's teaching on mind training; compiled by Dromtonpa Gyalwe Jungney."@en ;
+        :creator            bdr:CR416E406496430F57 , bdr:CRF07EBC1296397E3E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2914 , bdr:W1NLM2914 .
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1NLM2914 , bdr:W1NLM2914 ;
+        :workIsAbout        bdr:P3379 , bdr:T393 .
 }

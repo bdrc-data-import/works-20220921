@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2461 {
+    bda:LG7B8DF600A32AD89F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-20T17:23:21.914Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGE44CB5D90CBD848D
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2461 {
     bda:WA1NLM2461  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2461 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "bf/WA1NLM2461.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2461 ;
-        adm:logEntry        bda:LGE44CB5D90CBD848D , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG7B8DF600A32AD89F , bda:LGE44CB5D90CBD848D , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2461  a       :Work ;
-        skos:prefLabel      "so thar byang sems gsang sngags kyi phyir bcos mdo dang bcas pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "so thar byang sems gsang sngags kyi phyir bcos mdo dang bcas pa sogs/"@bo-x-ewts ;
+        skos:prefLabel      "sdom pa gsum gyi phyir bcos mdo dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Vows restoration of shermanera and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2461 , bdr:W1NLM2461 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2461 , bdr:W1NLM2461 ;
+        :workIsAbout        bdr:T8LS16583 .
 }

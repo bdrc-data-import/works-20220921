@@ -18,6 +18,12 @@ bdg:WA1NLM2464 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGFF43A4A2B8FBB1EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-20T17:23:24.055Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2464 {
     bda:WA1NLM2464  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2464 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "67/WA1NLM2464.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2464 ;
-        adm:logEntry        bda:LG720CBAB9A196F356 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG720CBAB9A196F356 , bda:LGFF43A4A2B8FBB1EA , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2464  a       :Work ;
-        skos:prefLabel      "gcig du bral gyi yig cha'i dka' gnas kha skang dang bcas pa gsal bar bshad pa'i rnam gzhag blo gsar dga' skyed bai DUrya'i mgul rgyan sogs/"@bo-x-ewts ;
+        skos:altLabel       "gcig du bral gyi yig cha'i dka' gnas kha skang dang bcas pa gsal bar bshad pa'i rnam gzhag blo gsar dga' skyed bai DUrya'i mgul rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "gcig du bral gyi yig cha'i dka' gnas kha skang dang bcas pa gsal bar bshad pa'i rnam gzhag sogs/"@bo-x-ewts ;
+        :catalogInfo        "Clarification of Devoid of being one or many( gcig du bral ) and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2464 , bdr:W1NLM2464 .
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW1NLM2464 , bdr:W1NLM2464 ;
+        :workIsAbout        bdr:T370 .
 }
