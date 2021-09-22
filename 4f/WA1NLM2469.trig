@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2469 {
+    bda:LG3B592D03B997631A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-21T19:46:28.082Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGCCBB0D7C6A7A3382
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM2469 {
     bda:WA1NLM2469  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2469 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "4f/WA1NLM2469.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2469 ;
-        adm:logEntry        bda:LGCCBB0D7C6A7A3382 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG3B592D03B997631A , bda:LGCCBB0D7C6A7A3382 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2469  a       :Work ;
-        skos:prefLabel      "sman bla mdo chog bdud rtsi'i yang kun snying po sogs/"@bo-x-ewts ;
+        skos:altLabel       "sman bla mdo chog bdud rtsi'i yang kun snying po sogs/"@bo-x-ewts ;
+        skos:prefLabel      "sman bla mdo chog bdud rtsi'i yang zhun snying po sogs/"@bo-x-ewts ;
+        :catalogInfo        "Anthology of sadhana practice texts on the Medicine Buddha and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2469 , bdr:W1NLM2469 .
 }

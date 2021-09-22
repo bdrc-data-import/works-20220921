@@ -19,42 +19,49 @@ bdg:WA2KG5047 {
     
     bda:LGA4316ACF38AAD172
         a                   adm:UpdateData ;
-        adm:logDate         "2021-09-16T18:15:17.235Z"^^xsd:dateTime ;
+        adm:logDate         "2021-09-21T15:41:19.962Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGC9A3225BB47930C1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-21T17:59:29.127Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG5047  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG5047 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "a3/WA2KG5047.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG5047 ;
-        adm:logEntry        bda:LG6AE8B87F4E5FA9FE , bda:LGA4316ACF38AAD172 ;
+        adm:logEntry        bda:LG6AE8B87F4E5FA9FE , bda:LGA4316ACF38AAD172 , bda:LGC9A3225BB47930C1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC9A3225BB47930C1
+    bdr:CR8D2C5DBF22B1DD3D
         a                   :AgentAsCreator ;
-        :agent              bdr:P563 ;
+        :agent              bdr:P264 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRE65D6341E8C2F8D6
         a                   :AgentAsCreator ;
-        :agent              bdr:P10580 ;
+        :agent              bdr:P563 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRF23ABB1BE15548E2
         a                   :AgentAsCreator ;
-        :agent              bdr:P264 ;
+        :agent              bdr:P10580 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2KG5047  a        :Work ;
         skos:prefLabel      "'phags mchog spyan ras gzigs kyi bsgom bzlas 'gro don mkha' khyab ma'i zin bris phyogs bsgrigs/"@bo-x-ewts ;
         :catalogInfo        "Compile of annotated note on the teaching of focussing upon the meditation and invocation of the deity Avalokiteshvara."@en ;
-        :creator            bdr:CRC9A3225BB47930C1 , bdr:CRE65D6341E8C2F8D6 , bdr:CRF23ABB1BE15548E2 ;
+        :creator            bdr:CR8D2C5DBF22B1DD3D , bdr:CRE65D6341E8C2F8D6 , bdr:CRF23ABB1BE15548E2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;
-        :workHasInstance    bdr:MW2KG5047 ;
+        :workHasInstance    bdr:MW2KG5047 , bdr:W2KG5047 ;
         :workIsAbout        bdr:T106 , bdr:T877 .
 }

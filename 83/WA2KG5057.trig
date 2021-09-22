@@ -12,9 +12,16 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG5057 {
+    bda:LG34FFE002A5A7FA6C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-21T21:29:19.58Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG5EDDACF0F043740F
         a                   adm:UpdateData ;
-        adm:logDate         "2021-09-17T17:33:59.971Z"^^xsd:dateTime ;
+        adm:logDate         "2021-09-21T15:41:23.949Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGFE98B734FDC99F76
@@ -25,31 +32,31 @@ bdg:WA2KG5057 {
     bda:WA2KG5057  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG5057 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "83/WA2KG5057.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG5057 ;
-        adm:logEntry        bda:LG5EDDACF0F043740F , bda:LGFE98B734FDC99F76 ;
+        adm:logEntry        bda:LG34FFE002A5A7FA6C , bda:LG5EDDACF0F043740F , bda:LGFE98B734FDC99F76 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR34FFE002A5A7FA6C
-        a                   :AgentAsCreator ;
-        :agent              bdr:P3532 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRE76E6F3AE4F6C5F1
+    bdr:CR93657B94E8A31A98
         a                   :AgentAsCreator ;
         :agent              bdr:P10580 ;
         :role               bdr:R0ER0014 .
     
+    bdr:CRE76E6F3AE4F6C5F1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3532 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA2KG5057  a        :Work ;
         skos:prefLabel      "blo sbyong mtshon cha 'khor lo'i 'grel pa 'gal rkyen lam khyer/"@bo-x-ewts ;
         :catalogInfo        "Commentary on Indian master Dharma Rakshita's mind training teaching."@en ;
-        :creator            bdr:CR34FFE002A5A7FA6C , bdr:CRE76E6F3AE4F6C5F1 ;
+        :creator            bdr:CR93657B94E8A31A98 , bdr:CRE76E6F3AE4F6C5F1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T1KG8787 ;
-        :workHasInstance    bdr:MW2KG5057 ;
+        :workHasInstance    bdr:MW2KG5057 , bdr:W2KG5057 ;
         :workIsAbout        bdr:T393 .
 }

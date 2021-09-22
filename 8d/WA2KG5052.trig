@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG5052 {
+    bda:LG34E40C7E91942EDE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-21T21:24:22.167Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG8410AA068D7AA3EF
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-11-04T12:36:21.359Z"^^xsd:dateTime ;
@@ -19,37 +25,38 @@ bdg:WA2KG5052 {
     
     bda:LGBF43CE406F893DD4
         a                   adm:UpdateData ;
-        adm:logDate         "2021-09-16T18:15:18.339Z"^^xsd:dateTime ;
+        adm:logDate         "2021-09-21T15:41:22.037Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG5052  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG5052 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "8d/WA2KG5052.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG5052 ;
-        adm:logEntry        bda:LG8410AA068D7AA3EF , bda:LGBF43CE406F893DD4 ;
+        adm:logEntry        bda:LG34E40C7E91942EDE , bda:LG8410AA068D7AA3EF , bda:LGBF43CE406F893DD4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR34E40C7E91942EDE
-        a                   :AgentAsCreator ;
-        :agent              bdr:P827 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRA35F0FD14CE25083
+    bdr:CR31F2CF41789A2B02
         a                   :AgentAsCreator ;
         :agent              bdr:P10581 ;
         :role               bdr:R0ER0014 .
     
+    bdr:CRA35F0FD14CE25083
+        a                   :AgentAsCreator ;
+        :agent              bdr:P827 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA2KG5052  a        :Work ;
         skos:prefLabel      "dwags po bkra shis rnam rgyal gyi gsung sngon 'gro'i rtsa bar 'grel bshad blo chos su 'gro ba/"@bo-x-ewts ;
         :catalogInfo        "Commentary on Dakpo Penchen Tashi Namgyal's four-session practice manual for the preliminaries practice."@en ;
-        :creator            bdr:CR34E40C7E91942EDE , bdr:CRA35F0FD14CE25083 ;
+        :creator            bdr:CR31F2CF41789A2B02 , bdr:CRA35F0FD14CE25083 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T1KG8787 ;
-        :workHasInstance    bdr:MW2KG5052 ;
+        :workHasInstance    bdr:MW2KG5052 , bdr:W2KG5052 ;
         :workIsAbout        bdr:T179 .
 }

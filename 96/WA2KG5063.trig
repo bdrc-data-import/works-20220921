@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG5063 {
+    bda:LG0E7D96BDBFB4D3B1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-21T21:34:38.74Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG2E82E621CEC4DD8E
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-02-04T16:48:50.663Z"^^xsd:dateTime ;
@@ -19,21 +25,22 @@ bdg:WA2KG5063 {
     
     bda:LGD9D6A9C1E27E12BF
         a                   adm:UpdateData ;
-        adm:logDate         "2021-09-17T17:34:01.265Z"^^xsd:dateTime ;
+        adm:logDate         "2021-09-21T15:41:26.3Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG5063  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG5063 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "96/WA2KG5063.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG5063 ;
-        adm:logEntry        bda:LG2E82E621CEC4DD8E , bda:LGD9D6A9C1E27E12BF ;
+        adm:logEntry        bda:LG0E7D96BDBFB4D3B1 , bda:LG2E82E621CEC4DD8E , bda:LGD9D6A9C1E27E12BF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0E7D96BDBFB4D3B1
+    bdr:CR64DE731771DCA418
         a                   :AgentAsCreator ;
         :agent              bdr:P10580 ;
         :role               bdr:R0ER0019 .
@@ -41,10 +48,10 @@ bdg:WA2KG5063 {
     bdr:WA2KG5063  a        :Work ;
         skos:prefLabel      "gzhan stong gi lta grub mdor bsdus brjod pa nges don ngag gi rol mo/"@bo-x-ewts ;
         :catalogInfo        "A brief explanation on Shentong view."@en ;
-        :creator            bdr:CR0E7D96BDBFB4D3B1 ;
+        :creator            bdr:CR64DE731771DCA418 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1029 ;
-        :workHasInstance    bdr:MW2KG5063 ;
+        :workHasInstance    bdr:MW2KG5063 , bdr:W2KG5063 ;
         :workIsAbout        bdr:T1169 .
 }

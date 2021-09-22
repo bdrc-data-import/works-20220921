@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2923 {
+    bda:LG677DACA067AA7C0E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-21T13:45:18.709Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG86A8AD535935EB01
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,25 @@ bdg:WA1NLM2923 {
     bda:WA1NLM2923  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2923 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "7c/WA1NLM2923.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2923 ;
-        adm:logEntry        bda:LG86A8AD535935EB01 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG677DACA067AA7C0E , bda:LG86A8AD535935EB01 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRDAF624CD10627D3D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P410 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2923  a       :Work ;
         skos:prefLabel      "zab mo rten cing 'brel bar 'byung ba'i mtha' dpyod legs par bshad pa'i rgya mtsho/"@bo-x-ewts ;
+        :catalogInfo        "A critical analysis of Pratityasamutpada by Se Ngawang Tashi."@en ;
+        :creator            bdr:CRDAF624CD10627D3D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2923 , bdr:W1NLM2923 .
+        :workHasInstance    bdr:MW1NLM2923 , bdr:W1NLM2923 ;
+        :workIsAbout        bdr:T1215 , bdr:T1361 .
 }

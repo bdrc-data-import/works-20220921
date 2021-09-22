@@ -12,9 +12,16 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG5045 {
+    bda:LG4833CA98E83DC9D3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-21T17:47:56.36Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG5B3153BC3F1BC797
         a                   adm:UpdateData ;
-        adm:logDate         "2021-09-16T18:15:16.71Z"^^xsd:dateTime ;
+        adm:logDate         "2021-09-21T15:41:18.961Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGFCC8140A8A38D5B6
@@ -25,31 +32,31 @@ bdg:WA2KG5045 {
     bda:WA2KG5045  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG5045 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "64/WA2KG5045.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG5045 ;
-        adm:logEntry        bda:LG5B3153BC3F1BC797 , bda:LGFCC8140A8A38D5B6 ;
+        adm:logEntry        bda:LG4833CA98E83DC9D3 , bda:LG5B3153BC3F1BC797 , bda:LGFCC8140A8A38D5B6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR3B339B834B01959E
         a                   :AgentAsCreator ;
-        :agent              bdr:P10580 ;
-        :role               bdr:R0ER0014 .
-    
-    bdr:CR4833CA98E83DC9D3
-        a                   :AgentAsCreator ;
         :agent              bdr:P1830 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR3BAB7AD90A9CB107
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10580 ;
+        :role               bdr:R0ER0014 .
     
     bdr:WA2KG5045  a        :Work ;
         skos:prefLabel      "rgyal sras lag len so bdun ma/"@bo-x-ewts , "the 37 bodhisattava practice"@en ;
         :catalogInfo        "A commentary on Gyalse Thokme Zangpo's bodhisattva way of life by Sanggye Nyenpa Geleg Drupai Nyima."@en ;
-        :creator            bdr:CR3B339B834B01959E , bdr:CR4833CA98E83DC9D3 ;
+        :creator            bdr:CR3B339B834B01959E , bdr:CR3BAB7AD90A9CB107 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;
-        :workHasInstance    bdr:MW2KG5045 ;
+        :workHasInstance    bdr:MW2KG5045 , bdr:W2KG5045 ;
         :workIsAbout        bdr:WA13911 .
 }
