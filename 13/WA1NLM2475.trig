@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2475 {
+    bda:LG1CE719B83E61E54E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-22T15:51:21.643Z"^^xsd:dateTime ;
+        adm:logMessage      "fuul cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGAFE1DE6526EDEB96
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2475 {
     bda:WA1NLM2475  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2475 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "13/WA1NLM2475.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2475 ;
-        adm:logEntry        bda:LGAFE1DE6526EDEB96 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG1CE719B83E61E54E , bda:LGAFE1DE6526EDEB96 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2475  a       :Work ;
-        skos:prefLabel      "klong chen snying gi thig le las/_sngon 'gro dran pa nyer gzhag ngag 'don khrigs su sdebs pa rnam mkhyen lam bzang sogs/"@bo-x-ewts ;
+        skos:altLabel       "klong chen snying gi thig le las/_sngon 'gro dran pa nyer gzhag ngag 'don khrigs su sdebs pa rnam mkhyen lam bzang sogs/"@bo-x-ewts ;
+        skos:prefLabel      "klong chen snying thig gi sngon 'gro ngag 'don rnam mkhyen lam bzang sogs/"@bo-x-ewts ;
+        :catalogInfo        "A liturgical recitation text compiled for preliminary practices of Longchen Nyingthik and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2475 , bdr:W1NLM2475 .
 }

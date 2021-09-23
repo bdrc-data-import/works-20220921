@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2476 {
+    bda:LGC0FB62A00A59EE96
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-22T15:51:22.062Z"^^xsd:dateTime ;
+        adm:logMessage      "fuul cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGDEDD32581497F5B4
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2476 {
     bda:WA1NLM2476  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2476 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "2e/WA1NLM2476.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2476 ;
-        adm:logEntry        bda:LGDEDD32581497F5B4 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGC0FB62A00A59EE96 , bda:LGDEDD32581497F5B4 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2476  a       :Work ;
-        skos:prefLabel      "chos dang rgyal srid kyi bsrung ma mgon dmar yang gsal dgra lha'i gsol mchod dgos 'dod stsol pa'i re bskong nor bu dbang rgyal sogs/"@bo-x-ewts ;
+        skos:altLabel       "chos dang rgyal srid kyi bsrung ma mgon dmar yang gsal dgra lha'i gsol mchod dgos 'dod stsol pa'i re bskong nor bu dbang rgyal/"@bo-x-ewts ;
+        skos:prefLabel      "mgon dmar yang gsal dgra lha'i gsol mchod dgos 'dod stsol pa'i re bskong nor bu dbang rgyal sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collections of miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2476 , bdr:W1NLM2476 .
 }

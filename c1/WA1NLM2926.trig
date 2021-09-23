@@ -18,6 +18,12 @@ bdg:WA1NLM2926 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG8EE89D7EBF22DB42
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-22T09:21:03.323Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
@@ -27,17 +33,25 @@ bdg:WA1NLM2926 {
     bda:WA1NLM2926  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2926 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "c1/WA1NLM2926.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2926 ;
-        adm:logEntry        bda:LG6831038EB664C014 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG6831038EB664C014 , bda:LG8EE89D7EBF22DB42 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR789E7DEC9DCBF9BD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3005 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2926  a       :Work ;
         skos:prefLabel      "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag gi rgyud las dum bu bzhi pa phyi ma'i rgyud/"@bo-x-ewts ;
+        :catalogInfo        "Later part of the four Tibetan medical tantra by Yonten Gonpo."@en ;
+        :creator            bdr:CR789E7DEC9DCBF9BD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2926 , bdr:W1NLM2926 .
+        :workHasInstance    bdr:MW1NLM2926 , bdr:W1NLM2926 ;
+        :workIsAbout        bdr:T1114 , bdr:T85 .
 }

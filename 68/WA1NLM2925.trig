@@ -18,6 +18,12 @@ bdg:WA1NLM2925 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGE9A16E0C5EA6D86C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-22T09:12:29.526Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM2925 {
     bda:WA1NLM2925  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2925 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "68/WA1NLM2925.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2925 ;
-        adm:logEntry        bda:LG26C09D2839EFFA07 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG26C09D2839EFFA07 , bda:LGE9A16E0C5EA6D86C , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1E03F6CD07E033F2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2925  a       :Work ;
         skos:prefLabel      "sdom pa gsum gyi rnam par bzhag pa mdor bsdus te gtan la dbab pa'i rab tu byed pa thub bstan rin po che'i byi dor/"@bo-x-ewts ;
+        :catalogInfo        "Analysis of the three vows by Khedup Gelek Pelsang."@en ;
+        :creator            bdr:CR1E03F6CD07E033F2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2925 , bdr:W1NLM2925 .
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW1NLM2925 , bdr:W1NLM2925 ;
+        :workIsAbout        bdr:T201 .
 }

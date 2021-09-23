@@ -18,6 +18,12 @@ bdg:WA1NLM2478 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGF93E65BC0BECB767
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-22T15:51:22.992Z"^^xsd:dateTime ;
+        adm:logMessage      "fuul cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2478 {
     bda:WA1NLM2478  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2478 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "20/WA1NLM2478.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2478 ;
-        adm:logEntry        bda:LG25B97F68750E1A5D , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG25B97F68750E1A5D , bda:LGF93E65BC0BECB767 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2478  a       :Work ;
-        skos:prefLabel      "dpal rdo rje rnam par 'joms pa'i cho ga phan bde'i 'byung gnas sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal rdo rje rnam par 'joms pa'i cho ga phan bde'i 'byung gnas sogs/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje rnam par 'joms pa'i cho ga phan bde'i 'byung gnas sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and dharanis"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2478 , bdr:W1NLM2478 .
 }
