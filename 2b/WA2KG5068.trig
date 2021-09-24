@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG5068 {
+    bda:LG4DBEF4EC82EA8FEE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-23T15:02:19.088Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG81886DD6602D400C
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-02-04T16:49:13.759Z"^^xsd:dateTime ;
@@ -20,16 +25,32 @@ bdg:WA2KG5068 {
     bda:WA2KG5068  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG5068 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "2b/WA2KG5068.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG5068 ;
-        adm:logEntry        bda:LG81886DD6602D400C ;
+        adm:logEntry        bda:LG4DBEF4EC82EA8FEE , bda:LG81886DD6602D400C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusEditing .
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR782A7528070B34F7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10580 ;
+        :role               bdr:R0ER0014 .
+    
+    bdr:CRE60182ECE7AD4B90
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4024 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2KG5068  a        :Work ;
+        skos:altLabel       "grub chen tai lo pa'i phyag rgya chen po gang+gA ma'i gzhung /"@bo-x-ewts ;
+        skos:prefLabel      "phyag chen gang+gA ma'i 'grel pa dam pa'i zhal gyi man ngag"@bo-x-ewts ;
+        :catalogInfo        "Instructional manual for the practice of the mahamudra instruction known as the phyag chen gangA ma and its commentary."@en ;
+        :creator            bdr:CR782A7528070B34F7 , bdr:CRE60182ECE7AD4B90 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG5068 .
+        :workGenre          bdr:T132 , bdr:T1KG8787 ;
+        :workHasInstance    bdr:MW2KG5068 ;
+        :workIsAbout        bdr:T199 , bdr:WA4CZ355898 .
 }
