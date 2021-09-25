@@ -30,23 +30,29 @@ bdg:WA3CN26652 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGE403A2A1E0CFC66C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-24T19:26:34.436Z"^^xsd:dateTime ;
+        adm:logMessage      "added infos"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3CN26652  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN26652 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "01/WA3CN26652.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN26652 ;
-        adm:logEntry        bda:LG3A7929B6CA8F93CB , bda:LG55CF35AC452A7212 , bda:LGC230BD5B627B9D9B ;
+        adm:logEntry        bda:LG3A7929B6CA8F93CB , bda:LG55CF35AC452A7212 , bda:LGC230BD5B627B9D9B , bda:LGE403A2A1E0CFC66C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA3CN26652  a       :Work ;
-        skos:prefLabel      "dge lugs pa'i zhal 'don phyogs sgrigs/"@bo-x-ewts ;
-        :catalogInfo        "Anthology of rituals practiced in the Geluk order."@en ;
+        skos:prefLabel      "dge lugs pa'i zhal 'don phyogs sgrigs/"@bo-x-ewts , "格鲁日常课诵集"@zh-hans ;
+        :catalogInfo        "Anthology of rituals practiced in the Geluk order. (In Tibetan & Chinese)"@en ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
-        :workGenre          bdr:T225 ;
+        :language           bdr:LangBo , bdr:LangZh ;
+        :workGenre          bdr:T225 , bdr:T240 ;
         :workHasInstance    bdr:MW3CN26652 , bdr:W3CN26652 ;
         :workIsAbout        bdr:T819 .
 }

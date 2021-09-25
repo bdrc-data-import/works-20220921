@@ -18,6 +18,12 @@ bdg:WA1NLM2484 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGAC6AC62FA58DBA84
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-24T15:21:33.876Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM2484 {
     bda:WA1NLM2484  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2484 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "1d/WA1NLM2484.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2484 ;
-        adm:logEntry        bda:LG57C07D11BF044458 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG57C07D11BF044458 , bda:LGAC6AC62FA58DBA84 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2484  a       :Work ;
-        skos:prefLabel      "'chi bdag gshin rje'i tshong bzlog gi zur rgyan 'chi bdag g.yul las rgyal sogs/"@bo-x-ewts ;
+        skos:prefLabel      "'chi bdag gshin rje'i tshong bzlog gi zur rgyan 'chi bdag g.yul las rgyal ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and dharanis"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2484 , bdr:W1NLM2484 .
 }

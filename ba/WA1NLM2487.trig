@@ -18,6 +18,12 @@ bdg:WA1NLM2487 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG26C31D12289168AD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-24T15:21:35.055Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2487 {
     bda:WA1NLM2487  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2487 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ba/WA1NLM2487.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2487 ;
-        adm:logEntry        bda:LG0806B87A6A740F8B , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG0806B87A6A740F8B , bda:LG26C31D12289168AD , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2487  a       :Work ;
-        skos:prefLabel      "'phags pa bzang po spyod pa'i smon lam gyi rgyal po sogs/"@bo-x-ewts ;
+        skos:altLabel       "'phags pa bzang po spyod pa'i smon lam gyi rgyal po/"@bo-x-ewts ;
+        skos:prefLabel      "bzang po spyod pa'i smon lam gyi rgyal po sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and dharanis"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2487 , bdr:W1NLM2487 .
 }
