@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN26663 {
+    bda:LG05EB816567673351
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-27T22:44:05.634Z"^^xsd:dateTime ;
+        adm:logMessage      "added infos"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG8014502DDCB62590
         a                   adm:InitialDataCreation ;
         adm:logDate         "2021-08-30T11:44:59.582Z"^^xsd:dateTime ;
@@ -32,17 +38,23 @@ bdg:WA3CN26663 {
     bda:WA3CN26663  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN26663 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "15/WA3CN26663.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN26663 ;
-        adm:logEntry        bda:LG8014502DDCB62590 , bda:LG8F8EBB3EC48408EE , bda:LGFC1B7DAE6D196321 ;
+        adm:logEntry        bda:LG05EB816567673351 , bda:LG8014502DDCB62590 , bda:LG8F8EBB3EC48408EE , bda:LGFC1B7DAE6D196321 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRE0F336D320D6E3BC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1033 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA3CN26663  a       :Work ;
         skos:prefLabel      "nyi ma'i rigs kyi rgyal rabs/"@bo-x-ewts ;
-        :catalogInfo        "History of Tibet in general and especially on Western Tibet."@en ;
+        :catalogInfo        "History of Tibet in general and especially on Western Tibet by Drakpa Gyaltsen."@en ;
+        :creator            bdr:CRE0F336D320D6E3BC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;
