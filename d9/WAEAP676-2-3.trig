@@ -12,8 +12,14 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WAEAP676-2-3 {
-    bda:MWEAP676-2-3  adm:metadataLegal
-            bda:LD_EAP_metadata .
+    bda:WAEAP676-2-3  a     adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WAEAP676-2-3 ;
+        adm:gitPath         "d9/WAEAP676-2-3.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WAEAP676-2-3 ;
+        adm:metadataLegal   bda:LD_EAP_metadata ;
+        adm:status          bda:StatusReleased .
     
     bdr:WAEAP676-2-3  a     :Work ;
         skos:prefLabel      "Ārya Amoghapāśa nāma Hṛdaya Mahāyāna Sūtraṃ"@sa-x-iast ;

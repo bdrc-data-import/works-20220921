@@ -14,32 +14,39 @@
 bdg:WA2KG229579 {
     bda:LG5741AC2D5DD97E08
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-09-27T16:49:34.467Z"^^xsd:dateTime ;
+        adm:logDate         "2021-09-28T14:40:18.108Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGFE58EDC1E61D5F07
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-28T14:50:41.864Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG229579  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG229579 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "1e/WA2KG229579.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG229579 ;
-        adm:logEntry        bda:LG5741AC2D5DD97E08 ;
+        adm:logEntry        bda:LG5741AC2D5DD97E08 , bda:LGFE58EDC1E61D5F07 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusEditing .
     
-    bdr:CRFE58EDC1E61D5F07
+    bdr:CRFC68611C98C20493
         a                   :AgentAsCreator ;
         :agent              bdr:P7537 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2KG229579  a      :Work ;
         skos:prefLabel      "skye dgu'i bdag po la rigs lam gsal byed/"@bo-x-ewts ;
-        :catalogInfo        "General study on Buddhist ogic and disputation."@en ;
-        :creator            bdr:CRFE58EDC1E61D5F07 ;
+        :catalogInfo        "General study on Buddhist logic and disputation."@en ;
+        :creator            bdr:CRFC68611C98C20493 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 ;
-        :workHasInstance    bdr:MW2KG229579 ;
+        :workHasInstance    bdr:MW2KG229579 , bdr:W2KG229579 ;
         :workIsAbout        bdr:T1235 , bdr:T1420 .
 }

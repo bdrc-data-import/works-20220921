@@ -12,23 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG229581 {
+    bda:LG33813AF6FC019A61
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-28T14:51:45.743Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGDC3C6D5F2DC5E506
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-09-27T17:26:38.71Z"^^xsd:dateTime ;
+        adm:logDate         "2021-09-28T14:40:18.826Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG229581  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG229581 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "58/WA2KG229581.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG229581 ;
-        adm:logEntry        bda:LGDC3C6D5F2DC5E506 ;
+        adm:logEntry        bda:LG33813AF6FC019A61 , bda:LGDC3C6D5F2DC5E506 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR33813AF6FC019A61
+    bdr:CR6BED73FF23AFE84D
         a                   :AgentAsCreator ;
         :agent              bdr:P385 ;
         :role               bdr:R0ER0019 .
@@ -37,10 +44,10 @@ bdg:WA2KG229581 {
         skos:altLabel       "shes rab kyi pha rol tu phyin pa'i lung chos mtha' dag gi bdud rtsi'i snying por gyur pa gang la ldan pa'i gzhi rje btsun mchog tu dgyes par ngal gso ba'i yongs 'du sa brtol gyi ljon pa rgyas pa/"@bo-x-ewts ;
         skos:prefLabel      "sher phyin mngon rtogs rgyan gyi rgyas 'grel yongs 'du sa brtol gyi ljon pa rgyas pa/"@bo-x-ewts ;
         :catalogInfo        "Detailed commentary on Abhisamayalankara by Karmapa 08 Mikyo Dorje (1507-1554)."@en ;
-        :creator            bdr:CR33813AF6FC019A61 ;
+        :creator            bdr:CR6BED73FF23AFE84D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;
-        :workHasInstance    bdr:MW2KG229581 ;
+        :workHasInstance    bdr:MW2KG229581 , bdr:W2KG229581 ;
         :workIsAbout        bdr:T2005 , bdr:WA19716 .
 }

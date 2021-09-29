@@ -12,8 +12,14 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WAEAP676-4-7 {
-    bda:MWEAP676-4-7  adm:metadataLegal
-            bda:LD_EAP_metadata .
+    bda:WAEAP676-4-7  a     adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WAEAP676-4-7 ;
+        adm:gitPath         "b1/WAEAP676-4-7.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WAEAP676-4-7 ;
+        adm:metadataLegal   bda:LD_EAP_metadata ;
+        adm:status          bda:StatusReleased .
     
     bdr:WAEAP676-4-7  a     :Work ;
         skos:prefLabel      "Paintings of Tantric Deities etc"@en ;

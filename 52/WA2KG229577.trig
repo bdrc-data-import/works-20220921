@@ -14,21 +14,28 @@
 bdg:WA2KG229577 {
     bda:LG0C0CF2712A557BA3
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-09-27T16:49:25.23Z"^^xsd:dateTime ;
+        adm:logDate         "2021-09-28T14:40:17.391Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG45223C070215147B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-09-28T14:49:33.891Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG229577  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG229577 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "52/WA2KG229577.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG229577 ;
-        adm:logEntry        bda:LG0C0CF2712A557BA3 ;
+        adm:logEntry        bda:LG0C0CF2712A557BA3 , bda:LG45223C070215147B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR45223C070215147B
+    bdr:CRC9379AE6512D8B3A
         a                   :AgentAsCreator ;
         :agent              bdr:P5611 ;
         :role               bdr:R0ER0019 .
@@ -36,11 +43,11 @@ bdg:WA2KG229577 {
     bdr:WA2KG229577  a      :Work ;
         skos:altLabel       "thun mong bsdus pa'i rnam bshad 'jam dbyangs bzhad pa'i 'dzum zer/"@bo-x-ewts ;
         skos:prefLabel      "thun mong bsdus pa'i sdom tshig dang rnam bshad 'jam dbyangs bzhad pa'i 'dzum zer/"@bo-x-ewts ;
-        :catalogInfo        "Root text and autocommentary of logic terms by"@en ;
-        :creator            bdr:CR45223C070215147B ;
+        :catalogInfo        "Root text and commentary of general terms in logic texts by 17th Karmapa Ogyen Trinley Dorje."@en ;
+        :creator            bdr:CRC9379AE6512D8B3A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG8787 , bdr:T61 ;
-        :workHasInstance    bdr:MW2KG229577 ;
+        :workHasInstance    bdr:MW2KG229577 , bdr:W2KG229577 ;
         :workIsAbout        bdr:T96 .
 }

@@ -12,8 +12,14 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WAEAP676-4-2 {
-    bda:MWEAP676-4-2  adm:metadataLegal
-            bda:LD_EAP_metadata .
+    bda:WAEAP676-4-2  a     adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WAEAP676-4-2 ;
+        adm:gitPath         "85/WAEAP676-4-2.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WAEAP676-4-2 ;
+        adm:metadataLegal   bda:LD_EAP_metadata ;
+        adm:status          bda:StatusReleased .
     
     bdr:WAEAP676-4-2  a     :Work ;
         skos:prefLabel      "Daśa Kriyā Vidhi"@sa-x-iast ;
