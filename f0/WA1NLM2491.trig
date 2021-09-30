@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2491 {
+    bda:LG33C0B892931AAF1F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-29T14:51:05.587Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG4DBEA825555E9F98
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2491 {
     bda:WA1NLM2491  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2491 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "f0/WA1NLM2491.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2491 ;
-        adm:logEntry        bda:LG4DBEA825555E9F98 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG33C0B892931AAF1F , bda:LG4DBEA825555E9F98 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2491  a       :Work ;
-        skos:prefLabel      "klong chen snying gi thig le las/_nang sgrub rigs 'dzin 'dus pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "klong chen snying gi thig le las:_nang sgrub rigs 'dzin 'dus pa sogs/"@bo-x-ewts ;
+        skos:prefLabel      "nang sgrub rigs 'dzin 'dus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "The Rigzin Dhuepa of the Klong chen snyin thig cycle and other miscellaneous rituals and dharanis"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2491 , bdr:W1NLM2491 .
+        :workGenre          bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2491 , bdr:W1NLM2491 ;
+        :workIsAbout        bdr:T00AG01369 .
 }

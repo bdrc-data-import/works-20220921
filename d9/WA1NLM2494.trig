@@ -18,6 +18,12 @@ bdg:WA1NLM2494 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG6234C4AE128F56AD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-29T14:51:06.573Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2494 {
     bda:WA1NLM2494  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2494 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d9/WA1NLM2494.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2494 ;
-        adm:logEntry        bda:LG3FBDFCA7A1C5277A , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG3FBDFCA7A1C5277A , bda:LG6234C4AE128F56AD , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2494  a       :Work ;
-        skos:prefLabel      "drangs bar ma bzhugs so/_spyan 'dren khrus gsol sogs/"@bo-x-ewts ;
+        skos:altLabel       "drangs bar ma bzhugs so/_spyan 'dren khrus gsol sogs/"@bo-x-ewts ;
+        skos:prefLabel      "bstan 'bar ma dang spyan 'dren khrus gsol sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals, sadhana and dharanis"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2494 , bdr:W1NLM2494 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2494 , bdr:W1NLM2494 ;
+        :workIsAbout        bdr:T2082 .
 }

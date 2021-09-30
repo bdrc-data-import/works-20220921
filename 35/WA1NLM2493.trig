@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2493 {
+    bda:LG426F853D02FAFC09
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-09-29T14:51:06.123Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG6C44EC1A93B45C00
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2493 {
     bda:WA1NLM2493  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2493 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "35/WA1NLM2493.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2493 ;
-        adm:logEntry        bda:LG6C44EC1A93B45C00 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG426F853D02FAFC09 , bda:LG6C44EC1A93B45C00 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2493  a       :Work ;
-        skos:prefLabel      "rje btsun 'phags ma sgrol ma'i bzlog bsgyur gtor ma sogs/"@bo-x-ewts ;
+        skos:altLabel       "rje btsun 'phags ma sgrol ma'i bzlog bsgyur gtor ma sogs/"@bo-x-ewts ;
+        skos:prefLabel      "'phags ma sgrol ma'i bzlog bsgyur gtor ma sogs/"@bo-x-ewts ;
+        :catalogInfo        "Anthology of writings on prognostication and protection from adverse results according to the Siridevi and other miscellaneous rituals, sadhana and dharanis"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2493 , bdr:W1NLM2493 .
 }
