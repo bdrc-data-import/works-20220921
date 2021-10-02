@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2504 {
+    bda:LGB4DCE8E4E0C76F65
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T16:04:42.876Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGB64E3A01E3835DF9
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2504 {
     bda:WA1NLM2504  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2504 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9f/WA1NLM2504.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2504 ;
-        adm:logEntry        bda:LGB64E3A01E3835DF9 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGB4DCE8E4E0C76F65 , bda:LGB64E3A01E3835DF9 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2504  a       :Work ;
         skos:prefLabel      "gshin rtsis bsdus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Astrological calculation of death person and other miscellaneous rituals, sadhana and dharanis"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2504 , bdr:W1NLM2504 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2504 , bdr:W1NLM2504 ;
+        :workIsAbout        bdr:T1PD106859 .
 }

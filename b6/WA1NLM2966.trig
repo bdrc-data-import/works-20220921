@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2966 {
+    bda:LG1FC921F5C375C169
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T09:46:36.92Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG676A2CBA7DFE0ADE
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM2966 {
     bda:WA1NLM2966  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2966 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b6/WA1NLM2966.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2966 ;
-        adm:logEntry        bda:LG676A2CBA7DFE0ADE , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG1FC921F5C375C169 , bda:LG676A2CBA7DFE0ADE , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2966  a       :Work ;
         skos:prefLabel      "'jam pa'i zhal lung ston pa'i rat+na ma dri/"@bo-x-ewts ;
+        :catalogInfo        "Astrological caculation; its signs and remedies by unknown author."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2966 , bdr:W1NLM2966 .
+        :workHasInstance    bdr:MW1NLM2966 , bdr:W1NLM2966 ;
+        :workIsAbout        bdr:T1726 , bdr:T1835 , bdr:T883 , bdr:T94 .
 }

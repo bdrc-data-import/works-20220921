@@ -18,6 +18,12 @@ bdg:WA1NLM1979 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG49CEDFD0E6B0D6C4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T16:55:12.433Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1979 {
     bda:WA1NLM1979  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1979 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d5/WA1NLM1979.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1979 ;
-        adm:logEntry        bda:LG3045EF9646AD3BD8 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG3045EF9646AD3BD8 , bda:LG49CEDFD0E6B0D6C4 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1979  a       :Work ;
-        skos:prefLabel      "bde ba can du skye ba'i smon lam zhing mchog sgo 'byed kyi don sgribs rnam dag zhing du 'grod pa'i bde lam sogs/"@bo-x-ewts ;
+        skos:prefLabel      "bde ba can du skye ba'i smon lam zhing mchog sgo 'byed kyi don sgrigs rnam dag zhing du 'grod pa'i bde lam sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgical texts of sadhana, appreciation prayer, summoning the forces of prosperity."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1979 , bdr:W1NLM1979 .
+        :workGenre          bdr:T1 , bdr:T34 ;
+        :workHasInstance    bdr:MW1NLM1979 , bdr:W1NLM1979 ;
+        :workIsAbout        bdr:T197 , bdr:T22 .
 }

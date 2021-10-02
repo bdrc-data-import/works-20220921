@@ -23,6 +23,12 @@ bdg:WA1NLM1978 {
         adm:logDate         "2021-04-15T20:06:06.395Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGE80DCB6C1D697A24
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T16:55:11.935Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -32,17 +38,20 @@ bdg:WA1NLM1978 {
     bda:WA1NLM1978  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1978 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "33/WA1NLM1978.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1978 ;
-        adm:logEntry        bda:LG9B0E8BBED1EB1012 , bda:LGE6F84911F33A7407 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG9B0E8BBED1EB1012 , bda:LGE6F84911F33A7407 , bda:LGE80DCB6C1D697A24 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1978  a       :Work ;
         skos:prefLabel      "lhan cig skyes pa'i 'go ba'i lha lnga'i srog 'khor shin tu zab pa'i man ngag gter khyim bsod nams dpal 'byor sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of ritual texts mainly concern to the five patron deities and chos skyong dregs pa lcam sring."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1978 , bdr:W1NLM1978 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1978 , bdr:W1NLM1978 ;
+        :workIsAbout        bdr:T1116 , bdr:T1439 , bdr:T1CZ91 , bdr:T330 .
 }

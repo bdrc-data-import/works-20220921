@@ -23,6 +23,12 @@ bdg:WA1CZ1247 {
         adm:logDate         "2009-06-26T15:19:21.761Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG9922C9D19E234B25
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T16:56:13.64Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+    
     bda:LGA66DD03191D25C72
         a                   adm:UpdateData ;
         adm:logDate         "2007-10-02T11:54:59.025Z"^^xsd:dateTime ;
@@ -62,27 +68,27 @@ bdg:WA1CZ1247 {
     bda:WA1CZ1247  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1CZ1247 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "9a/WA1CZ1247.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1CZ1247 ;
-        adm:logEntry        bda:LG41AC595647AD027D , bda:LG5D0E0CF7925F7E5D , bda:LGA66DD03191D25C72 , bda:LGA95D9BCD78BAC0F0 , bda:LGAD4856C604031B4B , bda:LGBB8BFF4FC5A4CD21 , bda:LGC1FB638AF8BC2E26 , bda:LGD51D3721CDC8AE2F ;
+        adm:logEntry        bda:LG41AC595647AD027D , bda:LG5D0E0CF7925F7E5D , bda:LG9922C9D19E234B25 , bda:LGA66DD03191D25C72 , bda:LGA95D9BCD78BAC0F0 , bda:LGAD4856C604031B4B , bda:LGBB8BFF4FC5A4CD21 , bda:LGC1FB638AF8BC2E26 , bda:LGD51D3721CDC8AE2F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR5FF8A3350F8374C1
         a                   :AgentAsCreator ;
-        :agent              bdr:P318 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CR9922C9D19E234B25
-        a                   :AgentAsCreator ;
         :agent              bdr:P207 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CRCAC887E06E86E937
+        a                   :AgentAsCreator ;
+        :agent              bdr:P318 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA1CZ1247  a        :Work ;
         skos:prefLabel      "dbang mdor bstan pa'i mdor bshad/"@bo-x-ewts ;
-        :creator            bdr:CR5FF8A3350F8374C1 , bdr:CR9922C9D19E234B25 ;
+        :creator            bdr:CR5FF8A3350F8374C1 , bdr:CRCAC887E06E86E937 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T157 ;

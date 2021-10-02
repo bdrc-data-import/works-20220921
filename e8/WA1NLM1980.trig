@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1980 {
+    bda:LG4B99EF898D6393E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T16:55:12.816Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGB649697CFA55FE97
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1980 {
     bda:WA1NLM1980  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1980 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "e8/WA1NLM1980.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1980 ;
-        adm:logEntry        bda:LGB649697CFA55FE97 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG4B99EF898D6393E5 , bda:LGB649697CFA55FE97 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1980  a       :Work ;
         skos:prefLabel      "sdig bshags gser gyi spu gri sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgical texts of confession of misdeeds, exorcism, beverage offering, dharani, burning of fragrant boughs."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1980 , bdr:W1NLM1980 .
+        :workGenre          bdr:T933 ;
+        :workHasInstance    bdr:MW1NLM1980 , bdr:W1NLM1980 ;
+        :workIsAbout        bdr:T00AG01323 , bdr:T1726 , bdr:T173 , bdr:T2560 , bdr:T26 .
 }

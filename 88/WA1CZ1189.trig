@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1CZ1189 {
+    bda:LG023F7B8E7B04E484
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T16:56:13.64Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+    
     bda:LG09F9CC39A2DD023A
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2007-08-14T09:56:47.294Z"^^xsd:dateTime ;
@@ -49,30 +55,30 @@ bdg:WA1CZ1189 {
     bda:WA1CZ1189  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1CZ1189 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "88/WA1CZ1189.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1CZ1189 ;
-        adm:logEntry        bda:LG09F9CC39A2DD023A , bda:LG3B40A10C0A33E5AC , bda:LGA50F9229596C3BBE , bda:LGAD5477D84D3EE8B9 , bda:LGD5391FB27E839E07 , bda:LGFEC5C9C2185405F5 ;
+        adm:logEntry        bda:LG023F7B8E7B04E484 , bda:LG09F9CC39A2DD023A , bda:LG3B40A10C0A33E5AC , bda:LGA50F9229596C3BBE , bda:LGAD5477D84D3EE8B9 , bda:LGD5391FB27E839E07 , bda:LGFEC5C9C2185405F5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR023F7B8E7B04E484
+    bdr:CR18BA2304ADE4F8CB
         a                   :AgentAsCreator ;
         :agent              bdr:P396 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV18BA2304ADE4F8CB
+    bdr:EVB8EA5B832D9AA2AB
         a                   :CompletedEvent ;
         :onYear             "1477"^^xsd:gYear .
     
     bdr:WA1CZ1189  a        :Work ;
         skos:altLabel       "gzhung gsum gyi rnam par bshad pa rnal 'byor spyod pa'i gru bo che/"@bo-x-ewts ;
         skos:prefLabel      "gzhung gsum rab tu 'byed pa/"@bo-x-ewts ;
-        :creator            bdr:CR023F7B8E7B04E484 ;
+        :creator            bdr:CR18BA2304ADE4F8CB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV18BA2304ADE4F8CB ;
+        :workEvent          bdr:EVB8EA5B832D9AA2AB ;
         :workGenre          bdr:T61 ;
         :workHasInstance    bdr:MW1CZ1189 , bdr:W1CZ1189 ;
         :workIsAbout        bdr:T2107 .

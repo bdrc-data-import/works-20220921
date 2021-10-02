@@ -57,6 +57,12 @@ bdg:WA1CZ1261 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGE8E4C75D69F884B4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-01T16:56:13.64Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -74,25 +80,25 @@ bdg:WA1CZ1261 {
     bda:WA1CZ1261  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1CZ1261 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "ef/WA1CZ1261.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1CZ1261 ;
-        adm:logEntry        bda:LG20AB40EF0C816A0E , bda:LG22FB581AEEA1E73D , bda:LG4639DA96930D5A6B , bda:LG556A03A99237D0A5 , bda:LG5A6FD81605196C73 , bda:LG75438BE98163AE1B , bda:LG7C736198D8CD3BF9 , bda:LGE5EAE9ECCA9FA950 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG20AB40EF0C816A0E , bda:LG22FB581AEEA1E73D , bda:LG4639DA96930D5A6B , bda:LG556A03A99237D0A5 , bda:LG5A6FD81605196C73 , bda:LG75438BE98163AE1B , bda:LG7C736198D8CD3BF9 , bda:LGE5EAE9ECCA9FA950 , bda:LGE8E4C75D69F884B4 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR2680D71C4115BC01
         a                   :AgentAsCreator ;
+        :agent              bdr:P207 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR4D0F844088A494BD
+        a                   :AgentAsCreator ;
         :agent              bdr:P318 ;
         :role               bdr:R0ER0026 .
     
     bdr:CR8CB6CE2D42B1F8C4
-        a                   :AgentAsCreator ;
-        :agent              bdr:P207 ;
-        :role               bdr:R0ER0018 .
-    
-    bdr:CRE8E4C75D69F884B4
         a                   :AgentAsCreator ;
         :agent              bdr:P8895 ;
         :role               bdr:R0ER0019 .
@@ -101,7 +107,7 @@ bdg:WA1CZ1261 {
         skos:altLabel       "dpal 'khor lo sdom pa'i cho ga dril bu zhabs kyi mdzad pa/"@bo-x-ewts ;
         skos:prefLabel      "'khor lo sdom pa'i man ngag"@bo-x-ewts ;
         :catalogInfo        "Instructions on the esoteric yogic practices of Chakrasamvara."@en ;
-        :creator            bdr:CR2680D71C4115BC01 , bdr:CR8CB6CE2D42B1F8C4 , bdr:CRE8E4C75D69F884B4 ;
+        :creator            bdr:CR2680D71C4115BC01 , bdr:CR4D0F844088A494BD , bdr:CR8CB6CE2D42B1F8C4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T456 ;
