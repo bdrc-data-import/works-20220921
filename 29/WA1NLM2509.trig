@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2509 {
+    bda:LG6850C3A20A21381D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-04T10:26:14.836Z"^^xsd:dateTime ;
+        adm:logMessage      "released for outline"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGFCA8C11D98AA3FC8
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2509 {
     bda:WA1NLM2509  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2509 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "29/WA1NLM2509.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2509 ;
-        adm:logEntry        bda:LGFCA8C11D98AA3FC8 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG6850C3A20A21381D , bda:LGFCA8C11D98AA3FC8 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2509  a       :Work ;
         skos:prefLabel      "thun mong rten 'brel sgrig byed pa'i/_lha rnams mnyes byed bsangs yig sogs/"@bo-x-ewts ;
+        :catalogInfo        "Colections of of Incense offering ritual in propitiation of the local and mountain deities and other miscellaneous rituals."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2509 , bdr:W1NLM2509 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2509 , bdr:W1NLM2509 ;
+        :workIsAbout        bdr:T10MS14575 .
 }

@@ -18,6 +18,12 @@ bdg:WA4CZ74085 {
         adm:logMessage      "changed to released from accessioned"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG7C1BFF6A9AD769B2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-04T10:54:56.642Z"^^xsd:dateTime ;
+        adm:logMessage      "bcos/"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG8555DC6869EC910A
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-10-04T14:39:17.517Z"^^xsd:dateTime ;
@@ -40,18 +46,24 @@ bdg:WA4CZ74085 {
     bda:WA4CZ74085  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ74085 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "35/WA4CZ74085.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ74085 ;
-        adm:logEntry        bda:LG3DC77FD0F748C148 , bda:LG8555DC6869EC910A , bda:LG8CB3A2F241A0B1DA , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3DC77FD0F748C148 , bda:LG7C1BFF6A9AD769B2 , bda:LG8555DC6869EC910A , bda:LG8CB3A2F241A0B1DA , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8E240566C8928050
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA4CZ74085  a       :Work ;
         skos:altLabel       "dpal rdo rje sems dpa'i thugs kyi sgrub pa'i bsnyen sgrub 'phrin las kyi cho ga"@bo-x-ewts ;
         skos:prefLabel      "rdo rje sems dpa'i thugs kyi sgrub pa'i bsnyen sgrub 'phrin las kyi cho ga"@bo-x-ewts ;
         :catalogInfo        "The Seva Vidhi texts for intensive prictice focusing on deity Vajrasattva."@en ;
+        :creator            bdr:CR8E240566C8928050 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T151 ;

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS24734 {
+    bda:LG371FC99D8F839F57
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-04T15:22:34.424Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGB892427306736BB9
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-08-30T11:48:42.692Z"^^xsd:dateTime ;
@@ -27,18 +33,24 @@ bdg:WA8LS24734 {
     bda:WA8LS24734  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS24734 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "9d/WA8LS24734.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS24734 ;
-        adm:logEntry        bda:LGB892427306736BB9 , bda:LGC54DE7E61D43A78D ;
+        adm:logEntry        bda:LG371FC99D8F839F57 , bda:LGB892427306736BB9 , bda:LGC54DE7E61D43A78D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR0CC94E47CB6D8839
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5054 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA8LS24734  a       :Work ;
         skos:altLabel       "dbu ma rgyal po la gtam bya ba rin po che'i phreng ba'i 'grel pa lung gi gsal byed/"@bo-x-ewts ;
         skos:prefLabel      "dbu ma rin chen phreng ba'i 'grel pa lung gi gsal byed/"@bo-x-ewts ;
         :catalogInfo        "A commentary of Ratnavali by Mewa Khenchen Sonam Chokdrup."@en ;
+        :creator            bdr:CR0CC94E47CB6D8839 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;
