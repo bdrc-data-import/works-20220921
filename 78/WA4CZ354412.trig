@@ -18,6 +18,12 @@ bdg:WA4CZ354412 {
         adm:logMessage      "New catalog"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGA972883F594614FE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-06T11:29:16.664Z"^^xsd:dateTime ;
+        adm:logMessage      "added authors"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGB68C9F3CAF73E220
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2019-08-27T14:59:01.768Z"^^xsd:dateTime ;
@@ -34,20 +40,36 @@ bdg:WA4CZ354412 {
     bda:WA4CZ354412  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ354412 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "78/WA4CZ354412.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ354412 ;
-        adm:logEntry        bda:LG38CD7117E0013C14 , bda:LGB68C9F3CAF73E220 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG38CD7117E0013C14 , bda:LGA972883F594614FE , bda:LGB68C9F3CAF73E220 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR72E2D19AB9755D03
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6873 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRB9321BF78EB07B17
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1656 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRBC874FDE1ED9EBDD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P859 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW4CZ354412  skos:altLabel  "bonpo miscellaneous texts"@en .
     
     bdr:WA4CZ354412  a      :Work ;
         skos:prefLabel      "bon gyi bstan bcos 'ga' zhig"@bo-x-ewts , "bonpo miscellaneous texts"@en ;
-        :catalogInfo        "Bonpo Texts on the Laying out of Mandalas, Mantras, Poetics, Scripts, and Puja. \"Reproduced from a lithographic prints and manuscript from the library of the late Paldhan Tsultrim"@en ;
+        :catalogInfo        "Bonpo Texts on the Laying out of Mandalas, Mantras, Poetics, Scripts, and Puja."@en ;
+        :creator            bdr:CR72E2D19AB9755D03 , bdr:CRB9321BF78EB07B17 , bdr:CRBC874FDE1ED9EBDD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;

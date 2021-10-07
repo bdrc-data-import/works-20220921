@@ -22,6 +22,12 @@ bdg:WA3PD408 {
         adm:logDate         "2014-12-19T17:19:02.769Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGDC3759B44E0B4A12
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-06T21:31:23.362Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and cat info"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGDC8C6BA4DA1517CC
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-23T02:11:42.735Z"^^xsd:dateTime ;
@@ -43,19 +49,26 @@ bdg:WA3PD408 {
     bda:WA3PD408  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3PD408 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "f3/WA3PD408.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3PD408 ;
-        adm:logEntry        bda:LG08B02C0252AD38B1 , bda:LG6981E55F3D7104C0 , bda:LGDC8C6BA4DA1517CC , bda:LGE914335AFFBB660E , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG08B02C0252AD38B1 , bda:LG6981E55F3D7104C0 , bda:LGDC3759B44E0B4A12 , bda:LGDC8C6BA4DA1517CC , bda:LGE914335AFFBB660E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRFF4278ACDDE13C13
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1669 ;
+        :role               bdr:R0ER0025 .
     
     bdr:MW3PD408  skos:altLabel  "藏族珍稀古籍集成"@zh-hans .
     
     bdr:WA3PD408  a         :Work ;
         skos:altLabel       "zang zu zhen xi gu ji ji cheng"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gsang thus thig le'i bkod pa/"@bo-x-ewts , "藏族珍稀古籍集成"@zh-hans ;
+        :catalogInfo        "Collection of rediscovere teachings of Bon tradition by Yilton Khunggo tsal."@en ;
+        :creator            bdr:CRFF4278ACDDE13C13 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3PD408 , bdr:W3PD408 ;

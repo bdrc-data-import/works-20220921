@@ -38,6 +38,12 @@ bdg:WA3PD403 {
         adm:logDate         "2014-12-19T17:18:45.847Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGBAA8D7B2C948B30A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-06T21:31:22.214Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and cat info"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -48,19 +54,26 @@ bdg:WA3PD403 {
     bda:WA3PD403  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3PD403 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "b3/WA3PD403.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3PD403 ;
-        adm:logEntry        bda:LG0DE44847A2BDF440 , bda:LG4D2D59EDB1786671 , bda:LG6272AFEE4002D1ED , bda:LG7C57CB4A154F2EC5 , bda:LG7E1EE54DEEA10B28 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0DE44847A2BDF440 , bda:LG4D2D59EDB1786671 , bda:LG6272AFEE4002D1ED , bda:LG7C57CB4A154F2EC5 , bda:LG7E1EE54DEEA10B28 , bda:LGBAA8D7B2C948B30A , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRBE780177BC38B362
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1667 ;
+        :role               bdr:R0ER0025 .
     
     bdr:MW3PD403  skos:altLabel  "藏族珍稀古籍集成"@zh-hans .
     
     bdr:WA3PD403  a         :Work ;
         skos:altLabel       "zang zu zhen xi gu ji ji cheng"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "rdzogs pa chen po bsgrags pa skor gsum/"@bo-x-ewts , "藏族珍稀古籍集成"@zh-hans ;
+        :catalogInfo        "Rediscovered Dzogchen teachings of Bon tradition."@en ;
+        :creator            bdr:CRBE780177BC38B362 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3PD403 , bdr:W3PD403 ;
