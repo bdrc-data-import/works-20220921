@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3574 {
+    bda:LG59003917A8920F22
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-18T11:09:12.036Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,26 @@ bdg:WA1NLM3574 {
     bda:WA1NLM3574  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3574 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d9/WA1NLM3574.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3574 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG59003917A8920F22 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR9E96199B8E293F54
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3574  a       :Work ;
         skos:prefLabel      "byang chub bde lam gyi dmigs skor cha tshang bar tshigs bcad du bsdebs pa la mchog gi snying sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal rdo rje 'jigs byed kyi bla brgyud gsol 'debs bstod pa smon lam shis brjod yan lag bdun pa rnams/ 2 dpal rdo rje 'jigs byed lha bcu gsum ma'i sgrub thabs shin tu bsdus pa nyung ngu rnam gsal/ 3 spyi gsol/ 4 rlung rta'i btsugs bsod nams dpal bskyed/ 5 rlung rta gsos pa'i bsangs gsol mchod rgyun khyer mdor bsdus rta'i me spar ba'i rlung yab/ 6 bstod pa rnam dag gangs ri ma/ 7 bla ma rin po che skal ldan rgya mtsho'i gsung las dga' ldan du skye ba'i smon lam/ 8 bstod pa rnam dag gangs ri ma/ 9 rgyal ba seng ge'i nga ro'i smon lam zhing mchog sgo 'byed ma/ 10 bla ma mchod pa'i cho ga"@bo-x-ewts , "A visualization stages of graduated path in verse form; other text also included."@en ;
+        :creator            bdr:CR9E96199B8E293F54 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3574 , bdr:W1NLM3574 .
+        :workGenre          bdr:T238 ;
+        :workHasInstance    bdr:MW1NLM3574 , bdr:W1NLM3574 ;
+        :workIsAbout        bdr:T475 .
 }

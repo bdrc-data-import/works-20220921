@@ -12,6 +12,17 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2994 {
+    bda:LG026AD0D199DA20AE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-18T09:18:22.651Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG0A087030F49F25DA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-18T14:46:56.302Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG260D45B14A871CD7
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +38,26 @@ bdg:WA1NLM2994 {
     bda:WA1NLM2994  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2994 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "e6/WA1NLM2994.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2994 ;
-        adm:logEntry        bda:LG260D45B14A871CD7 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG026AD0D199DA20AE , bda:LG0A087030F49F25DA , bda:LG260D45B14A871CD7 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR860A0E5B6D6CEED9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2994  a       :Work ;
         skos:prefLabel      "zab lam bla ma'i rnal 'byor gyi man ngag snying po'i rtsa tshig gi 'grel pa snyan brgyud gsang ba'i lde mig sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 klu'i bsur mchod 'bul/ 2 'phags pa thugs rje chen po sgo nas maN+Dal bzhi pa'i cho ga dang 'brel pa/ 'phags pa thugs rje chen po'i lha tshogs la tshogs mchod/ 3 'phags pa gnam sa snang brgyad/ 4 lha chen tshangs pa chen po la mchod gtor/ 5 rgya gar gyi sha bzlog 6 'go ba'i lha lnga gsol mchod ji ltar bya ba'i tshul/ 7 rje btsun blo bzang chos kyi rgyal mtshan gyi gsung 'bum las rdo rje rnam 'joms pa'i bsgrub thabs cho ga dang bcas pa/ 8 dpal rdo rje 'jigs byed dpa' bo gcig sgrub bdud las rnam rgyal gyi ngag 'don khrigs chags su 'bsdebs pa/ 9 dpal phyag na rdo rje sgo nas ce spyang gi gnod pa zhi pa thabs/"@en , "Word by word commentary of profound guruyoga practice instructions; other title also included."@en ;
+        :creator            bdr:CR860A0E5B6D6CEED9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2994 , bdr:W1NLM2994 .
+        :workGenre          bdr:T2397 , bdr:T456 ;
+        :workHasInstance    bdr:MW1NLM2994 , bdr:W1NLM2994 ;
+        :workIsAbout        bdr:T4 .
 }

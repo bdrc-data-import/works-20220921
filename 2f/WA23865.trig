@@ -25,6 +25,12 @@ bdg:WA23865 {
         adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGABD44C7D68B0EC37
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-18T16:40:36.924Z"^^xsd:dateTime ;
+        adm:logMessage      "changed P#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGD50924D5FE5A7A26
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -59,23 +65,23 @@ bdg:WA23865 {
     bda:WA23865  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23865 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "2f/WA23865.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23865 ;
-        adm:logEntry        bda:LG01048C49D697249A , bda:LG11A486C3D484ADF4 , bda:LGABD44C7D68B0EC37 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG01048C49D697249A , bda:LG11A486C3D484ADF4 , bda:LGABD44C7D68B0EC37 , bda:LGD50924D5FE5A7A26 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR466B75EC8D641666
         a                   :AgentAsCreator ;
-        :agent              bdr:P258 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRD50924D5FE5A7A26
-        a                   :AgentAsCreator ;
         :agent              bdr:P7804 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRE97C892A4FC18EE0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P258 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW23865  skos:altLabel  "the life of lady mandarava, the indian consort of padmasambhava"@en .
     
@@ -83,10 +89,10 @@ bdg:WA23865 {
         skos:altLabel       "rtsa gsum 'od gsal snying thig"@bo-x-ewts , "The life of Lady Mandāravā, the Indian consort of Padmasambhava /rediscovered from its place of concealment by Bsam-gtan-gliṅ-pa (Khrag-ʼthuṅ-nag-po O-rgyan-ʼjigs-med-mi-ʼgyur Bsam-gtan-gliṅ-pa Phrin-ʼgro-ʼdul-las-rab-bde-ba-rtsal) ; together with the Rtsa gsum ʼod gsal sñiṅ-thig teachings (instructions on Sñiṅ-thig practice received in visions by ʼJam-dbyaṅs Mkhyen-brtseʼi-dbaṅ-po)."@en-x-mixed ;
         skos:prefLabel      "za hor rgyal po'i sras mo lha lcam man d+ha ra wa'i rnam par thar pa/"@bo-x-ewts , "the life of lady mandarava, the indian consort of padmasambhava"@en ;
         :catalogInfo        "Biography of Lady Mandarava, Indian consort to Padmasambhava. Revealed during the 19th century."@en ;
-        :creator            bdr:CR466B75EC8D641666 , bdr:CRD50924D5FE5A7A26 ;
+        :creator            bdr:CR466B75EC8D641666 , bdr:CRE97C892A4FC18EE0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW23865 , bdr:W23865 ;
-        :workIsAbout        bdr:P7805 , bdr:T354 .
+        :workIsAbout        bdr:P00AG0428 , bdr:T354 .
 }

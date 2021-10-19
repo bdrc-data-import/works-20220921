@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2062 {
+    bda:LG00D16479CC28AD2C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-18T17:19:33.223Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG64D0BFA655C88832
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM2062 {
     bda:WA1NLM2062  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2062 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "2b/WA1NLM2062.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2062 ;
-        adm:logEntry        bda:LG64D0BFA655C88832 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG00D16479CC28AD2C , bda:LG64D0BFA655C88832 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR28342977645BD9D1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2062  a       :Work ;
         skos:prefLabel      "skyer sgang lugs kyi rta mgrin gsang sgrub kyi sgrub thabs rgyas pa rta mchog rol pa'i zhal lung sogs/"@bo-x-ewts ;
+        :catalogInfo        "Sadhana of guhyasadhana Hayagriva according to the Kergang tradition by the third Thuken Chokyi Nyima; also included other text."@en ;
+        :creator            bdr:CR28342977645BD9D1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2062 , bdr:W1NLM2062 .
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM2062 , bdr:W1NLM2062 ;
+        :workIsAbout        bdr:T50 .
 }
