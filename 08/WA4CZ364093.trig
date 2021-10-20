@@ -24,22 +24,35 @@ bdg:WA4CZ364093 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG871916FE2DDECE6B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-19T13:38:10.347Z"^^xsd:dateTime ;
+        adm:logMessage      "added other title and author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA4CZ364093  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ364093 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "08/WA4CZ364093.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ364093 ;
-        adm:logEntry        bda:LG36363FD447EA4AB9 , bda:LG6E3FC5DE0F714895 ;
+        adm:logEntry        bda:LG36363FD447EA4AB9 , bda:LG6E3FC5DE0F714895 , bda:LG871916FE2DDECE6B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:MW4CZ364093  skos:altLabel  "The diary of a young girl"@en .
+    bdr:CR7078C9B8331A2674
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG230010 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:MW4CZ364093  skos:altLabel  "The Diary of a Young Girl"@en .
     
     bdr:WA4CZ364093  a      :Work ;
-        skos:prefLabel      "gzhon nu ma zhig gi nyin tho/"@bo-x-ewts , "The diary of a young girl"@en ;
-        :catalogInfo        "Daily note of a young girl, translated into Tibetan language by Lobsang Khyentse and Tashi Paldon husband and wife,"@en ;
+        skos:altLabel       "The Diary of Anne Frank"@en ;
+        skos:prefLabel      "gzhon nu ma zhig gi nyin tho/"@bo-x-ewts , "The Diary of a Young Girl"@en ;
+        :catalogInfo        "Translation of a diary kept by Anne Frank, \"The diary of a young girl\" also known as \"The Diary of Anne Frank\" translated into the Tibetan language by Lobsang Khyentse and Tashi Paldon husband and wife."@en ;
+        :creator            bdr:CR7078C9B8331A2674 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1157 , bdr:T1478 ;

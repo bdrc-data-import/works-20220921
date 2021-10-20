@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3567 {
+    bda:LGFBF844C13A37E17B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-19T10:49:40.687Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,26 @@ bdg:WA1NLM3567 {
     bda:WA1NLM3567  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3567 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "e3/WA1NLM3567.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3567 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LGFBF844C13A37E17B , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR3515C64D88C456E0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3567  a       :Work ;
         skos:prefLabel      "lha chen tshangs pa chen po'i mngon rtogs bskang bshags bstod pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rgyal ba'i bstan bsrung chen po rnams la las bzhi'i 'phrin las 'chol tshul dngos grub myur 'gugs rdo rje dbyangs/ 2 'go ba'i lha lnga'i gsol mchod bya tshul/ 3 dam can chos kyi rgyal po la tshogs mchod 'bul tshul/ 4 ma Ni'i 'don thabs dmigs rim/ 5 dam tshig rdo rje'i bzlas pa'i gnad/ 6 sku rim rnam gsum bsdus pa/ 7 rje btsun sgrol ma la brten pa'i smon lam/ 8 sgrol ma'i maN+Dal bzhi ba'i cho ga'i 'don bsgrigs/ 9 'dzab bzlas 'khor 'das rang grol/ 10 rje sku gong ma'i bstan pa rgyas pa'i smon lam 'dod don lhun grub drang srong bden tshig 11 rje bla ma la brten pa'i bla ma'i rnal 'byor dga' ldan lha brgya phan bde'i grub ster/ 12 bka' drin gsol 'debs byin rlabs char 'beb/ 13 'chad kha ba'i blo sbyong gcig dang lnga pa/"@en , "Visualization, confession and purification, praise of Brahma; other text also included."@en ;
+        :creator            bdr:CR3515C64D88C456E0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3567 , bdr:W1NLM3567 .
+        :workGenre          bdr:T5 , bdr:T67 ;
+        :workHasInstance    bdr:MW1NLM3567 , bdr:W1NLM3567 ;
+        :workIsAbout        bdr:T1436 , bdr:T1892 .
 }
