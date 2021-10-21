@@ -18,6 +18,12 @@ bdg:WA1NLM3130 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG7E658582DC5757B5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-20T15:16:30.066Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM3130 {
     bda:WA1NLM3130  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3130 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "2c/WA1NLM3130.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3130 ;
-        adm:logEntry        bda:LG4651CEC9C5A0217F , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG4651CEC9C5A0217F , bda:LG7E658582DC5757B5 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3130  a       :Work ;
         skos:prefLabel      "kun dga' dus dbyig gza' skar 'phrod sbyor byed pa lo zla zhag dus kyi bdag 'ga' zhig gi rgyu tshul dang rigs so so'i sgos bshad dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mgon po dkar nag gi tshogs mchod dang gser skyems/ 2 'go pa'i lha lnga'i skyes brgyud pa'i phrag lha dgra lha spun dgu rnams la rta mchog rten du 'bul/ 3 zhang blon la bzang mchod ma mchod gtor bsdus 'bul ba/ 4 gnod sbyin chen po rdo rje bdud 'dul gyi bsang sogs/ 5 rgyal po sku lnga'i bsangs gsol mchod gser skyems/ 6 rnam rgyal bzlog pa/ 7 'phags pa kha mchu dkar dge thams cad zhi bar byed pa zhes bya ba'i theg pa chen po'i mdo/ 8 myur mdzad ye shes mgon po'i sho 'debs/ 9 'jigs byed dpa' bo gcig pa'i mngon rtogs/ 10 'phags pa nor gyi rgyun zhes bya ba'i gzungs/ 11 'phags pa sga drug ba zhes bya ba'i gzungs/"@bo-x-ewts , "Explanation of movement and combination of constellation by unknown author; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3130 , bdr:W1NLM3130 .
+        :workGenre          bdr:T1029 ;
+        :workHasInstance    bdr:MW1NLM3130 , bdr:W1NLM3130 ;
+        :workIsAbout        bdr:T2570 .
 }

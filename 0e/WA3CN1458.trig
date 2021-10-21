@@ -24,42 +24,67 @@ bdg:WA3CN1458 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM1E8DEFBA  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:23:32.918Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM5A873C62  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:22:22.017Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7725ADED  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:22:00.209Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMBF9077E6  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:23:35.47Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA3CN1458  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN1458 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "0e/WA3CN1458.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN1458 ;
-        adm:logEntry        bda:LG6F1B777289480B6E , bda:LG82D7DA7133608BED ;
+        adm:logEntry        bda:LG6F1B777289480B6E , bda:LG82D7DA7133608BED , bda:LGIM1E8DEFBA , bda:LGIM5A873C62 , bda:LGIM7725ADED , bda:LGIMBF9077E6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0342F3E9F7093FEC
-        a                   :AgentAsCreator ;
-        :agent              bdr:P8205 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CR1B3E09CCD11CF22B
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1KG8854 ;
-        :role               bdr:R0ER0018 .
-    
-    bdr:CR6A910E4433776761
+    bdr:CRC9039FDB1261A3BD
         a                   :AgentAsCreator ;
         :agent              bdr:P8209 ;
         :role               bdr:R0ER0018 .
     
-    bdr:CRD14B7E0E1D262428
+    bdr:CRCBF7E7F51127173B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG8854 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CRD028C7D2E64CFA12
         a                   :AgentAsCreator ;
         :agent              bdr:P6117 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRDF4A4378865E6419
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA3CN1458  a        :Work ;
         skos:altLabel       "dam chos mngon pa kun las btus pa bzhugs/"@bo-x-ewts ;
         skos:prefLabel      "mngon pa kun btus/"@bo-x-ewts ;
         :catalogInfo        "The Compendium of Abhidharma, Writings by the Indian scholar Asanga."@en ;
-        :creator            bdr:CR0342F3E9F7093FEC , bdr:CR1B3E09CCD11CF22B , bdr:CR6A910E4433776761 , bdr:CRD14B7E0E1D262428 ;
+        :creator            bdr:CRC9039FDB1261A3BD , bdr:CRCBF7E7F51127173B , bdr:CRD028C7D2E64CFA12 , bdr:CRDF4A4378865E6419 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1777 ;

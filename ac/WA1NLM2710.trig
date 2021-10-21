@@ -18,6 +18,12 @@ bdg:WA1NLM2710 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGE29D9C7503187C19
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-20T15:05:08.582Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIMD3D03661  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
@@ -27,17 +33,31 @@ bdg:WA1NLM2710 {
     bda:WA1NLM2710  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2710 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ac/WA1NLM2710.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2710 ;
-        adm:logEntry        bda:LG1DB837310D40AEAD , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG1DB837310D40AEAD , bda:LGE29D9C7503187C19 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR37311FC467D80410
+        a                   :AgentAsCreator ;
+        :agent              bdr:P209 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRAF09A23E98FA5C2B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2710  a       :Work ;
         skos:prefLabel      "byang chub lam gyi rim pa'i zhal shes blo bzang zhal lung sogs/"@bo-x-ewts ;
+        :catalogInfo        "Oral instruction's notes of Drungpa Lobsang Gyaltsano's explanation of the practice of the Lamrim , also included commentary on Gurupancasika, indic treatise explaining the relationship between the Guru and the devotee and other miscellaneous rituals"@en ;
+        :creator            bdr:CR37311FC467D80410 , bdr:CRAF09A23E98FA5C2B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2710 , bdr:W1NLM2710 .
+        :workGenre          bdr:T238 ;
+        :workHasInstance    bdr:MW1NLM2710 , bdr:W1NLM2710 ;
+        :workIsAbout        bdr:T00KG02742 .
 }

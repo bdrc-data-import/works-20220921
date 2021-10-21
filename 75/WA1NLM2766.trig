@@ -18,6 +18,11 @@ bdg:WA1NLM2766 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGCA72AC2638ED3152
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-20T15:21:24.172Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIMD3D03661  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
@@ -27,17 +32,27 @@ bdg:WA1NLM2766 {
     bda:WA1NLM2766  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2766 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "75/WA1NLM2766.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2766 ;
-        adm:logEntry        bda:LG988E8234B932E479 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG988E8234B932E479 , bda:LGCA72AC2638ED3152 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR247F71EF900E4D79
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2766  a       :Work ;
-        skos:prefLabel      "rgyal ba khyab bdag rdo rje 'chang chen po'i lam gyi rim pa gsang ba kun gyi gnad rnam par phye ba/"@bo-x-ewts ;
+        skos:altLabel       "rgyal ba khyab bdag rdo rje 'chang chen po'i lam gyi rim pa gsang ba kun gyi gnad rnam par phye ba/"@bo-x-ewts ;
+        skos:prefLabel      "sngags rim chen mo/"@bo-x-ewts ;
+        :catalogInfo        "Monumental survey of Vajrayana Buddhism. One of Tsongkhapa's great works. Written at the behest of one of the Pakmodru hierarchs, Sonam Zangpo, at the Jampa Ling with Gyakde Sonam Pelzang as scribe."@en ;
+        :creator            bdr:CR247F71EF900E4D79 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2766 , bdr:W1NLM2766 .
+        :workGenre          bdr:T238 ;
+        :workHasInstance    bdr:MW1NLM2766 , bdr:W1NLM2766 ;
+        :workIsAbout        bdr:T307 .
 }

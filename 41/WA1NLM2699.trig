@@ -18,6 +18,12 @@ bdg:WA1NLM2699 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG7068BBFB099C6845
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-20T15:05:08.197Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2699 {
     bda:WA1NLM2699  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2699 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "41/WA1NLM2699.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2699 ;
-        adm:logEntry        bda:LG66F30E8DC0F7A68E , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG66F30E8DC0F7A68E , bda:LG7068BBFB099C6845 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2699  a       :Work ;
-        skos:prefLabel      "byang chub lam gyi rim pa'i zab 'khrid mdor bsdus phan bde'i lam bzang gi sngon 'gro sbyor ba'i chos drug rgyas par byed tshul gyi 'don sgrigs sogs/"@bo-x-ewts ;
+        skos:altLabel       "byang chub lam gyi rim pa'i zab 'khrid mdor bsdus phan bde'i lam bzang gi sngon 'gro sbyor ba'i chos drug rgyas par byed tshul gyi 'don sgrigs sogs/"@bo-x-ewts ;
+        skos:prefLabel      "lam rim zab 'khrid mdor bsdus phan bde'i lam bzang gi sngon 'gro sbyor ba'i chos drug rgyas par byed tshul gyi 'don sgrigs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Practices of stages of visualization of instructional manual of graduated path , a compilation of recitations of preliminary teachings for the practice of the Lamrim and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2699 , bdr:W1NLM2699 .
+        :workGenre          bdr:T536 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2699 , bdr:W1NLM2699 ;
+        :workIsAbout        bdr:T1344 .
 }

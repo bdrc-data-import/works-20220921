@@ -24,32 +24,57 @@ bdg:WA3CN8808 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM1E8DEFBA  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:23:32.918Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM5A873C62  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:22:22.017Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIM7725ADED  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:22:00.209Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:LGIMBF9077E6  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-10-20T20:23:35.47Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA3CN8808  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN8808 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "f3/WA3CN8808.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN8808 ;
-        adm:logEntry        bda:LG1DE9396C81772915 , bda:LGC4BF207310BA9ED6 ;
+        adm:logEntry        bda:LG1DE9396C81772915 , bda:LGC4BF207310BA9ED6 , bda:LGIM1E8DEFBA , bda:LGIM5A873C62 , bda:LGIM7725ADED , bda:LGIMBF9077E6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR75427E850627666E
-        a                   :AgentAsCreator ;
-        :agent              bdr:P3163 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRD4A60CB6E23B7E91
+    bdr:CR3FD9C2B2990E4E11
         a                   :AgentAsCreator ;
         :agent              bdr:P477 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR5EBB4C056AADEDF8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3163 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA3CN8808  a        :Work ;
         skos:altLabel       "zab mo stong pa nyid kyi lta ba log rtog 'gog par byed pa'i bstan bcos lta ba ngan pa'i mun sel zhes bya ba bshes gnyen chen po shAkya mchog ldan pa la gdams pa/"@bo-x-ewts ;
         skos:prefLabel      "shAk lan lta ngan mun sel/"@bo-x-ewts ;
         :catalogInfo        "A refutation of erroneous views regarding the nature of the void expounded by Serdog Panchen Shakya Chogden and Gowo Rabjampa Sonam Senge. Begun by Sera Jetsun and completed by his disciple Deleg Nyima."@en ;
-        :creator            bdr:CR75427E850627666E , bdr:CRD4A60CB6E23B7E91 ;
+        :creator            bdr:CR3FD9C2B2990E4E11 , bdr:CR5EBB4C056AADEDF8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T385 ;

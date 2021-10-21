@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2552 {
+    bda:LG65406DA988E6F5C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-20T15:05:05.565Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG6A7042EB47501569
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,31 @@ bdg:WA1NLM2552 {
     bda:WA1NLM2552  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2552 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "79/WA1NLM2552.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2552 ;
-        adm:logEntry        bda:LG6A7042EB47501569 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG65406DA988E6F5C0 , bda:LG6A7042EB47501569 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR2DD9BA772C4B7DB2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1629 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR9EAE291B0D14F2D7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P182 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2552  a       :Work ;
         skos:prefLabel      "bar do'i 'phrang sgrol gsol 'debs kyi rnam bshad gsal ba'i me long sogs/"@bo-x-ewts ;
+        :catalogInfo        "Detailed exegesis of prayer of Bardo Todrol, \"Tibetan Book of the Dead and other miscellaneous rituals."@en ;
+        :creator            bdr:CR2DD9BA772C4B7DB2 , bdr:CR9EAE291B0D14F2D7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2552 , bdr:W1NLM2552 .
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW1NLM2552 , bdr:W1NLM2552 ;
+        :workIsAbout        bdr:WA22965 .
 }
