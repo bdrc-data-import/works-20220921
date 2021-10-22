@@ -24,6 +24,12 @@ bdg:WA3CN6870 {
         adm:logMessage      "corrected isbn and language encoding"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGC77AE060557F0541
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-21T15:52:34.156Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGDFCDBA9B10A601A8
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-14T08:54:33.397Z"^^xsd:dateTime ;
@@ -47,17 +53,23 @@ bdg:WA3CN6870 {
     bda:WA3CN6870  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN6870 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "3d/WA3CN6870.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN6870 ;
-        adm:logEntry        bda:LG178208D22FE4F61E , bda:LGB3AE1F2BA3D946D8 , bda:LGDFCDBA9B10A601A8 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG178208D22FE4F61E , bda:LGB3AE1F2BA3D946D8 , bda:LGC77AE060557F0541 , bda:LGDFCDBA9B10A601A8 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR2EC49E940EB54D28
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26987 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA3CN6870  a        :Work ;
         skos:prefLabel      "char rlung rjes kyi nyi 'od/"@bo-x-ewts ;
         :catalogInfo        "Translation of modern Chinese short stories."@en ;
+        :creator            bdr:CR2EC49E940EB54D28 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1PD128746 , bdr:T257 ;

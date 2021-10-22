@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN6864 {
+    bda:LG0C607D8690DCCD8F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-21T14:32:23.944Z"^^xsd:dateTime ;
+        adm:logMessage      "added translators"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGA9A90194095DE57E
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-02T10:35:02.088Z"^^xsd:dateTime ;
@@ -47,17 +53,28 @@ bdg:WA3CN6864 {
     bda:WA3CN6864  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN6864 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "dd/WA3CN6864.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN6864 ;
-        adm:logEntry        bda:LGA9A90194095DE57E , bda:LGCF88FC84A284AFAD , bda:LGFC137AE8D68C744A , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG0C607D8690DCCD8F , bda:LGA9A90194095DE57E , bda:LGCF88FC84A284AFAD , bda:LGFC137AE8D68C744A , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR57775382FC7BAF2D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26986 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR7B77EC34E68E5E11
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26985 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA3CN6864  a        :Work ;
         skos:prefLabel      "gas rdib dang ri nyil sogs gegs 'gog gegs sel shes bya'i dri ba dris lan/"@bo-x-ewts ;
         :catalogInfo        "Questions and responses on the prevent from natural disaster."@en ;
+        :creator            bdr:CR57775382FC7BAF2D , bdr:CR7B77EC34E68E5E11 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN6864 , bdr:W3CN6864 ;

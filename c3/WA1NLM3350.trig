@@ -18,6 +18,17 @@ bdg:WA1NLM3350 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGA1506AA144A1295A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-21T11:06:15.282Z"^^xsd:dateTime ;
+        adm:logMessage      "test for outline"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGF588BC59CFBBBF6A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-21T16:01:35.52Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
@@ -27,17 +38,27 @@ bdg:WA1NLM3350 {
     bda:WA1NLM3350  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3350 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c3/WA1NLM3350.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3350 ;
-        adm:logEntry        bda:LG54024EFC29CE8E42 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG54024EFC29CE8E42 , bda:LGA1506AA144A1295A , bda:LGF588BC59CFBBBF6A , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRCB15A896DECB33B9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P262 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3350  a       :Work ;
-        skos:prefLabel      "chos mngon pa'i mdzod kyi dgongs don gsal bar byed pa'i legs bshad nyin byed dbang po'i snang ba las khams bstan pa zhes bya ba'i gnas dang po'i rnam bshad sogs/"@bo-x-ewts ;
+        skos:altLabel       "chos mngon pa'i mdzod kyi dgongs don gsal bar byed pa'i legs bshad nyin byed dbang po'i snang ba las khams bstan pa zhes bya ba'i gnas dang po'i rnam bshad/"@bo-x-ewts ;
+        skos:prefLabel      "mngon pa'i mdzod kyi dgongs don gsal bar byed pa'i legs bshad nyin byed dbang po'i snang ba/"@bo-x-ewts ;
+        :catalogInfo        "Exegesis of the eighth chapter of the Abhidharmakosa, Missing fifth chapter in this versoin."@en ;
+        :creator            bdr:CRCB15A896DECB33B9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3350 , bdr:W1NLM3350 .
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM3350 , bdr:W1NLM3350 ;
+        :workIsAbout        bdr:WA19720 .
 }

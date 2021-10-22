@@ -18,6 +18,11 @@ bdg:WA1NLM3295 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG3B381BCD1C759D9D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-21T16:01:34.958Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
@@ -27,17 +32,36 @@ bdg:WA1NLM3295 {
     bda:WA1NLM3295  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3295 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "56/WA1NLM3295.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3295 ;
-        adm:logEntry        bda:LG18FB32E2250C8A56 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG18FB32E2250C8A56 , bda:LG3B381BCD1C759D9D , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR78F965AED9FE1DFC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRB49E938150C8C969
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4593 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRDD5D4D97B07D5F8B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P999 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3295  a       :Work ;
-        skos:prefLabel      "bcom ldan 'das dpal rdo rje 'jigs byed kyi lam rim pa gnyis kyi rnal 'byor la slob tshul zung 'jug sgrub pa'i them skas sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal rdo rje 'jigs byed kyi drag po'i sbyin sreg gi las mtha' srid gsum za ba'i sreg khang 'bar ba/"@bo-x-ewts , "yon tankun bsdud/"@bo-x-ewts ;
+        skos:prefLabel      "bcom ldan 'das dpal rdo rje 'jigs byed kyi lam rim pa gnyis kyi rnal 'byor la slob tshul zung 'jug sgrub pa'i them skas/"@bo-x-ewts ;
+        :catalogInfo        "Pracitce of generation and completion stage,fire ritual for the wrathful practice of Vajrabairava, and"@en ;
+        :creator            bdr:CR78F965AED9FE1DFC , bdr:CRB49E938150C8C969 , bdr:CRDD5D4D97B07D5F8B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3295 , bdr:W1NLM3295 .
+        :workHasInstance    bdr:MW1NLM3295 , bdr:W1NLM3295 ;
+        :workIsAbout        bdr:T104 , bdr:T1CZ30 .
 }

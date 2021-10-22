@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3374 {
+    bda:LG922E089D24DC5018
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-21T16:01:36.963Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +26,20 @@ bdg:WA1NLM3374 {
     bda:WA1NLM3374  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3374 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "0d/WA1NLM3374.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3374 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG922E089D24DC5018 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3374  a       :Work ;
-        skos:prefLabel      "dbu ma la 'jug pa'i khas len gyi rgyun 'thor bu rna lam du 'byung ba rnams phyogs gcig tu sogs/"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma la 'jug pa'i khas len gyi rgyun 'thor bu rna lam du 'byung ba rnams phyogs gcig tu bkod pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of general study of Madhyamaka philosophy, Purification on the basis of deity Vajravidarana and Vajrasattva, Clarification of Devoid of being one or many( gcig du bral) and other other miscellaneous liturgical texts"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3374 , bdr:W1NLM3374 .
+        :workGenre          bdr:T1029 , bdr:T1081 ;
+        :workHasInstance    bdr:MW1NLM3374 , bdr:W1NLM3374 ;
+        :workIsAbout        bdr:T233 .
 }

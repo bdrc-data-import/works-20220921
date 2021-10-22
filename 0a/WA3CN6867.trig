@@ -24,6 +24,12 @@ bdg:WA3CN6867 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGE7DC6296DB3EF902
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-21T14:37:55.394Z"^^xsd:dateTime ;
+        adm:logMessage      "added editer"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -41,19 +47,26 @@ bdg:WA3CN6867 {
     bda:WA3CN6867  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN6867 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "0a/WA3CN6867.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN6867 ;
-        adm:logEntry        bda:LG3DBCB08C0A3C4285 , bda:LG7A5FC1086E20FE9E , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG3DBCB08C0A3C4285 , bda:LG7A5FC1086E20FE9E , bda:LGE7DC6296DB3EF902 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR816903DBFF6659E6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26886 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA3CN6867  a        :Work ;
-        skos:altLabel       "chos 'khor dpal gyi bsam yas mchod rten rnams kyi dkar chag kun gsal me long /"@bo-x-ewts , "skyab rje bla ma karma stobs rgyal rin po che'i bka' 'bum pod drug pa/"@bo-x-ewts ;
+        skos:altLabel       "chos 'khor dpal gyi bsam yas mchod rten rnams kyi dkar chag kun gsal me long /"@bo-x-ewts , "skyabs rje bla ma karma stobs rgyal rin po che'i bka' 'bum pod drug pa/"@bo-x-ewts ;
         skos:prefLabel      "bsam yas mchod rten rnams kyi dkar chag kun gsal me long /"@bo-x-ewts ;
+        :catalogInfo        "Catalog of religious objects in the stupas at Samye monastery."@en ;
+        :creator            bdr:CR816903DBFF6659E6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN6867 , bdr:W3CN6867 ;
-        :workIsAbout        bdr:G2088 , bdr:T1GS44553 .
+        :workIsAbout        bdr:G287 , bdr:T1GS44553 .
 }

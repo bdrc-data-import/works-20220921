@@ -18,11 +18,23 @@ bdg:WA3CN6706 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG2B7679751013CAD8
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-21T13:29:20.689Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG8D58C4494A21EDD0
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-17T15:48:13.09Z"^^xsd:dateTime ;
         adm:logMessage      "fullu cataloged and released"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGEDF5EF9CA7C8A4BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-21T12:36:22.072Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and infos"@en ;
+        adm:logWho          bdu:U00007 .
     
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
@@ -41,21 +53,27 @@ bdg:WA3CN6706 {
     bda:WA3CN6706  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN6706 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "8f/WA3CN6706.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN6706 ;
-        adm:logEntry        bda:LG0F334B0FFC5164B6 , bda:LG8D58C4494A21EDD0 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG0F334B0FFC5164B6 , bda:LG2B7679751013CAD8 , bda:LG8D58C4494A21EDD0 , bda:LGEDF5EF9CA7C8A4BA , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRE184BFCE5A992F6F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26980 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA3CN6706  a        :Work ;
-        skos:altLabel       "phyi gong rdz yi ra ba 'og min bde chen chos gling dgon gyi bshad pa skal bzang yid kyi dga' ston/"@bo-x-ewts ;
+        skos:altLabel       "phyi gong rdza yi ra ba 'og min bde chen chos gling dgon gyi bshad pa skal bzang yid kyi dga' ston/"@bo-x-ewts ;
         skos:prefLabel      "rdza ra dgon gyi gnas yig"@bo-x-ewts ;
-        :catalogInfo        "Pilgrimage guides to Dzara Gonpa , found by The great master Chetsün Senge Wangchuk,"@en ;
+        :catalogInfo        "Pilgrimage guide of Dzara Gonpa which was founded by the great master Chetsün Senge Wangchuk."@en ;
+        :creator            bdr:CRE184BFCE5A992F6F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T25 ;
         :workHasInstance    bdr:MW3CN6706 , bdr:W3CN6706 ;
-        :workIsAbout        bdr:G2171 .
+        :workIsAbout        bdr:G2171 , bdr:P2JM148 .
 }

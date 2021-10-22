@@ -24,6 +24,18 @@ bdg:WA3CN6694 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGB88782FB73E8F28A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-21T11:59:54.365Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGC7DDAF45DA8D4087
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-21T13:30:25.043Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -41,18 +53,24 @@ bdg:WA3CN6694 {
     bda:WA3CN6694  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN6694 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "f5/WA3CN6694.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN6694 ;
-        adm:logEntry        bda:LG1FEF99ACDE071A28 , bda:LG6ABDC42CE23DC2FF , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG1FEF99ACDE071A28 , bda:LG6ABDC42CE23DC2FF , bda:LGB88782FB73E8F28A , bda:LGC7DDAF45DA8D4087 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRF8FC21F82B8B6519
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26979 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN6694  a        :Work ;
         skos:altLabel       "zhe tshig ngag rgyan/"@bo-x-ewts ;
         skos:prefLabel      "zhe tshig byis pa'i ngag rgyan/"@bo-x-ewts ;
         :catalogInfo        "Textbook for learning the politeness"@en ;
+        :creator            bdr:CRF8FC21F82B8B6519 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T266 ;

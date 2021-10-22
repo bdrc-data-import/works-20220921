@@ -18,6 +18,11 @@ bdg:WA1NLM2582 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGD5AA7D22C99C2FF9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-21T16:01:33.539Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +32,27 @@ bdg:WA1NLM2582 {
     bda:WA1NLM2582  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2582 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "60/WA1NLM2582.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2582 ;
-        adm:logEntry        bda:LG2F2E790E720E235E , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG2F2E790E720E235E , bda:LGD5AA7D22C99C2FF9 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4D3313D4F65EFEE9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P647 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2582  a       :Work ;
-        skos:prefLabel      "dkon mchog gsum la skyabs su 'gro tshul gyi gdams pa zab mo snyan brgyud khyad par gsum ldan sogs/"@bo-x-ewts ;
+        skos:altLabel       "dkon mchog gsum la skyabs su 'gro tshul gyi gdams pa zab mo snyan brgyud khyad par gsum ldan sogs/"@bo-x-ewts ;
+        skos:prefLabel      "skyabs su 'gro tshul gyi gdams pa zab mo snyan brgyud khyad par gsum ldan sogs/"@bo-x-ewts ;
+        :catalogInfo        "The teachings of the oral lineage of three refuge, sadhana of vajrapani and other miscellaneous liturgical texts"@en ;
+        :creator            bdr:CR4D3313D4F65EFEE9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2582 , bdr:W1NLM2582 .
+        :workGenre          bdr:T613 ;
+        :workHasInstance    bdr:MW1NLM2582 , bdr:W1NLM2582 ;
+        :workIsAbout        bdr:T1297 .
 }

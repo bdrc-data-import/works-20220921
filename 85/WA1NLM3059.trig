@@ -18,6 +18,12 @@ bdg:WA1NLM3059 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGF69CE3747779A845
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-21T09:18:46.431Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM3059 {
     bda:WA1NLM3059  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3059 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "85/WA1NLM3059.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3059 ;
-        adm:logEntry        bda:LG89A5D70042FCC35C , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG89A5D70042FCC35C , bda:LGF69CE3747779A845 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3059  a       :Work ;
         skos:prefLabel      "'bras rtsis dngul gyi me long sogs las bris pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'phags pa tshe dang ye shes dpag tu med pa zhes bya ba theg pa chen po'i mdo/ 2 'go ba'i lha lnga'i gsol mchod bya tshul/ 3 sdom gsum ldan pas nyin zhag phrugs gcig la nyams len ji ltar bya ba'i tshul nor bu rnam par bkra ba'i mdzes rgyan/ 4 bla ma spyan ras gzig kyi bka' sdod tshogs kyi bdag po'i sgo nas rang zhan gyi legs nyes rmi lam du brtags 'dod pa/ 5 sngon 'gro dngos gzhi/ gsol 'debs smon lam sogs nyer mkho rags bsdus/ 6 phyogs bcu'i mun sel dang lam bzhugs 'gro khar gang brjod bden tshig dang 'dod gsol 'od zer can ma'i gser skyems/ 7 tshe sgrub dang dad pa gsum dang gzungs sngags zab mo mdor bsdus/"@bo-x-ewts , "Astronomical calculation of calender by unknown author; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3059 , bdr:W1NLM3059 .
+        :workHasInstance    bdr:MW1NLM3059 , bdr:W1NLM3059 ;
+        :workIsAbout        bdr:T1911 .
 }
