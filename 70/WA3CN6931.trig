@@ -24,6 +24,12 @@ bdg:WA3CN6931 {
         adm:logMessage      "full catalog and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG7E1FAD6EF48FC51B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-22T09:23:33.648Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -41,20 +47,26 @@ bdg:WA3CN6931 {
     bda:WA3CN6931  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN6931 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "70/WA3CN6931.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN6931 ;
-        adm:logEntry        bda:LG3788613F20512B59 , bda:LG5BDD8E69D6E9BE96 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG3788613F20512B59 , bda:LG5BDD8E69D6E9BE96 , bda:LG7E1FAD6EF48FC51B , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA3CN6525 ;
         adm:status          bda:StatusWithdrawn .
+    
+    bdr:CR9CDA31C51EB1EC88
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS75470 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN6931  a        :Work ;
         skos:altLabel       "bod kyi gna' rabs mchims kyi rus rgyud skor brjod pa/"@bo-x-ewts ;
         skos:prefLabel      "mchims kyi rus rgyud skor brjod pa/"@bo-x-ewts ;
         :catalogInfo        "Research into the lineage of Chim famaly"@en ;
+        :creator            bdr:CR9CDA31C51EB1EC88 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workIsAbout        bdr:T1113 , bdr:T1941 .
+        :workIsAbout        bdr:T1127 , bdr:T1941 .
 }
