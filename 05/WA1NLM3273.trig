@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3273 {
+    bda:LG03C63F5D5F3EC8F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-25T15:12:08.563Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGA1DE0575623E29B4
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,37 @@ bdg:WA1NLM3273 {
     bda:WA1NLM3273  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3273 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "05/WA1NLM3273.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3273 ;
-        adm:logEntry        bda:LGA1DE0575623E29B4 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG03C63F5D5F3EC8F1 , bda:LGA1DE0575623E29B4 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR6D47CB3104A2E920
+        a                   :AgentAsCreator ;
+        :agent              bdr:P339 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR6DF04E64DF6676C9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRD26DC9B4A691AB26
+        a                   :AgentAsCreator ;
+        :agent              bdr:P166 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3273  a       :Work ;
-        skos:prefLabel      "phyin ci log gi gtam gyi sbyor ba la zhugs pa'i smra ba ngan pa rnam par 'thag pa'i bstan bcos gnam lcags 'khor lo sogs/"@bo-x-ewts ;
+        skos:altLabel       "'dul ba'i sdom tshig gnad bsdus nor bu'i phreng ba/"@bo-x-ewts , "gso dpyad bdud rtsi'i chu rgyun gyi cha lag las lag len nyung 'dus bdud rtsi zil dkar/"@bo-x-ewts ;
+        skos:prefLabel      "phyin ci log gi gtam gyi sbyor ba la zhugs pa'i smra ba ngan pa rnam par 'thag pa'i bstan bcos gnam lcags 'khor lo/"@bo-x-ewts ;
+        :catalogInfo        "On the hevajra kaya mandala and a refutation of critics who were making incorrect assertations; bt Khedrub je written at Gadan, A short manual of treatment by Sumpa Yeshe Peljor, and Outline explanation of the discipline of the monk (vinaya); based on the work of paNchen Deleg NYima"@en ;
+        :creator            bdr:CR6D47CB3104A2E920 , bdr:CR6DF04E64DF6676C9 , bdr:CRD26DC9B4A691AB26 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3273 , bdr:W1NLM3273 .
+        :workGenre          bdr:T10MS14651 ;
+        :workHasInstance    bdr:MW1NLM3273 , bdr:W1NLM3273 ;
+        :workIsAbout        bdr:T102 , bdr:T55 .
 }

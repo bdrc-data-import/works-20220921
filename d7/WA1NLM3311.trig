@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3311 {
+    bda:LGB785A0F9D6CD5D4D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-25T09:42:44.951Z"^^xsd:dateTime ;
+        adm:logMessage      "full cadloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGD8B94D9EC2454940
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,31 @@ bdg:WA1NLM3311 {
     bda:WA1NLM3311  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3311 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "d7/WA1NLM3311.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3311 ;
-        adm:logEntry        bda:LGD8B94D9EC2454940 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LGB785A0F9D6CD5D4D , bda:LGD8B94D9EC2454940 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRC313BEC2AC124F8E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRF264C7C75FA2DEBE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3311  a       :Work ;
         skos:prefLabel      "bsdus chen gyi rnam bzhag rigs lam gser gyi sgo 'byed lung dang rigs pa'i gan mdzod blo gsal yid kyi mun sel skal ldan dad pa'i 'jug ngogs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Pedagogical presentation of arguments of Buddhist logic by Jamyang Shepa, Analysis of entering and abiding of Abhisamayalankara by Je Tsongkhapa and other other miscellaneous Writings"@en ;
+        :creator            bdr:CRC313BEC2AC124F8E , bdr:CRF264C7C75FA2DEBE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3311 , bdr:W1NLM3311 .
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW1NLM3311 , bdr:W1NLM3311 ;
+        :workIsAbout        bdr:T96 .
 }

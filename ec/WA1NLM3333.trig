@@ -18,6 +18,12 @@ bdg:WA1NLM3333 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG7E7565B4062EEB00
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-25T15:12:09.871Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
@@ -27,17 +33,32 @@ bdg:WA1NLM3333 {
     bda:WA1NLM3333  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3333 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ec/WA1NLM3333.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3333 ;
-        adm:logEntry        bda:LG047C1B729272AC2B , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG047C1B729272AC2B , bda:LG7E7565B4062EEB00 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR2208C199F1C6E59A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR806A1D096477BFF2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3333  a       :Work ;
-        skos:prefLabel      "rje btsun sgrol ma'i bstod pa'i rgyud kyi tshig don gyi rnam bshad 'phros dang bcas pa snying po'i don gsal sogs/"@bo-x-ewts ;
+        skos:altLabel       "rje btsun sgrol ma'i bstod pa'i rgyud kyi tshig don gyi rnam bshad 'phros dang bcas pa snying po'i don gsal sogs/"@bo-x-ewts ;
+        skos:prefLabel      "sgrol ma'i bstod pa'i rgyud kyi tshig don gyi rnam bshad 'phros dang bcas pa snying po'i don gsal sogs/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on Tara Tantra origin and commentary of Tara Stotras, Critical response of Sumpa Khenpo Yeshe Peljor (1704-1788) in reply to criticisms of Vajrayana practices and other collections of guruyoga sadana"@en ;
+        :creator            bdr:CR2208C199F1C6E59A , bdr:CR806A1D096477BFF2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3333 , bdr:W1NLM3333 .
+        :workGenre          bdr:T67 ;
+        :workHasInstance    bdr:MW1NLM3333 , bdr:W1NLM3333 ;
+        :workIsAbout        bdr:T619 .
 }

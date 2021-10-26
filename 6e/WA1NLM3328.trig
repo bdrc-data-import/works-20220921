@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3328 {
+    bda:LG88368BA33F886005
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-25T15:12:09.298Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGACAEEF52694D29EC
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM3328 {
     bda:WA1NLM3328  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3328 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "6e/WA1NLM3328.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3328 ;
-        adm:logEntry        bda:LGACAEEF52694D29EC , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG88368BA33F886005 , bda:LGACAEEF52694D29EC , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3328  a       :Work ;
-        skos:prefLabel      "byang chub sems dpa'i spyod pa la 'jug pa'i mchan bu tshig gsal me long /"@bo-x-ewts ;
+        skos:altLabel       "byang chub sems dpa'i spyod pa la 'jug pa'i mchan bu tshig gsal me long /"@bo-x-ewts ;
+        skos:prefLabel      "spyod 'jug gi mchan bu tshig gsal me long /"@bo-x-ewts ;
+        :catalogInfo        "Annotated on autocommentary on Shantideva's Bodhicaryavatar, author is not mentioned"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3328 , bdr:W1NLM3328 .
+        :workGenre          bdr:T304 ;
+        :workHasInstance    bdr:MW1NLM3328 , bdr:W1NLM3328 ;
+        :workIsAbout        bdr:WA19740 .
 }

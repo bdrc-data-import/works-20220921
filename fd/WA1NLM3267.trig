@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3267 {
+    bda:LG0F33546B95DA2B50
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-25T15:12:08.202Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGFC28AAA7C38C6127
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,27 @@ bdg:WA1NLM3267 {
     bda:WA1NLM3267  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3267 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "fd/WA1NLM3267.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3267 ;
-        adm:logEntry        bda:LGFC28AAA7C38C6127 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG0F33546B95DA2B50 , bda:LGFC28AAA7C38C6127 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR305B12A0EFFA72D0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4592 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3267  a       :Work ;
-        skos:prefLabel      "byang chub lam gyi rim pa chung ngu'i zin bris blo gsal rgya mtsho'i 'jug ngogs/"@bo-x-ewts ;
+        skos:altLabel       "byang chub lam gyi rim pa chung ngu'i zin bris blo gsal rgya mtsho'i 'jug ngogs/"@bo-x-ewts ;
+        skos:prefLabel      "lam rim chung ngu'i zin bris blo gsal rgya mtsho'i 'jug ngogs/"@bo-x-ewts ;
+        :catalogInfo        "Outline notes of ke'u tshang blo bzang 'jam dbyangs smon lam's lectures on the Lamrim chungngu of Tsong khapa; the lecture notes were written by the author's disciple, Thewo Yeshe Thubten Gyatso"@en ;
+        :creator            bdr:CR305B12A0EFFA72D0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3267 , bdr:W1NLM3267 .
+        :workGenre          bdr:T132 , bdr:T1478 ;
+        :workHasInstance    bdr:MW1NLM3267 , bdr:W1NLM3267 ;
+        :workIsAbout        bdr:WA603 .
 }

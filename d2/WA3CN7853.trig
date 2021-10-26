@@ -24,6 +24,12 @@ bdg:WA3CN7853 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGB60CB53170A39481
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-25T16:27:39.368Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -34,19 +40,25 @@ bdg:WA3CN7853 {
     bda:WA3CN7853  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN7853 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "d2/WA3CN7853.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN7853 ;
-        adm:logEntry        bda:LG02DADE4501495E04 , bda:LG31036A79237E06F3 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG02DADE4501495E04 , bda:LG31036A79237E06F3 , bda:LGB60CB53170A39481 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1PD159527 ;
         adm:status          bda:StatusWithdrawn .
+    
+    bdr:CRCBB9E738A7788051
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ366944 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN7853  a        :Work ;
         skos:altLabel       "log rtog snying stobs la rags tsam dpyad pa/ tsha ba mda' smyug gi brgal lan/"@bo-x-ewts ;
         skos:prefLabel      "log rtog snying stobs la rags tsam dpyad pa/"@bo-x-ewts ;
         :catalogInfo        "Polemic writing concerning modern tibetan writer Tsawa Danyuk's work log rtog snying stobs by Jamyang Gonpo."@en ;
+        :creator            bdr:CRCBB9E738A7788051 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workIsAbout        bdr:T102 , bdr:T770 .

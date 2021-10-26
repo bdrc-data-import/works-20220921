@@ -30,6 +30,12 @@ bdg:WA3CN7982 {
         adm:logMessage      "changed access to fairUse"@en ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGE6B5113ED83116DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-25T16:38:25.98Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGF4B303AAB0CE79BD
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:14:39.089Z"^^xsd:dateTime ;
@@ -46,17 +52,23 @@ bdg:WA3CN7982 {
     bda:WA3CN7982  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN7982 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "75/WA3CN7982.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN7982 ;
-        adm:logEntry        bda:LG575DA317C4C4F7A4 , bda:LG7B19506D267176F3 , bda:LG812E2544CA87D19A , bda:LGF4B303AAB0CE79BD , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG575DA317C4C4F7A4 , bda:LG7B19506D267176F3 , bda:LG812E2544CA87D19A , bda:LGE6B5113ED83116DE , bda:LGF4B303AAB0CE79BD , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRC93F30AF6A6A98E5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG15777 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN7982  a        :Work ;
         skos:prefLabel      "gtam dmar rjen ma/"@bo-x-ewts ;
         :catalogInfo        "Collection of poems written by Arig Gyurme."@en ;
+        :creator            bdr:CRC93F30AF6A6A98E5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1884 ;

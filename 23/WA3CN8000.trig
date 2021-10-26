@@ -24,6 +24,12 @@ bdg:WA3CN8000 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGD3F7ECED3F651724
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-25T16:52:09.52Z"^^xsd:dateTime ;
+        adm:logMessage      "added translator"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -34,19 +40,25 @@ bdg:WA3CN8000 {
     bda:WA3CN8000  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN8000 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "23/WA3CN8000.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN8000 ;
-        adm:logEntry        bda:LG1119CE5701CA255F , bda:LGCA075661A84210AF , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1119CE5701CA255F , bda:LGCA075661A84210AF , bda:LGD3F7ECED3F651724 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR390E15694658DAA8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN26995 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW3CN8000  skos:altLabel  "“社会契约论”及其他晚期政治著作"@zh-hant .
     
     bdr:WA3CN8000  a        :Work ;
         skos:prefLabel      "spyi tshogs gan chings/"@bo-x-ewts , "“社会契约论”及其他晚期政治著作"@zh-hant ;
         :catalogInfo        "The Social Contract by Jeean Jacques Rousseau, translated form English to Tibetan by Gurong Pundrol."@en ;
+        :creator            bdr:CR390E15694658DAA8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN8000 , bdr:W3CN8000 ;
