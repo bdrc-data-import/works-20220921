@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3276 {
+    bda:LG7BC8DD859BCD62C4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-26T10:27:57.954Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGDD092419A24153B5
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,36 @@ bdg:WA1NLM3276 {
     bda:WA1NLM3276  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3276 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "c7/WA1NLM3276.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3276 ;
-        adm:logEntry        bda:LGDD092419A24153B5 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG7BC8DD859BCD62C4 , bda:LGDD092419A24153B5 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4898C70385967B92
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2063 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR580A8E78D38D895D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR71EC7FC701300FF8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3276  a       :Work ;
+        skos:altLabel       "'gal 'brel gyi rnam bzhag"@bo-x-ewts , "dbu ma rgyan gyi zin bris rje rang gis gnang ba/"@bo-x-ewts , "dze tA'i lugs kyi rje btsun rnam rgyal ma'i sgrub thabs/"@bo-x-ewts , "mgon po gur phyag gnyis kyi bsangs chog sogs gtor 'bul/"@bo-x-ewts ;
         skos:prefLabel      "yid dang kun gzhi'i dka' gnad rgya cher 'grel gyi gnad don gsal bar byed pa'i mtha' dpyod pad+ma dkar po'i 'phreng ba blo gsal mgul rgyan/"@bo-x-ewts ;
+        :catalogInfo        "Writings on difficult points concerning the manovijnana and the alayavijnana, memorandum on Tsong khapa's presentation of the Madhyamakalamkara, explanation of the concepts of viruddha and sambandha in logic (hetuvidya) and other miscellaneous writings rituals"@en ;
+        :creator            bdr:CR4898C70385967B92 , bdr:CR580A8E78D38D895D , bdr:CR71EC7FC701300FF8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3276 , bdr:W1NLM3276 .
+        :workHasInstance    bdr:MW1NLM3276 , bdr:W1NLM3276 ;
+        :workIsAbout        bdr:T1133 , bdr:T1215 , bdr:T233 .
 }

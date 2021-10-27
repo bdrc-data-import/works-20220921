@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3392 {
+    bda:LG7F0E49C46DF93156
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-26T15:52:43.249Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and reased"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,25 @@ bdg:WA1NLM3392 {
     bda:WA1NLM3392  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3392 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ee/WA1NLM3392.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3392 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG7F0E49C46DF93156 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR562A772FE45A011D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5777 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3392  a       :Work ;
         skos:prefLabel      "rgyud sde bzhi'i spyi'i don rnam par bzhag pa gsang chen lam bzang gsal ba'i sgron me/"@bo-x-ewts ;
+        :catalogInfo        "General classification of Buddhist tantras"@en ;
+        :creator            bdr:CR562A772FE45A011D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3392 , bdr:W1NLM3392 .
+        :workHasInstance    bdr:MW1NLM3392 , bdr:W1NLM3392 ;
+        :workIsAbout        bdr:T1431 .
 }

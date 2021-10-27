@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3271 {
+    bda:LG6865AA55C980C12E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-26T10:27:57.005Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGFECD056F6AA3FEB8
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,27 @@ bdg:WA1NLM3271 {
     bda:WA1NLM3271  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3271 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "60/WA1NLM3271.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3271 ;
-        adm:logEntry        bda:LGFECD056F6AA3FEB8 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG6865AA55C980C12E , bda:LGFECD056F6AA3FEB8 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR8AE2A25B8131CEB0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P173 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3271  a       :Work ;
-        skos:prefLabel      "bka' drin mtshungs med dka' bcu chos rje sde snod 'dzin skyong spel bar mdzad pa blo bzang dkon mchog mtshan can gyis mdzad pa mdzod gnas brgyad las gnas lnga pa'i skor sogs/"@bo-x-ewts ;
+        skos:altLabel       "bka' drin mtshungs med dka' bcu chos rje sde snod 'dzin skyong spel bar mdzad pa blo bzang dkon mchog mtshan can gyis mdzad pa mdzod gnas brgyad las gnas lnga pa'i skor sogs/"@bo-x-ewts ;
+        skos:prefLabel      "mdzod gnas brgyad las gnas lnga pa'i skor sogs/"@bo-x-ewts ;
+        :catalogInfo        "A commentary on the fifth capter of Abhidharmakosha and other miscellaneous rituals"@en ;
+        :creator            bdr:CR8AE2A25B8131CEB0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3271 , bdr:W1NLM3271 .
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM3271 , bdr:W1NLM3271 ;
+        :workIsAbout        bdr:WA19720 .
 }
