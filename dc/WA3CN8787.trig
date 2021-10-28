@@ -24,6 +24,12 @@ bdg:WA3CN8787 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG191A95861A2BF13B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-27T13:23:24.975Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -34,19 +40,25 @@ bdg:WA3CN8787 {
     bda:WA3CN8787  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN8787 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "dc/WA3CN8787.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN8787 ;
-        adm:logEntry        bda:LG01012FB019FAE06F , bda:LG0829A9240EE79DF3 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG01012FB019FAE06F , bda:LG0829A9240EE79DF3 , bda:LG191A95861A2BF13B , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR114799A95678625D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN27003 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN8787  a        :Work ;
         skos:altLabel       "rdo rje rin chen gyi 'bol rtsom/ 'chi gson gyi gdam ga"@bo-x-ewts ;
         skos:prefLabel      "'chi gson gyi gdam ga"@bo-x-ewts ;
         :catalogInfo        "To be or not to be, a prose by Dorji Rinchen."@en ;
+        :creator            bdr:CR114799A95678625D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1884 ;
