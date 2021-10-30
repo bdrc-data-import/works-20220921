@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3362 {
+    bda:LG8BFD5BA516039154
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-29T15:06:05.913Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,27 @@ bdg:WA1NLM3362 {
     bda:WA1NLM3362  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3362 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "0e/WA1NLM3362.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3362 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG8BFD5BA516039154 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR2FC6BDCB032B1449
+        a                   :AgentAsCreator ;
+        :agent              bdr:P437 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3362  a       :Work ;
-        skos:prefLabel      "nyams yig brgya tshar las rlung nad bcos pa'i yig chung chad nad bcos pa'i yig chung gi bar bzhugs so//_gor sman dkon mchog phan dar gyi mdzad pa nyams yig nor bu'i 'phreng brgya rtsa/"@bo-x-ewts ;
+        skos:altLabel       "nyams yig brgya tshar las rlung nad bcos pa'i yig chung chad nad bcos pa'i yig chung gi bar bzhugs so//_gor sman dkon mchog phan dar gyi mdzad pa nyams yig nor bu'i 'phreng brgya rtsa/"@bo-x-ewts ;
+        skos:prefLabel      "nyams yig brgya rtsa/"@bo-x-ewts ;
+        :catalogInfo        "The smallest collection of Gongman Konchok Phadar's medical instructions to his students"@en ;
+        :creator            bdr:CR2FC6BDCB032B1449 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3362 , bdr:W1NLM3362 .
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW1NLM3362 , bdr:W1NLM3362 ;
+        :workIsAbout        bdr:T85 .
 }

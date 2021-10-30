@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN9305 {
+    bda:LG58390D4D9FE20F31
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-29T18:19:11.359Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGACCE54D206456E67
         a                   adm:InitialDataCreation ;
         adm:logDate         "2017-08-08T13:02:41.045Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA3CN9305 {
     bda:WA3CN9305  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN9305 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "b5/WA3CN9305.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN9305 ;
-        adm:logEntry        bda:LGACCE54D206456E67 , bda:LGDC0378CB41A1327D , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG58390D4D9FE20F31 , bda:LGACCE54D206456E67 , bda:LGDC0378CB41A1327D , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR173A86140DAED31B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN27007 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA3CN9305  a        :Work ;
         skos:prefLabel      "dbyin ji'i skad yig slob tshul gom pa dang po/"@bo-x-ewts ;
         :catalogInfo        "English for beginers."@en ;
+        :creator            bdr:CR173A86140DAED31B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T240 , bdr:T266 ;

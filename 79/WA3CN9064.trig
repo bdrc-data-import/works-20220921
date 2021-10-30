@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN9064 {
+    bda:LG31DA63CBF9B59552
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-29T17:18:13.976Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGC1537493A8256FAA
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2017-08-01T11:30:15.583Z"^^xsd:dateTime ;
@@ -34,19 +40,25 @@ bdg:WA3CN9064 {
     bda:WA3CN9064  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN9064 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "79/WA3CN9064.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN9064 ;
-        adm:logEntry        bda:LGC1537493A8256FAA , bda:LGC1ECD261C5BDCDEE , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG31DA63CBF9B59552 , bda:LGC1537493A8256FAA , bda:LGC1ECD261C5BDCDEE , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR32DE2B7033924A47
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3CN9065 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN9064  a        :Work ;
         skos:altLabel       "sems dpa' chen po gAn d+hi mchog gi gsung rnam rang gi gtam yongs su sdud pa/ bam po dang po/"@bo-x-ewts ;
         skos:prefLabel      "gAn d+hi mchog gi gsung rnam/"@bo-x-ewts ;
         :catalogInfo        "Autobiography of mahatma gandhi."@en ;
+        :creator            bdr:CR32DE2B7033924A47 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2651 {
+    bda:LG286D37F86D1D8A63
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-10-29T15:06:00.455Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGE6D95883772114A9
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM2651 {
     bda:WA1NLM2651  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2651 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d5/WA1NLM2651.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2651 ;
-        adm:logEntry        bda:LGE6D95883772114A9 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG286D37F86D1D8A63 , bda:LGE6D95883772114A9 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2651  a       :Work ;
         skos:prefLabel      "khyung nag po'i sgrub thabs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collections of miscellaneous writings and rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2651 , bdr:W1NLM2651 .
 }
