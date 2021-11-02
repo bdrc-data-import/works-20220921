@@ -1,0 +1,45 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA3CN27011 {
+    bda:LGBD80B4F7B0240C3F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-01T22:40:35.928Z"^^xsd:dateTime ;
+        adm:logMessage      "refreshed T#"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGE918B644BE03FB40
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2021-11-01T18:01:54.277Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:WA3CN27011  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA3CN27011 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "f6/WA3CN27011.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA3CN27011 ;
+        adm:logEntry        bda:LGBD80B4F7B0240C3F , bda:LGE918B644BE03FB40 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:WA3CN27011  a       :Work ;
+        skos:altLabel       "清代官刻汉文大藏经"@zh-hans , "清藏"@zh-hans , "龍藏"@zh-hant ;
+        skos:prefLabel      "乾隆大藏经"@zh-hant ;
+        :catalogInfo        "Qianlong Edition of Chinese Buddhist Canon."@en ;
+        :isRoot             true ;
+        :language           bdr:LangZh ;
+        :workHasInstance    bdr:MW3CN27011 .
+}
