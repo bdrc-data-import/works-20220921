@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3010 {
+    bda:LG24FA4D3B02AFB682
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-02T14:37:09.646Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGFE448304267C02C2
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM3010 {
     bda:WA1NLM3010  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3010 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "74/WA1NLM3010.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3010 ;
-        adm:logEntry        bda:LGFE448304267C02C2 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG24FA4D3B02AFB682 , bda:LGFE448304267C02C2 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR76204DF8129846A6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3010  a       :Work ;
         skos:prefLabel      "rta mgrin gsang sgrub bka' sdod dang bcas pa mchod cing bskang bshags bzlog pa bya ba'i cho ga dngos grub char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dga' ldan yid dga' chos 'dzin du skye ba'i smon lam nor bu'i them skas/ 2 rta phyugs kyi god kha bsrung thabs rdo rje'i rwa ba/ 3 ye shes mkha' 'gro seng+ge gdong pa can chos byed/ ye shes mkha' 'gro ma bsangs mchod/ 4 mar me nag po'i cho ga bdud sde bsreg byed 'jigs rung me yis 'phrul 'khor/ 5 dpal ldan lha mo ma ti bzlog bsgyur/ 6 bkra shis spos bskor/ 7 dgu mig gis bcos thabs/ 8 gu ru thugs rje can gyis snyigs ma'i sems can mang po la 'jam dpal nag po'i dan pa kun thub bzlog bsgyur/ 9 btsan mdos bcos thabs/ 10 mes bdun skar ma'i mchod pa dang bsangs mchod dang bcas pa sems sprul pa mes bdun skar ma/ 11 chos skyong lcam sring 'khor dang bcas pa la tshogs mchod 'bul ba 'khyer bde ba/ 12 chos skyogn dregs pa lcam sring gi bsur mchod dngos grub dbang bsdud/ 13 'phags pa spyan ras gzigs kyi sgo nas mig nad byabs khrus/"@en , "Puja offering, confession and purification, repelling ritual of Hayagriva Guhyasadhana; other text also included."@en ;
+        :creator            bdr:CR76204DF8129846A6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3010 , bdr:W1NLM3010 .
+        :workGenre          bdr:T529 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3010 , bdr:W1NLM3010 ;
+        :workIsAbout        bdr:T1892 , bdr:T1AT269 , bdr:T50 .
 }

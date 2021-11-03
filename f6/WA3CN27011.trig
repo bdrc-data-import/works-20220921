@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN27011 {
+    bda:LG1869312BA2DFB1E5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-11-02T14:50:27.994Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGBD80B4F7B0240C3F
         a                   adm:UpdateData ;
         adm:logDate         "2021-11-01T22:40:35.928Z"^^xsd:dateTime ;
@@ -27,11 +33,11 @@ bdg:WA3CN27011 {
     bda:WA3CN27011  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN27011 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "f6/WA3CN27011.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN27011 ;
-        adm:logEntry        bda:LGBD80B4F7B0240C3F , bda:LGE918B644BE03FB40 ;
+        adm:logEntry        bda:LG1869312BA2DFB1E5 , bda:LGBD80B4F7B0240C3F , bda:LGE918B644BE03FB40 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -41,5 +47,5 @@ bdg:WA3CN27011 {
         :catalogInfo        "Qianlong Edition of Chinese Buddhist Canon."@en ;
         :isRoot             true ;
         :language           bdr:LangZh ;
-        :workHasInstance    bdr:MW3CN27011 .
+        :workHasInstance    bdr:MW3CN27011 , bdr:W3CN27011 .
 }

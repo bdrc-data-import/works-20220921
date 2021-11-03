@@ -18,6 +18,12 @@ bdg:WA1NLM2859 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGF61F1D660AADA92D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-02T11:32:15.025Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIMD3D03661  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2859 {
     bda:WA1NLM2859  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2859 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b8/WA1NLM2859.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2859 ;
-        adm:logEntry        bda:LGE9D3AB4880D08AE2 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LGE9D3AB4880D08AE2 , bda:LGF61F1D660AADA92D , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2859  a       :Work ;
         skos:prefLabel      "dpal gsang ba 'dus pa'i bskyed rdzogs kyi bshad pa 'ga' zhig la dogs slong cung zad bkod pa/"@bo-x-ewts ;
+        :catalogInfo        "A few clarification of some of the key points on the explanation of Guhyasamaja's development and completion stages."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2859 , bdr:W1NLM2859 .
+        :workGenre          bdr:T1029 ;
+        :workHasInstance    bdr:MW1NLM2859 , bdr:W1NLM2859 ;
+        :workIsAbout        bdr:T1765 , bdr:T1CZ30 , bdr:T417 .
 }
