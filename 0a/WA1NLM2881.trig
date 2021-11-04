@@ -18,6 +18,11 @@ bdg:WA1NLM2881 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG659854F6ED0741D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-03T21:20:20.338Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIMD3D03661  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
@@ -27,17 +32,27 @@ bdg:WA1NLM2881 {
     bda:WA1NLM2881  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2881 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "0a/WA1NLM2881.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2881 ;
-        adm:logEntry        bda:LG5C2974E14C33AF4E , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG5C2974E14C33AF4E , bda:LG659854F6ED0741D3 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4B6B58B04A6B9A8D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2584 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2881  a       :Work ;
-        skos:prefLabel      "rgyud kyi rgyal po dpal gsang ba 'dus pa'i rtsa rgyud le'u bcu bdun pa'i 'grel pa sgron ma gsal ba la 'jug pa'i sgo sgron gsal rnam par nges pa bla ma dam pa'i zhal gyi lung /"@bo-x-ewts ;
+        skos:altLabel       "rgyud kyi rgyal po dpal gsang ba 'dus pa'i rtsa rgyud le'u bcu bdun pa'i 'grel pa sgrom ma gsal ba la 'jug pa'i sgo sgron gsal rnam par nges pa bla ma dam pa'i zhal gyi lung /"@bo-x-ewts ;
+        skos:prefLabel      "rgyud kyi rgyal po dpal gsang ba 'dus pa'i rgya cher bshad pa sgron ma gsal ba la 'jug pa'i sgo sgron gsal rnam par nges pa/"@bo-x-ewts ;
+        :catalogInfo        "A commentary of Guhyasamaja Tantra by Phak Ö Yonten Gyatso."@en ;
+        :creator            bdr:CR4B6B58B04A6B9A8D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2881 , bdr:W1NLM2881 .
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM2881 , bdr:W1NLM2881 ;
+        :workIsAbout        bdr:T417 , bdr:WA4CZ15240 .
 }

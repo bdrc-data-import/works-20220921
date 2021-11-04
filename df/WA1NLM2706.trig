@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2706 {
+    bda:LG4DB49D817D6745A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-03T16:19:28.122Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGE2B83C3D5C7B0423
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2706 {
     bda:WA1NLM2706  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2706 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "df/WA1NLM2706.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2706 ;
-        adm:logEntry        bda:LGE2B83C3D5C7B0423 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG4DB49D817D6745A3 , bda:LGE2B83C3D5C7B0423 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2706  a       :Work ;
-        skos:prefLabel      "dpal rdo rje 'jigs byed kyi sgo nas tshe 'das rjes su 'dzin pa'i lho sgo'i cho ga sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal rdo rje 'jigs byed kyi sgo nas tshe 'das rjes su 'dzin pa'i lho sgo'i cho ga"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje 'jigs byed kyi sgo nas tshe 'das rjes su 'dzin pa'i lho sgo'i cho ga sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of funeral ritual text associated with the southern gate of the Vajrabhairava practice and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2706 , bdr:W1NLM2706 .
+        :workHasInstance    bdr:MW1NLM2706 , bdr:W1NLM2706 ;
+        :workIsAbout        bdr:T1CZ27 , bdr:T35 .
 }

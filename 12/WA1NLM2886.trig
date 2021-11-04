@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2886 {
+    bda:LG049CDA5CAF30DEC0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-03T21:20:20.698Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGFA418ABF6DDC5B68
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,41 @@ bdg:WA1NLM2886 {
     bda:WA1NLM2886  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2886 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "12/WA1NLM2886.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2886 ;
-        adm:logEntry        bda:LGFA418ABF6DDC5B68 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG049CDA5CAF30DEC0 , bda:LGFA418ABF6DDC5B68 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR629E8E9626F99FEA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR6709102CD9B1C04A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P209 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRC6E60A5606D40500
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRF4247209876E9A1A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4699 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2886  a       :Work ;
         skos:prefLabel      "tshe gcig gi nyams len bya tshul rnams khrig chags su bsdebs pa chos spyod gsal ba'i sgron me sogs/"@bo-x-ewts ;
+        :catalogInfo        "Daily recitation for spiritual practices compiled by Lama Gungthang Tenpe Dronme. A narative and polemic writings of Pandita Puring Tsering Phel by author signed as Patu Sidhi; other text also included."@en ;
+        :creator            bdr:CR629E8E9626F99FEA , bdr:CR6709102CD9B1C04A , bdr:CRC6E60A5606D40500 , bdr:CRF4247209876E9A1A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2886 , bdr:W1NLM2886 .
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW1NLM2886 , bdr:W1NLM2886 ;
+        :workIsAbout        bdr:T102 , bdr:T1220 , bdr:T1297 .
 }

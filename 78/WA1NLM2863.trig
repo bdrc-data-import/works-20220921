@@ -18,6 +18,11 @@ bdg:WA1NLM2863 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGF9139CE6FDA3BD6D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-03T21:20:18.143Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIMD3D03661  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
@@ -27,11 +32,11 @@ bdg:WA1NLM2863 {
     bda:WA1NLM2863  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2863 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "78/WA1NLM2863.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2863 ;
-        adm:logEntry        bda:LG6F80E35D9F6D7B4B , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG6F80E35D9F6D7B4B , bda:LGF9139CE6FDA3BD6D , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -39,5 +44,7 @@ bdg:WA1NLM2863 {
         skos:prefLabel      "dpal gsang ba 'dus pa'i mdun bskyed kyi rnam bshad mkhas pa'i yid 'phrog ces bya ba bzhugs de nyid kyi mchod 'phring gi rnam bshad kyang sogs/"@bo-x-ewts ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2863 , bdr:W1NLM2863 .
+        :workGenre          bdr:T200 , bdr:T238 , bdr:T61 ;
+        :workHasInstance    bdr:MW1NLM2863 , bdr:W1NLM2863 ;
+        :workIsAbout        bdr:T1297 , bdr:T202 .
 }

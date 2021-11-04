@@ -18,6 +18,11 @@ bdg:WA1NLM2874 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGAF5E1686B9B45398
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-03T21:20:19.475Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIMD3D03661  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
@@ -27,17 +32,30 @@ bdg:WA1NLM2874 {
     bda:WA1NLM2874  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2874 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ca/WA1NLM2874.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2874 ;
-        adm:logEntry        bda:LG00D8028BA9AEC9B9 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG00D8028BA9AEC9B9 , bda:LGAF5E1686B9B45398 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR76843C8874525920
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR9FE9C264C4E6AEC3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4352 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2874  a       :Work ;
         skos:prefLabel      "mtha' bral dbu ma'i khrid yig zab mo cig sogs/"@bo-x-ewts ;
+        :creator            bdr:CR76843C8874525920 , bdr:CR9FE9C264C4E6AEC3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2874 , bdr:W1NLM2874 .
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW1NLM2874 , bdr:W1NLM2874 ;
+        :workIsAbout        bdr:T1215 , bdr:T233 , bdr:T381 .
 }

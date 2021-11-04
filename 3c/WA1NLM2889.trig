@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2889 {
+    bda:LG9B13BB3037525C7D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-03T21:20:20.983Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGF8C93AAF9177EC7C
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,36 @@ bdg:WA1NLM2889 {
     bda:WA1NLM2889  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2889 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "3c/WA1NLM2889.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2889 ;
-        adm:logEntry        bda:LGF8C93AAF9177EC7C , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG9B13BB3037525C7D , bda:LGF8C93AAF9177EC7C , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR7415347113B9A018
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3893 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRAF50BD49A438BD4F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE85FCB6917111078
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6116 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2889  a       :Work ;
         skos:prefLabel      "rgyal po zla ba bzang po'i rnam 'phrul ta'i si tu chen po rnam rgyal grags pa'i dri ba'i lan sogs/"@bo-x-ewts ;
+        :catalogInfo        "questions put by byang bdag tai si tu rnam rgyal grags pa to the 1st dalai lam Responses to author's student about the difficult points in Panchen Sonam Dakpa's writing of Madhyamika, Paramita and Vinaya by Geshe Tsultrim Namgyal who originally belong to Taklung Drak. praise to Tsongkhapa"@en ;
+        :creator            bdr:CR7415347113B9A018 , bdr:CRAF50BD49A438BD4F , bdr:CRE85FCB6917111078 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2889 , bdr:W1NLM2889 .
+        :workGenre          bdr:T28 , bdr:T67 ;
+        :workHasInstance    bdr:MW1NLM2889 , bdr:W1NLM2889 ;
+        :workIsAbout        bdr:P64 , bdr:T1215 , bdr:T2005 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3017 {
+    bda:LG41F5DF15CE2A9493
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-03T14:44:47.449Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGFE8FF38A85D9DFE4
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM3017 {
     bda:WA1NLM3017  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3017 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "17/WA1NLM3017.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3017 ;
-        adm:logEntry        bda:LGFE8FF38A85D9DFE4 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG41F5DF15CE2A9493 , bda:LGFE8FF38A85D9DFE4 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1ED48250D05D8106
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4956 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3017  a       :Work ;
         skos:prefLabel      "rta mgrin gyi las tshogs brgya ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 mnga' gosl smon lam gsol 'debs/ 2 phyag 'tshal pa ni nyi shu rtsa gcig 3 7rgyal ba lnga pa chen po'i zhabs brtan gsol 'debs/ 4 gson gshin lag 'brel bcad pa'i thabs/ 5 gsal byed me long ye ge 6 lhan skyes 'go ba'i lha lnga'i gzungs 'dzugs/ 7 dmigs brtse ma'i las tshogs nang nas zhag 'ching gi las tshogs nag 'gros su/ 8 sher snyng gi 'chi ba bslu ba'i cho ga bya tshul/ 9 dpal khrag 'thung gi rgyl po 'khor lo sdom par brjod pa rnal 'byor ma bla na med pa rgyud thams cad kyi bla ma bde mchog bsdus pa/ 10 'jig rten mchod bstod dkyil 'khor gru 'dzin pa/ 11 shes rab snying po'i sgo nas bdud bzlog dang bcas pa/ 12 phyag na rdo rje gnang ba'i mnol bsangs/ 13 cha gsum gyi 'grel pa gegs gtor gtong tshul dang bcas pa/"@en , "A yogic application of Hayagriva; other text also included."@en ;
+        :creator            bdr:CR1ED48250D05D8106 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3017 , bdr:W1NLM3017 .
+        :workGenre          bdr:T398 ;
+        :workHasInstance    bdr:MW1NLM3017 , bdr:W1NLM3017 ;
+        :workIsAbout        bdr:T2044 .
 }

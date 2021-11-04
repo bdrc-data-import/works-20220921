@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2877 {
+    bda:LG8EED559435442C8F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-03T21:20:19.777Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGE467D3D4CE6960DE
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,35 @@ bdg:WA1NLM2877 {
     bda:WA1NLM2877  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2877 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "80/WA1NLM2877.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2877 ;
-        adm:logEntry        bda:LGE467D3D4CE6960DE , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG8EED559435442C8F , bda:LGE467D3D4CE6960DE , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR6500084B17A9B4F8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2065 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRA566C28A250B79DB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P169 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRC5216E5F849CE8D2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4371 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2877  a       :Work ;
         skos:prefLabel      "gdan sa chen po sku 'bum byams pa gling gi gdan rabs mu tig 'phreng ba dang rten dang brten par bcas pa'i dkar chag ched du brjod pa rna ba'i bcud len sogs/"@bo-x-ewts ;
+        :creator            bdr:CR6500084B17A9B4F8 , bdr:CRA566C28A250B79DB , bdr:CRC5216E5F849CE8D2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2877 , bdr:W1NLM2877 .
+        :workGenre          bdr:T151 ;
+        :workHasInstance    bdr:MW1NLM2877 , bdr:W1NLM2877 ;
+        :workIsAbout        bdr:G160 , bdr:T197 , bdr:T1GS44553 , bdr:T330 .
 }

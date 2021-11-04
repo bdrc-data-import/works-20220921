@@ -18,6 +18,11 @@ bdg:WA1NLM2878 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGE982BF71ABB29D5C
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-03T21:20:20.003Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIMD3D03661  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
@@ -27,17 +32,26 @@ bdg:WA1NLM2878 {
     bda:WA1NLM2878  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2878 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "bc/WA1NLM2878.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2878 ;
-        adm:logEntry        bda:LG6F179194A4771535 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG6F179194A4771535 , bda:LGE982BF71ABB29D5C , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR0E2D0E31743900FD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P667 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2878  a       :Work ;
         skos:prefLabel      "rtsis kyi man ngag nyin byed snang ba'i rnam 'grel gser gyi shing rta/"@bo-x-ewts ;
+        :catalogInfo        "Detailed commentery on Tibetan astrology text rtsis kyi man ngag nyin byed snang ba by Mingling Lochen Dharmashri."@en ;
+        :creator            bdr:CR0E2D0E31743900FD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2878 , bdr:W1NLM2878 .
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM2878 , bdr:W1NLM2878 ;
+        :workIsAbout        bdr:T1834 , bdr:WA9119 .
 }

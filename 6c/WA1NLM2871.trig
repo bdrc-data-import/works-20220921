@@ -18,6 +18,11 @@ bdg:WA1NLM2871 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG4A8009CE02310F4D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-03T21:20:18.853Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGECC229D57BBEEAF7
         a                   adm:UpdateData ;
         adm:logDate         "2021-10-18T15:53:21.417Z"^^xsd:dateTime ;
@@ -33,38 +38,38 @@ bdg:WA1NLM2871 {
     bda:WA1NLM2871  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2871 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "6c/WA1NLM2871.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2871 ;
-        adm:logEntry        bda:LG3E6E91ED5DBC6C37 , bda:LGECC229D57BBEEAF7 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG3E6E91ED5DBC6C37 , bda:LG4A8009CE02310F4D , bda:LGECC229D57BBEEAF7 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4A8009CE02310F4D
-        a                   :AgentAsCreator ;
-        :agent              bdr:P2156 ;
-        :role               bdr:R0ER0019 .
-    
     bdr:CR83E4C8EB66CE4587
-        a                   :AgentAsCreator ;
-        :agent              bdr:P168 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR9D9A21D74E4178E6
         a                   :AgentAsCreator ;
         :agent              bdr:P105 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRF68A3C5D745E7037
+    bdr:CR9D9A21D74E4178E6
         a                   :AgentAsCreator ;
         :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR9DE5558C40404347
+        a                   :AgentAsCreator ;
+        :agent              bdr:P168 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRF68A3C5D745E7037
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2156 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1NLM2871  a       :Work ;
         skos:prefLabel      "shAkya btsun blo bzang 'phrin las kyi/_ngag rnams phyogs su bsgrigs pa las/_sher phyin dngos brgyad don bdun cu'i/_rnam bshad legs bshad sgron me sogs/"@bo-x-ewts ;
         :catalogInfo        "Collection of texts written by Gelug masters including an explanation of the 8 topics and its 70 distinguishers of prajnaparamita; the method of reasoning; instruction in verse on the method of removing the poisons of the three klesa; and ritual for the protection of the individual from defilement leading to loss of consciousness; according to the dmigs brtse ma practices focusing upon Je Tsongkhapa."@en ;
-        :creator            bdr:CR4A8009CE02310F4D , bdr:CR83E4C8EB66CE4587 , bdr:CR9D9A21D74E4178E6 , bdr:CRF68A3C5D745E7037 ;
+        :creator            bdr:CR83E4C8EB66CE4587 , bdr:CR9D9A21D74E4178E6 , bdr:CR9DE5558C40404347 , bdr:CRF68A3C5D745E7037 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 , bdr:T977 ;

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3419 {
+    bda:LGA4C0F0BCCEB96FA0
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-03T16:19:31.837Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,20 @@ bdg:WA1NLM3419 {
     bda:WA1NLM3419  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3419 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "97/WA1NLM3419.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3419 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LGA4C0F0BCCEB96FA0 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3419  a       :Work ;
         skos:prefLabel      "bla ma mchod pa'i cho ga rgyas pa skal ldan slob ma'i re skong /"@bo-x-ewts ;
+        :catalogInfo        "Rituals for guruyoga (gurupuja) practices, unknown author"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3419 , bdr:W1NLM3419 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3419 , bdr:W1NLM3419 ;
+        :workIsAbout        bdr:T138 .
 }
