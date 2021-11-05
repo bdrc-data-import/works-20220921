@@ -11,35 +11,31 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA3CN27015 {
-    bda:LG1037E85F2D688770
-        a                   adm:UpdateData ;
-        adm:logDate         "2021-11-04T09:27:37.779Z"^^xsd:dateTime ;
-        adm:logMessage      "added info"@en ;
-        adm:logWho          bdu:U00007 .
-    
-    bda:LG6B0E819D1A77B281
+bdg:WA3CN27018 {
+    bda:LG24C6EAAED0D297EC
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-11-02T11:05:23.073Z"^^xsd:dateTime ;
+        adm:logDate         "2021-11-04T10:09:53.518Z"^^xsd:dateTime ;
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:WA3CN27015  a       adm:AdminData ;
+    bda:WA3CN27018  a       adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA3CN27015 ;
-        adm:facetIndex      3 ;
-        adm:gitPath         "f8/WA3CN27015.trig" ;
+        adm:adminAbout      bdr:WA3CN27018 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "19/WA3CN27018.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA3CN27015 ;
-        adm:logEntry        bda:LG1037E85F2D688770 , bda:LG6B0E819D1A77B281 ;
+        adm:graphId         bdg:WA3CN27018 ;
+        adm:logEntry        bda:LG24C6EAAED0D297EC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA3CN27015  a       :Work ;
-        skos:altLabel       "房山云居寺石刻佛教大藏经"@zh-hans , "房山石經"@zh-hant ;
-        skos:prefLabel      "房山石经"@zh-hans ;
-        :catalogInfo        "Fangshan Stone Sutras of Chinese Buddhist Canon"@en ;
+    bdr:MW3CN27018  skos:altLabel  "Yongle Beizang"@en .
+    
+    bdr:WA3CN27018  a       :Work ;
+        skos:altLabel       "Yongle Northern Canon"@en , "永樂北藏"@zh-hant ;
+        skos:prefLabel      "Yongle Beizang"@en , "永乐北藏"@zh-hans ;
+        :catalogInfo        "Yongle Northern Edition of Chinese & Japanese Buddhist Canon"@en ;
         :isRoot             true ;
         :language           bdr:LangZh ;
-        :workHasInstance    bdr:MW3CN27015 .
+        :workHasInstance    bdr:MW3CN27018 .
 }
