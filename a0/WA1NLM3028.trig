@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3028 {
+    bda:LGC85DC29D40D8CD4B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-05T09:19:42.823Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGDF4CC82C892E250C
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM3028 {
     bda:WA1NLM3028  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3028 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a0/WA1NLM3028.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3028 ;
-        adm:logEntry        bda:LGDF4CC82C892E250C , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LGC85DC29D40D8CD4B , bda:LGDF4CC82C892E250C , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3028  a       :Work ;
         skos:prefLabel      "dpal ldan lha mo'i sgo nas sho mig gnad gsal bar brtags tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 sho mig brtag tshul kyi gnad gsal bsnyen rgyud brjed thor bkod pa/ 2 phyugs nad zhi bar 'dod pa/ 3 bgegs gtor gtong tshul/ 4 tshe thar gtong tshul/ 5 mtsho bdun dgon gsar gyi gzhi bdag rnams mnyes par byed pa'i bsang mchod/ 6 byis pa'i bya 'dre bcos thabs/ 7 lha bsangs rnam dag chos sku ma/ 8 dpal rdo rje sems dpa' la brten pa'i gshin po'i sbyang chog mdor bsdus gzhan phan snying po/"@bo-x-ewts , "Method of examination of dice prognostication through Shridevi; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3028 , bdr:W1NLM3028 .
+        :workHasInstance    bdr:MW1NLM3028 , bdr:W1NLM3028 ;
+        :workIsAbout        bdr:T1234 , bdr:T2399 , bdr:T401 , bdr:T405 .
 }

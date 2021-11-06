@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3030 {
+    bda:LG5AE34735287C6D8D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-05T10:15:45.388Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGC539AF77575071D6
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,25 @@ bdg:WA1NLM3030 {
     bda:WA1NLM3030  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3030 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "40/WA1NLM3030.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3030 ;
-        adm:logEntry        bda:LGC539AF77575071D6 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG5AE34735287C6D8D , bda:LGC539AF77575071D6 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR106AEC6305FAAAEB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1317 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3030  a       :Work ;
         skos:prefLabel      "gdugs dkar mchog tu grub pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rje btsun tsong kha pa chen pos rjes su 'dzin pa'i smon lam/ 2 sangs rgyas sum cu so lnga sgrub thabs kyi cho ga ltung ba'i mun sel/ 3 'phags pa tshe dpag tu med pa 'chi med rnga sgra'i gzungs/ 4 sgrol ma'i maN+Dal bzhi ba'i cho ga dpag bsam snye ma/"@en , "Contemplation of Sitatapatra; other text also included."@en ;
+        :creator            bdr:CR106AEC6305FAAAEB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3030 , bdr:W1NLM3030 .
+        :workHasInstance    bdr:MW1NLM3030 , bdr:W1NLM3030 ;
+        :workIsAbout        bdr:T1248 , bdr:T1725 .
 }
