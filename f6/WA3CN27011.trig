@@ -18,6 +18,18 @@ bdg:WA3CN27011 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG51DE7928502381B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-08T15:05:58.759Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGB44DAA19C3215C6A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-08T14:06:32.551Z"^^xsd:dateTime ;
+        adm:logMessage      "edited cataInfo"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGBD80B4F7B0240C3F
         a                   adm:UpdateData ;
         adm:logDate         "2021-11-01T22:40:35.928Z"^^xsd:dateTime ;
@@ -33,18 +45,20 @@ bdg:WA3CN27011 {
     bda:WA3CN27011  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN27011 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "f6/WA3CN27011.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN27011 ;
-        adm:logEntry        bda:LG1869312BA2DFB1E5 , bda:LGBD80B4F7B0240C3F , bda:LGE918B644BE03FB40 ;
+        adm:logEntry        bda:LG1869312BA2DFB1E5 , bda:LG51DE7928502381B3 , bda:LGB44DAA19C3215C6A , bda:LGBD80B4F7B0240C3F , bda:LGE918B644BE03FB40 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:MW3CN27011  skos:altLabel  "Qianlong Canon"@en .
+    
     bdr:WA3CN27011  a       :Work ;
-        skos:altLabel       "清代官刻汉文大藏经"@zh-hans , "清藏"@zh-hans , "龍藏"@zh-hant ;
-        skos:prefLabel      "乾隆大藏经"@zh-hant ;
-        :catalogInfo        "Qianlong Edition of Chinese Buddhist Canon."@en ;
+        skos:altLabel       "Dragon Canon"@en , "清代官刻汉文大藏经"@zh-hans , "清藏"@zh-hans , "乾隆大藏經"@zh-hant , "龍藏"@zh-hant ;
+        skos:prefLabel      "Qianlong Canon"@en , "乾隆大藏经"@zh-hant ;
+        :catalogInfo        "Qianlong edition of Chinese Buddhist canon. \"Qianlong Canon\" is abbreviated as \"Dragon Canon\". This edition is based on the Ming \"Northern Canon\" and \"Southern Canon\", added quotes and miscellaneous works of famous chinese monks in the Ming and Qing dynasties, and important classics such as The collection \"chu san zang ji ji\" were withdrawn. However, this is the official version canon of the Qing Dynasty and it is the most complete preserved Chinese woodblock canon."@en ;
         :isRoot             true ;
         :language           bdr:LangZh ;
         :workHasInstance    bdr:MW3CN27011 , bdr:W3CN27011 .

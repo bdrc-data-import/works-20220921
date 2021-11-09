@@ -18,6 +18,12 @@ bdg:WA1NLM3162 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG657D86386138BFEC
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-08T18:41:40.939Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
@@ -27,17 +33,37 @@ bdg:WA1NLM3162 {
     bda:WA1NLM3162  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3162 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "c8/WA1NLM3162.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3162 ;
-        adm:logEntry        bda:LG5CA5C9C76EC96F01 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG5CA5C9C76EC96F01 , bda:LG657D86386138BFEC , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1742BD8C4C7FCE6D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P84 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR23CD94F4C060DD88
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRF1C66634901142A7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1003 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3162  a       :Work ;
-        skos:prefLabel      "paN chen thams cad mkhyen pa blo bzang chos kyi rgyal mtshan dpal bzang po'i zhal snga nas kyis mdzad pa'i bla ma mchod pa'i cho ga'i rnam bzhag rgyas par bshad pa'i tshig don gsal ba'i sgron me sogs/"@bo-x-ewts ;
+        skos:altLabel       "paN chen thams cad mkhyen pa blo bzang chos kyi rgyal mtshan dpal bzang po'i zhal snga nas kyis mdzad pa'i bla ma mchod pa'i cho ga'i rnam bzhag rgyas par bshad pa'i tshig don gsal ba'i sgron me sogs/"@bo-x-ewts ;
+        skos:prefLabel      "bla ma mchod pa'i cho ga'i rnam bzhag rgyas par bshad pa'i tshig don gsal ba'i sgron me sogs/"@bo-x-ewts ;
+        :catalogInfo        "A commentary of Panchen Lama's detailed analysis of Gurupuja by Manipa Samten Gyatso; incomplete topical outline of pratityasamutpada; and instructional manual for practising Madhyamaka philosophy."@en ;
+        :creator            bdr:CR1742BD8C4C7FCE6D , bdr:CR23CD94F4C060DD88 , bdr:CRF1C66634901142A7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3162 , bdr:W1NLM3162 .
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM3162 , bdr:W1NLM3162 ;
+        :workIsAbout        bdr:T138 , bdr:T2281 , bdr:T233 , bdr:T541 .
 }
