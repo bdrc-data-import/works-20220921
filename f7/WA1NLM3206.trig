@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3206 {
+    bda:LG66741CE5641062ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-09T18:17:39.443Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGC32B2D1EA59D6669
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,26 @@ bdg:WA1NLM3206 {
     bda:WA1NLM3206  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3206 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "f7/WA1NLM3206.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3206 ;
-        adm:logEntry        bda:LGC32B2D1EA59D6669 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG66741CE5641062ED , bda:LGC32B2D1EA59D6669 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRAA31D8EEEFBC200C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3206  a       :Work ;
-        skos:prefLabel      "grub mtha'i rnam bshad rang gzhan grub mtha' kun dang zab don mchog tu gsal ba kun bzang zhing gi nyi ma lung rigs rgya mtsho skye dgu'i re ba kun skong /"@bo-x-ewts ;
+        skos:altLabel       "grub mtha'i rnam bshad rang gzhan grub mtha' kun dang zab don mchog tu gsal ba kun bzang zhing gi nyi ma lung rigs rgya mtsho skye dgu'i re ba kun skong /"@bo-x-ewts ;
+        skos:prefLabel      "grub mtha'i rnam bshad kun bzang zhing gi nyi ma/"@bo-x-ewts ;
+        :catalogInfo        "Detailed commentary on various approaches of the philosophical schools of India by Gelug master Jamyang Zhadpai Dorjee."@en ;
+        :creator            bdr:CRAA31D8EEEFBC200C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T385 , bdr:T61 ;
         :workHasInstance    bdr:MW1NLM3206 , bdr:W1NLM3206 .
 }

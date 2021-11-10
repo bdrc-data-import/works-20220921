@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3229 {
+    bda:LG64BECEA73E2041F5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-09T18:17:40.667Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGF3E2513D84FC4971
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,26 @@ bdg:WA1NLM3229 {
     bda:WA1NLM3229  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3229 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "43/WA1NLM3229.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3229 ;
-        adm:logEntry        bda:LGF3E2513D84FC4971 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG64BECEA73E2041F5 , bda:LGF3E2513D84FC4971 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB42EA31AA94624D5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P95 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3229  a       :Work ;
         skos:prefLabel      "ma gcig lab kyi sgron ma'i rnam thar dang gcod kyi chos skor ma 'ongs lung bstan bcas pa/"@bo-x-ewts ;
+        :catalogInfo        "Biography of Machik Labdron. Includes chod practice texts and prophesies. Written by Tsundru Sengge (1207-1278)."@en ;
+        :creator            bdr:CRB42EA31AA94624D5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3229 , bdr:W1NLM3229 .
+        :workGenre          bdr:T3 , bdr:T33 ;
+        :workHasInstance    bdr:MW1NLM3229 , bdr:W1NLM3229 ;
+        :workIsAbout        bdr:P3312 , bdr:T194 .
 }

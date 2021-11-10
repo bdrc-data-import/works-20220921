@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3188 {
+    bda:LG3659F1DE2CDC81B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-09T18:17:38.232Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG4D9F65B0595A2690
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,36 @@ bdg:WA1NLM3188 {
     bda:WA1NLM3188  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3188 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "58/WA1NLM3188.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3188 ;
-        adm:logEntry        bda:LG4D9F65B0595A2690 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG3659F1DE2CDC81B3 , bda:LG4D9F65B0595A2690 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1EE9620FC4C10705
+        a                   :AgentAsCreator ;
+        :agent              bdr:P272 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR737220F74A96682C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P166 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRA687C09EA439BBAF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6118 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3188  a       :Work ;
         skos:prefLabel      "dus tshigs kyi mchan 'grel dka' gnad sgo brgya 'byed pa'i lde mig sogs/"@bo-x-ewts ;
+        :catalogInfo        "Annotated commenty of monastic calender; analysis of Alaya; preliminaries to the practice of Lamrim and other texts inclueded."@en ;
+        :creator            bdr:CR1EE9620FC4C10705 , bdr:CR737220F74A96682C , bdr:CRA687C09EA439BBAF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3188 , bdr:W1NLM3188 .
+        :workGenre          bdr:T304 ;
+        :workHasInstance    bdr:MW1NLM3188 , bdr:W1NLM3188 ;
+        :workIsAbout        bdr:T1133 , bdr:T1215 , bdr:T1344 , bdr:T2341 .
 }
