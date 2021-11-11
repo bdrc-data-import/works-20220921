@@ -14,7 +14,8 @@
 bdg:WA1NLM3226 {
     bda:LG7CCD71CEFFB0AB0E
         a                   adm:UpdateData ;
-        adm:logDate         "2021-11-09T18:17:40.135Z"^^xsd:dateTime ;
+        adm:logDate         "2021-11-10T14:32:11.562Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LG9B6B9FA149A0A3A9
@@ -32,7 +33,7 @@ bdg:WA1NLM3226 {
     bda:WA1NLM3226  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3226 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "65/WA1NLM3226.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3226 ;
@@ -40,9 +41,33 @@ bdg:WA1NLM3226 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR2B4B3B7857CF3370
+        a                   :AgentAsCreator ;
+        :agent              bdr:P303 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR9168A6F25BF69233
+        a                   :AgentAsCreator ;
+        :agent              bdr:P477 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR9BEAEEFE0D81020B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE46B4B7043DCBE50
+        a                   :AgentAsCreator ;
+        :agent              bdr:P251 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3226  a       :Work ;
         skos:prefLabel      "bya byed las gsum dus gsum dang bcas pa'i dper brjod che long bsdus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous texts such as grammatical tense; the general meaning of the seventh chapter of Abhisamaya Alamkara; and liturgical texts."@en ;
+        :creator            bdr:CR2B4B3B7857CF3370 , bdr:CR9168A6F25BF69233 , bdr:CR9BEAEEFE0D81020B , bdr:CRE46B4B7043DCBE50 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3226 , bdr:W1NLM3226 .
+        :workGenre          bdr:T1763 , bdr:T810 ;
+        :workHasInstance    bdr:MW1NLM3226 , bdr:W1NLM3226 ;
+        :workIsAbout        bdr:T00AG01323 , bdr:T452 , bdr:T4CZ16893 .
 }
