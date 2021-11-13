@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM529 {
+    bda:LG42D9AE0BE90F1F2A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-12T15:44:45.033Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG54EAC956F54874B5
         a                   adm:UpdateData ;
         adm:logDate         "2019-11-25T12:30:50.706Z"^^xsd:dateTime ;
@@ -39,18 +45,29 @@ bdg:WA1NLM529 {
     bda:WA1NLM529  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM529 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "1b/WA1NLM529.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM529 ;
-        adm:logEntry        bda:LG54EAC956F54874B5 , bda:LG6540D88B42C740C1 , bda:LGA823DCE50E251853 , bda:LGIM567371A3 ;
+        adm:logEntry        bda:LG42D9AE0BE90F1F2A , bda:LG54EAC956F54874B5 , bda:LG6540D88B42C740C1 , bda:LGA823DCE50E251853 , bda:LGIM567371A3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRAB44FAAD9AFE90D2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG230070 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRB63D678F493FE6A9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1591 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1NLM529  a        :Work ;
         skos:altLabel       "ming gi rgya mtsho'i rgyab gnon dag yig chen po skad kyi rgya mtsho 'am skad rigs gsal byed nyi ma chen po/"@bo-x-ewts ;
         skos:prefLabel      "dag yig chen po skad kyi rgya mtsho 'am skad rigs gsal byed nyi ma chen po/"@bo-x-ewts ;
-        :catalogInfo        "Verse orthographic dictionary by Drowa Rabjam Kunga Gyatsho and on the practice of vajrapani in the mahacakra form by Dhulzin Drakpa Gyaltshan."@en ;
+        :catalogInfo        "The 1st edition of the ming tsho, verse orthographic dictionary by Drowa Rabjam Kunga Gyatso; and on the practice of vajrapani in the mahacakra form by Dhulzin Drakpa Gyaltshan."@en ;
+        :creator            bdr:CRAB44FAAD9AFE90D2 , bdr:CRB63D678F493FE6A9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1 , bdr:T218 ;
