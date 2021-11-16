@@ -13,26 +13,31 @@
 
 bdg:WA1FEMC010078 {
     bda:LGF67148F6853FA19E
-        a                   adm:InitialDataCreation , adm:LogEntry ;
-        adm:logWho          bdu:U00092 .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-13"^^xsd:date ;
+        adm:logMessage      "entered cataloging for W1FEMC010078"@en ;
+        adm:logWho          bdu:U00086 .
+    
+    bda:LGIMC3FF7CDB  a     adm:UpdateData ;
+        adm:logAgent        "works-femc01-import.xql" ;
+        adm:logDate         "2019-08-14T18:48:23.321Z"^^xsd:dateTime ;
+        adm:logMessage      "imported FEMC 01 workW1FEMC010078"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA1FEMC010078
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC010078 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "2f/WA1FEMC010078.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC010078 ;
-        adm:logEntry        bda:LGF67148F6853FA19E ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:logEntry        bda:LGF67148F6853FA19E , bda:LGIMC3FF7CDB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bdr:WA1FEMC010078
         a                   :Work ;
-        skos:prefLabel      "វិសុទ្ធិមគ្គវិនិច្ឆ័យ"@km , "visuddhimagg vinicchăy"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workHasInstance    bdr:W1FEMC010626 , bdr:W1FEMC010646 , bdr:W1FEMC010651 , bdr:W1FEMC010744 , bdr:W1FEMC010745 , bdr:W1FEMC010746 , bdr:W1FEMC010771 , bdr:W1FEMC010794 , bdr:W1FEMC011558 , bdr:W1FEMC011559 , bdr:W1FEMC020436 , bdr:W1FEMC020437 , bdr:W1FEMC020438 , bdr:W1FEMC020439 , bdr:W1FEMC020471 , bdr:W1FEMC020472 , bdr:W1FEMC020701 , bdr:W1FEMC020778 , bdr:W1FEMC020779 , bdr:W1FEMC021882 ;
-        :workIsAbout        bdr:FEMC_Scheme_III_1 .
+        :workHasInstance    bdr:MW1FEMC010626 , bdr:MW1FEMC010646 , bdr:MW1FEMC010651 , bdr:MW1FEMC010744 , bdr:MW1FEMC010745 , bdr:MW1FEMC010746 , bdr:MW1FEMC010771 , bdr:MW1FEMC010794 , bdr:MW1FEMC011558 , bdr:MW1FEMC011559 , bdr:MW1FEMC020436 , bdr:MW1FEMC020437 , bdr:MW1FEMC020438 , bdr:MW1FEMC020439 , bdr:MW1FEMC020471 , bdr:MW1FEMC020472 , bdr:MW1FEMC020701 , bdr:MW1FEMC020778 , bdr:MW1FEMC020779 , bdr:MW1FEMC021882 , bdr:W1FEMC010626 , bdr:W1FEMC010646 , bdr:W1FEMC010651 , bdr:W1FEMC010744 , bdr:W1FEMC010745 , bdr:W1FEMC010746 , bdr:W1FEMC010771 , bdr:W1FEMC010794 , bdr:W1FEMC011558 , bdr:W1FEMC011559 , bdr:W1FEMC020436 , bdr:W1FEMC020437 , bdr:W1FEMC020438 , bdr:W1FEMC020439 , bdr:W1FEMC020471 , bdr:W1FEMC020472 , bdr:W1FEMC020701 , bdr:W1FEMC020778 , bdr:W1FEMC020779 , bdr:W1FEMC021882 .
 }

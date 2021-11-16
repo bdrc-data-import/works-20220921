@@ -13,26 +13,31 @@
 
 bdg:WA1FEMC010014 {
     bda:LG9EAABDC124D28806
-        a                   adm:InitialDataCreation , adm:LogEntry ;
-        adm:logWho          bdu:U00092 .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-20"^^xsd:date ;
+        adm:logMessage      "entered cataloging for W1FEMC010014"@en ;
+        adm:logWho          bdu:U00082 .
+    
+    bda:LGIMC3FF7CDB  a     adm:UpdateData ;
+        adm:logAgent        "works-femc01-import.xql" ;
+        adm:logDate         "2019-08-14T18:48:23.321Z"^^xsd:dateTime ;
+        adm:logMessage      "imported FEMC 01 workW1FEMC010014"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA1FEMC010014
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC010014 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "34/WA1FEMC010014.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC010014 ;
-        adm:logEntry        bda:LG9EAABDC124D28806 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:logEntry        bda:LG9EAABDC124D28806 , bda:LGIMC3FF7CDB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bdr:WA1FEMC010014
         a                   :Work ;
-        skos:prefLabel      "ពោធិបក្ខិយធម៌សង្ខេបសេចក្តី"@km , "bodhipakkhiyadhaṛm saṅkhep sec-ktī"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workHasInstance    bdr:W1FEMC011037 , bdr:W1FEMC020118 ;
-        :workIsAbout        bdr:FEMC_Scheme_III_1 .
+        :workHasInstance    bdr:MW1FEMC011037 , bdr:MW1FEMC020118 , bdr:W1FEMC011037 , bdr:W1FEMC020118 .
 }

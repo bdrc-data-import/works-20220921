@@ -13,26 +13,41 @@
 
 bdg:WA1FEMC020015 {
     bda:LGE0CF4579DD3891DA
-        a                   adm:InitialDataCreation , adm:LogEntry ;
-        adm:logWho          bdu:U00092 .
+        a                   adm:InitialDataCreation ;
+        adm:logMessage      "entered cataloging for W1FEMC020015"@en .
+    
+    bda:LGIM3045394C  a     adm:UpdateData ;
+        adm:logAgent        "works-femc01-import.xql" ;
+        adm:logDate         "2019-08-14T18:51:13.73Z"^^xsd:dateTime ;
+        adm:logMessage      "imported FEMC 01 workW1FEMC020015"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA1FEMC020015
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC020015 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "37/WA1FEMC020015.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC020015 ;
-        adm:logEntry        bda:LGE0CF4579DD3891DA ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:logEntry        bda:LGE0CF4579DD3891DA , bda:LGIM3045394C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bdr:DT2CFEF0A75827757B
+        a                   :DateIndication ;
+        :era                bdr:EraBE ;
+        :yearInEra          2486 .
+    
+    bdr:EV6893C9B94C1B6B6D
+        a                   :CompletedEvent ;
+        :dateIndication     bdr:DT2CFEF0A75827757B ;
+        :notAfter           "1944"^^xsd:gYear ;
+        :notBefore          "1943"^^xsd:gYear .
     
     bdr:WA1FEMC020015
         a                   :Work ;
-        skos:prefLabel      "អរិយធនសូត្រ"@km , "ariyadhan sūtr"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workHasInstance    bdr:W1FEMC010221 ;
-        :workIsAbout        bdr:FEMC_Scheme_III_2 .
+        :workEvent          bdr:EV6893C9B94C1B6B6D ;
+        :workHasInstance    bdr:MW1FEMC010221 , bdr:W1FEMC010221 .
 }

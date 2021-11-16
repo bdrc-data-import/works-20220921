@@ -13,26 +13,41 @@
 
 bdg:WA1FEMC020008 {
     bda:LG02F90CDA7FE2ED11
-        a                   adm:InitialDataCreation , adm:LogEntry ;
-        adm:logWho          bdu:U00092 .
+        a                   adm:InitialDataCreation ;
+        adm:logMessage      "entered cataloging for W1FEMC020008"@en .
+    
+    bda:LGIM3045394C  a     adm:UpdateData ;
+        adm:logAgent        "works-femc01-import.xql" ;
+        adm:logDate         "2019-08-14T18:51:13.73Z"^^xsd:dateTime ;
+        adm:logMessage      "imported FEMC 01 workW1FEMC020008"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA1FEMC020008
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC020008 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "2e/WA1FEMC020008.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC020008 ;
-        adm:logEntry        bda:LG02F90CDA7FE2ED11 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:logEntry        bda:LG02F90CDA7FE2ED11 , bda:LGIM3045394C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bdr:DT6838B932EA97F237
+        a                   :DateIndication ;
+        :era                bdr:EraBE ;
+        :yearInEra          2486 .
+    
+    bdr:EVEE19ED3546EBAB6A
+        a                   :CompletedEvent ;
+        :dateIndication     bdr:DT6838B932EA97F237 ;
+        :notAfter           "1944"^^xsd:gYear ;
+        :notBefore          "1943"^^xsd:gYear .
     
     bdr:WA1FEMC020008
         a                   :Work ;
-        skos:prefLabel      "និព្វានសូត្រ"@km , "nibbān sūtr"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workHasInstance    bdr:W1FEMC010083 , bdr:W1FEMC010792 , bdr:W1FEMC010839 , bdr:W1FEMC010843 , bdr:W1FEMC011015 , bdr:W1FEMC011448 , bdr:W1FEMC011449 , bdr:W1FEMC011549 , bdr:W1FEMC011550 , bdr:W1FEMC020197 , bdr:W1FEMC020198 , bdr:W1FEMC020199 , bdr:W1FEMC020304 , bdr:W1FEMC020517 , bdr:W1FEMC020533 , bdr:W1FEMC020732 , bdr:W1FEMC020898 , bdr:W1FEMC021592 , bdr:W1FEMC021923 , bdr:W1FEMC022052 , bdr:W1FEMC022122 , bdr:W1FEMC030210 , bdr:W1FEMC030211 , bdr:W1FEMC030212 , bdr:W1FEMC030213 ;
-        :workIsAbout        bdr:FEMC_Scheme_III_2 .
+        :workEvent          bdr:EVEE19ED3546EBAB6A ;
+        :workHasInstance    bdr:MW1FEMC010083 , bdr:MW1FEMC010792 , bdr:MW1FEMC010839 , bdr:MW1FEMC010843 , bdr:MW1FEMC011015 , bdr:MW1FEMC011448 , bdr:MW1FEMC011449 , bdr:MW1FEMC011549 , bdr:MW1FEMC011550 , bdr:MW1FEMC020197 , bdr:MW1FEMC020198 , bdr:MW1FEMC020199 , bdr:MW1FEMC020304 , bdr:MW1FEMC020517 , bdr:MW1FEMC020533 , bdr:MW1FEMC020732 , bdr:MW1FEMC020898 , bdr:MW1FEMC021592 , bdr:MW1FEMC021923 , bdr:MW1FEMC022052 , bdr:MW1FEMC022122 , bdr:MW1FEMC030210 , bdr:MW1FEMC030211 , bdr:MW1FEMC030212 , bdr:MW1FEMC030213 , bdr:W1FEMC010083 , bdr:W1FEMC010792 , bdr:W1FEMC010839 , bdr:W1FEMC010843 , bdr:W1FEMC011015 , bdr:W1FEMC011448 , bdr:W1FEMC011449 , bdr:W1FEMC011549 , bdr:W1FEMC011550 , bdr:W1FEMC020197 , bdr:W1FEMC020198 , bdr:W1FEMC020199 , bdr:W1FEMC020304 , bdr:W1FEMC020517 , bdr:W1FEMC020533 , bdr:W1FEMC020732 , bdr:W1FEMC020898 , bdr:W1FEMC021592 , bdr:W1FEMC021923 , bdr:W1FEMC022052 , bdr:W1FEMC022122 , bdr:W1FEMC030210 , bdr:W1FEMC030211 , bdr:W1FEMC030212 , bdr:W1FEMC030213 .
 }

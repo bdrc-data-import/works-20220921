@@ -13,26 +13,31 @@
 
 bdg:WA1FEMC010003 {
     bda:LGE05D13925D4B0F17
-        a                   adm:InitialDataCreation , adm:LogEntry ;
-        adm:logWho          bdu:U00092 .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-20"^^xsd:date ;
+        adm:logMessage      "entered cataloging for W1FEMC010003"@en ;
+        adm:logWho          bdu:U00082 .
+    
+    bda:LGIMC3FF7CDB  a     adm:UpdateData ;
+        adm:logAgent        "works-femc01-import.xql" ;
+        adm:logDate         "2019-08-14T18:48:23.321Z"^^xsd:dateTime ;
+        adm:logMessage      "imported FEMC 01 workW1FEMC010003"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA1FEMC010003
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC010003 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "c4/WA1FEMC010003.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC010003 ;
-        adm:logEntry        bda:LGE05D13925D4B0F17 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:logEntry        bda:LGE05D13925D4B0F17 , bda:LGIMC3FF7CDB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bdr:WA1FEMC010003
         a                   :Work ;
-        skos:prefLabel      "អរិយសច្ច"@km , "ariy sacc"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workHasInstance    bdr:W1FEMC010217 , bdr:W1FEMC010441 , bdr:W1FEMC010567 , bdr:W1FEMC010633 , bdr:W1FEMC010712 , bdr:W1FEMC010896 , bdr:W1FEMC010957 , bdr:W1FEMC011322 , bdr:W1FEMC011482 , bdr:W1FEMC011493 , bdr:W1FEMC011600 , bdr:W1FEMC020188 , bdr:W1FEMC020530 , bdr:W1FEMC020697 , bdr:W1FEMC021594 , bdr:W1FEMC021603 , bdr:W1FEMC021874 , bdr:W1FEMC030112 ;
-        :workIsAbout        bdr:FEMC_Scheme_III_1 .
+        :workHasInstance    bdr:MW1FEMC010217 , bdr:MW1FEMC010441 , bdr:MW1FEMC010567 , bdr:MW1FEMC010633 , bdr:MW1FEMC010712 , bdr:MW1FEMC010896 , bdr:MW1FEMC010957 , bdr:MW1FEMC011322 , bdr:MW1FEMC011482 , bdr:MW1FEMC011493 , bdr:MW1FEMC011600 , bdr:MW1FEMC020188 , bdr:MW1FEMC020530 , bdr:MW1FEMC020697 , bdr:MW1FEMC021594 , bdr:MW1FEMC021603 , bdr:MW1FEMC021874 , bdr:MW1FEMC030112 , bdr:W1FEMC010217 , bdr:W1FEMC010441 , bdr:W1FEMC010567 , bdr:W1FEMC010633 , bdr:W1FEMC010712 , bdr:W1FEMC010896 , bdr:W1FEMC010957 , bdr:W1FEMC011322 , bdr:W1FEMC011482 , bdr:W1FEMC011493 , bdr:W1FEMC011600 , bdr:W1FEMC020188 , bdr:W1FEMC020530 , bdr:W1FEMC020697 , bdr:W1FEMC021594 , bdr:W1FEMC021603 , bdr:W1FEMC021874 , bdr:W1FEMC030112 .
 }

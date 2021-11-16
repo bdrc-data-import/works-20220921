@@ -13,26 +13,43 @@
 
 bdg:WA1FEMC010045 {
     bda:LGA08F415A97FECA27
-        a                   adm:InitialDataCreation , adm:LogEntry ;
-        adm:logWho          bdu:U00092 .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-20"^^xsd:date ;
+        adm:logMessage      "entered cataloging for W1FEMC010045"@en ;
+        adm:logWho          bdu:U00082 .
+    
+    bda:LGIMC3FF7CDB  a     adm:UpdateData ;
+        adm:logAgent        "works-femc01-import.xql" ;
+        adm:logDate         "2019-08-14T18:48:23.321Z"^^xsd:dateTime ;
+        adm:logMessage      "imported FEMC 01 workW1FEMC010045"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA1FEMC010045
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC010045 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "de/WA1FEMC010045.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC010045 ;
-        adm:logEntry        bda:LGA08F415A97FECA27 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:logEntry        bda:LGA08F415A97FECA27 , bda:LGIMC3FF7CDB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bdr:DTF2D9B2C5F854FACF
+        a                   :DateIndication ;
+        :era                bdr:EraBE ;
+        :yearInEra          2510 .
+    
+    bdr:EV1A451DA9D8D6AD35
+        a                   :CompletedEvent ;
+        :dateIndication     bdr:DTF2D9B2C5F854FACF ;
+        :notAfter           "1968"^^xsd:gYear ;
+        :notBefore          "1967"^^xsd:gYear .
     
     bdr:WA1FEMC010045
         a                   :Work ;
-        skos:prefLabel      "នវហារាទិគុណ"@km , "navahārādiguṇ"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workHasInstance    bdr:W1FEMC011036 ;
-        :workIsAbout        bdr:FEMC_Scheme_III_1 .
+        :workEvent          bdr:EV1A451DA9D8D6AD35 ;
+        :workHasInstance    bdr:MW1FEMC011036 , bdr:W1FEMC011036 .
 }

@@ -13,26 +13,31 @@
 
 bdg:WA1FEMC010081 {
     bda:LG490F69C131A38683
-        a                   adm:InitialDataCreation , adm:LogEntry ;
-        adm:logWho          bdu:U00092 .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-13"^^xsd:date ;
+        adm:logMessage      "entered cataloging for W1FEMC010081"@en ;
+        adm:logWho          bdu:U00086 .
+    
+    bda:LGIMC3FF7CDB  a     adm:UpdateData ;
+        adm:logAgent        "works-femc01-import.xql" ;
+        adm:logDate         "2019-08-14T18:48:23.321Z"^^xsd:dateTime ;
+        adm:logMessage      "imported FEMC 01 workW1FEMC010081"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA1FEMC010081
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC010081 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "c3/WA1FEMC010081.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC010081 ;
-        adm:logEntry        bda:LG490F69C131A38683 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:logEntry        bda:LG490F69C131A38683 , bda:LGIMC3FF7CDB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bdr:WA1FEMC010081
         a                   :Work ;
-        skos:prefLabel      "ភិមវង្ស"@km , "bhimavaṅs"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workHasInstance    bdr:W1FEMC021892 ;
-        :workIsAbout        bdr:FEMC_Scheme_III_1 .
+        :workHasInstance    bdr:MW1FEMC021892 , bdr:W1FEMC021892 .
 }

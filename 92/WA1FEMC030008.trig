@@ -13,25 +13,31 @@
 
 bdg:WA1FEMC030008 {
     bda:LG54C108A1C5C686E8
-        a                   adm:InitialDataCreation , adm:LogEntry ;
-        adm:logWho          bdu:U00092 .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-09-07"^^xsd:date ;
+        adm:logMessage      "entered cataloging for W1FEMC030008"@en ;
+        adm:logWho          bdu:U00083 .
+    
+    bda:LGIM4F4FC78A  a     adm:UpdateData ;
+        adm:logAgent        "works-femc03-import.xql" ;
+        adm:logDate         "2021-08-09T15:39:57.044Z"^^xsd:dateTime ;
+        adm:logMessage      "imported FEMC 03 workW1FEMC030008"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA1FEMC030008
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC030008 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "92/WA1FEMC030008.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC030008 ;
-        adm:logEntry        bda:LG54C108A1C5C686E8 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:logEntry        bda:LG54C108A1C5C686E8 , bda:LGIM4F4FC78A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bdr:WA1FEMC030008
         a                   :Work ;
-        skos:prefLabel      "ជម្រះអាបត្តិទាំង៧កង"@km , "jamraḥ āpatti dāṃṅ 7 kaṅ"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workIsAbout        bdr:FEMC_Scheme_III_3 .
+        :workHasInstance    bdr:MW1FEMC011296 .
 }

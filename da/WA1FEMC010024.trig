@@ -13,26 +13,31 @@
 
 bdg:WA1FEMC010024 {
     bda:LG6FB2A1D1996672BA
-        a                   adm:InitialDataCreation , adm:LogEntry ;
-        adm:logWho          bdu:U00092 .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-20"^^xsd:date ;
+        adm:logMessage      "entered cataloging for W1FEMC010024"@en ;
+        adm:logWho          bdu:U00082 .
+    
+    bda:LGIMC3FF7CDB  a     adm:UpdateData ;
+        adm:logAgent        "works-femc01-import.xql" ;
+        adm:logDate         "2019-08-14T18:48:23.321Z"^^xsd:dateTime ;
+        adm:logMessage      "imported FEMC 01 workW1FEMC010024"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA1FEMC010024
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC010024 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "da/WA1FEMC010024.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC010024 ;
-        adm:logEntry        bda:LG6FB2A1D1996672BA ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:logEntry        bda:LG6FB2A1D1996672BA , bda:LGIMC3FF7CDB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
     
     bdr:WA1FEMC010024
         a                   :Work ;
-        skos:prefLabel      "ទសវង្ស"@km , "dasavaṅs"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workHasInstance    bdr:W1FEMC010090 , bdr:W1FEMC010109 , bdr:W1FEMC010430 , bdr:W1FEMC010710 , bdr:W1FEMC020146 , bdr:W1FEMC020147 , bdr:W1FEMC020148 , bdr:W1FEMC020772 , bdr:W1FEMC020895 , bdr:W1FEMC021628 , bdr:W1FEMC021902 , bdr:W1FEMC022209 , bdr:W1FEMC022210 ;
-        :workIsAbout        bdr:FEMC_Scheme_III_1 .
+        :workHasInstance    bdr:MW1FEMC010090 , bdr:MW1FEMC010109 , bdr:MW1FEMC010430 , bdr:MW1FEMC010710 , bdr:MW1FEMC020146 , bdr:MW1FEMC020147 , bdr:MW1FEMC020148 , bdr:MW1FEMC020772 , bdr:MW1FEMC020895 , bdr:MW1FEMC021628 , bdr:MW1FEMC021902 , bdr:MW1FEMC022209 , bdr:MW1FEMC022210 , bdr:W1FEMC010090 , bdr:W1FEMC010109 , bdr:W1FEMC010430 , bdr:W1FEMC010710 , bdr:W1FEMC020146 , bdr:W1FEMC020147 , bdr:W1FEMC020148 , bdr:W1FEMC020772 , bdr:W1FEMC020895 , bdr:W1FEMC021628 , bdr:W1FEMC021902 , bdr:W1FEMC022209 , bdr:W1FEMC022210 .
 }

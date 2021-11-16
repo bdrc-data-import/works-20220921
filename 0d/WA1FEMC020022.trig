@@ -13,26 +13,41 @@
 
 bdg:WA1FEMC020022 {
     bda:LGDC36C40FCE0645D9
-        a                   adm:InitialDataCreation , adm:LogEntry ;
-        adm:logWho          bdu:U00092 .
+        a                   adm:InitialDataCreation ;
+        adm:logMessage      "entered cataloging for W1FEMC020022"@en .
+    
+    bda:LGIM3045394C  a     adm:UpdateData ;
+        adm:logAgent        "works-femc01-import.xql" ;
+        adm:logDate         "2019-08-14T18:51:13.73Z"^^xsd:dateTime ;
+        adm:logMessage      "imported FEMC 01 workW1FEMC020022"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA1FEMC020022
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC020022 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "0d/WA1FEMC020022.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC020022 ;
-        adm:logEntry        bda:LGDC36C40FCE0645D9 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:logEntry        bda:LGDC36C40FCE0645D9 , bda:LGIM3045394C ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bdr:DT09166EB4B4BB20B4
+        a                   :DateIndication ;
+        :era                bdr:EraBE ;
+        :yearInEra          2488 .
+    
+    bdr:EV31E3B5FD3736AE39
+        a                   :CompletedEvent ;
+        :dateIndication     bdr:DT09166EB4B4BB20B4 ;
+        :notAfter           "1946"^^xsd:gYear ;
+        :notBefore          "1945"^^xsd:gYear .
     
     bdr:WA1FEMC020022
         a                   :Work ;
-        skos:prefLabel      "ខុទ្ទកនិកាយអដ្ឋកថាជាតក ឯកាទសនិបាត"@km , "khuddakanikāy aṭṭhakathā jātak Ekādasanipāt"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workHasInstance    bdr:W1FEMC010770 ;
-        :workIsAbout        bdr:FEMC_Scheme_III_2 .
+        :workEvent          bdr:EV31E3B5FD3736AE39 ;
+        :workHasInstance    bdr:MW1FEMC010770 , bdr:W1FEMC010770 .
 }

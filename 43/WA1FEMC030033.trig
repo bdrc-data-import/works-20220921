@@ -13,26 +13,43 @@
 
 bdg:WA1FEMC030033 {
     bda:LG6E3B73CCFA412688
-        a                   adm:InitialDataCreation , adm:LogEntry ;
-        adm:logWho          bdu:U00092 .
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-09-07"^^xsd:date ;
+        adm:logMessage      "entered cataloging for W1FEMC030033"@en ;
+        adm:logWho          bdu:U00083 .
+    
+    bda:LGIM4F4FC78A  a     adm:UpdateData ;
+        adm:logAgent        "works-femc03-import.xql" ;
+        adm:logDate         "2021-08-09T15:39:57.044Z"^^xsd:dateTime ;
+        adm:logMessage      "imported FEMC 03 workW1FEMC030033"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA1FEMC030033
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC030033 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "43/WA1FEMC030033.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC030033 ;
-        adm:logEntry        bda:LG6E3B73CCFA412688 ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:logEntry        bda:LG6E3B73CCFA412688 , bda:LGIM4F4FC78A ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bdr:DTE930009FE89DB275
+        a                   :DateIndication ;
+        :era                bdr:EraBE ;
+        :yearInEra          2494 .
+    
+    bdr:EVF14AE742AFAAB93A
+        a                   :CompletedEvent ;
+        :dateIndication     bdr:DTE930009FE89DB275 ;
+        :notAfter           "1952"^^xsd:gYear ;
+        :notBefore          "1951"^^xsd:gYear .
     
     bdr:WA1FEMC030033
         a                   :Work ;
-        skos:prefLabel      "វិន័យបាលីលះបង់និស្សគ្គិយ"@km , "vinăy pālī laḥ paṅ' nissaggiy"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workHasInstance    bdr:W1FEMC011247 ;
-        :workIsAbout        bdr:FEMC_Scheme_III_3 .
+        :workEvent          bdr:EVF14AE742AFAAB93A ;
+        :workHasInstance    bdr:MW1FEMC011247 , bdr:W1FEMC011247 .
 }

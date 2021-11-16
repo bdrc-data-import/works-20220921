@@ -1,0 +1,54 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA1FEMC010610 {
+    bda:LG3B90D1ADAC4AAC54
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2019-07-15"^^xsd:date ;
+        adm:logMessage      "entered cataloging for W1FEMC010610"@en ;
+        adm:logWho          bdu:U00089 .
+    
+    bda:LGIMC3FF7CDB  a     adm:UpdateData ;
+        adm:logAgent        "works-femc01-import.xql" ;
+        adm:logDate         "2019-08-14T18:48:23.321Z"^^xsd:dateTime ;
+        adm:logMessage      "imported FEMC 01 workW1FEMC010610"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
+    bda:WA1FEMC010610
+        a                   adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA1FEMC010610 ;
+        adm:facetIndex      5 ;
+        adm:gitPath         "60/WA1FEMC010610.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA1FEMC010610 ;
+        adm:logEntry        bda:LG3B90D1ADAC4AAC54 , bda:LGIMC3FF7CDB ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 .
+    
+    bdr:DT9C06BA969D1A314F
+        a                   :DateIndication ;
+        :era                bdr:EraBE ;
+        :yearInEra          2417 .
+    
+    bdr:EV67A028D79BC3D1E9
+        a                   :CompletedEvent ;
+        :dateIndication     bdr:DT9C06BA969D1A314F ;
+        :notAfter           "1875"^^xsd:gYear ;
+        :notBefore          "1874"^^xsd:gYear .
+    
+    bdr:WA1FEMC010610
+        a                   :Work ;
+        :isRoot             true ;
+        :language           bdr:LangKm ;
+        :workEvent          bdr:EV67A028D79BC3D1E9 .
+}
