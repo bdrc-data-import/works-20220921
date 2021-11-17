@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1990 {
+    bda:LG712E3FA0C2C8776B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-16T19:33:10.218Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGAE15C23B9AD3238A
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1990 {
     bda:WA1NLM1990  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1990 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "96/WA1NLM1990.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1990 ;
-        adm:logEntry        bda:LGAE15C23B9AD3238A , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG712E3FA0C2C8776B , bda:LGAE15C23B9AD3238A , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1990  a       :Work ;
         skos:prefLabel      "nor rgyun ma'i gzungs kyi man ngag sogs/"@bo-x-ewts ;
+        :catalogInfo        "Dharani of deity Vasundra and other texts included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1990 , bdr:W1NLM1990 .
+        :workGenre          bdr:T151 , bdr:T933 ;
+        :workHasInstance    bdr:MW1NLM1990 , bdr:W1NLM1990 ;
+        :workIsAbout        bdr:T1654 , bdr:T2005 , bdr:T26 , bdr:T2628 , bdr:T756 .
 }

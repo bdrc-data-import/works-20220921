@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3068 {
+    bda:LG1A9339D0289D73CA
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-16T09:56:58.47Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG264546857EDA6541
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM3068 {
     bda:WA1NLM3068  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3068 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "b8/WA1NLM3068.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3068 ;
-        adm:logEntry        bda:LG264546857EDA6541 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG1A9339D0289D73CA , bda:LG264546857EDA6541 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR25A4B814387E70DE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P209 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3068  a       :Work ;
         skos:prefLabel      "bsnyen rdzogs su bsgrub tshul gyi cho ga 'khyer bde kun phan sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bsangs kyi cho ga dngos grub kyi gzi 'od 'bar ba ngo mtshar rin po che'i phreng ba/ 2 g.yang 'bod legs pa/ 3 kha 'bar ma mdos chen ma mo'i gdon sogs gnod pa kun sel/ 4 dzam b+ha la dkar po'i chu sbyin dang 'brel ba'i g.yang 'gug phun tshogs kun sdud/ 5 'byung ba'i brtsi ba rin chen kun bsdus ma rig pa'i mun sel/ 6 'dod khams dbang phyug dmar zor rgyal mo'i sgrub thabs gtor chog"@en , "Ritual concerned with the Bhikshu vows; other text also included."@en ;
+        :creator            bdr:CR25A4B814387E70DE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3068 , bdr:W1NLM3068 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3068 , bdr:W1NLM3068 ;
+        :workIsAbout        bdr:T8LS15040 .
 }

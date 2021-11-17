@@ -18,6 +18,12 @@ bdg:WA1NLM1986 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG969E45C0588ED5B7
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-16T19:33:07Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM1986 {
     bda:WA1NLM1986  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1986 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "6f/WA1NLM1986.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1986 ;
-        adm:logEntry        bda:LG2286EC257290E67B , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG2286EC257290E67B , bda:LG969E45C0588ED5B7 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM1986  a       :Work ;
         skos:prefLabel      "bse rag 'byung po'i gdon 'tshe sel thabs kyi cho ga sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of ritual texts concerned with the way to remove harms create by demons; exorcise of negative forces; petition-offering, fulfillment and confession, cleansing offering, beverage offered to protectors."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1986 , bdr:W1NLM1986 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM1986 , bdr:W1NLM1986 ;
+        :workIsAbout        bdr:T1622 , bdr:T1726 , bdr:T1892 , bdr:T506 , bdr:T829 .
 }
