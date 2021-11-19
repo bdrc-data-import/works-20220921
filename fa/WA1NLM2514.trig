@@ -18,6 +18,12 @@ bdg:WA1NLM2514 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG28C339EE499E9C94
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-18T11:53:57.039Z"^^xsd:dateTime ;
+        adm:logMessage      "full catlod and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM2514 {
     bda:WA1NLM2514  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2514 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "fa/WA1NLM2514.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2514 ;
-        adm:logEntry        bda:LG071D3494CF36D2A1 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG071D3494CF36D2A1 , bda:LG28C339EE499E9C94 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2514  a       :Work ;
         skos:prefLabel      "dpal rdo rje sder mo'i gzungs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of repelling rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T769 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2514 , bdr:W1NLM2514 .
 }

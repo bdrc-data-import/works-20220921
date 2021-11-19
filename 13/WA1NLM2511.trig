@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2511 {
+    bda:LG6A62806797071C35
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-18T11:53:55.807Z"^^xsd:dateTime ;
+        adm:logMessage      "full catlod and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG8908E1DDCED10F4A
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM2511 {
     bda:WA1NLM2511  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2511 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "13/WA1NLM2511.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2511 ;
-        adm:logEntry        bda:LG8908E1DDCED10F4A , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG6A62806797071C35 , bda:LG8908E1DDCED10F4A , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2511  a       :Work ;
-        skos:prefLabel      "dgra lha dbang bstod sogs/"@bo-x-ewts ;
+        skos:prefLabel      "dgra lha dpang bstod sogs/"@bo-x-ewts ;
+        :catalogInfo        "Ritual offering of Dralha Warrior spirit and other miscellaneous rituals."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2511 , bdr:W1NLM2511 .
 }

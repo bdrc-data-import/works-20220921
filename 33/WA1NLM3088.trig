@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3088 {
+    bda:LG5E7BF3A2220C2012
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-18T14:38:04.483Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGD57F105B7F047D59
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM3088 {
     bda:WA1NLM3088  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3088 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "33/WA1NLM3088.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3088 ;
-        adm:logEntry        bda:LGD57F105B7F047D59 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG5E7BF3A2220C2012 , bda:LGD57F105B7F047D59 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR6F47CA664EDE5A43
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3088  a       :Work ;
         skos:prefLabel      "dam can chos kyi rgyal po'i gtor chog bskang gso bstod bskul dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rgyal po chen po rnam thos sras la mchod gtor 'bul rim pa dngos grub bang mdzod/ 2 chos skyong dregs pa lcam sring gi mngon rtogs bskang bshags bstod bskul dang bcas pa/ 3 dam can rdo rje legs pa'i mngon rtogs bskang bshags bstod bskul dang bcas pa/ 4 gnod sbyin chen po rdo rje bdud 'dul gyi bskang gso'i rim pa bar chad kun sel/ 5 lha chen tshangs pa chen po'i mngon rtogs bskang bshags bstod pa/ 6 spyi gsol/ 7 gsang ba'i bdag po dpal phyag na rdo rje'i bskang bshags bstod bskul dang bcas pa/ 8 gsang ba'i bdag po dpal phyag na rdo rje'i bskang bshags bstod bskul dang bcas pa/ 9 mgon dkar yid bzhin nor bu'i sgrub thabs/ 10 lha chen drag po gdong bzhi pa'i mngon rtogs bskang bshag pa bstod bskul dang bcas pa/"@bo-x-ewts , "Bali offering, regular propitiation, praise and exhortation of protector Damchen Chogyal; other text also included."@en ;
+        :creator            bdr:CR6F47CA664EDE5A43 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3088 , bdr:W1NLM3088 .
+        :workGenre          bdr:T1458 , bdr:T67 ;
+        :workHasInstance    bdr:MW1NLM3088 , bdr:W1NLM3088 ;
+        :workIsAbout        bdr:T1736 , bdr:T19 , bdr:T198 .
 }
