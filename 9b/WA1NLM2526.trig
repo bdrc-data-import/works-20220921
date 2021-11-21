@@ -18,6 +18,12 @@ bdg:WA1NLM2526 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG884DC996EB86F98F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-19T15:27:02.322Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM2526 {
     bda:WA1NLM2526  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2526 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "9b/WA1NLM2526.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2526 ;
-        adm:logEntry        bda:LG71BD6F7D25A5D93F , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG71BD6F7D25A5D93F , bda:LG884DC996EB86F98F , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRE3D300258FD3EC27
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4956 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2526  a       :Work ;
-        skos:prefLabel      "u rgyan pad+ma 'byung gnas kyis rgyal po khri srong lde'u btsan la gnang ba'i mi phyugs gang yin gyi gto bcos zhe dgu ma sogs/"@bo-x-ewts ;
+        skos:altLabel       "u rgyan pad+ma 'byung gnas kyis rgyal po khri srong lde'u btsan la gnang ba'i mi phyugs gang yin gyi gto bcos zhe dgu ma sogs/"@bo-x-ewts ;
+        skos:prefLabel      "mi phyugs gang yin gyi gto bcos zhe dgu ma sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
+        :creator            bdr:CRE3D300258FD3EC27 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2526 , bdr:W1NLM2526 .
 }

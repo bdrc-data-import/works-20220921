@@ -18,6 +18,12 @@ bdg:WA1NLM2530 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGD849FE5B9A096F7D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-19T15:27:03.533Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2530 {
     bda:WA1NLM2530  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2530 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "6d/WA1NLM2530.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2530 ;
-        adm:logEntry        bda:LG0E3BC3EE744F30D3 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG0E3BC3EE744F30D3 , bda:LGD849FE5B9A096F7D , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2530  a       :Work ;
-        skos:prefLabel      "ling ba'i yul gyi chos spyod zhes bya ba'i rnam thar chos rgyal gshin rje'i 'phring ba dad pa'i 'jug ngogs gru 'dzin 'jal sogs/"@bo-x-ewts ;
+        skos:altLabel       "ling ba'i yul gyi chos spyod zhes bya ba'i rnam thar chos rgyal gshin rje'i 'phring ba dad pa'i 'jug ngogs gru 'dzin 'jal sogs/"@bo-x-ewts ;
+        skos:prefLabel      "ling pa'i yul gyi chos spyod zhes bya ba'i rnam thar chos rgyal gshin rje'i 'phrin pa dad pa'i 'jug ngogs gru 'dzin zhing mjal sogs/"@bo-x-ewts ;
+        :catalogInfo        "Autobiographical account of a return from death experience and collection of sadhana manuals and related ritual."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2530 , bdr:W1NLM2530 .
+        :workGenre          bdr:T1CZ60 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2530 , bdr:W1NLM2530 ;
+        :workIsAbout        bdr:P2KG228585 .
 }

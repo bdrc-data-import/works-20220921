@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3096 {
+    bda:LG203667C7580F550F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-19T16:06:22.869Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG770A2A66DB9D981C
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,25 @@ bdg:WA1NLM3096 {
     bda:WA1NLM3096  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3096 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "f9/WA1NLM3096.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3096 ;
-        adm:logEntry        bda:LG770A2A66DB9D981C , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG203667C7580F550F , bda:LG770A2A66DB9D981C , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRF0573F3AA26A284D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3096  a       :Work ;
         skos:prefLabel      "lha klu gzhi bdag sa bdag sogs la ja mchod 'bul ba'i cho ga bde legs kun 'byung /"@bo-x-ewts ;
+        :catalogInfo        "Tea offering ritual of deities, naga, local propector, earth owner."@en ;
+        :creator            bdr:CRF0573F3AA26A284D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3096 , bdr:W1NLM3096 .
+        :workHasInstance    bdr:MW1NLM3096 , bdr:W1NLM3096 ;
+        :workIsAbout        bdr:T00AG01323 , bdr:T1191 , bdr:T1448 , bdr:T1631 , bdr:T2183 , bdr:T408 .
 }

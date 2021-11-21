@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2507 {
+    bda:LG11128A2121488C8D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-19T15:26:59.639Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG6B7659C17E4499A9
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2507 {
     bda:WA1NLM2507  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2507 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "20/WA1NLM2507.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2507 ;
-        adm:logEntry        bda:LG6B7659C17E4499A9 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG11128A2121488C8D , bda:LG6B7659C17E4499A9 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2507  a       :Work ;
-        skos:prefLabel      "jo bo shAkya mu ni dang lha mo rnams kyi sgo nas rims nad kun sel drag po'i me dpung gzhi la zhing 'chi med dpal ster bdud rtsi'i char 'bebs sogs/"@bo-x-ewts ;
+        skos:altLabel       "jo bo shAkya mu ni dang lha mo rnams kyi sgo nas rims nad kun sel drag po'i me dpung gzhi la zhing 'chi med dpal ster bdud rtsi'i char 'bebs sogs/"@bo-x-ewts ;
+        skos:prefLabel      "rims nad kun sel drag po'i me dpung gzhi la zhing 'chi med dpal ster bdud rtsi'i char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals, sadhana and dharanis"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2507 , bdr:W1NLM2507 .
 }

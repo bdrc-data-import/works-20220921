@@ -18,6 +18,12 @@ bdg:WA1NLM2522 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGE37FD2D04EDC0ED2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-19T15:27:00.566Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2522 {
     bda:WA1NLM2522  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2522 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "5b/WA1NLM2522.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2522 ;
-        adm:logEntry        bda:LG5905C79075F6EBF6 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG5905C79075F6EBF6 , bda:LGE37FD2D04EDC0ED2 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2522  a       :Work ;
-        skos:prefLabel      "rgyud kyi rgyal po dpal brtag pa gnyis pa'i rnam bshad rdo rje mkha' 'gro'i gsang mdzod ces bya ba las le'u drug pa'i rnam par bshad pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "rgyud kyi rgyal po dpal brtag pa gnyis pa'i rnam bshad rdo rje mkha' 'gro'i gsang mdzod ces bya ba las le'u drug pa'i rnam par bshad pa sogs/"@bo-x-ewts ;
+        skos:prefLabel      "brtag gnyis rnam bshad rdo rje mkha' 'gro'i gsang mdzod ces bya ba las le'u drug pa'i rnam par bshad pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "A commentary of the condensed version of sixth chapter of the Hevajra tantra, notes taken from Tsongkhapa's teachings on the practice of the six doctrines of Naropa and collection of rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2522 , bdr:W1NLM2522 .
+        :workGenre          bdr:T132 , bdr:T1478 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2522 , bdr:W1NLM2522 ;
+        :workIsAbout        bdr:T394 , bdr:WA3JT13399 .
 }

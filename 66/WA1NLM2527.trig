@@ -18,6 +18,12 @@ bdg:WA1NLM2527 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG456570719B23D228
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-19T15:27:02.704Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2527 {
     bda:WA1NLM2527  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2527 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "66/WA1NLM2527.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2527 ;
-        adm:logEntry        bda:LG1DB3B1D8B5193D6F , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG1DB3B1D8B5193D6F , bda:LG456570719B23D228 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2527  a       :Work ;
+        skos:altLabel       "rdo rje 'jigs byed lha bcu gsum ma'i sgrub thabs/"@bo-x-ewts ;
         skos:prefLabel      "rdo rje 'jigs byed bla brgyud sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2527 , bdr:W1NLM2527 .
 }
