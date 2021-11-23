@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2537 {
+    bda:LG3F6689F1C0774C87
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-22T13:24:39.763Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG4414491D0D6E34F4
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM2537 {
     bda:WA1NLM2537  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2537 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "56/WA1NLM2537.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2537 ;
-        adm:logEntry        bda:LG4414491D0D6E34F4 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG3F6689F1C0774C87 , bda:LG4414491D0D6E34F4 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2537  a       :Work ;
-        skos:prefLabel      "mchog gi dang po'i sangs rgyas las byung ba dpal dus kyi 'khor lo zhes bya ba rgyud kyi rgyal po sogs/"@bo-x-ewts ;
+        skos:altLabel       "mchog gi dang po'i sangs rgyas las byung ba dpal dus kyi 'khor lo zhes bya ba rgyud kyi rgyal po sogs/"@bo-x-ewts ;
+        skos:prefLabel      "dpal dus kyi 'khor lo zhes bya ba rgyud kyi rgyal po sogs/"@bo-x-ewts ;
+        :catalogInfo        "The First chapter of the Kalacakra Tantra and other miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2537 , bdr:W1NLM2537 .
+        :workHasInstance    bdr:MW1NLM2537 , bdr:W1NLM2537 ;
+        :workIsAbout        bdr:T633 .
 }

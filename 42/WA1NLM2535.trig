@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2535 {
+    bda:LGE9C1AC71B4B8DE4E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-22T13:24:39.061Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGF77B7562E56E6E57
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,27 @@ bdg:WA1NLM2535 {
     bda:WA1NLM2535  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2535 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "42/WA1NLM2535.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2535 ;
-        adm:logEntry        bda:LGF77B7562E56E6E57 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGE9C1AC71B4B8DE4E , bda:LGF77B7562E56E6E57 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRE1EC9091DF6126B9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2535  a       :Work ;
-        skos:prefLabel      "grub pa'i mtha' rnam par bzhag pa 'khrul spong gdong lnga'i sgra dbyangs thams cad mkhyen pa'i lam bzang gsal ba'i rin chen sgron me sogs/"@bo-x-ewts ;
+        skos:altLabel       "grub pa'i mtha' rnam par bzhag pa 'khrul spong gdong lnga'i sgra dbyangs thams cad mkhyen pa'i lam bzang gsal ba'i rin chen sgron me/"@bo-x-ewts ;
+        skos:prefLabel      "grub mtha' rnam bzhag 'khrul spong gdong lnga'i sgra dbyangs thams cad mkhyen pa'i lam bzang gsal ba'i rin chen sgron me sogs/"@bo-x-ewts ;
+        :catalogInfo        "Detailed analysis of philosophical view by Jamyang Zhadpa and other miscellaneous rituals and liturgical texts"@en ;
+        :creator            bdr:CRE1EC9091DF6126B9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2535 , bdr:W1NLM2535 .
+        :workGenre          bdr:T1CZ56 , bdr:T385 ;
+        :workHasInstance    bdr:MW1NLM2535 , bdr:W1NLM2535 ;
+        :workIsAbout        bdr:T430 .
 }
