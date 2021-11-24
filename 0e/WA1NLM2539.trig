@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2539 {
+    bda:LGB3329FFDDDC17EDD
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-23T14:51:20.376Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGF5515EF6E192AF49
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2539 {
     bda:WA1NLM2539  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2539 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "0e/WA1NLM2539.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2539 ;
-        adm:logEntry        bda:LGF5515EF6E192AF49 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGB3329FFDDDC17EDD , bda:LGF5515EF6E192AF49 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2539  a       :Work ;
-        skos:prefLabel      "'dul khrims gtsang bsrung yid dga' chos 'dzin gling gi'i gtor 'bul sogs/"@bo-x-ewts ;
+        skos:altLabel       "'dul khrims gtsang bsrung yid dga' chos 'dzin gling gi gtor 'bul sogs/"@bo-x-ewts ;
+        skos:prefLabel      "yid dga' chos 'dzin gling gi gtor 'bul sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals and prayers of Yiga Chozin Ling monastery"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2539 , bdr:W1NLM2539 .
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW1NLM2539 , bdr:W1NLM2539 ;
+        :workIsAbout        bdr:G471 , bdr:T1219 .
 }
