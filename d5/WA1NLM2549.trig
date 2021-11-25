@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2549 {
+    bda:LG950258BEE0D98A7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-24T13:12:52.09Z"^^xsd:dateTime ;
+        adm:logMessage      "full catlog and realeased"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGEDC01800EA0794C3
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM2549 {
     bda:WA1NLM2549  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2549 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d5/WA1NLM2549.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2549 ;
-        adm:logEntry        bda:LGEDC01800EA0794C3 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG950258BEE0D98A7F , bda:LGEDC01800EA0794C3 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2549  a       :Work ;
         skos:prefLabel      "ma gcig gsang spyod snyan brgyud las chog bsgrigs dgos 'dod kun 'byung sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of treasured collection of Gcod practices and other miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2549 , bdr:W1NLM2549 .
 }

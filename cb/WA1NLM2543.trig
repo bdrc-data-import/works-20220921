@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2543 {
+    bda:LGB7C7DF645E63C63D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-24T13:12:49.357Z"^^xsd:dateTime ;
+        adm:logMessage      "full catlog and realeased"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGE0EC3056FCA68260
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM2543 {
     bda:WA1NLM2543  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2543 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "cb/WA1NLM2543.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2543 ;
-        adm:logEntry        bda:LGE0EC3056FCA68260 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGB7C7DF645E63C63D , bda:LGE0EC3056FCA68260 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2543  a       :Work ;
         skos:prefLabel      "bsangs kyi cho ga bkra shis 'dod dgu char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous Incense offering and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2543 , bdr:W1NLM2543 .
 }

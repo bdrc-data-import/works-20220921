@@ -18,6 +18,12 @@ bdg:WA1NLM2550 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG851EE02BE94E57A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-24T13:12:52.614Z"^^xsd:dateTime ;
+        adm:logMessage      "full catlog and realeased"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2550 {
     bda:WA1NLM2550  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2550 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "6e/WA1NLM2550.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2550 ;
-        adm:logEntry        bda:LG5DD79650C0860F54 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG5DD79650C0860F54 , bda:LG851EE02BE94E57A3 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2550  a       :Work ;
-        skos:prefLabel      "dge slong ma dpal mo'i lugs kyi thugs rje chen po'i sgrub thabs sogs/"@bo-x-ewts ;
+        skos:altLabel       "dge slong ma dpal mo'i lugs kyi thugs rje chen po'i sgrub thabs sogs/"@bo-x-ewts ;
+        skos:prefLabel      "dpal mo'i lugs kyi thugs rje chen po'i sgrub thabs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Method for the practice of the ritual of fasting and silence according to the devotion to Avalokitesvara in the form taught by the bhiksuni Laksmi and other miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2550 , bdr:W1NLM2550 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2550 , bdr:W1NLM2550 ;
+        :workIsAbout        bdr:T147 .
 }
