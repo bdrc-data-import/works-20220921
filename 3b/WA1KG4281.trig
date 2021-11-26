@@ -36,25 +36,32 @@ bdg:WA1KG4281 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG4281  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4281 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "3b/WA1KG4281.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4281 ;
-        adm:logEntry        bda:LG339D0769381D6352 , bda:LG4D0AFCB8D19CB221 , bda:LG60844911CD0F8C97 , bda:LGD871160542ED985B ;
+        adm:logEntry        bda:LG339D0769381D6352 , bda:LG4D0AFCB8D19CB221 , bda:LG60844911CD0F8C97 , bda:LGD871160542ED985B , bda:LGIMEAF73E87 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6546C1B506FDDB79
+    bdr:CR0F7B8D8D0464A25D
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG4279 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1KG4281  a        :Work ;
         skos:prefLabel      "gsal bar bshad na bde blag tu grub pa'i gtam e ma ho/"@bo-x-ewts ;
-        :creator            bdr:CR6546C1B506FDDB79 ;
+        :creator            bdr:CR0F7B8D8D0464A25D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;

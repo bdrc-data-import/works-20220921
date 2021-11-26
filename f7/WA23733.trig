@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23733 {
-    bda:LG55784D30808CD282
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGD3F12BE3605C5A61
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
@@ -27,6 +23,10 @@ bdg:WA23733 {
         adm:logDate         "2008-12-10T09:50:56.205Z"^^xsd:dateTime ;
         adm:logMessage      "ctc6"@en ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LGF510A3D57A5A7F66
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -42,18 +42,25 @@ bdg:WA23733 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA23733  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23733 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "f7/WA23733.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23733 ;
-        adm:logEntry        bda:LG55784D30808CD282 , bda:LGD3F12BE3605C5A61 , bda:LGE46AEA56185481C9 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LGD3F12BE3605C5A61 , bda:LGE46AEA56185481C9 , bda:LGF510A3D57A5A7F66 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMEAF73E87 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF510A3D57A5A7F66
+    bdr:CRB03DDED90EBAC414
         a                   :AgentAsCreator ;
         :agent              bdr:P651 ;
         :role               bdr:R0ER0025 .
@@ -63,7 +70,7 @@ bdg:WA23733 {
     bdr:WA23733  a          :Work ;
         skos:prefLabel      "dam chos dgongs pa yongs 'dus/"@bo-x-ewts , "dam chos dgons pa yons 'dus : a collection of texts from the cycle revealed by spo-bo gter-ston bdud-'dul-rdo-rje"@en-x-mixed ;
         :catalogInfo        "Visionary revelations by Nyingma master Powo Terton Dudul Dorje (1615-1672)."@en ;
-        :creator            bdr:CRF510A3D57A5A7F66 ;
+        :creator            bdr:CRB03DDED90EBAC414 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

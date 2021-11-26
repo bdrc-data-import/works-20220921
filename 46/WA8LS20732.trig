@@ -24,15 +24,22 @@ bdg:WA8LS20732 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA8LS20732  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20732 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "46/WA8LS20732.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20732 ;
-        adm:logEntry        bda:LG0B1A32169BB540B6 , bda:LGC3A723E4174E4313 ;
+        adm:logEntry        bda:LG0B1A32169BB540B6 , bda:LGC3A723E4174E4313 , bda:LGIMEAF73E87 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA8LS20732  a       :Work ;

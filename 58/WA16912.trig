@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA16912 {
-    bda:LG92053495DD8744C1
+    bda:LG4411C660114AAD4A
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -55,18 +55,25 @@ bdg:WA16912 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA16912  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA16912 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "58/WA16912.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA16912 ;
-        adm:logEntry        bda:LG92053495DD8744C1 , bda:LGBF265C2C84D814BE , bda:LGF394A7868DC52FAB , bda:LGF9558F3C655D6963 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG4411C660114AAD4A , bda:LGBF265C2C84D814BE , bda:LGF394A7868DC52FAB , bda:LGF9558F3C655D6963 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A , bda:LGIMEAF73E87 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4411C660114AAD4A
+    bdr:CR4A61CDA012B8B821
         a                   :AgentAsCreator ;
         :agent              bdr:P4699 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +84,7 @@ bdg:WA16912 {
         skos:altLabel       "collected works of kyai-rdor mkhan-po nag-dban-mkhas-grub"@en ;
         skos:prefLabel      "gsung 'bum/_ngag dbang mkhas grub/"@bo-x-ewts , "the collected works of nag-dban-mkhas-grub, kyai-rdor mkhan-po of urga"@en ;
         :catalogInfo        "Collected Works by Mongol scholar Ngawang Khedrup (1779-1838), abbot of the Hevajra Practice College of Ulan Bator."@en ;
-        :creator            bdr:CR4411C660114AAD4A ;
+        :creator            bdr:CR4A61CDA012B8B821 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

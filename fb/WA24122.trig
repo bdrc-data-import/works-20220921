@@ -18,7 +18,7 @@ bdg:WA24122 {
         adm:logMessage      "changed place G#(dup.) from G3613 to G3248"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG800020243170E235
+    bda:LG607314077C5494B5
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -34,18 +34,25 @@ bdg:WA24122 {
         adm:logMessage      "corrected bib titles"@en ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA24122  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA24122 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "fb/WA24122.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA24122 ;
-        adm:logEntry        bda:LG483C1195119B9F20 , bda:LG800020243170E235 , bda:LGE2E79199BC3597AA , bda:LGFD48EB6D0D3D37F6 ;
+        adm:logEntry        bda:LG483C1195119B9F20 , bda:LG607314077C5494B5 , bda:LGE2E79199BC3597AA , bda:LGFD48EB6D0D3D37F6 , bda:LGIMEAF73E87 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR607314077C5494B5
+    bdr:CR8164E0A21C8D3613
         a                   :AgentAsCreator ;
         :agent              bdr:P2228 ;
         :role               bdr:R0ER0019 .
@@ -55,7 +62,7 @@ bdg:WA24122 {
     bdr:WA24122  a          :Work ;
         skos:altLabel       "guides to kailash and manasorwar pilgrimages"@en-x-mixed ;
         skos:prefLabel      "gangs ti se dang mtsho ma pham gyi gnas yig skor/"@bo-x-ewts , "two popular tibetan guides to the pilgrimages to mt. kailash and to lake manasarowar and to the lapchi glacier or godavari"@en-x-mixed ;
-        :creator            bdr:CR607314077C5494B5 ;
+        :creator            bdr:CR8164E0A21C8D3613 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T25 ;

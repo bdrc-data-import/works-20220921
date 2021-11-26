@@ -24,6 +24,10 @@ bdg:WA25975 {
         adm:logMessage      "add lc recored"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG6BB7A171D5AA887F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG7F66B8EBCCD4858D
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2009-08-18T10:15:28.353Z"^^xsd:dateTime ;
@@ -35,10 +39,6 @@ bdg:WA25975 {
         adm:logDate         "2012-04-18T11:41:28.946Z"^^xsd:dateTime ;
         adm:logMessage      "added WMDL and WMDL12"@en ;
         adm:logWho          bdu:U00032 .
-    
-    bda:LGCB62603EA4513F15
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGD87527ABC05145F1
         a                   adm:UpdateData ;
@@ -66,18 +66,25 @@ bdg:WA25975 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA25975  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25975 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "3b/WA25975.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25975 ;
-        adm:logEntry        bda:LG15389ACCC211156B , bda:LG67C014FC23C9B677 , bda:LG7F66B8EBCCD4858D , bda:LGB9131B4F70253AAC , bda:LGCB62603EA4513F15 , bda:LGD87527ABC05145F1 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG15389ACCC211156B , bda:LG67C014FC23C9B677 , bda:LG6BB7A171D5AA887F , bda:LG7F66B8EBCCD4858D , bda:LGB9131B4F70253AAC , bda:LGD87527ABC05145F1 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMEAF73E87 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6BB7A171D5AA887F
+    bdr:CRC0AD7D76E7D9CA52
         a                   :AgentAsCreator ;
         :agent              bdr:P8304 ;
         :role               bdr:R0ER0019 .
@@ -88,7 +95,7 @@ bdg:WA25975 {
         skos:altLabel       "go 'jo bla chung thub bstan shes rab rgya mtsho'i gsung thor phyogs bsdus/"@bo-x-ewts ;
         skos:prefLabel      "gsung thor bu/_thub bstan shes rab rgya mtsho/"@bo-x-ewts , "Go ʾjo Bla chung Thub btsan shes rab rgya mtshoʾi gsung thor phyogs bsdus bzhugs so =Collection of miscellaneous writings of Go ʾjo Bla chung Apho Thub bstan shes rab rgya mtsho, 1905-1975 /collected and compiled by Tashi Tsering ; edited by Tashi Tsering and Ngawang Lungtok."@en-x-mixed ;
         :catalogInfo        "Miscellaneous Writings by Gojo Lachung Apo Tubten Sherab Gyatso (1905-1975)."@en ;
-        :creator            bdr:CR6BB7A171D5AA887F ;
+        :creator            bdr:CRC0AD7D76E7D9CA52 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

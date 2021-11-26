@@ -18,6 +18,10 @@ bdg:WA30379 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG3A862AD4C678E068
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG8C25E1A6FBC1721B
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-12T16:59:32.009Z"^^xsd:dateTime ;
@@ -28,10 +32,6 @@ bdg:WA30379 {
         adm:logDate         "2015-03-03T10:48:52.216Z"^^xsd:dateTime ;
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00016 .
-    
-    bda:LGB11A07630D3FCB91
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGF396B4D9096CC189
         a                   adm:UpdateData ;
@@ -66,18 +66,25 @@ bdg:WA30379 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA30379  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30379 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "98/WA30379.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30379 ;
-        adm:logEntry        bda:LG087AA7DF3226C415 , bda:LG8C25E1A6FBC1721B , bda:LG8ED6B1F650141D68 , bda:LGB11A07630D3FCB91 , bda:LGF396B4D9096CC189 , bda:LGFD84DAC7B548C420 , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG087AA7DF3226C415 , bda:LG3A862AD4C678E068 , bda:LG8C25E1A6FBC1721B , bda:LG8ED6B1F650141D68 , bda:LGF396B4D9096CC189 , bda:LGFD84DAC7B548C420 , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMEAF73E87 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3A862AD4C678E068
+    bdr:CRB176ACBC899AB513
         a                   :AgentAsCreator ;
         :agent              bdr:P1846 ;
         :role               bdr:R0ER0019 .
@@ -86,7 +93,7 @@ bdg:WA30379 {
         skos:altLabel       "byang chub lam gyi rim pa nas 'byung ba'i nyams len gyi sgo rnam par nges pa legs gsung kun gyi nying khu/"@bo-x-ewts ;
         skos:prefLabel      "lam rim legs gsung kun gyi nying khu/"@bo-x-ewts ;
         :catalogInfo        "Presentation on practicing the graduated Lamrim path."@en ;
-        :creator            bdr:CR3A862AD4C678E068 ;
+        :creator            bdr:CRB176ACBC899AB513 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T238 , bdr:T245 ;

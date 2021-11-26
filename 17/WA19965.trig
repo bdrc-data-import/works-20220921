@@ -18,10 +18,6 @@ bdg:WA19965 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00001 .
     
-    bda:LG37374AD7A65EDE50
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG51A2EE011FD66B62
         a                   adm:UpdateData ;
         adm:logDate         "2010-11-16T14:51:30.99Z"^^xsd:dateTime ;
@@ -44,6 +40,10 @@ bdg:WA19965 {
         adm:logDate         "2008-07-21T10:12:43.91Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGE6A3B0C6D4EC7955
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
@@ -73,19 +73,25 @@ bdg:WA19965 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA19965  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19965 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "17/WA19965.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19965 ;
-        adm:logEntry        bda:LG21D97436A25E8D4D , bda:LG37374AD7A65EDE50 , bda:LG51A2EE011FD66B62 , bda:LG909E932EE5DCF4C3 , bda:LG987984487326A1B1 , bda:LG9A8DA3A1184C121D , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG21D97436A25E8D4D , bda:LG51A2EE011FD66B62 , bda:LG909E932EE5DCF4C3 , bda:LG987984487326A1B1 , bda:LG9A8DA3A1184C121D , bda:LGE6A3B0C6D4EC7955 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMEAF73E87 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE6A3B0C6D4EC7955
+    bdr:CRD7D008E1CD2A010C
         a                   :AgentAsCreator ;
         :agent              bdr:P6260 ;
         :role               bdr:R0ER0019 .
@@ -93,7 +99,7 @@ bdg:WA19965 {
     bdr:WA19965  a          :Work ;
         skos:prefLabel      "bod kyi lo rgyus gzhon nu dga' ba'i gtam phreng /"@bo-x-ewts ;
         :catalogInfo        "Bibliography of Tibetan historical materials."@en ;
-        :creator            bdr:CRE6A3B0C6D4EC7955 ;
+        :creator            bdr:CRD7D008E1CD2A010C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

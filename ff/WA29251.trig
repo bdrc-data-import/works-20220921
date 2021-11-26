@@ -30,6 +30,10 @@ bdg:WA29251 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LG5811F385AA99AD82
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG7959C78D4C0499DB
         a                   adm:UpdateData ;
         adm:logDate         "2011-07-20T09:52:23.394Z"^^xsd:dateTime ;
@@ -47,10 +51,6 @@ bdg:WA29251 {
         adm:logDate         "2015-02-04T11:16:27.41Z"^^xsd:dateTime ;
         adm:logMessage      "changed language"@en ;
         adm:logWho          bdu:U00013 .
-    
-    bda:LGEFD350EBA7881785
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -80,34 +80,41 @@ bdg:WA29251 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA29251  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29251 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "ff/WA29251.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29251 ;
-        adm:logEntry        bda:LG1452E2F468B9516A , bda:LG3650993CDF5FC743 , bda:LG4991B11661CF4B5B , bda:LG7959C78D4C0499DB , bda:LG933B47C9C848F285 , bda:LGD3A7C2023B5709B5 , bda:LGEFD350EBA7881785 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1452E2F468B9516A , bda:LG3650993CDF5FC743 , bda:LG4991B11661CF4B5B , bda:LG5811F385AA99AD82 , bda:LG7959C78D4C0499DB , bda:LG933B47C9C848F285 , bda:LGD3A7C2023B5709B5 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMEAF73E87 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA27295 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:CR09A6562DF25E85F9
         a                   :AgentAsCreator ;
+        :agent              bdr:P5254 ;
+        :role               bdr:R0ER0025 .
+    
+    bdr:CR408F6D3EA3D5CD7F
+        a                   :AgentAsCreator ;
         :agent              bdr:P686 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CR408F6D3EA3D5CD7F
+    bdr:CR67B37DB9682B95C7
         a                   :AgentAsCreator ;
         :agent              bdr:P657 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CR5811F385AA99AD82
-        a                   :AgentAsCreator ;
-        :agent              bdr:P5254 ;
-        :role               bdr:R0ER0025 .
-    
-    bdr:CR67B37DB9682B95C7
+    bdr:CR95F7B2934D9B122D
         a                   :AgentAsCreator ;
         :agent              bdr:P37 ;
         :role               bdr:R0ER0016 .
@@ -118,7 +125,7 @@ bdg:WA29251 {
         skos:altLabel       "Phur-pa texts of the Byaṅ-gter tradition :a collection of Vajrakīla teachings from the revelations of Rgod-kyildem-ʾphru-can /with liturgical presentations by ʾPhrin-las-bdud-ʾjoms, Rdo-brag Padma-phrin-las, and the 5th Dalai Lama Ṅag-dbaṅ-blo-bzaṅ-rgya-mtsho."@en-x-mixed , "phur pa texts the byang gter tradition"@en-x-mixed ;
         skos:prefLabel      "byang gter phur pa'i skor/"@bo-x-ewts , "a collection of vajrakila teachings from the revelations of rgod-kyi-ldem-'phru-can"@en-x-mixed ;
         :catalogInfo        "Collection of Vajrakila teachings from the revelations of Gokyi Demtruchen (1337-1409) and others."@en ;
-        :creator            bdr:CR09A6562DF25E85F9 , bdr:CR408F6D3EA3D5CD7F , bdr:CR5811F385AA99AD82 , bdr:CR67B37DB9682B95C7 ;
+        :creator            bdr:CR09A6562DF25E85F9 , bdr:CR408F6D3EA3D5CD7F , bdr:CR67B37DB9682B95C7 , bdr:CR95F7B2934D9B122D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T10MS11187 ;

@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23185 {
-    bda:LG2E95AF43ADA20D7F
+    bda:LG1EC8321C7C42A840
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -29,33 +29,40 @@ bdg:WA23185 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA23185  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23185 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "93/WA23185.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23185 ;
-        adm:logEntry        bda:LG2E95AF43ADA20D7F , bda:LGDD6C10EAD39489D3 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG1EC8321C7C42A840 , bda:LGDD6C10EAD39489D3 , bda:LGIMA1F3FB78EA , bda:LGIMEAF73E87 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1EC8321C7C42A840
-        a                   :AgentAsCreator ;
-        :agent              bdr:P5355 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRC15820517B3D5F48
+    bdr:CRBC922454C7083EE8
         a                   :AgentAsCreator ;
         :agent              bdr:P1015 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRC15820517B3D5F48
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5355 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW23185  skos:altLabel  "the biography of the first tre hor khang gsar skyabs mgon blo bzang tshul khrims bstan pa'i rgyal mtshan (1838-1897)"@en-x-mixed .
     
     bdr:WA23185  a          :Work ;
         skos:altLabel       "rigs dang dkyil 'khor rgya mtsho'i mnga' bdag nges pa don gyi rdo rje 'chang khang gsar skyabs mgon blo bzang tshul khrims bstan pa'i rgyal mtshan dpal bzang po'i rnam par thar pa/"@bo-x-ewts , "tre'i mgon khang ngam sde mgon po'i dkar chag"@bo-x-ewts , "an account of the tre'i mgon khang / sde mgon po"@en-x-mixed , "Tre-hor Khaṅ-gsar skyabs mgon Blo-bzaṅ-tshul-khrims Bstan-paʼi-rgyal-mtshan dpal bzaṅ poʼi rnam thar dad paʼi padmo bźad paʼi ñin byed /[Byams-pa-chos-grags]."@en-x-mixed ;
         skos:prefLabel      "tre hor khang gsar skyabs mgon blo bzang tshul khrims bstan pa'i rgyal mtshan dpal bzang po'i rnam thar dad pa'i padmo bzhad pa'i nyin byed/"@bo-x-ewts , "the biography of the first tre hor khang gsar skyabs mgon blo bzang tshul khrims bstan pa'i rgyal mtshan (1838-1897)"@en-x-mixed ;
-        :creator            bdr:CR1EC8321C7C42A840 , bdr:CRC15820517B3D5F48 ;
+        :creator            bdr:CRBC922454C7083EE8 , bdr:CRC15820517B3D5F48 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T13 , bdr:T3 ;

@@ -18,15 +18,15 @@ bdg:WA21889 {
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG5B9ACF76F039D66E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG6D626B32550B76E6
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-04-05T09:43:53.192Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
-    
-    bda:LGF2D27F720BCF1B67
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGIM4599A38FCE
         a                   adm:UpdateData ;
@@ -35,18 +35,25 @@ bdg:WA21889 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA21889  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21889 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "0f/WA21889.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21889 ;
-        adm:logEntry        bda:LG35551DBF115C60FC , bda:LG6D626B32550B76E6 , bda:LGF2D27F720BCF1B67 , bda:LGIM4599A38FCE ;
+        adm:logEntry        bda:LG35551DBF115C60FC , bda:LG5B9ACF76F039D66E , bda:LG6D626B32550B76E6 , bda:LGIM4599A38FCE , bda:LGIMEAF73E87 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5B9ACF76F039D66E
+    bdr:CRC28EBBEDE608EC8B
         a                   :AgentAsCreator ;
         :agent              bdr:P7390 ;
         :role               bdr:R0ER0019 .
@@ -54,7 +61,7 @@ bdg:WA21889 {
     bdr:WA21889  a          :Work ;
         skos:prefLabel      "bod kyi gna' bo'i shod sgrung /"@bo-x-ewts , "tibetan folk tales"@en ;
         :catalogInfo        "Collection of Tibetan folk tales."@en ;
-        :creator            bdr:CR5B9ACF76F039D66E ;
+        :creator            bdr:CRC28EBBEDE608EC8B ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn ;
         :workHasInstance    bdr:MW21889 , bdr:W21889 ;

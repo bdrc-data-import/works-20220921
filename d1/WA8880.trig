@@ -24,15 +24,15 @@ bdg:WA8880 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG5663D196A0B2BF15
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG5FD2B300E306244A
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
         adm:logMessage      "added Work to PL480"@en ;
         adm:logWhoStr       "add-works-to-PR1PL480" .
+    
+    bda:LGA66CCFC26A003A22
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -62,24 +62,31 @@ bdg:WA8880 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA8880  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8880 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "d1/WA8880.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8880 ;
-        adm:logEntry        bda:LG3B72FA36EABEB47F , bda:LG53DA908DCD8889B8 , bda:LG5663D196A0B2BF15 , bda:LG5FD2B300E306244A , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3B72FA36EABEB47F , bda:LG53DA908DCD8889B8 , bda:LG5FD2B300E306244A , bda:LGA66CCFC26A003A22 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMEAF73E87 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG12624 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRA66CCFC26A003A22
+    bdr:CR5E6136C51CA43014
         a                   :AgentAsCreator ;
         :agent              bdr:P656 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV5E6136C51CA43014
+    bdr:EV1262F17018BCE63D
         a                   :CompletedEvent ;
         :onYear             "1669"^^xsd:gYear .
     
@@ -89,10 +96,10 @@ bdg:WA8880 {
         skos:altLabel       "zab tig chos dbyings rang grol gyi sgrub skor/"@bo-x-ewts , "Zab tig chos dbyiṅs raṅ grol gyi sgrub skor ; a cycle of Rdzogs-chen practice from the revelations of Gar-dbaṅ-rdo-rje."@en-x-mixed ;
         skos:prefLabel      "zab tig chos dbyings rang gsal/"@bo-x-ewts , "a cycle of rdzogs chen practice from the revelations of gar dbang rdo rje"@en ;
         :catalogInfo        "Cycle of Dzogchen practices from the revelations of terton Garwang Dorje (1640-1685)."@en ;
-        :creator            bdr:CRA66CCFC26A003A22 ;
+        :creator            bdr:CR5E6136C51CA43014 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV5E6136C51CA43014 ;
+        :workEvent          bdr:EV1262F17018BCE63D ;
         :workGenre          bdr:T448 ;
         :workIsAbout        bdr:T1082 .
 }

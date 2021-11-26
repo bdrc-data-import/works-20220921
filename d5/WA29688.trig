@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29688 {
+    bda:LG25BD951C5DAA2ECA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG3624EA9A1E996A2E
         a                   adm:UpdateData ;
         adm:logDate         "2007-01-08T17:14:48.271Z"^^xsd:dateTime ;
@@ -28,10 +32,6 @@ bdg:WA29688 {
         a                   adm:UpdateData ;
         adm:logDate         "2010-10-12T13:30:12.211Z"^^xsd:dateTime ;
         adm:logMessage      "added to WMDL and WMDL05"@en .
-    
-    bda:LG6828F1C54DB15597
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGCC3E5724490BB97E
         a                   adm:UpdateData ;
@@ -66,19 +66,26 @@ bdg:WA29688 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA29688  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29688 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "d5/WA29688.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29688 ;
-        adm:logEntry        bda:LG3624EA9A1E996A2E , bda:LG3721350AE2BE27AB , bda:LG4948790D59461018 , bda:LG6828F1C54DB15597 , bda:LGCC3E5724490BB97E , bda:LGF632574792302B72 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG25BD951C5DAA2ECA , bda:LG3624EA9A1E996A2E , bda:LG3721350AE2BE27AB , bda:LG4948790D59461018 , bda:LGCC3E5724490BB97E , bda:LGF632574792302B72 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A , bda:LGIMEAF73E87 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1GS45274 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR25BD951C5DAA2ECA
+    bdr:CRF6DDE03A0E3F8D41
         a                   :AgentAsCreator ;
         :agent              bdr:P676 ;
         :role               bdr:R0ER0019 .
@@ -89,7 +96,7 @@ bdg:WA29688 {
         skos:altLabel       "kaH thog rdo rje gdan gyi rig 'dzin chen po tshe dbang nor bu'i zhabs kyi gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_tshe dbang nor bu/"@bo-x-ewts , "the collected works (gsun 'bum) of kah-thog rig-'dzin tshe-dban-nor-bu"@en-x-mixed ;
         :catalogInfo        "Collected Works by Katok Rigzin Tsewang Norbu (1698-1755). Set contains several major works not included in the alternative 4 volume edition, such as his study of Chinese Buddhism, history of the Kagye teachings, and account of his negotion of a peace settlement in a war between Ladakh and Mube. Set also contains many works on astrology and the Kalachakra that are unique to this version of his Collected Works."@en ;
-        :creator            bdr:CR25BD951C5DAA2ECA ;
+        :creator            bdr:CRF6DDE03A0E3F8D41 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

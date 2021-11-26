@@ -56,26 +56,33 @@ bdg:WA1KG3982 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIMEAF73E87  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG3982  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG3982 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "d0/WA1KG3982.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG3982 ;
-        adm:logEntry        bda:LG869DC4E33C9AB4DD , bda:LGA178DED782178A97 , bda:LGB7EF874001897775 , bda:LGFCC62BA1196094FF , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG869DC4E33C9AB4DD , bda:LGA178DED782178A97 , bda:LGB7EF874001897775 , bda:LGFCC62BA1196094FF , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMEAF73E87 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR73A9AAEBBD6C854D
-        a                   :AgentAsCreator ;
-        :agent              bdr:P64 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR8A6C8B73C7EC4B67
+    bdr:CR6530F6FF17BB8CEF
         a                   :AgentAsCreator ;
         :agent              bdr:P216 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CR8A6C8B73C7EC4B67
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1KG3982  skos:altLabel  "the collected gcod teachings of the dge lugs pa tradition"@en .
     
@@ -83,7 +90,7 @@ bdg:WA1KG3982 {
         skos:altLabel       "Gcod tshogs :the collected Gcod teachings of the Dge-lugs-pa tradition /by Ma-ti Bhadra-Kirti, Blo-bzaṅ-don-ldan, and others."@en-x-mixed ;
         skos:prefLabel      "gcod tshogs/"@bo-x-ewts , "the collected gcod teachings of the dge lugs pa tradition"@en ;
         :catalogInfo        "Selection of chod teachings from by the Geluk order. Written by Je Tsongkapa Lobzang Drakpa (1357-1419), Chopa Lobzang Dhonden (20th cent.) and other Geluk authors."@en ;
-        :creator            bdr:CR73A9AAEBBD6C854D , bdr:CR8A6C8B73C7EC4B67 ;
+        :creator            bdr:CR6530F6FF17BB8CEF , bdr:CR8A6C8B73C7EC4B67 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG3982 , bdr:W1KG3982 ;
