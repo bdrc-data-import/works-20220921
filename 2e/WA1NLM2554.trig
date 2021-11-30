@@ -18,6 +18,12 @@ bdg:WA1NLM2554 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG957AFE2C8640A46A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-29T12:12:56.491Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2554 {
     bda:WA1NLM2554  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2554 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "2e/WA1NLM2554.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2554 ;
-        adm:logEntry        bda:LG14FA1B3CD8C65A08 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG14FA1B3CD8C65A08 , bda:LG957AFE2C8640A46A , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2554  a       :Work ;
-        skos:prefLabel      "'dir slob dpon chen po pad+ma ka ra'i thugs rje'i snying khu mdos chog sna tshogs blto sgro sa ma ya bsgyur chen dga' ba'i ltad mo sogs/"@bo-x-ewts ;
+        skos:altLabel       "'dir slob dpon chen po pad+ma ka ra'i thugs rje'i snying khu mdos chog sna tshogs blto sgro sa ma ya bsgyur chen dga' ba'i ltad mo sogs/"@bo-x-ewts ;
+        skos:prefLabel      "mdos chog sna tshogs blto sgro sa ma ya bsgyur chen dga' ba'i ltad mo sogs/"@bo-x-ewts ;
+        :catalogInfo        "A different kinds of thread-cross rituals by Padmasambhava and other miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T98 ;
         :workHasInstance    bdr:MW1NLM2554 , bdr:W1NLM2554 .
 }

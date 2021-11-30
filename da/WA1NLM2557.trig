@@ -18,6 +18,12 @@ bdg:WA1NLM2557 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGEF3BEC381252F6E2
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-11-29T12:12:57.279Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2557 {
     bda:WA1NLM2557  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2557 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "da/WA1NLM2557.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2557 ;
-        adm:logEntry        bda:LG5FCC1410B3ED7A51 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG5FCC1410B3ED7A51 , bda:LGEF3BEC381252F6E2 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2557  a       :Work ;
-        skos:prefLabel      "o rgyan slob dpon pad+ma 'byung gnas kyis mdzad pa rdzu 'phrul gyi 'phur lto brgya rtsa ba rgya nag nas 'byung ba'i tshul sogs/"@bo-x-ewts ;
+        skos:altLabel       "o rgyan slob dpon pad+ma 'byung gnas kyis mdzad pa rdzu 'phrul gyi 'phur lto brgya rtsa ba rgya nag nas 'byung ba'i tshul sogs/"@bo-x-ewts ;
+        skos:prefLabel      "slob dpon pad+ma 'byung gnas kyis mdzad pa rdzu 'phrul gyi 'phur lto brgya rtsa ba rgya nag nas 'byung ba'i tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2557 , bdr:W1NLM2557 .
 }
