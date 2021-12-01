@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21716 {
-    bda:LG14B00E4B015D42FC
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG4972D1A52CD7E812
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-04T11:59:52.43Z"^^xsd:dateTime ;
         adm:logMessage      "coreected T#s"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG8413FD1B8754F381
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG8D72097A72236569
         a                   adm:UpdateData ;
@@ -55,6 +55,12 @@ bdg:WA21716 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
@@ -65,15 +71,16 @@ bdg:WA21716 {
     bda:WA21716  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21716 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "ea/WA21716.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21716 ;
-        adm:logEntry        bda:LG14B00E4B015D42FC , bda:LG4972D1A52CD7E812 , bda:LG8D72097A72236569 , bda:LGC6EA425466E68510 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG4972D1A52CD7E812 , bda:LG8413FD1B8754F381 , bda:LG8D72097A72236569 , bda:LGC6EA425466E68510 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM7CC15F8F , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8413FD1B8754F381
+    bdr:CRAC5B977F44D14F7F
         a                   :AgentAsCreator ;
         :agent              bdr:P7317 ;
         :role               bdr:R0ER0019 .
@@ -84,7 +91,7 @@ bdg:WA21716 {
         skos:altLabel       "da lai la ma zhuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "tA la'i bla ma'i rnam thar/"@bo-x-ewts , "达赖喇嘛传"@zh-hans ;
         :catalogInfo        "Collective biographies of H. H. the Dalai Lamas (1st to 14th)."@en ;
-        :creator            bdr:CR8413FD1B8754F381 ;
+        :creator            bdr:CRAC5B977F44D14F7F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

@@ -12,22 +12,28 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27432 {
-    bda:LG2ECFF3EEECA60C98
+    bda:LG0B4E68531B0A0A0F
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA27432  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27432 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d5/WA27432.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27432 ;
-        adm:logEntry        bda:LG2ECFF3EEECA60C98 ;
+        adm:logEntry        bda:LG0B4E68531B0A0A0F , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CR0B4E68531B0A0A0F
+    bdr:CR6E975C68132C7C5E
         a                   :AgentAsCreator ;
         :agent              bdr:P654 ;
         :role               bdr:R0ER0025 .
@@ -35,7 +41,7 @@ bdg:WA27432 {
     bdr:WA27432  a          :Work ;
         skos:altLabel       "pad+ma ba dz+ra gyi las byang las rim brgya rtsa'i cha lag chos skyong ma ning nag po'ilas byang rdo rje me 'bar dug rlung spu gri reg gcod/"@bo-x-ewts ;
         skos:prefLabel      "chos skyong ma ning nag po dug rlung spu gri reg gcod/"@bo-x-ewts ;
-        :creator            bdr:CR0B4E68531B0A0A0F ;
+        :creator            bdr:CR6E975C68132C7C5E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW27432 ;

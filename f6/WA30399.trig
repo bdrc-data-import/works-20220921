@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30399 {
-    bda:LG044F083845EAB114
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG7E6B2B17F4D59DC0
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-12T15:00:22.537Z"^^xsd:dateTime ;
@@ -27,6 +23,10 @@ bdg:WA30399 {
         adm:logDate         "2007-12-18T16:26:16.705Z"^^xsd:dateTime ;
         adm:logMessage      "annotated"@en ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LGAAE77623B41B1C03
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGBCD5F8F4EA63B6B7
         a                   adm:UpdateData ;
@@ -52,6 +52,12 @@ bdg:WA30399 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -69,12 +75,13 @@ bdg:WA30399 {
     bda:WA30399  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30399 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "f6/WA30399.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30399 ;
-        adm:logEntry        bda:LG044F083845EAB114 , bda:LG7E6B2B17F4D59DC0 , bda:LG9BAF604E302CC512 , bda:LGBCD5F8F4EA63B6B7 , bda:LGCE2B5819E9EE4851 , bda:LGF762E277AA3DAB6F , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG7E6B2B17F4D59DC0 , bda:LG9BAF604E302CC512 , bda:LGAAE77623B41B1C03 , bda:LGBCD5F8F4EA63B6B7 , bda:LGCE2B5819E9EE4851 , bda:LGF762E277AA3DAB6F , bda:LGIM5A753E00B7 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA30399  a          :Work ;

@@ -24,18 +24,25 @@ bdg:WA1KG17222 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG17222  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG17222 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "4f/WA1KG17222.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG17222 ;
-        adm:logEntry        bda:LGD188A0BFD53939AD , bda:LGEA12980CE5BEFC8F ;
+        adm:logEntry        bda:LGD188A0BFD53939AD , bda:LGEA12980CE5BEFC8F , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR58348A53E167615A
+    bdr:CRF6B13E384E99F61D
         a                   :AgentAsCreator ;
         :agent              bdr:P219 ;
         :role               bdr:R0ER0019 .
@@ -43,7 +50,7 @@ bdg:WA1KG17222 {
     bdr:WA1KG17222  a       :Work ;
         skos:prefLabel      "rgya gar gyi gnas chen khag la bgrod pa'i lam yig"@bo-x-ewts ;
         :catalogInfo        "Guide to the Buddhist pligrimage sites in India"@en ;
-        :creator            bdr:CR58348A53E167615A ;
+        :creator            bdr:CRF6B13E384E99F61D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T25 ;

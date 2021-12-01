@@ -12,22 +12,28 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27431 {
-    bda:LG1BFB23BE5BF62568
+    bda:LG440F5285A3080CAF
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA27431  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27431 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "82/WA27431.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27431 ;
-        adm:logEntry        bda:LG1BFB23BE5BF62568 ;
+        adm:logEntry        bda:LG440F5285A3080CAF , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CR440F5285A3080CAF
+    bdr:CRB3E9A506AC873516
         a                   :AgentAsCreator ;
         :agent              bdr:P654 ;
         :role               bdr:R0ER0025 .
@@ -35,7 +41,7 @@ bdg:WA27431 {
     bdr:WA27431  a          :Work ;
         skos:altLabel       "pad+ma ba dz+ra grub thob rgya mtsho'i dkyil 'khor las rim brgya rtsa'i cha lag dzambha la nag po'i sgrub thabs rdo rje nam mkha'i mdzod/"@bo-x-ewts ;
         skos:prefLabel      "dzambha la nag po'i sgrub thabs nam mkha'i mdzod/"@bo-x-ewts ;
-        :creator            bdr:CR440F5285A3080CAF ;
+        :creator            bdr:CRB3E9A506AC873516 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1 ;

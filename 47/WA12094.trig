@@ -34,7 +34,7 @@ bdg:WA12094 {
         adm:logDate         "2009-08-03T11:28:29.231Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGA0CA24E38B6C4675
+    bda:LG9B13F1A164427B2C
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -51,6 +51,12 @@ bdg:WA12094 {
         adm:logMessage      "updated catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -69,15 +75,16 @@ bdg:WA12094 {
     bda:WA12094  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA12094 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "47/WA12094.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA12094 ;
-        adm:logEntry        bda:LG32138B4B55D9CDD8 , bda:LG341DB15F5536F090 , bda:LG6F70FE4D1E3BB7AA , bda:LG8E07E204DC1DC3B0 , bda:LGA0CA24E38B6C4675 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG32138B4B55D9CDD8 , bda:LG341DB15F5536F090 , bda:LG6F70FE4D1E3BB7AA , bda:LG8E07E204DC1DC3B0 , bda:LG9B13F1A164427B2C , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9B13F1A164427B2C
+    bdr:CR91C1F5EAD7AD860B
         a                   :AgentAsCreator ;
         :agent              bdr:P1298 ;
         :role               bdr:R0ER0019 .
@@ -88,7 +95,7 @@ bdg:WA12094 {
         skos:altLabel       "chos mngon pa gsal byed legs par bshad pa'i rgya mtsho/"@bo-x-ewts , "mdzod chung /"@bo-x-ewts , "Chos mṅon pa gsal byed legs par bśad paʼi rgya mtsho :a concise exposition of the Abhidharmakoṣa of Ācārya Vasubandhu /by Mchims-ston Blo-bzaṅ-grags-pa."@en-x-mixed ;
         skos:prefLabel      "mngon pa mdzod gsal byed legs par bshad pa'i rgya mtsho/"@bo-x-ewts , "chos mnon pa gsal byed legs par bsad pa'i rgya mtsho : a concise exposition of the abhidharmakosa of acarya vasubandhu"@en-x-mixed ;
         :catalogInfo        "Commentary on the Abhidharmakosa by Chim Lobsang Drakpa (1299-1375), an abbot of Narthang Monastery."@en ;
-        :creator            bdr:CR9B13F1A164427B2C ;
+        :creator            bdr:CR91C1F5EAD7AD860B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

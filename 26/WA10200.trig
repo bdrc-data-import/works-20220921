@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA10200 {
-    bda:LG28FDE0456234BBC2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG2C9EA0FA0D562D4B
         a                   adm:UpdateData ;
         adm:logDate         "2011-08-29T14:36:45.028Z"^^xsd:dateTime ;
@@ -45,6 +41,10 @@ bdg:WA10200 {
         adm:logDate         "2008-06-09T12:54:22.902Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGCC1DCBCC861D5832
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGCF4E30407C3B3F8D
         a                   adm:UpdateData ;
@@ -78,6 +78,12 @@ bdg:WA10200 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -88,15 +94,16 @@ bdg:WA10200 {
     bda:WA10200  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA10200 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "26/WA10200.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA10200 ;
-        adm:logEntry        bda:LG28FDE0456234BBC2 , bda:LG2C9EA0FA0D562D4B , bda:LG39D183CAF34BAF84 , bda:LG52FAB12EDFF9B8ED , bda:LG9BD95C3B16559DBE , bda:LGA7CEDEEB93078A2E , bda:LGCF4E30407C3B3F8D , bda:LGF5AAE10A1B6FDFEA , bda:LGFECC68C384748F60 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2C9EA0FA0D562D4B , bda:LG39D183CAF34BAF84 , bda:LG52FAB12EDFF9B8ED , bda:LG9BD95C3B16559DBE , bda:LGA7CEDEEB93078A2E , bda:LGCC1DCBCC861D5832 , bda:LGCF4E30407C3B3F8D , bda:LGF5AAE10A1B6FDFEA , bda:LGFECC68C384748F60 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCC1DCBCC861D5832
+    bdr:CRBE2E5F838283CEED
         a                   :AgentAsCreator ;
         :agent              bdr:P748 ;
         :role               bdr:R0ER0019 .
@@ -104,7 +111,7 @@ bdg:WA10200 {
     bdr:WA10200  a          :Work ;
         skos:prefLabel      "gsung 'bum/_thub bstan brtson 'grus/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Dzogchen Khenpo Tubten Tsondru (1920-1979)."@en ;
-        :creator            bdr:CRCC1DCBCC861D5832 ;
+        :creator            bdr:CRBE2E5F838283CEED ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

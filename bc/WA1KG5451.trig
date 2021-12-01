@@ -31,6 +31,12 @@ bdg:WA1KG5451 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -41,16 +47,17 @@ bdg:WA1KG5451 {
     bda:WA1KG5451  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG5451 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "bc/WA1KG5451.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG5451 ;
-        adm:logEntry        bda:LG8756C22700636385 , bda:LGDD0EDEB7879C8210 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG8756C22700636385 , bda:LGDD0EDEB7879C8210 , bda:LGIM5A753E00B7 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1AC220 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRFE04D8A744DAF99D
+    bdr:CRDEAD4D54B78A4012
         a                   :AgentAsCreator ;
         :agent              bdr:P1844 ;
         :role               bdr:R0ER0019 .
@@ -61,7 +68,7 @@ bdg:WA1KG5451 {
         skos:altLabel       "dam chos yid bzhin nor bu thar pa rin po che'i rgyan ces bya ba chos rje sgam po pas mdzad pa/"@bo-x-ewts , "dwags po thar rgyan/"@bo-x-ewts ;
         skos:prefLabel      "dam chos yid bzhin nor bu thar pa rin po che'i rgyan/"@bo-x-ewts , "the jewel ornament of liberation by gam-po-pa"@en ;
         :catalogInfo        "Writings of a prominent Kagyu master, Gampopa Sonam Rinchen (1079-1153) of the Dakpo order, The Jewel Ornament of Liberation."@en ;
-        :creator            bdr:CRFE04D8A744DAF99D ;
+        :creator            bdr:CRDEAD4D54B78A4012 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T238 ;

@@ -18,6 +18,10 @@ bdg:WA23638 {
         adm:logMessage      "completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG365511608C0A0624
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG4CA7439AE34DA29E
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-11-11T15:59:40.071Z"^^xsd:dateTime ;
@@ -29,10 +33,6 @@ bdg:WA23638 {
         adm:logDate         "2011-11-11T15:47:35.136Z"^^xsd:dateTime ;
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00016 .
-    
-    bda:LGEDBD76220F564853
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGIM320307B99D
         a                   adm:UpdateData ;
@@ -55,6 +55,12 @@ bdg:WA23638 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -72,15 +78,16 @@ bdg:WA23638 {
     bda:WA23638  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23638 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "b2/WA23638.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23638 ;
-        adm:logEntry        bda:LG04635CB092F14A68 , bda:LG4CA7439AE34DA29E , bda:LG8D94EE6421AADB9C , bda:LGEDBD76220F564853 , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG04635CB092F14A68 , bda:LG365511608C0A0624 , bda:LG4CA7439AE34DA29E , bda:LG8D94EE6421AADB9C , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR365511608C0A0624
+    bdr:CREF4BA02174CC86D6
         a                   :AgentAsCreator ;
         :agent              bdr:P2085 ;
         :role               bdr:R0ER0019 .
@@ -91,7 +98,7 @@ bdg:WA23638 {
         skos:altLabel       "chos mngon pa kun las btus kyi rgya cher 'grel pa shes bya gsal byed/"@bo-x-ewts , "Dpaṅ-lo-blo-gros-brtan-paʾi mṅon pa kun btus kyi ʾgrel pa =The collected works of Dpang-lo-blo-gros-brten-pa /[Blo-gros-brtan-pa]."@en-x-mixed ;
         skos:prefLabel      "dpang lo blo gros brtan pa'i mngon pa kun btus kyi 'grel pa/"@bo-x-ewts , "dpang lo blo gros brtan pa'i mngon pa kun btus kyi 'grel pa/ the collected works of dpang-lo blo-gros-brten-pa"@en ;
         :catalogInfo        "Commentary on Asanga's Abhidharmasamuccaya. Written by the Sakya master Pel Lotsawa Lodro Tenpa."@en ;
-        :creator            bdr:CR365511608C0A0624 ;
+        :creator            bdr:CREF4BA02174CC86D6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

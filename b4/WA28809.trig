@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA28809 {
-    bda:LG4EAD082B03F37863
+    bda:LG820536B250DD9B07
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -42,6 +42,12 @@ bdg:WA28809 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -52,16 +58,17 @@ bdg:WA28809 {
     bda:WA28809  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28809 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "b4/WA28809.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28809 ;
-        adm:logEntry        bda:LG4EAD082B03F37863 , bda:LGB924E4B1F745B80A , bda:LGD0926115EA7ED082 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG820536B250DD9B07 , bda:LGB924E4B1F745B80A , bda:LGD0926115EA7ED082 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA24052 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR820536B250DD9B07
+    bdr:CRF4EB31B627E17BBB
         a                   :AgentAsCreator ;
         :agent              bdr:P4796 ;
         :role               bdr:R0ER0019 .
@@ -70,7 +77,7 @@ bdg:WA28809 {
         skos:altLabel       "nges pa don gyi mkhas grub chen po dpal ldan 'bras spungs bkra shis sgo mang gi gdan rabs so gnyis pa rje btsun ngag dbang nyi ma'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_ngag dbang nyi ma/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Gomang Denrab 72 Ngawang Nyima (1907-1990)."@en ;
-        :creator            bdr:CR820536B250DD9B07 ;
+        :creator            bdr:CRF4EB31B627E17BBB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

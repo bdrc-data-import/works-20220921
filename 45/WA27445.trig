@@ -12,22 +12,28 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27445 {
-    bda:LG0E1326FBF217E780
+    bda:LG503CFA18233A6CE5
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA27445  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27445 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "45/WA27445.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27445 ;
-        adm:logEntry        bda:LG0E1326FBF217E780 ;
+        adm:logEntry        bda:LG503CFA18233A6CE5 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CR503CFA18233A6CE5
+    bdr:CRA75D1E91CDD7EF97
         a                   :AgentAsCreator ;
         :agent              bdr:P5159 ;
         :role               bdr:R0ER0025 .
@@ -35,7 +41,7 @@ bdg:WA27445 {
     bdr:WA27445  a          :Work ;
         skos:altLabel       "ma cig thugs kyi thig le las: gcod dbang skal ldan rgyud grol/"@bo-x-ewts ;
         skos:prefLabel      "gcod dbang skal ldan rgyud grol/"@bo-x-ewts ;
-        :creator            bdr:CR503CFA18233A6CE5 ;
+        :creator            bdr:CRA75D1E91CDD7EF97 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T48 ;

@@ -18,19 +18,26 @@ bdg:WA1TLMTGA002153 {
         adm:logMessage      "Work created."@en ;
         adm:logWho          bdu:U00033 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1TLMTGA002153
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1TLMTGA002153 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "2b/WA1TLMTGA002153.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1TLMTGA002153 ;
-        adm:logEntry        bda:LG72F379C3E5BCC87C ;
+        adm:logEntry        bda:LG72F379C3E5BCC87C , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusEditing .
     
-    bdr:CR1E0C90E3F6CADF3A
+    bdr:CR1772C65F349B7C67
         a                   :AgentAsCreator ;
         :agent              bdr:P1TLMTGA002151 ;
         :role               bdr:R0ER0019 .
@@ -39,7 +46,7 @@ bdg:WA1TLMTGA002153 {
         a                   :Work ;
         skos:altLabel       "lA thi wi ya'i rang btsan rtsod len las 'gul khrod kyi 'tshe med zhi ba'i las 'gul skor/"@bo-x-ewts ;
         skos:prefLabel      "lA thi wi ya'i rang btsan rtsod len las 'gul/"@bo-x-ewts ;
-        :creator            bdr:CR1E0C90E3F6CADF3A ;
+        :creator            bdr:CR1772C65F349B7C67 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGA002153 .

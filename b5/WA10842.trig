@@ -12,22 +12,28 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA10842 {
-    bda:LG1C999DE4BC89B5BF
+    bda:LG344A511D79278715
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA10842  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA10842 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b5/WA10842.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA10842 ;
-        adm:logEntry        bda:LG1C999DE4BC89B5BF ;
+        adm:logEntry        bda:LG344A511D79278715 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CR344A511D79278715
+    bdr:CR6E84B45C877FD01E
         a                   :AgentAsCreator ;
         :agent              bdr:P846 ;
         :role               bdr:R0ER0019 .
@@ -35,7 +41,7 @@ bdg:WA10842 {
     bdr:WA10842  a          :Work ;
         skos:altLabel       "gong sa rgyal ba rin po che rab byung bzhes dus gnang rgyu'i maNDal bshad 'bul nyung ngu/_bka' blon khri smon mchog gi gsung ngor sgrigs pa/"@bo-x-ewts ;
         skos:prefLabel      "rgyal ba rin po che la maNDal 'bul rgyu'i bshad pa/"@bo-x-ewts ;
-        :creator            bdr:CR344A511D79278715 ;
+        :creator            bdr:CR6E84B45C877FD01E ;
         :isRoot             true ;
         :workHasInstance    bdr:MW10842 .
 }

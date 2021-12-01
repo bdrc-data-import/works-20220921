@@ -12,22 +12,28 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27443 {
-    bda:LG040E3C9AE6D6A5AC
+    bda:LG590F076D9A3644A6
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA27443  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27443 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "2d/WA27443.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27443 ;
-        adm:logEntry        bda:LG040E3C9AE6D6A5AC ;
+        adm:logEntry        bda:LG590F076D9A3644A6 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CR590F076D9A3644A6
+    bdr:CR08C6F9E655C0594A
         a                   :AgentAsCreator ;
         :agent              bdr:P5159 ;
         :role               bdr:R0ER0025 .
@@ -35,7 +41,7 @@ bdg:WA27443 {
     bdr:WA27443  a          :Work ;
         skos:altLabel       "dam chos smyo gcod las: me mchod bskal ba'i me 'obs/"@bo-x-ewts ;
         skos:prefLabel      "me mchod bskal ba'i me 'obs/"@bo-x-ewts ;
-        :creator            bdr:CR590F076D9A3644A6 ;
+        :creator            bdr:CR08C6F9E655C0594A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW27443 ;

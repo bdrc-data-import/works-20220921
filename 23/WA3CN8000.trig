@@ -37,18 +37,25 @@ bdg:WA3CN8000 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA3CN8000  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN8000 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "23/WA3CN8000.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN8000 ;
-        adm:logEntry        bda:LG1119CE5701CA255F , bda:LGCA075661A84210AF , bda:LGD3F7ECED3F651724 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1119CE5701CA255F , bda:LGCA075661A84210AF , bda:LGD3F7ECED3F651724 , bda:LGIM6C9E48233B , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR390E15694658DAA8
+    bdr:CR0EAF0D6B789AFC07
         a                   :AgentAsCreator ;
         :agent              bdr:P3CN26995 ;
         :role               bdr:R0ER0026 .
@@ -58,7 +65,7 @@ bdg:WA3CN8000 {
     bdr:WA3CN8000  a        :Work ;
         skos:prefLabel      "spyi tshogs gan chings/"@bo-x-ewts , "“社会契约论”及其他晚期政治著作"@zh-hant ;
         :catalogInfo        "The Social Contract by Jeean Jacques Rousseau, translated form English to Tibetan by Gurong Pundrol."@en ;
-        :creator            bdr:CR390E15694658DAA8 ;
+        :creator            bdr:CR0EAF0D6B789AFC07 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN8000 , bdr:W3CN8000 ;

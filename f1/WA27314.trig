@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27314 {
-    bda:LGC9B6AC47E023B15E
+    bda:LG60692946612C7180
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -22,6 +22,12 @@ bdg:WA27314 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
@@ -46,22 +52,23 @@ bdg:WA27314 {
     bda:WA27314  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27314 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "f1/WA27314.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27314 ;
-        adm:logEntry        bda:LGC9B6AC47E023B15E , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG60692946612C7180 , bda:LGIM093A1A0447 , bda:LGIM7CC15F8F , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR60692946612C7180
+    bdr:CR543BA0A2387B0A66
         a                   :AgentAsCreator ;
-        :agent              bdr:P8676 ;
+        :agent              bdr:P8677 ;
         :role               bdr:R0ER0016 .
     
     bdr:CR78A83688BE1E8888
         a                   :AgentAsCreator ;
-        :agent              bdr:P8677 ;
+        :agent              bdr:P8676 ;
         :role               bdr:R0ER0016 .
     
     bdr:MW27314  skos:altLabel  "comments on the historical status of tibet"@en , "hsi tsang li sih ti wen pien"@zh-latn-wadegile .
@@ -69,7 +76,7 @@ bdg:WA27314 {
     bdr:WA27314  a          :Work ;
         skos:altLabel       "zwa sgam pa'i bod kyi srid don rgyal rabs dang 'phan phu rag gi bod ljongs gyi do bab dpyad gtam brjod pa/"@bo-x-ewts , "Bod-ljoṅs kyi lo rgyus go bab dpyad źib :Zwa-sgab-paʼi \"Bod kyi srid don rgyal rabs\" daṅ Hphan-phu-rag gi \"Bod-ljoṅs gyi do bab dpyad gtam brjod pa /Dbaṅ-rgod, Śes-rab-ñi-ma, Thaṅ-ca-we gsum gyis brtsams ; Skal-don sogs lyis bsgyur."@en-x-mixed , "xizang li shi di wei bian"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod ljongs kyi lo rgyus go bab dpyad zhib/"@bo-x-ewts , "comments on the historical status of tibet"@en , "hsi tsang li sih ti wen pien"@zh-latn-wadegile ;
-        :creator            bdr:CR60692946612C7180 , bdr:CR78A83688BE1E8888 ;
+        :creator            bdr:CR543BA0A2387B0A66 , bdr:CR78A83688BE1E8888 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

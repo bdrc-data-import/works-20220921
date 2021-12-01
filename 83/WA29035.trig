@@ -36,7 +36,7 @@ bdg:WA29035 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGD5AD57FC76F91BE0
+    bda:LGE37D7B524FCA9409
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -53,6 +53,12 @@ bdg:WA29035 {
         adm:logMessage      "updated catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
@@ -78,16 +84,17 @@ bdg:WA29035 {
     bda:WA29035  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29035 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "83/WA29035.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29035 ;
-        adm:logEntry        bda:LG277978FFD8FF1E5F , bda:LG35D4CF3DC7A87B13 , bda:LG3741DD25F6086633 , bda:LG709BD53FE271570A , bda:LGD5AD57FC76F91BE0 , bda:LGIM093A1A0447 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG277978FFD8FF1E5F , bda:LG35D4CF3DC7A87B13 , bda:LG3741DD25F6086633 , bda:LG709BD53FE271570A , bda:LGE37D7B524FCA9409 , bda:LGIM093A1A0447 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA28833 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRE37D7B524FCA9409
+    bdr:CR552B95402DDB32CD
         a                   :AgentAsCreator ;
         :agent              bdr:P182 ;
         :role               bdr:R0ER0019 .
@@ -98,7 +105,7 @@ bdg:WA29035 {
         skos:altLabel       "lcang skya rol pa'i rdo rje'i gsung 'bum/ （d+ha ram sa la/）"@bo-x-ewts , "lcang skya rol pa'i rdo rje ye shes bstan pa'i sgron me'i gsung 'bum/"@bo-x-ewts , "Lcaṅ-skya Rol-paʼi-rdo-rjeʼi gsuṅ ʼbum."@en-x-mixed ;
         skos:prefLabel      "gsung 'bum/_rol pa'i rdo rje/"@bo-x-ewts , "the collected works of lcang skya rol pa'i rdo rje ye shes bstan pa'i sgron me"@en ;
         :catalogInfo        "Collected Works by the renowned Geluk teacher Rolpai Dorje, who was active at the court of the Qianlong Emperor (r. 1736-1796)."@en ;
-        :creator            bdr:CRE37D7B524FCA9409 ;
+        :creator            bdr:CR552B95402DDB32CD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

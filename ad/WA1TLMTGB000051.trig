@@ -18,19 +18,26 @@ bdg:WA1TLMTGB000051 {
         adm:logMessage      "Work created."@en ;
         adm:logWho          bdu:U00033 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1TLMTGB000051
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1TLMTGB000051 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ad/WA1TLMTGB000051.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1TLMTGB000051 ;
-        adm:logEntry        bda:LG8276CD4A1A012F86 ;
+        adm:logEntry        bda:LG8276CD4A1A012F86 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusEditing .
     
-    bdr:CRB56283248BF1AD24
+    bdr:CR233C465546923EC0
         a                   :AgentAsCreator ;
         :agent              bdr:P1TLMTGB000033 ;
         :role               bdr:R0ER0019 .
@@ -38,7 +45,7 @@ bdg:WA1TLMTGB000051 {
     bdr:WA1TLMTGB000051
         a                   :Work ;
         skos:prefLabel      "rang lus mer sreg"@bo-x-ewts ;
-        :creator            bdr:CRB56283248BF1AD24 ;
+        :creator            bdr:CR233C465546923EC0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGB000051 .

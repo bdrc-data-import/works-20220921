@@ -12,29 +12,35 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27426 {
-    bda:LG421104A9F347615C
+    bda:LG7FF408545B7E76A7
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA27426  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27426 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "20/WA27426.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27426 ;
-        adm:logEntry        bda:LG421104A9F347615C ;
+        adm:logEntry        bda:LG7FF408545B7E76A7 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CR7FF408545B7E76A7
+    bdr:CRDE9E7DE0DA980EC4
         a                   :AgentAsCreator ;
         :agent              bdr:P559 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA27426  a          :Work ;
         skos:prefLabel      "byang sreg skabs kyi gsol 'debs/"@bo-x-ewts ;
-        :creator            bdr:CR7FF408545B7E76A7 ;
+        :creator            bdr:CRDE9E7DE0DA980EC4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T140 ;

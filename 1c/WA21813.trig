@@ -18,10 +18,6 @@ bdg:WA21813 {
         adm:logMessage      "added to Wisom Masters Digitial Library (formatted texts)"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LG2CF97FAE55F89BC5
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG4C30B098279D30C3
         a                   adm:UpdateData ;
         adm:logDate         "2011-09-19T10:16:28.843Z"^^xsd:dateTime ;
@@ -70,6 +66,10 @@ bdg:WA21813 {
         adm:logMessage      "edited annotation"@en ;
         adm:logWho          bdu:U00020 .
     
+    bda:LGDBA9CC00A98567CA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -84,6 +84,12 @@ bdg:WA21813 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -94,16 +100,17 @@ bdg:WA21813 {
     bda:WA21813  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21813 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "1c/WA21813.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21813 ;
-        adm:logEntry        bda:LG20CC21D1BA3A6AB7 , bda:LG2CF97FAE55F89BC5 , bda:LG4C30B098279D30C3 , bda:LG50DBB30639B65D42 , bda:LG5948F1200689ACBA , bda:LG6A2F345025BCE3C8 , bda:LG78FE3DA5D5108067 , bda:LG863180D0F1CC1DD6 , bda:LGA2FD00549CAEB8EE , bda:LGA6ADB052685F7399 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG20CC21D1BA3A6AB7 , bda:LG4C30B098279D30C3 , bda:LG50DBB30639B65D42 , bda:LG5948F1200689ACBA , bda:LG6A2F345025BCE3C8 , bda:LG78FE3DA5D5108067 , bda:LG863180D0F1CC1DD6 , bda:LGA2FD00549CAEB8EE , bda:LGA6ADB052685F7399 , bda:LGDBA9CC00A98567CA , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG12986 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRDBA9CC00A98567CA
+    bdr:CR86E08227F432DC54
         a                   :AgentAsCreator ;
         :agent              bdr:P733 ;
         :role               bdr:R0ER0019 .
@@ -114,7 +121,7 @@ bdg:WA21813 {
         skos:altLabel       "rdzong sar 'jam dbyangs chos kyi blo gros kyi gsung 'bum/ (dbu med/)"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_'jam dbyangs chos kyi blo gros/"@bo-x-ewts , "the complete works of rdzon-gsar mkhyen-brtse rin-po-che 'jam-dbyans-chos-kyi-blo-gros"@en ;
         :catalogInfo        "Collected Works by Dzongsar Khyentse Jamyang Chokyi Lodro (1893-1959), one of the luminary Nyingma and Rime masters of his generation."@en ;
-        :creator            bdr:CRDBA9CC00A98567CA ;
+        :creator            bdr:CR86E08227F432DC54 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

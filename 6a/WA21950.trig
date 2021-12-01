@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21950 {
+    bda:LG199F70CEACEB2ACF
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG9728F61A5596860E
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-11T11:46:04.621Z"^^xsd:dateTime ;
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
-    
-    bda:LGE2FE74B7D4316323
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -28,6 +28,12 @@ bdg:WA21950 {
         adm:logMessage      "normalized catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
@@ -39,15 +45,16 @@ bdg:WA21950 {
     bda:WA21950  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21950 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "6a/WA21950.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21950 ;
-        adm:logEntry        bda:LG9728F61A5596860E , bda:LGE2FE74B7D4316323 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG199F70CEACEB2ACF , bda:LG9728F61A5596860E , bda:LGIM5A753E00B7 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR199F70CEACEB2ACF
+    bdr:CR967473809E7BD681
         a                   :AgentAsCreator ;
         :agent              bdr:P7418 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +64,7 @@ bdg:WA21950 {
     bdr:WA21950  a          :Work ;
         skos:prefLabel      "mgon po tshogs bdag glang sna'i sgrub skor/"@bo-x-ewts , "mgon po tshogs bdag glan sna'i sgrub skor : a collection of texts concerned with the propitiation of the protective deity ganapati, according to the tradition followed in dpal-yul monastery"@en ;
         :catalogInfo        "Rituals for the propitiation of Ganesh as a protective deity according to Peyul Monastery."@en ;
-        :creator            bdr:CR199F70CEACEB2ACF ;
+        :creator            bdr:CR967473809E7BD681 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

@@ -18,15 +18,15 @@ bdg:WA23864 {
         adm:logMessage      "changed name on bibliographic title"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG8A569222457A4A9D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG9A092B80D8507E92
         a                   adm:UpdateData ;
         adm:logDate         "2018-01-10T15:03:10.631Z"^^xsd:dateTime ;
         adm:logMessage      "changed to open access"@en ;
         adm:logWho          bdu:U00016 .
-    
-    bda:LGC001AEC23918B5E9
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGD1CB0B893BABCAA5
         a                   adm:UpdateData ;
@@ -54,6 +54,12 @@ bdg:WA23864 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -64,16 +70,17 @@ bdg:WA23864 {
     bda:WA23864  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23864 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "55/WA23864.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23864 ;
-        adm:logEntry        bda:LG123324F391C62C1E , bda:LG9A092B80D8507E92 , bda:LGC001AEC23918B5E9 , bda:LGD1CB0B893BABCAA5 , bda:LGIM3F9169BB6E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG123324F391C62C1E , bda:LG8A569222457A4A9D , bda:LG9A092B80D8507E92 , bda:LGD1CB0B893BABCAA5 , bda:LGIM3F9169BB6E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG11666 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR8A569222457A4A9D
+    bdr:CR4AB221399EECA5FE
         a                   :AgentAsCreator ;
         :agent              bdr:P1650 ;
         :role               bdr:R0ER0019 .
@@ -82,7 +89,7 @@ bdg:WA23864 {
         skos:altLabel       "paN chen sku phreng bcu pa bstan 'dzin 'phrin las 'jigs med chos kyi dbang phyug gi gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_bstan 'dzin 'phrin las 'jigs med chos kyi dbang phyug"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Panchen Lama 10 Chokyi Gyaltsen (1938-1989)."@en ;
-        :creator            bdr:CR8A569222457A4A9D ;
+        :creator            bdr:CR4AB221399EECA5FE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

@@ -30,7 +30,7 @@ bdg:WA30110 {
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGACE21B7F7FFF59CB
+    bda:LGC13CDBB94E183C04
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -54,6 +54,12 @@ bdg:WA30110 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -64,13 +70,14 @@ bdg:WA30110 {
     bda:WA30110  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30110 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "82/WA30110.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30110 ;
-        adm:logEntry        bda:LG180BCCABC37A24CA , bda:LG4B6B73821F44D7F3 , bda:LGA5910A49E3ECA87A , bda:LGACE21B7F7FFF59CB , bda:LGC4E87D905BA733A0 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG180BCCABC37A24CA , bda:LG4B6B73821F44D7F3 , bda:LGA5910A49E3ECA87A , bda:LGC13CDBB94E183C04 , bda:LGC4E87D905BA733A0 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG11817 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:MW30110  skos:altLabel  "a collection of the rituals of bkra-sis-lhun-po monastery and affiliates"@en-x-mixed .

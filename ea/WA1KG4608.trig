@@ -37,6 +37,12 @@ bdg:WA1KG4608 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
@@ -60,15 +66,16 @@ bdg:WA1KG4608 {
     bda:WA1KG4608  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4608 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "ea/WA1KG4608.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4608 ;
-        adm:logEntry        bda:LG0CB345C5E9E92F38 , bda:LG1B0715ADAA0EBAF2 , bda:LG3528BBDE7C3BE5C0 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG0CB345C5E9E92F38 , bda:LG1B0715ADAA0EBAF2 , bda:LG3528BBDE7C3BE5C0 , bda:LGIM093A1A0447 , bda:LGIM7CC15F8F , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7559C9226D513861
+    bdr:CRB8502EA62692E998
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG4288 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +84,7 @@ bdg:WA1KG4608 {
     
     bdr:WA1KG4608  a        :Work ;
         skos:prefLabel      "phyag chen sngon 'gro thun mong gi khrid yig gser gyi thigs pa/"@bo-x-ewts , "Phyag chen sṅon ʼgro thun moṅ gi khrid yig gser gyi thigs pa źes bya ba bźugs so /mdzad pa po ṡrī Seṅ-brag Sprul-sku Ṅag-dbaṅ-ʼgyur-med-chos-kyi-rgyal-mtshan ; [edited by Khenpo Shedup Tenzin]."@en-x-mixed ;
-        :creator            bdr:CR7559C9226D513861 ;
+        :creator            bdr:CRB8502EA62692E998 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG4608 , bdr:W1KG4608 ;

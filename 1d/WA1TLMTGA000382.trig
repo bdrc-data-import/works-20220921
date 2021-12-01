@@ -18,19 +18,26 @@ bdg:WA1TLMTGA000382 {
         adm:logMessage      "Work created."@en ;
         adm:logWho          bdu:U00033 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1TLMTGA000382
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1TLMTGA000382 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "1d/WA1TLMTGA000382.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1TLMTGA000382 ;
-        adm:logEntry        bda:LGDA23FF693987F77D ;
+        adm:logEntry        bda:LGDA23FF693987F77D , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusEditing .
     
-    bdr:CR5EF5E7A46486D391
+    bdr:CR5C80C6D06CD24B17
         a                   :AgentAsCreator ;
         :agent              bdr:P00EGS1016697 ;
         :role               bdr:R0ER0019 .
@@ -38,7 +45,7 @@ bdg:WA1TLMTGA000382 {
     bdr:WA1TLMTGA000382
         a                   :Work ;
         skos:prefLabel      "srid zhi'i rnam 'dren \\u0f38gong sa \\u0f38skyabs mgon \\u0f38rgyal dbang thams cad mkhyen pa sku phreng bcu bzhi pa chen po mchog gi bsnyen rdzogs sdom rgyun mkhan po rim byung gi bla brgyud rnam thar dzam+bu'i gser gyi mchod sdong /"@bo-x-ewts ;
-        :creator            bdr:CR5EF5E7A46486D391 ;
+        :creator            bdr:CR5C80C6D06CD24B17 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGA000382 .

@@ -18,20 +18,27 @@ bdg:WA1TLMTGA000349 {
         adm:logMessage      "Work created."@en ;
         adm:logWho          bdu:U00033 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1TLMTGA000349
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1TLMTGA000349 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "96/WA1TLMTGA000349.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1TLMTGA000349 ;
-        adm:logEntry        bda:LGEA0A881AE988F482 ;
+        adm:logEntry        bda:LGEA0A881AE988F482 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA21672 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR4753E7B47C037AAC
+    bdr:CR716D1087B7D78B07
         a                   :AgentAsCreator ;
         :agent              bdr:P4746 ;
         :role               bdr:R0ER0019 .
@@ -40,7 +47,7 @@ bdg:WA1TLMTGA000349 {
         a                   :Work ;
         skos:altLabel       "gong sa tA la'i bla ma sku phreng rim byon gyi chos srid mdzad rnam gsal bar bshad pa nges don gtam gyi snying po/"@bo-x-ewts ;
         skos:prefLabel      "gong sa tA la'i bla ma sku phreng rim byon gyi chos srid mdzad rnam/"@bo-x-ewts ;
-        :creator            bdr:CR4753E7B47C037AAC ;
+        :creator            bdr:CR716D1087B7D78B07 ;
         :isRoot             true ;
         :language           bdr:LangBo .
 }

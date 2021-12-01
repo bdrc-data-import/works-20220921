@@ -12,29 +12,35 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27435 {
-    bda:LGC2F5907CB1AFFE65
+    bda:LG8BD27EC63714D407
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA27435  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27435 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "42/WA27435.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27435 ;
-        adm:logEntry        bda:LGC2F5907CB1AFFE65 ;
+        adm:logEntry        bda:LG8BD27EC63714D407 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CR8BD27EC63714D407
+    bdr:CR053689DD971535CF
         a                   :AgentAsCreator ;
         :agent              bdr:P691 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA27435  a          :Work ;
         skos:prefLabel      "tshe sgrub gsol 'debs/"@bo-x-ewts ;
-        :creator            bdr:CR8BD27EC63714D407 ;
+        :creator            bdr:CR053689DD971535CF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T140 ;

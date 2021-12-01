@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23345 {
-    bda:LGAE9D1C30291812AA
+    bda:LG7CDE075E39637A38
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -40,6 +40,12 @@ bdg:WA23345 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -57,12 +63,13 @@ bdg:WA23345 {
     bda:WA23345  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23345 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "b0/WA23345.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23345 ;
-        adm:logEntry        bda:LGAE9D1C30291812AA , bda:LGBED4F8CB8541C136 , bda:LGC24CF5F6DF90D1A9 , bda:LGE87873DF7C887917 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG7CDE075E39637A38 , bda:LGBED4F8CB8541C136 , bda:LGC24CF5F6DF90D1A9 , bda:LGE87873DF7C887917 , bda:LGIM5A753E00B7 , bda:LGIM7CC15F8F , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW23345  skos:altLabel  "blo gsal glin mkhas grub rim byun gyi gsun thor bu phyogs bsgrigs : a collection of rare writings of the scholars of blo-gsal-glin college of 'bras spuns monastery of past and present"@en-x-mixed .

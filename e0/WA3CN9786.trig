@@ -30,32 +30,39 @@ bdg:WA3CN9786 {
         adm:logMessage      "added titles"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA3CN9786  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN9786 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "e0/WA3CN9786.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN9786 ;
-        adm:logEntry        bda:LG3530E514F6EE7535 , bda:LG7B44D09577E42FFA , bda:LGB9BE7C4F7E1DDA21 ;
+        adm:logEntry        bda:LG3530E514F6EE7535 , bda:LG7B44D09577E42FFA , bda:LGB9BE7C4F7E1DDA21 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR40CF20268F8E8504
         a                   :AgentAsCreator ;
-        :agent              bdr:P6961 ;
+        :agent              bdr:P314 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRD5A200FCE2AB4948
+    bdr:CR81009011B7911096
         a                   :AgentAsCreator ;
-        :agent              bdr:P314 ;
+        :agent              bdr:P6961 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA3CN9786  a        :Work ;
         skos:altLabel       "dpal snga 'gyur rnying ma'i gzhung lugs chen mo'i skor/"@bo-x-ewts , "yon tan rin po che'i mdzod dga' ba'i char/ (pod dang po)"@bo-x-ewts , "yon tan rin po che'i mdzod kyi 'grel pa bden gnyis gsal byed zla ba'i sgron me/ (pod gnyis pa dang gsum pa)"@bo-x-ewts , "yon tan rin po che'i mdzod kyi 'grel pa zab don snang byed nyi ma'i 'od zer/ (pod bzhi pa dang lnga pa)"@bo-x-ewts ;
         skos:prefLabel      "yon tan rin po che'i mdzod kyi rtsa 'grel skor/"@bo-x-ewts ;
         :catalogInfo        "Treasury of Precious Qualities known as Yonten Dzo by Jigme Lingpa and commentary by Gemang Khenchen Yonten Gyatso."@en ;
-        :creator            bdr:CR40CF20268F8E8504 , bdr:CRD5A200FCE2AB4948 ;
+        :creator            bdr:CR40CF20268F8E8504 , bdr:CR81009011B7911096 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

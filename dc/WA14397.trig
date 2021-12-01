@@ -12,22 +12,28 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA14397 {
-    bda:LG5E6C6A567CB81631
+    bda:LG332657A276F27B39
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA14397  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA14397 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "dc/WA14397.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA14397 ;
-        adm:logEntry        bda:LG5E6C6A567CB81631 ;
+        adm:logEntry        bda:LG332657A276F27B39 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CR332657A276F27B39
+    bdr:CRED91F875A07255D6
         a                   :AgentAsCreator ;
         :agent              bdr:P2425 ;
         :role               bdr:R0ER0019 .
@@ -35,7 +41,7 @@ bdg:WA14397 {
     bdr:WA14397  a          :Work ;
         skos:altLabel       "gangs can lha gcig srid zhi'i gtsug rgyan gong sa skyabs mgon sku phreng bcu bzhi pa chen po'i gsang gsum mi zad pa'i sgyu 'phrul chen por bsngags pa'i rab tu byed pa dge legs char du bsnyil ba'i dpag bsam yongs 'du'i 'khri shing /"@bo-x-ewts ;
         skos:prefLabel      "bstan 'dzin rgya mtsho'i bsngags brjod rab dbye/"@bo-x-ewts ;
-        :creator            bdr:CR332657A276F27B39 ;
+        :creator            bdr:CRED91F875A07255D6 ;
         :isRoot             true ;
         :workHasInstance    bdr:MW14397 .
 }

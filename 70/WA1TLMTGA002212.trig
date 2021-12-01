@@ -18,19 +18,26 @@ bdg:WA1TLMTGA002212 {
         adm:logMessage      "Work created."@en ;
         adm:logWho          bdu:U00033 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1TLMTGA002212
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1TLMTGA002212 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "70/WA1TLMTGA002212.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1TLMTGA002212 ;
-        adm:logEntry        bda:LG414F4389FEAE62D4 ;
+        adm:logEntry        bda:LG414F4389FEAE62D4 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusEditing .
     
-    bdr:CR6573FD075C97045F
+    bdr:CR370590BDAAF58051
         a                   :AgentAsCreator ;
         :agent              bdr:P1TLMTGA002210 ;
         :role               bdr:R0ER0019 .
@@ -39,7 +46,7 @@ bdg:WA1TLMTGA002212 {
         a                   :Work ;
         skos:altLabel       "dol rgyal skor gyi lam ston bka' slob/_gong sa mchog nas/"@bo-x-ewts ;
         skos:prefLabel      "dol rgyal skor gyi lam ston bka' slob/"@bo-x-ewts ;
-        :creator            bdr:CR6573FD075C97045F ;
+        :creator            bdr:CR370590BDAAF58051 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGA002212 .

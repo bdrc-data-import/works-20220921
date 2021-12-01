@@ -18,20 +18,27 @@ bdg:WA1TLMTGA001198 {
         adm:logMessage      "Work created."@en ;
         adm:logWho          bdu:U00033 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1TLMTGA001198
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1TLMTGA001198 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9b/WA1TLMTGA001198.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1TLMTGA001198 ;
-        adm:logEntry        bda:LG3DC56F5704C7C292 ;
+        adm:logEntry        bda:LG3DC56F5704C7C292 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA8LS17281 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRAF92BE8778C73D46
+    bdr:CR4E876009CCA8E7A9
         a                   :AgentAsCreator ;
         :agent              bdr:P1TLMTGA001197 ;
         :role               bdr:R0ER0023 .
@@ -39,7 +46,7 @@ bdg:WA1TLMTGA001198 {
     bdr:WA1TLMTGA001198
         a                   :Work ;
         skos:prefLabel      "phyi yul du rang dbang /"@bo-x-ewts ;
-        :creator            bdr:CRAF92BE8778C73D46 ;
+        :creator            bdr:CR4E876009CCA8E7A9 ;
         :isRoot             true ;
         :language           bdr:LangBo .
 }

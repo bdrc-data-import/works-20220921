@@ -12,29 +12,35 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27446 {
-    bda:LGE4F20564F4DC3A2F
+    bda:LGAA271175B73552DD
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA27446  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27446 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b6/WA27446.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27446 ;
-        adm:logEntry        bda:LGE4F20564F4DC3A2F ;
+        adm:logEntry        bda:LGAA271175B73552DD , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CRAA271175B73552DD
+    bdr:CR57985F674BA804A2
         a                   :AgentAsCreator ;
         :agent              bdr:P5159 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA27446  a          :Work ;
         skos:prefLabel      "rgyun khyer gyi lus sbyin bsdus pa/"@bo-x-ewts ;
-        :creator            bdr:CRAA271175B73552DD ;
+        :creator            bdr:CR57985F674BA804A2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW27446 ;

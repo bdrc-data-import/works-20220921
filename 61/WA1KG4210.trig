@@ -43,6 +43,12 @@ bdg:WA1KG4210 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -67,20 +73,21 @@ bdg:WA1KG4210 {
     bda:WA1KG4210  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4210 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "61/WA1KG4210.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4210 ;
-        adm:logEntry        bda:LG1793C918D510A14A , bda:LG1B44553FE1470312 , bda:LGA016E3CDDCAAE6F5 , bda:LGBF65F3A70376719F , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG1793C918D510A14A , bda:LG1B44553FE1470312 , bda:LGA016E3CDDCAAE6F5 , bda:LGBF65F3A70376719F , bda:LGIM5A753E00B7 , bda:LGIM7CC15F8F , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR162CDB87B4F1581C
+    bdr:CR92F40EE242E8EAC5
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG4221 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR92F40EE242E8EAC5
+    bdr:CRCC9501B57718E936
         a                   :AgentAsCreator ;
         :agent              bdr:P4341 ;
         :role               bdr:R0ER0016 .
@@ -91,7 +98,7 @@ bdg:WA1KG4210 {
         skos:altLabel       "Collected biographical material about Lo-chen Rin-chen-bzan-po and his subsequent reembodiments."@en-x-mixed ;
         skos:prefLabel      "'jig rten mig gyur lo chen rin chen bzang po'i rnam thar gsol 'debs sogs chos tshan khag cig"@bo-x-ewts , "collected biographical material about lo-chen rin-chen-bzang-po and his subsequent reembodiments"@en ;
         :catalogInfo        "Biographies of the early translator Lochen Rinchen Zangpo (958-1055) and his subsequent reincarnations."@en ;
-        :creator            bdr:CR162CDB87B4F1581C , bdr:CR92F40EE242E8EAC5 ;
+        :creator            bdr:CR92F40EE242E8EAC5 , bdr:CRCC9501B57718E936 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

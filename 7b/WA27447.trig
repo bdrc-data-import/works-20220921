@@ -12,29 +12,35 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27447 {
-    bda:LG47E3802EE4031A0A
+    bda:LG7A776ECC0D9AB3C8
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA27447  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27447 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "7b/WA27447.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27447 ;
-        adm:logEntry        bda:LG47E3802EE4031A0A ;
+        adm:logEntry        bda:LG7A776ECC0D9AB3C8 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CR7A776ECC0D9AB3C8
+    bdr:CRCE8B2E67518D3851
         a                   :AgentAsCreator ;
         :agent              bdr:P649 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA27447  a          :Work ;
         skos:prefLabel      "gcod lugs nyer mkho changs bu brgya rtsa'i phyag len 'grigs chags su bkod pa/"@bo-x-ewts ;
-        :creator            bdr:CR7A776ECC0D9AB3C8 ;
+        :creator            bdr:CRCE8B2E67518D3851 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW27447 ;

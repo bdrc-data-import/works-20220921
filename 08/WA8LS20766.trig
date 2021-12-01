@@ -24,19 +24,26 @@ bdg:WA8LS20766 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA8LS20766  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20766 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "08/WA8LS20766.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20766 ;
-        adm:logEntry        bda:LG8374174C64BA33D5 , bda:LG9D35263FD9921E18 ;
+        adm:logEntry        bda:LG8374174C64BA33D5 , bda:LG9D35263FD9921E18 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA8LS19999 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR5D46F74D32CD7C5D
+    bdr:CR373DDC6FB54E0B8E
         a                   :AgentAsCreator ;
         :agent              bdr:P252 ;
         :role               bdr:R0ER0019 .
@@ -45,7 +52,7 @@ bdg:WA8LS20766 {
         skos:altLabel       "dpal snga 'gyur rnying ma'i gzhung lugs chen mo'i skor/ mkhas pa'i tshul la 'jug pa'i sgo"@bo-x-ewts ;
         skos:prefLabel      "mkhas pa'i tshul la 'jug pa'i sgo"@bo-x-ewts ;
         :catalogInfo        "Ju Mipham's interpretation of scholarship."@en ;
-        :creator            bdr:CR5D46F74D32CD7C5D ;
+        :creator            bdr:CR373DDC6FB54E0B8E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS20766 ;

@@ -31,6 +31,12 @@ bdg:WA1KG14651 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -41,15 +47,16 @@ bdg:WA1KG14651 {
     bda:WA1KG14651  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14651 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "7b/WA1KG14651.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14651 ;
-        adm:logEntry        bda:LG30ECDF9B4FF666D1 , bda:LGA1EA63BAEEFDB52E , bda:LGIM4BF5F96E12 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG30ECDF9B4FF666D1 , bda:LGA1EA63BAEEFDB52E , bda:LGIM4BF5F96E12 , bda:LGIM7CC15F8F , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4CCB8E9A8C5F8446
+    bdr:CRFEA81CF8AA1747A7
         a                   :AgentAsCreator ;
         :agent              bdr:P9861 ;
         :role               bdr:R0ER0019 .
@@ -60,7 +67,7 @@ bdg:WA1KG14651 {
         skos:altLabel       "bka' brgyud 'bri gung pa'i chos srid kyi lo rgyus snying bsdus pad+ma dkar po'i chun po/"@bo-x-ewts ;
         skos:prefLabel      "bka' brgyud 'bri gung pa'i chos srid kyi lo rgyus snying bsdus/"@bo-x-ewts , "Bkaʼ-brgyud ʼBri-guṅ-paʼi chos srid kyi lo rgyus sñiṅ bsdus padma dkar poʼi chun po źes bya ba bźugs so /rtsom sgrig pa, Mkhan-po Dkon-mchog-pa-saṅs."@en-x-mixed ;
         :catalogInfo        "Political and religious history of Drikung Kagyud sect."@en ;
-        :creator            bdr:CR4CCB8E9A8C5F8446 ;
+        :creator            bdr:CRFEA81CF8AA1747A7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

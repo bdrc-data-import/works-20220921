@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22006 {
-    bda:LG71C7858DE381D053
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG80601C716A467E40
         a                   adm:UpdateData ;
         adm:logDate         "2009-04-02T15:45:18.907Z"^^xsd:dateTime ;
@@ -27,6 +23,10 @@ bdg:WA22006 {
         adm:logDate         "2009-04-02T15:06:05.693Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LG96D60E339769B188
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGFE26CA7489F9F0E8
         a                   adm:UpdateData ;
@@ -41,6 +41,12 @@ bdg:WA22006 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
@@ -51,15 +57,16 @@ bdg:WA22006 {
     bda:WA22006  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22006 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "1e/WA22006.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22006 ;
-        adm:logEntry        bda:LG71C7858DE381D053 , bda:LG80601C716A467E40 , bda:LG95F6523A61444E11 , bda:LGFE26CA7489F9F0E8 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG80601C716A467E40 , bda:LG95F6523A61444E11 , bda:LG96D60E339769B188 , bda:LGFE26CA7489F9F0E8 , bda:LGIM093A1A0447 , bda:LGIM7CC15F8F , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR96D60E339769B188
+    bdr:CRB6F2F6D24DC15FA1
         a                   :AgentAsCreator ;
         :agent              bdr:P6280 ;
         :role               bdr:R0ER0019 .
@@ -68,7 +75,7 @@ bdg:WA22006 {
     
     bdr:WA22006  a          :Work ;
         skos:prefLabel      "paN chen sku phreng dgu pa dang bcu pa'i rtogs brjod gser dang dngul gyi me tog gi tshig 'grel brjod don gsal ba'i sgron me/"@bo-x-ewts , "ban chan zan zhu"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR96D60E339769B188 ;
+        :creator            bdr:CRB6F2F6D24DC15FA1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

@@ -12,22 +12,28 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA14399 {
-    bda:LG3B22A3B334400784
+    bda:LG2C12DD3263F2DCF4
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA14399  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA14399 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "50/WA14399.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA14399 ;
-        adm:logEntry        bda:LG3B22A3B334400784 ;
+        adm:logEntry        bda:LG2C12DD3263F2DCF4 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CR2C12DD3263F2DCF4
+    bdr:CRA36EF3B659B77EF2
         a                   :AgentAsCreator ;
         :agent              bdr:P2425 ;
         :role               bdr:R0ER0019 .
@@ -35,7 +41,7 @@ bdg:WA14399 {
     bdr:WA14399  a          :Work ;
         skos:altLabel       "gsum bcu dus dran thengs nyi shu pa'i skabs kyi gsung bshad/"@bo-x-ewts ;
         skos:prefLabel      "gsum bcu dus dran thengs nyi shu pa'i skabs gsung bshad/"@bo-x-ewts ;
-        :creator            bdr:CR2C12DD3263F2DCF4 ;
+        :creator            bdr:CRA36EF3B659B77EF2 ;
         :isRoot             true ;
         :workHasInstance    bdr:MW14399 .
 }

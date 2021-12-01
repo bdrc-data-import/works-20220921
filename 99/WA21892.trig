@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21892 {
+    bda:LG19EDAB8F19AFA879
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG63810631C45F06B3
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2008-05-29T12:58:16.297Z"^^xsd:dateTime ;
@@ -30,15 +34,17 @@ bdg:WA21892 {
         adm:logMessage      "scanned compeleted"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGAB9EFD8E133C15DB
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGC874C651F3106C4C
         a                   adm:UpdateData ;
         adm:logDate         "2009-11-01T12:38:30.764Z"^^xsd:dateTime ;
         adm:logMessage      "ctct7"@en ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -64,12 +70,13 @@ bdg:WA21892 {
     bda:WA21892  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21892 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "99/WA21892.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21892 ;
-        adm:logEntry        bda:LG63810631C45F06B3 , bda:LG949B4E9977565E7B , bda:LGA68C556F63F29195 , bda:LGAB9EFD8E133C15DB , bda:LGC874C651F3106C4C , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG19EDAB8F19AFA879 , bda:LG63810631C45F06B3 , bda:LG949B4E9977565E7B , bda:LGA68C556F63F29195 , bda:LGC874C651F3106C4C , bda:LGIM7CC15F8F , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW21892  skos:altLabel  "the biography of atisha : how he preached the law of buddha in india, and his journey to suvarnadvipa, etc."@en .

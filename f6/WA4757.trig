@@ -12,22 +12,28 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4757 {
-    bda:LG02E112D425E05B91
+    bda:LG2C6288808C9FDE53
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA4757  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4757 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "f6/WA4757.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4757 ;
-        adm:logEntry        bda:LG02E112D425E05B91 ;
+        adm:logEntry        bda:LG2C6288808C9FDE53 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CR2C6288808C9FDE53
+    bdr:CR9F72AFB8F014D4A4
         a                   :AgentAsCreator ;
         :agent              bdr:P251 ;
         :role               bdr:R0ER0019 .
@@ -35,7 +41,7 @@ bdg:WA4757 {
     bdr:WA4757  a           :Work ;
         skos:altLabel       "gsung rgyhal gyi bka' blon rdo rje grags ldan la mchod gtor 'bul tshul rngams chen rol pa'i gad rgyangs/"@bo-x-ewts ;
         skos:prefLabel      "rdo rje grags ldan la mchod gtor 'bul tshul/"@bo-x-ewts ;
-        :creator            bdr:CR2C6288808C9FDE53 ;
+        :creator            bdr:CR9F72AFB8F014D4A4 ;
         :isRoot             true ;
         :workHasInstance    bdr:MW4757 .
 }

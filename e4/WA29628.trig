@@ -23,19 +23,26 @@ bdg:WA29628 {
         adm:logMessage      "added to ctc 4"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LGFD7B86326C75B11F
+    bda:LGCBF10E6EE2EB8620
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA29628  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29628 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "e4/WA29628.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29628 ;
-        adm:logEntry        bda:LG48DAE508127E5A1C , bda:LGCB5AB8CC7FE1F660 , bda:LGFD7B86326C75B11F ;
+        adm:logEntry        bda:LG48DAE508127E5A1C , bda:LGCB5AB8CC7FE1F660 , bda:LGCBF10E6EE2EB8620 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW29628  skos:altLabel  "the collected works on vajra yogini sakyapa tradition"@en .

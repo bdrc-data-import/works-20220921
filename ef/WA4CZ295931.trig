@@ -48,6 +48,12 @@ bdg:WA4CZ295931 {
         adm:logMessage      "changed access to restrictedInChina"@en ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -58,15 +64,16 @@ bdg:WA4CZ295931 {
     bda:WA4CZ295931  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ295931 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "ef/WA4CZ295931.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ295931 ;
-        adm:logEntry        bda:LG0BDB9491AEDADDFA , bda:LG3566D880E637FF1E , bda:LG41EF36B53D8551BD , bda:LG5E7EEDBFCF050507 , bda:LG66AB1180000533C9 , bda:LGE9D06976BF3E737B , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG0BDB9491AEDADDFA , bda:LG3566D880E637FF1E , bda:LG41EF36B53D8551BD , bda:LG5E7EEDBFCF050507 , bda:LG66AB1180000533C9 , bda:LGE9D06976BF3E737B , bda:LGIM7CC15F8F , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR79B7AE641E2953FC
+    bdr:CRF278708D45ABAB0B
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG4862 ;
         :role               bdr:R0ER0019 .
@@ -74,7 +81,7 @@ bdg:WA4CZ295931 {
     bdr:WA4CZ295931  a      :Work ;
         skos:prefLabel      "rgyal mchog bcu bzhi pa'i mdzad bzang gi bka' drin mdo tsam brjod pa 'dzam gling rgud pa kun sel/"@bo-x-ewts ;
         :catalogInfo        "Grateful gratitude to the 14 th Dalai Lama Tenzin Gyatso"@en ;
-        :creator            bdr:CR79B7AE641E2953FC ;
+        :creator            bdr:CRF278708D45ABAB0B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T67 ;

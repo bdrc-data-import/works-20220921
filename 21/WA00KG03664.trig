@@ -61,6 +61,12 @@ bdg:WA00KG03664 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -85,15 +91,16 @@ bdg:WA00KG03664 {
     bda:WA00KG03664  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG03664 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "21/WA00KG03664.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG03664 ;
-        adm:logEntry        bda:LG9D4B675C6C213907 , bda:LGAF6C09BFBB5D3A93 , bda:LGB5B32CB8A4C90555 , bda:LGD7DD53103827139E , bda:LGDA46F4FFEC67945C , bda:LGIM3F9169BB6E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 ;
+        adm:logEntry        bda:LG9D4B675C6C213907 , bda:LGAF6C09BFBB5D3A93 , bda:LGB5B32CB8A4C90555 , bda:LGD7DD53103827139E , bda:LGDA46F4FFEC67945C , bda:LGIM3F9169BB6E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCA28BF4189C3A495
+    bdr:CR776875B7C2937AC3
         a                   :AgentAsCreator ;
         :agent              bdr:P1649 ;
         :role               bdr:R0ER0019 .
@@ -103,7 +110,7 @@ bdg:WA00KG03664 {
     bdr:WA00KG03664  a      :Work ;
         skos:prefLabel      "dol rgyal skor gyi bka' slob dang/ 'grel yod yig cha khag gnyis/"@bo-x-ewts , "Dol-rgyal skor gyi bkaʾ slob daṅ ʾbrel yod yig cha khag gñis."@en-x-mixed ;
         :catalogInfo        "Collection of admonishments by the Dalai Lama 14 Tenzin Gyatso (b. 1935) against the worship of Dorje Shugden."@en ;
-        :creator            bdr:CRCA28BF4189C3A495 ;
+        :creator            bdr:CR776875B7C2937AC3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW00KG03664 , bdr:W00KG03664 ;

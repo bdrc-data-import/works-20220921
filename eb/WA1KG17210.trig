@@ -31,18 +31,25 @@ bdg:WA1KG17210 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG17210  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG17210 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "eb/WA1KG17210.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG17210 ;
-        adm:logEntry        bda:LG29B1936497D54338 , bda:LG3252FBFD80FAA4D4 , bda:LGIM4599A38FCE ;
+        adm:logEntry        bda:LG29B1936497D54338 , bda:LG3252FBFD80FAA4D4 , bda:LGIM4599A38FCE , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE0AA15507F3EE567
+    bdr:CR22D039BB3AA5CE9E
         a                   :AgentAsCreator ;
         :agent              bdr:P7279 ;
         :role               bdr:R0ER0019 .
@@ -50,7 +57,7 @@ bdg:WA1KG17210 {
     bdr:WA1KG17210  a       :Work ;
         skos:altLabel       "brtag pa gnyis pa'i rnam par bshad pa ma dag pa rnams 'joms par byed pa'i rnam 'grel dag ldan/"@bo-x-ewts ;
         skos:prefLabel      "dag ldan mchan 'grel rgyud don gsal ba'i spyan shel/"@bo-x-ewts ;
-        :creator            bdr:CRE0AA15507F3EE567 ;
+        :creator            bdr:CR22D039BB3AA5CE9E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;

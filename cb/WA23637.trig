@@ -47,7 +47,7 @@ bdg:WA23637 {
         adm:logMessage      "corrected spelling"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGF4B29C445438F429
+    bda:LGED9431039F48F966
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -64,6 +64,12 @@ bdg:WA23637 {
         adm:logMessage      "updated catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -82,15 +88,16 @@ bdg:WA23637 {
     bda:WA23637  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23637 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "cb/WA23637.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23637 ;
-        adm:logEntry        bda:LG38C3C60E771ACCAF , bda:LG3E37B7F5558D90F0 , bda:LG78D6C2C2DD37FB8A , bda:LGBDF043ABA85BCAC0 , bda:LGC87B6CC8E4C470B5 , bda:LGDE5159E7E3170120 , bda:LGF4B29C445438F429 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG38C3C60E771ACCAF , bda:LG3E37B7F5558D90F0 , bda:LG78D6C2C2DD37FB8A , bda:LGBDF043ABA85BCAC0 , bda:LGC87B6CC8E4C470B5 , bda:LGDE5159E7E3170120 , bda:LGED9431039F48F966 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRED9431039F48F966
+    bdr:CR18DE6EDF13B2872D
         a                   :AgentAsCreator ;
         :agent              bdr:P431 ;
         :role               bdr:R0ER0019 .
@@ -101,7 +108,7 @@ bdg:WA23637 {
         skos:altLabel       "Roṅ-ston Śākya-rgyal-mtshan gyi gsuṅ skor =The collected works of Rong-ston Sha-kya Rgyal-mtsen."@en-x-mixed ;
         skos:prefLabel      "rong ston shAkya rgyal mtshan gyi gsung skor/"@bo-x-ewts , "the collected works of rong-ston sha-kya-rgyal-mtshan"@en-x-mixed ;
         :catalogInfo        "Collected Works by Sakya master and the founder of Penpo Nalendra monastery, Rongton Shakya Gyaltsen."@en ;
-        :creator            bdr:CRED9431039F48F966 ;
+        :creator            bdr:CR18DE6EDF13B2872D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

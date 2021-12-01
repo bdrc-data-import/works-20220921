@@ -18,10 +18,6 @@ bdg:WA29339 {
         adm:logMessage      "annoted"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LGA6EDAD7D16C767A8
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGB2C3ECEB964C4C2D
         a                   adm:UpdateData ;
         adm:logDate         "2013-09-19T17:05:47.901Z"^^xsd:dateTime ;
@@ -34,12 +30,22 @@ bdg:WA29339 {
         adm:logMessage      "ctc5"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGF976E8F18F24EE8E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
         adm:logMessage      "normalized catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -58,15 +64,16 @@ bdg:WA29339 {
     bda:WA29339  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29339 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "eb/WA29339.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29339 ;
-        adm:logEntry        bda:LG8FF80E9D54BA3959 , bda:LGA6EDAD7D16C767A8 , bda:LGB2C3ECEB964C4C2D , bda:LGEA7F7151E7C9A6D8 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG8FF80E9D54BA3959 , bda:LGB2C3ECEB964C4C2D , bda:LGEA7F7151E7C9A6D8 , bda:LGF976E8F18F24EE8E , bda:LGIM5A753E00B7 , bda:LGIM7CC15F8F , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF976E8F18F24EE8E
+    bdr:CR137FBEAAA124559B
         a                   :AgentAsCreator ;
         :agent              bdr:P9712 ;
         :role               bdr:R0ER0019 .
@@ -76,7 +83,7 @@ bdg:WA29339 {
     bdr:WA29339  a          :Work ;
         skos:prefLabel      "byang gter 'don cha'i skor/"@bo-x-ewts , "Byaṅ gter don chaʼi skor stod cha sgrub skor rnam gsum yan lag daṅ bcas pa dṅos grub mchog sbyin zhes bya ba bzhugs so /edited by Nub-ri-ba Chos-kyi-nyi-ma Rin-po-che."@en-x-mixed ;
         :catalogInfo        "Rituals of the Jangter order of the Nyingma, followed in the Nubri Valley of Nepal."@en ;
-        :creator            bdr:CRF976E8F18F24EE8E ;
+        :creator            bdr:CR137FBEAAA124559B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T225 ;

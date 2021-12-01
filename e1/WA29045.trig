@@ -18,10 +18,6 @@ bdg:WA29045 {
         adm:logMessage      "changed access to restrictedByTbrc"@en ;
         adm:logWho          bdu:U00006 .
     
-    bda:LG13C1C5B7F50E2FB6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG184B61A2B0934BB2
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-14T10:38:15.482Z"^^xsd:dateTime ;
@@ -63,6 +59,10 @@ bdg:WA29045 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LGE13A15A09E75140D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM3F9169BB6E
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:34:47.366Z"^^xsd:dateTime ;
@@ -77,6 +77,12 @@ bdg:WA29045 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -87,20 +93,21 @@ bdg:WA29045 {
     bda:WA29045  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29045 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "e1/WA29045.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29045 ;
-        adm:logEntry        bda:LG0C3C3C2F666BBC64 , bda:LG13C1C5B7F50E2FB6 , bda:LG184B61A2B0934BB2 , bda:LG48F51D1AECCD9EB4 , bda:LG7D010C556CB6504E , bda:LG8EA3E5ECB06968F9 , bda:LGAA1223D9D8B73201 , bda:LGB7B0BF65F262E24C , bda:LGC30ABF64CEF5778A , bda:LGIM3F9169BB6E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0C3C3C2F666BBC64 , bda:LG184B61A2B0934BB2 , bda:LG48F51D1AECCD9EB4 , bda:LG7D010C556CB6504E , bda:LG8EA3E5ECB06968F9 , bda:LGAA1223D9D8B73201 , bda:LGB7B0BF65F262E24C , bda:LGC30ABF64CEF5778A , bda:LGE13A15A09E75140D , bda:LGIM3F9169BB6E , bda:LGIM5A753E00B7 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE13A15A09E75140D
+    bdr:CRE5E7CA74C45275D6
         a                   :AgentAsCreator ;
         :agent              bdr:P7570 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVE5E7CA74C45275D6
+    bdr:EV68A5379185908F02
         a                   :CompletedEvent ;
         :onOrAbout          "རབ་བྱུང་བཅུ་དྲུག་པའི་མིག་དམར་ཞེས་པ་ཤིང་ཕོ་བྱི་བའི་ལོ།ཕྱི་ལོ་༡༩༨༤ཟླ་བ་ལྔ་པའི་ནང་མཇུག་རྫོགས་པར་བྲིས།" .
     
@@ -109,10 +116,10 @@ bdg:WA29045 {
     bdr:WA29045  a          :Work ;
         skos:prefLabel      "brgal lan lung rigs gnam lcags 'bar ba/"@bo-x-ewts , "a counter-reply to objections raised against the author's previous refutations of gdon-thog rin-po-che's polemial writings"@en-x-mixed ;
         :catalogInfo        "Polemic in the discourse regarding Dorje Shugden. Refutation of the earlier work by Dhongthog Rinpoche."@en ;
-        :creator            bdr:CRE13A15A09E75140D ;
+        :creator            bdr:CRE5E7CA74C45275D6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVE5E7CA74C45275D6 ;
+        :workEvent          bdr:EV68A5379185908F02 ;
         :workHasInstance    bdr:MW29045 , bdr:W29045 ;
         :workIsAbout        bdr:P9505 , bdr:T102 , bdr:T1201 .
 }

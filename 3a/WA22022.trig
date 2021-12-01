@@ -24,7 +24,7 @@ bdg:WA22022 {
         adm:logMessage      "added t1pd108901"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGCD4711C631BB2AD4
+    bda:LG87CD6E79FBE8DFB0
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -62,6 +62,12 @@ bdg:WA22022 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
@@ -86,15 +92,16 @@ bdg:WA22022 {
     bda:WA22022  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22022 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "3a/WA22022.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22022 ;
-        adm:logEntry        bda:LG3219B60A15276B14 , bda:LG370D58E53E085355 , bda:LGCD4711C631BB2AD4 , bda:LGE7483DF4A38BA023 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3219B60A15276B14 , bda:LG370D58E53E085355 , bda:LG87CD6E79FBE8DFB0 , bda:LGE7483DF4A38BA023 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR87CD6E79FBE8DFB0
+    bdr:CRC89F193CDCA0CB44
         a                   :AgentAsCreator ;
         :agent              bdr:P5111 ;
         :role               bdr:R0ER0019 .
@@ -104,7 +111,7 @@ bdg:WA22022 {
     bdr:WA22022  a          :Work ;
         skos:prefLabel      "bod kyi lo rgyus yig tshags dang gzhung yig phyogs bsdus dwangs shel me long /"@bo-x-ewts , "Bod kyi lo rgyus yig tshags daṅ gźuṅ yig phyogs bsdus dwaṅs śel me loṅ /Bkra-śis-dbaṅ-ʾdus kyis bsgrigs pa."@en-x-mixed , "hsi tsang li shih tang an kung wen hsuan shui ching ming chien"@zh-latn-wadegile ;
         :catalogInfo        "Collection of miscellaneous historical documents relating to the history of Tibet and its relation with China."@en ;
-        :creator            bdr:CR87CD6E79FBE8DFB0 ;
+        :creator            bdr:CRC89F193CDCA0CB44 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

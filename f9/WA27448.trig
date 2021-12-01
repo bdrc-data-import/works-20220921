@@ -12,22 +12,28 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27448 {
-    bda:LG8CBBB7DF39E2C191
+    bda:LGBBD51EE9A25E787B
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA27448  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27448 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "f9/WA27448.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27448 ;
-        adm:logEntry        bda:LG8CBBB7DF39E2C191 ;
+        adm:logEntry        bda:LGBBD51EE9A25E787B , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CRBBD51EE9A25E787B
+    bdr:CRC5FECEEA6C8EAEF4
         a                   :AgentAsCreator ;
         :agent              bdr:P825 ;
         :role               bdr:R0ER0016 .
@@ -35,7 +41,7 @@ bdg:WA27448 {
     bdr:WA27448  a          :Work ;
         skos:altLabel       "mgon po sgrub mchod/"@bo-x-ewts ;
         skos:prefLabel      "sku gsung thugs snying po'i dngos grub sgrub pa'i thabs bklag chog tu bkod pa bdud kyi g.yul las rab tu rgyal ba/"@bo-x-ewts ;
-        :creator            bdr:CRBBD51EE9A25E787B ;
+        :creator            bdr:CRC5FECEEA6C8EAEF4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW27448 ;

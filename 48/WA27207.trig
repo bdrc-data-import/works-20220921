@@ -12,29 +12,35 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27207 {
-    bda:LGE4E0E9F56B147355
+    bda:LG0F3E44EC4A7E700F
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA27207  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27207 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "48/WA27207.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27207 ;
-        adm:logEntry        bda:LGE4E0E9F56B147355 ;
+        adm:logEntry        bda:LG0F3E44EC4A7E700F , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CR0F3E44EC4A7E700F
+    bdr:CR56341FCE278B07DF
         a                   :AgentAsCreator ;
         :agent              bdr:P60 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA27207  a          :Work ;
         skos:prefLabel      "rnam rig grub pa'i rgyan/"@bo-x-ewts ;
-        :creator            bdr:CR0F3E44EC4A7E700F ;
+        :creator            bdr:CR56341FCE278B07DF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW27207 ;

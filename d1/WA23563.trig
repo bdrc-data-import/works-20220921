@@ -17,7 +17,7 @@ bdg:WA23563 {
         adm:logDate         "2010-12-16T15:21:55.512Z"^^xsd:dateTime ;
         adm:logMessage      "added WMDL and WMDL07"@en .
     
-    bda:LG840BAECCD91472C1
+    bda:LG2345A160CF5A9BDE
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -59,6 +59,12 @@ bdg:WA23563 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -76,15 +82,16 @@ bdg:WA23563 {
     bda:WA23563  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23563 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "d1/WA23563.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23563 ;
-        adm:logEntry        bda:LG023AE2F2C65A9FF7 , bda:LG840BAECCD91472C1 , bda:LG9115A69A598965AF , bda:LG91290A31E1F21D9B , bda:LGCA771D7A984F0816 , bda:LGE3AFE1CE60DF90A7 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG023AE2F2C65A9FF7 , bda:LG2345A160CF5A9BDE , bda:LG9115A69A598965AF , bda:LG91290A31E1F21D9B , bda:LGCA771D7A984F0816 , bda:LGE3AFE1CE60DF90A7 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2345A160CF5A9BDE
+    bdr:CR6014AD23D526342C
         a                   :AgentAsCreator ;
         :agent              bdr:P620 ;
         :role               bdr:R0ER0019 .
@@ -95,7 +102,7 @@ bdg:WA23563 {
         skos:altLabel       "grub-dban sakya-sri-dznya-na'i gsun 'bum"@bo-alalc97 , "Grub-dbaṅ Śākya-śrī-dzñāʾi gsuṅ ʾbum =The collected works of Rig-ʾdzin Grub-dbaṅ Śākya-śrī."@en-x-mixed ;
         skos:prefLabel      "gsung 'bum/_shAkya shrI/"@bo-x-ewts , "collected works of rig-'dzin grub-dban sakya-srI"@en-x-mixed ;
         :catalogInfo        "Collected Works by master of the Drukpa Kagyu order, Tokden Shakya Shri (1853-1919). Revelations incorporate teachings of both Dzogchen and Kagyu and are connected with Jamyang Khyentse Wangpo and Dzongsar Jamyang Chokyi Lodro."@en ;
-        :creator            bdr:CR2345A160CF5A9BDE ;
+        :creator            bdr:CR6014AD23D526342C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

@@ -12,14 +12,14 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA16936 {
-    bda:LG1D676FC3E31C6956
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG52DFC943CD52AAF0
         a                   adm:UpdateData ;
         adm:logDate         "2012-08-30T10:46:18.51Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LG673810442829B394
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -27,6 +27,12 @@ bdg:WA16936 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
@@ -45,15 +51,16 @@ bdg:WA16936 {
     bda:WA16936  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA16936 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "87/WA16936.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA16936 ;
-        adm:logEntry        bda:LG1D676FC3E31C6956 , bda:LG52DFC943CD52AAF0 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG52DFC943CD52AAF0 , bda:LG673810442829B394 , bda:LGIM093A1A0447 , bda:LGIM7CC15F8F , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR673810442829B394
+    bdr:CRF8DA03ABA164DC46
         a                   :AgentAsCreator ;
         :agent              bdr:P4704 ;
         :role               bdr:R0ER0019 .
@@ -63,7 +70,7 @@ bdg:WA16936 {
     bdr:WA16936  a          :Work ;
         skos:altLabel       "rje shar gdong blo bzang bshad sgrub rgya mtsho'i gsung 'bum/"@bo-x-ewts , "xiaridong wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gsung 'bum/_blo bzang bshad sgrub rgya mtsho/"@bo-x-ewts , "hsia jih tung wen chi"@zh-latn-wadegile ;
-        :creator            bdr:CR673810442829B394 ;
+        :creator            bdr:CRF8DA03ABA164DC46 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

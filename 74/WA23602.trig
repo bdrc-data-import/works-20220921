@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23602 {
-    bda:LG01E481D69370ECC7
+    bda:LG66528DDE5EB87121
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -22,6 +22,12 @@ bdg:WA23602 {
         adm:logMessage      "normalized catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -47,12 +53,13 @@ bdg:WA23602 {
     bda:WA23602  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23602 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "74/WA23602.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23602 ;
-        adm:logEntry        bda:LG01E481D69370ECC7 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG66528DDE5EB87121 , bda:LGIM5A753E00B7 , bda:LGIM7CC15F8F , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW23602  skos:altLabel  "dpal rgyal ba she chen pa'i lugs kyi dbyangs yig : a collection of chanting and instrumental notations for the various rites performed at shechen monastery"@en-x-mixed .

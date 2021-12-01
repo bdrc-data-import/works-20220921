@@ -12,22 +12,28 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2789 {
-    bda:LG4E7B13FAFB2C4BBA
+    bda:LG3A1C7644E8943373
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA2789  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2789 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "27/WA2789.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2789 ;
-        adm:logEntry        bda:LG4E7B13FAFB2C4BBA ;
+        adm:logEntry        bda:LG3A1C7644E8943373 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CR3A1C7644E8943373
+    bdr:CRE0D6A78877F773D4
         a                   :AgentAsCreator ;
         :agent              bdr:P182 ;
         :role               bdr:R0ER0019 .
@@ -35,7 +41,7 @@ bdg:WA2789 {
     bdr:WA2789  a           :Work ;
         skos:altLabel       "bka' blon gung paNDi tar gnang ba'i chab shog tshan pa gnyis/"@bo-x-ewts ;
         skos:prefLabel      "gung paNDi tar gnang ba'i chab shog tshan pa gnyis/"@bo-x-ewts ;
-        :creator            bdr:CR3A1C7644E8943373 ;
+        :creator            bdr:CRE0D6A78877F773D4 ;
         :isRoot             true ;
         :workHasInstance    bdr:MW2789 .
 }

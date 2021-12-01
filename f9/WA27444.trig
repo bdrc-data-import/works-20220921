@@ -12,22 +12,28 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27444 {
-    bda:LG7CCCA55E629CA43D
+    bda:LGD604461ACD331071
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA27444  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27444 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "f9/WA27444.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27444 ;
-        adm:logEntry        bda:LG7CCCA55E629CA43D ;
+        adm:logEntry        bda:LGD604461ACD331071 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CRD604461ACD331071
+    bdr:CRD0E5B9B3AB6DBB8B
         a                   :AgentAsCreator ;
         :agent              bdr:P5159 ;
         :role               bdr:R0ER0025 .
@@ -35,7 +41,7 @@ bdg:WA27444 {
     bdr:WA27444  a          :Work ;
         skos:altLabel       "ma cig thugs kyi thig le dam chos smyo gcod lad: bka' srung gi skor/"@bo-x-ewts ;
         skos:prefLabel      "bka' srung gi skor/"@bo-x-ewts ;
-        :creator            bdr:CRD604461ACD331071 ;
+        :creator            bdr:CRD0E5B9B3AB6DBB8B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW27444 ;

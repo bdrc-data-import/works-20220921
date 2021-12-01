@@ -12,22 +12,28 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27428 {
-    bda:LG304CAABE7FCBA324
+    bda:LG60CECF5363ECF9D6
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA27428  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27428 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "40/WA27428.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27428 ;
-        adm:logEntry        bda:LG304CAABE7FCBA324 ;
+        adm:logEntry        bda:LG60CECF5363ECF9D6 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CR60CECF5363ECF9D6
+    bdr:CR465FC1FB62FF4B00
         a                   :AgentAsCreator ;
         :agent              bdr:P654 ;
         :role               bdr:R0ER0025 .
@@ -35,7 +41,7 @@ bdg:WA27428 {
     bdr:WA27428  a          :Work ;
         skos:altLabel       "pad+ma ba dz+ra las rim brgya rtsa'i cha lag lnga las: gur drag rdo rje pha lam dregs pa'i srog tig dmar nag"@bo-x-ewts ;
         skos:prefLabel      "gur drag rdo rje pha lam dregs pa'i srog tig dmar nag"@bo-x-ewts ;
-        :creator            bdr:CR60CECF5363ECF9D6 ;
+        :creator            bdr:CR465FC1FB62FF4B00 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW27428 ;

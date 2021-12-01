@@ -24,6 +24,12 @@ bdg:WA3CN17354 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -40,15 +46,16 @@ bdg:WA3CN17354 {
     bda:WA3CN17354  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN17354 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "9f/WA3CN17354.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN17354 ;
-        adm:logEntry        bda:LGB7F237CF6B5C851A , bda:LGE297C5725346E3B6 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LGB7F237CF6B5C851A , bda:LGE297C5725346E3B6 , bda:LGIM7CC15F8F , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7D3AD63F8AA86060
+    bdr:CR64B38EBB0A3B47FA
         a                   :AgentAsCreator ;
         :agent              bdr:P3CN17355 ;
         :role               bdr:R0ER0019 .
@@ -58,7 +65,7 @@ bdg:WA3CN17354 {
     bdr:WA3CN17354  a       :Work ;
         skos:prefLabel      "nub byang rgyang skyod kyi lo rgyus/"@bo-x-ewts , "西北远征记"@zh-hans ;
         :catalogInfo        "Northwest Expedition by Xuan Xiafu (1899-1938). Translated to Tibetan by Tsewang etc."@en ;
-        :creator            bdr:CR7D3AD63F8AA86060 ;
+        :creator            bdr:CR64B38EBB0A3B47FA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

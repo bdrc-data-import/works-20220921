@@ -31,25 +31,32 @@ bdg:WA1KG14653 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG14653  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14653 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "5b/WA1KG14653.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14653 ;
-        adm:logEntry        bda:LG7B8FCFC71F8170A4 , bda:LGBB9C174AB406335F , bda:LGIM4BF5F96E12 ;
+        adm:logEntry        bda:LG7B8FCFC71F8170A4 , bda:LGBB9C174AB406335F , bda:LGIM4BF5F96E12 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1BA31FD089211EDE
+    bdr:CR1D332D4F49BFF619
         a                   :AgentAsCreator ;
         :agent              bdr:P2666 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1KG14653  a       :Work ;
         skos:prefLabel      "rgyal lugs thugs rje chen po'i khrid yig"@bo-x-ewts ;
-        :creator            bdr:CR1BA31FD089211EDE ;
+        :creator            bdr:CR1D332D4F49BFF619 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T200 ;

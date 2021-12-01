@@ -44,6 +44,12 @@ bdg:WA1KG12427 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -61,15 +67,16 @@ bdg:WA1KG12427 {
     bda:WA1KG12427  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG12427 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "ad/WA1KG12427.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG12427 ;
-        adm:logEntry        bda:LG39DD5A5E0EF08CBB , bda:LG3FF9B6FA2DCB8C85 , bda:LG824D05637247778D , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG39DD5A5E0EF08CBB , bda:LG3FF9B6FA2DCB8C85 , bda:LG824D05637247778D , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5F3FE770966C05EE
+    bdr:CRD043E3EB1A5E9D0A
         a                   :AgentAsCreator ;
         :agent              bdr:P6660 ;
         :role               bdr:R0ER0019 .
@@ -80,7 +87,7 @@ bdg:WA1KG12427 {
         skos:altLabel       "yig bskur rnam gzhag bka' blon bshad sgras brtsams pa/"@bo-x-ewts , "zang wen shu du gui fan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bka' blon bshad sgras brtsams pa'i yig bskur rnam gzhag"@bo-x-ewts , "藏文书牍轨范"@zh-hans ;
         :catalogInfo        "Anthology of correspondences by the modern figure Shedra Ganden Peljor."@en ;
-        :creator            bdr:CR5F3FE770966C05EE ;
+        :creator            bdr:CRD043E3EB1A5E9D0A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG12427 , bdr:W1KG12427 ;

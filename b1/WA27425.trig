@@ -12,18 +12,24 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27425 {
-    bda:LGE73759440BC53E16
+    bda:LG3D9DB83F233D12FE
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA27425  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27425 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "b1/WA27425.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27425 ;
-        adm:logEntry        bda:LGE73759440BC53E16 ;
+        adm:logEntry        bda:LG3D9DB83F233D12FE , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     

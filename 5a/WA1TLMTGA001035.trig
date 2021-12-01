@@ -18,20 +18,27 @@ bdg:WA1TLMTGA001035 {
         adm:logMessage      "Work created."@en ;
         adm:logWho          bdu:U00033 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1TLMTGA001035
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1TLMTGA001035 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "5a/WA1TLMTGA001035.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1TLMTGA001035 ;
-        adm:logEntry        bda:LGF3EFFC2E45C9870A ;
+        adm:logEntry        bda:LGF3EFFC2E45C9870A , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG4945 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRDD6DB884661150EC
+    bdr:CRA9D111EA26BF0F7E
         a                   :AgentAsCreator ;
         :agent              bdr:P1TLMTGA001033 ;
         :role               bdr:R0ER0028 .
@@ -40,7 +47,7 @@ bdg:WA1TLMTGA001035 {
         a                   :Work ;
         skos:altLabel       "dol rgyal gyi byung rim dang rnyog gleng la rnam par dpyad pa lung dang rigs pa'i 'od snang 'bum gyis legs par drangs pa'i mtha' dpyod bden rdzun nyin mo ltar gsal bar byed pa g.ya' sel me long /"@bo-x-ewts ;
         skos:prefLabel      "dol rgyal gyi byung rim dang rnyog gleng la dpyad pa g.ya' sel me long /"@bo-x-ewts ;
-        :creator            bdr:CRDD6DB884661150EC ;
+        :creator            bdr:CRA9D111EA26BF0F7E ;
         :isRoot             true ;
         :language           bdr:LangBo .
 }

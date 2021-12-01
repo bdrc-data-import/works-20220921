@@ -63,6 +63,12 @@ bdg:WA00KG08 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
@@ -80,30 +86,31 @@ bdg:WA00KG08 {
     bda:WA00KG08  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG08 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "4c/WA00KG08.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG08 ;
-        adm:logEntry        bda:LG010F0090ED5D437B , bda:LG03060E0A0BB88BEF , bda:LG514EA32D38123D31 , bda:LG5B5219B11F5E27AC , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG010F0090ED5D437B , bda:LG03060E0A0BB88BEF , bda:LG514EA32D38123D31 , bda:LG5B5219B11F5E27AC , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM7CC15F8F , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8CD552AE8B7D003D
+    bdr:CR8BB48355BAC1DEE5
         a                   :AgentAsCreator ;
         :agent              bdr:P5641 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV8BB48355BAC1DEE5
+    bdr:EVE0D7B7F7C9767755
         a                   :CompletedEvent ;
         :onYear             "2006"^^xsd:gYear .
     
     bdr:WA00KG08  a         :Work ;
         skos:prefLabel      "bod kyi lo rgyus spyi don kun gsal nor bu'i me long /"@bo-x-ewts ;
         :catalogInfo        "History of Tibet, divided into major periods. Written by the modern Tibetan author Rinchen Norbu."@en ;
-        :creator            bdr:CR8CD552AE8B7D003D ;
+        :creator            bdr:CR8BB48355BAC1DEE5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV8BB48355BAC1DEE5 ;
+        :workEvent          bdr:EVE0D7B7F7C9767755 ;
         :workGenre          bdr:T1134 ;
         :workHasInstance    bdr:MW00KG08 , bdr:W00KG08 ;
         :workIsAbout        bdr:G3196 .

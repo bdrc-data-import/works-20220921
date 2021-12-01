@@ -24,18 +24,24 @@ bdg:WA1KG23765 {
         adm:logMessage      "provision"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG23765  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG23765 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "d8/WA1KG23765.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG23765 ;
-        adm:logEntry        bda:LG88569BD7B62AED82 , bda:LGDA32F34E7D4621F5 ;
+        adm:logEntry        bda:LG88569BD7B62AED82 , bda:LGDA32F34E7D4621F5 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusAccessioned .
     
-    bdr:CRF72546562BC726BA
+    bdr:CRF21259696F58CCB6
         a                   :AgentAsCreator ;
         :agent              bdr:P6666 ;
         :role               bdr:R0ER0019 .
@@ -43,7 +49,7 @@ bdg:WA1KG23765 {
     bdr:WA1KG23765  a       :Work ;
         skos:prefLabel      "deng rabs srid 'dzin rig pa'i rnam bshad/"@bo-x-ewts , "Xian dai xing zheng guan li xue"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Study on contemporary political thoughts and administration in China."@en ;
-        :creator            bdr:CRF72546562BC726BA ;
+        :creator            bdr:CRF21259696F58CCB6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;

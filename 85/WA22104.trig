@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22104 {
-    bda:LG06A87F78BDF1FD6B
+    bda:LGE94170BDA0F2E7ED
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -26,33 +32,33 @@ bdg:WA22104 {
     bda:WA22104  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22104 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "85/WA22104.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22104 ;
-        adm:logEntry        bda:LG06A87F78BDF1FD6B , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LGE94170BDA0F2E7ED , bda:LGIM7CC15F8F , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
     bdr:CR270C32B865A855E8
         a                   :AgentAsCreator ;
-        :agent              bdr:P7473 ;
+        :agent              bdr:P7474 ;
         :role               bdr:R0ER0026 .
     
     bdr:CR3E2763B772F5024E
         a                   :AgentAsCreator ;
-        :agent              bdr:P7474 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CRE94170BDA0F2E7ED
-        a                   :AgentAsCreator ;
         :agent              bdr:P4954 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR649D91DBFDA5C937
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7473 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA22104  a          :Work ;
         skos:altLabel       "excellent collection doctrines acarya nagarjuna/"@bo-x-ewts , "dharmasamgrahah"@sa-x-ndia ;
         skos:prefLabel      "chos yang dag par bsdus pa/"@bo-x-ewts , "Dharmasaṁgrahaḥ =Excellent collection of doctrines of Ācārya Nāgārjuna /translated into English by Tashi Zangmo and Dechen Chime."@en-x-mixed , "dharmasangraha"@sa-alalc97 ;
-        :creator            bdr:CR270C32B865A855E8 , bdr:CR3E2763B772F5024E , bdr:CRE94170BDA0F2E7ED ;
+        :creator            bdr:CR270C32B865A855E8 , bdr:CR3E2763B772F5024E , bdr:CR649D91DBFDA5C937 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW22104 ;

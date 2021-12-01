@@ -18,19 +18,26 @@ bdg:WA1TLMTGA003102 {
         adm:logMessage      "Work created."@en ;
         adm:logWho          bdu:U00033 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1TLMTGA003102
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1TLMTGA003102 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b1/WA1TLMTGA003102.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1TLMTGA003102 ;
-        adm:logEntry        bda:LG5D9D646C8D574F22 ;
+        adm:logEntry        bda:LG5D9D646C8D574F22 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusEditing .
     
-    bdr:CR838C2918A166E202
+    bdr:CR242528D73B13B077
         a                   :AgentAsCreator ;
         :agent              bdr:P6267 ;
         :role               bdr:R0ER0019 .
@@ -39,7 +46,7 @@ bdg:WA1TLMTGA003102 {
         a                   :Work ;
         skos:altLabel       "rgyan gyi bstan bcos mtsho byung dgyes pa'i 'dzums zer/"@bo-x-ewts ;
         skos:prefLabel      "mtsho byung dgyes pa'i 'dzum zer/"@bo-x-ewts ;
-        :creator            bdr:CR838C2918A166E202 ;
+        :creator            bdr:CR242528D73B13B077 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGA003102 .

@@ -29,7 +29,7 @@ bdg:WA29259 {
         adm:logDate         "2007-11-28T12:45:59.836Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGC4F9479B0DF8240B
+    bda:LGC0B2BF203315F56B
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -39,6 +39,12 @@ bdg:WA29259 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
@@ -57,15 +63,16 @@ bdg:WA29259 {
     bda:WA29259  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29259 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "9d/WA29259.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29259 ;
-        adm:logEntry        bda:LG723104BD2D9C766A , bda:LG7E3158C52FDF9C42 , bda:LG819FEA335EED8DCF , bda:LGC4F9479B0DF8240B , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG723104BD2D9C766A , bda:LG7E3158C52FDF9C42 , bda:LG819FEA335EED8DCF , bda:LGC0B2BF203315F56B , bda:LGIM093A1A0447 , bda:LGIM7CC15F8F , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC0B2BF203315F56B
+    bdr:CR8BC0C4435F9473B3
         a                   :AgentAsCreator ;
         :agent              bdr:P5639 ;
         :role               bdr:R0ER0019 .
@@ -75,7 +82,7 @@ bdg:WA29259 {
     bdr:WA29259  a          :Work ;
         skos:altLabel       "dus gsum rgyal ba'i spyi gzugs gter chen bdud 'joms 'jigs bral ye shes rdo rje 'gro 'dul gling pa rtsal gyi rnam thar ye shes rdo rje'i 'od zer/"@bo-x-ewts ;
         skos:prefLabel      "bdud 'joms 'jigs bral ye shes rdo rje 'gro 'dul gling pa rtsal gyi rnam thar ye shes rdo rje'i 'od zer/"@bo-x-ewts , "light of the fearless indestructible sun : a short biography of h.h. dudjom rinpoche"@en ;
-        :creator            bdr:CRC0B2BF203315F56B ;
+        :creator            bdr:CR8BC0C4435F9473B3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22188 {
-    bda:LG0A58C7EC208E752D
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG1D57DE6FAB83F583
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-09-08T13:59:06.752Z"^^xsd:dateTime ;
@@ -28,6 +24,10 @@ bdg:WA22188 {
         adm:logMessage      "added shad"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG66E96ECC78578054
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -35,18 +35,25 @@ bdg:WA22188 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA22188  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22188 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "9a/WA22188.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22188 ;
-        adm:logEntry        bda:LG0A58C7EC208E752D , bda:LG1D57DE6FAB83F583 , bda:LG211DC0F1FC94E8A2 , bda:LGIM4BF5F96E12 ;
+        adm:logEntry        bda:LG1D57DE6FAB83F583 , bda:LG211DC0F1FC94E8A2 , bda:LG66E96ECC78578054 , bda:LGIM4BF5F96E12 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR66E96ECC78578054
+    bdr:CR2ED3137C14B6A792
         a                   :AgentAsCreator ;
         :agent              bdr:P7501 ;
         :role               bdr:R0ER0019 .
@@ -55,7 +62,7 @@ bdg:WA22188 {
     
     bdr:WA22188  a          :Work ;
         skos:prefLabel      "tshad ma'i bstan bcos rigs pa'i them skas/"@bo-x-ewts , "steps to valid reasoning : a treatise on logics"@en ;
-        :creator            bdr:CR66E96ECC78578054 ;
+        :creator            bdr:CR2ED3137C14B6A792 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW22188 , bdr:MW3CN546 , bdr:W22188 , bdr:W3CN546 ;

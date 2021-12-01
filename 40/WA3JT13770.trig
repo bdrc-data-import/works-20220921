@@ -48,31 +48,38 @@ bdg:WA3JT13770 {
         adm:logMessage      "updated label for TPMV"@en ;
         adm:logWhoStr       "works-update-PR1VIENNA00-label" .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA3JT13770  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3JT13770 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "40/WA3JT13770.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3JT13770 ;
-        adm:logEntry        bda:LG10DE55673A3B9FB9 , bda:LG786653C29FF91993 , bda:LG8555E1C8AF5DCE8C , bda:LG90774C1F82876E76 , bda:LG9F64FBA71DEC613E , bda:LGEE7857689B96E64A ;
+        adm:logEntry        bda:LG10DE55673A3B9FB9 , bda:LG786653C29FF91993 , bda:LG8555E1C8AF5DCE8C , bda:LG90774C1F82876E76 , bda:LG9F64FBA71DEC613E , bda:LGEE7857689B96E64A , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8B9BAD49EFE1CD37
+    bdr:CR28CE55B0A1A5808E
         a                   :AgentAsCreator ;
         :agent              bdr:P1650 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV28CE55B0A1A5808E
+    bdr:EVD024E31F7EE7DD04
         a                   :CompletedEvent .
     
     bdr:WA3JT13770  a       :Work ;
         skos:prefLabel      "gnam gyi lha'i gser lung btsan pos paN chen er ti nir bsngags shing / rgyal bstan 'dzin cing spel ba'i lhag bsam gyi snying stobs dge ba shAkya'i ring lugs pa blo bzang 'phrin las lhun grub chos kyi rgyal mtshan dpal bzang por 'bod pa'i gtam/"@bo-x-ewts ;
-        :creator            bdr:CR8B9BAD49EFE1CD37 ;
+        :creator            bdr:CR28CE55B0A1A5808E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV28CE55B0A1A5808E ;
+        :workEvent          bdr:EVD024E31F7EE7DD04 ;
         :workHasInstance    bdr:MW3JT13770 , bdr:W3JT13770 ;
         :workIsAbout        bdr:T1PD108882 .
 }

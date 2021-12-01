@@ -24,18 +24,25 @@ bdg:WA8LS20854 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA8LS20854  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20854 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "1f/WA8LS20854.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20854 ;
-        adm:logEntry        bda:LG59EB505198714645 , bda:LG7E74E3D1D994641B ;
+        adm:logEntry        bda:LG59EB505198714645 , bda:LG7E74E3D1D994641B , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5D6D8D8473C393EF
+    bdr:CRB16692820DB083CF
         a                   :AgentAsCreator ;
         :agent              bdr:P314 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +51,7 @@ bdg:WA8LS20854 {
         skos:altLabel       "bla ma dgongs pa 'dus pa'i cho ga'i rnam bzhag dang 'brel ba'i bskyed rdzogs zung 'jug gi sgrom mkhyen brtse'i me long 'od zer brgya pa/"@bo-x-ewts ;
         skos:prefLabel      "bla ma dgongs pa 'dus pa'i cho ga'i rnam bzhag dang 'brel ba'i bskyed rdzogs zung 'jug gi sgrom/"@bo-x-ewts ;
         :catalogInfo        "An analysis of Lama Gongdu ritual text and structure of generating and completion stage by Kunkyen Jigme Lingpa."@en ;
-        :creator            bdr:CR5D6D8D8473C393EF ;
+        :creator            bdr:CRB16692820DB083CF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 , bdr:T977 ;

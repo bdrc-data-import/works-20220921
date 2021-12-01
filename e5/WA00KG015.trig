@@ -36,6 +36,12 @@ bdg:WA00KG015 {
         adm:logMessage      "catalog work"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -53,15 +59,16 @@ bdg:WA00KG015 {
     bda:WA00KG015  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG015 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "e5/WA00KG015.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG015 ;
-        adm:logEntry        bda:LG053C844451DF231C , bda:LG28335EBA04D8CCEC , bda:LG7AAF4C805C6B71BA , bda:LGFD1A4EF2ED09C0C1 , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG053C844451DF231C , bda:LG28335EBA04D8CCEC , bda:LG7AAF4C805C6B71BA , bda:LGFD1A4EF2ED09C0C1 , bda:LGIM7CC15F8F , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1A6E34A9A1FFE7D9
+    bdr:CR175BC84B019F6584
         a                   :AgentAsCreator ;
         :agent              bdr:P7911 ;
         :role               bdr:R0ER0019 .
@@ -72,7 +79,7 @@ bdg:WA00KG015 {
         skos:altLabel       "qian shi jin sheng lun"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "skye ba snga phyi'i rnam gzhag srid pa gsal ba'i me long /"@bo-x-ewts , "Skye ba sṅa phyiʼi rnam gźag Srid pa gsal baʼi me loṅ źes bya ba bźugs so /[Bla-ruṅ Mkhan-po Tshul-khrims-blo-gros]."@en-x-mixed , "前世今生论"@zh-hans ;
         :catalogInfo        "Articles on recognized reincarnations in Tibet."@en ;
-        :creator            bdr:CR1A6E34A9A1FFE7D9 ;
+        :creator            bdr:CR175BC84B019F6584 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW00EGS1017555_831892 , bdr:MW00KG015 , bdr:MW1TLMTGA002476 , bdr:MW1TLMTGA002477 , bdr:W00KG015 ;

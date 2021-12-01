@@ -31,18 +31,25 @@ bdg:WA1KG14676 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG14676  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14676 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "23/WA1KG14676.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14676 ;
-        adm:logEntry        bda:LG72113DD6E93BA35D , bda:LGA675D69092A50A65 , bda:LGIM4BF5F96E12 ;
+        adm:logEntry        bda:LG72113DD6E93BA35D , bda:LGA675D69092A50A65 , bda:LGIM4BF5F96E12 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC4BCF5261DC9A7DF
+    bdr:CRCD8637B42D3EDD33
         a                   :AgentAsCreator ;
         :agent              bdr:P16 ;
         :role               bdr:R0ER0019 .
@@ -50,7 +57,7 @@ bdg:WA1KG14676 {
     bdr:WA1KG14676  a       :Work ;
         skos:prefLabel      "dmigs pa gegs sel chen mo/"@bo-x-ewts ;
         :catalogInfo        "Method of curing various ailments through meditation"@en ;
-        :creator            bdr:CRC4BCF5261DC9A7DF ;
+        :creator            bdr:CRCD8637B42D3EDD33 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG14676 , bdr:W1KG14676 ;

@@ -24,6 +24,12 @@ bdg:WA8LS20767 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8F5AC89D  a     adm:UpdateData ;
         adm:logAgent        "add-works-to-PR1CTC16" ;
         adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
@@ -33,16 +39,17 @@ bdg:WA8LS20767 {
     bda:WA8LS20767  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20767 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "aa/WA8LS20767.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20767 ;
-        adm:logEntry        bda:LG7AF92242A01511AD , bda:LGE193F37AEE137394 , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG7AF92242A01511AD , bda:LGE193F37AEE137394 , bda:LGIM7CC15F8F , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA29206 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR392324D88466AA28
+    bdr:CR2D46177318C81BBD
         a                   :AgentAsCreator ;
         :agent              bdr:P235 ;
         :role               bdr:R0ER0019 .
@@ -51,7 +58,7 @@ bdg:WA8LS20767 {
         skos:altLabel       "dpal snga 'gyur rnying ma'i gzhung lugs chen mo'i skor/ mkhas pa'i tshul la 'jug pa'i sgo'i mchan 'grel legs bshad snang ba'i 'od zer/"@bo-x-ewts ;
         skos:prefLabel      "mkhas pa'i tshul la 'jug pa'i sgo'i mchan 'grel legs bshad snang ba'i 'od zer/"@bo-x-ewts ;
         :catalogInfo        "An annotated commentary of Mipham's interpretation of scholarship by the 4th Zhechen Gyeltsab Nuden Khyentse Ozer."@en ;
-        :creator            bdr:CR392324D88466AA28 ;
+        :creator            bdr:CR2D46177318C81BBD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T304 ;

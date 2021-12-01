@@ -12,21 +12,27 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20829 {
-    bda:LGB633AA0C9DDCFB98
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGBD447CBF6160C4CF
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-06-30T16:13:53.077Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGBF960B6F71C89AEC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGD9BB1AFFAC749C8D
         a                   adm:UpdateData ;
         adm:logDate         "2016-06-30T16:13:13.836Z"^^xsd:dateTime ;
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8F5AC89D  a     adm:UpdateData ;
         adm:logAgent        "add-works-to-PR1CTC16" ;
@@ -37,12 +43,13 @@ bdg:WA20829 {
     bda:WA20829  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20829 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "aa/WA20829.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20829 ;
-        adm:logEntry        bda:LGB633AA0C9DDCFB98 , bda:LGBD447CBF6160C4CF , bda:LGD9BB1AFFAC749C8D , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LGBD447CBF6160C4CF , bda:LGBF960B6F71C89AEC , bda:LGD9BB1AFFAC749C8D , bda:LGIM7CC15F8F , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW20829  skos:altLabel  "夏格巴的《西藏政治史》与西藏历史的本来面目"@zh-hans .

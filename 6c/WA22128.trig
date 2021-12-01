@@ -30,6 +30,10 @@ bdg:WA22128 {
         adm:logMessage      "changed status to restricted"@en ;
         adm:logWho          bdu:U00020 .
     
+    bda:LG33433A60F13B8717
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG3698BB10EEA92CAF
         a                   adm:UpdateData ;
         adm:logDate         "2011-05-18T15:23:11.8Z"^^xsd:dateTime ;
@@ -60,10 +64,6 @@ bdg:WA22128 {
         adm:logMessage      "temp released"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGDAC6CD04A3168646
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGE39287740272F40B
         a                   adm:UpdateData ;
         adm:logDate         "2012-02-24T11:17:33.369Z"^^xsd:dateTime ;
@@ -91,6 +91,12 @@ bdg:WA22128 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -101,15 +107,16 @@ bdg:WA22128 {
     bda:WA22128  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22128 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "6c/WA22128.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22128 ;
-        adm:logEntry        bda:LG0EA269393BBDEA48 , bda:LG22FED7CB7A6BAC67 , bda:LG30D27186419991C3 , bda:LG3698BB10EEA92CAF , bda:LG37044E0F730228ED , bda:LG5155EA68970DF5BF , bda:LG8DED54A5B96E59D0 , bda:LGB1FAD38EE3B3A2FF , bda:LGDAC6CD04A3168646 , bda:LGE39287740272F40B , bda:LGIM3F9169BB6E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0EA269393BBDEA48 , bda:LG22FED7CB7A6BAC67 , bda:LG30D27186419991C3 , bda:LG33433A60F13B8717 , bda:LG3698BB10EEA92CAF , bda:LG37044E0F730228ED , bda:LG5155EA68970DF5BF , bda:LG8DED54A5B96E59D0 , bda:LGB1FAD38EE3B3A2FF , bda:LGE39287740272F40B , bda:LGIM3F9169BB6E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR33433A60F13B8717
+    bdr:CRDCEAF0CC37440915
         a                   :AgentAsCreator ;
         :agent              bdr:P2596 ;
         :role               bdr:R0ER0019 .
@@ -118,7 +125,7 @@ bdg:WA22128 {
         skos:altLabel       "'jam mgon rgyal ba gnyis pa'i bstan srung rgyal chen rdo rje shugs ldan rtsal gyi chos skor be bum du bsgrigs pa/"@bo-x-ewts ;
         skos:prefLabel      "shugs ldan be'u bum/"@bo-x-ewts ;
         :catalogInfo        "Collection of ritual texts on Dorje Shugden."@en ;
-        :creator            bdr:CR33433A60F13B8717 ;
+        :creator            bdr:CRDCEAF0CC37440915 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1202 ;

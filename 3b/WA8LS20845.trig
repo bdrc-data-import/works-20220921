@@ -24,18 +24,25 @@ bdg:WA8LS20845 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA8LS20845  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20845 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "3b/WA8LS20845.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20845 ;
-        adm:logEntry        bda:LG7E3FF5593AF839DA , bda:LG95D3FE9844FEA034 ;
+        adm:logEntry        bda:LG7E3FF5593AF839DA , bda:LG95D3FE9844FEA034 , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF9A099A34229A173
+    bdr:CR653E23BBA2EE296A
         a                   :AgentAsCreator ;
         :agent              bdr:P6962 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +51,7 @@ bdg:WA8LS20845 {
         skos:altLabel       "byang chub sems dpa'i spyod pa la 'jug pa'i tshig 'grel 'jam dbyangs bla ma'i zhal lung bdud rtsi'i thigs pa/"@bo-x-ewts ;
         skos:prefLabel      "byang chub sems dpa'i spyod pa la 'jug pa'i tshig 'grel/"@bo-x-ewts ;
         :catalogInfo        "A word by word commentary of Bodhicaryavatra by Khenpo Kunzang Palden."@en ;
-        :creator            bdr:CRF9A099A34229A173 ;
+        :creator            bdr:CR653E23BBA2EE296A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T2397 ;

@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21825 {
-    bda:LG10F6A8924F28D90F
+    bda:LG87100735810578E9
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -48,6 +48,12 @@ bdg:WA21825 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM7CC15F8F  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-11-30T06:34:21.447Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -58,15 +64,16 @@ bdg:WA21825 {
     bda:WA21825  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21825 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "7f/WA21825.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21825 ;
-        adm:logEntry        bda:LG10F6A8924F28D90F , bda:LGA963C3931BD7757B , bda:LGEF1A1A430BFD8902 , bda:LGF509AA162AB66013 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG87100735810578E9 , bda:LGA963C3931BD7757B , bda:LGEF1A1A430BFD8902 , bda:LGF509AA162AB66013 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR87100735810578E9
+    bdr:CRC7704B35493C6D92
         a                   :AgentAsCreator ;
         :agent              bdr:P7359 ;
         :role               bdr:R0ER0019 .
@@ -75,7 +82,7 @@ bdg:WA21825 {
         skos:altLabel       "the collected works (gsun 'bum) of the second pad-nor rin-po-che of dpal-yul thub-bstan-chos-kyi-glan-po 'jam-dpal-grub-pa'i-blo-gros"@bo-alalc97 , "dpal yul pad nor thub bstan chos kyi glang po'i bka' 'bum/"@bo-x-ewts , "dpal yul pad nor thub bstan chos kyi glang po'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_thub bstan chos kyi glang po/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by 19th century master Penor 02 Tubten Chokyi Langpo Jampal Drupai Lodro. Reproduced from a rare set of manuscripts from Peyul Monastery. Scanned with the generous support of Ms. Christine Tomlinson of Austin TX."@en ;
-        :creator            bdr:CR87100735810578E9 ;
+        :creator            bdr:CRC7704B35493C6D92 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;
