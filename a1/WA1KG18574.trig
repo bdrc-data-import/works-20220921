@@ -30,6 +30,12 @@ bdg:WA1KG18574 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
@@ -40,12 +46,13 @@ bdg:WA1KG18574 {
     bda:WA1KG18574  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG18574 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a1/WA1KG18574.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG18574 ;
-        adm:logEntry        bda:LG6FAA88379EEC1C9B , bda:LG8E0BFFD25175B2DE , bda:LGDF50EE953B9C8956 , bda:LGIM4D99209C62 ;
+        adm:logEntry        bda:LG6FAA88379EEC1C9B , bda:LG8E0BFFD25175B2DE , bda:LGDF50EE953B9C8956 , bda:LGIM4394141E , bda:LGIM4D99209C62 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW1KG18574  skos:altLabel  "邓小平的故事"@zh-hans .

@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23858 {
-    bda:LG571CA5CCA5E6203C
+    bda:LG3FF1420C7C5EF238
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -34,15 +34,22 @@ bdg:WA23858 {
         adm:logMessage      "published"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA23858  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23858 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "31/WA23858.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23858 ;
-        adm:logEntry        bda:LG571CA5CCA5E6203C , bda:LG5A972CC29703BF8E , bda:LG6B455B83AC6B2195 , bda:LGBF8314BD145BFB7C ;
+        adm:logEntry        bda:LG3FF1420C7C5EF238 , bda:LG5A972CC29703BF8E , bda:LG6B455B83AC6B2195 , bda:LGBF8314BD145BFB7C , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW23858  skos:altLabel  "bzo rig kha sas kyi pa tra lag len ma and other texts on the minor sciences of the tibetan scholastic tradition"@en-x-mixed .

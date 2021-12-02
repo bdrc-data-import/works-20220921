@@ -37,6 +37,12 @@ bdg:WA1KG14550 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -47,15 +53,16 @@ bdg:WA1KG14550 {
     bda:WA1KG14550  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14550 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "58/WA1KG14550.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14550 ;
-        adm:logEntry        bda:LG2EE370CEB5253686 , bda:LG31D364EEB344FC2D , bda:LG320A46D4EEBF37B3 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG2EE370CEB5253686 , bda:LG31D364EEB344FC2D , bda:LG320A46D4EEBF37B3 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR62E6EE99DF809B2A
+    bdr:CRACF18AFF0BEFA020
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG14549 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +71,7 @@ bdg:WA1KG14550 {
         skos:altLabel       "bod la lta ba/"@bo-x-ewts , "rma chu'i bsam gtan gyi rtsom btus/ dpyad rtsom/"@bo-x-ewts ;
         skos:prefLabel      "rma chu'i bsam gtan gyi rtsom btus/ bod la lta ba/"@bo-x-ewts ;
         :catalogInfo        "Selection of articles writen by Machu Samten (b. 1974)"@en ;
-        :creator            bdr:CR62E6EE99DF809B2A ;
+        :creator            bdr:CRACF18AFF0BEFA020 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 , bdr:T1PD128746 ;

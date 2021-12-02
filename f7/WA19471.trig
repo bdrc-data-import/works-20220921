@@ -24,22 +24,29 @@ bdg:WA19471 {
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGAA09FA6C198ECE69
+    bda:LGDD294CCF07617D85
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA19471  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19471 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "f7/WA19471.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19471 ;
-        adm:logEntry        bda:LG48D78DE3F15D64CC , bda:LG528074FFF5DCCBE2 , bda:LGAA09FA6C198ECE69 ;
+        adm:logEntry        bda:LG48D78DE3F15D64CC , bda:LG528074FFF5DCCBE2 , bda:LGDD294CCF07617D85 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDD294CCF07617D85
+    bdr:CR6766B9CC5C1C7DF4
         a                   :AgentAsCreator ;
         :agent              bdr:P5811 ;
         :role               bdr:R0ER0019 .
@@ -48,7 +55,7 @@ bdg:WA19471 {
     
     bdr:WA19471  a          :Work ;
         skos:prefLabel      "nyams mgur/"@bo-x-ewts , "songs of esoteric realization of rtogs-ldan ses-pa-ran-grol"@en-x-mixed ;
-        :creator            bdr:CRDD294CCF07617D85 ;
+        :creator            bdr:CR6766B9CC5C1C7DF4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T6 ;

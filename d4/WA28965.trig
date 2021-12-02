@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA28965 {
-    bda:LG9B620FD2320B5208
+    bda:LG7A9651DBCF486D52
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -35,6 +35,12 @@ bdg:WA28965 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
@@ -60,29 +66,30 @@ bdg:WA28965 {
     bda:WA28965  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28965 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "d4/WA28965.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28965 ;
-        adm:logEntry        bda:LG9B620FD2320B5208 , bda:LGB0216A6934504B45 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG7A9651DBCF486D52 , bda:LGB0216A6934504B45 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7A9651DBCF486D52
-        a                   :AgentAsCreator ;
-        :agent              bdr:P9449 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRB84AB166DEE5F481
+    bdr:CRA68CA982E8A13E47
         a                   :AgentAsCreator ;
         :agent              bdr:P9451 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRB84AB166DEE5F481
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9449 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW28965  skos:altLabel  "Rgyal-roṅ źib ʼjug dpyad yig phyogs bsgrigs /Btsan-lha Ṅag-dbaṅ-rdo-rje, Tā-res-kyid bcas kyis bsgrigs."@en-x-mixed , "jiarong zang zu yan jiu zi zi liao hui bian"@zh-latn-pinyin-x-ndia .
     
     bdr:WA28965  a          :Work ;
         skos:prefLabel      "rgyal rong zhib 'jug dpyad yig phyogs bsgrigs/"@bo-x-ewts , "Rgyal-roṅ źib ʼjug dpyad yig phyogs bsgrigs /Btsan-lha Ṅag-dbaṅ-rdo-rje, Tā-res-kyid bcas kyis bsgrigs."@en-x-mixed , "jiarong zang zu yan jiu zi zi liao hui bian"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR7A9651DBCF486D52 , bdr:CRB84AB166DEE5F481 ;
+        :creator            bdr:CRA68CA982E8A13E47 , bdr:CRB84AB166DEE5F481 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

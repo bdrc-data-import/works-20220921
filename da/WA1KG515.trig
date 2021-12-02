@@ -44,6 +44,12 @@ bdg:WA1KG515 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -61,15 +67,16 @@ bdg:WA1KG515 {
     bda:WA1KG515  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG515 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "da/WA1KG515.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG515 ;
-        adm:logEntry        bda:LG72B34CA9C9FDD7D3 , bda:LGB8CE1183F85175C4 , bda:LGCDD661B2411D0D05 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG72B34CA9C9FDD7D3 , bda:LGB8CE1183F85175C4 , bda:LGCDD661B2411D0D05 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR910DBE50D36D346E
+    bdr:CR0C6F3A934D01C148
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG516 ;
         :role               bdr:R0ER0019 .
@@ -78,7 +85,7 @@ bdg:WA1KG515 {
     
     bdr:WA1KG515  a         :Work ;
         skos:prefLabel      "bsam gzhig gi kha dog"@bo-x-ewts , "si wei zhi du"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR910DBE50D36D346E ;
+        :creator            bdr:CR0C6F3A934D01C148 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:IE1KG515 , bdr:MW1KG515 , bdr:MW1TLMTGA000716 , bdr:W1KG515 ;

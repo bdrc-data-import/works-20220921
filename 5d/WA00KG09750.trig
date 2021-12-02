@@ -38,6 +38,12 @@ bdg:WA00KG09750 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -83,20 +89,21 @@ bdg:WA00KG09750 {
     bda:WA00KG09750  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG09750 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "5d/WA00KG09750.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG09750 ;
-        adm:logEntry        bda:LG2F09D7E396BCD68B , bda:LGC300C71029F6D996 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG2F09D7E396BCD68B , bda:LGC300C71029F6D996 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCA99D1A48327623D
+    bdr:CR03E6E0A509BB12EA
         a                   :AgentAsCreator ;
         :agent              bdr:P7265 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV03E6E0A509BB12EA
+    bdr:EVE1BE37989D5FB177
         a                   :CompletedEvent ;
         :onYear             "1983"^^xsd:gYear .
     
@@ -105,10 +112,10 @@ bdg:WA00KG09750 {
     bdr:WA00KG09750  a      :Work ;
         skos:prefLabel      "btsan po lha sras dar ma dang de'i rjes su byung ba'i rgyal rabs mdor bsdus/"@bo-x-ewts , "Bstan po Lha-sras Dar-ma daʾn deʾi rjes su byuṅ baʾi rgyal rabs mdor bsdus /Mkhar-rmeʾu Bsam-gtan-rgyal-mtshan."@en-x-mixed ;
         :catalogInfo        "Brief history of Tibet after King Darma (803-842)."@en ;
-        :creator            bdr:CRCA99D1A48327623D ;
+        :creator            bdr:CR03E6E0A509BB12EA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV03E6E0A509BB12EA ;
+        :workEvent          bdr:EVE1BE37989D5FB177 ;
         :workGenre          bdr:T1134 ;
         :workHasInstance    bdr:MW00KG09750 , bdr:W00KG09750 ;
         :workIsAbout        bdr:G3196 .

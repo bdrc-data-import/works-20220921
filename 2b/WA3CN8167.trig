@@ -42,6 +42,12 @@ bdg:WA3CN8167 {
         adm:logMessage      "added cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
@@ -59,15 +65,16 @@ bdg:WA3CN8167 {
     bda:WA3CN8167  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN8167 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "2b/WA3CN8167.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN8167 ;
-        adm:logEntry        bda:LG31F52DFB6E017319 , bda:LG67CBED1A6235D05F , bda:LG7170F183EF80F224 , bda:LG9C31F94FF1EA2B3F , bda:LGB9C0715AB9A5D47E , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG31F52DFB6E017319 , bda:LG67CBED1A6235D05F , bda:LG7170F183EF80F224 , bda:LG9C31F94FF1EA2B3F , bda:LGB9C0715AB9A5D47E , bda:LGIM4394141E , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR981900ECB00C70B8
+    bdr:CR84F7000FE5E4BB23
         a                   :AgentAsCreator ;
         :agent              bdr:P3CN26999 ;
         :role               bdr:R0ER0026 .
@@ -75,7 +82,7 @@ bdg:WA3CN8167 {
     bdr:WA3CN8167  a        :Work ;
         skos:prefLabel      "rgyun spyod tshan rig lag rtsal skor gyi shes bya/"@bo-x-ewts ;
         :catalogInfo        "A book on science and technology."@en ;
-        :creator            bdr:CR981900ECB00C70B8 ;
+        :creator            bdr:CR84F7000FE5E4BB23 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN8167 , bdr:W3CN8167 ;

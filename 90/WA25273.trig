@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA25273 {
-    bda:LG38309BEC94EFB215
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG833CC9EB277F5500
         a                   adm:UpdateData ;
         adm:logDate         "2007-04-17T19:38:56.092Z"^^xsd:dateTime ;
@@ -33,6 +29,16 @@ bdg:WA25273 {
         adm:logDate         "2008-11-29T02:01:35.062Z"^^xsd:dateTime ;
         adm:logMessage      "annotation revised"@en ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGDFF62DFD2CBFBDFD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -58,15 +64,16 @@ bdg:WA25273 {
     bda:WA25273  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25273 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "90/WA25273.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25273 ;
-        adm:logEntry        bda:LG38309BEC94EFB215 , bda:LG833CC9EB277F5500 , bda:LG92C3ECAF79E329E2 , bda:LG9BF2CE70DBD4CDF9 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG833CC9EB277F5500 , bda:LG92C3ECAF79E329E2 , bda:LG9BF2CE70DBD4CDF9 , bda:LGDFF62DFD2CBFBDFD , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDFF62DFD2CBFBDFD
+    bdr:CR4C3EBC78ED081389
         a                   :AgentAsCreator ;
         :agent              bdr:P226 ;
         :role               bdr:R0ER0019 .
@@ -75,7 +82,7 @@ bdg:WA25273 {
         skos:altLabel       "mdo smad dga' ldan bstan pa'i srog shing bya bral grub pa'i dpa' bo brag g.yab 'o 'bom rtogs ldan 'jam dbyangs blo gros dpal bzang po'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_'jam dbyangs blo gros/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Lamrim Tokden Rinpoche Jamyang Lodro (1888-1941), master from the Drayab area in Kham. He was an important student of Je Pabongka Dechen Nyingpo and belonged to the Nyare Kamtsen of Drepung Losal Ling Monastery."@en ;
-        :creator            bdr:CRDFF62DFD2CBFBDFD ;
+        :creator            bdr:CR4C3EBC78ED081389 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

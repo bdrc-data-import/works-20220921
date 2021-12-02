@@ -41,6 +41,12 @@ bdg:WA1CZ2390 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -58,15 +64,16 @@ bdg:WA1CZ2390 {
     bda:WA1CZ2390  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1CZ2390 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "95/WA1CZ2390.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1CZ2390 ;
-        adm:logEntry        bda:LG914719A7630D086B , bda:LGBEDAC5BA4A8FBC79 , bda:LGC273B5027C9967F7 , bda:LGDB9CAD710F1C7806 , bda:LGF8E5FDB195A0263C , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG914719A7630D086B , bda:LGBEDAC5BA4A8FBC79 , bda:LGC273B5027C9967F7 , bda:LGDB9CAD710F1C7806 , bda:LGF8E5FDB195A0263C , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR376BECA6DBB80428
+    bdr:CRB2EA697EAD879F2D
         a                   :AgentAsCreator ;
         :agent              bdr:P1CZ2379 ;
         :role               bdr:R0ER0019 .
@@ -76,7 +83,7 @@ bdg:WA1CZ2390 {
     bdr:WA1CZ2390  a        :Work ;
         skos:prefLabel      "sdeb sbyor gyi rnam bshad shes bya kun rig mkhyen gter lha yi 'dzum zer/"@bo-x-ewts , "cognitive knowledge on metrical science"@en ;
         :catalogInfo        "Explanation of Tibetan metrics."@en ;
-        :creator            bdr:CR376BECA6DBB80428 ;
+        :creator            bdr:CRB2EA697EAD879F2D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;

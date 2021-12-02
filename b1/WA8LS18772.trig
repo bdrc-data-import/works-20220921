@@ -44,6 +44,12 @@ bdg:WA8LS18772 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -61,15 +67,16 @@ bdg:WA8LS18772 {
     bda:WA8LS18772  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18772 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "b1/WA8LS18772.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18772 ;
-        adm:logEntry        bda:LG2C660BD7F9BA032B , bda:LG40E897ED9334A3F8 , bda:LGBC6AA3C6174E9B5D , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2C660BD7F9BA032B , bda:LG40E897ED9334A3F8 , bda:LGBC6AA3C6174E9B5D , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2F03AD332AB5D7D7
+    bdr:CRB8C5BDC2E6C327EF
         a                   :AgentAsCreator ;
         :agent              bdr:P9000 ;
         :role               bdr:R0ER0026 .
@@ -77,7 +84,7 @@ bdg:WA8LS18772 {
     bdr:WA8LS18772  a       :Work ;
         skos:prefLabel      "grong gseb kyi tang rtsa 'dzugs 'dzugs skyong byed phyogs/"@bo-x-ewts ;
         :catalogInfo        "Capital funds for village; translated by Kelsang Tashi."@en ;
-        :creator            bdr:CR2F03AD332AB5D7D7 ;
+        :creator            bdr:CRB8C5BDC2E6C327EF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1157 ;

@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA7503 {
-    bda:LG397D8A03DD8DE095
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG453F290FAB11498E
         a                   adm:UpdateData ;
         adm:logDate         "2013-03-25T15:26:15.313Z"^^xsd:dateTime ;
@@ -40,33 +36,44 @@ bdg:WA7503 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGEFCB4B27D4A4D9F4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA7503  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA7503 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "4b/WA7503.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA7503 ;
-        adm:logEntry        bda:LG397D8A03DD8DE095 , bda:LG453F290FAB11498E , bda:LG7442793EBF8AF071 , bda:LG7F16AA217906322B , bda:LGDB006226964B6C80 ;
+        adm:logEntry        bda:LG453F290FAB11498E , bda:LG7442793EBF8AF071 , bda:LG7F16AA217906322B , bda:LGDB006226964B6C80 , bda:LGEFCB4B27D4A4D9F4 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CREFCB4B27D4A4D9F4
+    bdr:CR1D5297DE9B7D6E63
         a                   :AgentAsCreator ;
         :agent              bdr:P319 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV1D5297DE9B7D6E63
+    bdr:EV115DED96D465D536
         a                   :CompletedEvent ;
         :onYear             "1536"^^xsd:gYear .
     
     bdr:WA7503  a           :Work ;
         skos:altLabel       "dpal dus kyi 'khor lo'i man ngag rtsis kyi bstan bcos kun las btus pa chen po'i rgyas 'grel rin po che'i gter mdzod/"@bo-x-ewts ;
         skos:prefLabel      "rtsis kyi bstan bcos rin chen gter mdzod/"@bo-x-ewts ;
-        :creator            bdr:CREFCB4B27D4A4D9F4 ;
+        :creator            bdr:CR1D5297DE9B7D6E63 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV1D5297DE9B7D6E63 ;
+        :workEvent          bdr:EV115DED96D465D536 ;
         :workGenre          bdr:T132 , bdr:T203 ;
         :workHasInstance    bdr:MW7503 , bdr:W7503 .
 }

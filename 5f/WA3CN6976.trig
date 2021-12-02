@@ -30,6 +30,12 @@ bdg:WA3CN6976 {
         adm:logMessage      "full catalog and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -47,12 +53,13 @@ bdg:WA3CN6976 {
     bda:WA3CN6976  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN6976 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "5f/WA3CN6976.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN6976 ;
-        adm:logEntry        bda:LG420DE6AA5A2B9EF2 , bda:LGB8DB56DC691C3A90 , bda:LGD5B9D45A9ED20C7B , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG420DE6AA5A2B9EF2 , bda:LGB8DB56DC691C3A90 , bda:LGD5B9D45A9ED20C7B , bda:LGIM4394141E , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA3CN6976  a        :Work ;

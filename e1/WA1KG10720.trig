@@ -65,6 +65,12 @@ bdg:WA1KG10720 {
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -89,15 +95,16 @@ bdg:WA1KG10720 {
     bda:WA1KG10720  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG10720 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "e1/WA1KG10720.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG10720 ;
-        adm:logEntry        bda:LG1BA4F66C48DDAF27 , bda:LG265393DE74DBE5B3 , bda:LG79917DDDFB8D249E , bda:LG79C86E800A55AEB6 , bda:LG9D0666AB7F71453A , bda:LGBE6EC5006C4CCD32 , bda:LGCFBCFC83C164BC85 , bda:LGE1A2FF2A92B2AAF2 , bda:LGE1B653755F5E84F8 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1BA4F66C48DDAF27 , bda:LG265393DE74DBE5B3 , bda:LG79917DDDFB8D249E , bda:LG79C86E800A55AEB6 , bda:LG9D0666AB7F71453A , bda:LGBE6EC5006C4CCD32 , bda:LGCFBCFC83C164BC85 , bda:LGE1A2FF2A92B2AAF2 , bda:LGE1B653755F5E84F8 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR28747B6FB54A95B6
+    bdr:CR7D843B083BDFAC28
         a                   :AgentAsCreator ;
         :agent              bdr:P1631 ;
         :role               bdr:R0ER0019 .
@@ -106,7 +113,7 @@ bdg:WA1KG10720 {
         skos:altLabel       "tho yon 'jam dbyangs 'phrin las kyi gsung 'bum/ (dbus par/)"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_'jam dbyangs 'phrin las/"@bo-x-ewts ;
         :catalogInfo        "Collection of manuals for creating mandala and performing initiations according to the Geluk order. Compiled by the 19th century master Jamyang Trinle under the inspiration of his guru Yeshe Dondrub Tenpai Gyaltsen (1792-1855)."@en ;
-        :creator            bdr:CR28747B6FB54A95B6 ;
+        :creator            bdr:CR7D843B083BDFAC28 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

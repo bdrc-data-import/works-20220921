@@ -50,6 +50,12 @@ bdg:WA1KG5775 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -95,30 +101,31 @@ bdg:WA1KG5775 {
     bda:WA1KG5775  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG5775 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "2a/WA1KG5775.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG5775 ;
-        adm:logEntry        bda:LG4931C9173F4ABE40 , bda:LGBC2AF01A1EFF36CB , bda:LGC9B208D7285C4C2C , bda:LGCF1A6459BC6DA9A4 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG4931C9173F4ABE40 , bda:LGBC2AF01A1EFF36CB , bda:LGC9B208D7285C4C2C , bda:LGCF1A6459BC6DA9A4 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR4F741D2F15E677B9
         a                   :AgentAsCreator ;
-        :agent              bdr:P8362 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CR9C630A9C2557B44A
-        a                   :AgentAsCreator ;
         :agent              bdr:P7265 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRD9C139AC1A01ECC6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8362 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW1KG5775  skos:altLabel  "ka er mei . sang dan jian can xuan ji"@zh-latn-pinyin-x-ndia .
     
     bdr:WA1KG5775  a        :Work ;
         skos:prefLabel      "mda' dang 'phang/ mkhar rme'u bsam gtan gyi gsung rtsom phyogs bsgrigs/"@bo-x-ewts , "ka er mei . sang dan jian can xuan ji"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Anthology of articles on socio-cultural issues, myths, rituals, and beliefs in ancient Tibet."@en ;
-        :creator            bdr:CR4F741D2F15E677B9 , bdr:CR9C630A9C2557B44A ;
+        :creator            bdr:CR4F741D2F15E677B9 , bdr:CRD9C139AC1A01ECC6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 , bdr:T1081 ;

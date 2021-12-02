@@ -41,6 +41,12 @@ bdg:WA1KG16588 {
         adm:logDate         "2017-04-20T00:04:44.007Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -51,16 +57,17 @@ bdg:WA1KG16588 {
     bda:WA1KG16588  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG16588 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "e3/WA1KG16588.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG16588 ;
-        adm:logEntry        bda:LG2BCCCD1A256938D8 , bda:LG302A7B86C1413053 , bda:LG5F4296861C4A9E8B , bda:LG762736C5A108FFDF , bda:LGBA3163877F3527E7 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2BCCCD1A256938D8 , bda:LG302A7B86C1413053 , bda:LG5F4296861C4A9E8B , bda:LG762736C5A108FFDF , bda:LGBA3163877F3527E7 , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA00KG03991 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR24B82FDEDA96AC51
+    bdr:CR003287A5EA30F13F
         a                   :AgentAsCreator ;
         :agent              bdr:P4994 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +78,7 @@ bdg:WA1KG16588 {
         skos:altLabel       "shi jie guang shuo"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "'dzam gling rgyas bshad/"@bo-x-ewts , "世界广说"@zh-hans ;
         :catalogInfo        "Detailed account of the geography of the world written by 4th 'jam dpal chos kyi bstan 'dzin 'phrin las (1789-1839)."@en ;
-        :creator            bdr:CR24B82FDEDA96AC51 ;
+        :creator            bdr:CR003287A5EA30F13F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workIsAbout        bdr:T1148 , bdr:T2551 .

@@ -67,6 +67,12 @@ bdg:WA1GS139873 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -98,15 +104,16 @@ bdg:WA1GS139873 {
     bda:WA1GS139873  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1GS139873 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "73/WA1GS139873.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1GS139873 ;
-        adm:logEntry        bda:LG00027A32DA08329B , bda:LG47AA88378BB40193 , bda:LG96B5B78AED937D28 , bda:LGA623F021CDDC7790 , bda:LGAC97B707AFE6C233 , bda:LGB835566F836DA182 , bda:LGF84F89C6E0485E7F , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG00027A32DA08329B , bda:LG47AA88378BB40193 , bda:LG96B5B78AED937D28 , bda:LGA623F021CDDC7790 , bda:LGAC97B707AFE6C233 , bda:LGB835566F836DA182 , bda:LGF84F89C6E0485E7F , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR51B302659CDC052F
+    bdr:CR03B2B545D419C8E9
         a                   :AgentAsCreator ;
         :agent              bdr:P1GS66288 ;
         :role               bdr:R0ER0019 .
@@ -114,7 +121,7 @@ bdg:WA1GS139873 {
     bdr:WA1GS139873  a      :Work ;
         skos:prefLabel      "bod kyi srol rgyun mdzes rtsal las bris bur gnyis kyi byung ba mdo tsam brjod pa/"@bo-x-ewts ;
         :catalogInfo        "Survey of Tibetan painting and sculpture. Includes biographies of famous artists and patrons."@en ;
-        :creator            bdr:CR51B302659CDC052F ;
+        :creator            bdr:CR03B2B545D419C8E9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

@@ -40,6 +40,12 @@ bdg:WA00KG03151 {
         adm:logDate         "2007-09-10T14:47:07.566Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -71,29 +77,30 @@ bdg:WA00KG03151 {
     bda:WA00KG03151  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG03151 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "ed/WA00KG03151.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG03151 ;
-        adm:logEntry        bda:LG247B83577EEB91CE , bda:LG4F7FAE5DF7D32F2A , bda:LG9F227DEFFE64902D , bda:LGAF7BE28D232F8FA9 , bda:LGC9177B6519ACD732 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG247B83577EEB91CE , bda:LG4F7FAE5DF7D32F2A , bda:LG9F227DEFFE64902D , bda:LGAF7BE28D232F8FA9 , bda:LGC9177B6519ACD732 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR50B0A82B146760F1
         a                   :AgentAsCreator ;
-        :agent              bdr:P1GS58299 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR801C9285050CBB5F
-        a                   :AgentAsCreator ;
         :agent              bdr:P1GS58298 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR6F072B44E6C000A5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1GS58299 ;
+        :role               bdr:R0ER0016 .
     
     bdr:WA00KG03151  a      :Work ;
         skos:altLabel       "brag g.yab sprul sku che tshang bzhi pa blo bzang rnam rgyal gyi rnam thar 'char gzhi stod cha byams mdun khri pa rin rgyam pa dang smad cha sku tsha gu ru chos grags kyis ngag rgyun bkod pa/"@bo-x-ewts ;
         skos:prefLabel      "brag g.yab che bzang blo bzang rnam rgyal gyi rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography of Dragyab Chetsang Lobzang Namgyal 04."@en ;
-        :creator            bdr:CR50B0A82B146760F1 , bdr:CR801C9285050CBB5F ;
+        :creator            bdr:CR50B0A82B146760F1 , bdr:CR6F072B44E6C000A5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

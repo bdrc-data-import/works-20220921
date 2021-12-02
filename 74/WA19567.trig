@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA19567 {
-    bda:LG411FAFA0CAC0C221
+    bda:LG744CBB565540B530
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -27,6 +27,12 @@ bdg:WA19567 {
         adm:logMessage      "changed sealed to copyright"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -37,15 +43,16 @@ bdg:WA19567 {
     bda:WA19567  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19567 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "74/WA19567.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19567 ;
-        adm:logEntry        bda:LG411FAFA0CAC0C221 , bda:LGB2D380A3FE85FA38 , bda:LGFB1AB6E870285753 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG744CBB565540B530 , bda:LGB2D380A3FE85FA38 , bda:LGFB1AB6E870285753 , bda:LGIM4394141E , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR744CBB565540B530
+    bdr:CRC7D6BBC65FF9F12E
         a                   :AgentAsCreator ;
         :agent              bdr:P5928 ;
         :role               bdr:R0ER0019 .
@@ -56,7 +63,7 @@ bdg:WA19567 {
         skos:altLabel       "rje dpyi sa blo gros rgya mtsho'i gsung rtsom/"@bo-x-ewts , "xisha luozhejiacuo wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gsung 'bum/_blo gros rgya mtsho/"@bo-x-ewts , "hsi-sha lo-che-chia-tso wen chi"@zh-latn-wadegile ;
         :catalogInfo        "Collected works of a Gelug master Chisa Lodro Gyatso (1890-1959)."@en ;
-        :creator            bdr:CR744CBB565540B530 ;
+        :creator            bdr:CRC7D6BBC65FF9F12E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

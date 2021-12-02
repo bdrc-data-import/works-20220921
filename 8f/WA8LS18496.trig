@@ -48,6 +48,12 @@ bdg:WA8LS18496 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -72,15 +78,16 @@ bdg:WA8LS18496 {
     bda:WA8LS18496  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18496 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "8f/WA8LS18496.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18496 ;
-        adm:logEntry        bda:LG44BFB8889AF0E5CB , bda:LG698B09504A815152 , bda:LG8F2687F33A4210EB , bda:LG90667752390F9612 , bda:LGC4E060533A25333F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LG44BFB8889AF0E5CB , bda:LG698B09504A815152 , bda:LG8F2687F33A4210EB , bda:LG90667752390F9612 , bda:LGC4E060533A25333F , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CREFFEB8A165071F8B
+    bdr:CR6F2DA2DC0614AFF6
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS75217 ;
         :role               bdr:R0ER0019 .
@@ -88,7 +95,7 @@ bdg:WA8LS18496 {
     bdr:WA8LS18496  a       :Work ;
         skos:prefLabel      "rdza yul gyi yul srol rig gnas kun 'dus shel dkar bum pa/"@bo-x-ewts ;
         :catalogInfo        "Local history and culture of Zayul area by Makhar Sonan Wangchuk."@en ;
-        :creator            bdr:CREFFEB8A165071F8B ;
+        :creator            bdr:CR6F2DA2DC0614AFF6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

@@ -24,6 +24,10 @@ bdg:WA23605 {
         adm:logMessage      "removed image groups and scan request.  was never scanned"@en ;
         adm:logWho          bdu:U00012 .
     
+    bda:LG26532348EEDD5DF8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG2654556DCCDA821F
         a                   adm:UpdateData ;
         adm:logDate         "2012-11-05T14:47:18.309Z"^^xsd:dateTime ;
@@ -66,15 +70,17 @@ bdg:WA23605 {
         adm:logMessage      "edited catalogue info"@en ;
         adm:logWho          bdu:U00081 .
     
-    bda:LGBADE089D9B4AB9E5
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGE46605E506F51C76
         a                   adm:UpdateData ;
         adm:logDate         "2008-07-16T14:53:20.323Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -93,13 +99,14 @@ bdg:WA23605 {
     bda:WA23605  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23605 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "75/WA23605.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23605 ;
-        adm:logEntry        bda:LG20C379FF81466C0B , bda:LG2405B09B44103BDB , bda:LG2654556DCCDA821F , bda:LG3154E16D6D882D10 , bda:LG43FE4825A1296267 , bda:LG71D78E39FBC25869 , bda:LGA00EA89BB4A193BF , bda:LGADEA60043E471FC8 , bda:LGB29312A57863B818 , bda:LGBADE089D9B4AB9E5 , bda:LGE46605E506F51C76 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG20C379FF81466C0B , bda:LG2405B09B44103BDB , bda:LG26532348EEDD5DF8 , bda:LG2654556DCCDA821F , bda:LG3154E16D6D882D10 , bda:LG43FE4825A1296267 , bda:LG71D78E39FBC25869 , bda:LGA00EA89BB4A193BF , bda:LGADEA60043E471FC8 , bda:LGB29312A57863B818 , bda:LGE46605E506F51C76 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1PD159424 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:MW23605  skos:altLabel  "the treasury of spiritual instructions"@en .

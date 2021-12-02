@@ -37,6 +37,12 @@ bdg:WA1KG25710 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -54,15 +60,16 @@ bdg:WA1KG25710 {
     bda:WA1KG25710  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25710 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "79/WA1KG25710.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25710 ;
-        adm:logEntry        bda:LG32554C1106612092 , bda:LG3A2E2C5DA01A19FD , bda:LG77D3490F4716E16E , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG32554C1106612092 , bda:LG3A2E2C5DA01A19FD , bda:LG77D3490F4716E16E , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR384200D1543CD6D3
+    bdr:CR597CE9DE9871EBF5
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS75251 ;
         :role               bdr:R0ER0026 .
@@ -70,7 +77,7 @@ bdg:WA1KG25710 {
     bdr:WA1KG25710  a       :Work ;
         skos:prefLabel      "srid gzhung gi las don snyan zhu/"@bo-x-ewts ;
         :catalogInfo        "A breif report on past, present and future works of the government, the People's Republic of China."@en ;
-        :creator            bdr:CR384200D1543CD6D3 ;
+        :creator            bdr:CR597CE9DE9871EBF5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG25710 , bdr:W1KG25710 ;

@@ -36,6 +36,12 @@ bdg:WA1KG22086 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM569A8014B1
         a                   adm:UpdateData ;
         adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
@@ -46,15 +52,16 @@ bdg:WA1KG22086 {
     bda:WA1KG22086  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG22086 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "9e/WA1KG22086.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG22086 ;
-        adm:logEntry        bda:LG3B9840390254C8D5 , bda:LG7B80FC23EB064D96 , bda:LGE81E10726C8D8052 , bda:LGFE038BF2095C4FE9 , bda:LGIM569A8014B1 ;
+        adm:logEntry        bda:LG3B9840390254C8D5 , bda:LG7B80FC23EB064D96 , bda:LGE81E10726C8D8052 , bda:LGFE038BF2095C4FE9 , bda:LGIM4394141E , bda:LGIM569A8014B1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2E576D7DE0A3DF8A
+    bdr:CRDE5911876863C0C9
         a                   :AgentAsCreator ;
         :agent              bdr:P862 ;
         :role               bdr:R0ER0019 .
@@ -65,7 +72,7 @@ bdg:WA1KG22086 {
         skos:altLabel       "byang chub brtson 'grus kyi bka' 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/ byang chub brtson 'grus/"@bo-x-ewts , "Collected works (bka' 'bum) of byang-chub-brtson-'grus"@en ;
         :catalogInfo        "Collected works of a Drugpa Kagyu master Jangchub Tsondue (1817-1856); includes a biography of the author by Kunga Palzangpo Zhenphen Rolpai Dorjee."@en ;
-        :creator            bdr:CR2E576D7DE0A3DF8A ;
+        :creator            bdr:CRDE5911876863C0C9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

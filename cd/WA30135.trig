@@ -36,21 +36,27 @@ bdg:WA30135 {
         adm:logMessage      "added source printery"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG5D6D128163C12675
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG6F1CFF7BD8A2FB17
         a                   adm:UpdateData ;
         adm:logDate         "2009-01-07T11:06:53.257Z"^^xsd:dateTime ;
         adm:logMessage      "ctc6"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGD26B3F217F8E011F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGF89F7AD0EDA936D6
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-15T11:36:02.262Z"^^xsd:dateTime ;
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -76,15 +82,16 @@ bdg:WA30135 {
     bda:WA30135  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30135 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "cd/WA30135.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30135 ;
-        adm:logEntry        bda:LG1F5C1B90F65467BE , bda:LG40AEF45F50F082B1 , bda:LG5367F53A6FCAF478 , bda:LG584F8C5D5895E382 , bda:LG5D6D128163C12675 , bda:LG6F1CFF7BD8A2FB17 , bda:LGF89F7AD0EDA936D6 , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG1F5C1B90F65467BE , bda:LG40AEF45F50F082B1 , bda:LG5367F53A6FCAF478 , bda:LG584F8C5D5895E382 , bda:LG6F1CFF7BD8A2FB17 , bda:LGD26B3F217F8E011F , bda:LGF89F7AD0EDA936D6 , bda:LGIM4394141E , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD26B3F217F8E011F
+    bdr:CRC8EE459D8BA29F04
         a                   :AgentAsCreator ;
         :agent              bdr:P4994 ;
         :role               bdr:R0ER0019 .
@@ -94,7 +101,7 @@ bdg:WA30135 {
     bdr:WA30135  a          :Work ;
         skos:altLabel       "gso rig bstan bcos man ngag rin chen 'byun gnas/"@bo-x-ewts , "Gso rig bstan bcos mthaʾ dag gi sñiṅ po rnams phyogs gcig tu bsdus pa man ṅag rin chen ʾbyuṅ gnas :a treatise on Tibetan ayurvedic practice containing numerous instructions and medical formulae /by ʾJam-dpal-rdo-rje."@en-x-mixed ;
         skos:prefLabel      "gso rig bstan bcos mtha' dag gi snying po rnams phyogs gcig tu bsdus pa man ngag rin chen 'byung gnas/"@bo-x-ewts , "a treatise on tibetan ayurvedic practice containing numerous instructions and medical formulae"@en ;
-        :creator            bdr:CRD26B3F217F8E011F ;
+        :creator            bdr:CRC8EE459D8BA29F04 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2DB13639_11AA1E , bdr:MW30135 , bdr:W30135 ;

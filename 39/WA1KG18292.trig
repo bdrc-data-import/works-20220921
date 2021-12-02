@@ -24,6 +24,12 @@ bdg:WA1KG18292 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8F5AC89D  a     adm:UpdateData ;
         adm:logAgent        "add-works-to-PR1CTC16" ;
         adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
@@ -33,15 +39,16 @@ bdg:WA1KG18292 {
     bda:WA1KG18292  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG18292 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "39/WA1KG18292.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG18292 ;
-        adm:logEntry        bda:LGD8062301CCEF7C88 , bda:LGF37A5D47C9574F40 , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LGD8062301CCEF7C88 , bda:LGF37A5D47C9574F40 , bda:LGIM4394141E , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0FCC4A6B923C61D0
+    bdr:CRC26E159DE784DEFC
         a                   :AgentAsCreator ;
         :agent              bdr:P6147 ;
         :role               bdr:R0ER0019 .
@@ -51,7 +58,7 @@ bdg:WA1KG18292 {
     bdr:WA1KG18292  a       :Work ;
         skos:prefLabel      "bod kyi gna' rabs lo rgyus bdams btus gangs ljongs 'od 'bum/"@bo-x-ewts , "a study on the ancient history of tibet, a collection of the articles by tsultrim kelsang khangkar"@en , "チベット古代史研究撰集 雪国の十万の光"@zh-hans ;
         :catalogInfo        "Collection of the articles on the ancient history of Tibet written by Khangkar Tsultrim Kelsang"@en ;
-        :creator            bdr:CR0FCC4A6B923C61D0 ;
+        :creator            bdr:CRC26E159DE784DEFC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

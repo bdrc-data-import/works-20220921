@@ -24,18 +24,25 @@ bdg:WA1KG24467 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG24467  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24467 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "2e/WA1KG24467.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24467 ;
-        adm:logEntry        bda:LGB6EB0E1C63AA6030 , bda:LGBA419240C7727C5F ;
+        adm:logEntry        bda:LGB6EB0E1C63AA6030 , bda:LGBA419240C7727C5F , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRAB94398A60785C94
+    bdr:CR657054C777B2F68B
         a                   :AgentAsCreator ;
         :agent              bdr:P4767 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +51,7 @@ bdg:WA1KG24467 {
         skos:altLabel       "legs par gsungs pa'i 'dul ba'i sde snod kyi dgongs pa phyin ci ma log par 'grel par byed pa 'dul ba rgya mtsho'i snying po gsal byed/"@bo-x-ewts ;
         skos:prefLabel      "legs par gsungs pa 'dul ba rgya mtsho'i snying po gsal byed/"@bo-x-ewts ;
         :catalogInfo        "Elucidation of the Tsongkhapa's 'dul ba rgya mtsho'i snying po by a Gelug master Lobsang Shenyen."@en ;
-        :creator            bdr:CRAB94398A60785C94 ;
+        :creator            bdr:CR657054C777B2F68B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

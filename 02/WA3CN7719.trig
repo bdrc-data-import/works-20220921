@@ -48,6 +48,12 @@ bdg:WA3CN7719 {
         adm:logMessage      "corrected the volume numbers"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -65,15 +71,16 @@ bdg:WA3CN7719 {
     bda:WA3CN7719  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN7719 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "02/WA3CN7719.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN7719 ;
-        adm:logEntry        bda:LG20D3BD8DEEE3FC8E , bda:LGB105A6660F8D1892 , bda:LGB91F6A7E3959753F , bda:LGD06B44BFAD162C27 , bda:LGD77873524FF8DD71 , bda:LGE1604E3E94487115 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG20D3BD8DEEE3FC8E , bda:LGB105A6660F8D1892 , bda:LGB91F6A7E3959753F , bda:LGD06B44BFAD162C27 , bda:LGD77873524FF8DD71 , bda:LGE1604E3E94487115 , bda:LGIM4394141E , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR54ACE1F2BD12DCBF
+    bdr:CR73F276B07983FBFE
         a                   :AgentAsCreator ;
         :agent              bdr:P784 ;
         :role               bdr:R0ER0019 .
@@ -82,7 +89,7 @@ bdg:WA3CN7719 {
         skos:altLabel       "mang thos klu sgrub rgya mtsho'i gsung 'bum/"@bo-x-ewts , "tshar pa nAlen+dra'i dpe tshogs las mang thos klu sgrub rgya mtsho'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/ mang thos klu sgrub rgya mtsho/"@bo-x-ewts ;
         :catalogInfo        "Collected Works of Sakya master Mangtoy Ludrub Gyatsho."@en ;
-        :creator            bdr:CR54ACE1F2BD12DCBF ;
+        :creator            bdr:CR73F276B07983FBFE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

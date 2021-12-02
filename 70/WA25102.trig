@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA25102 {
-    bda:LG6B0803235B99790B
+    bda:LG05FDC4FB2AA18C26
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -21,6 +21,12 @@ bdg:WA25102 {
         adm:logDate         "2008-12-10T09:24:24.862Z"^^xsd:dateTime ;
         adm:logMessage      "ctc6"@en ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -46,15 +52,16 @@ bdg:WA25102 {
     bda:WA25102  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25102 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "70/WA25102.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25102 ;
-        adm:logEntry        bda:LG6B0803235B99790B , bda:LGF471B95E261C826D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG05FDC4FB2AA18C26 , bda:LGF471B95E261C826D , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR05FDC4FB2AA18C26
+    bdr:CRB3DAA80659988A80
         a                   :AgentAsCreator ;
         :agent              bdr:P8066 ;
         :role               bdr:R0ER0019 .
@@ -65,7 +72,7 @@ bdg:WA25102 {
         skos:altLabel       "khams sprul don brgyud nyi ma'i rnam thar/"@bo-x-ewts , "khyab bdag rdo rje 'chang chen po mdo khams brgyad pa'i rnam thar utpal gzhon nu'i phreng rgyud/"@bo-x-ewts ;
         skos:prefLabel      "rigs kun 'dus pa'i bdag nyid 'khor lo'i mgon po mdo khams brgyad pa rin po che dpal ldan ngag dbang mi pham ... skal bzang don brgyud nyi ma dge legs phrin las kun khyab phyogs las rnam par rgyal ba'i sde'i rnam par thar pa'i rim pa mdo tsam brjod pa ut p/"@bo-x-ewts , "the biographyo of khams-sprul rin-po-che eight don-rgyud-nyi-ma, 1939-1979"@en-x-mixed ;
         :catalogInfo        "Biography of Khamtrul 08, hierarch of the Drukpa Kagyu order."@en ;
-        :creator            bdr:CR05FDC4FB2AA18C26 ;
+        :creator            bdr:CRB3DAA80659988A80 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

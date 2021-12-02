@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21863 {
-    bda:LG1F5CE62FDC71E7F7
+    bda:LG467948423A85E1F9
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -29,6 +29,12 @@ bdg:WA21863 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
@@ -39,12 +45,13 @@ bdg:WA21863 {
     bda:WA21863  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21863 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "6c/WA21863.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21863 ;
-        adm:logEntry        bda:LG1F5CE62FDC71E7F7 , bda:LG620682AFF91BE214 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG467948423A85E1F9 , bda:LG620682AFF91BE214 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA21863  a          :Work ;

@@ -24,10 +24,6 @@ bdg:WA30199 {
         adm:logMessage      "marked un-restricted by Jann's permission"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LG81EF926E03368BC4
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG82B1ECDA3070D584
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-04T13:50:03.135Z"^^xsd:dateTime ;
@@ -73,6 +69,10 @@ bdg:WA30199 {
         adm:logMessage      "added second editor"@en ;
         adm:logWho          bdu:U00011 .
     
+    bda:LGEF6C69D320D38C4A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGF1E0469D5E823DEC
         a                   adm:UpdateData ;
         adm:logDate         "2011-11-29T16:08:09.53Z"^^xsd:dateTime ;
@@ -83,6 +83,12 @@ bdg:WA30199 {
         a                   adm:UpdateData ;
         adm:logDate         "2008-09-12T15:02:32.229Z"^^xsd:dateTime ;
         adm:logMessage      "added subject"@en .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -108,12 +114,13 @@ bdg:WA30199 {
     bda:WA30199  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30199 ;
-        adm:facetIndex      17 ;
+        adm:facetIndex      18 ;
         adm:gitPath         "1f/WA30199.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30199 ;
-        adm:logEntry        bda:LG3FF1C26EE6D74AF7 , bda:LG7B63FA274AA81AE3 , bda:LG81EF926E03368BC4 , bda:LG82B1ECDA3070D584 , bda:LG8433D0E2BC20B5AD , bda:LG981EE65D0422FEF2 , bda:LG9FC46F0000DCF393 , bda:LGB4DD6BA2FF52C04D , bda:LGBF52443BFE4A8487 , bda:LGBFCE35A0CBFC4E6B , bda:LGDE5557D57B9D0DFD , bda:LGF1E0469D5E823DEC , bda:LGF468BF9ED81DF6E8 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3FF1C26EE6D74AF7 , bda:LG7B63FA274AA81AE3 , bda:LG82B1ECDA3070D584 , bda:LG8433D0E2BC20B5AD , bda:LG981EE65D0422FEF2 , bda:LG9FC46F0000DCF393 , bda:LGB4DD6BA2FF52C04D , bda:LGBF52443BFE4A8487 , bda:LGBFCE35A0CBFC4E6B , bda:LGDE5557D57B9D0DFD , bda:LGEF6C69D320D38C4A , bda:LGF1E0469D5E823DEC , bda:LGF468BF9ED81DF6E8 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA30199  a          :Work ;

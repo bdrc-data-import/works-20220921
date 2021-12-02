@@ -36,6 +36,12 @@ bdg:WA2KG210295 {
         adm:logMessage      "changed access policy back to RestrictebyTBRC"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -46,12 +52,13 @@ bdg:WA2KG210295 {
     bda:WA2KG210295  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG210295 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "13/WA2KG210295.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG210295 ;
-        adm:logEntry        bda:LG79E19948742DBB4C , bda:LG8202CB73C711084B , bda:LG86333D0B29AD8355 , bda:LGA820973A2B0B8ECA , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG79E19948742DBB4C , bda:LG8202CB73C711084B , bda:LG86333D0B29AD8355 , bda:LGA820973A2B0B8ECA , bda:LGIM4394141E , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA2KG210295  a      :Work ;

@@ -55,6 +55,12 @@ bdg:WA1AC16 {
         adm:logMessage      "added note of missing volume"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -65,16 +71,17 @@ bdg:WA1AC16 {
     bda:WA1AC16  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC16 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "56/WA1AC16.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC16 ;
-        adm:logEntry        bda:LG22747446CC3D1A5C , bda:LG24F447B8E490C7AF , bda:LG50238D860B528D7D , bda:LG573E695FB5046D81 , bda:LG9AC728BA5D25B7F4 , bda:LGA19697444B2600AD , bda:LGC9828EF21C598F2A , bda:LGEA452B0219A9337D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG22747446CC3D1A5C , bda:LG24F447B8E490C7AF , bda:LG50238D860B528D7D , bda:LG573E695FB5046D81 , bda:LG9AC728BA5D25B7F4 , bda:LGA19697444B2600AD , bda:LGC9828EF21C598F2A , bda:LGEA452B0219A9337D , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA10MS11430 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR5CF6EF3FAC920EF7
+    bdr:CR26E1B70B4FF02825
         a                   :AgentAsCreator ;
         :agent              bdr:P1583 ;
         :role               bdr:R0ER0019 .
@@ -82,7 +89,7 @@ bdg:WA1AC16 {
     bdr:WA1AC16  a          :Work ;
         skos:prefLabel      "klong chen mdzod bdun/"@bo-x-ewts ;
         :catalogInfo        "Seven great philosophical masterpieces of the famed Nyingma philosopher, Longchen Rabjampa Drime Ozer (1308-1363)."@en ;
-        :creator            bdr:CR5CF6EF3FAC920EF7 ;
+        :creator            bdr:CR26E1B70B4FF02825 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1AC16 ;

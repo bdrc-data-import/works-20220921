@@ -46,6 +46,12 @@ bdg:WA1PD159412 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -63,15 +69,16 @@ bdg:WA1PD159412 {
     bda:WA1PD159412  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159412 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "8a/WA1PD159412.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159412 ;
-        adm:logEntry        bda:LG0EA94149DD9D8822 , bda:LG2480B3BB4EAE641F , bda:LG5B02B696451E9153 , bda:LG6D821B3DE69245A3 , bda:LGC313401DD404D5E5 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0EA94149DD9D8822 , bda:LG2480B3BB4EAE641F , bda:LG5B02B696451E9153 , bda:LG6D821B3DE69245A3 , bda:LGC313401DD404D5E5 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9FDC7152C456B2F6
+    bdr:CR2FBE87FD0124C4FE
         a                   :AgentAsCreator ;
         :agent              bdr:P4941 ;
         :role               bdr:R0ER0019 .
@@ -81,7 +88,7 @@ bdg:WA1PD159412 {
     bdr:WA1PD159412  a      :Work ;
         skos:altLabel       "duo gong. sang da duo ji zuo pin ji"@zh-hans ;
         skos:prefLabel      "rdo dgon gsang bdag rdo rje'i rtsom rig brtsams chos phyogs sgrig"@bo-x-ewts , "多贡. 桑达多吉作品集"@zh-hans ;
-        :creator            bdr:CR9FDC7152C456B2F6 ;
+        :creator            bdr:CR2FBE87FD0124C4FE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T258 ;

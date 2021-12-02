@@ -18,9 +18,15 @@ bdg:WA23898 {
         adm:logMessage      "added Work to PL480"@en ;
         adm:logWhoStr       "add-works-to-PR1PL480" .
     
-    bda:LGA156DF7EB415020E
+    bda:LG8200FC904E67618E
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -39,15 +45,16 @@ bdg:WA23898 {
     bda:WA23898  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23898 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "02/WA23898.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23898 ;
-        adm:logEntry        bda:LG513A66995B669032 , bda:LGA156DF7EB415020E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG513A66995B669032 , bda:LG8200FC904E67618E , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8200FC904E67618E
+    bdr:CREAF35F5CEFF871DA
         a                   :AgentAsCreator ;
         :agent              bdr:P7837 ;
         :role               bdr:R0ER0019 .
@@ -58,7 +65,7 @@ bdg:WA23898 {
         skos:altLabel       "ths songs esoteric experience bstan 'dzin dar rgyas"@en-x-mixed ;
         skos:prefLabel      "grub dbang bstan 'dzin dar rgyas kyi gsung mgur/"@bo-x-ewts , "grub dban bstan 'dzin dar rgyas kyi gsun mgur : the collected songs of buddhist realization of the yogi bstan-'dzin-dar-rgyas"@en-x-mixed ;
         :catalogInfo        "Songs of realization by a Buddhist yogin from the Tibet and Nepal borderlands."@en ;
-        :creator            bdr:CR8200FC904E67618E ;
+        :creator            bdr:CREAF35F5CEFF871DA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T184 ;

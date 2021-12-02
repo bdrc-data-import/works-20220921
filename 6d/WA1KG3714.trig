@@ -41,6 +41,12 @@ bdg:WA1KG3714 {
         adm:logMessage      "added contents note"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -58,28 +64,29 @@ bdg:WA1KG3714 {
     bda:WA1KG3714  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG3714 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "6d/WA1KG3714.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG3714 ;
-        adm:logEntry        bda:LG4F8462AD87B88D90 , bda:LG5797EFA9C01EDE88 , bda:LG6F697703FBD9E9A3 , bda:LG7E7950B191219473 , bda:LGF4FAD4C8EBBF0120 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG4F8462AD87B88D90 , bda:LG5797EFA9C01EDE88 , bda:LG6F697703FBD9E9A3 , bda:LG7E7950B191219473 , bda:LGF4FAD4C8EBBF0120 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1825401384E8DCAE
-        a                   :AgentAsCreator ;
-        :agent              bdr:P442 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR45DF1D8BF0A4C261
+    bdr:CR3B5F97CE7F7F8307
         a                   :AgentAsCreator ;
         :agent              bdr:P264 ;
         :role               bdr:R0ER0016 .
     
+    bdr:CR45DF1D8BF0A4C261
+        a                   :AgentAsCreator ;
+        :agent              bdr:P442 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1KG3714  a        :Work ;
         skos:prefLabel      "mi la ras pa'i rnam thar dang gsol 'debs dang mgur 'bum sogs/"@bo-x-ewts ;
         :catalogInfo        "Two biographies and a reverential petition to the yogin Milarepa (1052-1135)."@en ;
-        :creator            bdr:CR1825401384E8DCAE , bdr:CR45DF1D8BF0A4C261 ;
+        :creator            bdr:CR3B5F97CE7F7F8307 , bdr:CR45DF1D8BF0A4C261 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T140 , bdr:T3 ;

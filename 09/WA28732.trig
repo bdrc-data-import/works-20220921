@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA28732 {
-    bda:LG3A263E501794E209
+    bda:LG3EB7B061F2DFCAFF
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -27,6 +27,12 @@ bdg:WA28732 {
         adm:logDate         "2009-07-07T11:36:24.891Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -52,16 +58,17 @@ bdg:WA28732 {
     bda:WA28732  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28732 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "09/WA28732.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28732 ;
-        adm:logEntry        bda:LG3A263E501794E209 , bda:LGA32A0EACDBCE19AD , bda:LGEC49F8FB7C5FDDB6 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3EB7B061F2DFCAFF , bda:LGA32A0EACDBCE19AD , bda:LGEC49F8FB7C5FDDB6 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA21728 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR3EB7B061F2DFCAFF
+    bdr:CR095863C0C646B1DD
         a                   :AgentAsCreator ;
         :agent              bdr:P705 ;
         :role               bdr:R0ER0025 .
@@ -72,7 +79,7 @@ bdg:WA28732 {
         skos:altLabel       "bdud 'joms zab gter/"@bo-x-ewts , "sprul pa'i gter chen bdud 'joms gling pa'i zab gter gsang ba'i chos sde/"@bo-x-ewts ;
         skos:prefLabel      "gter chos/_bdud 'joms gling pa/"@bo-x-ewts , "the collected treasure-text of bdud-'joms-gling-pa"@en ;
         :catalogInfo        "Collected Treasure Revelations by a terton from Golok, Dudjom Lingpa (1835-1904)."@en ;
-        :creator            bdr:CR3EB7B061F2DFCAFF ;
+        :creator            bdr:CR095863C0C646B1DD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

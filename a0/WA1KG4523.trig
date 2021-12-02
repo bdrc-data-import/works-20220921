@@ -24,6 +24,12 @@ bdg:WA1KG4523 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -48,15 +54,16 @@ bdg:WA1KG4523 {
     bda:WA1KG4523  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4523 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "a0/WA1KG4523.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4523 ;
-        adm:logEntry        bda:LG61EB2C64703CCC73 , bda:LGBA6A86BC6872B661 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG61EB2C64703CCC73 , bda:LGBA6A86BC6872B661 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9619A6F323853347
+    bdr:CRDE9D4E727FA17755
         a                   :AgentAsCreator ;
         :agent              bdr:P00KG03719 ;
         :role               bdr:R0ER0019 .
@@ -65,7 +72,7 @@ bdg:WA1KG4523 {
         skos:altLabel       "lha chen po khyab 'jug gi 'jug pa bcu'i gtam rgyud snyan pa'i ngag tu bsdebs pa rtsa 'grel dri za'i 'jig rten nyul ba'i lam yig"@bo-x-ewts , "lha chen po khyab 'jug gi 'jug pa bcu'i gtam rgyud snyan pa'i ngag tu bsdebs pa zla ba bdud rtsi'i rnga yab/"@bo-x-ewts , "lha chen po khyab 'jug gi 'jug pa bcu snyan ngag tu bsdebs pa zla ba bdud rtsi'i rnga yab kyi 'grel pa dri za'i 'jig rten nyul ba'i lam yig"@bo-x-ewts ;
         skos:prefLabel      "khyab 'jug gi 'jug pa bcu'i gtam rgyud dri za'i 'jig rten nyul ba'i lam yig"@bo-x-ewts ;
         :catalogInfo        "Poems with commentary in praise of Vishnu. Based on the ten incarnations episode of Vishnu."@en ;
-        :creator            bdr:CR9619A6F323853347 ;
+        :creator            bdr:CRDE9D4E727FA17755 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T1779 ;

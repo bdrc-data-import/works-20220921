@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23664 {
-    bda:LG39822D02A8CC34F6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG4D92F87718C1E66E
         a                   adm:UpdateData ;
         adm:logDate         "2021-06-04T15:19:01.457Z"^^xsd:dateTime ;
@@ -27,6 +23,10 @@ bdg:WA23664 {
         adm:logDate         "2014-06-03T15:53:07.699Z"^^xsd:dateTime ;
         adm:logMessage      "added place"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LGA8BE337DA24B8A4C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGDA921760B39BFBD9
         a                   adm:UpdateData ;
@@ -47,6 +47,12 @@ bdg:WA23664 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -79,12 +85,13 @@ bdg:WA23664 {
     bda:WA23664  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23664 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "fd/WA23664.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23664 ;
-        adm:logEntry        bda:LG39822D02A8CC34F6 , bda:LG4D92F87718C1E66E , bda:LG9D015D23073D2D97 , bda:LGDA921760B39BFBD9 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG4D92F87718C1E66E , bda:LG9D015D23073D2D97 , bda:LGA8BE337DA24B8A4C , bda:LGDA921760B39BFBD9 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW23664  skos:altLabel  "lasa shi xia miao jian shi"@zh-latn-pinyin-x-ndia .

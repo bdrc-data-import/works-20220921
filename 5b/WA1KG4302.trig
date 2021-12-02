@@ -50,6 +50,12 @@ bdg:WA1KG4302 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -88,15 +94,16 @@ bdg:WA1KG4302 {
     bda:WA1KG4302  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4302 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "5b/WA1KG4302.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4302 ;
-        adm:logEntry        bda:LG56E47CA9D5D4B4CB , bda:LG6673609D2777079F , bda:LGC0CDEE831D17B217 , bda:LGD8E0CA0C711307C2 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG56E47CA9D5D4B4CB , bda:LG6673609D2777079F , bda:LGC0CDEE831D17B217 , bda:LGD8E0CA0C711307C2 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR69E96C179F462EE5
+    bdr:CRADAF58B5FD3DF7D0
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG4296 ;
         :role               bdr:R0ER0019 .
@@ -104,7 +111,7 @@ bdg:WA1KG4302 {
     bdr:WA1KG4302  a        :Work ;
         skos:prefLabel      "dam pa'i chos dang 'brel ba'i le tshan sum cu rtsa gnyis kyi grangs ldan/ thub bstan mdzes pa'i mtshan bzang /"@bo-x-ewts ;
         :catalogInfo        "Collection of writings by the 20th century scholar Trinle Dorje of the Dakpo Kagyu order."@en ;
-        :creator            bdr:CR69E96C179F462EE5 ;
+        :creator            bdr:CRADAF58B5FD3DF7D0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T67 ;

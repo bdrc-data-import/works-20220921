@@ -30,6 +30,12 @@ bdg:WA1KG12420 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -61,15 +67,16 @@ bdg:WA1KG12420 {
     bda:WA1KG12420  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG12420 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "0e/WA1KG12420.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG12420 ;
-        adm:logEntry        bda:LG25E4A058FFF96E42 , bda:LG56DE4099E742E10D , bda:LGDBEF65BD035FBB60 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG25E4A058FFF96E42 , bda:LG56DE4099E742E10D , bda:LGDBEF65BD035FBB60 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA433A1A61C76B3AC
+    bdr:CR889605E872EEE0D5
         a                   :AgentAsCreator ;
         :agent              bdr:P1499 ;
         :role               bdr:R0ER0019 .
@@ -78,7 +85,7 @@ bdg:WA1KG12420 {
         skos:altLabel       "la mo cha han nuo men hu tu ke tu zhuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "lA mo tsha kan no mon han ho thog thu tshang gi rnam par thar pa/"@bo-x-ewts , "拉莫察罕诺门汗呼图克图传"@zh-hans ;
         :catalogInfo        "Biographies of the Geluk masters from Amdo, Lamo Zhabdrung Karpo 07 Gendun Tenzin Norbu (1873-1927), and Lamo 08 Lobzang Lungrik Tenpa Gyatso (b. 1929)."@en ;
-        :creator            bdr:CRA433A1A61C76B3AC ;
+        :creator            bdr:CR889605E872EEE0D5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

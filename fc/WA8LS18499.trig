@@ -48,6 +48,12 @@ bdg:WA8LS18499 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -72,15 +78,16 @@ bdg:WA8LS18499 {
     bda:WA8LS18499  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18499 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "fc/WA8LS18499.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18499 ;
-        adm:logEntry        bda:LG19CF1E5325505C72 , bda:LG8A0E7670B55130F2 , bda:LG9182ADB107925B37 , bda:LGE206954147916201 , bda:LGEBBD8C4FA2AEDF22 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LG19CF1E5325505C72 , bda:LG8A0E7670B55130F2 , bda:LG9182ADB107925B37 , bda:LGE206954147916201 , bda:LGEBBD8C4FA2AEDF22 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF4DD6428234F6B6A
+    bdr:CRBF03978F675CCF59
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ355081 ;
         :role               bdr:R0ER0019 .
@@ -88,7 +95,7 @@ bdg:WA8LS18499 {
     bdr:WA8LS18499  a       :Work ;
         skos:prefLabel      "la mo bde chen chos 'khor gling gi lo rgyus/"@bo-x-ewts ;
         :catalogInfo        "History of Lamo Dechen monastery by Dawa Tsering."@en ;
-        :creator            bdr:CRF4DD6428234F6B6A ;
+        :creator            bdr:CRBF03978F675CCF59 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

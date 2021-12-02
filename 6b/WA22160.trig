@@ -24,7 +24,7 @@ bdg:WA22160 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGB47482C194151F19
+    bda:LG90F78615B6B8736B
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -34,6 +34,12 @@ bdg:WA22160 {
         adm:logMessage      "made open access"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
@@ -52,13 +58,14 @@ bdg:WA22160 {
     bda:WA22160  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22160 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "6b/WA22160.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22160 ;
-        adm:logEntry        bda:LG8D28083E71A88BAD , bda:LG8D30A5004E07DA4F , bda:LGB47482C194151F19 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG8D28083E71A88BAD , bda:LG8D30A5004E07DA4F , bda:LG90F78615B6B8736B , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG17182 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:MW22160  skos:altLabel  "格萨尔王传 --朱古兵器宗"@zh-hans .

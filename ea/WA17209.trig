@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA17209 {
+    bda:LG3BD0415876D12B6A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGB0C0CA38CFFAD5A4
         a                   adm:UpdateData ;
         adm:logDate         "2018-06-13T10:19:40.598Z"^^xsd:dateTime ;
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00017 .
-    
-    bda:LGD1F36F54B3E06F06
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -28,6 +28,12 @@ bdg:WA17209 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
@@ -39,15 +45,16 @@ bdg:WA17209 {
     bda:WA17209  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA17209 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "ea/WA17209.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA17209 ;
-        adm:logEntry        bda:LGB0C0CA38CFFAD5A4 , bda:LGD1F36F54B3E06F06 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG3BD0415876D12B6A , bda:LGB0C0CA38CFFAD5A4 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3BD0415876D12B6A
+    bdr:CR6B3A5FEB2799C79E
         a                   :AgentAsCreator ;
         :agent              bdr:P4856 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +64,7 @@ bdg:WA17209 {
     bdr:WA17209  a          :Work ;
         skos:altLabel       "bod rig pa'i 'byung ba dang 'byung 'gyur skor mdo tsam bshad pa/"@bo-x-ewts , "jian tan zang xue ji qi wei lai"@zh-latn-wadegile ;
         skos:prefLabel      "bod rig pa'i byung ba dang 'byung 'gyur skor/"@bo-x-ewts , "qian tan zang xue ji qi wei lai"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR3BD0415876D12B6A ;
+        :creator            bdr:CR6B3A5FEB2799C79E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW17209 , bdr:W17209 ;

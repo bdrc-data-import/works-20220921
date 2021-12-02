@@ -42,6 +42,12 @@ bdg:WA1KG12660 {
         adm:logMessage      "added Work to PR1LOKESH01"@en ;
         adm:logWhoStr       "add-works-to-PR1LOKESH01" .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMB5991979B0
         a                   adm:UpdateData ;
         adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
@@ -59,15 +65,16 @@ bdg:WA1KG12660 {
     bda:WA1KG12660  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG12660 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "c5/WA1KG12660.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG12660 ;
-        adm:logEntry        bda:LG377E80EE120813A5 , bda:LG52F9E866B7A4AF05 , bda:LGA3CAEBF504608B83 , bda:LGC261AB4F3D3F1634 , bda:LGED9A4F734BC3D319 , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG377E80EE120813A5 , bda:LG52F9E866B7A4AF05 , bda:LGA3CAEBF504608B83 , bda:LGC261AB4F3D3F1634 , bda:LGED9A4F734BC3D319 , bda:LGIM4394141E , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR65F85E475B40193F
+    bdr:CR7703ED0D94B363CC
         a                   :AgentAsCreator ;
         :agent              bdr:P280 ;
         :role               bdr:R0ER0019 .
@@ -75,7 +82,7 @@ bdg:WA1KG12660 {
     bdr:WA1KG12660  a       :Work ;
         skos:prefLabel      "dri med shel phreng nas bshad pa'i sman gyi 'khrungs dpe mdzes mtshar mig rgyan/"@bo-x-ewts ;
         :catalogInfo        "An illustrated Tibeto-Mongolian materia medica on Ayurveda."@en ;
-        :creator            bdr:CR65F85E475B40193F ;
+        :creator            bdr:CR7703ED0D94B363CC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG12660 , bdr:W1KG12660 ;

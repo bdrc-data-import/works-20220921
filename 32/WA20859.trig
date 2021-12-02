@@ -30,7 +30,7 @@ bdg:WA20859 {
         adm:logMessage      "added t1pd108901"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGE1E359A4D0053C4C
+    bda:LG92C5B33FE6948F1F
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -40,6 +40,12 @@ bdg:WA20859 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
@@ -58,12 +64,13 @@ bdg:WA20859 {
     bda:WA20859  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20859 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "32/WA20859.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20859 ;
-        adm:logEntry        bda:LG24AB4DE48FFF722E , bda:LG3047092F99891831 , bda:LG82FBF2E95CE95815 , bda:LGE1E359A4D0053C4C , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG24AB4DE48FFF722E , bda:LG3047092F99891831 , bda:LG82FBF2E95CE95815 , bda:LG92C5B33FE6948F1F , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA20859  a          :Work ;

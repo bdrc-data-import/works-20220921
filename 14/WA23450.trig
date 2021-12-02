@@ -18,15 +18,21 @@ bdg:WA23450 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG2BFA82AD1F366702
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG88694900D1C648B3
         a                   adm:UpdateData ;
         adm:logDate         "2009-11-06T16:50:01.614Z"^^xsd:dateTime ;
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LGD0B627FA90BE5240
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -38,12 +44,13 @@ bdg:WA23450 {
     bda:WA23450  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23450 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "14/WA23450.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23450 ;
-        adm:logEntry        bda:LG1AA123BE9F55DD08 , bda:LG2BFA82AD1F366702 , bda:LG88694900D1C648B3 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG1AA123BE9F55DD08 , bda:LG88694900D1C648B3 , bda:LGD0B627FA90BE5240 , bda:LGIM4394141E , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW23450  skos:altLabel  "Dpal yul chos spyod :collected liturgical texts recited at the monastery of Dpal-yul in Khams."@en-x-mixed .

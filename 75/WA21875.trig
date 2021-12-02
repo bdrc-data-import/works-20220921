@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21875 {
-    bda:LG335156E1FB2A8CA2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG5473F1FF39BE408A
         a                   adm:UpdateData ;
         adm:logDate         "2016-02-10T11:28:19.813Z"^^xsd:dateTime ;
@@ -28,11 +24,21 @@ bdg:WA21875 {
         adm:logMessage      "subject class changed from T1170 to T203"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGD1E8B116FF61A9B2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGDD67877CEC0A384D
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-02-10T16:39:39.38Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -58,15 +64,16 @@ bdg:WA21875 {
     bda:WA21875  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21875 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "75/WA21875.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21875 ;
-        adm:logEntry        bda:LG335156E1FB2A8CA2 , bda:LG5473F1FF39BE408A , bda:LGB5BFC75E80DC745A , bda:LGDD67877CEC0A384D , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG5473F1FF39BE408A , bda:LGB5BFC75E80DC745A , bda:LGD1E8B116FF61A9B2 , bda:LGDD67877CEC0A384D , bda:LGIM4394141E , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD1E8B116FF61A9B2
+    bdr:CR4466F4D845A61EEF
         a                   :AgentAsCreator ;
         :agent              bdr:P7379 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +84,7 @@ bdg:WA21875 {
         skos:altLabel       "yue qiu cun you ye tai"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "zla ba'i go la'i sla gzugs kyi rnam bshad/"@bo-x-ewts , "Dzla baʾi bo laʾi sla gdzugs kyi rnam bsad /Sgo-ra-naṅ-pa Phun-tshogs-dbaṅ-rgyal ; Thub-bstan-phun-tshogs kyis bsgyur."@en-x-mixed , "月球存有液态"@zh-hans ;
         :catalogInfo        "Description of lunar geology and theory of water present on the moon."@en ;
-        :creator            bdr:CRD1E8B116FF61A9B2 ;
+        :creator            bdr:CR4466F4D845A61EEF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T203 ;

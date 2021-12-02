@@ -30,6 +30,12 @@ bdg:WA3CN8060 {
         adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
         adm:logWhoStr       "add-works-to-PR1NCLK" .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -40,15 +46,16 @@ bdg:WA3CN8060 {
     bda:WA3CN8060  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN8060 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "4d/WA3CN8060.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN8060 ;
-        adm:logEntry        bda:LG584EFCCEAC2A3B90 , bda:LGD531671074A4A236 , bda:LGF4F81982E37499A7 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG584EFCCEAC2A3B90 , bda:LGD531671074A4A236 , bda:LGF4F81982E37499A7 , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDFC2EE354F44C099
+    bdr:CRB2ED795BF131D548
         a                   :AgentAsCreator ;
         :agent              bdr:P1844 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +64,7 @@ bdg:WA3CN8060 {
         skos:altLabel       "sgam po pa'i gdan rabs rim byon gyi gsung 'bum//[（1-5）]"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/ sgam po pa'i gdan rabs rim byon/[]"@bo-x-ewts ;
         :catalogInfo        "The collected writings of sucessive throne holder of Dakla Gampo monastery by Dakpo Lhaje Sonam Rinchen and others."@en ;
-        :creator            bdr:CRDFC2EE354F44C099 ;
+        :creator            bdr:CRB2ED795BF131D548 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

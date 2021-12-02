@@ -60,7 +60,7 @@ bdg:WA30532 {
         adm:logMessage      "added history of  par khang"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGFBEFA7DE9A47B3DA
+    bda:LGFB6B96FD118E3BF9
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -76,6 +76,12 @@ bdg:WA30532 {
         adm:logMessage      "added Work to CTC 10"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -101,12 +107,13 @@ bdg:WA30532 {
     bda:WA30532  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30532 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "42/WA30532.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30532 ;
-        adm:logEntry        bda:LG0775410013F570E0 , bda:LG1483356CB8C765B6 , bda:LG152706AE7BD46A5D , bda:LG1D8A90E0A347AC5E , bda:LG81693464244926C8 , bda:LGC8F9DB866CE64926 , bda:LGE07C81D1F3F7344E , bda:LGEEAC142B76269EE6 , bda:LGFBEFA7DE9A47B3DA , bda:LGFE5FE358142A1D32 , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0775410013F570E0 , bda:LG1483356CB8C765B6 , bda:LG152706AE7BD46A5D , bda:LG1D8A90E0A347AC5E , bda:LG81693464244926C8 , bda:LGC8F9DB866CE64926 , bda:LGE07C81D1F3F7344E , bda:LGEEAC142B76269EE6 , bda:LGFB6B96FD118E3BF9 , bda:LGFE5FE358142A1D32 , bda:LGIM320307B99D , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA30532  a          :Work ;

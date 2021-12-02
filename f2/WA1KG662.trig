@@ -44,6 +44,12 @@ bdg:WA1KG662 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -82,29 +88,30 @@ bdg:WA1KG662 {
     bda:WA1KG662  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG662 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "f2/WA1KG662.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG662 ;
-        adm:logEntry        bda:LG1D6458DAA13F67A6 , bda:LG35878C839A2EE9D8 , bda:LG8AACCD9EE9B7D1A5 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1D6458DAA13F67A6 , bda:LG35878C839A2EE9D8 , bda:LG8AACCD9EE9B7D1A5 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR21982BE414436C51
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG664 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR9BA2717B31A82ADE
-        a                   :AgentAsCreator ;
         :agent              bdr:P1KG663 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR763FD0A3CA03DAB0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG664 ;
+        :role               bdr:R0ER0016 .
     
     bdr:WA1KG662  a         :Work ;
         skos:altLabel       "Bod Dbyin Rgya gsum gyi sman khaṅ ñer mkhoʼi brda sprod /Ñi-ma daṅ Rgyal-pos rtsom sgrig źus = Tibetan-English-Chinese dialogue in the hospital / Nyima and Gelpo."@en-x-mixed ;
         skos:prefLabel      "bod dbyin rgya gsum gyi sman khang nyer mkho'i brda sprod/"@bo-x-ewts , "tibetan english chinese dialogue in the hospital"@en , "zang ying han duizhao zangyi huihua"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Textbook to study conversation in hospital settings. In Tibetan, English, and Chinese."@en ;
-        :creator            bdr:CR21982BE414436C51 , bdr:CR9BA2717B31A82ADE ;
+        :creator            bdr:CR21982BE414436C51 , bdr:CR763FD0A3CA03DAB0 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn , bdr:LangZh ;
         :workGenre          bdr:T240 ;

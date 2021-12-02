@@ -24,6 +24,12 @@ bdg:WA3CN7991 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -34,15 +40,16 @@ bdg:WA3CN7991 {
     bda:WA3CN7991  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN7991 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "1d/WA3CN7991.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN7991 ;
-        adm:logEntry        bda:LG29D972FA6AFE95BD , bda:LGF04544A48A662C5C , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG29D972FA6AFE95BD , bda:LGF04544A48A662C5C , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1F5E001DDB426026
+    bdr:CR748491452AB21CD0
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG1684 ;
         :role               bdr:R0ER0019 .
@@ -51,7 +58,7 @@ bdg:WA3CN7991 {
         skos:altLabel       "rtogs brjod mdun legs ma'i dpe khrid sgra bshus/"@bo-x-ewts ;
         skos:prefLabel      "skyes chen gyi bzhud lam/"@bo-x-ewts ;
         :catalogInfo        "Lecture on brief biography of Tsongkhapa by Go Sherab Gyatso."@en ;
-        :creator            bdr:CR1F5E001DDB426026 ;
+        :creator            bdr:CR748491452AB21CD0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T200 ;

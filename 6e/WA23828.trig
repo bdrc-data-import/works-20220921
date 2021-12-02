@@ -12,15 +12,21 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23828 {
-    bda:LG698D9370F8F03B1B
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG8AC150C2CD2B4AD4
         a                   adm:UpdateData ;
         adm:logDate         "2011-03-28T13:16:41.607Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGE79DD3ACD5DDC46B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -53,15 +59,16 @@ bdg:WA23828 {
     bda:WA23828  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23828 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "6e/WA23828.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23828 ;
-        adm:logEntry        bda:LG698D9370F8F03B1B , bda:LG8AC150C2CD2B4AD4 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG8AC150C2CD2B4AD4 , bda:LGE79DD3ACD5DDC46B , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE79DD3ACD5DDC46B
+    bdr:CR1B2168E37BCE1861
         a                   :AgentAsCreator ;
         :agent              bdr:P101 ;
         :role               bdr:R0ER0019 .
@@ -72,7 +79,7 @@ bdg:WA23828 {
         skos:altLabel       "mdo sngags rab 'byams pa paN chen bsod nams grags pa'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_bsod nams grags pa/"@bo-x-ewts , "The collected works (gsuṅ ʾbum) of Paṇ-chen Bsod-nams-grags-pa."@en-x-mixed ;
         :catalogInfo        "Collected Works by a Geluk master from Drepung Monastery. Many of the works contained are textbooks studied in the curriculum at Losal Ling Buddhist College and its affiliates."@en ;
-        :creator            bdr:CRE79DD3ACD5DDC46B ;
+        :creator            bdr:CR1B2168E37BCE1861 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

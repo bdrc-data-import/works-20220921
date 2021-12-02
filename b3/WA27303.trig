@@ -18,14 +18,14 @@ bdg:WA27303 {
         adm:logMessage      "changed to T1134"@en ;
         adm:logWho          bdu:U00020 .
     
-    bda:LGAE40B5F8E3E43403
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGB532190723DB85C8
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-27T16:35:00.12Z"^^xsd:dateTime ;
         adm:logMessage      "kiosk info added"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD070E3BAAAD8A5E7
+        a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:LGE9E4E1BFDF085DBF
@@ -54,6 +54,12 @@ bdg:WA27303 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -71,15 +77,16 @@ bdg:WA27303 {
     bda:WA27303  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27303 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "b3/WA27303.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27303 ;
-        adm:logEntry        bda:LG9493FEFD6D054A03 , bda:LGAE40B5F8E3E43403 , bda:LGB532190723DB85C8 , bda:LGE9E4E1BFDF085DBF , bda:LGF53C96B63017584A , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG9493FEFD6D054A03 , bda:LGB532190723DB85C8 , bda:LGD070E3BAAAD8A5E7 , bda:LGE9E4E1BFDF085DBF , bda:LGF53C96B63017584A , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD070E3BAAAD8A5E7
+    bdr:CR6CC9B4793AA931AE
         a                   :AgentAsCreator ;
         :agent              bdr:P6279 ;
         :role               bdr:R0ER0019 .
@@ -89,7 +96,7 @@ bdg:WA27303 {
     bdr:WA27303  a          :Work ;
         skos:prefLabel      "kaM tshang yab sras dang dpal spungs dgon pa'i lo rgyus ngo mtshar dad pa'i pad+ma rgyas byed/"@bo-x-ewts , "gama gaju shi tu yu babang si"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Hagiographies of lamas of the Karma Kagyu lineage, and a history of Pelpung monastery in Dege Xian."@en ;
-        :creator            bdr:CRD070E3BAAAD8A5E7 ;
+        :creator            bdr:CR6CC9B4793AA931AE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

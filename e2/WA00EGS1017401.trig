@@ -48,6 +48,12 @@ bdg:WA00EGS1017401 {
         adm:logMessage      "changed place of blocks"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -73,15 +79,16 @@ bdg:WA00EGS1017401 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00EGS1017401 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "e2/WA00EGS1017401.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00EGS1017401 ;
-        adm:logEntry        bda:LG02127B17359EBF56 , bda:LG0985F5F06D9CD935 , bda:LG56AE5269CC809D58 , bda:LG6923C8CBC24120C9 , bda:LG76E9085AE5AC8868 , bda:LGD190F9A4FA46D812 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG02127B17359EBF56 , bda:LG0985F5F06D9CD935 , bda:LG56AE5269CC809D58 , bda:LG6923C8CBC24120C9 , bda:LG76E9085AE5AC8868 , bda:LGD190F9A4FA46D812 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR76BF819B14EAEE23
+    bdr:CRB562B1C08C559810
         a                   :AgentAsCreator ;
         :agent              bdr:P221 ;
         :role               bdr:R0ER0019 .
@@ -90,7 +97,7 @@ bdg:WA00EGS1017401 {
         a                   :Work ;
         skos:prefLabel      "gsung 'bum/_'jigs med dam chos rgya mtsho/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Dzongkar Marnang Zhabdrung Jigme Damcho Gyatso (1898-1946), a prominent Geluk author from Rebkong in Amdo. Scanned from the original blockprints."@en ;
-        :creator            bdr:CR76BF819B14EAEE23 ;
+        :creator            bdr:CRB562B1C08C559810 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

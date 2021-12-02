@@ -30,6 +30,12 @@ bdg:WA1KG13809 {
         adm:logMessage      "accessioned"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -40,15 +46,16 @@ bdg:WA1KG13809 {
     bda:WA1KG13809  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG13809 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "8c/WA1KG13809.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG13809 ;
-        adm:logEntry        bda:LG0F67AEFAEB03A693 , bda:LG16FF01BC252244A7 , bda:LGCB1C6664644537C6 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG0F67AEFAEB03A693 , bda:LG16FF01BC252244A7 , bda:LGCB1C6664644537C6 , bda:LGIM4394141E , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2DB682E71D113C71
+    bdr:CRFC9E589FFDAC5369
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG14940 ;
         :role               bdr:R0ER0019 .
@@ -59,7 +66,7 @@ bdg:WA1KG13809 {
         skos:altLabel       "smad mdo khams ri bo rtse lnga'am/ mdo smad dbal shul gser rta'i sngon dang da lta'i dngos yod kyi lo rgyus snying bsdus ma bcos drang por gser 'brong ri smug po'i brjid nyams/"@bo-x-ewts ;
         skos:prefLabel      "mdo smad dbal shul gser rta'i sngon dang da lta'i dngos yod kyi lo rgyus snying bsdus/"@bo-x-ewts , "Smad Mdo-khams ri bo rtse lṅa'am Mdo-smad Dbal śul Gser-rtaʼi sṅon daṅ da lta'i dṅos yod kyi lo rgyus sñiṅ bsdus ma bcos draṅ por brjod pa gser 'broṅ ri smug po'i brjid ñams źes bya ba bźugs so /Gser-rta'i Tshul-khrims-'od-zer."@en-x-mixed ;
         :catalogInfo        "History of Serta place of Tibet"@en ;
-        :creator            bdr:CR2DB682E71D113C71 ;
+        :creator            bdr:CRFC9E589FFDAC5369 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

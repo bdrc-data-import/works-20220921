@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21873 {
-    bda:LG3401676516971993
+    bda:LG39752709CAE057AE
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -34,18 +34,25 @@ bdg:WA21873 {
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA21873  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21873 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "ea/WA21873.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21873 ;
-        adm:logEntry        bda:LG3401676516971993 , bda:LG6F1502DAE924E63C , bda:LG77684E827FE78935 , bda:LGF9468DFF9FAA61B0 ;
+        adm:logEntry        bda:LG39752709CAE057AE , bda:LG6F1502DAE924E63C , bda:LG77684E827FE78935 , bda:LGF9468DFF9FAA61B0 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR39752709CAE057AE
+    bdr:CR4EF0CCCC345BA10B
         a                   :AgentAsCreator ;
         :agent              bdr:P6644 ;
         :role               bdr:R0ER0019 .
@@ -56,7 +63,7 @@ bdg:WA21873 {
         skos:altLabel       "zang zu zhe xue de li zhi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod kyi sher rtogs rig pa'i rigs shes/"@bo-x-ewts , "藏族哲学的理智"@zh-hans ;
         :catalogInfo        "On the general philosophical concept of Tibetan Buddhism."@en ;
-        :creator            bdr:CR39752709CAE057AE ;
+        :creator            bdr:CR4EF0CCCC345BA10B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGA001085 , bdr:MW21873 , bdr:W21873 ;

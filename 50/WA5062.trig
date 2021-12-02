@@ -30,21 +30,27 @@ bdg:WA5062 {
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG9A40790BDD2020D7
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGAB6E79CF73442E6A
         a                   adm:UpdateData ;
         adm:logDate         "2012-02-14T12:17:20.547Z"^^xsd:dateTime ;
         adm:logMessage      "added annotation"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGD513E05FA4C2B46A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGEB19F9754F12787D
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
         adm:logMessage      "added Work to PL480"@en ;
         adm:logWhoStr       "add-works-to-PR1PL480" .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -77,16 +83,17 @@ bdg:WA5062 {
     bda:WA5062  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA5062 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "50/WA5062.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA5062 ;
-        adm:logEntry        bda:LG1045D864BA2DEC57 , bda:LG1963701D1D368AA5 , bda:LG1F0589DF66B9EC2E , bda:LG9A40790BDD2020D7 , bda:LGAB6E79CF73442E6A , bda:LGEB19F9754F12787D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1045D864BA2DEC57 , bda:LG1963701D1D368AA5 , bda:LG1F0589DF66B9EC2E , bda:LGAB6E79CF73442E6A , bda:LGD513E05FA4C2B46A , bda:LGEB19F9754F12787D , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA3CN21303 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRD513E05FA4C2B46A
+    bdr:CRC37CC170243FD693
         a                   :AgentAsCreator ;
         :agent              bdr:P252 ;
         :role               bdr:R0ER0019 .
@@ -97,7 +104,7 @@ bdg:WA5062 {
         skos:altLabel       "collected writings 'jam mgon mi pham rgya mtsho/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_mi pham rgya mtsho/"@bo-x-ewts , "Collected writings of ʾJam-mgon ʾJu Mi-pham-rgya-mtsho :comprising a collection of the works of the scholar-saint selected for their rarity from recently unpublished xylographic prints and MSS. from the libraries of Dudjom Rimpoche, Luding Khen Rimpoche, and other religious teachers and laymen by Sonam Topgay Kazi."@en-x-mixed ;
         :catalogInfo        "Collected Works by renowned Nyingma polymath Jamgon Ju Mipam Gyatso (1846-1912)."@en ;
-        :creator            bdr:CRD513E05FA4C2B46A ;
+        :creator            bdr:CRC37CC170243FD693 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

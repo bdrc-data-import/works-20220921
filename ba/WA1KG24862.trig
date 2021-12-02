@@ -38,6 +38,12 @@ bdg:WA1KG24862 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -55,15 +61,16 @@ bdg:WA1KG24862 {
     bda:WA1KG24862  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24862 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "ba/WA1KG24862.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24862 ;
-        adm:logEntry        bda:LG5658BFBCF82E65CF , bda:LGD3F4274E1203F686 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG5658BFBCF82E65CF , bda:LGD3F4274E1203F686 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE9CECFCBEE8D92A4
+    bdr:CR47FB2AD3D01C5B3E
         a                   :AgentAsCreator ;
         :agent              bdr:P6669 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +78,7 @@ bdg:WA1KG24862 {
     bdr:WA1KG24862  a       :Work ;
         skos:prefLabel      "dmangs khrod rtsom rig rnam bshad/"@bo-x-ewts ;
         :catalogInfo        "Exedgesis of the folk literature."@en ;
-        :creator            bdr:CRE9CECFCBEE8D92A4 ;
+        :creator            bdr:CR47FB2AD3D01C5B3E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;

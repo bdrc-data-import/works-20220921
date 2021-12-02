@@ -37,6 +37,12 @@ bdg:WA1PD45157 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
@@ -54,16 +60,17 @@ bdg:WA1PD45157 {
     bda:WA1PD45157  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD45157 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "3a/WA1PD45157.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD45157 ;
-        adm:logEntry        bda:LG61F22AD30B34EB8C , bda:LG74DDE55FB5A86E79 , bda:LGE6741CE3D965AFB8 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG61F22AD30B34EB8C , bda:LG74DDE55FB5A86E79 , bda:LGE6741CE3D965AFB8 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1CZ1114 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR449B9E851C3A28F0
+    bdr:CREE29DF636A55920A
         a                   :AgentAsCreator ;
         :agent              bdr:P3465 ;
         :role               bdr:R0ER0019 .
@@ -73,7 +80,7 @@ bdg:WA1PD45157 {
     bdr:WA1PD45157  a       :Work ;
         skos:altLabel       "bde bar gshegs pa'i bstan pa rin po che la 'jug pa'i lam gyi rim pa rnam par bshad pa/"@bo-x-ewts ;
         skos:prefLabel      "bstan rim chen mo/"@bo-x-ewts , "the great book on the steps of the teaching"@en ;
-        :creator            bdr:CR449B9E851C3A28F0 ;
+        :creator            bdr:CREE29DF636A55920A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1352 , bdr:T238 ;

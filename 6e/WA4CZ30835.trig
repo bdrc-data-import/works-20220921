@@ -30,6 +30,12 @@ bdg:WA4CZ30835 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -47,16 +53,17 @@ bdg:WA4CZ30835 {
     bda:WA4CZ30835  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ30835 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "6e/WA4CZ30835.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ30835 ;
-        adm:logEntry        bda:LG245A6478B8D2931E , bda:LG80CD20E8D583E25F , bda:LG8B0853B9AEE31F89 , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 ;
+        adm:logEntry        bda:LG245A6478B8D2931E , bda:LG80CD20E8D583E25F , bda:LG8B0853B9AEE31F89 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA30303 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR94AD55153C13D3BD
+    bdr:CR2E20E4CF1981FE31
         a                   :AgentAsCreator ;
         :agent              bdr:P9737 ;
         :role               bdr:R0ER0019 .
@@ -65,7 +72,7 @@ bdg:WA4CZ30835 {
         skos:altLabel       "ldan ma skyabs mgon dpal dbang chen dgyes rab rdo rje'i gsung 'bum/"@bo-x-ewts , "skyabs mgon dgyes rab rdo rje'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_dbang chen dgyes rab rdo rje/"@bo-x-ewts ;
         :catalogInfo        "Collected writings of Denma Kyabgon Gyerab Dorje."@en ;
-        :creator            bdr:CR94AD55153C13D3BD ;
+        :creator            bdr:CR2E20E4CF1981FE31 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

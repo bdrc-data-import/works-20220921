@@ -31,6 +31,12 @@ bdg:WA1KG22986 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -41,15 +47,16 @@ bdg:WA1KG22986 {
     bda:WA1KG22986  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG22986 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "71/WA1KG22986.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG22986 ;
-        adm:logEntry        bda:LG24558FF45B866899 , bda:LGC6649F9382395EB7 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG24558FF45B866899 , bda:LGC6649F9382395EB7 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA744E81C050DE199
+    bdr:CR0CA6D4B383664160
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG10360 ;
         :role               bdr:R0ER0019 .
@@ -60,7 +67,7 @@ bdg:WA1KG22986 {
         skos:altLabel       "gao yuan you xiu ren yuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "sa mtho'i phul byung mi sna/"@bo-x-ewts , "高原优秀人员"@zh-hans ;
         :catalogInfo        "Collection of articles excerpts from bod ljongs nyin re'i tshags par (Tibet daily) on Tibetan celebrities and thier contributions to the community."@en ;
-        :creator            bdr:CRA744E81C050DE199 ;
+        :creator            bdr:CR0CA6D4B383664160 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

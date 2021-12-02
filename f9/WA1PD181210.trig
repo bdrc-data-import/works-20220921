@@ -35,18 +35,25 @@ bdg:WA1PD181210 {
         adm:logMessage      "added volume map"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1PD181210  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD181210 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f9/WA1PD181210.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD181210 ;
-        adm:logEntry        bda:LG3FCE209AE5F4EBFD , bda:LG819F69A6D4C720DF , bda:LG8950510E940E6D42 , bda:LG8B09260524495557 ;
+        adm:logEntry        bda:LG3FCE209AE5F4EBFD , bda:LG819F69A6D4C720DF , bda:LG8950510E940E6D42 , bda:LG8B09260524495557 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA5003FE750D841F5
+    bdr:CR332723675B7AFBC2
         a                   :AgentAsCreator ;
         :agent              bdr:P470 ;
         :role               bdr:R0ER0019 .
@@ -55,7 +62,7 @@ bdg:WA1PD181210 {
         skos:altLabel       "gter ston rat+na gling pa'i gsung /"@bo-x-ewts ;
         skos:prefLabel      "rat+na gling pa'i gter chos/"@bo-x-ewts ;
         :catalogInfo        "Complete revelations of Terchen Ratna Lingpa (1403-1479)"@en ;
-        :creator            bdr:CRA5003FE750D841F5 ;
+        :creator            bdr:CR332723675B7AFBC2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

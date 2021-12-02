@@ -24,18 +24,25 @@ bdg:WA1KG24041 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG24041  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24041 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "fb/WA1KG24041.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24041 ;
-        adm:logEntry        bda:LGAA95A9B56995704F , bda:LGB748F78414DD838B ;
+        adm:logEntry        bda:LGAA95A9B56995704F , bda:LGB748F78414DD838B , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR39ED2093734BE099
+    bdr:CR32DB7E02DBEDC20E
         a                   :AgentAsCreator ;
         :agent              bdr:P10071 ;
         :role               bdr:R0ER0019 .
@@ -43,7 +50,7 @@ bdg:WA1KG24041 {
     bdr:WA1KG24041  a       :Work ;
         skos:prefLabel      "kher rkyang gi bla srog"@bo-x-ewts ;
         :catalogInfo        "Collection of writings by Chanlung Tsering Droje."@en ;
-        :creator            bdr:CR39ED2093734BE099 ;
+        :creator            bdr:CR32DB7E02DBEDC20E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T258 ;

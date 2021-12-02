@@ -31,6 +31,12 @@ bdg:WA8LS20374 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -48,15 +54,16 @@ bdg:WA8LS20374 {
     bda:WA8LS20374  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20374 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "ac/WA8LS20374.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20374 ;
-        adm:logEntry        bda:LG2F25515B98E9C5EE , bda:LG5D89EA404915D6DC , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2F25515B98E9C5EE , bda:LG5D89EA404915D6DC , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB23ADC449564A105
+    bdr:CRA64EB32937313576
         a                   :AgentAsCreator ;
         :agent              bdr:P7198 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +71,7 @@ bdg:WA8LS20374 {
     bdr:WA8LS20374  a       :Work ;
         skos:prefLabel      "dgra lha zla ba bzang po'i ched rtsom phyogs bsgrigs/"@bo-x-ewts ;
         :catalogInfo        "A collected writings of Dalha Dawa Tsering."@en ;
-        :creator            bdr:CRB23ADC449564A105 ;
+        :creator            bdr:CRA64EB32937313576 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 , bdr:T1081 ;

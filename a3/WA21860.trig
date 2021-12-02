@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21860 {
-    bda:LGD1C3B227F38EA3EC
+    bda:LG40D7AB15E489BF14
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -29,6 +29,12 @@ bdg:WA21860 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
@@ -54,15 +60,16 @@ bdg:WA21860 {
     bda:WA21860  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21860 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "a3/WA21860.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21860 ;
-        adm:logEntry        bda:LGD1C3B227F38EA3EC , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG40D7AB15E489BF14 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR40D7AB15E489BF14
+    bdr:CRCC1F810DE0259729
         a                   :AgentAsCreator ;
         :agent              bdr:P7373 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +78,7 @@ bdg:WA21860 {
     
     bdr:WA21860  a          :Work ;
         skos:prefLabel      "rgyun spyod bod rigs gtam dpe bsags mdzod/"@bo-x-ewts , "Chʻang yung Tsang tsu yen yü tzʻu tien /Kao Ping-chʻen pien i ; To-chi-chieh-po chiao ting."@en-x-mixed , "chang yong zang zu yan yu ci dian"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR40D7AB15E489BF14 ;
+        :creator            bdr:CRCC1F810DE0259729 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW21860 , bdr:W21860 ;

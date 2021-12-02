@@ -29,10 +29,6 @@ bdg:WA19836 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LG6DE38D939D5EAAE7
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG8887834C4C7E853C
         a                   adm:UpdateData ;
         adm:logDate         "2012-04-16T15:12:00.804Z"^^xsd:dateTime ;
@@ -55,12 +51,22 @@ bdg:WA19836 {
         adm:logDate         "2010-01-05T15:48:43.971Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGA31563AAF61B63C0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
         adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
@@ -79,15 +85,16 @@ bdg:WA19836 {
     bda:WA19836  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19836 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "c3/WA19836.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19836 ;
-        adm:logEntry        bda:LG29FE1E9EFE5E27F1 , bda:LG3A106D390CB49663 , bda:LG621C611F3DF98975 , bda:LG6DE38D939D5EAAE7 , bda:LG8887834C4C7E853C , bda:LG8DBDB2A493E1AF04 , bda:LG928528268343B6B6 , bda:LG93E887679CC61EF7 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG29FE1E9EFE5E27F1 , bda:LG3A106D390CB49663 , bda:LG621C611F3DF98975 , bda:LG8887834C4C7E853C , bda:LG8DBDB2A493E1AF04 , bda:LG928528268343B6B6 , bda:LG93E887679CC61EF7 , bda:LGA31563AAF61B63C0 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA31563AAF61B63C0
+    bdr:CR41F0218962139DF9
         a                   :AgentAsCreator ;
         :agent              bdr:P6218 ;
         :role               bdr:R0ER0019 .
@@ -97,7 +104,7 @@ bdg:WA19836 {
     bdr:WA19836  a          :Work ;
         skos:altLabel       "gsung 'bum dkar chag"@bo-x-ewts , "zhwa ser bstan pa'i sgron me rje tsong kha pa chen pos gtsos skyes chen dam pa rim byung gi gsung 'bum dkar chag phyogs gcig tu bsgrigs pa'i dri med zla shel gtsang ma'i me long /"@bo-x-ewts , "bu da la gong dian ji mu lu"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "po ta lar bzhugs pa'i dge lugs gsung 'bum gyi dkar chag"@bo-x-ewts , "布达拉宫典籍目录"@zh-hans ;
-        :creator            bdr:CRA31563AAF61B63C0 ;
+        :creator            bdr:CR41F0218962139DF9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T13 , bdr:T2123 ;

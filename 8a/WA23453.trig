@@ -30,9 +30,15 @@ bdg:WA23453 {
         adm:logMessage      "last clause removed from the annotation"@en ;
         adm:logWho          bdu:U00001 .
     
-    bda:LGD4A12969ED98BCFD
+    bda:LGA19933066FE327C6
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -51,15 +57,16 @@ bdg:WA23453 {
     bda:WA23453  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23453 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "8a/WA23453.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23453 ;
-        adm:logEntry        bda:LG37E0E2483DF13295 , bda:LG4FCD6ED1D2F3F3CC , bda:LG661C83711B68EE5E , bda:LGD4A12969ED98BCFD , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG37E0E2483DF13295 , bda:LG4FCD6ED1D2F3F3CC , bda:LG661C83711B68EE5E , bda:LGA19933066FE327C6 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA19933066FE327C6
+    bdr:CRDC9197DDC1E988FD
         a                   :AgentAsCreator ;
         :agent              bdr:P5254 ;
         :role               bdr:R0ER0025 .
@@ -69,7 +76,7 @@ bdg:WA23453 {
     bdr:WA23453  a          :Work ;
         skos:prefLabel      "thugs sgrub drag po rtsal gyi chos skor/"@bo-x-ewts , "a cycle of practice focussing upon the esoteric form of the guru from the byan-gter revelations of rig-'dzin rgod-kyi-ldem-'phru-can"@en-x-mixed ;
         :catalogInfo        "Practices of the secret sadhana of the Jangter Nyingma order. Cycle revealed by Rigzin Godkyi Demtrucan. Carved on to woodblocks at Nechung through the efforts of the Nechung Oracle Shakya Yarpel. Edited by Dudjom Jigdral Yeshe Dorje. Several pages and orderions were missing since the period of Dalai Lama 05."@en ;
-        :creator            bdr:CRA19933066FE327C6 ;
+        :creator            bdr:CRDC9197DDC1E988FD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

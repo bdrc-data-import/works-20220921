@@ -18,6 +18,10 @@ bdg:WA703 {
         adm:logMessage      "addded print type and source printrey"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LG220B6F744BAAECFB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG33DFA18CB242A784
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-17T15:18:11.121Z"^^xsd:dateTime ;
@@ -29,10 +33,6 @@ bdg:WA703 {
         adm:logDate         "2011-04-20T11:51:04.558Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
-    
-    bda:LG4FD3E8A137BAA66E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LG8D49A1573FD3B771
         a                   adm:UpdateData ;
@@ -52,6 +52,12 @@ bdg:WA703 {
         adm:logMessage      "added Work to CTC 10"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -77,20 +83,21 @@ bdg:WA703 {
     bda:WA703  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA703 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "67/WA703.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA703 ;
-        adm:logEntry        bda:LG06082F236467BEF2 , bda:LG33DFA18CB242A784 , bda:LG3A5984E6EC55714E , bda:LG4FD3E8A137BAA66E , bda:LG8D49A1573FD3B771 , bda:LGBC3F2DAE91907AA5 , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG06082F236467BEF2 , bda:LG220B6F744BAAECFB , bda:LG33DFA18CB242A784 , bda:LG3A5984E6EC55714E , bda:LG8D49A1573FD3B771 , bda:LGBC3F2DAE91907AA5 , bda:LGIM320307B99D , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR220B6F744BAAECFB
+    bdr:CR795A2334090A4F8B
         a                   :AgentAsCreator ;
         :agent              bdr:P79 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV795A2334090A4F8B
+    bdr:EV44192F5C0FD466FE
         a                   :CompletedEvent ;
         :onYear             "1455"^^xsd:gYear .
     
@@ -100,10 +107,10 @@ bdg:WA703 {
         skos:altLabel       "dpal dus kyi 'khor lo'i spyi don gyi sgo nas gtan la 'bebs par byed pa'i legs bshad bstan pa'i rgya mtsho/"@bo-x-ewts ;
         skos:prefLabel      "dus 'khor spyi don bstan pa'i rgya mtsho/"@bo-x-ewts , "Dus ʼkhor spyi don bstan paʼi rgya mtsho :being the text of the commentary on the Kalacakra Tantra entitled D̀pal Dus kyi ʼkhor loʼi spyi don gyi sgo nas gtan la ʼbebs par byed paʼi legs bśad bstan paʼi rgya mtsho ́/by Stag-tshaṅ Lo-tsā-ba Śes-rab-rin-chen."@en-x-mixed ;
         :catalogInfo        "Exegesis of the general meaning of the Kalachakra Tantra by Sakya master Taktsang Lotsawa Sherab Rinchen (b. 1405)."@en ;
-        :creator            bdr:CR220B6F744BAAECFB ;
+        :creator            bdr:CR795A2334090A4F8B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV795A2334090A4F8B ;
+        :workEvent          bdr:EV44192F5C0FD466FE ;
         :workGenre          bdr:T132 , bdr:T1763 ;
         :workHasInstance    bdr:MW2DB4577_0E5610 , bdr:MW703 , bdr:W703 ;
         :workIsAbout        bdr:T74 , bdr:WA22306 , bdr:WA22740 .

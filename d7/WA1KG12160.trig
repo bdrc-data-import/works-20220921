@@ -30,6 +30,12 @@ bdg:WA1KG12160 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -61,20 +67,21 @@ bdg:WA1KG12160 {
     bda:WA1KG12160  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG12160 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "d7/WA1KG12160.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG12160 ;
-        adm:logEntry        bda:LG17758C1EE5B49637 , bda:LG3F040E894D0393D7 , bda:LG9CBEC1DAACF80E20 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG17758C1EE5B49637 , bda:LG3F040E894D0393D7 , bda:LG9CBEC1DAACF80E20 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1D87FE4A333FE725
+    bdr:CRB8373A6DF3B03062
         a                   :AgentAsCreator ;
         :agent              bdr:P4411 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVB8373A6DF3B03062
+    bdr:EVF52EF3CBAF585E42
         a                   :CompletedEvent ;
         :onYear             "1983"^^xsd:gYear .
     
@@ -82,10 +89,10 @@ bdg:WA1KG12160 {
         skos:altLabel       "rigs brgya'i khyab bdag rdo rje 'chang chen po dang ngo bo dbyer ma mchis pa yongs kyi dge ba'i bshes gnyen chen po rje btsun byams pa mtha' yas dpal bzang po'i rnam par thar pa dad gsum pad tshal rgyas pa'i nyin byed/"@bo-x-ewts ;
         skos:prefLabel      "rje btsun byams pa mtha' yas dpal bzang po'i rnam thar dad gsum pad tshal rgyas pa'i nyin byed/"@bo-x-ewts ;
         :catalogInfo        "Biography of Geluk master Jampa Taye (1894-1949)."@en ;
-        :creator            bdr:CR1D87FE4A333FE725 ;
+        :creator            bdr:CRB8373A6DF3B03062 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVB8373A6DF3B03062 ;
+        :workEvent          bdr:EVF52EF3CBAF585E42 ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW1KG12160 , bdr:W1KG12160 ;
         :workIsAbout        bdr:P2AG19 , bdr:T819 .

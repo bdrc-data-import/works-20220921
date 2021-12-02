@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA24766 {
+    bda:LG109F1C9E30A979D3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG3313894CBE5EC488
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
@@ -30,10 +34,6 @@ bdg:WA24766 {
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGA425C7BE55A40BD6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGB20FCE2657BC5262
         a                   adm:UpdateData ;
         adm:logDate         "2010-06-29T17:07:04.205Z"^^xsd:dateTime ;
@@ -45,6 +45,12 @@ bdg:WA24766 {
         adm:logDate         "2010-06-29T17:08:41.795Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -63,16 +69,17 @@ bdg:WA24766 {
     bda:WA24766  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA24766 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "e6/WA24766.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA24766 ;
-        adm:logEntry        bda:LG3313894CBE5EC488 , bda:LG6239B2AA756FDD66 , bda:LG7A06EE35192392DB , bda:LGA425C7BE55A40BD6 , bda:LGB20FCE2657BC5262 , bda:LGEC76649653A24382 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG109F1C9E30A979D3 , bda:LG3313894CBE5EC488 , bda:LG6239B2AA756FDD66 , bda:LG7A06EE35192392DB , bda:LGB20FCE2657BC5262 , bda:LGEC76649653A24382 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG8898 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR109F1C9E30A979D3
+    bdr:CR314A0A57ECF954BC
         a                   :AgentAsCreator ;
         :agent              bdr:P7997 ;
         :role               bdr:R0ER0019 .
@@ -83,7 +90,7 @@ bdg:WA24766 {
         skos:altLabel       "g.yag ston sher phyin TI ka"@bo-x-ewts ;
         skos:prefLabel      "g.yag TIk"@bo-x-ewts , "the complete yig cha for the study of the prajnaparamita literature"@en ;
         :catalogInfo        "Syllabus of the Sakya order for the study of Prajnaparamita."@en ;
-        :creator            bdr:CR109F1C9E30A979D3 ;
+        :creator            bdr:CR314A0A57ECF954BC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

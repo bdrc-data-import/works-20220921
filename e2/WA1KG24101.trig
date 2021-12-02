@@ -24,6 +24,12 @@ bdg:WA1KG24101 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
@@ -34,15 +40,16 @@ bdg:WA1KG24101 {
     bda:WA1KG24101  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24101 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "e2/WA1KG24101.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24101 ;
-        adm:logEntry        bda:LGD2FD566360F40569 , bda:LGF81EA002806C35DE , bda:LGIM4D99209C62 ;
+        adm:logEntry        bda:LGD2FD566360F40569 , bda:LGF81EA002806C35DE , bda:LGIM4394141E , bda:LGIM4D99209C62 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4CB95978B7B66F4A
+    bdr:CR719A82AED21EBF82
         a                   :AgentAsCreator ;
         :agent              bdr:P3379 ;
         :role               bdr:R0ER0019 .
@@ -51,7 +58,7 @@ bdg:WA1KG24101 {
         skos:altLabel       "jo bo rje dpal ldan a ti shas mdzad pa'i bden pa gnyis la 'jug pa la sogs pa'i gzhung tshan bzhi/"@bo-x-ewts ;
         skos:prefLabel      "bden pa gnyis la 'jug pa la sogs pa'i gzhung tshan bzhi/"@bo-x-ewts , "अतीशदीपङ्करश्रीज्ञानप्रणीतम् सत्यद्वयावतारादिग्रन्थचतुष्टयम्"@sa-Deva , "satyadvayavataradigranthacatusta four treatises-entering into the two truths etc. of acarya dipamkarasrijnana"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "four treatises-entering into the two truths etc. of acarya dipamkarasrijnana Critically annotated, edited with translation and restoration of four texts on entering into the two truths of Buddhism by reknown Indian philosopher Atīśa, 982-1054."@en ;
-        :creator            bdr:CR4CB95978B7B66F4A ;
+        :creator            bdr:CR719A82AED21EBF82 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangHi , bdr:LangSa ;
         :workGenre          bdr:T456 , bdr:T61 ;

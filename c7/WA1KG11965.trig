@@ -30,6 +30,12 @@ bdg:WA1KG11965 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -61,15 +67,16 @@ bdg:WA1KG11965 {
     bda:WA1KG11965  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG11965 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "c7/WA1KG11965.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG11965 ;
-        adm:logEntry        bda:LG065F7C973F1F71A3 , bda:LG2E7CE31C05C28180 , bda:LG454697EFC3612812 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG065F7C973F1F71A3 , bda:LG2E7CE31C05C28180 , bda:LG454697EFC3612812 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRBE48D814F427885E
+    bdr:CR0FA879429B02E56F
         a                   :AgentAsCreator ;
         :agent              bdr:P1655 ;
         :role               bdr:R0ER0019 .
@@ -78,7 +85,7 @@ bdg:WA1KG11965 {
         skos:altLabel       "ston pa sangs rgyas kyi skyes rabs pad+ma dkar po'i phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "rgyal gshen rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography of Tonpa Shenrab Miwoche, founder of the Bon order."@en ;
-        :creator            bdr:CRBE48D814F427885E ;
+        :creator            bdr:CR0FA879429B02E56F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

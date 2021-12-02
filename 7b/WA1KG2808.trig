@@ -30,6 +30,12 @@ bdg:WA1KG2808 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -54,15 +60,16 @@ bdg:WA1KG2808 {
     bda:WA1KG2808  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG2808 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "7b/WA1KG2808.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG2808 ;
-        adm:logEntry        bda:LG2262D8D4F6304895 , bda:LG2AB80ACE7FBE4149 , bda:LG861218D2058CB7A6 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG2262D8D4F6304895 , bda:LG2AB80ACE7FBE4149 , bda:LG861218D2058CB7A6 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0775B925C5E5DA78
+    bdr:CR4E239BC0B51DBF63
         a                   :AgentAsCreator ;
         :agent              bdr:P736 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +78,7 @@ bdg:WA1KG2808 {
         skos:altLabel       "zab mo gcod kyi 'gyed bzhi'i dmigs rim gyi zin bris yum chen dgongs rgyan sogs chos tshan khag cig"@bo-x-ewts ;
         skos:prefLabel      "bdud 'joms khros ma'i skor/"@bo-x-ewts ;
         :catalogInfo        "Collected texts on troma practice. Written by Dudjom Jigdral Yeshe Dorje (1904-1984)."@en ;
-        :creator            bdr:CR0775B925C5E5DA78 ;
+        :creator            bdr:CR4E239BC0B51DBF63 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG2808 , bdr:W1KG2808 ;

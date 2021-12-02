@@ -48,6 +48,12 @@ bdg:WA00EGS1016899 {
         adm:logMessage      "published for scan requests"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -73,15 +79,16 @@ bdg:WA00EGS1016899 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00EGS1016899 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "f6/WA00EGS1016899.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00EGS1016899 ;
-        adm:logEntry        bda:LG5BCB90D7F301058A , bda:LG7908C00FF729E148 , bda:LG96393A824456786E , bda:LGCE9899E9DB9BB287 , bda:LGD9C9EF41741ACA8B , bda:LGF10CD412FF14C438 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG5BCB90D7F301058A , bda:LG7908C00FF729E148 , bda:LG96393A824456786E , bda:LGCE9899E9DB9BB287 , bda:LGD9C9EF41741ACA8B , bda:LGF10CD412FF14C438 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CREA7A9554CF686591
+    bdr:CR6713EDE850B9C30F
         a                   :AgentAsCreator ;
         :agent              bdr:P396 ;
         :role               bdr:R0ER0019 .
@@ -94,7 +101,7 @@ bdg:WA00EGS1016899 {
         skos:altLabel       "'dzam gling sangs rgyas bstan pa'i rgyan mchog yongs rdzogs gnas lnga mkhyen pa'i paN+Di ta chen po gser mdog paN chen shAkya mchog ldan gyi gsung 'bum legs bshad gser gyi bdud rtsi/"@bo-x-ewts , "paN chen shAkya mchog ldan gyi gsung 'bum legs bshad gser gyi bdud rtsi/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_shAkya mchog ldan/"@bo-x-ewts , "the works of pen-chen shakya mchog-lden"@en ;
         :catalogInfo        "Collected Works by Sakya master Panchen Shakya Chokden (1428-1507). Recently edited from manuscripts and republished from computer input."@en ;
-        :creator            bdr:CREA7A9554CF686591 ;
+        :creator            bdr:CR6713EDE850B9C30F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

@@ -18,15 +18,15 @@ bdg:WA29114 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LG4A016F1E2905F12E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG742AC513FA50E13D
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-03T15:56:46.588Z"^^xsd:dateTime ;
         adm:logMessage      "added cat , pub info and changed topics"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGB18B05BB9833B669
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGD23DA37FCB521D82
         a                   adm:ScanRequestCreation ;
@@ -40,18 +40,25 @@ bdg:WA29114 {
         adm:logMessage      "scanned compeleted"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA29114  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29114 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "ce/WA29114.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29114 ;
-        adm:logEntry        bda:LG0F44E14A8DA44456 , bda:LG4A016F1E2905F12E , bda:LG742AC513FA50E13D , bda:LGD23DA37FCB521D82 , bda:LGF2AB1E1D930E774E ;
+        adm:logEntry        bda:LG0F44E14A8DA44456 , bda:LG742AC513FA50E13D , bda:LGB18B05BB9833B669 , bda:LGD23DA37FCB521D82 , bda:LGF2AB1E1D930E774E , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB18B05BB9833B669
+    bdr:CR857AB8721863A6AC
         a                   :AgentAsCreator ;
         :agent              bdr:P9525 ;
         :role               bdr:R0ER0019 .
@@ -60,7 +67,7 @@ bdg:WA29114 {
         skos:altLabel       "dpal he ru ka kun bzang gang shar dbang po 'jigs med phyogs las rnam par rgyal ba'i rtogs brjod nor bu rin po che yid bzhin dbang gi rgyal po/"@bo-x-ewts ;
         skos:prefLabel      "gang shar dbang po'i rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography of mkhan po Gangshar"@en ;
-        :creator            bdr:CRB18B05BB9833B669 ;
+        :creator            bdr:CR857AB8721863A6AC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

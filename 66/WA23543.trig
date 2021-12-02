@@ -35,9 +35,15 @@ bdg:WA23543 {
         adm:logMessage      "added pub info"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG8F0236F202B00164
+    bda:LGA443F0CE11F6C785
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -49,15 +55,16 @@ bdg:WA23543 {
     bda:WA23543  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23543 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "66/WA23543.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23543 ;
-        adm:logEntry        bda:LG18101BB943720C3C , bda:LG3DC7810F1B9265C7 , bda:LG683459C5E8E3AF1B , bda:LG870086490C3251CA , bda:LG8F0236F202B00164 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG18101BB943720C3C , bda:LG3DC7810F1B9265C7 , bda:LG683459C5E8E3AF1B , bda:LG870086490C3251CA , bda:LGA443F0CE11F6C785 , bda:LGIM4394141E , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA443F0CE11F6C785
+    bdr:CRA3976B4EF39EED5D
         a                   :AgentAsCreator ;
         :agent              bdr:P4798 ;
         :role               bdr:R0ER0019 .
@@ -67,7 +74,7 @@ bdg:WA23543 {
     bdr:WA23543  a          :Work ;
         skos:altLabel       "co ne bla ma rin po che blo bzang rgya mtsho sprin gtsug lag chos kyi 'dod 'jo dpal bzang po'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_blo bzang rgya mtsho/"@bo-x-ewts , "Co-ne Bla-ma Rin-po-che Blo-bzaṅ-rgya-mtsho-sprin-gtsug-lag-chos-kyi-ʾdodʾjo-dpal-bzaṅ-poʾi gsuṅ ʾbum bźugs so."@en-x-mixed ;
-        :creator            bdr:CRA443F0CE11F6C785 ;
+        :creator            bdr:CRA3976B4EF39EED5D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

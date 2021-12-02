@@ -24,10 +24,6 @@ bdg:WA30172 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LG43CA789D9AAA0777
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG7999155E21CB1199
         a                   adm:UpdateData ;
         adm:logDate         "2008-06-26T10:57:28.505Z"^^xsd:dateTime ;
@@ -38,11 +34,21 @@ bdg:WA30172 {
         adm:logDate         "2008-09-10T15:04:39.204Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGB4C588E40C81561E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGF17D5477E7D7569C
         a                   adm:UpdateData ;
         adm:logDate         "2011-11-16T15:03:42.208Z"^^xsd:dateTime ;
         adm:logMessage      "added bibliographical title"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -82,28 +88,29 @@ bdg:WA30172 {
     bda:WA30172  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30172 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "11/WA30172.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30172 ;
-        adm:logEntry        bda:LG08574ADFDFFBD8BB , bda:LG1661426A55EEFECC , bda:LG43CA789D9AAA0777 , bda:LG7999155E21CB1199 , bda:LGAEF7D2BBD12D4C31 , bda:LGF17D5477E7D7569C , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG08574ADFDFFBD8BB , bda:LG1661426A55EEFECC , bda:LG7999155E21CB1199 , bda:LGAEF7D2BBD12D4C31 , bda:LGB4C588E40C81561E , bda:LGF17D5477E7D7569C , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR024BA5174D4CCEAA
         a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CRB56A959309C780AF
+        a                   :AgentAsCreator ;
         :agent              bdr:P719 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRB4C588E40C81561E
+    bdr:CRE45645BB8589C5BD
         a                   :AgentAsCreator ;
         :agent              bdr:P507 ;
         :role               bdr:R0ER0019 .
-    
-    bdr:CRE45645BB8589C5BD
-        a                   :AgentAsCreator ;
-        :agent              bdr:P64 ;
-        :role               bdr:R0ER0016 .
     
     bdr:MW30172  skos:altLabel  "obligatory texts (yig cha) for the study madhyamika dkyil khan grwa tshan bkra sis lhun po"@en .
     
@@ -111,7 +118,7 @@ bdg:WA30172 {
         skos:altLabel       "rnam bshad dgongs pa rab gsal gyi dka' ba'i gnad gsal bar byed pa'i bstan bcos dbang gi rgyal po/"@bo-x-ewts , "bkra-sis lhun-po dkyil-khan : dbu ma'i yig cha"@en , "Obligatory texts (yig-cha) for the study of Madhyamika of Dkyil-khaṅ Grwa-tshaṅ of Brkra-śis-lhun-po /by Śānti-pa Blo-gros-rgyal-mtshan and others."@en-x-mixed ;
         skos:prefLabel      "bkra shis lhun po dkyil khang grwa tshang gi dbu ma'i yig cha/"@bo-x-ewts , "obligatory texts (yig cha) for the study madhyamika dkyil khan grwa tshan bkra sis lhun po"@en ;
         :catalogInfo        "Textbook for the study of Madhyamaka at Kyil Khang College at Tashi Lhunpo and it's affiliates."@en ;
-        :creator            bdr:CR024BA5174D4CCEAA , bdr:CRB4C588E40C81561E , bdr:CRE45645BB8589C5BD ;
+        :creator            bdr:CR024BA5174D4CCEAA , bdr:CRB56A959309C780AF , bdr:CRE45645BB8589C5BD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW30172 , bdr:W30172 ;

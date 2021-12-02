@@ -18,14 +18,20 @@ bdg:WA23556 {
         adm:logMessage      "corected typo"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LG8BCF24748BD564BE
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGBC5E96A1BC3C4231
         a                   adm:UpdateData ;
         adm:logDate         "2010-12-15T09:01:50.669Z"^^xsd:dateTime ;
         adm:logMessage      "added WMDL and WMDL07"@en .
+    
+    bda:LGD8F5B82BE21C88CA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -58,15 +64,16 @@ bdg:WA23556 {
     bda:WA23556  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23556 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "d5/WA23556.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23556 ;
-        adm:logEntry        bda:LG3E897E39639CBB07 , bda:LG8BCF24748BD564BE , bda:LGBC5E96A1BC3C4231 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3E897E39639CBB07 , bda:LGBC5E96A1BC3C4231 , bda:LGD8F5B82BE21C88CA , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD8F5B82BE21C88CA
+    bdr:CR9B73D58680ACCB7A
         a                   :AgentAsCreator ;
         :agent              bdr:P888 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +84,7 @@ bdg:WA23556 {
         skos:altLabel       "'jam pa'i dbyangs mkhas dbang sangs rgyas rdo rje'i gsung 'bum rin po che/"@bo-alalc97 , "ʼJam-paʼi-dbyaṅs Mkhas-dbaṅ Saṅs-rgyas-rdo-rjeʼi gsuṅ ʼbum rin po che =The collected works of Mkhas-dbaṅ Saṅs-rgyas rdo-rje."@en-x-mixed ;
         skos:prefLabel      "gsung 'bum/_sangs rgyas rdo rje/"@bo-x-ewts , "the collected works of Sanggye Dorje"@en-x-mixed ;
         :catalogInfo        "Collected Works by Drukpa Kagyu scholar Kewang Sanggye Dorje (1569-1645)."@bo-x-ewts ;
-        :creator            bdr:CRD8F5B82BE21C88CA ;
+        :creator            bdr:CR9B73D58680ACCB7A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

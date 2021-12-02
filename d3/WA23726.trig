@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23726 {
-    bda:LG3745595152F1DC3E
+    bda:LG777F3FC9B9C0554D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -26,6 +26,12 @@ bdg:WA23726 {
         adm:logDate         "2013-03-06T11:43:33.396Z"^^xsd:dateTime ;
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -51,16 +57,17 @@ bdg:WA23726 {
     bda:WA23726  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23726 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "d3/WA23726.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23726 ;
-        adm:logEntry        bda:LG3745595152F1DC3E , bda:LGC00EC692764D1536 , bda:LGDCC5954C2BEA1594 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG777F3FC9B9C0554D , bda:LGC00EC692764D1536 , bda:LGDCC5954C2BEA1594 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA23151 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR777F3FC9B9C0554D
+    bdr:CR2604FCF3FFB7AED0
         a                   :AgentAsCreator ;
         :agent              bdr:P4797 ;
         :role               bdr:R0ER0019 .
@@ -68,7 +75,7 @@ bdg:WA23726 {
     bdr:WA23726  a          :Work ;
         skos:prefLabel      "gsung 'bum/_blo bzang tshul khrims/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Chahar Mongol scholar Lobzang Tsultrim (1740-1810). Scanned from a clear print from the Kumbum blockprints."@en ;
-        :creator            bdr:CR777F3FC9B9C0554D ;
+        :creator            bdr:CR2604FCF3FFB7AED0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

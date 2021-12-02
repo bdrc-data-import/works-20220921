@@ -23,6 +23,10 @@ bdg:WA23471 {
         adm:logMessage      "inclusion on TBRC Core Text Collection 4"@en ;
         adm:logWho          bdu:U00012 .
     
+    bda:LG49B25786022EBD4E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG4C0D786C7B804694
         a                   adm:UpdateData ;
         adm:logDate         "2007-03-27T12:42:04.572Z"^^xsd:dateTime ;
@@ -46,9 +50,11 @@ bdg:WA23471 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGFEF68CA34857F96B
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -74,15 +80,16 @@ bdg:WA23471 {
     bda:WA23471  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23471 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "44/WA23471.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23471 ;
-        adm:logEntry        bda:LG054D5C05F8D15D7A , bda:LG3A962DEDF42BB54F , bda:LG4C0D786C7B804694 , bda:LG753472F0023D2BA3 , bda:LG774EB5E8CB1BC06A , bda:LGA138EE82BCF34F47 , bda:LGFEF68CA34857F96B , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG054D5C05F8D15D7A , bda:LG3A962DEDF42BB54F , bda:LG49B25786022EBD4E , bda:LG4C0D786C7B804694 , bda:LG753472F0023D2BA3 , bda:LG774EB5E8CB1BC06A , bda:LGA138EE82BCF34F47 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR49B25786022EBD4E
+    bdr:CR2B139008A7F60295
         a                   :AgentAsCreator ;
         :agent              bdr:P411 ;
         :role               bdr:R0ER0019 .
@@ -91,7 +98,7 @@ bdg:WA23471 {
         skos:altLabel       "chings su tsug thu no mon han blo bzang nor bu shes rab gyi gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_blo bzang nor bu shes rab/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by an 18th century Kalkha Mongol scholar of the Geluk order, Ching Sudjugthu Lobzang Norbu Sherab (Sumatimani Prajna). Scanned in collaboration with Harvard University."@en ;
-        :creator            bdr:CR49B25786022EBD4E ;
+        :creator            bdr:CR2B139008A7F60295 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

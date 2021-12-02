@@ -35,6 +35,12 @@ bdg:WA1CZ2429 {
         adm:logDate         "2007-12-27T14:32:01.667Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -59,15 +65,16 @@ bdg:WA1CZ2429 {
     bda:WA1CZ2429  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1CZ2429 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "16/WA1CZ2429.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1CZ2429 ;
-        adm:logEntry        bda:LG088A545264881523 , bda:LG2A00D0F308928DE4 , bda:LG6EB50BCEE4067787 , bda:LG7E85A28EDD17552C , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG088A545264881523 , bda:LG2A00D0F308928DE4 , bda:LG6EB50BCEE4067787 , bda:LG7E85A28EDD17552C , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD8F89B0921FB3F5D
+    bdr:CRB01F77FBBDDC4E45
         a                   :AgentAsCreator ;
         :agent              bdr:P1CZ2433 ;
         :role               bdr:R0ER0019 .
@@ -75,7 +82,7 @@ bdg:WA1CZ2429 {
     bdr:WA1CZ2429  a        :Work ;
         skos:prefLabel      "tshad min blo'i rnam bzhag"@bo-x-ewts ;
         :catalogInfo        "Study on Tibetan Buddhist epistemology. Includes writings in verse and essays."@en ;
-        :creator            bdr:CRD8F89B0921FB3F5D ;
+        :creator            bdr:CRB01F77FBBDDC4E45 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;

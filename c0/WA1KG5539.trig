@@ -38,6 +38,12 @@ bdg:WA1KG5539 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -90,20 +96,21 @@ bdg:WA1KG5539 {
     bda:WA1KG5539  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG5539 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "c0/WA1KG5539.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG5539 ;
-        adm:logEntry        bda:LG649E92EA9C2BFA3D , bda:LGB9A7BF034B17B38B , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG649E92EA9C2BFA3D , bda:LGB9A7BF034B17B38B , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR01133FFF6675129A
+    bdr:CR635D70296916FF51
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG5540 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR635D70296916FF51
+    bdr:CR956B43DE17F02F62
         a                   :AgentAsCreator ;
         :agent              bdr:P9552 ;
         :role               bdr:R0ER0016 .
@@ -113,7 +120,7 @@ bdg:WA1KG5539 {
     bdr:WA1KG5539  a        :Work ;
         skos:prefLabel      "khams sde dge rgyal po'i srid don lo rgyus/"@bo-x-ewts , "Khams Sde-dge rgyal poʼi srid don lo rgyus bźugs so /Lha-luṅ ʼChi-med-rdo-rje daṅ Zla-gʹyuṅ gñis kyis brtsams."@en-x-mixed , "de ge tu si zheng wu shi"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Political history of the Kings of Degge."@en ;
-        :creator            bdr:CR01133FFF6675129A , bdr:CR635D70296916FF51 ;
+        :creator            bdr:CR635D70296916FF51 , bdr:CR956B43DE17F02F62 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

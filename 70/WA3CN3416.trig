@@ -49,6 +49,12 @@ bdg:WA3CN3416 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -66,15 +72,16 @@ bdg:WA3CN3416 {
     bda:WA3CN3416  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN3416 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "70/WA3CN3416.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN3416 ;
-        adm:logEntry        bda:LG0FC27BF1026BE29A , bda:LG6E67A5C44A69F4D9 , bda:LG9182C8C05BFE5DA2 , bda:LGB054BCC3B75233D9 , bda:LGC06359CEEBC14AAB , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0FC27BF1026BE29A , bda:LG6E67A5C44A69F4D9 , bda:LG9182C8C05BFE5DA2 , bda:LGB054BCC3B75233D9 , bda:LGC06359CEEBC14AAB , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA9EB858C0F1557D8
+    bdr:CR18D1466411A80BCC
         a                   :AgentAsCreator ;
         :agent              bdr:P967 ;
         :role               bdr:R0ER0019 .
@@ -83,7 +90,7 @@ bdg:WA3CN3416 {
         skos:altLabel       "sde sprul kun dga' rgyal mtshan gyi gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/ sde sprul kun dga' rgyal mtshan/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Sakya master Detul Kunga Gyaltsen."@en ;
-        :creator            bdr:CRA9EB858C0F1557D8 ;
+        :creator            bdr:CR18D1466411A80BCC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

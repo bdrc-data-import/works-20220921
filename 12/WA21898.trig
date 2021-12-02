@@ -18,7 +18,7 @@ bdg:WA21898 {
         adm:logMessage      "ctct7"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LG095626AC12171043
+    bda:LG09C41F2260D811A8
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -34,18 +34,25 @@ bdg:WA21898 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA21898  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21898 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "12/WA21898.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21898 ;
-        adm:logEntry        bda:LG042D4962A9AC4763 , bda:LG095626AC12171043 , bda:LG1DDAB9F5F3BF38DD , bda:LGC8AC06D0644CFB4C ;
+        adm:logEntry        bda:LG042D4962A9AC4763 , bda:LG09C41F2260D811A8 , bda:LG1DDAB9F5F3BF38DD , bda:LGC8AC06D0644CFB4C , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR09C41F2260D811A8
+    bdr:CRF0226DD3E4283303
         a                   :AgentAsCreator ;
         :agent              bdr:P109 ;
         :role               bdr:R0ER0019 .
@@ -55,7 +62,7 @@ bdg:WA21898 {
     bdr:WA21898  a          :Work ;
         skos:altLabel       "dpal ldan bla ma dam pa rigs dang dkyil 'khor rgya mtsho'i mnga' bdag bka' drin gsum ldan yongs 'dzin paN+Di ta chen po rje btsun ye shes rgyal mtshan dpal bzang po'i sku gsung thugs kyi rtogs pa brjod pa thub bstan pad+mo 'byed pa'i nyin byed/"@bo-x-ewts ;
         skos:prefLabel      "yongs 'dzin paN+Di ta ye shes rgyal mtshan gyi rtogs brjod/"@bo-x-ewts , "yong zhen zhuan"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR09C41F2260D811A8 ;
+        :creator            bdr:CRF0226DD3E4283303 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

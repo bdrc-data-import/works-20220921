@@ -24,6 +24,12 @@ bdg:WA1KG15935 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -41,25 +47,26 @@ bdg:WA1KG15935 {
     bda:WA1KG15935  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG15935 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "f5/WA1KG15935.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG15935 ;
-        adm:logEntry        bda:LG905DE2794D3C4DA5 , bda:LG998CB1C72A632D17 , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 ;
+        adm:logEntry        bda:LG905DE2794D3C4DA5 , bda:LG998CB1C72A632D17 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR24E0538BF03B99EB
+    bdr:CR3A5021ACA30F0FBE
         a                   :AgentAsCreator ;
         :agent              bdr:P6118 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR3A5021ACA30F0FBE
+    bdr:CR5F3B1822A849E2DF
         a                   :AgentAsCreator ;
         :agent              bdr:P7297 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR5F3B1822A849E2DF
+    bdr:CRF97BCDE6B0C14807
         a                   :AgentAsCreator ;
         :agent              bdr:P65 ;
         :role               bdr:R0ER0019 .
@@ -68,7 +75,7 @@ bdg:WA1KG15935 {
         skos:altLabel       "shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan gyi rtsa ba dang / de'i 'grel pa don gsal dang bcas pa'i rnam bshad snying po'i rgyan/"@bo-x-ewts ;
         skos:prefLabel      "bstan bcos mngon par rtogs pa'i rgyan gyi rtsa ba dang / de'i 'grel pa don gsal dang bcas pa'i rnam bshad snying po'i rgyan/"@bo-x-ewts ;
         :catalogInfo        "Commentary on Maitreyanatha's Abhisamayalankara by Haribhadra, with further detailed commentary by Gyaltsab Darma Rinchen."@en ;
-        :creator            bdr:CR24E0538BF03B99EB , bdr:CR3A5021ACA30F0FBE , bdr:CR5F3B1822A849E2DF ;
+        :creator            bdr:CR3A5021ACA30F0FBE , bdr:CR5F3B1822A849E2DF , bdr:CRF97BCDE6B0C14807 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T1KG8787 , bdr:T61 ;

@@ -18,7 +18,7 @@ bdg:WA22115 {
         adm:logMessage      "added Work to PL480"@en ;
         adm:logWhoStr       "add-works-to-PR1PL480" .
     
-    bda:LG27ED2A9531262D43
+    bda:LG0C1D68256B508FA2
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -27,6 +27,12 @@ bdg:WA22115 {
         adm:logDate         "2013-07-11T16:08:47.506Z"^^xsd:dateTime ;
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -45,15 +51,16 @@ bdg:WA22115 {
     bda:WA22115  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22115 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "dc/WA22115.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22115 ;
-        adm:logEntry        bda:LG04314F219650CA4B , bda:LG27ED2A9531262D43 , bda:LGCE5EE590C865FD9D , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG04314F219650CA4B , bda:LG0C1D68256B508FA2 , bda:LGCE5EE590C865FD9D , bda:LGIM4394141E , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0C1D68256B508FA2
+    bdr:CR13FE27F4F325F260
         a                   :AgentAsCreator ;
         :agent              bdr:P1690 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +71,7 @@ bdg:WA22115 {
         skos:altLabel       "yol sprul bstan 'dzin nor bu'i skyes rab/"@bo-x-ewts , "Collected writings of Yol-mo Sprul-sku Bstan-ʼdzin-nor-bu."@en-x-mixed ;
         skos:prefLabel      "gsung thor bu/_bstan 'dzin nor bu/"@bo-x-ewts , "collected writings of yol-mo sprul-sku bstan-'dzin-nor-bu"@en ;
         :catalogInfo        "Account of the predecessors in the incarnation lineage of Yolmo Tulku Tendzin Norbu, Nyingma teachers of the Changter tradition."@en ;
-        :creator            bdr:CR0C1D68256B508FA2 ;
+        :creator            bdr:CR13FE27F4F325F260 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;

@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA18126 {
-    bda:LG723A0502AD1211EF
+    bda:LGDDD43CCC18566DE3
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -22,6 +22,12 @@ bdg:WA18126 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
@@ -33,22 +39,23 @@ bdg:WA18126 {
     bda:WA18126  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA18126 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "64/WA18126.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA18126 ;
-        adm:logEntry        bda:LG723A0502AD1211EF , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LGDDD43CCC18566DE3 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDDD43CCC18566DE3
+    bdr:CR81423662AC5F2E71
         a                   :AgentAsCreator ;
         :agent              bdr:P5112 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA18126  a          :Work ;
         skos:prefLabel      "lus bsrung rdo rje pha lam/"@bo-x-ewts ;
-        :creator            bdr:CRDDD43CCC18566DE3 ;
+        :creator            bdr:CR81423662AC5F2E71 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW18126 , bdr:W18126 ;

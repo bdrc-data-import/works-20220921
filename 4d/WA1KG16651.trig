@@ -42,6 +42,12 @@ bdg:WA1KG16651 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -52,15 +58,16 @@ bdg:WA1KG16651 {
     bda:WA1KG16651  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG16651 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "4d/WA1KG16651.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG16651 ;
-        adm:logEntry        bda:LG11C040CFF76FD1FC , bda:LG28E9D351032002E7 , bda:LGE2439EE31176AF4F , bda:LGEDDA78096126DE29 , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG11C040CFF76FD1FC , bda:LG28E9D351032002E7 , bda:LGE2439EE31176AF4F , bda:LGEDDA78096126DE29 , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR75D998304204441E
+    bdr:CR971A1E6E9D8F206C
         a                   :AgentAsCreator ;
         :agent              bdr:P1042 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +78,7 @@ bdg:WA1KG16651 {
         skos:altLabel       "kun mkhyen go rams pa bsod nams seng+ge'i gsung 'bum/"@bo-x-ewts , "guo han ran jaing ba so nan ge sang wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gsung 'bum/_go rams pa bsod nams seng+ge"@bo-x-ewts , "果斡然降巴索南格桑文集"@zh-hans ;
         :catalogInfo        "The collected writings of the famed Sakya scholar Gorampa Sonam Senge (1429-1489)."@en ;
-        :creator            bdr:CR75D998304204441E ;
+        :creator            bdr:CR971A1E6E9D8F206C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

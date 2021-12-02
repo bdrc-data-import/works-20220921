@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2122 {
-    bda:LG018FE4F6D57ACB36
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG15FB9F9F403CB9C5
         a                   adm:UpdateData ;
         adm:logDate         "2013-02-27T09:03:15.225Z"^^xsd:dateTime ;
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LG20C71C1618A4A4DD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG2C7BF8E5A2918777
         a                   adm:UpdateData ;
@@ -44,6 +44,12 @@ bdg:WA2122 {
         adm:logDate         "2007-03-29T09:01:56.211Z"^^xsd:dateTime ;
         adm:logMessage      "changed annotation"@en ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -69,15 +75,16 @@ bdg:WA2122 {
     bda:WA2122  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2122 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "8f/WA2122.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2122 ;
-        adm:logEntry        bda:LG018FE4F6D57ACB36 , bda:LG15FB9F9F403CB9C5 , bda:LG2C7BF8E5A2918777 , bda:LGCD9C3FCC3F6327A5 , bda:LGE8617AB5D48BE0EC , bda:LGF22B427852011F94 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG15FB9F9F403CB9C5 , bda:LG20C71C1618A4A4DD , bda:LG2C7BF8E5A2918777 , bda:LGCD9C3FCC3F6327A5 , bda:LGE8617AB5D48BE0EC , bda:LGF22B427852011F94 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR20C71C1618A4A4DD
+    bdr:CR792AB95976CD09EF
         a                   :AgentAsCreator ;
         :agent              bdr:P169 ;
         :role               bdr:R0ER0019 .
@@ -86,7 +93,7 @@ bdg:WA2122 {
         skos:altLabel       "kun mkhyen 'jam dbyangs bzhad pa'i rdo rje dkon mchog 'jigs med dbang po'i gsung 'bum/ (bla brang par ma/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_dkon mchog 'jigs med dbang po (bla brang par ma/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Jamyang Zhepa 02 Konchok Jigme Wangpo (1728-1791), paramount master of Labrang Tashi Khyil Monastery."@en ;
-        :creator            bdr:CR20C71C1618A4A4DD ;
+        :creator            bdr:CR792AB95976CD09EF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

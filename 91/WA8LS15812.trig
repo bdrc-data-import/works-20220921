@@ -40,6 +40,12 @@ bdg:WA8LS15812 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM569A8014B1
         a                   adm:UpdateData ;
         adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
@@ -50,15 +56,16 @@ bdg:WA8LS15812 {
     bda:WA8LS15812  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS15812 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "91/WA8LS15812.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS15812 ;
-        adm:logEntry        bda:LG487518A162622F85 , bda:LG8E0E6F53C29E5970 , bda:LGA3CFB7A6AD77CD05 , bda:LGB15C2AA826707686 , bda:LGD27B50FF8F099FE4 , bda:LGIM569A8014B1 ;
+        adm:logEntry        bda:LG487518A162622F85 , bda:LG8E0E6F53C29E5970 , bda:LGA3CFB7A6AD77CD05 , bda:LGB15C2AA826707686 , bda:LGD27B50FF8F099FE4 , bda:LGIM4394141E , bda:LGIM569A8014B1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4F2B32545EC82A6F
+    bdr:CR9EDA174CE720F134
         a                   :AgentAsCreator ;
         :agent              bdr:P1954 ;
         :role               bdr:R0ER0019 .
@@ -67,7 +74,7 @@ bdg:WA8LS15812 {
         skos:altLabel       "lha dang bcas pa'i skye rgu ma lus pa'i gtsug gi nor bu rta tshag rje drung thong shan ho thog thu chen po yongs 'dzin srid skyong rin po che ngag dbang dpal ldan chos kyi rgyal mtshan dpal bzang po'i rnam thar srid zhi'i mdzes rgyan/"@bo-x-ewts ;
         skos:prefLabel      "rta tshag rje drung ngag dbang dpal ldan chos kyi rgyal mtshan gyi rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography of the 10th Tatsak Jedrung Ngawang Pelden Chokyi Gyeltsen (1850-1886). He was regent of Tibet from 1875-1886."@en ;
-        :creator            bdr:CR4F2B32545EC82A6F ;
+        :creator            bdr:CR9EDA174CE720F134 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 , bdr:T4CZ71 ;

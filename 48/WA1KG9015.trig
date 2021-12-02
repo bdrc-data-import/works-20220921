@@ -43,6 +43,12 @@ bdg:WA1KG9015 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -67,15 +73,16 @@ bdg:WA1KG9015 {
     bda:WA1KG9015  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG9015 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "48/WA1KG9015.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG9015 ;
-        adm:logEntry        bda:LG0B483A6F702F8DDE , bda:LG3B14D7BB264E7AA0 , bda:LG6FF7DCFB5BCFBBBA , bda:LG9D24242F675ADBF3 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0B483A6F702F8DDE , bda:LG3B14D7BB264E7AA0 , bda:LG6FF7DCFB5BCFBBBA , bda:LG9D24242F675ADBF3 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR20AE69006218C1A2
+    bdr:CR3C6BB5055295420E
         a                   :AgentAsCreator ;
         :agent              bdr:P152 ;
         :role               bdr:R0ER0019 .
@@ -86,7 +93,7 @@ bdg:WA1KG9015 {
         skos:altLabel       "bde gshegs snying po'i rgyan gyi 'khrul 'joms dang zab lam rdo rje rnal 'byor gyi chos skor sogs/"@bo-x-ewts ;
         skos:prefLabel      "'khrul 'joms/"@bo-x-ewts , "觉囊六支引导文汇编"@zh-hans ;
         :catalogInfo        "Writings by Jonang Khenchen Chokle Namgyal (1306-1386) on buddhanature and pith instruction on the sixfold vajrayoga practice of the Kalachakra."@en ;
-        :creator            bdr:CR20AE69006218C1A2 ;
+        :creator            bdr:CR3C6BB5055295420E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T200 ;

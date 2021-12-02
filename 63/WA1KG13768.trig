@@ -30,6 +30,12 @@ bdg:WA1KG13768 {
         adm:logMessage      "reviewed by ls, cz, cn, kg"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8F5AC89D  a     adm:UpdateData ;
         adm:logAgent        "add-works-to-PR1CTC16" ;
         adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
@@ -39,15 +45,16 @@ bdg:WA1KG13768 {
     bda:WA1KG13768  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG13768 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "63/WA1KG13768.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG13768 ;
-        adm:logEntry        bda:LG1C4E575DDCEEDF15 , bda:LG3F5BDD98A20B6CD9 , bda:LGC5AF2B56CEFEF784 , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG1C4E575DDCEEDF15 , bda:LG3F5BDD98A20B6CD9 , bda:LGC5AF2B56CEFEF784 , bda:LGIM4394141E , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1EABCDC34D8B79FE
+    bdr:CR00BFEA508F175DD2
         a                   :AgentAsCreator ;
         :agent              bdr:P00KG09770 ;
         :role               bdr:R0ER0019 .
@@ -56,7 +63,7 @@ bdg:WA1KG13768 {
         skos:altLabel       "sngon med kun gsal 'od snang / dpal dus kyi 'khor lo'i nyams len zab lam rdo rje'i rnal 'byor mkha' spyod sgrub pa'i them skas kyi lag len gnad zin ma lu gu rgyud/"@bo-x-ewts ;
         skos:prefLabel      "zab lam jo nang sngon 'gro'i tshig 'grel sngon med rab gsal snang ba/"@bo-x-ewts , "hidden treasure of the profound path : a word by word commentary of the divine ladder : the preliminary and main practices of the profound kalachakra vajrayoga"@en , "神圣阶梯 时轮金刚修习次第详解"@zh-hans ;
         :catalogInfo        "A word by word commentary on the preliminary and main practices of the profound Kalachakra Vajrayoga."@en ;
-        :creator            bdr:CR1EABCDC34D8B79FE ;
+        :creator            bdr:CR00BFEA508F175DD2 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn , bdr:LangZh ;
         :workGenre          bdr:T2397 ;

@@ -43,6 +43,12 @@ bdg:WA1KG14533 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -53,20 +59,21 @@ bdg:WA1KG14533 {
     bda:WA1KG14533  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14533 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "ac/WA1KG14533.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14533 ;
-        adm:logEntry        bda:LG324DF1B473CA32C2 , bda:LG361FB67BFE7F85CA , bda:LG6CF08ACDBA86910F , bda:LGAF59DB7D20054E86 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG324DF1B473CA32C2 , bda:LG361FB67BFE7F85CA , bda:LG6CF08ACDBA86910F , bda:LGAF59DB7D20054E86 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCC5CD184A0B2EABD
+    bdr:CR3E12E0DC9A60BAA8
         a                   :AgentAsCreator ;
         :agent              bdr:P2KG228808 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CRCD9B788FB5150FC0
+    bdr:CRCC5CD184A0B2EABD
         a                   :AgentAsCreator ;
         :agent              bdr:P2KG228807 ;
         :role               bdr:R0ER0026 .
@@ -75,7 +82,7 @@ bdg:WA1KG14533 {
         skos:altLabel       "ma ke si wen bo wen xuan/"@bo-x-ewts , "马克斯 韦伯文选"@bo-x-ewts ;
         skos:prefLabel      "'jig rten la 'jug pa'i blo sbyong /"@bo-x-ewts ;
         :catalogInfo        "Translation of Science as a Vocation (Wissenschaft als Beruf) and Politics as a Vocation (Politik als Beruf)"@en ;
-        :creator            bdr:CRCC5CD184A0B2EABD , bdr:CRCD9B788FB5150FC0 ;
+        :creator            bdr:CR3E12E0DC9A60BAA8 , bdr:CRCC5CD184A0B2EABD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 , bdr:T1157 ;

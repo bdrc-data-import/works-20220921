@@ -53,6 +53,12 @@ bdg:WA2CZ8081 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -91,15 +97,16 @@ bdg:WA2CZ8081 {
     bda:WA2CZ8081  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2CZ8081 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "cc/WA2CZ8081.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2CZ8081 ;
-        adm:logEntry        bda:LG1A0170E23CA76C55 , bda:LG36B0CA11D65C9DF2 , bda:LG5EE8573E9996268F , bda:LG9AD0125C7E612BB1 , bda:LGBE4A0F58FAD4D3FC , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
+        adm:logEntry        bda:LG1A0170E23CA76C55 , bda:LG36B0CA11D65C9DF2 , bda:LG5EE8573E9996268F , bda:LG9AD0125C7E612BB1 , bda:LGBE4A0F58FAD4D3FC , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC4957256EB4530F3
+    bdr:CR305DE6C8DA1AFA96
         a                   :AgentAsCreator ;
         :agent              bdr:P2CZ8083 ;
         :role               bdr:R0ER0019 .
@@ -109,7 +116,7 @@ bdg:WA2CZ8081 {
     bdr:WA2CZ8081  a        :Work ;
         skos:prefLabel      "tshig mdzod brda dag kun gsal me long /"@bo-x-ewts , "Tshig mdzod brda dag kun gsal me loṅ /Bsod-nams-rgyal-mtshan gyis brtsams."@en-x-mixed ;
         :catalogInfo        "Tibetan language dictionary."@en ;
-        :creator            bdr:CRC4957256EB4530F3 ;
+        :creator            bdr:CR305DE6C8DA1AFA96 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T220 ;

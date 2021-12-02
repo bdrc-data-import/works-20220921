@@ -30,6 +30,12 @@ bdg:WA1KG545 {
         adm:logMessage      "cataloged and released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -54,15 +60,16 @@ bdg:WA1KG545 {
     bda:WA1KG545  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG545 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "37/WA1KG545.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG545 ;
-        adm:logEntry        bda:LG75F8C936436203C6 , bda:LG7C991808754F6442 , bda:LG99A7767C252166CC , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG75F8C936436203C6 , bda:LG7C991808754F6442 , bda:LG99A7767C252166CC , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0F0ED362429536D6
+    bdr:CR85A9967372F4D0B9
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG546 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +78,7 @@ bdg:WA1KG545 {
         skos:altLabel       "snyan deb thor rtsom phyogs bsgrigs rnam rtog gi rba rlabs/"@bo-x-ewts ;
         skos:prefLabel      "rnam rtog gi rba rlabs/"@bo-x-ewts ;
         :catalogInfo        "Collection of poems by Orgyen Trinle of Kubum Monastery."@en ;
-        :creator            bdr:CR0F0ED362429536D6 ;
+        :creator            bdr:CR85A9967372F4D0B9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:IE1KG545 , bdr:MW1KG545 , bdr:W1KG545 ;

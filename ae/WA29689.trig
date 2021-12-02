@@ -17,10 +17,6 @@ bdg:WA29689 {
         adm:logDate         "2008-03-26T11:36:40.953Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG337F66C552F8EF79
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG68C6751792E9AB38
         a                   adm:UpdateData ;
         adm:logDate         "2009-10-29T13:08:01.126Z"^^xsd:dateTime ;
@@ -45,18 +41,29 @@ bdg:WA29689 {
         adm:logMessage      "added t241"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGFD960F76ABF654D8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA29689  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29689 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "ae/WA29689.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29689 ;
-        adm:logEntry        bda:LG079143F7F14DD101 , bda:LG337F66C552F8EF79 , bda:LG68C6751792E9AB38 , bda:LG79D43A69BF0BAACE , bda:LG9A2EFF446B267265 , bda:LGA4BBFDA633870823 ;
+        adm:logEntry        bda:LG079143F7F14DD101 , bda:LG68C6751792E9AB38 , bda:LG79D43A69BF0BAACE , bda:LG9A2EFF446B267265 , bda:LGA4BBFDA633870823 , bda:LGFD960F76ABF654D8 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFD960F76ABF654D8
+    bdr:CRFFCB1EC5AB427AFE
         a                   :AgentAsCreator ;
         :agent              bdr:P4959 ;
         :role               bdr:R0ER0019 .
@@ -66,7 +73,7 @@ bdg:WA29689 {
     bdr:WA29689  a          :Work ;
         skos:altLabel       "rgyud bzi'i brda don bkrol ba"@bo-alalc97 , "man ngag lhan thabs kyi dka' gnas dkrol ba rnam rgyal gser mdog gi 'phreng ba/"@bo-x-ewts , "sman gyi brda don dkrol ba/"@bo-x-ewts ;
         skos:prefLabel      "sman gyi rgyud bzhi'i brda dang don 'ga' zhig dkrol ba rnam rgyal a ru ra'i 'phreng ba'i mdzes rgyan/"@bo-x-ewts , "explanations of difficult terms and expressions in the rgyud bzhi and man nag lhan thabs of sde-srid sans-rgyas-rgya-mtrsho"@en-x-mixed ;
-        :creator            bdr:CRFD960F76ABF654D8 ;
+        :creator            bdr:CRFFCB1EC5AB427AFE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29689 , bdr:W29689 ;

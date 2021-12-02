@@ -18,7 +18,7 @@ bdg:WA22061 {
         adm:logMessage      "added topic and loc info"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG9CE61026AA1220E5
+    bda:LG5135C268D2CA3F4C
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -28,6 +28,12 @@ bdg:WA22061 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
@@ -39,28 +45,29 @@ bdg:WA22061 {
     bda:WA22061  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22061 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "45/WA22061.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22061 ;
-        adm:logEntry        bda:LG4F6934211872035E , bda:LG9CE61026AA1220E5 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG4F6934211872035E , bda:LG5135C268D2CA3F4C , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5135C268D2CA3F4C
-        a                   :AgentAsCreator ;
-        :agent              bdr:P7464 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRF905C4DA7A74C316
+    bdr:CRD0A24531569887F8
         a                   :AgentAsCreator ;
         :agent              bdr:P7465 ;
         :role               bdr:R0ER0026 .
     
+    bdr:CRF905C4DA7A74C316
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7464 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA22061  a          :Work ;
         skos:prefLabel      "tshe srog gi 'bul skyes : 1950 lor dpa' bo'i sngon mngags brgya shog shin cang nas bod du dpung skyod byas tshul bkod pa/"@bo-x-ewts ;
         :catalogInfo        "Historical account of Chinese battalion aggression against the central Tibet in 1950."@en ;
-        :creator            bdr:CR5135C268D2CA3F4C , bdr:CRF905C4DA7A74C316 ;
+        :creator            bdr:CRD0A24531569887F8 , bdr:CRF905C4DA7A74C316 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

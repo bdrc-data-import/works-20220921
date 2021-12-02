@@ -30,6 +30,12 @@ bdg:WA1KG5962 {
         adm:logMessage      "changed provisional to released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -47,15 +53,16 @@ bdg:WA1KG5962 {
     bda:WA1KG5962  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG5962 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "a8/WA1KG5962.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG5962 ;
-        adm:logEntry        bda:LG1951F4530F5CA6BD , bda:LG1D5F9FE1901368F8 , bda:LG45BC6D2334DFF9DD , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1951F4530F5CA6BD , bda:LG1D5F9FE1901368F8 , bda:LG45BC6D2334DFF9DD , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA5E4527AD492C292
+    bdr:CRE51ED8CEDE452DEF
         a                   :AgentAsCreator ;
         :agent              bdr:P9167 ;
         :role               bdr:R0ER0019 .
@@ -66,7 +73,7 @@ bdg:WA1KG5962 {
         skos:altLabel       "lha ldan rwa sa 'phrul snang gtsug lag khang gi dkar chag / gser dang / ra gan rnam dbye gsal por byed pa nor bu ni ka ShaH/"@bo-x-ewts , "guide to the central temple of lhasa"@en ;
         skos:prefLabel      "lha ldan rwa sa 'phrul snang gtsug lag khang gi dkar chag"@bo-x-ewts , "catalogue and guide to the central temple of lhasa"@en ;
         :catalogInfo        "History of the great temple Rasa Trulnang Tsuklak Khang, Lhasa."@en ;
-        :creator            bdr:CRA5E4527AD492C292 ;
+        :creator            bdr:CRE51ED8CEDE452DEF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T13 ;

@@ -30,6 +30,12 @@ bdg:WA3CN3333 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -40,15 +46,16 @@ bdg:WA3CN3333 {
     bda:WA3CN3333  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN3333 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "27/WA3CN3333.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN3333 ;
-        adm:logEntry        bda:LG38EEB686B7AF92B4 , bda:LGDD484D4E71D35F07 , bda:LGE76A90F169CF8537 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG38EEB686B7AF92B4 , bda:LGDD484D4E71D35F07 , bda:LGE76A90F169CF8537 , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1C542364A5C978CB
+    bdr:CR0721136805E73045
         a                   :AgentAsCreator ;
         :agent              bdr:P7991 ;
         :role               bdr:R0ER0019 .
@@ -56,7 +63,7 @@ bdg:WA3CN3333 {
     bdr:WA3CN3333  a        :Work ;
         skos:prefLabel      "se ra yang sprul gyi gsung 'bum/"@bo-x-ewts ;
         :catalogInfo        "Collected writing by Sera Yangtrul."@en ;
-        :creator            bdr:CR1C542364A5C978CB ;
+        :creator            bdr:CR0721136805E73045 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

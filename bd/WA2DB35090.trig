@@ -55,6 +55,12 @@ bdg:WA2DB35090 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
@@ -65,25 +71,26 @@ bdg:WA2DB35090 {
     bda:WA2DB35090  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2DB35090 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "bd/WA2DB35090.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2DB35090 ;
-        adm:logEntry        bda:LG3CE3383F90FEA4E4 , bda:LG3E1F5DDDEC86C265 , bda:LG8BE637B452CB6C6F , bda:LG8CBD2A3792EF29D4 , bda:LGF4C7446A6C08F14B , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG3CE3383F90FEA4E4 , bda:LG3E1F5DDDEC86C265 , bda:LG8BE637B452CB6C6F , bda:LG8CBD2A3792EF29D4 , bda:LGF4C7446A6C08F14B , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1D7BFEBE198E22AB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2DB35091 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR2DBE8EB52F6748D6
         a                   :AgentAsCreator ;
         :agent              bdr:P4853 ;
         :role               bdr:R0ER0026 .
     
     bdr:CR8B25560584994A2A
-        a                   :AgentAsCreator ;
-        :agent              bdr:P2DB35091 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CRA05043BE2534AF92
         a                   :AgentAsCreator ;
         :agent              bdr:P421 ;
         :role               bdr:R0ER0019 .
@@ -93,7 +100,7 @@ bdg:WA2DB35090 {
     bdr:WA2DB35090  a       :Work ;
         skos:altLabel       "bod lugs gso rig rgyud bzhi'i nang don bris cha ngo mtshar mthong ba don ldan/"@bo-x-ewts ;
         skos:prefLabel      "gso rig rgyud bzhi'i bris cha ngo mtshar mthong ba don ldan/"@bo-x-ewts , "si bu yi dian xi lie gua tu quan ji"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR1D7BFEBE198E22AB , bdr:CR8B25560584994A2A , bdr:CRA05043BE2534AF92 ;
+        :creator            bdr:CR1D7BFEBE198E22AB , bdr:CR2DBE8EB52F6748D6 , bdr:CR8B25560584994A2A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2DB35090 , bdr:W2DB35090 ;

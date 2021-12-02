@@ -31,6 +31,12 @@ bdg:WA1KG25246 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -41,28 +47,29 @@ bdg:WA1KG25246 {
     bda:WA1KG25246  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25246 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "7e/WA1KG25246.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25246 ;
-        adm:logEntry        bda:LG33977F07FC8C4EAF , bda:LG720AAE47E7C85FCC , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG33977F07FC8C4EAF , bda:LG720AAE47E7C85FCC , bda:LGIM095CC38C9F , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR18BBCAF29384B85A
         a                   :AgentAsCreator ;
-        :agent              bdr:P301 ;
+        :agent              bdr:P4533 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR40ED82ECAEFEEF01
+    bdr:CR75C81D45550BF16D
         a                   :AgentAsCreator ;
-        :agent              bdr:P4533 ;
+        :agent              bdr:P301 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1KG25246  a       :Work ;
         skos:prefLabel      "dge ldan khri thog rim byon gyi rnam thar las/ khri thog drug cu re brgyad dang bdun cu tham pa dang bdun cu don bzhi bcas kyi rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biographies of 68th, 70th and 74th Gaden Tripa of Gelug sect."@en ;
-        :creator            bdr:CR18BBCAF29384B85A , bdr:CR40ED82ECAEFEEF01 ;
+        :creator            bdr:CR18BBCAF29384B85A , bdr:CR75C81D45550BF16D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

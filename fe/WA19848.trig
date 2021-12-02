@@ -18,15 +18,15 @@ bdg:WA19848 {
         adm:logMessage      "fixed broken scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG3BA7D808DA1D2DC1
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG925F30F386A3C326
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-12T12:31:10.859Z"^^xsd:dateTime ;
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGE4C5655511644129
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
@@ -34,6 +34,12 @@ bdg:WA19848 {
         adm:logMessage      "made open access"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
@@ -52,15 +58,16 @@ bdg:WA19848 {
     bda:WA19848  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19848 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "fe/WA19848.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19848 ;
-        adm:logEntry        bda:LG12A74F873150A8AF , bda:LG3BA7D808DA1D2DC1 , bda:LG925F30F386A3C326 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG12A74F873150A8AF , bda:LG925F30F386A3C326 , bda:LGE4C5655511644129 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE4C5655511644129
+    bdr:CR76B5F90F987012D1
         a                   :AgentAsCreator ;
         :agent              bdr:P6229 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +78,7 @@ bdg:WA19848 {
         skos:altLabel       "lA mo grags rgan pa ngag dbang blo bzang bkra shis pa'i 'khrungs rabs rim byon gyi rnam par thar pa dang 'brel ba'i lha khang chen mo srid gsum dge legs 'byung ba'i rol mtsho'i dkar chag dad pa'i nyin byed 'dren pa'i skya rengs/"@bo-x-ewts , "li dai zhi hua jia cuo zhuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "lA mo grags pa rgya mtsho'i sku phreng rim byon gyi rnam thar/"@bo-x-ewts , "历代智华嘉措传"@zh-hans ;
         :catalogInfo        "Biographies of the successive incarnations of the Lamo Drakgen line."@en ;
-        :creator            bdr:CRE4C5655511644129 ;
+        :creator            bdr:CR76B5F90F987012D1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

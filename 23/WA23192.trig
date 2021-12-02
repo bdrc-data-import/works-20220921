@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23192 {
+    bda:LG19916E6F12EEBCCC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG6A8577F360FE11E1
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
@@ -30,15 +34,17 @@ bdg:WA23192 {
         adm:logMessage      "adde bib, title at first line"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGAB25C71DDB3BB6AC
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGB6F8E06FDB217AB6
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-15T11:48:51.771Z"^^xsd:dateTime ;
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -71,12 +77,13 @@ bdg:WA23192 {
     bda:WA23192  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23192 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "23/WA23192.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23192 ;
-        adm:logEntry        bda:LG6A8577F360FE11E1 , bda:LG83E531A75B852AA4 , bda:LG88BDAC5A22C4B84D , bda:LGAB25C71DDB3BB6AC , bda:LGB6F8E06FDB217AB6 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG19916E6F12EEBCCC , bda:LG6A8577F360FE11E1 , bda:LG83E531A75B852AA4 , bda:LG88BDAC5A22C4B84D , bda:LGB6F8E06FDB217AB6 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW23192  skos:altLabel  "two visionary accounts returns from death : the rnam thar karma dban 'dzin and glin bza' chos skyid"@en .

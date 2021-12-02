@@ -24,6 +24,12 @@ bdg:WA1KG16805 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMB5991979B0
         a                   adm:UpdateData ;
         adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
@@ -41,12 +47,13 @@ bdg:WA1KG16805 {
     bda:WA1KG16805  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG16805 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "6d/WA1KG16805.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG16805 ;
-        adm:logEntry        bda:LG91D1985C03DA4B0D , bda:LGD189A0FA0BFB8786 , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG91D1985C03DA4B0D , bda:LGD189A0FA0BFB8786 , bda:LGIM4394141E , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW1KG16805  skos:altLabel  "阿里金宗"@zh-hans .

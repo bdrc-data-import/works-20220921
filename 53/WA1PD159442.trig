@@ -58,6 +58,12 @@ bdg:WA1PD159442 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -75,15 +81,16 @@ bdg:WA1PD159442 {
     bda:WA1PD159442  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159442 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "53/WA1PD159442.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159442 ;
-        adm:logEntry        bda:LG1DD4883FAF079DAF , bda:LG2F8F96D92DF2401D , bda:LGA26145E47D3822EC , bda:LGAB3482AD0A2FFF36 , bda:LGB1290950077047E9 , bda:LGC6E0E8B4CF2A53D9 , bda:LGDA931E714B4D2474 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1DD4883FAF079DAF , bda:LG2F8F96D92DF2401D , bda:LGA26145E47D3822EC , bda:LGAB3482AD0A2FFF36 , bda:LGB1290950077047E9 , bda:LGC6E0E8B4CF2A53D9 , bda:LGDA931E714B4D2474 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9DE50B04B34C591C
+    bdr:CRCC0800B28F6B44BD
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ366941 ;
         :role               bdr:R0ER0019 .
@@ -91,7 +98,7 @@ bdg:WA1PD159442 {
     bdr:WA1PD159442  a      :Work ;
         skos:prefLabel      "blo gsal gzhon nu'i mgul rgyan/"@bo-x-ewts ;
         :catalogInfo        "Collection of instructions and miscellaneous writings"@en ;
-        :creator            bdr:CR9DE50B04B34C591C ;
+        :creator            bdr:CRCC0800B28F6B44BD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1PD159442 , bdr:W1PD159442 ;

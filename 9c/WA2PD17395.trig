@@ -41,6 +41,12 @@ bdg:WA2PD17395 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -57,20 +63,21 @@ bdg:WA2PD17395 {
     bda:WA2PD17395  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17395 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "9c/WA2PD17395.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17395 ;
-        adm:logEntry        bda:LG0E8BFFA76E13ED60 , bda:LG162ADFFEBE603D30 , bda:LG17D794533DBA8406 , bda:LG68E03BEF37BDCA02 , bda:LG6BF28118EAA27274 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG0E8BFFA76E13ED60 , bda:LG162ADFFEBE603D30 , bda:LG17D794533DBA8406 , bda:LG68E03BEF37BDCA02 , bda:LG6BF28118EAA27274 , bda:LGIM4394141E , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR70ADC3CC6C9F5ACC
+    bdr:CR848FECC9E80A69B0
         a                   :AgentAsCreator ;
         :agent              bdr:P106 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR848FECC9E80A69B0
+    bdr:CR8B6D7CDB7D2CBC65
         a                   :AgentAsCreator ;
         :agent              bdr:P168 ;
         :role               bdr:R0ER0016 .
@@ -80,7 +87,7 @@ bdg:WA2PD17395 {
     bdr:WA2PD17395  a       :Work ;
         skos:altLabel       "di wu shi ban chan da shi zhuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "paN chen sku phreng lnga pa blo bzang ye shes kyi rnam thar/"@bo-x-ewts , "第五世班禅大师传"@zh-hans ;
-        :creator            bdr:CR70ADC3CC6C9F5ACC , bdr:CR848FECC9E80A69B0 ;
+        :creator            bdr:CR848FECC9E80A69B0 , bdr:CR8B6D7CDB7D2CBC65 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;

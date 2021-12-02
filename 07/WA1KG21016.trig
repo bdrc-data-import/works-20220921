@@ -31,6 +31,12 @@ bdg:WA1KG21016 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -41,15 +47,16 @@ bdg:WA1KG21016 {
     bda:WA1KG21016  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG21016 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "07/WA1KG21016.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG21016 ;
-        adm:logEntry        bda:LG5893C8A8890C443A , bda:LG97819DB7CD8033DE , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG5893C8A8890C443A , bda:LG97819DB7CD8033DE , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR96BC4480595A49E0
+    bdr:CR2F12670CFA33604A
         a                   :AgentAsCreator ;
         :agent              bdr:P9610 ;
         :role               bdr:R0ER0019 .
@@ -58,7 +65,7 @@ bdg:WA1KG21016 {
         skos:altLabel       "dpal ri'i zhing bkod pad+ma phan bde chos gling gsar bzhengs kyi gtam mu tig gsar pa'i 'khri shing /"@bo-x-ewts ;
         skos:prefLabel      "pad+ma phan bde chos gling gsar bzhengs kyi gtam mu tig gsar pa'i 'khri shing /"@bo-x-ewts , "mu-tig-sar-pai-thri-shing : (the new diamond tree) based on pema phendey chholing monastery"@en ;
         :catalogInfo        "An account of new built Pema Phendey Chholing monastery."@en ;
-        :creator            bdr:CR96BC4480595A49E0 ;
+        :creator            bdr:CR2F12670CFA33604A ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn ;
         :workGenre          bdr:T1134 ;

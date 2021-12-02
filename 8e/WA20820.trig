@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20820 {
+    bda:LG0595C02639C15948
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG33F3AF21D6555F35
         a                   adm:UpdateData ;
         adm:logDate         "2008-04-23T14:24:25.437Z"^^xsd:dateTime ;
@@ -30,10 +34,6 @@ bdg:WA20820 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGFAB6A7E5510CE54B
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -47,6 +47,12 @@ bdg:WA20820 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
@@ -65,12 +71,13 @@ bdg:WA20820 {
     bda:WA20820  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20820 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "8e/WA20820.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20820 ;
-        adm:logEntry        bda:LG33F3AF21D6555F35 , bda:LGA2821F3EF13FD449 , bda:LGB0EB44ADAF948BA3 , bda:LGFAB6A7E5510CE54B , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG0595C02639C15948 , bda:LG33F3AF21D6555F35 , bda:LGA2821F3EF13FD449 , bda:LGB0EB44ADAF948BA3 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW20820  skos:altLabel  "lhoka literature and art"@en .

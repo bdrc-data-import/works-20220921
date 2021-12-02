@@ -44,6 +44,12 @@ bdg:WA1PD105786 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -61,15 +67,16 @@ bdg:WA1PD105786 {
     bda:WA1PD105786  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD105786 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "2e/WA1PD105786.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD105786 ;
-        adm:logEntry        bda:LG0AF159A788ED401F , bda:LG78BA652FB12224F0 , bda:LGD22A56C253FEDE90 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG0AF159A788ED401F , bda:LG78BA652FB12224F0 , bda:LGD22A56C253FEDE90 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR105B77752286D42A
+    bdr:CR2E3EC4FE6B9290DD
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG12918 ;
         :role               bdr:R0ER0019 .
@@ -79,7 +86,7 @@ bdg:WA1PD105786 {
     bdr:WA1PD105786  a      :Work ;
         skos:altLabel       "nong mu min shi chang jing ji zhi shi du ben"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "tshong ra'i dpal 'byor skor gyi shes bya/"@bo-x-ewts , "农牧民市场经济知识读本"@zh-hans ;
-        :creator            bdr:CR105B77752286D42A ;
+        :creator            bdr:CR2E3EC4FE6B9290DD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:IE1PD105786 , bdr:MW1PD105786 , bdr:W1PD105786 ;

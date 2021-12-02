@@ -42,6 +42,12 @@ bdg:WA1PD90129 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4599A38FCE
         a                   adm:UpdateData ;
         adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
@@ -80,16 +86,17 @@ bdg:WA1PD90129 {
     bda:WA1PD90129  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD90129 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "07/WA1PD90129.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD90129 ;
-        adm:logEntry        bda:LG890F50BB06EDE31D , bda:LG9930C5C9E5680E51 , bda:LGC7523AA56EF905F9 , bda:LGFC8D2A85BC92A04F , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG890F50BB06EDE31D , bda:LG9930C5C9E5680E51 , bda:LGC7523AA56EF905F9 , bda:LGFC8D2A85BC92A04F , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1GS152242 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRA249CA149F89C8ED
+    bdr:CR6910B5E50FE2433F
         a                   :AgentAsCreator ;
         :agent              bdr:P1629 ;
         :role               bdr:R0ER0019 .
@@ -100,7 +107,7 @@ bdg:WA1PD90129 {
         skos:altLabel       "co ne grags pa bshad sgrub kyi gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_grags pa bshad sgrub/"@bo-x-ewts , "zhuo ni . zha ba xie zhu wen ji"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Collected Works by Geluk savant Chone Lama Drakpa Shedrup (1675-1748) from northeastern Amdo."@en ;
-        :creator            bdr:CRA249CA149F89C8ED ;
+        :creator            bdr:CR6910B5E50FE2433F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

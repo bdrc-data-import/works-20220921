@@ -31,6 +31,12 @@ bdg:WA1KG14133 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -41,15 +47,16 @@ bdg:WA1KG14133 {
     bda:WA1KG14133  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14133 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "19/WA1KG14133.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14133 ;
-        adm:logEntry        bda:LGA8E875A515F8353D , bda:LGEF2F39CB6159D8FC , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LGA8E875A515F8353D , bda:LGEF2F39CB6159D8FC , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8A109C5996FC4E1F
+    bdr:CR65356FFE00FB3765
         a                   :AgentAsCreator ;
         :agent              bdr:P9927 ;
         :role               bdr:R0ER0019 .
@@ -59,7 +66,7 @@ bdg:WA1KG14133 {
     bdr:WA1KG14133  a       :Work ;
         skos:altLabel       "dngos khams rig pa dang rnam shes gcig tu sgril ba/"@bo-x-ewts ;
         skos:prefLabel      "sbas don gyi phyogs cha/"@bo-x-ewts , "hidden dimensions : the unification of physics and consciousness"@en ;
-        :creator            bdr:CR8A109C5996FC4E1F ;
+        :creator            bdr:CR65356FFE00FB3765 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG14133 , bdr:W1KG14133 ;

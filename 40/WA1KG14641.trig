@@ -36,6 +36,12 @@ bdg:WA1KG14641 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -53,15 +59,16 @@ bdg:WA1KG14641 {
     bda:WA1KG14641  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14641 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "40/WA1KG14641.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14641 ;
-        adm:logEntry        bda:LG06934534D1FDA0A7 , bda:LG3EFD72750DADCDB3 , bda:LG4A5BC758BAC42F47 , bda:LG8A7B105C3B4767CD , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 ;
+        adm:logEntry        bda:LG06934534D1FDA0A7 , bda:LG3EFD72750DADCDB3 , bda:LG4A5BC758BAC42F47 , bda:LG8A7B105C3B4767CD , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM74A445C794 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA260E63441CEBA09
+    bdr:CR0261FD495C25E1DD
         a                   :AgentAsCreator ;
         :agent              bdr:P267 ;
         :role               bdr:R0ER0019 .
@@ -70,7 +77,7 @@ bdg:WA1KG14641 {
         skos:altLabel       "thar shul dge 'dun chos skyong rgya mtsho'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_dge 'dun chos skyong rgya mtsho/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Geluk master Gendun Chokyong Gyatso (1810-1884)."@en ;
-        :creator            bdr:CRA260E63441CEBA09 ;
+        :creator            bdr:CR0261FD495C25E1DD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

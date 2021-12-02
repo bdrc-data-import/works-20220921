@@ -30,7 +30,7 @@ bdg:WA21601 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGC31B391E1EF0D20C
+    bda:LGE17F7973655C7CF4
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -39,6 +39,12 @@ bdg:WA21601 {
         adm:logDate         "2014-03-05T09:50:46.986Z"^^xsd:dateTime ;
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
@@ -57,15 +63,16 @@ bdg:WA21601 {
     bda:WA21601  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21601 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "06/WA21601.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21601 ;
-        adm:logEntry        bda:LG028D0863C08BAD7F , bda:LG6A8F6C59F0135FEB , bda:LG9C268F71F9323B82 , bda:LGC31B391E1EF0D20C , bda:LGE27FF3A7C08649E5 , bda:LGIM4D99209C62 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG028D0863C08BAD7F , bda:LG6A8F6C59F0135FEB , bda:LG9C268F71F9323B82 , bda:LGE17F7973655C7CF4 , bda:LGE27FF3A7C08649E5 , bda:LGIM4394141E , bda:LGIM4D99209C62 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE17F7973655C7CF4
+    bdr:CR635048F6F19C18FB
         a                   :AgentAsCreator ;
         :agent              bdr:P7277 ;
         :role               bdr:R0ER0012 .
@@ -76,7 +83,7 @@ bdg:WA21601 {
         skos:altLabel       "sgrung mkhan bsam grub kyis phab pa'i gling rje ge sar rgyal po'i sgrung / 'khrungs gling /"@bo-x-ewts , "dan sheng pian"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "'khrungs gling /"@bo-x-ewts , "诞生篇"@zh-hans ;
         :catalogInfo        "An episode from the epic of Gesar."@en ;
-        :creator            bdr:CRE17F7973655C7CF4 ;
+        :creator            bdr:CR635048F6F19C18FB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW21601 , bdr:MW22038 , bdr:W21601 , bdr:W22038 ;

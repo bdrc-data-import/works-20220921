@@ -24,6 +24,12 @@ bdg:WA3CN7913 {
         adm:logMessage      "added author, cat info, topic and pub info"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -40,15 +46,16 @@ bdg:WA3CN7913 {
     bda:WA3CN7913  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN7913 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "95/WA3CN7913.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN7913 ;
-        adm:logEntry        bda:LGD313191DB0EAE051 , bda:LGD37818D62B44BB8E , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LGD313191DB0EAE051 , bda:LGD37818D62B44BB8E , bda:LGIM4394141E , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR918BE4AF975E1347
+    bdr:CR9A18B2BA1AA65B01
         a                   :AgentAsCreator ;
         :agent              bdr:P5591 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +64,7 @@ bdg:WA3CN7913 {
         skos:altLabel       "khri gung thang 'jam pa'i dbyangs sku phreng drug pa chen po'i bka' rtsom phyogs bsgrigs zab gsang bdud rtsi'i chab rgyun/"@bo-x-ewts , "khri gung thang sku phreng drug pa'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/ khri gung thang sku phreng drug pa/"@bo-x-ewts ;
         :catalogInfo        "The collected works of the 6th Gungthang Jigme Tenpai Wangchuk."@en ;
-        :creator            bdr:CR918BE4AF975E1347 ;
+        :creator            bdr:CR9A18B2BA1AA65B01 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

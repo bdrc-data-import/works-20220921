@@ -23,10 +23,6 @@ bdg:WA25268 {
         adm:logDate         "2010-10-26T15:55:01.856Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00002 .
     
-    bda:LG38778A5532C6BDC1
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG4473DEC0F7458DD5
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2008-06-04T12:03:00.813Z"^^xsd:dateTime ;
@@ -43,6 +39,10 @@ bdg:WA25268 {
         a                   adm:UpdateData ;
         adm:logDate         "2010-07-20T10:29:30.762Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00020 .
+    
+    bda:LG9687AF6A93DB58E2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGBDF1717596DD9D69
         a                   adm:UpdateData ;
@@ -73,6 +73,12 @@ bdg:WA25268 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
@@ -83,37 +89,38 @@ bdg:WA25268 {
     bda:WA25268  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25268 ;
-        adm:facetIndex      18 ;
+        adm:facetIndex      19 ;
         adm:gitPath         "82/WA25268.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25268 ;
-        adm:logEntry        bda:LG0AF602F2A3BD1EDD , bda:LG0EF44CB5D08A5E26 , bda:LG38778A5532C6BDC1 , bda:LG4473DEC0F7458DD5 , bda:LG5AB67C061DDC6036 , bda:LG811CA57D42C7A3C2 , bda:LGBDF1717596DD9D69 , bda:LGD78F8671607B916F , bda:LGDD01C3337280B88E , bda:LGE1AA22AE102B3920 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG0AF602F2A3BD1EDD , bda:LG0EF44CB5D08A5E26 , bda:LG4473DEC0F7458DD5 , bda:LG5AB67C061DDC6036 , bda:LG811CA57D42C7A3C2 , bda:LG9687AF6A93DB58E2 , bda:LGBDF1717596DD9D69 , bda:LGD78F8671607B916F , bda:LGDD01C3337280B88E , bda:LGE1AA22AE102B3920 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR5886F482D9005CCA
         a                   :AgentAsCreator ;
-        :agent              bdr:P8130 ;
+        :agent              bdr:P6212 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR5E79CCFD112DF32D
         a                   :AgentAsCreator ;
-        :agent              bdr:P2DB25448 ;
+        :agent              bdr:P9551 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR79D2D17F48D04F86
         a                   :AgentAsCreator ;
-        :agent              bdr:P9551 ;
+        :agent              bdr:P2362 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR9687AF6A93DB58E2
+    bdr:CR82DEECC48D40A5C8
         a                   :AgentAsCreator ;
-        :agent              bdr:P6212 ;
+        :agent              bdr:P2DB25448 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRA85AEF16D49EE5F8
         a                   :AgentAsCreator ;
-        :agent              bdr:P2362 ;
+        :agent              bdr:P8130 ;
         :role               bdr:R0ER0019 .
     
     bdr:MW25268  skos:altLabel  "li tai zang zu xue zhe xiao zhuan"@zh-latn-pinyin-x-ndia .
@@ -122,7 +129,7 @@ bdg:WA25268 {
         skos:altLabel       "gangs can mkhas dbang rim byon gyi rnam thar mdor bsdus bdud rtsi'i thigs phreng /"@bo-x-ewts ;
         skos:prefLabel      "gangs can mkhas dbang rim byon gyi rnam thar mdor bsdus/"@bo-x-ewts , "li tai zang zu xue zhe xiao zhuan"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Brief biographies of Scholars and Tibetan Buddhist lamas."@en ;
-        :creator            bdr:CR5886F482D9005CCA , bdr:CR5E79CCFD112DF32D , bdr:CR79D2D17F48D04F86 , bdr:CR9687AF6A93DB58E2 , bdr:CRA85AEF16D49EE5F8 ;
+        :creator            bdr:CR5886F482D9005CCA , bdr:CR5E79CCFD112DF32D , bdr:CR79D2D17F48D04F86 , bdr:CR82DEECC48D40A5C8 , bdr:CRA85AEF16D49EE5F8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1986 , bdr:T3 ;

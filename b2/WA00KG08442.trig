@@ -49,6 +49,12 @@ bdg:WA00KG08442 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM569A8014B1
         a                   adm:UpdateData ;
         adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
@@ -94,22 +100,23 @@ bdg:WA00KG08442 {
     bda:WA00KG08442  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG08442 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "b2/WA00KG08442.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG08442 ;
-        adm:logEntry        bda:LG2C3B6E16A3901267 , bda:LG61151329CB4DCF9F , bda:LG79A5B3943A41D4AF , bda:LG9C7724F44A2D0BA0 , bda:LGAB8EC4A1C4DCF14F , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2C3B6E16A3901267 , bda:LG61151329CB4DCF9F , bda:LG79A5B3943A41D4AF , bda:LG9C7724F44A2D0BA0 , bda:LGAB8EC4A1C4DCF14F , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR2DD5EAE668B561BA
         a                   :AgentAsCreator ;
-        :agent              bdr:P513 ;
+        :agent              bdr:P645 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR61D57FBC01FA2B82
+    bdr:CREF267E9B5C65716F
         a                   :AgentAsCreator ;
-        :agent              bdr:P645 ;
+        :agent              bdr:P513 ;
         :role               bdr:R0ER0019 .
     
     bdr:MW00KG08442  skos:altLabel  "Phur-paʼi chos ʼbyuṅ daṅ rgyud ʼgrel phyogs bsgrigs /Sṅags-maṅ Źib-ʼjug-khaṅ gis bsgrigs."@en-x-mixed , "ben zun jing gang jue li shi zhi liao hui bian"@zh-latn-pinyin-x-ndia .
@@ -118,7 +125,7 @@ bdg:WA00KG08442 {
         skos:altLabel       "dpal rdo rje phur pa'i chos 'byung dang rgyud 'grel phyogs bsgrigs/"@bo-x-ewts , "phur pa'i chos 'byung dang rgyud 'grel phyogs bsgrigs/"@bo-x-ewts ;
         skos:prefLabel      "phur pa'i chos 'byung dang rgyud 'grel/"@bo-x-ewts , "Phur-paʼi chos ʼbyuṅ daṅ rgyud ʼgrel phyogs bsgrigs /Sṅags-maṅ Źib-ʼjug-khaṅ gis bsgrigs."@en-x-mixed , "ben zun jing gang jue li shi zhi liao hui bian"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Collection on the history of the Vajrakila teachings and practices, with commentary."@en ;
-        :creator            bdr:CR2DD5EAE668B561BA , bdr:CR61D57FBC01FA2B82 ;
+        :creator            bdr:CR2DD5EAE668B561BA , bdr:CREF267E9B5C65716F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T12 , bdr:T132 ;

@@ -38,6 +38,12 @@ bdg:WA8LS19090 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -55,16 +61,17 @@ bdg:WA8LS19090 {
     bda:WA8LS19090  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19090 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "fc/WA8LS19090.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19090 ;
-        adm:logEntry        bda:LG7E833A25FCCA8F2D , bda:LGED81A4EB7D713720 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG7E833A25FCCA8F2D , bda:LGED81A4EB7D713720 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA2PD17434 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRD4371D4CF9096BED
+    bdr:CR48BB684C0CDE76F6
         a                   :AgentAsCreator ;
         :agent              bdr:P4PD3060 ;
         :role               bdr:R0ER0019 .
@@ -72,7 +79,7 @@ bdg:WA8LS19090 {
     bdr:WA8LS19090  a       :Work ;
         skos:prefLabel      "nyes don bca' khrims bslab deb/"@bo-x-ewts ;
         :catalogInfo        "A textbook for criminal regulations, edited and translated by Shakya Tashi Tsering."@en ;
-        :creator            bdr:CRD4371D4CF9096BED ;
+        :creator            bdr:CR48BB684C0CDE76F6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T266 ;

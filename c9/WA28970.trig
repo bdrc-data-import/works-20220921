@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA28970 {
-    bda:LG71786B0B61A83FBE
+    bda:LG6C34FA66FAF191B6
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -29,6 +29,12 @@ bdg:WA28970 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
@@ -54,29 +60,30 @@ bdg:WA28970 {
     bda:WA28970  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28970 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "c9/WA28970.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28970 ;
-        adm:logEntry        bda:LG71786B0B61A83FBE , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG6C34FA66FAF191B6 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6C34FA66FAF191B6
-        a                   :AgentAsCreator ;
-        :agent              bdr:P9452 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR974764F6822B05AB
+    bdr:CR35DFE3050C8724A5
         a                   :AgentAsCreator ;
         :agent              bdr:P9453 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CR974764F6822B05AB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9452 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW28970  skos:altLabel  "Bod kyi dmaṅs khrod rtsom rig spyi bśad blo gsar ʼdren paʼi skya reṅs źes bya ba /ʼBaʼ-stod Padma-dbaṅ-rgyal, Bcud-rdza Gʼyaṅ-mo-skyid."@en-x-mixed , "zangzu min jian wen xue gai lun"@zh-latn-pinyin-x-ndia .
     
     bdr:WA28970  a          :Work ;
         skos:prefLabel      "bod kyi dmangs khrod rtsom rig spyi bshad blo gsar 'dren pa'i skya rengs/"@bo-x-ewts , "Bod kyi dmaṅs khrod rtsom rig spyi bśad blo gsar ʼdren paʼi skya reṅs źes bya ba /ʼBaʼ-stod Padma-dbaṅ-rgyal, Bcud-rdza Gʼyaṅ-mo-skyid."@en-x-mixed , "zangzu min jian wen xue gai lun"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR6C34FA66FAF191B6 , bdr:CR974764F6822B05AB ;
+        :creator            bdr:CR35DFE3050C8724A5 , bdr:CR974764F6822B05AB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW28970 , bdr:W28970 ;

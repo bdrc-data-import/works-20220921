@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29009 {
-    bda:LG001F74A19393A975
+    bda:LG9323D0DC2691A00C
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -33,6 +33,12 @@ bdg:WA29009 {
         adm:logDate         "2012-06-27T04:00:52.542Z"^^xsd:dateTime ;
         adm:logMessage      "added WMDL and WMDL13"@en ;
         adm:logWho          bdu:U00032 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -58,15 +64,16 @@ bdg:WA29009 {
     bda:WA29009  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29009 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "96/WA29009.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29009 ;
-        adm:logEntry        bda:LG001F74A19393A975 , bda:LGD048854340C52274 , bda:LGE9C8D3FF48ED5145 , bda:LGEC036C13D3E7E258 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG9323D0DC2691A00C , bda:LGD048854340C52274 , bda:LGE9C8D3FF48ED5145 , bda:LGEC036C13D3E7E258 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9323D0DC2691A00C
+    bdr:CR71947081F1512B15
         a                   :AgentAsCreator ;
         :agent              bdr:P303 ;
         :role               bdr:R0ER0019 .
@@ -75,7 +82,7 @@ bdg:WA29009 {
         skos:altLabel       "mkhas pa'i dbang po a lag sha bstan dar lha rams pa'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_ngag dbang bstan dar/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Alasha Ngawang Tendar (1759-1831), a scholar from the Alasha region of Inner Mongolia. Volume does not include his Nyingma writings."@en ;
-        :creator            bdr:CR9323D0DC2691A00C ;
+        :creator            bdr:CR71947081F1512B15 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

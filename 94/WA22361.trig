@@ -12,14 +12,14 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22361 {
-    bda:LG345B5BA9BF614CC2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG65FC62BAD46CBC0F
         a                   adm:UpdateData ;
         adm:logDate         "2007-09-08T17:00:06.656Z"^^xsd:dateTime ;
         adm:logMessage      "annotation added; image group checked"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG89C8C6ECF24D64FE
+        a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:LGIM01FF8512D7
@@ -35,6 +35,12 @@ bdg:WA22361 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -67,15 +73,16 @@ bdg:WA22361 {
     bda:WA22361  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22361 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "94/WA22361.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22361 ;
-        adm:logEntry        bda:LG345B5BA9BF614CC2 , bda:LG65FC62BAD46CBC0F , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG65FC62BAD46CBC0F , bda:LG89C8C6ECF24D64FE , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR89C8C6ECF24D64FE
+    bdr:CR76A150FD8B29A815
         a                   :AgentAsCreator ;
         :agent              bdr:P7568 ;
         :role               bdr:R0ER0019 .
@@ -85,7 +92,7 @@ bdg:WA22361 {
     bdr:WA22361  a          :Work ;
         skos:prefLabel      "mang ra'i lo rgyus/"@bo-x-ewts , "mang la bu luo zhi"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Gazetteer of Mangra Shang, Konan County, South Kokonor Prefecture."@en ;
-        :creator            bdr:CR89C8C6ECF24D64FE ;
+        :creator            bdr:CR76A150FD8B29A815 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

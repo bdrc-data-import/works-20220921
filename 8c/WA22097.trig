@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22097 {
-    bda:LG31DAD8D3B0BE65EE
+    bda:LG7E2874027921C339
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -28,18 +28,25 @@ bdg:WA22097 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA22097  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22097 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "8c/WA22097.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22097 ;
-        adm:logEntry        bda:LG31DAD8D3B0BE65EE , bda:LGA65A6563D2816A63 , bda:LGADCDAAADEB4B067A ;
+        adm:logEntry        bda:LG7E2874027921C339 , bda:LGA65A6563D2816A63 , bda:LGADCDAAADEB4B067A , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7E2874027921C339
+    bdr:CRD4D66C5B3E4D66E0
         a                   :AgentAsCreator ;
         :agent              bdr:P6439 ;
         :role               bdr:R0ER0019 .
@@ -50,7 +57,7 @@ bdg:WA22097 {
         skos:altLabel       "xueyu min zu tan yuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gangs ljongs mi rigs khag gi 'brel ba brjod pa gzur gnas yid kyi dga' ston/"@bo-x-ewts , "雪域民族探源"@zh-hans ;
         :catalogInfo        "This book discusses the relationships between Tibetans and the Monpa, Lhopa, Jang and related tribes, and the Chang ethnic group."@en ;
-        :creator            bdr:CR7E2874027921C339 ;
+        :creator            bdr:CRD4D66C5B3E4D66E0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGA000616 , bdr:MW22097 , bdr:W22097 ;

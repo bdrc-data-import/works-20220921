@@ -55,6 +55,12 @@ bdg:WA1KG6129 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -93,29 +99,30 @@ bdg:WA1KG6129 {
     bda:WA1KG6129  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG6129 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "9f/WA1KG6129.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG6129 ;
-        adm:logEntry        bda:LG1FBA8BC99E195950 , bda:LG212DD96D71F4D632 , bda:LG3B5CF14B3EDB3677 , bda:LG6F5BD5CB6F0383E0 , bda:LGACBC1EA12B94B5DC , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG1FBA8BC99E195950 , bda:LG212DD96D71F4D632 , bda:LG3B5CF14B3EDB3677 , bda:LG6F5BD5CB6F0383E0 , bda:LGACBC1EA12B94B5DC , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR074A834815A7E68B
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1KG6130 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRB482100F9D7E9005
+    bdr:CRB27905711AD87468
         a                   :AgentAsCreator ;
         :agent              bdr:P5360 ;
         :role               bdr:R0ER0026 .
+    
+    bdr:CRB482100F9D7E9005
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG6130 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG6129  a        :Work ;
         skos:altLabel       "nub phyogs kyi mtshan nyid rig pa ba grags can/ gna' bo'i g+hi ri si nas nye rabs bar gyi nub phyogs mtshan nyid rig pa ba grags can/"@bo-x-ewts ;
         skos:prefLabel      "nub phyogs kyi mtshan nyid rig pa ba grags can/"@bo-x-ewts , "xi fang zhu ming zhe xue jia"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Anthology of short life stories of select philosophers from the Western world."@en ;
-        :creator            bdr:CR074A834815A7E68B , bdr:CRB482100F9D7E9005 ;
+        :creator            bdr:CRB27905711AD87468 , bdr:CRB482100F9D7E9005 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

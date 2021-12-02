@@ -43,6 +43,12 @@ bdg:WA8LS18628 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -67,15 +73,16 @@ bdg:WA8LS18628 {
     bda:WA8LS18628  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18628 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "89/WA8LS18628.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18628 ;
-        adm:logEntry        bda:LG1923F1564C9A9B18 , bda:LG36E2862F9EE32A85 , bda:LG53E3923679CED6ED , bda:LG90C2CCC2D86F8248 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LG1923F1564C9A9B18 , bda:LG36E2862F9EE32A85 , bda:LG53E3923679CED6ED , bda:LG90C2CCC2D86F8248 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7CA4B2159E0BFF00
+    bdr:CRD0EFEB331AE67AD8
         a                   :AgentAsCreator ;
         :agent              bdr:P6627 ;
         :role               bdr:R0ER0026 .
@@ -84,7 +91,7 @@ bdg:WA8LS18628 {
         skos:altLabel       "dmangs rtsod gtug bsher skor gyi krung hwa mi dmangs spyi mthun rgyal khab kyi bca' khrims/"@bo-x-ewts ;
         skos:prefLabel      "dmangs rtsod gtug bsher gyi bca' khrims/"@bo-x-ewts ;
         :catalogInfo        "A rules and regulation for fileling public litigation in court; translated by Nyingpo Gyal."@en ;
-        :creator            bdr:CR7CA4B2159E0BFF00 ;
+        :creator            bdr:CRD0EFEB331AE67AD8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS18628 , bdr:W8LS18628 ;

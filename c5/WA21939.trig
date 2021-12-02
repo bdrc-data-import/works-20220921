@@ -18,6 +18,10 @@ bdg:WA21939 {
         adm:logMessage      "added that quality of original was poor"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LG1D56EC60577CF98D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG252F8B58E71C331C
         a                   adm:UpdateData ;
         adm:logDate         "2007-02-07T15:38:07.264Z"^^xsd:dateTime ;
@@ -65,9 +69,11 @@ bdg:WA21939 {
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGF29FA834279B3262
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -86,12 +92,13 @@ bdg:WA21939 {
     bda:WA21939  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21939 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "c5/WA21939.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21939 ;
-        adm:logEntry        bda:LG072F01E60A057064 , bda:LG252F8B58E71C331C , bda:LG256F58810A83665F , bda:LG3CE391593CD0810F , bda:LG7CB6303E9033FB3A , bda:LG7F1835C52838120D , bda:LGA1A415C805EBC382 , bda:LGB60F9FCDBED83B44 , bda:LGE6D2317D02163896 , bda:LGF29FA834279B3262 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG072F01E60A057064 , bda:LG1D56EC60577CF98D , bda:LG252F8B58E71C331C , bda:LG256F58810A83665F , bda:LG3CE391593CD0810F , bda:LG7CB6303E9033FB3A , bda:LG7F1835C52838120D , bda:LGA1A415C805EBC382 , bda:LGB60F9FCDBED83B44 , bda:LGE6D2317D02163896 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA21939  a          :Work ;

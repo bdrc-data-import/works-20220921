@@ -24,7 +24,7 @@ bdg:WA14133 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGA6ADB653ED4720D0
+    bda:LGC609A11E5926A49C
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -40,6 +40,12 @@ bdg:WA14133 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -65,15 +71,16 @@ bdg:WA14133 {
     bda:WA14133  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA14133 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "7f/WA14133.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA14133 ;
-        adm:logEntry        bda:LG7EACA98E9967E975 , bda:LG93A950BB78793CA8 , bda:LGA6ADB653ED4720D0 , bda:LGFD028B53ED8AFC8A , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG7EACA98E9967E975 , bda:LG93A950BB78793CA8 , bda:LGC609A11E5926A49C , bda:LGFD028B53ED8AFC8A , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC609A11E5926A49C
+    bdr:CR258115D166D6D51C
         a                   :AgentAsCreator ;
         :agent              bdr:P2075 ;
         :role               bdr:R0ER0019 .
@@ -83,7 +90,7 @@ bdg:WA14133 {
     bdr:WA14133  a          :Work ;
         skos:prefLabel      "dor zhi'i gsung rtsom thor bu/"@bo-x-ewts , "多识诗文集"@zh-hans ;
         :catalogInfo        "Select poems and prose. Written by Dorzhi Lobzang Tubten Chopel."@en ;
-        :creator            bdr:CRC609A11E5926A49C ;
+        :creator            bdr:CR258115D166D6D51C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1884 , bdr:T413 ;

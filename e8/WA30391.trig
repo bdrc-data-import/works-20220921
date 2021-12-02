@@ -24,7 +24,7 @@ bdg:WA30391 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGFA42C496EA5F3A5E
+    bda:LGD23E3CB72DE2E5C8
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -34,6 +34,12 @@ bdg:WA30391 {
         adm:logMessage      "made open access"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
@@ -45,15 +51,16 @@ bdg:WA30391 {
     bda:WA30391  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30391 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "e8/WA30391.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30391 ;
-        adm:logEntry        bda:LG244819A76E28BF1D , bda:LGA1BFEB2F20A6F01D , bda:LGFA42C496EA5F3A5E , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG244819A76E28BF1D , bda:LGA1BFEB2F20A6F01D , bda:LGD23E3CB72DE2E5C8 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD23E3CB72DE2E5C8
+    bdr:CR9545B732B66E080F
         a                   :AgentAsCreator ;
         :agent              bdr:P10595 ;
         :role               bdr:R0ER0019 .
@@ -63,7 +70,7 @@ bdg:WA30391 {
     bdr:WA30391  a          :Work ;
         skos:prefLabel      "skya mo lam/"@bo-x-ewts , "the gray path"@en ;
         :catalogInfo        "Modern novel"@en ;
-        :creator            bdr:CRD23E3CB72DE2E5C8 ;
+        :creator            bdr:CR9545B732B66E080F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T260 ;

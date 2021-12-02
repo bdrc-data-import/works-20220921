@@ -24,37 +24,44 @@ bdg:WA1KG24106 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG24106  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24106 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f3/WA1KG24106.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24106 ;
-        adm:logEntry        bda:LG079E7D08CE20A940 , bda:LG0D0462332341E6FF ;
+        adm:logEntry        bda:LG079E7D08CE20A940 , bda:LG0D0462332341E6FF , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1542FF3700687FDB
         a                   :AgentAsCreator ;
-        :agent              bdr:P307 ;
+        :agent              bdr:P298 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR77DDDD8BDCF656BC
         a                   :AgentAsCreator ;
-        :agent              bdr:P298 ;
+        :agent              bdr:P105 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRD42F9D80AF97686E
+    bdr:CR89326662B9A05C69
         a                   :AgentAsCreator ;
-        :agent              bdr:P105 ;
+        :agent              bdr:P307 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1KG24106  a       :Work ;
         skos:altLabel       "zab lam snyan brgyud phyag rgya chen po'i man ngag gi phyogs bsgrigs rgyal ba'i lam bzang gsal ba'i sgron me/"@bo-x-ewts ;
         skos:prefLabel      "blo bzang dgongs rgyan mu tig phreng mdzes deb so bzhi pa/"@bo-x-ewts ;
         :catalogInfo        "Collection of quintessential instruction on Mahamudra of Gendan tradition and the oral transmission."@en ;
-        :creator            bdr:CR1542FF3700687FDB , bdr:CR77DDDD8BDCF656BC , bdr:CRD42F9D80AF97686E ;
+        :creator            bdr:CR1542FF3700687FDB , bdr:CR77DDDD8BDCF656BC , bdr:CR89326662B9A05C69 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

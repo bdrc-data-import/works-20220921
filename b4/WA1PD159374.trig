@@ -58,6 +58,12 @@ bdg:WA1PD159374 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -75,15 +81,16 @@ bdg:WA1PD159374 {
     bda:WA1PD159374  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159374 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "b4/WA1PD159374.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159374 ;
-        adm:logEntry        bda:LG0D8C3FA69C4C93C9 , bda:LG164C435F81D8BC4B , bda:LG2A7C2954549CDA64 , bda:LG2B7B980C32602AAC , bda:LG3E928EFA6B3F5CFF , bda:LG423CA6B593D74B24 , bda:LG785F177028ABD84A , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0D8C3FA69C4C93C9 , bda:LG164C435F81D8BC4B , bda:LG2A7C2954549CDA64 , bda:LG2B7B980C32602AAC , bda:LG3E928EFA6B3F5CFF , bda:LG423CA6B593D74B24 , bda:LG785F177028ABD84A , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8DBA632B13725831
+    bdr:CRC594060860422C05
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ366932 ;
         :role               bdr:R0ER0019 .
@@ -94,7 +101,7 @@ bdg:WA1PD159374 {
         skos:altLabel       "zang yi yao shi lun"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod kyi gso ba rig pa'i lo rgyus gsong por brjod pa dwangs gtsang chu bo'i rgyun bzang /"@bo-x-ewts , "藏医药史论"@zh-hans ;
         :catalogInfo        "History of Tibetan medicine."@en ;
-        :creator            bdr:CR8DBA632B13725831 ;
+        :creator            bdr:CRC594060860422C05 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

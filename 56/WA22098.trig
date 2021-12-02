@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22098 {
-    bda:LGD802C0BA1C807C50
+    bda:LG0C16F5524FE1A177
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -29,6 +29,12 @@ bdg:WA22098 {
         adm:logMessage      "added Work to CTC 15"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
@@ -47,15 +53,16 @@ bdg:WA22098 {
     bda:WA22098  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22098 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "56/WA22098.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22098 ;
-        adm:logEntry        bda:LGD802C0BA1C807C50 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG0C16F5524FE1A177 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0C16F5524FE1A177
+    bdr:CR0E96C7120514C07A
         a                   :AgentAsCreator ;
         :agent              bdr:P122 ;
         :role               bdr:R0ER0019 .
@@ -65,7 +72,7 @@ bdg:WA22098 {
     bdr:WA22098  a          :Work ;
         skos:altLabel       "di san shi jiamuyang zhuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "kun mkhyen 'jam dbyangs bzhad pa sku 'phreng gsum pa'i rnam thar/"@bo-x-ewts , "Kun-mkhyen ʼJam-dbyaṅs-bźad-pa sku ʼphreṅ gsum paʼi rnam thar /Mkhan-po Ṅag-dbaṅ-thub-bstan-rgya-mtshos mdzad."@en-x-mixed , "ti san shih chia mu yang chuan"@zh-latn-wadegile ;
-        :creator            bdr:CR0C16F5524FE1A177 ;
+        :creator            bdr:CR0E96C7120514C07A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

@@ -30,6 +30,12 @@ bdg:WA4CZ58530 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4599A38FCE
         a                   adm:UpdateData ;
         adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
@@ -40,16 +46,17 @@ bdg:WA4CZ58530 {
     bda:WA4CZ58530  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ58530 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f4/WA4CZ58530.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ58530 ;
-        adm:logEntry        bda:LG57073A76EA26CB55 , bda:LG87AB690071595A0B , bda:LGDA04B96DEC168EC8 , bda:LGIM4599A38FCE ;
+        adm:logEntry        bda:LG57073A76EA26CB55 , bda:LG87AB690071595A0B , bda:LGDA04B96DEC168EC8 , bda:LGIM4394141E , bda:LGIM4599A38FCE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA2CZ7988 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR951B903321FF0F6B
+    bdr:CRB78D67F5587C88F8
         a                   :AgentAsCreator ;
         :agent              bdr:P1663 ;
         :role               bdr:R0ER0019 .
@@ -58,7 +65,7 @@ bdg:WA4CZ58530 {
         skos:altLabel       "shar rdza bkra shis rgyal mtshan gyi gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_bkra shis rgyal mtshan/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Bon master Tashi Gyaltsen (1859-1935)"@en ;
-        :creator            bdr:CR951B903321FF0F6B ;
+        :creator            bdr:CRB78D67F5587C88F8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

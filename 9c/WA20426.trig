@@ -18,7 +18,7 @@ bdg:WA20426 {
         adm:logMessage      "added T2CZ10088, t1979"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGFD8D33E8B85D4786
+    bda:LGDD999E07F44D4921
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -35,6 +35,12 @@ bdg:WA20426 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
@@ -53,15 +59,16 @@ bdg:WA20426 {
     bda:WA20426  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20426 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "9c/WA20426.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20426 ;
-        adm:logEntry        bda:LG493A7110C232B75D , bda:LGFD8D33E8B85D4786 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG493A7110C232B75D , bda:LGDD999E07F44D4921 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDD999E07F44D4921
+    bdr:CR0E69F8B4B7D9EEE6
         a                   :AgentAsCreator ;
         :agent              bdr:P6278 ;
         :role               bdr:R0ER0026 .
@@ -71,7 +78,7 @@ bdg:WA20426 {
     bdr:WA20426  a          :Work ;
         skos:altLabel       "hsi fang hsien tai p'ai wen hsueh 500 t'i"@zh-latn-wadegile ;
         skos:prefLabel      "nub phyogs deng rabs smra ba'i rtsom rig gi dri gzhi lnga brgya/"@bo-x-ewts , "xi feng xian dai pai wen xue 500 ti"@zh-latn-pinyin ;
-        :creator            bdr:CRDD999E07F44D4921 ;
+        :creator            bdr:CR0E69F8B4B7D9EEE6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:IE20426 , bdr:MW20426 , bdr:W20426 ;

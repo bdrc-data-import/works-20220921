@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA28936 {
-    bda:LGBFE5CE822D4FAB9C
+    bda:LG80613A204CB6CF21
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -22,6 +22,12 @@ bdg:WA28936 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM569A8014B1
         a                   adm:UpdateData ;
@@ -47,15 +53,16 @@ bdg:WA28936 {
     bda:WA28936  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28936 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "92/WA28936.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28936 ;
-        adm:logEntry        bda:LGBFE5CE822D4FAB9C , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG80613A204CB6CF21 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM569A8014B1 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR80613A204CB6CF21
+    bdr:CR7BEC879D40F1CF1B
         a                   :AgentAsCreator ;
         :agent              bdr:P3546 ;
         :role               bdr:R0ER0019 .
@@ -65,7 +72,7 @@ bdg:WA28936 {
     bdr:WA28936  a          :Work ;
         skos:altLabel       "a mdo dge bshes 'jam dpal rol ba'i blo gros kyi gsung 'bum/"@bo-x-ewts , "yongs 'dzin chen po a mdo dge bshes 'jam dpal rol ba'i blo gros kyi gsung 'bum legs bshad nor bu'i thang ma/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_'jam dpal rol ba'i blo gros/"@bo-x-ewts , "Yoṅs-ʼdzin Chen-po A-mdo Dge-bśes ʼJam-dpal-rol-baʼi-blo-gros kyi gsuṅ ʼbum legs bśad Nor buʼi thaṅ ma bźugs /Mgo-log Khul Gnaʼ-rtsom Bya-baʼi Gźuṅ-las-khaṅ gis ʼtshol sdud dag sgrig byas."@en-x-mixed , "an duo ge xi wen ji"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR80613A204CB6CF21 ;
+        :creator            bdr:CR7BEC879D40F1CF1B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

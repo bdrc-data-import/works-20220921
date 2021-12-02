@@ -56,6 +56,12 @@ bdg:WA00KG01048 {
         adm:logDate         "2008-02-22T12:33:34.849Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -73,15 +79,16 @@ bdg:WA00KG01048 {
     bda:WA00KG01048  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG01048 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "59/WA00KG01048.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG01048 ;
-        adm:logEntry        bda:LG0AE658620DB0AB49 , bda:LG4DE90030B915576A , bda:LG640E76921B73D593 , bda:LG641774FA03A04B1E , bda:LG8A3F727708D7EF58 , bda:LGC62123ED0AFB1872 , bda:LGD861D98B4BFAAEC1 , bda:LGE7FA535BDC41BD05 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0AE658620DB0AB49 , bda:LG4DE90030B915576A , bda:LG640E76921B73D593 , bda:LG641774FA03A04B1E , bda:LG8A3F727708D7EF58 , bda:LGC62123ED0AFB1872 , bda:LGD861D98B4BFAAEC1 , bda:LGE7FA535BDC41BD05 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDFAACFD274EFB409
+    bdr:CR88CC79114BF1CA07
         a                   :AgentAsCreator ;
         :agent              bdr:P8950 ;
         :role               bdr:R0ER0019 .
@@ -89,7 +96,7 @@ bdg:WA00KG01048 {
     bdr:WA00KG01048  a      :Work ;
         skos:prefLabel      "gsung thor bu/_ngag dbang rin chen bzang po/"@bo-x-ewts ;
         :catalogInfo        "Miscellaneous Writings by Ngawang Rinchen Zangpo (1891-1960) of the Jonang order."@en ;
-        :creator            bdr:CRDFAACFD274EFB409 ;
+        :creator            bdr:CR88CC79114BF1CA07 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;

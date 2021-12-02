@@ -52,6 +52,12 @@ bdg:WA1AC242 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -62,15 +68,16 @@ bdg:WA1AC242 {
     bda:WA1AC242  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC242 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "49/WA1AC242.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC242 ;
-        adm:logEntry        bda:LG07539C7F976A484F , bda:LG4A04EC2DD03E184E , bda:LG64345500E3FDA2EB , bda:LGC51E903B190CE17D , bda:LGC9D733AE2F5CC388 , bda:LGEC6173FC45C950C6 , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG07539C7F976A484F , bda:LG4A04EC2DD03E184E , bda:LG64345500E3FDA2EB , bda:LGC51E903B190CE17D , bda:LGC9D733AE2F5CC388 , bda:LGEC6173FC45C950C6 , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3C490382E3E6417D
+    bdr:CR106593AE21951E6B
         a                   :AgentAsCreator ;
         :agent              bdr:P6209 ;
         :role               bdr:R0ER0019 .
@@ -79,7 +86,7 @@ bdg:WA1AC242 {
         skos:altLabel       "rje btsun shing bza' paN+Di ta skal bzang chos kyi rgyal mtshan dpal bzang po'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/ skal bzang chos kyi rgyal mtshan/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Geluk master 5th Shingza Kelsang Chokyi Gyaltsen (1925-1998)."@en ;
-        :creator            bdr:CR3C490382E3E6417D ;
+        :creator            bdr:CR106593AE21951E6B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

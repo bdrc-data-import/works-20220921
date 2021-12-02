@@ -30,7 +30,7 @@ bdg:WA8027 {
         adm:logMessage      "addded print type and source printrey"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGEDDCA05430858065
+    bda:LGE93C5C729A933D61
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -38,6 +38,12 @@ bdg:WA8027 {
         a                   adm:UpdateData ;
         adm:logDate         "2009-10-19T15:51:23.825Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -63,21 +69,22 @@ bdg:WA8027 {
     bda:WA8027  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8027 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "bd/WA8027.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8027 ;
-        adm:logEntry        bda:LG1728D89EA49F7306 , bda:LG20D3457B8043CE30 , bda:LG92D762A2A577EFA6 , bda:LGEDDCA05430858065 , bda:LGF10E583FF8B44BF5 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1728D89EA49F7306 , bda:LG20D3457B8043CE30 , bda:LG92D762A2A577EFA6 , bda:LGE93C5C729A933D61 , bda:LGF10E583FF8B44BF5 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG10161 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRE93C5C729A933D61
+    bdr:CR26EFE8E6906152D8
         a                   :AgentAsCreator ;
         :agent              bdr:P385 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV26EFE8E6906152D8
+    bdr:EVB86B9C585711C156
         a                   :CompletedEvent ;
         :notAfter           "1543"^^xsd:gYear ;
         :notBefore          "1532"^^xsd:gYear .
@@ -86,9 +93,9 @@ bdg:WA8027 {
         skos:altLabel       "chos mngon pa'i mdzod kyi 'grel pa rgyas par spros pa grub bde'i dpyid 'jo/"@bo-x-ewts ;
         skos:prefLabel      "mngon pa mdzod kyi 'grel chen grub bde'i dpyid 'jo/"@bo-x-ewts ;
         :catalogInfo        "Commentary on Vasubhandu's Abhidharmakosa. Written by Karmapa 08 Mikyo Dorje (1507-1554)."@en ;
-        :creator            bdr:CRE93C5C729A933D61 ;
+        :creator            bdr:CR26EFE8E6906152D8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV26EFE8E6906152D8 ;
+        :workEvent          bdr:EVB86B9C585711C156 ;
         :workGenre          bdr:T132 .
 }

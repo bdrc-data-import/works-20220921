@@ -18,15 +18,15 @@ bdg:WA14322 {
         adm:logMessage      "added source printery"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG8AB3B7EE80619DCA
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGACC9D594679FA134
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-19T18:58:09.432Z"^^xsd:dateTime ;
         adm:logMessage      "added Work to PR1LOKESH01"@en ;
         adm:logWhoStr       "add-works-to-PR1LOKESH01-part2" .
+    
+    bda:LGC3BA69AF0CF326E6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGE6264854C37CDF98
         a                   adm:UpdateData ;
@@ -40,6 +40,12 @@ bdg:WA14322 {
         adm:logMessage      "ctc6"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -50,15 +56,16 @@ bdg:WA14322 {
     bda:WA14322  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA14322 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "09/WA14322.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA14322 ;
-        adm:logEntry        bda:LG4872356A27469538 , bda:LG8AB3B7EE80619DCA , bda:LGACC9D594679FA134 , bda:LGE6264854C37CDF98 , bda:LGE97EF0D63457EB6F , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG4872356A27469538 , bda:LGACC9D594679FA134 , bda:LGC3BA69AF0CF326E6 , bda:LGE6264854C37CDF98 , bda:LGE97EF0D63457EB6F , bda:LGIM4394141E , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC3BA69AF0CF326E6
+    bdr:CRF752B67F8D386762
         a                   :AgentAsCreator ;
         :agent              bdr:P2156 ;
         :role               bdr:R0ER0019 .
@@ -68,7 +75,7 @@ bdg:WA14322 {
     bdr:WA14322  a          :Work ;
         skos:altLabel       "shAkya'i btsun pa blo bzang 'phrin las kyi zab pa dang rgya che ba'i dam pa'i chos kyi thob yig gsal ba'i me long /"@bo-x-ewts , "Collected works of Jaya-paṇḍita Blo-bzaṅ-ḥphrin-las."@en-x-mixed ;
         skos:prefLabel      "thob yig : blo bzang 'phrin las/"@bo-x-ewts , "collected works of jaya-pandita blo-bzan-hphrin-las"@en-x-mixed ;
-        :creator            bdr:CRC3BA69AF0CF326E6 ;
+        :creator            bdr:CRF752B67F8D386762 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T192 ;

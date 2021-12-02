@@ -36,6 +36,12 @@ bdg:WA1KG10766 {
         adm:logMessage      "mtshan byang bcos"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -67,25 +73,26 @@ bdg:WA1KG10766 {
     bda:WA1KG10766  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG10766 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "a2/WA1KG10766.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG10766 ;
-        adm:logEntry        bda:LG23438FE5DEFBC17F , bda:LG4AEA74F8293045B0 , bda:LG5A78D2F279D62B72 , bda:LG887C34657E8C5384 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG23438FE5DEFBC17F , bda:LG4AEA74F8293045B0 , bda:LG5A78D2F279D62B72 , bda:LG887C34657E8C5384 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR75BB022F705B47F9
+    bdr:CR7A8F0821327AADA9
         a                   :AgentAsCreator ;
         :agent              bdr:P4835 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR7A8F0821327AADA9
+    bdr:CRA3DF07508B38E6A9
         a                   :AgentAsCreator ;
         :agent              bdr:P9684 ;
         :role               bdr:R0ER0016 .
     
-    bdr:EVA3DF07508B38E6A9
+    bdr:EVA6C5575C37141F29
         a                   :CompletedEvent ;
         :onYear             "1771"^^xsd:gYear .
     
@@ -95,10 +102,10 @@ bdg:WA1KG10766 {
         skos:altLabel       "dri bral nor bu'i me long gi zhu dag du kU la'i gos bzang /"@bo-x-ewts , "pradz+nyA/"@bo-x-ewts ;
         skos:prefLabel      "legs par sbyar ba lha'i skad dang gangs can pa'i brda' shan sbyar ba dri bral nor bu'i me long /"@bo-x-ewts , "Prajñā."@en-x-mixed ;
         :catalogInfo        "Sanskrit and Tibetan thesaurus and grammar."@en ;
-        :creator            bdr:CR75BB022F705B47F9 , bdr:CR7A8F0821327AADA9 ;
+        :creator            bdr:CR7A8F0821327AADA9 , bdr:CRA3DF07508B38E6A9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVA3DF07508B38E6A9 ;
+        :workEvent          bdr:EVA6C5575C37141F29 ;
         :workGenre          bdr:T240 ;
         :workHasInstance    bdr:MW1KG10766 , bdr:W1KG10766 ;
         :workIsAbout        bdr:T282 .

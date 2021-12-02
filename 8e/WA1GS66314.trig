@@ -42,6 +42,12 @@ bdg:WA1GS66314 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -66,15 +72,16 @@ bdg:WA1GS66314 {
     bda:WA1GS66314  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1GS66314 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "8e/WA1GS66314.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1GS66314 ;
-        adm:logEntry        bda:LG6A582FE1ECE60A0E , bda:LG927735FFEB87BE93 , bda:LGB4B2EA04CFAFA9EE , bda:LGD1DF0642F1C1E449 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG6A582FE1ECE60A0E , bda:LG927735FFEB87BE93 , bda:LGB4B2EA04CFAFA9EE , bda:LGD1DF0642F1C1E449 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9500BE96C9ED2985
+    bdr:CRFAAD880C8613C24E
         a                   :AgentAsCreator ;
         :agent              bdr:P1GS66315 ;
         :role               bdr:R0ER0019 .
@@ -83,7 +90,7 @@ bdg:WA1GS66314 {
         skos:altLabel       "mig dmar tshe ring gi rtsom yig thor bu phyogs bsgrigs/"@bo-x-ewts ;
         skos:prefLabel      "rtsom yig thor bu/_mig dmar tshe ring /"@bo-x-ewts ;
         :catalogInfo        "Select articles on Tibetan studies."@en ;
-        :creator            bdr:CR9500BE96C9ED2985 ;
+        :creator            bdr:CRFAAD880C8613C24E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;

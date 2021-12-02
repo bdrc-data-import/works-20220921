@@ -49,6 +49,12 @@ bdg:WA2DB5974 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
@@ -66,74 +72,75 @@ bdg:WA2DB5974 {
     bda:WA2DB5974  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2DB5974 ;
-        adm:facetIndex      20 ;
+        adm:facetIndex      21 ;
         adm:gitPath         "fc/WA2DB5974.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2DB5974 ;
-        adm:logEntry        bda:LG329A0FBB5A8114B6 , bda:LG42721AB2747F6BAB , bda:LG992884BF175953CB , bda:LGA6911EB0E23F897E , bda:LGC3105B1C83732C6D , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG329A0FBB5A8114B6 , bda:LG42721AB2747F6BAB , bda:LG992884BF175953CB , bda:LGA6911EB0E23F897E , bda:LGC3105B1C83732C6D , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR03979CC879A85EDB
         a                   :AgentAsCreator ;
-        :agent              bdr:P2DB5976 ;
-        :role               bdr:R0ER0016 .
+        :agent              bdr:P3692 ;
+        :role               bdr:R0ER0019 .
     
     bdr:CR0DED3F7FEE8FE51E
-        a                   :AgentAsCreator ;
-        :agent              bdr:P196 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR16851C33F803527D
         a                   :AgentAsCreator ;
         :agent              bdr:P1253 ;
         :role               bdr:R0ER0016 .
     
+    bdr:CR16851C33F803527D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2DB5976 ;
+        :role               bdr:R0ER0016 .
+    
     bdr:CR251E0DB618399791
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1470 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR2A92E84ED5AF2A4D
-        a                   :AgentAsCreator ;
-        :agent              bdr:P2DB5975 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR3B3D5115C4CA8412
-        a                   :AgentAsCreator ;
-        :agent              bdr:P249 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR61F7F07F1B2A2F34
-        a                   :AgentAsCreator ;
-        :agent              bdr:P3692 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR6EEB466441EF9C2F
-        a                   :AgentAsCreator ;
-        :agent              bdr:P10348 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR75270392F43A93D8
-        a                   :AgentAsCreator ;
-        :agent              bdr:P221 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR7A8E041176B9C995
         a                   :AgentAsCreator ;
         :agent              bdr:P2262 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRF906EC533F59B46A
+    bdr:CR2A92E84ED5AF2A4D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P249 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CR3B3D5115C4CA8412
         a                   :AgentAsCreator ;
         :agent              bdr:P1737 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR45FFC8BD4DFA479B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P221 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CR61F7F07F1B2A2F34
+        a                   :AgentAsCreator ;
+        :agent              bdr:P10348 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CR6EEB466441EF9C2F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2DB5975 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CR75270392F43A93D8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1470 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CR7A8E041176B9C995
+        a                   :AgentAsCreator ;
+        :agent              bdr:P196 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW2DB5974  skos:altLabel  "li shi rong qin jia na ba ge er de zhuan"@zh-latn-pinyin-x-ndia .
     
     bdr:WA2DB5974  a        :Work ;
         skos:prefLabel      "rong chen ljags nag pa kirti sku 'phreng rim byon gyi rnam thar phyogs bsgrigs/"@bo-x-ewts , "li shi rong qin jia na ba ge er de zhuan"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR03979CC879A85EDB , bdr:CR0DED3F7FEE8FE51E , bdr:CR16851C33F803527D , bdr:CR251E0DB618399791 , bdr:CR2A92E84ED5AF2A4D , bdr:CR3B3D5115C4CA8412 , bdr:CR61F7F07F1B2A2F34 , bdr:CR6EEB466441EF9C2F , bdr:CR75270392F43A93D8 , bdr:CR7A8E041176B9C995 , bdr:CRF906EC533F59B46A ;
+        :creator            bdr:CR03979CC879A85EDB , bdr:CR0DED3F7FEE8FE51E , bdr:CR16851C33F803527D , bdr:CR251E0DB618399791 , bdr:CR2A92E84ED5AF2A4D , bdr:CR3B3D5115C4CA8412 , bdr:CR45FFC8BD4DFA479B , bdr:CR61F7F07F1B2A2F34 , bdr:CR6EEB466441EF9C2F , bdr:CR75270392F43A93D8 , bdr:CR7A8E041176B9C995 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

@@ -30,6 +30,12 @@ bdg:WA1KG4942 {
         adm:logMessage      "corrected CW"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -68,15 +74,16 @@ bdg:WA1KG4942 {
     bda:WA1KG4942  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4942 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "12/WA1KG4942.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4942 ;
-        adm:logEntry        bda:LG7FCED0E0D57D2795 , bda:LG81BD932CAB4F21FD , bda:LGF85AD3EF33B72A63 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG7FCED0E0D57D2795 , bda:LG81BD932CAB4F21FD , bda:LGF85AD3EF33B72A63 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD0175B76FFEA71B7
+    bdr:CR467BE8863DA13F93
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG4943 ;
         :role               bdr:R0ER0019 .
@@ -87,7 +94,7 @@ bdg:WA1KG4942 {
         skos:altLabel       "byang chub sems dpa'i spyod pa la 'jug pa'i 'grel pa legs par bshad pa rgya mtsho'i rtsa 'grel sa bcad nag 'gros su bkod pa blo gsar nyer mkho/"@bo-x-ewts , "Byaṅ chhub [sic] sem paʼi spyod pa la ʼjug paʼi ʼgrel pa legs par bshad pa :an ocean perfect exposition = A commentary to Shantideva's Bodhisattvachasryavatra [sic] /by Thubten Chodar."@en-x-mixed ;
         skos:prefLabel      "byang chub sems dpa'i spyod pa la 'jug pa'i 'grel pa legs par bshad pa/"@bo-x-ewts , "byaṅ-chhub sem-pa'i spyod-pa-la 'jug pa'i 'grel-pa legs-par bshad-pa an ocean perfect exposition"@en ;
         :catalogInfo        "Commentary on Shantideva's Bodhicaryavatara."@en ;
-        :creator            bdr:CRD0175B76FFEA71B7 ;
+        :creator            bdr:CR467BE8863DA13F93 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

@@ -49,6 +49,12 @@ bdg:WA1KG1 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -80,15 +86,16 @@ bdg:WA1KG1 {
     bda:WA1KG1  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG1 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "c3/WA1KG1.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG1 ;
-        adm:logEntry        bda:LG190B9E1F0D092510 , bda:LG9CB9870CE901B717 , bda:LGC283DA9107BB4954 , bda:LGC74ADE8855D947EE , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG190B9E1F0D092510 , bda:LG9CB9870CE901B717 , bda:LGC283DA9107BB4954 , bda:LGC74ADE8855D947EE , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5E9584FF5DB8F8FD
+    bdr:CRA41579B0860C0BFD
         a                   :AgentAsCreator ;
         :agent              bdr:P8064 ;
         :role               bdr:R0ER0019 .
@@ -99,7 +106,7 @@ bdg:WA1KG1 {
         skos:altLabel       "bod kyi rig gnas rnam bshad blo gsal gzhon nu'i dga' tshal/"@bo-x-ewts ;
         skos:prefLabel      "bod kyi rig gnas rnam bshad/"@bo-x-ewts , "xi zang wen hua gai lun"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Miscellaneous writings on the five minor sciences by the modern scholar Phuntsok Tsering."@en ;
-        :creator            bdr:CR5E9584FF5DB8F8FD ;
+        :creator            bdr:CRA41579B0860C0BFD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;

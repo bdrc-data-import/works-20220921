@@ -35,6 +35,12 @@ bdg:WA2PD17487 {
         adm:logDate         "2016-01-19T12:52:33.036Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4599A38FCE
         a                   adm:UpdateData ;
         adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
@@ -45,16 +51,17 @@ bdg:WA2PD17487 {
     bda:WA2PD17487  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17487 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "64/WA2PD17487.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17487 ;
-        adm:logEntry        bda:LG257F3201F2475EDC , bda:LG5A7A27F7BFF42336 , bda:LG83CBF8E86EC3CD3A , bda:LGFD5C7C5F7E80E772 , bda:LGIM4599A38FCE ;
+        adm:logEntry        bda:LG257F3201F2475EDC , bda:LG5A7A27F7BFF42336 , bda:LG83CBF8E86EC3CD3A , bda:LGFD5C7C5F7E80E772 , bda:LGIM4394141E , bda:LGIM4599A38FCE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA21617 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRC78D53584CE6292B
+    bdr:CR899BC0FB3D3574B1
         a                   :AgentAsCreator ;
         :agent              bdr:P3816 ;
         :role               bdr:R0ER0025 .
@@ -63,7 +70,7 @@ bdg:WA2PD17487 {
         skos:altLabel       "rong zom bka' 'bum/"@bo-x-ewts , "rong zom gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_rong zom chos kyi bzang po/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by the 11th century Nyingma master Rongzom Chokyi Zangpo (1042-1136)"@en ;
-        :creator            bdr:CRC78D53584CE6292B ;
+        :creator            bdr:CR899BC0FB3D3574B1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

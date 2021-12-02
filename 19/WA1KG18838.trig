@@ -31,6 +31,12 @@ bdg:WA1KG18838 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -41,15 +47,16 @@ bdg:WA1KG18838 {
     bda:WA1KG18838  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG18838 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "19/WA1KG18838.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG18838 ;
-        adm:logEntry        bda:LG75FA801CD413B0BB , bda:LG993A741C41E88694 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG75FA801CD413B0BB , bda:LG993A741C41E88694 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC1CCD0117754C6E0
+    bdr:CRD936D9270AB06DDE
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG18841 ;
         :role               bdr:R0ER0010 .
@@ -58,7 +65,7 @@ bdg:WA1KG18838 {
         skos:altLabel       "deities of tibetan buddhism : the zurich paintings of the icons worthwhile to see : bris sku mthong ba don ldan"@en ;
         skos:prefLabel      "bris sku mthong ba don ldan/"@bo-x-ewts , "deities of tibetan buddhism"@en ;
         :catalogInfo        "Deities of Tibetan Buddhism."@en ;
-        :creator            bdr:CRC1CCD0117754C6E0 ;
+        :creator            bdr:CRD936D9270AB06DDE ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn , bdr:LangMn , bdr:LangSa ;
         :workHasInstance    bdr:MW1KG18838 , bdr:W1KG18838 ;

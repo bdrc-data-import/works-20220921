@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23690 {
-    bda:LG50394F36FA71C111
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG5AFF9ED979B11849
         a                   adm:UpdateData ;
         adm:logDate         "2008-12-09T15:10:23.145Z"^^xsd:dateTime ;
@@ -27,6 +23,16 @@ bdg:WA23690 {
         adm:logDate         "2013-03-06T09:52:04.529Z"^^xsd:dateTime ;
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGD9AB02A5C53A8896
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -45,12 +51,13 @@ bdg:WA23690 {
     bda:WA23690  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23690 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "fc/WA23690.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23690 ;
-        adm:logEntry        bda:LG50394F36FA71C111 , bda:LG5AFF9ED979B11849 , bda:LG90F9600E45017A9D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG5AFF9ED979B11849 , bda:LG90F9600E45017A9D , bda:LGD9AB02A5C53A8896 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA23690  a          :Work ;

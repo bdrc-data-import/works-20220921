@@ -24,22 +24,29 @@ bdg:WA29263 {
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGFCB762B45DBEB818
+    bda:LGFB98A13E270E64C6
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA29263  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29263 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "1d/WA29263.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29263 ;
-        adm:logEntry        bda:LG1B72E49CAA86E714 , bda:LG518BF04E53F0BA91 , bda:LGFCB762B45DBEB818 ;
+        adm:logEntry        bda:LG1B72E49CAA86E714 , bda:LG518BF04E53F0BA91 , bda:LGFB98A13E270E64C6 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFB98A13E270E64C6
+    bdr:CR808508F2F028DEFE
         a                   :AgentAsCreator ;
         :agent              bdr:P9336 ;
         :role               bdr:R0ER0019 .
@@ -48,7 +55,7 @@ bdg:WA29263 {
         skos:altLabel       "tun hong yig rnying las byung ba'i bod kyi gna' rabs smon lam dang de'i mchan 'grel/ khri ral pa can gyi skabs su mdo khams dbyar mo thang du de ga g.yu tshal gyi gtsug lag khang bzhengs nas bod kyi blon chen po zhang khri sum rje sogs kyis gsol ba'i smon lam phyogs gcig tu bkod pa/"@bo-x-ewts ;
         skos:prefLabel      "tun hong yig rnying las byung ba'i bod kyi gna' rabs smon lam dang de'i mchan 'grel/"@bo-x-ewts ;
         :catalogInfo        "Annotated commentaries on ancient times aspirational prayers of Tibetan, the manuscripts found from Dunhuang."@en ;
-        :creator            bdr:CRFB98A13E270E64C6 ;
+        :creator            bdr:CR808508F2F028DEFE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T304 , bdr:T34 ;

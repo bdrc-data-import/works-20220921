@@ -29,7 +29,7 @@ bdg:WA22116 {
         adm:logDate         "2010-10-12T10:22:23.742Z"^^xsd:dateTime ;
         adm:logMessage      "added to WMDL and WMDL03"@en .
     
-    bda:LG9647BEE82E3B7D04
+    bda:LG468682972DBF7B79
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -50,6 +50,12 @@ bdg:WA22116 {
         adm:logDate         "2008-07-24T12:25:28.539Z"^^xsd:dateTime ;
         adm:logMessage      "scanned compeleted"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -75,15 +81,16 @@ bdg:WA22116 {
     bda:WA22116  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22116 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "df/WA22116.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22116 ;
-        adm:logEntry        bda:LG03FF215A8A7DDEEA , bda:LG2ACA13D95EB28146 , bda:LG2DF93B5FB946914F , bda:LG9647BEE82E3B7D04 , bda:LGA5E0235807F77909 , bda:LGB2EDE0963690C5F8 , bda:LGC444348EA172B1A7 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG03FF215A8A7DDEEA , bda:LG2ACA13D95EB28146 , bda:LG2DF93B5FB946914F , bda:LG468682972DBF7B79 , bda:LGA5E0235807F77909 , bda:LGB2EDE0963690C5F8 , bda:LGC444348EA172B1A7 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR468682972DBF7B79
+    bdr:CR64BDCE599677E15A
         a                   :AgentAsCreator ;
         :agent              bdr:P939 ;
         :role               bdr:R0ER0019 .
@@ -91,7 +98,7 @@ bdg:WA22116 {
     bdr:WA22116  a          :Work ;
         skos:prefLabel      "gsung 'bum/_ngag dbang bstan 'dzin 'phrin las/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Geluk master Kyisho Zhabdrung Tulku Ngawang Tenzin Trinle (1639-1682), student of Panchen Lama 04 Chokyi Gyalsten (1570-1662) and Dalai Lama 05 Ngawang Lobzang Gyatso (1617-1682). Reproduced from a print from the New Zho Printery woodblocks."@en ;
-        :creator            bdr:CR468682972DBF7B79 ;
+        :creator            bdr:CR64BDCE599677E15A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

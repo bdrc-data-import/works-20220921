@@ -37,6 +37,12 @@ bdg:WA8LS20296 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -54,15 +60,16 @@ bdg:WA8LS20296 {
     bda:WA8LS20296  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20296 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "d5/WA8LS20296.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20296 ;
-        adm:logEntry        bda:LG257455303EA6EC52 , bda:LG3D194301B8391B2C , bda:LG7C12E82ACAB9ECED , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG257455303EA6EC52 , bda:LG3D194301B8391B2C , bda:LG7C12E82ACAB9ECED , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRBE1AD6E42B3BBFD5
+    bdr:CR720977943AA0DE66
         a                   :AgentAsCreator ;
         :agent              bdr:P7376 ;
         :role               bdr:R0ER0026 .
@@ -70,7 +77,7 @@ bdg:WA8LS20296 {
     bdr:WA8LS20296  a       :Work ;
         skos:prefLabel      "krung go mi dmangs 'thus mi'i tshogs chen gyi lam lugs/"@bo-x-ewts ;
         :catalogInfo        "A procedural of People's Congress general meeting of PRC; translated by Sonam Dorjee."@en ;
-        :creator            bdr:CRBE1AD6E42B3BBFD5 ;
+        :creator            bdr:CR720977943AA0DE66 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1157 ;

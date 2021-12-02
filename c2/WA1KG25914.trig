@@ -24,18 +24,25 @@ bdg:WA1KG25914 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG25914  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25914 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "c2/WA1KG25914.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25914 ;
-        adm:logEntry        bda:LG1C8131F67DDED7DF , bda:LGEAEBAD4974877A5E ;
+        adm:logEntry        bda:LG1C8131F67DDED7DF , bda:LGEAEBAD4974877A5E , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1B46697FA7A0FD6E
+    bdr:CRE02BBA98FB70C301
         a                   :AgentAsCreator ;
         :agent              bdr:P7570 ;
         :role               bdr:R0ER0019 .
@@ -43,7 +50,7 @@ bdg:WA1KG25914 {
     bdr:WA1KG25914  a       :Work ;
         skos:prefLabel      "skyid shod sde pa'i skor/"@bo-x-ewts ;
         :catalogInfo        "History and genealogy of Kyishod Depa (skyid shod sde pa) family who ruled in Central Tibet from 1593-1720."@en ;
-        :creator            bdr:CR1B46697FA7A0FD6E ;
+        :creator            bdr:CRE02BBA98FB70C301 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

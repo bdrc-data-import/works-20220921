@@ -35,32 +35,39 @@ bdg:WA1KG4265 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00020 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG4265  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4265 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "55/WA1KG4265.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4265 ;
-        adm:logEntry        bda:LG1DE3CCB7BC6039E6 , bda:LG7F481CCEC4B672A0 , bda:LG8B06D780F68B5E44 , bda:LGE33110EF8B43213F ;
+        adm:logEntry        bda:LG1DE3CCB7BC6039E6 , bda:LG7F481CCEC4B672A0 , bda:LG8B06D780F68B5E44 , bda:LGE33110EF8B43213F , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1FA600F30BC823B1
+    bdr:CR42A473DEAEEDB3A1
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG4266 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV42A473DEAEEDB3A1
+    bdr:EV4AFF664C1C140818
         a                   :CompletedEvent ;
         :onYear             "2007"^^xsd:gYear .
     
     bdr:WA1KG4265  a        :Work ;
         skos:prefLabel      "sangs rgyas bkra shis sam srog bdag rdo rje dpa' bo rtsal gyi byung ba brjod pa'i sa bon nyer mkho/"@bo-x-ewts ;
-        :creator            bdr:CR1FA600F30BC823B1 ;
+        :creator            bdr:CR42A473DEAEEDB3A1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV42A473DEAEEDB3A1 ;
+        :workEvent          bdr:EV4AFF664C1C140818 ;
         :workGenre          bdr:T1134 ;
         :workHasInstance    bdr:IE1KG4265 , bdr:MW1KG4265 , bdr:W1KG4265 ;
         :workIsAbout        bdr:T2CZ7874 .

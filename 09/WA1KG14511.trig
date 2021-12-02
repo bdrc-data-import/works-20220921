@@ -37,6 +37,12 @@ bdg:WA1KG14511 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -61,15 +67,16 @@ bdg:WA1KG14511 {
     bda:WA1KG14511  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14511 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "09/WA1KG14511.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14511 ;
-        adm:logEntry        bda:LG09252A87C58536AA , bda:LG95D60B722682B78E , bda:LGAF53946C40366DA3 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG09252A87C58536AA , bda:LG95D60B722682B78E , bda:LGAF53946C40366DA3 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF1558F76260E05C2
+    bdr:CRC9BEEA5DC6ABEB00
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG520 ;
         :role               bdr:R0ER0019 .
@@ -80,7 +87,7 @@ bdg:WA1KG14511 {
         skos:altLabel       "wan ma huang jia sui bi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "dkar bzlog dmar bzlog"@bo-x-ewts , "Dkar bzlog dmar bzlog /Oṁ-ʼbar gyis brtsams."@en-x-mixed , "万玛黄加随笔"@zh-hans ;
         :catalogInfo        "Anthology of Tibetan literary criticism."@en ;
-        :creator            bdr:CRF1558F76260E05C2 ;
+        :creator            bdr:CRC9BEEA5DC6ABEB00 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;

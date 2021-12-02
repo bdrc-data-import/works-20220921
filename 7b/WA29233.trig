@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29233 {
-    bda:LG08328C957B69D614
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG1B0E4D263ECE3A44
         a                   adm:UpdateData ;
         adm:logDate         "2009-08-11T13:10:23.416Z"^^xsd:dateTime ;
@@ -26,6 +22,10 @@ bdg:WA29233 {
         adm:logDate         "2013-07-03T18:26:16.084Z"^^xsd:dateTime ;
         adm:logMessage      "subject class changed from G649 to G1202"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG9304A61F45D5FF6A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
@@ -40,6 +40,12 @@ bdg:WA29233 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -79,20 +85,21 @@ bdg:WA29233 {
     bda:WA29233  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29233 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "7b/WA29233.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29233 ;
-        adm:logEntry        bda:LG08328C957B69D614 , bda:LG1B0E4D263ECE3A44 , bda:LG57EE146C803A6BB5 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1B0E4D263ECE3A44 , bda:LG57EE146C803A6BB5 , bda:LG9304A61F45D5FF6A , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5316D560943D285B
+    bdr:CR2C8DDD9972896C5B
         a                   :AgentAsCreator ;
         :agent              bdr:P9596 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CR9304A61F45D5FF6A
+    bdr:CR5316D560943D285B
         a                   :AgentAsCreator ;
         :agent              bdr:P9597 ;
         :role               bdr:R0ER0019 .
@@ -102,7 +109,7 @@ bdg:WA29233 {
     bdr:WA29233  a          :Work ;
         skos:prefLabel      "mdo smad rtsis don nyung bsdus/"@bo-x-ewts , "Mdo-smad rtsis don ñuṅ bsdus /Grags-pa-rgya-mtsho daṅ ʼJigs-byed-skyabs kyis rtsom sgrig byas."@en-x-mixed , "li suan gai yao"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Select writings by Amdo masters on Tibetan astrology. Edited by the modern figures Drakpa Gyatso and Jigme Kyap."@en ;
-        :creator            bdr:CR5316D560943D285B , bdr:CR9304A61F45D5FF6A ;
+        :creator            bdr:CR2C8DDD9972896C5B , bdr:CR5316D560943D285B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T203 ;

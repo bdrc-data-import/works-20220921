@@ -24,7 +24,7 @@ bdg:WA21026 {
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG79AFB9D78C578E9E
+    bda:LG458A2F3864E6D803
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -50,6 +50,12 @@ bdg:WA21026 {
         adm:logDate         "2021-03-04T09:22:12.502Z"^^xsd:dateTime ;
         adm:logMessage      "added about person"@en ;
         adm:logWho          bdu:U00019 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM4599A38FCE
         a                   adm:UpdateData ;
@@ -82,15 +88,16 @@ bdg:WA21026 {
     bda:WA21026  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21026 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "a2/WA21026.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21026 ;
-        adm:logEntry        bda:LG214035512E0B6D7E , bda:LG372A29EF89062504 , bda:LG79AFB9D78C578E9E , bda:LG899646C3FDD31C26 , bda:LGA203CCF2A5EC22B5 , bda:LGB644D4A22EE5DDFB , bda:LGBE5D4D069C0C5D44 , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG214035512E0B6D7E , bda:LG372A29EF89062504 , bda:LG458A2F3864E6D803 , bda:LG899646C3FDD31C26 , bda:LGA203CCF2A5EC22B5 , bda:LGB644D4A22EE5DDFB , bda:LGBE5D4D069C0C5D44 , bda:LGIM4394141E , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR458A2F3864E6D803
+    bdr:CR1399A7B76F91002A
         a                   :AgentAsCreator ;
         :agent              bdr:P4902 ;
         :role               bdr:R0ER0019 .
@@ -101,7 +108,7 @@ bdg:WA21026 {
         skos:altLabel       "rgyal ba thams cad kyi sku gsung thugs mi zad pa rgyan 'khor lnga'i bdag nyid mtshungs bral chos kyi rje rin po che stag lung thang pa chen po mangga la shrI'i rnam par thar pa ngo mtshar gyi phul zab rgyas las brtsams pa'i gtam mos gus kyi snye ma/"@bo-x-ewts , "the biography of stag-lun-than-pa chen-po"@en-x-mixed ;
         skos:prefLabel      "bkra shis dpal gyi rnam thar/"@bo-x-ewts , "the biography of the founder of byan stag-lun monastery, stag-lun-than-pa bkra-sis-dpal"@en-x-mixed ;
         :catalogInfo        "Biography of Taklung Thangpa Tashi Pel."@en ;
-        :creator            bdr:CR458A2F3864E6D803 ;
+        :creator            bdr:CR1399A7B76F91002A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

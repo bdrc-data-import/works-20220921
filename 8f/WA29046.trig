@@ -30,10 +30,6 @@ bdg:WA29046 {
         adm:logMessage      "ctc5"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LG1E229098C37A2588
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG717A94D72D3A9B8F
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-17T12:22:59.02Z"^^xsd:dateTime ;
@@ -50,6 +46,16 @@ bdg:WA29046 {
         adm:logDate         "2018-05-31T20:03:52.351Z"^^xsd:dateTime ;
         adm:logMessage      "changed access to restrictedByTbrc"@en ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGF38C6BCD389BD5DD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -74,16 +80,16 @@ bdg:WA29046 {
     bda:WA29046  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29046 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "8f/WA29046.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29046 ;
-        adm:logEntry        bda:LG00C829F968F08EA8 , bda:LG09A7CBA7AD891101 , bda:LG167F25FC14B4B274 , bda:LG1E229098C37A2588 , bda:LG717A94D72D3A9B8F , bda:LG9BB04F63A68BC8DB , bda:LGB22DED9802F0F4AB , bda:LGIM5A753E00B7 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG00C829F968F08EA8 , bda:LG09A7CBA7AD891101 , bda:LG167F25FC14B4B274 , bda:LG717A94D72D3A9B8F , bda:LG9BB04F63A68BC8DB , bda:LGB22DED9802F0F4AB , bda:LGF38C6BCD389BD5DD , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF38C6BCD389BD5DD
+    bdr:CR121EA7E3B10568D9
         a                   :AgentAsCreator ;
         :agent              bdr:P7570 ;
         :role               bdr:R0ER0019 .
@@ -92,7 +98,7 @@ bdg:WA29046 {
         skos:altLabel       "yon tan rgya mtsho'i rnam dpyod sprin gyi ba gam las legs par 'ongs pa'i brgal lan kun khyab snyan pa'i 'brug sgra zhes bya ba gdong thog sprul sku ngag dbang theg mchog bstan pa'i rgyal mtshan la gdams pa/"@bo-x-ewts ;
         skos:prefLabel      "brgal lan kun khyab 'brug sgra : gdong thog sprul sku la gdams pa brgal lan kun khyab snyan pa'i 'brug sgra/"@bo-x-ewts ;
         :catalogInfo        "Polemic in the discourse regarding Dorje Shugden."@en ;
-        :creator            bdr:CRF38C6BCD389BD5DD ;
+        :creator            bdr:CR121EA7E3B10568D9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29046 , bdr:W29046 ;

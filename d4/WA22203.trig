@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22203 {
+    bda:LG0356BD53536E2983
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG1605B6FF2AB24181
         a                   adm:UpdateData ;
         adm:logDate         "2013-02-28T09:56:47.262Z"^^xsd:dateTime ;
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
-    
-    bda:LG86F698807E19A3FC
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGAA1B2FBD3A4D84BD
         a                   adm:UpdateData ;
@@ -33,6 +33,12 @@ bdg:WA22203 {
         adm:logDate         "2009-01-05T12:36:57.413Z"^^xsd:dateTime ;
         adm:logMessage      "annotation revised"@en ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -58,15 +64,16 @@ bdg:WA22203 {
     bda:WA22203  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22203 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "d4/WA22203.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22203 ;
-        adm:logEntry        bda:LG1605B6FF2AB24181 , bda:LG86F698807E19A3FC , bda:LGAA1B2FBD3A4D84BD , bda:LGDC7C0B2F357B9CB9 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0356BD53536E2983 , bda:LG1605B6FF2AB24181 , bda:LGAA1B2FBD3A4D84BD , bda:LGDC7C0B2F357B9CB9 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0356BD53536E2983
+    bdr:CRD5B13A11AA3DEC30
         a                   :AgentAsCreator ;
         :agent              bdr:P1470 ;
         :role               bdr:R0ER0019 .
@@ -74,7 +81,7 @@ bdg:WA22203 {
     bdr:WA22203  a          :Work ;
         skos:prefLabel      "gsung 'bum/_skal bzang thub bstan dbang phyug"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Jamyang Zhepa 04 Kelzang Tubten Wangchuk (1856-1916)."@en ;
-        :creator            bdr:CR0356BD53536E2983 ;
+        :creator            bdr:CRD5B13A11AA3DEC30 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

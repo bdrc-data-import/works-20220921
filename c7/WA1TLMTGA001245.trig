@@ -18,19 +18,26 @@ bdg:WA1TLMTGA001245 {
         adm:logMessage      "Work created."@en ;
         adm:logWho          bdu:U00033 .
     
+    bda:LGIM7387E6F0  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:50:00.161Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1TLMTGA001245
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1TLMTGA001245 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "c7/WA1TLMTGA001245.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1TLMTGA001245 ;
-        adm:logEntry        bda:LG9A3675FC6B70F84F ;
+        adm:logEntry        bda:LG9A3675FC6B70F84F , bda:LGIM7387E6F0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusEditing .
     
-    bdr:CR01943374F63CAD64
+    bdr:CRF109417211ED18F6
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG21914 ;
         :role               bdr:R0ER0019 .
@@ -39,7 +46,7 @@ bdg:WA1TLMTGA001245 {
         a                   :Work ;
         skos:altLabel       "bdag nyid chen po gAn+d+hI'i gsung rtsom gces btus/"@bo-x-ewts ;
         skos:prefLabel      "gAn+d+hI'i gsung rtsom gces btus/"@bo-x-ewts ;
-        :creator            bdr:CR01943374F63CAD64 ;
+        :creator            bdr:CRF109417211ED18F6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGA001245 .

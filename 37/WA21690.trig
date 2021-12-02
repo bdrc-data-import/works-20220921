@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21690 {
-    bda:LG1AD6F8FED6DDE7EE
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG259FD2409D9CF3EA
         a                   adm:UpdateData ;
         adm:logDate         "2015-09-01T12:50:00.645Z"^^xsd:dateTime ;
@@ -27,6 +23,10 @@ bdg:WA21690 {
         adm:logDate         "2021-08-12T11:42:14.308Z"^^xsd:dateTime ;
         adm:logMessage      "added cat info, print type, and encoding"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG950E4C501E55EB30
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -42,6 +42,12 @@ bdg:WA21690 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
@@ -52,15 +58,16 @@ bdg:WA21690 {
     bda:WA21690  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21690 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "37/WA21690.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21690 ;
-        adm:logEntry        bda:LG1AD6F8FED6DDE7EE , bda:LG259FD2409D9CF3EA , bda:LG703B7AF7BA419CC2 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG259FD2409D9CF3EA , bda:LG703B7AF7BA419CC2 , bda:LG950E4C501E55EB30 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR950E4C501E55EB30
+    bdr:CR8DC741BB599017EB
         a                   :AgentAsCreator ;
         :agent              bdr:P644 ;
         :role               bdr:R0ER0019 .
@@ -69,7 +76,7 @@ bdg:WA21690 {
         skos:altLabel       "dpal grub pa'i dbang phyug brtson 'grus bzang po'i rnam par thar pa kun gsal nor bu'i me long /"@bo-x-ewts , "thang rgyal rnam thar/"@bo-x-ewts ;
         skos:prefLabel      "thang stong rgyal po'i rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography of Thangtong Gyalpo by Lochen Gyurme Dechen."@en ;
-        :creator            bdr:CR950E4C501E55EB30 ;
+        :creator            bdr:CR8DC741BB599017EB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

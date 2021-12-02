@@ -18,7 +18,7 @@ bdg:WA2124 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00001 .
     
-    bda:LGC49DE3F29D27752D
+    bda:LGDE8619C851D5E673
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -28,6 +28,12 @@ bdg:WA2124 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -53,20 +59,21 @@ bdg:WA2124 {
     bda:WA2124  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2124 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "0c/WA2124.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2124 ;
-        adm:logEntry        bda:LG666FA1B0360E2C71 , bda:LGC49DE3F29D27752D , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG666FA1B0360E2C71 , bda:LGDE8619C851D5E673 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDE8619C851D5E673
+    bdr:CRDF49A1D14840C818
         a                   :AgentAsCreator ;
         :agent              bdr:P170 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVDF49A1D14840C818
+    bdr:EV0464C3FB906AE574
         a                   :CompletedEvent ;
         :onYear             "1801"^^xsd:gYear .
     
@@ -74,10 +81,10 @@ bdg:WA2124 {
         skos:altLabel       "grub mtha' thams cad kyi khungs dang 'dod tshul ston pa legs bshad shel gyi me long /"@bo-x-ewts , "thu'u bkwan grub mtha'"@bo-x-ewts ;
         skos:prefLabel      "grub mtha' shel gyi me long /"@bo-x-ewts ;
         :catalogInfo        "The Crystal Mirror of Philosophical Tenets by Tukwan Lobzang Chokyi Nyima (1737-1802). Extensive survey of philosophical tenets from India, Tibet, and China."@en ;
-        :creator            bdr:CRDE8619C851D5E673 ;
+        :creator            bdr:CRDF49A1D14840C818 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVDF49A1D14840C818 ;
+        :workEvent          bdr:EV0464C3FB906AE574 ;
         :workGenre          bdr:T1134 , bdr:T385 ;
         :workHasInstance    bdr:MW1KG9260_754FF5 , bdr:MW2124 , bdr:MW4CZ302655_D37CC6 , bdr:W2124 .
 }

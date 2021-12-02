@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23891 {
-    bda:LGAE56AB3FADF6C192
+    bda:LG453749A6D1F4DEFD
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -21,6 +21,12 @@ bdg:WA23891 {
         adm:logDate         "2009-03-12T14:02:39.895Z"^^xsd:dateTime ;
         adm:logMessage      "added part of Wisdom Masters Digital Library"@en ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -53,16 +59,17 @@ bdg:WA23891 {
     bda:WA23891  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23891 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "f2/WA23891.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23891 ;
-        adm:logEntry        bda:LGAE56AB3FADF6C192 , bda:LGFAA737D1D818BC75 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG453749A6D1F4DEFD , bda:LGFAA737D1D818BC75 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1CZ688 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR453749A6D1F4DEFD
+    bdr:CR7304FF46EC90C437
         a                   :AgentAsCreator ;
         :agent              bdr:P127 ;
         :role               bdr:R0ER0019 .
@@ -73,7 +80,7 @@ bdg:WA23891 {
         skos:altLabel       "dus gsum sangs rgyas thams cad kyi thugs rje'i rnam rol dpal ldan phag gru rdo rje rgyal po mchog gi gsung 'bum rin po che/"@bo-x-ewts , "Dus gsum saṅs rgyas thams cad kyi thug rjeʾi rnam rol dpal ldan Phag-gru Rdo-rje-rgyal-po mchog gi gsuṅ ʾbum rin po che glegs bam =The collected works of Phag-mo-dru-pa (sic)."@en-x-mixed ;
         skos:prefLabel      "gsung 'bum/_rdo rje rgyal po/"@bo-x-ewts , "the collected works of phag-mo dru-pa"@en ;
         :catalogInfo        "Collected Works by renowned Marpa Kagyu master Pakmodru Dorje Gyalpo (1110-1170)."@en ;
-        :creator            bdr:CR453749A6D1F4DEFD ;
+        :creator            bdr:CR7304FF46EC90C437 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

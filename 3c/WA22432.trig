@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22432 {
-    bda:LGFBFFFAA5D369931C
+    bda:LG54B393DE185BF5A1
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -29,6 +29,12 @@ bdg:WA22432 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
@@ -54,20 +60,21 @@ bdg:WA22432 {
     bda:WA22432  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22432 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "3c/WA22432.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22432 ;
-        adm:logEntry        bda:LGFBFFFAA5D369931C , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG54B393DE185BF5A1 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR54B393DE185BF5A1
+    bdr:CR91DDEF18300E5281
         a                   :AgentAsCreator ;
         :agent              bdr:P7578 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR91DDEF18300E5281
+    bdr:CRCC96F48F2257FEAC
         a                   :AgentAsCreator ;
         :agent              bdr:P7579 ;
         :role               bdr:R0ER0016 .
@@ -76,7 +83,7 @@ bdg:WA22432 {
     
     bdr:WA22432  a          :Work ;
         skos:prefLabel      "bod kyi sgra sgyur lo rgyus dang lo tsA ba rim byon gyi mdzad rnam gsal ba'i me long /"@bo-x-ewts , "Bod kyi sgra sgyur lo rgyus daṅ lo tsā ba rim byon gyi mdzad rnam gsal baʼi me loṅ /Dbaṅ-ʼdus-tshe-riṅ, ʼPhrin-las-rgya-mtsho."@en-x-mixed , "zang zu fan yi shi ji li dai yi shi zhuan lue ming jian"@zh-latn-wadegile ;
-        :creator            bdr:CR54B393DE185BF5A1 , bdr:CR91DDEF18300E5281 ;
+        :creator            bdr:CR91DDEF18300E5281 , bdr:CRCC96F48F2257FEAC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW22432 , bdr:W22432 ;

@@ -37,6 +37,12 @@ bdg:WA00KG09 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -68,20 +74,21 @@ bdg:WA00KG09 {
     bda:WA00KG09  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG09 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "e6/WA00KG09.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG09 ;
-        adm:logEntry        bda:LG6E287B8433C7184F , bda:LG7D8C5B8D3E82F278 , bda:LGC0213F6A80DE00E9 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG6E287B8433C7184F , bda:LG7D8C5B8D3E82F278 , bda:LGC0213F6A80DE00E9 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9F3560A38E62FC49
+    bdr:CRADDD92CBD3C4320E
         a                   :AgentAsCreator ;
         :agent              bdr:P6633 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVADDD92CBD3C4320E
+    bdr:EV696B5F6FB13102E9
         a                   :CompletedEvent ;
         :onYear             "2006"^^xsd:gYear .
     
@@ -91,10 +98,10 @@ bdg:WA00KG09 {
         skos:altLabel       "dbu ma'i spyi don zab don gsal byed 'phrul gyi me long /"@bo-x-ewts ;
         skos:prefLabel      "dbu ma'i spyi don/"@bo-x-ewts , "Spyod ʼjug śer ʼgrel ke ta ka bźugs so /ʼJu Mi-pham gyis brtsams."@en-x-mixed ;
         :catalogInfo        "Textbook for the general study of Madhyamaka philosophy."@en ;
-        :creator            bdr:CR9F3560A38E62FC49 ;
+        :creator            bdr:CRADDD92CBD3C4320E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVADDD92CBD3C4320E ;
+        :workEvent          bdr:EV696B5F6FB13102E9 ;
         :workGenre          bdr:T1763 ;
         :workHasInstance    bdr:IE00KG09 , bdr:MW00KG09 , bdr:W00KG09 ;
         :workIsAbout        bdr:T233 .

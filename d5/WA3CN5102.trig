@@ -31,6 +31,12 @@ bdg:WA3CN5102 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -41,15 +47,16 @@ bdg:WA3CN5102 {
     bda:WA3CN5102  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5102 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "d5/WA3CN5102.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5102 ;
-        adm:logEntry        bda:LG24FC2ADC840A4AB0 , bda:LG74EA39426F21CE6E , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG24FC2ADC840A4AB0 , bda:LG74EA39426F21CE6E , bda:LGIM095CC38C9F , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8107FC035FE0046C
+    bdr:CR33D2387754A607E5
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS20818 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +64,7 @@ bdg:WA3CN5102 {
     bdr:WA3CN5102  a        :Work ;
         skos:prefLabel      "phyogs thams cad las rnam par rgyal ba rdo rje 'chang dngos kun mkhyen bla ma bkra shis bstan pa rab rgyas kyi bsngags brjod g.yas 'khyil dung gi rang sgra/"@bo-x-ewts ;
         :catalogInfo        "Verses in praise of Lama Tashi Tenpa Dargye by Jangpa Jamyang Namgyal."@en ;
-        :creator            bdr:CR8107FC035FE0046C ;
+        :creator            bdr:CR33D2387754A607E5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T67 ;

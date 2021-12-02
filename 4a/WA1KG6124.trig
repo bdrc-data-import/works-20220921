@@ -49,6 +49,12 @@ bdg:WA1KG6124 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -80,23 +86,24 @@ bdg:WA1KG6124 {
     bda:WA1KG6124  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG6124 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "4a/WA1KG6124.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG6124 ;
-        adm:logEntry        bda:LG1A8DA7EBC4FDD83C , bda:LG247A7DDD7C40BA20 , bda:LG6AA1019EDB459101 , bda:LGCE3BFBF62D3CBFB6 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1A8DA7EBC4FDD83C , bda:LG247A7DDD7C40BA20 , bda:LG6AA1019EDB459101 , bda:LGCE3BFBF62D3CBFB6 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7ABDD220D52BA648
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1KG6125 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR86B8514DEA931830
+    bdr:CR6D8AFF81888D2A88
         a                   :AgentAsCreator ;
         :agent              bdr:P6657 ;
         :role               bdr:R0ER0026 .
+    
+    bdr:CR86B8514DEA931830
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG6125 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1KG6124  skos:altLabel  "世界近代历史故事"@zh-hans .
     
@@ -104,7 +111,7 @@ bdg:WA1KG6124 {
         skos:altLabel       "shi jie jin dai li shi gu shi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "'dzam gling nye rabs lo rgyus kyi gtam rgyud/"@bo-x-ewts , "世界近代历史故事"@zh-hans ;
         :catalogInfo        "Selections on modern period world history."@en ;
-        :creator            bdr:CR7ABDD220D52BA648 , bdr:CR86B8514DEA931830 ;
+        :creator            bdr:CR6D8AFF81888D2A88 , bdr:CR86B8514DEA931830 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

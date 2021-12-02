@@ -37,6 +37,12 @@ bdg:WA1KG25596 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -54,15 +60,16 @@ bdg:WA1KG25596 {
     bda:WA1KG25596  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25596 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "11/WA1KG25596.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25596 ;
-        adm:logEntry        bda:LG474921E492B369A5 , bda:LGB9E0EC636F50313F , bda:LGE7FBBC0C756C13E5 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG474921E492B369A5 , bda:LGB9E0EC636F50313F , bda:LGE7FBBC0C756C13E5 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4DADDC02E3928071
+    bdr:CR606399D9C50AD5F5
         a                   :AgentAsCreator ;
         :agent              bdr:P2KG228952 ;
         :role               bdr:R0ER0019 .
@@ -70,7 +77,7 @@ bdg:WA1KG25596 {
     bdr:WA1KG25596  a       :Work ;
         skos:prefLabel      "mar ngo'i zla ba/"@bo-x-ewts ;
         :catalogInfo        "A novel written by Gome Tsering Tashi."@en ;
-        :creator            bdr:CR4DADDC02E3928071 ;
+        :creator            bdr:CR606399D9C50AD5F5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T260 ;

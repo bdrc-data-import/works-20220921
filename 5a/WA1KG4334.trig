@@ -59,6 +59,12 @@ bdg:WA1KG4334 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -76,44 +82,45 @@ bdg:WA1KG4334 {
     bda:WA1KG4334  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4334 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "5a/WA1KG4334.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4334 ;
-        adm:logEntry        bda:LG065EBD9096795C01 , bda:LG074CCD30E2817017 , bda:LG0D02E748B73D5DA0 , bda:LG3F9DC6E34B657037 , bda:LG8381D889D37F8926 , bda:LGB2689E7FB97CE638 , bda:LGB4462C60FC1F4C54 , bda:LGD28AE4D5BDC76EF6 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG065EBD9096795C01 , bda:LG074CCD30E2817017 , bda:LG0D02E748B73D5DA0 , bda:LG3F9DC6E34B657037 , bda:LG8381D889D37F8926 , bda:LGB2689E7FB97CE638 , bda:LGB4462C60FC1F4C54 , bda:LGD28AE4D5BDC76EF6 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR27E57CBE8265AC82
         a                   :AgentAsCreator ;
-        :agent              bdr:P470 ;
-        :role               bdr:R0ER0016 .
+        :agent              bdr:P385 ;
+        :role               bdr:R0ER0019 .
     
     bdr:CR82C03ED23286B410
         a                   :AgentAsCreator ;
-        :agent              bdr:P654 ;
+        :agent              bdr:P470 ;
         :role               bdr:R0ER0016 .
     
     bdr:CRA26F466638C9BD7C
         a                   :AgentAsCreator ;
-        :agent              bdr:P649 ;
+        :agent              bdr:P956 ;
         :role               bdr:R0ER0016 .
-    
-    bdr:CRC7507FC1C9792DBD
-        a                   :AgentAsCreator ;
-        :agent              bdr:P385 ;
-        :role               bdr:R0ER0019 .
     
     bdr:CRD737FC56AE08CCB0
         a                   :AgentAsCreator ;
-        :agent              bdr:P956 ;
+        :agent              bdr:P654 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CRF97E2D3CA57494EA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P649 ;
         :role               bdr:R0ER0016 .
     
     bdr:WA1KG4334  a        :Work ;
         skos:altLabel       "dpal spungs dpe rnying gsar bskrun/ dkyil chog pod 'phreng /"@bo-x-ewts ;
         skos:prefLabel      "dpal spungs dpe rnying gsar bskrun las dkyil chog phyogs bsgrigs/"@bo-x-ewts ;
         :catalogInfo        "Select ritual texts on the mandala from the Kagyu order. From Pelpung Monastery. (1st part )"@en ;
-        :creator            bdr:CR27E57CBE8265AC82 , bdr:CR82C03ED23286B410 , bdr:CRA26F466638C9BD7C , bdr:CRC7507FC1C9792DBD , bdr:CRD737FC56AE08CCB0 ;
+        :creator            bdr:CR27E57CBE8265AC82 , bdr:CR82C03ED23286B410 , bdr:CRA26F466638C9BD7C , bdr:CRD737FC56AE08CCB0 , bdr:CRF97E2D3CA57494EA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T159 ;

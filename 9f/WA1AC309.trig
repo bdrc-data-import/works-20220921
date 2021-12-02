@@ -68,6 +68,12 @@ bdg:WA1AC309 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -78,37 +84,38 @@ bdg:WA1AC309 {
     bda:WA1AC309  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC309 ;
-        adm:facetIndex      17 ;
+        adm:facetIndex      18 ;
         adm:gitPath         "9f/WA1AC309.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC309 ;
-        adm:logEntry        bda:LG3A7C1A35ED5461BC , bda:LG84AE0CCD3B4A4FA8 , bda:LG98F2811C784B513F , bda:LGAE40295D40AEFE21 , bda:LGB89F7814A53ECB84 , bda:LGB8B09A68D0B256D3 , bda:LGC6CAD5B24CC8651D , bda:LGDDFF86C918D02D4E , bda:LGFC6AD4BAC93600BC , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3A7C1A35ED5461BC , bda:LG84AE0CCD3B4A4FA8 , bda:LG98F2811C784B513F , bda:LGAE40295D40AEFE21 , bda:LGB89F7814A53ECB84 , bda:LGB8B09A68D0B256D3 , bda:LGC6CAD5B24CC8651D , bda:LGDDFF86C918D02D4E , bda:LGFC6AD4BAC93600BC , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1DA085E4049A1253
         a                   :AgentAsCreator ;
-        :agent              bdr:P7589 ;
+        :agent              bdr:P1844 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR742B07F908723655
         a                   :AgentAsCreator ;
-        :agent              bdr:P5335 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR886819D195056B2D
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1844 ;
+        :agent              bdr:P5091 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRC2F8F045DF13598C
         a                   :AgentAsCreator ;
-        :agent              bdr:P1CZ1005 ;
+        :agent              bdr:P7589 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRDBC63EF1EAE050FF
         a                   :AgentAsCreator ;
-        :agent              bdr:P5091 ;
+        :agent              bdr:P1CZ1005 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE8ED18A92D7561FE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5335 ;
         :role               bdr:R0ER0019 .
     
     bdr:MW1AC309  skos:altLabel  "刚波瓦师徒文集"@zh-hans .
@@ -117,7 +124,7 @@ bdg:WA1AC309 {
         skos:altLabel       "gang bo wa shi tu wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "sgam po'i gdan rabs rim byon gyi gsung 'bum/"@bo-x-ewts , "刚波瓦师徒文集"@zh-hans ;
         :catalogInfo        "Collection of writings by Gampo masters of the Kagyue order."@en ;
-        :creator            bdr:CR1DA085E4049A1253 , bdr:CR742B07F908723655 , bdr:CR886819D195056B2D , bdr:CRC2F8F045DF13598C , bdr:CRDBC63EF1EAE050FF ;
+        :creator            bdr:CR1DA085E4049A1253 , bdr:CR742B07F908723655 , bdr:CRC2F8F045DF13598C , bdr:CRDBC63EF1EAE050FF , bdr:CRE8ED18A92D7561FE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

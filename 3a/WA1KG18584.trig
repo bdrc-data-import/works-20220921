@@ -31,6 +31,12 @@ bdg:WA1KG18584 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -41,15 +47,16 @@ bdg:WA1KG18584 {
     bda:WA1KG18584  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG18584 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "3a/WA1KG18584.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG18584 ;
-        adm:logEntry        bda:LG248EEB8F99881A79 , bda:LGAC5BD70533C1BEBE , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG248EEB8F99881A79 , bda:LGAC5BD70533C1BEBE , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC0F76B0C6D974F87
+    bdr:CR7BC5A98FB0A86E96
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG18622 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +64,7 @@ bdg:WA1KG18584 {
     bdr:WA1KG18584  a       :Work ;
         skos:prefLabel      "bas mtha'i smre sngags/"@bo-x-ewts ;
         :catalogInfo        "Collection of poetry by author."@en ;
-        :creator            bdr:CRC0F76B0C6D974F87 ;
+        :creator            bdr:CR7BC5A98FB0A86E96 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG18584 , bdr:W1KG18584 ;

@@ -36,19 +36,26 @@ bdg:WA00EGS1017048 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA00EGS1017048
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00EGS1017048 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f6/WA00EGS1017048.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00EGS1017048 ;
-        adm:logEntry        bda:LG18F165789ACEFAC3 , bda:LG753C7C886AA036A5 , bda:LG783F143EEA15ACAE , bda:LGA5083F438838A04D ;
+        adm:logEntry        bda:LG18F165789ACEFAC3 , bda:LG753C7C886AA036A5 , bda:LG783F143EEA15ACAE , bda:LGA5083F438838A04D , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE858BA5177137D81
+    bdr:CR376B404D698A5B1D
         a                   :AgentAsCreator ;
         :agent              bdr:P00EGS1017046 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +64,7 @@ bdg:WA00EGS1017048 {
         a                   :Work ;
         skos:altLabel       "grub dbang sgrub brgyud pa'i rnam thar/"@bo-x-ewts ;
         skos:prefLabel      "grub pa'i dbang phyug sgrub brgyud dpa' bo stag sham can sku rabs rim byon gyi rnam par thar pa mdo tsam brjod pa rdzogs ldan gsar pa'i dga' ston/"@bo-x-ewts ;
-        :creator            bdr:CRE858BA5177137D81 ;
+        :creator            bdr:CR376B404D698A5B1D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW00EGS1017048 , bdr:W00EGS1017048 ;

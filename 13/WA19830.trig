@@ -24,6 +24,10 @@ bdg:WA19830 {
         adm:logMessage      "annotation revised"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LG4030D9B3BA4D7278
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG5EF85712881564D6
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-27T10:59:30.695Z"^^xsd:dateTime ;
@@ -41,16 +45,18 @@ bdg:WA19830 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGFFC73C8ACD52FDB0
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
         adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -76,20 +82,21 @@ bdg:WA19830 {
     bda:WA19830  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19830 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "13/WA19830.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19830 ;
-        adm:logEntry        bda:LG042D6CC9EB8AE31D , bda:LG2679401EB2BA28D5 , bda:LG5EF85712881564D6 , bda:LG74E22F1D357A0E84 , bda:LG90448E38BC205FEC , bda:LGFFC73C8ACD52FDB0 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG042D6CC9EB8AE31D , bda:LG2679401EB2BA28D5 , bda:LG4030D9B3BA4D7278 , bda:LG5EF85712881564D6 , bda:LG74E22F1D357A0E84 , bda:LG90448E38BC205FEC , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4030D9B3BA4D7278
+    bdr:CRD827D670518BF397
         a                   :AgentAsCreator ;
         :agent              bdr:P6303 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVD827D670518BF397
+    bdr:EV85DBCAB15FE6542D
         a                   :CompletedEvent ;
         :onYear             "1993"^^xsd:gYear .
     
@@ -99,10 +106,10 @@ bdg:WA19830 {
         skos:altLabel       "mdo smad byang rgyud kyi bshad sgrub chos kyi dga' tshal dpal mi 'gyur dge ldan bkra shis chos sdings kyi gdan rabs/"@bo-x-ewts ;
         skos:prefLabel      "d+hi tsha dgon pa'i gdan rabs/"@bo-x-ewts , "chia cha ssu chih"@zh-latn-wadegile ;
         :catalogInfo        "History of Dhitsa Monastery in Qinghai Province."@en ;
-        :creator            bdr:CR4030D9B3BA4D7278 ;
+        :creator            bdr:CRD827D670518BF397 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVD827D670518BF397 ;
+        :workEvent          bdr:EV85DBCAB15FE6542D ;
         :workHasInstance    bdr:MW19830 , bdr:W19830 ;
         :workIsAbout        bdr:G1PD96117 , bdr:T16 .
 }

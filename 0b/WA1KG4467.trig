@@ -30,6 +30,12 @@ bdg:WA1KG4467 {
         adm:logMessage      "published"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -47,20 +53,21 @@ bdg:WA1KG4467 {
     bda:WA1KG4467  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4467 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "0b/WA1KG4467.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4467 ;
-        adm:logEntry        bda:LG299EB0DD26F54C94 , bda:LG78AFF50B272FD3FA , bda:LGC1CC39F1AF1CBA18 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG299EB0DD26F54C94 , bda:LG78AFF50B272FD3FA , bda:LGC1CC39F1AF1CBA18 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRAB69A500F5DAC374
+    bdr:CR5340883F8F11CBB7
         a                   :AgentAsCreator ;
         :agent              bdr:P8183 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CRFB0EE00F89E1417C
+    bdr:CRAB69A500F5DAC374
         a                   :AgentAsCreator ;
         :agent              bdr:P8209 ;
         :role               bdr:R0ER0018 .
@@ -71,7 +78,7 @@ bdg:WA1KG4467 {
         skos:altLabel       "dge slong pha'i so thar gyi mdo rgyas pa/"@bo-x-ewts ;
         skos:prefLabel      "so sor thar pa'i mdo/"@bo-x-ewts , "pratimoksasutra"@sa-alalc97 ;
         :catalogInfo        "Sutra on monastic discipline."@en ;
-        :creator            bdr:CRAB69A500F5DAC374 , bdr:CRFB0EE00F89E1417C ;
+        :creator            bdr:CR5340883F8F11CBB7 , bdr:CRAB69A500F5DAC374 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:IE1KG4467 , bdr:MW1KG4467 , bdr:MW1NLM1395_E9704F , bdr:MW1TLMTGA001374 , bdr:MW3PD988_7D5982 , bdr:MW3PD988_9B9A2A , bdr:W1KG4467 ;

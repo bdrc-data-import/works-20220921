@@ -60,6 +60,12 @@ bdg:WA1KG9409 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -84,16 +90,17 @@ bdg:WA1KG9409 {
     bda:WA1KG9409  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG9409 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "b1/WA1KG9409.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG9409 ;
-        adm:logEntry        bda:LG4654FCD34C20BCFA , bda:LG6D1EA86D147BA3C2 , bda:LG75173B168305C383 , bda:LGAFF96A5F8637B1FC , bda:LGBFD3BF4424E04DBB , bda:LGBFDA32437EBE7494 , bda:LGCE7519E55445DFDD , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG4654FCD34C20BCFA , bda:LG6D1EA86D147BA3C2 , bda:LG75173B168305C383 , bda:LGAFF96A5F8637B1FC , bda:LGBFD3BF4424E04DBB , bda:LGBFDA32437EBE7494 , bda:LGCE7519E55445DFDD , bda:LGIM320307B99D , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG15898 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRE569B4716171420F
+    bdr:CR60EC2B9CD1ABA365
         a                   :AgentAsCreator ;
         :agent              bdr:P423 ;
         :role               bdr:R0ER0019 .
@@ -103,7 +110,7 @@ bdg:WA1KG9409 {
     bdr:WA1KG9409  a        :Work ;
         skos:prefLabel      "gsung 'bum/_'jam dbyangs bzhad pa'i rdo rje/"@bo-x-ewts , "the collected works of 'jam-dbyangs-bzhad-pa'i-rdo-rje"@en-x-mixed ;
         :catalogInfo        "Collected Works by Geluk master Jamyang Zhepai Dorje (1648-1721/1722), founder of Labrang Tashi Khyil Monastery. Contents of these fifteen volumes run the entire gamut of Buddhist scholasticism, from Prajnaparamita philosophy to the most esoteric teachings connected with Vajrabhairava."@en ;
-        :creator            bdr:CRE569B4716171420F ;
+        :creator            bdr:CR60EC2B9CD1ABA365 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

@@ -36,6 +36,12 @@ bdg:WA3CN3328 {
         adm:logMessage      "marked as released"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -46,15 +52,16 @@ bdg:WA3CN3328 {
     bda:WA3CN3328  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN3328 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "7d/WA3CN3328.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN3328 ;
-        adm:logEntry        bda:LG3216C935DF356765 , bda:LG4800A11E38CB0D05 , bda:LG657483B6D361C6C3 , bda:LG767FE5CFF447E8C7 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3216C935DF356765 , bda:LG4800A11E38CB0D05 , bda:LG657483B6D361C6C3 , bda:LG767FE5CFF447E8C7 , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR31133DFF7139BA99
+    bdr:CRB5FC9D636C3E78CB
         a                   :AgentAsCreator ;
         :agent              bdr:P4CN12038 ;
         :role               bdr:R0ER0019 .
@@ -63,7 +70,7 @@ bdg:WA3CN3328 {
         skos:altLabel       "rje 'jigs med rol ba'i rdo rje'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/ 'jigs med rol pa'i rdo rje/"@bo-x-ewts ;
         :catalogInfo        "Collected writings by Jigmey Rolpe Dorje."@en ;
-        :creator            bdr:CR31133DFF7139BA99 ;
+        :creator            bdr:CRB5FC9D636C3E78CB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

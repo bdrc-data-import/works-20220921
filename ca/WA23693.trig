@@ -18,7 +18,7 @@ bdg:WA23693 {
         adm:logMessage      "spelling; jann"@en ;
         adm:logWho          bdu:U00011 .
     
-    bda:LG41113EB254A42BAC
+    bda:LG4455F931B544134F
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -39,6 +39,12 @@ bdg:WA23693 {
         adm:logDate         "2013-03-06T09:54:45.236Z"^^xsd:dateTime ;
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -64,16 +70,17 @@ bdg:WA23693 {
     bda:WA23693  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23693 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "ca/WA23693.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23693 ;
-        adm:logEntry        bda:LG18E97728E8C96788 , bda:LG41113EB254A42BAC , bda:LG9888D01B5E667319 , bda:LGDDB16AB6F99DFDD4 , bda:LGF95ACC8D51CF887A , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG18E97728E8C96788 , bda:LG4455F931B544134F , bda:LG9888D01B5E667319 , bda:LGDDB16AB6F99DFDD4 , bda:LGF95ACC8D51CF887A , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG10279 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR4455F931B544134F
+    bdr:CR57D7C7183CB180F2
         a                   :AgentAsCreator ;
         :agent              bdr:P55 ;
         :role               bdr:R0ER0019 .
@@ -81,7 +88,7 @@ bdg:WA23693 {
     bdr:WA23693  a          :Work ;
         skos:prefLabel      "gsung 'bum/_mkhas grub rje/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Khedrub Je Gelek Pelzang (1385-1438), one of two main disciples of Je Tsongkapa. Printed from the Kumbum Jampaling blockprints."@en ;
-        :creator            bdr:CR4455F931B544134F ;
+        :creator            bdr:CR57D7C7183CB180F2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

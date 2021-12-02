@@ -50,6 +50,12 @@ bdg:WA8LS18706 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -67,25 +73,26 @@ bdg:WA8LS18706 {
     bda:WA8LS18706  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18706 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "45/WA8LS18706.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18706 ;
-        adm:logEntry        bda:LG29FB385AE0995489 , bda:LG5137DF497375750E , bda:LGD73FED9A2249DBED , bda:LGE932F8BB61B0CE22 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG29FB385AE0995489 , bda:LG5137DF497375750E , bda:LGD73FED9A2249DBED , bda:LGE932F8BB61B0CE22 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR12AC45EEE0E0BA38
+    bdr:CRBFF6A8642EA26895
         a                   :AgentAsCreator ;
         :agent              bdr:P6627 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CRBFF6A8642EA26895
+    bdr:CREE678F72C5292525
         a                   :AgentAsCreator ;
         :agent              bdr:P2JM306 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CREE678F72C5292525
+    bdr:CRFBDBB075B23FEA3D
         a                   :AgentAsCreator ;
         :agent              bdr:P8083 ;
         :role               bdr:R0ER0026 .
@@ -93,7 +100,7 @@ bdg:WA8LS18706 {
     bdr:WA8LS18706  a       :Work ;
         skos:prefLabel      "grong gseb kyi dmangs don skor gyi rtsod gzhi/"@bo-x-ewts ;
         :catalogInfo        "Laws related to the village dispute, translated by Nyingpo Gyal, Gonpo Gyal and Takla."@en ;
-        :creator            bdr:CR12AC45EEE0E0BA38 , bdr:CRBFF6A8642EA26895 , bdr:CREE678F72C5292525 ;
+        :creator            bdr:CRBFF6A8642EA26895 , bdr:CREE678F72C5292525 , bdr:CRFBDBB075B23FEA3D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS18706 , bdr:W8LS18706 ;

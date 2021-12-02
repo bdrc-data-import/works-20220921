@@ -30,7 +30,7 @@ bdg:WA14592 {
         adm:logMessage      "changed to restricted"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LG771F8ED0F872EB5D
+    bda:LG70991EE803A9E11E
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -64,6 +64,12 @@ bdg:WA14592 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -88,15 +94,16 @@ bdg:WA14592 {
     bda:WA14592  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA14592 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "db/WA14592.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA14592 ;
-        adm:logEntry        bda:LG083C40ECD2A5101F , bda:LG10ADED549AEA2C4C , bda:LG1C202D084A5F8B8F , bda:LG771F8ED0F872EB5D , bda:LG8F03E37BBD7E44FA , bda:LGB9A46F7BBFDB5C78 , bda:LGF280E55BAC20B0E9 , bda:LGF791B2EB89EC1104 , bda:LGIM3F9169BB6E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG083C40ECD2A5101F , bda:LG10ADED549AEA2C4C , bda:LG1C202D084A5F8B8F , bda:LG70991EE803A9E11E , bda:LG8F03E37BBD7E44FA , bda:LGB9A46F7BBFDB5C78 , bda:LGF280E55BAC20B0E9 , bda:LGF791B2EB89EC1104 , bda:LGIM3F9169BB6E , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR70991EE803A9E11E
+    bdr:CR8F422B937AE7425C
         a                   :AgentAsCreator ;
         :agent              bdr:P2596 ;
         :role               bdr:R0ER0019 .
@@ -104,7 +111,7 @@ bdg:WA14592 {
     bdr:WA14592  a          :Work ;
         skos:prefLabel      "gsung 'bum/_blo bzang ye shes bstan 'dzin rgya mtsho/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Geluk author Trijang 03 Lobzang Yeshe Tenzin Gyatso (1901-1981)."@en ;
-        :creator            bdr:CR70991EE803A9E11E ;
+        :creator            bdr:CR8F422B937AE7425C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

@@ -30,7 +30,7 @@ bdg:WA27212 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LG357B927E9516B354
+    bda:LG21174EB42B1D759D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -51,6 +51,12 @@ bdg:WA27212 {
         adm:logDate         "2007-09-17T11:31:24.175Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -76,20 +82,21 @@ bdg:WA27212 {
     bda:WA27212  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27212 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "bc/WA27212.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27212 ;
-        adm:logEntry        bda:LG0DA89C5B58C6FE81 , bda:LG1EED5EDBDA808B5F , bda:LG20ABCB6DE3888866 , bda:LG357B927E9516B354 , bda:LG8B56CCE27CF0B4E1 , bda:LGA76F5CD97ECB1424 , bda:LGF74E84FDDCDCCF65 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG0DA89C5B58C6FE81 , bda:LG1EED5EDBDA808B5F , bda:LG20ABCB6DE3888866 , bda:LG21174EB42B1D759D , bda:LG8B56CCE27CF0B4E1 , bda:LGA76F5CD97ECB1424 , bda:LGF74E84FDDCDCCF65 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR21174EB42B1D759D
+    bdr:CR4D812A62E2D7DC5A
         a                   :AgentAsCreator ;
         :agent              bdr:P2063 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV4D812A62E2D7DC5A
+    bdr:EV3F972D96BA51AFE9
         a                   :CompletedEvent ;
         :notAfter           "1798"^^xsd:gYear ;
         :notBefore          "1796"^^xsd:gYear .
@@ -98,10 +105,10 @@ bdg:WA27212 {
         skos:altLabel       "khri chen chos kyi rgyal po no min han sa ma ti pak+Shi rje btsun rdo rje 'chang ngag dbang tshul khrims dpal bzang po'i skyes rabs rnam thar dad pa'i sgo 'byed/"@bo-x-ewts ;
         skos:prefLabel      "ngag dbang tshul khrims dpal bzang po'i skyes rabs rnam thar dad pa'i sgo 'byed/"@bo-x-ewts ;
         :catalogInfo        "Biography of Tsemon Ling 01 Ngawang Tsultrim (1721-1791 ) whose seat was Tsemon Ling, the regency at Labrang Monastery, one of the four Ling in central Tibet. Written by Panglung 01 Lobzang Tukje."@en ;
-        :creator            bdr:CR21174EB42B1D759D ;
+        :creator            bdr:CR4D812A62E2D7DC5A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV4D812A62E2D7DC5A ;
+        :workEvent          bdr:EV3F972D96BA51AFE9 ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW27212 , bdr:W27212 ;
         :workIsAbout        bdr:P332 , bdr:T819 .

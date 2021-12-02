@@ -50,6 +50,12 @@ bdg:WA00EGS1017157 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -75,29 +81,30 @@ bdg:WA00EGS1017157 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00EGS1017157 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "04/WA00EGS1017157.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00EGS1017157 ;
-        adm:logEntry        bda:LG2264DDD75D27B031 , bda:LG697E344D6150E20C , bda:LG7B3B039D336500CD , bda:LGEA4B0DF325843C55 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2264DDD75D27B031 , bda:LG697E344D6150E20C , bda:LG7B3B039D336500CD , bda:LGEA4B0DF325843C55 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB329A2BE2B9D668E
-        a                   :AgentAsCreator ;
-        :agent              bdr:P00EGS1017158 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CREDDEDE7748F90EAD
+    bdr:CR87C9008296132739
         a                   :AgentAsCreator ;
         :agent              bdr:P00EGS1017159 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CREDDEDE7748F90EAD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1017158 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA00EGS1017157
         a                   :Work ;
         skos:prefLabel      "gnas chen kha ba dkar po'i bsang mchod dang gnas yig"@bo-x-ewts ;
         :catalogInfo        "Modern pilgrimage guidebook with relevant rituals to perform at Mount Kawa Karpo in Yunnan, southeastern Tibet. Written by Rinchen Dorje (20th cent.)."@en ;
-        :creator            bdr:CRB329A2BE2B9D668E , bdr:CREDDEDE7748F90EAD ;
+        :creator            bdr:CR87C9008296132739 , bdr:CREDDEDE7748F90EAD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T25 ;

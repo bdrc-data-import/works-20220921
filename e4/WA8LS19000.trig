@@ -43,6 +43,12 @@ bdg:WA8LS19000 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -60,15 +66,16 @@ bdg:WA8LS19000 {
     bda:WA8LS19000  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19000 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "e4/WA8LS19000.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19000 ;
-        adm:logEntry        bda:LG429B002C80E02178 , bda:LG47894F12BF7E7B03 , bda:LG91D75B48C987EEEA , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG429B002C80E02178 , bda:LG47894F12BF7E7B03 , bda:LG91D75B48C987EEEA , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR02A6BA171FA3E4A3
+    bdr:CR3EF89C0D23D8B56F
         a                   :AgentAsCreator ;
         :agent              bdr:P9519 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +84,7 @@ bdg:WA8LS19000 {
         skos:altLabel       "snyigs dus kyi thams cad mkhyen pa chen po shar 'dzam thang pa ngag dbang blo gros grags pa'i rnam par thar pa dad pa'i pad+mo bzhad pa'i legs bshad nyi ma'i 'od zer/"@bo-x-ewts ;
         skos:prefLabel      "shar 'dzam thang pa ngag dbang blo gros grags pa'i rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography of Dzamthangpa Ngawang Lodro Dakpa by Khenpo Kunga Sherab."@en ;
-        :creator            bdr:CR02A6BA171FA3E4A3 ;
+        :creator            bdr:CR3EF89C0D23D8B56F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

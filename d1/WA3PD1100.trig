@@ -53,6 +53,12 @@ bdg:WA3PD1100 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8F5AC89D  a     adm:UpdateData ;
         adm:logAgent        "add-works-to-PR1CTC16" ;
         adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
@@ -62,16 +68,17 @@ bdg:WA3PD1100 {
     bda:WA3PD1100  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3PD1100 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "d1/WA3PD1100.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3PD1100 ;
-        adm:logEntry        bda:LG1F4DBBEFA81D96C1 , bda:LG4EEDA32866E478F9 , bda:LG6D6A0A965B0C4FB3 , bda:LG6D6D541F18828ED7 , bda:LG6FB1037C53F047B1 , bda:LG70439C95A73F9B45 , bda:LGF157534C0141C667 , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG1F4DBBEFA81D96C1 , bda:LG4EEDA32866E478F9 , bda:LG6D6A0A965B0C4FB3 , bda:LG6D6D541F18828ED7 , bda:LG6FB1037C53F047B1 , bda:LG70439C95A73F9B45 , bda:LGF157534C0141C667 , bda:LGIM4394141E , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA3CN7614 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRCCB0C2AD10BBCFC1
+    bdr:CR0EAE680C5D8C81E5
         a                   :AgentAsCreator ;
         :agent              bdr:P425 ;
         :role               bdr:R0ER0019 .
@@ -80,7 +87,7 @@ bdg:WA3PD1100 {
         skos:altLabel       "gter chen rig 'dzin nyi ma grags pa'i gter chos/"@bo-x-ewts , "nyi grags gter chos/"@bo-x-ewts ;
         skos:prefLabel      "gter chos/_rig 'dzin nyi ma grags pa/"@bo-x-ewts ;
         :catalogInfo        "Complete revelations of Terchen Rigdzin Nyima gragpa (1647-1710)."@en ;
-        :creator            bdr:CRCCB0C2AD10BBCFC1 ;
+        :creator            bdr:CR0EAE680C5D8C81E5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

@@ -38,7 +38,7 @@ bdg:WA27214 {
         adm:logDate         "2007-05-08T16:27:50.357Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
     
-    bda:LG8A0087B157D8AB4A
+    bda:LG924F6CD2D3857292
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -54,33 +54,40 @@ bdg:WA27214 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA27214  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27214 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "c6/WA27214.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27214 ;
-        adm:logEntry        bda:LG207C0A859D74A7EA , bda:LG47828489AD3C1C27 , bda:LG5EC17ACF10F06A1D , bda:LG68BAD0FF8D5FA96B , bda:LG78DFD614625E3EC3 , bda:LG8A0087B157D8AB4A , bda:LGAE62C432733DC166 , bda:LGC195D40E32DD5A86 ;
+        adm:logEntry        bda:LG207C0A859D74A7EA , bda:LG47828489AD3C1C27 , bda:LG5EC17ACF10F06A1D , bda:LG68BAD0FF8D5FA96B , bda:LG78DFD614625E3EC3 , bda:LG924F6CD2D3857292 , bda:LGAE62C432733DC166 , bda:LGC195D40E32DD5A86 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA17276 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR924F6CD2D3857292
+    bdr:CR9999204F213BE090
         a                   :AgentAsCreator ;
         :agent              bdr:P4902 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV9999204F213BE090
+    bdr:EV708CC7FC8F7FAAC1
         a                   :CompletedEvent ;
         :onYear             "1609"^^xsd:gYear .
     
     bdr:WA27214  a          :Work ;
         skos:prefLabel      "chos 'byung ngo mtshar rgya mtsho/"@bo-x-ewts ;
-        :creator            bdr:CR924F6CD2D3857292 ;
+        :creator            bdr:CR9999204F213BE090 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV9999204F213BE090 ;
+        :workEvent          bdr:EV708CC7FC8F7FAAC1 ;
         :workGenre          bdr:T12 ;
         :workIsAbout        bdr:T869 .
 }

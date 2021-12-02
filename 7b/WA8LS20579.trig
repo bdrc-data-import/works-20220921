@@ -37,6 +37,12 @@ bdg:WA8LS20579 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -54,20 +60,21 @@ bdg:WA8LS20579 {
     bda:WA8LS20579  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20579 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "7b/WA8LS20579.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20579 ;
-        adm:logEntry        bda:LG80D0B5137EFB2D9A , bda:LGCFD6A2FFCC11CFF9 , bda:LGE8E0A99546C318D2 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG80D0B5137EFB2D9A , bda:LGCFD6A2FFCC11CFF9 , bda:LGE8E0A99546C318D2 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8C27EA34B1583B3E
+    bdr:CR05E274E7FEC32B81
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS75302 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CRD9D5C0C3B99D59D4
+    bdr:CR8C27EA34B1583B3E
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS75301 ;
         :role               bdr:R0ER0026 .
@@ -75,7 +82,7 @@ bdg:WA8LS20579 {
     bdr:WA8LS20579  a       :Work ;
         skos:prefLabel      "rin pi hri'i gtam rgyud/"@bo-x-ewts ;
         :catalogInfo        "A story of Rinpi Hri during cultural revolution; translated by Chophel and Pedma Gyal."@en ;
-        :creator            bdr:CR8C27EA34B1583B3E , bdr:CRD9D5C0C3B99D59D4 ;
+        :creator            bdr:CR05E274E7FEC32B81 , bdr:CR8C27EA34B1583B3E ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T1157 , bdr:T276 ;

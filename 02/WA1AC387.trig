@@ -33,6 +33,12 @@ bdg:WA1AC387 {
         adm:logDate         "2014-11-18T09:14:30.517Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00029 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -43,15 +49,16 @@ bdg:WA1AC387 {
     bda:WA1AC387  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC387 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "02/WA1AC387.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC387 ;
-        adm:logEntry        bda:LG4F03821AE6DA9D2B , bda:LG4F1AEFFAC504413A , bda:LGAE9BD652EBD1AC28 , bda:LGB585D47346526B9E , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG4F03821AE6DA9D2B , bda:LG4F1AEFFAC504413A , bda:LGAE9BD652EBD1AC28 , bda:LGB585D47346526B9E , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9BF9019D734F13D4
+    bdr:CR2B4E95E98F7BFF1E
         a                   :AgentAsCreator ;
         :agent              bdr:P1TLMTGA003046 ;
         :role               bdr:R0ER0019 .
@@ -61,7 +68,7 @@ bdg:WA1AC387 {
     bdr:WA1AC387  a         :Work ;
         skos:altLabel       "ga ma qiang mei xuan ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "ri chos mtshams kyi zhal gdams/"@bo-x-ewts , "噶玛强美选集"@zh-hans ;
-        :creator            bdr:CR9BF9019D734F13D4 ;
+        :creator            bdr:CR2B4E95E98F7BFF1E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1AC387 , bdr:W1AC387 ;

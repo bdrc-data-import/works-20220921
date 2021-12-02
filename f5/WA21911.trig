@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21911 {
-    bda:LG2E1441B05969B18D
+    bda:LG3D8F45BBD97854E1
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -36,6 +36,12 @@ bdg:WA21911 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
@@ -46,15 +52,16 @@ bdg:WA21911 {
     bda:WA21911  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21911 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "f5/WA21911.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21911 ;
-        adm:logEntry        bda:LG2E1441B05969B18D , bda:LG5E1A0967878AD9C4 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG3D8F45BBD97854E1 , bda:LG5E1A0967878AD9C4 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3D8F45BBD97854E1
+    bdr:CR989BCEA1705E78FE
         a                   :AgentAsCreator ;
         :agent              bdr:P7399 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +71,7 @@ bdg:WA21911 {
     bdr:WA21911  a          :Work ;
         skos:altLabel       "snyigs dus kyi thams cad mkhyen pa yongs 'dzin chos kyi rgyal po bka' drin mnyam med rje btsun dge 'dun bstan 'dzin rgya mtsho dpal bzang po'i rnam par thar ba mdo tsam sgro skur spangs te brjod pa dzambu chu bo'i gser gyi phreng ba dad ldan mgrin pa'i md/"@bo-x-ewts , "hsia ma erh chuan"@zh-latn-wadegile ;
         skos:prefLabel      "rje zhwa dmar dge 'dun bstan 'dzin rgya mtsho'i rnam thar/"@bo-x-ewts , "hsia ma erh ken tun tan tseng chia t'so chuan"@zh-latn-wadegile ;
-        :creator            bdr:CR3D8F45BBD97854E1 ;
+        :creator            bdr:CR989BCEA1705E78FE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

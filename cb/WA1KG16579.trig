@@ -47,6 +47,12 @@ bdg:WA1KG16579 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -64,15 +70,16 @@ bdg:WA1KG16579 {
     bda:WA1KG16579  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG16579 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "cb/WA1KG16579.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG16579 ;
-        adm:logEntry        bda:LG124A4F3C858E58F6 , bda:LG56F3E60603BA8479 , bda:LG5EA53F1E349BC0E3 , bda:LG6B22805A94AE0063 , bda:LGE47D8C01517CEBF6 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG124A4F3C858E58F6 , bda:LG56F3E60603BA8479 , bda:LG5EA53F1E349BC0E3 , bda:LG6B22805A94AE0063 , bda:LGE47D8C01517CEBF6 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFBE9166C07CC9B74
+    bdr:CR9D78D31953C9555D
         a                   :AgentAsCreator ;
         :agent              bdr:P00EGS1016953 ;
         :role               bdr:R0ER0019 .
@@ -83,7 +90,7 @@ bdg:WA1KG16579 {
         skos:altLabel       "zang zu wen hua fa zhan gai lun"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gna' bo'i rgya gar shes rig dang bod brgyud grub mtha'i mtha' dpyod/"@bo-x-ewts , "藏族文化发展概论"@zh-hans ;
         :catalogInfo        "Detailed treatment on descendants philosophical system in Tibet and former Indian culture"@en ;
-        :creator            bdr:CRFBE9166C07CC9B74 ;
+        :creator            bdr:CR9D78D31953C9555D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T385 ;

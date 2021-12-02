@@ -30,6 +30,12 @@ bdg:WA1KG13764 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8F5AC89D  a     adm:UpdateData ;
         adm:logAgent        "add-works-to-PR1CTC16" ;
         adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
@@ -39,12 +45,13 @@ bdg:WA1KG13764 {
     bda:WA1KG13764  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG13764 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "d3/WA1KG13764.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG13764 ;
-        adm:logEntry        bda:LGCD5D2B14A038E837 , bda:LGCED579B6CBCFC4FA , bda:LGFB8A3221423DDA15 , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LGCD5D2B14A038E837 , bda:LGCED579B6CBCFC4FA , bda:LGFB8A3221423DDA15 , bda:LGIM4394141E , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW1KG13764  skos:altLabel  "nangma toeshay : tibetan classical music notation"@en .

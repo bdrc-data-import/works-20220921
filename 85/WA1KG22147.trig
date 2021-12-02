@@ -43,6 +43,12 @@ bdg:WA1KG22147 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
@@ -53,20 +59,21 @@ bdg:WA1KG22147 {
     bda:WA1KG22147  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG22147 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "85/WA1KG22147.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG22147 ;
-        adm:logEntry        bda:LG18F0927F18B491CA , bda:LG5EDFA4AFA51DD169 , bda:LGA86FC85DF42DEB05 , bda:LGD87977FD90B8A415 , bda:LGIM206EC9B06D , bda:LGIM4D99209C62 ;
+        adm:logEntry        bda:LG18F0927F18B491CA , bda:LG5EDFA4AFA51DD169 , bda:LGA86FC85DF42DEB05 , bda:LGD87977FD90B8A415 , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM4D99209C62 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR188D4ED3D2BEC502
+    bdr:CR709242A8BD61716E
         a                   :AgentAsCreator ;
         :agent              bdr:P1243 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR709242A8BD61716E
+    bdr:CRE4F375BEDB44F306
         a                   :AgentAsCreator ;
         :agent              bdr:P3312 ;
         :role               bdr:R0ER0019 .
@@ -75,7 +82,7 @@ bdg:WA1KG22147 {
         skos:altLabel       "dam chos sdug bsngal zhi byed rtsa ba'i chos sde dang / yan lag bdun kyi gcod yul/"@bo-x-ewts ;
         skos:prefLabel      "zhi byed snga phyi bar gsum gyi chos skor phyogs bsgrigs/"@bo-x-ewts ;
         :catalogInfo        "Collected works of Padampa Sangye (11 cent.), a famous Indian yogi on the Pacification of Suffering; includes Chod practices of Machig Labdron, 1055-1153."@en ;
-        :creator            bdr:CR188D4ED3D2BEC502 , bdr:CR709242A8BD61716E ;
+        :creator            bdr:CR709242A8BD61716E , bdr:CRE4F375BEDB44F306 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn , bdr:LangSa ;
         :workGenre          bdr:T1081 ;

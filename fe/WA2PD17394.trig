@@ -35,6 +35,12 @@ bdg:WA2PD17394 {
         adm:logMessage      "gsar du bcug"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -51,22 +57,23 @@ bdg:WA2PD17394 {
     bda:WA2PD17394  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17394 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "fe/WA2PD17394.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17394 ;
-        adm:logEntry        bda:LG4B9DB7C7620B9689 , bda:LG5CBCE5F2327CD82C , bda:LGA71DC9080AD84E1C , bda:LGED7611C073761769 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG4B9DB7C7620B9689 , bda:LG5CBCE5F2327CD82C , bda:LGA71DC9080AD84E1C , bda:LGED7611C073761769 , bda:LGIM4394141E , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR25864BC6BC8CA063
         a                   :AgentAsCreator ;
-        :agent              bdr:P168 ;
+        :agent              bdr:P719 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR81EB2F3AB456C861
+    bdr:CR47BDFE2B57853FE8
         a                   :AgentAsCreator ;
-        :agent              bdr:P719 ;
+        :agent              bdr:P168 ;
         :role               bdr:R0ER0019 .
     
     bdr:MW2PD17394  skos:altLabel  "第一世至第四世班禅大师传"@zh-hans .
@@ -74,7 +81,7 @@ bdg:WA2PD17394 {
     bdr:WA2PD17394  a       :Work ;
         skos:altLabel       "di yi shi zhi di si shi ban chan da shi zhuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "paN chen sku phreng dang po nas sku phreng bzhi pa'i bar gyi rnam thar/"@bo-x-ewts , "第一世至第四世班禅大师传"@zh-hans ;
-        :creator            bdr:CR25864BC6BC8CA063 , bdr:CR81EB2F3AB456C861 ;
+        :creator            bdr:CR25864BC6BC8CA063 , bdr:CR47BDFE2B57853FE8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

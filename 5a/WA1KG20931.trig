@@ -30,18 +30,25 @@ bdg:WA1KG20931 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG20931  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG20931 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "5a/WA1KG20931.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG20931 ;
-        adm:logEntry        bda:LG60C605C5BA50F5F1 , bda:LG82F0ABE8A078D81D , bda:LGDBA949AFE305EF23 ;
+        adm:logEntry        bda:LG60C605C5BA50F5F1 , bda:LG82F0ABE8A078D81D , bda:LGDBA949AFE305EF23 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR615EF2B0198BCD19
+    bdr:CRA31463C243227977
         a                   :AgentAsCreator ;
         :agent              bdr:P6147 ;
         :role               bdr:R0ER0019 .
@@ -51,7 +58,7 @@ bdg:WA1KG20931 {
     bdr:WA1KG20931  a       :Work ;
         skos:prefLabel      "byams zhus le'u'i 'phros don dang bcas pa'i dpyad zhib/"@bo-x-ewts , "A thesis on Prajnaparamita philosophy based upon the Bodhisattvasiksaprabheda"@en ;
         :catalogInfo        "A thesis on Prajnaparamita philosophy based upon the Bodhisattvasiksaprabheda (Maitreyapariprccha, the 83rd chapter of the Astadasasahasrika)"@en ;
-        :creator            bdr:CR615EF2B0198BCD19 ;
+        :creator            bdr:CRA31463C243227977 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG20931 , bdr:W1KG20931 ;

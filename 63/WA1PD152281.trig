@@ -58,6 +58,12 @@ bdg:WA1PD152281 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -68,25 +74,26 @@ bdg:WA1PD152281 {
     bda:WA1PD152281  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD152281 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "63/WA1PD152281.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD152281 ;
-        adm:logEntry        bda:LG3E49EFEEACFE9B87 , bda:LG77DF79D27CAB58C5 , bda:LG86565533BB9EECF8 , bda:LGA3FC74E8600CE1AB , bda:LGA89CDC02091B7B87 , bda:LGB9099ABAA93FE81E , bda:LGF351EFC83EA43383 , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3E49EFEEACFE9B87 , bda:LG77DF79D27CAB58C5 , bda:LG86565533BB9EECF8 , bda:LGA3FC74E8600CE1AB , bda:LGA89CDC02091B7B87 , bda:LGB9099ABAA93FE81E , bda:LGF351EFC83EA43383 , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR837AF302C339D00B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4271 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR998DE3C04F046F91
         a                   :AgentAsCreator ;
         :agent              bdr:P37 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRA0EE79F1D7C556E1
-        a                   :AgentAsCreator ;
-        :agent              bdr:P4271 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRE2BE409CCF2E19C6
         a                   :AgentAsCreator ;
         :agent              bdr:P481 ;
         :role               bdr:R0ER0019 .
@@ -97,7 +104,7 @@ bdg:WA1PD152281 {
         skos:altLabel       "rgyal dbang sku phreng rim byon gyi mdzad rnam/_sku phreng dang po nas bzhi ba'i bar gyi rnam thar/"@bo-x-ewts , "li bei da lai la ma zhuan-di yi shi zhi si shi da lai la ma zhuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "rgyal dbang sku phreng dang po nas bzhi pa'i bar gyi rnam thar/"@bo-x-ewts , "历辈达赖喇嘛传— 第一世至四世达赖喇嘛传"@zh-hans ;
         :catalogInfo        "Collected biographies of the H. H. the Dalai Lamas (1st to 4th)."@en ;
-        :creator            bdr:CR837AF302C339D00B , bdr:CRA0EE79F1D7C556E1 , bdr:CRE2BE409CCF2E19C6 ;
+        :creator            bdr:CR837AF302C339D00B , bdr:CR998DE3C04F046F91 , bdr:CRA0EE79F1D7C556E1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

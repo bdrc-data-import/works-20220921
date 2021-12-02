@@ -54,6 +54,12 @@ bdg:WA1AC241 {
         adm:logMessage      "Added Author,  aditor, Cat info and speling"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
@@ -71,15 +77,16 @@ bdg:WA1AC241 {
     bda:WA1AC241  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC241 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "6c/WA1AC241.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC241 ;
-        adm:logEntry        bda:LG189ED577F4AA9AE5 , bda:LG55A298C04B2A5A58 , bda:LG609643D9B13FBF8C , bda:LG72973B470684B2F7 , bda:LGAE7ACBAFD8259844 , bda:LGDAA42355F44D4D80 , bda:LGF45C1FAAEA9A0C2A , bda:LGF96FB47DDA628D86 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG189ED577F4AA9AE5 , bda:LG55A298C04B2A5A58 , bda:LG609643D9B13FBF8C , bda:LG72973B470684B2F7 , bda:LGAE7ACBAFD8259844 , bda:LGDAA42355F44D4D80 , bda:LGF45C1FAAEA9A0C2A , bda:LGF96FB47DDA628D86 , bda:LGIM4394141E , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA382E7124CA9689E
+    bdr:CRF5EF772D47C31674
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ75604 ;
         :role               bdr:R0ER0019 .
@@ -90,7 +97,7 @@ bdg:WA1AC241 {
         skos:altLabel       "tan suo yu kao jiu"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "'tshol zhib dang mtha' dpyod/"@bo-x-ewts , "Contemporary Tibetan Stubies Selected Papers"@en , "探索与考究"@zh-hans ;
         :catalogInfo        "Contemporary Tibetan Stubies Selected Papers"@en ;
-        :creator            bdr:CRA382E7124CA9689E ;
+        :creator            bdr:CRF5EF772D47C31674 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;

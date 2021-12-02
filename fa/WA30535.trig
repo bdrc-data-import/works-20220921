@@ -18,7 +18,7 @@ bdg:WA30535 {
         adm:logMessage      "corrected spelling"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG2791825E74BFD1E6
+    bda:LG18C2EC07F1E291FF
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -51,6 +51,12 @@ bdg:WA30535 {
         adm:logDate         "2008-03-25T14:37:34.338Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -75,16 +81,17 @@ bdg:WA30535 {
     bda:WA30535  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30535 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "fa/WA30535.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30535 ;
-        adm:logEntry        bda:LG0FDDE89EF2368AF8 , bda:LG2791825E74BFD1E6 , bda:LG337D21BE43F67998 , bda:LG41AEC7AD436FD0BE , bda:LG47004A890E99BF90 , bda:LG50807E89CEC72A99 , bda:LGA10EE4D64005788B , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG0FDDE89EF2368AF8 , bda:LG18C2EC07F1E291FF , bda:LG337D21BE43F67998 , bda:LG41AEC7AD436FD0BE , bda:LG47004A890E99BF90 , bda:LG50807E89CEC72A99 , bda:LGA10EE4D64005788B , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA21715 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR18C2EC07F1E291FF
+    bdr:CR8083934F0DD8155B
         a                   :AgentAsCreator ;
         :agent              bdr:P1702 ;
         :role               bdr:R0ER0019 .
@@ -95,7 +102,7 @@ bdg:WA30535 {
         skos:altLabel       "rnal 'byor gyi dbang phyug badz+ra kirti'i rnam par thar pa rin po che mi zad pa rgyan gyi 'phren ba las no mtshar nor bu'i snying po/"@bo-x-ewts ;
         skos:prefLabel      "ras chung rdo rje grags pa'i rnam thar/"@bo-x-ewts , "the biography with interspersed songs (mgur) ras chun rdo rje grags"@en ;
         :catalogInfo        "Biography of Kagyu master Rechung Dorje Drak."@en ;
-        :creator            bdr:CR18C2EC07F1E291FF ;
+        :creator            bdr:CR8083934F0DD8155B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 , bdr:T6 ;

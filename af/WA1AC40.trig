@@ -57,6 +57,12 @@ bdg:WA1AC40 {
         adm:logMessage      "changed CW to W4CZ15240"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -73,22 +79,23 @@ bdg:WA1AC40 {
     bda:WA1AC40  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC40 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "af/WA1AC40.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC40 ;
-        adm:logEntry        bda:LG0ACB21EEED19EA48 , bda:LG3F0DC583F752411B , bda:LG5F7C2CD6697C6C8F , bda:LG651FD4E7F9C364BD , bda:LG6ADEFEF93699EAB2 , bda:LG93C9E5D87B2D2B98 , bda:LG95DE827D9D71FFD7 , bda:LGC3926A18566E68F6 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG0ACB21EEED19EA48 , bda:LG3F0DC583F752411B , bda:LG5F7C2CD6697C6C8F , bda:LG651FD4E7F9C364BD , bda:LG6ADEFEF93699EAB2 , bda:LG93C9E5D87B2D2B98 , bda:LG95DE827D9D71FFD7 , bda:LGC3926A18566E68F6 , bda:LGIM4394141E , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3EF51F556A81932B
+    bdr:CR826B9D27E84C526A
         a                   :AgentAsCreator ;
         :agent              bdr:P6216 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1AC40  a          :Work ;
         skos:prefLabel      "rgyud thams cad kyi rgyal po dpal gsang ba 'dus pa'i rtsa ba'i rgyud kyi sgron ma rab tu gsal bar byed pa'i rgya cher bshad pas 'chad pa/"@bo-x-ewts ;
-        :creator            bdr:CR3EF51F556A81932B ;
+        :creator            bdr:CR826B9D27E84C526A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1029 , bdr:T132 ;

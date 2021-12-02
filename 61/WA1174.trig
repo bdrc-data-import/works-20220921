@@ -17,7 +17,7 @@ bdg:WA1174 {
         adm:logDate         "2010-10-12T13:44:09.605Z"^^xsd:dateTime ;
         adm:logMessage      "added to WMDL and WMDL06"@en .
     
-    bda:LG8514C2712EAA4DCA
+    bda:LG9046D5025C2D8D42
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -25,6 +25,12 @@ bdg:WA1174 {
         a                   adm:UpdateData ;
         adm:logDate         "2006-10-16T10:04:48.562Z"^^xsd:dateTime ;
         adm:logMessage      "changed volume map"@en .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -57,15 +63,16 @@ bdg:WA1174 {
     bda:WA1174  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1174 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "61/WA1174.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1174 ;
-        adm:logEntry        bda:LG1B27ECCC8B33D064 , bda:LG8514C2712EAA4DCA , bda:LGEE6806B6948F55E3 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
+        adm:logEntry        bda:LG1B27ECCC8B33D064 , bda:LG9046D5025C2D8D42 , bda:LGEE6806B6948F55E3 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9046D5025C2D8D42
+    bdr:CR3CC69CFCC643E694
         a                   :AgentAsCreator ;
         :agent              bdr:P106 ;
         :role               bdr:R0ER0019 .
@@ -75,7 +82,7 @@ bdg:WA1174 {
     bdr:WA1174  a           :Work ;
         skos:prefLabel      "gsung 'bum/_blo bzang ye shes/"@bo-x-ewts , "Paṇ chen thams cad mkhyen pa Blo bzaṅ ye śe dpal bzaṅ poʾi gsuṅ ʾbum bzhugs."@en-x-mixed ;
         :catalogInfo        "Collected Works by Panchen Lama 02 Lobzang Yeshe (1662-1737)."@en ;
-        :creator            bdr:CR9046D5025C2D8D42 ;
+        :creator            bdr:CR3CC69CFCC643E694 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

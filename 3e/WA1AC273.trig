@@ -44,6 +44,12 @@ bdg:WA1AC273 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -61,12 +67,13 @@ bdg:WA1AC273 {
     bda:WA1AC273  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC273 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "3e/WA1AC273.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC273 ;
-        adm:logEntry        bda:LG509ECCFFDBB51BF2 , bda:LG6C8F88EF4D131EEE , bda:LG7211F428EBF2745B , bda:LG9A766F2F20722E7C , bda:LGA45B8DBC93EC7621 , bda:LGF5AC2B388CAE0B50 , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG509ECCFFDBB51BF2 , bda:LG6C8F88EF4D131EEE , bda:LG7211F428EBF2745B , bda:LG9A766F2F20722E7C , bda:LGA45B8DBC93EC7621 , bda:LGF5AC2B388CAE0B50 , bda:LGIM4394141E , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW1AC273  skos:altLabel  "白云悠悠"@zh-hans .

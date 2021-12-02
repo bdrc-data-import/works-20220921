@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA25586 {
+    bda:LG123493F651BF1022
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG2718E481CC5EE3C3
         a                   adm:UpdateData ;
         adm:logDate         "2008-03-05T17:16:37.497Z"^^xsd:dateTime ;
@@ -23,10 +27,6 @@ bdg:WA25586 {
         adm:logDate         "2013-04-15T09:56:00.23Z"^^xsd:dateTime ;
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
-    
-    bda:LG317ED45577B24E46
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LG685ECE6667F2E563
         a                   adm:UpdateData ;
@@ -62,6 +62,12 @@ bdg:WA25586 {
         adm:logMessage      "annotate"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -86,15 +92,16 @@ bdg:WA25586 {
     bda:WA25586  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25586 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "e6/WA25586.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25586 ;
-        adm:logEntry        bda:LG2718E481CC5EE3C3 , bda:LG2FA701B898620A8A , bda:LG317ED45577B24E46 , bda:LG685ECE6667F2E563 , bda:LG70CF9DBADAB8C044 , bda:LG8675FC2A0393B302 , bda:LGD9CBF5138F7A087F , bda:LGE58C50FCF246D7EB , bda:LGFE6527D8134E897B , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG123493F651BF1022 , bda:LG2718E481CC5EE3C3 , bda:LG2FA701B898620A8A , bda:LG685ECE6667F2E563 , bda:LG70CF9DBADAB8C044 , bda:LG8675FC2A0393B302 , bda:LGD9CBF5138F7A087F , bda:LGE58C50FCF246D7EB , bda:LGFE6527D8134E897B , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR123493F651BF1022
+    bdr:CRA9BBB2112DB32133
         a                   :AgentAsCreator ;
         :agent              bdr:P2387 ;
         :role               bdr:R0ER0019 .
@@ -103,7 +110,7 @@ bdg:WA25586 {
         skos:altLabel       "paN+Di ta chen po shAkya mchog ldan gyi rnam par thar pa zhib mo rnam par 'byed pa/"@bo-x-ewts ;
         skos:prefLabel      "shAkya mchog ldan gyi rnam thar zhib mo rnam 'byed/"@bo-x-ewts ;
         :catalogInfo        "Biography of Sakya master Shakya Chokden."@en ;
-        :creator            bdr:CR123493F651BF1022 ;
+        :creator            bdr:CRA9BBB2112DB32133 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

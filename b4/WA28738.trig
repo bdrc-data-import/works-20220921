@@ -30,9 +30,15 @@ bdg:WA28738 {
         adm:logMessage      "checkin"@en ;
         adm:logWho          bdu:U00001 .
     
-    bda:LGF364BD481A681910
+    bda:LGE73B84C8B970378B
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM569A8014B1
         a                   adm:UpdateData ;
@@ -58,15 +64,16 @@ bdg:WA28738 {
     bda:WA28738  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28738 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "b4/WA28738.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28738 ;
-        adm:logEntry        bda:LG0A5629BDF8644121 , bda:LG38132416E4036DBD , bda:LG7B6B75853280ED3C , bda:LGF364BD481A681910 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0A5629BDF8644121 , bda:LG38132416E4036DBD , bda:LG7B6B75853280ED3C , bda:LGE73B84C8B970378B , bda:LGIM4394141E , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE73B84C8B970378B
+    bdr:CRFDF4EAEC5D9A7191
         a                   :AgentAsCreator ;
         :agent              bdr:P9210 ;
         :role               bdr:R0ER0019 .
@@ -74,7 +81,7 @@ bdg:WA28738 {
     bdr:WA28738  a          :Work ;
         skos:prefLabel      "ngor e waM chos ldan gyi lo rgyus ngo mtshar nor bu'i phreng ba/"@bo-x-ewts ;
         :catalogInfo        "Survey of Ngor Ewam Chode Monastery and the succession of its abbatial throne."@en ;
-        :creator            bdr:CRE73B84C8B970378B ;
+        :creator            bdr:CRFDF4EAEC5D9A7191 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGA000583 , bdr:MW28738 , bdr:W28738 ;

@@ -24,6 +24,12 @@ bdg:WA1KG21020 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM569A8014B1
         a                   adm:UpdateData ;
         adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
@@ -34,15 +40,16 @@ bdg:WA1KG21020 {
     bda:WA1KG21020  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG21020 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a9/WA1KG21020.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG21020 ;
-        adm:logEntry        bda:LG1671B28E37EA9BC0 , bda:LG3240D590B3E4E1A4 , bda:LGIM569A8014B1 ;
+        adm:logEntry        bda:LG1671B28E37EA9BC0 , bda:LG3240D590B3E4E1A4 , bda:LGIM4394141E , bda:LGIM569A8014B1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR04465EF2E7C5212C
+    bdr:CRE0DA4F0CDD384C38
         a                   :AgentAsCreator ;
         :agent              bdr:P421 ;
         :role               bdr:R0ER0019 .
@@ -51,7 +58,7 @@ bdg:WA1KG21020 {
         skos:altLabel       "gso ba rig pa'i bstan bcos sman bla'i dgongs rgyan rgyud bzhi'i gsal byed baiDUr+ya sngon po'i phreng ba las dum bu gsum pa man ngag yon tan rgyud kyi rnam bshad/"@bo-x-ewts ;
         skos:prefLabel      "man ngag rgyud kyi 'grel pa/"@bo-x-ewts ;
         :catalogInfo        "Commentary on the man ngag rgyud, one of the four fundamental treatises of Tibetan ayurvedic medicine Written by Desi Sanggye Gyatso (1653-1705)."@en ;
-        :creator            bdr:CR04465EF2E7C5212C ;
+        :creator            bdr:CRE0DA4F0CDD384C38 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;

@@ -56,6 +56,12 @@ bdg:WA1GS44054 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -87,15 +93,16 @@ bdg:WA1GS44054 {
     bda:WA1GS44054  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1GS44054 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "22/WA1GS44054.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1GS44054 ;
-        adm:logEntry        bda:LG1C66295423CCE01C , bda:LG3121D4EB4079C021 , bda:LG876B2189D3ED1E04 , bda:LG99679D42BD7DA253 , bda:LGDEF603EA7C2979B5 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1C66295423CCE01C , bda:LG3121D4EB4079C021 , bda:LG876B2189D3ED1E04 , bda:LG99679D42BD7DA253 , bda:LGDEF603EA7C2979B5 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7176BF5D464D93CE
+    bdr:CRDBE39035D7A90AAF
         a                   :AgentAsCreator ;
         :agent              bdr:P1GS44053 ;
         :role               bdr:R0ER0019 .
@@ -103,7 +110,7 @@ bdg:WA1GS44054 {
     bdr:WA1GS44054  a       :Work ;
         skos:prefLabel      "gser thal gyi lo rgyus dang srol rgyun/"@bo-x-ewts ;
         :catalogInfo        "Gazetteer containing the history and clan structure of Serta Dzong, Kandze Prefecture."@en ;
-        :creator            bdr:CR7176BF5D464D93CE ;
+        :creator            bdr:CRDBE39035D7A90AAF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

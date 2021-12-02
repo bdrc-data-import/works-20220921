@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27300 {
-    bda:LG216CFD258DBDD0E2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG5DE88BC4CABCEF42
         a                   adm:UpdateData ;
         adm:logDate         "2012-07-17T11:30:20.33Z"^^xsd:dateTime ;
@@ -28,11 +24,21 @@ bdg:WA27300 {
         adm:logMessage      "added part of Wisdom Masters Digital Library"@en ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGF16E3DC6C8B2366F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGFC892AEDA054B3CD
         a                   adm:UpdateData ;
         adm:logDate         "2013-03-01T17:02:16.948Z"^^xsd:dateTime ;
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -65,16 +71,17 @@ bdg:WA27300 {
     bda:WA27300  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27300 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "24/WA27300.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27300 ;
-        adm:logEntry        bda:LG216CFD258DBDD0E2 , bda:LG5DE88BC4CABCEF42 , bda:LGAA0F67A444B82CE0 , bda:LGFC892AEDA054B3CD , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG5DE88BC4CABCEF42 , bda:LGAA0F67A444B82CE0 , bda:LGF16E3DC6C8B2366F , bda:LGFC892AEDA054B3CD , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG10193 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRF16E3DC6C8B2366F
+    bdr:CR71AA2C5866468FE3
         a                   :AgentAsCreator ;
         :agent              bdr:P314 ;
         :role               bdr:R0ER0019 .
@@ -85,7 +92,7 @@ bdg:WA27300 {
         skos:altLabel       "'jigs med gling pa pod dgu/"@bo-x-ewts , "The collected works of ʼJigs-med-gliṅ-pa Raṅ-byuṅ-rdo-rje Mkhyen-brtseʼi-ʼod-zer, 1730-1798."@en-x-mixed ;
         skos:prefLabel      "gsung 'bum/_'jigs med gling pa/"@bo-x-ewts , "the collected works of 'jigs-med-glin-pa ran-byun-rdo-rje mkhyen-brtse'i-'od-zer"@en ;
         :catalogInfo        "Collected Works and visionary revelations by Kunkhyen Jigme Lingpa (1729/1730-1798), restorer of the Nyingma Dzogchen order descending from Longchen Rabjam Drime Ozer."@en ;
-        :creator            bdr:CRF16E3DC6C8B2366F ;
+        :creator            bdr:CR71AA2C5866468FE3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

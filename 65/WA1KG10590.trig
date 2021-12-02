@@ -42,6 +42,12 @@ bdg:WA1KG10590 {
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -66,28 +72,29 @@ bdg:WA1KG10590 {
     bda:WA1KG10590  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG10590 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "65/WA1KG10590.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG10590 ;
-        adm:logEntry        bda:LG31CF01907D732DCA , bda:LG64A1BC5A3DC28732 , bda:LGB9CA04A8592AEF84 , bda:LGC5CB13D2720BF97A , bda:LGE20982D9FF01C7AA , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG31CF01907D732DCA , bda:LG64A1BC5A3DC28732 , bda:LGB9CA04A8592AEF84 , bda:LGC5CB13D2720BF97A , bda:LGE20982D9FF01C7AA , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR307CF60328A77C48
         a                   :AgentAsCreator ;
+        :agent              bdr:P2921 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CRAF4AE383D7479F8D
+        a                   :AgentAsCreator ;
         :agent              bdr:P268 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRDF83E315B764A145
+    bdr:CRE3B1DE3665390EF1
         a                   :AgentAsCreator ;
         :agent              bdr:P2382 ;
         :role               bdr:R0ER0019 .
-    
-    bdr:CRE3B1DE3665390EF1
-        a                   :AgentAsCreator ;
-        :agent              bdr:P2921 ;
-        :role               bdr:R0ER0016 .
     
     bdr:MW1KG10590  skos:altLabel  "three rare grammatical works from helambu"@en-x-mixed .
     
@@ -95,7 +102,7 @@ bdg:WA1KG10590 {
         skos:altLabel       "gzungs sngags mkho che ba 'ga' zhig klog 'don gyi tshul bshad pa legs sbyar smra ba'i nyin byed/"@bo-x-ewts , "lung du ston pa sum cu pa dang rtags kyi 'jug pa'i rnam 'grel legs bshad snang byed nor bu/"@bo-x-ewts , "skad gnyis sbyor tshul kun gsal me long /"@bo-x-ewts ;
         skos:prefLabel      "sum rtags 'grel pa legs bshad snang byed nor bu dang skad gnyis sbyor tshul kun gsal me long dang gzungs sngags klog 'don legs sbyar smra ba'i nyin byed sogs/"@bo-x-ewts , "three rare grammatical works from helambu"@en-x-mixed ;
         :catalogInfo        "Three rare grammatical works from Helambu."@en ;
-        :creator            bdr:CR307CF60328A77C48 , bdr:CRDF83E315B764A145 , bdr:CRE3B1DE3665390EF1 ;
+        :creator            bdr:CR307CF60328A77C48 , bdr:CRAF4AE383D7479F8D , bdr:CRE3B1DE3665390EF1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T240 ;

@@ -55,6 +55,12 @@ bdg:WA1GS53494 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -86,15 +92,16 @@ bdg:WA1GS53494 {
     bda:WA1GS53494  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1GS53494 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "69/WA1GS53494.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1GS53494 ;
-        adm:logEntry        bda:LG51F57CA31D2F5D6F , bda:LGBD77A4CE8731B61A , bda:LGEDAB3736E30136FD , bda:LGF23BF1487CD3C767 , bda:LGFB2D1D29D8BDFCA8 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG51F57CA31D2F5D6F , bda:LGBD77A4CE8731B61A , bda:LGEDAB3736E30136FD , bda:LGF23BF1487CD3C767 , bda:LGFB2D1D29D8BDFCA8 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB3457F67E6794616
+    bdr:CR5E96A8E3152BA9BA
         a                   :AgentAsCreator ;
         :agent              bdr:P6623 ;
         :role               bdr:R0ER0019 .
@@ -102,7 +109,7 @@ bdg:WA1GS53494 {
     bdr:WA1GS53494  a       :Work ;
         skos:prefLabel      "dgon gong ma'i lo rgyus 'pho 'gyur rang yul srol/"@bo-x-ewts ;
         :catalogInfo        "Gazetteer of the Gon Gongma nomadic group of Tunte Dzong, Southern Kokonor Prefecture."@en ;
-        :creator            bdr:CRB3457F67E6794616 ;
+        :creator            bdr:CR5E96A8E3152BA9BA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

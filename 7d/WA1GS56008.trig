@@ -50,6 +50,12 @@ bdg:WA1GS56008 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -81,15 +87,16 @@ bdg:WA1GS56008 {
     bda:WA1GS56008  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1GS56008 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "7d/WA1GS56008.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1GS56008 ;
-        adm:logEntry        bda:LG20AC7E1FF4A36EB6 , bda:LG29FC3492C7E2276F , bda:LG383092DD3F8AB3A6 , bda:LGFFD34950BEEAAEC9 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG20AC7E1FF4A36EB6 , bda:LG29FC3492C7E2276F , bda:LG383092DD3F8AB3A6 , bda:LGFFD34950BEEAAEC9 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1E688E0834BC843F
+    bdr:CR34CA9BAC862D4DA1
         a                   :AgentAsCreator ;
         :agent              bdr:P1GS56009 ;
         :role               bdr:R0ER0019 .
@@ -97,7 +104,7 @@ bdg:WA1GS56008 {
     bdr:WA1GS56008  a       :Work ;
         skos:prefLabel      "mnga' ris chos 'byung gangs ljongs mdzes rgyan/"@bo-x-ewts ;
         :catalogInfo        "Survey of the monasteries in Ngari, western Tibet. Written by Tsering Gyalpo."@en ;
-        :creator            bdr:CR1E688E0834BC843F ;
+        :creator            bdr:CR34CA9BAC862D4DA1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T12 ;

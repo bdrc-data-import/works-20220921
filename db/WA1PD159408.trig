@@ -62,6 +62,12 @@ bdg:WA1PD159408 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -79,15 +85,16 @@ bdg:WA1PD159408 {
     bda:WA1PD159408  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159408 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "db/WA1PD159408.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159408 ;
-        adm:logEntry        bda:LG00970B0986DAD323 , bda:LG07FC34196F08A6C3 , bda:LG30D58D64744EE746 , bda:LGBFBC9C353043B3C0 , bda:LGC6C8F15408D8E0A8 , bda:LGCAE5686A58808F4E , bda:LGD3C9384C41CE4A77 , bda:LGDF8984572140D418 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG00970B0986DAD323 , bda:LG07FC34196F08A6C3 , bda:LG30D58D64744EE746 , bda:LGBFBC9C353043B3C0 , bda:LGC6C8F15408D8E0A8 , bda:LGCAE5686A58808F4E , bda:LGD3C9384C41CE4A77 , bda:LGDF8984572140D418 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDD5C26CA5CD1127E
+    bdr:CR537B8269E0209A18
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ366936 ;
         :role               bdr:R0ER0019 .
@@ -98,7 +105,7 @@ bdg:WA1PD159408 {
         skos:altLabel       "duo bu jie wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "mtsho sna ba stobs rgyal gyi dpyad rtsom phyogs bsgrigs/"@bo-x-ewts , "多布杰文集"@zh-hans ;
         :catalogInfo        "A collection of essays written by Tsonawa Tobgyal"@en ;
-        :creator            bdr:CRDD5C26CA5CD1127E ;
+        :creator            bdr:CR537B8269E0209A18 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 , bdr:T1081 ;

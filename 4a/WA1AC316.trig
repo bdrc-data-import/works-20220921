@@ -46,6 +46,12 @@ bdg:WA1AC316 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -63,20 +69,21 @@ bdg:WA1AC316 {
     bda:WA1AC316  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC316 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "4a/WA1AC316.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC316 ;
-        adm:logEntry        bda:LG4FD23972386AF067 , bda:LG5496E3BE75637287 , bda:LG841F8CAE63FB5880 , bda:LGBD5B535D2FFF67C3 , bda:LGFBE9D5781B0D5AAD , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG4FD23972386AF067 , bda:LG5496E3BE75637287 , bda:LG841F8CAE63FB5880 , bda:LGBD5B535D2FFF67C3 , bda:LGFBE9D5781B0D5AAD , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2FB7CE96CE03B049
+    bdr:CR84F1C8913DF39270
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS75255 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR84F1C8913DF39270
+    bdr:CRCA1820824FF72505
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG865 ;
         :role               bdr:R0ER0026 .
@@ -87,7 +94,7 @@ bdg:WA1AC316 {
         skos:altLabel       "zang zu chun tong yin yue de jie gou xin tai yan jiu"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod kyi srol rgyun rol dbyangs kyi grub gzhi dang rnam par dpyad pa/"@bo-x-ewts , "藏族传统音乐的结构形态研究"@zh-hans ;
         :catalogInfo        "Studies in the Tibetan tradition musical instrument and notation"@en ;
-        :creator            bdr:CR2FB7CE96CE03B049 , bdr:CR84F1C8913DF39270 ;
+        :creator            bdr:CR84F1C8913DF39270 , bdr:CRCA1820824FF72505 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1AC316 , bdr:W1AC316 ;

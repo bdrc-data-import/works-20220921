@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20428 {
+    bda:LG41461F8A38FD72AA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG5FAC95FE870DABC7
         a                   adm:UpdateData ;
         adm:logDate         "2010-08-02T16:28:19.282Z"^^xsd:dateTime ;
@@ -30,10 +34,6 @@ bdg:WA20428 {
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGC6A29CE1C9FACC0D
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGFC0D72401ACA1061
         a                   adm:UpdateData ;
         adm:logDate         "2010-08-03T11:20:21.808Z"^^xsd:dateTime ;
@@ -46,6 +46,12 @@ bdg:WA20428 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -78,15 +84,16 @@ bdg:WA20428 {
     bda:WA20428  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20428 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "a0/WA20428.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20428 ;
-        adm:logEntry        bda:LG5FAC95FE870DABC7 , bda:LGC0417CF457955DD6 , bda:LGC26EFA321CDC849E , bda:LGC6A29CE1C9FACC0D , bda:LGFC0D72401ACA1061 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG41461F8A38FD72AA , bda:LG5FAC95FE870DABC7 , bda:LGC0417CF457955DD6 , bda:LGC26EFA321CDC849E , bda:LGFC0D72401ACA1061 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR41461F8A38FD72AA
+    bdr:CR5BAEDB23F57D8DDD
         a                   :AgentAsCreator ;
         :agent              bdr:P1712 ;
         :role               bdr:R0ER0019 .
@@ -95,7 +102,7 @@ bdg:WA20428 {
         skos:altLabel       "bstan pa'i snying po gsang chen snga 'gyur nges don zab mo'i chos kyi byung ba gsal bar byed pa'i legs bshad mkhas pa dga' byed ngo mtshar gtam gyi rol mtsho/"@bo-x-ewts , "rnying ma'i chos byung /"@bo-x-ewts , "snga 'gyur chos kyi byung khungs mkhas pa dga' byed/"@bo-x-ewts ;
         skos:prefLabel      "gu bkra'i chos 'byung /"@bo-x-ewts ;
         :catalogInfo        "History of various orders of Tibetan Buddhism, chiefly Nyingma."@en ;
-        :creator            bdr:CR41461F8A38FD72AA ;
+        :creator            bdr:CR5BAEDB23F57D8DDD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T12 ;

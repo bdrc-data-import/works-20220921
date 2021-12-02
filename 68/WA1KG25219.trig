@@ -31,6 +31,12 @@ bdg:WA1KG25219 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -41,20 +47,21 @@ bdg:WA1KG25219 {
     bda:WA1KG25219  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25219 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "68/WA1KG25219.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25219 ;
-        adm:logEntry        bda:LG7209057A2BFA3436 , bda:LGA3183C1E3932A976 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG7209057A2BFA3436 , bda:LGA3183C1E3932A976 , bda:LGIM095CC38C9F , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR405C9F042B343457
+    bdr:CRC238594968D17E97
         a                   :AgentAsCreator ;
         :agent              bdr:P1099 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRC238594968D17E97
+    bdr:CRDA7DD707714AB131
         a                   :AgentAsCreator ;
         :agent              bdr:P262 ;
         :role               bdr:R0ER0019 .
@@ -63,7 +70,7 @@ bdg:WA1KG25219 {
         skos:altLabel       "dpal ldan bla ma dam pa rje btsun grags pa mkhas grub dpal bzang po'i rnam par thar pa thar 'dod snying gi dga' ston/"@bo-x-ewts ;
         skos:prefLabel      "rje btsun grags pa mkhas grub dpal bzang po'i rnam par thar pa thar 'dod snying gi dga' ston/"@bo-x-ewts ;
         :catalogInfo        "Biographies of Sermed Khenchen Drakpa Khedrup (18 cent.) and Sermed Khenchen Panglung Lobsang Thugje (18 cent.)."@en ;
-        :creator            bdr:CR405C9F042B343457 , bdr:CRC238594968D17E97 ;
+        :creator            bdr:CRC238594968D17E97 , bdr:CRDA7DD707714AB131 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

@@ -24,6 +24,12 @@ bdg:WA1KG23601 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4599A38FCE
         a                   adm:UpdateData ;
         adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
@@ -34,15 +40,16 @@ bdg:WA1KG23601 {
     bda:WA1KG23601  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG23601 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "57/WA1KG23601.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG23601 ;
-        adm:logEntry        bda:LG046B54125FD26D59 , bda:LGDD9A913C093A1EFB , bda:LGIM4599A38FCE ;
+        adm:logEntry        bda:LG046B54125FD26D59 , bda:LGDD9A913C093A1EFB , bda:LGIM4394141E , bda:LGIM4599A38FCE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR455E680E0261C3E5
+    bdr:CR06C8D43A0685E8E0
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG23618 ;
         :role               bdr:R0ER0019 .
@@ -50,7 +57,7 @@ bdg:WA1KG23601 {
     bdr:WA1KG23601  a       :Work ;
         skos:prefLabel      "dag yig stong thun spar bcang ma dang de'i 'grel ba/"@bo-x-ewts ;
         :catalogInfo        "Verse orthographic dictionary and commentary by Patsowa Jigme Lodro."@en ;
-        :creator            bdr:CR455E680E0261C3E5 ;
+        :creator            bdr:CR06C8D43A0685E8E0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T218 ;

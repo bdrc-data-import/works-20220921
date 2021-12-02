@@ -18,15 +18,15 @@ bdg:WA29498 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG3CC677C5E24D841F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG44E47B7CAF37E869
         a                   adm:UpdateData ;
         adm:logDate         "2012-05-04T15:46:38.115Z"^^xsd:dateTime ;
         adm:logMessage      "added copyright title"@en ;
         adm:logWho          bdu:U00016 .
-    
-    bda:LGB010954318669DD8
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
@@ -41,6 +41,12 @@ bdg:WA29498 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
@@ -59,15 +65,16 @@ bdg:WA29498 {
     bda:WA29498  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29498 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "4d/WA29498.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29498 ;
-        adm:logEntry        bda:LG2B99DA6CC5048E04 , bda:LG44E47B7CAF37E869 , bda:LGB010954318669DD8 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG2B99DA6CC5048E04 , bda:LG3CC677C5E24D841F , bda:LG44E47B7CAF37E869 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3CC677C5E24D841F
+    bdr:CR7738C306CBC8B439
         a                   :AgentAsCreator ;
         :agent              bdr:P9758 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +84,7 @@ bdg:WA29498 {
     bdr:WA29498  a          :Work ;
         skos:altLabel       "xu shi ru yi bao ping"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "ngag rtsom nor bu'i gter 'bum/"@bo-x-ewts , "叙诗如意宝瓶"@zh-hans ;
-        :creator            bdr:CR3CC677C5E24D841F ;
+        :creator            bdr:CR7738C306CBC8B439 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29498 , bdr:W29498 ;

@@ -59,6 +59,12 @@ bdg:WA2DB4613 {
         adm:logMessage      "added u at pub date"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -83,15 +89,16 @@ bdg:WA2DB4613 {
     bda:WA2DB4613  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2DB4613 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "4c/WA2DB4613.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2DB4613 ;
-        adm:logEntry        bda:LG0C8D64D03698E0AE , bda:LG1276AA344B98A0F8 , bda:LG19E943161A61B089 , bda:LG4BBA2AD0CFD04FD3 , bda:LG91B9E0A5D6F8B332 , bda:LGC8345DE1473A435E , bda:LGD54942BE9268D555 , bda:LGE366BE235DB6345D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG0C8D64D03698E0AE , bda:LG1276AA344B98A0F8 , bda:LG19E943161A61B089 , bda:LG4BBA2AD0CFD04FD3 , bda:LG91B9E0A5D6F8B332 , bda:LGC8345DE1473A435E , bda:LGD54942BE9268D555 , bda:LGE366BE235DB6345D , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFADB3AC73E591246
+    bdr:CR825369817D7CF42D
         a                   :AgentAsCreator ;
         :agent              bdr:P105 ;
         :role               bdr:R0ER0019 .
@@ -99,7 +106,7 @@ bdg:WA2DB4613 {
     bdr:WA2DB4613  a        :Work ;
         skos:prefLabel      "lam rim bla ma brgyud pa'i rnam thar／"@bo-x-ewts ;
         :catalogInfo        "Biographies of masters in the graduated lamrim path teachings passed down through Tsongkhapa."@en ;
-        :creator            bdr:CRFADB3AC73E591246 ;
+        :creator            bdr:CR825369817D7CF42D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T238 ;

@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20821 {
-    bda:LG0D8D452240EEF595
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG182361A2B9DEC5CD
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2008-04-18T13:08:36.949Z"^^xsd:dateTime ;
@@ -27,6 +23,10 @@ bdg:WA20821 {
         adm:logDate         "2013-09-20T09:38:48.166Z"^^xsd:dateTime ;
         adm:logMessage      "added note of volume added"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG4323749C4E15775C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG6FDD280E7957E81B
         a                   adm:UpdateData ;
@@ -77,6 +77,12 @@ bdg:WA20821 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -94,12 +100,13 @@ bdg:WA20821 {
     bda:WA20821  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20821 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "80/WA20821.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20821 ;
-        adm:logEntry        bda:LG0D8D452240EEF595 , bda:LG182361A2B9DEC5CD , bda:LG2730913C96ABEEFA , bda:LG6FDD280E7957E81B , bda:LG8090F9189DBA3BBD , bda:LG9BE18EE894C09E38 , bda:LGB508498CE507C0D2 , bda:LGE0C82CF06528592A , bda:LGEEEF4C37E2772A7F , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG182361A2B9DEC5CD , bda:LG2730913C96ABEEFA , bda:LG4323749C4E15775C , bda:LG6FDD280E7957E81B , bda:LG8090F9189DBA3BBD , bda:LG9BE18EE894C09E38 , bda:LGB508498CE507C0D2 , bda:LGE0C82CF06528592A , bda:LGEEEF4C37E2772A7F , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW20821  skos:altLabel  "tibetan art studies"@en .

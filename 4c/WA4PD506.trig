@@ -30,18 +30,25 @@ bdg:WA4PD506 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA4PD506  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4PD506 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "4c/WA4PD506.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4PD506 ;
-        adm:logEntry        bda:LG03967739596F1CF1 , bda:LG52E80CA1301DD476 , bda:LGAE6FFA1BB6DE9230 ;
+        adm:logEntry        bda:LG03967739596F1CF1 , bda:LG52E80CA1301DD476 , bda:LGAE6FFA1BB6DE9230 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE2B1D015A4355B2A
+    bdr:CR06994E4788CC73A8
         a                   :AgentAsCreator ;
         :agent              bdr:P252 ;
         :role               bdr:R0ER0019 .
@@ -49,7 +56,7 @@ bdg:WA4PD506 {
     bdr:WA4PD506  a         :Work ;
         skos:prefLabel      "thub chog byin rlabs gter mdzod kyi rgyab chos pad+ma dkar po/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by renowned Nyingma polymath Jamgon Ju Mipam Gyatso (1846-1912)."@en ;
-        :creator            bdr:CRE2B1D015A4355B2A ;
+        :creator            bdr:CR06994E4788CC73A8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW23468_7BB787 , bdr:MW2DB16631_5116FB , bdr:MW4PD506 , bdr:MW5062_ECE773 , bdr:W4PD506 ;

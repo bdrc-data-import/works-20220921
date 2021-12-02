@@ -31,6 +31,12 @@ bdg:WA1KG18571 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -41,34 +47,35 @@ bdg:WA1KG18571 {
     bda:WA1KG18571  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG18571 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "c7/WA1KG18571.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG18571 ;
-        adm:logEntry        bda:LGCCB4FC246BF6B4FE , bda:LGD6C07D9A5394141C , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LGCCB4FC246BF6B4FE , bda:LGD6C07D9A5394141C , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR68320F3C1BFD1EF2
+    bdr:CR8BF0CC370771BCE9
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG18647 ;
+        :agent              bdr:P1KG18648 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR8BF0CC370771BCE9
+    bdr:CRCB8531AF752BA740
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG18649 ;
         :role               bdr:R0ER0026 .
     
     bdr:CRF9003D9E150F86F7
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG18648 ;
+        :agent              bdr:P1KG18647 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1KG18571  a       :Work ;
         skos:altLabel       "mao ze dong de gu shi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "ma'o tse tung gi gtam rgyud/"@bo-x-ewts , "毛泽东的故事"@zh-hans ;
         :catalogInfo        "Translation of life story of Mao Tsetung (1893-1976)"@en ;
-        :creator            bdr:CR68320F3C1BFD1EF2 , bdr:CR8BF0CC370771BCE9 , bdr:CRF9003D9E150F86F7 ;
+        :creator            bdr:CR8BF0CC370771BCE9 , bdr:CRCB8531AF752BA740 , bdr:CRF9003D9E150F86F7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T276 ;

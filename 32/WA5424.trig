@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA5424 {
-    bda:LG01123200ED7EF7E8
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG011E184BA5742A40
         a                   adm:UpdateData ;
         adm:logDate         "2013-03-22T13:57:54.315Z"^^xsd:dateTime ;
@@ -28,6 +24,10 @@ bdg:WA5424 {
         adm:logMessage      "added WMDL and WMDL13"@en ;
         adm:logWho          bdu:U00032 .
     
+    bda:LG1967DA33250505D0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG5F1350AC7C960301
         a                   adm:UpdateData ;
         adm:logDate         "2009-11-11T14:41:29.778Z"^^xsd:dateTime ;
@@ -39,6 +39,12 @@ bdg:WA5424 {
         adm:logDate         "2007-01-09T16:34:46.053Z"^^xsd:dateTime ;
         adm:logMessage      "added to ctc 4"@en ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -64,15 +70,16 @@ bdg:WA5424 {
     bda:WA5424  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA5424 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "32/WA5424.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA5424 ;
-        adm:logEntry        bda:LG01123200ED7EF7E8 , bda:LG011E184BA5742A40 , bda:LG07193168D59A5F14 , bda:LG5F1350AC7C960301 , bda:LGB6BF4AF21717669A , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG011E184BA5742A40 , bda:LG07193168D59A5F14 , bda:LG1967DA33250505D0 , bda:LG5F1350AC7C960301 , bda:LGB6BF4AF21717669A , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1967DA33250505D0
+    bdr:CR80FEC9D469933AB3
         a                   :AgentAsCreator ;
         :agent              bdr:P263 ;
         :role               bdr:R0ER0019 .
@@ -81,7 +88,7 @@ bdg:WA5424 {
         skos:altLabel       "'jigs med bsam gtan gyi gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_'jigs med bsam gtan/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Zongkar Jigme Samten (1814-1881/1897)."@en ;
-        :creator            bdr:CR1967DA33250505D0 ;
+        :creator            bdr:CR80FEC9D469933AB3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

@@ -31,6 +31,12 @@ bdg:WA3CN4709 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -41,15 +47,16 @@ bdg:WA3CN4709 {
     bda:WA3CN4709  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN4709 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "43/WA3CN4709.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN4709 ;
-        adm:logEntry        bda:LG4F70964CC51A532F , bda:LG6A793648264C8989 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG4F70964CC51A532F , bda:LG6A793648264C8989 , bda:LGIM095CC38C9F , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5ADD6ACFDCA69C98
+    bdr:CR41DA2FCBA399C2C9
         a                   :AgentAsCreator ;
         :agent              bdr:P431 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +64,7 @@ bdg:WA3CN4709 {
     bdr:WA3CN4709  a        :Work ;
         skos:prefLabel      "'dul ba me tog phreng rgyud kyi rnam 'grel tshig don rab tu gsal ba'i nyi 'od/"@bo-x-ewts ;
         :catalogInfo        "Commentary on the Vinayakarika of Visakhadeva."@en ;
-        :creator            bdr:CR5ADD6ACFDCA69C98 ;
+        :creator            bdr:CR41DA2FCBA399C2C9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

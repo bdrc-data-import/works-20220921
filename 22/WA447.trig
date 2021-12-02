@@ -29,7 +29,7 @@ bdg:WA447 {
         adm:logMessage      "annotated"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LG93B8E8CAC7818F63
+    bda:LGDB0E5AB2BCCA1D52
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -44,6 +44,12 @@ bdg:WA447 {
         adm:logDate         "2013-03-21T14:14:07.549Z"^^xsd:dateTime ;
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -69,16 +75,17 @@ bdg:WA447 {
     bda:WA447  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA447 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "22/WA447.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA447 ;
-        adm:logEntry        bda:LG04FB1513D7A3B211 , bda:LG4AB4E14FF8BE31F0 , bda:LG845859E4C7E931B5 , bda:LG93B8E8CAC7818F63 , bda:LGDCE3C1885080AB23 , bda:LGE9A68DD13851B4F7 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG04FB1513D7A3B211 , bda:LG4AB4E14FF8BE31F0 , bda:LG845859E4C7E931B5 , bda:LGDB0E5AB2BCCA1D52 , bda:LGDCE3C1885080AB23 , bda:LGE9A68DD13851B4F7 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG2144 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRDB0E5AB2BCCA1D52
+    bdr:CRB2E03C470118924D
         a                   :AgentAsCreator ;
         :agent              bdr:P58 ;
         :role               bdr:R0ER0019 .
@@ -88,7 +95,7 @@ bdg:WA447 {
     bdr:WA447  a            :Work ;
         skos:prefLabel      "gsung 'bum/_blo gros rgyal mtshan/"@bo-x-ewts , "the collected works (gsun 'bum) of spyan-sna blo-gros-rgyal-mtshan of rgya-ma rin-chen-sgan"@en-x-mixed ;
         :catalogInfo        "Collected Works by early Geluk master Lodro Gyaltsen (1402-1472)."@en ;
-        :creator            bdr:CRDB0E5AB2BCCA1D52 ;
+        :creator            bdr:CRB2E03C470118924D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

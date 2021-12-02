@@ -24,25 +24,32 @@ bdg:WA1PD181177 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1PD181177  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD181177 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "49/WA1PD181177.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD181177 ;
-        adm:logEntry        bda:LG0EC580BC07808907 , bda:LG6D9C633E48604D67 ;
+        adm:logEntry        bda:LG0EC580BC07808907 , bda:LG6D9C633E48604D67 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCBD7BBC5FEA245CB
+    bdr:CR8592E29DDF97CBE1
         a                   :AgentAsCreator ;
         :agent              bdr:P5254 ;
         :role               bdr:R0ER0025 .
     
     bdr:WA1PD181177  a      :Work ;
         skos:prefLabel      "snga 'gyur g.yag ze dgon gyi 'don cha las/_byang gter bka' brgyad kyi skor/"@bo-x-ewts ;
-        :creator            bdr:CRCBD7BBC5FEA245CB ;
+        :creator            bdr:CR8592E29DDF97CBE1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

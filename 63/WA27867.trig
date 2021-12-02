@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27867 {
-    bda:LG9AE6D4D7F25FD5DD
+    bda:LG3990DCF2B3B95419
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -27,6 +27,12 @@ bdg:WA27867 {
         adm:logDate         "2012-03-15T11:25:13.824Z"^^xsd:dateTime ;
         adm:logMessage      "added annotation"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -52,15 +58,16 @@ bdg:WA27867 {
     bda:WA27867  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27867 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "63/WA27867.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27867 ;
-        adm:logEntry        bda:LG9AE6D4D7F25FD5DD , bda:LGAA14209E673B977A , bda:LGB13CA948D63C657C , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3990DCF2B3B95419 , bda:LGAA14209E673B977A , bda:LGB13CA948D63C657C , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3990DCF2B3B95419
+    bdr:CR1BAF125D0117E565
         a                   :AgentAsCreator ;
         :agent              bdr:P258 ;
         :role               bdr:R0ER0025 .
@@ -68,7 +75,7 @@ bdg:WA27867 {
     bdr:WA27867  a          :Work ;
         skos:prefLabel      "lce btsun snying thig gi chos skor/"@bo-x-ewts ;
         :catalogInfo        "Collection of visionary texts, sadhanas, empowerments, and explanations on the Chetsun Nyingtik, Chetsun Bima Lai Zabtik."@en ;
-        :creator            bdr:CR3990DCF2B3B95419 ;
+        :creator            bdr:CR1BAF125D0117E565 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T10MS11187 ;

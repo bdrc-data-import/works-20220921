@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA16484 {
-    bda:LG04B6613BCC41E914
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG0A18B311EBEB5C1B
         a                   adm:UpdateData ;
         adm:logDate         "2012-12-21T16:33:04.154Z"^^xsd:dateTime ;
         adm:logMessage      "released from onhold"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG8A61B1BDA3F81547
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGA6DA020E98CB5300
         a                   adm:ScanRequestCreation ;
@@ -34,6 +34,12 @@ bdg:WA16484 {
         adm:logMessage      "changed editing to released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -44,15 +50,16 @@ bdg:WA16484 {
     bda:WA16484  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA16484 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "3d/WA16484.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA16484 ;
-        adm:logEntry        bda:LG04B6613BCC41E914 , bda:LG0A18B311EBEB5C1B , bda:LGA6DA020E98CB5300 , bda:LGCCBA9ED8E1A2BFE1 , bda:LGIM4BF5F96E12 ;
+        adm:logEntry        bda:LG0A18B311EBEB5C1B , bda:LG8A61B1BDA3F81547 , bda:LGA6DA020E98CB5300 , bda:LGCCBA9ED8E1A2BFE1 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8A61B1BDA3F81547
+    bdr:CR638B88BA6F8CDCFF
         a                   :AgentAsCreator ;
         :agent              bdr:P4554 ;
         :role               bdr:R0ER0019 .
@@ -62,7 +69,7 @@ bdg:WA16484 {
     bdr:WA16484  a          :Work ;
         skos:prefLabel      "dbu ma zab don gdams pa'i mig 'byed gser gyi thur ma/"@bo-x-ewts , "zab don gdams pa'i mig 'byed gser gyi thur ma : a detailed exegesis of the 'bras-spuns blo-gsal-glin tradition of commentatorial treatment of Madhyamika philosophy according to the yig-cha of pan-chen bsod-nams-grags-pa"@en ;
         :catalogInfo        "Detailed exegesis of the Drepung Loseling tradition of commentatorial treatment of Madhyamika philosophy according to the yig-cha of Penchen Sonam Dragpa"@en ;
-        :creator            bdr:CR8A61B1BDA3F81547 ;
+        :creator            bdr:CR638B88BA6F8CDCFF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;

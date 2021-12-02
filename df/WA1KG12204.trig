@@ -42,6 +42,12 @@ bdg:WA1KG12204 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -52,15 +58,16 @@ bdg:WA1KG12204 {
     bda:WA1KG12204  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG12204 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "df/WA1KG12204.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG12204 ;
-        adm:logEntry        bda:LG27F3D8A6E38F3249 , bda:LG5184F5D3324F4570 , bda:LG9C9E3CAB30E3A640 , bda:LGA2837219EF1D4116 , bda:LGC6C1E1F660382F83 , bda:LGIM4BF5F96E12 ;
+        adm:logEntry        bda:LG27F3D8A6E38F3249 , bda:LG5184F5D3324F4570 , bda:LG9C9E3CAB30E3A640 , bda:LGA2837219EF1D4116 , bda:LGC6C1E1F660382F83 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8890C917245A224B
+    bdr:CR28DDD33FE6641C05
         a                   :AgentAsCreator ;
         :agent              bdr:P410 ;
         :role               bdr:R0ER0019 .
@@ -68,7 +75,7 @@ bdg:WA1KG12204 {
     bdr:WA1KG12204  a       :Work ;
         skos:altLabel       "bsam gzugs/"@bo-x-ewts ;
         skos:prefLabel      "bsam gzugs kyi mtha' dpyod legs bshad mdzod kyi sgo 'byed/"@bo-x-ewts ;
-        :creator            bdr:CR8890C917245A224B ;
+        :creator            bdr:CR28DDD33FE6641C05 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG12204 , bdr:W1KG12204 ;

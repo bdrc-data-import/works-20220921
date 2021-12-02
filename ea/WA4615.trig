@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4615 {
+    bda:LG2D1D86C30A36F6B8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG5261ED086CA85161
         a                   adm:UpdateData ;
         adm:logDate         "2007-04-17T19:39:11.246Z"^^xsd:dateTime ;
@@ -23,10 +27,6 @@ bdg:WA4615 {
         adm:logDate         "2013-03-21T14:27:16.432Z"^^xsd:dateTime ;
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
-    
-    bda:LG6C19ABD0A8FE0715
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LG8453C7840F6B89A2
         a                   adm:UpdateData ;
@@ -46,6 +46,12 @@ bdg:WA4615 {
         adm:logMessage      "changed access to restrictedByTbrc"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -77,16 +83,16 @@ bdg:WA4615 {
     bda:WA4615  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4615 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "ea/WA4615.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4615 ;
-        adm:logEntry        bda:LG5261ED086CA85161 , bda:LG5C65D990A1D9D268 , bda:LG6C19ABD0A8FE0715 , bda:LG8453C7840F6B89A2 , bda:LGE91AF35233EBEBFE , bda:LGIM3F9169BB6E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2D1D86C30A36F6B8 , bda:LG5261ED086CA85161 , bda:LG5C65D990A1D9D268 , bda:LG8453C7840F6B89A2 , bda:LGE91AF35233EBEBFE , bda:LGIM3F9169BB6E , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2D1D86C30A36F6B8
+    bdr:CR4FF92AA7363A345C
         a                   :AgentAsCreator ;
         :agent              bdr:P249 ;
         :role               bdr:R0ER0019 .
@@ -94,7 +100,7 @@ bdg:WA4615 {
     bdr:WA4615  a           :Work ;
         skos:prefLabel      "gsung 'bum/_blo bzang 'phrin las bstan pa rgya mtsho/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Kirti 08 Lobzang Trinle (1849-1904), from Kirti Monastery in Ngawa, Amdo."@en ;
-        :creator            bdr:CR2D1D86C30A36F6B8 ;
+        :creator            bdr:CR4FF92AA7363A345C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

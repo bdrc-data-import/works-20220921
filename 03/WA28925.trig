@@ -18,7 +18,7 @@ bdg:WA28925 {
         adm:logMessage      "fixed isbn"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGCE0EF4185474BDB7
+    bda:LGD63ECD98EBDABE6E
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -35,6 +35,12 @@ bdg:WA28925 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -74,15 +80,16 @@ bdg:WA28925 {
     bda:WA28925  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28925 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "03/WA28925.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28925 ;
-        adm:logEntry        bda:LG33545306D7ABC4BF , bda:LGCE0EF4185474BDB7 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG33545306D7ABC4BF , bda:LGD63ECD98EBDABE6E , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD63ECD98EBDABE6E
+    bdr:CRA838A42FDDAC5C54
         a                   :AgentAsCreator ;
         :agent              bdr:P9379 ;
         :role               bdr:R0ER0019 .
@@ -90,7 +97,7 @@ bdg:WA28925 {
     bdr:WA28925  a          :Work ;
         skos:prefLabel      "mtho sgang gi rnam shes/"@bo-x-ewts ;
         :catalogInfo        "Anthology of poems."@en ;
-        :creator            bdr:CRD63ECD98EBDABE6E ;
+        :creator            bdr:CRA838A42FDDAC5C54 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW28925 , bdr:W28925 ;

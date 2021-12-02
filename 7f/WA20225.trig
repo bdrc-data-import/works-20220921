@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20225 {
-    bda:LG404CD62E5F0ED023
+    bda:LG52C6BC9E79CBBDE9
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -41,6 +41,12 @@ bdg:WA20225 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -80,15 +86,16 @@ bdg:WA20225 {
     bda:WA20225  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20225 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "7f/WA20225.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20225 ;
-        adm:logEntry        bda:LG404CD62E5F0ED023 , bda:LGEE4C56AD22DFCE13 , bda:LGF2AE890C4198EFA6 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG52C6BC9E79CBBDE9 , bda:LGEE4C56AD22DFCE13 , bda:LGF2AE890C4198EFA6 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR52C6BC9E79CBBDE9
+    bdr:CR3BE7D1BED4A672CA
         a                   :AgentAsCreator ;
         :agent              bdr:P6668 ;
         :role               bdr:R0ER0019 .
@@ -96,7 +103,7 @@ bdg:WA20225 {
     bdr:WA20225  a          :Work ;
         skos:prefLabel      "rnam rtog gis bzhengs pa'i 'jig rten/"@bo-x-ewts ;
         :catalogInfo        "Anthology of poems."@en ;
-        :creator            bdr:CR52C6BC9E79CBBDE9 ;
+        :creator            bdr:CR3BE7D1BED4A672CA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW20225 , bdr:W20225 ;

@@ -39,7 +39,7 @@ bdg:WA2046 {
         adm:logDate         "2010-10-12T15:06:26.521Z"^^xsd:dateTime ;
         adm:logMessage      "added WMDL"@en .
     
-    bda:LG871DC4C8DC4D28DC
+    bda:LGBF56857E292A828B
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -48,6 +48,12 @@ bdg:WA2046 {
         adm:logDate         "2017-11-07T17:53:31.615Z"^^xsd:dateTime ;
         adm:logMessage      "edited name"@en ;
         adm:logWho          bdu:U00081 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -73,16 +79,17 @@ bdg:WA2046 {
     bda:WA2046  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2046 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "d4/WA2046.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2046 ;
-        adm:logEntry        bda:LG000E0746F1DC7FBE , bda:LG030C9CD932B75D6C , bda:LG4E83ABC8E31C84C6 , bda:LG4EFF33306BFC0D1C , bda:LG6DC6D847888DC1DF , bda:LG871DC4C8DC4D28DC , bda:LGDCCF65FA519D181A , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG000E0746F1DC7FBE , bda:LG030C9CD932B75D6C , bda:LG4E83ABC8E31C84C6 , bda:LG4EFF33306BFC0D1C , bda:LG6DC6D847888DC1DF , bda:LGBF56857E292A828B , bda:LGDCCF65FA519D181A , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG9800 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRBF56857E292A828B
+    bdr:CR7A6438BDC4CBE9EA
         a                   :AgentAsCreator ;
         :agent              bdr:P168 ;
         :role               bdr:R0ER0019 .
@@ -93,7 +100,7 @@ bdg:WA2046 {
         skos:altLabel       "gsung 'bum/_blo bzang dpal ldan ye shes/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_dpal ldan ye shes/"@bo-x-ewts , "the collected works (gsun 'bum) of the third panchen lama of tashilhunpo blo-bzan-dpal-ldan-ye-ses"@en-x-mixed ;
         :catalogInfo        "Collected Works by Panchen Lama 03 Lobzang Palden Yeshe (1738-1780), a master of the Geluk order."@en ;
-        :creator            bdr:CRBF56857E292A828B ;
+        :creator            bdr:CR7A6438BDC4CBE9EA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

@@ -18,15 +18,21 @@ bdg:WA28799 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG8145BF962CAE724C
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGDE08B624020E573B
         a                   adm:UpdateData ;
         adm:logDate         "2014-07-15T10:35:54.353Z"^^xsd:dateTime ;
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGE521D79AC3FD2664
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM569A8014B1
         a                   adm:UpdateData ;
@@ -38,16 +44,17 @@ bdg:WA28799 {
     bda:WA28799  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28799 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "1e/WA28799.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28799 ;
-        adm:logEntry        bda:LG6B05CC2442B05D00 , bda:LG8145BF962CAE724C , bda:LGDE08B624020E573B , bda:LGIM569A8014B1 ;
+        adm:logEntry        bda:LG6B05CC2442B05D00 , bda:LGDE08B624020E573B , bda:LGE521D79AC3FD2664 , bda:LGIM4394141E , bda:LGIM569A8014B1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG25062 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRE521D79AC3FD2664
+    bdr:CR83FF3E3E3F71B6A4
         a                   :AgentAsCreator ;
         :agent              bdr:P2985 ;
         :role               bdr:R0ER0019 .
@@ -56,7 +63,7 @@ bdg:WA28799 {
         skos:altLabel       "drang ba dang nges pa'i don rnam par 'byed pa'i bstan bcos legs par bshad pa'i snying po'i dgongs pa'i don gsal bar byed pa'i me long /"@bo-x-ewts ;
         skos:prefLabel      "drang nges rnam 'byed kyi dgongs pa'i don gsal bar byed pa'i me long /"@bo-x-ewts ;
         :catalogInfo        "Commentary on The Essence of Eloquence by Tsongkhapa (1357-1419)."@en ;
-        :creator            bdr:CRE521D79AC3FD2664 ;
+        :creator            bdr:CR83FF3E3E3F71B6A4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

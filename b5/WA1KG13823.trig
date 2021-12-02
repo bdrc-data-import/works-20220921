@@ -24,6 +24,12 @@ bdg:WA1KG13823 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -34,20 +40,21 @@ bdg:WA1KG13823 {
     bda:WA1KG13823  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG13823 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "b5/WA1KG13823.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG13823 ;
-        adm:logEntry        bda:LG61663EDA6A6BD778 , bda:LGE7E3AE12D31FA699 , bda:LGIM4BF5F96E12 ;
+        adm:logEntry        bda:LG61663EDA6A6BD778 , bda:LGE7E3AE12D31FA699 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA6407287C5DD8265
+    bdr:CRCB6BEDA16C153090
         a                   :AgentAsCreator ;
         :agent              bdr:P7762 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVCB6BEDA16C153090
+    bdr:EV808EB47C60221B94
         a                   :CompletedEvent ;
         :onYear             "1985"^^xsd:gYear .
     
@@ -55,10 +62,10 @@ bdg:WA1KG13823 {
         skos:altLabel       "mdo khams rdzogs chen dgon gyi lo rgyus nor bu'i phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "rdzogs chen dgon gyi lo rgyus/"@bo-x-ewts ;
         :catalogInfo        "History of the Dzogchen Monastery in Kham written by Gyalwang Nyima"@en ;
-        :creator            bdr:CRA6407287C5DD8265 ;
+        :creator            bdr:CRCB6BEDA16C153090 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVCB6BEDA16C153090 ;
+        :workEvent          bdr:EV808EB47C60221B94 ;
         :workGenre          bdr:T1134 ;
         :workHasInstance    bdr:MW1KG13823 , bdr:W1KG13823 ;
         :workIsAbout        bdr:G16 .

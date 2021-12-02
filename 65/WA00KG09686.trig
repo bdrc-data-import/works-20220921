@@ -47,6 +47,12 @@ bdg:WA00KG09686 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -71,20 +77,21 @@ bdg:WA00KG09686 {
     bda:WA00KG09686  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG09686 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "65/WA00KG09686.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG09686 ;
-        adm:logEntry        bda:LG136A7F0D6ACA378E , bda:LG4A2D1DFF0C5C0E77 , bda:LG4B8F2D4AB674728C , bda:LG813DC90189FD38C9 , bda:LG8A792BDC9816ED51 , bda:LG9DFF6531F3D37347 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG136A7F0D6ACA378E , bda:LG4A2D1DFF0C5C0E77 , bda:LG4B8F2D4AB674728C , bda:LG813DC90189FD38C9 , bda:LG8A792BDC9816ED51 , bda:LG9DFF6531F3D37347 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8301F3B52FD63BC5
+    bdr:CRFE71062472486621
         a                   :AgentAsCreator ;
         :agent              bdr:P176 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVFE71062472486621
+    bdr:EVDE0294751E1B1D6F
         a                   :CompletedEvent ;
         :onYear             "1800"^^xsd:gYear .
     
@@ -94,10 +101,10 @@ bdg:WA00KG09686 {
         skos:altLabel       "mdo smad bstan pa'i 'byung gnas dpal ldan bkra shis 'khyil gyi gdan rabs rang bzhin dbyangs su brjod pa'i lha'i rnga bo che/"@bo-x-ewts ;
         skos:prefLabel      "bla brang bkra shis 'khyil gyi gdan rabs lha'i rnga chen/"@bo-x-ewts , "la pu leng shi zhi"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Chronicle and succession of abbots at Labrang Tashi Khyil by Tripa 24 Konchok Gyaltsen (1764-1853)."@en ;
-        :creator            bdr:CR8301F3B52FD63BC5 ;
+        :creator            bdr:CRFE71062472486621 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVFE71062472486621 ;
+        :workEvent          bdr:EVDE0294751E1B1D6F ;
         :workHasInstance    bdr:IE00KG09686 , bdr:MW00KG09686 , bdr:W00KG09686 ;
         :workIsAbout        bdr:G162 , bdr:T16 .
 }

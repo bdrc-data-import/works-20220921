@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21825 {
-    bda:LG87100735810578E9
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGA963C3931BD7757B
         a                   adm:UpdateData ;
         adm:logDate         "2011-09-22T10:16:51.893Z"^^xsd:dateTime ;
         adm:logMessage      "added WMDL and WMDL10"@en ;
         adm:logWho          bdu:U00032 .
+    
+    bda:LGC7704B35493C6D92
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGEF1A1A430BFD8902
         a                   adm:UpdateData ;
@@ -33,6 +33,12 @@ bdg:WA21825 {
         adm:logDate         "2013-07-11T11:45:51.366Z"^^xsd:dateTime ;
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -64,16 +70,16 @@ bdg:WA21825 {
     bda:WA21825  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21825 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "7f/WA21825.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21825 ;
-        adm:logEntry        bda:LG87100735810578E9 , bda:LGA963C3931BD7757B , bda:LGEF1A1A430BFD8902 , bda:LGF509AA162AB66013 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LGA963C3931BD7757B , bda:LGC7704B35493C6D92 , bda:LGEF1A1A430BFD8902 , bda:LGF509AA162AB66013 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC7704B35493C6D92
+    bdr:CRC909ECB6813EAC9D
         a                   :AgentAsCreator ;
         :agent              bdr:P7359 ;
         :role               bdr:R0ER0019 .
@@ -82,7 +88,7 @@ bdg:WA21825 {
         skos:altLabel       "the collected works (gsun 'bum) of the second pad-nor rin-po-che of dpal-yul thub-bstan-chos-kyi-glan-po 'jam-dpal-grub-pa'i-blo-gros"@bo-alalc97 , "dpal yul pad nor thub bstan chos kyi glang po'i bka' 'bum/"@bo-x-ewts , "dpal yul pad nor thub bstan chos kyi glang po'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_thub bstan chos kyi glang po/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by 19th century master Penor 02 Tubten Chokyi Langpo Jampal Drupai Lodro. Reproduced from a rare set of manuscripts from Peyul Monastery. Scanned with the generous support of Ms. Christine Tomlinson of Austin TX."@en ;
-        :creator            bdr:CRC7704B35493C6D92 ;
+        :creator            bdr:CRC909ECB6813EAC9D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

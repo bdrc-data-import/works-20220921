@@ -44,6 +44,12 @@ bdg:WA1KG6134 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -75,33 +81,34 @@ bdg:WA1KG6134 {
     bda:WA1KG6134  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG6134 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "a8/WA1KG6134.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG6134 ;
-        adm:logEntry        bda:LG2A27B2DF0A93E1C8 , bda:LG77B1AC05E6EF88E6 , bda:LG7F9DC530AFDE84E4 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2A27B2DF0A93E1C8 , bda:LG77B1AC05E6EF88E6 , bda:LG7F9DC530AFDE84E4 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR2BC43BA8DDCC76B1
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG6176 ;
-        :role               bdr:R0ER0016 .
+        :agent              bdr:P1KG6175 ;
+        :role               bdr:R0ER0019 .
     
     bdr:CR2E23352A1CC17B5E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG6177 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR449DA506014A36BA
         a                   :AgentAsCreator ;
         :agent              bdr:P1CZ809 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CR42B89F9F633B54CD
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1KG6175 ;
-        :role               bdr:R0ER0019 .
-    
     bdr:CRDBBEBA28EF7BF497
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG6177 ;
-        :role               bdr:R0ER0026 .
+        :agent              bdr:P1KG6176 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW1KG6134  skos:altLabel  "世界古代历史故事"@zh-hans .
     
@@ -109,7 +116,7 @@ bdg:WA1KG6134 {
         skos:altLabel       "shi jie gu dai li shi gu shi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "'dzam gling gna' rabs lo rgyus kyi gtam rgyud/"@bo-x-ewts , "世界古代历史故事"@zh-hans ;
         :catalogInfo        "Selections on ancient period world history."@en ;
-        :creator            bdr:CR2BC43BA8DDCC76B1 , bdr:CR2E23352A1CC17B5E , bdr:CR42B89F9F633B54CD , bdr:CRDBBEBA28EF7BF497 ;
+        :creator            bdr:CR2BC43BA8DDCC76B1 , bdr:CR2E23352A1CC17B5E , bdr:CR449DA506014A36BA , bdr:CRDBBEBA28EF7BF497 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

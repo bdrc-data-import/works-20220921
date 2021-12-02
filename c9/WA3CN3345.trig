@@ -36,6 +36,12 @@ bdg:WA3CN3345 {
         adm:logMessage      "detail cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -46,15 +52,16 @@ bdg:WA3CN3345 {
     bda:WA3CN3345  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN3345 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "c9/WA3CN3345.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN3345 ;
-        adm:logEntry        bda:LG57B7AF1C23A154A6 , bda:LGC0FAF62383B1D6BF , bda:LGDF884389055AB657 , bda:LGF8F9FDEDF351AB54 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG57B7AF1C23A154A6 , bda:LGC0FAF62383B1D6BF , bda:LGDF884389055AB657 , bda:LGF8F9FDEDF351AB54 , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC538B342A847B025
+    bdr:CR6208478E2861EE28
         a                   :AgentAsCreator ;
         :agent              bdr:P6259 ;
         :role               bdr:R0ER0019 .
@@ -63,7 +70,7 @@ bdg:WA3CN3345 {
         skos:altLabel       "rdo rje rgyal po'i sum rtags/"@bo-x-ewts ;
         skos:prefLabel      "rdo rje rgyal po'i gsung rtsom phyogs bsgrigs/"@bo-x-ewts ;
         :catalogInfo        "Collected research works by Doje Gyalpo (10913-1952)."@en ;
-        :creator            bdr:CRC538B342A847B025 ;
+        :creator            bdr:CR6208478E2861EE28 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG21749 ;

@@ -46,6 +46,12 @@ bdg:WA00KG09980 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -70,15 +76,16 @@ bdg:WA00KG09980 {
     bda:WA00KG09980  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG09980 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "70/WA00KG09980.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG09980 ;
-        adm:logEntry        bda:LG1736E53A702C13EB , bda:LG4ED683ADE2C2DFF3 , bda:LG541F2FD134EDBDAC , bda:LGACD18048FBC461C1 , bda:LGF3F0B4D9FC89F26F , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1736E53A702C13EB , bda:LG4ED683ADE2C2DFF3 , bda:LG541F2FD134EDBDAC , bda:LGACD18048FBC461C1 , bda:LGF3F0B4D9FC89F26F , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3D75972534C85EBE
+    bdr:CR1BDBF4015E98423D
         a                   :AgentAsCreator ;
         :agent              bdr:P6147 ;
         :role               bdr:R0ER0019 .
@@ -88,7 +95,7 @@ bdg:WA00KG09980 {
     bdr:WA00KG09980  a      :Work ;
         skos:prefLabel      "khang dkar tshul khrims skal bzang gi gsung rtsom phyogs bsgrigs།"@bo-x-ewts , "kang ga chu cheng ge sang xuan ji"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Select works by the scholar Tsultrim Kelsang. Includes a critical study of different doctrinal and philosophical principles of Buddhism, and a history of Buddhism in India and its development in Tibet."@en ;
-        :creator            bdr:CR3D75972534C85EBE ;
+        :creator            bdr:CR1BDBF4015E98423D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;

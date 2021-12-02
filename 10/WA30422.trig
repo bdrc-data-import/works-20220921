@@ -18,28 +18,35 @@ bdg:WA30422 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG488F182637F776E5
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG7343CB64FC879F7C
         a                   adm:UpdateData ;
         adm:logDate         "2016-04-06T10:25:36.742Z"^^xsd:dateTime ;
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGF95526E96BA7AFED
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA30422  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30422 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "10/WA30422.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30422 ;
-        adm:logEntry        bda:LG128AC3C10FCCE5B3 , bda:LG488F182637F776E5 , bda:LG7343CB64FC879F7C ;
+        adm:logEntry        bda:LG128AC3C10FCCE5B3 , bda:LG7343CB64FC879F7C , bda:LGF95526E96BA7AFED , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF95526E96BA7AFED
+    bdr:CR3EAF57C894F81B74
         a                   :AgentAsCreator ;
         :agent              bdr:P10639 ;
         :role               bdr:R0ER0019 .
@@ -47,7 +54,7 @@ bdg:WA30422 {
     bdr:WA30422  a          :Work ;
         skos:prefLabel      "shes rig 'tshol ba'i gleng mol/"@bo-x-ewts ;
         :catalogInfo        "Refutations of various writings of Jamyang Chokyi Lodro."@en ;
-        :creator            bdr:CRF95526E96BA7AFED ;
+        :creator            bdr:CR3EAF57C894F81B74 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 , bdr:T258 ;

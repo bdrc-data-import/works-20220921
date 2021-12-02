@@ -47,6 +47,12 @@ bdg:WA2PD17434 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -64,15 +70,16 @@ bdg:WA2PD17434 {
     bda:WA2PD17434  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17434 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "24/WA2PD17434.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17434 ;
-        adm:logEntry        bda:LG0719967FD90D3135 , bda:LG6865558ECE357FE6 , bda:LG69BB7A5AC330B788 , bda:LGAC0237836ED43245 , bda:LGC807A6B6C244A529 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0719967FD90D3135 , bda:LG6865558ECE357FE6 , bda:LG69BB7A5AC330B788 , bda:LGAC0237836ED43245 , bda:LGC807A6B6C244A529 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR475052B45E7CB70E
+    bdr:CR74062985535526E9
         a                   :AgentAsCreator ;
         :agent              bdr:P4PD3060 ;
         :role               bdr:R0ER0019 .
@@ -82,7 +89,7 @@ bdg:WA2PD17434 {
     bdr:WA2PD17434  a       :Work ;
         skos:altLabel       "xin fa jiao cheng"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "nyes don bca' khrims bslab deb/"@bo-x-ewts , "刑法教程"@zh-hans ;
-        :creator            bdr:CR475052B45E7CB70E ;
+        :creator            bdr:CR74062985535526E9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T266 ;

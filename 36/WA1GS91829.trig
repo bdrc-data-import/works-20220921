@@ -44,6 +44,12 @@ bdg:WA1GS91829 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -75,15 +81,16 @@ bdg:WA1GS91829 {
     bda:WA1GS91829  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1GS91829 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "36/WA1GS91829.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1GS91829 ;
-        adm:logEntry        bda:LG13C9937B7E435A1C , bda:LG72F7E3F1C34A6FD7 , bda:LGC1E985BCF68D79A6 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG13C9937B7E435A1C , bda:LG72F7E3F1C34A6FD7 , bda:LGC1E985BCF68D79A6 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB41896C1C27A398A
+    bdr:CR1E2374C708FBE595
         a                   :AgentAsCreator ;
         :agent              bdr:P1GS91830 ;
         :role               bdr:R0ER0019 .
@@ -91,7 +98,7 @@ bdg:WA1GS91829 {
     bdr:WA1GS91829  a       :Work ;
         skos:prefLabel      "reb gong yul skor zin tho/"@bo-x-ewts ;
         :catalogInfo        "Gazetteer of places in the Rebkong and Tsekhog counties of Amdo."@en ;
-        :creator            bdr:CRB41896C1C27A398A ;
+        :creator            bdr:CR1E2374C708FBE595 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1GS91829 , bdr:W1GS91829 ;

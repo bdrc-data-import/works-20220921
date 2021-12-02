@@ -24,6 +24,12 @@ bdg:WA3CN7859 {
         adm:logMessage      "detail cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -40,15 +46,16 @@ bdg:WA3CN7859 {
     bda:WA3CN7859  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN7859 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "17/WA3CN7859.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN7859 ;
-        adm:logEntry        bda:LG41E413EE002BE4F8 , bda:LG5326B8AB6BC90FED , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG41E413EE002BE4F8 , bda:LG5326B8AB6BC90FED , bda:LGIM4394141E , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC7525008157F65FF
+    bdr:CR22EBC53AF5B4DDC2
         a                   :AgentAsCreator ;
         :agent              bdr:P9505 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +64,7 @@ bdg:WA3CN7859 {
         skos:altLabel       "dbyin bod shan sbyar gyi tshig mdzod snang ba gsal ba/"@bo-x-ewts ;
         skos:prefLabel      "dbyin bod shan sbyar gyi tshig mdzod/"@bo-x-ewts ;
         :catalogInfo        "English and Tibetan Dictionary"@en ;
-        :creator            bdr:CRC7525008157F65FF ;
+        :creator            bdr:CR22EBC53AF5B4DDC2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T220 , bdr:T240 ;

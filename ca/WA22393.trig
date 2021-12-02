@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22393 {
-    bda:LG5EA3008A5D4E44A2
+    bda:LG22E8E0E2C6B9F06E
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -52,18 +52,25 @@ bdg:WA22393 {
         adm:logMessage      "new note"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA22393  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22393 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "ca/WA22393.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22393 ;
-        adm:logEntry        bda:LG5EA3008A5D4E44A2 , bda:LG9A3E7A7B106EF5B2 , bda:LGA924E625B560F1B9 , bda:LGADC62857F955DD12 , bda:LGCB92BC1A1540A117 , bda:LGD7A84EFA5580309A , bda:LGE8F5AAC570DFA74E ;
+        adm:logEntry        bda:LG22E8E0E2C6B9F06E , bda:LG9A3E7A7B106EF5B2 , bda:LGA924E625B560F1B9 , bda:LGADC62857F955DD12 , bda:LGCB92BC1A1540A117 , bda:LGD7A84EFA5580309A , bda:LGE8F5AAC570DFA74E , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR22E8E0E2C6B9F06E
+    bdr:CR702895C8C882BA4C
         a                   :AgentAsCreator ;
         :agent              bdr:P1844 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +78,7 @@ bdg:WA22393 {
     bdr:WA22393  a          :Work ;
         skos:altLabel       "gsung 'bum/_bsod nams rin chen/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_sgam po pa/"@bo-x-ewts ;
-        :creator            bdr:CR22E8E0E2C6B9F06E ;
+        :creator            bdr:CR702895C8C882BA4C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 , bdr:T4CZ71 ;

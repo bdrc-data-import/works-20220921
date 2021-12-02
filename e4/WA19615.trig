@@ -12,14 +12,14 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA19615 {
+    bda:LG1DB342AA9285B060
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGC24ABA4B9F64A26A
         a                   adm:UpdateData ;
         adm:logDate         "2008-06-16T09:53:18.153Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00026 .
-    
-    bda:LGC3E629CAFD7C6108
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGC6393C25182296CB
         a                   adm:UpdateData ;
@@ -39,6 +39,12 @@ bdg:WA19615 {
         adm:logMessage      "ctc"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -49,25 +55,26 @@ bdg:WA19615 {
     bda:WA19615  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19615 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "e4/WA19615.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19615 ;
-        adm:logEntry        bda:LGC24ABA4B9F64A26A , bda:LGC3E629CAFD7C6108 , bda:LGC6393C25182296CB , bda:LGD44C9ABA9D1885A5 , bda:LGE81489FE010CFFAF , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG1DB342AA9285B060 , bda:LGC24ABA4B9F64A26A , bda:LGC6393C25182296CB , bda:LGD44C9ABA9D1885A5 , bda:LGE81489FE010CFFAF , bda:LGIM4394141E , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1DB342AA9285B060
-        a                   :AgentAsCreator ;
-        :agent              bdr:P5955 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRE8873754C8A9633F
+    bdr:CR4E2913C03A143CAC
         a                   :AgentAsCreator ;
         :agent              bdr:P314 ;
         :role               bdr:R0ER0025 .
     
-    bdr:EV4E2913C03A143CAC
+    bdr:CRE8873754C8A9633F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5955 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:EV62584DCEF77D4DD7
         a                   :CompletedEvent ;
         :notAfter           "1921"^^xsd:gYear ;
         :notBefore          "1861"^^xsd:gYear .
@@ -77,10 +84,10 @@ bdg:WA19615 {
     bdr:WA19615  a          :Work ;
         skos:altLabel       "klong chen snying gi thig le'i mkha' 'gro bde chen rgyal mo'i sgrub gzhung gi 'grel pa rgyud don snang ba/"@bo-x-ewts , "klong snying mkha' 'gro sgrub gzhung 'grel pa/"@bo-x-ewts , "mkha' 'gro bde chen rgyal mo'i 'grub gzhung gi 'grel pa/"@bo-x-ewts , "Klong chen snying gi thig leʼi Mkhaʼ ʼgro Bde chen rgyal moʼi sgrub gzhung gi ʼgrel pa Rgyud don snang ba :a commentary on the \"Mkhaʼ ʼgro bde chen rgyal moʼi sgrub gzhung\" of the Klong chen snying thig visions of Kun-mkhyen ʼJigs-med-gling-pa /by Ngag-dbang-bstan-ʼdzin-rdo-rje."@en-x-mixed ;
         skos:prefLabel      "bde chen rgyal mo'i sgrub gzhung gi 'grel pa/"@bo-x-ewts , "a commentary on the mkha' 'gro bde chen rgyal mo'i sgrub gzhung of the klong chen snying thig visions of kun-mkhyen 'jigs-med-gling-pa"@en ;
-        :creator            bdr:CR1DB342AA9285B060 , bdr:CRE8873754C8A9633F ;
+        :creator            bdr:CR4E2913C03A143CAC , bdr:CRE8873754C8A9633F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV4E2913C03A143CAC ;
+        :workEvent          bdr:EV62584DCEF77D4DD7 ;
         :workHasInstance    bdr:MW19615 , bdr:W19615 ;
         :workIsAbout        bdr:T328 , bdr:T354 .
 }

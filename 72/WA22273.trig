@@ -18,7 +18,7 @@ bdg:WA22273 {
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG28F399520561DC9C
+    bda:LG4319402F0844F631
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -56,6 +56,12 @@ bdg:WA22273 {
         adm:logMessage      "add pub info and vols"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -87,16 +93,17 @@ bdg:WA22273 {
     bda:WA22273  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22273 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "72/WA22273.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22273 ;
-        adm:logEntry        bda:LG1179E3E5D19B8BFD , bda:LG28F399520561DC9C , bda:LG552D97D8B0405DCF , bda:LG81CF5F6076DD2ABF , bda:LG9087797CF183BA9F , bda:LG9752925E4A0AED0F , bda:LGAB0D379D27F600CB , bda:LGC6002F4019E580A6 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1179E3E5D19B8BFD , bda:LG4319402F0844F631 , bda:LG552D97D8B0405DCF , bda:LG81CF5F6076DD2ABF , bda:LG9087797CF183BA9F , bda:LG9752925E4A0AED0F , bda:LGAB0D379D27F600CB , bda:LGC6002F4019E580A6 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA20510 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR4319402F0844F631
+    bdr:CR07CFB370DDCCA831
         a                   :AgentAsCreator ;
         :agent              bdr:P64 ;
         :role               bdr:R0ER0019 .
@@ -105,7 +112,7 @@ bdg:WA22273 {
         skos:altLabel       "rje tsong kha pa'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_tsong kha pa/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Tsongkhapa Lobzang Drakpa (1357-1419), founder of the Geluk order. Scanned from a printing of the Labrang woodblocks."@en ;
-        :creator            bdr:CR4319402F0844F631 ;
+        :creator            bdr:CR07CFB370DDCCA831 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

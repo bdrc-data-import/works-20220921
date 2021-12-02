@@ -46,6 +46,12 @@ bdg:WA1PD159411 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -56,15 +62,16 @@ bdg:WA1PD159411 {
     bda:WA1PD159411  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159411 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "f3/WA1PD159411.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159411 ;
-        adm:logEntry        bda:LG306A0947223E4B2E , bda:LG75A5239AAB2E3F03 , bda:LGC856AAC9EC92F8AE , bda:LGCA4B6815B59C1D20 , bda:LGE3D57FCE12BE686F , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG306A0947223E4B2E , bda:LG75A5239AAB2E3F03 , bda:LGC856AAC9EC92F8AE , bda:LGCA4B6815B59C1D20 , bda:LGE3D57FCE12BE686F , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD32152C3E316445D
+    bdr:CR37FC4253EEF59F51
         a                   :AgentAsCreator ;
         :agent              bdr:P108 ;
         :role               bdr:R0ER0019 .
@@ -74,7 +81,7 @@ bdg:WA1PD159411 {
     bdr:WA1PD159411  a      :Work ;
         skos:altLabel       "pu jue. a wang qiang ba wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "phur lcog ngag dbang byams pa'i gsung 'bum/"@bo-x-ewts , "普觉. 阿旺强巴文集"@zh-hans ;
-        :creator            bdr:CRD32152C3E316445D ;
+        :creator            bdr:CR37FC4253EEF59F51 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

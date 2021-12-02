@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA13536 {
-    bda:LG4131F85D2614E828
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGAF08ADBE0EDE3A69
         a                   adm:UpdateData ;
         adm:logDate         "2011-08-29T16:14:43.289Z"^^xsd:dateTime ;
@@ -34,6 +30,10 @@ bdg:WA13536 {
         adm:logMessage      "edited annotations; jann"@en ;
         adm:logWho          bdu:U00011 .
     
+    bda:LGEA77680AD14726DD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGF8D71041917A58C6
         a                   adm:UpdateData ;
         adm:logDate         "2018-01-10T15:03:08.931Z"^^xsd:dateTime ;
@@ -46,6 +46,12 @@ bdg:WA13536 {
         adm:logMessage      "changed access to restrictedByTbrc"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -77,16 +83,16 @@ bdg:WA13536 {
     bda:WA13536  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA13536 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "cf/WA13536.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA13536 ;
-        adm:logEntry        bda:LG4131F85D2614E828 , bda:LGAF08ADBE0EDE3A69 , bda:LGE67739A64C81C157 , bda:LGEA02A2D5C5C9F653 , bda:LGF8D71041917A58C6 , bda:LGIM3F9169BB6E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LGAF08ADBE0EDE3A69 , bda:LGE67739A64C81C157 , bda:LGEA02A2D5C5C9F653 , bda:LGEA77680AD14726DD , bda:LGF8D71041917A58C6 , bda:LGIM3F9169BB6E , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM7CC15F8F , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CREA77680AD14726DD
+    bdr:CR5686EAB0181CF96C
         a                   :AgentAsCreator ;
         :agent              bdr:P1638 ;
         :role               bdr:R0ER0019 .
@@ -97,7 +103,7 @@ bdg:WA13536 {
         skos:altLabel       "rje btsun blo bzang rta dbyangs kyi gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_blo bzang rta mgrin/"@bo-x-ewts , "the collected works (gsun 'bum) of rje-btsun blo-bzan-rta-mgrin"@en-x-mixed ;
         :catalogInfo        "Collected Works by a 20th century Mongolian Geshe."@en ;
-        :creator            bdr:CREA77680AD14726DD ;
+        :creator            bdr:CR5686EAB0181CF96C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

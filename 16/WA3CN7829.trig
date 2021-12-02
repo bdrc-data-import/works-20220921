@@ -42,6 +42,12 @@ bdg:WA3CN7829 {
         adm:logMessage      "detail cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -59,16 +65,17 @@ bdg:WA3CN7829 {
     bda:WA3CN7829  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN7829 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "16/WA3CN7829.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN7829 ;
-        adm:logEntry        bda:LG008A5BE05C1C7D39 , bda:LG1C09974F21BEB151 , bda:LG7F2DC9708E865073 , bda:LGBBB82667670A363E , bda:LGDA30336FC7A9E1EB , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG008A5BE05C1C7D39 , bda:LG1C09974F21BEB151 , bda:LG7F2DC9708E865073 , bda:LGBBB82667670A363E , bda:LGDA30336FC7A9E1EB , bda:LGIM4394141E , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG26275 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRC6355A9240E7145D
+    bdr:CR8D6D9E1DA8DBF1CC
         a                   :AgentAsCreator ;
         :agent              bdr:P101 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +84,7 @@ bdg:WA3CN7829 {
         skos:altLabel       "paN chen bsod nams grags pa'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/ paN chen bsod nams grags pa/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by a Geluk master Penchen Sonam Drakpa."@en ;
-        :creator            bdr:CRC6355A9240E7145D ;
+        :creator            bdr:CR8D6D9E1DA8DBF1CC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

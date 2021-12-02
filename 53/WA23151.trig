@@ -18,6 +18,10 @@ bdg:WA23151 {
         adm:logMessage      "eduted"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG2C9589270C81A8B8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG409BA5509C2804AC
         a                   adm:UpdateData ;
         adm:logDate         "2011-02-16T11:10:47.974Z"^^xsd:dateTime ;
@@ -42,10 +46,6 @@ bdg:WA23151 {
         adm:logMessage      "added Work to PL480"@en ;
         adm:logWhoStr       "add-works-to-PR1PL480" .
     
-    bda:LGCE31F3F602912B2C
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGEF003372C9490E21
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-02-16T11:12:42.583Z"^^xsd:dateTime ;
@@ -59,6 +59,12 @@ bdg:WA23151 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -69,15 +75,16 @@ bdg:WA23151 {
     bda:WA23151  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23151 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "53/WA23151.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23151 ;
-        adm:logEntry        bda:LG030D892EAFE08147 , bda:LG409BA5509C2804AC , bda:LG581C3657F324706E , bda:LG604644DDD482F5C4 , bda:LG9260DFA4C4322B3C , bda:LGCE31F3F602912B2C , bda:LGEF003372C9490E21 , bda:LGIM320307B99D , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG030D892EAFE08147 , bda:LG2C9589270C81A8B8 , bda:LG409BA5509C2804AC , bda:LG581C3657F324706E , bda:LG604644DDD482F5C4 , bda:LG9260DFA4C4322B3C , bda:LGEF003372C9490E21 , bda:LGIM320307B99D , bda:LGIM4394141E , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2C9589270C81A8B8
+    bdr:CR6DCE064EC5900077
         a                   :AgentAsCreator ;
         :agent              bdr:P4797 ;
         :role               bdr:R0ER0019 .
@@ -87,7 +94,7 @@ bdg:WA23151 {
     bdr:WA23151  a          :Work ;
         skos:altLabel       "cha har dge bshes blo bzang tshul khrims kyi gsung 'bum/"@bo-x-ewts , "The collected works (gsung-ʾbum) of Cha-har- Dge-bshes Blo-bzang-tshul-khrims."@en-x-mixed ;
         skos:prefLabel      "gsung 'bum/_blo bzang tshul khrims/"@bo-x-ewts , "the collected works (gsung-'bum) of cha-har dge-shes blo-bzang-tshul-khrims"@en-x-mixed ;
-        :creator            bdr:CR2C9589270C81A8B8 ;
+        :creator            bdr:CR6DCE064EC5900077 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 , bdr:T413 ;

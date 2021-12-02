@@ -62,6 +62,12 @@ bdg:WA1PD133165 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -79,15 +85,16 @@ bdg:WA1PD133165 {
     bda:WA1PD133165  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD133165 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "10/WA1PD133165.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD133165 ;
-        adm:logEntry        bda:LG27D52D7709B0499C , bda:LG321BAB0F4CACDB12 , bda:LG3F5F89B61A25EAB1 , bda:LG4E82CBC09973ED03 , bda:LG981435694EF135E1 , bda:LGB3B840A659372CE3 , bda:LGCDA7304C7DE14B6E , bda:LGE085636A62C62713 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG27D52D7709B0499C , bda:LG321BAB0F4CACDB12 , bda:LG3F5F89B61A25EAB1 , bda:LG4E82CBC09973ED03 , bda:LG981435694EF135E1 , bda:LGB3B840A659372CE3 , bda:LGCDA7304C7DE14B6E , bda:LGE085636A62C62713 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR28443431D70EE05C
+    bdr:CR237CD1612EC7F681
         a                   :AgentAsCreator ;
         :agent              bdr:P9531 ;
         :role               bdr:R0ER0019 .
@@ -97,7 +104,7 @@ bdg:WA1PD133165 {
     bdr:WA1PD133165  a      :Work ;
         skos:altLabel       "han zang yu fa bi jiao yu fan yi"@zh-hans ;
         skos:prefLabel      "rgya bod brda sprod bsdur dpyad dang bsgyur tshul rnam bshad/"@bo-x-ewts , "汉藏语法比较与翻译"@zh-hans ;
-        :creator            bdr:CR28443431D70EE05C ;
+        :creator            bdr:CR237CD1612EC7F681 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1PD133165 , bdr:W1PD133165 ;

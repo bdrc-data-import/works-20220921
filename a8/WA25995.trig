@@ -23,15 +23,15 @@ bdg:WA25995 {
         adm:logDate         "2017-08-10T04:52:26.446Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
-    bda:LGD600E80AC2513971
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGE73FC0CB3EBCECAF
         a                   adm:UpdateData ;
         adm:logDate         "2018-04-18T13:38:08.749Z"^^xsd:dateTime ;
         adm:logMessage      "added archive info"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGF050329B5CDA114D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -39,6 +39,12 @@ bdg:WA25995 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
@@ -50,15 +56,16 @@ bdg:WA25995 {
     bda:WA25995  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25995 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "a8/WA25995.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25995 ;
-        adm:logEntry        bda:LG0904FC118F32D345 , bda:LGBF2D1C4AEB8B8DFE , bda:LGD600E80AC2513971 , bda:LGE73FC0CB3EBCECAF , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG0904FC118F32D345 , bda:LGBF2D1C4AEB8B8DFE , bda:LGE73FC0CB3EBCECAF , bda:LGF050329B5CDA114D , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF050329B5CDA114D
+    bdr:CR62AC582D6860175E
         a                   :AgentAsCreator ;
         :agent              bdr:P8064 ;
         :role               bdr:R0ER0019 .
@@ -68,7 +75,7 @@ bdg:WA25995 {
     bdr:WA25995  a          :Work ;
         skos:altLabel       "bod kyi chos lugs grub mtha' khag gi byung ba brjod pa gzr gnas mkhas pa'i dongs rgyan/"@bo-x-ewts ;
         skos:prefLabel      "chos 'byung mkhas pa'i dgongs rgyan/"@bo-x-ewts , "xizang zong jiao shi lue"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CRF050329B5CDA114D ;
+        :creator            bdr:CR62AC582D6860175E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T12 ;

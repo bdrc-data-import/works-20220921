@@ -55,6 +55,12 @@ bdg:WA1KG873 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -93,30 +99,31 @@ bdg:WA1KG873 {
     bda:WA1KG873  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG873 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "34/WA1KG873.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG873 ;
-        adm:logEntry        bda:LG2D3FFC3A67EE3545 , bda:LG9E0637A01334CBC2 , bda:LGAF655256381060E5 , bda:LGBE84F05DA3673A44 , bda:LGD4A148CD25ACFBEB , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG2D3FFC3A67EE3545 , bda:LG9E0637A01334CBC2 , bda:LGAF655256381060E5 , bda:LGBE84F05DA3673A44 , bda:LGD4A148CD25ACFBEB , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR667F2D7F8770A85A
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1KG874 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRD340E27945FE4C83
+    bdr:CR489303563D48D02E
         a                   :AgentAsCreator ;
         :agent              bdr:P10072 ;
         :role               bdr:R0ER0026 .
+    
+    bdr:CRD340E27945FE4C83
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG874 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1KG873  skos:altLabel  "xi zang zong jiao"@zh-latn-pinyin-x-ndia .
     
     bdr:WA1KG873  a         :Work ;
         skos:prefLabel      "bod ljongs chos lugs/"@bo-x-ewts , "xi zang zong jiao"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Brief history of different religious traditions and philosophies in Tibet."@en ;
-        :creator            bdr:CR667F2D7F8770A85A , bdr:CRD340E27945FE4C83 ;
+        :creator            bdr:CR489303563D48D02E , bdr:CRD340E27945FE4C83 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG873 , bdr:W1KG873 ;

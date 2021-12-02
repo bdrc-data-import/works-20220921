@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29654 {
-    bda:LG195627DC24E48493
+    bda:LG7F544B82AD5DFEC3
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -29,6 +29,12 @@ bdg:WA29654 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
@@ -54,15 +60,16 @@ bdg:WA29654 {
     bda:WA29654  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29654 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "59/WA29654.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29654 ;
-        adm:logEntry        bda:LG195627DC24E48493 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG7F544B82AD5DFEC3 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7F544B82AD5DFEC3
+    bdr:CR8C3F9021AB1EF387
         a                   :AgentAsCreator ;
         :agent              bdr:P7377 ;
         :role               bdr:R0ER0019 .
@@ -72,7 +79,7 @@ bdg:WA29654 {
     bdr:WA29654  a          :Work ;
         skos:altLabel       "bod kyi lo rgyus blo gsar 'jug pa'i 'bab stegs/"@bo-x-ewts ;
         skos:prefLabel      "sngon byung bod kyi lo rgyus nyung ngur brjod pa blo gsar 'jug pa'i 'bab stegs/"@bo-x-ewts , "Sṅon byuṅ Bod kyi lo rgyus ñuṅ ṅur brjod pa blo gsar ʼjug paʼi ʼbab stegs źes bya bźugs so /Tshogs-gñis-rab-rgyas nas."@en-x-mixed ;
-        :creator            bdr:CR7F544B82AD5DFEC3 ;
+        :creator            bdr:CR8C3F9021AB1EF387 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

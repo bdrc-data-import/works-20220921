@@ -46,6 +46,12 @@ bdg:WA1AC213 {
         adm:logMessage      "gsar du las"@en ;
         adm:logWho          bdu:U00029 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4599A38FCE
         a                   adm:UpdateData ;
         adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
@@ -63,22 +69,23 @@ bdg:WA1AC213 {
     bda:WA1AC213  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC213 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "88/WA1AC213.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC213 ;
-        adm:logEntry        bda:LG4542DC2B21D2C850 , bda:LG693F5946B2130AFA , bda:LG733BBDF59395662F , bda:LG7B230048CAA896D7 , bda:LGC1AC8426B1376A5B , bda:LGCA024F06FB5732E8 , bda:LGIM4599A38FCE , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG4542DC2B21D2C850 , bda:LG693F5946B2130AFA , bda:LG733BBDF59395662F , bda:LG7B230048CAA896D7 , bda:LGC1AC8426B1376A5B , bda:LGCA024F06FB5732E8 , bda:LGIM4394141E , bda:LGIM4599A38FCE , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7EA201E4DB145AD1
+    bdr:CRC3CABA5C7BBD1C20
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ10516 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1AC213  a         :Work ;
         skos:prefLabel      "dbu ma rtsa ba'i 'grel pa bud+d+ha pa li ta/"@bo-x-ewts ;
-        :creator            bdr:CR7EA201E4DB145AD1 ;
+        :creator            bdr:CRC3CABA5C7BBD1C20 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

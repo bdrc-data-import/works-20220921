@@ -31,6 +31,12 @@ bdg:WA1KG25655 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -48,15 +54,16 @@ bdg:WA1KG25655 {
     bda:WA1KG25655  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25655 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "52/WA1KG25655.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25655 ;
-        adm:logEntry        bda:LG879D99CFF4FB88A6 , bda:LGF60846AC02AC120F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG879D99CFF4FB88A6 , bda:LGF60846AC02AC120F , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE7F3A48582E13944
+    bdr:CR812460CCED6F38CC
         a                   :AgentAsCreator ;
         :agent              bdr:P6329 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +71,7 @@ bdg:WA1KG25655 {
     bdr:WA1KG25655  a       :Work ;
         skos:prefLabel      "khams mi nyag lcags la rgyal po'i rgyal rabs gsal ba'i me long /"@bo-x-ewts ;
         :catalogInfo        "History of lcags-la rgyal-po, small kingdom in eastern Tibet."@en ;
-        :creator            bdr:CRE7F3A48582E13944 ;
+        :creator            bdr:CR812460CCED6F38CC ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T793 ;

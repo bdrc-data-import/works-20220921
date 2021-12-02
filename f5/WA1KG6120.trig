@@ -54,6 +54,12 @@ bdg:WA1KG6120 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -85,28 +91,29 @@ bdg:WA1KG6120 {
     bda:WA1KG6120  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG6120 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "f5/WA1KG6120.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG6120 ;
-        adm:logEntry        bda:LG3B43E31D7590192E , bda:LG6B08F4C7ACDAA55B , bda:LG9E2C143A901C678C , bda:LGAE766B069E02A38A , bda:LGFAA05BBFFC776DDB , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3B43E31D7590192E , bda:LG6B08F4C7ACDAA55B , bda:LG9E2C143A901C678C , bda:LGAE766B069E02A38A , bda:LGFAA05BBFFC776DDB , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1888B19BF169664D
         a                   :AgentAsCreator ;
-        :agent              bdr:P6846 ;
+        :agent              bdr:P7309 ;
         :role               bdr:R0ER0026 .
     
     bdr:CR2715C5B19052D7E9
         a                   :AgentAsCreator ;
-        :agent              bdr:P7309 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CRBCFC5A39F5109D72
-        a                   :AgentAsCreator ;
         :agent              bdr:P1KG6121 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR8F0A5B2D0C0FB79C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6846 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW1KG6120  skos:altLabel  "外国著名战争战役"@zh-hant .
     
@@ -114,7 +121,7 @@ bdg:WA1KG6120 {
         skos:altLabel       "wai guo zhu ming zhan zheng zhan yi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "phyi rgyal gyi dmag 'khrug dang g.yul 'thab grags can/"@bo-x-ewts , "外国著名战争战役"@zh-hant ;
         :catalogInfo        "Essay on foreign wars and famous battles around the world."@en ;
-        :creator            bdr:CR1888B19BF169664D , bdr:CR2715C5B19052D7E9 , bdr:CRBCFC5A39F5109D72 ;
+        :creator            bdr:CR1888B19BF169664D , bdr:CR2715C5B19052D7E9 , bdr:CR8F0A5B2D0C0FB79C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:IE1KG6120 , bdr:MW1KG6120 , bdr:W1KG6120 ;

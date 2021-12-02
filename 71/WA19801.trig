@@ -18,6 +18,10 @@ bdg:WA19801 {
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG63E276499DCD8357
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG76756840A303A098
         a                   adm:UpdateData ;
         adm:logDate         "2007-11-01T09:08:01.02Z"^^xsd:dateTime ;
@@ -28,10 +32,6 @@ bdg:WA19801 {
         adm:logDate         "2009-04-10T09:42:58.228Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
-    
-    bda:LGC3149C0D52C747D3
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGD4C2D20312299B7F
         a                   adm:UpdateData ;
@@ -52,6 +52,12 @@ bdg:WA19801 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
@@ -84,23 +90,24 @@ bdg:WA19801 {
     bda:WA19801  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19801 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "71/WA19801.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19801 ;
-        adm:logEntry        bda:LG31EC649D25D23493 , bda:LG76756840A303A098 , bda:LG7868A3DE86E6498C , bda:LGC3149C0D52C747D3 , bda:LGD4C2D20312299B7F , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG31EC649D25D23493 , bda:LG63E276499DCD8357 , bda:LG76756840A303A098 , bda:LG7868A3DE86E6498C , bda:LGD4C2D20312299B7F , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR63E276499DCD8357
-        a                   :AgentAsCreator ;
-        :agent              bdr:P7278 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRF3C0589D397DCF88
+    bdr:CRBD355B7E00F1C912
         a                   :AgentAsCreator ;
         :agent              bdr:P6189 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRF3C0589D397DCF88
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7278 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW19801  skos:altLabel  "Gaṅs-can mkhas grub rim byon miṅ mdzod /Ko-źul Grags-pa-ʾbyuṅ-gnas daṅ Rgyal-ba Blo-bzaṅ-mkhas-grub gñis kyis brtsams."@en-x-mixed , "雪域历代名人辞典"@zh-hans .
     
@@ -108,7 +115,7 @@ bdg:WA19801 {
         skos:altLabel       "gangs can mkhas grub rim byon ming mdzod/"@bo-x-ewts , "xue yu li dai ming ren ci dian"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "ming mdzod/"@bo-x-ewts , "Gaṅs-can mkhas grub rim byon miṅ mdzod /Ko-źul Grags-pa-ʾbyuṅ-gnas daṅ Rgyal-ba Blo-bzaṅ-mkhas-grub gñis kyis brtsams."@en-x-mixed , "雪域历代名人辞典"@zh-hans ;
         :catalogInfo        "Biographical dictionary of prominent Tibetan scholars and political figures."@en ;
-        :creator            bdr:CR63E276499DCD8357 , bdr:CRF3C0589D397DCF88 ;
+        :creator            bdr:CRBD355B7E00F1C912 , bdr:CRF3C0589D397DCF88 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1986 ;

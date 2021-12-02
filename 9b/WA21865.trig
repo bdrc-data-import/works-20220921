@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21865 {
-    bda:LGCDED256EB0D1B2B2
+    bda:LG3AFBAAF0003DE112
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -22,6 +22,12 @@ bdg:WA21865 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
@@ -40,15 +46,16 @@ bdg:WA21865 {
     bda:WA21865  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21865 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "9b/WA21865.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21865 ;
-        adm:logEntry        bda:LGCDED256EB0D1B2B2 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG3AFBAAF0003DE112 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3AFBAAF0003DE112
+    bdr:CRA4066D08CB634367
         a                   :AgentAsCreator ;
         :agent              bdr:P1161 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +64,7 @@ bdg:WA21865 {
     
     bdr:WA21865  a          :Work ;
         skos:prefLabel      "snyan ngag la 'jug tshul tshig rgyan rig pa'i sgo 'byed/"@bo-x-ewts , "shi xue ming jian"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR3AFBAAF0003DE112 ;
+        :creator            bdr:CRA4066D08CB634367 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW21865 , bdr:MW28948_B5BB4B , bdr:W21865 ;

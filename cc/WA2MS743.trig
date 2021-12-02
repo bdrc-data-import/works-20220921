@@ -44,6 +44,12 @@ bdg:WA2MS743 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -82,15 +88,16 @@ bdg:WA2MS743 {
     bda:WA2MS743  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2MS743 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "cc/WA2MS743.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2MS743 ;
-        adm:logEntry        bda:LG085343CB07A38BB0 , bda:LG130B2CB16749DE22 , bda:LGEEA47620F8940888 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG085343CB07A38BB0 , bda:LG130B2CB16749DE22 , bda:LGEEA47620F8940888 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR530962EB5985B18B
+    bdr:CRF7EAF0266BF17FE5
         a                   :AgentAsCreator ;
         :agent              bdr:P6637 ;
         :role               bdr:R0ER0019 .
@@ -98,7 +105,7 @@ bdg:WA2MS743 {
     bdr:WA2MS743  a         :Work ;
         skos:prefLabel      "dge 'dun chos 'phel/"@bo-x-ewts , "Biography of Ge Dun Qu Pel"@en , "geng dun qun pe dashi ping zhuan"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Biography of Gendun Chopel. Written by Anak Tsering Tashi."@en ;
-        :creator            bdr:CR530962EB5985B18B ;
+        :creator            bdr:CRF7EAF0266BF17FE5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

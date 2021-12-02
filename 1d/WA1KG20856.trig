@@ -24,18 +24,25 @@ bdg:WA1KG20856 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG20856  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG20856 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "1d/WA1KG20856.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG20856 ;
-        adm:logEntry        bda:LGC777EE491E8A6CFB , bda:LGE14D1F1C39F6F9B8 ;
+        adm:logEntry        bda:LGC777EE491E8A6CFB , bda:LGE14D1F1C39F6F9B8 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1FF3006A3385288F
+    bdr:CR3F3748435577C55B
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG20865 ;
         :role               bdr:R0ER0019 .
@@ -46,7 +53,7 @@ bdg:WA1KG20856 {
         skos:altLabel       "drin can ma lo dgung grangs brgyad cur bde legs ngang son pa'i legs skyes/"@bo-x-ewts , "sog smon lam gyi snyan ngag rtsom btus/"@bo-x-ewts ;
         skos:prefLabel      "drin can ma lo/"@bo-x-ewts , "an offering on the auspicious occasion of the eightieth precious maternal year"@en ;
         :catalogInfo        "Selection of poetry by Sog Monlam."@en ;
-        :creator            bdr:CR1FF3006A3385288F ;
+        :creator            bdr:CR3F3748435577C55B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG20856 , bdr:W1KG20856 ;

@@ -24,18 +24,25 @@ bdg:WA1KG21018 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG21018  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG21018 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "10/WA1KG21018.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG21018 ;
-        adm:logEntry        bda:LG40FD23E0312375F6 , bda:LG78550DA60AC65921 ;
+        adm:logEntry        bda:LG40FD23E0312375F6 , bda:LG78550DA60AC65921 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR554EFD17E5797BB6
+    bdr:CR93C28B7CDABDC7BF
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG20927 ;
         :role               bdr:R0ER0019 .
@@ -46,7 +53,7 @@ bdg:WA1KG21018 {
         skos:altLabel       "lun she hui zhu yi min zhu he fa zhi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "spyi tshogs ring lugs kyi dmangs gtso dang khrims lugs skor bshad pa/"@bo-x-ewts , "论社会主义民主和法制"@zh-hans ;
         :catalogInfo        "Democracy and constitution according to the Socialism."@en ;
-        :creator            bdr:CR554EFD17E5797BB6 ;
+        :creator            bdr:CR93C28B7CDABDC7BF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG21018 , bdr:W1KG21018 ;

@@ -48,6 +48,12 @@ bdg:WA1KG4335 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -72,39 +78,40 @@ bdg:WA1KG4335 {
     bda:WA1KG4335  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4335 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "01/WA1KG4335.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4335 ;
-        adm:logEntry        bda:LG36CBB8A665397CB9 , bda:LG3B3554D9A3386FF3 , bda:LG488149470E4B5E80 , bda:LG5ED8389EAE7E209B , bda:LG676FCA6AD4D80AE1 , bda:LGB3329C6CD04841EB , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG36CBB8A665397CB9 , bda:LG3B3554D9A3386FF3 , bda:LG488149470E4B5E80 , bda:LG5ED8389EAE7E209B , bda:LG676FCA6AD4D80AE1 , bda:LGB3329C6CD04841EB , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR50603F208C964AA3
         a                   :AgentAsCreator ;
-        :agent              bdr:P385 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRB2D0486E7DEE3613
-        a                   :AgentAsCreator ;
         :agent              bdr:P821 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CR52CB79218C85A631
+        a                   :AgentAsCreator ;
+        :agent              bdr:P66 ;
+        :role               bdr:R0ER0016 .
+    
     bdr:CRB897533EDA241674
         a                   :AgentAsCreator ;
-        :agent              bdr:P264 ;
+        :agent              bdr:P385 ;
         :role               bdr:R0ER0016 .
     
     bdr:CRED23FDB946FCBCFD
         a                   :AgentAsCreator ;
-        :agent              bdr:P66 ;
+        :agent              bdr:P264 ;
         :role               bdr:R0ER0016 .
     
     bdr:WA1KG4335  a        :Work ;
         skos:altLabel       "dpal spungs dpe rnying gsar bskrun/ gzhung lugs pod 'phreng / (1-12)"@bo-x-ewts ;
         skos:prefLabel      "dpal spungs dpe rnying gsar bskrun las gzhung lugs phyogs bsgrigs/"@bo-x-ewts ;
         :catalogInfo        "Anthology of philosophical texts from the Kagyu order. From Pelpung Monastery."@en ;
-        :creator            bdr:CR50603F208C964AA3 , bdr:CRB2D0486E7DEE3613 , bdr:CRB897533EDA241674 , bdr:CRED23FDB946FCBCFD ;
+        :creator            bdr:CR50603F208C964AA3 , bdr:CR52CB79218C85A631 , bdr:CRB897533EDA241674 , bdr:CRED23FDB946FCBCFD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T385 ;

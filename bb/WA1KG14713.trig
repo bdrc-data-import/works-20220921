@@ -36,6 +36,12 @@ bdg:WA1KG14713 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -53,15 +59,16 @@ bdg:WA1KG14713 {
     bda:WA1KG14713  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14713 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "bb/WA1KG14713.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14713 ;
-        adm:logEntry        bda:LG0F791C09EB50BD53 , bda:LG50A38D68424FD644 , bda:LG9FEF8731FAF51E90 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0F791C09EB50BD53 , bda:LG50A38D68424FD644 , bda:LG9FEF8731FAF51E90 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0534C71F1B6F11CD
+    bdr:CRC9724C904968D447
         a                   :AgentAsCreator ;
         :agent              bdr:P7293 ;
         :role               bdr:R0ER0019 .
@@ -72,7 +79,7 @@ bdg:WA1KG14713 {
         skos:altLabel       "zhong hua ben cao zang yao juan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "krung hwa sngo 'bum/ bod lugs sman rdzas/"@bo-x-ewts , "中华本草藏药卷(藏文版)"@zh-hans ;
         :catalogInfo        "Tibetan medicinal drugs and its composition"@en ;
-        :creator            bdr:CR0534C71F1B6F11CD ;
+        :creator            bdr:CRC9724C904968D447 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG14713 , bdr:W1KG14713 ;

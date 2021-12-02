@@ -49,6 +49,12 @@ bdg:WA1KG6122 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -80,23 +86,24 @@ bdg:WA1KG6122 {
     bda:WA1KG6122  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG6122 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "88/WA1KG6122.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG6122 ;
-        adm:logEntry        bda:LG74DC73221DFB5DF5 , bda:LG9D0B3A29FA6E004B , bda:LGE3671D8492FF48DA , bda:LGF41764B0A8F7562D , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG74DC73221DFB5DF5 , bda:LG9D0B3A29FA6E004B , bda:LGE3671D8492FF48DA , bda:LGF41764B0A8F7562D , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR8B740EDD2346134A
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG6177 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CR90D90A23978FB5AE
-        a                   :AgentAsCreator ;
         :agent              bdr:P1KG6123 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRAFE72FC8C519DB4D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG6177 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW1KG6122  skos:altLabel  "世界中世纪故事"@zh-hans .
     
@@ -104,7 +111,7 @@ bdg:WA1KG6122 {
         skos:altLabel       "shi jie zhong shi ji gu shi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "'dzam gling dus rabs bar ma'i lo rgyus kyi gtam rgyud/"@bo-x-ewts , "世界中世纪故事"@zh-hans ;
         :catalogInfo        "Selections on medieval period world history."@en ;
-        :creator            bdr:CR8B740EDD2346134A , bdr:CR90D90A23978FB5AE ;
+        :creator            bdr:CR8B740EDD2346134A , bdr:CRAFE72FC8C519DB4D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

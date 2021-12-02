@@ -38,6 +38,12 @@ bdg:WA8LS18796 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -55,15 +61,16 @@ bdg:WA8LS18796 {
     bda:WA8LS18796  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18796 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "63/WA8LS18796.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18796 ;
-        adm:logEntry        bda:LG192CD135F622F82D , bda:LG4707F8E1325865F7 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG192CD135F622F82D , bda:LG4707F8E1325865F7 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR39B06427503DF4A3
+    bdr:CRD2656783239B39EA
         a                   :AgentAsCreator ;
         :agent              bdr:P10335 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +78,7 @@ bdg:WA8LS18796 {
     bdr:WA8LS18796  a       :Work ;
         skos:prefLabel      "phyugs nad brtag bcos rgyun mkho phyogs btus/"@bo-x-ewts ;
         :catalogInfo        "A compilation of veterinary medicine, translated by Yeshe Topgyal."@en ;
-        :creator            bdr:CR39B06427503DF4A3 ;
+        :creator            bdr:CRD2656783239B39EA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

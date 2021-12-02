@@ -36,10 +36,6 @@ bdg:WA22946 {
         adm:logMessage      "scan to true; jann"@en ;
         adm:logWho          bdu:U00011 .
     
-    bda:LG48C74EE22611C156
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG5B3E9031D0EA79B0
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2012-03-01T11:57:40.877Z"^^xsd:dateTime ;
@@ -75,11 +71,21 @@ bdg:WA22946 {
         adm:logMessage      "restricted volume 9"@en ;
         adm:logWho          bdu:U00011 .
     
+    bda:LGECC322C544EC0C49
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGF3F79011012FBCBB
         a                   adm:UpdateData ;
         adm:logDate         "2007-09-14T10:31:41.557Z"^^xsd:dateTime ;
         adm:logMessage      "changed to scan and note about restricted 9th volume"@en ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -105,15 +111,16 @@ bdg:WA22946 {
     bda:WA22946  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22946 ;
-        adm:facetIndex      17 ;
+        adm:facetIndex      18 ;
         adm:gitPath         "d5/WA22946.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22946 ;
-        adm:logEntry        bda:LG0248A2CABA671AF4 , bda:LG0F53F70AE75C1C68 , bda:LG165C0F869D9002A6 , bda:LG3C3910A45F805A97 , bda:LG48C74EE22611C156 , bda:LG5B3E9031D0EA79B0 , bda:LG66A3F44FC29430CE , bda:LG67EA3CE1AFFA9EEF , bda:LGB6D3D9C138611ADE , bda:LGB79EA2C5A9D2ED5A , bda:LGBCA4C8A5B4118B64 , bda:LGF3F79011012FBCBB , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0248A2CABA671AF4 , bda:LG0F53F70AE75C1C68 , bda:LG165C0F869D9002A6 , bda:LG3C3910A45F805A97 , bda:LG5B3E9031D0EA79B0 , bda:LG66A3F44FC29430CE , bda:LG67EA3CE1AFFA9EEF , bda:LGB6D3D9C138611ADE , bda:LGB79EA2C5A9D2ED5A , bda:LGBCA4C8A5B4118B64 , bda:LGECC322C544EC0C49 , bda:LGF3F79011012FBCBB , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRECC322C544EC0C49
+    bdr:CR75F2CE7B68057C23
         a                   :AgentAsCreator ;
         :agent              bdr:P724 ;
         :role               bdr:R0ER0019 .
@@ -122,7 +129,7 @@ bdg:WA22946 {
         skos:altLabel       "smyo shul mkhan po ngag dbang dpal bzang po'i bka' 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_ngag dbang dpal bzang /"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Khenpo Ngachung or Ngagwang Pelzang (1879-1941), a Dzogchen teacher and scholar. He came from the Nyoshul lineage and is famed for his exposition of the teachings of Jigme Lingpa and Dza Paltrul. He was also the head teacher of the seminary at Katok Monastery for 13 years. Scanned through the generous support of Prof. John Makransky, as well as Leah Weiss and the Dzogchen Foundation."@en ;
-        :creator            bdr:CRECC322C544EC0C49 ;
+        :creator            bdr:CR75F2CE7B68057C23 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

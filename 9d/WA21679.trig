@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21679 {
+    bda:LG0454176E8FBD318B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG4BD05A03181BDD5B
         a                   adm:UpdateData ;
         adm:logDate         "2021-06-09T10:13:34.794Z"^^xsd:dateTime ;
         adm:logMessage      "Reviewed Catalog, add author, editor, cat info, print tyep and language encoding"@en ;
         adm:logWho          bdu:U00017 .
-    
-    bda:LG97F8F6BD9E174DA7
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -28,6 +28,12 @@ bdg:WA21679 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
@@ -46,12 +52,13 @@ bdg:WA21679 {
     bda:WA21679  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21679 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "9d/WA21679.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21679 ;
-        adm:logEntry        bda:LG4BD05A03181BDD5B , bda:LG97F8F6BD9E174DA7 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG0454176E8FBD318B , bda:LG4BD05A03181BDD5B , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW21679  skos:altLabel  "hsi tsang min su ching hsuan pen"@zh-latn-wadegile .

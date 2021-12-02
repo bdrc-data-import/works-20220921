@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20241 {
+    bda:LG00732FEEBBB34E82
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG2CD0B3A6DBE2C1A7
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:14:39.089Z"^^xsd:dateTime ;
@@ -36,9 +40,11 @@ bdg:WA20241 {
         adm:logMessage      "changed access to fairUse"@en ;
         adm:logWho          bdu:U00006 .
     
-    bda:LGFDF607B30AFCCF9A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -64,15 +70,16 @@ bdg:WA20241 {
     bda:WA20241  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20241 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "f3/WA20241.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20241 ;
-        adm:logEntry        bda:LG2CD0B3A6DBE2C1A7 , bda:LGB73458AB7BF323B2 , bda:LGBF4007D37DDC3FB4 , bda:LGF894B4465C7CC0CA , bda:LGFDF607B30AFCCF9A , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG00732FEEBBB34E82 , bda:LG2CD0B3A6DBE2C1A7 , bda:LGB73458AB7BF323B2 , bda:LGBF4007D37DDC3FB4 , bda:LGF894B4465C7CC0CA , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR00732FEEBBB34E82
+    bdr:CRA559C599A0339968
         a                   :AgentAsCreator ;
         :agent              bdr:P6676 ;
         :role               bdr:R0ER0019 .
@@ -81,7 +88,7 @@ bdg:WA20241 {
         skos:altLabel       "gangs can bod kyi lo rgyus rig pa'i dpe tsho blo gsal dga' ston/"@bo-x-ewts ;
         skos:prefLabel      "bod kyi lo rgyus dpe tho/"@bo-x-ewts ;
         :catalogInfo        "Bibliography of rare historical and biographical sources that the author has seen or found mention."@en ;
-        :creator            bdr:CR00732FEEBBB34E82 ;
+        :creator            bdr:CRA559C599A0339968 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T298 ;

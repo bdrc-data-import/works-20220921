@@ -31,6 +31,12 @@ bdg:WA8LS18658 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -55,15 +61,16 @@ bdg:WA8LS18658 {
     bda:WA8LS18658  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18658 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "e6/WA8LS18658.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18658 ;
-        adm:logEntry        bda:LG47E6145357B58F13 , bda:LG84A6B973AC53EFFE , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LG47E6145357B58F13 , bda:LG84A6B973AC53EFFE , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR586E22D57377C1D3
+    bdr:CREC9D3ECA82EDA963
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG15211 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +78,7 @@ bdg:WA8LS18658 {
     bdr:WA8LS18658  a       :Work ;
         skos:prefLabel      "rtsom rig gzhung lugs gnad bsdus/"@bo-x-ewts ;
         :catalogInfo        "A summary of literature by Dorjee Rinchen."@en ;
-        :creator            bdr:CR586E22D57377C1D3 ;
+        :creator            bdr:CREC9D3ECA82EDA963 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T2398 ;

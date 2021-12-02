@@ -30,7 +30,7 @@ bdg:WA25007 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LG75DEF0FC8AAB3082
+    bda:LGA156AE576154ADDB
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -40,6 +40,12 @@ bdg:WA25007 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM569A8014B1
         a                   adm:UpdateData ;
@@ -86,16 +92,17 @@ bdg:WA25007 {
     bda:WA25007  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25007 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "0c/WA25007.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25007 ;
-        adm:logEntry        bda:LG3CEF9E2EF37A7F77 , bda:LG5BDDFC65BD93AAC1 , bda:LG68814FCE22077647 , bda:LG75DEF0FC8AAB3082 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3CEF9E2EF37A7F77 , bda:LG5BDDFC65BD93AAC1 , bda:LG68814FCE22077647 , bda:LGA156AE576154ADDB , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA23627 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRA156AE576154ADDB
+    bdr:CRFC832C6FD45CAF5E
         a                   :AgentAsCreator ;
         :agent              bdr:P248 ;
         :role               bdr:R0ER0019 .
@@ -106,7 +113,7 @@ bdg:WA25007 {
         skos:altLabel       "mkhas shing grub pa'i dbang phyug chen po rdo grub chen 'jigs med bstan pa'i nyi ma dpal bzang po'i gsung 'bum legs bshad nor bu'i bang mdzod/"@bo-x-ewts , "rdo grub chen 'jigs med bstan pa'i nyi ma'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_'jigs med bstan pa'i nyi ma/"@bo-x-ewts , "Mkhas śiṅ grub paʾi dbaṅ phyug chen po Rdo Grub-chen ʾJigs-med-bstan-paʾi-ñi-ma dpal bzaṅ poʾi gsuṅ ʾbum legs bśad nor buʾi baṅ mdzod bźugs /[Mgo-log khul gnaʾ rtsom bya baʾi gźuṅ las khaṅ gis ʾtshol sdud dag sgrig byas]."@en-x-mixed , "duo zhi dan ni wen ji"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Collected Works by Nyingma master Dodrubchen 03 Jigme Tenpai Nyima (1865-1926)."@bo-x-ewts ;
-        :creator            bdr:CRA156AE576154ADDB ;
+        :creator            bdr:CRFC832C6FD45CAF5E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

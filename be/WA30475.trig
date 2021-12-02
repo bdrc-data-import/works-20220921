@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30475 {
-    bda:LG3254D26AE4A331FC
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG343C5AA10EFA3B1F
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-02-05T15:06:34.986Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG6D9553A313BD3EB5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGEF4AFB5F6594BE8C
         a                   adm:UpdateData ;
@@ -34,6 +34,12 @@ bdg:WA30475 {
         adm:logMessage      "made open access"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
@@ -52,15 +58,16 @@ bdg:WA30475 {
     bda:WA30475  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30475 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "be/WA30475.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30475 ;
-        adm:logEntry        bda:LG3254D26AE4A331FC , bda:LG343C5AA10EFA3B1F , bda:LGEF4AFB5F6594BE8C , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG343C5AA10EFA3B1F , bda:LG6D9553A313BD3EB5 , bda:LGEF4AFB5F6594BE8C , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6D9553A313BD3EB5
+    bdr:CRE974DC1DC47EC2C7
         a                   :AgentAsCreator ;
         :agent              bdr:P9602 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +78,7 @@ bdg:WA30475 {
         skos:altLabel       "ju jue chen mo"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "khu sim khad kyis dkrog"@bo-x-ewts , "Khu sim khad kyis dkrog /Me-lces brtsams."@en-x-mixed , "拒绝沉默"@zh-hans ;
         :catalogInfo        "Collection of essays predominantly critics on Tibetan literature and humanistic ethics."@en ;
-        :creator            bdr:CR6D9553A313BD3EB5 ;
+        :creator            bdr:CRE974DC1DC47EC2C7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;

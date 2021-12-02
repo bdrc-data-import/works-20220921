@@ -42,6 +42,12 @@ bdg:WA1KG9980 {
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -66,15 +72,16 @@ bdg:WA1KG9980 {
     bda:WA1KG9980  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG9980 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "01/WA1KG9980.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG9980 ;
-        adm:logEntry        bda:LG06D8165DDB3FB3F6 , bda:LGAAD82689B6B84908 , bda:LGC8B98B2450FA921E , bda:LGEBEDEC740FE0F271 , bda:LGF244F8853316D93F , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG06D8165DDB3FB3F6 , bda:LGAAD82689B6B84908 , bda:LGC8B98B2450FA921E , bda:LGEBEDEC740FE0F271 , bda:LGF244F8853316D93F , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3F986D7B30CAAA22
+    bdr:CR5A75AE8DEF6D4EC5
         a                   :AgentAsCreator ;
         :agent              bdr:P345 ;
         :role               bdr:R0ER0019 .
@@ -83,7 +90,7 @@ bdg:WA1KG9980 {
         skos:altLabel       "dmigs brtse ma'i be'u bum/"@bo-x-ewts ;
         skos:prefLabel      "dmigs brtse ma'i chos skor stod smad kha skong dang bcas pa/"@bo-x-ewts ;
         :catalogInfo        "Collected rites and explanations for various profound esoteric Buddhist practices focusing on the guru yoga of Tsongkhapa as set forth in the Miktsema devotion and in the Gedan Lhagyama. Includes related visionary teachings of the Geluk order."@en ;
-        :creator            bdr:CR3F986D7B30CAAA22 ;
+        :creator            bdr:CR5A75AE8DEF6D4EC5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1202 ;

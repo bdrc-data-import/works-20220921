@@ -44,6 +44,12 @@ bdg:WA1KG13166 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -61,15 +67,16 @@ bdg:WA1KG13166 {
     bda:WA1KG13166  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG13166 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "23/WA1KG13166.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG13166 ;
-        adm:logEntry        bda:LG6012FAD0D2D08F6C , bda:LG89943D0ECCB455CA , bda:LG96E29A36F3845013 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG6012FAD0D2D08F6C , bda:LG89943D0ECCB455CA , bda:LG96E29A36F3845013 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR579A2D075320F61D
+    bdr:CRAB1B226C6D8D3E61
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG13124 ;
         :role               bdr:R0ER0019 .
@@ -79,7 +86,7 @@ bdg:WA1KG13166 {
     bdr:WA1KG13166  a       :Work ;
         skos:altLabel       "nga'i snying gi bu chung bstan 'dzin 'brug grags la/"@bo-x-ewts , "cheng zhang yao"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod kyi gces phrug"@bo-x-ewts , "成长谣"@zh-hans ;
-        :creator            bdr:CR579A2D075320F61D ;
+        :creator            bdr:CRAB1B226C6D8D3E61 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1884 ;

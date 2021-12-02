@@ -18,6 +18,10 @@ bdg:WA20140 {
         adm:logMessage      "catalog info added; revision of image group"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LG35B5A9DAE3050CED
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG63946D72F1D88040
         a                   adm:UpdateData ;
         adm:logDate         "2012-03-14T16:52:41.37Z"^^xsd:dateTime ;
@@ -36,10 +40,6 @@ bdg:WA20140 {
         adm:logMessage      "corrected place"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGAF0B753319F1269E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:21:21.664Z"^^xsd:dateTime ;
@@ -53,6 +53,12 @@ bdg:WA20140 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -85,29 +91,30 @@ bdg:WA20140 {
     bda:WA20140  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20140 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "40/WA20140.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20140 ;
-        adm:logEntry        bda:LG22F0F5C247230B67 , bda:LG63946D72F1D88040 , bda:LG933BED306B98D40F , bda:LG9757592872E7D1F4 , bda:LGAF0B753319F1269E , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG22F0F5C247230B67 , bda:LG35B5A9DAE3050CED , bda:LG63946D72F1D88040 , bda:LG933BED306B98D40F , bda:LG9757592872E7D1F4 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR35B5A9DAE3050CED
-        a                   :AgentAsCreator ;
-        :agent              bdr:P6476 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRB06DCFA78440B7CF
+    bdr:CR32807B0183F16575
         a                   :AgentAsCreator ;
         :agent              bdr:P6477 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRB06DCFA78440B7CF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6476 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA20140  a          :Work ;
         skos:altLabel       "yul mgo log gi lo rgyus deb ther pad+ma dkar po'i chun po/"@bo-x-ewts ;
         skos:prefLabel      "mgo log lo rgyus deb ther/"@bo-x-ewts ;
         :catalogInfo        "History and tribal organization of the Golok peoples."@en ;
-        :creator            bdr:CR35B5A9DAE3050CED , bdr:CRB06DCFA78440B7CF ;
+        :creator            bdr:CR32807B0183F16575 , bdr:CRB06DCFA78440B7CF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

@@ -100,6 +100,12 @@ bdg:WA1PD2074 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -124,15 +130,16 @@ bdg:WA1PD2074 {
     bda:WA1PD2074  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD2074 ;
-        adm:facetIndex      20 ;
+        adm:facetIndex      21 ;
         adm:gitPath         "90/WA1PD2074.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD2074 ;
-        adm:logEntry        bda:LG0AD7030BD0AA90FC , bda:LG1769E8CBA1BAE1AA , bda:LG2BF90C8AB005F2DF , bda:LG32B55D84B9C2E729 , bda:LG3FFA97084AE285CB , bda:LG6253985360384C8F , bda:LG7A79E98FDAC44402 , bda:LG8622ED6880F789F4 , bda:LG8F9C4A6FA830EA28 , bda:LG90FD42BC44D18AAB , bda:LG938467A4715EFC87 , bda:LG987BC16269CB12D4 , bda:LGB1E9A77453E381DA , bda:LGF0C7ABF5342240D6 , bda:LGF3AF6B575122250C , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0AD7030BD0AA90FC , bda:LG1769E8CBA1BAE1AA , bda:LG2BF90C8AB005F2DF , bda:LG32B55D84B9C2E729 , bda:LG3FFA97084AE285CB , bda:LG6253985360384C8F , bda:LG7A79E98FDAC44402 , bda:LG8622ED6880F789F4 , bda:LG8F9C4A6FA830EA28 , bda:LG90FD42BC44D18AAB , bda:LG938467A4715EFC87 , bda:LG987BC16269CB12D4 , bda:LGB1E9A77453E381DA , bda:LGF0C7ABF5342240D6 , bda:LGF3AF6B575122250C , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0D045AF8DA0024FC
+    bdr:CR91E51AEB406250E6
         a                   :AgentAsCreator ;
         :agent              bdr:P699 ;
         :role               bdr:R0ER0019 .
@@ -141,7 +148,7 @@ bdg:WA1PD2074 {
         skos:altLabel       "gzhan phan chos kyi snang ba'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_gzhan phan chos kyi snang ba/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Khenpo Zhenga, Zhenpen Chokyi Nangwa (1871-1927). Syllabus of Dzongsar Monastery and its affiliates in Tibet. Annotated editions of the Indic shastra treatises were intended to lessen the sectarian rivalries that plagued Tibet."@en ;
-        :creator            bdr:CR0D045AF8DA0024FC ;
+        :creator            bdr:CR91E51AEB406250E6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 , bdr:T304 ;

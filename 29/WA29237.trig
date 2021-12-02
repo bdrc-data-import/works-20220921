@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29237 {
-    bda:LG5121A4E3806668E2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG68CA4566BC4C2051
         a                   adm:UpdateData ;
         adm:logDate         "2012-05-14T16:12:05.823Z"^^xsd:dateTime ;
         adm:logMessage      "added T2CZ10088,t1979"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGCF7672514806C0E8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
@@ -35,6 +35,12 @@ bdg:WA29237 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
@@ -60,15 +66,16 @@ bdg:WA29237 {
     bda:WA29237  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29237 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "29/WA29237.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29237 ;
-        adm:logEntry        bda:LG5121A4E3806668E2 , bda:LG68CA4566BC4C2051 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG68CA4566BC4C2051 , bda:LGCF7672514806C0E8 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCF7672514806C0E8
+    bdr:CRE7C96675124D3137
         a                   :AgentAsCreator ;
         :agent              bdr:P9602 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +84,7 @@ bdg:WA29237 {
     
     bdr:WA29237  a          :Work ;
         skos:prefLabel      "mi gzhi'i snying stobs/"@bo-x-ewts , "Mi gźiʼi sñiṅ stobs /Me-lces brtsams."@en-x-mixed , "ren ge jing shen"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CRCF7672514806C0E8 ;
+        :creator            bdr:CRE7C96675124D3137 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29237 , bdr:W29237 ;

@@ -18,10 +18,6 @@ bdg:WA5331 {
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG2B94BC0304AE1008
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG3693AE88A239FC3A
         a                   adm:UpdateData ;
         adm:logDate         "2009-06-05T10:51:33.697Z"^^xsd:dateTime ;
@@ -31,6 +27,10 @@ bdg:WA5331 {
         a                   adm:UpdateData ;
         adm:logDate         "2009-06-05T10:49:01.575Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LG758DF064EDDD8E0D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG79204440E0DFB3C4
         a                   adm:ScanRequestCreation ;
@@ -48,6 +48,12 @@ bdg:WA5331 {
         a                   adm:UpdateData ;
         adm:logDate         "2009-07-09T11:55:57.953Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -73,15 +79,16 @@ bdg:WA5331 {
     bda:WA5331  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA5331 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "25/WA5331.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA5331 ;
-        adm:logEntry        bda:LG222C507C4A6718B1 , bda:LG2B94BC0304AE1008 , bda:LG3693AE88A239FC3A , bda:LG4099B6AB2CE6486D , bda:LG79204440E0DFB3C4 , bda:LGB0EE4DD211BFDFD4 , bda:LGC2C0B2293D3F52FB , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG222C507C4A6718B1 , bda:LG3693AE88A239FC3A , bda:LG4099B6AB2CE6486D , bda:LG758DF064EDDD8E0D , bda:LG79204440E0DFB3C4 , bda:LGB0EE4DD211BFDFD4 , bda:LGC2C0B2293D3F52FB , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR758DF064EDDD8E0D
+    bdr:CR82250C9093C129CA
         a                   :AgentAsCreator ;
         :agent              bdr:P262 ;
         :role               bdr:R0ER0019 .
@@ -90,7 +97,7 @@ bdg:WA5331 {
         skos:altLabel       "lhar bcas skye rgu'i gtsug nor 'phags chen phyag na pad+mo rje btsun ngag dbang bskal bzang bstan pa'i sgron me mkhas grub rgya mtsho'i rnam par thar pa ngo mtshar lha yi rol mo dbyangs can rgyud du snyan pa'i tam+bu ra/"@bo-x-ewts ;
         skos:prefLabel      "mkhas grub rgya mtsho'i rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography of Dalai Lama 11 Khedrub Gyatso (1838-1855)."@en ;
-        :creator            bdr:CR758DF064EDDD8E0D ;
+        :creator            bdr:CR82250C9093C129CA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

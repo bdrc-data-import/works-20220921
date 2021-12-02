@@ -30,6 +30,12 @@ bdg:WA1KG3815 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -61,28 +67,29 @@ bdg:WA1KG3815 {
     bda:WA1KG3815  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG3815 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "52/WA1KG3815.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG3815 ;
-        adm:logEntry        bda:LG3B4AE15BD6438DCD , bda:LG4CA45CE757018747 , bda:LGFD6CC579C4FB8C14 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG3B4AE15BD6438DCD , bda:LG4CA45CE757018747 , bda:LGFD6CC579C4FB8C14 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR0DFE6B02B30C402A
         a                   :AgentAsCreator ;
-        :agent              bdr:P2486 ;
+        :agent              bdr:P937 ;
         :role               bdr:R0ER0016 .
     
     bdr:CR6C3464CC84105169
         a                   :AgentAsCreator ;
-        :agent              bdr:P937 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR816BDBF15281FF70
-        a                   :AgentAsCreator ;
         :agent              bdr:P926 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR822F169E64DB26E2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2486 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW1KG3815  skos:altLabel  "Collected biographies of the successive embodiments of the Karmapas, 1st to 16th /by Sman-sdong Mtshams-pa Karma Nges-don-bstan-rgyas, Kar-sras Kong-sprul Mkhyen-brtseʼi-ʼod-zer, and Khra-ʼgu Rin-po-che."@en-x-mixed .
     
@@ -90,7 +97,7 @@ bdg:WA1KG3815 {
         skos:altLabel       "chos rje karma pa sku 'phreng rim byon gyi rnam thar mdor bsdus dpag bsam khri shing /"@bo-x-ewts ;
         skos:prefLabel      "karma pa sku 'phreng bcu drug pa tshun rim par byon pa'i rnam thar phyogs bsgrigs/"@bo-x-ewts , "Collected biographies of the successive embodiments of the Karmapas, 1st to 16th /by Sman-sdong Mtshams-pa Karma Nges-don-bstan-rgyas, Kar-sras Kong-sprul Mkhyen-brtseʼi-ʼod-zer, and Khra-ʼgu Rin-po-che."@en-x-mixed ;
         :catalogInfo        "Brief biographies of the successive incarnations of the Black Hat Karmapa, 01 to 16."@en ;
-        :creator            bdr:CR0DFE6B02B30C402A , bdr:CR6C3464CC84105169 , bdr:CR816BDBF15281FF70 ;
+        :creator            bdr:CR0DFE6B02B30C402A , bdr:CR6C3464CC84105169 , bdr:CR822F169E64DB26E2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

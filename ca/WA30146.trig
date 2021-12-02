@@ -18,10 +18,6 @@ bdg:WA30146 {
         adm:logMessage      "annotated"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LG2EECEEF0D9AA04FB
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG3547C308F8477EFB
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-13T14:52:17.43Z"^^xsd:dateTime ;
@@ -33,6 +29,10 @@ bdg:WA30146 {
         adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
         adm:logMessage      "added Work to PL480"@en ;
         adm:logWhoStr       "add-works-to-PR1PL480" .
+    
+    bda:LG5E1FD97552F9D4E8
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG63E10184CFA8D150
         a                   adm:UpdateData ;
@@ -50,6 +50,12 @@ bdg:WA30146 {
         adm:logDate         "2013-04-15T11:36:28.642Z"^^xsd:dateTime ;
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -82,15 +88,16 @@ bdg:WA30146 {
     bda:WA30146  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30146 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "ca/WA30146.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30146 ;
-        adm:logEntry        bda:LG21D09FBA2D53E2D3 , bda:LG2EECEEF0D9AA04FB , bda:LG3547C308F8477EFB , bda:LG57E52F470CADF0A7 , bda:LG63E10184CFA8D150 , bda:LG6D431A88450744CD , bda:LGED2BF5CC4D945333 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG21D09FBA2D53E2D3 , bda:LG3547C308F8477EFB , bda:LG57E52F470CADF0A7 , bda:LG5E1FD97552F9D4E8 , bda:LG63E10184CFA8D150 , bda:LG6D431A88450744CD , bda:LGED2BF5CC4D945333 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5E1FD97552F9D4E8
+    bdr:CR6057A9BAF79DF312
         a                   :AgentAsCreator ;
         :agent              bdr:P183 ;
         :role               bdr:R0ER0019 .
@@ -101,7 +108,7 @@ bdg:WA30146 {
         skos:altLabel       "Gaṅs Śug Ma ṇi Lo chen Rig ʾdzin Chos ñid bzaṅ moʾi rnam par thar pa Rnam mkhyen bde ster :the autobiographical reminiscences of the famed religious master and reembodiment of Kloṅ-chen-pa, Śug-gseb Rje-btsun Rig-ʾdzin-chos-ñid-bzaṅ-mo."@en-x-mixed ;
         skos:prefLabel      "gangs shug ma Ni lo chen rig 'dzin chos nyid bzang mo'i rnam par thar pa rnam mkhyen bde ster/"@bo-x-ewts , "the autobiographical reminiscences of the famed religious master and reembodiment of klon-chen-pa, sug-gseb rje-btsun rig-'dzin-chos-nid-bzan-mo"@en-x-mixed ;
         :catalogInfo        "Autobiography by female Nyingma master, Choying Zangmo (1853-1950/1951), guru to many members of high Lhasa society."@en ;
-        :creator            bdr:CR5E1FD97552F9D4E8 ;
+        :creator            bdr:CR6057A9BAF79DF312 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

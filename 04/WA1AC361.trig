@@ -45,6 +45,12 @@ bdg:WA1AC361 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
@@ -62,15 +68,16 @@ bdg:WA1AC361 {
     bda:WA1AC361  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC361 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "04/WA1AC361.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC361 ;
-        adm:logEntry        bda:LG077A6ED20FDD9074 , bda:LG1924F92A28237E79 , bda:LG4E223CC6DFD8DD55 , bda:LG6ACB7ED3B2AD873C , bda:LGE477049E9169E0EA , bda:LGIM206EC9B06D , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG077A6ED20FDD9074 , bda:LG1924F92A28237E79 , bda:LG4E223CC6DFD8DD55 , bda:LG6ACB7ED3B2AD873C , bda:LGE477049E9169E0EA , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR301AA81848FAA4AB
+    bdr:CR0DBF965C56D0348D
         a                   :AgentAsCreator ;
         :agent              bdr:P9756 ;
         :role               bdr:R0ER0019 .
@@ -80,7 +87,7 @@ bdg:WA1AC361 {
     bdr:WA1AC361  a         :Work ;
         skos:altLabel       "《ge sa er》di ming yan jiu"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "ge sar sgrung gi sa ming zhib 'jug"@bo-x-ewts , "《格萨尔》地名研究"@zh-hans ;
-        :creator            bdr:CR301AA81848FAA4AB ;
+        :creator            bdr:CR0DBF965C56D0348D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1977 ;

@@ -37,6 +37,12 @@ bdg:WA1KG22207 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -47,15 +53,16 @@ bdg:WA1KG22207 {
     bda:WA1KG22207  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG22207 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "85/WA1KG22207.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG22207 ;
-        adm:logEntry        bda:LG49F54DDEC4ECA953 , bda:LG4CA79631F1B74928 , bda:LG8D07B9AEFA5604F7 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG49F54DDEC4ECA953 , bda:LG4CA79631F1B74928 , bda:LG8D07B9AEFA5604F7 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR41E46387059F6A17
+    bdr:CR7D9B156ACEDD864F
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG22229 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +71,7 @@ bdg:WA1KG22207 {
         skos:altLabel       "'gro phan sman rtsis khang gi gdan rab dri med shel gyi me long /"@bo-x-ewts ;
         skos:prefLabel      "lha sa man rtsis khang gi gdan rab dri med shel gyi me long /"@bo-x-ewts ;
         :catalogInfo        "History of Tibetan Medical and Astrological Institute of lhasa and Dharamasala."@en ;
-        :creator            bdr:CR41E46387059F6A17 ;
+        :creator            bdr:CR7D9B156ACEDD864F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG22207 , bdr:W1KG22207 ;

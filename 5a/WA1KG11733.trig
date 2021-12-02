@@ -36,6 +36,12 @@ bdg:WA1KG11733 {
         adm:logMessage      "changed T# as subject"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -67,15 +73,16 @@ bdg:WA1KG11733 {
     bda:WA1KG11733  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG11733 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "5a/WA1KG11733.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG11733 ;
-        adm:logEntry        bda:LG5C59D8B8E7415D49 , bda:LG7E0DD19D7CBB1C8F , bda:LG7EA9E0A0745B72C3 , bda:LGE7E63BF7B37601A8 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG5C59D8B8E7415D49 , bda:LG7E0DD19D7CBB1C8F , bda:LG7EA9E0A0745B72C3 , bda:LGE7E63BF7B37601A8 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9796C68A49EAC835
+    bdr:CR6CCF4BB788201EC8
         a                   :AgentAsCreator ;
         :agent              bdr:P477 ;
         :role               bdr:R0ER0019 .
@@ -84,7 +91,7 @@ bdg:WA1KG11733 {
         skos:altLabel       "bstan bcos mngon par rtogs pa'i rgyan 'grel pa dang bcas pa'i rnam bshad rnam pa gnyis kyi dka' ba'i gnad gsal bar byed pa legs bshad skal bzang klu dbang gi rol mtsho/"@bo-x-ewts ;
         skos:prefLabel      "mngon rtogs rgyan gyi 'grel pa rnam gnyis kyi dka' gnad gsal bar byed pa legs bshad skal bzang klu dbang gi rol mtsho/"@bo-x-ewts ;
         :catalogInfo        "Commentary on Maitreyanatha's Abhisamayalankara of the Prajnaparamita. Textbook for the study of Prajnaparamita philosophy at Sera Je Monastery."@en ;
-        :creator            bdr:CR9796C68A49EAC835 ;
+        :creator            bdr:CR6CCF4BB788201EC8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

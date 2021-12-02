@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21016 {
+    bda:LG556E33D4FBA31E3A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG63DF7E1C974A42CC
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2008-09-30T13:09:49.992Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
-    
-    bda:LG8C4A28B0ECE51D76
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LG9EE976DE7CD8482C
         a                   adm:UpdateData ;
@@ -42,6 +42,12 @@ bdg:WA21016 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -59,12 +65,13 @@ bdg:WA21016 {
     bda:WA21016  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21016 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "60/WA21016.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21016 ;
-        adm:logEntry        bda:LG63DF7E1C974A42CC , bda:LG8C4A28B0ECE51D76 , bda:LG9EE976DE7CD8482C , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG556E33D4FBA31E3A , bda:LG63DF7E1C974A42CC , bda:LG9EE976DE7CD8482C , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW21016  skos:altLabel  "tibetan culture"@en , "xue yu wen hua"@zh-latn-pinyin-x-ndia .

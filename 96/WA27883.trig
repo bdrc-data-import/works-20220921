@@ -18,10 +18,6 @@ bdg:WA27883 {
         adm:logMessage      "image group"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LG4A1462D609CFF259
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG4D0C800854F658E0
         a                   adm:UpdateData ;
         adm:logDate         "2010-01-08T10:26:58.667Z"^^xsd:dateTime ;
@@ -70,10 +66,20 @@ bdg:WA27883 {
         adm:logMessage      "annotation added"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LGB9FD1948CA649D06
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGFBC87CE55E4EB544
         a                   adm:UpdateData ;
         adm:logDate         "2010-09-09T09:59:02.779Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00020 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -92,13 +98,14 @@ bdg:WA27883 {
     bda:WA27883  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27883 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "96/WA27883.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27883 ;
-        adm:logEntry        bda:LG1CB5633A2E5929D1 , bda:LG4A1462D609CFF259 , bda:LG4D0C800854F658E0 , bda:LG671CC71242F63A96 , bda:LG8D4F7B8A8C1CD65C , bda:LG90A8F09A3E9CC736 , bda:LG97E54FD585490719 , bda:LGA299EBA01B1A9494 , bda:LGA97E0541D1D6DD61 , bda:LGB5412653E0E8CCCA , bda:LGFBC87CE55E4EB544 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1CB5633A2E5929D1 , bda:LG4D0C800854F658E0 , bda:LG671CC71242F63A96 , bda:LG8D4F7B8A8C1CD65C , bda:LG90A8F09A3E9CC736 , bda:LG97E54FD585490719 , bda:LGA299EBA01B1A9494 , bda:LGA97E0541D1D6DD61 , bda:LGB5412653E0E8CCCA , bda:LGB9FD1948CA649D06 , bda:LGFBC87CE55E4EB544 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA21295 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:WA27883  a          :Work ;

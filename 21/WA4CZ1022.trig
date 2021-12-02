@@ -36,6 +36,12 @@ bdg:WA4CZ1022 {
         adm:logMessage      "refreshed"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -46,15 +52,16 @@ bdg:WA4CZ1022 {
     bda:WA4CZ1022  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ1022 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "21/WA4CZ1022.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ1022 ;
-        adm:logEntry        bda:LG45DD21E595E662FA , bda:LG54B3DA40251FD723 , bda:LG870DFAC05CE49957 , bda:LGA422E4E4E7DB2C5A , bda:LGIM4BF5F96E12 ;
+        adm:logEntry        bda:LG45DD21E595E662FA , bda:LG54B3DA40251FD723 , bda:LG870DFAC05CE49957 , bda:LGA422E4E4E7DB2C5A , bda:LGIM4394141E , bda:LGIM4BF5F96E12 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3F6B1198C6DCBCF0
+    bdr:CRA7DD54E69C8AE1BA
         a                   :AgentAsCreator ;
         :agent              bdr:P1618 ;
         :role               bdr:R0ER0019 .
@@ -63,7 +70,7 @@ bdg:WA4CZ1022 {
         skos:altLabel       "sa skya bka' 'bum las bsod nams rtse mo'i gsung 'bum thor bu/"@bo-x-ewts ;
         skos:prefLabel      "bsod nams rtse mo'i gsung 'bum thor bu/"@bo-x-ewts ;
         :catalogInfo        "Miscellaneous writings of slob dpon bsod nams rtse mo"@en ;
-        :creator            bdr:CR3F6B1198C6DCBCF0 ;
+        :creator            bdr:CRA7DD54E69C8AE1BA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

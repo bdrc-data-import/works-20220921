@@ -52,6 +52,12 @@ bdg:WA1KG1657 {
         adm:logMessage      "added Work to PR1NLM00"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00-additional" .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -76,15 +82,16 @@ bdg:WA1KG1657 {
     bda:WA1KG1657  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG1657 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "54/WA1KG1657.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG1657 ;
-        adm:logEntry        bda:LG06E7838840BAFE86 , bda:LG09EC68EB0F44B3D3 , bda:LG4A488FFEF44DF111 , bda:LG7D19A271E369F21A , bda:LG89099233ADB8DF92 , bda:LGD9BFA119127410EC , bda:LGFF9F69F498358129 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG06E7838840BAFE86 , bda:LG09EC68EB0F44B3D3 , bda:LG4A488FFEF44DF111 , bda:LG7D19A271E369F21A , bda:LG89099233ADB8DF92 , bda:LGD9BFA119127410EC , bda:LGFF9F69F498358129 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR400235416EAD9A6B
+    bdr:CR74E292DA51A16751
         a                   :AgentAsCreator ;
         :agent              bdr:P289 ;
         :role               bdr:R0ER0019 .
@@ -92,7 +99,7 @@ bdg:WA1KG1657 {
     bdr:WA1KG1657  a        :Work ;
         skos:prefLabel      "gsung 'bum/_d+harma b+ha dra/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Geluk polymath Ngulchu Dharmabhadra (1772-1851) from western Tibet."@en ;
-        :creator            bdr:CR400235416EAD9A6B ;
+        :creator            bdr:CR74E292DA51A16751 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

@@ -24,6 +24,10 @@ bdg:WA27414 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG7690318AED9FA31D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGB41B1EB015BFAE64
         a                   adm:UpdateData ;
         adm:logDate         "2009-11-10T16:44:15.013Z"^^xsd:dateTime ;
@@ -36,9 +40,11 @@ bdg:WA27414 {
         adm:logMessage      "added Place of Production, authorship statement and date of writing"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGFA15239DE608F91A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -50,21 +56,22 @@ bdg:WA27414 {
     bda:WA27414  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27414 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "0e/WA27414.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27414 ;
-        adm:logEntry        bda:LG0DC641BCE709DB69 , bda:LG59848F22F877E248 , bda:LGB41B1EB015BFAE64 , bda:LGDA71EE0B8285C056 , bda:LGFA15239DE608F91A , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG0DC641BCE709DB69 , bda:LG59848F22F877E248 , bda:LG7690318AED9FA31D , bda:LGB41B1EB015BFAE64 , bda:LGDA71EE0B8285C056 , bda:LGIM4394141E , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA24826 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR7690318AED9FA31D
+    bdr:CRD639A24CAAC882F6
         a                   :AgentAsCreator ;
         :agent              bdr:P675 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVD639A24CAAC882F6
+    bdr:EVB894481523542291
         a                   :CompletedEvent ;
         :onOrAbout          "ཀུན་དགའ་ཞེས་པ་ཤིང་ཕོ་སྟག་གི་ལོར་འོལ་དགའ་ལྷུན་པོ་རྫའི་འདབ་ཞོལ་བླ་དྭགས་སླེ་ལུང་དུ་འབོད་པ་ཐེག་མཆོག་རྣམ་གྲོལ་གླིང་དུ་གསང་མཆོག་མཁའ་འགྲོ་རྒྱ་མཚོའི་ལུང་གིས་བསྐུལ་མ་མཛད་པའི་རྐྱེན་ལས་བརྩམས་པའི་དབུ་བཙུགས་པ་ས་ག་ཉ་བའི་དུས་ཆེན་མངོན་པར་གཏན་ལ་ཕེབས་པའོ།།" .
     
@@ -73,10 +80,10 @@ bdg:WA27414 {
     bdr:WA27414  a          :Work ;
         skos:altLabel       "bstan srung rgya mtsho'i rnam thar/"@bo-x-ewts , "dam can bstan srun rgya mtsho'i rnam par thar pa cha sas tsam brjod pa snon med legs bsad/"@bo-x-ewts , "Dam can bstan sruṅ rgya mtshoʼi rnam par thar pa cha śas tsam brjod pa sṅon med legs bśad :a study of the sources, origins, and natures of the Buddhist protective deities of Tibet /by Sle-luṅ Rje-druṅ Bźad-paʼi-rdo-rje."@en-x-mixed ;
         skos:prefLabel      "dam can bstan srung rgya mtsho'i rnam thar/"@bo-x-ewts , "dam can bstan srun rgya mtsho'i rnam par thar pa cha sas tsam brjod pa snon med legs bsad : a study of the sources, origins, and natures of the buddhist protective deities of tibet"@en-x-mixed ;
-        :creator            bdr:CR7690318AED9FA31D ;
+        :creator            bdr:CRD639A24CAAC882F6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVD639A24CAAC882F6 ;
+        :workEvent          bdr:EVB894481523542291 ;
         :workGenre          bdr:T1134 ;
         :workIsAbout        bdr:T406 .
 }

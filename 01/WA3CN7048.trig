@@ -31,6 +31,12 @@ bdg:WA3CN7048 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -48,15 +54,16 @@ bdg:WA3CN7048 {
     bda:WA3CN7048  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN7048 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "01/WA3CN7048.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN7048 ;
-        adm:logEntry        bda:LGDECCFF3998583387 , bda:LGE7B357323C42E01B , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LGDECCFF3998583387 , bda:LGE7B357323C42E01B , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDF77A224F19B7A39
+    bdr:CRCAA2FB235992B58B
         a                   :AgentAsCreator ;
         :agent              bdr:P6469 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +71,7 @@ bdg:WA3CN7048 {
     bdr:WA3CN7048  a        :Work ;
         skos:prefLabel      "lho kha'i grags can mi sna rim byon gyi mtshan mdzod nyi khug gi rgad po dang mos pa'i gtam/"@bo-x-ewts ;
         :catalogInfo        "Collected biographies of from Lhokha Prefecture, Tibet Autonomous Region (TAR)."@en ;
-        :creator            bdr:CRDF77A224F19B7A39 ;
+        :creator            bdr:CRCAA2FB235992B58B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

@@ -18,7 +18,7 @@ bdg:WA24769 {
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG5AD0F5911A8E42CF
+    bda:LG523C7E9E350AC623
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -37,6 +37,12 @@ bdg:WA24769 {
         a                   adm:UpdateData ;
         adm:logDate         "2010-11-02T10:20:51.377Z"^^xsd:dateTime ;
         adm:logMessage      "added WMDL06"@en .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -62,15 +68,16 @@ bdg:WA24769 {
     bda:WA24769  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA24769 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "2d/WA24769.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA24769 ;
-        adm:logEntry        bda:LG33CD225FB1300FCF , bda:LG5AD0F5911A8E42CF , bda:LGAF6C96537A3DCC04 , bda:LGE9BCB4B2EFF01E69 , bda:LGFEE59270E7D820DE , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG33CD225FB1300FCF , bda:LG523C7E9E350AC623 , bda:LGAF6C96537A3DCC04 , bda:LGE9BCB4B2EFF01E69 , bda:LGFEE59270E7D820DE , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR523C7E9E350AC623
+    bdr:CR988AA4C193F07CEC
         a                   :AgentAsCreator ;
         :agent              bdr:P80 ;
         :role               bdr:R0ER0019 .
@@ -79,7 +86,7 @@ bdg:WA24769 {
         skos:altLabel       "phyag na pad dkar 'chang ba thams cad mkhyen pa rje dge 'dun grub dpal bzang po'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_dge 'dun grub pa/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Dalai Lama 01 Gendun Drub (1391-1474), a founding master of the Geluk order."@en ;
-        :creator            bdr:CR523C7E9E350AC623 ;
+        :creator            bdr:CR988AA4C193F07CEC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

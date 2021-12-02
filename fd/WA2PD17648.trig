@@ -46,6 +46,12 @@ bdg:WA2PD17648 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -63,15 +69,16 @@ bdg:WA2PD17648 {
     bda:WA2PD17648  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17648 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "fd/WA2PD17648.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17648 ;
-        adm:logEntry        bda:LG1106488ED8404F13 , bda:LG31649E086A34CE94 , bda:LGBAE6C031CCB3664E , bda:LGEB4FE422C27679FC , bda:LGEE2EE01AAB6FC97F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG1106488ED8404F13 , bda:LG31649E086A34CE94 , bda:LGBAE6C031CCB3664E , bda:LGEB4FE422C27679FC , bda:LGEE2EE01AAB6FC97F , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD170C285A19BF971
+    bdr:CRC6BB8D999DE224F4
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS75570 ;
         :role               bdr:R0ER0019 .
@@ -79,7 +86,7 @@ bdg:WA2PD17648 {
     bdr:WA2PD17648  a       :Work ;
         skos:prefLabel      "rgya kong rig 'dzin mthar phyin gyis lam sang bris pa'i snyan rtsom/"@bo-x-ewts ;
         :catalogInfo        "A collection of poem composed by Gyakong Rikzin Tharchin."@en ;
-        :creator            bdr:CRD170C285A19BF971 ;
+        :creator            bdr:CRC6BB8D999DE224F4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2PD17648 , bdr:W2PD17648 ;

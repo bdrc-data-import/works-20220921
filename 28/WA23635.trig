@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23635 {
-    bda:LG01B80886E81917A0
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG2521E94D1E385D48
         a                   adm:UpdateData ;
         adm:logDate         "2017-09-13T14:07:10.576Z"^^xsd:dateTime ;
@@ -27,6 +23,16 @@ bdg:WA23635 {
         adm:logDate         "2013-02-25T14:21:29.72Z"^^xsd:dateTime ;
         adm:logMessage      "added volume maps"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGBE516E93EA1E2F1F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -45,12 +51,13 @@ bdg:WA23635 {
     bda:WA23635  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23635 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "28/WA23635.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23635 ;
-        adm:logEntry        bda:LG01B80886E81917A0 , bda:LG2521E94D1E385D48 , bda:LG486EAD59B08E6354 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2521E94D1E385D48 , bda:LG486EAD59B08E6354 , bda:LGBE516E93EA1E2F1F , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW23635  skos:altLabel  "the collection works of the ancient sa-skya-pa scholars"@en .

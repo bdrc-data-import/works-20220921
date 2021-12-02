@@ -24,10 +24,6 @@ bdg:WA29307 {
         adm:logMessage      "annotated"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LG6C8DF218F86C4845
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG74B19512B09EF943
         a                   adm:UpdateData ;
         adm:logDate         "2012-04-19T03:14:02.898Z"^^xsd:dateTime ;
@@ -39,6 +35,10 @@ bdg:WA29307 {
         adm:logDate         "2008-05-28T11:38:22.459Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LG86665DD015EA1B76
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG8945F60F3230FACB
         a                   adm:UpdateData ;
@@ -62,6 +62,12 @@ bdg:WA29307 {
         adm:logDate         "2012-06-28T12:16:45.991Z"^^xsd:dateTime ;
         adm:logMessage      "reviewed"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -87,15 +93,16 @@ bdg:WA29307 {
     bda:WA29307  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29307 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "ee/WA29307.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29307 ;
-        adm:logEntry        bda:LG3186745FB7A50EB8 , bda:LG59A30E2405D29B47 , bda:LG6C8DF218F86C4845 , bda:LG74B19512B09EF943 , bda:LG8571C11A3082AA9B , bda:LG8945F60F3230FACB , bda:LG9E719C34DF40C43E , bda:LGE8F6FF04A92693FE , bda:LGEE75DF0C925ECAB7 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3186745FB7A50EB8 , bda:LG59A30E2405D29B47 , bda:LG74B19512B09EF943 , bda:LG8571C11A3082AA9B , bda:LG86665DD015EA1B76 , bda:LG8945F60F3230FACB , bda:LG9E719C34DF40C43E , bda:LGE8F6FF04A92693FE , bda:LGEE75DF0C925ECAB7 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR86665DD015EA1B76
+    bdr:CRBCE8B641F2801C09
         a                   :AgentAsCreator ;
         :agent              bdr:P791 ;
         :role               bdr:R0ER0019 .
@@ -106,7 +113,7 @@ bdg:WA29307 {
         skos:altLabel       "a mes zhabs ngag dbang kun dga' bsod nams kyi bka' 'bum/"@bo-x-ewts , "dpal sa skya pa chen po sngags 'chang thams cad mkhyen pa ngag dbang kun dga' bsod nams kyi gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_ngag dbang kun dga' bsod nams/"@bo-x-ewts , "the collection works of a-mes-shab ngag-dbang kun-dgah bsod-nams"@en ;
         :catalogInfo        "Collected Works by one of the great polymaths of the Sakya tradition, Sakya Trichen 28 Amye Zhab Ngawang Kunga Sonam (1597–1659)."@en ;
-        :creator            bdr:CR86665DD015EA1B76 ;
+        :creator            bdr:CRBCE8B641F2801C09 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

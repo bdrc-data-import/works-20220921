@@ -31,6 +31,12 @@ bdg:WA3CN4642 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -41,16 +47,17 @@ bdg:WA3CN4642 {
     bda:WA3CN4642  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN4642 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "b2/WA3CN4642.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN4642 ;
-        adm:logEntry        bda:LG4914A5552B66CE83 , bda:LG659568F6C8339EEB , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG4914A5552B66CE83 , bda:LG659568F6C8339EEB , bda:LGIM095CC38C9F , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG581 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR7CE6BB355B1F1E97
+    bdr:CRB9BCB38CFDC9BBD1
         a                   :AgentAsCreator ;
         :agent              bdr:P7911 ;
         :role               bdr:R0ER0019 .
@@ -58,7 +65,7 @@ bdg:WA3CN4642 {
     bdr:WA3CN4642  a        :Work ;
         skos:prefLabel      "yang dag lam gyi 'jug sgo blo gsar yid kyi dga' ston/"@bo-x-ewts ;
         :catalogInfo        "On Buddhist spiritual advices."@en ;
-        :creator            bdr:CR7CE6BB355B1F1E97 ;
+        :creator            bdr:CRB9BCB38CFDC9BBD1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workIsAbout        bdr:T58 , bdr:T770 .

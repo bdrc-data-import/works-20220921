@@ -36,6 +36,12 @@ bdg:WA1KG4472 {
         adm:logMessage      "T396 changed to W19740"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -74,15 +80,16 @@ bdg:WA1KG4472 {
     bda:WA1KG4472  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4472 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "95/WA1KG4472.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4472 ;
-        adm:logEntry        bda:LG13B0342CBF163CC4 , bda:LG48AF2D102997EB26 , bda:LG871DC8A32B59429D , bda:LG8E4A7C93F20613DC , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG13B0342CBF163CC4 , bda:LG48AF2D102997EB26 , bda:LG871DC8A32B59429D , bda:LG8E4A7C93F20613DC , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR03F77854265C1375
+    bdr:CR933F3D273A955BC0
         a                   :AgentAsCreator ;
         :agent              bdr:P65 ;
         :role               bdr:R0ER0019 .
@@ -93,7 +100,7 @@ bdg:WA1KG4472 {
         skos:altLabel       "byang chub sems dpa'i spyod pa la 'jug pa'i rnam bshad rgyal sras 'jug ngogs/"@bo-x-ewts ;
         skos:prefLabel      "spyod 'jug rnam bshad rgyal sras 'jug ngogs/"@bo-x-ewts , "Spyod ʼjug rnam bśad Rgyal sras ʼjug ṅogs /Rgyal-tshab Rje."@en-x-mixed ;
         :catalogInfo        "Commentary on Shantideva's Bodhicaryavatara."@en ;
-        :creator            bdr:CR03F77854265C1375 ;
+        :creator            bdr:CR933F3D273A955BC0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;

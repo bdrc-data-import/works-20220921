@@ -24,18 +24,25 @@ bdg:WA1KG23490 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG23490  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG23490 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "ae/WA1KG23490.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG23490 ;
-        adm:logEntry        bda:LG77B5065F54DED2B7 , bda:LG8629FD62CA03A9F0 ;
+        adm:logEntry        bda:LG77B5065F54DED2B7 , bda:LG8629FD62CA03A9F0 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR09B5B3F2BF38AD47
+    bdr:CR3B1DE2D27EDEC37E
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG14943 ;
         :role               bdr:R0ER0026 .
@@ -46,7 +53,7 @@ bdg:WA1KG23490 {
         skos:altLabel       "nub phyogs mtshan nyid rig pa'i rnam bshad las sems kyi rang bzhin la dpyad pa/"@bo-x-ewts ;
         skos:prefLabel      "phe Do/"@bo-x-ewts , "phaedo"@en ;
         :catalogInfo        "A partial traslation of Plato's \"Phaedo\" and introductory essays."@en ;
-        :creator            bdr:CR09B5B3F2BF38AD47 ;
+        :creator            bdr:CR3B1DE2D27EDEC37E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG23490 , bdr:W1KG23490 ;

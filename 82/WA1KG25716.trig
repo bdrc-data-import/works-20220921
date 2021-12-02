@@ -37,6 +37,12 @@ bdg:WA1KG25716 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -54,15 +60,16 @@ bdg:WA1KG25716 {
     bda:WA1KG25716  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25716 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "82/WA1KG25716.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25716 ;
-        adm:logEntry        bda:LG46EFF5B024084D6C , bda:LG74149625EF43EB3B , bda:LGA1C88D509BA50911 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG46EFF5B024084D6C , bda:LG74149625EF43EB3B , bda:LGA1C88D509BA50911 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR03F8C97381FA198C
+    bdr:CRB69D7BD0ADB7F8CD
         a                   :AgentAsCreator ;
         :agent              bdr:P7911 ;
         :role               bdr:R0ER0019 .
@@ -70,7 +77,7 @@ bdg:WA1KG25716 {
     bdr:WA1KG25716  a       :Work ;
         skos:prefLabel      "dpyad rtsom shes rab snang ba/"@bo-x-ewts ;
         :catalogInfo        "An analytical study on religious and secular goverment of Tibet."@en ;
-        :creator            bdr:CR03F8C97381FA198C ;
+        :creator            bdr:CRB69D7BD0ADB7F8CD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;

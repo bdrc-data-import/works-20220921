@@ -54,6 +54,12 @@ bdg:WA2KG210298 {
         adm:logMessage      "added Work to Vienna"@en ;
         adm:logWhoStr       "add-works-to-PR1VIENNA00" .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -70,12 +76,13 @@ bdg:WA2KG210298 {
     bda:WA2KG210298  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG210298 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "89/WA2KG210298.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG210298 ;
-        adm:logEntry        bda:LG05C5AE6CB8F9259B , bda:LG224DCDE8E1FC52CF , bda:LG658492692475F7BD , bda:LG7157C71979BBFEE1 , bda:LGAC10B175CAFCDD48 , bda:LGC5976B96F9D1927C , bda:LGD2B229709585055F , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG05C5AE6CB8F9259B , bda:LG224DCDE8E1FC52CF , bda:LG658492692475F7BD , bda:LG7157C71979BBFEE1 , bda:LGAC10B175CAFCDD48 , bda:LGC5976B96F9D1927C , bda:LGD2B229709585055F , bda:LGIM4394141E , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW2KG210298  skos:altLabel  "The Hemis manuscript of the kanjur"@en .

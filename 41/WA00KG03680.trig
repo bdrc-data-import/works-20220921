@@ -57,6 +57,12 @@ bdg:WA00KG03680 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -74,20 +80,21 @@ bdg:WA00KG03680 {
     bda:WA00KG03680  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG03680 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "41/WA00KG03680.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG03680 ;
-        adm:logEntry        bda:LG03E71A38EC50B9B2 , bda:LG27532D3F2F9A752E , bda:LG4F7DDDBC609961A3 , bda:LG68897C55CEF1665B , bda:LG8C743CC6226E4D57 , bda:LG9B124F29B18554F6 , bda:LGBC890DCBE694C800 , bda:LGFA9B693922356948 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG03E71A38EC50B9B2 , bda:LG27532D3F2F9A752E , bda:LG4F7DDDBC609961A3 , bda:LG68897C55CEF1665B , bda:LG8C743CC6226E4D57 , bda:LG9B124F29B18554F6 , bda:LGBC890DCBE694C800 , bda:LGFA9B693922356948 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8BCE022A019144EA
+    bdr:CR160A532029C5CF33
         a                   :AgentAsCreator ;
         :agent              bdr:P9539 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRE30D0F28B60E45C0
+    bdr:CR8BCE022A019144EA
         a                   :AgentAsCreator ;
         :agent              bdr:P6606 ;
         :role               bdr:R0ER0019 .
@@ -98,7 +105,7 @@ bdg:WA00KG03680 {
         skos:altLabel       "glang nag dgon pa'am dpal bsam 'grub mthong grol gling gi lo rgyus mthong gsal shel gyi me long /"@bo-x-ewts ;
         skos:prefLabel      "glang nag dgon pa'i lo rgyus mthong gsal shel gyi me long /"@bo-x-ewts , "lang liang si li shi yun xian zhuang yan jiu"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Detailed history of Langnag Monastery in Kham, established by Chogyal Pakpa Lodro Gyaltsen."@en ;
-        :creator            bdr:CR8BCE022A019144EA , bdr:CRE30D0F28B60E45C0 ;
+        :creator            bdr:CR160A532029C5CF33 , bdr:CR8BCE022A019144EA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

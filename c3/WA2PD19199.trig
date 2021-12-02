@@ -35,6 +35,12 @@ bdg:WA2PD19199 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -52,15 +58,16 @@ bdg:WA2PD19199 {
     bda:WA2PD19199  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD19199 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "c3/WA2PD19199.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD19199 ;
-        adm:logEntry        bda:LG2A01BDE1DC6C5FA6 , bda:LGD7169D7AE46634B4 , bda:LGDA38FB2767ACE3BB , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2A01BDE1DC6C5FA6 , bda:LGD7169D7AE46634B4 , bda:LGDA38FB2767ACE3BB , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC0C61CC6614E8068
+    bdr:CR9235CEE7B2E4E949
         a                   :AgentAsCreator ;
         :agent              bdr:P6676 ;
         :role               bdr:R0ER0019 .
@@ -68,7 +75,7 @@ bdg:WA2PD19199 {
     bdr:WA2PD19199  a       :Work ;
         skos:altLabel       "khams sprul rin po che'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "legs par bshad pa gtam gyi tshogs ut+pal sngon po'i do shal drang srong dgyes pa'i mgul rgyan/"@bo-x-ewts ;
-        :creator            bdr:CRC0C61CC6614E8068 ;
+        :creator            bdr:CR9235CEE7B2E4E949 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T245 ;

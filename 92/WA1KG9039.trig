@@ -36,6 +36,12 @@ bdg:WA1KG9039 {
         adm:logMessage      "changed provisional to released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -67,30 +73,31 @@ bdg:WA1KG9039 {
     bda:WA1KG9039  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG9039 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "92/WA1KG9039.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG9039 ;
-        adm:logEntry        bda:LG22061A0A8D8EF9BB , bda:LG61DE11AB4E61C61A , bda:LG81771D26C239416B , bda:LGDA5CEDEE50459A46 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG22061A0A8D8EF9BB , bda:LG61DE11AB4E61C61A , bda:LG81771D26C239416B , bda:LGDA5CEDEE50459A46 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR483124A942B3302D
-        a                   :AgentAsCreator ;
-        :agent              bdr:P5569 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR5D939CADF681C548
+    bdr:CR09A8AA2C086D073C
         a                   :AgentAsCreator ;
         :agent              bdr:P215 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CR7717AB0FB9F5A891
+    bdr:CR483124A942B3302D
         a                   :AgentAsCreator ;
         :agent              bdr:P1PD107898 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRAEF6E4A2D4BFE472
+    bdr:CR5D939CADF681C548
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5569 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CR7717AB0FB9F5A891
         a                   :AgentAsCreator ;
         :agent              bdr:P6124 ;
         :role               bdr:R0ER0019 .
@@ -99,7 +106,7 @@ bdg:WA1KG9039 {
         skos:altLabel       "paN chen bsod nams rgyal mtshan gyi rnam 'grel le'u dang po dang / rje shes rab dbang po'i dbu ma dgongs pa yang gsal/ chos rje ngag dbang dpal ldan gyi mngon pa mdzod kyi dogs slong /"@bo-x-ewts ;
         skos:prefLabel      "yongs 'dzin dpal 'byor rgya mtsho'i dbu ma sogs yig cha sna tshogs/"@bo-x-ewts ;
         :catalogInfo        "Curricular texts (yikcha) for study at Tashi Lhunpo Monastery."@en ;
-        :creator            bdr:CR483124A942B3302D , bdr:CR5D939CADF681C548 , bdr:CR7717AB0FB9F5A891 , bdr:CRAEF6E4A2D4BFE472 ;
+        :creator            bdr:CR09A8AA2C086D073C , bdr:CR483124A942B3302D , bdr:CR5D939CADF681C548 , bdr:CR7717AB0FB9F5A891 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T2023 ;

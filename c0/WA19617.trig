@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA19617 {
-    bda:LG49ED31859511D6EB
+    bda:LGBC52D4FC4A04C915
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -34,6 +34,12 @@ bdg:WA19617 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-19T11:24:55.882Z"^^xsd:dateTime ;
@@ -51,15 +57,16 @@ bdg:WA19617 {
     bda:WA19617  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19617 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "c0/WA19617.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19617 ;
-        adm:logEntry        bda:LG49ED31859511D6EB , bda:LGDCFA9136425AF286 , bda:LGFB98B9A483F856AF , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LGBC52D4FC4A04C915 , bda:LGDCFA9136425AF286 , bda:LGFB98B9A483F856AF , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRBC52D4FC4A04C915
+    bdr:CRB9C57D22D4DED299
         a                   :AgentAsCreator ;
         :agent              bdr:P5957 ;
         :role               bdr:R0ER0019 .
@@ -69,7 +76,7 @@ bdg:WA19617 {
     bdr:WA19617  a          :Work ;
         skos:altLabel       "rje lam rim pa ngag dbang phun tshogs kyi gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_ngag dbang phun tshogs/"@bo-x-ewts , "lanrenba da shi wen ji"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CRBC52D4FC4A04C915 ;
+        :creator            bdr:CRB9C57D22D4DED299 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

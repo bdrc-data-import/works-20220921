@@ -36,6 +36,12 @@ bdg:WA1GS66375 {
         adm:logMessage      "clicked tibetan language"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -60,15 +66,16 @@ bdg:WA1GS66375 {
     bda:WA1GS66375  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1GS66375 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "b9/WA1GS66375.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1GS66375 ;
-        adm:logEntry        bda:LG472A8BEF9B0E10C3 , bda:LG6CA3219387E2E844 , bda:LG8786D6A8F5CC05A5 , bda:LGC4B8B9E30F3B2270 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG472A8BEF9B0E10C3 , bda:LG6CA3219387E2E844 , bda:LG8786D6A8F5CC05A5 , bda:LGC4B8B9E30F3B2270 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR368C2941D36BF470
+    bdr:CR83E02D3339F81FB8
         a                   :AgentAsCreator ;
         :agent              bdr:P1GS66374 ;
         :role               bdr:R0ER0019 .
@@ -76,7 +83,7 @@ bdg:WA1GS66375 {
     bdr:WA1GS66375  a       :Work ;
         skos:prefLabel      "bod rgyal mo rong gi lo rgyus rab gsal me long /"@bo-x-ewts ;
         :catalogInfo        "Chronicle of Tibet with a special focus on Gyarong."@en ;
-        :creator            bdr:CR368C2941D36BF470 ;
+        :creator            bdr:CR83E02D3339F81FB8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

@@ -12,21 +12,27 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20829 {
+    bda:LG5C06368F95B4E7DA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGBD447CBF6160C4CF
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-06-30T16:13:53.077Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGBF960B6F71C89AEC
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGD9BB1AFFAC749C8D
         a                   adm:UpdateData ;
         adm:logDate         "2016-06-30T16:13:13.836Z"^^xsd:dateTime ;
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM7CC15F8F  a     adm:UpdateData ;
         adm:logAgent        "works-mark-restrictedInChina.xql" ;
@@ -43,11 +49,11 @@ bdg:WA20829 {
     bda:WA20829  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20829 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "aa/WA20829.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20829 ;
-        adm:logEntry        bda:LGBD447CBF6160C4CF , bda:LGBF960B6F71C89AEC , bda:LGD9BB1AFFAC749C8D , bda:LGIM7CC15F8F , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG5C06368F95B4E7DA , bda:LGBD447CBF6160C4CF , bda:LGD9BB1AFFAC749C8D , bda:LGIM4394141E , bda:LGIM7CC15F8F , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .

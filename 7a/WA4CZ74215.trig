@@ -30,6 +30,12 @@ bdg:WA4CZ74215 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -40,15 +46,16 @@ bdg:WA4CZ74215 {
     bda:WA4CZ74215  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ74215 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "7a/WA4CZ74215.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ74215 ;
-        adm:logEntry        bda:LG24F6078C534838E0 , bda:LG36008EA033E1972C , bda:LG574011DA5E065539 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG24F6078C534838E0 , bda:LG36008EA033E1972C , bda:LG574011DA5E065539 , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1E19183914DC050B
+    bdr:CRBD3F870DF40489B7
         a                   :AgentAsCreator ;
         :agent              bdr:P1614 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +64,7 @@ bdg:WA4CZ74215 {
         skos:altLabel       "dpal gsang ba 'dus pa'i sgo nas rab tu gnas pa'i cho ga bkra shis dpal 'bar sogs/"@bo-x-ewts ;
         skos:prefLabel      "rab gnas bkra shis 'bring po/"@bo-x-ewts ;
         :catalogInfo        "Consecration on the basis of guhyasamaja as main deity."@en ;
-        :creator            bdr:CR1E19183914DC050B ;
+        :creator            bdr:CRBD3F870DF40489B7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1028 ;

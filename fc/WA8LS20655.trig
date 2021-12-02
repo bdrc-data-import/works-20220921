@@ -30,6 +30,12 @@ bdg:WA8LS20655 {
         adm:logMessage      "publication location edited"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
@@ -47,29 +53,30 @@ bdg:WA8LS20655 {
     bda:WA8LS20655  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS20655 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "fc/WA8LS20655.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS20655 ;
-        adm:logEntry        bda:LG8F83F711FF54B204 , bda:LGBC23685DB2170267 , bda:LGE93ADDC09A2863BF , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG8F83F711FF54B204 , bda:LGBC23685DB2170267 , bda:LGE93ADDC09A2863BF , bda:LGIM4394141E , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR23BF29E4874EE132
         a                   :AgentAsCreator ;
-        :agent              bdr:P3798 ;
+        :agent              bdr:P258 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRA3EE591BFA8152F3
+    bdr:CR6DBAD9A1A7961C94
         a                   :AgentAsCreator ;
-        :agent              bdr:P258 ;
+        :agent              bdr:P3798 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA8LS20655  a       :Work ;
         skos:altLabel       "mkhyen brtse'i dbang po'i sman yig dang bla ma zab don snying thig las 'gro ba'i srog 'dzin bdud rtsi'i char rgyan/"@bo-x-ewts ;
         skos:prefLabel      "tha sman nam gter sman skor/"@bo-x-ewts ;
         :catalogInfo        "A medical text written by Khyentse Wangpo and medical science in the Lama Zabdon Nyingthik by Jangchub Dorjee."@en ;
-        :creator            bdr:CR23BF29E4874EE132 , bdr:CRA3EE591BFA8152F3 ;
+        :creator            bdr:CR23BF29E4874EE132 , bdr:CR6DBAD9A1A7961C94 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T10MS14651 ;

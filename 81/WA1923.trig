@@ -17,7 +17,7 @@ bdg:WA1923 {
         adm:logDate         "2010-07-20T01:32:26.378Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00020 .
     
-    bda:LGE06B430924EFAE55
+    bda:LGC0161AA2AD32F221
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -27,6 +27,12 @@ bdg:WA1923 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
@@ -45,20 +51,21 @@ bdg:WA1923 {
     bda:WA1923  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1923 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "81/WA1923.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1923 ;
-        adm:logEntry        bda:LG2297A16386E79E47 , bda:LGE06B430924EFAE55 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG2297A16386E79E47 , bda:LGC0161AA2AD32F221 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC0161AA2AD32F221
+    bdr:CRFB2749FD483ACB92
         a                   :AgentAsCreator ;
         :agent              bdr:P155 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVFB2749FD483ACB92
+    bdr:EV9C26139E7C549BB1
         a                   :CompletedEvent ;
         :onYear             "1364"^^xsd:gYear .
     
@@ -67,10 +74,10 @@ bdg:WA1923 {
     bdr:WA1923  a           :Work ;
         skos:altLabel       "bde bar gshegs pa'i bstan pa'i gsal byed chos kyi 'byung gnas gsung rab rin po che'i mdzod/"@bo-x-ewts , "bu ston chos 'byung /"@bo-x-ewts ;
         skos:prefLabel      "bde gshegs bstan pa'i gsal byed chos kyi 'byung gnas/"@bo-x-ewts , "Bu-ston chos ʾbyuṅ /Bu-ston Rin-chen-grub."@en-x-mixed , "pu-tun fo chiao shih"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CRC0161AA2AD32F221 ;
+        :creator            bdr:CRFB2749FD483ACB92 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVFB2749FD483ACB92 ;
+        :workEvent          bdr:EV9C26139E7C549BB1 ;
         :workGenre          bdr:T12 ;
         :workHasInstance    bdr:MW1923 , bdr:MW3CN22975 , bdr:W1923 , bdr:W3CN22975 ;
         :workIsAbout        bdr:T770 .

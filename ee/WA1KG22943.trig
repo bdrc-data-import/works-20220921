@@ -24,6 +24,12 @@ bdg:WA1KG22943 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
@@ -34,15 +40,16 @@ bdg:WA1KG22943 {
     bda:WA1KG22943  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG22943 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ee/WA1KG22943.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG22943 ;
-        adm:logEntry        bda:LG0E448772A681033C , bda:LG9D38A1D10A95D73A , bda:LGIM4D99209C62 ;
+        adm:logEntry        bda:LG0E448772A681033C , bda:LG9D38A1D10A95D73A , bda:LGIM4394141E , bda:LGIM4D99209C62 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRBCAD25DC62DBA446
+    bdr:CR83F629040DA355E4
         a                   :AgentAsCreator ;
         :agent              bdr:P170 ;
         :role               bdr:R0ER0019 .
@@ -53,7 +60,7 @@ bdg:WA1KG22943 {
         skos:altLabel       "zong jiao yuan liu shi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "thu'u bkwan grub mtha'"@bo-x-ewts , "宗教源流史"@zh-hans ;
         :catalogInfo        "Extensive survey of philosophical tenets from India, Tibet and China by Tukwan Lobzang Chokyi Nyima (1737-1802)."@en ;
-        :creator            bdr:CRBCAD25DC62DBA446 ;
+        :creator            bdr:CR83F629040DA355E4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T385 ;

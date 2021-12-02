@@ -53,6 +53,12 @@ bdg:WA1PD159417 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -70,15 +76,16 @@ bdg:WA1PD159417 {
     bda:WA1PD159417  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159417 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "0c/WA1PD159417.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159417 ;
-        adm:logEntry        bda:LG12F55AB6ED326F7F , bda:LG280842E0154B5E67 , bda:LG2E32F48703AFCAD7 , bda:LG65AF6CEEBDD03ADF , bda:LGBC3A0A8DD8CD72F5 , bda:LGD5BE06C38CAD69A1 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG12F55AB6ED326F7F , bda:LG280842E0154B5E67 , bda:LG2E32F48703AFCAD7 , bda:LG65AF6CEEBDD03ADF , bda:LGBC3A0A8DD8CD72F5 , bda:LGD5BE06C38CAD69A1 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CREA81EFE5DC48858C
+    bdr:CRC1F02FEF19C15DE8
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ366937 ;
         :role               bdr:R0ER0019 .
@@ -89,7 +96,7 @@ bdg:WA1PD159417 {
         skos:altLabel       "bon dang bon po'i rig gzhung skor gyi ched bkod brtsams chos nyung bsdus/ bon bshad po ti phra mo/"@bo-x-ewts , "ben jiao wen hua sui bi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bon bshad po ti phra mo/"@bo-x-ewts , "本教文化随笔"@zh-hans ;
         :catalogInfo        "Talks and preface of Bon"@en ;
-        :creator            bdr:CREA81EFE5DC48858C ;
+        :creator            bdr:CRC1F02FEF19C15DE8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1PD159417 , bdr:W1PD159417 ;

@@ -44,6 +44,12 @@ bdg:WA1KG5907 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -75,30 +81,31 @@ bdg:WA1KG5907 {
     bda:WA1KG5907  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG5907 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "37/WA1KG5907.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG5907 ;
-        adm:logEntry        bda:LG2CAA8437EA2D0FB8 , bda:LG56E871F75EC94B99 , bda:LGC36C57F79136FA61 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2CAA8437EA2D0FB8 , bda:LG56E871F75EC94B99 , bda:LGC36C57F79136FA61 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR02C03AB450164D75
+    bdr:CR2251E80E4227EE44
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG5908 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV2251E80E4227EE44
+    bdr:EV32B818C13EC0C5B0
         a                   :CompletedEvent ;
         :onYear             "2001"^^xsd:gYear .
     
     bdr:WA1KG5907  a        :Work ;
         skos:prefLabel      "mkha' spyod 'bras mo ljongs kyi gtsug nor sprul pa'i rnal 'byor mched bzhi brgyud 'dzin dang bcas pa'i byung ba brjod pa blo gsar gzhon nu'i dga' ston/"@bo-x-ewts , "a saga of sikkim's supremely revered four pioneer nyingmapa reincarnates and their torchbearers"@en ;
         :catalogInfo        "History of Sikkim and four revered Nyingma masters, their reincarnates and successors."@en ;
-        :creator            bdr:CR02C03AB450164D75 ;
+        :creator            bdr:CR2251E80E4227EE44 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV2251E80E4227EE44 ;
+        :workEvent          bdr:EV32B818C13EC0C5B0 ;
         :workGenre          bdr:T1134 ;
         :workHasInstance    bdr:MW1KG5907 , bdr:W1KG5907 ;
         :workIsAbout        bdr:G1398 , bdr:P1691 , bdr:P5254 , bdr:P7637 .

@@ -48,6 +48,12 @@ bdg:WA8LS18511 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -72,15 +78,16 @@ bdg:WA8LS18511 {
     bda:WA8LS18511  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18511 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "3c/WA8LS18511.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18511 ;
-        adm:logEntry        bda:LG0DAB7B9B19288F96 , bda:LG351E9885D92973AC , bda:LG4E8F7BDB89E80648 , bda:LG8E9D74FF17D7FF2F , bda:LG985282BF6ACB6903 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LG0DAB7B9B19288F96 , bda:LG351E9885D92973AC , bda:LG4E8F7BDB89E80648 , bda:LG8E9D74FF17D7FF2F , bda:LG985282BF6ACB6903 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB81074A20C28E6EC
+    bdr:CR2DF02BD285611FC3
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS75220 ;
         :role               bdr:R0ER0019 .
@@ -88,7 +95,7 @@ bdg:WA8LS18511 {
     bdr:WA8LS18511  a       :Work ;
         skos:prefLabel      "bod khul gyi 'brug pa bka' brgyud pa'i dgon sde khag gi lo rgyus mdor bsdus mes po dgyes pa'i mchod sprin/ deb bzhi pa/"@bo-x-ewts ;
         :catalogInfo        "History of Drukpa Kagyu monasteries in Tibet by Decho Yeshe Togyal."@en ;
-        :creator            bdr:CRB81074A20C28E6EC ;
+        :creator            bdr:CR2DF02BD285611FC3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22186 {
-    bda:LG5AFD07A8678DC5E1
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG713DE78B3DE79EF7
         a                   adm:UpdateData ;
         adm:logDate         "2011-11-29T16:08:08.175Z"^^xsd:dateTime ;
@@ -40,12 +36,22 @@ bdg:WA22186 {
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LG9C89BEF248D039D6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM320307B99D
         a                   adm:UpdateData ;
         adm:logDate         "2013-04-19T11:05:48.485Z"^^xsd:dateTime ;
         adm:logMessage      "added Work to CTC 10"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -71,16 +77,17 @@ bdg:WA22186 {
     bda:WA22186  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22186 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "2c/WA22186.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22186 ;
-        adm:logEntry        bda:LG5AFD07A8678DC5E1 , bda:LG713DE78B3DE79EF7 , bda:LG7CFA39C1F3CCB9FF , bda:LG927D5FC3591308FA , bda:LG985CB48C9BD3D54A , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG713DE78B3DE79EF7 , bda:LG7CFA39C1F3CCB9FF , bda:LG927D5FC3591308FA , bda:LG985CB48C9BD3D54A , bda:LG9C89BEF248D039D6 , bda:LGIM320307B99D , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG15898 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR9C89BEF248D039D6
+    bdr:CR5D8A6CA6C1E7CD4B
         a                   :AgentAsCreator ;
         :agent              bdr:P423 ;
         :role               bdr:R0ER0019 .
@@ -89,7 +96,7 @@ bdg:WA22186 {
         skos:altLabel       "kun mkhyen 'jam dbyangs bzhad pa'i rdo rje mchog gi gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_'jam dbyangs bzhad pa'i rdo rje/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Geluk master Jamyang Zhepai Dorje (1648-1721/1722), founder of Labrang Tashi Khyil Monastery. Contents of these fifteen volumes run the entire gamut of Buddhist scholasticism, from Prajnaparamita philosophy to the most esoteric teachings connected with Vajrabhairava."@en ;
-        :creator            bdr:CR9C89BEF248D039D6 ;
+        :creator            bdr:CR5D8A6CA6C1E7CD4B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

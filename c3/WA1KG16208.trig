@@ -37,6 +37,12 @@ bdg:WA1KG16208 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -47,15 +53,16 @@ bdg:WA1KG16208 {
     bda:WA1KG16208  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG16208 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "c3/WA1KG16208.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG16208 ;
-        adm:logEntry        bda:LG165F525363374AF9 , bda:LG7700B1B60128F8E1 , bda:LG773C710003D18BD6 , bda:LGIM206EC9B06D , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG165F525363374AF9 , bda:LG7700B1B60128F8E1 , bda:LG773C710003D18BD6 , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB44E53BB47737A81
+    bdr:CR8A465E9C8FA69B49
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG16209 ;
         :role               bdr:R0ER0019 .
@@ -66,7 +73,7 @@ bdg:WA1KG16208 {
         skos:altLabel       "chos 'byung kun btus/"@bo-x-ewts ;
         skos:prefLabel      "chos 'byung kun btus pad+ma dkar po'i chun po blo gsal 'dren byed bdud rtsi'i dpal yon/"@bo-x-ewts , "Chos ʼbyuṅ kun btus Padma dkar poʼi chun po Blo gsal ʼdren byed bdud rtsiʼi dpal yon źes bya ba bźugs so /A-mkhar Blo-bzaṅ-rgya-mtshoʼam Mtsho-ldan-dgyes paʼi-laṅ-tsho."@en-x-mixed ;
         :catalogInfo        "Religious history of Gelug and specially the biographies of the Dalai Lamas and Panchen Lamas"@en ;
-        :creator            bdr:CRB44E53BB47737A81 ;
+        :creator            bdr:CR8A465E9C8FA69B49 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T12 ;

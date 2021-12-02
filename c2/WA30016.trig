@@ -18,7 +18,7 @@ bdg:WA30016 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00003 .
     
-    bda:LG8E4F75B14853F560
+    bda:LG9E186BC26ABB799E
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -34,6 +34,12 @@ bdg:WA30016 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM569A8014B1
         a                   adm:UpdateData ;
@@ -66,20 +72,21 @@ bdg:WA30016 {
     bda:WA30016  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30016 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "c2/WA30016.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30016 ;
-        adm:logEntry        bda:LG1113C29EE0C9C8A6 , bda:LG8E4F75B14853F560 , bda:LGF7BC3E68B708BFB8 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1113C29EE0C9C8A6 , bda:LG9E186BC26ABB799E , bda:LGF7BC3E68B708BFB8 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR80E969F3A180D50C
+    bdr:CR01DD7C7B7680B856
         a                   :AgentAsCreator ;
         :agent              bdr:P264 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CR9E186BC26ABB799E
+    bdr:CR80E969F3A180D50C
         a                   :AgentAsCreator ;
         :agent              bdr:P155 ;
         :role               bdr:R0ER0019 .
@@ -88,7 +95,7 @@ bdg:WA30016 {
         skos:altLabel       "bde mchog rtsa rgyud kyi rnam bshad gsang ba'i de kho na nyid gsal bar byed pa/"@bo-x-ewts , "dpal dgyes pa rdo rje'i rgyud kyi rgyal po brtag pa gnyis pa'i tshig don rnam par 'grol ba gzhom med rdo rje'i gsang ba 'byed pa/"@bo-x-ewts , "dpal gsang ba 'dus pa'i TI k+ka sgron ma rab tu gsal ba/"@bo-x-ewts ;
         skos:prefLabel      "rgyud sde spyi'i dgongs 'grel།"@bo-x-ewts ;
         :catalogInfo        "General survey and classification of the Buddhist tantras by Kagyu scholars."@en ;
-        :creator            bdr:CR80E969F3A180D50C , bdr:CR9E186BC26ABB799E ;
+        :creator            bdr:CR01DD7C7B7680B856 , bdr:CR80E969F3A180D50C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T10MS12837 ;

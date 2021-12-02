@@ -31,6 +31,12 @@ bdg:WA3CN5411 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -41,15 +47,16 @@ bdg:WA3CN5411 {
     bda:WA3CN5411  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5411 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "35/WA3CN5411.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5411 ;
-        adm:logEntry        bda:LG0BE370D19E2D1DF4 , bda:LG8205CA2A6313C574 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0BE370D19E2D1DF4 , bda:LG8205CA2A6313C574 , bda:LGIM095CC38C9F , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD069C1F6859E67E5
+    bdr:CR0290BA4304AA8F6D
         a                   :AgentAsCreator ;
         :agent              bdr:P3CN8622 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +64,7 @@ bdg:WA3CN5411 {
     bdr:WA3CN5411  a        :Work ;
         skos:prefLabel      "mchog sprul gsang sngags bstan 'dzin gyi rnam thar dad gsum pad+mo 'byed pa'i nyin byed/"@bo-x-ewts ;
         :catalogInfo        "Biography of Tulku Sangngak Tenzin by Yeshe Dontok."@en ;
-        :creator            bdr:CRD069C1F6859E67E5 ;
+        :creator            bdr:CR0290BA4304AA8F6D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

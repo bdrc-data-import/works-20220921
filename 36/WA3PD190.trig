@@ -34,6 +34,12 @@ bdg:WA3PD190 {
         adm:logDate         "2017-05-22T21:02:49.88Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -51,15 +57,16 @@ bdg:WA3PD190 {
     bda:WA3PD190  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3PD190 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "36/WA3PD190.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3PD190 ;
-        adm:logEntry        bda:LG0432C52255DF05A0 , bda:LG7C08544BEB3B24B6 , bda:LG9B390BB6562A3281 , bda:LGEE5C840F3EB62F1F , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
+        adm:logEntry        bda:LG0432C52255DF05A0 , bda:LG7C08544BEB3B24B6 , bda:LG9B390BB6562A3281 , bda:LGEE5C840F3EB62F1F , bda:LGIM4394141E , bda:LGIM6C9E48233B , bda:LGIM97DE520031 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR442487339513E8EB
+    bdr:CR975D3A3C56A6667E
         a                   :AgentAsCreator ;
         :agent              bdr:P297 ;
         :role               bdr:R0ER0019 .
@@ -69,7 +76,7 @@ bdg:WA3PD190 {
     bdr:WA3PD190  a         :Work ;
         skos:prefLabel      "rgyal mkhan po grags pa rgyal mtshan gyi snyan rtsom phyogs bsgrigs/"@bo-x-ewts , "嘉堪钦智华坚赞诗歌集"@zh-hans ;
         :catalogInfo        "Collected Works by Geluk scholar Gyal Khenpo Drakpa Gyaltsen (1762-1835/1837) from Labrang Tashi Khyil Monastery"@en ;
-        :creator            bdr:CR442487339513E8EB ;
+        :creator            bdr:CR975D3A3C56A6667E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

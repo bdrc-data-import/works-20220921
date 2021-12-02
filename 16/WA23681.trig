@@ -18,7 +18,7 @@ bdg:WA23681 {
         adm:logMessage      "edited annotation"@en ;
         adm:logWho          bdu:U00020 .
     
-    bda:LG96BAFB30C8A8610A
+    bda:LG57EB7D11A06B3C0D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -33,6 +33,12 @@ bdg:WA23681 {
         adm:logDate         "2013-03-06T09:39:22.113Z"^^xsd:dateTime ;
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -58,13 +64,14 @@ bdg:WA23681 {
     bda:WA23681  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23681 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "16/WA23681.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23681 ;
-        adm:logEntry        bda:LG49CA4BD6B6DC1C74 , bda:LG96BAFB30C8A8610A , bda:LG97211E9B25DAAD66 , bda:LGC6C0C1A50C08C3DB , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG49CA4BD6B6DC1C74 , bda:LG57EB7D11A06B3C0D , bda:LG97211E9B25DAAD66 , bda:LGC6C0C1A50C08C3DB , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG17189 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:MW23681  skos:altLabel  "a collection of sadhanas and related texts of the vajrayana traditions of tibet"@en .

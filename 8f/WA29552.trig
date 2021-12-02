@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29552 {
-    bda:LGED48EE597D2F42EE
+    bda:LG2C6A0B9C94852631
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -22,6 +22,12 @@ bdg:WA29552 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
@@ -33,22 +39,23 @@ bdg:WA29552 {
     bda:WA29552  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29552 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "8f/WA29552.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29552 ;
-        adm:logEntry        bda:LGED48EE597D2F42EE , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG2C6A0B9C94852631 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2C6A0B9C94852631
+    bdr:CRB2C0B63795BF3CE2
         a                   :AgentAsCreator ;
         :agent              bdr:P9827 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA29552  a          :Work ;
         skos:prefLabel      "dpyod lan gaNDi'i sgra dbyangs/"@bo-x-ewts ;
-        :creator            bdr:CR2C6A0B9C94852631 ;
+        :creator            bdr:CRB2C0B63795BF3CE2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29552 , bdr:W29552 ;

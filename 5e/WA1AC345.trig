@@ -51,6 +51,12 @@ bdg:WA1AC345 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -68,15 +74,16 @@ bdg:WA1AC345 {
     bda:WA1AC345  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC345 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "5e/WA1AC345.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC345 ;
-        adm:logEntry        bda:LG0377D6A5617CA250 , bda:LG5FA15951A26D682B , bda:LG6332B71E94DF11D9 , bda:LG74B09CF2C150E189 , bda:LGD7A5AA2DE0511D7E , bda:LGFDB2D204286F26CE , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0377D6A5617CA250 , bda:LG5FA15951A26D682B , bda:LG6332B71E94DF11D9 , bda:LG74B09CF2C150E189 , bda:LGD7A5AA2DE0511D7E , bda:LGFDB2D204286F26CE , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFBE40699518ABCB4
+    bdr:CR3556BFB45483DD12
         a                   :AgentAsCreator ;
         :agent              bdr:P4931 ;
         :role               bdr:R0ER0019 .
@@ -84,7 +91,7 @@ bdg:WA1AC345 {
     bdr:WA1AC345  a         :Work ;
         skos:altLabel       "mkhan chen tshul khrims blo gros kyis gsungs/ shes rab sgron me'i 'od snang /"@bo-x-ewts ;
         skos:prefLabel      "shes rab sgron me'i 'od snang /"@bo-x-ewts ;
-        :creator            bdr:CRFBE40699518ABCB4 ;
+        :creator            bdr:CR3556BFB45483DD12 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1AC345 , bdr:MW4CZ355785 , bdr:W1AC345 , bdr:W4CZ355785 ;

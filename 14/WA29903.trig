@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29903 {
-    bda:LG771E45B6E6169BBE
+    bda:LGEA2CBEFAC0EA75EB
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -22,6 +22,12 @@ bdg:WA29903 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
@@ -40,15 +46,16 @@ bdg:WA29903 {
     bda:WA29903  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29903 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "14/WA29903.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29903 ;
-        adm:logEntry        bda:LG771E45B6E6169BBE , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LGEA2CBEFAC0EA75EB , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CREA2CBEFAC0EA75EB
+    bdr:CR549FD8B7318BEA22
         a                   :AgentAsCreator ;
         :agent              bdr:P560 ;
         :role               bdr:R0ER0019 .
@@ -58,7 +65,7 @@ bdg:WA29903 {
     bdr:WA29903  a          :Work ;
         skos:altLabel       "ston mchog thams cad mkhyen pa thub pa'i dbang po'i skyes rabs gsal bar brjod pa brgya lnga bcu pa nor bu'i phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "skyes rabs/"@bo-x-ewts , "Ston mchog thams cad mkhyen pa thub paʼi dbaṅ boʼi skyes rabs gsal bar brjod pa brgya lṅa bcu pa nor buʼi phreṅ ba źes bya ba bźugs so /ʼJam-dbyaṅs Blo-gter-dbaṅ-pos mdzad."@en-x-mixed , "shijamouni gushi jinin"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CREA2CBEFAC0EA75EB ;
+        :creator            bdr:CR549FD8B7318BEA22 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1342 ;

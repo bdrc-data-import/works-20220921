@@ -18,10 +18,6 @@ bdg:WA10419 {
         adm:logMessage      "corrected spelling"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LG4A507884BAFA204F
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGAF52E00525297C9F
         a                   adm:UpdateData ;
         adm:logDate         "2013-07-05T17:11:35.921Z"^^xsd:dateTime ;
@@ -32,6 +28,16 @@ bdg:WA10419 {
         adm:logDate         "2021-03-02T10:15:16.778Z"^^xsd:dateTime ;
         adm:logMessage      "added pub info and changed topics"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGFD8D64CF8073FF9C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -64,23 +70,24 @@ bdg:WA10419 {
     bda:WA10419  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA10419 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "69/WA10419.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA10419 ;
-        adm:logEntry        bda:LG16553AA384405680 , bda:LG4A507884BAFA204F , bda:LGAF52E00525297C9F , bda:LGC6D08122044C2751 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG16553AA384405680 , bda:LGAF52E00525297C9F , bda:LGC6D08122044C2751 , bda:LGFD8D64CF8073FF9C , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR72C01D058B68C182
         a                   :AgentAsCreator ;
-        :agent              bdr:P801 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRFD8D64CF8073FF9C
-        a                   :AgentAsCreator ;
         :agent              bdr:P802 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRA99B3ACA3761540E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P801 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW10419  skos:altLabel  "autobiography of dpal-ldan-chos-skyon"@en .
     
@@ -88,7 +95,7 @@ bdg:WA10419 {
         skos:altLabel       "grangs med tshe rabs dus nas dkar nag sbags pa las kyi sa bon gyis bskyed pa cir snang 'khrul pa'i bag chags ar 'thas su rang gis ji ltar myong ba'i rtogs pa brjod pa sna tshogs ljon pa'i stug po'i 'khri shing /"@bo-x-ewts , "ngor mkhan chen dpal ldan chos skyong zhabs kyi rnam thar sna tshogs ljon pa stug po'i 'khri shing /"@bo-x-ewts , "nor mkhan-chen dpal-ldan chos-skyon zabs kyi rnam thar sna tshogs ljon pa stug po'i 'khri shin : the autobiography of the 33rd abbot of nor dpal-ldan-chos-skyon completed and edited by zu-chen tshul-khrims-rin-chen of sde-dge"@en , "Ṅor Mkhan-chen Dpal-ldan-chos-skyoṅ źabs kyi rnam thar sna tshogs ljon pa stug poʼi ʼkhri śiṅ :the autobiography of the 33rd Abbot of Ṅor Dpal-ldan-chos-skyoṅ /completed and edited by Źu-chen Tshul-khrims-rin-chen of Sde-dge."@en-x-mixed ;
         skos:prefLabel      "ngor mkhan chen dpal ldan chos skyong zhabs kyi rnam thar/"@bo-x-ewts , "autobiography of dpal-ldan-chos-skyon"@en ;
         :catalogInfo        "Autobiography and select writings of a master from the Ngorpa sub-order of the Sakya."@en ;
-        :creator            bdr:CR72C01D058B68C182 , bdr:CRFD8D64CF8073FF9C ;
+        :creator            bdr:CR72C01D058B68C182 , bdr:CRA99B3ACA3761540E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;

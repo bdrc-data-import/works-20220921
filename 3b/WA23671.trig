@@ -18,13 +18,13 @@ bdg:WA23671 {
         adm:logMessage      "annotation revised"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LG6FA6A778FF55BA67
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGC155CC9F823A1FC1
         a                   adm:UpdateData ;
         adm:logDate         "2007-07-12T09:35:43.844Z"^^xsd:dateTime ;
-        adm:logWho          bdu:U00001 .
-    
-    bda:LGDBF3A24B7BEA08B1
-        a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:LGIM01FF8512D7
@@ -40,6 +40,12 @@ bdg:WA23671 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -72,15 +78,16 @@ bdg:WA23671 {
     bda:WA23671  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23671 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "3b/WA23671.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23671 ;
-        adm:logEntry        bda:LG2090530ABD937AD6 , bda:LGC155CC9F823A1FC1 , bda:LGDBF3A24B7BEA08B1 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2090530ABD937AD6 , bda:LG6FA6A778FF55BA67 , bda:LGC155CC9F823A1FC1 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6FA6A778FF55BA67
+    bdr:CR3DE90A9F200BB410
         a                   :AgentAsCreator ;
         :agent              bdr:P7712 ;
         :role               bdr:R0ER0019 .
@@ -89,7 +96,7 @@ bdg:WA23671 {
         skos:altLabel       "nags shod 'bri ru'i lo rgyus/"@bo-x-ewts ;
         skos:prefLabel      "bod ljongs nags shod 'bri ru'i lo rgyus rab rim sA la'i ljon shing /"@bo-x-ewts ;
         :catalogInfo        "Gazetteer of Driru Dzong in Nagchukha Prefecture, TAR."@en ;
-        :creator            bdr:CR6FA6A778FF55BA67 ;
+        :creator            bdr:CR3DE90A9F200BB410 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW23671 , bdr:W23671 ;

@@ -29,6 +29,12 @@ bdg:WA2PD17397 {
         adm:logDate         "2017-05-10T04:40:55.882Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -45,15 +51,16 @@ bdg:WA2PD17397 {
     bda:WA2PD17397  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17397 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "e9/WA2PD17397.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17397 ;
-        adm:logEntry        bda:LG83B8728156D0DAB7 , bda:LGA03F77CFE1CC344F , bda:LGD6713C6B71DDF264 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG83B8728156D0DAB7 , bda:LGA03F77CFE1CC344F , bda:LGD6713C6B71DDF264 , bda:LGIM4394141E , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA31A62669B8D2BCB
+    bdr:CR14B363D70C6ED813
         a                   :AgentAsCreator ;
         :agent              bdr:P245 ;
         :role               bdr:R0ER0019 .
@@ -63,7 +70,7 @@ bdg:WA2PD17397 {
     bdr:WA2PD17397  a       :Work ;
         skos:altLabel       "di qi shi ban chan da shi zhuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "paN chen sku phreng bdun pa bstan pa'i nyi ma'i rnam thar/"@bo-x-ewts , "第七世班禅大师传"@zh-hans ;
-        :creator            bdr:CRA31A62669B8D2BCB ;
+        :creator            bdr:CR14B363D70C6ED813 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

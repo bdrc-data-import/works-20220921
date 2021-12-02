@@ -38,6 +38,12 @@ bdg:WA8LS18955 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -55,15 +61,16 @@ bdg:WA8LS18955 {
     bda:WA8LS18955  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18955 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "3f/WA8LS18955.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18955 ;
-        adm:logEntry        bda:LGA0CFE0A6E8C9B1D8 , bda:LGCECE935E184C2080 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LGA0CFE0A6E8C9B1D8 , bda:LGCECE935E184C2080 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD511F68F211A8EA9
+    bdr:CRCEA6E364E470BF52
         a                   :AgentAsCreator ;
         :agent              bdr:P10078 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +78,7 @@ bdg:WA8LS18955 {
     bdr:WA8LS18955  a       :Work ;
         skos:prefLabel      "snyan rtsom thor bu phyogs sdebs mkhas pa'i 'jug sgo/smad cha/"@bo-x-ewts ;
         :catalogInfo        "A collection of poetry composed by Khenpo Kunga Pelden Gyatsho."@en ;
-        :creator            bdr:CRD511F68F211A8EA9 ;
+        :creator            bdr:CRCEA6E364E470BF52 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

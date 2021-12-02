@@ -95,6 +95,12 @@ bdg:WA1CZ1100 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -119,15 +125,16 @@ bdg:WA1CZ1100 {
     bda:WA1CZ1100  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1CZ1100 ;
-        adm:facetIndex      19 ;
+        adm:facetIndex      20 ;
         adm:gitPath         "96/WA1CZ1100.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1CZ1100 ;
-        adm:logEntry        bda:LG05D668C78557AAD5 , bda:LG0EF0E43B0AFF10A0 , bda:LG293A72FEED046246 , bda:LG31EC45737348C82F , bda:LG336383000507B7B2 , bda:LG5178AA582A300D2C , bda:LG601C965E2A5CB91B , bda:LG69A848C9E1DF73DB , bda:LG6CBCD9FF93D4AB94 , bda:LG8442A71BD11CB154 , bda:LGAF2F68D2BD27538F , bda:LGE34ADD08EC1BA1B2 , bda:LGF070885ECD44C6AE , bda:LGF9D897A9CDA0F71C , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG05D668C78557AAD5 , bda:LG0EF0E43B0AFF10A0 , bda:LG293A72FEED046246 , bda:LG31EC45737348C82F , bda:LG336383000507B7B2 , bda:LG5178AA582A300D2C , bda:LG601C965E2A5CB91B , bda:LG69A848C9E1DF73DB , bda:LG6CBCD9FF93D4AB94 , bda:LG8442A71BD11CB154 , bda:LGAF2F68D2BD27538F , bda:LGE34ADD08EC1BA1B2 , bda:LGF070885ECD44C6AE , bda:LGF9D897A9CDA0F71C , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD7EF8193B52E7C98
+    bdr:CR3446394EB579D7AF
         a                   :AgentAsCreator ;
         :agent              bdr:P784 ;
         :role               bdr:R0ER0019 .
@@ -136,7 +143,7 @@ bdg:WA1CZ1100 {
         skos:altLabel       "mang thos klu sgrub rgya mtsho'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_klu sgrub rgya mtsho/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Mangto Ludrub Gyatso."@en ;
-        :creator            bdr:CRD7EF8193B52E7C98 ;
+        :creator            bdr:CR3446394EB579D7AF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

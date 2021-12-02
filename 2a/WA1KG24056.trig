@@ -31,6 +31,12 @@ bdg:WA1KG24056 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -41,15 +47,16 @@ bdg:WA1KG24056 {
     bda:WA1KG24056  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24056 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "2a/WA1KG24056.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24056 ;
-        adm:logEntry        bda:LG761F518771F202AD , bda:LGF464B9C7FBA306D0 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG761F518771F202AD , bda:LGF464B9C7FBA306D0 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA2AC40BEE2013F9E
+    bdr:CRCA6D5BD2C0D17E36
         a                   :AgentAsCreator ;
         :agent              bdr:P9608 ;
         :role               bdr:R0ER0019 .
@@ -59,7 +66,7 @@ bdg:WA1KG24056 {
     bdr:WA1KG24056  a       :Work ;
         skos:prefLabel      "gtsang myang smad bsam 'grub rtse'i sde srid gtsang pa rim byung gi mnga' thang 'byor rgud kyi lo rgyus/"@bo-x-ewts , "history of bsam-grub-rtse fort: the rise and fall of the sde pa gtsang pa rulers"@en ;
         :catalogInfo        "History of the Western Tibet rulers during 16th to 17th cent."@en ;
-        :creator            bdr:CRA2AC40BEE2013F9E ;
+        :creator            bdr:CRCA6D5BD2C0D17E36 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

@@ -31,6 +31,12 @@ bdg:WA3CN6615 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -48,15 +54,16 @@ bdg:WA3CN6615 {
     bda:WA3CN6615  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN6615 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "6a/WA3CN6615.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN6615 ;
-        adm:logEntry        bda:LG44F54C5FD891E8F0 , bda:LGCDCAF6AACD508323 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG44F54C5FD891E8F0 , bda:LGCDCAF6AACD508323 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE98FFB3165E0B855
+    bdr:CR0BE90CEC888F25C4
         a                   :AgentAsCreator ;
         :agent              bdr:P5109 ;
         :role               bdr:R0ER0019 .
@@ -65,7 +72,7 @@ bdg:WA3CN6615 {
         skos:altLabel       "bod rang skyong ljongs kyi dmangs khrod gtam dpe legs bsdus/"@bo-x-ewts ;
         skos:prefLabel      "dmangs khrod gtam dpe legs bsdus/"@bo-x-ewts ;
         :catalogInfo        "Collection of Tibetan proverbs from center Tibet."@en ;
-        :creator            bdr:CRE98FFB3165E0B855 ;
+        :creator            bdr:CR0BE90CEC888F25C4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

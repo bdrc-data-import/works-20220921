@@ -18,10 +18,6 @@ bdg:WA22327 {
         adm:logMessage      "nang don gsar du bcug"@en ;
         adm:logWho          bdu:U00003 .
     
-    bda:LG3DD04A69F0942F48
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG6FC70ED6E96535F5
         a                   adm:UpdateData ;
         adm:logDate         "2013-03-01T11:52:52.123Z"^^xsd:dateTime ;
@@ -46,18 +42,29 @@ bdg:WA22327 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGC87143CBD61BE230
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA22327  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22327 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "10/WA22327.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22327 ;
-        adm:logEntry        bda:LG330B4E2AF8683073 , bda:LG3DD04A69F0942F48 , bda:LG6FC70ED6E96535F5 , bda:LG70EC8DFFF1760264 , bda:LG7BCA0EA6CFBA8198 , bda:LGB1B4004303EC5FA4 ;
+        adm:logEntry        bda:LG330B4E2AF8683073 , bda:LG6FC70ED6E96535F5 , bda:LG70EC8DFFF1760264 , bda:LG7BCA0EA6CFBA8198 , bda:LGB1B4004303EC5FA4 , bda:LGC87143CBD61BE230 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC87143CBD61BE230
+    bdr:CRCB9D8BD5CD0E18BC
         a                   :AgentAsCreator ;
         :agent              bdr:P1622 ;
         :role               bdr:R0ER0019 .
@@ -66,7 +73,7 @@ bdg:WA22327 {
         skos:altLabel       "dmag zor rgyal mo'i sgo nas rno mthong sgrub tshul/"@bo-x-ewts , "dpal ldan dmag zor rgyal mo'i sgo nas rno mthong sgrub tshul/"@bo-x-ewts ;
         skos:prefLabel      "lha mo'i sho mo/"@bo-x-ewts ;
         :catalogInfo        "Dice prognostication through the practice of a deity Glorious Army-Repulsing Queen (dpal ldan dmag zor rgyal mo)."@en ;
-        :creator            bdr:CRC87143CBD61BE230 ;
+        :creator            bdr:CRCB9D8BD5CD0E18BC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW22327 , bdr:W22327 ;

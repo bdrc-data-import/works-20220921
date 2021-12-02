@@ -50,6 +50,12 @@ bdg:WA1PD98 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -67,32 +73,33 @@ bdg:WA1PD98 {
     bda:WA1PD98  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD98 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "06/WA1PD98.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD98 ;
-        adm:logEntry        bda:LG0A3787C724DA4206 , bda:LG14BBCA059C8508E0 , bda:LG5BFFC69F1AFF4B21 , bda:LGD3DC51CDD9A2142F , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG0A3787C724DA4206 , bda:LG14BBCA059C8508E0 , bda:LG5BFFC69F1AFF4B21 , bda:LGD3DC51CDD9A2142F , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1B2BDC37186CA6B0
         a                   :AgentAsCreator ;
-        :agent              bdr:P6251 ;
+        :agent              bdr:P6280 ;
         :role               bdr:R0ER0016 .
     
     bdr:CR2E162F64973AD6BE
         a                   :AgentAsCreator ;
-        :agent              bdr:P1PD99 ;
+        :agent              bdr:P6251 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CR37B04D652F4F797D
+    bdr:CRDE37332B95FB30EA
         a                   :AgentAsCreator ;
-        :agent              bdr:P6280 ;
+        :agent              bdr:P1PD99 ;
         :role               bdr:R0ER0016 .
     
     bdr:WA1PD98  a          :Work ;
         skos:prefLabel      "'bring rim dge rgan gyi bod yig rgyugs len tshad gzhi don ldan tshangs thig"@bo-x-ewts , "zhong xue zang yu wen jiao shi he ge zheng shu , wen hua zhuan yue kao shi fu xi zi liao"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR1B2BDC37186CA6B0 , bdr:CR2E162F64973AD6BE , bdr:CR37B04D652F4F797D ;
+        :creator            bdr:CR1B2BDC37186CA6B0 , bdr:CR2E162F64973AD6BE , bdr:CRDE37332B95FB30EA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1PD98 , bdr:W1PD98 ;

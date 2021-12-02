@@ -18,6 +18,12 @@ bdg:WA1NLM2564 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGCEFD8E109DE92404
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-01T13:20:55.406Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2564 {
     bda:WA1NLM2564  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2564 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ed/WA1NLM2564.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2564 ;
-        adm:logEntry        bda:LG48BDDC487AE8EC7D , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG48BDDC487AE8EC7D , bda:LGCEFD8E109DE92404 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2564  a       :Work ;
-        skos:prefLabel      "grub chen lU i pa'i lugs kyi 'khor lo sdom pa'i mngon rtogs nag 'gros su bkod pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal 'khor lo bde mchog gi bum bskyed dang mdun bskyed bcas kyi ngag 'don khrigs chags su bsgrigs pa/"@bo-x-ewts , "dpal 'khor lo sdom pa'i dbang chog ngag 'dzon gyi rim pa/"@bo-x-ewts , "gso ba rig pa'i man ngag shin tu nyung bsdus bdud rtsi'i thigs pa/"@bo-x-ewts ;
+        skos:prefLabel      "grub chen lU i pa'i lugs kyi 'khor lo sdom pa'i mngon rtogs nag 'gros su bkod pa/"@bo-x-ewts ;
+        :catalogInfo        "Collections of Liturgical procedure practice text for Chakrasamvara and medical manuals by Sumpa Khenpo Yeshe Peljor"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2564 , bdr:W1NLM2564 .
+        :workGenre          bdr:T10MS14651 , bdr:T5 ;
+        :workHasInstance    bdr:MW1NLM2564 , bdr:W1NLM2564 ;
+        :workIsAbout        bdr:T418 .
 }

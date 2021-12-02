@@ -37,6 +37,12 @@ bdg:WA4CZ74200 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -47,29 +53,30 @@ bdg:WA4CZ74200 {
     bda:WA4CZ74200  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ74200 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "eb/WA4CZ74200.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ74200 ;
-        adm:logEntry        bda:LG0909F7F950AF6FF9 , bda:LG126C6EACA7D76E25 , bda:LGC295D9B9290B477B , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG0909F7F950AF6FF9 , bda:LG126C6EACA7D76E25 , bda:LGC295D9B9290B477B , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5E0F8C4F4E990556
+    bdr:CR8F758299C9E20976
         a                   :AgentAsCreator ;
-        :agent              bdr:P65 ;
+        :agent              bdr:P297 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRD8A8038C2F6D8224
         a                   :AgentAsCreator ;
-        :agent              bdr:P297 ;
+        :agent              bdr:P65 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA4CZ74200  a       :Work ;
         skos:altLabel       "byang chub sems dpa'i spyod pa la 'jug pa'i rnam bshad rgyal sras 'jug ngogs/"@bo-x-ewts , "byang chub sems pa'i spyod pa la 'jug pa'i TIk+ka rin po che'i phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "spyod 'jug 'grel pa khag gnyis/"@bo-x-ewts ;
         :catalogInfo        "Two separate commentarys on Shantideva's Bodhicaryavatara"@en ;
-        :creator            bdr:CR5E0F8C4F4E990556 , bdr:CRD8A8038C2F6D8224 ;
+        :creator            bdr:CR8F758299C9E20976 , bdr:CRD8A8038C2F6D8224 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

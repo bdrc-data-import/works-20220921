@@ -31,6 +31,12 @@ bdg:WA1KG4778 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -48,15 +54,16 @@ bdg:WA1KG4778 {
     bda:WA1KG4778  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4778 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "2c/WA1KG4778.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4778 ;
-        adm:logEntry        bda:LG4D1005815C780824 , bda:LGA7E9F4B2898CA2F7 , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG4D1005815C780824 , bda:LGA7E9F4B2898CA2F7 , bda:LGIM320307B99D , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9C85FD575EBE998A
+    bdr:CR9DF229B36B2EC872
         a                   :AgentAsCreator ;
         :agent              bdr:P996 ;
         :role               bdr:R0ER0019 .
@@ -65,7 +72,7 @@ bdg:WA1KG4778 {
         skos:altLabel       "bstan bcos mngon par rtogs pa'i rgyan gyi rtsa 'grel spyi don/"@bo-x-ewts ;
         skos:prefLabel      "phar phyin spyi don/"@bo-x-ewts ;
         :catalogInfo        "Textbook on the essentials of Prajnaparamita philosophy. Prescribed at Sera Mey Dratsang and its affiliates."@en ;
-        :creator            bdr:CR9C85FD575EBE998A ;
+        :creator            bdr:CR9DF229B36B2EC872 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T1763 ;

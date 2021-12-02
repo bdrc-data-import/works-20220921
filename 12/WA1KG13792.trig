@@ -30,6 +30,12 @@ bdg:WA1KG13792 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8F5AC89D  a     adm:UpdateData ;
         adm:logAgent        "add-works-to-PR1CTC16" ;
         adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
@@ -53,15 +59,16 @@ bdg:WA1KG13792 {
     bda:WA1KG13792  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG13792 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "12/WA1KG13792.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG13792 ;
-        adm:logEntry        bda:LG1EF13187FC9C97BF , bda:LGBA5D85D4B5B0C9B8 , bda:LGED71E8051754C90B , bda:LGIM8F5AC89D , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG1EF13187FC9C97BF , bda:LGBA5D85D4B5B0C9B8 , bda:LGED71E8051754C90B , bda:LGIM4394141E , bda:LGIM8F5AC89D , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0DEC42D249C40E86
+    bdr:CRBFFADD23C78A60FC
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG15369 ;
         :role               bdr:R0ER0019 .
@@ -72,7 +79,7 @@ bdg:WA1KG13792 {
         skos:altLabel       "bod gangs can ljongs kyi gna' bo'i srol rgyun gyi sgyu rtsal nang ma dang / stod gzhas gnyis gsar gtod mdzad mkhan rdo ring paN+Di ta bstan 'dzin dpal 'byor lags kyi sku tshe'i lo rgyus dang / gzhas tshig phyogs bsdus dga' ba'i glu dbyangs/"@bo-x-ewts , "dga' ba'i glu dbyangs/"@bo-x-ewts ;
         skos:prefLabel      "rdo ring paN+Di ta bstan 'dzin dpal 'byor lags kyi sku tshe'i lo rgyus dang / gzhas tshig phyogs bsdus dga' ba'i glu dbyangs/"@bo-x-ewts , "Bod gaṅs can ljoṅs kyi gnaʼ boʼi srol rgyun gyi sgyu rtsal naṅ ma daṅ stod gźas gṅis gsar gtod mdzad mkhan Rdo-riṅ Paṇḍi-ta Bstan-ʼdzin-dpal-byor lags kyi sku tsheʼi lo rgyus daṅ gźas tshigs phyogs bsdus dgaʼ baʼi glu dbyaṅs źes bya ba bźugs so /Phun-rab-pa Bstan-ʼdzin-dpag-bsam gyis rtsom sgrig byas."@en-x-mixed ;
         :catalogInfo        "Biography of Tibetan civil servant and Tibetan folk songs Nangma and Toeshey composer Doring Pandita Tenzin Paljor (1721-1792); includes some folk songs."@en ;
-        :creator            bdr:CR0DEC42D249C40E86 ;
+        :creator            bdr:CRBFFADD23C78A60FC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

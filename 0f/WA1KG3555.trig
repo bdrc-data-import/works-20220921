@@ -24,6 +24,12 @@ bdg:WA1KG3555 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -41,20 +47,21 @@ bdg:WA1KG3555 {
     bda:WA1KG3555  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG3555 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "0f/WA1KG3555.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG3555 ;
-        adm:logEntry        bda:LG2E9C238286A0AE2E , bda:LGFFEEEECB90795255 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2E9C238286A0AE2E , bda:LGFFEEEECB90795255 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD720CFD418DB972F
+    bdr:CRF1A5355509FBA4BE
         a                   :AgentAsCreator ;
         :agent              bdr:P657 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVF1A5355509FBA4BE
+    bdr:EV81AC20FFA93607A8
         a                   :CompletedEvent ;
         :onYear             "1694"^^xsd:gYear .
     
@@ -62,10 +69,10 @@ bdg:WA1KG3555 {
         skos:altLabel       "gzungs 'bul gyi lag len gsal bar byed pa bai DUr+ya'i me long /"@bo-x-ewts ;
         skos:prefLabel      "gzungs 'bul lag len/"@bo-x-ewts ;
         :catalogInfo        "Instruction on perfomance of the vivification of images through the insertion of dharani incantation. Written by Dordrak Rigzin Pema Trinle (1641-1717)."@en ;
-        :creator            bdr:CRD720CFD418DB972F ;
+        :creator            bdr:CRF1A5355509FBA4BE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVF1A5355509FBA4BE ;
+        :workEvent          bdr:EV81AC20FFA93607A8 ;
         :workHasInstance    bdr:MW1KG3555 , bdr:W1KG3555 ;
         :workIsAbout        bdr:T1348 .
 }

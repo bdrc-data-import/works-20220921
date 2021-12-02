@@ -47,6 +47,12 @@ bdg:WA2PD17435 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -64,20 +70,21 @@ bdg:WA2PD17435 {
     bda:WA2PD17435  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17435 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "e4/WA2PD17435.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17435 ;
-        adm:logEntry        bda:LG134126A003601D50 , bda:LG3EA8BD580DA70F0C , bda:LG47ACB261C21DE91B , bda:LG920F4A1A68A20795 , bda:LGD1AADC07BE951DAB , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG134126A003601D50 , bda:LG3EA8BD580DA70F0C , bda:LG47ACB261C21DE91B , bda:LG920F4A1A68A20795 , bda:LGD1AADC07BE951DAB , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3A1157192C222CF8
+    bdr:CR0CB5ED98B7E38AEB
         a                   :AgentAsCreator ;
         :agent              bdr:P4PD3051 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CRBA703DE8A95535BA
+    bdr:CR3A1157192C222CF8
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG874 ;
         :role               bdr:R0ER0026 .
@@ -87,7 +94,7 @@ bdg:WA2PD17435 {
     bdr:WA2PD17435  a       :Work ;
         skos:altLabel       "min fa jiao cheng"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "dmangs khrims bslab deb/"@bo-x-ewts , "民法教程"@zh-hans ;
-        :creator            bdr:CR3A1157192C222CF8 , bdr:CRBA703DE8A95535BA ;
+        :creator            bdr:CR0CB5ED98B7E38AEB , bdr:CR3A1157192C222CF8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T266 ;

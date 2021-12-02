@@ -24,9 +24,15 @@ bdg:WA19223 {
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG9EE4E83B519D375A
+    bda:LGE68C6F3B184810C9
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -52,15 +58,16 @@ bdg:WA19223 {
     bda:WA19223  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19223 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "7f/WA19223.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19223 ;
-        adm:logEntry        bda:LG27CCF5CE30322D16 , bda:LG7A66795577DFD629 , bda:LG9EE4E83B519D375A , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG27CCF5CE30322D16 , bda:LG7A66795577DFD629 , bda:LGE68C6F3B184810C9 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE68C6F3B184810C9
+    bdr:CRFDD42E28E56F8FFB
         a                   :AgentAsCreator ;
         :agent              bdr:P530 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +78,7 @@ bdg:WA19223 {
         skos:altLabel       "'brug pa'i dbang dpe/"@bo-x-ewts , "dpal 'brug pa'i ring lugs las gtso bor byon pa'i smin grol rgyab brten gyi skor ji ltar thob tshul nor bu'i do shal/"@bo-x-ewts ;
         skos:prefLabel      "dpal 'brug pa'i lugs kyi dbang chog 'dod rgu'i bang mdzod/"@bo-x-ewts , "initiation texts (dban dpe) of the bhutanese tradition of the 'brug-pa dkar-brgyud-pa"@en-x-mixed ;
         :catalogInfo        "Collection of initiation texts of the Drukpa Kagyu order."@en ;
-        :creator            bdr:CRE68C6F3B184810C9 ;
+        :creator            bdr:CRFDD42E28E56F8FFB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T48 ;

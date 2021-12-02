@@ -37,6 +37,12 @@ bdg:WA1KG18572 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -53,38 +59,38 @@ bdg:WA1KG18572 {
     bda:WA1KG18572  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG18572 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "79/WA1KG18572.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG18572 ;
-        adm:logEntry        bda:LG1D4987AD64A19106 , bda:LG2600BBB66A69B37A , bda:LG86B5F184F1EA662F , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM7CC15F8F ;
+        adm:logEntry        bda:LG1D4987AD64A19106 , bda:LG2600BBB66A69B37A , bda:LG86B5F184F1EA662F , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM7CC15F8F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR153557668F7256B9
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1KG18650 ;
-        :role               bdr:R0ER0019 .
-    
     bdr:CR6142DF4968223616
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1KG18652 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR77589EFE0FA27650
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG18651 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CR77589EFE0FA27650
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG18650 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRDDE84772CCC7494B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG18654 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:CREE5997E86C380F6A
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG18653 ;
-        :role               bdr:R0ER0026 .
+        :agent              bdr:P1KG18652 ;
+        :role               bdr:R0ER0019 .
     
     bdr:CRF8B2D92ED5FB29D9
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG18654 ;
+        :agent              bdr:P1KG18653 ;
         :role               bdr:R0ER0026 .
     
     bdr:MW1KG18572  skos:altLabel  "话说国旗 国徽 国歌"@zh-hans .
@@ -93,7 +99,7 @@ bdg:WA1KG18572 {
         skos:altLabel       "hua shuo guo qi guo hui guo ge"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "rgyal dar dang / rgyal rtags/ rgyal glu bcas kyi skor gleng ba/"@bo-x-ewts , "话说国旗 国徽 国歌"@zh-hans ;
         :catalogInfo        "Descriptions of the national flag, symbols and national anthem of the People's Republic of China."@en ;
-        :creator            bdr:CR153557668F7256B9 , bdr:CR6142DF4968223616 , bdr:CR77589EFE0FA27650 , bdr:CREE5997E86C380F6A , bdr:CRF8B2D92ED5FB29D9 ;
+        :creator            bdr:CR6142DF4968223616 , bdr:CR77589EFE0FA27650 , bdr:CRDDE84772CCC7494B , bdr:CREE5997E86C380F6A , bdr:CRF8B2D92ED5FB29D9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1029 ;

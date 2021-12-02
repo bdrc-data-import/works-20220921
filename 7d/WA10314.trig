@@ -24,9 +24,15 @@ bdg:WA10314 {
         adm:logMessage      "added Print type and sourcePrintery"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGEDBA4E8A3F7F7C1F
+    bda:LGF0CAB34E117E9C5F
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -45,16 +51,17 @@ bdg:WA10314 {
     bda:WA10314  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA10314 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "7d/WA10314.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA10314 ;
-        adm:logEntry        bda:LG8F257573F1E89AD3 , bda:LGB30C604215144062 , bda:LGEDBA4E8A3F7F7C1F , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG8F257573F1E89AD3 , bda:LGB30C604215144062 , bda:LGF0CAB34E117E9C5F , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA4CZ364099 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRF0CAB34E117E9C5F
+    bdr:CR635DAC16398E7D95
         a                   :AgentAsCreator ;
         :agent              bdr:P791 ;
         :role               bdr:R0ER0019 .
@@ -63,7 +70,7 @@ bdg:WA10314 {
         skos:altLabel       "dpal gsang ba 'dus pa'i chos kyi byung tshul gsal bar bshad pa gsang 'dus chos kun gsal ba'i nyin byed/"@bo-x-ewts ;
         skos:prefLabel      "gsang 'dus chos 'byung /"@bo-x-ewts ;
         :catalogInfo        "History of the Guhyasamaja Tantra practices in India and Tibet. Written by the Sakya master Jamgon Amye Zhab Ngawang Kunga Sonam (1597-1659). Scanned through the patronage of the Infinity Foundation."@en ;
-        :creator            bdr:CRF0CAB34E117E9C5F ;
+        :creator            bdr:CR635DAC16398E7D95 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T12 ;

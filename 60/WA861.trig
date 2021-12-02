@@ -36,7 +36,7 @@ bdg:WA861 {
         adm:logMessage      "added note for missing text in 3rd volume"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGCE437C4A8823A3B9
+    bda:LGD5BC8FB3628EB73E
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -46,6 +46,12 @@ bdg:WA861 {
         adm:logMessage      "added Work to CTC 10"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -78,16 +84,17 @@ bdg:WA861 {
     bda:WA861  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA861 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "60/WA861.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA861 ;
-        adm:logEntry        bda:LG0D59EDDD398A9FBB , bda:LG3EB607AE9805B976 , bda:LG72C356F119703B46 , bda:LGB01E92E061E74763 , bda:LGCE437C4A8823A3B9 , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
+        adm:logEntry        bda:LG0D59EDDD398A9FBB , bda:LG3EB607AE9805B976 , bda:LG72C356F119703B46 , bda:LGB01E92E061E74763 , bda:LGD5BC8FB3628EB73E , bda:LGIM320307B99D , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1CZ2857 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRD5BC8FB3628EB73E
+    bdr:CR1E32AAE5A1DACBAB
         a                   :AgentAsCreator ;
         :agent              bdr:P84 ;
         :role               bdr:R0ER0019 .
@@ -98,7 +105,7 @@ bdg:WA861 {
         skos:altLabel       "rgyal dbang dge 'dun rgya mtsho'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_dge 'dun rgya mtsho/"@bo-x-ewts , "[Rje-btsun-thams-cad-mkhyen-pa Dge-'dun-rgya-mtsho'i gsuṅ 'bum /Dge-'dun-rgya-mtsho]."@en-x-mixed ;
         :catalogInfo        "Collected Works by Dalai Lama 02 Gendun Gyatso (1476-1542)."@en ;
-        :creator            bdr:CRD5BC8FB3628EB73E ;
+        :creator            bdr:CR1E32AAE5A1DACBAB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

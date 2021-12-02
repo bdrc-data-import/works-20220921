@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27310 {
-    bda:LGA9FDC0C7358B9E6E
+    bda:LG473F137C11810079
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -22,6 +22,12 @@ bdg:WA27310 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
@@ -33,15 +39,16 @@ bdg:WA27310 {
     bda:WA27310  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27310 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "b4/WA27310.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27310 ;
-        adm:logEntry        bda:LGA9FDC0C7358B9E6E , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG473F137C11810079 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR473F137C11810079
+    bdr:CR3B58FC55023CCB67
         a                   :AgentAsCreator ;
         :agent              bdr:P979 ;
         :role               bdr:R0ER0019 .
@@ -51,7 +58,7 @@ bdg:WA27310 {
     bdr:WA27310  a          :Work ;
         skos:altLabel       "sa skya'i gdung rabs/"@bo-x-ewts ;
         skos:prefLabel      "sa skya'i gdung rabs ngo mtshar rin chen kun 'phel/"@bo-x-ewts , "sa chia p'u"@zh-latn-wadegile ;
-        :creator            bdr:CR473F137C11810079 ;
+        :creator            bdr:CR3B58FC55023CCB67 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1673 ;

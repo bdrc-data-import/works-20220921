@@ -30,6 +30,12 @@ bdg:WA1KG21089 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM569A8014B1
         a                   adm:UpdateData ;
         adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
@@ -40,20 +46,21 @@ bdg:WA1KG21089 {
     bda:WA1KG21089  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG21089 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "15/WA1KG21089.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG21089 ;
-        adm:logEntry        bda:LG1DF5C27D6D6F8597 , bda:LGB3CFBF7163098D68 , bda:LGD11C2AE9D8ACC7EB , bda:LGIM569A8014B1 ;
+        adm:logEntry        bda:LG1DF5C27D6D6F8597 , bda:LGB3CFBF7163098D68 , bda:LGD11C2AE9D8ACC7EB , bda:LGIM4394141E , bda:LGIM569A8014B1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7149DD708C314525
+    bdr:CR3AFA3713AE16B68A
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG21101 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV3AFA3713AE16B68A
+    bdr:EV34E8C3FD41127E07
         a                   :CompletedEvent ;
         :onYear             "1946"^^xsd:gYear .
     
@@ -62,10 +69,10 @@ bdg:WA1KG21089 {
     bdr:WA1KG21089  a       :Work ;
         skos:prefLabel      "brda dag ming tshig gsal ba/"@bo-x-ewts , "brda dag ming tshig gsal ba : a comprehensice dictionary of the tibetan language"@en ;
         :catalogInfo        "A comprehensice dictionary of the Tibetan language."@en ;
-        :creator            bdr:CR7149DD708C314525 ;
+        :creator            bdr:CR3AFA3713AE16B68A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV3AFA3713AE16B68A ;
+        :workEvent          bdr:EV34E8C3FD41127E07 ;
         :workGenre          bdr:T218 , bdr:T220 ;
         :workHasInstance    bdr:MW1KG21089 , bdr:MW8LS41699 , bdr:W1KG21089 , bdr:W8LS41699 ;
         :workIsAbout        bdr:T265 .

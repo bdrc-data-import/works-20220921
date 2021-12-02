@@ -47,6 +47,12 @@ bdg:WA00KG02743 {
         adm:logMessage      "archive info: web; annotation added"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -64,12 +70,13 @@ bdg:WA00KG02743 {
     bda:WA00KG02743  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG02743 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "23/WA00KG02743.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG02743 ;
-        adm:logEntry        bda:LG164A5FDE3261911C , bda:LG1B4B47208A78A4EE , bda:LG22AE7C43FF485806 , bda:LGA6ADFFF23E16EEAC , bda:LGED976F1CB4DBDD03 , bda:LGF6B0A99814F96C05 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG164A5FDE3261911C , bda:LG1B4B47208A78A4EE , bda:LG22AE7C43FF485806 , bda:LGA6ADFFF23E16EEAC , bda:LGED976F1CB4DBDD03 , bda:LGF6B0A99814F96C05 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA00KG02743  a      :Work ;

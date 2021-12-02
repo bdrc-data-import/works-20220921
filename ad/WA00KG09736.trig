@@ -35,6 +35,12 @@ bdg:WA00KG09736 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -80,15 +86,16 @@ bdg:WA00KG09736 {
     bda:WA00KG09736  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG09736 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "ad/WA00KG09736.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG09736 ;
-        adm:logEntry        bda:LG78013AAD60FB9244 , bda:LGA6E77716485722E7 , bda:LGBCE8FA17B19E1EC1 , bda:LGC12A1A7E6E113B1A , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG78013AAD60FB9244 , bda:LGA6E77716485722E7 , bda:LGBCE8FA17B19E1EC1 , bda:LGC12A1A7E6E113B1A , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD211F61E399F25FF
+    bdr:CRD31D8C49495B0DAC
         a                   :AgentAsCreator ;
         :agent              bdr:P966 ;
         :role               bdr:R0ER0019 .
@@ -99,7 +106,7 @@ bdg:WA00KG09736 {
         skos:altLabel       "gangs ljongs mdo sngags kyi bstan pa'i shing rta dpal ldan sa skya pa'i chos 'byung mdor bsdus skal bzang yid kyi dga' ston/"@bo-x-ewts ;
         skos:prefLabel      "sa skya chos 'byung /"@bo-x-ewts , "Gaṅs ljoṅs mdo sṅags kyi bstan paʾi śiṅ rta Dpal ldan Sa skya paʾi chos ʾbyuṅ mdor bsdus Skal bzaṅ yid kyi dgaʾ ston źes bya ba bźugs so."@en-x-mixed ;
         :catalogInfo        "Brief history of the Sakya order of Tibetan Buddhism."@en ;
-        :creator            bdr:CRD211F61E399F25FF ;
+        :creator            bdr:CRD31D8C49495B0DAC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T12 ;

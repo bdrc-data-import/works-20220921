@@ -30,6 +30,12 @@ bdg:WA1KG17280 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM569A8014B1
         a                   adm:UpdateData ;
         adm:logDate         "2016-05-10T16:55:52.884Z"^^xsd:dateTime ;
@@ -40,12 +46,13 @@ bdg:WA1KG17280 {
     bda:WA1KG17280  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG17280 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "98/WA1KG17280.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG17280 ;
-        adm:logEntry        bda:LG3467B3C8C6488012 , bda:LG375DFDC009261F7F , bda:LGA1679D532207F768 , bda:LGIM569A8014B1 ;
+        adm:logEntry        bda:LG3467B3C8C6488012 , bda:LG375DFDC009261F7F , bda:LGA1679D532207F768 , bda:LGIM4394141E , bda:LGIM569A8014B1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1KG17280  a       :Work ;

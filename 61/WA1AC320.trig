@@ -40,6 +40,12 @@ bdg:WA1AC320 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4599A38FCE
         a                   adm:UpdateData ;
         adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
@@ -50,22 +56,23 @@ bdg:WA1AC320 {
     bda:WA1AC320  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC320 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "61/WA1AC320.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC320 ;
-        adm:logEntry        bda:LG054A8FD20E028128 , bda:LG14E5B8CC7C5C4304 , bda:LGA6339B9AC3F68652 , bda:LGB662BF1262584DC2 , bda:LGB9413C1B5483C097 , bda:LGIM4599A38FCE ;
+        adm:logEntry        bda:LG054A8FD20E028128 , bda:LG14E5B8CC7C5C4304 , bda:LGA6339B9AC3F68652 , bda:LGB662BF1262584DC2 , bda:LGB9413C1B5483C097 , bda:LGIM4394141E , bda:LGIM4599A38FCE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8D231D53C0375713
+    bdr:CRABD1450C4EC26DD4
         a                   :AgentAsCreator ;
         :agent              bdr:P7134 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1AC320  a         :Work ;
         skos:prefLabel      "tshogs shul bla ma nor bu bstan 'dzin gyi gsung 'bum/"@bo-x-ewts ;
-        :creator            bdr:CR8D231D53C0375713 ;
+        :creator            bdr:CRABD1450C4EC26DD4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

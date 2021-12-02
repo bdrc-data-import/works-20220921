@@ -24,10 +24,6 @@ bdg:WA21027 {
         adm:logMessage      "edited annotations; jann"@en ;
         adm:logWho          bdu:U00011 .
     
-    bda:LG6A8E7603D7ACD2C9
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG89947971975E1F3C
         a                   adm:UpdateData ;
         adm:logDate         "2013-02-26T15:35:49.238Z"^^xsd:dateTime ;
@@ -38,6 +34,16 @@ bdg:WA21027 {
         a                   adm:UpdateData ;
         adm:logDate         "2010-12-09T09:17:54.578Z"^^xsd:dateTime ;
         adm:logMessage      "added WMDL and WMDL07"@en .
+    
+    bda:LGD6FD75F81C742F6B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -63,16 +69,17 @@ bdg:WA21027 {
     bda:WA21027  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21027 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "f6/WA21027.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21027 ;
-        adm:logEntry        bda:LG071D1E059CF66C24 , bda:LG082016C590A1AF37 , bda:LG6A8E7603D7ACD2C9 , bda:LG89947971975E1F3C , bda:LGA7635E34CC0AC0E1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG071D1E059CF66C24 , bda:LG082016C590A1AF37 , bda:LG89947971975E1F3C , bda:LGA7635E34CC0AC0E1 , bda:LGD6FD75F81C742F6B , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG24477 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRD6FD75F81C742F6B
+    bdr:CR954A84685FE16063
         a                   :AgentAsCreator ;
         :agent              bdr:P242 ;
         :role               bdr:R0ER0019 .
@@ -82,7 +89,7 @@ bdg:WA21027 {
     bdr:WA21027  a          :Work ;
         skos:prefLabel      "gsung 'bum/_blo bzang chos 'byor lhun grub/"@bo-x-ewts , "the collected works (gsun 'bum) of blo-bzang-chos-'byor-lhun-grub, the 4th ron-tha chun-tshan sprul-sku"@en-x-mixed ;
         :catalogInfo        "Collected Works by Geluk master Lobzang Chojor Lhundrup from Kham."@en ;
-        :creator            bdr:CRD6FD75F81C742F6B ;
+        :creator            bdr:CR954A84685FE16063 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

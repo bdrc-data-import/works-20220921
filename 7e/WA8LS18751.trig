@@ -50,6 +50,12 @@ bdg:WA8LS18751 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -67,15 +73,16 @@ bdg:WA8LS18751 {
     bda:WA8LS18751  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18751 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "7e/WA8LS18751.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18751 ;
-        adm:logEntry        bda:LG03A3450EC55AC2F6 , bda:LG81965A5D3CBF93BD , bda:LGC5C0215931461770 , bda:LGEA89B1BF07089AC5 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG03A3450EC55AC2F6 , bda:LG81965A5D3CBF93BD , bda:LGC5C0215931461770 , bda:LGEA89B1BF07089AC5 , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR511054B72EEA260C
+    bdr:CR37677AE0E213F499
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS75235 ;
         :role               bdr:R0ER0026 .
@@ -83,7 +90,7 @@ bdg:WA8LS18751 {
     bdr:WA8LS18751  a       :Work ;
         skos:prefLabel      "gnyen sgrig dang khyim tshang skor gyi bca' khrims shes bya'i dri ba dris lan/"@bo-x-ewts ;
         :catalogInfo        "Questions and responses concerning the rules and regulation of marriage and family; translated by Losang Lhamo."@en ;
-        :creator            bdr:CR511054B72EEA260C ;
+        :creator            bdr:CR37677AE0E213F499 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 ;

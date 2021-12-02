@@ -49,6 +49,12 @@ bdg:WA1KG869 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -87,30 +93,31 @@ bdg:WA1KG869 {
     bda:WA1KG869  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG869 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "1f/WA1KG869.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG869 ;
-        adm:logEntry        bda:LG34DDBE9F535E7765 , bda:LG58223FB528B3C370 , bda:LGA0E9386E7C206C83 , bda:LGC5CC44B7F2304979 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG34DDBE9F535E7765 , bda:LG58223FB528B3C370 , bda:LGA0E9386E7C206C83 , bda:LGC5CC44B7F2304979 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF8F365829F5407A6
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1KG918 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRFE3783D4A5C0FDD2
+    bdr:CR250793875C693E22
         a                   :AgentAsCreator ;
         :agent              bdr:P10072 ;
         :role               bdr:R0ER0026 .
+    
+    bdr:CRFE3783D4A5C0FDD2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG918 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1KG869  skos:altLabel  "xi zang lv yang"@zh-latn-pinyin-x-ndia .
     
     bdr:WA1KG869  a         :Work ;
         skos:prefLabel      "bod ljongs yul skor/"@bo-x-ewts , "xi zang lv yang"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "About the natural environment, cities, and towns in Tibet."@en ;
-        :creator            bdr:CRF8F365829F5407A6 , bdr:CRFE3783D4A5C0FDD2 ;
+        :creator            bdr:CR250793875C693E22 , bdr:CRFE3783D4A5C0FDD2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG869 , bdr:W1KG869 ;

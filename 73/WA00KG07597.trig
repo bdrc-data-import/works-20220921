@@ -41,6 +41,12 @@ bdg:WA00KG07597 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -58,15 +64,16 @@ bdg:WA00KG07597 {
     bda:WA00KG07597  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG07597 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "73/WA00KG07597.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG07597 ;
-        adm:logEntry        bda:LG1753E28815690085 , bda:LG4CFABD6D4881E643 , bda:LG838AA8EF2F154FA6 , bda:LG87E43EF6FAF899D3 , bda:LG91CB1925B9B492AA , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1753E28815690085 , bda:LG4CFABD6D4881E643 , bda:LG838AA8EF2F154FA6 , bda:LG87E43EF6FAF899D3 , bda:LG91CB1925B9B492AA , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA5D4B3CD291C1B74
+    bdr:CR679118DF505896F9
         a                   :AgentAsCreator ;
         :agent              bdr:P4959 ;
         :role               bdr:R0ER0019 .
@@ -75,7 +82,7 @@ bdg:WA00KG07597 {
         skos:altLabel       "man ngag lhan thabs kyi dka' gnas dkrol ba rnam rgyal gser mdog gi phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "sman gyi rgyud bzhi'i brda dang don 'ga' zhig bkrol ba rnam rgyal a ru ra'i 'phreng ba'i mdzes rgyan/"@bo-x-ewts ;
         :catalogInfo        "Explanation of difficult terms in the Four Medical Tantras by an 18th century Mongol author."@en ;
-        :creator            bdr:CRA5D4B3CD291C1B74 ;
+        :creator            bdr:CR679118DF505896F9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW00KG07597 , bdr:W00KG07597 ;

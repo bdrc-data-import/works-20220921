@@ -46,6 +46,12 @@ bdg:WA1PD95802 {
         adm:logDate         "2009-11-13T12:20:13.517Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -77,15 +83,16 @@ bdg:WA1PD95802 {
     bda:WA1PD95802  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD95802 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "1d/WA1PD95802.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD95802 ;
-        adm:logEntry        bda:LG0EC9A5C3BEF1CBE9 , bda:LG244D1E99319C2588 , bda:LG58096AEF1BCE2DE0 , bda:LG60F09BDABC1F0942 , bda:LG7816523D57C51C81 , bda:LGD1548E6EE97CE7C0 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
+        adm:logEntry        bda:LG0EC9A5C3BEF1CBE9 , bda:LG244D1E99319C2588 , bda:LG58096AEF1BCE2DE0 , bda:LG60F09BDABC1F0942 , bda:LG7816523D57C51C81 , bda:LGD1548E6EE97CE7C0 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5B97E836CE8569F6
+    bdr:CR2493D38779DAB95E
         a                   :AgentAsCreator ;
         :agent              bdr:P1PD95803 ;
         :role               bdr:R0ER0019 .
@@ -93,7 +100,7 @@ bdg:WA1PD95802 {
     bdr:WA1PD95802  a       :Work ;
         skos:prefLabel      "bod hor gyi brda yig ming tshig don gsum gsal bar byed pa mun sel sgron me/"@bo-x-ewts , "Bod Hor gyi brda yig miṅ tshig Don gsum gsal bar byed paʾi mun sel sgron me =Tȯbed Mongġol-un dokiyan-u bicig ; ner-e u̇ge udq-a gu̇rban-i toduraġulun qarangġui-yi arilġaġci jula /Su-ma-ti-ratna."@en-x-mixed , "tȯbed mongġol-un dokiyan-u bicig, ner-e u̇ge ġurban-i toduraġulun qarangġui-yi arilġaġci jula"@mn ;
         :catalogInfo        "Tibetan dictionary with Mongolian translation."@en ;
-        :creator            bdr:CR5B97E836CE8569F6 ;
+        :creator            bdr:CR2493D38779DAB95E ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangMn ;
         :workGenre          bdr:T220 ;

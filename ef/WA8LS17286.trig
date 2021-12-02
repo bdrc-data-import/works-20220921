@@ -36,15 +36,22 @@ bdg:WA8LS17286 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA8LS17286  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS17286 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ef/WA8LS17286.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS17286 ;
-        adm:logEntry        bda:LG1DAE691597605F13 , bda:LG1F33BFD23E6EF465 , bda:LGF0B2B36AA8B6C7EB , bda:LGF33F04A52BF7D6D5 ;
+        adm:logEntry        bda:LG1DAE691597605F13 , bda:LG1F33BFD23E6EF465 , bda:LGF0B2B36AA8B6C7EB , bda:LGF33F04A52BF7D6D5 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA8LS17286  a       :Work ;

@@ -31,6 +31,12 @@ bdg:WA1KG25734 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -48,15 +54,16 @@ bdg:WA1KG25734 {
     bda:WA1KG25734  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25734 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "de/WA1KG25734.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25734 ;
-        adm:logEntry        bda:LG5BEF96640705F286 , bda:LGFAE0600EBC0A4FC5 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG5BEF96640705F286 , bda:LGFAE0600EBC0A4FC5 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF93D12E65571AD90
+    bdr:CR8A3B2C6764FD7430
         a                   :AgentAsCreator ;
         :agent              bdr:P7461 ;
         :role               bdr:R0ER0026 .
@@ -66,7 +73,7 @@ bdg:WA1KG25734 {
     bdr:WA1KG25734  a       :Work ;
         skos:prefLabel      "gcig dgu gya bzhi/"@bo-x-ewts , "nineteen eighty four"@en ;
         :catalogInfo        "Tibetan translation of George Orwell's 1949 novel \"Nineteen Eighty Four\"."@en ;
-        :creator            bdr:CRF93D12E65571AD90 ;
+        :creator            bdr:CR8A3B2C6764FD7430 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T260 ;

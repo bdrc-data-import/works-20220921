@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA9088 {
-    bda:LG011C7C5A7E275B2F
+    bda:LG0AEBD751311AEFDE
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -40,6 +40,12 @@ bdg:WA9088 {
         adm:logMessage      "ctc6"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -50,20 +56,21 @@ bdg:WA9088 {
     bda:WA9088  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA9088 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "bd/WA9088.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA9088 ;
-        adm:logEntry        bda:LG011C7C5A7E275B2F , bda:LG4C264FD2A5CF3545 , bda:LG712C52A587F52CB3 , bda:LGCE7FEBC830EB5530 , bda:LGDBE8B1AF8F6A3F3C , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG0AEBD751311AEFDE , bda:LG4C264FD2A5CF3545 , bda:LG712C52A587F52CB3 , bda:LGCE7FEBC830EB5530 , bda:LGDBE8B1AF8F6A3F3C , bda:LGIM4394141E , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0AEBD751311AEFDE
+    bdr:CR76BEF6826AF8A2E1
         a                   :AgentAsCreator ;
         :agent              bdr:P667 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV76BEF6826AF8A2E1
+    bdr:EV61EFDC89F3256733
         a                   :CompletedEvent ;
         :onYear             "1708"^^xsd:gYear .
     
@@ -72,10 +79,10 @@ bdg:WA9088 {
     bdr:WA9088  a           :Work ;
         skos:altLabel       "sdom gsum rnam par nges pa'i legs bshad ngo mtshar dpag bsam gyi snye ma/"@bo-x-ewts ;
         skos:prefLabel      "sdom gsum rnam nges kyi 'grel pa dpag bsam snye ma/"@bo-x-ewts , "Sdom pa gsum rṅam par ṅes paʼi ʼgrel pa legs bśad ṅo mtshar dpag bsam gyi sñe ma bźugs so /[Dharma-śrīs sbyar ba]."@en-x-mixed ;
-        :creator            bdr:CR0AEBD751311AEFDE ;
+        :creator            bdr:CR76BEF6826AF8A2E1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV76BEF6826AF8A2E1 ;
+        :workEvent          bdr:EV61EFDC89F3256733 ;
         :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW9088 , bdr:MW9140_5855F5 , bdr:W9088 ;
         :workIsAbout        bdr:T201 , bdr:WA3JT13389 .

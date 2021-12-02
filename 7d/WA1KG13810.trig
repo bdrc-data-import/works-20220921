@@ -42,6 +42,12 @@ bdg:WA1KG13810 {
         adm:logMessage      "accessioned"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -59,15 +65,16 @@ bdg:WA1KG13810 {
     bda:WA1KG13810  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG13810 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "7d/WA1KG13810.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG13810 ;
-        adm:logEntry        bda:LG2F663725501E5D87 , bda:LG37C9CE627A23E82D , bda:LG73CAA96516024399 , bda:LG9F4C24F657396A89 , bda:LGD39749F9B3DB746B , bda:LGIM4BF5F96E12 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG2F663725501E5D87 , bda:LG37C9CE627A23E82D , bda:LG73CAA96516024399 , bda:LG9F4C24F657396A89 , bda:LGD39749F9B3DB746B , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CREDF7C103BE618FBC
+    bdr:CR1876009DA17FB7DB
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG15783 ;
         :role               bdr:R0ER0019 .
@@ -76,7 +83,7 @@ bdg:WA1KG13810 {
         skos:altLabel       "chos 'byung legs bshad snying bsdus blo gsar dga' bskyed/"@bo-x-ewts ;
         skos:prefLabel      "chos 'byung dris lan brgya pa legs bshad snying bsdus/"@bo-x-ewts ;
         :catalogInfo        "Account of the Buddhist religious history of India and Tibet. Includes biographies of Indian Buddhist masters and Buddhist doctrinal interpretations."@en ;
-        :creator            bdr:CREDF7C103BE618FBC ;
+        :creator            bdr:CR1876009DA17FB7DB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T12 ;

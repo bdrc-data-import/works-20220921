@@ -30,22 +30,29 @@ bdg:WA20134 {
         adm:logMessage      "subject class changed from T284 to T1884"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG853B6D3DFDD0E92A
+    bda:LGD2C574295958E01A
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA20134  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20134 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "3d/WA20134.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20134 ;
-        adm:logEntry        bda:LG38A04F70C2D1FAA6 , bda:LG3E4B7C26283FEAAF , bda:LG42890C21D4E09CBE , bda:LG853B6D3DFDD0E92A ;
+        adm:logEntry        bda:LG38A04F70C2D1FAA6 , bda:LG3E4B7C26283FEAAF , bda:LG42890C21D4E09CBE , bda:LGD2C574295958E01A , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD2C574295958E01A
+    bdr:CR6F9FD1B9B5D7EE99
         a                   :AgentAsCreator ;
         :agent              bdr:P6469 ;
         :role               bdr:R0ER0019 .
@@ -56,7 +63,7 @@ bdg:WA20134 {
         skos:altLabel       "gao yuan de feng"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "mtho sgang gi rlung /"@bo-x-ewts , "高原的风"@zh-hans ;
         :catalogInfo        "Comprises short stories, poems, and prose."@en ;
-        :creator            bdr:CRD2C574295958E01A ;
+        :creator            bdr:CR6F9FD1B9B5D7EE99 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1884 , bdr:T216 ;

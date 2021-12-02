@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27311 {
-    bda:LG9A41FA7AC9E8AD77
+    bda:LG02E47CAB396EFE61
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -22,6 +22,12 @@ bdg:WA27311 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -47,16 +53,17 @@ bdg:WA27311 {
     bda:WA27311  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27311 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "14/WA27311.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27311 ;
-        adm:logEntry        bda:LG9A41FA7AC9E8AD77 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG02E47CAB396EFE61 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA21783 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR02E47CAB396EFE61
+    bdr:CR7EDA64298D115901
         a                   :AgentAsCreator ;
         :agent              bdr:P1161 ;
         :role               bdr:R0ER0019 .
@@ -66,7 +73,7 @@ bdg:WA27311 {
     bdr:WA27311  a          :Work ;
         skos:prefLabel      "bod kyi chos srid zung 'brel skor bshad pa/"@bo-x-ewts , "lun hsi-tsang cheng chiao ho i chih tu"@zh-latn-wadegile ;
         :catalogInfo        "Explanation on relations between the religious and secular in Tibet."@en ;
-        :creator            bdr:CR02E47CAB396EFE61 ;
+        :creator            bdr:CR7EDA64298D115901 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

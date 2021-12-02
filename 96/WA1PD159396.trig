@@ -48,6 +48,12 @@ bdg:WA1PD159396 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -72,15 +78,16 @@ bdg:WA1PD159396 {
     bda:WA1PD159396  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159396 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "96/WA1PD159396.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159396 ;
-        adm:logEntry        bda:LG4E9869007221F855 , bda:LG5D566D1E5C692525 , bda:LG607FF43DB80B6A36 , bda:LG834AB505738A7258 , bda:LGCBE316D8F41EFFE4 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIM74A445C794 ;
+        adm:logEntry        bda:LG4E9869007221F855 , bda:LG5D566D1E5C692525 , bda:LG607FF43DB80B6A36 , bda:LG834AB505738A7258 , bda:LGCBE316D8F41EFFE4 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIM74A445C794 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFB4A7D3A73B482B1
+    bdr:CR272B1325FD49A723
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG16717 ;
         :role               bdr:R0ER0019 .
@@ -91,7 +98,7 @@ bdg:WA1PD159396 {
         skos:altLabel       "jia zhuo sui bi ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gangs seng 'tshol ba/"@bo-x-ewts , "加卓随笔集"@zh-hans ;
         :catalogInfo        "Collection of the author's miscellaneous essays."@en ;
-        :creator            bdr:CRFB4A7D3A73B482B1 ;
+        :creator            bdr:CR272B1325FD49A723 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;

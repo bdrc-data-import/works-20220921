@@ -53,6 +53,12 @@ bdg:WA3PD185 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -70,15 +76,16 @@ bdg:WA3PD185 {
     bda:WA3PD185  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3PD185 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "07/WA3PD185.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3PD185 ;
-        adm:logEntry        bda:LG19D559339BEA2077 , bda:LG2E6E6E45469FEB8E , bda:LG67BBA39DFFA4010A , bda:LG79118FCEDD024865 , bda:LG9BBF4546E0EAD4BC , bda:LGBCF28CF98A944A02 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG19D559339BEA2077 , bda:LG2E6E6E45469FEB8E , bda:LG67BBA39DFFA4010A , bda:LG79118FCEDD024865 , bda:LG9BBF4546E0EAD4BC , bda:LGBCF28CF98A944A02 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC11AAE20BC878361
+    bdr:CR42C0A4350D6B16AA
         a                   :AgentAsCreator ;
         :agent              bdr:P4PD2984 ;
         :role               bdr:R0ER0019 .
@@ -86,7 +93,7 @@ bdg:WA3PD185 {
     bdr:WA3PD185  a         :Work ;
         skos:altLabel       "se la si zhi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "dbus 'gyur gyi gdan sa chen po se ra theg chen gling gi gdan rabs ngo mtshar nor bu'i phreng ba/"@bo-x-ewts , "色拉寺志"@zh-hans ;
-        :creator            bdr:CRC11AAE20BC878361 ;
+        :creator            bdr:CR42C0A4350D6B16AA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3PD185 , bdr:W3PD185 ;

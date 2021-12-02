@@ -24,10 +24,6 @@ bdg:WA27913 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LG663F124C0430114C
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG9D553F0DB8D26C5F
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-19T18:44:04.245Z"^^xsd:dateTime ;
@@ -40,18 +36,29 @@ bdg:WA27913 {
         adm:logMessage      "added source printery"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGB6DA5302B9C373A4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA27913  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27913 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "4e/WA27913.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27913 ;
-        adm:logEntry        bda:LG2BBE27F61D85C297 , bda:LG4D217194F640F57F , bda:LG663F124C0430114C , bda:LG9D553F0DB8D26C5F , bda:LGA7F84020B9DE5099 ;
+        adm:logEntry        bda:LG2BBE27F61D85C297 , bda:LG4D217194F640F57F , bda:LG9D553F0DB8D26C5F , bda:LGA7F84020B9DE5099 , bda:LGB6DA5302B9C373A4 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB6DA5302B9C373A4
+    bdr:CR1072F0B6BB06F766
         a                   :AgentAsCreator ;
         :agent              bdr:P732 ;
         :role               bdr:R0ER0019 .
@@ -61,7 +68,7 @@ bdg:WA27913 {
     bdr:WA27913  a          :Work ;
         skos:altLabel       "rgyal bstan grub mtha' ris med kyi chos 'byun mdor bsdus yid ches dad pa'i sin rta"@bo-alalc97 , "rgyal bstan grub mtha' ris med kyi chos 'byung mdor bsdus yid ches dad pa'i shing rta/"@bo-x-ewts ;
         skos:prefLabel      "ris med chos 'byung /"@bo-x-ewts , "a brief history of the various religious traditions of tibet which have contributed to the making of the ris-med movement"@en-x-mixed ;
-        :creator            bdr:CRB6DA5302B9C373A4 ;
+        :creator            bdr:CR1072F0B6BB06F766 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T12 ;

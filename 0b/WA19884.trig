@@ -30,15 +30,21 @@ bdg:WA19884 {
         adm:logMessage      "added pub info"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG5D8FAA03369CBA47
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG6569BE94FFA6C797
         a                   adm:UpdateData ;
         adm:logDate         "2013-02-08T11:33:06.208Z"^^xsd:dateTime ;
         adm:logMessage      "added print type source printery"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGD33BFD453CDEFBD2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -64,15 +70,16 @@ bdg:WA19884 {
     bda:WA19884  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19884 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "0b/WA19884.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19884 ;
-        adm:logEntry        bda:LG029AAE1829A20549 , bda:LG22501773AD7B2BBD , bda:LG4DC7864390ADF706 , bda:LG6569BE94FFA6C797 , bda:LGD33BFD453CDEFBD2 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG029AAE1829A20549 , bda:LG22501773AD7B2BBD , bda:LG4DC7864390ADF706 , bda:LG5D8FAA03369CBA47 , bda:LG6569BE94FFA6C797 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5D8FAA03369CBA47
+    bdr:CR163F98DD20D91E69
         a                   :AgentAsCreator ;
         :agent              bdr:P6243 ;
         :role               bdr:R0ER0019 .
@@ -81,7 +88,7 @@ bdg:WA19884 {
         skos:altLabel       "lha bzang bla ma rig 'dzin gar gyi dbang phyug gi gsung 'bum/"@bo-x-ewts , "rig 'dzin gar gyi dbang phyug gi gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_rig 'dzin gar gyi dbang phyug"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Nyingma cleric Rigzin Garkyi Wangchuk (1858-1930)."@en ;
-        :creator            bdr:CR5D8FAA03369CBA47 ;
+        :creator            bdr:CR163F98DD20D91E69 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

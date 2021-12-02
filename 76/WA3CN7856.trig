@@ -24,6 +24,12 @@ bdg:WA3CN7856 {
         adm:logMessage      "detail cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -34,15 +40,16 @@ bdg:WA3CN7856 {
     bda:WA3CN7856  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN7856 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "76/WA3CN7856.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN7856 ;
-        adm:logEntry        bda:LGA058EAA0304BBEE5 , bda:LGD424DC55421422D2 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LGA058EAA0304BBEE5 , bda:LGD424DC55421422D2 , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD4A136BCE80F50F6
+    bdr:CRB80EF9C1CD638838
         a                   :AgentAsCreator ;
         :agent              bdr:P7775 ;
         :role               bdr:R0ER0019 .
@@ -51,7 +58,7 @@ bdg:WA3CN7856 {
         skos:altLabel       "tsha ba mda' smyug gi brgal lan/ a ma'i thal lcag"@bo-x-ewts ;
         skos:prefLabel      "a ma'i thal lcag"@bo-x-ewts ;
         :catalogInfo        "Polemic writing concerning modern tibetan writer Tsawa Danyuk's work log rtog snying stobs by Lhawang Dorje."@en ;
-        :creator            bdr:CRD4A136BCE80F50F6 ;
+        :creator            bdr:CRB80EF9C1CD638838 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW3CN7856 , bdr:W3CN7856 ;

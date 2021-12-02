@@ -62,6 +62,12 @@ bdg:WA2DB4607 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -79,13 +85,14 @@ bdg:WA2DB4607 {
     bda:WA2DB4607  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2DB4607 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "e0/WA2DB4607.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2DB4607 ;
-        adm:logEntry        bda:LG5F8B9B9D19DA748B , bda:LG9068FC9527D3A069 , bda:LG926BA29A8984CBF6 , bda:LGC18F5EA712B6B60E , bda:LGCC846CF78E0C98F1 , bda:LGD08A9B38CF3B750B , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG5F8B9B9D19DA748B , bda:LG9068FC9527D3A069 , bda:LG926BA29A8984CBF6 , bda:LGC18F5EA712B6B60E , bda:LGCC846CF78E0C98F1 , bda:LGD08A9B38CF3B750B , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA2DB4603 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:WA2DB4607  a        :Work ;

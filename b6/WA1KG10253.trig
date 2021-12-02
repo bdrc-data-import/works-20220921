@@ -48,6 +48,12 @@ bdg:WA1KG10253 {
         adm:logMessage      "added about person"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -79,15 +85,16 @@ bdg:WA1KG10253 {
     bda:WA1KG10253  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG10253 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "b6/WA1KG10253.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG10253 ;
-        adm:logEntry        bda:LG1D41754ECCE7AE34 , bda:LG498B6E39FDCAD14E , bda:LG824DC5E3452DE138 , bda:LG8B1DB0377D8C9EB6 , bda:LGC651A17262784D9F , bda:LGECCE5988B49CA8C5 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG1D41754ECCE7AE34 , bda:LG498B6E39FDCAD14E , bda:LG824DC5E3452DE138 , bda:LG8B1DB0377D8C9EB6 , bda:LGC651A17262784D9F , bda:LGECCE5988B49CA8C5 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD18B35DC83E4C3FE
+    bdr:CR5877A8BDA24FB09C
         a                   :AgentAsCreator ;
         :agent              bdr:P816 ;
         :role               bdr:R0ER0019 .
@@ -96,7 +103,7 @@ bdg:WA1KG10253 {
         skos:altLabel       "dwags po bka' brgyud grub chen 'brug pa kun dga' legs pa'i rnam thar sogs/"@bo-x-ewts ;
         skos:prefLabel      "'brug pa kun dga' legs pa'i rnam thar dang nyams mgur dang zhal gdams sogs/"@bo-x-ewts , "the autobiography, songs and instructions of 'brug-pa kun-dga'-legs-pa"@en-x-mixed ;
         :catalogInfo        "Autobiography, songs, and instructions by Drukpa Kagyu master Kunga Lekpa (1455-1529)."@en ;
-        :creator            bdr:CRD18B35DC83E4C3FE ;
+        :creator            bdr:CR5877A8BDA24FB09C ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn ;
         :workGenre          bdr:T3 , bdr:T413 , bdr:T6 ;

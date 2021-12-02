@@ -52,6 +52,12 @@ bdg:WA1PD137818 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -69,15 +75,16 @@ bdg:WA1PD137818 {
     bda:WA1PD137818  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD137818 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "cc/WA1PD137818.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD137818 ;
-        adm:logEntry        bda:LG2E110B38E4B9AFA2 , bda:LG2F7A719970010138 , bda:LG3FE7DFA5FEFDE2AF , bda:LG69FF6DF4C207856C , bda:LG792C392319DDD83D , bda:LGCF2190233DE8253A , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2E110B38E4B9AFA2 , bda:LG2F7A719970010138 , bda:LG3FE7DFA5FEFDE2AF , bda:LG69FF6DF4C207856C , bda:LG792C392319DDD83D , bda:LGCF2190233DE8253A , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA554B77C70719AA2
+    bdr:CR295465CA5E10CCCB
         a                   :AgentAsCreator ;
         :agent              bdr:P2PD20575 ;
         :role               bdr:R0ER0019 .
@@ -87,7 +94,7 @@ bdg:WA1PD137818 {
     bdr:WA1PD137818  a      :Work ;
         skos:altLabel       "bod btsan po'i rgyal rabs kyi chab srid lam lugs zhib 'jug——bod kyi brda rnying yig cha khag dkyus su bzung nas dpyad pa/"@bo-x-ewts , "tu bo shi qi zheng zhi zhi du yan jiu：yi gu zang wen wen xian wei zhong xin"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod btsan po'i rgyal rabs kyi chab srid lam lugs zhib 'jug"@bo-x-ewts , "吐蕃时期政治制度研究：以古藏文文献为中心"@zh-hans ;
-        :creator            bdr:CRA554B77C70719AA2 ;
+        :creator            bdr:CR295465CA5E10CCCB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 , bdr:T793 ;

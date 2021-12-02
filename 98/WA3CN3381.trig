@@ -42,15 +42,22 @@ bdg:WA3CN3381 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA3CN3381  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN3381 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "98/WA3CN3381.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN3381 ;
-        adm:logEntry        bda:LG3812EE5DB0BA7FF2 , bda:LG4A856F58B41DF41D , bda:LG769FB9513E2E6091 , bda:LG7AF062C1F550CBE1 , bda:LGF76EB1A151FC66F8 ;
+        adm:logEntry        bda:LG3812EE5DB0BA7FF2 , bda:LG4A856F58B41DF41D , bda:LG769FB9513E2E6091 , bda:LG7AF062C1F550CBE1 , bda:LGF76EB1A151FC66F8 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA3CN3381  a        :Work ;

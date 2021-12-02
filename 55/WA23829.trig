@@ -30,7 +30,7 @@ bdg:WA23829 {
         adm:logMessage      "completed"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG7BBE16812AB16F19
+    bda:LG99E77F9032760D7A
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -52,6 +52,12 @@ bdg:WA23829 {
         adm:logMessage      "added Work to CTC 10"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -77,15 +83,16 @@ bdg:WA23829 {
     bda:WA23829  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23829 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "55/WA23829.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23829 ;
-        adm:logEntry        bda:LG1580AA1D12CE21A8 , bda:LG382639A9838C0539 , bda:LG547CFAADB38710A1 , bda:LG7BBE16812AB16F19 , bda:LGC30026FAFC1145A5 , bda:LGF3321ABECFF5C67D , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1580AA1D12CE21A8 , bda:LG382639A9838C0539 , bda:LG547CFAADB38710A1 , bda:LG99E77F9032760D7A , bda:LGC30026FAFC1145A5 , bda:LGF3321ABECFF5C67D , bda:LGIM320307B99D , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR99E77F9032760D7A
+    bdr:CRC85396DD32A1AF19
         a                   :AgentAsCreator ;
         :agent              bdr:P470 ;
         :role               bdr:R0ER0019 .
@@ -95,7 +102,7 @@ bdg:WA23829 {
     bdr:WA23829  a          :Work ;
         skos:prefLabel      "thugs rje chen po gsang ba 'dus pa'i chos skor/"@bo-x-ewts , "thugs rje chen po gsan ba 'dus pa'i chos skor : a collection of texts concerned with buddhist practice focussing upon mahakarunika in the form gsang ba 'dus pa"@en-x-mixed ;
         :catalogInfo        "Collection of liturgical texts focusing on the practice of Mahakarunika in the form Guhyasamaja."@en ;
-        :creator            bdr:CR99E77F9032760D7A ;
+        :creator            bdr:CRC85396DD32A1AF19 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;

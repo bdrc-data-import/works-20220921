@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22071 {
+    bda:LG59C9B584484E3152
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG675D3593F3C36657
         a                   adm:UpdateData ;
         adm:logDate         "2014-06-27T10:41:00.767Z"^^xsd:dateTime ;
@@ -30,9 +34,11 @@ bdg:WA22071 {
         adm:logMessage      "Reviewed Catalog, added cat, pub info, print tyep and language encoding"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LGE2A5AA3925302CC7
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMF03D5361F1
         a                   adm:UpdateData ;
@@ -44,12 +50,13 @@ bdg:WA22071 {
     bda:WA22071  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22071 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "56/WA22071.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22071 ;
-        adm:logEntry        bda:LG675D3593F3C36657 , bda:LG6FAD9B59D3525952 , bda:LG7990BCE46FEA40E2 , bda:LGE2A5AA3925302CC7 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG59C9B584484E3152 , bda:LG675D3593F3C36657 , bda:LG6FAD9B59D3525952 , bda:LG7990BCE46FEA40E2 , bda:LGIM4394141E , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW22071  skos:altLabel  "格萨尔传奇--日努"@zh-hans .

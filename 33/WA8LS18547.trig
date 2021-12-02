@@ -31,6 +31,12 @@ bdg:WA8LS18547 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -55,16 +61,17 @@ bdg:WA8LS18547 {
     bda:WA8LS18547  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18547 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "33/WA8LS18547.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18547 ;
-        adm:logEntry        bda:LG284D780168DD0E40 , bda:LG79ECF11B8E64F448 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LG284D780168DD0E40 , bda:LG79ECF11B8E64F448 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1GS60386 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRA03797B737E2C4D3
+    bdr:CRF6CA72D8ACE80374
         a                   :AgentAsCreator ;
         :agent              bdr:P1GS60381 ;
         :role               bdr:R0ER0019 .
@@ -72,7 +79,7 @@ bdg:WA8LS18547 {
     bdr:WA8LS18547  a       :Work ;
         skos:prefLabel      "bod sman gter dngos rig pa/"@bo-x-ewts ;
         :catalogInfo        "An introduction of substances to prepare precious pills by Samdrup Gyal."@en ;
-        :creator            bdr:CRA03797B737E2C4D3 ;
+        :creator            bdr:CRF6CA72D8ACE80374 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workIsAbout        bdr:T2MS13793 , bdr:T85 .

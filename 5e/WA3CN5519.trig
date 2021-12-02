@@ -36,6 +36,12 @@ bdg:WA3CN5519 {
         adm:logMessage      "edited: resending scanrequast for 2 V"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
@@ -59,12 +65,13 @@ bdg:WA3CN5519 {
     bda:WA3CN5519  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5519 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "5e/WA3CN5519.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5519 ;
-        adm:logEntry        bda:LG344FBE3F8AAE8827 , bda:LG691AC1A33B7ADA9E , bda:LGC60F3C504826E19B , bda:LGFF2AFA0F90658560 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG344FBE3F8AAE8827 , bda:LG691AC1A33B7ADA9E , bda:LGC60F3C504826E19B , bda:LGFF2AFA0F90658560 , bda:LGIM4394141E , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA3CN5519  a        :Work ;

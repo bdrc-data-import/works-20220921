@@ -38,6 +38,12 @@ bdg:WA8LS18925 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -55,15 +61,16 @@ bdg:WA8LS18925 {
     bda:WA8LS18925  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS18925 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "2f/WA8LS18925.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS18925 ;
-        adm:logEntry        bda:LG3581AD95617FAF8E , bda:LG8B5E490BE48B83BC , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3581AD95617FAF8E , bda:LG8B5E490BE48B83BC , bda:LGIM01FF8512D7 , bda:LGIM065AD95F26 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFEEF47B66BF6F31A
+    bdr:CR60ECF4B877B04A03
         a                   :AgentAsCreator ;
         :agent              bdr:P9000 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +78,7 @@ bdg:WA8LS18925 {
     bdr:WA8LS18925  a       :Work ;
         skos:prefLabel      "rgyu dngos bdag dbang skor gyi krung hwa mi dmangs spyi mthun rgyal khab kyi bca' khrims/"@bo-x-ewts ;
         :catalogInfo        "Regulations of property rights in PRC, translated by Kelsang Tashi."@en ;
-        :creator            bdr:CRFEEF47B66BF6F31A ;
+        :creator            bdr:CR60ECF4B877B04A03 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

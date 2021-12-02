@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22081 {
-    bda:LG0A8751680B5B9867
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG1F1CEE896AF76920
         a                   adm:UpdateData ;
         adm:logDate         "2012-01-10T14:32:31.823Z"^^xsd:dateTime ;
@@ -32,6 +28,10 @@ bdg:WA22081 {
         adm:logMessage      "removed the word \"above\" from the cataloging info"@en ;
         adm:logWho          bdu:U00012 .
     
+    bda:LG73FABF0B3BEC071A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG889B9831A1F385A8
         a                   adm:UpdateData ;
         adm:logDate         "2013-02-27T15:28:27.646Z"^^xsd:dateTime ;
@@ -47,6 +47,12 @@ bdg:WA22081 {
         adm:logDate         "2011-03-14T10:13:07.541Z"^^xsd:dateTime ;
         adm:logMessage      "corrected pub info"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -72,15 +78,16 @@ bdg:WA22081 {
     bda:WA22081  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22081 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "48/WA22081.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22081 ;
-        adm:logEntry        bda:LG0A8751680B5B9867 , bda:LG1F1CEE896AF76920 , bda:LG21F2422EDF39BFCB , bda:LG3A7138D45D2BDFD3 , bda:LG889B9831A1F385A8 , bda:LG891B5630EBE4D4EE , bda:LGB5CA1161B9211697 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1F1CEE896AF76920 , bda:LG21F2422EDF39BFCB , bda:LG3A7138D45D2BDFD3 , bda:LG73FABF0B3BEC071A , bda:LG889B9831A1F385A8 , bda:LG891B5630EBE4D4EE , bda:LGB5CA1161B9211697 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR73FABF0B3BEC071A
+    bdr:CRC013FA23CC021C8C
         a                   :AgentAsCreator ;
         :agent              bdr:P563 ;
         :role               bdr:R0ER0019 .
@@ -89,7 +96,7 @@ bdg:WA22081 {
         skos:altLabel       "rgyal dbang karma pa chen po bco lnga pa'i gsung 'bum/"@bo-x-ewts , "rgyal dbang mkha' kyab rdo rje'i bka' 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_mkha' khyab rdo rje/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Karmapa 15 Kakyab Dorje (1871/2-1921/2), a figure of both the Karma Kagyu and Nyingma orders. Shared a passion for the Rime movement that meant so much for his time. Corpus of initiation rituals have been included in the Rinchen Terdzod."@en ;
-        :creator            bdr:CR73FABF0B3BEC071A ;
+        :creator            bdr:CRC013FA23CC021C8C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

@@ -36,6 +36,12 @@ bdg:WA1KG8725 {
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -67,16 +73,17 @@ bdg:WA1KG8725 {
     bda:WA1KG8725  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG8725 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "08/WA1KG8725.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG8725 ;
-        adm:logEntry        bda:LG6B462B96D89EEA21 , bda:LG889516B4077A0643 , bda:LGBC42F65BB928BA32 , bda:LGE034F036ECC5903A , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG6B462B96D89EEA21 , bda:LG889516B4077A0643 , bda:LGBC42F65BB928BA32 , bda:LGE034F036ECC5903A , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG16158 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR014539E3A4BB722D
+    bdr:CR125443EF39DE6C05
         a                   :AgentAsCreator ;
         :agent              bdr:P101 ;
         :role               bdr:R0ER0019 .
@@ -85,7 +92,7 @@ bdg:WA1KG8725 {
         skos:altLabel       "rgyas pa'i bstan bcos tshad ma rnam 'grel gyi dka' 'grel dgongs pa rab gsal zhes bya ba mkhas pa'i dbang po bsod nams grags pas mdzad pa blo gsal mkhas pa'i mgrin rgyan/"@bo-x-ewts ;
         skos:prefLabel      "tshad ma rnam 'grel gyi dka' 'grel dgongs pa rab gsal/"@bo-x-ewts ;
         :catalogInfo        "Commentary on Dignaga's Pramanavarttika by Dharmakirti."@en ;
-        :creator            bdr:CR014539E3A4BB722D ;
+        :creator            bdr:CR125443EF39DE6C05 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1491 ;

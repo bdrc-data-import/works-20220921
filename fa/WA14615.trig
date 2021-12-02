@@ -18,15 +18,21 @@ bdg:WA14615 {
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LG7FB9B064BC7E07B4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGA096D213470510BA
         a                   adm:UpdateData ;
         adm:logDate         "2007-01-09T16:24:54.757Z"^^xsd:dateTime ;
         adm:logMessage      "added to ctc 4"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LGCB098753478A9458
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -52,20 +58,21 @@ bdg:WA14615 {
     bda:WA14615  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA14615 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "fa/WA14615.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA14615 ;
-        adm:logEntry        bda:LG11ED2E35EE174986 , bda:LGA096D213470510BA , bda:LGCB098753478A9458 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG11ED2E35EE174986 , bda:LG7FB9B064BC7E07B4 , bda:LGA096D213470510BA , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7FB9B064BC7E07B4
+    bdr:CRF1E6001E476FC971
         a                   :AgentAsCreator ;
         :agent              bdr:P2596 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVF1E6001E476FC971
+    bdr:EVE13B616E74ADD904
         a                   :CompletedEvent ;
         :onYear             "1975"^^xsd:gYear .
     
@@ -73,10 +80,10 @@ bdg:WA14615 {
         skos:altLabel       "dga' ldan khri chen byang chub chos 'phel gyi skye gral du rlom pa'i gyi na pa zhig gis rang gi ngang tshul ma bcos lhug par bkod pa 'khrul snang sgyu ma'i zlos gar/"@bo-x-ewts ;
         skos:prefLabel      "blo bzang ye shes bstan 'dzin rgya mtsho'i rang rnam/"@bo-x-ewts ;
         :catalogInfo        "Autobiography of the junior tutor to the Dalai Lama 14 Tenzin Gyatso (b. 1935)."@en ;
-        :creator            bdr:CR7FB9B064BC7E07B4 ;
+        :creator            bdr:CRF1E6001E476FC971 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVF1E6001E476FC971 ;
+        :workEvent          bdr:EVE13B616E74ADD904 ;
         :workGenre          bdr:T3 ;
         :workHasInstance    bdr:MW14615 , bdr:W14615 ;
         :workIsAbout        bdr:P2596 .

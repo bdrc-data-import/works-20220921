@@ -18,7 +18,7 @@ bdg:WA29235 {
         adm:logMessage      "added T2CZ10088,t197"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGE5947D87596703FB
+    bda:LGEB949C6F8665703C
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -42,6 +42,12 @@ bdg:WA29235 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -59,15 +65,16 @@ bdg:WA29235 {
     bda:WA29235  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29235 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "95/WA29235.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29235 ;
-        adm:logEntry        bda:LG197B42632DE6AEA1 , bda:LGE5947D87596703FB , bda:LGF6B9CF61C09C7223 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG197B42632DE6AEA1 , bda:LGEB949C6F8665703C , bda:LGF6B9CF61C09C7223 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CREB949C6F8665703C
+    bdr:CR2E2F6683556AC39C
         a                   :AgentAsCreator ;
         :agent              bdr:P9599 ;
         :role               bdr:R0ER0019 .
@@ -76,7 +83,7 @@ bdg:WA29235 {
     
     bdr:WA29235  a          :Work ;
         skos:prefLabel      "rig gnas snying stobs/"@bo-x-ewts , "wen hua jing shen"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CREB949C6F8665703C ;
+        :creator            bdr:CR2E2F6683556AC39C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29235 , bdr:W29235 ;

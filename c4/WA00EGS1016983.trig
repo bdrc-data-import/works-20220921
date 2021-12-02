@@ -30,6 +30,12 @@ bdg:WA00EGS1016983 {
         adm:logMessage      "corrected typos"@en ;
         adm:logWho          bdu:U00009 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -62,15 +68,16 @@ bdg:WA00EGS1016983 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00EGS1016983 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "c4/WA00EGS1016983.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00EGS1016983 ;
-        adm:logEntry        bda:LGE39DFEF44FF67B0F , bda:LGE6FAC9E72C14720F , bda:LGE7AC44802464F41E , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LGE39DFEF44FF67B0F , bda:LGE6FAC9E72C14720F , bda:LGE7AC44802464F41E , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRED44FCA23E001FA4
+    bdr:CRE8BA490696208AF7
         a                   :AgentAsCreator ;
         :agent              bdr:P7864 ;
         :role               bdr:R0ER0019 .
@@ -83,7 +90,7 @@ bdg:WA00EGS1016983 {
         skos:altLabel       "rje bla ma 'jam dbyangs kun dga' bstan pa'i rgyal mtshan gyi rnam par thar pa byin rlabs rgya mtsho ngo mtshar gter mdzod... 1884-1952"@bo-x-ewts ;
         skos:prefLabel      "'jam dbyangs kun dga' bstan pa'i rgyal mtshan gyi rnam thar/"@bo-x-ewts , "Rje bla ma ʾJam-dbyaṅs-kun-dgaʾ-bstan-paʾi-rgyal-mtshan gyi rnam par thar pa byin rlabs rgya mtsho ṅo mtshar gter mdzod ces bya ba bźugs so, 1884-1952 /Mkhan-po Phrin-las-chos-ʾphel gyis mdzad paʾo ; [Gdoṅ-thog Bstan-paʾi-rgyal-mtshan gyis rtsom sgrig bgyis]."@en-x-mixed ;
         :catalogInfo        "Biography of the Sakya master Jamyang Kunga Tenpai Gyaltsen (1884-1952). Written by Trinle Chopel (20th cent.)."@en ;
-        :creator            bdr:CRED44FCA23E001FA4 ;
+        :creator            bdr:CRE8BA490696208AF7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

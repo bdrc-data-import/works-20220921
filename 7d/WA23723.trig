@@ -18,6 +18,10 @@ bdg:WA23723 {
         adm:logMessage      "revised annotations"@en ;
         adm:logWho          bdu:U00020 .
     
+    bda:LG3D899384DF74FE28
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG52F07704F2DE4C4A
         a                   adm:UpdateData ;
         adm:logDate         "2006-10-24T12:40:05.812Z"^^xsd:dateTime ;
@@ -54,9 +58,11 @@ bdg:WA23723 {
         adm:logMessage      "edited annotation"@en ;
         adm:logWho          bdu:U00020 .
     
-    bda:LGFD971FBA39CAAC3D
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -82,15 +88,16 @@ bdg:WA23723 {
     bda:WA23723  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23723 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "7d/WA23723.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23723 ;
-        adm:logEntry        bda:LG17992ED7916838AB , bda:LG52F07704F2DE4C4A , bda:LG5D580B7FEAC76068 , bda:LG5F52B974500C77FD , bda:LG976050A2DEF5E596 , bda:LGDD714A52B282145F , bda:LGF37EE3645FFD5A60 , bda:LGFD971FBA39CAAC3D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG17992ED7916838AB , bda:LG3D899384DF74FE28 , bda:LG52F07704F2DE4C4A , bda:LG5D580B7FEAC76068 , bda:LG5F52B974500C77FD , bda:LG976050A2DEF5E596 , bda:LGDD714A52B282145F , bda:LGF37EE3645FFD5A60 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3D899384DF74FE28
+    bdr:CR99263ED381E39532
         a                   :AgentAsCreator ;
         :agent              bdr:P264 ;
         :role               bdr:R0ER0019 .
@@ -101,7 +108,7 @@ bdg:WA23723 {
         skos:altLabel       "'jam mgon kong sprul blo gros mtha' yas kyi gsung 'bum rgya chen bka' mdzod/"@bo-x-ewts ;
         skos:prefLabel      "rgya chen bka' mdzod/"@bo-x-ewts , "rgya chen bka' mdzod : the expanded edition of the writings of 'jam mgon kong sprul blo gros mtha' yas"@en-x-mixed ;
         :catalogInfo        "Collected Works by Jamgon Kongtrul (1813-1899). Expanded edition that includes several terma cycles published by Shechen Publications. Some of the pages and texts in these volumes are in disarray. Expanded version of the 20 volume set published in Paro, 1975-76."@en ;
-        :creator            bdr:CR3D899384DF74FE28 ;
+        :creator            bdr:CR99263ED381E39532 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

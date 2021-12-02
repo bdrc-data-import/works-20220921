@@ -47,6 +47,12 @@ bdg:WA4CZ1021 {
         adm:logMessage      "reviewed"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
         adm:logDate         "2014-03-07T15:45:20.935Z"^^xsd:dateTime ;
@@ -64,21 +70,22 @@ bdg:WA4CZ1021 {
     bda:WA4CZ1021  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ1021 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "45/WA4CZ1021.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ1021 ;
-        adm:logEntry        bda:LG2C689349C055B8AA , bda:LG3F474550BE6D77F7 , bda:LG410FF449A880D71A , bda:LG5866F4F633BEE25C , bda:LG87E467EE92F1D934 , bda:LGEFEA223E67880851 , bda:LGIM4BF5F96E12 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG2C689349C055B8AA , bda:LG3F474550BE6D77F7 , bda:LG410FF449A880D71A , bda:LG5866F4F633BEE25C , bda:LG87E467EE92F1D934 , bda:LGEFEA223E67880851 , bda:LGIM4394141E , bda:LGIM4BF5F96E12 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA00KG09691 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR540C3338131F0ECC
+    bdr:CR09B29B4AD28A7311
         a                   :AgentAsCreator ;
         :agent              bdr:P3389 ;
         :role               bdr:R0ER0028 .
     
-    bdr:CRA42E22BEA005F46D
+    bdr:CR540C3338131F0ECC
         a                   :AgentAsCreator ;
         :agent              bdr:P3379 ;
         :role               bdr:R0ER0019 .
@@ -87,7 +94,7 @@ bdg:WA4CZ1021 {
         skos:altLabel       "'brom ston rgyal ba'i 'byung gnas kyi skyes rabs bka' gdams bu chos le'u nyi shu pa/"@bo-x-ewts ;
         skos:prefLabel      "bka' gdams bu chos/"@bo-x-ewts ;
         :catalogInfo        "An incomplete manuscript of the second volume of collected Kadam teachings."@en ;
-        :creator            bdr:CR540C3338131F0ECC , bdr:CRA42E22BEA005F46D ;
+        :creator            bdr:CR09B29B4AD28A7311 , bdr:CR540C3338131F0ECC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1342 ;

@@ -31,6 +31,12 @@ bdg:WA1KG25056 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -47,16 +53,17 @@ bdg:WA1KG25056 {
     bda:WA1KG25056  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25056 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "11/WA1KG25056.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25056 ;
-        adm:logEntry        bda:LG995D6CCD0F17B73E , bda:LGF705D7FA8793CD91 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG995D6CCD0F17B73E , bda:LGF705D7FA8793CD91 , bda:LGIM095CC38C9F , bda:LGIM4394141E , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1AC210 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR5A703C07A2CBB44D
+    bdr:CR78FF218434AE0BC4
         a                   :AgentAsCreator ;
         :agent              bdr:P109 ;
         :role               bdr:R0ER0019 .
@@ -65,7 +72,7 @@ bdg:WA1KG25056 {
         skos:altLabel       "dpal ldan bla ma dam pa rigs dang dkyil 'khor rgya mtsho'i mnga' bdag bka' drin gsum ldan yongs 'dzin paN+Di ta chen po rje btsun ye shes rgyal mtshan dpal bzang po'i sku gsung thugs kyi rtogs pa brjod pa thub bstan pad+mo 'byed pa'i nyin byed/"@bo-x-ewts ;
         skos:prefLabel      "yongs 'dzin ye shes rgyal mtshan gyi rnam thar thub bstan pad+mo rgyas pa'i nyin byed/"@bo-x-ewts ;
         :catalogInfo        "Biography of Tsechok Ling Yongzin Yeshe Gyaltsen (1713-1793), founder of Drib Tshechok Ling Gonpa."@en ;
-        :creator            bdr:CR5A703C07A2CBB44D ;
+        :creator            bdr:CR78FF218434AE0BC4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

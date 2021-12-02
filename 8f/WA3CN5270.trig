@@ -44,6 +44,12 @@ bdg:WA3CN5270 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -54,15 +60,16 @@ bdg:WA3CN5270 {
     bda:WA3CN5270  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5270 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "8f/WA3CN5270.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5270 ;
-        adm:logEntry        bda:LGBA599CF275580454 , bda:LGC1882A58D03977E9 , bda:LGFA8BEE6681AA0A31 , bda:LGIM095CC38C9F , bda:LGIM206EC9B06D , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LGBA599CF275580454 , bda:LGC1882A58D03977E9 , bda:LGFA8BEE6681AA0A31 , bda:LGIM095CC38C9F , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR56098AC95879807E
+    bdr:CR7CBC92CD5121D75E
         a                   :AgentAsCreator ;
         :agent              bdr:P3CN26642 ;
         :role               bdr:R0ER0019 .
@@ -70,7 +77,7 @@ bdg:WA3CN5270 {
     bdr:WA3CN5270  a        :Work ;
         skos:prefLabel      "dga' ldan thos bsam dar rgyas gling gi gnas yig dad pa'i sa bon/"@bo-x-ewts ;
         :catalogInfo        "The guide book of Yartod Gaden Thosam Dargye Ling monastery in Lhokha area by Namdrol."@en ;
-        :creator            bdr:CR56098AC95879807E ;
+        :creator            bdr:CR7CBC92CD5121D75E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T25 ;

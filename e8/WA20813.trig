@@ -18,10 +18,6 @@ bdg:WA20813 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00003 .
     
-    bda:LG35A4D9329A26ED88
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG4700710B4497B985
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2008-09-17T14:00:32.974Z"^^xsd:dateTime ;
@@ -45,6 +41,10 @@ bdg:WA20813 {
         adm:logDate         "2008-09-30T12:01:12.844Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00003 .
+    
+    bda:LGBDF4506BFE58C080
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGCC149DB2D9400458
         a                   adm:UpdateData ;
@@ -90,6 +90,12 @@ bdg:WA20813 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -107,12 +113,13 @@ bdg:WA20813 {
     bda:WA20813  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20813 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "e8/WA20813.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20813 ;
-        adm:logEntry        bda:LG2CF8A91202075BEB , bda:LG35A4D9329A26ED88 , bda:LG4700710B4497B985 , bda:LG54895F6CCE0C3834 , bda:LG82F7922E481D479D , bda:LGA5EA9A18C5523DAE , bda:LGCC149DB2D9400458 , bda:LGCF0D0B0B97A918B9 , bda:LGDD7ABBA313FA17C9 , bda:LGE491FD3AF39C5F76 , bda:LGF9BBE509398DC8F4 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG2CF8A91202075BEB , bda:LG4700710B4497B985 , bda:LG54895F6CCE0C3834 , bda:LG82F7922E481D479D , bda:LGA5EA9A18C5523DAE , bda:LGBDF4506BFE58C080 , bda:LGCC149DB2D9400458 , bda:LGCF0D0B0B97A918B9 , bda:LGDD7ABBA313FA17C9 , bda:LGE491FD3AF39C5F76 , bda:LGF9BBE509398DC8F4 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW20813  skos:altLabel  "sbrangchar"@en , "章恰尔"@zh-hans .

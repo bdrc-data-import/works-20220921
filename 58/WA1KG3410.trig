@@ -24,6 +24,12 @@ bdg:WA1KG3410 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -48,29 +54,30 @@ bdg:WA1KG3410 {
     bda:WA1KG3410  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG3410 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "58/WA1KG3410.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG3410 ;
-        adm:logEntry        bda:LG8BFC89DC41F7A2EA , bda:LGE5905DEFC3F9B02F , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG8BFC89DC41F7A2EA , bda:LGE5905DEFC3F9B02F , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR61435577BBE40B21
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG3500 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR728137676CE4A13A
-        a                   :AgentAsCreator ;
         :agent              bdr:P3312 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR7F57CFE3C4AA73CD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG3500 ;
+        :role               bdr:R0ER0016 .
     
     bdr:WA1KG3410  a        :Work ;
         skos:altLabel       "gcod kyi tshogs las yon tan kun 'byung gsungs rgyun 'khrul med ltar bkod pa/"@bo-x-ewts ;
         skos:prefLabel      "gcod tshogs yon tan kun 'byung /"@bo-x-ewts ;
         :catalogInfo        "Collection of practices on chod, torma offering, and supplications. Attributed to Machik Labdron (1055-1149)."@en ;
-        :creator            bdr:CR61435577BBE40B21 , bdr:CR728137676CE4A13A ;
+        :creator            bdr:CR61435577BBE40B21 , bdr:CR7F57CFE3C4AA73CD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T140 ;

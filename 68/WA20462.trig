@@ -18,6 +18,10 @@ bdg:WA20462 {
         adm:logMessage      "added catalogue info"@en ;
         adm:logWho          bdu:U00081 .
     
+    bda:LG04B3A6AD5808E644
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG6CA1E9AED60A59E9
         a                   adm:UpdateData ;
         adm:logDate         "2012-03-26T16:08:17.195Z"^^xsd:dateTime ;
@@ -29,10 +33,6 @@ bdg:WA20462 {
         adm:logDate         "2018-02-02T17:44:42.718Z"^^xsd:dateTime ;
         adm:logMessage      "edited catalogue info"@en ;
         adm:logWho          bdu:U00081 .
-    
-    bda:LGF178898EA118F37A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGIM01FF8512D7
         a                   adm:UpdateData ;
@@ -47,6 +47,12 @@ bdg:WA20462 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
@@ -65,15 +71,16 @@ bdg:WA20462 {
     bda:WA20462  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20462 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "68/WA20462.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20462 ;
-        adm:logEntry        bda:LG01F6A17F025D591C , bda:LG6CA1E9AED60A59E9 , bda:LG96E627AC06CE493F , bda:LGF178898EA118F37A , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG01F6A17F025D591C , bda:LG04B3A6AD5808E644 , bda:LG6CA1E9AED60A59E9 , bda:LG96E627AC06CE493F , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR04B3A6AD5808E644
+    bdr:CR88E29B90DB95C820
         a                   :AgentAsCreator ;
         :agent              bdr:P6258 ;
         :role               bdr:R0ER0019 .
@@ -83,7 +90,7 @@ bdg:WA20462 {
     bdr:WA20462  a          :Work ;
         skos:prefLabel      "bod ljongs yul skor sne shan/"@bo-x-ewts , "xizang zu you zhi nan"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "An account of Buddhist holy cites and festivals in Tibet."@en ;
-        :creator            bdr:CR04B3A6AD5808E644 ;
+        :creator            bdr:CR88E29B90DB95C820 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW20462 , bdr:W20462 ;

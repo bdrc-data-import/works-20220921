@@ -35,6 +35,12 @@ bdg:WA4CZ1687 {
         adm:logMessage      "added Work to PL480"@en ;
         adm:logWhoStr       "add-works-to-PR1PL480" .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -66,20 +72,21 @@ bdg:WA4CZ1687 {
     bda:WA4CZ1687  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ1687 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "7c/WA4CZ1687.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ1687 ;
-        adm:logEntry        bda:LG4C0B6B25E8AD4E12 , bda:LG5A3374A9D21758C8 , bda:LGA13C860A36932DB9 , bda:LGC7B0596341B6ACCF , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG4C0B6B25E8AD4E12 , bda:LG5A3374A9D21758C8 , bda:LGA13C860A36932DB9 , bda:LGC7B0596341B6ACCF , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF52EFD946A6AC154
+    bdr:CR3FFAA84ACFD5C14A
         a                   :AgentAsCreator ;
         :agent              bdr:P1635 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRFBF8156D0B749CF6
+    bdr:CRF52EFD946A6AC154
         a                   :AgentAsCreator ;
         :agent              bdr:P262 ;
         :role               bdr:R0ER0019 .
@@ -90,7 +97,7 @@ bdg:WA4CZ1687 {
         skos:altLabel       "'jam mgon rgyal ba gnyis pa'i rgyal tshab dpal ldan bla ma dam pa khyab bdag khri chen byang chub chos 'phel dpal bzang po'i rnam par thar pa dga' ldan bstan pa'i mdzes rgyan/"@bo-x-ewts , "bka' gdams bstan pa'i mdzod 'dzin rje btsun bla ma sangs rgyas bstan 'phel dpal bzang po'i rnam par thar pa dad ldan yid kyi dga' ston/"@bo-x-ewts ;
         skos:prefLabel      "khri chen byang chub chos 'phel gyi rnam thar dga' ldan bstan pa'i mdzes rgyan/"@bo-x-ewts , "ʼJam-mgon Rgyal-ba gñis-paʼi Rgyal-tshab Dpal-ldan Bla-ma Dam-pa Khyab-bdag Khri-chen Byaṅ-chub-chos-ʼphel Dpal-bzaṅ-poʼi rnam par thar pa Dgaʼ ldan bstan paʼi mdzes rgyab [sic] :the biography of the 69th Khri-chen of Dgaʼ-ldan Byaṅ-chub-chos-ʼphel /by Dar-han Mkhan-sprul Blo-bzaṅ-ʼphrin-las-rnam-rgyal. Bkaʼ-gdams Bstan-paʼi mdzod-ʼdzin Rje-btsun Bla-ma Saṅs-rgyas-bstan-ʼphel Dpal-bzaṅ-poʼi rnam par thar pa Dad ldan yid kyi dgaʼ ston : the biography of Saṅs-rgyas-bstan-ʼphel of Śel-dkar / by Śel-dkar Bkaʼ-ʼgyur Bla-ma Ṅag-dbaṅ-blo-bzaṅ-bstan-ʼdzin-tshul-khrims-rgyal-mtshan."@en-x-mixed ;
         :catalogInfo        "Biography of Ganden Trichen 69 Jangchub Chopel. Biography of Sanggye Tenpel of Shelkar."@en ;
-        :creator            bdr:CRF52EFD946A6AC154 , bdr:CRFBF8156D0B749CF6 ;
+        :creator            bdr:CR3FFAA84ACFD5C14A , bdr:CRF52EFD946A6AC154 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

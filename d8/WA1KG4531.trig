@@ -24,6 +24,12 @@ bdg:WA1KG4531 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -41,15 +47,16 @@ bdg:WA1KG4531 {
     bda:WA1KG4531  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4531 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "d8/WA1KG4531.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4531 ;
-        adm:logEntry        bda:LG2C2CDA55F233DB0C , bda:LGF85893E491150B0A , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2C2CDA55F233DB0C , bda:LGF85893E491150B0A , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR83893BCAAF310498
+    bdr:CR8493B230EF0F2AF1
         a                   :AgentAsCreator ;
         :agent              bdr:P2CZ8027 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +64,7 @@ bdg:WA1KG4531 {
     bdr:WA1KG4531  a        :Work ;
         skos:prefLabel      "ka bshad rin chen do shal/"@bo-x-ewts ;
         :catalogInfo        "Selected poems written in alphabetic verse."@en ;
-        :creator            bdr:CR83893BCAAF310498 ;
+        :creator            bdr:CR8493B230EF0F2AF1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T219 ;

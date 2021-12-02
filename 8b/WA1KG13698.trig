@@ -44,6 +44,12 @@ bdg:WA1KG13698 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -68,15 +74,16 @@ bdg:WA1KG13698 {
     bda:WA1KG13698  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG13698 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "8b/WA1KG13698.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG13698 ;
-        adm:logEntry        bda:LG5982D9C17B5C670A , bda:LG6545A0EE1A45882D , bda:LG93B8BC6096FA81D7 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG5982D9C17B5C670A , bda:LG6545A0EE1A45882D , bda:LG93B8BC6096FA81D7 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRAE1DA8B9177E4950
+    bdr:CR8475194FC89D5737
         a                   :AgentAsCreator ;
         :agent              bdr:P5115 ;
         :role               bdr:R0ER0019 .
@@ -87,7 +94,7 @@ bdg:WA1KG13698 {
         skos:altLabel       "fo xue gai lun"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "sangs rgyas chos lugs kyi spyi don gsar dpyad blo gsal 'jug ngogs/"@bo-x-ewts , "佛学概论"@zh-hans ;
         :catalogInfo        "Analysis of the general meaning of Buddhism."@en ;
-        :creator            bdr:CRAE1DA8B9177E4950 ;
+        :creator            bdr:CR8475194FC89D5737 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG13698 , bdr:W1KG13698 ;

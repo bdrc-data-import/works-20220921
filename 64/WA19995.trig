@@ -18,7 +18,7 @@ bdg:WA19995 {
         adm:logMessage      "marked as restricted"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LGCDF95A0597D9E067
+    bda:LG6AA14A796417F598
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -35,6 +35,12 @@ bdg:WA19995 {
         adm:logMessage      "deleted inProduct PR1COPYRIGHT"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
@@ -53,15 +59,16 @@ bdg:WA19995 {
     bda:WA19995  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19995 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "64/WA19995.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19995 ;
-        adm:logEntry        bda:LG27A64122E39C5611 , bda:LGCDF95A0597D9E067 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG27A64122E39C5611 , bda:LG6AA14A796417F598 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6AA14A796417F598
+    bdr:CR0A01CA561CC89279
         a                   :AgentAsCreator ;
         :agent              bdr:P6275 ;
         :role               bdr:R0ER0019 .
@@ -69,7 +76,7 @@ bdg:WA19995 {
     bdr:WA19995  a          :Work ;
         skos:altLabel       "nye bar mkho ba'i ched spyod yig rigs 'bri stangs kyi rnam gzhag blo gsal bung ba'i glu dbyangs/"@bo-x-ewts ;
         skos:prefLabel      "yig rigs 'bri stangs kyi rnam gzhag"@bo-x-ewts ;
-        :creator            bdr:CR6AA14A796417F598 ;
+        :creator            bdr:CR0A01CA561CC89279 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T221 ;

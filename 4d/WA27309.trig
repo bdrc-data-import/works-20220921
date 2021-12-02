@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27309 {
-    bda:LGEFC2DE228EBC801F
+    bda:LG61D8BC89AE71D4CB
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -29,6 +29,12 @@ bdg:WA27309 {
         adm:logMessage      "added Work to CTC 15"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM8647D1C7AE
         a                   adm:UpdateData ;
@@ -47,15 +53,16 @@ bdg:WA27309 {
     bda:WA27309  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27309 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "4d/WA27309.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27309 ;
-        adm:logEntry        bda:LGEFC2DE228EBC801F , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG61D8BC89AE71D4CB , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR61D8BC89AE71D4CB
+    bdr:CR20BB1FB19403B017
         a                   :AgentAsCreator ;
         :agent              bdr:P805 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +71,7 @@ bdg:WA27309 {
     
     bdr:WA27309  a          :Work ;
         skos:prefLabel      "sa skya'i gdung rabs ngo mtshar bang mdzod kyi kha skong /"@bo-x-ewts , "Sa-skyaʼi gduṅ rabs ṅo mtshar baṅ mdzod kyi kha skoṅ /Kun-dgaʼ-blo-gros kyis brtsams pa ; dpe sgrig ʼgan ʼkhur pa, Dbyaṅs-can-seṅ-ge]."@en-x-mixed , "sajia shi ji pu xu bian"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR61D8BC89AE71D4CB ;
+        :creator            bdr:CR20BB1FB19403B017 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1673 ;

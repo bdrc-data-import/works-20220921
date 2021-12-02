@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20235 {
+    bda:LG26BFB7DD65C94166
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG8649F4D54733435F
         a                   adm:UpdateData ;
         adm:logDate         "2012-03-05T00:58:26.823Z"^^xsd:dateTime ;
         adm:logMessage      "added lo rgyus rig gnas as genre"@en ;
         adm:logWho          bdu:U00012 .
-    
-    bda:LG96F2CD3547421809
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGAFED2C70D0E9C7B6
         a                   adm:UpdateData ;
@@ -57,6 +57,12 @@ bdg:WA20235 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -74,12 +80,13 @@ bdg:WA20235 {
     bda:WA20235  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20235 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "3f/WA20235.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20235 ;
-        adm:logEntry        bda:LG8649F4D54733435F , bda:LG96F2CD3547421809 , bda:LGAFED2C70D0E9C7B6 , bda:LGB1A39F8DEE360CC6 , bda:LGBFAEFB4A99E59928 , bda:LGC298F51799D03CA8 , bda:LGCAB36B218576B8AC , bda:LGE0D765AECC3C9189 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG26BFB7DD65C94166 , bda:LG8649F4D54733435F , bda:LGAFED2C70D0E9C7B6 , bda:LGB1A39F8DEE360CC6 , bda:LGBFAEFB4A99E59928 , bda:LGC298F51799D03CA8 , bda:LGCAB36B218576B8AC , bda:LGE0D765AECC3C9189 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA20235  a          :Work ;

@@ -24,7 +24,7 @@ bdg:WA29242 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG4897A13545543263
+    bda:LG4D7A9F12F568BB3D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -33,6 +33,12 @@ bdg:WA29242 {
         adm:logDate         "2010-02-02T14:40:10.714Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -44,15 +50,16 @@ bdg:WA29242 {
     bda:WA29242  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29242 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "c7/WA29242.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29242 ;
-        adm:logEntry        bda:LG0A1167EE5B3B4B8A , bda:LG24F0B5B0B80BAB11 , bda:LG4897A13545543263 , bda:LG5C408CEE00BD9EFA , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG0A1167EE5B3B4B8A , bda:LG24F0B5B0B80BAB11 , bda:LG4D7A9F12F568BB3D , bda:LG5C408CEE00BD9EFA , bda:LGIM4394141E , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4D7A9F12F568BB3D
+    bdr:CR3CF9CDB214E501E7
         a                   :AgentAsCreator ;
         :agent              bdr:P6294 ;
         :role               bdr:R0ER0019 .
@@ -62,7 +69,7 @@ bdg:WA29242 {
     bdr:WA29242  a          :Work ;
         skos:prefLabel      "'dzam gling dung zla dkar bo/"@bo-x-ewts , "ʼDzam gliṅ duṅ zla dkar bo /Reb-goṅ Rdo-rje-rgyal gyis brtsams."@en-x-mixed ;
         :catalogInfo        "Study on chronological related history of Tibet; includes on the life and works of Gedun Chophel."@en ;
-        :creator            bdr:CR4D7A9F12F568BB3D ;
+        :creator            bdr:CR3CF9CDB214E501E7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

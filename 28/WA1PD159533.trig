@@ -63,6 +63,12 @@ bdg:WA1PD159533 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM685E38743B
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:20:59.643Z"^^xsd:dateTime ;
@@ -80,15 +86,16 @@ bdg:WA1PD159533 {
     bda:WA1PD159533  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD159533 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "28/WA1PD159533.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD159533 ;
-        adm:logEntry        bda:LG00F5C4A75C1B8A57 , bda:LG0945F3F0C955FE2F , bda:LG340ABD575D912ACC , bda:LG3DAAE38E0D7B6742 , bda:LG6464BA12F4417CCF , bda:LG9383945D9586C898 , bda:LGA55E4CC00E11658C , bda:LGFBF3E47C3CC5E5E0 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG00F5C4A75C1B8A57 , bda:LG0945F3F0C955FE2F , bda:LG340ABD575D912ACC , bda:LG3DAAE38E0D7B6742 , bda:LG6464BA12F4417CCF , bda:LG9383945D9586C898 , bda:LGA55E4CC00E11658C , bda:LGFBF3E47C3CC5E5E0 , bda:LGIM01FF8512D7 , bda:LGIM4394141E , bda:LGIM685E38743B , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA185940D1FB04152
+    bdr:CRC5473468C387D3D5
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG6090 ;
         :role               bdr:R0ER0019 .
@@ -99,7 +106,7 @@ bdg:WA1PD159533 {
         skos:altLabel       "zang yi li shi zhi shi wen da"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod kyi gso rig lo rgyus skor gyi dris lan rgya mtshor 'jug pa'i gru gzings/"@bo-x-ewts , "藏医历史知识问答"@zh-hans ;
         :catalogInfo        "Response to queries on history of Tibetan ayurvedic medicine."@en ;
-        :creator            bdr:CRA185940D1FB04152 ;
+        :creator            bdr:CRC5473468C387D3D5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T28 ;

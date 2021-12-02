@@ -12,14 +12,14 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA17722 {
-    bda:LG6B8978D03D9264F1
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG6C8707C216139631
         a                   adm:UpdateData ;
         adm:logDate         "2007-06-17T05:35:48.25Z"^^xsd:dateTime ;
         adm:logMessage      "added catalog info"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG7F962962388B2D7D
+        a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:LGD83499649CE86F14
@@ -47,6 +47,12 @@ bdg:WA17722 {
         adm:logMessage      "added Work to CTC 15"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM4394141E  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -79,15 +85,16 @@ bdg:WA17722 {
     bda:WA17722  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA17722 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "2d/WA17722.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA17722 ;
-        adm:logEntry        bda:LG6B8978D03D9264F1 , bda:LG6C8707C216139631 , bda:LGD83499649CE86F14 , bda:LGFDE4472E4FC87C4C , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG6C8707C216139631 , bda:LG7F962962388B2D7D , bda:LGD83499649CE86F14 , bda:LGFDE4472E4FC87C4C , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7F962962388B2D7D
+    bdr:CRE7E6B502E36C1441
         a                   :AgentAsCreator ;
         :agent              bdr:P4853 ;
         :role               bdr:R0ER0019 .
@@ -96,7 +103,7 @@ bdg:WA17722 {
         skos:altLabel       "gangs ljongs gso rig bstan pa'i nyin byed rim byon gyi rnam thar phyogs bsgrigs/"@bo-x-ewts , "gso rig bstan pa'i nyin byed rim byon gyi rnam thar/"@bo-x-ewts ;
         skos:prefLabel      "bod gyi sman pa rim byon gyi rnam thar phyogs bsgrigs/"@bo-x-ewts ;
         :catalogInfo        "Biographies of famous individuals in the transmission of the Tibetan medical system."@en ;
-        :creator            bdr:CR7F962962388B2D7D ;
+        :creator            bdr:CRE7E6B502E36C1441 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW17722 , bdr:W17722 ;
