@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3117 {
+    bda:LG99FEFFF3CD02C375
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-02T14:54:57.5Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGBC0D03FCF9C12284
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,25 @@ bdg:WA1NLM3117 {
     bda:WA1NLM3117  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3117 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "7c/WA1NLM3117.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3117 ;
-        adm:logEntry        bda:LGBC0D03FCF9C12284 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG99FEFFF3CD02C375 , bda:LGBC0D03FCF9C12284 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR36914A863419E461
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4820 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3117  a       :Work ;
         skos:prefLabel      "dpal rdo rje 'jigs byed kyi zab lam rim pa rdzogs rim sku gsum them skas/"@bo-x-ewts ;
+        :catalogInfo        "A completion stage of Vajrabairava by Gushri Losang Lhundrup."@en ;
+        :creator            bdr:CR36914A863419E461 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3117 , bdr:W1NLM3117 .
+        :workHasInstance    bdr:MW1NLM3117 , bdr:W1NLM3117 ;
+        :workIsAbout        bdr:T104 , bdr:T163 .
 }

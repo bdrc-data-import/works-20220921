@@ -54,6 +54,12 @@ bdg:WA4CZ295069 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM2CCAFE93  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-02T21:04:29.156Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -64,15 +70,16 @@ bdg:WA4CZ295069 {
     bda:WA4CZ295069  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ295069 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "eb/WA4CZ295069.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ295069 ;
-        adm:logEntry        bda:LG03ADC02A95AFBFAD , bda:LG0687F7F3F873F0BA , bda:LG84503FC0978B78E5 , bda:LG978B5B51DBD1E8AD , bda:LGADB117207C64A8F8 , bda:LGB8F9455FC1F3BECF , bda:LGED34EA95E99FF9C2 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG03ADC02A95AFBFAD , bda:LG0687F7F3F873F0BA , bda:LG84503FC0978B78E5 , bda:LG978B5B51DBD1E8AD , bda:LGADB117207C64A8F8 , bda:LGB8F9455FC1F3BECF , bda:LGED34EA95E99FF9C2 , bda:LGIM2CCAFE93 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3B791C4054F3E3AB
+    bdr:CR21D48821F60458A0
         a                   :AgentAsCreator ;
         :agent              bdr:P9922 ;
         :role               bdr:R0ER0019 .
@@ -81,7 +88,7 @@ bdg:WA4CZ295069 {
         skos:altLabel       "bod gangs can gyi brda sprod pa'i bstan bcos sum rtags kyi 'grel pa/"@bo-x-ewts ;
         skos:prefLabel      "sum rtags kyi 'grel pa/"@bo-x-ewts ;
         :catalogInfo        "Selected writings on the Tibetan grammar."@en ;
-        :creator            bdr:CR3B791C4054F3E3AB ;
+        :creator            bdr:CR21D48821F60458A0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

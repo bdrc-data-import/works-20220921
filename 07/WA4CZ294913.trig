@@ -36,6 +36,12 @@ bdg:WA4CZ294913 {
         adm:logMessage      "new catalogue and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM2CCAFE93  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-02T21:04:29.156Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -46,15 +52,16 @@ bdg:WA4CZ294913 {
     bda:WA4CZ294913  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ294913 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "07/WA4CZ294913.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ294913 ;
-        adm:logEntry        bda:LG26B21803DFD031D0 , bda:LG877DD121D612263E , bda:LGE35D25B9D03F2AF6 , bda:LGF924F080807FA3C9 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG26B21803DFD031D0 , bda:LG877DD121D612263E , bda:LGE35D25B9D03F2AF6 , bda:LGF924F080807FA3C9 , bda:LGIM2CCAFE93 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0BBFDE3BBC7DFB2C
+    bdr:CR041DFBA7BC9C0C0C
         a                   :AgentAsCreator ;
         :agent              bdr:P10434 ;
         :role               bdr:R0ER0019 .
@@ -63,7 +70,7 @@ bdg:WA4CZ294913 {
         skos:altLabel       "karma pa mi bskyod rdo rje'i rang rnam legs spyad ma'i don 'grel blang dor gsal ba'i sgron me/"@bo-x-ewts ;
         skos:prefLabel      "karma pa mi bskyod rdo rje'i rang rnam legs spyad ma'i don 'grel/"@bo-x-ewts ;
         :catalogInfo        "Commentary on the autobiography of karmapa mikyod dorjee."@en ;
-        :creator            bdr:CR0BBFDE3BBC7DFB2C ;
+        :creator            bdr:CR041DFBA7BC9C0C0C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

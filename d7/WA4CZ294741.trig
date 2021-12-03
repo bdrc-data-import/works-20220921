@@ -54,6 +54,12 @@ bdg:WA4CZ294741 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM2CCAFE93  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-02T21:04:29.156Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -64,15 +70,16 @@ bdg:WA4CZ294741 {
     bda:WA4CZ294741  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ294741 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "d7/WA4CZ294741.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ294741 ;
-        adm:logEntry        bda:LG3F789A809B09E7EC , bda:LG62E60D61DADB91BD , bda:LG91C475B253CFDE4F , bda:LGBE0A9CF6A498B898 , bda:LGBFDC3F7E0CD80880 , bda:LGD3C498FBF33593BE , bda:LGF9A6A218CFDC26CE , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG3F789A809B09E7EC , bda:LG62E60D61DADB91BD , bda:LG91C475B253CFDE4F , bda:LGBE0A9CF6A498B898 , bda:LGBFDC3F7E0CD80880 , bda:LGD3C498FBF33593BE , bda:LGF9A6A218CFDC26CE , bda:LGIM2CCAFE93 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR21E7BD5E0C572CE5
+    bdr:CRD5BA29822F0173E4
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ366352 ;
         :role               bdr:R0ER0019 .
@@ -81,7 +88,7 @@ bdg:WA4CZ294741 {
         skos:altLabel       "rgyal ba'i dbang po karma pa sku phreng rim byon gyi mdzad rnam snying por bsdus pa dad pa'i sa bon/"@bo-x-ewts ;
         skos:prefLabel      "karma pa sku phreng rim byon gyi mdzad rnam snying bsdus dad pa'i sa bon/"@bo-x-ewts ;
         :catalogInfo        "Collected biographies of the successive embodiments of the Karmapas, 1st to 17th."@en ;
-        :creator            bdr:CR21E7BD5E0C572CE5 ;
+        :creator            bdr:CRD5BA29822F0173E4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

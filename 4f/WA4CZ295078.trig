@@ -48,6 +48,12 @@ bdg:WA4CZ295078 {
         adm:logMessage      "chenged scanrequest"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM2CCAFE93  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-02T21:04:29.156Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -58,15 +64,16 @@ bdg:WA4CZ295078 {
     bda:WA4CZ295078  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ295078 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "4f/WA4CZ295078.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ295078 ;
-        adm:logEntry        bda:LG7938EEF6AA103296 , bda:LG7E3962BFBE7CA6D4 , bda:LGAFE4AF1DEACB3477 , bda:LGC89C86DEA3898220 , bda:LGD094963A5DE1AA91 , bda:LGEA63DFC56D28D68A , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG7938EEF6AA103296 , bda:LG7E3962BFBE7CA6D4 , bda:LGAFE4AF1DEACB3477 , bda:LGC89C86DEA3898220 , bda:LGD094963A5DE1AA91 , bda:LGEA63DFC56D28D68A , bda:LGIM2CCAFE93 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR06CF396EABB6281E
+    bdr:CR096A5D26A26DA382
         a                   :AgentAsCreator ;
         :agent              bdr:P1830 ;
         :role               bdr:R0ER0019 .
@@ -75,7 +82,7 @@ bdg:WA4CZ295078 {
         skos:altLabel       "theg pa chen po mdo sde'i rgyan gyi 'grel pa rin po che'i phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "mdo sde rgyan gyi TIk+ka"@bo-x-ewts ;
         :catalogInfo        "A detailed commentary on the Mahayanasutralamkaraof asanga, a classic Indian treatise studied in Tibet."@en ;
-        :creator            bdr:CR06CF396EABB6281E ;
+        :creator            bdr:CR096A5D26A26DA382 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

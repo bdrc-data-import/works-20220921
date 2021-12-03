@@ -42,6 +42,12 @@ bdg:WA4CZ295074 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM2CCAFE93  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-02T21:04:29.156Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -52,15 +58,16 @@ bdg:WA4CZ295074 {
     bda:WA4CZ295074  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ295074 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "e4/WA4CZ295074.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ295074 ;
-        adm:logEntry        bda:LG29F238206942D35F , bda:LG3BF9220E67E66F58 , bda:LG78523BF6654B7B1A , bda:LG9BAA013DEB771BE0 , bda:LGEB753D1B0BF5758A , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG29F238206942D35F , bda:LG3BF9220E67E66F58 , bda:LG78523BF6654B7B1A , bda:LG9BAA013DEB771BE0 , bda:LGEB753D1B0BF5758A , bda:LGIM2CCAFE93 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD5D93AB3F7137B00
+    bdr:CR5DD116DF1F7A8ED1
         a                   :AgentAsCreator ;
         :agent              bdr:P1500 ;
         :role               bdr:R0ER0019 .
@@ -69,7 +76,7 @@ bdg:WA4CZ295074 {
         skos:altLabel       "'dul ba mdo rtsa ba'i mchan 'grel mthong ba don 'grub ces bya ba kun mkhyen chen po mtsho sna bas mdzad pa/"@bo-x-ewts ;
         skos:prefLabel      "'dul ba mdo rtsa'i mchan 'grel mthong ba don 'grub la 'dul Tik nyi ma'i dkyil 'khor gyi sa bcad lhan sbyar/"@bo-x-ewts ;
         :catalogInfo        "Annotated commentary on root text of vinaya by Tshonawa Sherab Zangpo and with analytic treatment, topical outline, and general exposition on the meaning of the Vinaya Sutra, composed by Karma Mikyod Dorje"@en ;
-        :creator            bdr:CRD5D93AB3F7137B00 ;
+        :creator            bdr:CR5DD116DF1F7A8ED1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T304 , bdr:T89 ;

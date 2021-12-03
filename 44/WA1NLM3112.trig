@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3112 {
+    bda:LG37AD97613905FF11
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-02T10:50:08.198Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG9944A6F1725FF198
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM3112 {
     bda:WA1NLM3112  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3112 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "44/WA1NLM3112.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3112 ;
-        adm:logEntry        bda:LG9944A6F1725FF198 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG37AD97613905FF11 , bda:LG9944A6F1725FF198 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3112  a       :Work ;
         skos:prefLabel      "gser gyi sdom pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 'byung ba kun 'dus yi legs nyes dmigs par rtog pa rde'u zhe bdun ma'i 'jog lugs dri med me long / 2 dpal rdo rje 'jigs byed dpa' bo gcig pa'i sgo nas gshin po'i sbyangs chog zhing mchog sgo 'byed/ 3 chos thob pa'i mdo/ 4 'phags pa 'jam dpal gyis mdzad pa sa bdag 'khrugs mdos/ 5 gser 'od g.yang skyabs cho ga bya lugs dang bcas pa/ 6 mgon po nag po'i gzungs/ 7 gsol 'debs/ 8 bla ma rdo rje bya rgyud las byung 'di ltar snang stong / 9 mkhan chen chos kyi rgyal po'i gsung 'bum las/ 'dus pa'i rgyud las gsungs pa'i dzam+b+ha lha'i gtor ma bya tshul/"@en , "Astrological calculation text; other text also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3112 , bdr:W1NLM3112 .
+        :workHasInstance    bdr:MW1NLM3112 , bdr:W1NLM3112 ;
+        :workIsAbout        bdr:T2462 , bdr:T2463 .
 }

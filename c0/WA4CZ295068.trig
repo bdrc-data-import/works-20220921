@@ -36,6 +36,12 @@ bdg:WA4CZ295068 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM2CCAFE93  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2021-12-02T21:04:29.156Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -46,15 +52,16 @@ bdg:WA4CZ295068 {
     bda:WA4CZ295068  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ295068 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "c0/WA4CZ295068.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ295068 ;
-        adm:logEntry        bda:LG2CCF5CCA8959007B , bda:LG77C63BAA471ED189 , bda:LG7A0E9F98E6190DC1 , bda:LG875A8CE680671847 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG2CCF5CCA8959007B , bda:LG77C63BAA471ED189 , bda:LG7A0E9F98E6190DC1 , bda:LG875A8CE680671847 , bda:LGIM2CCAFE93 , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE5749EA53A9B22DE
+    bdr:CR50D917F9AF43C8F2
         a                   :AgentAsCreator ;
         :agent              bdr:P2486 ;
         :role               bdr:R0ER0019 .
@@ -63,7 +70,7 @@ bdg:WA4CZ295068 {
         skos:altLabel       "gzhi gsum gyi lag deb dran pa'i sa bon dang mdo chog khag gi phyag bzhes zin bris bcas/"@bo-x-ewts ;
         skos:prefLabel      "gzhi gsum gyi lag deb dran pa'i sa bon/"@bo-x-ewts ;
         :catalogInfo        "Manual for the three disciplinary codes practiced by Buddhist monks and nuns during Sojong, (posoda), Yarne, (varsika), andGagye (pravarana) observance periods."@en ;
-        :creator            bdr:CRE5749EA53A9B22DE ;
+        :creator            bdr:CR50D917F9AF43C8F2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG15794 ;
