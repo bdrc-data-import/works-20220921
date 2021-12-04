@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3124 {
+    bda:LG1BDA4F589E4D084B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-03T11:17:18.502Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGB0503FEC7DCD18DE
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM3124 {
     bda:WA1NLM3124  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3124 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "58/WA1NLM3124.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3124 ;
-        adm:logEntry        bda:LGB0503FEC7DCD18DE , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG1BDA4F589E4D084B , bda:LGB0503FEC7DCD18DE , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRF8132545AC9E1C6B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3124  a       :Work ;
         skos:prefLabel      "dpal rdo rje 'jigs byed kyi mngon par rtogs pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal ldan rdo rje 'jigs byed dpa' bo gcig pa'i bsgom bzlas mdor bsdus bya tshul/ 2 mgon dkar yid bzhin nor bu'i sgrub thabs/ 3 lhan gcig skyes pa'i lha dang yul lha rnams dgos lha nga mi ngo 'phod pa'i dga' ston/ 4 mig nad ling thog bcos thabs/ 5 gza'i skar spar kha sme ba sa bdag lo zla zhag dus sogs dang rigs gsum mgon po'i sgrub thabs dang bcas pa/ 6 byams smon lam/ 7 'jigs byed dpa' bo gcig pa'i mngon rtogs mdor bsdus/ 8 dpal rdo rje 'jigs byed kyi bsgom bzlas shin tu bsdus pa thu thig 9 gdugs dkar rgya nag skeg bzlog kha mchu nag po/ 10 rdo rje 'jigs byed dpa' cig"@bo-x-ewts , "Visualization of Vajrabairava; other text also included."@en ;
+        :creator            bdr:CRF8132545AC9E1C6B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3124 , bdr:W1NLM3124 .
+        :workGenre          bdr:T5 ;
+        :workHasInstance    bdr:MW1NLM3124 , bdr:W1NLM3124 ;
+        :workIsAbout        bdr:T104 .
 }
