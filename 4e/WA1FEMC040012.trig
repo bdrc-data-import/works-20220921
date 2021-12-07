@@ -13,41 +13,26 @@
 
 bdg:WA1FEMC040012 {
     bda:LGB68D806A09A41BEF
-        a                   adm:InitialDataCreation ;
-        adm:logMessage      "entered cataloging for W1FEMC040012"@en .
-    
-    bda:LGIM1163D81E  a     adm:UpdateData ;
-        adm:logAgent        "works-femc04-import.xql" ;
-        adm:logDate         "2021-10-20T16:40:23.637Z"^^xsd:dateTime ;
-        adm:logMessage      "imported FEMC 04 workW1FEMC040012"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation , adm:LogEntry ;
+        adm:logWho          bdu:U00092 .
     
     bda:WA1FEMC040012
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC040012 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "4e/WA1FEMC040012.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC040012 ;
-        adm:logEntry        bda:LGB68D806A09A41BEF , bda:LGIM1163D81E ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bdr:DT08C7871C188A8645
-        a                   :DateIndication ;
-        :era                bdr:EraBE ;
-        :yearInEra          2492 .
-    
-    bdr:EV70417E0133A3FF0E
-        a                   :CompletedEvent ;
-        :dateIndication     bdr:DT08C7871C188A8645 ;
-        :notAfter           "1950"^^xsd:gYear ;
-        :notBefore          "1949"^^xsd:gYear .
+        adm:logEntry        bda:LGB68D806A09A41BEF ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bdr:WA1FEMC040012
         a                   :Work ;
+        skos:prefLabel      "អភិធម្មត្រៃតា"@km , "abhidhamm trai tā"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workEvent          bdr:EV70417E0133A3FF0E ;
-        :workHasInstance    bdr:MW1FEMC040068 , bdr:W1FEMC040068 .
+        :workHasInstance    bdr:MW1FEMC040068 , bdr:W1FEMC040068 ;
+        :workIsAbout        bdr:FEMC_Scheme_III_4 .
 }

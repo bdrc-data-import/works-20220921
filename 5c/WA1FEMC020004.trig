@@ -13,29 +13,26 @@
 
 bdg:WA1FEMC020004 {
     bda:LG67CE8430F05F553E
-        a                   adm:InitialDataCreation ;
-        adm:logMessage      "entered cataloging for W1FEMC020004"@en .
-    
-    bda:LGIM3045394C  a     adm:UpdateData ;
-        adm:logAgent        "works-femc01-import.xql" ;
-        adm:logDate         "2019-08-14T18:51:13.73Z"^^xsd:dateTime ;
-        adm:logMessage      "imported FEMC 01 workW1FEMC020004"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation , adm:LogEntry ;
+        adm:logWho          bdu:U00092 .
     
     bda:WA1FEMC020004
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC020004 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "5c/WA1FEMC020004.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC020004 ;
-        adm:logEntry        bda:LG67CE8430F05F553E , bda:LGIM3045394C ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG67CE8430F05F553E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bdr:WA1FEMC020004
         a                   :Work ;
+        skos:prefLabel      "មង្គលសូត្រត្រៃសរណគមន៍"@km , "maṅgal sūtr trai saranagaman"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workHasInstance    bdr:MW1FEMC011096 , bdr:MW1FEMC022147 , bdr:W1FEMC011096 , bdr:W1FEMC022147 .
+        :workHasInstance    bdr:MW1FEMC011096 , bdr:MW1FEMC022147 , bdr:W1FEMC011096 , bdr:W1FEMC022147 ;
+        :workIsAbout        bdr:FEMC_Scheme_III_2 .
 }

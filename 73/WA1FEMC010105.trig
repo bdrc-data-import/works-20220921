@@ -13,43 +13,26 @@
 
 bdg:WA1FEMC010105 {
     bda:LG5079713DF04324D6
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-07-15"^^xsd:date ;
-        adm:logMessage      "entered cataloging for W1FEMC010105"@en ;
-        adm:logWho          bdu:U00086 .
-    
-    bda:LGIMC3FF7CDB  a     adm:UpdateData ;
-        adm:logAgent        "works-femc01-import.xql" ;
-        adm:logDate         "2019-08-14T18:48:23.321Z"^^xsd:dateTime ;
-        adm:logMessage      "imported FEMC 01 workW1FEMC010105"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation , adm:LogEntry ;
+        adm:logWho          bdu:U00092 .
     
     bda:WA1FEMC010105
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC010105 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "73/WA1FEMC010105.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC010105 ;
-        adm:logEntry        bda:LG5079713DF04324D6 , bda:LGIMC3FF7CDB ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
-    
-    bdr:DT50837BA9FD32233A
-        a                   :DateIndication ;
-        :era                bdr:EraBE ;
-        :yearInEra          2474 .
-    
-    bdr:EV891886E8828C1A4A
-        a                   :CompletedEvent ;
-        :dateIndication     bdr:DT50837BA9FD32233A ;
-        :notAfter           "1932"^^xsd:gYear ;
-        :notBefore          "1931"^^xsd:gYear .
+        adm:logEntry        bda:LG5079713DF04324D6 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bdr:WA1FEMC010105
         a                   :Work ;
+        skos:prefLabel      "មូលកងធម៌"@km , "mūl kaṅ dhaṛm"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workEvent          bdr:EV891886E8828C1A4A ;
-        :workHasInstance    bdr:MW1FEMC020482 , bdr:MW1FEMC040992 , bdr:W1FEMC020482 , bdr:W1FEMC040992 .
+        :workHasInstance    bdr:MW1FEMC020482 , bdr:MW1FEMC040992 , bdr:W1FEMC020482 , bdr:W1FEMC040992 ;
+        :workIsAbout        bdr:FEMC_Scheme_III_1 .
 }

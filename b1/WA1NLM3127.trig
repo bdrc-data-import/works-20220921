@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3127 {
+    bda:LG86C398CE6DF5EA97
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-06T09:24:36.518Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGC7EDA809792F9A15
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,25 @@ bdg:WA1NLM3127 {
     bda:WA1NLM3127  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3127 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "b1/WA1NLM3127.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3127 ;
-        adm:logEntry        bda:LGC7EDA809792F9A15 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG86C398CE6DF5EA97 , bda:LGC7EDA809792F9A15 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRD731375D9A2510DA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P675 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3127  a       :Work ;
         skos:prefLabel      "jo bo shAkya mu ni dang lha mo rnams kyi sgo nas rims nad drag po'i me dpung gzhil zhing 'chi med dpal ster bdud rtsi'i char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 chos thams cad kyi sngon 'gro bslab bya dang bcas pa dran ngan gyi chos rgya mtsho/ 2 rak+Sha gter ston las kyi mdos bcu'i dang por rak+Sha dgr mdos kyi cho ga 3 mkha' 'gro spyi'i gtor ni/ 4 bcom ldan 'das klu'i dbang phyug rgyal po'i sgo nas yul khrus bya tshul/ 5 gcod kyi gdams pa gdan thog gcig ma'i zur rgyan thar pa'i lde mig 6 mdigs brtse ma'i las tshogs kyi nang nas kha zas 'ong bar byed pa'i man ngag 7 mthson bsrung 'dogs pa/ 8 sman gyi sdom ming 'dul tshul sogs rnams gces bsdus snying nor/ 9 kai de ring mi grib thams cad bsangs/"@en , "Ritual for the protection of pandemic on the basis of Shakyamuni and Tara as deity; other text also included."@en ;
+        :creator            bdr:CRD731375D9A2510DA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3127 , bdr:W1NLM3127 .
+        :workHasInstance    bdr:MW1NLM3127 , bdr:W1NLM3127 ;
+        :workIsAbout        bdr:T00KG02676 , bdr:T1AT489 , bdr:T619 .
 }

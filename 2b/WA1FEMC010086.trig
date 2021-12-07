@@ -13,31 +13,26 @@
 
 bdg:WA1FEMC010086 {
     bda:LGB4C07AB84A7B079B
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-07-13"^^xsd:date ;
-        adm:logMessage      "entered cataloging for W1FEMC010086"@en ;
-        adm:logWho          bdu:U00086 .
-    
-    bda:LGIMC3FF7CDB  a     adm:UpdateData ;
-        adm:logAgent        "works-femc01-import.xql" ;
-        adm:logDate         "2019-08-14T18:48:23.321Z"^^xsd:dateTime ;
-        adm:logMessage      "imported FEMC 01 workW1FEMC010086"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation , adm:LogEntry ;
+        adm:logWho          bdu:U00092 .
     
     bda:WA1FEMC010086
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC010086 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "2b/WA1FEMC010086.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC010086 ;
-        adm:logEntry        bda:LGB4C07AB84A7B079B , bda:LGIMC3FF7CDB ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGB4C07AB84A7B079B ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bdr:WA1FEMC010086
         a                   :Work ;
+        skos:prefLabel      "ចោទអំពីសាសនា"@km , "cod aṃbī sāsanā"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workHasInstance    bdr:MW1FEMC021896 , bdr:W1FEMC021896 .
+        :workHasInstance    bdr:MW1FEMC021896 , bdr:W1FEMC021896 ;
+        :workIsAbout        bdr:FEMC_Scheme_III_1 .
 }

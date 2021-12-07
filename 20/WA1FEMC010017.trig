@@ -13,31 +13,26 @@
 
 bdg:WA1FEMC010017 {
     bda:LGAC2BFBFBB846D657
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-07-20"^^xsd:date ;
-        adm:logMessage      "entered cataloging for W1FEMC010017"@en ;
-        adm:logWho          bdu:U00082 .
-    
-    bda:LGIMC3FF7CDB  a     adm:UpdateData ;
-        adm:logAgent        "works-femc01-import.xql" ;
-        adm:logDate         "2019-08-14T18:48:23.321Z"^^xsd:dateTime ;
-        adm:logMessage      "imported FEMC 01 workW1FEMC010017"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation , adm:LogEntry ;
+        adm:logWho          bdu:U00092 .
     
     bda:WA1FEMC010017
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC010017 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "20/WA1FEMC010017.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC010017 ;
-        adm:logEntry        bda:LGAC2BFBFBB846D657 , bda:LGIMC3FF7CDB ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LGAC2BFBFBB846D657 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bdr:WA1FEMC010017
         a                   :Work ;
+        skos:prefLabel      "ព្រះធម្មសង្គណី​ អាការវតារសូត្រ គិរិមានន្ទសូត្រ"@km , "braḥ dhamm saṅgaṇi, ākāravatār sūtr, girimānand sūtr"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workHasInstance    bdr:MW1FEMC039563 , bdr:W1FEMC039563 .
+        :workHasInstance    bdr:MW1FEMC039563 , bdr:W1FEMC039563 ;
+        :workIsAbout        bdr:FEMC_Scheme_III_1 .
 }

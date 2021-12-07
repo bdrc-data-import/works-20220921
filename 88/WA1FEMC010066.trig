@@ -13,31 +13,26 @@
 
 bdg:WA1FEMC010066 {
     bda:LG7D2BA5DDF69C7FD0
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2019-07-13"^^xsd:date ;
-        adm:logMessage      "entered cataloging for W1FEMC010066"@en ;
-        adm:logWho          bdu:U00086 .
-    
-    bda:LGIMC3FF7CDB  a     adm:UpdateData ;
-        adm:logAgent        "works-femc01-import.xql" ;
-        adm:logDate         "2019-08-14T18:48:23.321Z"^^xsd:dateTime ;
-        adm:logMessage      "imported FEMC 01 workW1FEMC010066"@en ;
-        adm:logMethod       bda:BatchMethod .
+        a                   adm:InitialDataCreation , adm:LogEntry ;
+        adm:logWho          bdu:U00092 .
     
     bda:WA1FEMC010066
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1FEMC010066 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "88/WA1FEMC010066.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1FEMC010066 ;
-        adm:logEntry        bda:LG7D2BA5DDF69C7FD0 , bda:LGIMC3FF7CDB ;
-        adm:metadataLegal   bda:LD_BDRC_CC0 .
+        adm:logEntry        bda:LG7D2BA5DDF69C7FD0 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
     
     bdr:WA1FEMC010066
         a                   :Work ;
+        skos:prefLabel      "តម្រាប់លោកន័យ"@km , "tamrāp' lokanăy"@km-x-twktt ;
         :isRoot             true ;
         :language           bdr:LangKm ;
-        :workHasInstance    bdr:MW1FEMC010713 , bdr:MW1FEMC010764 , bdr:MW1FEMC010793 , bdr:MW1FEMC020019 , bdr:MW1FEMC020554 , bdr:MW1FEMC021625 , bdr:MW1FEMC021903 , bdr:MW1FEMC021904 , bdr:W1FEMC010713 , bdr:W1FEMC010764 , bdr:W1FEMC010793 , bdr:W1FEMC020019 , bdr:W1FEMC020554 , bdr:W1FEMC021625 , bdr:W1FEMC021903 , bdr:W1FEMC021904 .
+        :workHasInstance    bdr:MW1FEMC010713 , bdr:MW1FEMC010764 , bdr:MW1FEMC010793 , bdr:MW1FEMC020019 , bdr:MW1FEMC020554 , bdr:MW1FEMC021625 , bdr:MW1FEMC021903 , bdr:MW1FEMC021904 , bdr:W1FEMC010713 , bdr:W1FEMC010764 , bdr:W1FEMC010793 , bdr:W1FEMC020019 , bdr:W1FEMC020554 , bdr:W1FEMC021625 , bdr:W1FEMC021903 , bdr:W1FEMC021904 ;
+        :workIsAbout        bdr:FEMC_Scheme_III_1 .
 }
