@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2576 {
+    bda:LG06D9EDBFC4B499FB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-08T11:25:21.967Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGEBCE03128CACF017
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM2576 {
     bda:WA1NLM2576  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2576 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "0f/WA1NLM2576.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2576 ;
-        adm:logEntry        bda:LGEBCE03128CACF017 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG06D9EDBFC4B499FB , bda:LGEBCE03128CACF017 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2576  a       :Work ;
         skos:prefLabel      "rta mgrin gsang sgrub bka' sdod dang bcas pa mchod cing bskang bshags bzlog pa bya ba'i cho ga dngos grub char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Incense offering text composed by Lopon Padma kara and other miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2576 , bdr:W1NLM2576 .
 }

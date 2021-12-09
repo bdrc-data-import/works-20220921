@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2574 {
+    bda:LG5AA4CB41B00DAEC4
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-08T11:25:21.049Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG5D44FC3EB14548EB
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2574 {
     bda:WA1NLM2574  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2574 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "be/WA1NLM2574.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2574 ;
-        adm:logEntry        bda:LG5D44FC3EB14548EB , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG5AA4CB41B00DAEC4 , bda:LG5D44FC3EB14548EB , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2574  a       :Work ;
         skos:prefLabel      "ma gcig 'dod pa khams kyi dbang mo'i sho mo 'debs tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "Dice prognostication on the basis of Shridevi and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2574 , bdr:W1NLM2574 .
+        :workGenre          bdr:T1171 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2574 , bdr:W1NLM2574 ;
+        :workIsAbout        bdr:T829 .
 }

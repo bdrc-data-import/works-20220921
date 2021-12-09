@@ -18,6 +18,12 @@ bdg:WA1NLM2580 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG450A01E0FB21858B
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-08T11:25:23.788Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2580 {
     bda:WA1NLM2580  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2580 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "86/WA1NLM2580.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2580 ;
-        adm:logEntry        bda:LG0C3C4A52C5A7A03B , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG0C3C4A52C5A7A03B , bda:LG450A01E0FB21858B , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2580  a       :Work ;
-        skos:prefLabel      "skyer sgang lugs kyi rta mgrin gsang sgrub kyi sgrub thabs rgyas pa rta mchog rol pa'i zhal lung sogs/"@bo-x-ewts ;
+        skos:altLabel       "skyer sgang lugs kyi rta mgrin gsang sgrub kyi sgrub thabs rgyas pa rta mchog rol pa'i zhal lung sogs/"@bo-x-ewts ;
+        skos:prefLabel      "rta mgrin gsang sgrub kyi sgrub thabs rgyas pa rta mchog rol pa'i zhal lung sogs/"@bo-x-ewts ;
+        :catalogInfo        "Sadhana of guhyasadhana Hayagriva according to the Kergang tradition"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2580 , bdr:W1NLM2580 .
+        :workGenre          bdr:T1 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2580 , bdr:W1NLM2580 ;
+        :workIsAbout        bdr:T50 .
 }

@@ -18,6 +18,12 @@ bdg:WA1NLM3141 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGE1749E014DB4603A
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-08T10:08:32.048Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author,content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM3141 {
     bda:WA1NLM3141  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3141 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "d3/WA1NLM3141.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3141 ;
-        adm:logEntry        bda:LG7431492DF9E6A14C , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG7431492DF9E6A14C , bda:LGE1749E014DB4603A , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB2B1C24527B0884A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3141  a       :Work ;
         skos:prefLabel      "dpal rdo rje 'jigs byed lha bcu gsum ma'i sgrub pa'i thabs rin po che'i za ma tog sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal ldan dmag zor rgyal mo'i sgrub thabs/ 2 dpal ldan lha mo'i cho ga dang 'brel bar ma mo'i 'khrugs skongs gtong tshul/"@bo-x-ewts , "Sadhana of thirteen deity Vajrabairava; other text also included."@en ;
+        :creator            bdr:CRB2B1C24527B0884A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3141 , bdr:W1NLM3141 .
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM3141 , bdr:W1NLM3141 ;
+        :workIsAbout        bdr:T00JR3170 .
 }
