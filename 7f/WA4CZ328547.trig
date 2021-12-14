@@ -24,6 +24,12 @@ bdg:WA4CZ328547 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGE9963EA351AD4E18
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-13T14:40:43.447Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -34,18 +40,24 @@ bdg:WA4CZ328547 {
     bda:WA4CZ328547  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ328547 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "7f/WA4CZ328547.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ328547 ;
-        adm:logEntry        bda:LG7C7BB5F8AABB5A26 , bda:LGCAD18C507F05F480 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG7C7BB5F8AABB5A26 , bda:LGCAD18C507F05F480 , bda:LGE9963EA351AD4E18 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR45FEBAF3EB046DA8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS76434 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA4CZ328547  a      :Work ;
         skos:prefLabel      "bod skad kyi sgrogs rgyu'i dpe cha gnyis pa/"@bo-x-ewts , "second tibetan reader"@en ;
         :catalogInfo        "Second Tibetan reader by L.M. Dorji"@en ;
+        :creator            bdr:CR45FEBAF3EB046DA8 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn ;
         :workGenre          bdr:T266 ;
