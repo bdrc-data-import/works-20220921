@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2585 {
+    bda:LG54EA052BAF07B0D6
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-14T15:57:07.424Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG88FE945AB825B28E
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2585 {
     bda:WA1NLM2585  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2585 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "3e/WA1NLM2585.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2585 ;
-        adm:logEntry        bda:LG88FE945AB825B28E , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG54EA052BAF07B0D6 , bda:LG88FE945AB825B28E , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2585  a       :Work ;
-        skos:prefLabel      "bde ba can du skye ba'i smon lam zhing mchog sgo 'byed kyi 'don sgrigs rnam dag zhing du bgrod pa'i bde lam sogs/"@bo-x-ewts ;
+        skos:altLabel       "bde ba can du skye ba'i smon lam zhing mchog sgo 'byed kyi 'don sgrigs rnam dag zhing du bgrod pa'i bde lam/"@bo-x-ewts ;
+        skos:prefLabel      "bde smon zhing mchog sgo 'byed kyi 'don sgrigs rnam dag zhing du bgrod pa'i bde lam sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2585 , bdr:W1NLM2585 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2585 , bdr:W1NLM2585 ;
+        :workIsAbout        bdr:T00JR690 , bdr:T1709 .
 }

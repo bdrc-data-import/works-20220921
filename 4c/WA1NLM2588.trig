@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2588 {
+    bda:LG6AEECC61A466C664
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-14T15:57:08.771Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG757004DEA5091E5B
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2588 {
     bda:WA1NLM2588  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2588 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "4c/WA1NLM2588.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2588 ;
-        adm:logEntry        bda:LG757004DEA5091E5B , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG6AEECC61A466C664 , bda:LG757004DEA5091E5B , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2588  a       :Work ;
-        skos:prefLabel      "dpal phyag na rdo rje gos sngon can gyi sgrub thabs dngos grub gter mdzod sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal phyag na rdo rje gos sngon can gyi sgrub thabs dngos grub gter mdzod/"@bo-x-ewts ;
+        skos:prefLabel      "phyag na rdo rje gos sngon can gyi sgrub thabs dngos grub gter mdzod sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2588 , bdr:W1NLM2588 .
 }

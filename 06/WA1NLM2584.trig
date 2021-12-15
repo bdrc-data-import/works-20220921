@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2584 {
+    bda:LG0992CBA56009D1B9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-14T15:57:06.992Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG0A8637080CFC8660
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,27 @@ bdg:WA1NLM2584 {
     bda:WA1NLM2584  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2584 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "06/WA1NLM2584.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2584 ;
-        adm:logEntry        bda:LG0A8637080CFC8660 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG0992CBA56009D1B9 , bda:LG0A8637080CFC8660 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRAD8E52E0BC6DDC99
+        a                   :AgentAsCreator ;
+        :agent              bdr:P289 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2584  a       :Work ;
-        skos:prefLabel      "rgyal dbang 'phags mchog dam pa'i sku zhabs nas phar phyin gyi gzhung gi dka' gnas rnams la bka' 'dri phebs pa'i lan gzhung snying por bsgril nas phul ba sogs/"@bo-x-ewts ;
+        skos:altLabel       "rgyal dbang 'phags mchog dam pa'i sku zhabs nas phar phyin gyi gzhung gi dka' gnas rnams la bka' 'dri phebs pa'i lan gzhung snying por bsgril nas phul ba/"@bo-x-ewts ;
+        skos:prefLabel      "phar phyin gyi gzhung gi dka' gnas rnams la bka' 'dri phebs pa'i lan gzhung snying por bsgril nas phul ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instructional manual for the practice of the torma of the four elements, teaching introduced in tibet by pha dam pa sangs rgyas and Drultor gtor, as taught by avalokitesvara to skyer sgang pa and passed down by the shangs pa bka' brgyud pa tradition and other miscellaneous rituals and liturgical texts from Mongolia"@en ;
+        :creator            bdr:CRAD8E52E0BC6DDC99 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2584 , bdr:W1NLM2584 .
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW1NLM2584 , bdr:W1NLM2584 ;
+        :workIsAbout        bdr:T170 .
 }

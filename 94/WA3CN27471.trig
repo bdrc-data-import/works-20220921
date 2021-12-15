@@ -13,19 +13,21 @@
 
 bdg:WA3CN27471 {
     bda:LG0C58BC16E5181AA1
-        a                   adm:UpdateData ;
-        adm:logDate         "2021-11-15T12:14:54.78Z"^^xsd:dateTime ;
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-12-14T15:27:07.786Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LG6DC30CD980081B2A
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-11-12T10:22:45.856Z"^^xsd:dateTime ;
+        adm:logDate         "2021-12-14T15:25:04.816Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:WA3CN27471  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN27471 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "94/WA3CN27471.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN27471 ;
@@ -33,9 +35,19 @@ bdg:WA3CN27471 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR3BE72B9A728AD697
+        a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA3CN27471  a       :Work ;
-        skos:prefLabel      "aaaa/"@bo-x-ewts ;
+        skos:altLabel       "'ju mi pham 'jam dbyangs rnam rgyal rgya mtsho'i bka' 'bum/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ mi pham 'jam dbyangs rnam rgyal rgya mtsho/"@bo-x-ewts ;
+        :catalogInfo        "Collected Works by renowned Nyingma polymath Jamgon Ju Mipam Namgyal Gyatso (1846-1912)."@en ;
+        :creator            bdr:CR3BE72B9A728AD697 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW3CN27471 .
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW3CN27471 , bdr:W3CN27471 ;
+        :workIsAbout        bdr:T1082 .
 }
