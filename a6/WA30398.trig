@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30398 {
-    bda:LGF519B73A14ABF628
+    bda:LG703B6C699F697CE0
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGF519B73A14ABF628
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-16T14:08:50.415Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -33,27 +39,25 @@ bdg:WA30398 {
     bda:WA30398  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30398 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a6/WA30398.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30398 ;
-        adm:logEntry        bda:LGF519B73A14ABF628 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG703B6C699F697CE0 , bda:LGF519B73A14ABF628 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR703B6C699F697CE0
+    bdr:CR804FD97F0D2A8BA7
         a                   :AgentAsCreator ;
         :agent              bdr:P10615 ;
         :role               bdr:R0ER0026 .
     
-    bdr:MW30398  skos:altLabel  "wish granting attainments"@en-x-mixed .
-    
     bdr:WA30398  a          :Work ;
-        skos:altLabel       "daily prayers of namdroling monastery"@en ;
-        skos:prefLabel      "rnam gling sngon 'gro slob grwa'i zhal 'don chog sgrigs dngos grub 'dod 'jo/"@bo-x-ewts , "wish granting attainments"@en-x-mixed ;
-        :creator            bdr:CR703B6C699F697CE0 ;
+        skos:prefLabel      "rnam gling sngon 'gro slob grwa'i zhal 'don chog sgrigs dngos grub 'dod 'jo/"@bo-x-ewts , "wish granting attainments : daily prayers of namdroling monastery"@en-x-mixed ;
+        :catalogInfo        "A daily prayers text of Primary School of Namdroling monastery."@en ;
+        :creator            bdr:CR804FD97F0D2A8BA7 ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
+        :language           bdr:LangBo , bdr:LangEn ;
         :workGenre          bdr:T225 ;
         :workHasInstance    bdr:MW30398 , bdr:W30398 ;
         :workIsAbout        bdr:G4886 , bdr:T1082 .
