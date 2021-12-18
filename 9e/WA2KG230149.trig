@@ -14,21 +14,28 @@
 bdg:WA2KG230149 {
     bda:LGD2E0AD0171FFB914
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-12-16T18:10:33.835Z"^^xsd:dateTime ;
+        adm:logDate         "2021-12-17T13:17:10.056Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD92636445233F17D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2021-12-17T13:19:05.504Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG230149  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG230149 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9e/WA2KG230149.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG230149 ;
-        adm:logEntry        bda:LGD2E0AD0171FFB914 ;
+        adm:logEntry        bda:LGD2E0AD0171FFB914 , bda:LGD92636445233F17D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD92636445233F17D
+    bdr:CR52869307F808B279
         a                   :AgentAsCreator ;
         :agent              bdr:P2KG230190 ;
         :role               bdr:R0ER0019 .
@@ -37,9 +44,9 @@ bdg:WA2KG230149 {
         skos:altLabel       "grib nag khrod du/"@bo-x-ewts ;
         skos:prefLabel      "brtsams sgrung phyogs bsgrigs/"@bo-x-ewts ;
         :catalogInfo        "Collection of fiction stories by Lopon Tenzin Chophel."@en ;
-        :creator            bdr:CRD92636445233F17D ;
+        :creator            bdr:CR52869307F808B279 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T260 ;
-        :workHasInstance    bdr:MW2KG230149 .
+        :workHasInstance    bdr:MW2KG230149 , bdr:W2KG230149 .
 }
