@@ -18,6 +18,12 @@ bdg:WA1NLM2608 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGBDE561F42E090A85
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-20T14:24:07.898Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM2608 {
     bda:WA1NLM2608  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2608 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "de/WA1NLM2608.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2608 ;
-        adm:logEntry        bda:LGA4BCFC2834AADDC0 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGA4BCFC2834AADDC0 , bda:LGBDE561F42E090A85 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2608  a       :Work ;
         skos:prefLabel      "shAkya thub pa'i zhal nas gsungs pa'i skeg rkyen nag po'i bzlog bskyur sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2608 , bdr:W1NLM2608 .
 }
