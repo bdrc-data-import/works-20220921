@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM1992 {
+    bda:LG2832B4E745BF343E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-21T17:27:10.909Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG5A2A0CBE9F3BDAF3
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM1992 {
     bda:WA1NLM1992  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1992 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "02/WA1NLM1992.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1992 ;
-        adm:logEntry        bda:LG5A2A0CBE9F3BDAF3 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG2832B4E745BF343E , bda:LG5A2A0CBE9F3BDAF3 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRF3E49B9BD2C0F3E9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM1992  a       :Work ;
         skos:prefLabel      "maN+Dal gyi khrid yig dpag bsam snye ma sogs/"@bo-x-ewts ;
+        :catalogInfo        "A detailed explanation of the rite of offering the mandala as a symbol of total veneration and fealty; and instructional manual of lamrim​ practice."@en ;
+        :creator            bdr:CRF3E49B9BD2C0F3E9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM1992 , bdr:W1NLM1992 .
+        :workGenre          bdr:T200 ;
+        :workHasInstance    bdr:MW1NLM1992 , bdr:W1NLM1992 ;
+        :workIsAbout        bdr:T1344 , bdr:T29 , bdr:T541 .
 }

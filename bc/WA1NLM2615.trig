@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2615 {
+    bda:LG0B9762D206CE9B5E
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-21T15:02:47.875Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGC2158CF87131D0D5
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM2615 {
     bda:WA1NLM2615  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2615 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "bc/WA1NLM2615.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2615 ;
-        adm:logEntry        bda:LGC2158CF87131D0D5 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG0B9762D206CE9B5E , bda:LGC2158CF87131D0D5 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2615  a       :Work ;
         skos:prefLabel      "gdugs dkar mchog tu grub pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2615 , bdr:W1NLM2615 .
 }

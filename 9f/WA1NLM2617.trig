@@ -18,6 +18,12 @@ bdg:WA1NLM2617 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGB81A14E644D01F45
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-21T15:02:48.88Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2617 {
     bda:WA1NLM2617  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2617 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9f/WA1NLM2617.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2617 ;
-        adm:logEntry        bda:LG5B113127189FAE4B , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG5B113127189FAE4B , bda:LGB81A14E644D01F45 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2617  a       :Work ;
-        skos:prefLabel      "'phags pa 'jam dpal gyi mtshan yang dag par brjod pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "'phags pa 'jam dpal gyi mtshan yang dag par brjod pa/"@bo-x-ewts ;
+        skos:prefLabel      "'jam dpal mtshan brjod pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T225 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2617 , bdr:W1NLM2617 .
 }
