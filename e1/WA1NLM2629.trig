@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2629 {
+    bda:LG9548DB22A28842F5
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-22T16:40:59.068Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGBB38CA8DB978CB45
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2629 {
     bda:WA1NLM2629  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2629 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "e1/WA1NLM2629.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2629 ;
-        adm:logEntry        bda:LGBB38CA8DB978CB45 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG9548DB22A28842F5 , bda:LGBB38CA8DB978CB45 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2629  a       :Work ;
-        skos:prefLabel      "'phags pa nad thams cad rab tu zhi bar byed pa ces bya ba'i gzungs sogs/"@bo-x-ewts ;
+        skos:altLabel       "'phags pa nad thams cad rab tu zhi bar byed pa ces bya ba'i gzungs/"@bo-x-ewts ;
+        skos:prefLabel      "nad thams cad rab tu zhi bar byed pa ces bya ba'i gzungs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2629 , bdr:W1NLM2629 .
 }

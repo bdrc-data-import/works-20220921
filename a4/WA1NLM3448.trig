@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3448 {
+    bda:LGB6AC0BB1533EABCB
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-22T11:03:02.111Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,26 @@ bdg:WA1NLM3448 {
     bda:WA1NLM3448  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3448 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a4/WA1NLM3448.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3448 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LGB6AC0BB1533EABCB , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1ED39E71F40F1980
+        a                   :AgentAsCreator ;
+        :agent              bdr:P123 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3448  a       :Work ;
         skos:prefLabel      "'dus pa 'phags lugs lha so gnyis pa'i lam rim pa dang po'i khrid dmigs kyi brjed byang mi bskyod mgon po'i zhal lung /"@bo-x-ewts ;
+        :catalogInfo        "Notes on the instrucational visualization of the first stage of thirty two diety Guhyasamaja according to Arya tradtition by Akhu Ching Sherap Gyatsho."@en ;
+        :creator            bdr:CR1ED39E71F40F1980 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3448 , bdr:W1NLM3448 .
+        :workGenre          bdr:T1446 , bdr:T200 ;
+        :workHasInstance    bdr:MW1NLM3448 , bdr:W1NLM3448 ;
+        :workIsAbout        bdr:T1430 , bdr:T475 .
 }

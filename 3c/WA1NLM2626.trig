@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2626 {
+    bda:LG03AD712AA1BEE5E3
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-22T16:40:57.779Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG520C43C45D4759DD
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2626 {
     bda:WA1NLM2626  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2626 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "3c/WA1NLM2626.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2626 ;
-        adm:logEntry        bda:LG520C43C45D4759DD , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG03AD712AA1BEE5E3 , bda:LG520C43C45D4759DD , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2626  a       :Work ;
-        skos:prefLabel      "mkha' 'gro gsang 'bum rgyud las dkar po'i sngags 'bum rdo rje go khrab slob dpon pad+ma'i gter nas rdo rje gling pas bton pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "mkha' 'gro gsang 'bum rgyud las dkar po'i sngags 'bum rdo rje go khrab slob dpon pad+ma'i gter nas rdo rje gling pas bton pa/"@bo-x-ewts ;
+        skos:prefLabel      "dkar po'i sngags 'bum rdo rje go khrab slob dpon pad+ma'i gter nas rdo rje gling pas bton pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of devotional work addressed to maitreya buddha and other miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2626 , bdr:W1NLM2626 .
+        :workGenre          bdr:T34 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2626 , bdr:W1NLM2626 ;
+        :workIsAbout        bdr:T681 .
 }
