@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2633 {
+    bda:LG3C02B8D227855DD9
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-23T14:54:48.636Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGC6A90EE0FB60FDC4
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,16 +33,23 @@ bdg:WA1NLM2633 {
     bda:WA1NLM2633  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2633 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "02/WA1NLM2633.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2633 ;
-        adm:logEntry        bda:LGC6A90EE0FB60FDC4 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG3C02B8D227855DD9 , bda:LGC6A90EE0FB60FDC4 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB6194F40D070DC14
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2633  a       :Work ;
         skos:prefLabel      "dga' ldan lha brgya ma'i gzhung bsrungs te mdo sngags cha tshang bar nyams su len tshul dga' ldan zhing du bgrod pa'i nor bu'i them skas sogs/"@bo-x-ewts ;
+        :catalogInfo        "Method for the practice of the Gadhan Lhagyama, the reminder notes on Lamrim Chenmo, an astrology and dharanis"@en ;
+        :creator            bdr:CRB6194F40D070DC14 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1NLM2633 , bdr:W1NLM2633 .

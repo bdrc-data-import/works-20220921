@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2634 {
+    bda:LG1FBEE51B7B0A131D
+        a                   adm:UpdateData ;
+        adm:logDate         "2021-12-23T14:54:49.089Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG67A9ECC205228EDC
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM2634 {
     bda:WA1NLM2634  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2634 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "d8/WA1NLM2634.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2634 ;
-        adm:logEntry        bda:LG67A9ECC205228EDC , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG1FBEE51B7B0A131D , bda:LG67A9ECC205228EDC , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR41DF77D5F99CABEC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P339 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2634  a       :Work ;
-        skos:prefLabel      "yab rjes kun mkhyen chen po 'jam dpal dbyangs kyi zhal gyi pad+mo rnam par bzhad pa'i sde'i blo rig mtha' dpyod kyi zur rgyang u t+pal'i phreng ba sogs/"@bo-x-ewts ;
+        skos:altLabel       "yab rje kun mkhyen chen po 'jam dpal dbyangs kyi zhal gyi pad+mo rnam par bzhad pa'i sde'i blo rig mtha' dpyod kyi zur rgyan u t+pal'i phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "blo rig mtha' dpyod kyi zur rgyan u t+pal'i phreng ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "Supplementary to the analytic treatment of logical work types of awareness, Exegetical notes on principle treatise of Tibetan astrology and astronomy and other miscellaneous rituals and liturgical texts from Mongolia"@en ;
+        :creator            bdr:CR41DF77D5F99CABEC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2634 , bdr:W1NLM2634 .
+        :workHasInstance    bdr:MW1NLM2634 , bdr:W1NLM2634 ;
+        :workIsAbout        bdr:T1215 , bdr:T1420 , bdr:T1834 .
 }
