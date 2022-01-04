@@ -18,6 +18,12 @@ bdg:WA1NLM2642 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGD65988C7BC857C8A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-03T16:28:46.294Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,25 @@ bdg:WA1NLM2642 {
     bda:WA1NLM2642  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2642 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "e7/WA1NLM2642.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2642 ;
-        adm:logEntry        bda:LG2A6F320A6DCCAAD8 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG2A6F320A6DCCAAD8 , bda:LGD65988C7BC857C8A , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR08DF4D26336F8320
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2642  a       :Work ;
         skos:prefLabel      "dzam dkar 'brug zhon lha lnga'i sgo nas nor sgrub bya tshul yid bzhin nor bu'i bang mdzod sogs/"@bo-x-ewts ;
+        :catalogInfo        "A prosperity rituals focussed on five-deity white jambhala and other miscellaneous rituals and liturgical texts from Mongolia"@en ;
+        :creator            bdr:CR08DF4D26336F8320 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1 , bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2642 , bdr:W1NLM2642 .
 }

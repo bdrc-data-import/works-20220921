@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3461 {
+    bda:LGB69384C2EDF3B862
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-03T09:21:13.298Z"^^xsd:dateTime ;
+        adm:logMessage      "added author, topic, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,26 @@ bdg:WA1NLM3461 {
     bda:WA1NLM3461  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3461 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "fa/WA1NLM3461.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3461 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LGB69384C2EDF3B862 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR740A75BBFB62A64A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3461  a       :Work ;
         skos:prefLabel      "'dod khams dbang phyug ma dmag zor rgyal mo'i sgrub thabs gtor chog sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dpal rdo rje 'jigs byed kyi bla brgyud gsol 'debs bstod pa smon lam shis brjod yan lag bdun pa rnams/ 2 gsol 'debs thugs rje myur 'jug 3 gtsug tor dkar mo'i bzlog bsgyur/ 4 bcom ldan 'das ma shes ra kyi pha rill tu phyin pa'i snying po/ 5 dkar chag 6 rdel rtsis skor gyi dpe rtsa 'grel sogs le tshan par du 'khod pa'i dkar chag 7 rje btsun sgrol ma dkar mo la bstod pa tshe dang ye shes spel bar byed pa'i rin po che/ 8 rje btsun mi g.yo mgon po la bstod pa byin rlabs kyi chu gter/ 9 khyab bdag 'khor lo'i mgon po ngag dbang blo bzang rgya mtsho'i 'khrungs rab gsol 'debs/ 10 tshe dbang brgyud pa'i bla brgyud gsol 'debs/ 11 bstan pa'i gtad rabs bdun gyi bstod pa/ 12 mtha' yas ma/ 13 'phags pa byams smon/ 14 dpal phyag na rdo rje'i sku gsung thugs la bstod pa/ 15 rje btsun byams mgon gyi bstod pa/ 16 khyab bdag mgon po'i 'khor lo ngag dbang blo bzang rgya mtsho'i 'khrungs rab gsol 'debs/ 17 thub dbang kas pad ma/"@en , "Sadhana and bali offering of Shridevi; other text also included."@en ;
+        :creator            bdr:CR740A75BBFB62A64A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3461 , bdr:W1NLM3461 .
+        :workGenre          bdr:T1 , bdr:T1458 ;
+        :workHasInstance    bdr:MW1NLM3461 , bdr:W1NLM3461 ;
+        :workIsAbout        bdr:T926 .
 }

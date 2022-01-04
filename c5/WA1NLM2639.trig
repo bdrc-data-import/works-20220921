@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2639 {
+    bda:LG64024ACD7B64929A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-03T16:28:43.806Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGFE355EED6B026889
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM2639 {
     bda:WA1NLM2639  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2639 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "c5/WA1NLM2639.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2639 ;
-        adm:logEntry        bda:LGFE355EED6B026889 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG64024ACD7B64929A , bda:LGFE355EED6B026889 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB80F48BD63D2B095
+        a                   :AgentAsCreator ;
+        :agent              bdr:P123 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2639  a       :Work ;
         skos:prefLabel      "'jam dbyangs dkar po'i las tshogs kyi khrid kyi zin bris mi zad ngag gi 'dod 'jo sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instructions on various practices focussing upon the white Manjusri (Sitamanjughosa) and othermiscellaneous rituals and liturgical texts from Mongolia"@en ;
+        :creator            bdr:CRB80F48BD63D2B095 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2639 , bdr:W1NLM2639 .
+        :workGenre          bdr:T398 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2639 , bdr:W1NLM2639 ;
+        :workIsAbout        bdr:T2230 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2640 {
+    bda:LG960C02D06B5C6F2A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-03T16:28:44.861Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGAFC006E492139BB0
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2640 {
     bda:WA1NLM2640  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2640 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "0d/WA1NLM2640.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2640 ;
-        adm:logEntry        bda:LGAFC006E492139BB0 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG960C02D06B5C6F2A , bda:LGAFC006E492139BB0 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2640  a       :Work ;
-        skos:prefLabel      "dpal rdo rje 'jigs byed dpa' bo gcig pa'i sgrubs thabs bsdus pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal rdo rje 'jigs byed dpa' bo gcig pa'i sgrubs thabs bsdus pa/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje 'jigs byed dpa' bo gcig pa'i sgrubs thabs bsdus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rituals for the propitiation (sadhana) of various Tutelaries and god of wealth"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2640 , bdr:W1NLM2640 .
+        :workHasInstance    bdr:MW1NLM2640 , bdr:W1NLM2640 ;
+        :workIsAbout        bdr:T1181 , bdr:T1338 .
 }
