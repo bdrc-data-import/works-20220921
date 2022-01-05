@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2003 {
+    bda:LG00E2B5875E413C56
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-04T16:37:54.924Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG475FAC5BAD47AD9F
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2003 {
     bda:WA1NLM2003  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2003 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "41/WA1NLM2003.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2003 ;
-        adm:logEntry        bda:LG475FAC5BAD47AD9F , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG00E2B5875E413C56 , bda:LG475FAC5BAD47AD9F , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2003  a       :Work ;
         skos:prefLabel      "rje btsun sgrol ma maN+Dal bzhi pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of ritual texts and Vajrabairava tantra; and other texts are also included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2003 , bdr:W1NLM2003 .
+        :workGenre          bdr:T2129 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2003 , bdr:W1NLM2003 ;
+        :workIsAbout        bdr:T104 , bdr:T1709 , bdr:T2050 , bdr:T249 .
 }

@@ -18,6 +18,12 @@ bdg:WA1NLM2006 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGB04DAD84D2367C5A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-04T16:37:56.149Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2006 {
     bda:WA1NLM2006  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2006 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "74/WA1NLM2006.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2006 ;
-        adm:logEntry        bda:LG1DE4795AC2C417F8 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG1DE4795AC2C417F8 , bda:LGB04DAD84D2367C5A , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2006  a       :Work ;
         skos:prefLabel      "chos skyong dregs pa lcam sring gi thugs rten 'dzugs pa'i cho ga dam can dgyes pa'i rol mo las bzhi lhun grub sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of rites and ritual texts."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2006 , bdr:W1NLM2006 .
+        :workGenre          bdr:T933 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2006 , bdr:W1NLM2006 ;
+        :workIsAbout        bdr:T1439 , bdr:T22 , bdr:T249 .
 }

@@ -18,6 +18,12 @@ bdg:WA1NLM2652 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG9BDEB94110F8A9D9
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-04T16:42:46.947Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2652 {
     bda:WA1NLM2652  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2652 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "4c/WA1NLM2652.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2652 ;
-        adm:logEntry        bda:LG81A546B31CF12A19 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG81A546B31CF12A19 , bda:LG9BDEB94110F8A9D9 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2652  a       :Work ;
-        skos:prefLabel      "'phags pa 'od zer dri ma med pa'i gzungs mdo sogs/"@bo-x-ewts ;
+        skos:altLabel       "rje btsun 'phags ma sgrol ma nyer gcig ma'i bsangs/"@bo-x-ewts ;
+        skos:prefLabel      "'phags pa 'od zer dri ma med pa'i gzungs mdo/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2652 , bdr:W1NLM2652 .
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM2652 , bdr:W1NLM2652 ;
+        :workIsAbout        bdr:T173 .
 }

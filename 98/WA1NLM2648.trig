@@ -18,6 +18,12 @@ bdg:WA1NLM2648 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGA1603718C7EB1FE9
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-04T16:42:44.996Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2648 {
     bda:WA1NLM2648  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2648 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "98/WA1NLM2648.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2648 ;
-        adm:logEntry        bda:LG481F49E3F5C356F5 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG481F49E3F5C356F5 , bda:LGA1603718C7EB1FE9 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2648  a       :Work ;
-        skos:prefLabel      "'phags pa bzang spyod smon lam sogs/"@bo-x-ewts ;
+        skos:altLabel       "'phags pa bzang spyod smon lam/"@bo-x-ewts ;
+        skos:prefLabel      "bzang spyod smon lam sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2648 , bdr:W1NLM2648 .
 }

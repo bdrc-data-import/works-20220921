@@ -18,6 +18,12 @@ bdg:WA1NLM2655 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGFA41A8490B33B590
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-04T16:42:48.563Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2655 {
     bda:WA1NLM2655  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2655 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "3a/WA1NLM2655.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2655 ;
-        adm:logEntry        bda:LGD840F1DA2B14A60B , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGD840F1DA2B14A60B , bda:LGFA41A8490B33B590 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2655  a       :Work ;
-        skos:prefLabel      "'phags pa gnam sa snang brgyad ces bya ba'i theg pa chen po'i mdo sogs/"@bo-x-ewts ;
+        skos:altLabel       "'phags pa gnam sa snang brgyad ces bya ba'i theg pa chen po'i mdo/"@bo-x-ewts ;
+        skos:prefLabel      "gnam sa snang brgyad ces bya ba'i theg pa chen po'i mdo sogs/"@bo-x-ewts ;
+        :catalogInfo        "Bali offering, regular propitiation and exhortion of Damcan Chogyel deity and other miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2655 , bdr:W1NLM2655 .
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM2655 , bdr:W1NLM2655 ;
+        :workIsAbout        bdr:T1397 , bdr:T198 .
 }

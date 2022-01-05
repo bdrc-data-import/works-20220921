@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2649 {
+    bda:LGC05F95BD56D24159
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-04T16:42:45.46Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGC721EC41EB385CFB
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM2649 {
     bda:WA1NLM2649  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2649 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "40/WA1NLM2649.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2649 ;
-        adm:logEntry        bda:LGC721EC41EB385CFB , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LGC05F95BD56D24159 , bda:LGC721EC41EB385CFB , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2649  a       :Work ;
-        skos:prefLabel      "rta mgrin gsang sgrub kyi chos skor la/_glud mchog mchod sbyin rgya mtsho sogs/"@bo-x-ewts ;
+        skos:altLabel       "rta mgrin gsang sgrub kyi chos skor la/_glud mchog mchod sbyin rgya mtsho/"@bo-x-ewts ;
+        skos:prefLabel      "glud mchog mchod sbyin rgya mtsho sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2649 , bdr:W1NLM2649 .
+        :workGenre          bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2649 , bdr:W1NLM2649 ;
+        :workIsAbout        bdr:T194 .
 }
