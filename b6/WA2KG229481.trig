@@ -14,23 +14,32 @@
 bdg:WA2KG229481 {
     bda:LG4B01A08F9D23961F
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-09-09T22:23:43.111Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-05T19:01:20.729Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG229481  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG229481 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "b6/WA2KG229481.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG229481 ;
         adm:logEntry        bda:LG4B01A08F9D23961F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusAccessioned .
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR3A0EF434A11DF0FF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P87 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2KG229481  a      :Work ;
-        skos:prefLabel      "rgya 'grel nyer gcig"@bo-x-ewts ;
+        skos:altLabel       "mkhas mchog sbyin pa dar rgyas kyis mdzad pa'i yang dag mtha'i spyi don blo dman yid kyi mun sel/"@bo-x-ewts ;
+        skos:prefLabel      "byang rtse'i phar phyin spyi don/"@bo-x-ewts ;
+        :creator            bdr:CR3A0EF434A11DF0FF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG229481 .
+        :workGenre          bdr:T1763 ;
+        :workHasInstance    bdr:MW2KG229481 ;
+        :workIsAbout        bdr:G77 , bdr:T36 , bdr:T447 .
 }
