@@ -1,0 +1,41 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ368752 {
+    bda:LG440FCB8194ECFD2E
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-06T15:10:26.089Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:WA4CZ368752  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ368752 ;
+        adm:facetIndex      2 ;
+        adm:gitPath         "62/WA4CZ368752.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ368752 ;
+        adm:logEntry        bda:LG440FCB8194ECFD2E ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:WA4CZ368752  a      :Work ;
+        skos:altLabel       "dpal ldan 'bras spungs sgo mang klu 'bum khams tshan gyi chos 'byung pad dkar phreng mdzes/"@bo-x-ewts ;
+        skos:prefLabel      "'bras spungs sgo mang klu 'bum khams tshan gyi chos 'byung pad dkar phreng mdzes/"@bo-x-ewts ;
+        :catalogInfo        "History of the Lubum Khangtsan at Drepung Gomang"@en ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW4CZ368752 ;
+        :workIsAbout        bdr:G112 .
+}

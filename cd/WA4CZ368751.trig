@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ368751 {
+    bda:LGBCE87DB1704726DA
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-06T15:10:20.66Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:WA4CZ368751  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ368751 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "cd/WA4CZ368751.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ368751 ;
+        adm:logEntry        bda:LGBCE87DB1704726DA ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CRB924ECC823F10512
+        a                   :AgentAsCreator ;
+        :agent              bdr:P101 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA4CZ368751  a      :Work ;
+        skos:altLabel       "dpal gsang ba 'dus pa'i bskyed rim gyi rnam gzhag mkhas pa'i yid 'phrog dang / rdzogs rim thar lam sgron me mkhas pa'i yid 'phrog rgyud sde spyi'i rnam par bzhag pa skal bzabg gi yid 'phrog"@bo-x-ewts ;
+        skos:prefLabel      "gsang ba 'dus pa'i bskyed rdzogs rnam bzhag mkhas pa'i yid 'phrog dang gyud sde spyi'i rnam par bzhag pa skal bzabg gi yid 'phrog"@bo-x-ewts ;
+        :catalogInfo        "The four branches of achieving approaching, of the glorious Guhysamaja generation stage; the profound path of the five stages; the distinct profundity and the profound paths of the great secret four classes of Tantra."@en ;
+        :creator            bdr:CRB924ECC823F10512 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW4CZ368751 ;
+        :workIsAbout        bdr:T1CZ30 , bdr:T417 .
+}

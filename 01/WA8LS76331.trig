@@ -14,22 +14,44 @@
 bdg:WA8LS76331 {
     bda:LG89CC7A18F75E6396
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-09-28T14:49:19.654Z"^^xsd:dateTime ;
-        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logDate         "2022-01-06T09:26:49.809Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGC1318DE0DEFD51CE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-06T09:31:13.001Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE3B730D5E9538116
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-06T09:27:17.186Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
     bda:WA8LS76331  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS76331 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "01/WA8LS76331.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS76331 ;
-        adm:logEntry        bda:LG89CC7A18F75E6396 ;
+        adm:logEntry        bda:LG89CC7A18F75E6396 , bda:LGC1318DE0DEFD51CE , bda:LGE3B730D5E9538116 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR12633765FB171161
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3243 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS76331  a       :Work ;
+        skos:altLabel       "gser khang pa blo bzang bstan 'dzin rgya mtsho'i gsung 'bum/"@bo-x-ewts , "sgrub brgyud bstan pa'i mnga' bdag yab rje gser khang ba'i gsung 'bum dngos grub kun 'byung /"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ rje gser khang pa blo bzang bstan 'dzin rgya mtsho/stod cha dang smad cha/"@bo-x-ewts ;
+        :catalogInfo        "Collected works of Serkhangpa Losang Tenzin Gyatsho."@en ;
+        :creator            bdr:CR12633765FB171161 ;
         :isRoot             true ;
-        :workHasInstance    bdr:MW8LS76331 .
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW8LS76331 , bdr:W8LS76331 ;
+        :workIsAbout        bdr:P3243 , bdr:T819 .
 }
