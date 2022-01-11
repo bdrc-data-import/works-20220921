@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ368758 {
+    bda:LG044221989235CC38
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-01-10T16:17:59.478Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:WA4CZ368758  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ368758 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b9/WA4CZ368758.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ368758 ;
+        adm:logEntry        bda:LG044221989235CC38 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR9098F9FA985475D2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ368761 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA4CZ368758  a      :Work ;
+        skos:altLabel       "bod chen po'i srid lugs dang 'brel ba'i rgyal rabs deb ther dkar po/"@bo-x-ewts , "deb ther dkar po/"@bo-x-ewts , "mkhas dbang dge 'dun chos 'phel dang lhan du deb ther dkar po klog pa/"@bo-x-ewts ;
+        skos:prefLabel      "drin gyi bu lon/"@bo-x-ewts ;
+        :catalogInfo        "Incomplete History of Tibet and the Tibetan people by Gendun Chophel and compeleted by Gurgon Kyab"@en ;
+        :creator            bdr:CR9098F9FA985475D2 ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T793 ;
+        :workHasInstance    bdr:MW4CZ368758 ;
+        :workIsAbout        bdr:G3196 .
+}
