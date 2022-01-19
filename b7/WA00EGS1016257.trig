@@ -18,6 +18,12 @@ bdg:WA00EGS1016257 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00012 .
     
+    bda:LG368725311A58AD56
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-18T12:39:13.881Z"^^xsd:dateTime ;
+        adm:logMessage      "added source printery"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG5C654A2A08767402
         a                   adm:UpdateData ;
         adm:logDate         "2008-06-03T12:52:04.216Z"^^xsd:dateTime ;
@@ -64,21 +70,27 @@ bdg:WA00EGS1016257 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00EGS1016257 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "b7/WA00EGS1016257.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00EGS1016257 ;
-        adm:logEntry        bda:LG16A682CFC6466936 , bda:LG5C654A2A08767402 , bda:LGC19375E41DD69A17 , bda:LGE2D8F6FE9D2B5CF4 , bda:LGE4E88C67D9ACFD58 , bda:LGE6E2E3B7DB87FF66 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG16A682CFC6466936 , bda:LG368725311A58AD56 , bda:LG5C654A2A08767402 , bda:LGC19375E41DD69A17 , bda:LGE2D8F6FE9D2B5CF4 , bda:LGE4E88C67D9ACFD58 , bda:LGE6E2E3B7DB87FF66 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR86E08C52DEE4B922
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4333 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA00EGS1016257
         a                   :Work ;
         skos:altLabel       "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag gi rgyud..."@bo-x-ewts ;
         skos:prefLabel      "rgyud bzhi/"@bo-x-ewts ;
         :catalogInfo        "On the science and study of Tibetan medicine. Made from reproductions of Degge Printery woodblocks carved in 1733, based on late 17th century Potala prints at the order of the King of Degge, Tenpa Tsering (1678-1738)."@en ;
+        :creator            bdr:CR86E08C52DEE4B922 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW00EGS1016257 , bdr:W00EGS1016257 ;
-        :workIsAbout        bdr:T85 .
+        :workIsAbout        bdr:T2MS13793 , bdr:T85 , bdr:WA21667 .
 }
