@@ -11,30 +11,36 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA4CZ368800 {
-    bda:LG92703D7CE4005A82
+bdg:WA4CZ368817 {
+    bda:LG33123AC61A89C23C
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-19T14:38:47.341Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-19T14:40:25.494Z"^^xsd:dateTime ;
         adm:logMessage      "test"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:WA4CZ368800  a      adm:AdminData ;
+    bda:WA4CZ368817  a      adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA4CZ368800 ;
-        adm:facetIndex      2 ;
-        adm:gitPath         "9b/WA4CZ368800.trig" ;
+        adm:adminAbout      bdr:WA4CZ368817 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "72/WA4CZ368817.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA4CZ368800 ;
-        adm:logEntry        bda:LG92703D7CE4005A82 ;
+        adm:graphId         bdg:WA4CZ368817 ;
+        adm:logEntry        bda:LG33123AC61A89C23C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA4CZ368800  a      :Work ;
-        skos:altLabel       "bod kyi rig gnas lo rgyus thog gi skyes mchog pa gor bai ro tsa na'i skor gyi dpyad brjod/"@bo-x-ewts , "yid sgo 'byed mkhas gyad mi/"@bo-x-ewts ;
-        skos:prefLabel      "skyes mchog pa gor bai ro tsa na'i skor gyi dpyad brjod/"@bo-x-ewts ;
-        :catalogInfo        "Research on the great master Vairocana ."@en ;
+    bdr:CRACC4A97726595BE4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6968 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA4CZ368817  a      :Work ;
+        skos:altLabel       "mkhas pa lde'us mdzad pa'i rgya bod kyi chos 'byung rgyas pa/"@bo-x-ewts ;
+        skos:prefLabel      "lde'u chos 'byung /"@bo-x-ewts ;
+        :catalogInfo        "Detaliled religion history of India and Tibet"@en ;
+        :creator            bdr:CRACC4A97726595BE4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ368800 ;
-        :workIsAbout        bdr:P5013 , bdr:T299 .
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW4CZ368817 .
 }

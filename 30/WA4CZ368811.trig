@@ -11,30 +11,35 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA4CZ368800 {
-    bda:LG92703D7CE4005A82
+bdg:WA4CZ368811 {
+    bda:LG03603EDBAFCC3125
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-19T14:38:47.341Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-19T14:39:51.814Z"^^xsd:dateTime ;
         adm:logMessage      "test"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:WA4CZ368800  a      adm:AdminData ;
+    bda:WA4CZ368811  a      adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA4CZ368800 ;
-        adm:facetIndex      2 ;
-        adm:gitPath         "9b/WA4CZ368800.trig" ;
+        adm:adminAbout      bdr:WA4CZ368811 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "30/WA4CZ368811.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA4CZ368800 ;
-        adm:logEntry        bda:LG92703D7CE4005A82 ;
+        adm:graphId         bdg:WA4CZ368811 ;
+        adm:logEntry        bda:LG03603EDBAFCC3125 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA4CZ368800  a      :Work ;
-        skos:altLabel       "bod kyi rig gnas lo rgyus thog gi skyes mchog pa gor bai ro tsa na'i skor gyi dpyad brjod/"@bo-x-ewts , "yid sgo 'byed mkhas gyad mi/"@bo-x-ewts ;
-        skos:prefLabel      "skyes mchog pa gor bai ro tsa na'i skor gyi dpyad brjod/"@bo-x-ewts ;
-        :catalogInfo        "Research on the great master Vairocana ."@en ;
+    bdr:CRB4C29E0A625FFA79
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6624 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA4CZ368811  a      :Work ;
+        skos:prefLabel      "bod skad brda sprod kyi gnad don kha shas la dpyad pa rig 'phrul me long /"@bo-x-ewts ;
+        :catalogInfo        "Study on dificult points of Tibetan grammar."@en ;
+        :creator            bdr:CRB4C29E0A625FFA79 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ368800 ;
-        :workIsAbout        bdr:P5013 , bdr:T299 .
+        :workGenre          bdr:T003JR155 , bdr:T218 ;
+        :workHasInstance    bdr:MW4CZ368811 .
 }
