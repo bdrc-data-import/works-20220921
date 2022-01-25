@@ -14,18 +14,24 @@
 bdg:WA4CZ368778 {
     bda:LG03F3F328CB51B8DA
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-13T15:48:16.414Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
+        adm:logDate         "2022-01-24T10:09:56.687Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGE4754B1EBC7F6226
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-24T15:03:19.001Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ368778  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368778 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "99/WA4CZ368778.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368778 ;
-        adm:logEntry        bda:LG03F3F328CB51B8DA ;
+        adm:logEntry        bda:LG03F3F328CB51B8DA , bda:LGE4754B1EBC7F6226 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,6 +40,6 @@ bdg:WA4CZ368778 {
         :catalogInfo        "The legal system, code of law of the exile Tibetan cummunity."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ368778 ;
+        :workHasInstance    bdr:MW4CZ368778 , bdr:W4CZ368778 ;
         :workIsAbout        bdr:T00EGS1016987 , bdr:T384 .
 }

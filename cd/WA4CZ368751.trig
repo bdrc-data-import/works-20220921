@@ -12,35 +12,42 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368751 {
+    bda:LGB924ECC823F10512
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-24T11:05:05.754Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGBCE87DB1704726DA
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-10T16:17:57.817Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-24T09:18:29.558Z"^^xsd:dateTime ;
+        adm:logMessage      "new cataloged and released"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ368751  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368751 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "cd/WA4CZ368751.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368751 ;
-        adm:logEntry        bda:LGBCE87DB1704726DA ;
+        adm:logEntry        bda:LGB924ECC823F10512 , bda:LGBCE87DB1704726DA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB924ECC823F10512
+    bdr:CRE7039DF003D7BA87
         a                   :AgentAsCreator ;
         :agent              bdr:P101 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA4CZ368751  a      :Work ;
-        skos:altLabel       "dpal gsang ba 'dus pa'i bskyed rim gyi rnam gzhag mkhas pa'i yid 'phrog dang / rdzogs rim thar lam sgron me mkhas pa'i yid 'phrog rgyud sde spyi'i rnam par bzhag pa skal bzabg gi yid 'phrog"@bo-x-ewts ;
-        skos:prefLabel      "gsang ba 'dus pa'i bskyed rdzogs rnam bzhag mkhas pa'i yid 'phrog dang gyud sde spyi'i rnam par bzhag pa skal bzabg gi yid 'phrog"@bo-x-ewts ;
+        skos:altLabel       "dpal gsang ba 'dus pa'i bskyed rim gyi rnam gzhag mkhas pa'i yid 'phrog dang / rdzogs rim thar lam sgron me mkhas pa'i yid 'phrog rgyud sde spyi'i rnam par bzhag pa skal bzang gi yid 'phrog"@bo-x-ewts ;
+        skos:prefLabel      "gsang ba 'dus pa'i bskyed rdzogs rnam bzhag mkhas pa'i yid 'phrog dang rgyud sde spyi'i rnam par bzhag pa skal bzang gi yid 'phrog"@bo-x-ewts ;
         :catalogInfo        "The four branches of achieving approaching, of the glorious Guhysamaja generation stage; the profound path of the five stages; the distinct profundity and the profound paths of the great secret four classes of Tantra."@en ;
-        :creator            bdr:CRB924ECC823F10512 ;
+        :creator            bdr:CRE7039DF003D7BA87 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 ;
-        :workHasInstance    bdr:MW4CZ368751 ;
+        :workHasInstance    bdr:MW4CZ368751 , bdr:W4CZ368751 ;
         :workIsAbout        bdr:T1CZ30 , bdr:T417 .
 }

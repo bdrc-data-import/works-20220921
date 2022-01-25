@@ -12,23 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368764 {
+    bda:LG80D2F28975E2F6B6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-24T12:13:01.615Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGD6CBF3844D289613
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-10T16:18:26.888Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-24T09:18:34.826Z"^^xsd:dateTime ;
+        adm:logMessage      "new cataloged and released"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ368764  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368764 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "c1/WA4CZ368764.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368764 ;
-        adm:logEntry        bda:LGD6CBF3844D289613 ;
+        adm:logEntry        bda:LG80D2F28975E2F6B6 , bda:LGD6CBF3844D289613 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR80D2F28975E2F6B6
+    bdr:CR3BF6AAB8851B275F
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG911 ;
         :role               bdr:R0ER0019 .
@@ -38,9 +45,9 @@ bdg:WA4CZ368764 {
     bdr:WA4CZ368764  a      :Work ;
         skos:prefLabel      "nub phyogs kyi shes yon dang rig gzhung gi lo rgyus zka ba'i phreng ba/"@bo-x-ewts , "A Glance at the History of Western Education and Culture"@en ;
         :catalogInfo        "A Glance at the History of Western Education and Culture"@en ;
-        :creator            bdr:CR80D2F28975E2F6B6 ;
+        :creator            bdr:CR3BF6AAB8851B275F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ368764 ;
+        :workHasInstance    bdr:MW4CZ368764 , bdr:W4CZ368764 ;
         :workIsAbout        bdr:T1449 .
 }

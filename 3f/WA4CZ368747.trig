@@ -14,21 +14,28 @@
 bdg:WA4CZ368747 {
     bda:LG35442EEAF18D5793
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-10T16:17:56.912Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-24T09:18:28.038Z"^^xsd:dateTime ;
+        adm:logMessage      "new cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGC70370D908BF60FF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-24T10:52:54.007Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ368747  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368747 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "3f/WA4CZ368747.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368747 ;
-        adm:logEntry        bda:LG35442EEAF18D5793 ;
+        adm:logEntry        bda:LG35442EEAF18D5793 , bda:LGC70370D908BF60FF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC70370D908BF60FF
+    bdr:CR8F041C3EE9557F26
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ368748 ;
         :role               bdr:R0ER0019 .
@@ -36,9 +43,9 @@ bdg:WA4CZ368747 {
     bdr:WA4CZ368747  a      :Work ;
         skos:prefLabel      "dpyad brjod mkhas pa 'dzum shor/"@bo-x-ewts ;
         :catalogInfo        "Collection of the author's miscellaneous articles on Tibetan studies"@en ;
-        :creator            bdr:CRC70370D908BF60FF ;
+        :creator            bdr:CR8F041C3EE9557F26 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;
-        :workHasInstance    bdr:MW4CZ368747 .
+        :workHasInstance    bdr:MW4CZ368747 , bdr:W4CZ368747 .
 }

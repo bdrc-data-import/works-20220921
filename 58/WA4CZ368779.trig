@@ -12,28 +12,42 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368779 {
+    bda:LG2692FD8FA5069173
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-24T15:09:25.007Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG54728B002353CFEA
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-13T15:48:21.963Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
+        adm:logDate         "2022-01-24T10:09:57.139Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog and released"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ368779  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368779 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "58/WA4CZ368779.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368779 ;
-        adm:logEntry        bda:LG54728B002353CFEA ;
+        adm:logEntry        bda:LG2692FD8FA5069173 , bda:LG54728B002353CFEA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR136191DB8E890957
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG15791 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA4CZ368779  a      :Work ;
-        skos:altLabel       "brda sprod spyi'i don gnad 'ga' re be brag tu mol ba/ brda sprod dang 'brel ba'i dri ba sna tshogs la lan ldon pa/ rgyun 'byams su phyin pa'i yig nor 'ga' zhig bye brag tu gleng ba/"@bo-x-ewts ;
+        skos:altLabel       "brda sprod spyi'i don gnad 'ga' re bye brag tu mol ba/ brda sprod dang 'brel ba'i dri ba sna tshogs la lan ldon pa/ rgyun 'byams su phyin pa'i yig nor 'ga' zhig bye brag tu gleng ba/"@bo-x-ewts ;
         skos:prefLabel      "brda sprod don gnas bsed bkrol/"@bo-x-ewts ;
+        :catalogInfo        "Study on Tibetan gramma"@en ;
+        :creator            bdr:CR136191DB8E890957 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ368779 ;
+        :workGenre          bdr:T1029 ;
+        :workHasInstance    bdr:MW4CZ368779 , bdr:W4CZ368779 ;
         :workIsAbout        bdr:T4CZ16893 .
 }

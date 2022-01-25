@@ -14,32 +14,41 @@
 bdg:WA4CZ368744 {
     bda:LGB7E6E8788CDEC65F
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-10T16:17:56.32Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-24T09:18:26.629Z"^^xsd:dateTime ;
+        adm:logMessage      "new cataloged and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGFA98FDC539DCD77B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-24T10:45:50.893Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ368744  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368744 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "4b/WA4CZ368744.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368744 ;
-        adm:logEntry        bda:LGB7E6E8788CDEC65F ;
+        adm:logEntry        bda:LGB7E6E8788CDEC65F , bda:LGFA98FDC539DCD77B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFA98FDC539DCD77B
+    bdr:CR6235AB7969C9B9F1
         a                   :AgentAsCreator ;
         :agent              bdr:P6662 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:MW4CZ368744  skos:altLabel  "lu ben men guo"@zh-latn-pinyin-x-ndia .
     
     bdr:WA4CZ368744  a      :Work ;
         skos:altLabel       "鲁奔门国"@zh-hans ;
         skos:prefLabel      "klu 'bum mi rgod/"@bo-x-ewts , "lu ben men guo"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "A novel written by Nagpo Kalsang"@en ;
-        :creator            bdr:CRFA98FDC539DCD77B ;
+        :creator            bdr:CR6235AB7969C9B9F1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T260 ;
-        :workHasInstance    bdr:MW4CZ368744 .
+        :workHasInstance    bdr:MW4CZ368744 , bdr:W4CZ368744 .
 }

@@ -12,33 +12,40 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368768 {
+    bda:LG28008EC67D4CC886
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-24T12:19:23.994Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGB66571E629563865
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-10T16:18:49.556Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-24T09:18:36.728Z"^^xsd:dateTime ;
+        adm:logMessage      "new cataloged and released"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ368768  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368768 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "e8/WA4CZ368768.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368768 ;
-        adm:logEntry        bda:LGB66571E629563865 ;
+        adm:logEntry        bda:LG28008EC67D4CC886 , bda:LGB66571E629563865 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR28008EC67D4CC886
+    bdr:CR8F38D33F5B844FDF
         a                   :AgentAsCreator ;
         :agent              bdr:P1404 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA4CZ368768  a      :Work ;
-        skos:prefLabel      "phwa pa chos kyi seng+ge'i gsung gces btus dbu tshad kyi yig cha/"@bo-x-ewts ;
+        skos:prefLabel      "phywa pa chos kyi seng+ge'i gsung gces btus dbu tshad kyi yig cha/"@bo-x-ewts ;
         :catalogInfo        "Collection of commentries on the Madhyamika and Epistemology philosophy."@en ;
-        :creator            bdr:CR28008EC67D4CC886 ;
+        :creator            bdr:CR8F38D33F5B844FDF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ368768 ;
+        :workHasInstance    bdr:MW4CZ368768 , bdr:W4CZ368768 ;
         :workIsAbout        bdr:T1CZ50 , bdr:T233 , bdr:T370 .
 }

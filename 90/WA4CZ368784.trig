@@ -14,18 +14,24 @@
 bdg:WA4CZ368784 {
     bda:LG4FEAF3F26B22781E
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-13T15:48:49.506Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
+        adm:logDate         "2022-01-24T10:09:59.424Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG8B0E06FFB2CA5C66
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-24T15:33:42.194Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ368784  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368784 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "90/WA4CZ368784.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368784 ;
-        adm:logEntry        bda:LG4FEAF3F26B22781E ;
+        adm:logEntry        bda:LG4FEAF3F26B22781E , bda:LG8B0E06FFB2CA5C66 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,6 +40,6 @@ bdg:WA4CZ368784 {
         :catalogInfo        "Discussion on modern Tibetan literature, by Tibetan modern women writers"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ368784 ;
+        :workHasInstance    bdr:MW4CZ368784 , bdr:W4CZ368784 ;
         :workIsAbout        bdr:T1979 , bdr:T1KG18753 .
 }

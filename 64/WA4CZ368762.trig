@@ -12,23 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368762 {
+    bda:LG0A2630C6BF87B8E0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-24T12:00:38.079Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG8409CC07616C0DA3
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-10T16:18:15.899Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-24T09:18:33.858Z"^^xsd:dateTime ;
+        adm:logMessage      "new cataloged and released"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ368762  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368762 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "64/WA4CZ368762.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368762 ;
-        adm:logEntry        bda:LG8409CC07616C0DA3 ;
+        adm:logEntry        bda:LG0A2630C6BF87B8E0 , bda:LG8409CC07616C0DA3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0A2630C6BF87B8E0
+    bdr:CR474C16FFA1BE0D31
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG24455 ;
         :role               bdr:R0ER0019 .
@@ -36,10 +43,10 @@ bdg:WA4CZ368762 {
     bdr:WA4CZ368762  a      :Work ;
         skos:prefLabel      "don brjod snyan dngags bdams bsgrigs/"@bo-x-ewts ;
         :catalogInfo        "Selection of poems."@en ;
-        :creator            bdr:CR0A2630C6BF87B8E0 ;
+        :creator            bdr:CR474C16FFA1BE0D31 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1PD128746 ;
-        :workHasInstance    bdr:MW4CZ368762 ;
+        :workHasInstance    bdr:MW4CZ368762 , bdr:W4CZ368762 ;
         :workIsAbout        bdr:T204 .
 }
