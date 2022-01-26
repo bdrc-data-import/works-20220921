@@ -18,15 +18,28 @@ bdg:WA4CZ368796 {
         adm:logMessage      "new catalog and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG71845F46CEE60A81
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T10:03:17.003Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGBBC4719025EB2326
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:45.977Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ368796  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368796 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "1d/WA4CZ368796.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368796 ;
-        adm:logEntry        bda:LG2EA235E48A931B93 ;
+        adm:logEntry        bda:LG2EA235E48A931B93 , bda:LG71845F46CEE60A81 , bda:LGBBC4719025EB2326 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA4CZ368796  a      :Work ;
@@ -35,6 +48,6 @@ bdg:WA4CZ368796 {
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;
-        :workHasInstance    bdr:MW4CZ368796 ;
+        :workHasInstance    bdr:MW4CZ368796 , bdr:W4CZ368796 ;
         :workIsAbout        bdr:T2622 .
 }

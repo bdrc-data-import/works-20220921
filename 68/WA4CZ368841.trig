@@ -18,23 +18,36 @@ bdg:WA4CZ368841 {
         adm:logMessage      "new catalog"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG72333B449A54C59A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T12:25:51.412Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG7362871C325D6820
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:12:02.441Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ368841  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368841 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "68/WA4CZ368841.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368841 ;
-        adm:logEntry        bda:LG0ECE658B0D6F11E2 ;
+        adm:logEntry        bda:LG0ECE658B0D6F11E2 , bda:LG72333B449A54C59A , bda:LG7362871C325D6820 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR72333B449A54C59A
+    bdr:CR46C9A677CF126AE7
         a                   :AgentAsCreator ;
         :agent              bdr:P1TD9 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR7362871C325D6820
+    bdr:CR97435C4017EADBA0
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ368837 ;
         :role               bdr:R0ER0026 .
@@ -43,10 +56,10 @@ bdg:WA4CZ368841 {
         skos:altLabel       "sngar ma grags pa'i 'thab rtsod kyi byung ba/"@bo-x-ewts ;
         skos:prefLabel      "ka lim pong gi thug pa las bzo ba/"@bo-x-ewts ;
         :catalogInfo        "The life of Gyalo Thondup and his Work translated in to Tibetan by Sherab Dargye"@en ;
-        :creator            bdr:CR72333B449A54C59A , bdr:CR7362871C325D6820 ;
+        :creator            bdr:CR46C9A677CF126AE7 , bdr:CR97435C4017EADBA0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ60 ;
-        :workHasInstance    bdr:MW4CZ368841 ;
+        :workHasInstance    bdr:MW4CZ368841 , bdr:W4CZ368841 ;
         :workIsAbout        bdr:T00EGS1016987 .
 }

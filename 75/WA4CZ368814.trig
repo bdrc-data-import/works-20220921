@@ -12,24 +12,37 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368814 {
+    bda:LG3396F687A5325BFD
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:51.847Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG39DB588C4D602576
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-01-24T10:10:11.024Z"^^xsd:dateTime ;
         adm:logMessage      "new catalog and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGCA4215D775EDF71D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T11:20:56.22Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ368814  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368814 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "75/WA4CZ368814.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368814 ;
-        adm:logEntry        bda:LG39DB588C4D602576 ;
+        adm:logEntry        bda:LG3396F687A5325BFD , bda:LG39DB588C4D602576 , bda:LGCA4215D775EDF71D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCA4215D775EDF71D
+    bdr:CR4AA2EE6E5AAD1913
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ368821 ;
         :role               bdr:R0ER0019 .
@@ -37,10 +50,10 @@ bdg:WA4CZ368814 {
     bdr:WA4CZ368814  a      :Work ;
         skos:prefLabel      "bon lugs dang 'jang rigs gto pa'i chos lugs kyi khyad chos dpyad bsdur/"@bo-x-ewts ;
         :catalogInfo        "Comparartive study on similarity of Bonpo sect with lesser known non Buddhist religious sect called To pa and influenced by Bonpo"@en ;
-        :creator            bdr:CRCA4215D775EDF71D ;
+        :creator            bdr:CR4AA2EE6E5AAD1913 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T977 ;
-        :workHasInstance    bdr:MW4CZ368814 ;
+        :workHasInstance    bdr:MW4CZ368814 , bdr:W4CZ368814 ;
         :workIsAbout        bdr:T299 .
 }

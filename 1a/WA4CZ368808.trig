@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368808 {
+    bda:LG10C004921DB068CB
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:49.396Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG336F490F28E22254
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T11:52:42.715Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG38CC682DEC0E2A4D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-01-24T10:10:08.459Z"^^xsd:dateTime ;
@@ -21,15 +33,16 @@ bdg:WA4CZ368808 {
     bda:WA4CZ368808  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368808 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "1a/WA4CZ368808.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368808 ;
-        adm:logEntry        bda:LG38CC682DEC0E2A4D ;
+        adm:logEntry        bda:LG10C004921DB068CB , bda:LG336F490F28E22254 , bda:LG38CC682DEC0E2A4D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR336F490F28E22254
+    bdr:CR2DF4E996451D3836
         a                   :AgentAsCreator ;
         :agent              bdr:P258 ;
         :role               bdr:R0ER0019 .
@@ -38,10 +51,10 @@ bdg:WA4CZ368808 {
         skos:altLabel       "gangs can bod kyi yul du byon pa'i gsang sngags gsar rnying gi gdan rabs mdor bsdus ngo mtshar pad+mo'i dga' tshal/"@bo-x-ewts , "mdo sngags bstan pa rin po che'i chos kyi byung tshul las brtsams pa'i lo rgyus dang rnam thar shin tu mang po ngo mtshar lha'i pad tshal/"@bo-x-ewts ;
         skos:prefLabel      "mkhyen brtse'i chos 'byung /"@bo-x-ewts ;
         :catalogInfo        "A collection of writings of Kyentse on the history of the Dharma, Buddhism in India and Tibet."@en ;
-        :creator            bdr:CR336F490F28E22254 ;
+        :creator            bdr:CR2DF4E996451D3836 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T12 ;
-        :workHasInstance    bdr:MW4CZ368808 ;
+        :workHasInstance    bdr:MW4CZ368808 , bdr:W4CZ368808 ;
         :workIsAbout        bdr:T770 .
 }

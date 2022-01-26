@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368791 {
+    bda:LG070E081416EC9D01
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T09:57:02.83Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG4907E13189670571
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T09:43:44.067Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGFAE01DD49665FE97
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-01-24T10:10:02.573Z"^^xsd:dateTime ;
@@ -21,15 +33,16 @@ bdg:WA4CZ368791 {
     bda:WA4CZ368791  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368791 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "85/WA4CZ368791.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368791 ;
-        adm:logEntry        bda:LGFAE01DD49665FE97 ;
+        adm:logEntry        bda:LG070E081416EC9D01 , bda:LG4907E13189670571 , bda:LGFAE01DD49665FE97 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4907E13189670571
+    bdr:CR181C28E4CAB64D7A
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS75302 ;
         :role               bdr:R0ER0019 .
@@ -39,10 +52,10 @@ bdg:WA4CZ368791 {
     bdr:WA4CZ368791  a      :Work ;
         skos:prefLabel      "bod kyi byis pa'i rtsom rig rnam bshad/"@bo-x-ewts , "藏族儿童文字"@zh-hans ;
         :catalogInfo        "Study on Tibetan children's literature"@en ;
-        :creator            bdr:CR4907E13189670571 ;
+        :creator            bdr:CR181C28E4CAB64D7A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;
-        :workHasInstance    bdr:MW4CZ368791 ;
+        :workHasInstance    bdr:MW4CZ368791 , bdr:W4CZ368791 ;
         :workIsAbout        bdr:T1979 .
 }

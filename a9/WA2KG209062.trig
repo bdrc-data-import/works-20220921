@@ -14,7 +14,14 @@
 bdg:WA2KG209062 {
     bda:LG6DE21EAF86B4736F
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-06-29T23:20:52.296Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-25T17:30:53.071Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGBCCD3DB2A21B99FA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T17:43:49.255Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG209062  a      adm:AdminData ;
@@ -24,21 +31,17 @@ bdg:WA2KG209062 {
         adm:gitPath         "a9/WA2KG209062.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG209062 ;
-        adm:logEntry        bda:LG6DE21EAF86B4736F ;
+        adm:logEntry        bda:LG6DE21EAF86B4736F , bda:LGBCCD3DB2A21B99FA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusAcquiring .
-    
-    bdr:CRBCCD3DB2A21B99FA
-        a                   :AgentAsCreator ;
-        :agent              bdr:P6439 ;
-        :role               bdr:R0ER0019 .
+        adm:status          bda:StatusReleased .
     
     bdr:WA2KG209062  a      :Work ;
-        skos:prefLabel      "bod kyi rtsom rig lo rgyus/"@bo-x-ewts , "藏族文学史"@zh-hans ;
-        :creator            bdr:CRBCCD3DB2A21B99FA ;
+        skos:altLabel       "तिब्बती भाषा सिक्ने किताब (व्याकरण सहित)"@sa-Deva ;
+        skos:prefLabel      "bod skad slob deb/"@bo-x-ewts , "तिब्बती भाषा सिक्ने किताब (ब्याकरण सहित)"@sa-Deva ;
+        :catalogInfo        "A textbook to learn the Tibetan language with explanation in Nepali and English translations."@en ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
-        :workGenre          bdr:T1134 ;
-        :workHasInstance    bdr:MW2KG209062 ;
-        :workIsAbout        bdr:T217 .
+        :language           bdr:LangBo , bdr:LangEn ;
+        :workGenre          bdr:T266 ;
+        :workHasInstance    bdr:MW2KG209062 , bdr:W2KG209062 ;
+        :workIsAbout        bdr:T1KG22693 , bdr:T265 .
 }

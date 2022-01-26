@@ -18,15 +18,28 @@ bdg:WA4CZ368800 {
         adm:logMessage      "new catalog and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGBA7060C99563D7BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:46.905Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGE4C53B7F214BB04C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T10:55:05.898Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ368800  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368800 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9b/WA4CZ368800.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368800 ;
-        adm:logEntry        bda:LG92703D7CE4005A82 ;
+        adm:logEntry        bda:LG92703D7CE4005A82 , bda:LGBA7060C99563D7BC , bda:LGE4C53B7F214BB04C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA4CZ368800  a      :Work ;
@@ -35,6 +48,6 @@ bdg:WA4CZ368800 {
         :catalogInfo        "Research on the great master Vairocana ."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ368800 ;
+        :workHasInstance    bdr:MW4CZ368800 , bdr:W4CZ368800 ;
         :workIsAbout        bdr:P5013 , bdr:T299 .
 }

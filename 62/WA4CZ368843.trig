@@ -12,24 +12,37 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368843 {
+    bda:LG27103203525C7185
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:12:03.398Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG9EB11B84E8550CDC
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-01-24T10:38:57.687Z"^^xsd:dateTime ;
         adm:logMessage      "new catalog"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGEA65563EE48ACFEF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T14:44:46.941Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ368843  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368843 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "62/WA4CZ368843.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368843 ;
-        adm:logEntry        bda:LG9EB11B84E8550CDC ;
+        adm:logEntry        bda:LG27103203525C7185 , bda:LG9EB11B84E8550CDC , bda:LGEA65563EE48ACFEF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CREA65563EE48ACFEF
+    bdr:CRB82A0789A16867B9
         a                   :AgentAsCreator ;
         :agent              bdr:P3CN26271 ;
         :role               bdr:R0ER0019 .
@@ -38,9 +51,9 @@ bdg:WA4CZ368843 {
         skos:altLabel       "nyin bcu'i lam tho/"@bo-x-ewts ;
         skos:prefLabel      "seng ge gtsang po'i 'go khungs nyul ba/"@bo-x-ewts ;
         :catalogInfo        "Author's daily notes"@en ;
-        :creator            bdr:CREA65563EE48ACFEF ;
+        :creator            bdr:CRB82A0789A16867B9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ368843 ;
+        :workHasInstance    bdr:MW4CZ368843 , bdr:W4CZ368843 ;
         :workIsAbout        bdr:T342 .
 }

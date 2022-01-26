@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368807 {
+    bda:LG31BFD539265B3DE8
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T11:06:52.839Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG48F6C6DC87D151EA
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:48.895Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG857E20FB0E44FFA6
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-01-24T10:10:08.009Z"^^xsd:dateTime ;
@@ -21,13 +33,16 @@ bdg:WA4CZ368807 {
     bda:WA4CZ368807  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368807 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "6f/WA4CZ368807.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368807 ;
-        adm:logEntry        bda:LG857E20FB0E44FFA6 ;
+        adm:logEntry        bda:LG31BFD539265B3DE8 , bda:LG48F6C6DC87D151EA , bda:LG857E20FB0E44FFA6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
+    
+    bdr:MW4CZ368807  skos:altLabel  "西藏研究."@zh-latn-pinyin-x-ndia .
     
     bdr:WA4CZ368807  a      :Work ;
         skos:altLabel       "(bod ljongs zhib 'jug) bod yig dus deb gsar du bton pa nas nyis stong bcu bzhi bar gyi dkar chag dang nang don gnas bsdus/ (1982-2014)"@bo-x-ewts ;
@@ -36,6 +51,6 @@ bdg:WA4CZ368807 {
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T297 ;
-        :workHasInstance    bdr:MW4CZ368807 ;
+        :workHasInstance    bdr:MW4CZ368807 , bdr:W4CZ368807 ;
         :workIsAbout        bdr:T212 .
 }

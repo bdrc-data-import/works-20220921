@@ -12,24 +12,37 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368815 {
+    bda:LG404FEF6E30D099BB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T11:23:29.062Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGCBB23FC0C8F87883
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-01-24T10:10:11.472Z"^^xsd:dateTime ;
         adm:logMessage      "new catalog and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGDFA3A6008463B62F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:52.337Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ368815  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368815 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "9c/WA4CZ368815.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368815 ;
-        adm:logEntry        bda:LGCBB23FC0C8F87883 ;
+        adm:logEntry        bda:LG404FEF6E30D099BB , bda:LGCBB23FC0C8F87883 , bda:LGDFA3A6008463B62F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR404FEF6E30D099BB
+    bdr:CRD5EFF9B7206771EE
         a                   :AgentAsCreator ;
         :agent              bdr:P10058 ;
         :role               bdr:R0ER0019 .
@@ -37,10 +50,10 @@ bdg:WA4CZ368815 {
     bdr:WA4CZ368815  a      :Work ;
         skos:prefLabel      "ma brkos sdug bsngal gyi ri mo snying gi dkyil du lus/"@bo-x-ewts ;
         :catalogInfo        "Collection of author's writings on poems, prose composition, and short stories"@en ;
-        :creator            bdr:CR404FEF6E30D099BB ;
+        :creator            bdr:CRD5EFF9B7206771EE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;
-        :workHasInstance    bdr:MW4CZ368815 ;
+        :workHasInstance    bdr:MW4CZ368815 , bdr:W4CZ368815 ;
         :workIsAbout        bdr:T281 .
 }

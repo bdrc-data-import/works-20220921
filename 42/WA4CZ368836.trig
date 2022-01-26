@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368836 {
+    bda:LG8B6F352B295BC38C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:12:00.369Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGAD7A12BBEAE01056
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T12:18:01.162Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGFA4574BAE8579328
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-01-24T10:38:54.874Z"^^xsd:dateTime ;
@@ -21,15 +33,16 @@ bdg:WA4CZ368836 {
     bda:WA4CZ368836  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368836 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "42/WA4CZ368836.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368836 ;
-        adm:logEntry        bda:LGFA4574BAE8579328 ;
+        adm:logEntry        bda:LG8B6F352B295BC38C , bda:LGAD7A12BBEAE01056 , bda:LGFA4574BAE8579328 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRAD7A12BBEAE01056
+    bdr:CR19770CCFF3708704
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ368837 ;
         :role               bdr:R0ER0019 .
@@ -38,10 +51,10 @@ bdg:WA4CZ368836 {
         skos:altLabel       "gnas brtan chen po ba ku la rje btsun ngag dbang blo bzang thub bstan mchog nor bzang dpal bzang po gang gi chos dang srid kyi mdzad pa las brtsams pa'i rnam par thar pa che long tsam brjod pa pad dkar phreng mdzes/"@bo-x-ewts , "la dwags ba ku la thub bstan mchog nor dpal bzang po'i mdzad rnam/"@bo-x-ewts ;
         skos:prefLabel      "ba ku la thub bstan mchog nor dpal bzang po'i mdzad rnam/"@bo-x-ewts ;
         :catalogInfo        "Biography of Bakula Thubten Chognor"@en ;
-        :creator            bdr:CRAD7A12BBEAE01056 ;
+        :creator            bdr:CR19770CCFF3708704 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
-        :workHasInstance    bdr:MW4CZ368836 ;
+        :workHasInstance    bdr:MW4CZ368836 , bdr:W4CZ368836 ;
         :workIsAbout        bdr:P3CN15711 .
 }

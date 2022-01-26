@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368789 {
+    bda:LG147390657FFE65A4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T09:57:01.88Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG437CCAE2503AA038
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T09:41:02.484Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGB956742BED11139E
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-01-24T10:10:01.677Z"^^xsd:dateTime ;
@@ -21,12 +33,13 @@ bdg:WA4CZ368789 {
     bda:WA4CZ368789  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368789 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "fc/WA4CZ368789.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368789 ;
-        adm:logEntry        bda:LGB956742BED11139E ;
+        adm:logEntry        bda:LG147390657FFE65A4 , bda:LG437CCAE2503AA038 , bda:LGB956742BED11139E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA4CZ368789  a      :Work ;
@@ -36,6 +49,6 @@ bdg:WA4CZ368789 {
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1PD128746 ;
-        :workHasInstance    bdr:MW4CZ368789 ;
+        :workHasInstance    bdr:MW4CZ368789 , bdr:W4CZ368789 ;
         :workIsAbout        bdr:T1979 .
 }

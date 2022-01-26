@@ -12,24 +12,37 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368819 {
+    bda:LG39CFBA98A1E78C47
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:54.309Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG7A954A4F083B3BC8
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-01-20T16:20:26.572Z"^^xsd:dateTime ;
         adm:logMessage      "test"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGF8198BEA6335BA0C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T11:30:37.283Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ368819  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368819 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "91/WA4CZ368819.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368819 ;
-        adm:logEntry        bda:LG7A954A4F083B3BC8 ;
+        adm:logEntry        bda:LG39CFBA98A1E78C47 , bda:LG7A954A4F083B3BC8 , bda:LGF8198BEA6335BA0C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF8198BEA6335BA0C
+    bdr:CR70CAE25F1AB67514
         a                   :AgentAsCreator ;
         :agent              bdr:P4CZ368823 ;
         :role               bdr:R0ER0019 .
@@ -39,10 +52,10 @@ bdg:WA4CZ368819 {
     bdr:WA4CZ368819  a      :Work ;
         skos:prefLabel      "mnyam med shes rab rgyal mtshan gyi mi tshe dang lta grub skor la dpyad pa/"@bo-x-ewts , "年卖西绕坚赞生平与哲学思想研究"@zh-hans ;
         :catalogInfo        "An analysis on Yame Sherab Gyaltsan, a very important Bonpo master(1356-1415)"@en ;
-        :creator            bdr:CRF8198BEA6335BA0C ;
+        :creator            bdr:CR70CAE25F1AB67514 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;
-        :workHasInstance    bdr:MW4CZ368819 ;
+        :workHasInstance    bdr:MW4CZ368819 , bdr:W4CZ368819 ;
         :workIsAbout        bdr:P1675 .
 }

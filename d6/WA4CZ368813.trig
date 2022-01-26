@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368813 {
+    bda:LG02C49E4C57CE16FD
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:51.362Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG0E849AE8C4B4AF3E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T11:19:41.779Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGDBE4D6616885DFE5
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-01-24T10:10:10.524Z"^^xsd:dateTime ;
@@ -21,15 +33,16 @@ bdg:WA4CZ368813 {
     bda:WA4CZ368813  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368813 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "d6/WA4CZ368813.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368813 ;
-        adm:logEntry        bda:LGDBE4D6616885DFE5 ;
+        adm:logEntry        bda:LG02C49E4C57CE16FD , bda:LG0E849AE8C4B4AF3E , bda:LGDBE4D6616885DFE5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0E849AE8C4B4AF3E
+    bdr:CR10E2E734C3736110
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG23772 ;
         :role               bdr:R0ER0019 .
@@ -37,9 +50,9 @@ bdg:WA4CZ368813 {
     bdr:WA4CZ368813  a      :Work ;
         skos:prefLabel      "bod skad brda sprod zhib 'jug"@bo-x-ewts , "藏话 词汇研究"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "A research study on Tibetan grammar."@en ;
-        :creator            bdr:CR0E849AE8C4B4AF3E ;
+        :creator            bdr:CR10E2E734C3736110 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ368813 ;
+        :workHasInstance    bdr:MW4CZ368813 , bdr:W4CZ368813 ;
         :workIsAbout        bdr:T11MS60 , bdr:T4CZ16893 .
 }

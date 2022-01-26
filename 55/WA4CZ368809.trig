@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368809 {
+    bda:LG2ECCFEBAB87666AF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T11:12:44.873Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG5EF1E717EE34D839
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:49.963Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGBB5474375D76D526
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-01-24T10:10:08.916Z"^^xsd:dateTime ;
@@ -21,20 +33,21 @@ bdg:WA4CZ368809 {
     bda:WA4CZ368809  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368809 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "55/WA4CZ368809.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368809 ;
-        adm:logEntry        bda:LGBB5474375D76D526 ;
+        adm:logEntry        bda:LG2ECCFEBAB87666AF , bda:LG5EF1E717EE34D839 , bda:LGBB5474375D76D526 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA4CZ368809  a      :Work ;
-        skos:prefLabel      "bod ljongs slob grwa chen mo'i rig deb kyi rig gzhung bcar 'drei'i zin tho phyogs sgrig"@bo-x-ewts ;
+        skos:prefLabel      "bod ljongs slob grwa chen mo'i rig deb kyi rig gzhung bcar 'dr'i zin tho phyogs sgrig"@bo-x-ewts ;
         :catalogInfo        "Compilation of interviews with Tibetan scholars on Tibetan language, culture, history, and religion and its different perspectives"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 ;
-        :workHasInstance    bdr:MW4CZ368809 ;
+        :workHasInstance    bdr:MW4CZ368809 , bdr:W4CZ368809 ;
         :workIsAbout        bdr:T212 .
 }

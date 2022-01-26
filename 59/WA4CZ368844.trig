@@ -12,21 +12,34 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368844 {
+    bda:LG14E676C45CE5FF0B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T14:46:29.181Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG7A5D157B9F695730
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-01-24T10:38:58.119Z"^^xsd:dateTime ;
         adm:logMessage      "new catalog"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGED9F172686A66324
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:12:03.879Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ368844  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368844 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "59/WA4CZ368844.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368844 ;
-        adm:logEntry        bda:LG7A5D157B9F695730 ;
+        adm:logEntry        bda:LG14E676C45CE5FF0B , bda:LG7A5D157B9F695730 , bda:LGED9F172686A66324 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW4CZ368844  skos:altLabel  "asoka"@en , "阿育王经"@zh-hans .
@@ -37,5 +50,5 @@ bdg:WA4CZ368844 {
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T769 ;
-        :workHasInstance    bdr:MW4CZ368844 .
+        :workHasInstance    bdr:MW4CZ368844 , bdr:W4CZ368844 .
 }

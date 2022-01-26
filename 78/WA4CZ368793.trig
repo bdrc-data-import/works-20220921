@@ -18,18 +18,31 @@ bdg:WA4CZ368793 {
         adm:logMessage      "new catalog and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG4C693B11A29EB120
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T09:53:14.493Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGD101E79B12F61575
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T09:57:03.738Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ368793  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368793 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "78/WA4CZ368793.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368793 ;
-        adm:logEntry        bda:LG0BEAC66DB991E66D ;
+        adm:logEntry        bda:LG0BEAC66DB991E66D , bda:LG4C693B11A29EB120 , bda:LGD101E79B12F61575 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4C693B11A29EB120
+    bdr:CR802203AB3B691E46
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG12918 ;
         :role               bdr:R0ER0019 .
@@ -37,9 +50,9 @@ bdg:WA4CZ368793 {
     bdr:WA4CZ368793  a      :Work ;
         skos:prefLabel      "bod kyi rig gnas rgyun shes/"@bo-x-ewts , "藏族文化常识"@zh-hans ;
         :catalogInfo        "On the study of Tibetan arts & sciences"@en ;
-        :creator            bdr:CR4C693B11A29EB120 ;
+        :creator            bdr:CR802203AB3B691E46 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ368793 ;
+        :workHasInstance    bdr:MW4CZ368793 , bdr:W4CZ368793 ;
         :workIsAbout        bdr:T229 , bdr:T4CZ368801 .
 }

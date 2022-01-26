@@ -18,18 +18,31 @@ bdg:WA4CZ368811 {
         adm:logMessage      "new catalog and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG73743E0B169229B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:50.44Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGB4C29E0A625FFA79
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T11:15:46.545Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ368811  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368811 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "30/WA4CZ368811.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368811 ;
-        adm:logEntry        bda:LG03603EDBAFCC3125 ;
+        adm:logEntry        bda:LG03603EDBAFCC3125 , bda:LG73743E0B169229B3 , bda:LGB4C29E0A625FFA79 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB4C29E0A625FFA79
+    bdr:CR43A87D79877713FE
         a                   :AgentAsCreator ;
         :agent              bdr:P6624 ;
         :role               bdr:R0ER0019 .
@@ -37,9 +50,9 @@ bdg:WA4CZ368811 {
     bdr:WA4CZ368811  a      :Work ;
         skos:prefLabel      "bod skad brda sprod kyi gnad don kha shas la dpyad pa rig 'phrul me long /"@bo-x-ewts ;
         :catalogInfo        "Study on dificult points of Tibetan grammar."@en ;
-        :creator            bdr:CRB4C29E0A625FFA79 ;
+        :creator            bdr:CR43A87D79877713FE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 , bdr:T218 ;
-        :workHasInstance    bdr:MW4CZ368811 .
+        :workHasInstance    bdr:MW4CZ368811 , bdr:W4CZ368811 .
 }

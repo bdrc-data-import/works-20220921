@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368830 {
+    bda:LG16DE7C9227429564
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T11:54:49.85Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG1881B4ADA7C54227
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-25T15:11:57.818Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restriction"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG6646209754FB2CF5
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-01-20T16:21:06.097Z"^^xsd:dateTime ;
@@ -21,31 +33,32 @@ bdg:WA4CZ368830 {
     bda:WA4CZ368830  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368830 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "0e/WA4CZ368830.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368830 ;
-        adm:logEntry        bda:LG6646209754FB2CF5 ;
+        adm:logEntry        bda:LG16DE7C9227429564 , bda:LG1881B4ADA7C54227 , bda:LG6646209754FB2CF5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR16DE7C9227429564
-        a                   :AgentAsCreator ;
-        :agent              bdr:P339 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR1881B4ADA7C54227
+    bdr:CR6C36EEF6F9ECD8BE
         a                   :AgentAsCreator ;
         :agent              bdr:P6971 ;
         :role               bdr:R0ER0026 .
     
+    bdr:CRD32156ADD38EDA7A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P339 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA4CZ368830  a      :Work ;
         skos:prefLabel      "mtsho sngon lo rgyus tshangs glu gsar snyan/"@bo-x-ewts , "青海历史梵普 旋律"@en-x-mixed ;
         :catalogInfo        "History of the annals of Kokonor"@en ;
-        :creator            bdr:CR16DE7C9227429564 , bdr:CR1881B4ADA7C54227 ;
+        :creator            bdr:CR6C36EEF6F9ECD8BE , bdr:CRD32156ADD38EDA7A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T240 ;
-        :workHasInstance    bdr:MW4CZ368830 ;
+        :workHasInstance    bdr:MW4CZ368830 , bdr:W4CZ368830 ;
         :workIsAbout        bdr:G977 .
 }

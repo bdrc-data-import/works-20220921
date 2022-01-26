@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368797 {
+    bda:LG4310DED9897EFBE9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-01-25T10:05:05.259Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGEFF722A7E1710959
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-01-24T10:10:05.322Z"^^xsd:dateTime ;
@@ -21,15 +27,15 @@ bdg:WA4CZ368797 {
     bda:WA4CZ368797  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368797 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "65/WA4CZ368797.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368797 ;
-        adm:logEntry        bda:LGEFF722A7E1710959 ;
+        adm:logEntry        bda:LG4310DED9897EFBE9 , bda:LGEFF722A7E1710959 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4310DED9897EFBE9
+    bdr:CR565A0A96A981F3F7
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG23772 ;
         :role               bdr:R0ER0019 .
@@ -39,8 +45,8 @@ bdg:WA4CZ368797 {
     bdr:WA4CZ368797  a      :Work ;
         skos:prefLabel      "bod kyi yul skad zhib 'jug"@bo-x-ewts , "藏语方言土话研究"@zh-hans ;
         :catalogInfo        "A research study on Tibetan dialect"@en ;
-        :creator            bdr:CR4310DED9897EFBE9 ;
+        :creator            bdr:CR565A0A96A981F3F7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ368797 .
+        :workHasInstance    bdr:MW4CZ368797 , bdr:W4CZ368797 .
 }
