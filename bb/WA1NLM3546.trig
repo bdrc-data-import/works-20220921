@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3546 {
+    bda:LG1A76E7DA356D9A4F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-26T09:29:12.387Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,26 @@ bdg:WA1NLM3546 {
     bda:WA1NLM3546  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3546 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "bb/WA1NLM3546.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3546 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG1A76E7DA356D9A4F , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR0584CC6C84FEA0D4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3546  a       :Work ;
         skos:prefLabel      "dam can chos kyi rgyal po'i gtor chog bskang gso bstod bskul dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 dam can chos kyi rgyal po gsang sgrub yi gtor chog dngos grub bang mdzod/ 2 yi dam mkha' 'gro chos bsrung spyi la sbyar rung ba'i bzlog pa'i cho ga mi mthun phyogs las rgyal ba'i ru mtshon/ 3 ngag byin rlabs gsung gsang nyi ma'i 'od zer/ 4 grub chen thang stong rgyal po'i lcags kyi grib glud bya tshul/ 5 'phags pa rgyal mtshan rtse mo'i dpun rgyan zhes bya ba'i gzungs/ 6 sri can sbubs gshig gi gdams pa/ 7 rje btsun sgrol ma 'gro ba 'gugs shing 'phongs sel ma la maN+Dal bzhi mchod kyi sgo nas gsol ba gdab tshul gyi cho ga kun du 'khyer bde/"@en , "Bali offering, regular propitiation, praise and exhortation of Damchen Chyogyal protector; other text also included."@en ;
+        :creator            bdr:CR0584CC6C84FEA0D4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3546 , bdr:W1NLM3546 .
+        :workGenre          bdr:T1458 , bdr:T67 ;
+        :workHasInstance    bdr:MW1NLM3546 , bdr:W1NLM3546 ;
+        :workIsAbout        bdr:T1736 , bdr:T19 , bdr:T198 .
 }

@@ -14,7 +14,8 @@
 bdg:WA1NLM2007 {
     bda:LG0B6BE00396D2731A
         a                   adm:UpdateData ;
-        adm:logDate         "2022-01-04T16:35:44.921Z"^^xsd:dateTime ;
+        adm:logDate         "2022-01-26T16:39:50.923Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGB3949A2357FAC0EA
@@ -32,7 +33,7 @@ bdg:WA1NLM2007 {
     bda:WA1NLM2007  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2007 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "32/WA1NLM2007.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2007 ;
@@ -40,9 +41,18 @@ bdg:WA1NLM2007 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR67CEB15CD404B32E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4943 ;
+        :role               bdr:R0ER0025 .
+    
     bdr:WA1NLM2007  a       :Work ;
         skos:prefLabel      "o rgyan pad+ma mdzad pa'i bka' thang bsdus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "A brief biography of Padmasambhava and included other texts of ritual and rites."@en ;
+        :creator            bdr:CR67CEB15CD404B32E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2007 , bdr:W1NLM2007 .
+        :workGenre          bdr:T1342 , bdr:T34 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2007 , bdr:W1NLM2007 ;
+        :workIsAbout        bdr:P4956 .
 }

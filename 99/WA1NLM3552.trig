@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3552 {
+    bda:LG371438C598BEFB6C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-26T15:12:34.89Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,26 @@ bdg:WA1NLM3552 {
     bda:WA1NLM3552  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3552 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "99/WA1NLM3552.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3552 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG371438C598BEFB6C , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR3ABF5DE2310F2DA3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3552  a       :Work ;
         skos:prefLabel      "dpal ldan lha mo'i cho ga dang 'brel bar ma mo'i 'khrugs skongs gtong tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 lha chen drag po gdong bzhi pa'i mngon rtogs bskang bshags bstod bskul dang bcas pa/ 2 lha chen tshangs pa chen po'i mngon rtogs bskang bshags bstod pa/ 3 sgrol ma maN+Dal bzhi pa'i cho ga'i 'don bsgrigs/ 4 'phags pa ye shes ta la la'i gzungs/ 5 dam tshigs rdo rje'i bzlas pa'i gnad/ 6 rdo rje mi 'khrugs pa'i rtsa sngags 'don thabs las sgrib rgyun gcod/ 7 dge ldan lugs bzang rgyas pa'i smon lam grub pa'i 'don tshig 8 dmigs brtse ma'i ril sgrub/"@en , "Process of Mamo's ritual practice through the ritual of Shridevi; other text also included."@en ;
+        :creator            bdr:CR3ABF5DE2310F2DA3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3552 , bdr:W1NLM3552 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3552 , bdr:W1NLM3552 ;
+        :workIsAbout        bdr:T339 , bdr:T401 , bdr:T97 .
 }

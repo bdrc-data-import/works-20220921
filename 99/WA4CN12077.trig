@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CN12077 {
+    bda:LG2B14200388C8D186
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-26T15:48:13.6Z"^^xsd:dateTime ;
+        adm:logMessage      "edited"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG63D23CB3978F4430
         a                   adm:UpdateData ;
         adm:logDate         "2021-07-14T22:37:30.629Z"^^xsd:dateTime ;
@@ -69,18 +75,25 @@ bdg:WA4CN12077 {
     bda:WA4CN12077  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CN12077 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "99/WA4CN12077.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CN12077 ;
-        adm:logEntry        bda:LG63D23CB3978F4430 , bda:LG933DEDB8FA1E1E37 , bda:LG9B682C385770ECB8 , bda:LGB5D4D99F1710991F , bda:LGBEF9493C23CF7F4A , bda:LGIM1E8DEFBA , bda:LGIM5A873C62 , bda:LGIM7725ADED , bda:LGIMBF9077E6 ;
+        adm:logEntry        bda:LG2B14200388C8D186 , bda:LG63D23CB3978F4430 , bda:LG933DEDB8FA1E1E37 , bda:LG9B682C385770ECB8 , bda:LGB5D4D99F1710991F , bda:LGBEF9493C23CF7F4A , bda:LGIM1E8DEFBA , bda:LGIM5A873C62 , bda:LGIM7725ADED , bda:LGIMBF9077E6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRF7B2B88B89E5D3C6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1033 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA4CN12077  a       :Work ;
-        skos:prefLabel      "mtho ling dpe rnying thor bu/"@bo-x-ewts ;
-        :catalogInfo        "This incomplete manuscript without title and colophon was discovered in Tholing monastery in Western Tibet.The author is unknown."@en ;
+        skos:altLabel       "mtho ling dpe rnying thor bu/"@bo-x-ewts ;
+        skos:prefLabel      "zla ba'i rigs kyi rgyal rabs thor bu/"@bo-x-ewts ;
+        :catalogInfo        "History of Tibet in general and especially on Western Tibet by Drakpa Gyaltsen. This incomplete manuscript without title and colophon was discovered in Tholing monastery in Western Tibet."@en ;
+        :creator            bdr:CRF7B2B88B89E5D3C6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T4CZ71 ;
