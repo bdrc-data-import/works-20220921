@@ -18,6 +18,11 @@ bdg:WA1NLM2011 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGEFEB59986438E055
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-27T16:38:43.057Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +32,30 @@ bdg:WA1NLM2011 {
     bda:WA1NLM2011  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2011 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "83/WA1NLM2011.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2011 ;
-        adm:logEntry        bda:LG9DC423CD298B2C82 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG9DC423CD298B2C82 , bda:LGEFEB59986438E055 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR2DF49C6A455AE378
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6126 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRDAFC1144A1C94FA1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7257 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2011  a       :Work ;
-        skos:prefLabel      "ngan song spyod rgyud sogs/"@bo-x-ewts ;
+        skos:prefLabel      "ngan song spyong rgyud sogs/"@bo-x-ewts ;
+        :catalogInfo        "Tantra concerning examination of defilements and its purification."@en ;
+        :creator            bdr:CR2DF49C6A455AE378 , bdr:CRDAFC1144A1C94FA1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T2129 ;
         :workHasInstance    bdr:MW1NLM2011 , bdr:W1NLM2011 .
 }
