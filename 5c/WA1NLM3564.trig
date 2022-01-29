@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3564 {
+    bda:LGF9B261937521A5C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-28T13:49:47.543Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,26 @@ bdg:WA1NLM3564 {
     bda:WA1NLM3564  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3564 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "5c/WA1NLM3564.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3564 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LGF9B261937521A5C0 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR8798859C8AB81CEE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3564  a       :Work ;
-        skos:prefLabel      "mig 'byed spyan ras gzigs kyi sgrub thabs sogs/"@bo-x-ewts ;
+        skos:prefLabel      "skyer sgang lugs kyi rta mgrin gsang sgrub kyi sgrub thabs rgyas pa rta mchog rol pa'i zhal lung la sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rje ngag dbang bstan pa'i rnam thar gsol 'debs/ 2 bshes gnyen bsten tshul gyi mi mthun phyogs gtso bor ngo shes pa'i sgo nas bsngo smon dang bcas gsol ba 'debs tshul snying gi mun sel/ 3 mgnon shes rdzu 'phrul me long gi sgrub thabs/ 4 phyag rdor bsangs/ 5 bar doi 'phrang sgrol gyi gsol 'debs 'jigs sgrol gyi dpa' bo/ 6 sham+b+ha la'i smon tshig 7 rdo rje rnal 'byor ma la brten pa'i sham+b+ha lar nges par skyed pa'i smon tshig drang srong bden tshig 8 sham+b+ha la'i smon tshig 9 nyams myong rgad po'i 'bel gtam yid 'byung dmar khrid/ 10 gtot ma byin rlabs kyi go rim/ 11 rta mrin yang gsang dang byer med kyi bla ma'i rnal 'byor/ 12 pad+ma yang gsang khros pa'i gtor 'bul/ 13 dur khrod bdag po'i gser skyems 'bul tshul/ 14 mtshams tho skyed chog 15 chos skyong dregs pa lcam sring gi gser skyems/ 16 me lha rgyal po'i bsangs mchod/ 17 sman gyi lha mo'i spra bsgrub kyi man ngag shel dkar me long / 18 'phags pa thugs rje chen po la bstod pa byin rlabs shin tu che ba/ 19 mig 'byed kyi spyan ras gzigs kyi sgrub thabs/"@en , "Sadhana of Hayagrva Guhyasadhana according to the Kyergang tradition; other text also included."@en ;
+        :creator            bdr:CR8798859C8AB81CEE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3564 , bdr:W1NLM3564 .
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM3564 , bdr:W1NLM3564 ;
+        :workIsAbout        bdr:T50 , bdr:T885 .
 }

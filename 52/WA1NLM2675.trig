@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2675 {
+    bda:LG5F79FFA415A44865
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-28T09:20:41.181Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG8B36571CD34ADA8A
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2675 {
     bda:WA1NLM2675  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2675 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "52/WA1NLM2675.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2675 ;
-        adm:logEntry        bda:LG8B36571CD34ADA8A , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG5F79FFA415A44865 , bda:LG8B36571CD34ADA8A , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2675  a       :Work ;
-        skos:prefLabel      "ye shes kyi mkha' 'gro ma seng+ge gdong pa can gyi bskang gso lhan thabs reg gzig tu 'god pa 'phrin las dngos grub kun gyi 'byung gnas zhes bya ba tshogs mchod 'khyer bde dang bcas pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "ye shes kyi mkha' 'gro ma seng+ge gdong pa can gyi bskang gso lhan thabs reg gzig tu 'god pa 'phrin las dngos grub kun gyi 'byung gnas zhes bya ba tshogs mchod 'khyer bde dang bcas pa/"@bo-x-ewts ;
+        skos:prefLabel      "mkha' 'gro ma seng+ge gdong pa can gyi bskang gso lhan thabs reg gzig tu 'god pa 'phrin las dngos grub kun gyi 'byung gnas zhes bya ba tshogs mchod 'khyer bde dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2675 , bdr:W1NLM2675 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2672 {
+    bda:LG2855E2CA9519E089
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-28T09:20:39.552Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG7D2F9AB8EABC3933
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,27 @@ bdg:WA1NLM2672 {
     bda:WA1NLM2672  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2672 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "4d/WA1NLM2672.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2672 ;
-        adm:logEntry        bda:LG7D2F9AB8EABC3933 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG2855E2CA9519E089 , bda:LG7D2F9AB8EABC3933 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR05CE909410D84838
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8864 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2672  a       :Work ;
-        skos:prefLabel      "dpal ldan dmag zor rgyal mo'i sgo nas rno mthong sgrub tshul de'i 'bras bshad dang bcas pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal ldan dmag zor rgyal mo'i sgo nas rno mthong sgrub tshul de'i 'bras bshad dang bcas pa/"@bo-x-ewts ;
+        skos:prefLabel      "dmag zor rgyal mo'i sgo nas rno mthong sgrub tshul de'i 'bras bshad dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "A dice prognostication of Shridevi and explanation of its result and miscellaneous rituals and liturgical texts"@en ;
+        :creator            bdr:CR05CE909410D84838 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2672 , bdr:W1NLM2672 .
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW1NLM2672 , bdr:W1NLM2672 ;
+        :workIsAbout        bdr:T405 , bdr:T926 .
 }

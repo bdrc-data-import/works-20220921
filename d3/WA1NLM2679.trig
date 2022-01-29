@@ -18,6 +18,12 @@ bdg:WA1NLM2679 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGEB1FEB60D893C73C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-28T09:20:43.414Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2679 {
     bda:WA1NLM2679  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2679 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d3/WA1NLM2679.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2679 ;
-        adm:logEntry        bda:LG590A6EEF22F7FFCF , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG590A6EEF22F7FFCF , bda:LGEB1FEB60D893C73C , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2679  a       :Work ;
-        skos:prefLabel      "dpal rdo rje 'jigs byed kyi sgrub thabs mdor bsdus bskyed rim gyi gnad tshang ba sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal rdo rje 'jigs byed kyi sgrub thabs mdor bsdus bskyed rim gyi gnad tshang ba/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje 'jigs byed kyi sgrub thabs mdor bsdus bskyed rim gyi gnad tshang ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2679 , bdr:W1NLM2679 .
 }
