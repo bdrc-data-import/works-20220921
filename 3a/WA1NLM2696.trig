@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2696 {
+    bda:LG0AD25ED3CC3655C4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-31T17:20:40.863Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG9DC77730C463C23F
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM2696 {
     bda:WA1NLM2696  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2696 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "3a/WA1NLM2696.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2696 ;
-        adm:logEntry        bda:LG9DC77730C463C23F , bda:LGIM092D623C ;
+        adm:logEntry        bda:LG0AD25ED3CC3655C4 , bda:LG9DC77730C463C23F , bda:LGIM092D623C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR701D2563D49E06A6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4984 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2696  a       :Work ;
-        skos:prefLabel      "sman gzhung khungs ma rnams las nad kyi rtags bcos sogs thor bur 'byung ba phyogs gcig tu bsgrigs pa gces btus snying nor/"@bo-x-ewts ;
+        skos:altLabel       "sman gzhung khungs ma rnams las nad kyi rtags bcos sogs thor bur 'byung ba phyogs gcig tu bsgrigs pa gces btus snying nor/"@bo-x-ewts ;
+        skos:prefLabel      "sman gzhung gces btus snying nor/"@bo-x-ewts ;
+        :catalogInfo        "A compilation of diagnosis of diseases and its methods of treatment"@en ;
+        :creator            bdr:CR701D2563D49E06A6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2696 , bdr:W1NLM2696 .
+        :workHasInstance    bdr:MW1NLM2696 , bdr:W1NLM2696 ;
+        :workIsAbout        bdr:T1650 , bdr:T85 .
 }

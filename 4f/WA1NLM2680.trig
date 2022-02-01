@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2680 {
+    bda:LG0E06AC722BFB34ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-31T12:56:37.633Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGC187D58322EC9D73
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,21 @@ bdg:WA1NLM2680 {
     bda:WA1NLM2680  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2680 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "4f/WA1NLM2680.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2680 ;
-        adm:logEntry        bda:LGC187D58322EC9D73 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG0E06AC722BFB34ED , bda:LGC187D58322EC9D73 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2680  a       :Work ;
-        skos:prefLabel      "zab don snyan brgyud kyi gcod gzhung zab mo gcod kyi man ngag blo gros mig 'byed sogs/"@bo-x-ewts ;
+        skos:altLabel       "zab don snyan brgyud kyi gcod gzhung zab mo gcod kyi man ngag blo gros mig 'byed/"@bo-x-ewts ;
+        skos:prefLabel      "gcod gzhung zab mo gcod kyi man ngag blo gros mig 'byed sogs/"@bo-x-ewts ;
+        :catalogInfo        "A detailed exegesis of the gcod practices and commentary on the syllables of a devotional verse of the gcod tradition and other miscellaneous rituals."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2680 , bdr:W1NLM2680 .
+        :workGenre          bdr:T1CZ56 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2680 , bdr:W1NLM2680 ;
+        :workIsAbout        bdr:T194 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3573 {
+    bda:LG4753FE1E93EF1041
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-31T14:17:15.937Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,25 @@ bdg:WA1NLM3573 {
     bda:WA1NLM3573  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3573 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "57/WA1NLM3573.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3573 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG4753FE1E93EF1041 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4667936D8F7D9E5E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1002 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3573  a       :Work ;
         skos:prefLabel      "las dang po nye bar mkho ba'i byang chub tu bgrod pa'i bde lam/"@bo-x-ewts ;
+        :catalogInfo        "Graduated approach by Ngagchen Konchok Gyaltshen."@en ;
+        :creator            bdr:CR4667936D8F7D9E5E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T238 ;
         :workHasInstance    bdr:MW1NLM3573 , bdr:W1NLM3573 .
 }

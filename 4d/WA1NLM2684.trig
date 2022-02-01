@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2684 {
+    bda:LG84E905EFE7F4C760
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-31T12:56:38.645Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGEF34ED478CB64850
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM2684 {
     bda:WA1NLM2684  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2684 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "4d/WA1NLM2684.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2684 ;
-        adm:logEntry        bda:LGEF34ED478CB64850 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG84E905EFE7F4C760 , bda:LGEF34ED478CB64850 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2684  a       :Work ;
-        skos:prefLabel      "bcom ldan 'das 'jam dpal gshin rje'i gshed dang ye shes kyi mgon po mgon dkar yid bzhin nor bu sogs nor lha gzhan dang 'brel nas bkra shis kyi dge mtshan phun gsum tshogs par byed pa'i cho ga bsam 'phel dbang gi rgyal po sogs/"@bo-x-ewts ;
+        skos:altLabel       "bcom ldan 'das 'jam dpal gshin rje'i gshed dang ye shes kyi mgon po mgon dkar yid bzhin nor bu sogs nor lha gzhan dang 'brel nas bkra shis kyi dge mtshan phun gsum tshogs par byed pa'i cho ga bsam 'phel dbang gi rgyal po/"@bo-x-ewts ;
+        skos:prefLabel      "'jam dpal gshin rje'i gshed dang ye shes kyi mgon po mgon dkar yid bzhin nor bu sogs nor lha gzhan dang 'brel nas bkra shis kyi dge mtshan phun gsum tshogs par byed pa'i cho ga bsam 'phel dbang gi rgyal po sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2684 , bdr:W1NLM2684 .
 }

@@ -18,6 +18,11 @@ bdg:WA1NLM2691 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG7DD34BA9F37C255A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-01-31T12:56:40.463Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +32,21 @@ bdg:WA1NLM2691 {
     bda:WA1NLM2691  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2691 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "06/WA1NLM2691.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2691 ;
-        adm:logEntry        bda:LG5ADAF7527462A930 , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG5ADAF7527462A930 , bda:LG7DD34BA9F37C255A , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2691  a       :Work ;
-        skos:prefLabel      "dpal ldan lha mo dmag zor ma'i sgo nas rno mthong sgrub tshul de'i 'bras bshad dang sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal ldan lha mo dmag zor ma'i sgo nas rno mthong sgrub tshul de'i 'bras bshad dang bcas pa/"@bo-x-ewts ;
+        skos:prefLabel      "dmag zor ma'i sgo nas rno mthong sgrub tshul de'i 'bras bshad dang sogs/"@bo-x-ewts ;
+        :catalogInfo        "A dice prognostication of glorious army-repulsing queen and explanation of its result and other collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2691 , bdr:W1NLM2691 .
+        :workGenre          bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2691 , bdr:W1NLM2691 ;
+        :workIsAbout        bdr:T405 .
 }
