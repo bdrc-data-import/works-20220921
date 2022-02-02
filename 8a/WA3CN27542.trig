@@ -14,14 +14,14 @@
 bdg:WA3CN27542 {
     bda:LGEA71BBF2FFCBBD06
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-31T17:36:08.605Z"^^xsd:dateTime ;
-        adm:logMessage      "testing"@en ;
+        adm:logDate         "2022-01-16T10:15:24.082Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGF6156784E046B94F
-        a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-01-31T17:41:03.716Z"^^xsd:dateTime ;
-        adm:logMessage      "added volumeMap for scan request"@en ;
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-01T17:00:12.448Z"^^xsd:dateTime ;
+        adm:logMessage      "added v#"@en ;
         adm:logWho          bdu:U00007 .
     
     bda:LGF8C9D69B0F463D56
@@ -42,7 +42,11 @@ bdg:WA3CN27542 {
         adm:status          bda:StatusReleased .
     
     bdr:WA3CN27542  a       :Work ;
-        skos:prefLabel      "testing /"@bo-x-ewts ;
+        skos:prefLabel      "sa lugs gzhung gdams man ngag sna tshogs kyi bris dpe phyogs bsdus/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Sakya traditional manuscript texts."@en ;
         :isRoot             true ;
-        :workHasInstance    bdr:MW3CN27542 , bdr:W3CN27542 .
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW3CN27542 ;
+        :workIsAbout        bdr:T617 .
 }

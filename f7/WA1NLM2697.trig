@@ -18,6 +18,12 @@ bdg:WA1NLM2697 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGDE5C8B6EFC69CD19
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-01T16:08:22.778Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM11768AC0  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-09-18T17:08:04.78Z"^^xsd:dateTime ;
@@ -27,17 +33,31 @@ bdg:WA1NLM2697 {
     bda:WA1NLM2697  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2697 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "f7/WA1NLM2697.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2697 ;
-        adm:logEntry        bda:LG3E064B174D01C66B , bda:LGIM11768AC0 ;
+        adm:logEntry        bda:LG3E064B174D01C66B , bda:LGDE5C8B6EFC69CD19 , bda:LGIM11768AC0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR5DAD4CBCAA8A6AB6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR990558315F6164F1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P162 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2697  a       :Work ;
         skos:prefLabel      "bla ma'i bka' drin gsol 'debs dngos grub myur du 'gugs pa'i lcags kyu sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instructional manual of graduated approach and detailed exegesis of the esoteric meditation-devotional practice (guhya sadhana) focussing upon vajrayogini"@en ;
+        :creator            bdr:CR5DAD4CBCAA8A6AB6 , bdr:CR990558315F6164F1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2697 , bdr:W1NLM2697 .
+        :workGenre          bdr:T238 ;
+        :workHasInstance    bdr:MW1NLM2697 , bdr:W1NLM2697 ;
+        :workIsAbout        bdr:T428 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG15037 {
+    bda:LG0091098E1099A9BC
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-01T18:39:19.371Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected title"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG12D6D8E1C442286D
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-02T17:19:16.111Z"^^xsd:dateTime ;
@@ -59,28 +65,28 @@ bdg:WA1KG15037 {
     bda:WA1KG15037  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG15037 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "62/WA1KG15037.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG15037 ;
-        adm:logEntry        bda:LG12D6D8E1C442286D , bda:LG3536ABEBF70D2876 , bda:LG72DCA3A1C910970C , bda:LG99D9422F2197787F , bda:LGDFD76E959B8D89E8 , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG0091098E1099A9BC , bda:LG12D6D8E1C442286D , bda:LG3536ABEBF70D2876 , bda:LG72DCA3A1C910970C , bda:LG99D9422F2197787F , bda:LGDFD76E959B8D89E8 , bda:LGIME8C00CAB64 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0091098E1099A9BC
+    bdr:CR67F69E606A155C6F
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG15038 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1KG15037  a       :Work ;
         skos:altLabel       "Catalogue du Tanǰur Mongol imprimé,par Rintchen."@en-x-mixed ;
-        skos:prefLabel      "sog yig bka' 'gyur gyi dkar chag"@bo-x-ewts , "catalogue du tanjur mongol imprime"@en ;
+        skos:prefLabel      "sog yig bstan 'gyur gyi dkar chag"@bo-x-ewts , "catalogue du tanjur mongol imprime"@en ;
         :catalogInfo        "Catalog of the Mongolian Tengyur."@en ;
-        :creator            bdr:CR0091098E1099A9BC ;
+        :creator            bdr:CR67F69E606A155C6F ;
         :isRoot             true ;
         :language           bdr:LangMn , bdr:LangSa ;
         :workGenre          bdr:T13 ;
         :workHasInstance    bdr:MW1KG15037 , bdr:W1KG15037 ;
-        :workIsAbout        bdr:T2423 , bdr:WA4CZ5370 .
+        :workIsAbout        bdr:T3CN2023 .
 }
