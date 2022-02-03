@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2708 {
+    bda:LG3E4BE5CD3650C4E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-02T15:17:14.048Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGEEB39A9561A23E9F
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2708 {
     bda:WA1NLM2708  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2708 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "22/WA1NLM2708.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2708 ;
-        adm:logEntry        bda:LGEEB39A9561A23E9F , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG3E4BE5CD3650C4E5 , bda:LGEEB39A9561A23E9F , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2708  a       :Work ;
         skos:prefLabel      "ma gcig grub pa'i rgyal mo'i lugs kyi tshe dpag med la brten nas 'chi med tshe'i ril bur sgrub pa'i mdzad pa dag sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2708 , bdr:W1NLM2708 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2708 , bdr:W1NLM2708 ;
+        :workIsAbout        bdr:T541 .
 }

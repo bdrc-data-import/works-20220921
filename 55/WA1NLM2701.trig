@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2701 {
+    bda:LG32FCF31FB1BD9567
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-02T15:17:12.273Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG5E5A06D889604735
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2701 {
     bda:WA1NLM2701  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2701 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "55/WA1NLM2701.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2701 ;
-        adm:logEntry        bda:LG5E5A06D889604735 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG32FCF31FB1BD9567 , bda:LG5E5A06D889604735 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2701  a       :Work ;
-        skos:prefLabel      "ye shes kyi mkha' 'gro ma seng ge'i gdong pa can gyi sgrub thabs bdag mdun bzlog bsgyur dang bcas pa dpal ldan bkra shis sgo mang gi 'don cha bzhin bsgrigs shing bskang bshags dang gtor zor 'phen tshul sogs rang phyogs chog bsgrigs cha tshang ba sogs/"@bo-x-ewts ;
+        skos:altLabel       "ye shes kyi mkha' 'gro ma seng ge'i gdong pa can gyi sgrub thabs bdag mdun bzlog bsgyur dang bcas pa dpal ldan bkra shis sgo mang gi 'don cha bzhin bsgrigs shing bskang bshags dang gtor zor 'phen tshul sogs rang phyogs chog bsgrigs cha tshang ba/"@bo-x-ewts ;
+        skos:prefLabel      "seng gdong maii sgrub thabs bdag mdun bzlog bsgyur dang bcas pa dpal ldan bkra shis sgo mang gi 'don cha bzhin bsgrigs shing bskang bshags dang gtor zor 'phen tshul sogs rang phyogs chog bsgrigs cha tshang ba/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2701 , bdr:W1NLM2701 .
 }
