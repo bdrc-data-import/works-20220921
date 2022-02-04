@@ -18,6 +18,12 @@ bdg:WA1NLM2018 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LG4E7BE37AF56EB18E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-03T17:23:48.227Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2018 {
     bda:WA1NLM2018  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2018 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a1/WA1NLM2018.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2018 ;
-        adm:logEntry        bda:LG18939443D169867C , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG18939443D169867C , bda:LG4E7BE37AF56EB18E , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2018  a       :Work ;
         skos:prefLabel      "lha mo bu rdzi ma'i sgo nas sri'u gso ba'i ched du maN+Dal 'bul ba sogs kyi cho ga rdo rje rin po che'i khang bzang sogs/"@bo-x-ewts ;
+        :catalogInfo        "A ritual of offering to deity Lhamo Budzima to nourish infant and exorcise of negative forces etc."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2018 , bdr:W1NLM2018 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2018 , bdr:W1NLM2018 ;
+        :workIsAbout        bdr:T1227 , bdr:T1726 , bdr:T583 , bdr:T937 .
 }

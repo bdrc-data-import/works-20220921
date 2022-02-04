@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2718 {
+    bda:LG052020A69D9A89A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-03T12:29:07.196Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGD62BB745CB9DC094
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,27 @@ bdg:WA1NLM2718 {
     bda:WA1NLM2718  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2718 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "64/WA1NLM2718.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2718 ;
-        adm:logEntry        bda:LGD62BB745CB9DC094 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG052020A69D9A89A2 , bda:LGD62BB745CB9DC094 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR0C0475DCEB9421F2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2718  a       :Work ;
-        skos:prefLabel      "rje btsun seng+ge'i sgra dang phyag rdor la brten pa'i gdon 'grol byed tshul gdung sel nor bu'i zla ba sogs/"@bo-x-ewts ;
+        skos:altLabel       "rje btsun seng+ge'i sgra dang phyag rdor la brten pa'i gdon 'grol byed tshul gdung sel nor bu'i zla ba/"@bo-x-ewts ;
+        skos:prefLabel      "seng+ge'i sgra dang phyag rdor la brten pa'i gdon 'grol byed tshul gdung sel nor bu'i zla sogs/"@bo-x-ewts ;
+        :catalogInfo        "Repelling spirit through Simhanatha and Vajrapani deity ritual and other miscellaneous rituals and liturgical texts"@en ;
+        :creator            bdr:CR0C0475DCEB9421F2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2718 , bdr:W1NLM2718 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2718 , bdr:W1NLM2718 ;
+        :workIsAbout        bdr:T2050 , bdr:T605 .
 }

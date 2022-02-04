@@ -18,6 +18,11 @@ bdg:WA1NLM2716 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGEB4080AB9CEEC4C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-03T12:29:06.708Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIMD3D03661  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM2716 {
     bda:WA1NLM2716  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2716 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "06/WA1NLM2716.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2716 ;
-        adm:logEntry        bda:LG1AA38E9DD173A7CF , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG1AA38E9DD173A7CF , bda:LGEB4080AB9CEEC4C0 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2716  a       :Work ;
-        skos:prefLabel      "phyag rdor gos sngon can gyi sgrub thabs dang rgyal chen rnam thos sras la brten nas byin 'bebs dang g.yang 'gug byed tshul bklag chog ma dang bcas pa rnams pa sogs/"@bo-x-ewts ;
+        skos:prefLabel      "phyag rdor gos sngon can gyi sgrub thabs dang rgyal chen rnam thos sras la brten nas byin 'bebs dang g.yang 'gug byed tshul bklag chog ma sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instructional method for prepartion of medicine by Lhatsun Tenpe Gyaltshen and other miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2716 , bdr:W1NLM2716 .
+        :workGenre          bdr:T456 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2716 , bdr:W1NLM2716 ;
+        :workIsAbout        bdr:T86 .
 }

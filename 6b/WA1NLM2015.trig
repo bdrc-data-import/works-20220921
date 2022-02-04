@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2015 {
+    bda:LG4C8A8B78AC188AD9
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-03T17:23:46.907Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG9D9530DD4796171A
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2015 {
     bda:WA1NLM2015  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2015 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "6b/WA1NLM2015.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2015 ;
-        adm:logEntry        bda:LG9D9530DD4796171A , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG4C8A8B78AC188AD9 , bda:LG9D9530DD4796171A , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2015  a       :Work ;
         skos:prefLabel      "lha mo 'od zer ma la brten nas bzlog bsgyur bya tshul mi mthun g.yul las rgyal ba'i mtshon cha sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of ritual texts concerned with vidhi of exorcism of negative forces; offering beverage and others."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2015 , bdr:W1NLM2015 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2015 , bdr:W1NLM2015 ;
+        :workIsAbout        bdr:T1345 , bdr:T1726 , bdr:T1CZ14 , bdr:T1CZ19 .
 }
