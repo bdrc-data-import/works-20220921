@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3587 {
+    bda:LGB57627AACEF74214
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-04T11:05:01.314Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, content, cat and pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,25 @@ bdg:WA1NLM3587 {
     bda:WA1NLM3587  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3587 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d3/WA1NLM3587.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3587 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LGB57627AACEF74214 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR63D61A15E4B9883E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P37 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3587  a       :Work ;
         skos:prefLabel      "rgyal po chen po sde lnga la gsol mchod 'bul tshul 'phrin las 'gag med rdo rje'i sgra dbyangs sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 myur mdzad ye shes kyi mgon po phyag drug pa'i gtor chog bskang gso cha lag dang bcas pa/ 2 chos skyong dregs pa lcam sring gi mngon rtogs bskang bshags bstod bskul dang bcas pa/ 3 slob dpon chen pa pad+ma kA ra'i zhabs kyis mdzad pa'i 'bum bsangs baiDUrya'i sngon po bkra shis 'dod pa'i re skong ma/ 4 bla ma mchod pa'i tshogs mchod/"@en , "Ritual for offering of the five king type protector; other text also included."@en ;
+        :creator            bdr:CR63D61A15E4B9883E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3587 , bdr:W1NLM3587 .
+        :workHasInstance    bdr:MW1NLM3587 , bdr:W1NLM3587 ;
+        :workIsAbout        bdr:T1738 , bdr:T249 .
 }

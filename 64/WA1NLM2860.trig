@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2860 {
+    bda:LG94D3DD965C5BAF2C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-04T15:30:06.143Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P2KG230063 to P7809"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGC172E6E933ED7890
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -33,28 +39,28 @@ bdg:WA1NLM2860 {
     bda:WA1NLM2860  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2860 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "64/WA1NLM2860.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2860 ;
-        adm:logEntry        bda:LGC172E6E933ED7890 , bda:LGCB407056F151E603 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG94D3DD965C5BAF2C , bda:LGC172E6E933ED7890 , bda:LGCB407056F151E603 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR789F5C12CF4BAFE6
         a                   :AgentAsCreator ;
-        :agent              bdr:P2KG230063 ;
+        :agent              bdr:P272 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR94D3DD965C5BAF2C
+    bdr:CRCA1B279993D9C5B8
         a                   :AgentAsCreator ;
-        :agent              bdr:P272 ;
+        :agent              bdr:P7809 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1NLM2860  a       :Work ;
         skos:prefLabel      "gsang chen rgyud sde bzhi'i sa lam gyi rnam gzhag rgyud gzhung gsal byed sogs/"@bo-x-ewts ;
         :catalogInfo        "Analysis of four classes of tantra's paths and bhumis by Khalkha Ngawang Palden; and explanation on paths and bhumis for the beginner learners and Vinaya by Loling Lobsang Tsering."@en ;
-        :creator            bdr:CR789F5C12CF4BAFE6 , bdr:CR94D3DD965C5BAF2C ;
+        :creator            bdr:CR789F5C12CF4BAFE6 , bdr:CRCA1B279993D9C5B8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 ;
