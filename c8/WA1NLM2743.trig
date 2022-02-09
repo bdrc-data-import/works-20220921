@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2743 {
+    bda:LG0FC7C8F3CA5B9B14
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-08T15:22:20.727Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG70A94FEE28102C47
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM2743 {
     bda:WA1NLM2743  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2743 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "c8/WA1NLM2743.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2743 ;
-        adm:logEntry        bda:LG70A94FEE28102C47 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG0FC7C8F3CA5B9B14 , bda:LG70A94FEE28102C47 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2743  a       :Work ;
-        skos:prefLabel      "mthar pa chen po/"@bo-x-ewts ;
+        skos:altLabel       "mthar pa chen po/"@bo-x-ewts ;
+        skos:prefLabel      "thar pa chen po/"@bo-x-ewts ;
+        :catalogInfo        "The Sutra of Great Liberation"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
         :workHasInstance    bdr:MW1NLM2743 , bdr:W1NLM2743 .
 }

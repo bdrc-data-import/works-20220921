@@ -18,6 +18,17 @@ bdg:WA1NLM2742 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG76FD7EA6293314A7
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-08T11:02:38.615Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG93DC35C29B846D44
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-08T15:22:20.439Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIMD3D03661  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
@@ -27,17 +38,31 @@ bdg:WA1NLM2742 {
     bda:WA1NLM2742  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2742 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "62/WA1NLM2742.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2742 ;
-        adm:logEntry        bda:LG342806C2B89BD6B8 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG342806C2B89BD6B8 , bda:LG76FD7EA6293314A7 , bda:LG93DC35C29B846D44 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR6A321D2C07126609
+        a                   :AgentAsCreator ;
+        :agent              bdr:P292 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR9892395051B0CFA0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2742  a       :Work ;
-        skos:prefLabel      "rtsis kyi bstan bcos mkhas pa'i snying nor zhes bya ba sogs/"@bo-x-ewts ;
+        skos:altLabel       "rtsis kyi bstan bcos mkhas pa'i snying nor/"@bo-x-ewts ;
+        skos:prefLabel      "thu'u bkwan rtsis gzhung /"@bo-x-ewts ;
+        :catalogInfo        "A detailed introduction to tibetan astrological and calendrical calculations."@en ;
+        :creator            bdr:CR6A321D2C07126609 , bdr:CR9892395051B0CFA0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T203 ;
         :workHasInstance    bdr:MW1NLM2742 , bdr:W1NLM2742 .
 }
