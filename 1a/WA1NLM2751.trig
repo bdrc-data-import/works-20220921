@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2751 {
+    bda:LG4AA98C562B3C441C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-10T09:52:15.637Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG87D5DABD4CB3D2FD
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,27 @@ bdg:WA1NLM2751 {
     bda:WA1NLM2751  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2751 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "1a/WA1NLM2751.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2751 ;
-        adm:logEntry        bda:LG87D5DABD4CB3D2FD , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG4AA98C562B3C441C , bda:LG87D5DABD4CB3D2FD , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR8BC26F2E94C03276
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4943 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2751  a       :Work ;
-        skos:prefLabel      "gu ru pad+ma 'byung gnas kyi skyes rabs rnam par thar ba/"@bo-x-ewts ;
+        skos:altLabel       "gu ru pad+ma 'byung gnas kyi skyes rabs rnam par thar ba/"@bo-x-ewts ;
+        skos:prefLabel      "pad+ma bka' thang /"@bo-x-ewts ;
+        :catalogInfo        "Revealed account of Padmasambhava and the teachings of Buddhism during the Imperial Period of the 8th century. Rediscovered by the terton Orgyan Lingpa."@en ;
+        :creator            bdr:CR8BC26F2E94C03276 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2751 , bdr:W1NLM2751 .
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW1NLM2751 , bdr:W1NLM2751 ;
+        :workIsAbout        bdr:P4956 .
 }

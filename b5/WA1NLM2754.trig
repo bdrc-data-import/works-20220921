@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2754 {
+    bda:LG57B4EDC8898CBE5F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-10T09:52:16.65Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG66B8B7033FD93DD6
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2754 {
     bda:WA1NLM2754  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2754 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b5/WA1NLM2754.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2754 ;
-        adm:logEntry        bda:LG66B8B7033FD93DD6 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG57B4EDC8898CBE5F , bda:LG66B8B7033FD93DD6 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2754  a       :Work ;
-        skos:prefLabel      "'phags pa shes rab kyi pha rol tu phyin pa brgyad stong pa/"@bo-x-ewts ;
+        skos:altLabel       "'phags pa shes rab kyi pha rol tu phyin pa brgyad stong pa/"@bo-x-ewts ;
+        skos:prefLabel      "brgyad stong pa/"@bo-x-ewts ;
+        :catalogInfo        "Prajnaparamita in eight thousand verses."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2754 , bdr:W1NLM2754 .
+        :workHasInstance    bdr:MW1NLM2754 , bdr:W1NLM2754 ;
+        :workIsAbout        bdr:T2005 .
 }

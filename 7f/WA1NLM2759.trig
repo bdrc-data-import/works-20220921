@@ -18,6 +18,12 @@ bdg:WA1NLM2759 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGB5B3E680764E1E7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-10T09:52:17.97Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIMD3D03661  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2759 {
     bda:WA1NLM2759  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2759 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "7f/WA1NLM2759.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2759 ;
-        adm:logEntry        bda:LG5130C3CCF47CD13D , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG5130C3CCF47CD13D , bda:LGB5B3E680764E1E7F , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2759  a       :Work ;
-        skos:prefLabel      "mthar pa chen po sogs/"@bo-x-ewts ;
+        skos:altLabel       "mthar gyi rim gro byed pa/"@bo-x-ewts , "mthar pa chen po/"@bo-x-ewts , "sngags 'di dus gcig la lan brgya rtsa brgyad bzlas shing mchod rten la bzhugs pa/"@bo-x-ewts ;
+        skos:prefLabel      "thar mdo/"@bo-x-ewts ;
+        :catalogInfo        "The Sutra of Great Liberation"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T769 ;
         :workHasInstance    bdr:MW1NLM2759 , bdr:W1NLM2759 .
 }
