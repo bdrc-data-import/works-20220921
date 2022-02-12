@@ -24,6 +24,12 @@ bdg:WA1NLM2743 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGF8B1A1CC697D9BA6
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-11T17:19:19.072Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIMD3D03661  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
@@ -33,17 +39,17 @@ bdg:WA1NLM2743 {
     bda:WA1NLM2743  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2743 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "c8/WA1NLM2743.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2743 ;
-        adm:logEntry        bda:LG0FC7C8F3CA5B9B14 , bda:LG70A94FEE28102C47 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG0FC7C8F3CA5B9B14 , bda:LG70A94FEE28102C47 , bda:LGF8B1A1CC697D9BA6 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2743  a       :Work ;
         skos:altLabel       "mthar pa chen po/"@bo-x-ewts ;
-        skos:prefLabel      "thar pa chen po/"@bo-x-ewts ;
+        skos:prefLabel      "thar mdo/"@bo-x-ewts ;
         :catalogInfo        "The Sutra of Great Liberation"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;

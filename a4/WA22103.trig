@@ -31,8 +31,10 @@ bdg:WA22103 {
         adm:logWho          bdu:U00020 .
     
     bda:LG29A15B7CA40E3A5E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-11T13:22:30.977Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected encoding"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG5468047A705264B0
         a                   adm:UpdateData ;
@@ -51,6 +53,10 @@ bdg:WA22103 {
         adm:logDate         "2006-11-15T11:49:50.096Z"^^xsd:dateTime ;
         adm:logMessage      "added to TBRC Core Text Collection 4"@en ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGF531E710C38A8A8C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -104,32 +110,32 @@ bdg:WA22103 {
     bda:WA22103  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22103 ;
-        adm:facetIndex      22 ;
+        adm:facetIndex      23 ;
         adm:gitPath         "a4/WA22103.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22103 ;
-        adm:logEntry        bda:LG026D2E9099780D14 , bda:LG0B51AE6E187C01A5 , bda:LG2935EFB10CD28C6D , bda:LG29A15B7CA40E3A5E , bda:LG5468047A705264B0 , bda:LG79A3B83BC2F6BFE4 , bda:LGD1B52CCA0A2A2C42 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM84B17F7EDC , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG026D2E9099780D14 , bda:LG0B51AE6E187C01A5 , bda:LG2935EFB10CD28C6D , bda:LG29A15B7CA40E3A5E , bda:LG5468047A705264B0 , bda:LG79A3B83BC2F6BFE4 , bda:LGD1B52CCA0A2A2C42 , bda:LGF531E710C38A8A8C , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM84B17F7EDC , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR116740318EE0EBEC
         a                   :AgentAsCreator ;
-        :agent              bdr:P5264 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRF531E710C38A8A8C
-        a                   :AgentAsCreator ;
         :agent              bdr:P2627 ;
         :role               bdr:R0ER0019 .
     
-    bdr:MW22103  skos:altLabel  "encyclopedia tibetica"@en .
+    bdr:CR9603074BD7F2EC39
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5264 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:MW22103  skos:altLabel  "encyclopedia tibetica: the collected works of bo-dong pan-chen phyogs-las-rnam-rgyal"@en .
     
     bdr:WA22103  a          :Work ;
-        skos:altLabel       "de nyid 'dus rgyas 'bring bsdus kyi skor/"@bo-x-ewts , "Encyclopedia Tibetica :the collected works of Bo-doṅ Paṇ-chen Phyogs-las-rnam-rgyal /edited by S. T. Kazi."@en-x-mixed , "Encyclopedia Tibetica.Volume 1 [KA] :the collected works of Bo-doṅ Paṇ-chen Phyogs-las-rnam-rgyal /edited by S.T. Kazi."@en-x-mixed , "Encyclopedia Tibetica.Volume 15 [PHA] :the collected works of Bo-doṅ Paṇ-chen Phyogs-las-rnam-rgyal /edited by S.T. Kazi."@en-x-mixed , "Encyclopedia Tibetica.Volume 2 [KHA] :the collected works of Bo-doṅ Paṇ-chen Phyogs-las-rnam-rgyal /edited by S.T. Kazi."@en-x-mixed , "Encyclopedia Tibetica.Volume 8 [DZA] :the collected works of Bo-doṅ Paṇ-chen Phyogs-las-rnam-rgyal /edited by S.T. Kazi."@en-x-mixed , "Encyclopedia Tibetica.Volume 9 :the collected works of Bo-doṅ Paṇ-chen Phyogs-las-rnam-rgyal /edited by S.T. Kazi."@en-x-mixed ;
-        skos:prefLabel      "gsung 'bum/_phyogs las rnam rgyal/"@bo-x-ewts , "encyclopedia tibetica"@en ;
+        skos:altLabel       "bo dong paN chen phyogs las rnam rgyal gyi gsung 'bum/"@bo-x-ewts , "de nyid 'dus rgyas 'bring bsdus kyi skor/"@bo-x-ewts , "Encyclopedia Tibetica :the collected works of Bo-doṅ Paṇ-chen Phyogs-las-rnam-rgyal /edited by S. T. Kazi."@en-x-mixed ;
+        skos:prefLabel      "gsung 'bum/_phyogs las rnam rgyal/"@bo-x-ewts , "encyclopedia tibetica: the collected works of bo-dong pan-chen phyogs-las-rnam-rgyal"@en ;
         :catalogInfo        "Collected Works by Bodong Panchen Chokle Namgyal (1376-1451), one of the great minds to appear in Tibet. Four Denyi Dupa collections comprise a magnificent compendia of tantric knowledge as known in the first half of the 15th century. The Denyi Dupa Gyepa, which forms the greatest majority of these 137 volumes, can be considered as an early Tengyur with writings by Tibetan authors. Scanning of these volumes of the Denyi Dupa collections was undertaken under a cooperative agreement with Doboom Rinpoche of Tibet House New Delhi, the original publisher."@en ;
-        :creator            bdr:CR116740318EE0EBEC , bdr:CRF531E710C38A8A8C ;
+        :creator            bdr:CR116740318EE0EBEC , bdr:CR9603074BD7F2EC39 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;
