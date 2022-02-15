@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2775 {
+    bda:LG0AEF4E93C96976A0
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-14T16:17:39.267Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG39E24D6F9BA5C7BA
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,19 @@ bdg:WA1NLM2775 {
     bda:WA1NLM2775  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2775 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "20/WA1NLM2775.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2775 ;
-        adm:logEntry        bda:LG39E24D6F9BA5C7BA , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG0AEF4E93C96976A0 , bda:LG39E24D6F9BA5C7BA , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2775  a       :Work ;
-        skos:prefLabel      "gtsug tor gdugs dkar can la bstod pa sogs/"@bo-x-ewts ;
+        skos:prefLabel      "gtsug tor gdugs dkar mchog grub sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2775 , bdr:W1NLM2775 .
 }

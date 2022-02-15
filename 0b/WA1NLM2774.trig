@@ -18,6 +18,11 @@ bdg:WA1NLM2774 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGE708FD977592A722
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-14T16:17:38.977Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIMD3D03661  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
@@ -27,17 +32,19 @@ bdg:WA1NLM2774 {
     bda:WA1NLM2774  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2774 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "0b/WA1NLM2774.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2774 ;
-        adm:logEntry        bda:LG8038A9A609C76C20 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG8038A9A609C76C20 , bda:LGE708FD977592A722 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2774  a       :Work ;
         skos:prefLabel      "bsangs chog bkra shis char 'bebs mchod sprin rgya mtsho sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Incense buring, nad other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2774 , bdr:W1NLM2774 .
 }
