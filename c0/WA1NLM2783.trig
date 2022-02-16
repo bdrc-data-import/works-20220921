@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2783 {
+    bda:LG104AB8B230562C64
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-15T14:40:34.93Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG3E643E48C010F84A
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM2783 {
     bda:WA1NLM2783  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2783 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "c0/WA1NLM2783.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2783 ;
-        adm:logEntry        bda:LG3E643E48C010F84A , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG104AB8B230562C64 , bda:LG3E643E48C010F84A , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2783  a       :Work ;
-        skos:prefLabel      "bde gsang 'jigs gsum kyi zhi rgyas gyi sbyin bsreg bya tshul dngos grub rnam gnyis 'gug pa'i lcags kyu sogs/"@bo-x-ewts ;
+        skos:prefLabel      "bde gsang 'jigs gsum gyi zhi rgyas gyi sbyin bsreg bya tshul dngos grub rnam gnyis 'gug pa'i lcags kyu sogs/"@bo-x-ewts ;
+        :catalogInfo        "Elucidation of the santika and paustika homa rituals , and sadana for the Cakramsanvara, Guhyasamaja, Vajrabhairava and instructions on the Mahayana practice of mind training"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2783 , bdr:W1NLM2783 .
+        :workHasInstance    bdr:MW1NLM2783 , bdr:W1NLM2783 ;
+        :workIsAbout        bdr:T1345 , bdr:T1881 , bdr:T1CZ12 .
 }
