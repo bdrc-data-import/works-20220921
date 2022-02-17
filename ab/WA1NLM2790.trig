@@ -18,6 +18,12 @@ bdg:WA1NLM2790 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGE955FFA631FC2CD6
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-16T15:02:17.713Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIMD3D03661  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-11-18T22:29:47.935Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2790 {
     bda:WA1NLM2790  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2790 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ab/WA1NLM2790.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2790 ;
-        adm:logEntry        bda:LG546DD2C99DDBD8F6 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG546DD2C99DDBD8F6 , bda:LGE955FFA631FC2CD6 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2790  a       :Work ;
         skos:prefLabel      "bla ma'i rnal 'byor tsinta ma ni 'phreng mdzes kyi yang snying sogs/"@bo-x-ewts ;
+        :catalogInfo        "Guruyoga and othermiscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2790 , bdr:W1NLM2790 .
+        :workGenre          bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2790 , bdr:W1NLM2790 ;
+        :workIsAbout        bdr:T4 .
 }

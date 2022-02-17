@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2778 {
+    bda:LG9DB4A883D8ED1BC7
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-16T09:50:49.127Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGAC7C466AEC9F9F14
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2778 {
     bda:WA1NLM2778  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2778 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "20/WA1NLM2778.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2778 ;
-        adm:logEntry        bda:LGAC7C466AEC9F9F14 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG9DB4A883D8ED1BC7 , bda:LGAC7C466AEC9F9F14 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2778  a       :Work ;
-        skos:prefLabel      "thugs sgrub bar chad kun sel las/_sde brgyad 'engs mdos khol phyungs bltas chog tu bkod pa rtsub 'gyur rnyogs ma gting dwangs sogs/"@bo-x-ewts ;
+        skos:altLabel       "thugs sgrub bar chad kun sel las/_sde brgyad khengs mdos khol phyungs bltas chog tu bkod pa rtsub 'gyur rnyogs ma gting dwangs/"@bo-x-ewts ;
+        skos:prefLabel      "sde brgyad khengs mdos khol phyungs bltas chog tu bkod pa rtsub 'gyur rnyogs ma gting dwangs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2778 , bdr:W1NLM2778 .
 }
