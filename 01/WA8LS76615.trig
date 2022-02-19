@@ -11,35 +11,37 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA2KG209033 {
-    bda:LG9FDFEC0EC99DCC9C
+bdg:WA8LS76615 {
+    bda:LG3F032F8C6135EB22
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-02-18T15:47:19.665Z"^^xsd:dateTime ;
-        adm:logWho          bdu:U00016 .
+        adm:logDate         "2022-02-18T10:07:07.559Z"^^xsd:dateTime ;
+        adm:logMessage      "created new work record"@en ;
+        adm:logWho          bdu:U00019 .
     
-    bda:WA2KG209033  a      adm:AdminData ;
+    bda:WA8LS76615  a       adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA2KG209033 ;
+        adm:adminAbout      bdr:WA8LS76615 ;
         adm:facetIndex      3 ;
-        adm:gitPath         "5d/WA2KG209033.trig" ;
+        adm:gitPath         "01/WA8LS76615.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA2KG209033 ;
-        adm:logEntry        bda:LG9FDFEC0EC99DCC9C ;
+        adm:graphId         bdg:WA8LS76615 ;
+        adm:logEntry        bda:LG3F032F8C6135EB22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3D4A816E9803594F
+    bdr:CR4418CE553F17AE55
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG13004 ;
+        :agent              bdr:P245 ;
         :role               bdr:R0ER0019 .
     
-    bdr:WA2KG209033  a      :Work ;
-        skos:altLabel       "bod kyi grub mtha'i rig mdzod/_jo nang pa'i grub mtha' spyi bshad/"@bo-x-ewts ;
-        skos:prefLabel      "jo nang pa'i grub mtha' spyi bshad/"@bo-x-ewts ;
-        :creator            bdr:CR3D4A816E9803594F ;
+    bdr:WA8LS76615  a       :Work ;
+        skos:altLabel       "bshes pa'i springs yig gi rnam bshad 'phags pa'i dgongs pa kun gsal/"@bo-x-ewts ;
+        skos:prefLabel      "bshes springs rnam bshad/"@bo-x-ewts ;
+        :catalogInfo        "A detailed commentary of Suhrlekha by Kyilzur Geshes Losang Jinpa."@en ;
+        :creator            bdr:CR4418CE553F17AE55 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T385 ;
-        :workHasInstance    bdr:MW2KG209033 ;
-        :workIsAbout        bdr:T360 , bdr:T916 .
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW8LS76615 ;
+        :workIsAbout        bdr:WA22950 .
 }

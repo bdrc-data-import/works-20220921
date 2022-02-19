@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2799 {
+    bda:LG4EFC6D35F69F9911
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-18T15:41:19.246Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGFBA58A986CFFEBA3
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM2799 {
     bda:WA1NLM2799  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2799 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9e/WA1NLM2799.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2799 ;
-        adm:logEntry        bda:LGFBA58A986CFFEBA3 , bda:LGIMD3D03661 ;
+        adm:logEntry        bda:LG4EFC6D35F69F9911 , bda:LGFBA58A986CFFEBA3 , bda:LGIMD3D03661 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2799  a       :Work ;
-        skos:prefLabel      "bsangs mchog bkra shis char 'bebs mchod sprin rgya mtsho dang bsangs chog shin tu bsdus pa rnams sogs/"@bo-x-ewts ;
+        skos:prefLabel      "bsangs mchog bkra shis char 'bebs mchod sprin rgya mtsho dang bsangs chog shin tu bsdus pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM2799 , bdr:W1NLM2799 .
 }
