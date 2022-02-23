@@ -18,6 +18,12 @@ bdg:WA1NLM3255 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG9DAD997FA35B0A92
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-22T15:24:04.589Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM3255 {
     bda:WA1NLM3255  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3255 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "3f/WA1NLM3255.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3255 ;
-        adm:logEntry        bda:LG522FA4AB6AE485CC , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG522FA4AB6AE485CC , bda:LG9DAD997FA35B0A92 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3255  a       :Work ;
-        skos:prefLabel      "byang chub lam gyi rim pa'i zab 'khrid byang chub bde lam gyi dmigs rnam snying por dril te nyams su len tshul phan bde'i lam bzang sogs/"@bo-x-ewts ;
+        skos:altLabel       "byang chub lam gyi rim pa'i zab 'khrid byang chub bde lam gyi dmigs rnam snying por dril te nyams su len tshul phan bde'i lam bzang /"@bo-x-ewts ;
+        skos:prefLabel      "byang chub bde lam gyi dmigs rnam snying por dril te nyams su len tshul phan bde'i lam bzang sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instruction to the practice of Tsongkhapa's gradual path;"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3255 , bdr:W1NLM3255 .
+        :workHasInstance    bdr:MW1NLM3255 , bdr:W1NLM3255 ;
+        :workIsAbout        bdr:T1PD110101 , bdr:T2MS11339 .
 }

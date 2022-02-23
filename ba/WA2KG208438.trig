@@ -14,13 +14,14 @@
 bdg:WA2KG208438 {
     bda:LGF9332C08F35A478A
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-06-29T23:20:47.857Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-22T17:26:16.648Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG208438  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG208438 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ba/WA2KG208438.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG208438 ;
@@ -28,13 +29,24 @@ bdg:WA2KG208438 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:MW2KG208438  skos:altLabel  "扎日圣地指南"@zh-hans .
+    bdr:CR2213C4B7A1497DC2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P937 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:EV9094A34DD7C8BCD3
+        a                   :CompletedEvent ;
+        :onYear             "1943"^^xsd:gYear .
     
     bdr:WA2KG208438  a      :Work ;
-        skos:prefLabel      "dpal tsa ri tra'i gnas yig"@bo-x-ewts , "扎日圣地指南"@zh-hans ;
+        skos:altLabel       "dpal rdo rje sems dpa' thugs kyi sgrub pa'i sngon 'gro'i zin bris rnam grol them skas/"@bo-x-ewts ;
+        skos:prefLabel      "rdor sems thugs kyi sgrub pa'i sngon 'gro'i zin bris rnam grol them skas/"@bo-x-ewts ;
+        :catalogInfo        "A Liturgical​ text of the preliminary practices focusing on​ deity​ Vajrasattva​ and its annotation​ by Jamyang Khyentse Ozer (1904-1954)."@en ;
+        :creator            bdr:CR2213C4B7A1497DC2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T25 ;
-        :workHasInstance    bdr:MW2KG208438 ;
-        :workIsAbout        bdr:G4631 .
+        :workEvent          bdr:EV9094A34DD7C8BCD3 ;
+        :workGenre          bdr:T1478 , bdr:T536 ;
+        :workHasInstance    bdr:MW2KG208438 , bdr:W2KG208438 ;
+        :workIsAbout        bdr:T00AG01245 , bdr:T179 .
 }

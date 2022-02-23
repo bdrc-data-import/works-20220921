@@ -14,27 +14,34 @@
 bdg:WA2KG209072 {
     bda:LGEF9C14D58D422283
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-06-29T23:20:54.152Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-22T16:21:50.228Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG209072  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG209072 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "03/WA2KG209072.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG209072 ;
         adm:logEntry        bda:LGEF9C14D58D422283 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusAcquiring .
+        adm:status          bda:StatusReleased .
     
-    bdr:MW2KG209072  skos:altLabel  "高云诗集"@zh-hans .
+    bdr:CRBA6A6492F78E9CF3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG228725 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:MW2KG209072  skos:altLabel  "goyon's poem collections"@en , "高云诗集"@zh-hans .
     
     bdr:WA2KG209072  a      :Work ;
-        skos:prefLabel      "snang tshor ro mnyam/"@bo-x-ewts , "高云诗集"@zh-hans ;
+        skos:prefLabel      "snang tshor ro mnyam/"@bo-x-ewts , "goyon's poem collections"@en , "高云诗集"@zh-hans ;
         :catalogInfo        "Collection of poetry by Goyon."@en ;
+        :creator            bdr:CRBA6A6492F78E9CF3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG209072 ;
+        :workHasInstance    bdr:MW2KG209072 , bdr:W2KG209072 ;
         :workIsAbout        bdr:T281 .
 }
