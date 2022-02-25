@@ -14,14 +14,15 @@
 bdg:WA2KG229572 {
     bda:LG73F1D9BE1D2B9B25
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-09-23T17:31:21.984Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-24T19:29:32.481Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGIMEAF73E87  a     adm:UpdateData ;
-        adm:logAgent        "works-mark-restrictedInChina.xql" ;
-        adm:logDate         "2021-11-25T07:35:41.506Z"^^xsd:dateTime ;
-        adm:logMessage      "changed access to restrictedInChina"@en ;
-        adm:logMethod       bda:BatchMethod .
+    bda:LG9213FBF7FB2D378C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-02-24T20:08:13.186Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:WA2KG229572  a      adm:AdminData ;
         :isRoot             true ;
@@ -30,7 +31,7 @@ bdg:WA2KG229572 {
         adm:gitPath         "5e/WA2KG229572.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG229572 ;
-        adm:logEntry        bda:LG73F1D9BE1D2B9B25 , bda:LGIMEAF73E87 ;
+        adm:logEntry        bda:LG73F1D9BE1D2B9B25 , bda:LG9213FBF7FB2D378C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -41,6 +42,6 @@ bdg:WA2KG229572 {
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T01JR185 , bdr:T225 ;
-        :workHasInstance    bdr:MW2KG229572 ;
+        :workHasInstance    bdr:MW2KG229572 , bdr:W2KG229572 ;
         :workIsAbout        bdr:T1741 , bdr:T740 , bdr:T926 .
 }

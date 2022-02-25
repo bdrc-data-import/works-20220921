@@ -12,19 +12,26 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG229575 {
+    bda:LG59649FA75F26C887
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-02-24T20:09:05.85Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG6527A59523B043A4
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-09-23T17:31:32.657Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-24T19:29:33.263Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG229575  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG229575 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "d2/WA2KG229575.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG229575 ;
-        adm:logEntry        bda:LG6527A59523B043A4 ;
+        adm:logEntry        bda:LG59649FA75F26C887 , bda:LG6527A59523B043A4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,6 +42,6 @@ bdg:WA2KG229575 {
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T769 ;
-        :workHasInstance    bdr:MW2KG229575 ;
+        :workHasInstance    bdr:MW2KG229575 , bdr:W2KG229575 ;
         :workIsAbout        bdr:T1PD106850 , bdr:T871 .
 }

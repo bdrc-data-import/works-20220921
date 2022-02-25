@@ -14,33 +14,40 @@
 bdg:WA2KG229574 {
     bda:LG532B5C967DB646B0
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-09-23T17:31:27.163Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-24T19:29:32.86Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG602D1634AFB662B6
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-02-24T20:08:44.194Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG229574  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG229574 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "65/WA2KG229574.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG229574 ;
-        adm:logEntry        bda:LG532B5C967DB646B0 ;
+        adm:logEntry        bda:LG532B5C967DB646B0 , bda:LG602D1634AFB662B6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR602D1634AFB662B6
+    bdr:CR63B9BF89FAB87F2C
         a                   :AgentAsCreator ;
         :agent              bdr:P8205 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CR63B9BF89FAB87F2C
+    bdr:CRC60BC371ACDCE362
         a                   :AgentAsCreator ;
-        :agent              bdr:P8209 ;
+        :agent              bdr:P1KG8854 ;
         :role               bdr:R0ER0018 .
     
     bdr:CRCEF0EC11C97A7075
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG8854 ;
+        :agent              bdr:P8209 ;
         :role               bdr:R0ER0018 .
     
     bdr:MW2KG229574  skos:altLabel  "suvarnaprabhasottamasutrendraraja-nama-mahayanasutra"@sa-x-ndia .
@@ -49,10 +56,10 @@ bdg:WA2KG229574 {
         skos:altLabel       "'phags pa gser 'od dam pa mdo sde'i dbang po'i rgyal po zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts ;
         skos:prefLabel      "gser 'od dam pa mdo sde'i dbang po'i rgyal po/"@bo-x-ewts , "suvarnaprabhasottamasutrendraraja-nama-mahayanasutra"@sa-x-ndia ;
         :catalogInfo        "The Golden Light Sutra. Canonical text that focuses on the confession of faults."@en ;
-        :creator            bdr:CR602D1634AFB662B6 , bdr:CR63B9BF89FAB87F2C , bdr:CRCEF0EC11C97A7075 ;
+        :creator            bdr:CR63B9BF89FAB87F2C , bdr:CRC60BC371ACDCE362 , bdr:CRCEF0EC11C97A7075 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T769 ;
-        :workHasInstance    bdr:MW2KG229574 ;
+        :workHasInstance    bdr:MW2KG229574 , bdr:W2KG229574 ;
         :workIsAbout        bdr:T2247 .
 }

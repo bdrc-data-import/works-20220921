@@ -14,17 +14,24 @@
 bdg:WA2KG229491 {
     bda:LG1F349B3F5177607E
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-09-23T11:57:42.871Z"^^xsd:dateTime ;
+        adm:logDate         "2022-02-24T19:29:30.38Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG88B195FB21239D69
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-02-24T20:04:33.908Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG229491  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG229491 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "24/WA2KG229491.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG229491 ;
-        adm:logEntry        bda:LG1F349B3F5177607E ;
+        adm:logEntry        bda:LG1F349B3F5177607E , bda:LG88B195FB21239D69 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,6 +41,6 @@ bdg:WA2KG229491 {
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T240 , bdr:T769 ;
-        :workHasInstance    bdr:MW2KG229491 ;
+        :workHasInstance    bdr:MW2KG229491 , bdr:W2KG229491 ;
         :workIsAbout        bdr:T2005 .
 }
