@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3263 {
+    bda:LGABF59B51E5D4A9E5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-25T12:33:35.199Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGC0247ADDC729D964
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,32 @@ bdg:WA1NLM3263 {
     bda:WA1NLM3263  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3263 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "b6/WA1NLM3263.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3263 ;
-        adm:logEntry        bda:LGC0247ADDC729D964 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LGABF59B51E5D4A9E5 , bda:LGC0247ADDC729D964 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRAEFCBD89E51FCEB3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRBBD4652B4F422252
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3263  a       :Work ;
+        skos:altLabel       "'jam dpal zhi drag gi bsrung ba/"@bo-x-ewts , "dbu ma la 'jug pa'i bsdus don/"@bo-x-ewts , "mngon par rtogs pa nyams su len tshul theg mchog sgo 'byed/"@bo-x-ewts ;
         skos:prefLabel      "dus kyi 'khor lo'i nang le rnam par dag pa mkhas grub rjes zin bris su btab pa 'phro can sogs/"@bo-x-ewts ;
+        :catalogInfo        "Explanation of the noteworthy passages in the adhyatmapatala of the kalacakra Tantra, and the Vimalaprabha, explanation of the practice of the eitht Abhisamayakrama as related in the Abhisamayalamkara and summary of the essential meaning of the Madhyamakavatara of Candrakirt"@en ;
+        :creator            bdr:CRAEFCBD89E51FCEB3 , bdr:CRBBD4652B4F422252 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3263 , bdr:W1NLM3263 .
+        :workGenre          bdr:T1478 ;
+        :workHasInstance    bdr:MW1NLM3263 , bdr:W1NLM3263 ;
+        :workIsAbout        bdr:T74 .
 }

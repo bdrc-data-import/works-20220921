@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3264 {
+    bda:LG572E2A3420CF9798
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-25T12:33:36.118Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGD272108250C3B232
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM3264 {
     bda:WA1NLM3264  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3264 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "36/WA1NLM3264.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3264 ;
-        adm:logEntry        bda:LGD272108250C3B232 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG572E2A3420CF9798 , bda:LGD272108250C3B232 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR05B0AB5E6B5EB81C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3264  a       :Work ;
         skos:prefLabel      "dge slong gi bslab bya gnam rtsed ldeng mar grags pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Tsongkhapa's lecture on the bhikshu Sikshapada at Namtse Dhing temple; scribed by Gyaltshab Darma Rinchen and other praises and aspirational prayers"@en ;
+        :creator            bdr:CR05B0AB5E6B5EB81C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3264 , bdr:W1NLM3264 .
+        :workGenre          bdr:T67 ;
+        :workHasInstance    bdr:MW1NLM3264 , bdr:W1NLM3264 ;
+        :workIsAbout        bdr:T1368 .
 }
