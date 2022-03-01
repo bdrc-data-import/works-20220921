@@ -18,18 +18,30 @@ bdg:WA8LS76592 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG9B8B3893643F04A3
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-02-28T15:28:31.826Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGA993D2297556776F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-28T15:28:00.642Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS76592  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS76592 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "64/WA8LS76592.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS76592 ;
-        adm:logEntry        bda:LG5CE7149FD66B2550 ;
+        adm:logEntry        bda:LG5CE7149FD66B2550 , bda:LG9B8B3893643F04A3 , bda:LGA993D2297556776F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA993D2297556776F
+    bdr:CR4DF36AEFFA387A1A
         a                   :AgentAsCreator ;
         :agent              bdr:P3495 ;
         :role               bdr:R0ER0019 .
@@ -38,10 +50,10 @@ bdg:WA8LS76592 {
         skos:altLabel       "theg pa chen po'i blo sbyong snyan brgyud chen mo'i rnam bshad nyi ma'i 'od zer/"@bo-x-ewts ;
         skos:prefLabel      "blo sbyong nyi ma'i 'od zer/"@bo-x-ewts ;
         :catalogInfo        "A detailed commentary on mind training text by Horton Namkha Pel."@en ;
-        :creator            bdr:CRA993D2297556776F ;
+        :creator            bdr:CR4DF36AEFFA387A1A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;
-        :workHasInstance    bdr:MW8LS76592 ;
+        :workHasInstance    bdr:MW8LS76592 , bdr:W8LS76592 ;
         :workIsAbout        bdr:T393 .
 }

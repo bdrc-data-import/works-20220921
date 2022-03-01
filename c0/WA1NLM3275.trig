@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3275 {
+    bda:LG1BBF7FA9846455F0
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-28T11:05:18.273Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGA160B9001AB6C5D8
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,26 @@ bdg:WA1NLM3275 {
     bda:WA1NLM3275  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3275 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "c0/WA1NLM3275.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3275 ;
-        adm:logEntry        bda:LGA160B9001AB6C5D8 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG1BBF7FA9846455F0 , bda:LGA160B9001AB6C5D8 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR92797452116BD2E7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3275  a       :Work ;
         skos:prefLabel      "rta mgrin gsang sgrub bka' sdod bcas mchod cing bskang bshags bskul bzlog pa bya ba'i cho ga dngos grub char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Offering, confession and purification, exhortation, repelling ritual of Hayagriva Guhyasadhana, and other miscellaneous rituals and liturgical texts"@en ;
+        :creator            bdr:CR92797452116BD2E7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3275 , bdr:W1NLM3275 .
+        :workGenre          bdr:T34 ;
+        :workHasInstance    bdr:MW1NLM3275 , bdr:W1NLM3275 ;
+        :workIsAbout        bdr:T1892 , bdr:T50 .
 }

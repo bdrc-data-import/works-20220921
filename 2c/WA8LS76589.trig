@@ -18,46 +18,52 @@ bdg:WA8LS76589 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGBC5D28AB213B86CD
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-28T15:03:41.37Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS76589  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS76589 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "2c/WA8LS76589.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS76589 ;
-        adm:logEntry        bda:LG13E7DFC6C0F4F9A0 ;
+        adm:logEntry        bda:LG13E7DFC6C0F4F9A0 , bda:LGBC5D28AB213B86CD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR4DAFDFA0D1CE54B8
         a                   :AgentAsCreator ;
-        :agent              bdr:P719 ;
+        :agent              bdr:P64 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRAE3F32AC23033651
         a                   :AgentAsCreator ;
-        :agent              bdr:P711 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRBC5D28AB213B86CD
-        a                   :AgentAsCreator ;
-        :agent              bdr:P64 ;
+        :agent              bdr:P719 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRCA42E4AF4DDE82CD
         a                   :AgentAsCreator ;
-        :agent              bdr:P209 ;
+        :agent              bdr:P711 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRCBFC000456D61D91
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRE5D6DEBD0FDCBC13
         a                   :AgentAsCreator ;
-        :agent              bdr:P423 ;
+        :agent              bdr:P209 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA8LS76589  a       :Work ;
         skos:prefLabel      "bslab bya'i skor/"@bo-x-ewts ;
         :catalogInfo        "A compilation of spiritual instructions."@en ;
-        :creator            bdr:CR4DAFDFA0D1CE54B8 , bdr:CRAE3F32AC23033651 , bdr:CRBC5D28AB213B86CD , bdr:CRCA42E4AF4DDE82CD , bdr:CRE5D6DEBD0FDCBC13 ;
+        :creator            bdr:CR4DAFDFA0D1CE54B8 , bdr:CRAE3F32AC23033651 , bdr:CRCA42E4AF4DDE82CD , bdr:CRCBFC000456D61D91 , bdr:CRE5D6DEBD0FDCBC13 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

@@ -12,6 +12,17 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3277 {
+    bda:LG27907F4916B1A302
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-28T09:53:19.378Z"^^xsd:dateTime ;
+        adm:logMessage      "test for outline"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG53D31BF1D2B91397
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-02-28T11:05:18.887Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG7C591F8A053D2E32
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +38,27 @@ bdg:WA1NLM3277 {
     bda:WA1NLM3277  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3277 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a5/WA1NLM3277.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3277 ;
-        adm:logEntry        bda:LG7C591F8A053D2E32 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG27907F4916B1A302 , bda:LG53D31BF1D2B91397 , bda:LG7C591F8A053D2E32 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRCE573A82DD6D5A90
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3277  a       :Work ;
-        skos:prefLabel      "'dod khams dbang phyug ma dmag zor rgyal mo'i sgrub thabs gtor chog sogs/"@bo-x-ewts ;
+        skos:altLabel       "'dod khams dbang phyug ma dmag zor rgyal mo'i sgrub thabs gtor chog"@bo-x-ewts ;
+        skos:prefLabel      "dmag zor rgyal mo'i sgrub thabs gtor chog sogs/"@bo-x-ewts ;
+        :catalogInfo        "Sadhana and bali offering ritual of Shridevi"@en ;
+        :creator            bdr:CRCE573A82DD6D5A90 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3277 , bdr:W1NLM3277 .
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM3277 , bdr:W1NLM3277 ;
+        :workIsAbout        bdr:T1892 , bdr:T406 .
 }
