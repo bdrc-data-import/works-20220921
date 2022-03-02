@@ -14,22 +14,33 @@
 bdg:WA4CZ368810 {
     bda:LG38998594D29E35A0
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-01-19T14:39:45.799Z"^^xsd:dateTime ;
+        adm:logDate         "2022-03-01T14:44:38.158Z"^^xsd:dateTime ;
         adm:logMessage      "test"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ368810  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368810 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "40/WA4CZ368810.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368810 ;
         adm:logEntry        bda:LG38998594D29E35A0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusReleased .
+        adm:status          bda:StatusProvisional .
+    
+    bdr:CR593A5F872F06B489
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5117 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA4CZ368810  a      :Work ;
+        skos:altLabel       "chos kyi rnam grangs shes bya'i nor gling 'jug pa'i gru gzings/"@bo-x-ewts ;
+        skos:prefLabel      "chos kyi rnam grangs/"@bo-x-ewts ;
+        :catalogInfo        "Dictionary of Buddhist terminology arranged in numerical enumeration."@en ;
+        :creator            bdr:CR593A5F872F06B489 ;
         :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1231 ;
         :workHasInstance    bdr:MW4CZ368810 .
 }

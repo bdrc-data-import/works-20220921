@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS76606 {
+    bda:LG65957355DC1F1A6D
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-01T10:50:38.963Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGA4D2897694B21081
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-01T10:50:08.351Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGC04FF22C220C8CB9
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-02-16T14:29:27.908Z"^^xsd:dateTime ;
@@ -21,20 +33,20 @@ bdg:WA8LS76606 {
     bda:WA8LS76606  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS76606 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "f6/WA8LS76606.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS76606 ;
-        adm:logEntry        bda:LGC04FF22C220C8CB9 ;
+        adm:logEntry        bda:LG65957355DC1F1A6D , bda:LGA4D2897694B21081 , bda:LGC04FF22C220C8CB9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR65957355DC1F1A6D
+    bdr:CR6F4E1258C7D99F75
         a                   :AgentAsCreator ;
         :agent              bdr:P230 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRA4D2897694B21081
+    bdr:CR7A1CEF1AF0F7358C
         a                   :AgentAsCreator ;
         :agent              bdr:P2596 ;
         :role               bdr:R0ER0016 .
@@ -42,10 +54,10 @@ bdg:WA8LS76606 {
     bdr:WA8LS76606  a       :Work ;
         skos:altLabel       "rnam grol lag bcangs su gtod pa'i man ngag zab mo tshang la ma nor ba mtshungs med chos kyi rgyal po'i thugs bcud byang chub lam gyi rim pa'i nyams khrid kyi zin bris gsung rab kun gyi bcud bsdus gdams ngag bdud rtsi'i snying po/"@bo-x-ewts ;
         skos:prefLabel      "lam rim rnam grol lag bcangs/"@bo-x-ewts ;
-        :catalogInfo        "Instructional manual of graduated approach by Phabongkhap Dechen Nyingpo; compiled Trijang Rinpoche Losang Yeshe."@en ;
-        :creator            bdr:CR65957355DC1F1A6D , bdr:CRA4D2897694B21081 ;
+        :catalogInfo        "Instructional manual of graduated approach by Phabongkhap Dechen Nyingpo; compiled and edited Trijang Rinpoche Losang Yeshe."@en ;
+        :creator            bdr:CR6F4E1258C7D99F75 , bdr:CR7A1CEF1AF0F7358C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1478 , bdr:T200 , bdr:T238 ;
-        :workHasInstance    bdr:MW8LS76606 .
+        :workHasInstance    bdr:MW8LS76606 , bdr:W8LS76606 .
 }

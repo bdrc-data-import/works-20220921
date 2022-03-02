@@ -24,6 +24,11 @@ bdg:WA2PD16805 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG2E5C97F677518C9A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-01T23:17:10.073Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG576A11C438D8D3F2
         a                   adm:UpdateData ;
         adm:logDate         "2017-05-10T03:30:45.228Z"^^xsd:dateTime ;
@@ -73,16 +78,16 @@ bdg:WA2PD16805 {
     bda:WA2PD16805  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD16805 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "4f/WA2PD16805.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD16805 ;
-        adm:logEntry        bda:LG120812150218A566 , bda:LG267E0F510918ADC2 , bda:LG576A11C438D8D3F2 , bda:LG5807A0CAA0A49132 , bda:LG6A333CD083404E4F , bda:LGCBB45DA4C8CDC347 , bda:LGCFD755E9405759FA , bda:LGD160CAE9B4ED14BD , bda:LGED2E20FA95A3310F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG120812150218A566 , bda:LG267E0F510918ADC2 , bda:LG2E5C97F677518C9A , bda:LG576A11C438D8D3F2 , bda:LG5807A0CAA0A49132 , bda:LG6A333CD083404E4F , bda:LGCBB45DA4C8CDC347 , bda:LGCFD755E9405759FA , bda:LGD160CAE9B4ED14BD , bda:LGED2E20FA95A3310F , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA22103 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR2E5C97F677518C9A
+    bdr:CR8C7A226B531C69A3
         a                   :AgentAsCreator ;
         :agent              bdr:P2627 ;
         :role               bdr:R0ER0019 .
@@ -90,12 +95,13 @@ bdg:WA2PD16805 {
     bdr:MW2PD16805  skos:altLabel  "伯东班钦全集"@zh-hans .
     
     bdr:WA2PD16805  a       :Work ;
-        skos:altLabel       "bo dong gsung 'bum phyogs bsgrigs/"@bo-x-ewts , "bo dong ban qin quan ji"@zh-latn-pinyin-x-ndia ;
+        skos:altLabel       "bo dong gsung 'bum phyogs bsgrigs/"@bo-x-ewts , "bo dong paN chen gyi gsung 'bum chen mo/"@bo-x-ewts , "bo dong ban qin quan ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gsung 'bum/_ phyogs las rnam rgyal/"@bo-x-ewts , "伯东班钦全集"@zh-hans ;
         :catalogInfo        "Collected Works by Bodong Panchen Chokle Namgyal (1376-1451), one of the great minds to appear in Tibet. Four Denyi Dupa collections comprise a magnificent compendia of tantric knowledge as known in the first half of the 15th century."@en ;
-        :creator            bdr:CR2E5C97F677518C9A ;
+        :creator            bdr:CR8C7A226B531C69A3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;
+        :workHasInstance    bdr:MW2PD16805 ;
         :workIsAbout        bdr:T2054 .
 }
