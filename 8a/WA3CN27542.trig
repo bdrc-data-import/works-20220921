@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN27542 {
+    bda:LGC78BE212254E6BE5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-02T10:40:35.484Z"^^xsd:dateTime ;
+        adm:logMessage      "added V#"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGEA71BBF2FFCBBD06
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-01-16T10:15:24.082Z"^^xsd:dateTime ;
@@ -33,20 +39,19 @@ bdg:WA3CN27542 {
     bda:WA3CN27542  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN27542 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "8a/WA3CN27542.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN27542 ;
-        adm:logEntry        bda:LGEA71BBF2FFCBBD06 , bda:LGF6156784E046B94F , bda:LGF8C9D69B0F463D56 ;
+        adm:logEntry        bda:LGC78BE212254E6BE5 , bda:LGEA71BBF2FFCBBD06 , bda:LGF6156784E046B94F , bda:LGF8C9D69B0F463D56 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA3CN27542  a       :Work ;
-        skos:prefLabel      "sa lugs gzhung gdams man ngag sna tshogs kyi bris dpe phyogs bsdus/"@bo-x-ewts ;
-        :catalogInfo        "Collection of Sakya traditional manuscript texts."@en ;
+        skos:prefLabel      "sa lugs gtsor bzhugs gzhung gdams man ngag sna tshogs kyi bris dpe phyogs bsdus/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Sakya related traditional manuscript texts."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;
-        :workHasInstance    bdr:MW3CN27542 ;
-        :workIsAbout        bdr:T617 .
+        :workHasInstance    bdr:MW3CN27542 .
 }

@@ -12,24 +12,36 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS76613 {
+    bda:LG05FEF22BCFB8AC9A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-02T09:31:45.604Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG5B6C7D27243E225B
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-02-17T14:00:39.622Z"^^xsd:dateTime ;
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGFF751E0A3E8AD0CC
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-02T09:31:21.206Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS76613  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS76613 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "ca/WA8LS76613.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS76613 ;
-        adm:logEntry        bda:LG5B6C7D27243E225B ;
+        adm:logEntry        bda:LG05FEF22BCFB8AC9A , bda:LG5B6C7D27243E225B , bda:LGFF751E0A3E8AD0CC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFF751E0A3E8AD0CC
+    bdr:CR50E1F99A4158FC01
         a                   :AgentAsCreator ;
         :agent              bdr:P303 ;
         :role               bdr:R0ER0019 .
@@ -37,9 +49,9 @@ bdg:WA8LS76613 {
     bdr:WA8LS76613  a       :Work ;
         skos:prefLabel      "ston pa tshad ma'i skyes bur sgrub pa'i gtam bde chen khang bzang 'dzegs pa'i rin chen them skas/"@bo-x-ewts ;
         :catalogInfo        "1 skyabs su 'gro ba'i tshul rin chen bum bzang /"@bo-x-ewts , "Validating Buddha Shakyamuni and process of taking refuge by Alaksha Ngawang Tender."@en ;
-        :creator            bdr:CRFF751E0A3E8AD0CC ;
+        :creator            bdr:CR50E1F99A4158FC01 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW8LS76613 ;
+        :workHasInstance    bdr:MW8LS76613 , bdr:W8LS76613 ;
         :workIsAbout        bdr:P7326 , bdr:T1297 , bdr:T370 .
 }

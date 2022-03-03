@@ -18,18 +18,30 @@ bdg:WA8LS76612 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG99CE798DB740AF79
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-02T09:28:48.162Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGFF378961A0798B68
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-02T09:28:13.216Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS76612  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS76612 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "92/WA8LS76612.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS76612 ;
-        adm:logEntry        bda:LG768742118CFFA5DC ;
+        adm:logEntry        bda:LG768742118CFFA5DC , bda:LG99CE798DB740AF79 , bda:LGFF378961A0798B68 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFF378961A0798B68
+    bdr:CR5D852F6113CF6133
         a                   :AgentAsCreator ;
         :agent              bdr:P230 ;
         :role               bdr:R0ER0019 .
@@ -37,10 +49,10 @@ bdg:WA8LS76612 {
     bdr:WA8LS76612  a       :Work ;
         skos:prefLabel      "lam gtso rnam gsum gyi zin bris lam bzang sgo 'byed/"@bo-x-ewts ;
         :catalogInfo        "A note on the three key path by Phabongkhapa Dechen Nyingpo."@en ;
-        :creator            bdr:CRFF378961A0798B68 ;
+        :creator            bdr:CR5D852F6113CF6133 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1478 ;
-        :workHasInstance    bdr:MW8LS76612 ;
+        :workHasInstance    bdr:MW8LS76612 , bdr:W8LS76612 ;
         :workIsAbout        bdr:T1358 .
 }
