@@ -11,29 +11,35 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA4CZ368769 {
-    bda:LGCAE718915F3A20D2
+bdg:WA4CZ368849 {
+    bda:LGEA229FF1C337848B
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-03T10:50:47.782Z"^^xsd:dateTime ;
+        adm:logDate         "2022-03-03T10:50:57.182Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
     
-    bda:WA4CZ368769  a      adm:AdminData ;
+    bda:WA4CZ368849  a      adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA4CZ368769 ;
-        adm:facetIndex      2 ;
-        adm:gitPath         "5b/WA4CZ368769.trig" ;
+        adm:adminAbout      bdr:WA4CZ368849 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "5c/WA4CZ368849.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA4CZ368769 ;
-        adm:logEntry        bda:LGCAE718915F3A20D2 ;
+        adm:graphId         bdg:WA4CZ368849 ;
+        adm:logEntry        bda:LGEA229FF1C337848B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA4CZ368769  a      :Work ;
-        skos:prefLabel      "rgya bod shan sbyar gyi gtam dpe/"@bo-x-ewts , "汉藏谚语"@zh-hans ;
-        :catalogInfo        "Selected proverb in Chinese and Tibetan"@en ;
+    bdr:CR881C87DC4285FE14
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4576 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA4CZ368849  a      :Work ;
+        skos:prefLabel      "'bras spungs chos 'byung /"@bo-x-ewts ;
+        :catalogInfo        "History of Drepung Monastery."@en ;
+        :creator            bdr:CR881C87DC4285FE14 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T240 ;
-        :workHasInstance    bdr:MW4CZ368769 ;
-        :workIsAbout        bdr:T190 .
+        :workGenre          bdr:T12 ;
+        :workHasInstance    bdr:MW4CZ368849 ;
+        :workIsAbout        bdr:G108 .
 }
