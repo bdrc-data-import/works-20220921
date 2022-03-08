@@ -18,18 +18,30 @@ bdg:WA8LS76621 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG5452BF0EABECA57E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-07T09:12:23.411Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LGE443EEDAFDF870FC
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-07T09:12:00.55Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS76621  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS76621 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "65/WA8LS76621.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS76621 ;
-        adm:logEntry        bda:LG2F2EED13975720DA ;
+        adm:logEntry        bda:LG2F2EED13975720DA , bda:LG5452BF0EABECA57E , bda:LGE443EEDAFDF870FC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE443EEDAFDF870FC
+    bdr:CREB43D89228A79DB7
         a                   :AgentAsCreator ;
         :agent              bdr:P65 ;
         :role               bdr:R0ER0019 .
@@ -37,10 +49,10 @@ bdg:WA8LS76621 {
     bdr:WA8LS76621  a       :Work ;
         skos:prefLabel      "byang chub sems dpa'i dpyod pa la 'jug pa'i rnam bshad rgyal sras 'jug ngogs/"@bo-x-ewts ;
         :catalogInfo        "A detailed commentary of Bodhicaryavatara by Gyaltshap Darma Rinchen."@en ;
-        :creator            bdr:CRE443EEDAFDF870FC ;
+        :creator            bdr:CREB43D89228A79DB7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;
-        :workHasInstance    bdr:MW8LS76621 ;
+        :workHasInstance    bdr:MW8LS76621 , bdr:W8LS76621 ;
         :workIsAbout        bdr:WA19740 .
 }

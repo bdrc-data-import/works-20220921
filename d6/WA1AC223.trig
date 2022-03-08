@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1AC223 {
+    bda:LG3C51C3590B889A7F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-07T16:49:32.527Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected serial no."@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG48131B9FB437C929
         a                   adm:UpdateData ;
         adm:logDate         "2017-03-25T00:00:50.776Z"^^xsd:dateTime ;
@@ -58,15 +64,15 @@ bdg:WA1AC223 {
     bda:WA1AC223  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC223 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "d6/WA1AC223.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC223 ;
-        adm:logEntry        bda:LG48131B9FB437C929 , bda:LG5249EC2380DA5CAC , bda:LG7AA33B26AA0015E7 , bda:LG9414A0243A3DF3F6 , bda:LG971D98DD7D908022 , bda:LGD98B30F6CD06199A , bda:LGFFEFC9EE26887EBC , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG3C51C3590B889A7F , bda:LG48131B9FB437C929 , bda:LG5249EC2380DA5CAC , bda:LG7AA33B26AA0015E7 , bda:LG9414A0243A3DF3F6 , bda:LG971D98DD7D908022 , bda:LGD98B30F6CD06199A , bda:LGFFEFC9EE26887EBC , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3C51C3590B889A7F
+    bdr:CRBC5788C8F7F8E972
         a                   :AgentAsCreator ;
         :agent              bdr:P7641 ;
         :role               bdr:R0ER0019 .
@@ -76,7 +82,8 @@ bdg:WA1AC223 {
     bdr:WA1AC223  a         :Work ;
         skos:altLabel       "zhong guan guang ming shi lun"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "dbu ma snang ba/"@bo-x-ewts , "中观光明释论"@zh-hans ;
-        :creator            bdr:CR3C51C3590B889A7F ;
+        :catalogInfo        "Madhayamakaloka of Acarya Kamalasila."@en ;
+        :creator            bdr:CRBC5788C8F7F8E972 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1AC223 , bdr:W1AC223 ;

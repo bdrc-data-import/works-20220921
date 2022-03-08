@@ -18,18 +18,30 @@ bdg:WA8LS76622 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG7C51D9BFA64BD553
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-07T09:22:08.106Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG9AD104F6A1C2C2A7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-07T09:22:41.137Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS76622  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS76622 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "db/WA8LS76622.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS76622 ;
-        adm:logEntry        bda:LG6CA10306FC479365 ;
+        adm:logEntry        bda:LG6CA10306FC479365 , bda:LG7C51D9BFA64BD553 , bda:LG9AD104F6A1C2C2A7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7C51D9BFA64BD553
+    bdr:CR556578259E1ACB4C
         a                   :AgentAsCreator ;
         :agent              bdr:P6161 ;
         :role               bdr:R0ER0019 .
@@ -37,10 +49,10 @@ bdg:WA8LS76622 {
     bdr:WA8LS76622  a       :Work ;
         skos:prefLabel      "byang chub sems dpa'i spyod pa la 'jug pa/"@bo-x-ewts ;
         :catalogInfo        "A root text of Bodhicaryavatara by Shantideva."@en ;
-        :creator            bdr:CR7C51D9BFA64BD553 ;
+        :creator            bdr:CR556578259E1ACB4C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1777 ;
-        :workHasInstance    bdr:MW8LS76622 ;
+        :workHasInstance    bdr:MW8LS76622 , bdr:W8LS76622 ;
         :workIsAbout        bdr:WA19740 .
 }

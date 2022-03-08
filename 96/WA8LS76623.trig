@@ -12,24 +12,36 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS76623 {
+    bda:LG1CF25ABAB4A86E18
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-07T09:28:51.021Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG609D56C160E1CD74
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-02-24T09:04:09.762Z"^^xsd:dateTime ;
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG988AF2569FB2E5F2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-07T09:29:23.07Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:WA8LS76623  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS76623 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "96/WA8LS76623.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS76623 ;
-        adm:logEntry        bda:LG609D56C160E1CD74 ;
+        adm:logEntry        bda:LG1CF25ABAB4A86E18 , bda:LG609D56C160E1CD74 , bda:LG988AF2569FB2E5F2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1CF25ABAB4A86E18
+    bdr:CRE775C159737A2A49
         a                   :AgentAsCreator ;
         :agent              bdr:P6161 ;
         :role               bdr:R0ER0019 .
@@ -37,10 +49,10 @@ bdg:WA8LS76623 {
     bdr:WA8LS76623  a       :Work ;
         skos:prefLabel      "byang chub sems dpa'i spyod pa la 'jug pa/"@bo-x-ewts ;
         :catalogInfo        "A root text of Bodhicaryavatara by Shantideva."@en ;
-        :creator            bdr:CR1CF25ABAB4A86E18 ;
+        :creator            bdr:CRE775C159737A2A49 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1777 ;
-        :workHasInstance    bdr:MW8LS76623 ;
+        :workHasInstance    bdr:MW8LS76623 , bdr:W8LS76623 ;
         :workIsAbout        bdr:WA19740 .
 }
