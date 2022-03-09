@@ -18,6 +18,12 @@ bdg:WA1KG23665 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG331B295B5DE31CC7
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-08T15:03:46.076Z"^^xsd:dateTime ;
+        adm:logMessage      "added added biblo titile"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG9A0C3C9EC768D522
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-05-26T16:21:01.923Z"^^xsd:dateTime ;
@@ -27,34 +33,34 @@ bdg:WA1KG23665 {
     bda:WA1KG23665  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG23665 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "2b/WA1KG23665.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG23665 ;
-        adm:logEntry        bda:LG00BAA4F5F975EF44 , bda:LG9A0C3C9EC768D522 ;
+        adm:logEntry        bda:LG00BAA4F5F975EF44 , bda:LG331B295B5DE31CC7 , bda:LG9A0C3C9EC768D522 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR331B295B5DE31CC7
-        a                   :AgentAsCreator ;
-        :agent              bdr:P719 ;
-        :role               bdr:R0ER0019 .
-    
     bdr:CR697461C7DFC27364
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1846 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR7C5251CE57238D7D
         a                   :AgentAsCreator ;
         :agent              bdr:P106 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CR7C5251CE57238D7D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRBD9D722FE45A66C4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1846 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1KG23665  a       :Work ;
         skos:altLabel       "byang chub lam rim dmar khrid bde lam/ byang chub lam rim dmar khrid myur lam dang / byang chub lam rim legs gsungs nying khu bcas/"@bo-x-ewts ;
-        skos:prefLabel      "byang chub lam rim dmar khrid bde lam dang myur lam bcas/"@bo-x-ewts ;
+        skos:prefLabel      "blo bzang dgongs rgyan mu tig phreng mdzes deb nyi shu rtsa gsum pa/"@bo-x-ewts ;
         :catalogInfo        "Essential instruction on the Lamrim Chenmo of Tsongkhapa."@en ;
-        :creator            bdr:CR331B295B5DE31CC7 , bdr:CR697461C7DFC27364 , bdr:CR7C5251CE57238D7D ;
+        :creator            bdr:CR697461C7DFC27364 , bdr:CR7C5251CE57238D7D , bdr:CRBD9D722FE45A66C4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T238 ;

@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS76627 {
+    bda:LG4CD8B2038F7035A3
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-08T09:14:11.032Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblio note"@en ;
+        adm:logWho          bdu:U00019 .
+    
+    bda:LG8F018DF2CD425232
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-08T09:14:42.343Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGFA8A58DE5421C760
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-02-25T09:01:25.579Z"^^xsd:dateTime ;
@@ -21,31 +33,31 @@ bdg:WA8LS76627 {
     bda:WA8LS76627  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS76627 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "cd/WA8LS76627.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS76627 ;
-        adm:logEntry        bda:LGFA8A58DE5421C760 ;
+        adm:logEntry        bda:LG4CD8B2038F7035A3 , bda:LG8F018DF2CD425232 , bda:LGFA8A58DE5421C760 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4CD8B2038F7035A3
-        a                   :AgentAsCreator ;
-        :agent              bdr:P3442 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR8F018DF2CD425232
+    bdr:CRD368EC7199D87EF7
         a                   :AgentAsCreator ;
         :agent              bdr:P4862 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE0103F78279341D3
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3442 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA8LS76627  a       :Work ;
         skos:prefLabel      "bka' gdams kyi man ngag be'u bum sngon po'i rtsa 'grel/"@bo-x-ewts ;
         :catalogInfo        "A root text of Kadampa's practical instructions by Potowa Rinchen Sel; its commentary by Jowo Lhadri Gangpa and compiled by Dolpopa Sherap Gyaltshen."@en ;
-        :creator            bdr:CR4CD8B2038F7035A3 , bdr:CR8F018DF2CD425232 ;
+        :creator            bdr:CRD368EC7199D87EF7 , bdr:CRE0103F78279341D3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1202 , bdr:T132 , bdr:T1KG8787 , bdr:T456 ;
-        :workHasInstance    bdr:MW8LS76627 ;
+        :workHasInstance    bdr:MW8LS76627 , bdr:W8LS76627 ;
         :workIsAbout        bdr:T791 .
 }
