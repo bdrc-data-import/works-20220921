@@ -12,9 +12,16 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG229482 {
+    bda:LG0D9F453D1C3351DB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-09T21:54:00.092Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGACD751023B97D66B
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-08T20:04:19.459Z"^^xsd:dateTime ;
+        adm:logDate         "2022-03-09T21:53:17.95Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG229482  a      adm:AdminData ;
@@ -24,24 +31,18 @@ bdg:WA2KG229482 {
         adm:gitPath         "1d/WA2KG229482.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG229482 ;
-        adm:logEntry        bda:LGACD751023B97D66B ;
+        adm:logEntry        bda:LG0D9F453D1C3351DB , bda:LGACD751023B97D66B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
-    
-    bdr:CR0D9F453D1C3351DB
-        a                   :AgentAsCreator ;
-        :agent              bdr:P2KG234552 ;
-        :role               bdr:R0ER0019 .
     
     bdr:MW2KG229482  skos:altLabel  "the comprehensive mandala of h.h. dudjom rinpoche's terchoi"@en .
     
     bdr:WA2KG229482  a      :Work ;
         skos:prefLabel      "bdud 'joms 'jigs bral ye shes rdo rje'i gter chos yongs rdzogs kyi dkyil 'khor/"@bo-x-ewts , "the comprehensive mandala of h.h. dudjom rinpoche's terchoi"@en ;
         :catalogInfo        "The comprehensive Mandala of H.H. Dudjom Rinpoche's Terma teaching."@en ;
-        :creator            bdr:CR0D9F453D1C3351DB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T448 ;
-        :workHasInstance    bdr:MW2KG229482 ;
+        :workHasInstance    bdr:MW2KG229482 , bdr:W2KG229482 ;
         :workIsAbout        bdr:T80 .
 }

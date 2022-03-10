@@ -18,6 +18,12 @@ bdg:WA1KG23708 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGA3C5B21F708BADF1
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-09T13:12:25.274Z"^^xsd:dateTime ;
+        adm:logMessage      "added biblo titile"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGCC080D83D379F2F7
         a                   adm:InitialDataCreation ;
         adm:logDate         "2016-06-08T11:01:04.389Z"^^xsd:dateTime ;
@@ -27,34 +33,34 @@ bdg:WA1KG23708 {
     bda:WA1KG23708  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG23708 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "53/WA1KG23708.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG23708 ;
-        adm:logEntry        bda:LG66A991029C571832 , bda:LGCC080D83D379F2F7 ;
+        adm:logEntry        bda:LG66A991029C571832 , bda:LGA3C5B21F708BADF1 , bda:LGCC080D83D379F2F7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR237F82028AAC2EDB
         a                   :AgentAsCreator ;
-        :agent              bdr:P5617 ;
+        :agent              bdr:P303 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRA3C5B21F708BADF1
+    bdr:CR676FB125F1709845
         a                   :AgentAsCreator ;
-        :agent              bdr:P55 ;
+        :agent              bdr:P5617 ;
         :role               bdr:R0ER0019 .
     
     bdr:CREA074B3503400ED4
         a                   :AgentAsCreator ;
-        :agent              bdr:P303 ;
+        :agent              bdr:P55 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1KG23708  a       :Work ;
         skos:altLabel       "tshad ma'i dgongs don du gzhol ba'i bstan bcos phyogs bsdebs rigs pa'i khu byug rnams gnyis kyi gzungs bcud/"@bo-x-ewts ;
-        skos:prefLabel      "tshad ma'i dgongs don du gzhol ba'i bstan bcos phyogs bsdebs/"@bo-x-ewts ;
+        skos:prefLabel      "blo bzang dgongs rgyan mu tig phreng mdzes deb lnga bcu pa/"@bo-x-ewts ;
         :catalogInfo        "Selection of treatise inclined to Pramana."@en ;
-        :creator            bdr:CR237F82028AAC2EDB , bdr:CRA3C5B21F708BADF1 , bdr:CREA074B3503400ED4 ;
+        :creator            bdr:CR237F82028AAC2EDB , bdr:CR676FB125F1709845 , bdr:CREA074B3503400ED4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1PD128746 ;
