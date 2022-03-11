@@ -11,30 +11,28 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA4CZ368769 {
-    bda:LGCAE718915F3A20D2
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-10T17:04:58.935Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
-        adm:logWho          bdu:U00017 .
-    
-    bda:WA4CZ368769  a      adm:AdminData ;
+bdg:WA0XLFD4DDC0A1777 {
+    bda:WA0XLFD4DDC0A1777
+        a                   adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA4CZ368769 ;
+        adm:adminAbout      bdr:WA0XLFD4DDC0A1777 ;
         adm:facetIndex      2 ;
-        adm:gitPath         "5b/WA4CZ368769.trig" ;
+        adm:gitPath         "e0/WA0XLFD4DDC0A1777.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA4CZ368769 ;
-        adm:logEntry        bda:LGCAE718915F3A20D2 ;
+        adm:graphId         bdg:WA0XLFD4DDC0A1777 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA4CZ368769  a      :Work ;
-        skos:prefLabel      "rgya bod shan sbyar gyi gtam dpe/"@bo-x-ewts , "汉藏谚语"@zh-hans ;
-        :catalogInfo        "Selected proverb in Chinese and Tibetan"@en ;
+    bdr:CRD8D8B31A6D8A8D41
+        a                   :AgentAsCreator ;
+        :agent              bdr:P270 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA0XLFD4DDC0A1777
+        a                   :Work ;
+        skos:prefLabel      "byang sems spyod yul yongs su dag pa'i smon lam/"@bo-x-ewts ;
+        :creator            bdr:CRD8D8B31A6D8A8D41 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T240 ;
-        :workHasInstance    bdr:MW4CZ368769 ;
-        :workIsAbout        bdr:T190 .
+        :workHasInstance    bdr:MW5832_FD4DDC .
 }
