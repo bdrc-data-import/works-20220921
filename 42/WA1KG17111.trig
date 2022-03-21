@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1KG17111 {
+    bda:LG0A86D94BD96CC673
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-17T22:53:46.46Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG56ED22C30B263F08
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2014-03-31T10:46:51.484Z"^^xsd:dateTime ;
@@ -33,15 +39,15 @@ bdg:WA1KG17111 {
     bda:WA1KG17111  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG17111 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "42/WA1KG17111.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG17111 ;
-        adm:logEntry        bda:LG56ED22C30B263F08 , bda:LG6A14F3A1FA4384D5 , bda:LG76EB23917470CA75 ;
+        adm:logEntry        bda:LG0A86D94BD96CC673 , bda:LG56ED22C30B263F08 , bda:LG6A14F3A1FA4384D5 , bda:LG76EB23917470CA75 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0A86D94BD96CC673
+    bdr:CR54AA331D8F8D7A04
         a                   :AgentAsCreator ;
         :agent              bdr:P6242 ;
         :role               bdr:R0ER0019 .
@@ -49,7 +55,8 @@ bdg:WA1KG17111 {
     bdr:WA1KG17111  a       :Work ;
         skos:altLabel       "dam pa'i chos 'dul ba'i las brgya rtsa gcig gsal bar ston pa karma sha tam/"@bo-x-ewts ;
         skos:prefLabel      "'dul ba'i las brgya rtsa gcig gsal bar ston pa karma sha tam/"@bo-x-ewts ;
-        :creator            bdr:CR0A86D94BD96CC673 ;
+        :catalogInfo        "One hundred formal procedures of Vinaya by Gunaprabha."@en ;
+        :creator            bdr:CR54AA331D8F8D7A04 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG17111 , bdr:W1KG17111 ;

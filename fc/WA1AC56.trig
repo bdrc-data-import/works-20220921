@@ -33,6 +33,12 @@ bdg:WA1AC56 {
         adm:logDate         "2017-05-18T03:56:45.483Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGE4AC6798C369EA22
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-17T14:47:47.873Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected topic added cat info"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -43,25 +49,26 @@ bdg:WA1AC56 {
     bda:WA1AC56  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC56 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "fc/WA1AC56.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC56 ;
-        adm:logEntry        bda:LG20ED4B0ACB902498 , bda:LG85F5DE3AE6017462 , bda:LGAC6B08D74843F6F6 , bda:LGAD3630BDB7638A28 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG20ED4B0ACB902498 , bda:LG85F5DE3AE6017462 , bda:LGAC6B08D74843F6F6 , bda:LGAD3630BDB7638A28 , bda:LGE4AC6798C369EA22 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE4AC6798C369EA22
+    bdr:CR0689B96FD4317710
         a                   :AgentAsCreator ;
-        :agent              bdr:P3JM49 ;
+        :agent              bdr:P6120 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1AC56  a          :Work ;
         skos:prefLabel      "rgyas pa'i bstan bcos tshad ma rnam 'grel/"@bo-x-ewts ;
-        :creator            bdr:CRE4AC6798C369EA22 ;
+        :catalogInfo        "The root text of the Pramanavartikakarika by Indian master Dharmakirti."@en ;
+        :creator            bdr:CR0689B96FD4317710 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T132 ;
+        :workGenre          bdr:T1KG8787 ;
         :workHasInstance    bdr:MW1AC56 , bdr:W1AC56 ;
-        :workIsAbout        bdr:T1011 .
+        :workIsAbout        bdr:T370 .
 }
