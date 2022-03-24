@@ -30,6 +30,12 @@ bdg:WA1NLM1030 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGB390125E2B811861
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-23T16:07:23.185Z"^^xsd:dateTime ;
+        adm:logMessage      "add CW-W4CZ369314"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIMEDE14CA9  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2019-12-18T20:42:16.63Z"^^xsd:dateTime ;
@@ -39,25 +45,25 @@ bdg:WA1NLM1030 {
     bda:WA1NLM1030  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM1030 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "65/WA1NLM1030.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM1030 ;
-        adm:logEntry        bda:LG05AFDF2004271712 , bda:LG7CF992EBE0FA4CAF , bda:LG9904969AE7839FA6 , bda:LGIMEDE14CA9 ;
+        adm:logEntry        bda:LG05AFDF2004271712 , bda:LG7CF992EBE0FA4CAF , bda:LG9904969AE7839FA6 , bda:LGB390125E2B811861 , bda:LGIMEDE14CA9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1803D13FD1D33C47
         a                   :AgentAsCreator ;
+        :agent              bdr:P176 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR48994C00AD3850B0
+        a                   :AgentAsCreator ;
         :agent              bdr:P58 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR9EAD496A7FBF4DF7
-        a                   :AgentAsCreator ;
-        :agent              bdr:P176 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRB390125E2B811861
         a                   :AgentAsCreator ;
         :agent              bdr:P38 ;
         :role               bdr:R0ER0019 .
@@ -65,10 +71,10 @@ bdg:WA1NLM1030 {
     bdr:WA1NLM1030  a       :Work ;
         skos:prefLabel      "bla ma mchod pa'i khrid yig yid ches brgyud ldan zab gsal snying po rjen par phyung ba sogs/"@bo-x-ewts ;
         :catalogInfo        "Manual of instructions of guru yoga practice, few letter writers, the core meaning of Suhrllekha, Instruction on the view, table of contents of the chapters 2 and 3 of the collected work of Chenga Lodro Gyaltsen."@en ;
-        :creator            bdr:CR1803D13FD1D33C47 , bdr:CR9EAD496A7FBF4DF7 , bdr:CRB390125E2B811861 ;
+        :creator            bdr:CR1803D13FD1D33C47 , bdr:CR48994C00AD3850B0 , bdr:CR9EAD496A7FBF4DF7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T200 , bdr:T2123 , bdr:T395 ;
         :workHasInstance    bdr:MW1NLM1030 , bdr:W1NLM1030 ;
-        :workIsAbout        bdr:T138 , bdr:T207 , bdr:WA19721 .
+        :workIsAbout        bdr:T207 , bdr:WA19721 , bdr:WA4CZ369314 .
 }
