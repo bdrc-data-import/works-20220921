@@ -18,10 +18,13 @@ bdg:WA3JT13422 {
     bda:LG709CCCAA28F38EA6
         a                   adm:InitialDataCreation .
     
+    bda:LG7E2FA8A8490DDA47
+        a                   adm:UpdateData .
+    
     bda:W3JT13422  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:W3JT13422 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:replaceWith     bdr:WA3JT13422 ;
         adm:status          bda:StatusWithdrawn .
     
@@ -34,12 +37,18 @@ bdg:WA3JT13422 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1211BF66796364FA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4333 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:NTFC819EED415E9E74
         a                   :Note ;
         :noteText           "explanatory (treatise, tantras), medical commentary"@en .
     
     bdr:WA3JT13422  a       :Work ;
         skos:prefLabel      "bshad rgyud/"@bo-x-ewts ;
+        :creator            bdr:CR1211BF66796364FA ;
         :isRoot             true ;
         :note               bdr:NTFC819EED415E9E74 .
 }

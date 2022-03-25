@@ -12,36 +12,40 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA25362 {
-    bda:LGCBC48BDCD7382834
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+    bda:LG64CF57B4D859431D
+        a                   adm:UpdateData .
+    
+    bda:LG768CF9D8FD546BFB
+        a                   adm:InitialDataCreation .
+    
+    bda:W25362  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W25362 ;
+        adm:facetIndex      5 ;
+        adm:replaceWith     bdr:WA25362 ;
+        adm:status          bda:StatusWithdrawn .
     
     bda:WA25362  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25362 ;
-        adm:facetIndex      4 ;
         adm:gitPath         "b2/WA25362.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25362 ;
-        adm:logEntry        bda:LGCBC48BDCD7382834 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusOnHold .
+        adm:status          bda:StatusReleased .
     
-    bdr:CR64CF57B4D859431D
-        a                   :AgentAsCreator ;
-        :agent              bdr:P3221 ;
-        :role               bdr:R0ER0026 .
+    bdr:NTCBC48BDCD7382834
+        a                   :Note ;
+        :noteText           "toh 454"@en .
     
-    bdr:CRE6468E7B3810E9A0
-        a                   :AgentAsCreator ;
-        :agent              bdr:P8176 ;
-        :role               bdr:R0ER0018 .
+    bdr:NTE6468E7B3810E9A0
+        a                   :Note ;
+        :noteText           "Conceptual Work"@en .
     
     bdr:WA25362  a          :Work ;
-        skos:prefLabel      "lag na rdo rje gos sngon po can drag po gsum 'dul zhes bya ba'i rtsa rgyud/"@bo-x-ewts , "nilambaradharavajrapanirudratrivinaya-tantra-nama"@sa-alalc97 , "ārya nīlāmbaradharavajrapāṇi rudratrivinaya tantra nāma"@sa-x-iast ;
-        :creator            bdr:CR64CF57B4D859431D , bdr:CRE6468E7B3810E9A0 ;
+        skos:prefLabel      "ārya nīlāmbaradharavajrapāṇi rudratrivinaya tantra nāma"@sa-x-iast ;
         :isRoot             true ;
-        :language           bdr:LangBo , bdr:LangInc ;
-        :workHasInstance    bdr:MW25362 ;
+        :language           bdr:LangInc ;
+        :note               bdr:NTCBC48BDCD7382834 , bdr:NTE6468E7B3810E9A0 ;
         :workHasParallelsIn  bdr:WA0RK0454 .
 }
