@@ -12,19 +12,22 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23673 {
+    bda:LG2836C3EAC06C6FAC
+        a                   adm:UpdateData .
+    
     bda:LG2BE13865FA590091
-        a                   adm:InitialDataCreation .
+        a                   adm:UpdateData .
     
     bda:LG3AB8F894FEF746EF
         a                   adm:UpdateData .
     
-    bda:LG9B3B62228A6736E0
-        a                   adm:UpdateData .
+    bda:LGCF2B0D83E695B917
+        a                   adm:InitialDataCreation .
     
     bda:W23673  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:W23673 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      7 ;
         adm:replaceWith     bdr:WA23673 ;
         adm:status          bda:StatusWithdrawn .
     
@@ -37,8 +40,19 @@ bdg:WA23673 {
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR7DFFAB99B420F5EC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2548 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:NT9B3B62228A6736E0
+        a                   :Note ;
+        :noteText           "Conceptual Work"@en .
+    
     bdr:WA23673  a          :Work ;
         skos:altLabel       "khyad par du 'phags pa'i bstod pa/"@bo-x-ewts ;
         skos:prefLabel      "khyad par 'phags bstod/"@bo-x-ewts , "visesastava"@sa-x-ndia ;
-        :isRoot             true .
+        :creator            bdr:CR7DFFAB99B420F5EC ;
+        :isRoot             true ;
+        :note               bdr:NT9B3B62228A6736E0 .
 }

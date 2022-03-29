@@ -12,6 +12,9 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3JT13424 {
+    bda:LG922949EE792CE55B
+        a                   adm:UpdateData .
+    
     bda:LGCA252DD8F9A2F58D
         a                   adm:InitialDataCreation .
     
@@ -24,12 +27,17 @@ bdg:WA3JT13424 {
     bda:WA3JT13424  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3JT13424 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "db/WA3JT13424.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3JT13424 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CR8FA64E587739ED9C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4333 ;
+        :role               bdr:R0ER0019 .
     
     bdr:NT21CEB443A8E99D3A
         a                   :Note ;
@@ -37,6 +45,7 @@ bdg:WA3JT13424 {
     
     bdr:WA3JT13424  a       :Work ;
         skos:prefLabel      "man ngag rgyud/"@bo-x-ewts ;
+        :creator            bdr:CR8FA64E587739ED9C ;
         :isRoot             true ;
         :note               bdr:NT21CEB443A8E99D3A .
 }
