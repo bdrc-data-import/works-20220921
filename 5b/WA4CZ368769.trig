@@ -12,20 +12,26 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368769 {
+    bda:LG56B66F5C2368278C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-30T09:48:22.258Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGCAE718915F3A20D2
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-10T17:04:58.935Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
+        adm:logDate         "2022-03-30T09:45:14.808Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ368769  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368769 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "5b/WA4CZ368769.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368769 ;
-        adm:logEntry        bda:LGCAE718915F3A20D2 ;
+        adm:logEntry        bda:LG56B66F5C2368278C , bda:LGCAE718915F3A20D2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -33,8 +39,8 @@ bdg:WA4CZ368769 {
         skos:prefLabel      "rgya bod shan sbyar gyi gtam dpe/"@bo-x-ewts , "汉藏谚语"@zh-hans ;
         :catalogInfo        "Selected proverb in Chinese and Tibetan"@en ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
+        :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T240 ;
-        :workHasInstance    bdr:MW4CZ368769 ;
+        :workHasInstance    bdr:MW4CZ368769 , bdr:W4CZ368769 ;
         :workIsAbout        bdr:T190 .
 }

@@ -14,22 +14,28 @@
 bdg:WA4CZ368810 {
     bda:LG38998594D29E35A0
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-10T17:04:59.298Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
+        adm:logDate         "2022-03-30T10:04:50.688Z"^^xsd:dateTime ;
+        adm:logMessage      "new catlog"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG593A5F872F06B489
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-30T10:05:14.208Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ368810  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368810 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "40/WA4CZ368810.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368810 ;
-        adm:logEntry        bda:LG38998594D29E35A0 ;
+        adm:logEntry        bda:LG38998594D29E35A0 , bda:LG593A5F872F06B489 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusProvisional .
     
-    bdr:CR593A5F872F06B489
+    bdr:CRDF006EAE89FB21F3
         a                   :AgentAsCreator ;
         :agent              bdr:P5117 ;
         :role               bdr:R0ER0019 .
@@ -38,9 +44,9 @@ bdg:WA4CZ368810 {
         skos:altLabel       "chos kyi rnam grangs shes bya'i nor gling 'jug pa'i gru gzings/"@bo-x-ewts ;
         skos:prefLabel      "chos kyi rnam grangs/"@bo-x-ewts ;
         :catalogInfo        "Dictionary of Buddhist terminology arranged in numerical enumeration."@en ;
-        :creator            bdr:CR593A5F872F06B489 ;
+        :creator            bdr:CRDF006EAE89FB21F3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1231 ;
-        :workHasInstance    bdr:MW4CZ368810 .
+        :workHasInstance    bdr:MW4CZ368810 , bdr:W4CZ368810 .
 }

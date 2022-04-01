@@ -1,0 +1,46 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ369334 {
+    bda:LG8E4283BA70294C24
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-03-31T14:17:18.259Z"^^xsd:dateTime ;
+        adm:logMessage      "testing"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:WA4CZ369334  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ369334 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "ee/WA4CZ369334.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ369334 ;
+        adm:logEntry        bda:LG8E4283BA70294C24 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CRA6BF69F32B98A1AA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00KG01086 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA4CZ369334  a      :Work ;
+        skos:altLabel       "skar rtsis kyi brtag thabs lag len nyung bsdus bskal pa'i legs nyes gsal ba'i ngo mtshar ri mo/"@bo-x-ewts ;
+        skos:prefLabel      "skar rtsis kyi brtag thabs/"@bo-x-ewts ;
+        :catalogInfo        "Examination and criteria of Tibetan astrology"@en ;
+        :creator            bdr:CRA6BF69F32B98A1AA ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workHasInstance    bdr:MW4CZ369334 ;
+        :workIsAbout        bdr:T1234 , bdr:T1834 .
+}

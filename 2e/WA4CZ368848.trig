@@ -12,24 +12,37 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ368848 {
+    bda:LG49E0A7F07A1F7587
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-03-30T10:43:41.49Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG4CED1B036030DFC5
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-10T17:05:00.441Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
+        adm:logDate         "2022-03-30T10:42:33.252Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGC9885C14633E5001
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-03-30T10:55:47.769Z"^^xsd:dateTime ;
+        adm:logMessage      "add Restricted in China"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ368848  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ368848 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "2e/WA4CZ368848.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ368848 ;
-        adm:logEntry        bda:LG4CED1B036030DFC5 ;
+        adm:logEntry        bda:LG49E0A7F07A1F7587 , bda:LG4CED1B036030DFC5 , bda:LGC9885C14633E5001 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR49E0A7F07A1F7587
+    bdr:CR54B18B7B9148383F
         a                   :AgentAsCreator ;
         :agent              bdr:P1428 ;
         :role               bdr:R0ER0019 .
@@ -38,10 +51,10 @@ bdg:WA4CZ368848 {
         skos:altLabel       "dam pa'i chos rin po che 'phags pa'i yul du ji ltar dar ba'i tshul gsal bar ston pa dgos 'dod kun 'byung /"@bo-x-ewts ;
         skos:prefLabel      "rgya gar chos 'byung /"@bo-x-ewts ;
         :catalogInfo        "History of the spread of Buddhism in India"@en ;
-        :creator            bdr:CR49E0A7F07A1F7587 ;
+        :creator            bdr:CR54B18B7B9148383F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T12 ;
-        :workHasInstance    bdr:MW4CZ368848 ;
+        :workHasInstance    bdr:MW4CZ368848 , bdr:W4CZ368848 ;
         :workIsAbout        bdr:G3188 .
 }
