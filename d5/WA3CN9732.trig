@@ -24,6 +24,12 @@ bdg:WA3CN9732 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG7858CC835D360095
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-01T16:27:23.401Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P1TLMTGA003184 to P2KG234688"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM1E8DEFBA  a     adm:UpdateData ;
         adm:logAgent        "works-mark-restrictedInChina.xql" ;
         adm:logDate         "2021-10-20T20:23:32.918Z"^^xsd:dateTime ;
@@ -51,24 +57,24 @@ bdg:WA3CN9732 {
     bda:WA3CN9732  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN9732 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "d5/WA3CN9732.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN9732 ;
-        adm:logEntry        bda:LG30ED41C93A769D0F , bda:LG3B807545833D8008 , bda:LGIM1E8DEFBA , bda:LGIM5A873C62 , bda:LGIM7725ADED , bda:LGIMBF9077E6 ;
+        adm:logEntry        bda:LG30ED41C93A769D0F , bda:LG3B807545833D8008 , bda:LG7858CC835D360095 , bda:LGIM1E8DEFBA , bda:LGIM5A873C62 , bda:LGIM7725ADED , bda:LGIMBF9077E6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7858CC835D360095
+    bdr:CRA86D7F66F0CF0AB8
         a                   :AgentAsCreator ;
-        :agent              bdr:P1TLMTGA003184 ;
+        :agent              bdr:P2KG234688 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA3CN9732  a        :Work ;
         skos:prefLabel      "skyid snang med pa'i 'tsho ba/"@bo-x-ewts ;
         :catalogInfo        "A collection of prose by Khagang Samten Gyatso."@en ;
-        :creator            bdr:CR7858CC835D360095 ;
+        :creator            bdr:CRA86D7F66F0CF0AB8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1884 ;

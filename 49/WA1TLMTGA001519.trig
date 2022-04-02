@@ -18,42 +18,48 @@ bdg:WA1TLMTGA001519 {
         adm:logMessage      "Work created."@en ;
         adm:logWho          bdu:U00033 .
     
+    bda:LGD8C45F00B9261EE4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-01T13:03:35.403Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P1TLMTGA001391 to P4954"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA1TLMTGA001519
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1TLMTGA001519 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "49/WA1TLMTGA001519.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1TLMTGA001519 ;
-        adm:logEntry        bda:LG816CB566BB055257 ;
+        adm:logEntry        bda:LG816CB566BB055257 , bda:LGD8C45F00B9261EE4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusEditing .
     
     bdr:CR397101EA412B7E21
         a                   :AgentAsCreator ;
-        :agent              bdr:P1TLMTGA001391 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRC3ED81596C20DD5C
-        a                   :AgentAsCreator ;
         :agent              bdr:P5931 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRD8C45F00B9261EE4
+    bdr:CR4614FEC2944C46E1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7401 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRC3ED81596C20DD5C
         a                   :AgentAsCreator ;
         :agent              bdr:P6161 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRF224241364C15AF3
         a                   :AgentAsCreator ;
-        :agent              bdr:P7401 ;
+        :agent              bdr:P4954 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1TLMTGA001519
         a                   :Work ;
         skos:prefLabel      "spyod 'jug dang dbu ma 'jug pa rigs tshogs lnga bzhi brgya pa bcas kyi rtsa ba/"@bo-x-ewts ;
-        :creator            bdr:CR397101EA412B7E21 , bdr:CRC3ED81596C20DD5C , bdr:CRD8C45F00B9261EE4 , bdr:CRF224241364C15AF3 ;
+        :creator            bdr:CR397101EA412B7E21 , bdr:CR4614FEC2944C46E1 , bdr:CRC3ED81596C20DD5C , bdr:CRF224241364C15AF3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGA001519 .

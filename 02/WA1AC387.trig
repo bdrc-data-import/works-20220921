@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1AC387 {
+    bda:LG2B4E95E98F7BFF1E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-01T12:38:46.156Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P1TLMTGA003046 to P649"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG4F03821AE6DA9D2B
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-11-15T23:11:32.78Z"^^xsd:dateTime ;
@@ -49,18 +55,18 @@ bdg:WA1AC387 {
     bda:WA1AC387  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1AC387 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "02/WA1AC387.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1AC387 ;
-        adm:logEntry        bda:LG4F03821AE6DA9D2B , bda:LG4F1AEFFAC504413A , bda:LGAE9BD652EBD1AC28 , bda:LGB585D47346526B9E , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2B4E95E98F7BFF1E , bda:LG4F03821AE6DA9D2B , bda:LG4F1AEFFAC504413A , bda:LGAE9BD652EBD1AC28 , bda:LGB585D47346526B9E , bda:LGIM4394141E , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2B4E95E98F7BFF1E
+    bdr:CRA2BF2D67499FA498
         a                   :AgentAsCreator ;
-        :agent              bdr:P1TLMTGA003046 ;
+        :agent              bdr:P649 ;
         :role               bdr:R0ER0019 .
     
     bdr:MW1AC387  skos:altLabel  "噶玛强美选集"@zh-hans .
@@ -68,7 +74,7 @@ bdg:WA1AC387 {
     bdr:WA1AC387  a         :Work ;
         skos:altLabel       "ga ma qiang mei xuan ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "ri chos mtshams kyi zhal gdams/"@bo-x-ewts , "噶玛强美选集"@zh-hans ;
-        :creator            bdr:CR2B4E95E98F7BFF1E ;
+        :creator            bdr:CRA2BF2D67499FA498 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1AC387 , bdr:W1AC387 ;

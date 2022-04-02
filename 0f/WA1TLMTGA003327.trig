@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1TLMTGA003327 {
+    bda:LG48C80059D5893A1F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-01T12:44:02.247Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P1TLMTGB000004 to P64"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG8637D6E319825BCC
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-05-27T11:01:36.177Z"^^xsd:dateTime ;
@@ -22,23 +28,23 @@ bdg:WA1TLMTGA003327 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1TLMTGA003327 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "0f/WA1TLMTGA003327.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1TLMTGA003327 ;
-        adm:logEntry        bda:LG8637D6E319825BCC ;
+        adm:logEntry        bda:LG48C80059D5893A1F , bda:LG8637D6E319825BCC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusEditing .
     
-    bdr:CR48C80059D5893A1F
+    bdr:CR0225C417AB2FDC01
         a                   :AgentAsCreator ;
-        :agent              bdr:P1TLMTGB000004 ;
+        :agent              bdr:P64 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1TLMTGA003327
         a                   :Work ;
         skos:prefLabel      "rje tsong kha chen po'i gsung 'bum/"@bo-x-ewts ;
-        :creator            bdr:CR48C80059D5893A1F ;
+        :creator            bdr:CR0225C417AB2FDC01 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGA003327 .

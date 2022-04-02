@@ -30,6 +30,12 @@ bdg:WA4CZ74511 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGFF38F7C7513808C2
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-01T11:56:23.952Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected the author and fixed typos"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM6C9E48233B
         a                   adm:UpdateData ;
         adm:logDate         "2017-01-24T15:53:54.908Z"^^xsd:dateTime ;
@@ -40,29 +46,29 @@ bdg:WA4CZ74511 {
     bda:WA4CZ74511  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ74511 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "52/WA4CZ74511.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ74511 ;
-        adm:logEntry        bda:LGB06CF9DD84208B2E , bda:LGC140729C810EE055 , bda:LGECA2338A3DD2D9D4 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LGB06CF9DD84208B2E , bda:LGC140729C810EE055 , bda:LGECA2338A3DD2D9D4 , bda:LGFF38F7C7513808C2 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR51B0C8E62D128A73
         a                   :AgentAsCreator ;
+        :agent              bdr:P252 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR6EDE3DE49E7B2C38
+        a                   :AgentAsCreator ;
         :agent              bdr:P5245 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRFF38F7C7513808C2
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1TLMTGA001812 ;
-        :role               bdr:R0ER0019 .
-    
     bdr:WA4CZ74511  a       :Work ;
-        skos:altLabel       "mkkhas pa'i tshal la 'jug pa'i sgo zhes bya ba'i bstan bcos sogs/"@bo-x-ewts ;
-        skos:prefLabel      "mkhas 'jug sdom byangs/ sa bcad / kar gligng sogs/"@bo-x-ewts ;
+        skos:altLabel       "mkhas pa'i tshal la 'jug pa'i sgo zhes bya ba'i bstan bcos sogs/"@bo-x-ewts ;
+        skos:prefLabel      "mkhas 'jug sdom byangs/ sa bcad/ kar gling sogs/"@bo-x-ewts ;
         :catalogInfo        "The Gateway to Knowledge. Introduction to Buddhist principles by the Nyingma polymath, Jamgon Ju Mipam Namgyal Gyatso and The collected revelations connected with the practice and propitiation of the wrathful and quiescent deities as revealed by the 14th century terton, Karma Lingpa. Basis of the Tibetan Book of the Dead."@en ;
-        :creator            bdr:CR51B0C8E62D128A73 , bdr:CRFF38F7C7513808C2 ;
+        :creator            bdr:CR51B0C8E62D128A73 , bdr:CR6EDE3DE49E7B2C38 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T89 ;
