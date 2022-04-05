@@ -13,6 +13,12 @@
 
 bdg:WA27495 {
     bda:LG421EF17EA826E141
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-04T22:51:13.007Z"^^xsd:dateTime ;
+        adm:logMessage      "added cat info"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGB2A5CC708272BC3A
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -46,33 +52,34 @@ bdg:WA27495 {
     bda:WA27495  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27495 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "22/WA27495.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27495 ;
-        adm:logEntry        bda:LG421EF17EA826E141 , bda:LGD23F4A5DF8080D89 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG421EF17EA826E141 , bda:LGB2A5CC708272BC3A , bda:LGD23F4A5DF8080D89 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR411AB76D1BCBA4F3
+    bdr:CR0880333851436448
         a                   :AgentAsCreator ;
-        :agent              bdr:P79 ;
+        :agent              bdr:P2873 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRB2A5CC708272BC3A
+    bdr:CR411AB76D1BCBA4F3
         a                   :AgentAsCreator ;
-        :agent              bdr:P8755 ;
+        :agent              bdr:P1KG16272 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRB944268032ED74E5
         a                   :AgentAsCreator ;
-        :agent              bdr:P2873 ;
+        :agent              bdr:P79 ;
         :role               bdr:R0ER0016 .
     
     bdr:WA27495  a          :Work ;
         skos:altLabel       "'dod 'byung man ngag yon tan nor bu'i bang mdzod gsal byed phan bde'i sgo byed/"@bo-x-ewts , "gso dpyad nyer mkho gces bsdus zhes bya ba gsar du byon pa stag tshang lo tsA ba'i legs bshas shes rab chos 'byor gyi nyams len/"@bo-x-ewts , "gso rig nyer mkho gces bsdus em smyon nyams myong dran pa'i gsal byed/"@bo-x-ewts ;
         skos:prefLabel      "gso rig nyer mkho gces bsdus/"@bo-x-ewts ;
-        :creator            bdr:CR411AB76D1BCBA4F3 , bdr:CRB2A5CC708272BC3A , bdr:CRB944268032ED74E5 ;
+        :catalogInfo        "A compilation of Tibetan medical text written by Konchok Dargye and others."@en ;
+        :creator            bdr:CR0880333851436448 , bdr:CR411AB76D1BCBA4F3 , bdr:CRB944268032ED74E5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW27495 , bdr:W27495 ;

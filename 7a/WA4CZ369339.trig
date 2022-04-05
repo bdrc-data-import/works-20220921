@@ -11,29 +11,36 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA0XL408DA2538B18 {
-    bda:WA0XL408DA2538B18
-        a                   adm:AdminData ;
+bdg:WA4CZ369339 {
+    bda:LG009F9F18AB153640
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-04-04T16:10:55.355Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:WA4CZ369339  a      adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA0XL408DA2538B18 ;
-        adm:facetIndex      2 ;
-        adm:gitPath         "44/WA0XL408DA2538B18.trig" ;
+        adm:adminAbout      bdr:WA4CZ369339 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "7a/WA4CZ369339.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA0XL408DA2538B18 ;
+        adm:graphId         bdg:WA4CZ369339 ;
+        adm:logEntry        bda:LG009F9F18AB153640 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC3BEC0A36A5B1890
+    bdr:CR3B0D3849E39B8EC7
         a                   :AgentAsCreator ;
-        :agent              bdr:P298 ;
+        :agent              bdr:P5782 ;
         :role               bdr:R0ER0019 .
     
-    bdr:WA0XL408DA2538B18
-        a                   :Work ;
-        skos:prefLabel      "'jam mgon rgyal ba gnyis pa la brten pa'i snying po gsal bar mdzad pa'i tshul las brtsams te bstod pa don dang ldan pa/"@bo-x-ewts ;
-        :creator            bdr:CRC3BEC0A36A5B1890 ;
+    bdr:WA4CZ369339  a      :Work ;
+        skos:prefLabel      "dbu ma 'jug pa'i rang 'grel/"@bo-x-ewts ;
+        :catalogInfo        "Auto commentary on the Madhyamakavatara"@en ;
+        :creator            bdr:CR3B0D3849E39B8EC7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T67 ;
-        :workHasInstance    bdr:MW3CN22351_408DA2 .
+        :workGenre          bdr:T4JW5424 ;
+        :workHasInstance    bdr:MW4CZ369339 ;
+        :workIsAbout        bdr:WA19458 .
 }
