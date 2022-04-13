@@ -11,47 +11,52 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA8LS77030 {
-    bda:LG06E3BD685EDFDBDA
+bdg:WA8LS77037 {
+    bda:LGA762BAC2854094EE
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-12T08:13:09.701Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-12T10:00:03.259Z"^^xsd:dateTime ;
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LG3F3B1E86C6878E43
+    bda:LGF89BF02456ECB4F3
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-04-12T08:13:40.141Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-12T10:00:24.782Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:WA8LS77030  a       adm:AdminData ;
+    bda:WA8LS77037  a       adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA8LS77030 ;
-        adm:facetIndex      5 ;
-        adm:gitPath         "e2/WA8LS77030.trig" ;
+        adm:adminAbout      bdr:WA8LS77037 ;
+        adm:facetIndex      6 ;
+        adm:gitPath         "6c/WA8LS77037.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA8LS77030 ;
-        adm:logEntry        bda:LG06E3BD685EDFDBDA , bda:LG3F3B1E86C6878E43 ;
+        adm:graphId         bdg:WA8LS77037 ;
+        adm:logEntry        bda:LGA762BAC2854094EE , bda:LGF89BF02456ECB4F3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE508148F6911ED8D
+    bdr:CR5C284964F110680F
         a                   :AgentAsCreator ;
-        :agent              bdr:P298 ;
+        :agent              bdr:P64 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRF0C4EF568C452FD1
+    bdr:CR7C9406ACF6B4DFE9
         a                   :AgentAsCreator ;
-        :agent              bdr:P423 ;
+        :agent              bdr:P55 ;
         :role               bdr:R0ER0019 .
     
-    bdr:WA8LS77030  a       :Work ;
-        skos:prefLabel      "rten 'brel gyi mtha' dpyod lung rigs gter mdzod dang / rten 'brel lung rigs bang mdzod/"@bo-x-ewts ;
-        :catalogInfo        "Analysis of dependent origination by Jamyang Zhedpe Dorjee and Gungthang Tenpe Dronme."@en ;
-        :creator            bdr:CRE508148F6911ED8D , bdr:CRF0C4EF568C452FD1 ;
+    bdr:CRDAD7C8A8968D13C5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA8LS77037  a       :Work ;
+        skos:prefLabel      "rje tsong kha pa yab sras kyis mdzad pa'i lta ba'i gsung rtsom phyogs bsdus/"@bo-x-ewts ;
+        :catalogInfo        "A collection of writings on views by Tsongkhapa Losang Dakpa and his disciples."@en ;
+        :creator            bdr:CR5C284964F110680F , bdr:CR7C9406ACF6B4DFE9 , bdr:CRDAD7C8A8968D13C5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1CZ56 ;
-        :workHasInstance    bdr:MW8LS77030 , bdr:W8LS77030 ;
-        :workIsAbout        bdr:T1215 , bdr:T2281 .
+        :workGenre          bdr:T1081 , bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW8LS77037 , bdr:W8LS77037 ;
+        :workIsAbout        bdr:T381 .
 }
