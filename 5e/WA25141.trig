@@ -25,6 +25,12 @@ bdg:WA25141 {
         adm:logWho          bdu:U00003 .
     
     bda:LG59445D93892177E4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-13T10:32:15.04Z"^^xsd:dateTime ;
+        adm:logMessage      "add note, date of bitth, and birth place"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGF9BDDD16348DE17B
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -72,29 +78,29 @@ bdg:WA25141 {
     bda:WA25141  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25141 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "5e/WA25141.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25141 ;
-        adm:logEntry        bda:LG25B1B77CAD4E4A9A , bda:LG4CBBEAFDB95BAAFD , bda:LG59445D93892177E4 , bda:LGFF0C80A0943A3225 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG25B1B77CAD4E4A9A , bda:LG4CBBEAFDB95BAAFD , bda:LG59445D93892177E4 , bda:LGF9BDDD16348DE17B , bda:LGFF0C80A0943A3225 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR2B13DAE500EB926C
         a                   :AgentAsCreator ;
-        :agent              bdr:P8086 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CRF9BDDD16348DE17B
-        a                   :AgentAsCreator ;
         :agent              bdr:P258 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR3F6B68849A9E1320
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8086 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW25141  skos:altLabel  "ʼPhrin yig dper brjod utpala gźon ṅuʼi do s̋al źes bya ba bźugs so /ʼJam-dbyaṅs-mkhyen-brtses brtsams ; Liʼu-kroʼo-chis bsgyur."@en-x-mixed , "qin ze shu xin ji"@zh-latn-pinyin-x-ndia .
     
     bdr:WA25141  a          :Work ;
         skos:prefLabel      "'phrin yig dper brjod ut+pal gzhon nu'i do shal/"@bo-x-ewts , "ʼPhrin yig dper brjod utpala gźon ṅuʼi do s̋al źes bya ba bźugs so /ʼJam-dbyaṅs-mkhyen-brtses brtsams ; Liʼu-kroʼo-chis bsgyur."@en-x-mixed , "qin ze shu xin ji"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR2B13DAE500EB926C , bdr:CRF9BDDD16348DE17B ;
+        :creator            bdr:CR2B13DAE500EB926C , bdr:CR3F6B68849A9E1320 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T14 ;
