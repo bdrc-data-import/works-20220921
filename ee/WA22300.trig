@@ -24,6 +24,10 @@ bdg:WA22300 {
         adm:logMessage      "withdrew W30485 added note to W22300"@en ;
         adm:logWho          bdu:U00012 .
     
+    bda:LG4E63E2ECE921F0CD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG5394390C48AE0EC2
         a                   adm:UpdateData ;
         adm:logDate         "2007-09-11T13:03:14.404Z"^^xsd:dateTime ;
@@ -37,8 +41,10 @@ bdg:WA22300 {
         adm:logWho          bdu:U00001 .
     
     bda:LG960CD02BC5156E92
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGC56850F9B9BDFEC4
         a                   adm:UpdateData ;
@@ -83,15 +89,15 @@ bdg:WA22300 {
     bda:WA22300  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22300 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "ee/WA22300.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22300 ;
-        adm:logEntry        bda:LG1ABA7141CAFBE341 , bda:LG47CB370C6BBBCD7E , bda:LG5394390C48AE0EC2 , bda:LG6B99A4CB95CEA578 , bda:LG960CD02BC5156E92 , bda:LGC56850F9B9BDFEC4 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1ABA7141CAFBE341 , bda:LG47CB370C6BBBCD7E , bda:LG4E63E2ECE921F0CD , bda:LG5394390C48AE0EC2 , bda:LG6B99A4CB95CEA578 , bda:LG960CD02BC5156E92 , bda:LGC56850F9B9BDFEC4 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4E63E2ECE921F0CD
+    bdr:CR69098E75B0038A73
         a                   :AgentAsCreator ;
         :agent              bdr:P7524 ;
         :role               bdr:R0ER0019 .
@@ -101,7 +107,7 @@ bdg:WA22300 {
     bdr:WA22300  a          :Work ;
         skos:prefLabel      "gsang rnying rgyan dang rol mo'i bstan bcos/"@bo-x-ewts , "mi tsung fu shih yu fa ch'i"@zh-latn-wadegile ;
         :catalogInfo        "Eight works on ritual objects and arts of the Nyingma and Sarma orders."@en ;
-        :creator            bdr:CR4E63E2ECE921F0CD ;
+        :creator            bdr:CR69098E75B0038A73 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1777 ;

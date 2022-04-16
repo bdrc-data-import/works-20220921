@@ -19,6 +19,12 @@ bdg:WA30084 {
         adm:logWho          bdu:U00016 .
     
     bda:LG4279C6B7F3670E95
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
+    bda:LGF62399ABC0080C28
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -60,23 +66,23 @@ bdg:WA30084 {
     bda:WA30084  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30084 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "d1/WA30084.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30084 ;
-        adm:logEntry        bda:LG1DB2593B2BBF480D , bda:LG4279C6B7F3670E95 , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1DB2593B2BBF480D , bda:LG4279C6B7F3670E95 , bda:LGF62399ABC0080C28 , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CREDD2E271069D9390
         a                   :AgentAsCreator ;
-        :agent              bdr:P55 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRF62399ABC0080C28
-        a                   :AgentAsCreator ;
         :agent              bdr:P64 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRFC1FE291C59BC035
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW30084  skos:altLabel  "宗喀巴师徒文集"@zh-hans .
     
@@ -84,7 +90,7 @@ bdg:WA30084 {
         skos:altLabel       "sdom pa gsum gyi rnam par bzhag pa mdor bsdus te gtan la dbab pa'i rab tu byed pa thub bstan rin po che'i byi dor/"@bo-x-ewts , "zong ka ba shi tu wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "rje yab sras kyi gsung rtsom nyer mkho phyogs bsgrigs/"@bo-x-ewts , "宗喀巴师徒文集"@zh-hans ;
         :catalogInfo        "Selected writings by the three heart sons of Tsongkhapa."@en ;
-        :creator            bdr:CREDD2E271069D9390 , bdr:CRF62399ABC0080C28 ;
+        :creator            bdr:CREDD2E271069D9390 , bdr:CRFC1FE291C59BC035 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

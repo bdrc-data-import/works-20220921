@@ -19,14 +19,20 @@ bdg:WA29040 {
         adm:logWho          bdu:U00021 .
     
     bda:LG5840F609B0120F3E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG6BB7F41726238F74
         a                   adm:UpdateData ;
         adm:logDate         "2007-02-22T15:01:48.949Z"^^xsd:dateTime ;
         adm:logMessage      "copies copy la bcos"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LG7DB0F5DBECB5D6BC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGDB10A8C8FEC911F9
         a                   adm:ScanRequestCreation ;
@@ -44,29 +50,29 @@ bdg:WA29040 {
     bda:WA29040  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29040 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "01/WA29040.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29040 ;
-        adm:logEntry        bda:LG44B14956A0C066C2 , bda:LG5840F609B0120F3E , bda:LG6BB7F41726238F74 , bda:LGDB10A8C8FEC911F9 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG44B14956A0C066C2 , bda:LG5840F609B0120F3E , bda:LG6BB7F41726238F74 , bda:LG7DB0F5DBECB5D6BC , bda:LGDB10A8C8FEC911F9 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR185FD74AD15EED17
         a                   :AgentAsCreator ;
-        :agent              bdr:P9474 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR7DB0F5DBECB5D6BC
-        a                   :AgentAsCreator ;
         :agent              bdr:P8095 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRFFFAA736E6D4AE40
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9474 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW29040  skos:altLabel  "Bod kyi dmaṅs srol daṅ ʼbrel baʼi skar rtsis /Byaṅ-chub-ʼjam-dbyaṅs-skyabs daṅ Dkon-mchog-skyabs kyis rtsom sgrig byas ; bar ʼjug ri mo, Sgeʼu-steṅ Phun-tshogs daṅ Rdo-rje-tshe-brtan gyis bris."@en-x-mixed , "zang zu min su yu li suan"@zh-latn-pinyin-x-ndia .
     
     bdr:WA29040  a          :Work ;
         skos:prefLabel      "bod kyi dmangs srol dang 'brel ba'i skar rtsis/"@bo-x-ewts , "Bod kyi dmaṅs srol daṅ ʼbrel baʼi skar rtsis /Byaṅ-chub-ʼjam-dbyaṅs-skyabs daṅ Dkon-mchog-skyabs kyis rtsom sgrig byas ; bar ʼjug ri mo, Sgeʼu-steṅ Phun-tshogs daṅ Rdo-rje-tshe-brtan gyis bris."@en-x-mixed , "zang zu min su yu li suan"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR185FD74AD15EED17 , bdr:CR7DB0F5DBECB5D6BC ;
+        :creator            bdr:CR185FD74AD15EED17 , bdr:CRFFFAA736E6D4AE40 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29040 , bdr:W29040 ;

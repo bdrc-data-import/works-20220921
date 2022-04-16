@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA7616 {
+    bda:LG3009A0DDF239ED4C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG8E08399DF2350C47
         a                   adm:UpdateData ;
         adm:logDate         "2010-03-26T10:54:15.621Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA7616 {
         adm:logWho          bdu:U00016 .
     
     bda:LGA29573B9A740E844
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGDC6FCDF5121603A0
         a                   adm:ScanRequestCreation ;
@@ -59,15 +65,15 @@ bdg:WA7616 {
     bda:WA7616  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA7616 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "7c/WA7616.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA7616 ;
-        adm:logEntry        bda:LG8E08399DF2350C47 , bda:LGA29573B9A740E844 , bda:LGDC6FCDF5121603A0 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3009A0DDF239ED4C , bda:LG8E08399DF2350C47 , bda:LGA29573B9A740E844 , bda:LGDC6FCDF5121603A0 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3009A0DDF239ED4C
+    bdr:CR22E92D1CB97D912F
         a                   :AgentAsCreator ;
         :agent              bdr:P337 ;
         :role               bdr:R0ER0019 .
@@ -78,7 +84,7 @@ bdg:WA7616 {
         skos:altLabel       "zhal gdams man ngag gnad 'gag do shal mdzes rgyan/"@bo-x-ewts ;
         skos:prefLabel      "man ngag gnad 'gag do shal mdzes rgyan/"@bo-x-ewts , "zang yi yi jue nan dian jing xi"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Medical teachings on the formulation of Tibetan medicines."@en ;
-        :creator            bdr:CR3009A0DDF239ED4C ;
+        :creator            bdr:CR22E92D1CB97D912F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW7616 , bdr:W7616 ;

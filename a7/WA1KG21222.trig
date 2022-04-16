@@ -24,6 +24,12 @@ bdg:WA1KG21222 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGC86078D90DD52B5F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LGIM8F5AC89D  a     adm:UpdateData ;
         adm:logAgent        "add-works-to-PR1CTC16" ;
         adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
@@ -33,29 +39,29 @@ bdg:WA1KG21222 {
     bda:WA1KG21222  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG21222 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "a7/WA1KG21222.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG21222 ;
-        adm:logEntry        bda:LG76F2E40F526062E7 , bda:LG96AEFEECF6187C9F , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG76F2E40F526062E7 , bda:LG96AEFEECF6187C9F , bda:LGC86078D90DD52B5F , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR0D27B2593DE45D98
         a                   :AgentAsCreator ;
-        :agent              bdr:P7366 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CRC86078D90DD52B5F
-        a                   :AgentAsCreator ;
         :agent              bdr:P1KG21262 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR26C139F222E112F5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7366 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA1KG21222  a       :Work ;
         skos:altLabel       "xiao shuo chuang zuo yi tian"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "sgrung gtam gsar rtsom gyi shes bya mun sel sgron me/"@bo-x-ewts , "小说创作艺谈"@zh-hans ;
         :catalogInfo        "Critics on Tibetan literary writings."@en ;
-        :creator            bdr:CR0D27B2593DE45D98 , bdr:CRC86078D90DD52B5F ;
+        :creator            bdr:CR0D27B2593DE45D98 , bdr:CR26C139F222E112F5 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T216 ;

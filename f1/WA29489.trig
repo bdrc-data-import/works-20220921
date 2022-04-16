@@ -18,6 +18,10 @@ bdg:WA29489 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG53EFC2CB2A41BFB9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG6D171AC49C267F1A
         a                   adm:UpdateData ;
         adm:logDate         "2016-02-19T12:19:41.202Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA29489 {
         adm:logWho          bdu:U00016 .
     
     bda:LG9BDAC1851CDDFEAD
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -38,15 +44,15 @@ bdg:WA29489 {
     bda:WA29489  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29489 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f1/WA29489.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29489 ;
-        adm:logEntry        bda:LG1C3053B9B86BA86F , bda:LG6D171AC49C267F1A , bda:LG9BDAC1851CDDFEAD , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG1C3053B9B86BA86F , bda:LG53EFC2CB2A41BFB9 , bda:LG6D171AC49C267F1A , bda:LG9BDAC1851CDDFEAD , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR53EFC2CB2A41BFB9
+    bdr:CRB9669A080710B0AA
         a                   :AgentAsCreator ;
         :agent              bdr:P9755 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +63,7 @@ bdg:WA29489 {
         skos:altLabel       "dong ke shi ge ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "ro langs/"@bo-x-ewts , "Ro laṅs /Gñan [gyis brtsams]."@en-x-mixed , "东科诗歌集"@zh-hans ;
         :catalogInfo        "Collection of poetry written by Jangtse Donkho."@en ;
-        :creator            bdr:CR53EFC2CB2A41BFB9 ;
+        :creator            bdr:CRB9669A080710B0AA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29489 , bdr:W29489 ;

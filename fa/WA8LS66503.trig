@@ -24,6 +24,12 @@ bdg:WA8LS66503 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGC229AE813C4A7E8F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -34,11 +40,11 @@ bdg:WA8LS66503 {
     bda:WA8LS66503  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66503 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "fa/WA8LS66503.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66503 ;
-        adm:logEntry        bda:LG4D6E1560670D89CF , bda:LG59258F8B08A4EDC1 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG4D6E1560670D89CF , bda:LG59258F8B08A4EDC1 , bda:LGC229AE813C4A7E8F , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA4CZ302696 ;
         adm:restrictedInChina  true ;
@@ -46,24 +52,24 @@ bdg:WA8LS66503 {
     
     bdr:CR0B03D986E13AAE58
         a                   :AgentAsCreator ;
-        :agent              bdr:P8205 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CR1B29A94AE0FE09B5
-        a                   :AgentAsCreator ;
         :agent              bdr:P1KG8854 ;
         :role               bdr:R0ER0018 .
     
-    bdr:CRC229AE813C4A7E8F
+    bdr:CR1B29A94AE0FE09B5
         a                   :AgentAsCreator ;
         :agent              bdr:P8209 ;
         :role               bdr:R0ER0018 .
+    
+    bdr:CR91C53F4EA745CCE5
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8205 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA8LS66503  a       :Work ;
         skos:altLabel       "'phags pa gser 'od dam pa mdo sde'i dbang po'i rgyal po zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts ;
         skos:prefLabel      "gser 'od dam pa mdo sde'i dbang po'i rgyal po/"@bo-x-ewts ;
         :catalogInfo        "The supremely victorious golden sutra."@en ;
-        :creator            bdr:CR0B03D986E13AAE58 , bdr:CR1B29A94AE0FE09B5 , bdr:CRC229AE813C4A7E8F ;
+        :creator            bdr:CR0B03D986E13AAE58 , bdr:CR1B29A94AE0FE09B5 , bdr:CR91C53F4EA745CCE5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T769 .

@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA28259 {
+    bda:LG4B99059477482563
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG8EB08B965B68A1D8
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2008-06-02T10:47:24.193Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA28259 {
         adm:logWho          bdu:U00001 .
     
     bda:LGCCC3F2A0086D31E6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGDF621F0AB0D3CC53
         a                   adm:UpdateData ;
@@ -58,15 +64,15 @@ bdg:WA28259 {
     bda:WA28259  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28259 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "60/WA28259.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28259 ;
-        adm:logEntry        bda:LG8EB08B965B68A1D8 , bda:LGCCC3F2A0086D31E6 , bda:LGDF621F0AB0D3CC53 , bda:LGEF3B906722213F70 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG4B99059477482563 , bda:LG8EB08B965B68A1D8 , bda:LGCCC3F2A0086D31E6 , bda:LGDF621F0AB0D3CC53 , bda:LGEF3B906722213F70 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4B99059477482563
+    bdr:CR7EDD7A942774EC4A
         a                   :AgentAsCreator ;
         :agent              bdr:P300 ;
         :role               bdr:R0ER0019 .
@@ -76,7 +82,7 @@ bdg:WA28259 {
     bdr:WA28259  a          :Work ;
         skos:altLabel       "dga' bzhi ba'i rnam thar/"@bo-x-ewts ;
         skos:prefLabel      "dga' bzhi ba'i mi rabs kyi byung ba brjod pa zol med gtam gyi rol mo/"@bo-x-ewts , "to jen pan chih ta chuan"@zh-latn-wadegile ;
-        :creator            bdr:CR4B99059477482563 ;
+        :creator            bdr:CR7EDD7A942774EC4A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

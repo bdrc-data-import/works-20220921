@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA9888 {
+    bda:LG10EF823297ADE766
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG5A803F44A3EDA89D
         a                   adm:UpdateData ;
         adm:logDate         "2007-03-06T12:58:24.172Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA9888 {
         adm:logWho          bdu:U00026 .
     
     bda:LG91B51BC1EEEDC9CD
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGD1083E5D6DB93D88
         a                   adm:UpdateData ;
@@ -44,15 +50,15 @@ bdg:WA9888 {
     bda:WA9888  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA9888 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "dc/WA9888.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA9888 ;
-        adm:logEntry        bda:LG5A803F44A3EDA89D , bda:LG91B51BC1EEEDC9CD , bda:LGD1083E5D6DB93D88 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG10EF823297ADE766 , bda:LG5A803F44A3EDA89D , bda:LG91B51BC1EEEDC9CD , bda:LGD1083E5D6DB93D88 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR10EF823297ADE766
+    bdr:CRA61ABD4ACDF5EA66
         a                   :AgentAsCreator ;
         :agent              bdr:P724 ;
         :role               bdr:R0ER0019 .
@@ -62,7 +68,7 @@ bdg:WA9888 {
     bdr:WA9888  a           :Work ;
         skos:altLabel       "'od gsal rin chen snying po pad+ma las 'brel rtsal gyi rtogs brjod ngo mtshar sgyu ma'i rol gar/"@bo-x-ewts , "mkhan po ngag chung gi rang rnam/"@bo-x-ewts ;
         skos:prefLabel      "ngag dbang dpal bzang gi rang gi rnam thar/"@bo-x-ewts , "kanbu aqu zi zhuna"@zh-latn-wadegile ;
-        :creator            bdr:CR10EF823297ADE766 ;
+        :creator            bdr:CRA61ABD4ACDF5EA66 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

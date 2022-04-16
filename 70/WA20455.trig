@@ -13,14 +13,20 @@
 
 bdg:WA20455 {
     bda:LG8CF6E4F43977FFCE
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG946001C96D1F91FF
         a                   adm:UpdateData ;
         adm:logDate         "2011-09-09T15:31:28.896Z"^^xsd:dateTime ;
         adm:logMessage      "added shad and title page title"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGA39A376304823223
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGA604C819C1E6EF4B
         a                   adm:ScanRequestCreation ;
@@ -52,25 +58,25 @@ bdg:WA20455 {
     bda:WA20455  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20455 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "70/WA20455.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20455 ;
-        adm:logEntry        bda:LG8CF6E4F43977FFCE , bda:LG946001C96D1F91FF , bda:LGA604C819C1E6EF4B , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG8CF6E4F43977FFCE , bda:LG946001C96D1F91FF , bda:LGA39A376304823223 , bda:LGA604C819C1E6EF4B , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR90C9AB70B987113C
         a                   :AgentAsCreator ;
-        :agent              bdr:P1042 ;
-        :role               bdr:R0ER0014 .
-    
-    bdr:CRA39A376304823223
-        a                   :AgentAsCreator ;
         :agent              bdr:P4954 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVA328EC573571D3E7
+    bdr:CRA328EC573571D3E7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1042 ;
+        :role               bdr:R0ER0014 .
+    
+    bdr:EV013725E08936EA0B
         a                   :CompletedEvent ;
         :onYear             "1998"^^xsd:gYear .
     
@@ -79,10 +85,10 @@ bdg:WA20455 {
     bdr:WA20455  a          :Work ;
         skos:altLabel       "dbu ma rtsa ba'i shes rab kyi rnam par bshad pa yang dag lta ba'i 'od zer/"@bo-x-ewts , "dbu ma rtsa ba'i tshig le'ur byas pa shes rab/"@bo-x-ewts ;
         skos:prefLabel      "dbu ma rtsa ba shes rab rtsa 'grel/"@bo-x-ewts , "Dbu ma rtsa ba śes rab rtsa ʼgrel bźugs /[Dpal-mgon ʼPhags-pa-klu-sgrub kyis rtsa ba mdzad,- Go-rams-pa Bsod-nams-seṅ-ges ʼgrel pa brtsams]."@en-x-mixed ;
-        :creator            bdr:CR90C9AB70B987113C , bdr:CRA39A376304823223 ;
+        :creator            bdr:CR90C9AB70B987113C , bdr:CRA328EC573571D3E7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVA328EC573571D3E7 ;
+        :workEvent          bdr:EV013725E08936EA0B ;
         :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW20455 , bdr:W20455 ;
         :workIsAbout        bdr:T233 .

@@ -18,6 +18,10 @@ bdg:WA21913 {
         adm:logMessage      "added shad and colophon title"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG649FCBA17A9ACDDD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG9F4D091A4F56D805
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-08-22T12:54:19.331Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA21913 {
         adm:logWho          bdu:U00016 .
     
     bda:LGDB6622324CCB645A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -73,23 +79,23 @@ bdg:WA21913 {
     bda:WA21913  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21913 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "60/WA21913.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21913 ;
-        adm:logEntry        bda:LG3F892514087231C6 , bda:LG9F4D091A4F56D805 , bda:LGDB6622324CCB645A , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3F892514087231C6 , bda:LG649FCBA17A9ACDDD , bda:LG9F4D091A4F56D805 , bda:LGDB6622324CCB645A , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR649FCBA17A9ACDDD
-        a                   :AgentAsCreator ;
-        :agent              bdr:P7401 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRB5F02544A3F308BA
+    bdr:CR882DE05DFE8FCCEA
         a                   :AgentAsCreator ;
         :agent              bdr:P60 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRB5F02544A3F308BA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7401 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW21913  skos:altLabel  "Dbu ma bźi brgya pa rtsa ʼgrel /[Slob-dpon ʼPhags-pa-lhas rtsa ba mdzad ; Red-mdaʼ-ba Gźon-nu-blo-gros kyis ʼgrel pa brtsams]."@en-x-mixed , "zhong guan si bai song xiang jie"@zh-latn-pinyin-x-ndia .
     
@@ -97,7 +103,7 @@ bdg:WA21913 {
         skos:altLabel       "中观四百颂详解"@zh-hans ;
         skos:prefLabel      "dbu ma bzhi brgya pa rtsa 'grel/"@bo-x-ewts , "Dbu ma bźi brgya pa rtsa ʼgrel /[Slob-dpon ʼPhags-pa-lhas rtsa ba mdzad ; Red-mdaʼ-ba Gźon-nu-blo-gros kyis ʼgrel pa brtsams]."@en-x-mixed , "zhong guan si bai song xiang jie"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Commentary on Aryadeva's Catuhsataka (the Four Hundred Verses)."@en ;
-        :creator            bdr:CR649FCBA17A9ACDDD , bdr:CRB5F02544A3F308BA ;
+        :creator            bdr:CR882DE05DFE8FCCEA , bdr:CRB5F02544A3F308BA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA14132 {
+    bda:LG069B61671EF3B6CC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG9961A5496500A85E
         a                   adm:UpdateData ;
         adm:logDate         "2012-03-27T16:43:58.972Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA14132 {
         adm:logWho          bdu:U00016 .
     
     bda:LGE76083FA22510B60
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -67,15 +73,15 @@ bdg:WA14132 {
     bda:WA14132  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA14132 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "1e/WA14132.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA14132 ;
-        adm:logEntry        bda:LG9961A5496500A85E , bda:LGE76083FA22510B60 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG069B61671EF3B6CC , bda:LG9961A5496500A85E , bda:LGE76083FA22510B60 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR069B61671EF3B6CC
+    bdr:CRBEC50D3C80F5B4FB
         a                   :AgentAsCreator ;
         :agent              bdr:P2075 ;
         :role               bdr:R0ER0019 .
@@ -86,7 +92,7 @@ bdg:WA14132 {
         skos:altLabel       "mun 'joms nor bu'i phreng ba/ dor zhi gdong drug snyems bo'i dpyad rtsom phyogs bsgrigs/"@bo-x-ewts , "duo shi lun wen ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "mun 'joms nor bu'i phreng ba/"@bo-x-ewts , "多识论文集"@zh-hans ;
         :catalogInfo        "Collection of research articles."@en ;
-        :creator            bdr:CR069B61671EF3B6CC ;
+        :creator            bdr:CRBEC50D3C80F5B4FB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 , bdr:T1081 ;

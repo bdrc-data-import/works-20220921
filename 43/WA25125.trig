@@ -13,8 +13,10 @@
 
 bdg:WA25125 {
     bda:LG16E811160E3627EA
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG1B171E1992951FEC
         a                   adm:ScanRequestCreation ;
@@ -28,6 +30,10 @@ bdg:WA25125 {
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGF2EA442F0B285944
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM206EC9B06D
         a                   adm:UpdateData ;
         adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
@@ -38,11 +44,11 @@ bdg:WA25125 {
     bda:WA25125  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25125 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "43/WA25125.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25125 ;
-        adm:logEntry        bda:LG16E811160E3627EA , bda:LG1B171E1992951FEC , bda:LG909FA89E5B42A8E7 , bda:LGIM206EC9B06D ;
+        adm:logEntry        bda:LG16E811160E3627EA , bda:LG1B171E1992951FEC , bda:LG909FA89E5B42A8E7 , bda:LGF2EA442F0B285944 , bda:LGIM206EC9B06D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     

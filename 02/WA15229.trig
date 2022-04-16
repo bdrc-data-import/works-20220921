@@ -19,14 +19,20 @@ bdg:WA15229 {
         adm:logWho          bdu:U00019 .
     
     bda:LG129B20C29F313760
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG8FB3C4748293A0D3
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2015-05-05T12:07:33.686Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGA26A4F0D1B9E0800
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGBAAD2AFF40BA2230
         a                   adm:UpdateData ;
@@ -58,15 +64,15 @@ bdg:WA15229 {
     bda:WA15229  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA15229 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "02/WA15229.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA15229 ;
-        adm:logEntry        bda:LG113DEB952C431E3B , bda:LG129B20C29F313760 , bda:LG8FB3C4748293A0D3 , bda:LGBAAD2AFF40BA2230 , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG113DEB952C431E3B , bda:LG129B20C29F313760 , bda:LG8FB3C4748293A0D3 , bda:LGA26A4F0D1B9E0800 , bda:LGBAAD2AFF40BA2230 , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA26A4F0D1B9E0800
+    bdr:CRC104CDC494577BDB
         a                   :AgentAsCreator ;
         :agent              bdr:P3006 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +83,7 @@ bdg:WA15229 {
         skos:altLabel       "'bum nag gsal sgron/"@bo-x-ewts , "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag gi rgyud las bshad pa'i rgyud kyi 'grel pa 'bum nag gsal sgron/"@bo-x-ewts , "bshad rgyud 'grel pa 'bum nag gsal sgron/"@bo-x-ewts , "si bu yi dian . shi xu bu"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bshad rgyud kyi 'grel pa 'bum nag gsal sgron/"@bo-x-ewts , "bsad rgyud 'grel pa 'bum nag gsal sgron /Dzna-na-dha-ris brtsams."@en-x-mixed , "四部医典・释续部"@zh-hans ;
         :catalogInfo        "Commentary on explanation tantra (bshad rgyud), the second of the four medical tantras (brgyud bzhi) of Tibetan medicine."@en ;
-        :creator            bdr:CRA26A4F0D1B9E0800 ;
+        :creator            bdr:CRC104CDC494577BDB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20446 {
-    bda:LG8AC090DEFF7137D5
+    bda:LG4FED1B60CFCEEA09
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG8AC090DEFF7137D5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -40,15 +46,15 @@ bdg:WA20446 {
     bda:WA20446  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20446 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "e2/WA20446.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20446 ;
-        adm:logEntry        bda:LG8AC090DEFF7137D5 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG4FED1B60CFCEEA09 , bda:LG8AC090DEFF7137D5 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4FED1B60CFCEEA09
+    bdr:CRFDB4480BA18B59F3
         a                   :AgentAsCreator ;
         :agent              bdr:P1641 ;
         :role               bdr:R0ER0019 .
@@ -58,7 +64,7 @@ bdg:WA20446 {
     bdr:WA20446  a          :Work ;
         skos:altLabel       "dbang mda'i gyang sprul pa'i gsung rtsom gces bsgrigs/"@bo-x-ewts , "gnas lnga rig pa'i dbang phyug gyang sprul don grub rdo rje'i gsung rtsom gces bsgrigs legs bshad nor bu'i thang ma/"@bo-x-ewts , "wei ta chiang chih hsuan chi"@zh-latn-wadegile ;
         skos:prefLabel      "gsung 'bum/_don grub rdo rje/"@bo-x-ewts , "weida jiangzhi xuan ji"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR4FED1B60CFCEEA09 ;
+        :creator            bdr:CRFDB4480BA18B59F3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

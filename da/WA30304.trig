@@ -13,8 +13,10 @@
 
 bdg:WA30304 {
     bda:LGAFCA81F17B506664
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGB366B580F2604CA4
         a                   adm:UpdateData ;
@@ -31,6 +33,10 @@ bdg:WA30304 {
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2007-01-07T22:45:34.375Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE2FADF47AF1389EE
+        a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:LGIM4BF5F96E12
@@ -50,15 +56,15 @@ bdg:WA30304 {
     bda:WA30304  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30304 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "da/WA30304.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30304 ;
-        adm:logEntry        bda:LGAFCA81F17B506664 , bda:LGB366B580F2604CA4 , bda:LGDDEEBABEA99A2C5C , bda:LGE224884FAEF04FEC , bda:LGIM4BF5F96E12 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LGAFCA81F17B506664 , bda:LGB366B580F2604CA4 , bda:LGDDEEBABEA99A2C5C , bda:LGE224884FAEF04FEC , bda:LGE2FADF47AF1389EE , bda:LGIM4BF5F96E12 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE2FADF47AF1389EE
+    bdr:CR7977BC559DD084D6
         a                   :AgentAsCreator ;
         :agent              bdr:P1778 ;
         :role               bdr:R0ER0019 .
@@ -68,7 +74,7 @@ bdg:WA30304 {
     bdr:WA30304  a          :Work ;
         skos:altLabel       "'dul ba'i dus tshigs kyi rnam gzhag smra ba'i rgyan/"@bo-x-ewts , "grub pa'i dbang phyug legs pa don grub kyis mdzad pa'i 'dul ba'i spyi don rin po che nor bu'i 'phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "'dul ba'i spyi don rin po che nor bu'i 'phreng ba/"@bo-x-ewts , "Grub paʼi dbaṅ phyug Legs-pa-don-grub kyis mdzad paʼi ʼdul baʼi spyi don rin po che nor buʼi ʼphreṅ ba bźugs so /Dpal brtsegs Bod yig dpe rñiṅ źib ʼjugs khaṅ nas bsgrigs."@en-x-mixed ;
-        :creator            bdr:CRE2FADF47AF1389EE ;
+        :creator            bdr:CR7977BC559DD084D6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1763 ;

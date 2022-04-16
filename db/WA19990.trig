@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA19990 {
+    bda:LG1D66717B2D376DC5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG4DD90C9D744A7A5A
         a                   adm:UpdateData ;
         adm:logDate         "2008-01-09T10:36:56.357Z"^^xsd:dateTime ;
@@ -30,8 +34,10 @@ bdg:WA19990 {
         adm:logWho          bdu:U00021 .
     
     bda:LG892CD47C5CCF06DF
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGD4481EBDADD777CD
         a                   adm:UpdateData ;
@@ -84,20 +90,20 @@ bdg:WA19990 {
     bda:WA19990  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19990 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "db/WA19990.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19990 ;
-        adm:logEntry        bda:LG4DD90C9D744A7A5A , bda:LG5786AFBE19BCAAF8 , bda:LG7C2BA0C97EA82E87 , bda:LG892CD47C5CCF06DF , bda:LGD4481EBDADD777CD , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1D66717B2D376DC5 , bda:LG4DD90C9D744A7A5A , bda:LG5786AFBE19BCAAF8 , bda:LG7C2BA0C97EA82E87 , bda:LG892CD47C5CCF06DF , bda:LGD4481EBDADD777CD , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1D66717B2D376DC5
+    bdr:CR9CB8E24990DDDEF9
         a                   :AgentAsCreator ;
         :agent              bdr:P182 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV9CB8E24990DDDEF9
+    bdr:EVA30B765EA8C59CFA
         a                   :CompletedEvent ;
         :notAfter           "1742"^^xsd:gYear ;
         :notBefore          "1741"^^xsd:gYear .
@@ -107,10 +113,10 @@ bdg:WA19990 {
     bdr:WA19990  a          :Work ;
         skos:prefLabel      "dag yig mkhas pa'i 'byung gnas/"@bo-x-ewts , "zheng zi zhi zhe zhi yuan"@zh-latn-wadegile ;
         :catalogInfo        "Compendium of Tibetan orthography."@en ;
-        :creator            bdr:CR1D66717B2D376DC5 ;
+        :creator            bdr:CR9CB8E24990DDDEF9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV9CB8E24990DDDEF9 ;
+        :workEvent          bdr:EVA30B765EA8C59CFA ;
         :workGenre          bdr:T218 ;
         :workHasInstance    bdr:MW19990 , bdr:MW1PD159542_27BC01 , bdr:MW23741 , bdr:MW25159_BEAAC4 , bdr:MW28833_FCF8B2 , bdr:MW29035_FED0C1 , bdr:MW3CN3373 , bdr:MW4CZ302241 , bdr:MW4CZ74378 , bdr:W19990 , bdr:W23741 , bdr:W3CN3373 , bdr:W4CZ302241 , bdr:W4CZ74378 ;
         :workIsAbout        bdr:T1197 .

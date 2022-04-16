@@ -18,6 +18,10 @@ bdg:WA18588 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00003 .
     
+    bda:LG3084FDB467104317
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG3A05F32360BFA20C
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2008-01-09T13:53:44.154Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA18588 {
         adm:logWho          bdu:U00021 .
     
     bda:LG8E9E11207EFCBDD5
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGD7B5D0699E9E0405
         a                   adm:UpdateData ;
@@ -63,15 +69,15 @@ bdg:WA18588 {
     bda:WA18588  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA18588 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "6e/WA18588.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA18588 ;
-        adm:logEntry        bda:LG21F91B82F8151611 , bda:LG3A05F32360BFA20C , bda:LG8E9E11207EFCBDD5 , bda:LGD7B5D0699E9E0405 , bda:LGF51E284A2476EF8D , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG21F91B82F8151611 , bda:LG3084FDB467104317 , bda:LG3A05F32360BFA20C , bda:LG8E9E11207EFCBDD5 , bda:LGD7B5D0699E9E0405 , bda:LGF51E284A2476EF8D , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3084FDB467104317
+    bdr:CRDE4028D692467D6A
         a                   :AgentAsCreator ;
         :agent              bdr:P5264 ;
         :role               bdr:R0ER0019 .
@@ -81,7 +87,7 @@ bdg:WA18588 {
     bdr:WA18588  a          :Work ;
         skos:altLabel       "bo dong phyogs las rnam rgyal gyi rnam thar ngo mtshar gyi dga' ston/"@bo-x-ewts ;
         skos:prefLabel      "phyogs las rnam rgyal gyi rnam thar ngo mtshar dga' ston/"@bo-x-ewts , "po dong zhuan"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR3084FDB467104317 ;
+        :creator            bdr:CRDE4028D692467D6A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

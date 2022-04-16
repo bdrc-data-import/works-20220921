@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA19227 {
-    bda:LGFC594EC7122F9E99
+    bda:LG96698B7C9248164B
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGFC594EC7122F9E99
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -47,44 +53,44 @@ bdg:WA19227 {
     bda:WA19227  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19227 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "31/WA19227.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19227 ;
-        adm:logEntry        bda:LGFC594EC7122F9E99 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG96698B7C9248164B , bda:LGFC594EC7122F9E99 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR13BBF97F2F831EDA
         a                   :AgentAsCreator ;
-        :agent              bdr:P176 ;
+        :agent              bdr:P1550 ;
         :role               bdr:R0ER0016 .
     
     bdr:CR32B04495B0850C82
         a                   :AgentAsCreator ;
-        :agent              bdr:P477 ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR4E3D67C629FFD411
+        a                   :AgentAsCreator ;
+        :agent              bdr:P176 ;
         :role               bdr:R0ER0016 .
     
     bdr:CR5DD6349DF6BC87CC
         a                   :AgentAsCreator ;
-        :agent              bdr:P1550 ;
+        :agent              bdr:P4352 ;
         :role               bdr:R0ER0016 .
-    
-    bdr:CR96698B7C9248164B
-        a                   :AgentAsCreator ;
-        :agent              bdr:P55 ;
-        :role               bdr:R0ER0019 .
     
     bdr:CRF723B88900A0D672
         a                   :AgentAsCreator ;
-        :agent              bdr:P4352 ;
+        :agent              bdr:P477 ;
         :role               bdr:R0ER0016 .
     
     bdr:MW19227  skos:altLabel  "Dgag lan phyogs bsgrigs /[Mkhas-grub Dge-legs-dpal-bzaṅ sogs kyis mdzad]."@en-x-mixed , "bian lun wen xuan bian"@zh-latn-pinyin-x-ndia .
     
     bdr:WA19227  a          :Work ;
         skos:prefLabel      "dgag lan phyogs bsgrigs/"@bo-x-ewts , "Dgag lan phyogs bsgrigs /[Mkhas-grub Dge-legs-dpal-bzaṅ sogs kyis mdzad]."@en-x-mixed , "bian lun wen xuan bian"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR13BBF97F2F831EDA , bdr:CR32B04495B0850C82 , bdr:CR5DD6349DF6BC87CC , bdr:CR96698B7C9248164B , bdr:CRF723B88900A0D672 ;
+        :creator            bdr:CR13BBF97F2F831EDA , bdr:CR32B04495B0850C82 , bdr:CR4E3D67C629FFD411 , bdr:CR5DD6349DF6BC87CC , bdr:CRF723B88900A0D672 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW19227 , bdr:W19227 ;

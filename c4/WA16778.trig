@@ -13,13 +13,19 @@
 
 bdg:WA16778 {
     bda:LG0BBEB72A58E1678F
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG114C0E495557CFDB
         a                   adm:UpdateData ;
         adm:logDate         "2014-02-24T11:19:52.875Z"^^xsd:dateTime ;
         adm:logMessage      "added cw, W16778 & T85"@en .
+    
+    bda:LG1424EB8007E450CC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGB0DCB2C1AEF20616
         a                   adm:UpdateData ;
@@ -68,15 +74,15 @@ bdg:WA16778 {
     bda:WA16778  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA16778 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "c4/WA16778.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA16778 ;
-        adm:logEntry        bda:LG0BBEB72A58E1678F , bda:LG114C0E495557CFDB , bda:LGB0DCB2C1AEF20616 , bda:LGDAD06BFBB6D1B866 , bda:LGECCCF986ABAB1418 , bda:LGF947DEFDFCBF37D3 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG0BBEB72A58E1678F , bda:LG114C0E495557CFDB , bda:LG1424EB8007E450CC , bda:LGB0DCB2C1AEF20616 , bda:LGDAD06BFBB6D1B866 , bda:LGECCCF986ABAB1418 , bda:LGF947DEFDFCBF37D3 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1424EB8007E450CC
+    bdr:CRB24DC3A2ABE5359D
         a                   :AgentAsCreator ;
         :agent              bdr:P4655 ;
         :role               bdr:R0ER0025 .
@@ -84,7 +90,7 @@ bdg:WA16778 {
     bdr:WA16778  a          :Work ;
         skos:altLabel       "bdud rtsi snying po yan lag brgyad pa gsang ba man ngag gi rgyud/"@bo-x-ewts , "gso rig rgyud bzhi/"@bo-x-ewts ;
         skos:prefLabel      "rgyud bzhi/"@bo-x-ewts ;
-        :creator            bdr:CR1424EB8007E450CC ;
+        :creator            bdr:CRB24DC3A2ABE5359D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW16778 , bdr:W16778 ;

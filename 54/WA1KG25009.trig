@@ -24,6 +24,12 @@ bdg:WA1KG25009 {
         adm:logMessage      "completed cataloging and released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGDAA7A6F794A643C6
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LGIM095CC38C9F
         a                   adm:UpdateData ;
         adm:logDate         "2016-12-05T22:50:12.299Z"^^xsd:dateTime ;
@@ -41,30 +47,30 @@ bdg:WA1KG25009 {
     bda:WA1KG25009  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG25009 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "54/WA1KG25009.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG25009 ;
-        adm:logEntry        bda:LGC5D834C954E1602E , bda:LGD120631F22BB0C66 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LGC5D834C954E1602E , bda:LGD120631F22BB0C66 , bda:LGDAA7A6F794A643C6 , bda:LGIM095CC38C9F , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR0A434B5D8FDC5651
+        a                   :AgentAsCreator ;
+        :agent              bdr:P289 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR1414174D4C89BB38
         a                   :AgentAsCreator ;
         :agent              bdr:P5787 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR37496727A25A0246
         a                   :AgentAsCreator ;
-        :agent              bdr:P289 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR9B7BC3359E63E91A
-        a                   :AgentAsCreator ;
         :agent              bdr:P268 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRDAA7A6F794A643C6
+    bdr:CR9B7BC3359E63E91A
         a                   :AgentAsCreator ;
         :agent              bdr:P5788 ;
         :role               bdr:R0ER0019 .
@@ -72,7 +78,7 @@ bdg:WA1KG25009 {
     bdr:WA1KG25009  a       :Work ;
         skos:prefLabel      "sum rtags snyan gsum gyi rtsa ba/"@bo-x-ewts ;
         :catalogInfo        "Root texts of Tibetan grammar and poetry."@en ;
-        :creator            bdr:CR0A434B5D8FDC5651 , bdr:CR37496727A25A0246 , bdr:CR9B7BC3359E63E91A , bdr:CRDAA7A6F794A643C6 ;
+        :creator            bdr:CR0A434B5D8FDC5651 , bdr:CR1414174D4C89BB38 , bdr:CR37496727A25A0246 , bdr:CR9B7BC3359E63E91A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T1753 , bdr:T1KG8787 ;

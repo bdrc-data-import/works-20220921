@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21588 {
+    bda:LG8E7FE2B99CFD28C2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGA83D733D89D8C773
         a                   adm:UpdateData ;
         adm:logDate         "2012-07-11T10:17:21.786Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA21588 {
         adm:logWho          bdu:U00012 .
     
     bda:LGAD123E031336F20D
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -74,15 +80,15 @@ bdg:WA21588 {
     bda:WA21588  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21588 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "cf/WA21588.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21588 ;
-        adm:logEntry        bda:LGA83D733D89D8C773 , bda:LGAD123E031336F20D , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM4D99209C62 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG8E7FE2B99CFD28C2 , bda:LGA83D733D89D8C773 , bda:LGAD123E031336F20D , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM4D99209C62 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8E7FE2B99CFD28C2
+    bdr:CRD13A6E3B32CEE422
         a                   :AgentAsCreator ;
         :agent              bdr:P331 ;
         :role               bdr:R0ER0019 .
@@ -92,7 +98,7 @@ bdg:WA21588 {
     bdr:WA21588  a          :Work ;
         skos:prefLabel      "gso rig gces btus rin chen phreng ba/"@bo-x-ewts , "ti ma tan tseng p'eng ts'o i chu hsuan chi"@zh-latn-wadegile ;
         :catalogInfo        "Anthology of writings on medicine and handicrafts by an 18th century Drukpa Kagyu author from Konjo."@en ;
-        :creator            bdr:CR8E7FE2B99CFD28C2 ;
+        :creator            bdr:CRD13A6E3B32CEE422 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

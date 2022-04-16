@@ -30,14 +30,20 @@ bdg:WA21638 {
         adm:logWho          bdu:U00016 .
     
     bda:LG74FEC7FF849789E3
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG9580823281A88330
         a                   adm:UpdateData ;
         adm:logDate         "2017-02-23T13:53:10.209Z"^^xsd:dateTime ;
         adm:logMessage      "corrected use of <w:info/>"@en ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LG9D7107B3CA79CBB6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGF950D2333D5F3A44
         a                   adm:UpdateData ;
@@ -62,15 +68,15 @@ bdg:WA21638 {
     bda:WA21638  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21638 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "42/WA21638.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21638 ;
-        adm:logEntry        bda:LG55F6A02616B8873B , bda:LG6392E00A42E5060B , bda:LG6E5D0674EF38E281 , bda:LG74FEC7FF849789E3 , bda:LG9580823281A88330 , bda:LGF950D2333D5F3A44 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG55F6A02616B8873B , bda:LG6392E00A42E5060B , bda:LG6E5D0674EF38E281 , bda:LG74FEC7FF849789E3 , bda:LG9580823281A88330 , bda:LG9D7107B3CA79CBB6 , bda:LGF950D2333D5F3A44 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9D7107B3CA79CBB6
+    bdr:CREF5B09D8663F9F9C
         a                   :AgentAsCreator ;
         :agent              bdr:P6873 ;
         :role               bdr:R0ER0019 .
@@ -79,7 +85,7 @@ bdg:WA21638 {
     
     bdr:WA21638  a          :Work ;
         skos:prefLabel      "rgyal mo rong gi gnas chen dmu rdo/"@bo-x-ewts , "880-01Mo'erduo shen shan zhi /Zhongguo ren min zheng zhi xie shang hui yi Danba Xian wei yuan hui zheng li."@en-x-mixed ;
-        :creator            bdr:CR9D7107B3CA79CBB6 ;
+        :creator            bdr:CREF5B09D8663F9F9C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T13 ;

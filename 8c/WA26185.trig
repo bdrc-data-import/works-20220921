@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA26185 {
+    bda:LG2BB794E6A1D5D572
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGD21997E8AFD3F0AC
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2007-11-15T14:48:22.487Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA26185 {
         adm:logWho          bdu:U00017 .
     
     bda:LGE2D9459BF071E31D
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -46,29 +52,29 @@ bdg:WA26185 {
     bda:WA26185  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA26185 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "8c/WA26185.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA26185 ;
-        adm:logEntry        bda:LGD21997E8AFD3F0AC , bda:LGE2D9459BF071E31D , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG2BB794E6A1D5D572 , bda:LGD21997E8AFD3F0AC , bda:LGE2D9459BF071E31D , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2BB794E6A1D5D572
-        a                   :AgentAsCreator ;
-        :agent              bdr:P2636 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRB7435DA5F4982059
+    bdr:CR96D70F160832617A
         a                   :AgentAsCreator ;
         :agent              bdr:P1380 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRB7435DA5F4982059
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2636 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW26185  skos:altLabel  "Rtsa rluṅ ʾphrul ʾkhor /Mar-pa Lo-tsā-ba daṅ Dpal-ʾbyor-don-grub kyis mdzad ; Thub-bstan-phun-tshogs kyis bsgrigs."@en-x-mixed , "tsang mi ch'i kung"@zh-latn-wadegile .
     
     bdr:WA26185  a          :Work ;
         skos:prefLabel      "rtsa rlung 'phrul 'khor/"@bo-x-ewts , "Rtsa rluṅ ʾphrul ʾkhor /Mar-pa Lo-tsā-ba daṅ Dpal-ʾbyor-don-grub kyis mdzad ; Thub-bstan-phun-tshogs kyis bsgrigs."@en-x-mixed , "tsang mi ch'i kung"@zh-latn-wadegile ;
-        :creator            bdr:CR2BB794E6A1D5D572 , bdr:CRB7435DA5F4982059 ;
+        :creator            bdr:CR96D70F160832617A , bdr:CRB7435DA5F4982059 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW26185 , bdr:W26185 ;

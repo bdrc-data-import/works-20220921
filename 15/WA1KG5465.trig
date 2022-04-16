@@ -24,6 +24,12 @@ bdg:WA1KG5465 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG59631975CD12D0A8
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LG9E2D4707A0158428
         a                   adm:UpdateData ;
         adm:logDate         "2015-08-31T11:44:58.868Z"^^xsd:dateTime ;
@@ -61,23 +67,23 @@ bdg:WA1KG5465 {
     bda:WA1KG5465  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG5465 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "15/WA1KG5465.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG5465 ;
-        adm:logEntry        bda:LG1A32CFA984C07F14 , bda:LG227C442842BEE382 , bda:LG9E2D4707A0158428 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1A32CFA984C07F14 , bda:LG227C442842BEE382 , bda:LG59631975CD12D0A8 , bda:LG9E2D4707A0158428 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR103E8C050D0C461D
         a                   :AgentAsCreator ;
-        :agent              bdr:P65 ;
-        :role               bdr:R0ER0014 .
-    
-    bdr:CR59631975CD12D0A8
-        a                   :AgentAsCreator ;
         :agent              bdr:P6161 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRADBF676373C58563
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0014 .
     
     bdr:MW1KG5465  skos:altLabel  "ru xing lun ben song yu zhu jie"@zh-latn-pinyin-x-ndia .
     
@@ -85,7 +91,7 @@ bdg:WA1KG5465 {
         skos:altLabel       "spyod 'jug gi rtsa ba dang de'i 'grel pa rnam bshad rgyal sras 'jug ngogs gnyis kyi shan sbyar/"@bo-x-ewts ;
         skos:prefLabel      "spyod 'jug dar Tik shan sbyar/"@bo-x-ewts , "ru xing lun ben song yu zhu jie"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Root text of the Bodhicaryavatara by Shantideva. Commentary by Gyaltsab Darma Rinchen (1364-1432)."@en ;
-        :creator            bdr:CR103E8C050D0C461D , bdr:CR59631975CD12D0A8 ;
+        :creator            bdr:CR103E8C050D0C461D , bdr:CRADBF676373C58563 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

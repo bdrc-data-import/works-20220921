@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21623 {
-    bda:LGA170A017C238D85C
+    bda:LG642453429B916BF9
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGA170A017C238D85C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGB34255410ADC7AE2
         a                   adm:UpdateData ;
@@ -39,15 +45,15 @@ bdg:WA21623 {
     bda:WA21623  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21623 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "4e/WA21623.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21623 ;
-        adm:logEntry        bda:LGA170A017C238D85C , bda:LGB34255410ADC7AE2 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG642453429B916BF9 , bda:LGA170A017C238D85C , bda:LGB34255410ADC7AE2 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR642453429B916BF9
+    bdr:CRDDC321891506B107
         a                   :AgentAsCreator ;
         :agent              bdr:P451 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +63,7 @@ bdg:WA21623 {
     bdr:WA21623  a          :Work ;
         skos:altLabel       "rje smon lam dpal ba'i rnam 'grel mtha' dpyod chen mo/"@bo-x-ewts , "jie maolanhuawa yin ming zhan shi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "tshad ma rnam 'grel gyi le'u bzhi'i TI ka"@bo-x-ewts , "chieh mao-lan-hua-wa yin ming chan shih"@zh-latn-wadegile ;
-        :creator            bdr:CR642453429B916BF9 ;
+        :creator            bdr:CRDDC321891506B107 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW21623 , bdr:W21623 ;

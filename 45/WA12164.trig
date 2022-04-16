@@ -13,8 +13,10 @@
 
 bdg:WA12164 {
     bda:LG35C1FC384EEFECF2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG6BB68509E569BD03
         a                   adm:UpdateData ;
@@ -28,6 +30,10 @@ bdg:WA12164 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGA2EC465E4C3F4DC6
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -38,15 +44,15 @@ bdg:WA12164 {
     bda:WA12164  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA12164 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "45/WA12164.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA12164 ;
-        adm:logEntry        bda:LG35C1FC384EEFECF2 , bda:LG6BB68509E569BD03 , bda:LG91B21B482C0AE3C3 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG35C1FC384EEFECF2 , bda:LG6BB68509E569BD03 , bda:LG91B21B482C0AE3C3 , bda:LGA2EC465E4C3F4DC6 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA2EC465E4C3F4DC6
+    bdr:CR9AFB189F22307CAE
         a                   :AgentAsCreator ;
         :agent              bdr:P1361 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +63,7 @@ bdg:WA12164 {
         skos:altLabel       "dpal ldan rgyud bzhi sogs gso ba rig pa'i bka' bstan man ngag kun gyi gnad bsdus phan bde'i bsil zer 'phro ba'i zla ba gsar pa/ (sman bsdus e)"@bo-x-ewts , "li le xin yue zhi guang"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "phan bde'i bsil zer 'phro ba'i zla ba gsar pa/"@bo-x-ewts , "Dpal ldan Rgyud-bźi la sogs gso ba rig paʾi man ṅag kun gyi gnad bsdus phan bdeʾi bsil zer spro baʾi zla ba gsar pa /[Karma-ṅes-legs-bstan-ʾdzin-phrin-las-rab-rgyas]."@en-x-mixed , "利乐新月之光"@zh-hans ;
         :catalogInfo        "Remedies for the various diseases according to Tibetan ayurvedic medicine."@en ;
-        :creator            bdr:CRA2EC465E4C3F4DC6 ;
+        :creator            bdr:CR9AFB189F22307CAE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW12164 , bdr:W12164 ;

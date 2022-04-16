@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA25121 {
+    bda:LG9E89E1E7CCE8FE15
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGD6B570B3CC50AD7F
         a                   adm:UpdateData ;
         adm:logDate         "2015-04-16T12:36:57.602Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA25121 {
         adm:logWho          bdu:U00016 .
     
     bda:LGDD3766B58CBD9042
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGE297D91834FF5147
         a                   adm:UpdateData ;
@@ -44,37 +50,37 @@ bdg:WA25121 {
     bda:WA25121  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25121 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "cb/WA25121.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25121 ;
-        adm:logEntry        bda:LGD6B570B3CC50AD7F , bda:LGDA4590B9BF4E7170 , bda:LGDD3766B58CBD9042 , bda:LGE297D91834FF5147 , bda:LGIM206EC9B06D ;
+        adm:logEntry        bda:LG9E89E1E7CCE8FE15 , bda:LGD6B570B3CC50AD7F , bda:LGDA4590B9BF4E7170 , bda:LGDD3766B58CBD9042 , bda:LGE297D91834FF5147 , bda:LGIM206EC9B06D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1CC6033DD99ADC5A
         a                   :AgentAsCreator ;
-        :agent              bdr:P4991 ;
+        :agent              bdr:P227 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR60DC777E43D0C2E8
         a                   :AgentAsCreator ;
-        :agent              bdr:P252 ;
+        :agent              bdr:P7034 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR9E89E1E7CCE8FE15
+    bdr:CR7D924A54DE15AE69
         a                   :AgentAsCreator ;
-        :agent              bdr:P264 ;
+        :agent              bdr:P4991 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRB197E77BC1C9D083
         a                   :AgentAsCreator ;
-        :agent              bdr:P7034 ;
+        :agent              bdr:P264 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRCDB97BB7E55818AF
         a                   :AgentAsCreator ;
-        :agent              bdr:P227 ;
+        :agent              bdr:P252 ;
         :role               bdr:R0ER0019 .
     
     bdr:MW25121  skos:altLabel  "藏医诊治论文选"@zh-hans .
@@ -83,7 +89,7 @@ bdg:WA25121 {
         skos:altLabel       "zang yi zhen zhi lun wen xuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gso rig skor gyi rgyun mkho gal che ba bdam bsgrigs/"@bo-x-ewts , "藏医诊治论文选"@zh-hans ;
         :catalogInfo        "Collection of medical instructions for daily use."@en ;
-        :creator            bdr:CR1CC6033DD99ADC5A , bdr:CR60DC777E43D0C2E8 , bdr:CR9E89E1E7CCE8FE15 , bdr:CRB197E77BC1C9D083 , bdr:CRCDB97BB7E55818AF ;
+        :creator            bdr:CR1CC6033DD99ADC5A , bdr:CR60DC777E43D0C2E8 , bdr:CR7D924A54DE15AE69 , bdr:CRB197E77BC1C9D083 , bdr:CRCDB97BB7E55818AF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1PD128746 ;

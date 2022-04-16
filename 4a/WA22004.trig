@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22004 {
-    bda:LGEBF5A8F648D47339
+    bda:LGABFB3B0585F2FAE5
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGEBF5A8F648D47339
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -54,34 +60,34 @@ bdg:WA22004 {
     bda:WA22004  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22004 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "4a/WA22004.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22004 ;
-        adm:logEntry        bda:LGEBF5A8F648D47339 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LGABFB3B0585F2FAE5 , bda:LGEBF5A8F648D47339 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR644330328F819D86
         a                   :AgentAsCreator ;
+        :agent              bdr:P6118 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CR902A4D138D6AE766
+        a                   :AgentAsCreator ;
         :agent              bdr:P5782 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRABFB3B0585F2FAE5
+    bdr:CRD54975CD7A9A04E8
         a                   :AgentAsCreator ;
         :agent              bdr:P6117 ;
         :role               bdr:R0ER0019 .
-    
-    bdr:CRD54975CD7A9A04E8
-        a                   :AgentAsCreator ;
-        :agent              bdr:P6118 ;
-        :role               bdr:R0ER0016 .
     
     bdr:MW22004  skos:altLabel  "Mṅon rtogs rgyan daṅ Dbu ma ʾjug paʾi rtsa ba bźugs."@en-x-mixed , "zhong guan lun xuan"@zh-latn-pinyin-x-ndia .
     
     bdr:WA22004  a          :Work ;
         skos:prefLabel      "mngon rtogs rgyan dang dbu ma 'jug pa'i rtsa ba/"@bo-x-ewts , "Mṅon rtogs rgyan daṅ Dbu ma ʾjug paʾi rtsa ba bźugs."@en-x-mixed , "zhong guan lun xuan"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR644330328F819D86 , bdr:CRABFB3B0585F2FAE5 , bdr:CRD54975CD7A9A04E8 ;
+        :creator            bdr:CR644330328F819D86 , bdr:CR902A4D138D6AE766 , bdr:CRD54975CD7A9A04E8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW22004 , bdr:W22004 ;

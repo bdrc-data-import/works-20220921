@@ -13,14 +13,20 @@
 
 bdg:WA20443 {
     bda:LG4637F2E4D8154F8B
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGA539AF64A9F58B03
         a                   adm:UpdateData ;
         adm:logDate         "2018-01-10T16:17:43.489Z"^^xsd:dateTime ;
         adm:logMessage      "edited catalogue info"@en ;
         adm:logWho          bdu:U00081 .
+    
+    bda:LGD6FB01F569214A9E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -67,15 +73,15 @@ bdg:WA20443 {
     bda:WA20443  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20443 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "eb/WA20443.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20443 ;
-        adm:logEntry        bda:LG4637F2E4D8154F8B , bda:LGA539AF64A9F58B03 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG4637F2E4D8154F8B , bda:LGA539AF64A9F58B03 , bda:LGD6FB01F569214A9E , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD6FB01F569214A9E
+    bdr:CRE9AF07EAAFDCDFEC
         a                   :AgentAsCreator ;
         :agent              bdr:P1702 ;
         :role               bdr:R0ER0019 .
@@ -84,7 +90,7 @@ bdg:WA20443 {
         skos:altLabel       "chos rje lo ras pa'i rnam par thar pa bdud rtsi'i phreng ba/"@bo-x-ewts , "chos rje lo ras pa'i rnam thar/"@bo-x-ewts ;
         skos:prefLabel      "lo ras pa'i rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography of Lorepa, a master of the Marpa Kagyu order."@en ;
-        :creator            bdr:CRD6FB01F569214A9E ;
+        :creator            bdr:CRE9AF07EAAFDCDFEC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

@@ -30,6 +30,12 @@ bdg:WA2DB13643 {
         adm:logMessage      "bc0s"@en ;
         adm:logWho          bdu:U00003 .
     
+    bda:LGC77A5155139C9BD6
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LGC940E5B761F691D5
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2008-01-11T10:58:01.077Z"^^xsd:dateTime ;
@@ -86,28 +92,28 @@ bdg:WA2DB13643 {
     bda:WA2DB13643  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2DB13643 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "c7/WA2DB13643.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2DB13643 ;
-        adm:logEntry        bda:LG64B16C0D8B2718CA , bda:LG93BC54210953F7A1 , bda:LGABCB5D1C17D14447 , bda:LGC940E5B761F691D5 , bda:LGF6A18B3D8E7B4A1B , bda:LGF7ADC1E145C4A106 , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG64B16C0D8B2718CA , bda:LG93BC54210953F7A1 , bda:LGABCB5D1C17D14447 , bda:LGC77A5155139C9BD6 , bda:LGC940E5B761F691D5 , bda:LGF6A18B3D8E7B4A1B , bda:LGF7ADC1E145C4A106 , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR8F7A2B944E3595C8
         a                   :AgentAsCreator ;
+        :agent              bdr:P2DB13653 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CRC2E6C47341C7CD53
+        a                   :AgentAsCreator ;
         :agent              bdr:P2DB13655 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRC77A5155139C9BD6
+    bdr:CRF8F502D889FDC3FB
         a                   :AgentAsCreator ;
         :agent              bdr:P227 ;
         :role               bdr:R0ER0019 .
-    
-    bdr:CRF8F502D889FDC3FB
-        a                   :AgentAsCreator ;
-        :agent              bdr:P2DB13653 ;
-        :role               bdr:R0ER0016 .
     
     bdr:MW2DB13643  skos:altLabel  "qin re no bu yi zhu xuan ji . ma yang pai yi zhu xuan ji"@zh-latn-pinyin-x-ndia .
     
@@ -115,7 +121,7 @@ bdg:WA2DB13643 {
         skos:altLabel       "mA yang sman yig gces btus/"@bo-x-ewts ;
         skos:prefLabel      "mkhyen rab nor bu'i sman yig gces btus/"@bo-x-ewts , "qin re no bu yi zhu xuan ji . ma yang pai yi zhu xuan ji"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Two modern medical manuals. First work is by Khyenrab Norbu (1883-1952), master of the Lhasa Mentsi Khang. Second work is by Mayang Tamdrin Kyab and his students."@en ;
-        :creator            bdr:CR8F7A2B944E3595C8 , bdr:CRC77A5155139C9BD6 , bdr:CRF8F502D889FDC3FB ;
+        :creator            bdr:CR8F7A2B944E3595C8 , bdr:CRC2E6C47341C7CD53 , bdr:CRF8F502D889FDC3FB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2DB13643 , bdr:MW2DB13643_6B1444 , bdr:W2DB13643 ;

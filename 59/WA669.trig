@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA669 {
+    bda:LGA652F53E064563E1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGB6766B383459FF42
         a                   adm:UpdateData ;
         adm:logDate         "2010-01-28T15:16:23.512Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA669 {
         adm:logWho          bdu:U00021 .
     
     bda:LGE0275FE2DA29C2D4
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM569A8014B1
         a                   adm:UpdateData ;
@@ -32,15 +38,15 @@ bdg:WA669 {
     bda:WA669  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA669 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "59/WA669.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA669 ;
-        adm:logEntry        bda:LGB6766B383459FF42 , bda:LGE0275FE2DA29C2D4 , bda:LGIM569A8014B1 ;
+        adm:logEntry        bda:LGA652F53E064563E1 , bda:LGB6766B383459FF42 , bda:LGE0275FE2DA29C2D4 , bda:LGIM569A8014B1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA652F53E064563E1
+    bdr:CR61B3F40D79F713AF
         a                   :AgentAsCreator ;
         :agent              bdr:P65 ;
         :role               bdr:R0ER0019 .
@@ -50,7 +56,7 @@ bdg:WA669 {
     bdr:WA669  a            :Work ;
         skos:altLabel       "bstan bcos tshad ma rnam nges kyi TIk chen dgongs pa rab gsal/"@bo-x-ewts ;
         skos:prefLabel      "tshad ma rnam nges TIk chen/"@bo-x-ewts , "yin ming chung lun hsiang chieh"@zh-latn-wadegile ;
-        :creator            bdr:CRA652F53E064563E1 ;
+        :creator            bdr:CR61B3F40D79F713AF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

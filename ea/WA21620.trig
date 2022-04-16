@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21620 {
-    bda:LGDFC6F46DF1260A43
+    bda:LGBEE201D8EB6CF3C5
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGDFC6F46DF1260A43
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -33,16 +39,16 @@ bdg:WA21620 {
     bda:WA21620  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21620 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "ea/WA21620.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21620 ;
-        adm:logEntry        bda:LGDFC6F46DF1260A43 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LGBEE201D8EB6CF3C5 , bda:LGDFC6F46DF1260A43 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG1251 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRBEE201D8EB6CF3C5
+    bdr:CRDF4645568A69E79F
         a                   :AgentAsCreator ;
         :agent              bdr:P336 ;
         :role               bdr:R0ER0019 .
@@ -51,7 +57,7 @@ bdg:WA21620 {
     
     bdr:WA21620  a          :Work ;
         skos:prefLabel      "bya mgrin sngon zla ba'i rtogs brjod/"@bo-x-ewts , "qing jing niao de gu shi"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CRBEE201D8EB6CF3C5 ;
+        :creator            bdr:CRDF4645568A69E79F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 .

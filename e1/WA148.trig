@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA148 {
-    bda:LG12C06DA3B0E4C977
+    bda:LG0DE70CC810BC6D36
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG12C06DA3B0E4C977
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG4C51EC69940EE4C6
         a                   adm:ScanRequestCreation ;
@@ -77,20 +83,20 @@ bdg:WA148 {
     bda:WA148  a            adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA148 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "e1/WA148.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA148 ;
-        adm:logEntry        bda:LG12C06DA3B0E4C977 , bda:LG4C51EC69940EE4C6 , bda:LG6C403C857630E8C0 , bda:LGC42BA198514F4026 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0DE70CC810BC6D36 , bda:LG12C06DA3B0E4C977 , bda:LG4C51EC69940EE4C6 , bda:LG6C403C857630E8C0 , bda:LGC42BA198514F4026 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0DE70CC810BC6D36
+    bdr:CRFA2FE102417119DD
         a                   :AgentAsCreator ;
         :agent              bdr:P31 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVFA2FE102417119DD
+    bdr:EVC3A9059496320189
         a                   :CompletedEvent ;
         :onYear             "1928"^^xsd:gYear .
     
@@ -100,10 +106,10 @@ bdg:WA148 {
         skos:altLabel       "drang ba dang nges pa'i don rnam par 'byed pa'i bstan bcos legs bshad snying po'i dka' 'grel rin chen sgron me/"@bo-x-ewts , "rje gung thang blo gros rgya mtsho'i drang nges dka' 'grel sogs/"@bo-x-ewts ;
         skos:prefLabel      "drang nges legs bshad snying po'i dka' 'grel/"@bo-x-ewts , "xian guan pu zhu jiang yi jing xuan"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Commentary on difficult points in The Essence of Eloquence by Tsongkhapa (1357-1419). Critical and systematic exposition on the philosophic systems of the Mahayana. Explicates fundamental philosophic position of Tsongkhapa on the Two Truths, the definitive and interpretive meanings. One of the author's most important works and a core Geluk text."@en ;
-        :creator            bdr:CR0DE70CC810BC6D36 ;
+        :creator            bdr:CRFA2FE102417119DD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVFA2FE102417119DD ;
+        :workEvent          bdr:EVC3A9059496320189 ;
         :workGenre          bdr:T132 , bdr:T1491 ;
         :workHasInstance    bdr:MW148 , bdr:MW2CZ6655 , bdr:W148 , bdr:W2CZ6655 ;
         :workIsAbout        bdr:G109 , bdr:T447 , bdr:WA606 .

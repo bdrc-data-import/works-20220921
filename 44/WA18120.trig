@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA18120 {
-    bda:LG583D8A837F742E9E
+    bda:LG04A35C7C75D89740
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG583D8A837F742E9E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -60,20 +66,20 @@ bdg:WA18120 {
     bda:WA18120  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA18120 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "44/WA18120.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA18120 ;
-        adm:logEntry        bda:LG583D8A837F742E9E , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG04A35C7C75D89740 , bda:LG583D8A837F742E9E , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIM8F5AC89D , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR04A35C7C75D89740
+    bdr:CR6F03FEDEB1EEF3BE
         a                   :AgentAsCreator ;
         :agent              bdr:P5107 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV6F03FEDEB1EEF3BE
+    bdr:EV5B49E106E0D61D46
         a                   :CompletedEvent ;
         :onYear             "1996"^^xsd:gYear .
     
@@ -82,10 +88,10 @@ bdg:WA18120 {
     bdr:WA18120  a          :Work ;
         skos:altLabel       "gso dpyad man ngag 'bum tshang las bdud rtsi sman gyi rnam bshad blo gsar dga' ston/"@bo-x-ewts , "Lus sruṅ rdo rjeʾi pha lam /Bdud-mgon-tshe-riṅ gi brtsams."@en-x-mixed ;
         skos:prefLabel      "bdud rtsi sman gyi rnam bshad blo gsar dga' ston/"@bo-x-ewts , "Bdud rtsi sman gyi rnam bʹsad blo gsar dgaʾston /Gser-khaʾn Bkra-ʹsis."@en-x-mixed ;
-        :creator            bdr:CR04A35C7C75D89740 ;
+        :creator            bdr:CR6F03FEDEB1EEF3BE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV6F03FEDEB1EEF3BE ;
+        :workEvent          bdr:EV5B49E106E0D61D46 ;
         :workHasInstance    bdr:MW18120 , bdr:W18120 ;
         :workIsAbout        bdr:T85 .
 }

@@ -12,14 +12,20 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20444 {
+    bda:LG9321B068C538EACD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGB65A697908717116
         a                   adm:UpdateData ;
         adm:logDate         "2010-09-16T12:08:58.847Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00020 .
     
     bda:LGDA80E8E28C61A5FB
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -38,15 +44,15 @@ bdg:WA20444 {
     bda:WA20444  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20444 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "3a/WA20444.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20444 ;
-        adm:logEntry        bda:LGB65A697908717116 , bda:LGDA80E8E28C61A5FB , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG9321B068C538EACD , bda:LGB65A697908717116 , bda:LGDA80E8E28C61A5FB , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9321B068C538EACD
+    bdr:CR64EB25675F4D30F9
         a                   :AgentAsCreator ;
         :agent              bdr:P6066 ;
         :role               bdr:R0ER0019 .
@@ -56,7 +62,7 @@ bdg:WA20444 {
     bdr:WA20444  a          :Work ;
         skos:altLabel       "rig 'dzin bdud 'joms rdo rje rol pa rtsal gyi rnam thar/"@bo-x-ewts , "rig 'dzin gter ming 'dzin pa bdud 'joms rdo rje rol pa rtsal gyi rnam par thar pa nges don snying po'i 'jug ngogs/"@bo-x-ewts ;
         skos:prefLabel      "bdud 'joms tshang gi rang rnam/"@bo-x-ewts , "tu ch'iung chuan"@zh-latn-wadegile ;
-        :creator            bdr:CR9321B068C538EACD ;
+        :creator            bdr:CR64EB25675F4D30F9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

@@ -13,13 +13,19 @@
 
 bdg:WA30014 {
     bda:LG54E695796C58031C
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG91ECFF9590A41837
         a                   adm:UpdateData ;
         adm:logDate         "2009-11-11T11:53:52.669Z"^^xsd:dateTime ;
         adm:logMessage      "changed subject of commentary"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG9AE44FB79A86CDA0
+        a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:LGB792A5296D84DF35
@@ -45,20 +51,20 @@ bdg:WA30014 {
     bda:WA30014  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30014 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "e9/WA30014.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30014 ;
-        adm:logEntry        bda:LG54E695796C58031C , bda:LG91ECFF9590A41837 , bda:LGB792A5296D84DF35 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG54E695796C58031C , bda:LG91ECFF9590A41837 , bda:LG9AE44FB79A86CDA0 , bda:LGB792A5296D84DF35 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9AE44FB79A86CDA0
+    bdr:CRDFF19EF5FA7CC802
         a                   :AgentAsCreator ;
         :agent              bdr:P1844 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRDFF19EF5FA7CC802
+    bdr:CRE9FF155C5962251C
         a                   :AgentAsCreator ;
         :agent              bdr:P319 ;
         :role               bdr:R0ER0016 .
@@ -66,7 +72,7 @@ bdg:WA30014 {
     bdr:WA30014  a          :Work ;
         skos:altLabel       "byang chub sems dpa'i spyod pa la 'jug pa'i rnam par bshad pa theg chen chos kyi rgya mtsho zab rgyas mtha' yas pa'i snying po/"@bo-x-ewts , "dam chos yid bzhin nor bu thar pa rin po che'i rgyan zhes bya ba theg pa chen po'i lam rim/"@bo-x-ewts ;
         skos:prefLabel      "lam rim/"@bo-x-ewts ;
-        :creator            bdr:CR9AE44FB79A86CDA0 , bdr:CRDFF19EF5FA7CC802 ;
+        :creator            bdr:CRDFF19EF5FA7CC802 , bdr:CRE9FF155C5962251C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T238 ;

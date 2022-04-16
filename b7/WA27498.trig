@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA27498 {
-    bda:LG74A824D3F82E051B
+    bda:LG5324F8FBC25306A3
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG74A824D3F82E051B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGFBCFD1BEE0633B44
         a                   adm:UpdateData ;
@@ -39,28 +45,28 @@ bdg:WA27498 {
     bda:WA27498  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27498 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "b7/WA27498.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27498 ;
-        adm:logEntry        bda:LG74A824D3F82E051B , bda:LGFBCFD1BEE0633B44 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG5324F8FBC25306A3 , bda:LG74A824D3F82E051B , bda:LGFBCFD1BEE0633B44 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5324F8FBC25306A3
-        a                   :AgentAsCreator ;
-        :agent              bdr:P258 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRF85EF9F45D1BDB1E
+    bdr:CR7111B03BE367F7D9
         a                   :AgentAsCreator ;
         :agent              bdr:P211 ;
         :role               bdr:R0ER0025 .
     
+    bdr:CRF85EF9F45D1BDB1E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P258 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA27498  a          :Work ;
         skos:altLabel       "bla ma zab don snying thig las 'gro ba'i srog 'dzin bdud rtsi'i char rgyun/"@bo-x-ewts , "sman yig"@bo-x-ewts ;
         skos:prefLabel      "mkhyen brtse'i dbang po'i sman yig dang bla ma zab don snying thig las 'gro ba'i srog 'dzin bdud rtsi'i char rgyun/"@bo-x-ewts ;
-        :creator            bdr:CR5324F8FBC25306A3 , bdr:CRF85EF9F45D1BDB1E ;
+        :creator            bdr:CR7111B03BE367F7D9 , bdr:CRF85EF9F45D1BDB1E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW27498 , bdr:W27498 ;

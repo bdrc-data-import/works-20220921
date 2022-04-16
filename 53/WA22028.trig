@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22028 {
-    bda:LGC950C95FC85BFDF8
+    bda:LG8D408BC03AC15B49
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGC950C95FC85BFDF8
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGEDCA90F1BD134DD0
         a                   adm:ScanRequestCreation ;
@@ -46,30 +52,30 @@ bdg:WA22028 {
     bda:WA22028  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22028 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "53/WA22028.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22028 ;
-        adm:logEntry        bda:LGC950C95FC85BFDF8 , bda:LGEDCA90F1BD134DD0 , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG8D408BC03AC15B49 , bda:LGC950C95FC85BFDF8 , bda:LGEDCA90F1BD134DD0 , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8D408BC03AC15B49
-        a                   :AgentAsCreator ;
-        :agent              bdr:P5832 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CREC20649F200DDA21
+    bdr:CR80ECB1DB06533999
         a                   :AgentAsCreator ;
         :agent              bdr:P5964 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CREC20649F200DDA21
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5832 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW22028  skos:altLabel  "ku ts'ang pa kung pu tao chi chuan"@zh-latn-wadegile .
     
     bdr:WA22028  a          :Work ;
         skos:altLabel       "ku ts'ang jih pa chuan"@zh-latn-wadegile ;
         skos:prefLabel      "rgod tshang ba mgon po rdo rje'i rnam thar/"@bo-x-ewts , "ku ts'ang pa kung pu tao chi chuan"@zh-latn-wadegile ;
-        :creator            bdr:CR8D408BC03AC15B49 , bdr:CREC20649F200DDA21 ;
+        :creator            bdr:CR80ECB1DB06533999 , bdr:CREC20649F200DDA21 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

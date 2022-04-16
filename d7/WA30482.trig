@@ -13,8 +13,10 @@
 
 bdg:WA30482 {
     bda:LG088920AEC1E9025E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG34A1E23476B263C6
         a                   adm:ScanRequestCreation ;
@@ -27,6 +29,10 @@ bdg:WA30482 {
         adm:logDate         "2014-03-06T11:21:04.781Z"^^xsd:dateTime ;
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG748E3E4491B78964
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
@@ -45,15 +51,15 @@ bdg:WA30482 {
     bda:WA30482  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30482 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "d7/WA30482.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30482 ;
-        adm:logEntry        bda:LG088920AEC1E9025E , bda:LG34A1E23476B263C6 , bda:LG71027FCAD4D5FBCD , bda:LGIM4D99209C62 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG088920AEC1E9025E , bda:LG34A1E23476B263C6 , bda:LG71027FCAD4D5FBCD , bda:LG748E3E4491B78964 , bda:LGIM4D99209C62 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR748E3E4491B78964
+    bdr:CRF3400858664123B5
         a                   :AgentAsCreator ;
         :agent              bdr:P7277 ;
         :role               bdr:R0ER0012 .
@@ -64,7 +70,7 @@ bdg:WA30482 {
         skos:altLabel       "sgrung mkhan bsam grub kyis phab pa'i gling rje ge sar rgyal po'i sgrung / a skyid zas rdzong /"@bo-x-ewts , "a ji shi pin zong"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "a skyid zas rdzong /"@bo-x-ewts , "阿吉食品宗"@zh-hans ;
         :catalogInfo        "An episode from the epic of Gesar."@en ;
-        :creator            bdr:CR748E3E4491B78964 ;
+        :creator            bdr:CRF3400858664123B5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW30482 , bdr:W30482 ;

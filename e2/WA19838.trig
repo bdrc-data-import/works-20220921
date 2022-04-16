@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA19838 {
+    bda:LG06337E755A08B77A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG090D5B2BC7B6CB5C
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2008-06-02T16:02:08.695Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA19838 {
         adm:logWho          bdu:U00016 .
     
     bda:LG4FC8EDFE4AE0D3CD
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG7D8E3982CBDD603A
         a                   adm:UpdateData ;
@@ -70,30 +76,30 @@ bdg:WA19838 {
     bda:WA19838  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19838 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "e2/WA19838.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19838 ;
-        adm:logEntry        bda:LG090D5B2BC7B6CB5C , bda:LG4206E0668FB7E067 , bda:LG4FC8EDFE4AE0D3CD , bda:LG7D8E3982CBDD603A , bda:LG8077482B440C560D , bda:LGA39EAC6B1E6C4036 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG06337E755A08B77A , bda:LG090D5B2BC7B6CB5C , bda:LG4206E0668FB7E067 , bda:LG4FC8EDFE4AE0D3CD , bda:LG7D8E3982CBDD603A , bda:LG8077482B440C560D , bda:LGA39EAC6B1E6C4036 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA4780 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR06337E755A08B77A
+    bdr:CRC8F013D59B1F79FA
         a                   :AgentAsCreator ;
         :agent              bdr:P251 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVC8F013D59B1F79FA
+    bdr:EV5762A0D0E4536E9F
         a                   :CompletedEvent ;
         :onYear             "1881"^^xsd:gYear .
     
     bdr:WA19838  a          :Work ;
         skos:altLabel       "sku 'bum byams pa gling gi gdan rabs don ldan tshangs pa'i dbyangs snyan/"@bo-x-ewts ;
         skos:prefLabel      "sku 'bum gdan rabs/"@bo-x-ewts ;
-        :creator            bdr:CR06337E755A08B77A ;
+        :creator            bdr:CRC8F013D59B1F79FA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVC8F013D59B1F79FA ;
+        :workEvent          bdr:EV5762A0D0E4536E9F ;
         :workIsAbout        bdr:G160 , bdr:T16 .
 }

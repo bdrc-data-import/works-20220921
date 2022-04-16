@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29978 {
+    bda:LG74329FC9C042E5DA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGC679FC2C9DE60FF4
         a                   adm:UpdateData ;
         adm:logDate         "2009-10-13T14:55:51.334Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA29978 {
         adm:logWho          bdu:U00021 .
     
     bda:LGD65F37C6CE9B965B
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -60,35 +66,35 @@ bdg:WA29978 {
     bda:WA29978  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29978 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "1c/WA29978.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29978 ;
-        adm:logEntry        bda:LGC679FC2C9DE60FF4 , bda:LGD65F37C6CE9B965B , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG74329FC9C042E5DA , bda:LGC679FC2C9DE60FF4 , bda:LGD65F37C6CE9B965B , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR0845C4D7B6262648
         a                   :AgentAsCreator ;
-        :agent              bdr:P60 ;
+        :agent              bdr:P79 ;
         :role               bdr:R0ER0016 .
     
     bdr:CR536F4B96AFA048D7
         a                   :AgentAsCreator ;
-        :agent              bdr:P79 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR74329FC9C042E5DA
-        a                   :AgentAsCreator ;
         :agent              bdr:P1614 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRE7D43F739744087F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P60 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW29978  skos:altLabel  "tianwen lisuan"@zh-latn-pinyin-x-ndia .
     
     bdr:WA29978  a          :Work ;
         skos:prefLabel      "rtsis gzhung /"@bo-x-ewts , "tianwen lisuan"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Selected writings by Sakya authors on Tibetan astrology. Written by Drakpa Gyaltsen (1147-1216), Taktsang Sherab Rinchen (-1405), Remdawa Zhonnu Lodro (1349-1412)."@en ;
-        :creator            bdr:CR0845C4D7B6262648 , bdr:CR536F4B96AFA048D7 , bdr:CR74329FC9C042E5DA ;
+        :creator            bdr:CR0845C4D7B6262648 , bdr:CR536F4B96AFA048D7 , bdr:CRE7D43F739744087F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T203 ;

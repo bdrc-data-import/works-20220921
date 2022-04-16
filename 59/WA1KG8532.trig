@@ -30,6 +30,12 @@ bdg:WA1KG8532 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGFE498C48C2DA8901
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
         adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
@@ -74,24 +80,24 @@ bdg:WA1KG8532 {
     bda:WA1KG8532  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG8532 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "59/WA1KG8532.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG8532 ;
-        adm:logEntry        bda:LG2701AEE7873DE910 , bda:LG4023693CE9FB9AD4 , bda:LGA32FC8F6CB59344F , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG2701AEE7873DE910 , bda:LG4023693CE9FB9AD4 , bda:LGA32FC8F6CB59344F , bda:LGFE498C48C2DA8901 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR8767AAB182CC539A
         a                   :AgentAsCreator ;
-        :agent              bdr:P1271 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRFE498C48C2DA8901
-        a                   :AgentAsCreator ;
         :agent              bdr:P258 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR87F84CB3FF980C7A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1271 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW1KG8532  skos:altLabel  "钦则昂布医著选 斗拉诺布医著选"@zh-hant .
     
@@ -99,7 +105,7 @@ bdg:WA1KG8532 {
         skos:altLabel       "mkhyen brtse dbang po'i sman yig"@bo-x-ewts , "stag bla nor bu'i sman yig"@bo-x-ewts ;
         skos:prefLabel      "mkhyen brtse dbang po dang stag bla nor bu'i sman yig"@bo-x-ewts , "钦则昂布医著选 斗拉诺布医著选"@zh-hant ;
         :catalogInfo        "Tibetan medical manuals. Written by Jamyang Khyentse Wangpo (1820-1892) and Takla Norbu (1889-1958)."@en ;
-        :creator            bdr:CR8767AAB182CC539A , bdr:CRFE498C48C2DA8901 ;
+        :creator            bdr:CR8767AAB182CC539A , bdr:CR87F84CB3FF980C7A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG8532 , bdr:W1KG8532 ;

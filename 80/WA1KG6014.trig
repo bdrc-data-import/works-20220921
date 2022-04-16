@@ -35,6 +35,12 @@ bdg:WA1KG6014 {
         adm:logMessage      "added colophon"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG306DEDF1DB191409
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LGA36C6639412C81B3
         a                   adm:UpdateData ;
         adm:logDate         "2012-01-27T12:26:07.073Z"^^xsd:dateTime ;
@@ -113,28 +119,28 @@ bdg:WA1KG6014 {
     bda:WA1KG6014  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG6014 ;
-        adm:facetIndex      19 ;
+        adm:facetIndex      20 ;
         adm:gitPath         "80/WA1KG6014.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG6014 ;
-        adm:logEntry        bda:LG02D82C3602701716 , bda:LG17D84B908EAF9EA5 , bda:LG1F74E490E86F8254 , bda:LG244CA20385BE9A04 , bda:LGA36C6639412C81B3 , bda:LGB9588CA1504F0B2A , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG02D82C3602701716 , bda:LG17D84B908EAF9EA5 , bda:LG1F74E490E86F8254 , bda:LG244CA20385BE9A04 , bda:LG306DEDF1DB191409 , bda:LGA36C6639412C81B3 , bda:LGB9588CA1504F0B2A , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR0B81DDA570551FF7
         a                   :AgentAsCreator ;
+        :agent              bdr:P6095 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CRA238DA96932CC42C
+        a                   :AgentAsCreator ;
         :agent              bdr:P1KG6015 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CR306DEDF1DB191409
+    bdr:CRD18AF62670E085C6
         a                   :AgentAsCreator ;
         :agent              bdr:P9242 ;
         :role               bdr:R0ER0019 .
-    
-    bdr:CRD18AF62670E085C6
-        a                   :AgentAsCreator ;
-        :agent              bdr:P6095 ;
-        :role               bdr:R0ER0016 .
     
     bdr:MW1KG6014  skos:altLabel  "Reb-koṅ Sṅags-maṅ gi skar yig phyogs bsgrigs /[sgrig pa po, Hūm̐-chen He-ru-ka daṅ Ñi-zla He-ru-ka]."@en-x-mixed , "热贡阿芒历算汇集"@zh-hans .
     
@@ -142,7 +148,7 @@ bdg:WA1KG6014 {
         skos:altLabel       "re gong a mang li suan hui ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "reb kong sngags mang gi skar yig phyogs bsgrigs/"@bo-x-ewts , "Reb-koṅ Sṅags-maṅ gi skar yig phyogs bsgrigs /[sgrig pa po, Hūm̐-chen He-ru-ka daṅ Ñi-zla He-ru-ka]."@en-x-mixed , "热贡阿芒历算汇集"@zh-hans ;
         :catalogInfo        "Anthology of astrology texts from Rebkong."@en ;
-        :creator            bdr:CR0B81DDA570551FF7 , bdr:CR306DEDF1DB191409 , bdr:CRD18AF62670E085C6 ;
+        :creator            bdr:CR0B81DDA570551FF7 , bdr:CRA238DA96932CC42C , bdr:CRD18AF62670E085C6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T203 ;

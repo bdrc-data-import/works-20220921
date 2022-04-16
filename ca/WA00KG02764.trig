@@ -47,6 +47,12 @@ bdg:WA00KG02764 {
         adm:logMessage      "added copyright title"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGAF14CA2210221EC7
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
         adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
@@ -71,25 +77,25 @@ bdg:WA00KG02764 {
     bda:WA00KG02764  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG02764 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "ca/WA00KG02764.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG02764 ;
-        adm:logEntry        bda:LG2520F4630372870E , bda:LG3E4F93AE577BC520 , bda:LG4F783E69B5E575A6 , bda:LG7C16CAB63DDED382 , bda:LG82CB29D99199C4AA , bda:LG99E0223E6849BFFD , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG2520F4630372870E , bda:LG3E4F93AE577BC520 , bda:LG4F783E69B5E575A6 , bda:LG7C16CAB63DDED382 , bda:LG82CB29D99199C4AA , bda:LG99E0223E6849BFFD , bda:LGAF14CA2210221EC7 , bda:LGIM093A1A0447 , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR28944DE7622D6C4D
         a                   :AgentAsCreator ;
+        :agent              bdr:P7707 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR3CD2E4F9E1621CD3
+        a                   :AgentAsCreator ;
         :agent              bdr:P00KG09876 ;
         :role               bdr:R0ER0026 .
     
     bdr:CR445192F2BADE43E9
-        a                   :AgentAsCreator ;
-        :agent              bdr:P7707 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CRAF14CA2210221EC7
         a                   :AgentAsCreator ;
         :agent              bdr:P4709 ;
         :role               bdr:R0ER0019 .
@@ -100,7 +106,7 @@ bdg:WA00KG02764 {
         skos:altLabel       "de er long si yu li bei sai cang huo fo"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gter lung dgon pa dang bse tshang sprul sku rim byon/"@bo-x-ewts , "德尔隆寺与历辈赛仓活佛"@zh-hans ;
         :catalogInfo        "History of Terlung Monastery, located near Labrang Monastery in what is now Xiahe County in Gannan Prefecture, Gansu Province, as well as biographies of the successive Tibetan Buddhist Setsang incarnation lineage, the latest of whom now lives in Hezuo in Gannan Prefecture. The third bse-tshang rinpoche was an important teacher in Mongolia and influential in the Qing Court"@en ;
-        :creator            bdr:CR28944DE7622D6C4D , bdr:CR445192F2BADE43E9 , bdr:CRAF14CA2210221EC7 ;
+        :creator            bdr:CR28944DE7622D6C4D , bdr:CR3CD2E4F9E1621CD3 , bdr:CR445192F2BADE43E9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

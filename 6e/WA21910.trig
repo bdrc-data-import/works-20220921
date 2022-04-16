@@ -13,8 +13,10 @@
 
 bdg:WA21910 {
     bda:LG0C38CFBF668728FD
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG583008BA10422FA5
         a                   adm:ScanRequestCreation ;
@@ -28,6 +30,10 @@ bdg:WA21910 {
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG6D169147BC22125F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM8F5AC89D  a     adm:UpdateData ;
         adm:logAgent        "add-works-to-PR1CTC16" ;
         adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
@@ -37,22 +43,22 @@ bdg:WA21910 {
     bda:WA21910  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21910 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "6e/WA21910.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21910 ;
-        adm:logEntry        bda:LG0C38CFBF668728FD , bda:LG583008BA10422FA5 , bda:LG5FF37DB0E166C5BD , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG0C38CFBF668728FD , bda:LG583008BA10422FA5 , bda:LG5FF37DB0E166C5BD , bda:LG6D169147BC22125F , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR028FE22998C044E6
         a                   :AgentAsCreator ;
-        :agent              bdr:P7398 ;
+        :agent              bdr:P7397 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR6D169147BC22125F
+    bdr:CR9108A107D44E772A
         a                   :AgentAsCreator ;
-        :agent              bdr:P7397 ;
+        :agent              bdr:P7398 ;
         :role               bdr:R0ER0019 .
     
     bdr:MW21910  skos:altLabel  "西藏民歌选"@zh-hans .
@@ -61,7 +67,7 @@ bdg:WA21910 {
         skos:altLabel       "xi zang min ge xuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bod kyi dmangs khrod glu dbyangs bdams bsgrigs/"@bo-x-ewts , "西藏民歌选"@zh-hans ;
         :catalogInfo        "Collection of selective folksongs of Lhasa Kyichu, Kongpo and Damzhung."@en ;
-        :creator            bdr:CR028FE22998C044E6 , bdr:CR6D169147BC22125F ;
+        :creator            bdr:CR028FE22998C044E6 , bdr:CR9108A107D44E772A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1PD128746 , bdr:T246 ;

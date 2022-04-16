@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20044 {
-    bda:LGA4C8B0F5B1722EE9
+    bda:LG5ABA07C57532689B
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGA4C8B0F5B1722EE9
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGB8EA59B9C0D2377D
         a                   adm:ScanRequestCreation ;
@@ -45,27 +51,27 @@ bdg:WA20044 {
     bda:WA20044  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20044 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "ce/WA20044.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20044 ;
-        adm:logEntry        bda:LGA4C8B0F5B1722EE9 , bda:LGB8EA59B9C0D2377D , bda:LGC06D5A8A47DC369E , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG5ABA07C57532689B , bda:LGA4C8B0F5B1722EE9 , bda:LGB8EA59B9C0D2377D , bda:LGC06D5A8A47DC369E , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5ABA07C57532689B
+    bdr:CR58BE3F5F80E7370F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5920 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CRC76528435E97775E
         a                   :AgentAsCreator ;
         :agent              bdr:P37 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRC76528435E97775E
-        a                   :AgentAsCreator ;
-        :agent              bdr:P719 ;
-        :role               bdr:R0ER0016 .
-    
     bdr:CREF56E71EB69B8933
         a                   :AgentAsCreator ;
-        :agent              bdr:P5920 ;
+        :agent              bdr:P719 ;
         :role               bdr:R0ER0016 .
     
     bdr:MW20044  skos:altLabel  "pu ti dao ci shi nan, wen shu yan jiao"@zh-latn-pinyin-x-ndia .
@@ -73,7 +79,7 @@ bdg:WA20044 {
     bdr:WA20044  a          :Work ;
         skos:altLabel       "byang chub lam gyi rim pa'i khrid yig 'jam dpal zhal lung dang paN chen bde lam/"@bo-x-ewts ;
         skos:prefLabel      "lam khrid 'jam dpal zhal lung dang bde lam/"@bo-x-ewts , "pu ti dao ci shi nan, wen shu yan jiao"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR5ABA07C57532689B , bdr:CRC76528435E97775E , bdr:CREF56E71EB69B8933 ;
+        :creator            bdr:CR58BE3F5F80E7370F , bdr:CRC76528435E97775E , bdr:CREF56E71EB69B8933 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T200 , bdr:T238 ;

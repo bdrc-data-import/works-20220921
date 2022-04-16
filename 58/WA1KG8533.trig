@@ -36,6 +36,12 @@ bdg:WA1KG8533 {
         adm:logMessage      "changed accessioned to released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGD23931C6DBA7474C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -67,23 +73,23 @@ bdg:WA1KG8533 {
     bda:WA1KG8533  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG8533 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "58/WA1KG8533.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG8533 ;
-        adm:logEntry        bda:LG17D303D7E06C9EDE , bda:LG2A88D55B37D7C3F2 , bda:LG958E973CA585BA30 , bda:LGC19902113FD7DF29 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG17D303D7E06C9EDE , bda:LG2A88D55B37D7C3F2 , bda:LG958E973CA585BA30 , bda:LGC19902113FD7DF29 , bda:LGD23931C6DBA7474C , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR62C0C4D569AFC60B
         a                   :AgentAsCreator ;
-        :agent              bdr:P435 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRD23931C6DBA7474C
-        a                   :AgentAsCreator ;
         :agent              bdr:P1KG8534 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRAE8DC05FAE91DB6C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P435 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW1KG8533  skos:altLabel  "仲曼心精、所想皆具"@zh-hans .
     
@@ -91,7 +97,7 @@ bdg:WA1KG8533 {
         skos:altLabel       "'brong sman mkhas pa'i nyams yig 'chi med bdud rtsi'i bcud len/"@bo-x-ewts , "gong sman dkon mchog bde legs kyi gso rig dgos 'dod kun 'byung /"@bo-x-ewts ;
         skos:prefLabel      "'brong sman snying thig dang dgos 'dod kun 'byung /"@bo-x-ewts , "仲曼心精、所想皆具"@zh-hans ;
         :catalogInfo        "Collection of medical manuals by Rinchen Gyalpo (b. 1748) and Konchok Delek (1447-1506)."@en ;
-        :creator            bdr:CR62C0C4D569AFC60B , bdr:CRD23931C6DBA7474C ;
+        :creator            bdr:CR62C0C4D569AFC60B , bdr:CRAE8DC05FAE91DB6C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

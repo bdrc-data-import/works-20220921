@@ -25,14 +25,20 @@ bdg:WA21985 {
         adm:logWho          bdu:U00016 .
     
     bda:LGA8EEF3597B7AE945
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGBF2D629CC79003A0
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-08-22T12:46:16.624Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGDC1D188000CDCA0F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -79,23 +85,23 @@ bdg:WA21985 {
     bda:WA21985  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21985 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "65/WA21985.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21985 ;
-        adm:logEntry        bda:LG1A65C3089C2FD3E6 , bda:LG6B33F33CB841EEBB , bda:LGA8EEF3597B7AE945 , bda:LGBF2D629CC79003A0 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1A65C3089C2FD3E6 , bda:LG6B33F33CB841EEBB , bda:LGA8EEF3597B7AE945 , bda:LGBF2D629CC79003A0 , bda:LGDC1D188000CDCA0F , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDC1D188000CDCA0F
-        a                   :AgentAsCreator ;
-        :agent              bdr:P6161 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRFE6B6710B549F8F7
+    bdr:CR4129EA1F2A2BC6E8
         a                   :AgentAsCreator ;
         :agent              bdr:P6962 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRFE6B6710B549F8F7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6161 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW21985  skos:altLabel  "《入行论》详释"@zh-hans .
     
@@ -103,7 +109,7 @@ bdg:WA21985 {
         skos:altLabel       "byang chub sems dpa'i spyod pa la 'jug pa'i tshig 'grel 'jam dbyangs bla ma'i zhal lung bdud rtsi'i thig pa/"@bo-x-ewts ;
         skos:prefLabel      "byang chub sems dpa'i spyod pa la 'jug pa rtsa ba dang 'grel pa/"@bo-x-ewts , "《入行论》详释"@zh-hans ;
         :catalogInfo        "Commentary on Shantideva's Bodhicaryavatara."@en ;
-        :creator            bdr:CRDC1D188000CDCA0F , bdr:CRFE6B6710B549F8F7 ;
+        :creator            bdr:CR4129EA1F2A2BC6E8 , bdr:CRFE6B6710B549F8F7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

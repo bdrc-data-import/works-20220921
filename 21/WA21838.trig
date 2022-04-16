@@ -19,8 +19,10 @@ bdg:WA21838 {
         adm:logWho          bdu:U00016 .
     
     bda:LGA4BA29FF67D2305E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGBBEB718ED5DE1EED
         a                   adm:UpdateData ;
@@ -28,23 +30,27 @@ bdg:WA21838 {
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGF20E2B866DA0BAE7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:WA21838  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21838 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "21/WA21838.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21838 ;
-        adm:logEntry        bda:LG03F41E9B689AF764 , bda:LGA4BA29FF67D2305E , bda:LGBBEB718ED5DE1EED ;
+        adm:logEntry        bda:LG03F41E9B689AF764 , bda:LGA4BA29FF67D2305E , bda:LGBBEB718ED5DE1EED , bda:LGF20E2B866DA0BAE7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA6A49D488B963D62
+    bdr:CR656EF5323D0CA76E
         a                   :AgentAsCreator ;
         :agent              bdr:P7365 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CRF20E2B866DA0BAE7
+    bdr:CRA6A49D488B963D62
         a                   :AgentAsCreator ;
         :agent              bdr:P7364 ;
         :role               bdr:R0ER0019 .
@@ -55,7 +61,7 @@ bdg:WA21838 {
         skos:altLabel       "gang tie shi zen me lian cheng de"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "ngar lcags lta bu'i mi de ji ltar byas nas byung ba yin/"@bo-x-ewts , "钢铁是怎么炼成的"@zh-hans ;
         :catalogInfo        "Translation of Russian novel based on Russian Revolution, 1917-1921."@en ;
-        :creator            bdr:CRA6A49D488B963D62 , bdr:CRF20E2B866DA0BAE7 ;
+        :creator            bdr:CR656EF5323D0CA76E , bdr:CRA6A49D488B963D62 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T260 ;

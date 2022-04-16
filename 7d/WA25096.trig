@@ -18,9 +18,15 @@ bdg:WA25096 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00001 .
     
-    bda:LGCBD4D0EB2B9750F0
+    bda:LG53188CCA0A0FF2F9
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGCBD4D0EB2B9750F0
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -52,30 +58,30 @@ bdg:WA25096 {
     bda:WA25096  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25096 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "7d/WA25096.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25096 ;
-        adm:logEntry        bda:LG2978B05CE921AF50 , bda:LGCBD4D0EB2B9750F0 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG2978B05CE921AF50 , bda:LG53188CCA0A0FF2F9 , bda:LGCBD4D0EB2B9750F0 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR4F91977DF079DE83
         a                   :AgentAsCreator ;
-        :agent              bdr:P7707 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR53188CCA0A0FF2F9
-        a                   :AgentAsCreator ;
         :agent              bdr:P8065 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRC193DDF77F5AB1A4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7707 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW25096  skos:altLabel  "Bod Sog gi rig gnas ʾbrel baʾi źib ʾjug /Saṅs-rgyas-rin-chen daṅ ʾBrug-thar gyis brtsams."@en-x-mixed .
     
     bdr:WA25096  a          :Work ;
         skos:prefLabel      "bod sog gi rig gnas 'brel ba'i zhib 'jug"@bo-x-ewts , "Bod Sog gi rig gnas ʾbrel baʾi źib ʾjug /Saṅs-rgyas-rin-chen daṅ ʾBrug-thar gyis brtsams."@en-x-mixed ;
-        :creator            bdr:CR4F91977DF079DE83 , bdr:CR53188CCA0A0FF2F9 ;
+        :creator            bdr:CR4F91977DF079DE83 , bdr:CRC193DDF77F5AB1A4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW25096 , bdr:W25096 ;

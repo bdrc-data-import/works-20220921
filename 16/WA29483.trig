@@ -18,6 +18,10 @@ bdg:WA29483 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG262BDBCC4F5E3658
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGBCF12835AFA1549A
         a                   adm:UpdateData ;
         adm:logDate         "2007-03-01T12:33:15.856Z"^^xsd:dateTime ;
@@ -31,22 +35,24 @@ bdg:WA29483 {
         adm:logWho          bdu:U00017 .
     
     bda:LGE91E9236DA13FD56
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:WA29483  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29483 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "16/WA29483.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29483 ;
-        adm:logEntry        bda:LG07C6F227835902F6 , bda:LGBCF12835AFA1549A , bda:LGC49AB0E1AB745D05 , bda:LGE91E9236DA13FD56 ;
+        adm:logEntry        bda:LG07C6F227835902F6 , bda:LG262BDBCC4F5E3658 , bda:LGBCF12835AFA1549A , bda:LGC49AB0E1AB745D05 , bda:LGE91E9236DA13FD56 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG24716 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR262BDBCC4F5E3658
+    bdr:CRA967A841312E08DD
         a                   :AgentAsCreator ;
         :agent              bdr:P435 ;
         :role               bdr:R0ER0019 .
@@ -56,7 +62,7 @@ bdg:WA29483 {
     bdr:WA29483  a          :Work ;
         skos:altLabel       "mkhas pa'i man ngag kun 'dus dgos pa kun 'byung /"@bo-x-ewts ;
         skos:prefLabel      "gso rig dgos pa kun 'byung /"@bo-x-ewts , "zang yi mi jue hui ji"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR262BDBCC4F5E3658 ;
+        :creator            bdr:CRA967A841312E08DD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29483 ;

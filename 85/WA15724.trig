@@ -13,6 +13,12 @@
 
 bdg:WA15724 {
     bda:LG06C7642DEF47E48B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
+    bda:LGB15324D142F66F42
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -33,21 +39,21 @@ bdg:WA15724 {
     bda:WA15724  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA15724 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "85/WA15724.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA15724 ;
-        adm:logEntry        bda:LG06C7642DEF47E48B , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG06C7642DEF47E48B , bda:LGB15324D142F66F42 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG14674 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRB15324D142F66F42
+    bdr:CR7F699C7C24F9C6DA
         a                   :AgentAsCreator ;
         :agent              bdr:P2666 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV7F699C7C24F9C6DA
+    bdr:EV10FBF8AC9C5B856C
         a                   :CompletedEvent ;
         :onYear             "1661"^^xsd:gYear .
     
@@ -55,9 +61,9 @@ bdg:WA15724 {
     
     bdr:WA15724  a          :Work ;
         skos:prefLabel      "'bri gung gso rig gces bsdus/"@bo-x-ewts , "zhigong zang yi wen ji"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CRB15324D142F66F42 ;
+        :creator            bdr:CR7F699C7C24F9C6DA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV7F699C7C24F9C6DA ;
+        :workEvent          bdr:EV10FBF8AC9C5B856C ;
         :workIsAbout        bdr:T85 .
 }

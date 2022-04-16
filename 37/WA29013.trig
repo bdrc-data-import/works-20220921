@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29013 {
+    bda:LG05492DDDA37B8342
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG775D3BDC48DA9CE9
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-03T15:56:46.214Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA29013 {
         adm:logWho          bdu:U00017 .
     
     bda:LGF6DACDD6A47FA0D6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -51,36 +57,36 @@ bdg:WA29013 {
     bda:WA29013  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29013 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "37/WA29013.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29013 ;
-        adm:logEntry        bda:LG775D3BDC48DA9CE9 , bda:LGF6DACDD6A47FA0D6 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM7CC15F8F , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG05492DDDA37B8342 , bda:LG775D3BDC48DA9CE9 , bda:LGF6DACDD6A47FA0D6 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM7CC15F8F , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR05492DDDA37B8342
-        a                   :AgentAsCreator ;
-        :agent              bdr:P7317 ;
-        :role               bdr:R0ER0019 .
-    
     bdr:CR29C45155CFC08055
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9464 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR43E4EF1BDD6F47B9
         a                   :AgentAsCreator ;
         :agent              bdr:P9468 ;
         :role               bdr:R0ER0026 .
     
     bdr:CR5B90D5E8FAE46850
         a                   :AgentAsCreator ;
-        :agent              bdr:P9464 ;
-        :role               bdr:R0ER0026 .
+        :agent              bdr:P7317 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW29013  skos:altLabel  "banchan e erdeni zhuan"@zh-latn-pinyin-x-ndia .
     
     bdr:WA29013  a          :Work ;
         skos:prefLabel      "paN chen sku phreng rim byon gyi mdzad rnam/"@bo-x-ewts , "banchan e erdeni zhuan"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Collected biographies of the successive embodiments of the Panchen Lamas."@en ;
-        :creator            bdr:CR05492DDDA37B8342 , bdr:CR29C45155CFC08055 , bdr:CR5B90D5E8FAE46850 ;
+        :creator            bdr:CR29C45155CFC08055 , bdr:CR43E4EF1BDD6F47B9 , bdr:CR5B90D5E8FAE46850 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21884 {
-    bda:LGD72B45736FB1D436
+    bda:LG64779845B638377E
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGD72B45736FB1D436
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGDA1F5888B2F21458
         a                   adm:UpdateData ;
@@ -31,21 +37,21 @@ bdg:WA21884 {
     bda:WA21884  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21884 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "38/WA21884.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21884 ;
-        adm:logEntry        bda:LGD72B45736FB1D436 , bda:LGDA1F5888B2F21458 , bda:LGIM4394141E ;
+        adm:logEntry        bda:LG64779845B638377E , bda:LGD72B45736FB1D436 , bda:LGDA1F5888B2F21458 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR64779845B638377E
+    bdr:CR90076A4434E5A60F
         a                   :AgentAsCreator ;
         :agent              bdr:P7387 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR90076A4434E5A60F
+    bdr:CREAD09EBD5CC55FBA
         a                   :AgentAsCreator ;
         :agent              bdr:P7388 ;
         :role               bdr:R0ER0019 .
@@ -56,7 +62,7 @@ bdg:WA21884 {
         skos:altLabel       "zang yu wen wen fa jiao cai"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "'bru 'grel 'phrul lde'i gsal 'grel thu mi'i dgongs gnad gsal ba'i me long /"@bo-x-ewts , "藏语文文法教材"@zh-hans ;
         :catalogInfo        "Study and teaching of Tibetan grammar."@en ;
-        :creator            bdr:CR64779845B638377E , bdr:CR90076A4434E5A60F ;
+        :creator            bdr:CR90076A4434E5A60F , bdr:CREAD09EBD5CC55FBA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW21884 , bdr:W21884 ;

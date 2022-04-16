@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA16965 {
+    bda:LG66E5E26A7714978D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG8E9E2A9115DEFA17
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2008-06-02T14:44:59.253Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA16965 {
         adm:logWho          bdu:U00001 .
     
     bda:LGFFBB48540324D22F
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -46,20 +52,20 @@ bdg:WA16965 {
     bda:WA16965  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA16965 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "4f/WA16965.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA16965 ;
-        adm:logEntry        bda:LG8E9E2A9115DEFA17 , bda:LGFFBB48540324D22F , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG66E5E26A7714978D , bda:LG8E9E2A9115DEFA17 , bda:LGFFBB48540324D22F , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR66E5E26A7714978D
+    bdr:CR23FEFEC2E01F4BEF
         a                   :AgentAsCreator ;
         :agent              bdr:P4704 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV23FEFEC2E01F4BEF
+    bdr:EVA25F4480157C09F5
         a                   :CompletedEvent ;
         :onYear             "1986"^^xsd:gYear .
     
@@ -67,10 +73,10 @@ bdg:WA16965 {
     
     bdr:WA16965  a          :Work ;
         skos:prefLabel      "bya khyung a ra pa tsa'i sgrub khang gi dkar chag 'jam dbyangs mchod pa'i me tog"@bo-x-ewts , "xiaqong si wensu dian zhi"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR66E5E26A7714978D ;
+        :creator            bdr:CR23FEFEC2E01F4BEF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV23FEFEC2E01F4BEF ;
+        :workEvent          bdr:EVA25F4480157C09F5 ;
         :workGenre          bdr:T13 ;
         :workHasInstance    bdr:MW16965 , bdr:W16965 ;
         :workIsAbout        bdr:G3193 .

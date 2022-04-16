@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA25985 {
-    bda:LGB905BEA60850CB7C
+    bda:LG86BF80E556ABC878
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGB905BEA60850CB7C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -40,22 +46,22 @@ bdg:WA25985 {
     bda:WA25985  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25985 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "22/WA25985.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25985 ;
-        adm:logEntry        bda:LGB905BEA60850CB7C , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG86BF80E556ABC878 , bda:LGB905BEA60850CB7C , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR86BF80E556ABC878
+    bdr:CR597DBCD64757AF99
         a                   :AgentAsCreator ;
         :agent              bdr:P8076 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA25985  a          :Work ;
         skos:prefLabel      "ji bzhin brjod pa'i rtsom yig la 'jug tshul/"@bo-x-ewts ;
-        :creator            bdr:CR86BF80E556ABC878 ;
+        :creator            bdr:CR597DBCD64757AF99 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGA000704 , bdr:MW25985 , bdr:W25985 ;

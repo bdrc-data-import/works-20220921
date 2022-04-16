@@ -13,6 +13,12 @@
 
 bdg:WA30017 {
     bda:LG17CEE175F32CD016
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
+    bda:LG52F6E0F00A6081B0
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -58,28 +64,28 @@ bdg:WA30017 {
     bda:WA30017  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30017 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "44/WA30017.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30017 ;
-        adm:logEntry        bda:LG17CEE175F32CD016 , bda:LG9AC24F83A9FD46FD , bda:LGCF56962A9B5E81FD , bda:LGF713BB5D930B3131 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG17CEE175F32CD016 , bda:LG52F6E0F00A6081B0 , bda:LG9AC24F83A9FD46FD , bda:LGCF56962A9B5E81FD , bda:LGF713BB5D930B3131 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR52F6E0F00A6081B0
-        a                   :AgentAsCreator ;
-        :agent              bdr:P155 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRC0EA45A36CD282E4
+    bdr:CRA416A9583FBA2FB7
         a                   :AgentAsCreator ;
         :agent              bdr:P825 ;
         :role               bdr:R0ER0016 .
     
+    bdr:CRC0EA45A36CD282E4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P155 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA30017  a          :Work ;
         skos:altLabel       "rgyud sde spyi rnam/"@bo-x-ewts ;
         skos:prefLabel      "rgyud sde spyi'i rnam gzhag/（mtsho sngon mi rigs dpe skrun khang /）"@bo-x-ewts ;
-        :creator            bdr:CR52F6E0F00A6081B0 , bdr:CRC0EA45A36CD282E4 ;
+        :creator            bdr:CRA416A9583FBA2FB7 , bdr:CRC0EA45A36CD282E4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW30017 , bdr:W30017 ;

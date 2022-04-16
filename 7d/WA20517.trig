@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20517 {
-    bda:LGDAD95F1CCD72A479
+    bda:LGBDF4F9105750F43A
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGDAD95F1CCD72A479
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -47,15 +53,15 @@ bdg:WA20517 {
     bda:WA20517  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20517 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "7d/WA20517.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20517 ;
-        adm:logEntry        bda:LGDAD95F1CCD72A479 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LGBDF4F9105750F43A , bda:LGDAD95F1CCD72A479 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRBDF4F9105750F43A
+    bdr:CRAA5DEB08F871658B
         a                   :AgentAsCreator ;
         :agent              bdr:P6893 ;
         :role               bdr:R0ER0019 .
@@ -65,7 +71,7 @@ bdg:WA20517 {
     bdr:WA20517  a          :Work ;
         skos:altLabel       "bstan bcos snyan ngag me long gi 'grel bshad sngon med bu ram shing gi ljon pa/"@bo-x-ewts , "shi jing gan zhe shu"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "snyan ngag me long gi 'grel bshad sngon med bu ram shing gi ljong pa/"@bo-x-ewts , "Bstan bcos sñan ṅag me loṅ gi ʼgrel bśad sṅon med bu ram śin gi ljon pa /Karma-tshe-dbaṅ-dpal-ʼbar gyis brtsams."@en-x-mixed , "shih ching, kan che shu"@zh-latn-wadegile ;
-        :creator            bdr:CRBDF4F9105750F43A ;
+        :creator            bdr:CRAA5DEB08F871658B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW20517 , bdr:W20517 ;

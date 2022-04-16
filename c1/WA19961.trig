@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA19961 {
-    bda:LGEE149A89E69AFD10
+    bda:LGB56C4094205C547D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGEE149A89E69AFD10
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -40,15 +46,15 @@ bdg:WA19961 {
     bda:WA19961  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19961 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "c1/WA19961.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19961 ;
-        adm:logEntry        bda:LGEE149A89E69AFD10 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LGB56C4094205C547D , bda:LGEE149A89E69AFD10 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB56C4094205C547D
+    bdr:CR3F6366571034E80A
         a                   :AgentAsCreator ;
         :agent              bdr:P1929 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +63,7 @@ bdg:WA19961 {
     
     bdr:WA19961  a          :Work ;
         skos:prefLabel      "sum rtags bshad sbyar legs bshad gces bsdus/"@bo-x-ewts , "yang chin a wang wen fa"@zh-latn-wadegile ;
-        :creator            bdr:CRB56C4094205C547D ;
+        :creator            bdr:CR3F6366571034E80A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW19961 , bdr:W19961 ;

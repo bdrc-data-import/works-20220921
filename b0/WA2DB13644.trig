@@ -59,6 +59,12 @@ bdg:WA2DB13644 {
         adm:logMessage      "revised annotation"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LGFEE034559562679B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
         adm:logDate         "2014-10-15T18:10:30.945Z"^^xsd:dateTime ;
@@ -97,29 +103,29 @@ bdg:WA2DB13644 {
     bda:WA2DB13644  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2DB13644 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "b0/WA2DB13644.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2DB13644 ;
-        adm:logEntry        bda:LG2E4DC1FA209B19B2 , bda:LG468739D5BF691242 , bda:LG5089C1A7FD8AEE09 , bda:LG5EBF4F0C95292E71 , bda:LG69A84EE7031216BD , bda:LGCFC9BD69932722E0 , bda:LGE3481B9FF62C2801 , bda:LGF969C2E9C7202195 , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2E4DC1FA209B19B2 , bda:LG468739D5BF691242 , bda:LG5089C1A7FD8AEE09 , bda:LG5EBF4F0C95292E71 , bda:LG69A84EE7031216BD , bda:LGCFC9BD69932722E0 , bda:LGE3481B9FF62C2801 , bda:LGF969C2E9C7202195 , bda:LGFEE034559562679B , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR331CCA1101587892
         a                   :AgentAsCreator ;
-        :agent              bdr:P1152 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRFEE034559562679B
-        a                   :AgentAsCreator ;
         :agent              bdr:P3022 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRA0B7289137323E50
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1152 ;
+        :role               bdr:R0ER0016 .
     
     bdr:WA2DB13644  a       :Work ;
         skos:altLabel       "nam mkha' seng+ge'i sman rtsis/"@bo-x-ewts , "nyi thang sman mkhyen gyi sman yig"@bo-x-ewts ;
         skos:prefLabel      "nyi thang sman mkhyen gyi sman yig dang nam mkha' seng+ge'i sman rtsis/"@bo-x-ewts , "ni tang yi zhu . nan ka sang ge yi suan"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Medical manuals by 17th century author Nyitang Lobzang Gyatso (b. 1590) and writings by the Amdo writer Namkha Sengge (1712-1780)."@en ;
-        :creator            bdr:CR331CCA1101587892 , bdr:CRFEE034559562679B ;
+        :creator            bdr:CR331CCA1101587892 , bdr:CRA0B7289137323E50 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2DB13644 , bdr:W2DB13644 ;

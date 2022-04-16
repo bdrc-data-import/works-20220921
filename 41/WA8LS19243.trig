@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS19243 {
+    bda:LG2AE8A7F00C47236C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LG760EAC03BE4BA9E9
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-29T16:06:52.517Z"^^xsd:dateTime ;
@@ -54,33 +60,33 @@ bdg:WA8LS19243 {
     bda:WA8LS19243  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19243 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "41/WA8LS19243.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19243 ;
-        adm:logEntry        bda:LG760EAC03BE4BA9E9 , bda:LG982B96CB16C01157 , bda:LGBC5970757B6F6297 , bda:LGIM065AD95F26 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG2AE8A7F00C47236C , bda:LG760EAC03BE4BA9E9 , bda:LG982B96CB16C01157 , bda:LGBC5970757B6F6297 , bda:LGIM065AD95F26 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2AE8A7F00C47236C
-        a                   :AgentAsCreator ;
-        :agent              bdr:P6929 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CRB55E0F609ADC727B
+    bdr:CR5560303285797712
         a                   :AgentAsCreator ;
         :agent              bdr:P7334 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CRFA5F848F332E9880
+    bdr:CRB55E0F609ADC727B
         a                   :AgentAsCreator ;
         :agent              bdr:P8311 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRFA5F848F332E9880
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6929 ;
         :role               bdr:R0ER0026 .
     
     bdr:WA8LS19243  a       :Work ;
         skos:prefLabel      "nor phyugs/"@bo-x-ewts ;
         :catalogInfo        "Animal husbandry translated by Lhakpa Tsering, Pempa Gyatsho and Tsering Dolma."@en ;
-        :creator            bdr:CR2AE8A7F00C47236C , bdr:CRB55E0F609ADC727B , bdr:CRFA5F848F332E9880 ;
+        :creator            bdr:CR5560303285797712 , bdr:CRB55E0F609ADC727B , bdr:CRFA5F848F332E9880 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1157 ;

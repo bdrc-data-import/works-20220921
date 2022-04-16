@@ -12,14 +12,20 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30018 {
+    bda:LG26FB13F46067F640
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG42589D036DB26AF2
         a                   adm:UpdateData ;
         adm:logDate         "2009-10-14T15:04:48.893Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
     bda:LG4FBCFD99926ABCC6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGB089918500FDBE38
         a                   adm:UpdateData ;
@@ -83,15 +89,15 @@ bdg:WA30018 {
     bda:WA30018  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30018 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "e1/WA30018.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30018 ;
-        adm:logEntry        bda:LG42589D036DB26AF2 , bda:LG4FBCFD99926ABCC6 , bda:LGB089918500FDBE38 , bda:LGE1CA3FDBF3A72A20 , bda:LGE490305F0C1A658D , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG26FB13F46067F640 , bda:LG42589D036DB26AF2 , bda:LG4FBCFD99926ABCC6 , bda:LGB089918500FDBE38 , bda:LGE1CA3FDBF3A72A20 , bda:LGE490305F0C1A658D , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR26FB13F46067F640
+    bdr:CRFE2815961C5CB9EA
         a                   :AgentAsCreator ;
         :agent              bdr:P825 ;
         :role               bdr:R0ER0019 .
@@ -100,7 +106,7 @@ bdg:WA30018 {
         skos:altLabel       "'dul ba kun las btus pa sdom pa gsum gyi rgyan ces bya ba'i rgya cher 'grel pa/"@bo-x-ewts , "sdom gsum/"@bo-x-ewts , "sdom pa gsum gyi rgyan ces bya ba'i bstan bcos/"@bo-x-ewts , "sdom pa gsum gyi snying po bstan pa/"@bo-x-ewts ;
         skos:prefLabel      "sdom gsum rgyan dang de'i rgya cher 'grel pa/"@bo-x-ewts ;
         :catalogInfo        "Commentary on the three disciplines by Drukpa Kagyu master Pema Karpo (1527-1592)."@en ;
-        :creator            bdr:CR26FB13F46067F640 ;
+        :creator            bdr:CRFE2815961C5CB9EA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:IE30018 , bdr:MW30018 , bdr:W30018 ;

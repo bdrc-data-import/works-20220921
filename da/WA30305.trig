@@ -13,8 +13,10 @@
 
 bdg:WA30305 {
     bda:LG5CA5B05826F12481
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG61A77B9C18D3E0B2
         a                   adm:ScanRequestCreation ;
@@ -27,6 +29,10 @@ bdg:WA30305 {
         adm:logDate         "2020-05-22T17:37:55.747Z"^^xsd:dateTime ;
         adm:logMessage      "fixed isbn"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGDFAFCADB69297EEA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -45,15 +51,15 @@ bdg:WA30305 {
     bda:WA30305  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30305 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "da/WA30305.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30305 ;
-        adm:logEntry        bda:LG5CA5B05826F12481 , bda:LG61A77B9C18D3E0B2 , bda:LGD7A8F0E6578A6C74 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG5CA5B05826F12481 , bda:LG61A77B9C18D3E0B2 , bda:LGD7A8F0E6578A6C74 , bda:LGDFAFCADB69297EEA , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDFAFCADB69297EEA
+    bdr:CRD902F88E1D492FC8
         a                   :AgentAsCreator ;
         :agent              bdr:P2917 ;
         :role               bdr:R0ER0019 .
@@ -62,7 +68,7 @@ bdg:WA30305 {
         skos:altLabel       "kun mkhyen blo gros legs bzang gi gsung las dbu ma la 'jug pa'i spyi don dgongs pa rab gsal gyi rgyan/"@bo-x-ewts ;
         skos:prefLabel      "dbu ma la 'jug pa'i spyi don dgongs pa rab gsal gyi rgyan/"@bo-x-ewts ;
         :catalogInfo        "text on the general meaning of the madhyamakavatara and tsong kha pa's dgongs pa rab gsal; from the old yig cha of shar rtse grwa tshang of bkra shis lhun po"@en ;
-        :creator            bdr:CRDFAFCADB69297EEA ;
+        :creator            bdr:CRD902F88E1D492FC8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T1763 ;

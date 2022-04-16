@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA7555 {
+    bda:LG088C88723164F952
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG2B1DC230F7754D98
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-08-22T16:49:40.77Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA7555 {
         adm:logWho          bdu:U00016 .
     
     bda:LGD74465EE170C726B
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -73,16 +79,16 @@ bdg:WA7555 {
     bda:WA7555  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA7555 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "4a/WA7555.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA7555 ;
-        adm:logEntry        bda:LG2B1DC230F7754D98 , bda:LG8F84151470902683 , bda:LGD74465EE170C726B , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG088C88723164F952 , bda:LG2B1DC230F7754D98 , bda:LG8F84151470902683 , bda:LGD74465EE170C726B , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG1251 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR088C88723164F952
+    bdr:CR699533B09CFD064B
         a                   :AgentAsCreator ;
         :agent              bdr:P336 ;
         :role               bdr:R0ER0019 .
@@ -93,7 +99,7 @@ bdg:WA7555 {
         skos:altLabel       "byang chub kyi sems mnga' ba'i bya mgrin sngon zla ba'i rtogs pa brjod pa/"@bo-x-ewts , "byang chub kyi sems mnga' ba'i bya mgrin sngon zla ba'i rtogs pa brjod pa 'khor ba mtha' dag la snying po med par mthong ba rnams kyi rna rgyan/"@bo-x-ewts ;
         skos:prefLabel      "bya mgrin sngon zla ba'i rtogs brjod/"@bo-x-ewts , "郑宛达哇的故事"@zh-hans ;
         :catalogInfo        "Autobiography by a Geluk master from Drepung Monastery, Takpu Tulku 04 (1714-1762)."@en ;
-        :creator            bdr:CR088C88723164F952 ;
+        :creator            bdr:CR699533B09CFD064B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1779 .

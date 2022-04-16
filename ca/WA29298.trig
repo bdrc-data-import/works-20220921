@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29298 {
+    bda:LG30031296B77724E3
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG39F698673FB065CE
         a                   adm:UpdateData ;
         adm:logDate         "2018-10-09T15:31:26.938Z"^^xsd:dateTime ;
@@ -24,8 +28,10 @@ bdg:WA29298 {
         adm:logWho          bdu:U00017 .
     
     bda:LG92AAF2E8D02B6B82
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGF1B427016CDED33E
         a                   adm:UpdateData ;
@@ -43,15 +49,15 @@ bdg:WA29298 {
     bda:WA29298  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29298 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "ca/WA29298.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29298 ;
-        adm:logEntry        bda:LG39F698673FB065CE , bda:LG5498E6CE67AFBA25 , bda:LG92AAF2E8D02B6B82 , bda:LGF1B427016CDED33E , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG30031296B77724E3 , bda:LG39F698673FB065CE , bda:LG5498E6CE67AFBA25 , bda:LG92AAF2E8D02B6B82 , bda:LGF1B427016CDED33E , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR30031296B77724E3
+    bdr:CR4D5089B61A463486
         a                   :AgentAsCreator ;
         :agent              bdr:P9637 ;
         :role               bdr:R0ER0016 .
@@ -61,7 +67,7 @@ bdg:WA29298 {
     bdr:WA29298  a          :Work ;
         skos:altLabel       "deng rabs bod kyi bud med rtsom pa po'i snyan rtsom gces btus/"@bo-x-ewts , "Bźo luṅ /Dpal-mos rtsom sgrig byas."@en-x-mixed ;
         skos:prefLabel      "bzho lung /"@bo-x-ewts , "collection of contemporary writing by tibetan women"@en ;
-        :creator            bdr:CR30031296B77724E3 ;
+        :creator            bdr:CR4D5089B61A463486 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29298 , bdr:W29298 ;

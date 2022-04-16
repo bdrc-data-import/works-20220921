@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA5329 {
+    bda:LG129BE91F3BC4D022
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG580C5215DA166564
         a                   adm:UpdateData ;
         adm:logDate         "2013-01-17T11:53:14.503Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA5329 {
         adm:logWho          bdu:U00021 .
     
     bda:LGC79785D66215C275
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGDB3E58232EE6B9F0
         a                   adm:ScanRequestCreation ;
@@ -64,16 +70,16 @@ bdg:WA5329 {
     bda:WA5329  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA5329 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "bc/WA5329.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA5329 ;
-        adm:logEntry        bda:LG580C5215DA166564 , bda:LGC79785D66215C275 , bda:LGDB3E58232EE6B9F0 , bda:LGE6A9A05825F55941 , bda:LGF815914E30EB11DE , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG129BE91F3BC4D022 , bda:LG580C5215DA166564 , bda:LGC79785D66215C275 , bda:LGDB3E58232EE6B9F0 , bda:LGE6A9A05825F55941 , bda:LGF815914E30EB11DE , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA4CZ1099 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR129BE91F3BC4D022
+    bdr:CRB1F6390558155DDE
         a                   :AgentAsCreator ;
         :agent              bdr:P262 ;
         :role               bdr:R0ER0019 .
@@ -83,7 +89,7 @@ bdg:WA5329 {
     bdr:WA5329  a           :Work ;
         skos:altLabel       "'jam mgon chos kyi rgyal po tsong kha pa chen po'i rnam thar/"@bo-x-ewts , "'jam mgon tsong kha pa chen po'i rnam thar thub bstan mdzes pa'i rgyan gcig ngo mtshar nor bu'i phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "tsong kha pa'i rnam thar thub bstan mdzes pa'i rgyan gcig ngo mtshar nor bu'i phreng ba/"@bo-x-ewts , "tsung k'a pa chuan"@zh-latn-wadegile ;
-        :creator            bdr:CR129BE91F3BC4D022 ;
+        :creator            bdr:CRB1F6390558155DDE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

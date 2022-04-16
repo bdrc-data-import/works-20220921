@@ -23,8 +23,10 @@ bdg:WA30387 {
         adm:logWho          bdu:U00001 .
     
     bda:LG1C34FFE1E094CCBB
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG222E30DF51B03008
         a                   adm:UpdateData ;
@@ -42,6 +44,10 @@ bdg:WA30387 {
         adm:logDate         "2007-03-05T11:17:48.673Z"^^xsd:dateTime ;
         adm:logMessage      "note sogs gsar du bcug"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGE55136CD7A178B3B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGEC293D37D28B58E5
         a                   adm:ScanRequestCreation ;
@@ -73,35 +79,35 @@ bdg:WA30387 {
     bda:WA30387  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30387 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "51/WA30387.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30387 ;
-        adm:logEntry        bda:LG08A7FF99CE0061FA , bda:LG0982CDC3B6FF68F6 , bda:LG1C34FFE1E094CCBB , bda:LG222E30DF51B03008 , bda:LG6A92DD6B2185D303 , bda:LG8F9BD96F70410BE1 , bda:LGEC293D37D28B58E5 , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG08A7FF99CE0061FA , bda:LG0982CDC3B6FF68F6 , bda:LG1C34FFE1E094CCBB , bda:LG222E30DF51B03008 , bda:LG6A92DD6B2185D303 , bda:LG8F9BD96F70410BE1 , bda:LGE55136CD7A178B3B , bda:LGEC293D37D28B58E5 , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRAFE3DA20F12CD271
-        a                   :AgentAsCreator ;
-        :agent              bdr:P5013 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRB2EC5B3C2C7D078A
+    bdr:CR0A7535F976BA6326
         a                   :AgentAsCreator ;
         :agent              bdr:P5012 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRE55136CD7A178B3B
+    bdr:CRAFE3DA20F12CD271
         a                   :AgentAsCreator ;
         :agent              bdr:P4963 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRB2EC5B3C2C7D078A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5013 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW30387  skos:altLabel  "yue wang yao zhen"@zh-latn-pinyin-x-ndia .
     
     bdr:WA30387  a          :Work ;
         skos:altLabel       "bi ji po ti kha ser/"@bo-x-ewts ;
         skos:prefLabel      "sman dpyad zla ba'i rgyal po/"@bo-x-ewts , "yue wang yao zhen"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CRAFE3DA20F12CD271 , bdr:CRB2EC5B3C2C7D078A , bdr:CRE55136CD7A178B3B ;
+        :creator            bdr:CR0A7535F976BA6326 , bdr:CRAFE3DA20F12CD271 , bdr:CRB2EC5B3C2C7D078A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW30387 , bdr:W30387 ;

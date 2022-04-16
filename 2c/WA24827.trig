@@ -19,8 +19,10 @@ bdg:WA24827 {
         adm:logWho          bdu:U00016 .
     
     bda:LGA8812A4117C1BE02
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGEE517A39FA5279E6
         a                   adm:UpdateData ;
@@ -28,23 +30,27 @@ bdg:WA24827 {
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGF205593CDDD5F7F1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:WA24827  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA24827 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "2c/WA24827.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA24827 ;
-        adm:logEntry        bda:LG89B584D5F4B4E52D , bda:LGA8812A4117C1BE02 , bda:LGEE517A39FA5279E6 ;
+        adm:logEntry        bda:LG89B584D5F4B4E52D , bda:LGA8812A4117C1BE02 , bda:LGEE517A39FA5279E6 , bda:LGF205593CDDD5F7F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF205593CDDD5F7F1
+    bdr:CRB0124259631FBA8F
         a                   :AgentAsCreator ;
         :agent              bdr:P1360 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVB0124259631FBA8F
+    bdr:EV1066ACFE8C95F647
         a                   :CompletedEvent ;
         :onYear             "1789"^^xsd:gYear .
     
@@ -54,10 +60,10 @@ bdg:WA24827 {
         skos:altLabel       "gso rig yan lag brgyad ldan chu gter las gces bsdus 'chi med nor bu'i phreng ba/"@bo-x-ewts , "zang yao yan fang jing xuan・chang sheng pao man"@en-x-mixed ;
         skos:prefLabel      "gces bsdus 'chi med nor bu'i phreng ba/"@bo-x-ewts , "藏药验方精选 长生宝鬘"@en-x-mixed ;
         :catalogInfo        "Description and composition of traditional Tibetan medicinal pills (drugs) and thier effect or remedies."@en ;
-        :creator            bdr:CRF205593CDDD5F7F1 ;
+        :creator            bdr:CRB0124259631FBA8F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVB0124259631FBA8F ;
+        :workEvent          bdr:EV1066ACFE8C95F647 ;
         :workHasInstance    bdr:MW24827 , bdr:W24827 ;
         :workIsAbout        bdr:T2MS13793 , bdr:T86 .
 }

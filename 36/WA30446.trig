@@ -19,8 +19,10 @@ bdg:WA30446 {
         adm:logWho          bdu:U00021 .
     
     bda:LG7145D4DAC920C343
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG77CD976F542ED0C3
         a                   adm:UpdateData ;
@@ -33,6 +35,10 @@ bdg:WA30446 {
         adm:logDate         "2010-12-02T14:34:52.536Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGC8DEB167DD41CF67
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGF7634849B6F95D17
         a                   adm:ScanRequestCreation ;
@@ -64,16 +70,16 @@ bdg:WA30446 {
     bda:WA30446  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30446 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "36/WA30446.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30446 ;
-        adm:logEntry        bda:LG3A572E946D6F8B85 , bda:LG7145D4DAC920C343 , bda:LG77CD976F542ED0C3 , bda:LGBEA9CA56237992D9 , bda:LGF7634849B6F95D17 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG3A572E946D6F8B85 , bda:LG7145D4DAC920C343 , bda:LG77CD976F542ED0C3 , bda:LGBEA9CA56237992D9 , bda:LGC8DEB167DD41CF67 , bda:LGF7634849B6F95D17 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG9858 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRC8DEB167DD41CF67
+    bdr:CR144F51B5322C73A1
         a                   :AgentAsCreator ;
         :agent              bdr:P1317 ;
         :role               bdr:R0ER0019 .
@@ -83,7 +89,7 @@ bdg:WA30446 {
     bdr:WA30446  a          :Work ;
         skos:altLabel       "lho brag nam mkha' rgyal mtshan gyi gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_nam mkha' rgyal mtshan/"@bo-x-ewts , "luozha. langkajiangcan quan ji"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CRC8DEB167DD41CF67 ;
+        :creator            bdr:CR144F51B5322C73A1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

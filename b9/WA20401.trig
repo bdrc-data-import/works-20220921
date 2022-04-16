@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20401 {
-    bda:LG6DA955710BAB68C0
+    bda:LG56A7385438A20BD6
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG6DA955710BAB68C0
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG7EA0D74F6CCFB8D0
         a                   adm:ScanRequestCreation ;
@@ -73,29 +79,29 @@ bdg:WA20401 {
     bda:WA20401  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20401 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "b9/WA20401.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20401 ;
-        adm:logEntry        bda:LG6DA955710BAB68C0 , bda:LG7EA0D74F6CCFB8D0 , bda:LGC08318E3989F889F , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG56A7385438A20BD6 , bda:LG6DA955710BAB68C0 , bda:LG7EA0D74F6CCFB8D0 , bda:LGC08318E3989F889F , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR56A7385438A20BD6
-        a                   :AgentAsCreator ;
-        :agent              bdr:P5782 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRD391BFEA7368BC80
+    bdr:CR6EE15A903DB1CBBC
         a                   :AgentAsCreator ;
         :agent              bdr:P396 ;
         :role               bdr:R0ER0014 .
+    
+    bdr:CRD391BFEA7368BC80
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5782 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA20401  a          :Work ;
         skos:altLabel       "dbu ma la 'jug pa'i rnam par bshad pa nges don gnad kyi TI ka"@bo-x-ewts ;
         skos:prefLabel      "dbu ma la 'jug pa rtsa ba dang 'grel pa/"@bo-x-ewts ;
         :catalogInfo        "Commentary on Chandrakirti's Madhyamakavatara."@en ;
-        :creator            bdr:CR56A7385438A20BD6 , bdr:CRD391BFEA7368BC80 ;
+        :creator            bdr:CR6EE15A903DB1CBBC , bdr:CRD391BFEA7368BC80 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

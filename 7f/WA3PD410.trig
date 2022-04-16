@@ -23,6 +23,12 @@ bdg:WA3PD410 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG8DD90B01EBF4906C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LGEF494C24243657E8
         a                   adm:UpdateData ;
         adm:logDate         "2016-11-12T02:22:15.304Z"^^xsd:dateTime ;
@@ -61,28 +67,28 @@ bdg:WA3PD410 {
     bda:WA3PD410  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3PD410 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "7f/WA3PD410.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3PD410 ;
-        adm:logEntry        bda:LG2E77EBFD4D1B342E , bda:LG8CDA0DBB77DF43DA , bda:LGEF494C24243657E8 , bda:LGF4C76DCC38A959A6 , bda:LGF6856B5EBEA96758 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG2E77EBFD4D1B342E , bda:LG8CDA0DBB77DF43DA , bda:LG8DD90B01EBF4906C , bda:LGEF494C24243657E8 , bda:LGF4C76DCC38A959A6 , bda:LGF6856B5EBEA96758 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1873B76223AD61FB
         a                   :AgentAsCreator ;
-        :agent              bdr:P2075 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CR8DD90B01EBF4906C
-        a                   :AgentAsCreator ;
         :agent              bdr:P5957 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR20D00D98F57B4102
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2075 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA3PD410  a         :Work ;
         skos:altLabel       "pu ti dao ci di xin zhuan lu （han zang dui zhao ben）"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "lam rim myong khrid zin bris/（bod rgya skad gnyis shan sbyar ma/）"@bo-x-ewts , "菩提道次第心传录（汉藏对照本）"@zh-hans ;
-        :creator            bdr:CR1873B76223AD61FB , bdr:CR8DD90B01EBF4906C ;
+        :creator            bdr:CR1873B76223AD61FB , bdr:CR20D00D98F57B4102 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T238 , bdr:T240 ;

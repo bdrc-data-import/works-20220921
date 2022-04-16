@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA12642 {
-    bda:LGC3C50BD1A899662A
+    bda:LG1D851811A66B8544
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGC3C50BD1A899662A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -33,15 +39,15 @@ bdg:WA12642 {
     bda:WA12642  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA12642 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "77/WA12642.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA12642 ;
-        adm:logEntry        bda:LGC3C50BD1A899662A , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG1D851811A66B8544 , bda:LGC3C50BD1A899662A , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1D851811A66B8544
+    bdr:CR4582F6931D865035
         a                   :AgentAsCreator ;
         :agent              bdr:P1583 ;
         :role               bdr:R0ER0011 .
@@ -50,7 +56,7 @@ bdg:WA12642 {
     
     bdr:WA12642  a          :Work ;
         skos:prefLabel      "tshad ma'i de kho na nyid bsdus pa/"@bo-x-ewts , "longqinpa luo ji xur"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR1D851811A66B8544 ;
+        :creator            bdr:CR4582F6931D865035 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW12642 , bdr:W12642 ;

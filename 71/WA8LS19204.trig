@@ -24,6 +24,12 @@ bdg:WA8LS19204 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGA51F2ED520EA3126
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LGIM065AD95F26
         a                   adm:UpdateData ;
         adm:logDate         "2016-12-05T22:11:09.047Z"^^xsd:dateTime ;
@@ -48,29 +54,29 @@ bdg:WA8LS19204 {
     bda:WA8LS19204  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS19204 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "71/WA8LS19204.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS19204 ;
-        adm:logEntry        bda:LG4713550F79166B23 , bda:LG818ABF33A2A82CE7 , bda:LGIM065AD95F26 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LG4713550F79166B23 , bda:LG818ABF33A2A82CE7 , bda:LGA51F2ED520EA3126 , bda:LGIM065AD95F26 , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG14624 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:CR22CBA891EB12F39B
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG16275 ;
+        :agent              bdr:P1614 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRA51F2ED520EA3126
+    bdr:CRF087A27CB833F118
         a                   :AgentAsCreator ;
-        :agent              bdr:P1614 ;
+        :agent              bdr:P1KG16275 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA8LS19204  a       :Work ;
         skos:prefLabel      "gso dpyad rgyal po'i dkor mdzod dang phan bde 'bum phrag dang yang snying /"@bo-x-ewts ;
         :catalogInfo        "A medical text composed by Drakpa Gyalsen and Tashi Yangphel."@en ;
-        :creator            bdr:CR22CBA891EB12F39B , bdr:CRA51F2ED520EA3126 ;
+        :creator            bdr:CR22CBA891EB12F39B , bdr:CRF087A27CB833F118 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T10MS14651 .

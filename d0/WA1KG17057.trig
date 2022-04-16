@@ -18,6 +18,12 @@ bdg:WA1KG17057 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG6E9359CC8317A8A4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LGACDA67F338070892
         a                   adm:InitialDataCreation ;
         adm:logDate         "2014-09-03T14:06:33.852Z"^^xsd:dateTime ;
@@ -41,23 +47,23 @@ bdg:WA1KG17057 {
     bda:WA1KG17057  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG17057 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "d0/WA1KG17057.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG17057 ;
-        adm:logEntry        bda:LG241D897DF4D10946 , bda:LGACDA67F338070892 , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG241D897DF4D10946 , bda:LG6E9359CC8317A8A4 , bda:LGACDA67F338070892 , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR28AA47E2415FD679
         a                   :AgentAsCreator ;
-        :agent              bdr:P7137 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CR6E9359CC8317A8A4
-        a                   :AgentAsCreator ;
         :agent              bdr:P1GS147817 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRD84E33EADEA70EDB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7137 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW1KG17057  skos:altLabel  "八十四大成就者传"@zh-hans .
     
@@ -65,7 +71,7 @@ bdg:WA1KG17057 {
         skos:altLabel       "grub chen brgyad cu rtsa bzhi'i rnam thar/"@bo-x-ewts , "ba shi si da cheng jiu zhe zhuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "grub chen brgyad cu rtsa bzhi'i rnam thar dang don ha 'grel pa dang bcas pa/"@bo-x-ewts , "八十四大成就者传"@zh-hans ;
         :catalogInfo        "Biographies of eighty-four mahasiddhas and their spontaneous spiritual songs."@en ;
-        :creator            bdr:CR28AA47E2415FD679 , bdr:CR6E9359CC8317A8A4 ;
+        :creator            bdr:CR28AA47E2415FD679 , bdr:CRD84E33EADEA70EDB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 , bdr:T4CZ2184 ;

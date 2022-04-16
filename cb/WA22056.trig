@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22056 {
+    bda:LG112ED36BB2675A7E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG4595BCE880E9BF20
         a                   adm:UpdateData ;
         adm:logDate         "2021-06-04T09:49:11.347Z"^^xsd:dateTime ;
@@ -31,8 +35,10 @@ bdg:WA22056 {
         adm:logWho          bdu:U00016 .
     
     bda:LGCC384486C18003D9
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM4394141E  a     adm:UpdateData ;
         adm:logAgent        "works-mark-restrictedInChina.xql" ;
@@ -57,17 +63,17 @@ bdg:WA22056 {
     bda:WA22056  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22056 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "cb/WA22056.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22056 ;
-        adm:logEntry        bda:LG4595BCE880E9BF20 , bda:LG7CAF79E6DEEE7BBE , bda:LG8E6C94E670BA60FB , bda:LGCC384486C18003D9 , bda:LGIM4394141E , bda:LGIM4D99209C62 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG112ED36BB2675A7E , bda:LG4595BCE880E9BF20 , bda:LG7CAF79E6DEEE7BBE , bda:LG8E6C94E670BA60FB , bda:LGCC384486C18003D9 , bda:LGIM4394141E , bda:LGIM4D99209C62 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG18314 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR112ED36BB2675A7E
+    bdr:CRBDDC7790F3FAD594
         a                   :AgentAsCreator ;
         :agent              bdr:P6434 ;
         :role               bdr:R0ER0012 .
@@ -78,7 +84,7 @@ bdg:WA22056 {
         skos:altLabel       "gling rje ge sar rgyal po'i sgrung /"@bo-x-ewts , "suo ling zhi zhan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "sog po rta rdzong /"@bo-x-ewts , "索岭之战"@zh-hans ;
         :catalogInfo        "An episode from the epic of Gesar. On the conquest of Sokpota Dzong."@en ;
-        :creator            bdr:CR112ED36BB2675A7E ;
+        :creator            bdr:CRBDDC7790F3FAD594 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workIsAbout        bdr:T248 .

@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29902 {
+    bda:LG55CEB899C29ACAEC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG5772BEFA2DD66916
         a                   adm:UpdateData ;
         adm:logDate         "2009-09-09T11:47:43.482Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA29902 {
         adm:logWho          bdu:U00021 .
     
     bda:LG57BCEDA75C257469
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG5A2240920A7A2D9E
         a                   adm:UpdateData ;
@@ -71,29 +77,29 @@ bdg:WA29902 {
     bda:WA29902  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29902 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "4c/WA29902.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29902 ;
-        adm:logEntry        bda:LG5772BEFA2DD66916 , bda:LG57BCEDA75C257469 , bda:LG5A2240920A7A2D9E , bda:LG695BC099A6E48894 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG55CEB899C29ACAEC , bda:LG5772BEFA2DD66916 , bda:LG57BCEDA75C257469 , bda:LG5A2240920A7A2D9E , bda:LG695BC099A6E48894 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR123728DE2526DFBF
         a                   :AgentAsCreator ;
-        :agent              bdr:P783 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR55CEB899C29ACAEC
-        a                   :AgentAsCreator ;
         :agent              bdr:P560 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRCD7C12534027D743
+        a                   :AgentAsCreator ;
+        :agent              bdr:P783 ;
+        :role               bdr:R0ER0016 .
     
     bdr:WA29902  a          :Work ;
         skos:altLabel       "dpal kye'i rdo rje'i rtsa ba'i rgyud brtag pa gnyis pa'i rnam par bshad pa ma dag pa rnams 'dzoms par byed pa'i rnam par 'grel pa dag ldan zhes bya ba'i mchan gyi TI ka gsang bdag rdo rje 'dzin pa'i dgongs rgyan/"@bo-x-ewts , "rgyud 'grel/"@bo-x-ewts ;
         skos:prefLabel      "dpal kye rdo rje'i rgyud kyi bshad pa bka'i brgya pa rin po che la gsol ba 'debs pa/"@bo-x-ewts ;
         :catalogInfo        "Commentary on the Hevajra Tantra by Jamyang Loter Wangpo (1847-1914)."@en ;
-        :creator            bdr:CR123728DE2526DFBF , bdr:CR55CEB899C29ACAEC ;
+        :creator            bdr:CR123728DE2526DFBF , bdr:CRCD7C12534027D743 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

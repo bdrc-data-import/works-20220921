@@ -31,8 +31,10 @@ bdg:WA29478 {
         adm:logWho          bdu:U00021 .
     
     bda:LG75C42EC43FD25611
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG9AADEC75A0523815
         a                   adm:UpdateData ;
@@ -56,6 +58,10 @@ bdg:WA29478 {
         a                   adm:UpdateData ;
         adm:logDate         "2007-08-21T15:05:22.253Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LGC256246283A71F09
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGC3EC7A3082710B21
         a                   adm:ScanRequestCreation ;
@@ -94,35 +100,35 @@ bdg:WA29478 {
     bda:WA29478  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29478 ;
-        adm:facetIndex      17 ;
+        adm:facetIndex      18 ;
         adm:gitPath         "da/WA29478.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29478 ;
-        adm:logEntry        bda:LG0E828ED520CD02FE , bda:LG23F9EAEB07E1F66D , bda:LG5646941900D6B48F , bda:LG75C42EC43FD25611 , bda:LG9AADEC75A0523815 , bda:LGA16EFA903F9541C4 , bda:LGAA16497056210FFF , bda:LGAAB146DA61AB573A , bda:LGC3EC7A3082710B21 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0E828ED520CD02FE , bda:LG23F9EAEB07E1F66D , bda:LG5646941900D6B48F , bda:LG75C42EC43FD25611 , bda:LG9AADEC75A0523815 , bda:LGA16EFA903F9541C4 , bda:LGAA16497056210FFF , bda:LGAAB146DA61AB573A , bda:LGC256246283A71F09 , bda:LGC3EC7A3082710B21 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR380BE8EF41DF1CBF
         a                   :AgentAsCreator ;
-        :agent              bdr:P7034 ;
-        :role               bdr:R0ER0016 .
+        :agent              bdr:P264 ;
+        :role               bdr:R0ER0019 .
     
-    bdr:CRB3A4FAB72E5D6863
+    bdr:CR62A77CFA7FC72D53
         a                   :AgentAsCreator ;
         :agent              bdr:P9557 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRC256246283A71F09
+    bdr:CRB3A4FAB72E5D6863
         a                   :AgentAsCreator ;
-        :agent              bdr:P264 ;
-        :role               bdr:R0ER0019 .
+        :agent              bdr:P7034 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW29478  skos:altLabel  "lin chuang zha ji zha ji jing cui"@zh-latn-pinyin-x-ndia .
     
     bdr:WA29478  a          :Work ;
         skos:prefLabel      "gso rig zin tig yang tig"@bo-x-ewts , "lin chuang zha ji zha ji jing cui"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Three separate late 19th century formulas of medical prescriptions by Jamgon Kongtrul Lodro Taye."@en ;
-        :creator            bdr:CR380BE8EF41DF1CBF , bdr:CRB3A4FAB72E5D6863 , bdr:CRC256246283A71F09 ;
+        :creator            bdr:CR380BE8EF41DF1CBF , bdr:CR62A77CFA7FC72D53 , bdr:CRB3A4FAB72E5D6863 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29478 , bdr:W29478 ;

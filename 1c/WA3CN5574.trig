@@ -18,6 +18,12 @@ bdg:WA3CN5574 {
         adm:logMessage      "fully cataloged and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGDFF6555275B4D901
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LGE064F45E0C91241B
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-12-08T12:44:06.325Z"^^xsd:dateTime ;
@@ -41,29 +47,29 @@ bdg:WA3CN5574 {
     bda:WA3CN5574  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5574 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "1c/WA3CN5574.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5574 ;
-        adm:logEntry        bda:LGCA8497690916106F , bda:LGE064F45E0C91241B , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
+        adm:logEntry        bda:LGCA8497690916106F , bda:LGDFF6555275B4D901 , bda:LGE064F45E0C91241B , bda:LGIM4D99209C62 , bda:LGIM6C9E48233B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR3C14666DD08A4341
         a                   :AgentAsCreator ;
-        :agent              bdr:P4069 ;
-        :role               bdr:R0ER0014 .
-    
-    bdr:CRDFF6555275B4D901
-        a                   :AgentAsCreator ;
         :agent              bdr:P1830 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR60BCC12D451C64B9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4069 ;
+        :role               bdr:R0ER0014 .
     
     bdr:WA3CN5574  a        :Work ;
         skos:altLabel       "rgyal ba'i sras kyi lag len sum cu so bdun ma/"@bo-x-ewts ;
         skos:prefLabel      "rgyal sras lag len rtsa 'grel/"@bo-x-ewts ;
         :catalogInfo        "Commentary on the thirty Seven-fold Practice of a Bodhisattva, by Ngulchu Tokmey Zangpo."@en ;
-        :creator            bdr:CR3C14666DD08A4341 , bdr:CRDFF6555275B4D901 ;
+        :creator            bdr:CR3C14666DD08A4341 , bdr:CR60BCC12D451C64B9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T240 ;

@@ -31,8 +31,10 @@ bdg:WA29105 {
         adm:logWho          bdu:U00021 .
     
     bda:LGA1344F5DCE140645
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGBFAF02C6223012D8
         a                   adm:UpdateData ;
@@ -44,6 +46,10 @@ bdg:WA29105 {
         a                   adm:UpdateData ;
         adm:logDate         "2007-03-10T19:16:51.375Z"^^xsd:dateTime ;
         adm:logMessage      "revised data"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGD6118A55172C2FF1
+        a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:LGEC22C40938E6D89C
@@ -82,15 +88,15 @@ bdg:WA29105 {
     bda:WA29105  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29105 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "9f/WA29105.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29105 ;
-        adm:logEntry        bda:LG1678E3DF5751955F , bda:LG45FA16FA27D8DC21 , bda:LG97D0E68C327102EE , bda:LGA1344F5DCE140645 , bda:LGBFAF02C6223012D8 , bda:LGD4AFF10866130CBB , bda:LGEC22C40938E6D89C , bda:LGFD24E14F3126B2E3 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1678E3DF5751955F , bda:LG45FA16FA27D8DC21 , bda:LG97D0E68C327102EE , bda:LGA1344F5DCE140645 , bda:LGBFAF02C6223012D8 , bda:LGD4AFF10866130CBB , bda:LGD6118A55172C2FF1 , bda:LGEC22C40938E6D89C , bda:LGFD24E14F3126B2E3 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD6118A55172C2FF1
+    bdr:CR80D5DA43C4DDACB2
         a                   :AgentAsCreator ;
         :agent              bdr:P437 ;
         :role               bdr:R0ER0019 .
@@ -100,7 +106,7 @@ bdg:WA29105 {
     bdr:WA29105  a          :Work ;
         skos:prefLabel      "man ngag yig chung sna tshogs/"@bo-x-ewts , "ling xing mi jue ji"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Collection of instructions on treatments and medical preparations. Compiled during the 16th century by Gongmen Konchok Pendar."@en ;
-        :creator            bdr:CRD6118A55172C2FF1 ;
+        :creator            bdr:CR80D5DA43C4DDACB2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29105 , bdr:W29105 ;

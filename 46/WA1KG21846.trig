@@ -36,6 +36,12 @@ bdg:WA1KG21846 {
         adm:logMessage      "fixed ltwa acc. no"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGA854EFA73B38A99A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
         adm:logDate         "2017-06-26T14:04:28.691Z"^^xsd:dateTime ;
@@ -46,29 +52,29 @@ bdg:WA1KG21846 {
     bda:WA1KG21846  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG21846 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "46/WA1KG21846.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG21846 ;
-        adm:logEntry        bda:LG010EDC69BDCFA84D , bda:LG0933E8C8464B6B61 , bda:LG464DBC07AEB196D8 , bda:LG9EE6F9443BC7D988 , bda:LGIM4D99209C62 ;
+        adm:logEntry        bda:LG010EDC69BDCFA84D , bda:LG0933E8C8464B6B61 , bda:LG464DBC07AEB196D8 , bda:LG9EE6F9443BC7D988 , bda:LGA854EFA73B38A99A , bda:LGIM4D99209C62 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR3939C11BD815C671
         a                   :AgentAsCreator ;
-        :agent              bdr:P6 ;
+        :agent              bdr:P667 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRA854EFA73B38A99A
+    bdr:CR3AE10CBFA1535CB6
         a                   :AgentAsCreator ;
-        :agent              bdr:P667 ;
+        :agent              bdr:P6 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1KG21846  a       :Work ;
         skos:altLabel       "mthun mong rig gnas skor/"@bo-x-ewts ;
         skos:prefLabel      "'byung rtsis dang sdeb sbyor 'grel ba snyan ngag gi 'grel ba'i skor bcas/"@bo-x-ewts ;
         :catalogInfo        "Collection of commentaries on astrology of the element, metric and Kavyadharsha."@en ;
-        :creator            bdr:CR3939C11BD815C671 , bdr:CRA854EFA73B38A99A ;
+        :creator            bdr:CR3939C11BD815C671 , bdr:CR3AE10CBFA1535CB6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

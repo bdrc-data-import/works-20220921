@@ -13,13 +13,19 @@
 
 bdg:WA12434 {
     bda:LG5B3B0DBAF38D5365
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG88F32F4BA99822E4
         a                   adm:UpdateData ;
         adm:logDate         "2016-04-29T12:24:13.809Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGA35478B12495D61A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -45,21 +51,21 @@ bdg:WA12434 {
     bda:WA12434  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA12434 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "46/WA12434.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA12434 ;
-        adm:logEntry        bda:LG5B3B0DBAF38D5365 , bda:LG88F32F4BA99822E4 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG5B3B0DBAF38D5365 , bda:LG88F32F4BA99822E4 , bda:LGA35478B12495D61A , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA00CHZ0103343 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRA35478B12495D61A
+    bdr:CR77C7C2223AF7687A
         a                   :AgentAsCreator ;
         :agent              bdr:P1428 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV77C7C2223AF7687A
+    bdr:EV97ABA107A136DAFB
         a                   :CompletedEvent ;
         :onYear             "1608"^^xsd:gYear .
     
@@ -68,10 +74,10 @@ bdg:WA12434 {
     bdr:WA12434  a          :Work ;
         skos:altLabel       "dam pa'i chos rin po che 'phags pa'i yul du ji ltar dar ba'i tshul gsal ston dgos 'dod kun 'byung /"@bo-x-ewts ;
         skos:prefLabel      "rgya gar chos 'byung /"@bo-x-ewts , "yin tu fo chiao shih"@zh-latn-wadegile ;
-        :creator            bdr:CRA35478B12495D61A ;
+        :creator            bdr:CR77C7C2223AF7687A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV77C7C2223AF7687A ;
+        :workEvent          bdr:EV97ABA107A136DAFB ;
         :workGenre          bdr:T12 ;
         :workIsAbout        bdr:G3188 .
 }

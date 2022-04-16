@@ -13,13 +13,19 @@
 
 bdg:WA29680 {
     bda:LG53C06218B1A77674
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGA180F551715E3846
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2008-05-29T13:15:44.548Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE5ECF19FEDC02FC3
+        a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
@@ -46,15 +52,15 @@ bdg:WA29680 {
     bda:WA29680  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29680 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "a9/WA29680.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29680 ;
-        adm:logEntry        bda:LG53C06218B1A77674 , bda:LGA180F551715E3846 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG53C06218B1A77674 , bda:LGA180F551715E3846 , bda:LGE5ECF19FEDC02FC3 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE5ECF19FEDC02FC3
+    bdr:CRBB013357F9A821D0
         a                   :AgentAsCreator ;
         :agent              bdr:P8681 ;
         :role               bdr:R0ER0019 .
@@ -62,7 +68,7 @@ bdg:WA29680 {
     bdr:WA29680  a          :Work ;
         skos:altLabel       "zab gsang rdzogs pa chen po'i rnal 'byor pa skyabs rje khang sar rin po che dbon sprul bstan pa'i dbang phyug dpal bzang po'i rnam thar rags tsam bkod pa dpag bsam nor bu'i 'khri shing /"@bo-x-ewts ;
         skos:prefLabel      "khang sar bstan pa'i dbang phyug gi rnam thar/"@bo-x-ewts ;
-        :creator            bdr:CRE5ECF19FEDC02FC3 ;
+        :creator            bdr:CRBB013357F9A821D0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

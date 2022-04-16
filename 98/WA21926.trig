@@ -19,13 +19,19 @@ bdg:WA21926 {
         adm:logWho          bdu:U00016 .
     
     bda:LG61169F93C0EF606A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG74304E38C4814ECE
         a                   adm:UpdateData ;
         adm:logDate         "2015-02-18T12:33:58.677Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG77A6C209A19BB28D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGE50DC6EDC43F7F43
         a                   adm:UpdateData ;
@@ -55,27 +61,27 @@ bdg:WA21926 {
     bda:WA21926  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21926 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "98/WA21926.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21926 ;
-        adm:logEntry        bda:LG5AAEF442A05BABF3 , bda:LG61169F93C0EF606A , bda:LG74304E38C4814ECE , bda:LGE50DC6EDC43F7F43 , bda:LGFD5E897EA656609A , bda:LGIM569A8014B1 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG5AAEF442A05BABF3 , bda:LG61169F93C0EF606A , bda:LG74304E38C4814ECE , bda:LG77A6C209A19BB28D , bda:LGE50DC6EDC43F7F43 , bda:LGFD5E897EA656609A , bda:LGIM569A8014B1 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR77A6C209A19BB28D
-        a                   :AgentAsCreator ;
-        :agent              bdr:P7414 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR820393A56891F113
+    bdr:CR361B1A8E3656D9FD
         a                   :AgentAsCreator ;
         :agent              bdr:P7573 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CR9AE33411C4F87A9D
+    bdr:CR820393A56891F113
         a                   :AgentAsCreator ;
         :agent              bdr:P7415 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR9AE33411C4F87A9D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7414 ;
         :role               bdr:R0ER0019 .
     
     bdr:MW21926  skos:altLabel  "Chu ṅogs gtam rgyud rgyas pa /Hri-rnaʼi-yan daṅ Loʼo-kon-kruṅ gis brtsams."@en-x-mixed , "水浒全传"@zh-hans .
@@ -84,7 +90,7 @@ bdg:WA21926 {
         skos:altLabel       "shui hu quan zhuan"@zh-hans ;
         skos:prefLabel      "chu ngogs gtam rgyud rgyas pa/"@bo-x-ewts , "Chu ṅogs gtam rgyud rgyas pa /Hri-rnaʼi-yan daṅ Loʼo-kon-kruṅ gis brtsams."@en-x-mixed , "水浒全传"@zh-hans ;
         :catalogInfo        "Folk tales of China; translated from Chinese."@en ;
-        :creator            bdr:CR77A6C209A19BB28D , bdr:CR820393A56891F113 , bdr:CR9AE33411C4F87A9D ;
+        :creator            bdr:CR361B1A8E3656D9FD , bdr:CR820393A56891F113 , bdr:CR9AE33411C4F87A9D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T260 ;

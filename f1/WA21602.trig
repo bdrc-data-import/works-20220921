@@ -13,8 +13,10 @@
 
 bdg:WA21602 {
     bda:LG648F269C7F6EB0D9
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG8C8919A5D5B16B8F
         a                   adm:UpdateData ;
@@ -27,6 +29,10 @@ bdg:WA21602 {
         adm:logDate         "2014-02-28T10:24:25.433Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGB794F7DC94E05756
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
@@ -45,15 +51,15 @@ bdg:WA21602 {
     bda:WA21602  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21602 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "f1/WA21602.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21602 ;
-        adm:logEntry        bda:LG648F269C7F6EB0D9 , bda:LG8C8919A5D5B16B8F , bda:LG8F484B4673D92528 , bda:LGIM4D99209C62 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG648F269C7F6EB0D9 , bda:LG8C8919A5D5B16B8F , bda:LG8F484B4673D92528 , bda:LGB794F7DC94E05756 , bda:LGIM4D99209C62 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB794F7DC94E05756
+    bdr:CRAF529D7F2EA6640A
         a                   :AgentAsCreator ;
         :agent              bdr:P7277 ;
         :role               bdr:R0ER0012 .
@@ -64,7 +70,7 @@ bdg:WA21602 {
         skos:altLabel       "sgrung mkhan bsam grub kyis phab pa'i gling rje ge sar rgyal po'i sgrung / lha gling /"@bo-x-ewts , "tian jie pian"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "lha gling /"@bo-x-ewts , "天界篇"@zh-hans ;
         :catalogInfo        "An episode from the epic of Gesar."@en ;
-        :creator            bdr:CRB794F7DC94E05756 ;
+        :creator            bdr:CRAF529D7F2EA6640A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW21602 , bdr:W21602 ;

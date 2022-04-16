@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29018 {
-    bda:LG53BF686E27CCDFB6
+    bda:LG2C11E2FC1DDBD230
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG53BF686E27CCDFB6
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGBB41EC176E5E38C7
         a                   adm:UpdateData ;
@@ -46,32 +52,32 @@ bdg:WA29018 {
     bda:WA29018  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29018 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "63/WA29018.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29018 ;
-        adm:logEntry        bda:LG53BF686E27CCDFB6 , bda:LGBB41EC176E5E38C7 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG2C11E2FC1DDBD230 , bda:LG53BF686E27CCDFB6 , bda:LGBB41EC176E5E38C7 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2C11E2FC1DDBD230
-        a                   :AgentAsCreator ;
-        :agent              bdr:P313 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR8EAB768401D9D9FA
+    bdr:CR2156E638EF21B1E1
         a                   :AgentAsCreator ;
         :agent              bdr:P1457 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRDFD5AE372625EF9B
+    bdr:CR8EAB768401D9D9FA
         a                   :AgentAsCreator ;
         :agent              bdr:P1043 ;
         :role               bdr:R0ER0016 .
     
+    bdr:CRDFD5AE372625EF9B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P313 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA29018  a          :Work ;
         skos:prefLabel      "snyan ngag dang mngon brjod/"@bo-x-ewts ;
-        :creator            bdr:CR2C11E2FC1DDBD230 , bdr:CR8EAB768401D9D9FA , bdr:CRDFD5AE372625EF9B ;
+        :creator            bdr:CR2156E638EF21B1E1 , bdr:CR8EAB768401D9D9FA , bdr:CRDFD5AE372625EF9B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T372 ;

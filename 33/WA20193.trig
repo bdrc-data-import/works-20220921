@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20193 {
+    bda:LG2B85239AF22BB65A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG775DAD9E78ADA9BC
         a                   adm:UpdateData ;
         adm:logDate         "2016-04-01T16:24:52.528Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA20193 {
         adm:logWho          bdu:U00016 .
     
     bda:LGA912174F5FB8EB9B
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGCC6211388B3AA1A7
         a                   adm:ScanRequestCreation ;
@@ -31,15 +37,15 @@ bdg:WA20193 {
     bda:WA20193  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20193 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "33/WA20193.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20193 ;
-        adm:logEntry        bda:LG775DAD9E78ADA9BC , bda:LGA912174F5FB8EB9B , bda:LGCC6211388B3AA1A7 ;
+        adm:logEntry        bda:LG2B85239AF22BB65A , bda:LG775DAD9E78ADA9BC , bda:LGA912174F5FB8EB9B , bda:LGCC6211388B3AA1A7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2B85239AF22BB65A
+    bdr:CRFC11B76723469F55
         a                   :AgentAsCreator ;
         :agent              bdr:P6593 ;
         :role               bdr:R0ER0026 .
@@ -50,7 +56,7 @@ bdg:WA20193 {
         skos:altLabel       "zhong wai you mo gu shi xuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bzhad slong byis pa'i 'dzum grol/"@bo-x-ewts , "中外幽默故事选"@zh-hans ;
         :catalogInfo        "Collection of humorous stories."@en ;
-        :creator            bdr:CR2B85239AF22BB65A ;
+        :creator            bdr:CRFC11B76723469F55 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW20193 , bdr:W20193 ;

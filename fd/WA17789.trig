@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA17789 {
+    bda:LG07445610A5E54B7C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG48C2B5BB6256CFBE
         a                   adm:UpdateData ;
         adm:logDate         "2013-06-12T16:31:17.696Z"^^xsd:dateTime ;
@@ -31,8 +35,10 @@ bdg:WA17789 {
         adm:logWho          bdu:U00026 .
     
     bda:LG86E7F19E40B1740F
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGB52CDDC163981D3A
         a                   adm:UpdateData ;
@@ -69,25 +75,25 @@ bdg:WA17789 {
     bda:WA17789  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA17789 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "fd/WA17789.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA17789 ;
-        adm:logEntry        bda:LG48C2B5BB6256CFBE , bda:LG611B18EDB5A639C8 , bda:LG812B1D8EB8AC73F6 , bda:LG86E7F19E40B1740F , bda:LGB52CDDC163981D3A , bda:LGBCD30CC9B1C308EB , bda:LGDED01B37D1AFC799 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG07445610A5E54B7C , bda:LG48C2B5BB6256CFBE , bda:LG611B18EDB5A639C8 , bda:LG812B1D8EB8AC73F6 , bda:LG86E7F19E40B1740F , bda:LGB52CDDC163981D3A , bda:LGBCD30CC9B1C308EB , bda:LGDED01B37D1AFC799 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR07445610A5E54B7C
-        a                   :AgentAsCreator ;
-        :agent              bdr:P4994 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRABF9BBFFADDE7A37
+    bdr:CR0A54BBC2679607CA
         a                   :AgentAsCreator ;
         :agent              bdr:P339 ;
         :role               bdr:R0ER0016 .
     
-    bdr:EV0A54BBC2679607CA
+    bdr:CRABF9BBFFADDE7A37
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4994 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:EV38CEBB099CF63144
         a                   :CompletedEvent ;
         :onYear             "1830"^^xsd:gYear .
     
@@ -97,10 +103,10 @@ bdg:WA17789 {
         skos:altLabel       "'dzam gling chen po'i rgyas bshad snod bcud kun gsal me long /"@bo-x-ewts , "'dzam gling spyi bshad ngo mtshar gtam snyan/"@bo-x-ewts ;
         skos:prefLabel      "'dzam gling rgyas bshad dang 'dzam gling spyi bshad/"@bo-x-ewts , "shi jie guang lun; shi jie gai lun"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Exposition on world geography. Written with Drungyig Rabjampa Rinchen Gyatso as the scribe at Tsodun Lhakang Ngonpo. Scholars requesting this work were Tsendrok Nomonhan 'Jampel Tenpa Rabgye and Kangyurwa Mergen Nomonhan."@en ;
-        :creator            bdr:CR07445610A5E54B7C , bdr:CRABF9BBFFADDE7A37 ;
+        :creator            bdr:CR0A54BBC2679607CA , bdr:CRABF9BBFFADDE7A37 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV0A54BBC2679607CA ;
+        :workEvent          bdr:EV38CEBB099CF63144 ;
         :workHasInstance    bdr:MW17789 , bdr:W17789 ;
         :workIsAbout        bdr:T1148 , bdr:T2551 , bdr:T916 .
 }

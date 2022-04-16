@@ -19,8 +19,10 @@ bdg:WA21600 {
         adm:logWho          bdu:U00016 .
     
     bda:LG63DECC9E6A0F1836
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGCB935EEA122AF98A
         a                   adm:UpdateData ;
@@ -33,6 +35,10 @@ bdg:WA21600 {
         adm:logDate         "2014-02-28T10:36:22.533Z"^^xsd:dateTime ;
         adm:logMessage      "released from onhold"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGDEF7070200D68412
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
@@ -51,15 +57,15 @@ bdg:WA21600 {
     bda:WA21600  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21600 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "a0/WA21600.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21600 ;
-        adm:logEntry        bda:LG2B6A43AEFBF547F3 , bda:LG63DECC9E6A0F1836 , bda:LGCB935EEA122AF98A , bda:LGDCA138D95291D96E , bda:LGIM4D99209C62 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG2B6A43AEFBF547F3 , bda:LG63DECC9E6A0F1836 , bda:LGCB935EEA122AF98A , bda:LGDCA138D95291D96E , bda:LGDEF7070200D68412 , bda:LGIM4D99209C62 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDEF7070200D68412
+    bdr:CR767936EE87259264
         a                   :AgentAsCreator ;
         :agent              bdr:P7277 ;
         :role               bdr:R0ER0012 .
@@ -70,7 +76,7 @@ bdg:WA21600 {
         skos:altLabel       "sgrung mkhan bsam grub kyis phab pa'i gling rje ge sar rgyal po'i sgrung / chags gling /"@bo-x-ewts , "ling guo xing cheng shi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "chags gling /"@bo-x-ewts , "岭国形成史"@zh-hans ;
         :catalogInfo        "An episode from the epic of Gesar."@en ;
-        :creator            bdr:CRDEF7070200D68412 ;
+        :creator            bdr:CR767936EE87259264 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW21600 , bdr:W21600 ;

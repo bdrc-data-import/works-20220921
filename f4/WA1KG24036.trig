@@ -24,33 +24,39 @@ bdg:WA1KG24036 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGFAF233C284966788
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:WA1KG24036  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24036 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "f4/WA1KG24036.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24036 ;
-        adm:logEntry        bda:LG3B84F7A296122BE8 , bda:LGFA7E0BE98B5BE891 ;
+        adm:logEntry        bda:LG3B84F7A296122BE8 , bda:LGFA7E0BE98B5BE891 , bda:LGFAF233C284966788 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR5801577C3B46F9A0
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG24047 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CRFAF233C284966788
-        a                   :AgentAsCreator ;
         :agent              bdr:P1KG24046 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRC6C97998F4143786
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG24047 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW1KG24036  skos:altLabel  "看图猜一猜"@zh-hans .
     
     bdr:WA1KG24036  a       :Work ;
         skos:prefLabel      "ri mor bltas nas bsam blo gtong rgyu/"@bo-x-ewts , "看图猜一猜"@zh-hans ;
         :catalogInfo        "An exercise textbook to develop the intellect by looking and guess the figures."@en ;
-        :creator            bdr:CR5801577C3B46F9A0 , bdr:CRFAF233C284966788 ;
+        :creator            bdr:CR5801577C3B46F9A0 , bdr:CRC6C97998F4143786 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T266 ;

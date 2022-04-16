@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23830 {
+    bda:LG4288F34ADE845A69
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG694496320486A39D
         a                   adm:UpdateData ;
         adm:logDate         "2007-08-27T16:59:17.881Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA23830 {
         adm:logWho          bdu:U00001 .
     
     bda:LGF8E69D45FCC8EE3D
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -66,20 +72,20 @@ bdg:WA23830 {
     bda:WA23830  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23830 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "17/WA23830.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23830 ;
-        adm:logEntry        bda:LG694496320486A39D , bda:LG8C0DBAFF2579B107 , bda:LGF8E69D45FCC8EE3D , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG4288F34ADE845A69 , bda:LG694496320486A39D , bda:LG8C0DBAFF2579B107 , bda:LGF8E69D45FCC8EE3D , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4288F34ADE845A69
+    bdr:CR118F2A12C1F42809
         a                   :AgentAsCreator ;
         :agent              bdr:P5580 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV118F2A12C1F42809
+    bdr:EVA0C345A976AD15A0
         a                   :CompletedEvent ;
         :onYear             "1640"^^xsd:gYear .
     
@@ -88,10 +94,10 @@ bdg:WA23830 {
     bdr:WA23830  a          :Work ;
         skos:prefLabel      "zhal snga bka' brgyud kyi thun mong ma yin pa'i chos 'byung /"@bo-x-ewts , "xie'ang shi ji"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "History of the early Geluk masters of Chamdo Prefecture, TAR."@en ;
-        :creator            bdr:CR4288F34ADE845A69 ;
+        :creator            bdr:CR118F2A12C1F42809 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV118F2A12C1F42809 ;
+        :workEvent          bdr:EVA0C345A976AD15A0 ;
         :workGenre          bdr:T12 ;
         :workHasInstance    bdr:MW23830 , bdr:W23830 ;
         :workIsAbout        bdr:G180 , bdr:T819 .

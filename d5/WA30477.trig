@@ -13,8 +13,10 @@
 
 bdg:WA30477 {
     bda:LG29A3B9E4D63EF0A1
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG472335722F4AF8CA
         a                   adm:ScanRequestCreation ;
@@ -33,6 +35,10 @@ bdg:WA30477 {
         adm:logDate         "2009-10-21T13:00:16.248Z"^^xsd:dateTime ;
         adm:logMessage      "chenged blo bzang dkon mchog"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGB49E4239A91F2934
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGF5316F0B9B6C9329
         a                   adm:UpdateData ;
@@ -85,32 +91,32 @@ bdg:WA30477 {
     bda:WA30477  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30477 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "d5/WA30477.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30477 ;
-        adm:logEntry        bda:LG29A3B9E4D63EF0A1 , bda:LG472335722F4AF8CA , bda:LG60C90232815F9D84 , bda:LG8E2F426B5F3494DA , bda:LGF5316F0B9B6C9329 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG29A3B9E4D63EF0A1 , bda:LG472335722F4AF8CA , bda:LG60C90232815F9D84 , bda:LG8E2F426B5F3494DA , bda:LGB49E4239A91F2934 , bda:LGF5316F0B9B6C9329 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6D92850D09D16BB1
+    bdr:CR52E67B171E545FC6
         a                   :AgentAsCreator ;
         :agent              bdr:P173 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRB49E4239A91F2934
+    bdr:CR6D92850D09D16BB1
         a                   :AgentAsCreator ;
-        :agent              bdr:P423 ;
+        :agent              bdr:P176 ;
         :role               bdr:R0ER0016 .
     
     bdr:CRED100D5F4FA34735
         a                   :AgentAsCreator ;
-        :agent              bdr:P377 ;
+        :agent              bdr:P423 ;
         :role               bdr:R0ER0016 .
     
     bdr:CRF054E340DD660499
         a                   :AgentAsCreator ;
-        :agent              bdr:P176 ;
+        :agent              bdr:P377 ;
         :role               bdr:R0ER0016 .
     
     bdr:MW30477  skos:altLabel  "摄类轮集"@zh-hans .
@@ -119,7 +125,7 @@ bdg:WA30477 {
         skos:altLabel       "nye bar mkho ba'i bsdus grwa phyogs gcig tu bsgrigs pa/"@bo-x-ewts , "she lei lun ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bsdus grwa phyogs bsgrigs/"@bo-x-ewts , "摄类轮集"@zh-hans ;
         :catalogInfo        "Collection of writings on Buddhist logic."@en ;
-        :creator            bdr:CR6D92850D09D16BB1 , bdr:CRB49E4239A91F2934 , bdr:CRED100D5F4FA34735 , bdr:CRF054E340DD660499 ;
+        :creator            bdr:CR52E67B171E545FC6 , bdr:CR6D92850D09D16BB1 , bdr:CRED100D5F4FA34735 , bdr:CRF054E340DD660499 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

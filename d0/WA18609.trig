@@ -18,6 +18,10 @@ bdg:WA18609 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LG3B04948DF10DC0FD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGC8DFF5D874A4159F
         a                   adm:UpdateData ;
         adm:logDate         "2012-05-11T11:10:56.101Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA18609 {
         adm:logWho          bdu:U00013 .
     
     bda:LGD386D852EA06AE75
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -52,30 +58,30 @@ bdg:WA18609 {
     bda:WA18609  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA18609 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "d0/WA18609.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA18609 ;
-        adm:logEntry        bda:LG1CA4A560036730B4 , bda:LGC8DFF5D874A4159F , bda:LGD386D852EA06AE75 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG1CA4A560036730B4 , bda:LG3B04948DF10DC0FD , bda:LGC8DFF5D874A4159F , bda:LGD386D852EA06AE75 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3B04948DF10DC0FD
+    bdr:CR50CEDF2ED234B3FA
         a                   :AgentAsCreator ;
         :agent              bdr:P5273 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV50CEDF2ED234B3FA
+    bdr:EV17F5FCABD033AD4A
         a                   :CompletedEvent ;
         :onYear             "1376"^^xsd:gYear .
     
     bdr:WA18609  a          :Work ;
         skos:altLabel       "yar lung chos 'byung /"@bo-x-ewts ;
         skos:prefLabel      "yar lung jo bo'i chos 'byung /"@bo-x-ewts ;
-        :creator            bdr:CR3B04948DF10DC0FD ;
+        :creator            bdr:CR50CEDF2ED234B3FA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV50CEDF2ED234B3FA ;
+        :workEvent          bdr:EV17F5FCABD033AD4A ;
         :workGenre          bdr:T12 ;
         :workHasInstance    bdr:MW18609 , bdr:MW25583 , bdr:W18609 , bdr:W25583 ;
         :workIsAbout        bdr:G1145 .

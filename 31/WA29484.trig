@@ -13,12 +13,18 @@
 
 bdg:WA29484 {
     bda:LG4E9B92CF089AFBF0
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG4F7C1F4D91F83021
         a                   adm:UpdateData ;
         adm:logDate         "2007-02-01T13:07:07.951Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LG6F996A253488E05E
+        a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:LG7B73E2F0AD5434EF
@@ -69,15 +75,15 @@ bdg:WA29484 {
     bda:WA29484  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29484 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "31/WA29484.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29484 ;
-        adm:logEntry        bda:LG4E9B92CF089AFBF0 , bda:LG4F7C1F4D91F83021 , bda:LG7B73E2F0AD5434EF , bda:LGCAFE72F708E8B298 , bda:LGD04702A2AC968993 , bda:LGE597A46804764568 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG4E9B92CF089AFBF0 , bda:LG4F7C1F4D91F83021 , bda:LG6F996A253488E05E , bda:LG7B73E2F0AD5434EF , bda:LGCAFE72F708E8B298 , bda:LGD04702A2AC968993 , bda:LGE597A46804764568 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6F996A253488E05E
+    bdr:CR07A5CC48784EBF63
         a                   :AgentAsCreator ;
         :agent              bdr:P3005 ;
         :role               bdr:R0ER0019 .
@@ -87,7 +93,7 @@ bdg:WA29484 {
     bdr:WA29484  a          :Work ;
         skos:prefLabel      "bu don ma/"@bo-x-ewts , "zi shu jing yao"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Collection of medical formulae attributed to Yutok the Younger."@en ;
-        :creator            bdr:CR6F996A253488E05E ;
+        :creator            bdr:CR07A5CC48784EBF63 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29484 , bdr:W29484 ;

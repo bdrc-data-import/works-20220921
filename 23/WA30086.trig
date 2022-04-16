@@ -13,14 +13,20 @@
 
 bdg:WA30086 {
     bda:LG3D518F0E80B09B5F
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGC7CC45EDDF9E7782
         a                   adm:UpdateData ;
         adm:logDate         "2015-03-19T10:37:34.351Z"^^xsd:dateTime ;
         adm:logMessage      "chenge title"@en ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGE19E338236BB3ED9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -46,20 +52,20 @@ bdg:WA30086 {
     bda:WA30086  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30086 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "23/WA30086.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30086 ;
-        adm:logEntry        bda:LG3D518F0E80B09B5F , bda:LGC7CC45EDDF9E7782 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG3D518F0E80B09B5F , bda:LGC7CC45EDDF9E7782 , bda:LGE19E338236BB3ED9 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB7436FC463507342
+    bdr:CR30A7870B807E55BF
         a                   :AgentAsCreator ;
         :agent              bdr:P377 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRE19E338236BB3ED9
+    bdr:CRB7436FC463507342
         a                   :AgentAsCreator ;
         :agent              bdr:P31 ;
         :role               bdr:R0ER0019 .
@@ -69,7 +75,7 @@ bdg:WA30086 {
     bdr:WA30086  a          :Work ;
         skos:altLabel       "rje gung thang blo gros rgya mtshos mdzad pa'i blo rtags mtha' dpyod sogs kyi dka' gnas dang dkon mchog chos 'phel gyi blo rtags kyi mchan 'grel།"@bo-x-ewts ;
         skos:prefLabel      "gung thang blo gros rgya mtsho'i blo rtags kyi mchan 'grel/"@bo-x-ewts , "gongtang luozhijiacuo da shi yin ming lun ji"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CRB7436FC463507342 , bdr:CRE19E338236BB3ED9 ;
+        :creator            bdr:CR30A7870B807E55BF , bdr:CRB7436FC463507342 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW30086 , bdr:W30086 ;

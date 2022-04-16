@@ -19,8 +19,10 @@ bdg:WA21652 {
         adm:logWho          bdu:U00016 .
     
     bda:LG8929A75E12CC880F
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGC7CEBC28A98A2700
         a                   adm:ScanRequestCreation ;
@@ -28,18 +30,22 @@ bdg:WA21652 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGECF7BA9531A7A8AD
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:WA21652  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21652 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "d4/WA21652.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21652 ;
-        adm:logEntry        bda:LG781B66C6F3FC9D78 , bda:LG8929A75E12CC880F , bda:LGC7CEBC28A98A2700 ;
+        adm:logEntry        bda:LG781B66C6F3FC9D78 , bda:LG8929A75E12CC880F , bda:LGC7CEBC28A98A2700 , bda:LGECF7BA9531A7A8AD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRECF7BA9531A7A8AD
+    bdr:CR6FCF29AF1FAEA4F3
         a                   :AgentAsCreator ;
         :agent              bdr:P4941 ;
         :role               bdr:R0ER0026 .
@@ -50,7 +56,7 @@ bdg:WA21652 {
         skos:altLabel       "shi jie tong hua jing xuan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "grags can byis sgrung legs btus/"@bo-x-ewts , "世界童话精选"@zh-hans ;
         :catalogInfo        "Translation of selected famous children's stories."@en ;
-        :creator            bdr:CRECF7BA9531A7A8AD ;
+        :creator            bdr:CR6FCF29AF1FAEA4F3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T257 ;

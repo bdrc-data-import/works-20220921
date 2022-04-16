@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA28952 {
-    bda:LGB2DF74DB401A7FA9
+    bda:LG396581A8CEC388A2
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGB2DF74DB401A7FA9
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -33,16 +39,16 @@ bdg:WA28952 {
     bda:WA28952  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28952 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "69/WA28952.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28952 ;
-        adm:logEntry        bda:LGB2DF74DB401A7FA9 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG396581A8CEC388A2 , bda:LGB2DF74DB401A7FA9 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA21902 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR396581A8CEC388A2
+    bdr:CRD08CCA29120175FB
         a                   :AgentAsCreator ;
         :agent              bdr:P1647 ;
         :role               bdr:R0ER0019 .
@@ -51,7 +57,7 @@ bdg:WA28952 {
     
     bdr:WA28952  a          :Work ;
         skos:prefLabel      "shes bya'i rnam grangs blo gsal rigs sgo"@bo-x-ewts , "yin ming xue ru men"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR396581A8CEC388A2 ;
+        :creator            bdr:CRD08CCA29120175FB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workIsAbout        bdr:T770 .

@@ -18,6 +18,10 @@ bdg:WA27305 {
         adm:logMessage      "revised catalog information"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LGB79CD5F6EFF7A895
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGCA79687A4AB2E089
         a                   adm:UpdateData ;
         adm:logDate         "2011-01-06T10:07:02.914Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA27305 {
         adm:logWho          bdu:U00016 .
     
     bda:LGCEB34C2348FAB5CC
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGEF5AE077E68DF989
         a                   adm:UpdateData ;
@@ -65,23 +71,23 @@ bdg:WA27305 {
     bda:WA27305  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA27305 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "b1/WA27305.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA27305 ;
-        adm:logEntry        bda:LG912D8EEF44F1E940 , bda:LGCA79687A4AB2E089 , bda:LGCEB34C2348FAB5CC , bda:LGEF5AE077E68DF989 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG912D8EEF44F1E940 , bda:LGB79CD5F6EFF7A895 , bda:LGCA79687A4AB2E089 , bda:LGCEB34C2348FAB5CC , bda:LGEF5AE077E68DF989 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR17CBEF8AF059D3A8
         a                   :AgentAsCreator ;
-        :agent              bdr:P8673 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRB79CD5F6EFF7A895
-        a                   :AgentAsCreator ;
         :agent              bdr:P6007 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR568661E3E8135E81
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8673 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW27305  skos:altLabel  "kuo lo tsung p'u"@zh-latn-wadegile .
     
@@ -89,7 +95,7 @@ bdg:WA27305 {
         skos:altLabel       "bod mi bu gdong drug gi rus mdzod me tog skyed tshal/"@bo-x-ewts ;
         skos:prefLabel      "mgo log rus mdzod/"@bo-x-ewts , "kuo lo tsung p'u"@zh-latn-wadegile ;
         :catalogInfo        "History of the tribes and clans (rus) of the Golok Tibetan Autonomous Prefecture."@en ;
-        :creator            bdr:CR17CBEF8AF059D3A8 , bdr:CRB79CD5F6EFF7A895 ;
+        :creator            bdr:CR17CBEF8AF059D3A8 , bdr:CR568661E3E8135E81 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA28990 {
-    bda:LGD0109480C5EBBA74
+    bda:LG21345B8A9BA93450
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGD0109480C5EBBA74
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -33,33 +39,33 @@ bdg:WA28990 {
     bda:WA28990  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28990 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "e5/WA28990.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28990 ;
-        adm:logEntry        bda:LGD0109480C5EBBA74 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG21345B8A9BA93450 , bda:LGD0109480C5EBBA74 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA21934 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:CR1E5CE1B670EDD081
         a                   :AgentAsCreator ;
-        :agent              bdr:P55 ;
+        :agent              bdr:P65 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CR21345B8A9BA93450
+    bdr:CR9489E81B132B9BAD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P31 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CR981C783C3CFCCCBA
         a                   :AgentAsCreator ;
         :agent              bdr:P64 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR981C783C3CFCCCBA
-        a                   :AgentAsCreator ;
-        :agent              bdr:P65 ;
-        :role               bdr:R0ER0016 .
-    
     bdr:CRC8F7EA2D25028265
         a                   :AgentAsCreator ;
-        :agent              bdr:P31 ;
+        :agent              bdr:P55 ;
         :role               bdr:R0ER0016 .
     
     bdr:MW28990  skos:altLabel  "zongkaba shi tu yin ming lun ji"@zh-latn-pinyin-x-ndia .
@@ -67,7 +73,7 @@ bdg:WA28990 {
     bdr:WA28990  a          :Work ;
         skos:altLabel       "rje yab sras gsum gyi tshad ma'i gzhung nyer mkho rnams dang rje gung thang blo gros rgya mtshos mdzad pa'i bsdus sbyor snying po kun 'dus rigs pa'i mdzod kyi rnam bshad kun gsal me long bcas/"@bo-x-ewts ;
         skos:prefLabel      "rje yab sras gsum gyi tshad gzhung nyer mkho dang gung thang blo gros rgya mtsho'i bsdus grwa/"@bo-x-ewts , "zongkaba shi tu yin ming lun ji"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR1E5CE1B670EDD081 , bdr:CR21345B8A9BA93450 , bdr:CR981C783C3CFCCCBA , bdr:CRC8F7EA2D25028265 ;
+        :creator            bdr:CR1E5CE1B670EDD081 , bdr:CR9489E81B132B9BAD , bdr:CR981C783C3CFCCCBA , bdr:CRC8F7EA2D25028265 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW28990 ;

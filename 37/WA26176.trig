@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA26176 {
-    bda:LG8B60E683B2F9681C
+    bda:LG361A8B992242585C
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG8B60E683B2F9681C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGF968C691BB5353F9
         a                   adm:UpdateData ;
@@ -38,20 +44,20 @@ bdg:WA26176 {
     bda:WA26176  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA26176 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "37/WA26176.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA26176 ;
-        adm:logEntry        bda:LG8B60E683B2F9681C , bda:LGF968C691BB5353F9 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG361A8B992242585C , bda:LG8B60E683B2F9681C , bda:LGF968C691BB5353F9 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR361A8B992242585C
+    bdr:CRA5AE7C13DFA1E8DA
         a                   :AgentAsCreator ;
         :agent              bdr:P60 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRA5AE7C13DFA1E8DA
+    bdr:CRB0183014022F766D
         a                   :AgentAsCreator ;
         :agent              bdr:P1042 ;
         :role               bdr:R0ER0016 .
@@ -61,7 +67,7 @@ bdg:WA26176 {
     bdr:WA26176  a          :Work ;
         skos:altLabel       "dbu ma la 'jug pa'i dkyus kyi sa bcad pa lta ba ngan sel/"@bo-x-ewts , "dbu ma la 'jug pa'i rnam bshad de kho na nyied gsal ba'i sgron me/"@bo-x-ewts ;
         skos:prefLabel      "dbu ma/"@bo-x-ewts , "zhongguan"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR361A8B992242585C , bdr:CRA5AE7C13DFA1E8DA ;
+        :creator            bdr:CRA5AE7C13DFA1E8DA , bdr:CRB0183014022F766D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

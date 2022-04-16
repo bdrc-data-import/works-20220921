@@ -18,6 +18,12 @@ bdg:WA1PD83973 {
         adm:logMessage      "created arvhive ifno"@en ;
         adm:logWho          bdu:U00012 .
     
+    bda:LG304619E10DA75413
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LG414D1F90CDF0C76A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2009-03-02T13:55:39.455Z"^^xsd:dateTime ;
@@ -78,27 +84,27 @@ bdg:WA1PD83973 {
     bda:WA1PD83973  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD83973 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "93/WA1PD83973.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD83973 ;
-        adm:logEntry        bda:LG145A40D96E81BF4E , bda:LG414D1F90CDF0C76A , bda:LG52B94762A373CF04 , bda:LG6AD5E23DA99E9228 , bda:LGD399EA2D13336DBB , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG145A40D96E81BF4E , bda:LG304619E10DA75413 , bda:LG414D1F90CDF0C76A , bda:LG52B94762A373CF04 , bda:LG6AD5E23DA99E9228 , bda:LGD399EA2D13336DBB , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR304619E10DA75413
+    bdr:CR664CE174F927BD22
+        a                   :AgentAsCreator ;
+        :agent              bdr:P736 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CR66619A384F74C463
         a                   :AgentAsCreator ;
         :agent              bdr:P705 ;
         :role               bdr:R0ER0025 .
     
-    bdr:CR66619A384F74C463
-        a                   :AgentAsCreator ;
-        :agent              bdr:P6036 ;
-        :role               bdr:R0ER0016 .
-    
     bdr:CRAFD76B42E720C441
         a                   :AgentAsCreator ;
-        :agent              bdr:P736 ;
+        :agent              bdr:P6036 ;
         :role               bdr:R0ER0016 .
     
     bdr:MW1PD83973  skos:altLabel  "lai hua sheng da shi hai sheng fo tuo zhuan"@zh-latn-pinyin-x-ndia .
@@ -107,7 +113,7 @@ bdg:WA1PD83973 {
         skos:altLabel       "'chi med mtsho 'khrungs rgyal ba'i rtogs pa brjod pa ngo mtshar rgya mtsho'i 'jings rnam/"@bo-x-ewts ;
         skos:prefLabel      "gu ru'i rtogs brjod pa ngo mtshar rgya mtsho'i 'jings rnam/"@bo-x-ewts , "lai hua sheng da shi hai sheng fo tuo zhuan"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Biographies of Padmakaravarma. Written by Sonam Gyatso."@en ;
-        :creator            bdr:CR304619E10DA75413 , bdr:CR66619A384F74C463 , bdr:CRAFD76B42E720C441 ;
+        :creator            bdr:CR664CE174F927BD22 , bdr:CR66619A384F74C463 , bdr:CRAFD76B42E720C441 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

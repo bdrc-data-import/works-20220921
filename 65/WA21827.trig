@@ -25,6 +25,12 @@ bdg:WA21827 {
         adm:logWho          bdu:U00016 .
     
     bda:LG80DCB5A31249DB24
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
+    bda:LGA2E2F1EDCB4E4C7E
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -57,28 +63,28 @@ bdg:WA21827 {
     bda:WA21827  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21827 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "65/WA21827.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21827 ;
-        adm:logEntry        bda:LG10B4AF4D6F4DEEFF , bda:LG36ED103481557769 , bda:LG80DCB5A31249DB24 , bda:LGDE4D8028C29488DE , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG10B4AF4D6F4DEEFF , bda:LG36ED103481557769 , bda:LG80DCB5A31249DB24 , bda:LGA2E2F1EDCB4E4C7E , bda:LGDE4D8028C29488DE , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR8E73EE5B364BD917
         a                   :AgentAsCreator ;
+        :agent              bdr:P258 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CRECED8CAD4C8A217F
+        a                   :AgentAsCreator ;
         :agent              bdr:P4069 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRA2E2F1EDCB4E4C7E
+    bdr:CRFF30B391B0C04C56
         a                   :AgentAsCreator ;
         :agent              bdr:P293 ;
         :role               bdr:R0ER0019 .
-    
-    bdr:CRFF30B391B0C04C56
-        a                   :AgentAsCreator ;
-        :agent              bdr:P258 ;
-        :role               bdr:R0ER0016 .
     
     bdr:MW21827  skos:altLabel  "Kloṅ chen sñiṅ thig gi sṅon ʼgroʼi ṅag ʼdon rtsa ʼgrel bźugs /[Jigs-med-phrin-las-ʼod-zer daṅ Mkhyen-brtseʼi-dban-po, Chos-kyi-grags-pa gsum gyis gsuṅs]."@en-x-mixed .
     
@@ -86,7 +92,7 @@ bdg:WA21827 {
         skos:altLabel       "rdzogs pa chen po klong chen snying thig gi sngon 'gro'i ngag 'don khrigs su bsdebs pa rnam mkhyen lam bzang /"@bo-x-ewts ;
         skos:prefLabel      "klong chen snying thig gi sngon 'gro'i ngag 'don rtsa 'grel/"@bo-x-ewts , "Kloṅ chen sñiṅ thig gi sṅon ʼgroʼi ṅag ʼdon rtsa ʼgrel bźugs /[Jigs-med-phrin-las-ʼod-zer daṅ Mkhyen-brtseʼi-dban-po, Chos-kyi-grags-pa gsum gyis gsuṅs]."@en-x-mixed ;
         :catalogInfo        "Commentery on the introduction to the practice of the Longchen Nyingtik."@en ;
-        :creator            bdr:CR8E73EE5B364BD917 , bdr:CRA2E2F1EDCB4E4C7E , bdr:CRFF30B391B0C04C56 ;
+        :creator            bdr:CR8E73EE5B364BD917 , bdr:CRECED8CAD4C8A217F , bdr:CRFF30B391B0C04C56 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T200 ;

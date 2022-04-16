@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21945 {
-    bda:LG6C7FA273834E514F
+    bda:LG3F8880B6190FFC31
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG6C7FA273834E514F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG828E97D000206E82
         a                   adm:ScanRequestCreation ;
@@ -38,15 +44,15 @@ bdg:WA21945 {
     bda:WA21945  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21945 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "d9/WA21945.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21945 ;
-        adm:logEntry        bda:LG6C7FA273834E514F , bda:LG828E97D000206E82 , bda:LGB4544696ACEF09EE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG3F8880B6190FFC31 , bda:LG6C7FA273834E514F , bda:LG828E97D000206E82 , bda:LGB4544696ACEF09EE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3F8880B6190FFC31
+    bdr:CRF1573C975ACB9DDF
         a                   :AgentAsCreator ;
         :agent              bdr:P7416 ;
         :role               bdr:R0ER0026 .
@@ -57,7 +63,7 @@ bdg:WA21945 {
         skos:altLabel       "xiao hua"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "bzhad gad kyi gtam/"@bo-x-ewts , "Bźad gad kyi gtam /Kun-rnam gyis bsgyur."@en-x-mixed , "笑话"@zh-hans ;
         :catalogInfo        "Tibetan translation of Chinese wit and humor."@en ;
-        :creator            bdr:CR3F8880B6190FFC31 ;
+        :creator            bdr:CRF1573C975ACB9DDF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW21945 , bdr:W21945 ;

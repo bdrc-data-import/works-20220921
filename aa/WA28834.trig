@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA28834 {
-    bda:LGC32A2A098B4E457B
+    bda:LG37B2648FA1B46FA6
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGC32A2A098B4E457B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -40,34 +46,34 @@ bdg:WA28834 {
     bda:WA28834  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28834 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "aa/WA28834.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28834 ;
-        adm:logEntry        bda:LGC32A2A098B4E457B , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG37B2648FA1B46FA6 , bda:LGC32A2A098B4E457B , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR37B2648FA1B46FA6
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1457 ;
-        :role               bdr:R0ER0019 .
-    
     bdr:CR72BC56FB9C7003F1
         a                   :AgentAsCreator ;
-        :agent              bdr:P9355 ;
+        :agent              bdr:P740 ;
         :role               bdr:R0ER0016 .
     
     bdr:CRC881F1AB2439067D
         a                   :AgentAsCreator ;
-        :agent              bdr:P740 ;
+        :agent              bdr:P1457 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRC8C502E104076B44
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9355 ;
         :role               bdr:R0ER0016 .
     
     bdr:MW28834  skos:altLabel  "Ṅag sgron rtsa ʼgrel daṅ deʼi yaṅ ʼgrel /Dpal-khaṅ Lo-tsā-bas rtsa ba mdzad ; Bstan-ʼdzin-rgyal-mtshan gyis ʼgrel pa mdzad ; Kun-bzaṅ-rnam-rgyal gyis yaṅ ʼgrel brtsams."@en-x-mixed , "yu deng xiang shi"@zh-latn-pinyin-x-ndia .
     
     bdr:WA28834  a          :Work ;
         skos:prefLabel      "ngag sgron rtsa 'grel dang de'i yang 'grel/"@bo-x-ewts , "Ṅag sgron rtsa ʼgrel daṅ deʼi yaṅ ʼgrel /Dpal-khaṅ Lo-tsā-bas rtsa ba mdzad ; Bstan-ʼdzin-rgyal-mtshan gyis ʼgrel pa mdzad ; Kun-bzaṅ-rnam-rgyal gyis yaṅ ʼgrel brtsams."@en-x-mixed , "yu deng xiang shi"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR37B2648FA1B46FA6 , bdr:CR72BC56FB9C7003F1 , bdr:CRC881F1AB2439067D ;
+        :creator            bdr:CR72BC56FB9C7003F1 , bdr:CRC881F1AB2439067D , bdr:CRC8C502E104076B44 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T218 ;

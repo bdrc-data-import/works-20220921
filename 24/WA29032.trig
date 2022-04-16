@@ -13,8 +13,10 @@
 
 bdg:WA29032 {
     bda:LG2B637557CD9BA7E9
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG31839E1265391B46
         a                   adm:UpdateData ;
@@ -27,6 +29,10 @@ bdg:WA29032 {
         adm:logDate         "2007-11-27T10:08:55.881Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00003 .
+    
+    bda:LGB81E6A2A1571446E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGCF237B9F332E8DDF
         a                   adm:UpdateData ;
@@ -58,43 +64,43 @@ bdg:WA29032 {
     bda:WA29032  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29032 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "24/WA29032.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29032 ;
-        adm:logEntry        bda:LG2B637557CD9BA7E9 , bda:LG31839E1265391B46 , bda:LG9260DD3D79989A5B , bda:LGCF237B9F332E8DDF , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG2B637557CD9BA7E9 , bda:LG31839E1265391B46 , bda:LG9260DD3D79989A5B , bda:LGB81E6A2A1571446E , bda:LGCF237B9F332E8DDF , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3AB78F3FD3CD7ED4
-        a                   :AgentAsCreator ;
-        :agent              bdr:P740 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR51FF1F24CC75EE77
+    bdr:CR1223BA1E1971FFC6
         a                   :AgentAsCreator ;
         :agent              bdr:P9471 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CR915ADE05E1D1F65D
+    bdr:CR3AB78F3FD3CD7ED4
         a                   :AgentAsCreator ;
-        :agent              bdr:P956 ;
+        :agent              bdr:P1457 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRB81E6A2A1571446E
+    bdr:CR51FF1F24CC75EE77
+        a                   :AgentAsCreator ;
+        :agent              bdr:P740 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CR915ADE05E1D1F65D
         a                   :AgentAsCreator ;
         :agent              bdr:P5788 ;
         :role               bdr:R0ER0016 .
     
     bdr:CREFDFE3F09F136CAD
         a                   :AgentAsCreator ;
-        :agent              bdr:P1457 ;
+        :agent              bdr:P956 ;
         :role               bdr:R0ER0016 .
     
     bdr:WA29032  a          :Work ;
         skos:prefLabel      "sgra dang sdeb sbyor/"@bo-x-ewts ;
         :catalogInfo        "Collection of writings on Tibetan grammar, Orthography and Synonyms."@en ;
-        :creator            bdr:CR3AB78F3FD3CD7ED4 , bdr:CR51FF1F24CC75EE77 , bdr:CR915ADE05E1D1F65D , bdr:CRB81E6A2A1571446E , bdr:CREFDFE3F09F136CAD ;
+        :creator            bdr:CR1223BA1E1971FFC6 , bdr:CR3AB78F3FD3CD7ED4 , bdr:CR51FF1F24CC75EE77 , bdr:CR915ADE05E1D1F65D , bdr:CREFDFE3F09F136CAD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T218 ;

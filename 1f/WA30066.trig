@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30066 {
+    bda:LG1DEF45CFCD71026A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG367842200AAAA316
         a                   adm:UpdateData ;
         adm:logDate         "2010-10-21T13:57:20.429Z"^^xsd:dateTime ;
@@ -41,8 +45,10 @@ bdg:WA30066 {
         adm:logWho          bdu:U00020 .
     
     bda:LGD4222984F7BFC175
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -74,16 +80,16 @@ bdg:WA30066 {
     bda:WA30066  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30066 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "1f/WA30066.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30066 ;
-        adm:logEntry        bda:LG367842200AAAA316 , bda:LG5DCB8243A7BEB37C , bda:LGAEE8FE7CCC249324 , bda:LGB70723F77171DD1F , bda:LGC2A9C8E8E67E9A31 , bda:LGD4222984F7BFC175 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG1DEF45CFCD71026A , bda:LG367842200AAAA316 , bda:LG5DCB8243A7BEB37C , bda:LGAEE8FE7CCC249324 , bda:LGB70723F77171DD1F , bda:LGC2A9C8E8E67E9A31 , bda:LGD4222984F7BFC175 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1DEF45CFCD71026A
+    bdr:CR8ED4B9DC62B8770D
         a                   :AgentAsCreator ;
         :agent              bdr:P10078 ;
         :role               bdr:R0ER0019 .
@@ -93,7 +99,7 @@ bdg:WA30066 {
     bdr:WA30066  a          :Work ;
         skos:altLabel       "khyab bdag dus kyi 'khor lo dang gnyis su med pa'i bka' drin mtshungs med rdo rje slob dpon chen po rje btsun kun dga' thugs rje dpal bzang po'i rnam par thar pa mdo tsam brjod pa skal bzang dad pa'i 'jug ngogs/"@bo-x-ewts ;
         skos:prefLabel      "rje kun dga' thugs rje dpal bzang po'i rnam thar/"@bo-x-ewts , "gen ga tu ji hua sang zhuan"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR1DEF45CFCD71026A ;
+        :creator            bdr:CR8ED4B9DC62B8770D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

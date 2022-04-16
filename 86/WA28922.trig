@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA28922 {
+    bda:LG78A205A0A3CBA196
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGEC0C94E383A3B707
         a                   adm:UpdateData ;
         adm:logDate         "2012-04-11T12:18:47.438Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA28922 {
         adm:logWho          bdu:U00021 .
     
     bda:LGFAFD6D512F310EC2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -53,15 +59,15 @@ bdg:WA28922 {
     bda:WA28922  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28922 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "86/WA28922.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28922 ;
-        adm:logEntry        bda:LGEC0C94E383A3B707 , bda:LGFAFD6D512F310EC2 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG78A205A0A3CBA196 , bda:LGEC0C94E383A3B707 , bda:LGFAFD6D512F310EC2 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR78A205A0A3CBA196
+    bdr:CRAF6E78432192A3AF
         a                   :AgentAsCreator ;
         :agent              bdr:P9372 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +77,7 @@ bdg:WA28922 {
     bdr:WA28922  a          :Work ;
         skos:altLabel       "gsum ldan rdo rje 'dzin pa chen po shar wod chos mdzad grags pa bzang po mchog gi gsung 'bum legs bshad nor bu'i lhun po/"@bo-x-ewts , "shar wod chos mdzad grags pa bzang po'i gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_grags pa bzang po/"@bo-x-ewts , "Gsum-ldan Rdo-rje-ʼdzin-pa Śar-wod Chos-mdzad Grags-pa-bzaṅ-po Mchog gi gsuṅ ʼbum legs bśad Nor buʼi lhun po bźugs /Mgo-log Khul Gnaʼ-rtsom Bya-baʼi Gźuṅ-las-khaṅ gis ʼtshol sdud dag sgrig byas ; [dpe sgrig ʼgan ʼkhur ba, Bkra-śis]."@en-x-mixed , "xia ao zha ba sang bu wen ji"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR78A205A0A3CBA196 ;
+        :creator            bdr:CRAF6E78432192A3AF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

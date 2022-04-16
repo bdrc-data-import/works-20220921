@@ -30,6 +30,12 @@ bdg:WA1KG1096 {
         adm:logMessage      "added loction"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG28402B0E27CB2563
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LG61BD9324A2E1A130
         a                   adm:InitialDataCreation ;
         adm:logDate         "2008-12-05T14:27:55.909Z"^^xsd:dateTime ;
@@ -87,28 +93,28 @@ bdg:WA1KG1096 {
     bda:WA1KG1096  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG1096 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "b0/WA1KG1096.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG1096 ;
-        adm:logEntry        bda:LG0D4356ABB7718DD9 , bda:LG118F2831ABB7C463 , bda:LG2270AD56C21D33ED , bda:LG61BD9324A2E1A130 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM6C9E48233B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG0D4356ABB7718DD9 , bda:LG118F2831ABB7C463 , bda:LG2270AD56C21D33ED , bda:LG28402B0E27CB2563 , bda:LG61BD9324A2E1A130 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM6C9E48233B , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1BED72A6526B2AF1
         a                   :AgentAsCreator ;
-        :agent              bdr:P5007 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR28402B0E27CB2563
-        a                   :AgentAsCreator ;
-        :agent              bdr:P2666 ;
+        :agent              bdr:P4107 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR5D79C80ADE00EECA
         a                   :AgentAsCreator ;
-        :agent              bdr:P4107 ;
+        :agent              bdr:P2666 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRB9EC02014BFB9E7A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5007 ;
         :role               bdr:R0ER0019 .
     
     bdr:MW1KG1096  skos:altLabel  "zhi gong yi suan ji"@zh-latn-pinyin-x-ndia .
@@ -116,7 +122,7 @@ bdg:WA1KG1096 {
     bdr:WA1KG1096  a        :Work ;
         skos:prefLabel      "'bri gung sman rtsis phyogs bsgrigs/"@bo-x-ewts , "zhi gong yi suan ji"@zh-latn-pinyin-x-ndia ;
         :catalogInfo        "Select writings on medical practice by several Drikung Kagyu scholars."@en ;
-        :creator            bdr:CR1BED72A6526B2AF1 , bdr:CR28402B0E27CB2563 , bdr:CR5D79C80ADE00EECA ;
+        :creator            bdr:CR1BED72A6526B2AF1 , bdr:CR5D79C80ADE00EECA , bdr:CRB9EC02014BFB9E7A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

@@ -13,8 +13,10 @@
 
 bdg:WA20459 {
     bda:LG1C9B2737948BA3E2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG5EA48E5E9C1E28CC
         a                   adm:ScanRequestCreation ;
@@ -27,6 +29,10 @@ bdg:WA20459 {
         adm:logDate         "2011-09-15T11:59:41.393Z"^^xsd:dateTime ;
         adm:logMessage      "added shad"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG977CD23E9F042F42
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
@@ -52,30 +58,30 @@ bdg:WA20459 {
     bda:WA20459  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20459 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "c4/WA20459.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20459 ;
-        adm:logEntry        bda:LG1C9B2737948BA3E2 , bda:LG5EA48E5E9C1E28CC , bda:LG808F625877BEF9E1 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1C9B2737948BA3E2 , bda:LG5EA48E5E9C1E28CC , bda:LG808F625877BEF9E1 , bda:LG977CD23E9F042F42 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1CZ1859 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR977CD23E9F042F42
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1056 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRCB225654DFBC3D4D
+    bdr:CR294778912593E22A
         a                   :AgentAsCreator ;
         :agent              bdr:P5298 ;
         :role               bdr:R0ER0014 .
+    
+    bdr:CRCB225654DFBC3D4D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1056 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA20459  a          :Work ;
         skos:altLabel       "legs bshad rin po che'i gter rtsa 'grel/"@bo-x-ewts ;
         skos:prefLabel      "legs par bshad pa rin po che'i gter dang 'grel pa/"@bo-x-ewts ;
         :catalogInfo        "Didactic work by Sakya Pandita Kunga Gyaltsen (1182-1251) with commentary by the 13th century author Rinchen Pel."@en ;
-        :creator            bdr:CR977CD23E9F042F42 , bdr:CRCB225654DFBC3D4D ;
+        :creator            bdr:CR294778912593E22A , bdr:CRCB225654DFBC3D4D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T245 ;

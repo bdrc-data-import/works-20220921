@@ -19,13 +19,19 @@ bdg:WA10437 {
         adm:logWho          bdu:U00013 .
     
     bda:LG574678A4FC4D0036
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG63F007D8E776523F
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2007-08-01T14:50:39.011Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGE7A9875A3AEAEDD1
+        a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
@@ -59,20 +65,20 @@ bdg:WA10437 {
     bda:WA10437  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA10437 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "22/WA10437.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA10437 ;
-        adm:logEntry        bda:LG2D9EC21BA6A530DF , bda:LG574678A4FC4D0036 , bda:LG63F007D8E776523F , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG2D9EC21BA6A530DF , bda:LG574678A4FC4D0036 , bda:LG63F007D8E776523F , bda:LGE7A9875A3AEAEDD1 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE7A9875A3AEAEDD1
+    bdr:CRF4751AB6C9D77DBD
         a                   :AgentAsCreator ;
         :agent              bdr:P825 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVF4751AB6C9D77DBD
+    bdr:EV14924708C3A49965
         a                   :CompletedEvent ;
         :notAfter           "1581"^^xsd:gYear ;
         :notBefore          "1570"^^xsd:gYear .
@@ -82,10 +88,10 @@ bdg:WA10437 {
     bdr:WA10437  a          :Work ;
         skos:altLabel       "'brug pa'i chos 'byung /"@bo-x-ewts ;
         skos:prefLabel      "chos 'byung bstan pa'i pad+ma rgyas pa'i nyin byed/"@bo-x-ewts , "Chos ʾbyuṅ bstan paʾi padma rgyas paʾi ñin byed /[ʾBrug-pa Padma-dkar-po]."@en-x-mixed ;
-        :creator            bdr:CRE7A9875A3AEAEDD1 ;
+        :creator            bdr:CRF4751AB6C9D77DBD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVF4751AB6C9D77DBD ;
+        :workEvent          bdr:EV14924708C3A49965 ;
         :workGenre          bdr:T12 ;
         :workHasInstance    bdr:MW10437 , bdr:MW10736_F35206 , bdr:MW1KG10687_813ECF , bdr:MW1KG4304 , bdr:MW1KG9407 , bdr:MW3CN22981 , bdr:MW4PD5187 , bdr:W10437 , bdr:W1KG4304 , bdr:W1KG9407 , bdr:W3CN22981 .
 }

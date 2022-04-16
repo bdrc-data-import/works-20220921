@@ -18,6 +18,12 @@ bdg:WA1KG8529 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG31CE00B7A1564CD3
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LG45D01ED3270F8541
         a                   adm:UpdateData ;
         adm:logDate         "2012-06-27T12:46:30.257Z"^^xsd:dateTime ;
@@ -67,27 +73,27 @@ bdg:WA1KG8529 {
     bda:WA1KG8529  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG8529 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "02/WA1KG8529.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG8529 ;
-        adm:logEntry        bda:LG1F3D15C693F024AE , bda:LG45D01ED3270F8541 , bda:LGA8E9E98A44402743 , bda:LGE4D55A6A606E41E5 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG1F3D15C693F024AE , bda:LG31CE00B7A1564CD3 , bda:LG45D01ED3270F8541 , bda:LGA8E9E98A44402743 , bda:LGE4D55A6A606E41E5 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR31CE00B7A1564CD3
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1KG8530 ;
-        :role               bdr:R0ER0019 .
-    
     bdr:CR32F25811207D4274
         a                   :AgentAsCreator ;
-        :agent              bdr:P5013 ;
+        :agent              bdr:P4954 ;
         :role               bdr:R0ER0011 .
     
     bdr:CRDB7EC997E21ADBD4
         a                   :AgentAsCreator ;
-        :agent              bdr:P4954 ;
+        :agent              bdr:P1KG8530 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE9712C49ED98915A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5013 ;
         :role               bdr:R0ER0011 .
     
     bdr:MW1KG8529  skos:altLabel  "药物识别·明日"@zh-hans .
@@ -95,7 +101,7 @@ bdg:WA1KG8529 {
     bdr:WA1KG8529  a        :Work ;
         skos:prefLabel      "sman gyi ngos 'dzin kun gsal nyi ma'i dbang po/"@bo-x-ewts , "药物识别·明日"@zh-hans ;
         :catalogInfo        "Anthology of medical manuals used to identify medical material substances."@en ;
-        :creator            bdr:CR31CE00B7A1564CD3 , bdr:CR32F25811207D4274 , bdr:CRDB7EC997E21ADBD4 ;
+        :creator            bdr:CR32F25811207D4274 , bdr:CRDB7EC997E21ADBD4 , bdr:CRE9712C49ED98915A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

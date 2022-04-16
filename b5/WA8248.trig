@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8248 {
+    bda:LG0BBE63DC77E1751F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG1EF7EF9A56394F2F
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2013-02-27T12:40:22.15Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA8248 {
         adm:logWho          bdu:U00016 .
     
     bda:LG6742E6F500E2CC52
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG8B136F3E2C4D053B
         a                   adm:UpdateData ;
@@ -59,15 +65,15 @@ bdg:WA8248 {
     bda:WA8248  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8248 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "b5/WA8248.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8248 ;
-        adm:logEntry        bda:LG1EF7EF9A56394F2F , bda:LG6742E6F500E2CC52 , bda:LG8B136F3E2C4D053B , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG0BBE63DC77E1751F , bda:LG1EF7EF9A56394F2F , bda:LG6742E6F500E2CC52 , bda:LG8B136F3E2C4D053B , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0BBE63DC77E1751F
+    bdr:CR0BFBA2C7489E441B
         a                   :AgentAsCreator ;
         :agent              bdr:P421 ;
         :role               bdr:R0ER0019 .
@@ -78,7 +84,7 @@ bdg:WA8248 {
         skos:altLabel       "shi jing zhu miao yin huan ge shi nan"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "snyan 'grel dbyangs can dgyes glu'i mchan 'grel/"@bo-x-ewts , "诗镜注妙音欢歌释难"@zh-hans ;
         :catalogInfo        "Annotated commentary on Dalai Lama 05 Ngawang Lobzang Gyatso's text, Nyengrel Yangchen Gyelu."@en ;
-        :creator            bdr:CR0BBE63DC77E1751F ;
+        :creator            bdr:CR0BFBA2C7489E441B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T304 ;

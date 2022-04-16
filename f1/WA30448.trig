@@ -31,6 +31,12 @@ bdg:WA30448 {
         adm:logWho          bdu:U00003 .
     
     bda:LG913C95299B73B72E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
+    bda:LG936231B438DEB6AC
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -65,45 +71,45 @@ bdg:WA30448 {
     bda:WA30448  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30448 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "f1/WA30448.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30448 ;
-        adm:logEntry        bda:LG11629806B9A2F7D5 , bda:LG4756ADC7E377F5AE , bda:LG90ED7424CBB0D039 , bda:LG913C95299B73B72E , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG11629806B9A2F7D5 , bda:LG4756ADC7E377F5AE , bda:LG90ED7424CBB0D039 , bda:LG913C95299B73B72E , bda:LG936231B438DEB6AC , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1AD112ABCD455418
         a                   :AgentAsCreator ;
-        :agent              bdr:P1051 ;
-        :role               bdr:R0ER0018 .
+        :agent              bdr:P7847 ;
+        :role               bdr:R0ER0019 .
     
     bdr:CR24C6AA8CD0BA7D0A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P856 ;
+        :role               bdr:R0ER0023 .
+    
+    bdr:CR5A85E4B71B6C1FE2
         a                   :AgentAsCreator ;
         :agent              bdr:P801 ;
         :role               bdr:R0ER0023 .
     
     bdr:CR6E7FE6B2C7CF441B
         a                   :AgentAsCreator ;
-        :agent              bdr:P1046 ;
-        :role               bdr:R0ER0026 .
+        :agent              bdr:P1051 ;
+        :role               bdr:R0ER0018 .
     
     bdr:CR84E1BD355D54F902
         a                   :AgentAsCreator ;
-        :agent              bdr:P856 ;
-        :role               bdr:R0ER0023 .
-    
-    bdr:CR936231B438DEB6AC
-        a                   :AgentAsCreator ;
-        :agent              bdr:P7847 ;
-        :role               bdr:R0ER0019 .
+        :agent              bdr:P1046 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW30448  skos:altLabel  "avadanakalpalata. tibetan"@en-x-mixed , "abotuona ru yi ten ben zhu"@zh-latn-pinyin-x-ndia .
     
     bdr:WA30448  a          :Work ;
         skos:altLabel       "Rtogs brjod dpag bsam ʼkhri śiṅ gi rtsa ʼgrel."@en-x-mixed ;
         skos:prefLabel      "rtogs brjod dpag bsam 'khri shing gi rtsa 'grel/"@bo-x-ewts , "avadanakalpalata. tibetan"@en-x-mixed , "abotuona ru yi ten ben zhu"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR1AD112ABCD455418 , bdr:CR24C6AA8CD0BA7D0A , bdr:CR6E7FE6B2C7CF441B , bdr:CR84E1BD355D54F902 , bdr:CR936231B438DEB6AC ;
+        :creator            bdr:CR1AD112ABCD455418 , bdr:CR24C6AA8CD0BA7D0A , bdr:CR5A85E4B71B6C1FE2 , bdr:CR6E7FE6B2C7CF441B , bdr:CR84E1BD355D54F902 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1779 ;

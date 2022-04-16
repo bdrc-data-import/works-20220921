@@ -30,6 +30,12 @@ bdg:WA3CN5561 {
         adm:logMessage      "added terton and topics"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG98C841FFFF549567
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LG9F62EC3A4ADE69B9
         a                   adm:UpdateData ;
         adm:logDate         "2019-06-04T10:01:34.236Z"^^xsd:dateTime ;
@@ -52,40 +58,40 @@ bdg:WA3CN5561 {
     bda:WA3CN5561  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN5561 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "dd/WA3CN5561.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN5561 ;
-        adm:logEntry        bda:LG05D2D0F2D06EDFB4 , bda:LG624CC2620A7C1904 , bda:LG67ACF976985229AB , bda:LG9F62EC3A4ADE69B9 , bda:LGA69AD1C6ACDB9151 , bda:LGIM4D99209C62 ;
+        adm:logEntry        bda:LG05D2D0F2D06EDFB4 , bda:LG624CC2620A7C1904 , bda:LG67ACF976985229AB , bda:LG98C841FFFF549567 , bda:LG9F62EC3A4ADE69B9 , bda:LGA69AD1C6ACDB9151 , bda:LGIM4D99209C62 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG15807 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:CR1D2B152D6A55B597
         a                   :AgentAsCreator ;
-        :agent              bdr:P3CN21160 ;
-        :role               bdr:R0ER0025 .
-    
-    bdr:CR98C841FFFF549567
-        a                   :AgentAsCreator ;
         :agent              bdr:P8067 ;
         :role               bdr:R0ER0011 .
     
     bdr:CRB339C0333812BD12
         a                   :AgentAsCreator ;
-        :agent              bdr:P364 ;
+        :agent              bdr:P366 ;
         :role               bdr:R0ER0025 .
     
     bdr:CRC3CD37192E31F57D
         a                   :AgentAsCreator ;
-        :agent              bdr:P366 ;
+        :agent              bdr:P3CN21160 ;
+        :role               bdr:R0ER0025 .
+    
+    bdr:CRF1C474054BDE4317
+        a                   :AgentAsCreator ;
+        :agent              bdr:P364 ;
         :role               bdr:R0ER0025 .
     
     bdr:WA3CN5561  a        :Work ;
         skos:altLabel       "chos skyong ba'i rgyal po srong btsan sgam po'i bka' 'bum/"@bo-x-ewts ;
         skos:prefLabel      "ma Ni bka' 'bum/"@bo-x-ewts ;
         :catalogInfo        "Collection of teachings focusing on Avalokitesvara. Attributed to King Songtsen Gampo and revealed as a terma by Drubtob Ngudrup and others."@en ;
-        :creator            bdr:CR1D2B152D6A55B597 , bdr:CR98C841FFFF549567 , bdr:CRB339C0333812BD12 , bdr:CRC3CD37192E31F57D ;
+        :creator            bdr:CR1D2B152D6A55B597 , bdr:CRB339C0333812BD12 , bdr:CRC3CD37192E31F57D , bdr:CRF1C474054BDE4317 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1 , bdr:T1134 , bdr:T3 , bdr:T448 ;

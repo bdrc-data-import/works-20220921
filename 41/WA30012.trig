@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30012 {
-    bda:LG9CA1548E1C39E4B1
+    bda:LG35E8F8F71469836D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG9CA1548E1C39E4B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGBB9AC3672949978A
         a                   adm:UpdateData ;
@@ -53,47 +59,47 @@ bdg:WA30012 {
     bda:WA30012  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30012 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "41/WA30012.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30012 ;
-        adm:logEntry        bda:LG9CA1548E1C39E4B1 , bda:LGBB9AC3672949978A , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG35E8F8F71469836D , bda:LG9CA1548E1C39E4B1 , bda:LGBB9AC3672949978A , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR0C965E5BB77E051C
         a                   :AgentAsCreator ;
-        :agent              bdr:P155 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR0E92931F7FB004DA
-        a                   :AgentAsCreator ;
         :agent              bdr:P5784 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CR35E8F8F71469836D
+    bdr:CR0E92931F7FB004DA
         a                   :AgentAsCreator ;
         :agent              bdr:P888 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR6407F5C5D4B5FCEE
         a                   :AgentAsCreator ;
-        :agent              bdr:P264 ;
+        :agent              bdr:P155 ;
         :role               bdr:R0ER0016 .
     
     bdr:CR6781079D8859AACF
         a                   :AgentAsCreator ;
-        :agent              bdr:P2710 ;
+        :agent              bdr:P264 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRB135669D2739628F
+    bdr:CR8E0D4625F7044865
         a                   :AgentAsCreator ;
         :agent              bdr:P331 ;
         :role               bdr:R0ER0016 .
     
+    bdr:CRB135669D2739628F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2710 ;
+        :role               bdr:R0ER0016 .
+    
     bdr:WA30012  a          :Work ;
         skos:prefLabel      "zlos gar dang bzo rig"@bo-x-ewts ;
-        :creator            bdr:CR0C965E5BB77E051C , bdr:CR0E92931F7FB004DA , bdr:CR35E8F8F71469836D , bdr:CR6407F5C5D4B5FCEE , bdr:CR6781079D8859AACF , bdr:CRB135669D2739628F ;
+        :creator            bdr:CR0C965E5BB77E051C , bdr:CR0E92931F7FB004DA , bdr:CR6407F5C5D4B5FCEE , bdr:CR6781079D8859AACF , bdr:CR8E0D4625F7044865 , bdr:CRB135669D2739628F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:IE30012 , bdr:MW30012 , bdr:W30012 ;

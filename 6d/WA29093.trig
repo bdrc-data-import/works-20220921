@@ -13,13 +13,19 @@
 
 bdg:WA29093 {
     bda:LG2AD31A368828D377
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG75A19DE340D29EA6
         a                   adm:UpdateData ;
         adm:logDate         "2008-04-30T10:29:10.724Z"^^xsd:dateTime ;
         adm:logMessage      "annotation added"@en ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGBEF9E7D86E849E70
+        a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:LGC2F319916BDD5602
@@ -65,30 +71,30 @@ bdg:WA29093 {
     bda:WA29093  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29093 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "6d/WA29093.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29093 ;
-        adm:logEntry        bda:LG2AD31A368828D377 , bda:LG75A19DE340D29EA6 , bda:LGC2F319916BDD5602 , bda:LGF3575A96A1B49C38 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2AD31A368828D377 , bda:LG75A19DE340D29EA6 , bda:LGBEF9E7D86E849E70 , bda:LGC2F319916BDD5602 , bda:LGF3575A96A1B49C38 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRBEF9E7D86E849E70
-        a                   :AgentAsCreator ;
-        :agent              bdr:P3174 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRD172BE59F9B779FC
+    bdr:CRCE448AC7510F16BD
         a                   :AgentAsCreator ;
         :agent              bdr:P9516 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRD172BE59F9B779FC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3174 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW29093  skos:altLabel  "zamgyi jingsui yu yixue baodian"@zh-alalc97 .
     
     bdr:WA29093  a          :Work ;
         skos:prefLabel      "snyan brgyud be bum nag po dang man ngag rin chen gter mdzod/"@bo-x-ewts , "zamgyi jingsui yu yixue baodian"@zh-alalc97 ;
         :catalogInfo        "Two works on Tibetan medicine. First follows a system seemingly not based on the Indic system. Second two are by one Urgyan Lopel."@en ;
-        :creator            bdr:CRBEF9E7D86E849E70 , bdr:CRD172BE59F9B779FC ;
+        :creator            bdr:CRCE448AC7510F16BD , bdr:CRD172BE59F9B779FC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29093 , bdr:W29093 ;

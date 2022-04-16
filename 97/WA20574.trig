@@ -18,9 +18,15 @@ bdg:WA20574 {
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG9E38DC952F789032
+    bda:LG852A53C560CB54CB
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG9E38DC952F789032
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGA6261CC13FFBB2A8
         a                   adm:ScanRequestCreation ;
@@ -31,20 +37,20 @@ bdg:WA20574 {
     bda:WA20574  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20574 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "97/WA20574.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20574 ;
-        adm:logEntry        bda:LG788B726B08A62589 , bda:LG9E38DC952F789032 , bda:LGA6261CC13FFBB2A8 ;
+        adm:logEntry        bda:LG788B726B08A62589 , bda:LG852A53C560CB54CB , bda:LG9E38DC952F789032 , bda:LGA6261CC13FFBB2A8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR852A53C560CB54CB
+    bdr:CRA23E21C97B44AA19
         a                   :AgentAsCreator ;
         :agent              bdr:P6595 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVA23E21C97B44AA19
+    bdr:EV3EEAC245D3D8C12E
         a                   :CompletedEvent ;
         :onYear             "1998"^^xsd:gYear .
     
@@ -54,10 +60,10 @@ bdg:WA20574 {
         skos:altLabel       "mu biao jiao xue ji chu zhi shi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "dmigs tshad slob khrid kyi rmang gzhi'i shes bya tshangs pa'i thig gi spun zla/"@bo-x-ewts , "目标教学基础知识"@zh-hans ;
         :catalogInfo        "The basic education on the objectives of teaching method."@en ;
-        :creator            bdr:CR852A53C560CB54CB ;
+        :creator            bdr:CRA23E21C97B44AA19 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVA23E21C97B44AA19 ;
+        :workEvent          bdr:EV3EEAC245D3D8C12E ;
         :workHasInstance    bdr:MW20574 , bdr:W20574 ;
         :workIsAbout        bdr:T234 .
 }

@@ -24,26 +24,32 @@ bdg:WA1KG24032 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG99075647ADC5B96A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:WA1KG24032  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG24032 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "1e/WA1KG24032.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG24032 ;
-        adm:logEntry        bda:LG350F1C014B159D22 , bda:LG5F8C71EB805B558F ;
+        adm:logEntry        bda:LG350F1C014B159D22 , bda:LG5F8C71EB805B558F , bda:LG99075647ADC5B96A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR4E678B82D4585982
         a                   :AgentAsCreator ;
-        :agent              bdr:P6971 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CR99075647ADC5B96A
-        a                   :AgentAsCreator ;
         :agent              bdr:P1KG24044 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR7F0409938F8D816D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6971 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW1KG24032  skos:altLabel  "le avventure di pinocchio"@en , "木偶奇遇记"@zh-hans .
     
@@ -51,7 +57,7 @@ bdg:WA1KG24032 {
         skos:altLabel       "shing byis/ phi nu'o tsha'o'i rtogs brjod/"@bo-x-ewts ;
         skos:prefLabel      "shing byis/"@bo-x-ewts , "le avventure di pinocchio"@en , "木偶奇遇记"@zh-hans ;
         :catalogInfo        "Translation of Le avventure di Pinocchio by Carlo Collodi, 1826-1890."@en ;
-        :creator            bdr:CR4E678B82D4585982 , bdr:CR99075647ADC5B96A ;
+        :creator            bdr:CR4E678B82D4585982 , bdr:CR7F0409938F8D816D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T257 ;

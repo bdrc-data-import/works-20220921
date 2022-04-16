@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA15222 {
+    bda:LG2A929D94589879B0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG716FFC62062E950B
         a                   adm:UpdateData ;
         adm:logDate         "2016-02-01T16:29:59.39Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA15222 {
         adm:logWho          bdu:U00016 .
     
     bda:LG787BC018F3BC5DDB
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGD982DDF80B9E4439
         a                   adm:ScanRequestCreation ;
@@ -31,15 +37,15 @@ bdg:WA15222 {
     bda:WA15222  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA15222 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "37/WA15222.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA15222 ;
-        adm:logEntry        bda:LG716FFC62062E950B , bda:LG787BC018F3BC5DDB , bda:LGD982DDF80B9E4439 ;
+        adm:logEntry        bda:LG2A929D94589879B0 , bda:LG716FFC62062E950B , bda:LG787BC018F3BC5DDB , bda:LGD982DDF80B9E4439 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2A929D94589879B0
+    bdr:CR82BE95828A034CE5
         a                   :AgentAsCreator ;
         :agent              bdr:P3005 ;
         :role               bdr:R0ER0019 .
@@ -50,7 +56,7 @@ bdg:WA15222 {
         skos:altLabel       "g.yu thog cha lag bco brgyad las skor tshoms stong thun bcu gcig"@bo-x-ewts , "zang yi shi yi tiao zong yi"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "skor tshoms stong thun bcu gcig"@bo-x-ewts , "藏医十一条总义"@zh-hans ;
         :catalogInfo        "The essential meaning and overview on the practice of Tibetan medicine written by physician Yothok Yonten Gonpo."@en ;
-        :creator            bdr:CR2A929D94589879B0 ;
+        :creator            bdr:CR82BE95828A034CE5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW15222 , bdr:MW3CN4936 , bdr:W15222 , bdr:W3CN4936 ;

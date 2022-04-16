@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA21784 {
+    bda:LG14AEEBDFE6EC68A2
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG382163F948E615CC
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-27T13:27:55.084Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA21784 {
         adm:logWho          bdu:U00003 .
     
     bda:LG674A5C4561A4BB1E
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -60,15 +66,15 @@ bdg:WA21784 {
     bda:WA21784  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21784 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "49/WA21784.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21784 ;
-        adm:logEntry        bda:LG382163F948E615CC , bda:LG674A5C4561A4BB1E , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG14AEEBDFE6EC68A2 , bda:LG382163F948E615CC , bda:LG674A5C4561A4BB1E , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM4D99209C62 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR14AEEBDFE6EC68A2
+    bdr:CR09E0D2681F4AC4BA
         a                   :AgentAsCreator ;
         :agent              bdr:P6968 ;
         :role               bdr:R0ER0019 .
@@ -78,7 +84,7 @@ bdg:WA21784 {
     bdr:WA21784  a          :Work ;
         skos:altLabel       "mkhas pa lde'us mdzad pa'i rgya bod kyi chos 'byung rgyas pa/"@bo-x-ewts ;
         skos:prefLabel      "rgya bod kyi chos 'byung rgyas pa/"@bo-x-ewts , "Mkhas-pa-ldeʾus mdzad paʾi rgya Bod kyi chos ʾbyuṅ rgyas pa /Bod raṅ skyoṅ ljoṅs spyi tshogs tshan khaṅ Bod yig spe rñiṅ dpe skrun khaṅ gra sgrig nas bsgrigs."@en-x-mixed , "di wu zong jiao yuan liu"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR14AEEBDFE6EC68A2 ;
+        :creator            bdr:CR09E0D2681F4AC4BA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

@@ -36,6 +36,12 @@ bdg:WA00KG09753 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG9289DBE75F156B17
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
     bda:LG9777B64C499A3DA4
         a                   adm:UpdateData ;
         adm:logDate         "2008-06-18T10:25:38.787Z"^^xsd:dateTime ;
@@ -86,24 +92,24 @@ bdg:WA00KG09753 {
     bda:WA00KG09753  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG09753 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "03/WA00KG09753.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG09753 ;
-        adm:logEntry        bda:LG1B7BDAABD19C42C0 , bda:LG1C7317287B6A8664 , bda:LG2D56BAC48A583942 , bda:LG3B2F84C6340527E2 , bda:LG9777B64C499A3DA4 , bda:LGF2426DAFA85ADF3D , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1B7BDAABD19C42C0 , bda:LG1C7317287B6A8664 , bda:LG2D56BAC48A583942 , bda:LG3B2F84C6340527E2 , bda:LG9289DBE75F156B17 , bda:LG9777B64C499A3DA4 , bda:LGF2426DAFA85ADF3D , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA00CHZ0103344 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:CR88A8F43281D11ED2
         a                   :AgentAsCreator ;
-        :agent              bdr:P1PD93277 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CR9289DBE75F156B17
-        a                   :AgentAsCreator ;
         :agent              bdr:P4985 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRF709C788CC04C87E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1PD93277 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW00KG09753  skos:altLabel  "880-01Han qu fo jiao yuan liu ji /Gongbujia zhu ; Luosangdanzeng yi."@en-x-mixed , "汉区佛教源流记"@zh-hans .
     
@@ -111,7 +117,7 @@ bdg:WA00KG09753 {
         skos:altLabel       "rgya nag gi yul du dam pa'i chos dar tshul gtso bor bshad pa blo gsal kun tu dga' ba'i rna rgyan/"@bo-x-ewts , "han qu fo jiao yuan liu ji"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "rgya nag chos 'byung / (krung go'i bod rig pa dpe skrun khang /)"@bo-x-ewts , "880-01Han qu fo jiao yuan liu ji /Gongbujia zhu ; Luosangdanzeng yi."@en-x-mixed , "汉区佛教源流记"@zh-hans ;
         :catalogInfo        "History of Buddhism in China. Written by Gonpo Kyab. Translated into Chinese by Lobzang Tenzin."@en ;
-        :creator            bdr:CR88A8F43281D11ED2 , bdr:CR9289DBE75F156B17 ;
+        :creator            bdr:CR88A8F43281D11ED2 , bdr:CRF709C788CC04C87E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T12 ;

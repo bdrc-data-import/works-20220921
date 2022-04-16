@@ -18,6 +18,10 @@ bdg:WA25056 {
         adm:logMessage      "gsar du bcug"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG6DE05533D8679E28
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG997BF59F7101E6BD
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2007-03-01T10:46:35.976Z"^^xsd:dateTime ;
@@ -25,21 +29,23 @@ bdg:WA25056 {
         adm:logWho          bdu:U00021 .
     
     bda:LGE7295B3523B08606
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:WA25056  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25056 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "60/WA25056.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25056 ;
-        adm:logEntry        bda:LG1F6DBB5A8198757F , bda:LG997BF59F7101E6BD , bda:LGE7295B3523B08606 ;
+        adm:logEntry        bda:LG1F6DBB5A8198757F , bda:LG6DE05533D8679E28 , bda:LG997BF59F7101E6BD , bda:LGE7295B3523B08606 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6DE05533D8679E28
+    bdr:CR982C851DB68F4752
         a                   :AgentAsCreator ;
         :agent              bdr:P7347 ;
         :role               bdr:R0ER0019 .
@@ -48,7 +54,7 @@ bdg:WA25056 {
     
     bdr:WA25056  a          :Work ;
         skos:prefLabel      "bod kyi rtsom rig gi drang don brjod pa/"@bo-x-ewts , "zang zu wen xue qu tian"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR6DE05533D8679E28 ;
+        :creator            bdr:CR982C851DB68F4752 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:IE25056 , bdr:MW25056 , bdr:W25056 ;

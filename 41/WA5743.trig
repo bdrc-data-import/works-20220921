@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA5743 {
-    bda:LGB254B2DF04319D45
+    bda:LG6F26C5B04ED77521
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGB254B2DF04319D45
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -33,16 +39,16 @@ bdg:WA5743 {
     bda:WA5743  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA5743 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "41/WA5743.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA5743 ;
-        adm:logEntry        bda:LGB254B2DF04319D45 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG6F26C5B04ED77521 , bda:LGB254B2DF04319D45 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA0XL725B50237BBE ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR6F26C5B04ED77521
+    bdr:CR0B30FF28EAF602C4
         a                   :AgentAsCreator ;
         :agent              bdr:P270 ;
         :role               bdr:R0ER0019 .
@@ -50,7 +56,7 @@ bdg:WA5743 {
     bdr:WA5743  a           :Work ;
         skos:altLabel       "gtam pad ma'i tshal gyi zlos gar/"@bo-x-ewts , "lha chos dang mthun pa'i gtam pad+ma 'i tshal gyi zlos gar/"@bo-x-ewts ;
         skos:prefLabel      "lha chos dang mthun pa'i gtam/"@bo-x-ewts ;
-        :creator            bdr:CR6F26C5B04ED77521 ;
+        :creator            bdr:CR0B30FF28EAF602C4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T245 .

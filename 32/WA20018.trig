@@ -25,8 +25,10 @@ bdg:WA20018 {
         adm:logWho          bdu:U00016 .
     
     bda:LGA2E22D3E222B1E5A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGA5298B286DFCDA28
         a                   adm:UpdateData ;
@@ -34,18 +36,22 @@ bdg:WA20018 {
         adm:logMessage      "rewvied by LS, KG, CN and KL"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGDA5D4F297452A2AC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:WA20018  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20018 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "32/WA20018.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20018 ;
-        adm:logEntry        bda:LG58082FD16C996038 , bda:LG9A962CAE293570FC , bda:LGA2E22D3E222B1E5A , bda:LGA5298B286DFCDA28 ;
+        adm:logEntry        bda:LG58082FD16C996038 , bda:LG9A962CAE293570FC , bda:LGA2E22D3E222B1E5A , bda:LGA5298B286DFCDA28 , bda:LGDA5D4F297452A2AC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDA5D4F297452A2AC
+    bdr:CRA3EE8383B9946B34
         a                   :AgentAsCreator ;
         :agent              bdr:P6298 ;
         :role               bdr:R0ER0019 .
@@ -56,7 +62,7 @@ bdg:WA20018 {
         skos:altLabel       "bod lugs gso rig gi nad thog sman pas x zer phreng las mngon pa'i nad gzhi ngos 'dzin bya thabs/"@bo-x-ewts , "zang yi lin chuang X xian zhen duan xue"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "X (glog par) zer phreng las mngon pa'i nad gzhir ngos 'dzin bya thabs/"@bo-x-ewts , "藏医临床X线诊断学"@zh-hans ;
         :catalogInfo        "Diagnosis of diseases according to Tibetan medicine with the help of x-ray."@en ;
-        :creator            bdr:CRDA5D4F297452A2AC ;
+        :creator            bdr:CRA3EE8383B9946B34 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW20018 , bdr:W20018 ;

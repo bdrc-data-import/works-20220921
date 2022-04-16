@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20407 {
-    bda:LGE74893CC7498A124
+    bda:LGC3CB45C76B3876FA
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGE74893CC7498A124
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -40,34 +46,34 @@ bdg:WA20407 {
     bda:WA20407  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20407 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "f9/WA20407.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20407 ;
-        adm:logEntry        bda:LGE74893CC7498A124 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LGC3CB45C76B3876FA , bda:LGE74893CC7498A124 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR0AE5B0D809807F28
         a                   :AgentAsCreator ;
-        :agent              bdr:P423 ;
+        :agent              bdr:P64 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRC3CB45C76B3876FA
+    bdr:CR36C739BEF6E8FFC0
         a                   :AgentAsCreator ;
-        :agent              bdr:P64 ;
+        :agent              bdr:P101 ;
         :role               bdr:R0ER0016 .
     
     bdr:CRDCA489B51DBCE8C6
         a                   :AgentAsCreator ;
-        :agent              bdr:P101 ;
+        :agent              bdr:P423 ;
         :role               bdr:R0ER0016 .
     
     bdr:MW20407  skos:altLabel  "Rje Sgo Blo gsum gyi phar phyin yig chaʾi tshig zin gyi bźed tshul rin chen sil maʾi do śal /Dge-ʾdun-blo-bzaṅ."@en-x-mixed , "zhong guan zhuang yan lun"@zh-latn-pinyin-x-ndia .
     
     bdr:WA20407  a          :Work ;
         skos:prefLabel      "rje sgo blo gsum gyi phar phyin yig cha'i tshig zin gyi bzhed tshul rin chen sil ma'i do shal/"@bo-x-ewts , "Rje Sgo Blo gsum gyi phar phyin yig chaʾi tshig zin gyi bźed tshul rin chen sil maʾi do śal /Dge-ʾdun-blo-bzaṅ."@en-x-mixed , "zhong guan zhuang yan lun"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CR0AE5B0D809807F28 , bdr:CRC3CB45C76B3876FA , bdr:CRDCA489B51DBCE8C6 ;
+        :creator            bdr:CR0AE5B0D809807F28 , bdr:CR36C739BEF6E8FFC0 , bdr:CRDCA489B51DBCE8C6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T2397 ;

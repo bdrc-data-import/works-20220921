@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22039 {
-    bda:LGABE83D2DD0366693
+    bda:LG0B7AED807E64B400
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGABE83D2DD0366693
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -40,15 +46,15 @@ bdg:WA22039 {
     bda:WA22039  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22039 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "f5/WA22039.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22039 ;
-        adm:logEntry        bda:LGABE83D2DD0366693 , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG0B7AED807E64B400 , bda:LGABE83D2DD0366693 , bda:LGIM093A1A0447 , bda:LGIM4599A38FCE , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0B7AED807E64B400
+    bdr:CR920E94DE2EB266C7
         a                   :AgentAsCreator ;
         :agent              bdr:P6268 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +63,7 @@ bdg:WA22039 {
     
     bdr:WA22039  a          :Work ;
         skos:prefLabel      "rig pa bzo yi byung ba thig ris dpe dang bcas pa li khri'i thigs pa/"@bo-x-ewts , "tsang tsu ch'uan t'ung hui hua li lun yu chi fa"@zh-latn-wadegile ;
-        :creator            bdr:CR0B7AED807E64B400 ;
+        :creator            bdr:CR920E94DE2EB266C7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW22039 , bdr:W22039 ;

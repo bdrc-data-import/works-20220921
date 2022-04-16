@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA28836 {
-    bda:LG856C1DAA9053B779
+    bda:LG28B524B2E189447B
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG856C1DAA9053B779
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -33,27 +39,27 @@ bdg:WA28836 {
     bda:WA28836  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28836 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "bd/WA28836.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28836 ;
-        adm:logEntry        bda:LG856C1DAA9053B779 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG28B524B2E189447B , bda:LG856C1DAA9053B779 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR28B524B2E189447B
+    bdr:CRB189DDDBBB8985AC
         a                   :AgentAsCreator ;
         :agent              bdr:P7389 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRB189DDDBBB8985AC
+    bdr:CRBFFBB585298DDA59
         a                   :AgentAsCreator ;
         :agent              bdr:P7391 ;
         :role               bdr:R0ER0016 .
     
     bdr:WA28836  a          :Work ;
         skos:prefLabel      "rta rgyugs khri gsol/"@bo-x-ewts ;
-        :creator            bdr:CR28B524B2E189447B , bdr:CRB189DDDBBB8985AC ;
+        :creator            bdr:CRB189DDDBBB8985AC , bdr:CRBFFBB585298DDA59 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW28836 , bdr:W28836 ;

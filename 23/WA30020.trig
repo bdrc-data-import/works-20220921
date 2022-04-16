@@ -18,9 +18,15 @@ bdg:WA30020 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00003 .
     
-    bda:LGAA3D7098033646DF
+    bda:LG7B6A2FB62F2DFC2C
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGAA3D7098033646DF
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGC9EFF6675CC88944
         a                   adm:UpdateData ;
@@ -79,29 +85,29 @@ bdg:WA30020 {
     bda:WA30020  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30020 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "23/WA30020.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30020 ;
-        adm:logEntry        bda:LG1A9898EEEA39D6B8 , bda:LGAA3D7098033646DF , bda:LGC9EFF6675CC88944 , bda:LGDF95B06173C72E33 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1A9898EEEA39D6B8 , bda:LG7B6A2FB62F2DFC2C , bda:LGAA3D7098033646DF , bda:LGC9EFF6675CC88944 , bda:LGDF95B06173C72E33 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR071D02A2216389D8
         a                   :AgentAsCreator ;
-        :agent              bdr:P385 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR7B6A2FB62F2DFC2C
-        a                   :AgentAsCreator ;
         :agent              bdr:P155 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRA4D2DCB2F92EC6AC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P385 ;
+        :role               bdr:R0ER0016 .
     
     bdr:WA30020  a          :Work ;
         skos:altLabel       "chos mngon pa'i mdzod kyi 'grel pa rgyas par spros pa grub bde'i dpyid 'jo/"@bo-x-ewts , "mngon pa/"@bo-x-ewts ;
         skos:prefLabel      "chos mngon pa kun las btus kyi Tik rnam bshad nyi ma'i 'od zer/"@bo-x-ewts ;
         :catalogInfo        "Commentary on Asanga's Abhidharmasamuccaya by Buton Rinchen Drup (1290-1364). Commentary on Vasubandhu's Abhidharmakosa by Karmapa 08 Mikyo Dorje (1507-1554)."@en ;
-        :creator            bdr:CR071D02A2216389D8 , bdr:CR7B6A2FB62F2DFC2C ;
+        :creator            bdr:CR071D02A2216389D8 , bdr:CRA4D2DCB2F92EC6AC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

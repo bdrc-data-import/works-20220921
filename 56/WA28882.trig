@@ -13,14 +13,20 @@
 
 bdg:WA28882 {
     bda:LG493FA0249D5C576C
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGB19BAFEAF124BD39
         a                   adm:UpdateData ;
         adm:logDate         "2009-12-28T13:00:09.767Z"^^xsd:dateTime ;
         adm:logMessage      "added annotation"@en ;
         adm:logWho          bdu:U00020 .
+    
+    bda:LGFAC3C282627E562F
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -67,20 +73,20 @@ bdg:WA28882 {
     bda:WA28882  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28882 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "56/WA28882.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28882 ;
-        adm:logEntry        bda:LG493FA0249D5C576C , bda:LGB19BAFEAF124BD39 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG493FA0249D5C576C , bda:LGB19BAFEAF124BD39 , bda:LGFAC3C282627E562F , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD18D3846ADAFBEC5
+    bdr:CR804C800C61E8E7E4
         a                   :AgentAsCreator ;
         :agent              bdr:P6877 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRFAC3C282627E562F
+    bdr:CRD18D3846ADAFBEC5
         a                   :AgentAsCreator ;
         :agent              bdr:P4441 ;
         :role               bdr:R0ER0019 .
@@ -90,7 +96,7 @@ bdg:WA28882 {
     bdr:WA28882  a          :Work ;
         skos:prefLabel      "rje btsun ti lo pa'i rnam mgur dang dpal nA ro pa'i rnam thar bsdus pa/"@bo-x-ewts , "te lo pa ho na jo pa chuan lueh"@zh-latn-wadegile ;
         :catalogInfo        "Collection of songs by the famed mahasiddha Tilopa (988-1069) and a condensed life story of the mahasiddha Naropa (1012/1016-1100)."@en ;
-        :creator            bdr:CRD18D3846ADAFBEC5 , bdr:CRFAC3C282627E562F ;
+        :creator            bdr:CR804C800C61E8E7E4 , bdr:CRD18D3846ADAFBEC5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 , bdr:T6 ;

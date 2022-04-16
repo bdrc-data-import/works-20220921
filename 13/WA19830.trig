@@ -25,8 +25,10 @@ bdg:WA19830 {
         adm:logWho          bdu:U00001 .
     
     bda:LG4030D9B3BA4D7278
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T14:59:32.696Z"^^xsd:dateTime ;
+        adm:logMessage      "changed license to copyright"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG5EF85712881564D6
         a                   adm:UpdateData ;
@@ -44,6 +46,10 @@ bdg:WA19830 {
         adm:logDate         "2009-12-09T14:40:40.182Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGD827D670518BF397
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -82,21 +88,21 @@ bdg:WA19830 {
     bda:WA19830  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19830 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "13/WA19830.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19830 ;
-        adm:logEntry        bda:LG042D6CC9EB8AE31D , bda:LG2679401EB2BA28D5 , bda:LG4030D9B3BA4D7278 , bda:LG5EF85712881564D6 , bda:LG74E22F1D357A0E84 , bda:LG90448E38BC205FEC , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG042D6CC9EB8AE31D , bda:LG2679401EB2BA28D5 , bda:LG4030D9B3BA4D7278 , bda:LG5EF85712881564D6 , bda:LG74E22F1D357A0E84 , bda:LG90448E38BC205FEC , bda:LGD827D670518BF397 , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD827D670518BF397
+    bdr:CR85DBCAB15FE6542D
         a                   :AgentAsCreator ;
         :agent              bdr:P6303 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV85DBCAB15FE6542D
+    bdr:EV79E1F47A9A0EEBE3
         a                   :CompletedEvent ;
         :onYear             "1993"^^xsd:gYear .
     
@@ -106,10 +112,10 @@ bdg:WA19830 {
         skos:altLabel       "mdo smad byang rgyud kyi bshad sgrub chos kyi dga' tshal dpal mi 'gyur dge ldan bkra shis chos sdings kyi gdan rabs/"@bo-x-ewts ;
         skos:prefLabel      "d+hi tsha dgon pa'i gdan rabs/"@bo-x-ewts , "chia cha ssu chih"@zh-latn-wadegile ;
         :catalogInfo        "History of Dhitsa Monastery in Qinghai Province."@en ;
-        :creator            bdr:CRD827D670518BF397 ;
+        :creator            bdr:CR85DBCAB15FE6542D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV85DBCAB15FE6542D ;
+        :workEvent          bdr:EV79E1F47A9A0EEBE3 ;
         :workHasInstance    bdr:MW19830 , bdr:W19830 ;
         :workIsAbout        bdr:G1PD96117 , bdr:T16 .
 }

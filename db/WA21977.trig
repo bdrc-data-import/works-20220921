@@ -13,6 +13,12 @@
 
 bdg:WA21977 {
     bda:LG23EB36520251A22F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
+    
+    bda:LGEDE65F3E1797D5E3
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -40,30 +46,30 @@ bdg:WA21977 {
     bda:WA21977  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21977 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "db/WA21977.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21977 ;
-        adm:logEntry        bda:LG23EB36520251A22F , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG23EB36520251A22F , bda:LGEDE65F3E1797D5E3 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR2FB52E211AFC2B33
         a                   :AgentAsCreator ;
-        :agent              bdr:P7426 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CREDE65F3E1797D5E3
-        a                   :AgentAsCreator ;
         :agent              bdr:P6065 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRD71B26DAA859D275
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7426 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW21977  skos:altLabel  "ta hsiu ko teng ch'u chiang chia ts'o chuan"@zh-latn-wadegile .
     
     bdr:WA21977  a          :Work ;
         skos:altLabel       "dge 'dun chos skyong rgya mtsho'i rnam thar/"@bo-x-ewts , "mkhas shing grub pa'i dbang phyug rdo rje 'chang dngos rje btsun dge 'dun chos skyong rgya mtsho dpal bzang po'i rnam par thar pa mdo tsam brjod pa skal bzang dad pa'i padmo bzhad pa'i nyin byed/"@bo-x-ewts , "rje dge 'dun chos skyong rgya mtsho'i rnam thar/"@bo-x-ewts ;
         skos:prefLabel      "rje thar shul dge 'dun chos skyong rgya mtsho'i rnam thar/"@bo-x-ewts , "ta hsiu ko teng ch'u chiang chia ts'o chuan"@zh-latn-wadegile ;
-        :creator            bdr:CR2FB52E211AFC2B33 , bdr:CREDE65F3E1797D5E3 ;
+        :creator            bdr:CR2FB52E211AFC2B33 , bdr:CRD71B26DAA859D275 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

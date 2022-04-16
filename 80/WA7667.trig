@@ -13,14 +13,20 @@
 
 bdg:WA7667 {
     bda:LG6926140A43C1016A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LG74A5F13B0B89A00E
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-19T18:58:09.432Z"^^xsd:dateTime ;
         adm:logMessage      "added Work to PR1LOKESH01"@en ;
         adm:logWhoStr       "add-works-to-PR1LOKESH01-part2" .
+    
+    bda:LG9BD1AECF69C6A693
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -46,20 +52,20 @@ bdg:WA7667 {
     bda:WA7667  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA7667 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "80/WA7667.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA7667 ;
-        adm:logEntry        bda:LG6926140A43C1016A , bda:LG74A5F13B0B89A00E , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG6926140A43C1016A , bda:LG74A5F13B0B89A00E , bda:LG9BD1AECF69C6A693 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9BD1AECF69C6A693
+    bdr:CR2B1680E79558FAEC
         a                   :AgentAsCreator ;
         :agent              bdr:P339 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV2B1680E79558FAEC
+    bdr:EV437D2BED5E7A0AAA
         a                   :CompletedEvent ;
         :onYear             "1747"^^xsd:gYear .
     
@@ -68,10 +74,10 @@ bdg:WA7667 {
     bdr:WA7667  a           :Work ;
         skos:altLabel       "'phags yul rgya nag chen po bod dang sog yul du dam pa'i chos 'byung tshul dpag bsam ljon bzang /"@bo-x-ewts ;
         skos:prefLabel      "chos 'byung dpag bsam ljon bzang /"@bo-x-ewts , "sung pa fo chiao shih"@zh-latn-wadegile ;
-        :creator            bdr:CR9BD1AECF69C6A693 ;
+        :creator            bdr:CR2B1680E79558FAEC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV2B1680E79558FAEC ;
+        :workEvent          bdr:EV437D2BED5E7A0AAA ;
         :workGenre          bdr:T12 ;
         :workHasInstance    bdr:MW7667 , bdr:W7667 .
 }

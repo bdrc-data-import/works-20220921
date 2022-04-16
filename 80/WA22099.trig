@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22099 {
+    bda:LG0AD1631A16019737
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG6415539EC6E45F44
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2014-03-27T09:30:03.343Z"^^xsd:dateTime ;
@@ -25,8 +29,10 @@ bdg:WA22099 {
         adm:logWho          bdu:U00016 .
     
     bda:LGD05813E5841A7906
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to fairUse"@en ;
+        adm:logWho          bdu:U00053 .
     
     bda:LGIM4D99209C62
         a                   adm:UpdateData ;
@@ -52,15 +58,15 @@ bdg:WA22099 {
     bda:WA22099  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22099 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "80/WA22099.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22099 ;
-        adm:logEntry        bda:LG6415539EC6E45F44 , bda:LGC2B5748661D3DF0B , bda:LGD05813E5841A7906 , bda:LGIM4D99209C62 , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG0AD1631A16019737 , bda:LG6415539EC6E45F44 , bda:LGC2B5748661D3DF0B , bda:LGD05813E5841A7906 , bda:LGIM4D99209C62 , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0AD1631A16019737
+    bdr:CR943B059B5754AACF
         a                   :AgentAsCreator ;
         :agent              bdr:P6434 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +77,7 @@ bdg:WA22099 {
         skos:altLabel       "gling rje ge sar rgyal po'i sgrung hor phyi pa ra rdzong /"@bo-x-ewts , "huo qi ba shan yang zong"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "hor phyi pa ra rdzong /"@bo-x-ewts , "Gliṅ rje Ge-sar rgyal poʾi sgruṅ.Hor-phyi-pa ra rdzoṅ /sgruṅ mkhan Grags-pa ; Bod-ljoṅs slob cheʾi Ge-sar źib ʾjug khaṅ nas bsgrigs."@en-x-mixed , "霍齐巴山羊宗"@zh-hans ;
         :catalogInfo        "An episode from the epic of Gesar."@en ;
-        :creator            bdr:CR0AD1631A16019737 ;
+        :creator            bdr:CR943B059B5754AACF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW22099 , bdr:W22099 ;
