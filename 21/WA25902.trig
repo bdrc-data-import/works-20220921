@@ -13,8 +13,10 @@
 
 bdg:WA25902 {
     bda:LG89E70BCC15DE75FD
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-20T16:29:15.668Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P8214 to P2548"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG9A718A1EEB13FC14
         a                   adm:UpdateData ;
@@ -22,30 +24,34 @@ bdg:WA25902 {
         adm:logMessage      "subject class changed from T2002 to T769"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGC936580BAE3AA0F7
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:WA25902  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25902 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "21/WA25902.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25902 ;
-        adm:logEntry        bda:LG89E70BCC15DE75FD , bda:LG9A718A1EEB13FC14 ;
+        adm:logEntry        bda:LG89E70BCC15DE75FD , bda:LG9A718A1EEB13FC14 , bda:LGC936580BAE3AA0F7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CRB57D00EB515C3E2F
+    bdr:CR2C90B6101CF70D85
         a                   :AgentAsCreator ;
-        :agent              bdr:P8214 ;
+        :agent              bdr:P2548 ;
         :role               bdr:R0ER0018 .
     
-    bdr:CRC936580BAE3AA0F7
+    bdr:CRB57D00EB515C3E2F
         a                   :AgentAsCreator ;
         :agent              bdr:P8205 ;
         :role               bdr:R0ER0026 .
     
     bdr:WA25902  a          :Work ;
         skos:prefLabel      "lha'i bu rab gsal sems kyis zhus pa'i mdo/"@bo-x-ewts , "suvikrantadevaputrapariprccha-nama-mahayanasutra"@sa-alalc97 ;
-        :creator            bdr:CRB57D00EB515C3E2F , bdr:CRC936580BAE3AA0F7 ;
+        :creator            bdr:CR2C90B6101CF70D85 , bdr:CRB57D00EB515C3E2F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T769 ;

@@ -13,38 +13,44 @@
 
 bdg:WA26058 {
     bda:LGDED1A8C9FC2319B8
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-20T16:12:54.235Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P8341 to P4CZ15601"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGFBD7F3EED5FFE200
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:WA26058  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA26058 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "8d/WA26058.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA26058 ;
-        adm:logEntry        bda:LGDED1A8C9FC2319B8 ;
+        adm:logEntry        bda:LGDED1A8C9FC2319B8 , bda:LGFBD7F3EED5FFE200 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
     bdr:CR2FCFD8D5A67123C1
         a                   :AgentAsCreator ;
-        :agent              bdr:P8341 ;
-        :role               bdr:R0ER0026 .
+        :agent              bdr:P8339 ;
+        :role               bdr:R0ER0019 .
     
-    bdr:CRF1C607746600063A
+    bdr:CR359344D56058FC2D
         a                   :AgentAsCreator ;
         :agent              bdr:P8340 ;
         :role               bdr:R0ER0018 .
     
-    bdr:CRFBD7F3EED5FFE200
+    bdr:CRF1C607746600063A
         a                   :AgentAsCreator ;
-        :agent              bdr:P8339 ;
-        :role               bdr:R0ER0019 .
+        :agent              bdr:P4CZ15601 ;
+        :role               bdr:R0ER0026 .
     
     bdr:WA26058  a          :Work ;
         skos:prefLabel      "dpal gsang ba snying po'i rgya cher 'grel pa/"@bo-x-ewts ;
-        :creator            bdr:CR2FCFD8D5A67123C1 , bdr:CRF1C607746600063A , bdr:CRFBD7F3EED5FFE200 ;
+        :creator            bdr:CR2FCFD8D5A67123C1 , bdr:CR359344D56058FC2D , bdr:CRF1C607746600063A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

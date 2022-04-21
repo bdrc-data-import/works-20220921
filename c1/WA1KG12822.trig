@@ -18,6 +18,12 @@ bdg:WA1KG12822 {
         adm:logMessage      "added source printery"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGA1F5D9BDE9417D01
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-20T16:12:54.235Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P8341 to P4CZ15601"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGDFE40E2326B7C57F
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2012-09-12T15:01:05.628Z"^^xsd:dateTime ;
@@ -40,35 +46,35 @@ bdg:WA1KG12822 {
     bda:WA1KG12822  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG12822 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "c1/WA1KG12822.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG12822 ;
-        adm:logEntry        bda:LG1D29CA334D1291AD , bda:LGDFE40E2326B7C57F , bda:LGF6CC1B539732B404 , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG1D29CA334D1291AD , bda:LGA1F5D9BDE9417D01 , bda:LGDFE40E2326B7C57F , bda:LGF6CC1B539732B404 , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA1F5D9BDE9417D01
+    bdr:CR5710711A056A7B60
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4CZ15601 ;
+        :role               bdr:R0ER0025 .
+    
+    bdr:CRC1E81F6E1E5B6359
         a                   :AgentAsCreator ;
         :agent              bdr:P8339 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRC1E81F6E1E5B6359
+    bdr:CRF2BB88D058670919
         a                   :AgentAsCreator ;
         :agent              bdr:P8340 ;
         :role               bdr:R0ER0018 .
-    
-    bdr:CRF2BB88D058670919
-        a                   :AgentAsCreator ;
-        :agent              bdr:P8341 ;
-        :role               bdr:R0ER0025 .
     
     bdr:MW1KG12822  skos:altLabel  "dpal gsan ba snin po'i rgya cher 'grel pa/ the sri-guhyargarbha-vipulatika-nama translated into tibetan : a commentary on the fundamental mahayoga tantra, the guhyagarbha"@en .
     
     bdr:WA1KG12822  a       :Work ;
         skos:altLabel       "dpal gsang ba snying po'i rgya cher 'grel pa slob dpon nyi ma'i seng+ge'i 'od kyis mdzad pa/"@bo-x-ewts ;
         skos:prefLabel      "dpal gsang ba snying po'i rgya cher 'grel pa/"@bo-x-ewts , "dpal gsan ba snin po'i rgya cher 'grel pa/ the sri-guhyargarbha-vipulatika-nama translated into tibetan : a commentary on the fundamental mahayoga tantra, the guhyagarbha"@en ;
-        :creator            bdr:CRA1F5D9BDE9417D01 , bdr:CRC1E81F6E1E5B6359 , bdr:CRF2BB88D058670919 ;
+        :creator            bdr:CR5710711A056A7B60 , bdr:CRC1E81F6E1E5B6359 , bdr:CRF2BB88D058670919 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;
