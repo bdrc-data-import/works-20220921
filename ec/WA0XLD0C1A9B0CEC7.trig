@@ -11,30 +11,31 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA4CZ369337 {
-    bda:LG463ACCF5DF15B0CB
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-21T09:31:54.294Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
-        adm:logWho          bdu:U00017 .
-    
-    bda:WA4CZ369337  a      adm:AdminData ;
+bdg:WA0XLD0C1A9B0CEC7 {
+    bda:WA0XLD0C1A9B0CEC7
+        a                   adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA4CZ369337 ;
+        adm:adminAbout      bdr:WA0XLD0C1A9B0CEC7 ;
         adm:facetIndex      2 ;
-        adm:gitPath         "c6/WA4CZ369337.trig" ;
+        adm:gitPath         "ec/WA0XLD0C1A9B0CEC7.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA4CZ369337 ;
-        adm:logEntry        bda:LG463ACCF5DF15B0CB ;
+        adm:graphId         bdg:WA0XLD0C1A9B0CEC7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA4CZ369337  a      :Work ;
-        skos:prefLabel      "sa dpyad phyogs bsgrigs/"@bo-x-ewts ;
-        :catalogInfo        "A collection of Tibetan geomency"@en ;
+    bdr:CR555007B8DF63B5AB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8468 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA0XLD0C1A9B0CEC7
+        a                   :Work ;
+        skos:altLabel       "phur sgrub stong thun gtum chen khros pa'i gad mo/"@bo-x-ewts ;
+        skos:prefLabel      "phur pa'i sgrub chen stong thun gtum chen khros pa'i gad mo/"@bo-x-ewts ;
+        :creator            bdr:CR555007B8DF63B5AB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1081 ;
-        :workHasInstance    bdr:MW4CZ369337 ;
-        :workIsAbout        bdr:T1307 .
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW00KG0571_D0C1A9 ;
+        :workIsAbout        bdr:T1190 , bdr:T1786 .
 }

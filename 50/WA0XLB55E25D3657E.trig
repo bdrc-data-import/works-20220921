@@ -11,30 +11,29 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA4CZ369337 {
-    bda:LG463ACCF5DF15B0CB
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-21T09:31:54.294Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
-        adm:logWho          bdu:U00017 .
-    
-    bda:WA4CZ369337  a      adm:AdminData ;
+bdg:WA0XLB55E25D3657E {
+    bda:WA0XLB55E25D3657E
+        a                   adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA4CZ369337 ;
+        adm:adminAbout      bdr:WA0XLB55E25D3657E ;
         adm:facetIndex      2 ;
-        adm:gitPath         "c6/WA4CZ369337.trig" ;
+        adm:gitPath         "50/WA0XLB55E25D3657E.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA4CZ369337 ;
-        adm:logEntry        bda:LG463ACCF5DF15B0CB ;
+        adm:graphId         bdg:WA0XLB55E25D3657E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA4CZ369337  a      :Work ;
-        skos:prefLabel      "sa dpyad phyogs bsgrigs/"@bo-x-ewts ;
-        :catalogInfo        "A collection of Tibetan geomency"@en ;
+    bdr:CR9B051D5906C1071C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8468 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA0XLB55E25D3657E
+        a                   :Work ;
+        skos:prefLabel      "yan lag brgyad pa'i mchan 'grel ku sha'i chu thig"@bo-x-ewts ;
+        :creator            bdr:CR9B051D5906C1071C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1081 ;
-        :workHasInstance    bdr:MW4CZ369337 ;
-        :workIsAbout        bdr:T1307 .
+        :workGenre          bdr:T304 ;
+        :workHasInstance    bdr:MW00KG0571_B55E25 .
 }

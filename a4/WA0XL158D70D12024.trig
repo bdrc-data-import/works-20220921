@@ -11,30 +11,31 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA4CZ369337 {
-    bda:LG463ACCF5DF15B0CB
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-21T09:31:54.294Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
-        adm:logWho          bdu:U00017 .
-    
-    bda:WA4CZ369337  a      adm:AdminData ;
+bdg:WA0XL158D70D12024 {
+    bda:WA0XL158D70D12024
+        a                   adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA4CZ369337 ;
+        adm:adminAbout      bdr:WA0XL158D70D12024 ;
         adm:facetIndex      2 ;
-        adm:gitPath         "c6/WA4CZ369337.trig" ;
+        adm:gitPath         "a4/WA0XL158D70D12024.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA4CZ369337 ;
-        adm:logEntry        bda:LG463ACCF5DF15B0CB ;
+        adm:graphId         bdg:WA0XL158D70D12024 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA4CZ369337  a      :Work ;
-        skos:prefLabel      "sa dpyad phyogs bsgrigs/"@bo-x-ewts ;
-        :catalogInfo        "A collection of Tibetan geomency"@en ;
+    bdr:CR9EA95584D5C3D160
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8468 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA0XL158D70D12024
+        a                   :Work ;
+        skos:altLabel       "phag mo'i dbang gi mtshams sbyor nA ro'i dgongs rgyan/"@bo-x-ewts ;
+        skos:prefLabel      "phag mo'i dbang gi mtshams sbyor bklag chog tu bkod pa nA ro'i dgongs rgyan/"@bo-x-ewts ;
+        :creator            bdr:CR9EA95584D5C3D160 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1081 ;
-        :workHasInstance    bdr:MW4CZ369337 ;
-        :workIsAbout        bdr:T1307 .
+        :workGenre          bdr:T48 ;
+        :workHasInstance    bdr:MW00KG0571_158D70 ;
+        :workIsAbout        bdr:T00JR885 , bdr:T1190 .
 }

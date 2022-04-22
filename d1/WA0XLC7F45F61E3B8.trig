@@ -11,30 +11,31 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA4CZ369337 {
-    bda:LG463ACCF5DF15B0CB
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-21T09:31:54.294Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
-        adm:logWho          bdu:U00017 .
-    
-    bda:WA4CZ369337  a      adm:AdminData ;
+bdg:WA0XLC7F45F61E3B8 {
+    bda:WA0XLC7F45F61E3B8
+        a                   adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA4CZ369337 ;
+        adm:adminAbout      bdr:WA0XLC7F45F61E3B8 ;
         adm:facetIndex      2 ;
-        adm:gitPath         "c6/WA4CZ369337.trig" ;
+        adm:gitPath         "d1/WA0XLC7F45F61E3B8.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA4CZ369337 ;
-        adm:logEntry        bda:LG463ACCF5DF15B0CB ;
+        adm:graphId         bdg:WA0XLC7F45F61E3B8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA4CZ369337  a      :Work ;
-        skos:prefLabel      "sa dpyad phyogs bsgrigs/"@bo-x-ewts ;
-        :catalogInfo        "A collection of Tibetan geomency"@en ;
+    bdr:CR23C01D3A156AF4D4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8468 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA0XLC7F45F61E3B8
+        a                   :Work ;
+        skos:altLabel       "kun rig dbang gi mtshams sbyor yid kyi 'dod 'jo/"@bo-x-ewts ;
+        skos:prefLabel      "kun rig cho ga don gsal ngag gi 'dod 'jo'i dbang gi mtshams sbyor sgo 'byed yid kyi 'dod 'jo/"@bo-x-ewts ;
+        :creator            bdr:CR23C01D3A156AF4D4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1081 ;
-        :workHasInstance    bdr:MW4CZ369337 ;
-        :workIsAbout        bdr:T1307 .
+        :workGenre          bdr:T48 , bdr:T977 ;
+        :workHasInstance    bdr:MW00KG0571_C7F45F ;
+        :workIsAbout        bdr:T1190 , bdr:T976 .
 }
