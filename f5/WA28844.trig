@@ -13,14 +13,19 @@
 
 bdg:WA28844 {
     bda:LG025474715BFA51DE
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-25T12:51:56.337Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00007 .
     
     bda:LG056DCA3CD69C51B6
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-17T13:24:58.405Z"^^xsd:dateTime ;
         adm:logMessage      "added topic, cat info"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGBCBE9BA6D8D8D68A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -39,23 +44,28 @@ bdg:WA28844 {
     bda:WA28844  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28844 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "f5/WA28844.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28844 ;
-        adm:logEntry        bda:LG025474715BFA51DE , bda:LG056DCA3CD69C51B6 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG025474715BFA51DE , bda:LG056DCA3CD69C51B6 , bda:LGBCBE9BA6D8D8D68A , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRBCBE9BA6D8D8D68A
+    bdr:CRA53033DDD6928368
         a                   :AgentAsCreator ;
         :agent              bdr:P219 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CRABD0157A83094BDC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6847 ;
+        :role               bdr:R0ER0028 .
+    
     bdr:WA28844  a          :Work ;
         skos:prefLabel      "mkhas dbang dge 'dun chos 'phel gyi gsar rnyed gsung rtsom/"@bo-x-ewts ;
         :catalogInfo        "Selected writings on the history of Buddhism in India, Madhyamika philosophy, Tibetan imperial history, and poems."@en ;
-        :creator            bdr:CRBCBE9BA6D8D8D68A ;
+        :creator            bdr:CRA53033DDD6928368 , bdr:CRABD0157A83094BDC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG21749 ;

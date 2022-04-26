@@ -19,8 +19,10 @@ bdg:WA21898 {
         adm:logWho          bdu:U00026 .
     
     bda:LG09C41F2260D811A8
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-25T09:49:24.192Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to copyright"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG1DDAB9F5F3BF38DD
         a                   adm:UpdateData ;
@@ -34,6 +36,10 @@ bdg:WA21898 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00021 .
     
+    bda:LGF0226DD3E4283303
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM4394141E  a     adm:UpdateData ;
         adm:logAgent        "works-mark-restrictedInChina.xql" ;
         adm:logDate         "2021-12-01T18:12:01.58Z"^^xsd:dateTime ;
@@ -43,16 +49,16 @@ bdg:WA21898 {
     bda:WA21898  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA21898 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "12/WA21898.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA21898 ;
-        adm:logEntry        bda:LG042D4962A9AC4763 , bda:LG09C41F2260D811A8 , bda:LG1DDAB9F5F3BF38DD , bda:LGC8AC06D0644CFB4C , bda:LGIM4394141E ;
+        adm:logEntry        bda:LG042D4962A9AC4763 , bda:LG09C41F2260D811A8 , bda:LG1DDAB9F5F3BF38DD , bda:LGC8AC06D0644CFB4C , bda:LGF0226DD3E4283303 , bda:LGIM4394141E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF0226DD3E4283303
+    bdr:CR7D8BF5255B9A356A
         a                   :AgentAsCreator ;
         :agent              bdr:P109 ;
         :role               bdr:R0ER0019 .
@@ -62,7 +68,7 @@ bdg:WA21898 {
     bdr:WA21898  a          :Work ;
         skos:altLabel       "dpal ldan bla ma dam pa rigs dang dkyil 'khor rgya mtsho'i mnga' bdag bka' drin gsum ldan yongs 'dzin paN+Di ta chen po rje btsun ye shes rgyal mtshan dpal bzang po'i sku gsung thugs kyi rtogs pa brjod pa thub bstan pad+mo 'byed pa'i nyin byed/"@bo-x-ewts ;
         skos:prefLabel      "yongs 'dzin paN+Di ta ye shes rgyal mtshan gyi rtogs brjod/"@bo-x-ewts , "yong zhen zhuan"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CRF0226DD3E4283303 ;
+        :creator            bdr:CR7D8BF5255B9A356A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

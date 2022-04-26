@@ -24,6 +24,12 @@ bdg:WA1KG5479 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGA57861D708BA98DE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-25T09:49:21.02Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to copyright"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGBA35560D2CAD2346
         a                   adm:InitialDataCreation ;
         adm:logDate         "2010-06-28T15:40:21.609Z"^^xsd:dateTime ;
@@ -68,33 +74,33 @@ bdg:WA1KG5479 {
     bda:WA1KG5479  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG5479 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "29/WA1KG5479.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG5479 ;
-        adm:logEntry        bda:LG4F7A37AB4565FBBD , bda:LG6F54CEAE30B7AD80 , bda:LGBA35560D2CAD2346 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG4F7A37AB4565FBBD , bda:LG6F54CEAE30B7AD80 , bda:LGA57861D708BA98DE , bda:LGBA35560D2CAD2346 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA57861D708BA98DE
+    bdr:CR1606FA95C863B50F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P889 ;
+        :role               bdr:R0ER0016 .
+    
+    bdr:CRAC385B46D2BAFB81
         a                   :AgentAsCreator ;
         :agent              bdr:P1426 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRAC385B46D2BAFB81
-        a                   :AgentAsCreator ;
-        :agent              bdr:P385 ;
-        :role               bdr:R0ER0016 .
-    
     bdr:CRE03EDD78413763F6
         a                   :AgentAsCreator ;
-        :agent              bdr:P889 ;
+        :agent              bdr:P385 ;
         :role               bdr:R0ER0016 .
     
     bdr:WA1KG5479  a        :Work ;
         skos:prefLabel      "mngon rtogs rgyan 'grel dang dbu ma'i rten 'brel stod pa sogs/"@bo-x-ewts ;
         :catalogInfo        "Commentaries on the Maitreyanatha's Abhisamayalankara (Ornament of Realization) of the Prajnaparamita, with praises to dependent origination by Kagyu authors."@en ;
-        :creator            bdr:CRA57861D708BA98DE , bdr:CRAC385B46D2BAFB81 , bdr:CRE03EDD78413763F6 ;
+        :creator            bdr:CR1606FA95C863B50F , bdr:CRAC385B46D2BAFB81 , bdr:CRE03EDD78413763F6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

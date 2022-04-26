@@ -13,8 +13,10 @@
 
 bdg:WA28852 {
     bda:LG28C1DDB93699AD1A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-25T09:49:24.635Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to copyright"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LG3E490A0F1E6999A9
         a                   adm:ScanRequestCreation ;
@@ -22,11 +24,21 @@ bdg:WA28852 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG4D184BCDC7F4E785
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-25T14:12:55.006Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG7CE4FA9509C1AD00
         a                   adm:UpdateData ;
         adm:logDate         "2015-09-15T19:10:06.185Z"^^xsd:dateTime ;
         adm:logMessage      "subject class changed from T2363 to T535"@en ;
         adm:logWho          bdu:U00007 .
+    
+    bda:LG9CFD9C46E965A652
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGDF172C4B1A2F240E
         a                   adm:UpdateData ;
@@ -57,15 +69,15 @@ bdg:WA28852 {
     bda:WA28852  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28852 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "28/WA28852.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28852 ;
-        adm:logEntry        bda:LG28C1DDB93699AD1A , bda:LG3E490A0F1E6999A9 , bda:LG7CE4FA9509C1AD00 , bda:LGDF172C4B1A2F240E , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG28C1DDB93699AD1A , bda:LG3E490A0F1E6999A9 , bda:LG4D184BCDC7F4E785 , bda:LG7CE4FA9509C1AD00 , bda:LG9CFD9C46E965A652 , bda:LGDF172C4B1A2F240E , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4D184BCDC7F4E785
+    bdr:CR899061AB2B4B5F3A
         a                   :AgentAsCreator ;
         :agent              bdr:P9362 ;
         :role               bdr:R0ER0019 .
@@ -74,7 +86,7 @@ bdg:WA28852 {
     
     bdr:WA28852  a          :Work ;
         skos:prefLabel      "rgyal ba sku gsum gyi rnam thar yongs 'dus ljon pa/"@bo-x-ewts , "Rgyal ba sku gsum gyi rnam thar Yoṅs ʼdus ljon pa /Gter-ston ʼJigs-med-sna-tshogs-raṅ-grol gyis mdzad."@en-x-mixed ;
-        :creator            bdr:CR4D184BCDC7F4E785 ;
+        :creator            bdr:CR899061AB2B4B5F3A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

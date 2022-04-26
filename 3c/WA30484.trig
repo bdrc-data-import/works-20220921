@@ -18,6 +18,10 @@ bdg:WA30484 {
         adm:logMessage      "added shad"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG12381F194ADCFEF9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG615960CF8CBBAF23
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-08-17T12:58:56.292Z"^^xsd:dateTime ;
@@ -31,8 +35,10 @@ bdg:WA30484 {
         adm:logWho          bdu:U00016 .
     
     bda:LGF216C6459F637719
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-25T09:49:26.439Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to copyright"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -51,22 +57,22 @@ bdg:WA30484 {
     bda:WA30484  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30484 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "3c/WA30484.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30484 ;
-        adm:logEntry        bda:LG0AAC914AE8FBDB57 , bda:LG615960CF8CBBAF23 , bda:LG8379A326F1549CF4 , bda:LGF216C6459F637719 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG0AAC914AE8FBDB57 , bda:LG12381F194ADCFEF9 , bda:LG615960CF8CBBAF23 , bda:LG8379A326F1549CF4 , bda:LGF216C6459F637719 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR12381F194ADCFEF9
+    bdr:CRB307BED49308D30A
         a                   :AgentAsCreator ;
         :agent              bdr:P1428 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA30484  a          :Work ;
         skos:prefLabel      "rdzogs ldan chos mchog dbu ma gzhan stong gi chos skor/"@bo-x-ewts ;
-        :creator            bdr:CR12381F194ADCFEF9 ;
+        :creator            bdr:CRB307BED49308D30A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T10MS11187 ;
