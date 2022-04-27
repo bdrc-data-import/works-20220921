@@ -12,20 +12,31 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ369263 {
+    bda:LG034CBB15FBFBB20F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-26T13:03:05.472Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG32C237D3296BD7C5
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-03-30T14:16:49.692Z"^^xsd:dateTime ;
         adm:logMessage      "new catalog"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG75756F79EDB444A1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-26T10:27:27.303Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ369263  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369263 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "32/WA4CZ369263.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369263 ;
-        adm:logEntry        bda:LG32C237D3296BD7C5 ;
+        adm:logEntry        bda:LG034CBB15FBFBB20F , bda:LG32C237D3296BD7C5 , bda:LG75756F79EDB444A1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -38,5 +49,5 @@ bdg:WA4CZ369263 {
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T10 , bdr:T1081 ;
-        :workHasInstance    bdr:MW4CZ369263 .
+        :workHasInstance    bdr:MW4CZ369263 , bdr:W4CZ369263 .
 }

@@ -18,18 +18,30 @@ bdg:WA4CZ369280 {
         adm:logMessage      "new cataloged"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGB24A38539E72AA34
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-26T12:01:01.717Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGE85EDE37ECE73E41
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-26T13:03:05.947Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ369280  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369280 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "33/WA4CZ369280.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369280 ;
-        adm:logEntry        bda:LGAA7A74DA74382529 ;
+        adm:logEntry        bda:LGAA7A74DA74382529 , bda:LGB24A38539E72AA34 , bda:LGE85EDE37ECE73E41 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB24A38539E72AA34
+    bdr:CRC6F25B61D672DAB7
         a                   :AgentAsCreator ;
         :agent              bdr:P9236 ;
         :role               bdr:R0ER0019 .
@@ -37,9 +49,9 @@ bdg:WA4CZ369280 {
     bdr:WA4CZ369280  a      :Work ;
         skos:prefLabel      "gsung rtsom phyogs bsgrigs mu tig do shal/"@bo-x-ewts ;
         :catalogInfo        "Collection of writings of a Drepung Tsogschen Tripa Tenpa Tenzin"@en ;
-        :creator            bdr:CRB24A38539E72AA34 ;
+        :creator            bdr:CRC6F25B61D672DAB7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;
-        :workHasInstance    bdr:MW4CZ369280 .
+        :workHasInstance    bdr:MW4CZ369280 , bdr:W4CZ369280 .
 }

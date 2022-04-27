@@ -12,30 +12,42 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ369290 {
+    bda:LG8D111FCB84380709
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-26T13:01:51.523Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGB83F1FB919029ADF
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-03-30T14:49:17.159Z"^^xsd:dateTime ;
         adm:logMessage      "new cataloged"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGEE17526067B95AE4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-26T13:03:06.658Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ369290  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369290 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "49/WA4CZ369290.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369290 ;
-        adm:logEntry        bda:LGB83F1FB919029ADF ;
+        adm:logEntry        bda:LG8D111FCB84380709 , bda:LGB83F1FB919029ADF , bda:LGEE17526067B95AE4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA4CZ369290  a      :Work ;
         skos:altLabel       "gsang sngags rdo rje theg pa'i sa lam gyi rnam gzhag phyogs gcig tu bsgrigs pa/"@bo-x-ewts ;
-        skos:prefLabel      "rdo rje the pa'i sa lam rnam gzhag phyogs bsgrigs/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje theg pa'i sa lam rnam gzhag phyogs bsgrigs/"@bo-x-ewts ;
         :catalogInfo        "Collection of the structured approach to Vajrayana Buddhism"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;
-        :workHasInstance    bdr:MW4CZ369290 ;
+        :workHasInstance    bdr:MW4CZ369290 , bdr:W4CZ369290 ;
         :workIsAbout        bdr:T1091 , bdr:T1336 .
 }
