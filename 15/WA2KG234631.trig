@@ -14,21 +14,28 @@
 bdg:WA2KG234631 {
     bda:LGE4507E1229AB036C
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-17T22:54:33.484Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-27T18:30:55.497Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF2903BC6920837FF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T18:36:22.41Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG234631  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234631 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "15/WA2KG234631.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234631 ;
-        adm:logEntry        bda:LGE4507E1229AB036C ;
+        adm:logEntry        bda:LGE4507E1229AB036C , bda:LGF2903BC6920837FF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF2903BC6920837FF
+    bdr:CR5D378C5AE7DB6A2A
         a                   :AgentAsCreator ;
         :agent              bdr:P5782 ;
         :role               bdr:R0ER0019 .
@@ -37,10 +44,10 @@ bdg:WA2KG234631 {
         skos:altLabel       "mUla mad+h+yamaka br-it+ti prasan+napadA nAma/"@bo-x-ewts ;
         skos:prefLabel      "dbu ma rtsa ba'i 'grel pa tshig gsal ba/"@bo-x-ewts ;
         :catalogInfo        "Commentary on mulamadhyamakakarika by Candrakirti."@en ;
-        :creator            bdr:CRF2903BC6920837FF ;
+        :creator            bdr:CR5D378C5AE7DB6A2A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;
-        :workHasInstance    bdr:MW2KG234631 ;
+        :workHasInstance    bdr:MW2KG234631 , bdr:W2KG234631 ;
         :workIsAbout        bdr:T233 , bdr:WA23226 .
 }

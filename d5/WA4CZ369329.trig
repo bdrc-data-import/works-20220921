@@ -13,19 +13,21 @@
 
 bdg:WA4CZ369329 {
     bda:LGE7F370DBD973030E
-        a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-21T09:31:52.256Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
-        adm:logWho          bdu:U00017 .
+        a                   adm:InitialDataCreation .
+    
+    bda:W4CZ369329  a       adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W4CZ369329 ;
+        adm:facetIndex      3 ;
+        adm:replaceWith     bdr:WA4CZ369329 ;
+        adm:status          bda:StatusWithdrawn .
     
     bda:WA4CZ369329  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369329 ;
-        adm:facetIndex      3 ;
         adm:gitPath         "d5/WA4CZ369329.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369329 ;
-        adm:logEntry        bda:LGE7F370DBD973030E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -39,7 +41,5 @@ bdg:WA4CZ369329 {
         skos:prefLabel      "brda dag phye ma leb kyi gshog rlabs/"@bo-x-ewts , "同音字辨认"@zh-hans ;
         :catalogInfo        "Verse orthographic dictionary"@en ;
         :creator            bdr:CR9AD289D8E6746B55 ;
-        :isRoot             true ;
-        :workGenre          bdr:T218 ;
-        :workHasInstance    bdr:MW4CZ369329 .
+        :isRoot             true .
 }

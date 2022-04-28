@@ -14,22 +14,28 @@
 bdg:WA4CZ369326 {
     bda:LG557E4DAC0F2551CA
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-21T09:31:51.535Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
+        adm:logDate         "2022-04-27T15:11:22.642Z"^^xsd:dateTime ;
+        adm:logMessage      "new catloged nad released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG99C5FB116D38BFF5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T15:33:46.726Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ369326  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369326 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ea/WA4CZ369326.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369326 ;
-        adm:logEntry        bda:LG557E4DAC0F2551CA ;
+        adm:logEntry        bda:LG557E4DAC0F2551CA , bda:LG99C5FB116D38BFF5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR99C5FB116D38BFF5
+    bdr:CRE2AF44838C6114DF
         a                   :AgentAsCreator ;
         :agent              bdr:P1647 ;
         :role               bdr:R0ER0019 .
@@ -39,10 +45,10 @@ bdg:WA4CZ369326 {
     bdr:WA4CZ369326  a      :Work ;
         skos:prefLabel      "bod kyi yi ge'i spyi rnam blo gsal 'jug ngogs/"@bo-x-ewts , "藏文文法概论"@zh-hans ;
         :catalogInfo        "Classification of Tibetan script and grammar"@en ;
-        :creator            bdr:CR99C5FB116D38BFF5 ;
+        :creator            bdr:CRE2AF44838C6114DF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 ;
-        :workHasInstance    bdr:MW4CZ369326 ;
+        :workHasInstance    bdr:MW4CZ369326 , bdr:W4CZ369326 ;
         :workIsAbout        bdr:T2512 .
 }

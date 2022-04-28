@@ -14,21 +14,28 @@
 bdg:WA2KG234638 {
     bda:LG8C9889F94E08F452
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-17T22:54:35.156Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-27T18:30:58.069Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGD1BC984485B9D94F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T18:39:26.518Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG234638  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234638 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "4a/WA2KG234638.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234638 ;
-        adm:logEntry        bda:LG8C9889F94E08F452 ;
+        adm:logEntry        bda:LG8C9889F94E08F452 , bda:LGD1BC984485B9D94F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD1BC984485B9D94F
+    bdr:CR741963DDE4EBF034
         a                   :AgentAsCreator ;
         :agent              bdr:P6120 ;
         :role               bdr:R0ER0019 .
@@ -37,10 +44,10 @@ bdg:WA2KG234638 {
         skos:altLabel       "dpal chos kyi grags pas mdzad pa'i tshad ma rnam 'grel gyi rang 'grel las rang don rjes dpag gi skor rtsa 'grel shan sbyar/"@bo-x-ewts ;
         skos:prefLabel      "tshad ma rnam 'grel gyi rang 'grel/"@bo-x-ewts ;
         :catalogInfo        "Autocommentary on the Pramanavarttika's first chapter, Svarthanumana (rangdon jepak)."@en ;
-        :creator            bdr:CRD1BC984485B9D94F ;
+        :creator            bdr:CR741963DDE4EBF034 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T4JW5424 ;
-        :workHasInstance    bdr:MW2KG234638 ;
+        :workHasInstance    bdr:MW2KG234638 , bdr:W2KG234638 ;
         :workIsAbout        bdr:T1896 , bdr:WA19721 .
 }

@@ -14,22 +14,28 @@
 bdg:WA4CZ369307 {
     bda:LG3D656E9D46D0A5BD
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-28T15:21:00.54Z"^^xsd:dateTime ;
-        adm:logMessage      "new catalog"@en ;
+        adm:logDate         "2022-04-27T08:42:44.931Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG89D5BCC90EEF4627
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T09:15:57.197Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ369307  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369307 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "2d/WA4CZ369307.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369307 ;
-        adm:logEntry        bda:LG3D656E9D46D0A5BD ;
+        adm:logEntry        bda:LG3D656E9D46D0A5BD , bda:LG89D5BCC90EEF4627 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR89D5BCC90EEF4627
+    bdr:CR8CDB811F28666950
         a                   :AgentAsCreator ;
         :agent              bdr:P37 ;
         :role               bdr:R0ER0019 .
@@ -38,9 +44,9 @@ bdg:WA4CZ369307 {
         skos:altLabel       "gangs can yul gyi sa la spyod pa'i mtho ris kyi rgyal blon gtso bor brjod pa'i deb ther rdzogs ldan gzhon nu'i dga' ston dpyid kyi rgyal mo'i glu dbyangs/"@bo-x-ewts ;
         skos:prefLabel      "bod kyi deb ther dpyid kyi rgyal mo'i glu dbyangs/"@bo-x-ewts ;
         :catalogInfo        "Chronicle of the ruling families in Tibet from the 7th to the 17th century"@en ;
-        :creator            bdr:CR89D5BCC90EEF4627 ;
+        :creator            bdr:CR8CDB811F28666950 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ369307 ;
+        :workHasInstance    bdr:MW4CZ369307 , bdr:W4CZ369307 ;
         :workIsAbout        bdr:G3196 , bdr:T10MS12314 .
 }

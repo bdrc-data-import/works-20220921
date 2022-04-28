@@ -12,20 +12,26 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ369344 {
+    bda:LG3BCF590EBB71E587
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T15:19:43.903Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG96A8BFC304526878
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-21T09:32:13.663Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
+        adm:logDate         "2022-04-27T15:11:32.1Z"^^xsd:dateTime ;
+        adm:logMessage      "new catloged nad released"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ369344  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369344 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "15/WA4CZ369344.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369344 ;
-        adm:logEntry        bda:LG96A8BFC304526878 ;
+        adm:logEntry        bda:LG3BCF590EBB71E587 , bda:LG96A8BFC304526878 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,6 +41,6 @@ bdg:WA4CZ369344 {
         :catalogInfo        "Select texts focusing on the propitiatory rituals offered to protective deities at termas revealed by Mingyur Dorje"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ369344 ;
+        :workHasInstance    bdr:MW4CZ369344 , bdr:W4CZ369344 ;
         :workIsAbout        bdr:T00JR399 , bdr:T1119 .
 }

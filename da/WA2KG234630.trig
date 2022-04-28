@@ -12,23 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG234630 {
+    bda:LG292EAA7E5AAAF6A4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T18:35:59.034Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG7A6BAC6C2489D59E
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-17T22:54:33.228Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-27T18:30:55.154Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG234630  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234630 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "da/WA2KG234630.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234630 ;
-        adm:logEntry        bda:LG7A6BAC6C2489D59E ;
+        adm:logEntry        bda:LG292EAA7E5AAAF6A4 , bda:LG7A6BAC6C2489D59E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR292EAA7E5AAAF6A4
+    bdr:CR9AAF8C8BAE6924B1
         a                   :AgentAsCreator ;
         :agent              bdr:P5782 ;
         :role               bdr:R0ER0019 .
@@ -37,10 +44,10 @@ bdg:WA2KG234630 {
         skos:altLabel       "dbu ma la 'jug pa'i bshad pa/"@bo-x-ewts ;
         skos:prefLabel      "dbu ma la 'jug pa'i rang 'grel/"@bo-x-ewts ;
         :catalogInfo        "Autocommentary of Madhyamakavatara by Indian master Chandrakirti."@en ;
-        :creator            bdr:CR292EAA7E5AAAF6A4 ;
+        :creator            bdr:CR9AAF8C8BAE6924B1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T4JW5424 ;
-        :workHasInstance    bdr:MW2KG234630 ;
+        :workHasInstance    bdr:MW2KG234630 , bdr:W2KG234630 ;
         :workIsAbout        bdr:T233 , bdr:WA19458 .
 }

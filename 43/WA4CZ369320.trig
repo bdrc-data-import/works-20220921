@@ -14,22 +14,28 @@
 bdg:WA4CZ369320 {
     bda:LG1048386898C188DE
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-28T15:21:46.207Z"^^xsd:dateTime ;
-        adm:logMessage      "new catalog"@en ;
+        adm:logDate         "2022-04-27T11:16:29.566Z"^^xsd:dateTime ;
+        adm:logMessage      "new catlog and realesed"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG4754691F1DC2370B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T11:24:33.979Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ369320  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369320 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "43/WA4CZ369320.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369320 ;
-        adm:logEntry        bda:LG1048386898C188DE ;
+        adm:logEntry        bda:LG1048386898C188DE , bda:LG4754691F1DC2370B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4754691F1DC2370B
+    bdr:CRB7E969D793A415FD
         a                   :AgentAsCreator ;
         :agent              bdr:P1646 ;
         :role               bdr:R0ER0019 .
@@ -38,10 +44,10 @@ bdg:WA4CZ369320 {
         skos:altLabel       "gangs can bod gyi brda sprod pa'i bstan bcos sum cu pa dang rtags 'jug gi rnam gzhag rgya cher bshad pa thon mi'i zhal lung /"@bo-x-ewts ;
         skos:prefLabel      "thon mi'i zhal lung /"@bo-x-ewts ;
         :catalogInfo        "Detailed explanation on Tibetan grammar"@en ;
-        :creator            bdr:CR4754691F1DC2370B ;
+        :creator            bdr:CRB7E969D793A415FD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;
-        :workHasInstance    bdr:MW4CZ369320 ;
+        :workHasInstance    bdr:MW4CZ369320 , bdr:W4CZ369320 ;
         :workIsAbout        bdr:T186 .
 }

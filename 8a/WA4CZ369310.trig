@@ -14,29 +14,35 @@
 bdg:WA4CZ369310 {
     bda:LG3202958694AF6AFE
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-28T15:21:01.395Z"^^xsd:dateTime ;
-        adm:logMessage      "new catalog"@en ;
+        adm:logDate         "2022-04-27T08:42:46.71Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LG70953D7C39AFE4C1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T08:58:46.061Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ369310  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369310 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "8a/WA4CZ369310.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369310 ;
-        adm:logEntry        bda:LG3202958694AF6AFE ;
+        adm:logEntry        bda:LG3202958694AF6AFE , bda:LG70953D7C39AFE4C1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:MW4CZ369310  skos:altLabel  "the life of buddha"@en .
+    bdr:MW4CZ369310  skos:altLabel  "The life of Buddha"@en .
     
     bdr:WA4CZ369310  a      :Work ;
-        skos:prefLabel      "sangs rgyas kyi rnam thar byis pa'idaga' tshal/"@bo-x-ewts , "the life of buddha"@en ;
+        skos:prefLabel      "sangs rgyas kyi rnam thar byis pa'idaga' tshal/"@bo-x-ewts , "The life of Buddha"@en ;
         :catalogInfo        "The comic book of the life story of the Buddha Shakyamuni"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG26395 ;
-        :workHasInstance    bdr:MW4CZ369310 ;
+        :workHasInstance    bdr:MW4CZ369310 , bdr:W4CZ369310 ;
         :workIsAbout        bdr:P7326 .
 }

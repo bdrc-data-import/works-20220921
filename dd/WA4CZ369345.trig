@@ -12,20 +12,26 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ369345 {
+    bda:LG07FD8BFCD37C36B0
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T15:18:51.02Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG5602DBA206980842
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-21T09:32:19.285Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
+        adm:logDate         "2022-04-27T15:11:32.584Z"^^xsd:dateTime ;
+        adm:logMessage      "new catloged nad released"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ369345  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369345 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "dd/WA4CZ369345.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369345 ;
-        adm:logEntry        bda:LG5602DBA206980842 ;
+        adm:logEntry        bda:LG07FD8BFCD37C36B0 , bda:LG5602DBA206980842 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,6 +41,6 @@ bdg:WA4CZ369345 {
         :catalogInfo        "Prajnaparamita in eight thousand verses."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ369345 ;
+        :workHasInstance    bdr:MW4CZ369345 , bdr:W4CZ369345 ;
         :workIsAbout        bdr:T2005 .
 }

@@ -12,24 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ369347 {
+    bda:LG320B1C180969A728
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T15:17:43.646Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG9367DF1256D1A317
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-21T09:32:30.077Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
+        adm:logDate         "2022-04-27T15:11:33.718Z"^^xsd:dateTime ;
+        adm:logMessage      "new catloged nad released"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ369347  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369347 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "98/WA4CZ369347.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369347 ;
-        adm:logEntry        bda:LG9367DF1256D1A317 ;
+        adm:logEntry        bda:LG320B1C180969A728 , bda:LG9367DF1256D1A317 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR320B1C180969A728
+    bdr:CR7FBB8E6C2C248285
         a                   :AgentAsCreator ;
         :agent              bdr:P155 ;
         :role               bdr:R0ER0019 .
@@ -38,10 +44,10 @@ bdg:WA4CZ369347 {
         skos:altLabel       "'jig rten khams kyi le'u'i 'grel bshad dri ma med pa'i 'od mchan/"@bo-x-ewts ;
         skos:prefLabel      "dus 'khor rtsa rgyud 'grel bshad dri med 'od mchan/"@bo-x-ewts ;
         :catalogInfo        "Commentary on the Kalacakratantra-tika Vimalaprabha with inserted notes"@en ;
-        :creator            bdr:CR320B1C180969A728 ;
+        :creator            bdr:CR7FBB8E6C2C248285 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T304 ;
-        :workHasInstance    bdr:MW4CZ369347 ;
+        :workHasInstance    bdr:MW4CZ369347 , bdr:W4CZ369347 ;
         :workIsAbout        bdr:WA22306 .
 }

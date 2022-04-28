@@ -12,24 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ369348 {
+    bda:LG83D21A5E9D6826DA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T15:17:12.217Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGC30C9753D9DF5E23
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-21T09:32:35.763Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
+        adm:logDate         "2022-04-27T15:11:34.301Z"^^xsd:dateTime ;
+        adm:logMessage      "new catloged nad released"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ369348  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369348 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9c/WA4CZ369348.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369348 ;
-        adm:logEntry        bda:LGC30C9753D9DF5E23 ;
+        adm:logEntry        bda:LG83D21A5E9D6826DA , bda:LGC30C9753D9DF5E23 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR83D21A5E9D6826DA
+    bdr:CRAC5C8FDF2AF33EBF
         a                   :AgentAsCreator ;
         :agent              bdr:P787 ;
         :role               bdr:R0ER0019 .
@@ -38,10 +44,10 @@ bdg:WA4CZ369348 {
         skos:altLabel       "con ta ra rdzong gsar bshad grwa chos kyi blo gros kyi slob tshan las mkhan chen ngag dbang chos grags kyi gsung 'bum/"@bo-x-ewts , "mkhan chen ngag dbang chos grags kyi pod chen drug gi 'grel pa phyogs bsgrigs/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/ ngag dbang chos grags/"@bo-x-ewts ;
         :catalogInfo        "Collected Works by Sakya master Ngawang Chodrak (1572-1641). Includes various commentaries on subjects ranging from Pramana, Abhidharma and Prajnaparamita as well as the author's works on Sakya Pandita Kunga Gyaltsen's (1182-1251) Dompa sum."@en ;
-        :creator            bdr:CR83D21A5E9D6826DA ;
+        :creator            bdr:CRAC5C8FDF2AF33EBF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;
-        :workHasInstance    bdr:MW4CZ369348 ;
+        :workHasInstance    bdr:MW4CZ369348 , bdr:W4CZ369348 ;
         :workIsAbout        bdr:T617 .
 }

@@ -12,23 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG234636 {
+    bda:LG19FA785BB6A7E0E5
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T18:38:38.13Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG51B2FF0224A2BE5E
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-17T22:54:34.724Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-27T18:30:57.384Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG234636  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234636 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "eb/WA2KG234636.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234636 ;
-        adm:logEntry        bda:LG51B2FF0224A2BE5E ;
+        adm:logEntry        bda:LG19FA785BB6A7E0E5 , bda:LG51B2FF0224A2BE5E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR19FA785BB6A7E0E5
+    bdr:CR3DF7984B65023F25
         a                   :AgentAsCreator ;
         :agent              bdr:P6120 ;
         :role               bdr:R0ER0019 .
@@ -38,10 +45,10 @@ bdg:WA2KG234636 {
     bdr:WA2KG234636  a      :Work ;
         skos:prefLabel      "rgyas pa'i bstan bcos tshad ma rnam 'grel/"@bo-x-ewts , "pramana varttika karika"@en-x-mixed ;
         :catalogInfo        "The root text of the Pramanavarttika by Indian master Dharmakirti; Commentary on the Pramanasamuchaya composed by Acharya Dignga."@en ;
-        :creator            bdr:CR19FA785BB6A7E0E5 ;
+        :creator            bdr:CR3DF7984B65023F25 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG8787 ;
-        :workHasInstance    bdr:MW2KG234636 ;
+        :workHasInstance    bdr:MW2KG234636 , bdr:W2KG234636 ;
         :workIsAbout        bdr:T370 , bdr:WA19721 .
 }

@@ -12,20 +12,26 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ369318 {
+    bda:LG6520CABFC05C3311
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T11:06:53.148Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGFD278AEFA19373F6
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-28T15:21:34.619Z"^^xsd:dateTime ;
-        adm:logMessage      "new catalog"@en ;
+        adm:logDate         "2022-04-27T11:04:28.151Z"^^xsd:dateTime ;
+        adm:logMessage      "new catloged"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ369318  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369318 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "47/WA4CZ369318.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369318 ;
-        adm:logEntry        bda:LGFD278AEFA19373F6 ;
+        adm:logEntry        bda:LG6520CABFC05C3311 , bda:LGFD278AEFA19373F6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -36,6 +42,6 @@ bdg:WA4CZ369318 {
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;
-        :workHasInstance    bdr:MW4CZ369318 ;
+        :workHasInstance    bdr:MW4CZ369318 , bdr:W4CZ369318 ;
         :workIsAbout        bdr:T186 .
 }

@@ -14,18 +14,24 @@
 bdg:WA4CZ369312 {
     bda:LG2E27FCB46A4C05C4
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-28T15:21:07.095Z"^^xsd:dateTime ;
-        adm:logMessage      "new catalog"@en ;
+        adm:logDate         "2022-04-27T08:42:47.842Z"^^xsd:dateTime ;
+        adm:logMessage      "new catalog and released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGFDF85A567E3A19E7
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T08:47:42.419Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ369312  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369312 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "84/WA4CZ369312.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369312 ;
-        adm:logEntry        bda:LG2E27FCB46A4C05C4 ;
+        adm:logEntry        bda:LG2E27FCB46A4C05C4 , bda:LGFDF85A567E3A19E7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -34,6 +40,6 @@ bdg:WA4CZ369312 {
         :catalogInfo        "Anonymous work of Tibetan didactic folk play on the previous life of Gautama Buddha."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ369312 ;
+        :workHasInstance    bdr:MW4CZ369312 , bdr:W4CZ369312 ;
         :workIsAbout        bdr:P1KG20918 , bdr:T2034 .
 }

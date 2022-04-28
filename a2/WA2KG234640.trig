@@ -14,42 +14,49 @@
 bdg:WA2KG234640 {
     bda:LG0994F8C26DB604B2
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-18T12:39:04.211Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-27T18:30:58.804Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG3106499EAFC4771E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T18:40:16.623Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG234640  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234640 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a2/WA2KG234640.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234640 ;
-        adm:logEntry        bda:LG0994F8C26DB604B2 ;
+        adm:logEntry        bda:LG0994F8C26DB604B2 , bda:LG3106499EAFC4771E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3106499EAFC4771E
-        a                   :AgentAsCreator ;
-        :agent              bdr:P6242 ;
-        :role               bdr:R0ER0019 .
-    
     bdr:CR64BDA3B43EB61D0C
         a                   :AgentAsCreator ;
-        :agent              bdr:P8183 ;
+        :agent              bdr:P8209 ;
         :role               bdr:R0ER0026 .
     
     bdr:CRB3DA60A7605AFCD5
         a                   :AgentAsCreator ;
-        :agent              bdr:P8209 ;
+        :agent              bdr:P6242 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE97AED741FEAFFBC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8183 ;
         :role               bdr:R0ER0026 .
     
     bdr:WA2KG234640  a      :Work ;
         skos:altLabel       "dam pa'i chos 'dul ba mdo rtsa ba/"@bo-x-ewts ;
         skos:prefLabel      "'dul ba mdo rtsa ba/"@bo-x-ewts ;
         :catalogInfo        "The fundamental text of Vinaya by Gunaprabha."@en ;
-        :creator            bdr:CR3106499EAFC4771E , bdr:CR64BDA3B43EB61D0C , bdr:CRB3DA60A7605AFCD5 ;
+        :creator            bdr:CR64BDA3B43EB61D0C , bdr:CRB3DA60A7605AFCD5 , bdr:CRE97AED741FEAFFBC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG234640 ;
+        :workHasInstance    bdr:MW2KG234640 , bdr:W2KG234640 ;
         :workIsAbout        bdr:T55 , bdr:WA4CZ16829 .
 }

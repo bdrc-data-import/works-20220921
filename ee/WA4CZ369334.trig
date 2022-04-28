@@ -14,22 +14,28 @@
 bdg:WA4CZ369334 {
     bda:LG8E4283BA70294C24
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-21T09:31:53.563Z"^^xsd:dateTime ;
-        adm:logMessage      "test"@en ;
+        adm:logDate         "2022-04-27T15:11:26.841Z"^^xsd:dateTime ;
+        adm:logMessage      "new catloged nad released"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGA6BF69F32B98A1AA
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-27T15:25:24.174Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
     bda:WA4CZ369334  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369334 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ee/WA4CZ369334.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369334 ;
-        adm:logEntry        bda:LG8E4283BA70294C24 ;
+        adm:logEntry        bda:LG8E4283BA70294C24 , bda:LGA6BF69F32B98A1AA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA6BF69F32B98A1AA
+    bdr:CR16D6E621B69BBA7C
         a                   :AgentAsCreator ;
         :agent              bdr:P00KG01086 ;
         :role               bdr:R0ER0019 .
@@ -38,9 +44,9 @@ bdg:WA4CZ369334 {
         skos:altLabel       "skar rtsis kyi brtag thabs lag len nyung bsdus bskal pa'i legs nyes gsal ba'i ngo mtshar ri mo/"@bo-x-ewts ;
         skos:prefLabel      "skar rtsis kyi brtag thabs/"@bo-x-ewts ;
         :catalogInfo        "Examination and criteria of Tibetan astrology"@en ;
-        :creator            bdr:CRA6BF69F32B98A1AA ;
+        :creator            bdr:CR16D6E621B69BBA7C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ369334 ;
+        :workHasInstance    bdr:MW4CZ369334 , bdr:W4CZ369334 ;
         :workIsAbout        bdr:T1234 , bdr:T1834 .
 }
