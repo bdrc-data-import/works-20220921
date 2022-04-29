@@ -12,28 +12,35 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG234652 {
+    bda:LG85ECDC563227F177
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-28T11:10:39.734Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGF845D160C7047141
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-27T09:23:47.633Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-28T10:22:50.397Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG234652  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234652 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "89/WA2KG234652.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234652 ;
-        adm:logEntry        bda:LGF845D160C7047141 ;
+        adm:logEntry        bda:LG85ECDC563227F177 , bda:LGF845D160C7047141 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR50D50546AFB95ED4
+    bdr:CR226D1FBE53C1C8FA
         a                   :AgentAsCreator ;
         :agent              bdr:P65 ;
         :role               bdr:R0ER0014 .
     
-    bdr:CR85ECDC563227F177
+    bdr:CR50D50546AFB95ED4
         a                   :AgentAsCreator ;
         :agent              bdr:P6161 ;
         :role               bdr:R0ER0019 .
@@ -42,10 +49,10 @@ bdg:WA2KG234652 {
         skos:altLabel       "byang chub sems dpa'i spyod pa la 'jug pa'i rnam bshad rgyal sras 'jug ngogs/"@bo-x-ewts ;
         skos:prefLabel      "spyod 'jug rtsa 'grel chen mo/"@bo-x-ewts ;
         :catalogInfo        "Commentary on Shantideva's Bodhicaryavatara."@en ;
-        :creator            bdr:CR50D50546AFB95ED4 , bdr:CR85ECDC563227F177 ;
+        :creator            bdr:CR226D1FBE53C1C8FA , bdr:CR50D50546AFB95ED4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;
-        :workHasInstance    bdr:MW2KG234652 ;
+        :workHasInstance    bdr:MW2KG234652 , bdr:W2KG234652 ;
         :workIsAbout        bdr:WA19740 .
 }

@@ -12,49 +12,56 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG232489 {
+    bda:LG2EBBD5CC9D21E46B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-28T11:04:11.587Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGEAF4E0EEC54D0146
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-16T15:57:41.157Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-28T10:33:24.082Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG232489  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG232489 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "a7/WA2KG232489.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG232489 ;
-        adm:logEntry        bda:LGEAF4E0EEC54D0146 ;
+        adm:logEntry        bda:LG2EBBD5CC9D21E46B , bda:LGEAF4E0EEC54D0146 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR1C5AFF74AD889F59
         a                   :AgentAsCreator ;
-        :agent              bdr:P5782 ;
+        :agent              bdr:P6118 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR2EBBD5CC9D21E46B
-        a                   :AgentAsCreator ;
-        :agent              bdr:P6120 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR81CB5AEC2AA6CE7E
+    bdr:CR5A8117E1413A9C14
         a                   :AgentAsCreator ;
         :agent              bdr:P6119 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CR81CB5AEC2AA6CE7E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5782 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:CR85B8910CEAB706D9
         a                   :AgentAsCreator ;
-        :agent              bdr:P6118 ;
+        :agent              bdr:P6120 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2KG232489  a      :Work ;
         skos:prefLabel      "rnam 'grel rtsa ba dang / mngon rtogs rgyan/ dbu ma 'jug pa/ mdzod rtsa ba bcas rtsa ba bzhi/"@bo-x-ewts ;
         :catalogInfo        "Collection of root texts of Pramana, Abhisamayalankara, Mulamadhyamika, and Abhidharmakosh."@en ;
-        :creator            bdr:CR1C5AFF74AD889F59 , bdr:CR2EBBD5CC9D21E46B , bdr:CR81CB5AEC2AA6CE7E , bdr:CR85B8910CEAB706D9 ;
+        :creator            bdr:CR1C5AFF74AD889F59 , bdr:CR5A8117E1413A9C14 , bdr:CR81CB5AEC2AA6CE7E , bdr:CR85B8910CEAB706D9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG8787 ;
-        :workHasInstance    bdr:MW2KG232489 ;
+        :workHasInstance    bdr:MW2KG232489 , bdr:W2KG232489 ;
         :workIsAbout        bdr:T2005 , bdr:T233 , bdr:T370 , bdr:T59 .
 }

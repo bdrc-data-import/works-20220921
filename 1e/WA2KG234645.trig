@@ -12,23 +12,30 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG234645 {
+    bda:LG54F64FFC93DD11CE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-28T11:06:55.336Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG9866B4ADA65B31D8
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-27T09:23:45.815Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-28T10:22:47.775Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG234645  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234645 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "1e/WA2KG234645.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234645 ;
-        adm:logEntry        bda:LG9866B4ADA65B31D8 ;
+        adm:logEntry        bda:LG54F64FFC93DD11CE , bda:LG9866B4ADA65B31D8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR54F64FFC93DD11CE
+    bdr:CRA3CBE959362B8C19
         a                   :AgentAsCreator ;
         :agent              bdr:P6117 ;
         :role               bdr:R0ER0019 .
@@ -37,10 +44,10 @@ bdg:WA2KG234645 {
         skos:altLabel       "rnal 'byor spyod pa'i sa las byung chub sems dpa'i sa/"@bo-x-ewts ;
         skos:prefLabel      "byang chub sems dpa'i sa/"@bo-x-ewts ;
         :catalogInfo        "Bodhisattva Bhumi from the Yogacayabhumi by Asanga."@en ;
-        :creator            bdr:CR54F64FFC93DD11CE ;
+        :creator            bdr:CRA3CBE959362B8C19 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T769 ;
-        :workHasInstance    bdr:MW2KG234645 ;
+        :workHasInstance    bdr:MW2KG234645 , bdr:W2KG234645 ;
         :workIsAbout        bdr:T1078 , bdr:T2055 , bdr:T4CZ16807 .
 }

@@ -12,44 +12,51 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG232490 {
+    bda:LG685471FCBB5E880C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-28T11:04:36.637Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG99F0DD4D28044029
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-03-16T15:57:41.396Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-28T10:33:24.443Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG232490  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG232490 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "fc/WA2KG232490.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG232490 ;
-        adm:logEntry        bda:LG99F0DD4D28044029 ;
+        adm:logEntry        bda:LG685471FCBB5E880C , bda:LG99F0DD4D28044029 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR685471FCBB5E880C
+    bdr:CR0ECF537D656CE2F9
         a                   :AgentAsCreator ;
-        :agent              bdr:P6118 ;
+        :agent              bdr:P6119 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR82347CE5236EA5BA
         a                   :AgentAsCreator ;
-        :agent              bdr:P5782 ;
+        :agent              bdr:P6118 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRE956CD85B1B833C4
         a                   :AgentAsCreator ;
-        :agent              bdr:P6119 ;
+        :agent              bdr:P5782 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2KG232490  a      :Work ;
         skos:prefLabel      "mngon rtogs rgyan dang / dbu ma 'jug pa/ mdzod rtsa ba bcas/"@bo-x-ewts ;
         :catalogInfo        "Root text of Abhisamayalankara, Mulamadhyamika, and Abhidharmakosh."@en ;
-        :creator            bdr:CR685471FCBB5E880C , bdr:CR82347CE5236EA5BA , bdr:CRE956CD85B1B833C4 ;
+        :creator            bdr:CR0ECF537D656CE2F9 , bdr:CR82347CE5236EA5BA , bdr:CRE956CD85B1B833C4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG8787 ;
-        :workHasInstance    bdr:MW2KG232490 ;
+        :workHasInstance    bdr:MW2KG232490 , bdr:W2KG232490 ;
         :workIsAbout        bdr:T2005 , bdr:T233 , bdr:T59 .
 }

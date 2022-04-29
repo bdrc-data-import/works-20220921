@@ -14,21 +14,28 @@
 bdg:WA2KG234654 {
     bda:LG52AA9A60F90544BD
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-27T09:23:48.114Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-28T10:22:51.156Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGA27B36309BEF59A9
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-28T11:11:26.688Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG234654  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234654 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "8f/WA2KG234654.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234654 ;
-        adm:logEntry        bda:LG52AA9A60F90544BD ;
+        adm:logEntry        bda:LG52AA9A60F90544BD , bda:LGA27B36309BEF59A9 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA27B36309BEF59A9
+    bdr:CR346C95F9BECF8934
         a                   :AgentAsCreator ;
         :agent              bdr:P2DB4596 ;
         :role               bdr:R0ER0019 .
@@ -37,10 +44,10 @@ bdg:WA2KG234654 {
         skos:altLabel       "paN chen bde lam gyi dmigs rnam skyong tshul zhal shes dang bcas pa gsal bar bkod pa bka' dge'i bla ma'i zhal lung /"@bo-x-ewts ;
         skos:prefLabel      "lam rim bka' dge'i bla ma'i zhal lung /"@bo-x-ewts ;
         :catalogInfo        "Detailed explanation of Lamrim teaching."@en ;
-        :creator            bdr:CRA27B36309BEF59A9 ;
+        :creator            bdr:CR346C95F9BECF8934 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T200 , bdr:T238 ;
-        :workHasInstance    bdr:MW2KG234654 ;
+        :workHasInstance    bdr:MW2KG234654 , bdr:W2KG234654 ;
         :workIsAbout        bdr:T475 .
 }

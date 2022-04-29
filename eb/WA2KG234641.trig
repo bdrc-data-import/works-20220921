@@ -14,21 +14,28 @@
 bdg:WA2KG234641 {
     bda:LG0D37C0C4D93BBDE6
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-27T09:23:44.843Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-28T10:22:46.174Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG487A6CD4A0CC2FD2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-28T11:05:19.361Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG234641  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234641 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "eb/WA2KG234641.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234641 ;
-        adm:logEntry        bda:LG0D37C0C4D93BBDE6 ;
+        adm:logEntry        bda:LG0D37C0C4D93BBDE6 , bda:LG487A6CD4A0CC2FD2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR487A6CD4A0CC2FD2
+    bdr:CRAF29E2BC7419A658
         a                   :AgentAsCreator ;
         :agent              bdr:P6242 ;
         :role               bdr:R0ER0019 .
@@ -37,9 +44,9 @@ bdg:WA2KG234641 {
         skos:altLabel       "karma sha tam/"@bo-x-ewts ;
         skos:prefLabel      "las brgya rtsa gcig pa/"@bo-x-ewts ;
         :catalogInfo        "One hundred formal procedures of Vinaya by Gunaprabha."@en ;
-        :creator            bdr:CR487A6CD4A0CC2FD2 ;
+        :creator            bdr:CRAF29E2BC7419A658 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG234641 ;
+        :workHasInstance    bdr:MW2KG234641 , bdr:W2KG234641 ;
         :workIsAbout        bdr:T55 , bdr:T58 .
 }

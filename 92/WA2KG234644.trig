@@ -14,21 +14,28 @@
 bdg:WA2KG234644 {
     bda:LG245E5FAD4365B717
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-27T09:23:45.575Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-28T10:22:47.394Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG44545F8E8ECEC32F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-28T11:06:34.142Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG234644  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234644 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "92/WA2KG234644.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234644 ;
-        adm:logEntry        bda:LG245E5FAD4365B717 ;
+        adm:logEntry        bda:LG245E5FAD4365B717 , bda:LG44545F8E8ECEC32F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR44545F8E8ECEC32F
+    bdr:CR9B0B8246E7F83234
         a                   :AgentAsCreator ;
         :agent              bdr:P6118 ;
         :role               bdr:R0ER0019 .
@@ -37,10 +44,10 @@ bdg:WA2KG234644 {
         skos:altLabel       "theg pa chen po mdo sde'i rgyan zhes bya ba'i tshig le'ur byas pa/"@bo-x-ewts ;
         skos:prefLabel      "mdo sde rgyan/"@bo-x-ewts ;
         :catalogInfo        "Mahayana Sutralankara by Maitreyanath with annotation. Revised by Pandita Parahita, Sedjnana and Loden Sherap. The root text of abhisamayalankara by Arya Maitreyanatha."@en ;
-        :creator            bdr:CR44545F8E8ECEC32F ;
+        :creator            bdr:CR9B0B8246E7F83234 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1777 ;
-        :workHasInstance    bdr:MW2KG234644 ;
+        :workHasInstance    bdr:MW2KG234644 , bdr:W2KG234644 ;
         :workIsAbout        bdr:T2055 , bdr:WA22208 .
 }

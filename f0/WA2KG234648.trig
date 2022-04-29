@@ -14,38 +14,45 @@
 bdg:WA2KG234648 {
     bda:LG678FB82F249B6526
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-04-27T09:23:46.625Z"^^xsd:dateTime ;
+        adm:logDate         "2022-04-28T10:22:48.894Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGA19FE4F120EAF81A
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-04-28T11:09:13.147Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG234648  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234648 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "f0/WA2KG234648.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234648 ;
-        adm:logEntry        bda:LG678FB82F249B6526 ;
+        adm:logEntry        bda:LG678FB82F249B6526 , bda:LGA19FE4F120EAF81A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA19FE4F120EAF81A
-        a                   :AgentAsCreator ;
-        :agent              bdr:P6118 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRE3CA361CCD8D50FF
+    bdr:CR0F9AB5F4CB3D4DBB
         a                   :AgentAsCreator ;
         :agent              bdr:P6119 ;
         :role               bdr:R0ER0014 .
+    
+    bdr:CRE3CA361CCD8D50FF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6118 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2KG234648  a      :Work ;
         skos:altLabel       "mdo sde'i rgyan gyi bshad pa/"@bo-x-ewts ;
         skos:prefLabel      "theg pa chen po'i mdo sde'i rgyan rtsa 'grel/"@bo-x-ewts ;
         :catalogInfo        "Commentary on the Sutralankara of Maitreyanatha."@en ;
-        :creator            bdr:CRA19FE4F120EAF81A , bdr:CRE3CA361CCD8D50FF ;
+        :creator            bdr:CR0F9AB5F4CB3D4DBB , bdr:CRE3CA361CCD8D50FF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1029 , bdr:T132 ;
-        :workHasInstance    bdr:MW2KG234648 ;
+        :workHasInstance    bdr:MW2KG234648 , bdr:W2KG234648 ;
         :workIsAbout        bdr:T2055 , bdr:WA22208 .
 }

@@ -24,6 +24,12 @@ bdg:WA1KG21021 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGBF19803B10DB39ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-04-28T11:33:54.011Z"^^xsd:dateTime ;
+        adm:logMessage      "corrected translator"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM84B17F7EDC
         a                   adm:UpdateData ;
         adm:logDate         "2017-11-02T17:38:24.575Z"^^xsd:dateTime ;
@@ -34,34 +40,34 @@ bdg:WA1KG21021 {
     bda:WA1KG21021  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG21021 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "33/WA1KG21021.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG21021 ;
-        adm:logEntry        bda:LG6C42F34D9E74EBF1 , bda:LG8C8A0E2E38D3D9E1 , bda:LGIM84B17F7EDC ;
+        adm:logEntry        bda:LG6C42F34D9E74EBF1 , bda:LG8C8A0E2E38D3D9E1 , bda:LGBF19803B10DB39ED , bda:LGIM84B17F7EDC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR0A4AA87B6238DEF9
         a                   :AgentAsCreator ;
-        :agent              bdr:P2LS171 ;
-        :role               bdr:R0ER0026 .
+        :agent              bdr:P00EGS1017036 ;
+        :role               bdr:R0ER0019 .
     
     bdr:CR6B51F7ABD26A0DF6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG234690 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CRFA81C2ED592F311E
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG11741 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CRBF19803B10DB39ED
-        a                   :AgentAsCreator ;
-        :agent              bdr:P00EGS1017036 ;
-        :role               bdr:R0ER0019 .
-    
     bdr:WA1KG21021  a       :Work ;
         skos:prefLabel      "'byung 'gyur bod kyi skor bsam pa'i 'char snang /"@bo-x-ewts ;
         :catalogInfo        "On various topics pertaining to the future of Tibet."@en ;
-        :creator            bdr:CR0A4AA87B6238DEF9 , bdr:CR6B51F7ABD26A0DF6 , bdr:CRBF19803B10DB39ED ;
+        :creator            bdr:CR0A4AA87B6238DEF9 , bdr:CR6B51F7ABD26A0DF6 , bdr:CRFA81C2ED592F311E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG21021 , bdr:W1KG21021 ;
