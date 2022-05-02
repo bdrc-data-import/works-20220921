@@ -25,14 +25,20 @@ bdg:WA26444 {
         adm:logWho          bdu:U00026 .
     
     bda:LG92FEC9DB82952D15
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-01T08:15:10.047Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
     
     bda:LGDB56C1B4BED61484
         a                   adm:UpdateData ;
         adm:logDate         "2009-02-17T15:32:24.438Z"^^xsd:dateTime ;
         adm:logMessage      "annotate"@en ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LGE76D9F293CCCF442
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGFFC694DB312220C6
         a                   adm:ScanRequestCreation ;
@@ -64,15 +70,15 @@ bdg:WA26444 {
     bda:WA26444  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA26444 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "2f/WA26444.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA26444 ;
-        adm:logEntry        bda:LG250FEB0AD37D3915 , bda:LG40E03F3C5B4A5161 , bda:LG92FEC9DB82952D15 , bda:LGDB56C1B4BED61484 , bda:LGFFC694DB312220C6 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG250FEB0AD37D3915 , bda:LG40E03F3C5B4A5161 , bda:LG92FEC9DB82952D15 , bda:LGDB56C1B4BED61484 , bda:LGE76D9F293CCCF442 , bda:LGFFC694DB312220C6 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE76D9F293CCCF442
+    bdr:CRF90732FB024884A7
         a                   :AgentAsCreator ;
         :agent              bdr:P8405 ;
         :role               bdr:R0ER0019 .
@@ -80,7 +86,7 @@ bdg:WA26444 {
     bdr:WA26444  a          :Work ;
         skos:prefLabel      "tshad ma rnam par nges pa'i 'grel bshad tshig don rnam par nges pa nyi ma'i snying po/"@bo-x-ewts ;
         :catalogInfo        "Commentary on Dharmakirti's Pramanaviniscaya by a scholar of the Bodong order."@en ;
-        :creator            bdr:CRE76D9F293CCCF442 ;
+        :creator            bdr:CRF90732FB024884A7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

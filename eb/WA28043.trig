@@ -23,6 +23,10 @@ bdg:WA28043 {
         adm:logMessage      "re-attributed author"@en ;
         adm:logWho          bdu:U00020 .
     
+    bda:LGB5FE5E3812F0E23D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGDAFD904B45F5FD33
         a                   adm:UpdateData ;
         adm:logDate         "2013-08-08T11:03:12.937Z"^^xsd:dateTime ;
@@ -30,8 +34,10 @@ bdg:WA28043 {
         adm:logWho          bdu:U00013 .
     
     bda:LGF0564E38D5DB5883
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-01T08:15:10.047Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
     
     bda:LGF26E2F26117493E8
         a                   adm:ScanRequestCreation ;
@@ -42,22 +48,22 @@ bdg:WA28043 {
     bda:WA28043  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA28043 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "eb/WA28043.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA28043 ;
-        adm:logEntry        bda:LG0419BAE2B5DDA608 , bda:LG58950294E1AF591D , bda:LGDAFD904B45F5FD33 , bda:LGF0564E38D5DB5883 , bda:LGF26E2F26117493E8 ;
+        adm:logEntry        bda:LG0419BAE2B5DDA608 , bda:LG58950294E1AF591D , bda:LGB5FE5E3812F0E23D , bda:LGDAFD904B45F5FD33 , bda:LGF0564E38D5DB5883 , bda:LGF26E2F26117493E8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB5FE5E3812F0E23D
+    bdr:CRD073B4A56520934F
         a                   :AgentAsCreator ;
         :agent              bdr:P2504 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA28043  a          :Work ;
         skos:prefLabel      "nA ro mkha' spyod kyi sgrub thabs dang dbang chog"@bo-x-ewts ;
-        :creator            bdr:CRB5FE5E3812F0E23D ;
+        :creator            bdr:CRD073B4A56520934F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1 , bdr:T48 ;

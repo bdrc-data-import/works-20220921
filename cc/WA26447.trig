@@ -30,9 +30,15 @@ bdg:WA26447 {
         adm:logMessage      "slar bcos"@en ;
         adm:logWho          bdu:U00017 .
     
-    bda:LG9E10458C685F57AA
+    bda:LG7B96C6DAD89D441F
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG9E10458C685F57AA
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-01T08:15:10.047Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
     
     bda:LGB49374AD7FBC193B
         a                   adm:UpdateData ;
@@ -73,29 +79,29 @@ bdg:WA26447 {
     bda:WA26447  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA26447 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "cc/WA26447.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA26447 ;
-        adm:logEntry        bda:LG54436AD70DE9112F , bda:LG71741A1A077572B2 , bda:LG7B089EBD015A0257 , bda:LG9E10458C685F57AA , bda:LGB49374AD7FBC193B , bda:LGB4D6114817F96A7E , bda:LGF445DF6FB61A2F71 , bda:LGFD9051548B5B0A54 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG54436AD70DE9112F , bda:LG71741A1A077572B2 , bda:LG7B089EBD015A0257 , bda:LG7B96C6DAD89D441F , bda:LG9E10458C685F57AA , bda:LGB49374AD7FBC193B , bda:LGB4D6114817F96A7E , bda:LGF445DF6FB61A2F71 , bda:LGFD9051548B5B0A54 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA00KG03837 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR7B96C6DAD89D441F
-        a                   :AgentAsCreator ;
-        :agent              bdr:P6120 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRE29949CA3AA81363
+    bdr:CR955DC5B2D2C53021
         a                   :AgentAsCreator ;
         :agent              bdr:P2551 ;
         :role               bdr:R0ER0026 .
     
+    bdr:CRE29949CA3AA81363
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6120 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA26447  a          :Work ;
         skos:prefLabel      "tshad ma rnam par nges pa/"@bo-x-ewts ;
         :catalogInfo        "Manuscript of the Pramanaviniscaya by Dharmakirti."@en ;
-        :creator            bdr:CR7B96C6DAD89D441F , bdr:CRE29949CA3AA81363 ;
+        :creator            bdr:CR955DC5B2D2C53021 , bdr:CRE29949CA3AA81363 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workIsAbout        bdr:T370 .

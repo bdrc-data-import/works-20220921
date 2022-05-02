@@ -52,6 +52,12 @@ bdg:WA00KG01606 {
         adm:logDate         "2007-12-14T10:49:42.353Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGDEBA52E92F8E8D47
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-01T08:15:10.047Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from the gNas bcu lha khang"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+    
     bda:LGF03396CD88876BB8
         a                   adm:UpdateData ;
         adm:logDate         "2007-08-20T15:23:25.914Z"^^xsd:dateTime ;
@@ -61,28 +67,28 @@ bdg:WA00KG01606 {
     bda:WA00KG01606  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG01606 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "d0/WA00KG01606.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG01606 ;
-        adm:logEntry        bda:LG39B378A4EBDCA9A5 , bda:LG6003B19F10D22DD5 , bda:LG65AC330A6D5526EF , bda:LG98E67151303A972B , bda:LGA30EE1D3C0891532 , bda:LGAD912A56B3A15526 , bda:LGD248F6B44DDDB6CB , bda:LGF03396CD88876BB8 ;
+        adm:logEntry        bda:LG39B378A4EBDCA9A5 , bda:LG6003B19F10D22DD5 , bda:LG65AC330A6D5526EF , bda:LG98E67151303A972B , bda:LGA30EE1D3C0891532 , bda:LGAD912A56B3A15526 , bda:LGD248F6B44DDDB6CB , bda:LGDEBA52E92F8E8D47 , bda:LGF03396CD88876BB8 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA0RT3278 ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:CR19BA3A21A857D826
         a                   :AgentAsCreator ;
-        :agent              bdr:P4104 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CRDEBA52E92F8E8D47
-        a                   :AgentAsCreator ;
         :agent              bdr:P3379 ;
         :role               bdr:R0ER0019 .
     
+    bdr:CR3F6A069FFB039FC7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4104 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA00KG01606  a      :Work ;
         skos:prefLabel      "mdo kun las bstus pa'i don bsdus pa/"@bo-x-ewts ;
-        :creator            bdr:CR19BA3A21A857D826 , bdr:CRDEBA52E92F8E8D47 ;
+        :creator            bdr:CR19BA3A21A857D826 , bdr:CR3F6A069FFB039FC7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workIsAbout        bdr:T541 , bdr:T58 .
