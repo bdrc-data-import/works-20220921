@@ -16,6 +16,7 @@ bdg:WA0XL14A27017E24F {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA0XL14A27017E24F ;
+        adm:facetIndex      2 ;
         adm:gitPath         "41/WA0XL14A27017E24F.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA0XL14A27017E24F ;
@@ -23,10 +24,17 @@ bdg:WA0XL14A27017E24F {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRF9F43899F1428147
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2872 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA0XL14A27017E24F
         a                   :Work ;
-        skos:prefLabel      "'dir 'jam dpal pha rol rgol 'joms kyi las mtha' mnan bsad 'phang gi las mtha' dang srungs bzlog bsad 'phang gsum gyi las mtha' dang bsrung bzlog gis las sbyor byed pa'i zin bris/"@bo-x-ewts ;
+        skos:prefLabel      "'jam dpal pha rol rgol 'joms kyi las mtha' mnan bsad 'phang gi las mtha' dang srungs bzlog bsad 'phang gsum gyi las mtha' dang bsrung bzlog gis las sbyor byed pa'i zin bris/"@bo-x-ewts ;
+        :creator            bdr:CRF9F43899F1428147 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4PD1207_14A270 .
+        :workHasInstance    bdr:MW4PD1207_14A270 ;
+        :workIsAbout        bdr:T1734 , bdr:T2521 .
 }
