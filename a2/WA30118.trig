@@ -12,10 +12,22 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30118 {
+    bda:LG051C1B6719552382
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-05T15:52:29.775Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restrictedinchina"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG19AD8D6E2EC3A90C
         a                   adm:UpdateData ;
         adm:logDate         "2008-06-26T10:57:19.661Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LG4ACC09BBF27DBB98
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-05-05T15:47:01.674Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG6A95E56B5246596E
         a                   adm:UpdateData ;
@@ -30,13 +42,19 @@ bdg:WA30118 {
         adm:logWho          bdu:U00026 .
     
     bda:LGA1318F41A26C0C44
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-05T15:46:22.355Z"^^xsd:dateTime ;
+        adm:logMessage      "added author and print type"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LGADE64DD62CBE4B18
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-26T14:28:25.039Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
+    
+    bda:LGB460CDC217A2AC2E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGE95BE493AF62D548
         a                   adm:UpdateData ;
@@ -67,35 +85,46 @@ bdg:WA30118 {
     bda:WA30118  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30118 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      18 ;
         adm:gitPath         "a2/WA30118.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30118 ;
-        adm:logEntry        bda:LG19AD8D6E2EC3A90C , bda:LG6A95E56B5246596E , bda:LG7D009A1281B4EB61 , bda:LGA1318F41A26C0C44 , bda:LGADE64DD62CBE4B18 , bda:LGE95BE493AF62D548 , bda:LGEBB46BF8E992625A , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG051C1B6719552382 , bda:LG19AD8D6E2EC3A90C , bda:LG4ACC09BBF27DBB98 , bda:LG6A95E56B5246596E , bda:LG7D009A1281B4EB61 , bda:LGA1318F41A26C0C44 , bda:LGADE64DD62CBE4B18 , bda:LGB460CDC217A2AC2E , bda:LGE95BE493AF62D548 , bda:LGEBB46BF8E992625A , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR051C1B6719552382
+    bdr:CR17FB8075D4B580FF
         a                   :AgentAsCreator ;
         :agent              bdr:P8101 ;
-        :role               bdr:R0ER0016 .
+        :role               bdr:R0ER0019 .
     
-    bdr:CR4ACC09BBF27DBB98
+    bdr:CR3EB0DF7ACD5D8DD5
         a                   :AgentAsCreator ;
         :agent              bdr:P10190 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRB460CDC217A2AC2E
+    bdr:CR4538B1A13FD05111
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8LS13475 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRABF6D57522837E21
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5087 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRC40A16ED0EF72F8F
         a                   :AgentAsCreator ;
         :agent              bdr:P75 ;
-        :role               bdr:R0ER0016 .
+        :role               bdr:R0ER0019 .
     
     bdr:MW30118  skos:altLabel  "a concise introduction to the methods for calculating the tibetan calendar according to the phug pa byed grub system expounded by phug-pa lhun-grub-rgya-mtsho and mkhas-grub nor-bzan-rgya-mtsho"@en-x-mixed .
     
     bdr:WA30118  a          :Work ;
         skos:prefLabel      "byed grub rtsis kyi gsal byed nyi ma'i 'od zer zhes bya ba pad dkar zhal lung gi bzhed gzhung /"@bo-x-ewts , "a concise introduction to the methods for calculating the tibetan calendar according to the phug pa byed grub system expounded by phug-pa lhun-grub-rgya-mtsho and mkhas-grub nor-bzan-rgya-mtsho"@en-x-mixed ;
         :catalogInfo        "Work on the creation of Tibetan calendars according to the Pukpa system."@en ;
-        :creator            bdr:CR051C1B6719552382 , bdr:CR4ACC09BBF27DBB98 , bdr:CRB460CDC217A2AC2E ;
+        :creator            bdr:CR17FB8075D4B580FF , bdr:CR3EB0DF7ACD5D8DD5 , bdr:CR4538B1A13FD05111 , bdr:CRABF6D57522837E21 , bdr:CRC40A16ED0EF72F8F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T203 , bdr:T222 ;
