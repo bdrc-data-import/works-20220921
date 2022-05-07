@@ -12,29 +12,36 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30153 {
-    bda:LG13ABC12E5C4223A7
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG5EED21594E936B00
         a                   adm:UpdateData ;
         adm:logDate         "2007-01-09T13:50:52.875Z"^^xsd:dateTime ;
         adm:logMessage      "included in ctc 4"@en ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGE838970C7D15A236
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA30153  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30153 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "a4/WA30153.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30153 ;
-        adm:logEntry        bda:LG13ABC12E5C4223A7 , bda:LG5EED21594E936B00 ;
+        adm:logEntry        bda:LG5EED21594E936B00 , bda:LGE838970C7D15A236 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA0XLC45C54C0499D ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRE838970C7D15A236
+    bdr:CR11B33F60C00C22F6
         a                   :AgentAsCreator ;
         :agent              bdr:P170 ;
         :role               bdr:R0ER0019 .
@@ -43,7 +50,7 @@ bdg:WA30153 {
     
     bdr:WA30153  a          :Work ;
         skos:prefLabel      "bla chen dgongs pa rab gsal sogs kyi rnam thar khag gsum/"@bo-x-ewts , "biographical writings recounting the lives of bla-chen dgons-pa-rab-gsal, bogdo chagan lama bkra-sis-rgya-mtsho, and thu'u-bkwan nag-dban-chos-kyi-rgya-mtsho"@en-x-mixed ;
-        :creator            bdr:CRE838970C7D15A236 ;
+        :creator            bdr:CR11B33F60C00C22F6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

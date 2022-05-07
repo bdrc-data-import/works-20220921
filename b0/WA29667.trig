@@ -18,22 +18,29 @@ bdg:WA29667 {
         adm:logMessage      "added to ctc 4"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LGFE048525D94BE56F
+    bda:LG9AEB10D92EC4D15B
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA29667  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29667 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "b0/WA29667.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29667 ;
-        adm:logEntry        bda:LG1DCC4F3BB772F5AD , bda:LGFE048525D94BE56F ;
+        adm:logEntry        bda:LG1DCC4F3BB772F5AD , bda:LG9AEB10D92EC4D15B , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9AEB10D92EC4D15B
+    bdr:CREEE648C50289C27C
         a                   :AgentAsCreator ;
         :agent              bdr:P9921 ;
         :role               bdr:R0ER0019 .
@@ -42,7 +49,7 @@ bdg:WA29667 {
     
     bdr:WA29667  a          :Work ;
         skos:prefLabel      "dus gsum rab gsal 'od snang gsar pa/"@bo-x-ewts , "new radiance tibetan tense formation"@en ;
-        :creator            bdr:CR9AEB10D92EC4D15B ;
+        :creator            bdr:CREEE648C50289C27C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29667 , bdr:W29667 ;

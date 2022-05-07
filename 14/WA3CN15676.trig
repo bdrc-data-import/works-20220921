@@ -30,6 +30,12 @@ bdg:WA3CN15676 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -46,15 +52,16 @@ bdg:WA3CN15676 {
     bda:WA3CN15676  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN15676 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "14/WA3CN15676.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN15676 ;
-        adm:logEntry        bda:LG839CE74739EC2D4F , bda:LGAB8AC432D67BAC2F , bda:LGC7F294ABD4481DDE , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG839CE74739EC2D4F , bda:LGAB8AC432D67BAC2F , bda:LGC7F294ABD4481DDE , bda:LGIM8A299A84 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7ABE2EEE5CFBC1A4
+    bdr:CR2EF083CA745686EA
         a                   :AgentAsCreator ;
         :agent              bdr:P649 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +71,7 @@ bdg:WA3CN15676 {
     bdr:WA3CN15676  a       :Work ;
         skos:prefLabel      "kaM tshang grub thob gser ri'i phreng ba'i rnam thar bsdus don dang snga 'gyur bka' gter shing rta rnams kyi lo rgyus/"@bo-x-ewts , "Biographical writings of Karma-chags-med"@en ;
         :catalogInfo        "Brief verse biographies of various bka'-brgyud-pa and rnying-ma-pa masters of the tibetan buddhist tradition by Karma-chags-med. Reproduced from a rare manuscript from Gru-gu Monastery in Khams."@en ;
-        :creator            bdr:CR7ABE2EEE5CFBC1A4 ;
+        :creator            bdr:CR2EF083CA745686EA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

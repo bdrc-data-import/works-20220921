@@ -36,32 +36,39 @@ bdg:WA1KG4278 {
         adm:logMessage      "first released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG4278  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4278 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "06/WA1KG4278.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4278 ;
-        adm:logEntry        bda:LG29D8B65AEC014023 , bda:LG868A2A1B000DD046 , bda:LGDB2FED863299CFF0 , bda:LGF53EF70185502723 ;
+        adm:logEntry        bda:LG29D8B65AEC014023 , bda:LG868A2A1B000DD046 , bda:LGDB2FED863299CFF0 , bda:LGF53EF70185502723 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB74E21CB3E874E32
+    bdr:CR89D516D57D561EBB
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG4279 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV89D516D57D561EBB
+    bdr:EVE41D6D6745A6D59D
         a                   :CompletedEvent ;
         :onYear             "2008"^^xsd:gYear .
     
     bdr:WA1KG4278  a        :Work ;
         skos:prefLabel      "dpal jo nang chos 'byung dang gdan rabs bskal bzang sangs rgyas dgyes pa'i mchod sprin/"@bo-x-ewts ;
-        :creator            bdr:CRB74E21CB3E874E32 ;
+        :creator            bdr:CR89D516D57D561EBB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV89D516D57D561EBB ;
+        :workEvent          bdr:EVE41D6D6745A6D59D ;
         :workGenre          bdr:T12 ;
         :workHasInstance    bdr:MW1KG4278 , bdr:W1KG4278 ;
         :workIsAbout        bdr:T16 , bdr:T360 .

@@ -24,18 +24,25 @@ bdg:WA3CN10659 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA3CN10659  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN10659 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "c2/WA3CN10659.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN10659 ;
-        adm:logEntry        bda:LG48E7BBF87A458428 , bda:LGE3E5B066A9F5A0CE ;
+        adm:logEntry        bda:LG48E7BBF87A458428 , bda:LGE3E5B066A9F5A0CE , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFC8F041C39B72481
+    bdr:CR5434D1620D62E826
         a                   :AgentAsCreator ;
         :agent              bdr:P3163 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +51,7 @@ bdg:WA3CN10659 {
         skos:altLabel       "'dul ba'i sde snod mtha' dag gi dgongs pa phyin ci ma log par 'grel bar byed pa'i legs bshad skal bzang nor bu'i phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "'dul ba'i sde snod mtha' dag gi dgongs 'grel legs bshad/"@bo-x-ewts ;
         :catalogInfo        "Commentery on the intent of Buddhist monastic discipline."@en ;
-        :creator            bdr:CRFC8F041C39B72481 ;
+        :creator            bdr:CR5434D1620D62E826 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T10MS12837 ;

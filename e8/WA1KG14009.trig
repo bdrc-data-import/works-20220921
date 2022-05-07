@@ -38,33 +38,40 @@ bdg:WA1KG14009 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG14009  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14009 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "e8/WA1KG14009.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14009 ;
-        adm:logEntry        bda:LG3760A68912A45B7B , bda:LGFAAD1AFC5A38F7EA , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG3760A68912A45B7B , bda:LGFAAD1AFC5A38F7EA , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR89080FF306843C56
-        a                   :AgentAsCreator ;
-        :agent              bdr:P9927 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRD425F2E522D56568
+    bdr:CR7254E4181A8F14FF
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG14131 ;
         :role               bdr:R0ER0026 .
+    
+    bdr:CRD425F2E522D56568
+        a                   :AgentAsCreator ;
+        :agent              bdr:P9927 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1KG14009  skos:altLabel  "mind in the balance : meditation in science, buddhism and christianity"@en .
     
     bdr:WA1KG14009  a       :Work ;
         skos:altLabel       "tshan rig dang / nang chos/ ye shu'i chos lugs bcas kyis sgom la dpyad pa/"@bo-x-ewts ;
         skos:prefLabel      "'phrang du lus pa'i sems kyi gnas bab/"@bo-x-ewts , "mind in the balance : meditation in science, buddhism and christianity"@en ;
-        :creator            bdr:CR89080FF306843C56 , bdr:CRD425F2E522D56568 ;
+        :creator            bdr:CR7254E4181A8F14FF , bdr:CRD425F2E522D56568 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG14009 , bdr:W1KG14009 ;

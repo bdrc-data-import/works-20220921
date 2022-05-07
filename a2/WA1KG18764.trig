@@ -44,23 +44,30 @@ bdg:WA1KG18764 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG18764  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG18764 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "a2/WA1KG18764.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG18764 ;
-        adm:logEntry        bda:LG13149E1EB75420AD , bda:LG4B959CFCACCDFE34 , bda:LG81AD67ED99E9A439 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG13149E1EB75420AD , bda:LG4B959CFCACCDFE34 , bda:LG81AD67ED99E9A439 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1B074A718C475C6F
+    bdr:CR1CF26F18265BB84A
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG5004 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR1CF26F18265BB84A
+    bdr:CRBECB953F165B768A
         a                   :AgentAsCreator ;
         :agent              bdr:P9921 ;
         :role               bdr:R0ER0019 .
@@ -68,7 +75,7 @@ bdg:WA1KG18764 {
     bdr:WA1KG18764  a       :Work ;
         skos:prefLabel      "dus gsum phyogs bsgrigs kun gsal me long /"@bo-x-ewts ;
         :catalogInfo        "On the verb forms of Tibetan language."@en ;
-        :creator            bdr:CR1B074A718C475C6F , bdr:CR1CF26F18265BB84A ;
+        :creator            bdr:CR1CF26F18265BB84A , bdr:CRBECB953F165B768A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

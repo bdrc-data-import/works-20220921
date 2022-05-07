@@ -54,6 +54,12 @@ bdg:WA00KG09759 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -71,20 +77,21 @@ bdg:WA00KG09759 {
     bda:WA00KG09759  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG09759 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "e2/WA00KG09759.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG09759 ;
-        adm:logEntry        bda:LG065FEF85197916ED , bda:LG1252C9E490F670FD , bda:LG35D5A14D0FC0D4DD , bda:LG4B96D8A1A78500D7 , bda:LGB466206761B094A9 , bda:LGF51F3D3075728E29 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG065FEF85197916ED , bda:LG1252C9E490F670FD , bda:LG35D5A14D0FC0D4DD , bda:LG4B96D8A1A78500D7 , bda:LGB466206761B094A9 , bda:LGF51F3D3075728E29 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR82CCBFDF89DA0622
+    bdr:CR23F8075D9F319FA9
         a                   :AgentAsCreator ;
         :agent              bdr:P00KG09760 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV23F8075D9F319FA9
+    bdr:EVC7D774CA33BF1B2B
         a                   :CompletedEvent ;
         :onYear             "1698"^^xsd:gYear .
     
@@ -93,10 +100,10 @@ bdg:WA00KG09759 {
     bdr:WA00KG09759  a      :Work ;
         skos:prefLabel      "rta wang dga' ldan rnam rgyal lha rtse'i bca' yig mdor bsdus/"@bo-x-ewts , "Rta-waṅ Dgā ldān rnām Rgyāl lhā rtseʼi bcaʼ yig mdor bsdus bʼzugs so /Ṅag-dbaṅ-rnam-rgyal."@en-x-mixed ;
         :catalogInfo        "Monastic regulations for Tawang Monastery Ganden Namgyal Latse, located in Tawang, Arunachal Pradesh, India."@en ;
-        :creator            bdr:CR82CCBFDF89DA0622 ;
+        :creator            bdr:CR23F8075D9F319FA9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV23F8075D9F319FA9 ;
+        :workEvent          bdr:EVC7D774CA33BF1B2B ;
         :workGenre          bdr:T10 ;
         :workHasInstance    bdr:MW00KG09759 , bdr:W00KG09759 ;
         :workIsAbout        bdr:G3529 , bdr:T819 .

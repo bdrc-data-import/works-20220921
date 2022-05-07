@@ -30,18 +30,25 @@ bdg:WA1KG13776 {
         adm:logMessage      "released from accessioned"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG13776  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG13776 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "92/WA1KG13776.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG13776 ;
-        adm:logEntry        bda:LG1639F4762EC8365D , bda:LG4EAF3283AC1D059B , bda:LGF2570AA1C75F6C87 ;
+        adm:logEntry        bda:LG1639F4762EC8365D , bda:LG4EAF3283AC1D059B , bda:LGF2570AA1C75F6C87 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCC3B94454E96949D
+    bdr:CR11768A58AB74C55D
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG15232 ;
         :role               bdr:R0ER0019 .
@@ -49,7 +56,7 @@ bdg:WA1KG13776 {
     bdr:WA1KG13776  a       :Work ;
         skos:prefLabel      "tshan rtsal rig pa'i spyi bshad/"@bo-x-ewts ;
         :catalogInfo        "Translation of general science and technology by a modern scholar Gomar Sangye Tashi (20th cent.)"@en ;
-        :creator            bdr:CRCC3B94454E96949D ;
+        :creator            bdr:CR11768A58AB74C55D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG13776 , bdr:W1KG13776 ;

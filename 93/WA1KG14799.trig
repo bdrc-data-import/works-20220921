@@ -37,6 +37,12 @@ bdg:WA1KG14799 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -54,23 +60,24 @@ bdg:WA1KG14799 {
     bda:WA1KG14799  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14799 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "93/WA1KG14799.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14799 ;
-        adm:logEntry        bda:LG133883E0084ECED8 , bda:LGBBAB64D228E37E13 , bda:LGBC88738671F1DB56 , bda:LGIM4BF5F96E12 , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG133883E0084ECED8 , bda:LGBBAB64D228E37E13 , bda:LGBC88738671F1DB56 , bda:LGIM4BF5F96E12 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR155DAB6385BBB23C
         a                   :AgentAsCreator ;
-        :agent              bdr:P7137 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CREFDE6C1194791C71
-        a                   :AgentAsCreator ;
         :agent              bdr:P1GS147817 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRCDF47E27F6CFDDD4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7137 ;
+        :role               bdr:R0ER0026 .
     
     bdr:MW1KG14799  skos:altLabel  "the biography of eighty four saints of buddhist"@en .
     
@@ -78,7 +85,7 @@ bdg:WA1KG14799 {
         skos:altLabel       "'phags yul grub chen brgyad cu rtsa bzhi'i byin rlabs skor las/ lo rgyus rnam par thar pa/"@bo-x-ewts , "grub thob brgyad cu rtsa bzhi'i rnam thar/"@bo-x-ewts , "The biography of eighty four saints of Buddhist [sic] /by Mi-hjigs-pa Spyin-pa-Dpal ; translator, Dge-slon Smon-grub Ces-rab."@en-x-mixed ;
         skos:prefLabel      "grub chen brgyad cu rtsa bzhi'i rnam thar/"@bo-x-ewts , "the biography of eighty four saints of buddhist"@en ;
         :catalogInfo        "Biographies of eighty-four mahasiddhas."@en ;
-        :creator            bdr:CR155DAB6385BBB23C , bdr:CREFDE6C1194791C71 ;
+        :creator            bdr:CR155DAB6385BBB23C , bdr:CRCDF47E27F6CFDDD4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

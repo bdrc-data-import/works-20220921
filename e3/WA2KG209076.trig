@@ -24,18 +24,25 @@ bdg:WA2KG209076 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA2KG209076  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG209076 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "e3/WA2KG209076.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG209076 ;
-        adm:logEntry        bda:LG0824DA5D78FDCE2F , bda:LG5FFD6ADFC17A723F ;
+        adm:logEntry        bda:LG0824DA5D78FDCE2F , bda:LG5FFD6ADFC17A723F , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR790BE7B0CF25CB5A
+    bdr:CR7D368A1110E64371
         a                   :AgentAsCreator ;
         :agent              bdr:P1846 ;
         :role               bdr:R0ER0019 .
@@ -43,7 +50,7 @@ bdg:WA2KG209076 {
     bdr:WA2KG209076  a      :Work ;
         skos:prefLabel      "dpal gsang ba 'dus pa'i bskyed rdzogs gnyis kyi sdom nyams len gsal ba'i brjed byang /"@bo-x-ewts ;
         :catalogInfo        "Summary memorandum of development and completion stages of Guhyasamaja practice by Dagpo Khenchen Ngawang Drakpa."@en ;
-        :creator            bdr:CR790BE7B0CF25CB5A ;
+        :creator            bdr:CR7D368A1110E64371 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1446 ;

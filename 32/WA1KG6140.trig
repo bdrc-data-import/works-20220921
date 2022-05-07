@@ -62,6 +62,12 @@ bdg:WA1KG6140 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -72,43 +78,44 @@ bdg:WA1KG6140 {
     bda:WA1KG6140  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG6140 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "32/WA1KG6140.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG6140 ;
-        adm:logEntry        bda:LG29C89A0DB89B92C3 , bda:LG651873A7008896F4 , bda:LGD472F5F0A7CEF9CB , bda:LGDBDAE66FADE4F7B0 , bda:LGFB7B1934F28168AA , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG29C89A0DB89B92C3 , bda:LG651873A7008896F4 , bda:LGD472F5F0A7CEF9CB , bda:LGDBDAE66FADE4F7B0 , bda:LGFB7B1934F28168AA , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR03CE64E299DCADB7
         a                   :AgentAsCreator ;
-        :agent              bdr:P101 ;
+        :agent              bdr:P64 ;
         :role               bdr:R0ER0016 .
     
     bdr:CR4F7AA45D1F10DDCE
         a                   :AgentAsCreator ;
-        :agent              bdr:P64 ;
+        :agent              bdr:P60 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRCA290EE4CBDEB1E0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P176 ;
         :role               bdr:R0ER0016 .
     
     bdr:CRD213EB2D5643B59A
         a                   :AgentAsCreator ;
-        :agent              bdr:P105 ;
+        :agent              bdr:P101 ;
         :role               bdr:R0ER0016 .
-    
-    bdr:CRF0EC6ADA2CF41B29
-        a                   :AgentAsCreator ;
-        :agent              bdr:P60 ;
-        :role               bdr:R0ER0019 .
     
     bdr:CRF65FBA95B76BB071
         a                   :AgentAsCreator ;
-        :agent              bdr:P176 ;
+        :agent              bdr:P105 ;
         :role               bdr:R0ER0016 .
     
     bdr:WA1KG6140  a        :Work ;
         skos:prefLabel      "mngon pa gong ma dang 'brel ba'i sems khams rig pa'i gzhung lugs/"@bo-x-ewts ;
         :catalogInfo        "Mind and mental factors according to the Abhidharmasamuccaya."@en ;
-        :creator            bdr:CR03CE64E299DCADB7 , bdr:CR4F7AA45D1F10DDCE , bdr:CRD213EB2D5643B59A , bdr:CRF0EC6ADA2CF41B29 , bdr:CRF65FBA95B76BB071 ;
+        :creator            bdr:CR03CE64E299DCADB7 , bdr:CR4F7AA45D1F10DDCE , bdr:CRCA290EE4CBDEB1E0 , bdr:CRD213EB2D5643B59A , bdr:CRF65FBA95B76BB071 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG6140 , bdr:W1KG6140 ;

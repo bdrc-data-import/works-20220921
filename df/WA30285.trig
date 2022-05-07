@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30285 {
+    bda:LG279F4994233542DB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG2B797488C741EB84
         a                   adm:UpdateData ;
         adm:logDate         "2008-07-24T12:25:15.661Z"^^xsd:dateTime ;
@@ -47,10 +51,6 @@ bdg:WA30285 {
         adm:logDate         "2007-12-12T15:41:17.727Z"^^xsd:dateTime ;
         adm:logMessage      "SCAN COMPLETE"@en ;
         adm:logWho          bdu:U00026 .
-    
-    bda:LG54EDE597E24464BC
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LG5A7DB7E87D3F071F
         a                   adm:UpdateData ;
@@ -106,15 +106,22 @@ bdg:WA30285 {
         adm:logMessage      "annotated"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA30285  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30285 ;
-        adm:facetIndex      17 ;
+        adm:facetIndex      18 ;
         adm:gitPath         "df/WA30285.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30285 ;
-        adm:logEntry        bda:LG2B797488C741EB84 , bda:LG2BF92E8F58C1A11B , bda:LG2F37DDE92A2EC25F , bda:LG3B745F8413E048C7 , bda:LG421ED0FD60127B75 , bda:LG429693C226F4C2BC , bda:LG54EDE597E24464BC , bda:LG5A7DB7E87D3F071F , bda:LG71D83F4DFF0E4F7B , bda:LG7B21F98849A0BE04 , bda:LG813636A8072B84A8 , bda:LG8493BF2ADB2D769C , bda:LGDBAF838706785E74 , bda:LGDD46E83865FD5388 , bda:LGEB86700E7B14BBF8 , bda:LGEDC3EE113E5A67E6 ;
+        adm:logEntry        bda:LG279F4994233542DB , bda:LG2B797488C741EB84 , bda:LG2BF92E8F58C1A11B , bda:LG2F37DDE92A2EC25F , bda:LG3B745F8413E048C7 , bda:LG421ED0FD60127B75 , bda:LG429693C226F4C2BC , bda:LG5A7DB7E87D3F071F , bda:LG71D83F4DFF0E4F7B , bda:LG7B21F98849A0BE04 , bda:LG813636A8072B84A8 , bda:LG8493BF2ADB2D769C , bda:LGDBAF838706785E74 , bda:LGDD46E83865FD5388 , bda:LGEB86700E7B14BBF8 , bda:LGEDC3EE113E5A67E6 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA30285  a          :Work ;

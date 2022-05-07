@@ -37,6 +37,12 @@ bdg:WA1KG13778 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -47,15 +53,16 @@ bdg:WA1KG13778 {
     bda:WA1KG13778  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG13778 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "44/WA1KG13778.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG13778 ;
-        adm:logEntry        bda:LG5A3141A94F68A740 , bda:LGA1F2A97AE2F54CF8 , bda:LGFF0F0974E4185CBE , bda:LGIM206EC9B06D , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG5A3141A94F68A740 , bda:LGA1F2A97AE2F54CF8 , bda:LGFF0F0974E4185CBE , bda:LGIM206EC9B06D , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF5754F86E69A776A
+    bdr:CRA887D78DB0AD2C5D
         a                   :AgentAsCreator ;
         :agent              bdr:P1655 ;
         :role               bdr:R0ER0019 .
@@ -65,7 +72,7 @@ bdg:WA1KG13778 {
     bdr:WA1KG13778  a       :Work ;
         skos:prefLabel      "bzo rig gsal ba'i rgyan/"@bo-x-ewts , "Bzo rig gsal baʼi rgyan źes bya ba bźugs /Sman-riʼi Yoṅ-ʼdzin Bstan-ʼdzin-rnam-dag."@en-x-mixed ;
         :catalogInfo        "On different technological aspects of Tibetan arts and crafts (silpas astra)"@en ;
-        :creator            bdr:CRF5754F86E69A776A ;
+        :creator            bdr:CRA887D78DB0AD2C5D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG13778 , bdr:W1KG13778 ;

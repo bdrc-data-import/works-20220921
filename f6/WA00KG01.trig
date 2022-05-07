@@ -109,6 +109,12 @@ bdg:WA00KG01 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -126,28 +132,29 @@ bdg:WA00KG01 {
     bda:WA00KG01  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG01 ;
-        adm:facetIndex      22 ;
+        adm:facetIndex      23 ;
         adm:gitPath         "f6/WA00KG01.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG01 ;
-        adm:logEntry        bda:LG01B0E737D4C6E481 , bda:LG1075EE79164F3A7F , bda:LG278168E4567CBB92 , bda:LG2C4065D3069394B0 , bda:LG3053B09BD00C0531 , bda:LG4C1F8B81B5C6EB10 , bda:LG4E3CD47045054ADF , bda:LG676D3ADB04824158 , bda:LG6A7F82E9511F137C , bda:LG6F6DB0A7400EDFD9 , bda:LG7FE642BFA330CCD7 , bda:LGC29C4A1CCB959E9E , bda:LGC82D9D49B52D57A8 , bda:LGCA26C1F9F8819EFD , bda:LGEDE778000B8FF934 , bda:LGF07802D39AB1A7DC , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG01B0E737D4C6E481 , bda:LG1075EE79164F3A7F , bda:LG278168E4567CBB92 , bda:LG2C4065D3069394B0 , bda:LG3053B09BD00C0531 , bda:LG4C1F8B81B5C6EB10 , bda:LG4E3CD47045054ADF , bda:LG676D3ADB04824158 , bda:LG6A7F82E9511F137C , bda:LG6F6DB0A7400EDFD9 , bda:LG7FE642BFA330CCD7 , bda:LGC29C4A1CCB959E9E , bda:LGC82D9D49B52D57A8 , bda:LGCA26C1F9F8819EFD , bda:LGEDE778000B8FF934 , bda:LGF07802D39AB1A7DC , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR0539168125A3AF4F
         a                   :AgentAsCreator ;
-        :agent              bdr:P6036 ;
+        :agent              bdr:P5254 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR17D654B572877EE2
+    bdr:CR997D6B913C660CC6
         a                   :AgentAsCreator ;
-        :agent              bdr:P5254 ;
+        :agent              bdr:P6036 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA00KG01  a         :Work ;
         skos:prefLabel      "sbas yul spyi dang bye brag yol mo gangs ra'i gnas yig"@bo-x-ewts ;
         :catalogInfo        "Accounts of the various hidden lands (beyul), particularly Yolmo Gangra (Helambu) and the rediscoveries of Rigdzin Godem (1337-1409) and other masters of the Nyingma Jangter tradition. Written by Sanggye Dorje (1913-?)."@en ;
-        :creator            bdr:CR0539168125A3AF4F , bdr:CR17D654B572877EE2 ;
+        :creator            bdr:CR0539168125A3AF4F , bdr:CR997D6B913C660CC6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T25 ;

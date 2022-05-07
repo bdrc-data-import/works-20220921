@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23880 {
-    bda:LG1EB2D5E664E70D57
+    bda:LG607E8E2DC030C551
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -34,18 +34,25 @@ bdg:WA23880 {
         adm:logMessage      "ctc6"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA23880  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23880 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "34/WA23880.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23880 ;
-        adm:logEntry        bda:LG1EB2D5E664E70D57 , bda:LG6B934C03EB71E2C6 , bda:LG8B2B06342923B45F , bda:LGFDC2AAC7DB0805CA ;
+        adm:logEntry        bda:LG607E8E2DC030C551 , bda:LG6B934C03EB71E2C6 , bda:LG8B2B06342923B45F , bda:LGFDC2AAC7DB0805CA , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR607E8E2DC030C551
+    bdr:CRD55503EDA073F2D6
         a                   :AgentAsCreator ;
         :agent              bdr:P284 ;
         :role               bdr:R0ER0019 .
@@ -55,7 +62,7 @@ bdg:WA23880 {
     bdr:WA23880  a          :Work ;
         skos:prefLabel      "gsung 'bum/_blo bzang bstan 'dzin dpal 'byor/"@bo-x-ewts , "the collected works (gsun 'bum) of sen-chen rdo-rje-'chan blo-bzan-bstan-'dzin-dpal-'byor"@en-x-mixed ;
         :catalogInfo        "The collected works of Lozang Tenzein Peljor (1784-1843), the 21st head of the tantric college at Tashilunpo, a monastery of the Gelug sect."@en ;
-        :creator            bdr:CR607E8E2DC030C551 ;
+        :creator            bdr:CRD55503EDA073F2D6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

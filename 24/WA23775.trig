@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23775 {
+    bda:LG5F22DBEB93770C18
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGA460D42B072236C9
         a                   adm:UpdateData ;
         adm:logDate         "2013-08-14T09:06:32.112Z"^^xsd:dateTime ;
@@ -36,10 +40,6 @@ bdg:WA23775 {
         adm:logMessage      "changed language"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGC32A99216D936851
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGD40BBEDE2C5F3EB3
         a                   adm:UpdateData ;
         adm:logDate         "2011-01-14T14:49:49.479Z"^^xsd:dateTime ;
@@ -52,6 +52,12 @@ bdg:WA23775 {
         adm:logMessage      "ctc"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -62,15 +68,16 @@ bdg:WA23775 {
     bda:WA23775  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23775 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "24/WA23775.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23775 ;
-        adm:logEntry        bda:LGA460D42B072236C9 , bda:LGB54CB16FA29D33F0 , bda:LGB670743331F87A37 , bda:LGB70BEE75A070B1D6 , bda:LGC32A99216D936851 , bda:LGD40BBEDE2C5F3EB3 , bda:LGE105A077859ACF35 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG5F22DBEB93770C18 , bda:LGA460D42B072236C9 , bda:LGB54CB16FA29D33F0 , bda:LGB670743331F87A37 , bda:LGB70BEE75A070B1D6 , bda:LGD40BBEDE2C5F3EB3 , bda:LGE105A077859ACF35 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5F22DBEB93770C18
+    bdr:CR64D19A488873B11E
         a                   :AgentAsCreator ;
         :agent              bdr:P5254 ;
         :role               bdr:R0ER0025 .
@@ -80,7 +87,7 @@ bdg:WA23775 {
     bdr:WA23775  a          :Work ;
         skos:altLabel       "byang gter phur pa lugs gsum gcig tu dril ba'i chos skor/"@bo-x-ewts , "phur pa dril sgrub/"@bo-x-ewts , "Phur pa dril sgrub;a collection of Vajrakila rituals performed at the Rdo-rje-brag Monastery and its affiliates throughout Tibet.Rediscovered from their place of concealment by Rig-ʾ dzin Rgod-ldem. Reproduced from MSS. and blockprints belonging to Pema Choden and supplemented by missing texts in the possession of Talung Tsetul Rinpoche."@en-x-mixed ;
         skos:prefLabel      "byang gter rdo rje phur pa'i chos skor/"@bo-x-ewts , "a collection of vajrakila rituals performed at the rdo rje brag monastery and its affiliates throughout tibet"@en-x-mixed ;
-        :creator            bdr:CR5F22DBEB93770C18 ;
+        :creator            bdr:CR64D19A488873B11E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW23775 , bdr:W23775 ;

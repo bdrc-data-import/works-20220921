@@ -75,6 +75,12 @@ bdg:WA1CZ2258 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -92,29 +98,30 @@ bdg:WA1CZ2258 {
     bda:WA1CZ2258  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1CZ2258 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "bf/WA1CZ2258.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1CZ2258 ;
-        adm:logEntry        bda:LG1F4C5D1336ADE804 , bda:LG331FB2EBC8B597B2 , bda:LG8F4AE470B078809E , bda:LG98C62B065E314B26 , bda:LG9C161F1A19D108D5 , bda:LGB00C5B5A18745F09 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1F4C5D1336ADE804 , bda:LG331FB2EBC8B597B2 , bda:LG8F4AE470B078809E , bda:LG98C62B065E314B26 , bda:LG9C161F1A19D108D5 , bda:LGB00C5B5A18745F09 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CRB078AC36BBC7EB43
         a                   :AgentAsCreator ;
-        :agent              bdr:P84 ;
+        :agent              bdr:P80 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRED51A9176C662869
+    bdr:CRDA53755E6375B298
         a                   :AgentAsCreator ;
-        :agent              bdr:P80 ;
+        :agent              bdr:P84 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1CZ2258  a        :Work ;
         skos:altLabel       "dbu ma la 'jug pa'i bstan bcos kyi dgongs pa rab tu gsal ba'i me long dang dbu ma la 'jug pa'i rnam bshad dgongs don rab tu gsal ba/"@bo-x-ewts ;
         skos:prefLabel      "'jug 'grel gsal ba'i me long dang 'jug 'grel gsal ba'i rgyan/"@bo-x-ewts ;
         :catalogInfo        "Commentaries on Chandrakirti's Madhyamakavatara. Emphasizes teachings on emptiness."@en ;
-        :creator            bdr:CRB078AC36BBC7EB43 , bdr:CRED51A9176C662869 ;
+        :creator            bdr:CRB078AC36BBC7EB43 , bdr:CRDA53755E6375B298 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

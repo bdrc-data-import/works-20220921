@@ -18,7 +18,7 @@ bdg:WA23683 {
         adm:logMessage      "added title page title"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGEDBAF40159B93014
+    bda:LGD9052800FF75BD42
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -28,6 +28,12 @@ bdg:WA23683 {
         adm:logMessage      "normalized catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
@@ -39,15 +45,16 @@ bdg:WA23683 {
     bda:WA23683  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23683 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "62/WA23683.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23683 ;
-        adm:logEntry        bda:LG94A3EBA0E22A0A1D , bda:LGEDBAF40159B93014 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG94A3EBA0E22A0A1D , bda:LGD9052800FF75BD42 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD9052800FF75BD42
+    bdr:CR36E14272DF96338C
         a                   :AgentAsCreator ;
         :agent              bdr:P864 ;
         :role               bdr:R0ER0019 .
@@ -58,7 +65,7 @@ bdg:WA23683 {
         skos:altLabel       "rgyal bstan rin po che'i shing rta chen po dpal ldan mar mi dwags po'i ring lugs dpal ldan 'brug pa dkar brgyud pa'i gzhi lam 'bras gsum gyi rnam gzhag mdor bsdus legs bshad lha yi rnga dbyangs/"@bo-x-ewts ;
         skos:prefLabel      "dpal ldan 'brug pa dkar brgyud pa'i gzhi lam 'bras gsum gyi rnam gzhag mdor bsdus/"@bo-x-ewts , "a brief exposition of basis, path and fruit in accordance with the drukpa kargyud tradition of tibetan buddhism"@en ;
         :catalogInfo        "Treatise on the relationship between the base, the path and the fruit. Written by Drukpa Tukse Mipam Shedrub Chokyi Nyinje (1916-1983)."@en ;
-        :creator            bdr:CRD9052800FF75BD42 ;
+        :creator            bdr:CR36E14272DF96338C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW23683 , bdr:W23683 ;

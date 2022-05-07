@@ -36,7 +36,7 @@ bdg:WA29260 {
         adm:logMessage      "changed T#"@en ;
         adm:logWho          bdu:U00007 .
     
-    bda:LGEBDBF9C6CEF6855B
+    bda:LGCD26FB61B62DCCCF
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -46,6 +46,12 @@ bdg:WA29260 {
         adm:logMessage      "normalized catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -71,15 +77,16 @@ bdg:WA29260 {
     bda:WA29260  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29260 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "24/WA29260.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29260 ;
-        adm:logEntry        bda:LG3A4511C2CDB075CF , bda:LG59E96D584E95F5EA , bda:LG88F94C4AEDEF51FC , bda:LG93F4B1F2719779AF , bda:LGEBDBF9C6CEF6855B , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG3A4511C2CDB075CF , bda:LG59E96D584E95F5EA , bda:LG88F94C4AEDEF51FC , bda:LG93F4B1F2719779AF , bda:LGCD26FB61B62DCCCF , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCD26FB61B62DCCCF
+    bdr:CR5515ADADD6790845
         a                   :AgentAsCreator ;
         :agent              bdr:P16 ;
         :role               bdr:R0ER0019 .
@@ -89,7 +96,7 @@ bdg:WA29260 {
     bdr:WA29260  a          :Work ;
         skos:prefLabel      "chos kyi 'khor lo legs par gtan la phab pa theg pa chen po'i tshul 'ong ges zhus pa/"@bo-x-ewts , "Chos kyi ʾkhor lo legs par gtan la phab pa theg pa chen poʾi tshul ʾoṅ ges źus pa źes bya ba bźugs so /ʾJig-rten-gsum-mgon ; ʾBri-guṅ Bkaʾ-brgyud gsuṅ rab ñams gso khaṅ nas bsgrigs."@en-x-mixed ;
         :catalogInfo        "Account of the turning of the wheel of Dharma by the Buddha."@en ;
-        :creator            bdr:CRCD26FB61B62DCCCF ;
+        :creator            bdr:CR5515ADADD6790845 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW00JW501203_725EE0 , bdr:MW1TLMTGA003225 , bdr:MW29260 , bdr:W29260 ;

@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30122 {
+    bda:LG5136C8DA1825CCD0
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG6ADBB1132CAAD62C
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-17T14:31:42.068Z"^^xsd:dateTime ;
@@ -23,10 +27,6 @@ bdg:WA30122 {
         adm:logDate         "2007-12-13T15:12:19.907Z"^^xsd:dateTime ;
         adm:logMessage      "CTC5"@en ;
         adm:logWho          bdu:U00026 .
-    
-    bda:LGC0FC91DA146478F0
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGF5546659CBCD729A
         a                   adm:UpdateData ;
@@ -40,6 +40,12 @@ bdg:WA30122 {
         adm:logMessage      "normalized catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -65,15 +71,16 @@ bdg:WA30122 {
     bda:WA30122  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30122 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "0f/WA30122.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30122 ;
-        adm:logEntry        bda:LG6ADBB1132CAAD62C , bda:LGB35E0F2A85881C9E , bda:LGC0FC91DA146478F0 , bda:LGF5546659CBCD729A , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG5136C8DA1825CCD0 , bda:LG6ADBB1132CAAD62C , bda:LGB35E0F2A85881C9E , bda:LGF5546659CBCD729A , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5136C8DA1825CCD0
+    bdr:CR3EA786D55D93B23A
         a                   :AgentAsCreator ;
         :agent              bdr:P689 ;
         :role               bdr:R0ER0019 .
@@ -84,7 +91,7 @@ bdg:WA30122 {
         skos:altLabel       "'jam gnyen ut+pal gzhad pa'i dga' tshal gzhon nu bung ba'i yig 'phrog"@bo-x-ewts , "The autobiography of the third Rdo-rje-brag Rig-ʼdzin Bskal-bzaṅ-padma-dbaṅ-phyug :being the text of \"Lha rigs kyi btsun pa Bskal bzaṅ padmaʼi miṅ can raṅ ṅid [sic] kyi rtogs par brjod pa ʼjam gñen utpal gźad paʼi dgaʼ tshal gźon nu buṅ baʼi yid ʼphrog\"."@en-x-mixed ;
         skos:prefLabel      "lha rigs kyi btsun pa bskal bzang pad+ma 'i ming can rang nyid kyi rtogs par brjod pa/"@bo-x-ewts , "the autobiography of the third rdo-rje-brag rig-'dzin bskal--bzan-padma'i-dban-phyug"@en-x-mixed ;
         :catalogInfo        "Autobiography of Dorje Drak Rigzin 03 Kelsang Pema."@en ;
-        :creator            bdr:CR5136C8DA1825CCD0 ;
+        :creator            bdr:CR3EA786D55D93B23A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

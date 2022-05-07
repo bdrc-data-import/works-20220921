@@ -18,7 +18,7 @@ bdg:WA29666 {
         adm:logMessage      "corrected according to image"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG64FEF576BB4F7CF6
+    bda:LG9BB2C108635C3ABA
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -49,6 +49,12 @@ bdg:WA29666 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -59,12 +65,13 @@ bdg:WA29666 {
     bda:WA29666  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29666 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "8d/WA29666.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29666 ;
-        adm:logEntry        bda:LG405D032280542FE8 , bda:LG64FEF576BB4F7CF6 , bda:LGF35CF9FB2FCA4119 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG405D032280542FE8 , bda:LG9BB2C108635C3ABA , bda:LGF35CF9FB2FCA4119 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW29666  skos:altLabel  "a brief spellings and elementary guide for reading tibetan script"@en .

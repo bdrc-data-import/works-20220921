@@ -47,36 +47,43 @@ bdg:WA4CZ45309 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA4CZ45309  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ45309 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "65/WA4CZ45309.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ45309 ;
-        adm:logEntry        bda:LG00AFD0984BAC7F83 , bda:LG3ED2BACF5A83279C , bda:LG52BD4089BD06E07F , bda:LG8DAA9AC0D603D780 , bda:LG96419FF1ED13E385 , bda:LGB22D46434E7E50D5 ;
+        adm:logEntry        bda:LG00AFD0984BAC7F83 , bda:LG3ED2BACF5A83279C , bda:LG52BD4089BD06E07F , bda:LG8DAA9AC0D603D780 , bda:LG96419FF1ED13E385 , bda:LGB22D46434E7E50D5 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR16CC901F0FF69E7F
-        a                   :AgentAsCreator ;
-        :agent              bdr:P7847 ;
-        :role               bdr:R0ER0019 .
-    
     bdr:CR20B3888205B332A8
-        a                   :AgentAsCreator ;
-        :agent              bdr:P856 ;
-        :role               bdr:R0ER0023 .
-    
-    bdr:CRBA622E99C358DFBF
         a                   :AgentAsCreator ;
         :agent              bdr:P1046 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CRC1ADD72FD87436C6
+    bdr:CRBA622E99C358DFBF
         a                   :AgentAsCreator ;
         :agent              bdr:P1051 ;
         :role               bdr:R0ER0018 .
+    
+    bdr:CRC1ADD72FD87436C6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7847 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRFBD59CA325446941
+        a                   :AgentAsCreator ;
+        :agent              bdr:P856 ;
+        :role               bdr:R0ER0023 .
     
     bdr:MW4CZ45309  skos:altLabel  "bodhisattvavadanakalpalata"@en .
     
@@ -84,7 +91,7 @@ bdg:WA4CZ45309 {
         skos:altLabel       "byang chub sems dpa'i rtogs pa brjod pa dpag bsam gyi 'khri shing /"@bo-x-ewts , "rgyal ba'i rtogs brjod snyan ngag chen po dpag bsam 'khri shing zhes bbya ba'i bstan bcos skad gnyis shan sbyar/"@bo-x-ewts ;
         skos:prefLabel      "rtogs brjod dpag bsam gyi 'khri shing skad gnyis shan sbyar/"@bo-x-ewts , "bodhisattvavadanakalpalata"@en ;
         :catalogInfo        "A collection of legendary stories about the Bodhisattvas; work on pre-existence of Gautama Buddha."@en ;
-        :creator            bdr:CR16CC901F0FF69E7F , bdr:CR20B3888205B332A8 , bdr:CRBA622E99C358DFBF , bdr:CRC1ADD72FD87436C6 ;
+        :creator            bdr:CR20B3888205B332A8 , bdr:CRBA622E99C358DFBF , bdr:CRC1ADD72FD87436C6 , bdr:CRFBD59CA325446941 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1342 , bdr:T240 ;

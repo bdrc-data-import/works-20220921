@@ -37,6 +37,12 @@ bdg:WA1KG6044 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -68,16 +74,17 @@ bdg:WA1KG6044 {
     bda:WA1KG6044  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG6044 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "52/WA1KG6044.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG6044 ;
-        adm:logEntry        bda:LG31CAACC7FEDF89BD , bda:LG5CF712B994434929 , bda:LG80450B6336871939 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG31CAACC7FEDF89BD , bda:LG5CF712B994434929 , bda:LG80450B6336871939 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG5396 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR2612DB2EF8628042
+    bdr:CR62F75B13F1637BFA
         a                   :AgentAsCreator ;
         :agent              bdr:P343 ;
         :role               bdr:R0ER0019 .
@@ -85,7 +92,7 @@ bdg:WA1KG6044 {
     bdr:WA1KG6044  a        :Work ;
         skos:prefLabel      "gzhon nu zla med kyi gtam rgyud/"@bo-x-ewts , "Gźon nu zla med kyi gtam rgyud /[Mdo-mkhar Źabs-druṅ Tshe-riṅ-dbaṅ-rgyal nas brtsams pa]"@en-x-mixed ;
         :catalogInfo        "Tibetan tale of the legendary character Zhonnu Dame."@en ;
-        :creator            bdr:CR2612DB2EF8628042 ;
+        :creator            bdr:CR62F75B13F1637BFA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T276 ;

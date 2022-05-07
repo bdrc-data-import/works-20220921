@@ -30,7 +30,7 @@ bdg:WA23762 {
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGB081C34EB735CE3B
+    bda:LGD1BFE7E02009ABFF
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -40,6 +40,12 @@ bdg:WA23762 {
         adm:logMessage      "normalized catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -72,15 +78,16 @@ bdg:WA23762 {
     bda:WA23762  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23762 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "38/WA23762.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23762 ;
-        adm:logEntry        bda:LG8BAA5EF28D954B72 , bda:LG94A6670BE4759D30 , bda:LGA9A11B065F678E63 , bda:LGB081C34EB735CE3B , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG8BAA5EF28D954B72 , bda:LG94A6670BE4759D30 , bda:LGA9A11B065F678E63 , bda:LGD1BFE7E02009ABFF , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD1BFE7E02009ABFF
+    bdr:CR7652166584862000
         a                   :AgentAsCreator ;
         :agent              bdr:P331 ;
         :role               bdr:R0ER0019 .
@@ -91,7 +98,7 @@ bdg:WA23762 {
         skos:altLabel       "Principles of Lamaist pharmacognosy :being the texts of the Dri med shel gong, Dri med shel phreng, and the Lag len gces bsdus /of Dil-dmar dge-bshes Bstan-ʼdzin-phun-tshogs."@en-x-mixed ;
         skos:prefLabel      "dri med shel gong dang dri med shel phreng dang lag len gces bsdus/"@bo-x-ewts , "principles of lamaist pharmacognosy : being the texts of the dri med shel gong, dri med shel phreng, and the lag len gces bsdus"@en-x-mixed ;
         :catalogInfo        "Two classics of Tibetan medical science by the 18th century Dilmar Geshe Tenzin Puntsok. Original publication from unclear blockprints from the Chakpori printery in Lhasa."@en ;
-        :creator            bdr:CRD1BFE7E02009ABFF ;
+        :creator            bdr:CR7652166584862000 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW23762 , bdr:W23762 ;

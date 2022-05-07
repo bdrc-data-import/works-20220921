@@ -49,6 +49,12 @@ bdg:WA2DB4588 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMF03D5361F1
         a                   adm:UpdateData ;
         adm:logDate         "2014-10-15T17:56:23.536Z"^^xsd:dateTime ;
@@ -59,15 +65,16 @@ bdg:WA2DB4588 {
     bda:WA2DB4588  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2DB4588 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "30/WA2DB4588.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2DB4588 ;
-        adm:logEntry        bda:LG18B4C1145148C870 , bda:LG4EF98C5A36FE335E , bda:LG5247374ADC486DB2 , bda:LG859E81E823429C16 , bda:LG9D091E1C96A266CD , bda:LGIM4BF5F96E12 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG18B4C1145148C870 , bda:LG4EF98C5A36FE335E , bda:LG5247374ADC486DB2 , bda:LG859E81E823429C16 , bda:LG9D091E1C96A266CD , bda:LGIM4BF5F96E12 , bda:LGIM8A299A84 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9C5B996903295050
+    bdr:CREAEFFD74812ACB80
         a                   :AgentAsCreator ;
         :agent              bdr:P1573 ;
         :role               bdr:R0ER0019 .
@@ -76,7 +83,7 @@ bdg:WA2DB4588 {
         skos:altLabel       "bstan bcos mngon par rtogs pa'i rgyan 'grel pa dang bcas pa'i mtha' dpyod legs par bshad pa pad+ma dkar po'i phreng ba/"@bo-x-ewts , "phar phyin mtha' dpyod/"@bo-x-ewts , "phar phyin mtha' dpyod legs bshad pad dkar 'phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "ser smad phar phyin mtha' dpyod/"@bo-x-ewts ;
         :catalogInfo        "Analytic commentary on the Abhisamyalankara."@en ;
-        :creator            bdr:CR9C5B996903295050 ;
+        :creator            bdr:CREAEFFD74812ACB80 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2DB4588 , bdr:W2DB4588 ;

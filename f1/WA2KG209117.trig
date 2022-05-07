@@ -24,18 +24,25 @@ bdg:WA2KG209117 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA2KG209117  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG209117 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "f1/WA2KG209117.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG209117 ;
-        adm:logEntry        bda:LG1A1DB86F945C8019 , bda:LG88D00B5A77F97AE7 ;
+        adm:logEntry        bda:LG1A1DB86F945C8019 , bda:LG88D00B5A77F97AE7 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB18C0788D590B738
+    bdr:CRBC93454DCC3AA692
         a                   :AgentAsCreator ;
         :agent              bdr:P4929 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +51,7 @@ bdg:WA2KG209117 {
         skos:altLabel       "dwags grwa'i phar phyin zur bkol yig cha/"@bo-x-ewts ;
         skos:prefLabel      "dwags po grwa tshang gi phar phyin zur bkol yig cha dge 'dun nyi shu dang / rten 'brel mtha' dpyod bcas/"@bo-x-ewts ;
         :catalogInfo        "Obligatory curricular texts (yig cha) prescribed for the study of Paramita, a section of the Abhisamayalankara \"twenty kinds of saints\" and \"analysis of interdependence\" in Dagpp Sherupling monastery and it's affiliates, written by Dagpo Khedrup Jampa Tenpa."@en ;
-        :creator            bdr:CRB18C0788D590B738 ;
+        :creator            bdr:CRBC93454DCC3AA692 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2KG209117 , bdr:W2KG209117 ;

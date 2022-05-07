@@ -13,8 +13,10 @@
 
 bdg:WA19674 {
     bda:LG125F8DB1187541CE
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-06T14:53:34.831Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG61A56B99F3C0B43C
         a                   adm:UpdateData ;
@@ -26,6 +28,10 @@ bdg:WA19674 {
         a                   adm:UpdateData ;
         adm:logDate         "2012-02-01T11:46:15.173Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGA8C638F79FB41E91
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -51,23 +57,23 @@ bdg:WA19674 {
     bda:WA19674  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19674 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "db/WA19674.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19674 ;
-        adm:logEntry        bda:LG125F8DB1187541CE , bda:LG61A56B99F3C0B43C , bda:LGA02A772C4C23DF72 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG125F8DB1187541CE , bda:LG61A56B99F3C0B43C , bda:LGA02A772C4C23DF72 , bda:LGA8C638F79FB41E91 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR31E0B4AB3DD72FF7
         a                   :AgentAsCreator ;
-        :agent              bdr:P7539 ;
-        :role               bdr:R0ER0011 .
-    
-    bdr:CRA8C638F79FB41E91
-        a                   :AgentAsCreator ;
         :agent              bdr:P6064 ;
         :role               bdr:R0ER0025 .
+    
+    bdr:CR80003FB8A7AC5B8E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7539 ;
+        :role               bdr:R0ER0011 .
     
     bdr:MW19674  skos:altLabel  "rdzogs chen yan rtse lta ba thog dbab rtsa 'grel : precepts of bonpo dzogchen practice"@en-x-mixed .
     
@@ -75,7 +81,7 @@ bdg:WA19674 {
         skos:altLabel       "Rdzogs chen yaṅ rtse lta ba thog dbab rtsa ʾgrel :precepts of Bonpo Dzogchen practice received in a vision of Tshe-dbaṅ-rig-ʾdzin /by Rig-pa-raṅ-śar of Rgyal-roṅ."@en-x-mixed ;
         skos:prefLabel      "rdzogs chen yang rtse lta ba thog dbab rtsa 'grel/"@bo-x-ewts , "rdzogs chen yan rtse lta ba thog dbab rtsa 'grel : precepts of bonpo dzogchen practice"@en-x-mixed ;
         :catalogInfo        "Dzogchen cycle of Bon practices. Scanned under a training cooperation between TBRC and the Bon Foundation of America. Made available through the Tibetan Buddhist Resource Center with authorization by Menri Trizin 33 Lungtok Tenpai Nyima and the gracious support of the Bon Foundation."@en ;
-        :creator            bdr:CR31E0B4AB3DD72FF7 , bdr:CRA8C638F79FB41E91 ;
+        :creator            bdr:CR31E0B4AB3DD72FF7 , bdr:CR80003FB8A7AC5B8E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW19674 , bdr:W19674 ;

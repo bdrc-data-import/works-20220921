@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29509 {
-    bda:LGBDD35F303E5373D9
+    bda:LG88F7A410689A4F52
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -56,18 +56,25 @@ bdg:WA29509 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA29509  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29509 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "93/WA29509.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29509 ;
-        adm:logEntry        bda:LGBDD35F303E5373D9 , bda:LGF140C8EEDDD837EC , bda:LGF3BD018FD1D79F93 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG88F7A410689A4F52 , bda:LGF140C8EEDDD837EC , bda:LGF3BD018FD1D79F93 , bda:LGIM01FF8512D7 , bda:LGIM093A1A0447 , bda:LGIM685E38743B , bda:LGIM8647D1C7AE , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR88F7A410689A4F52
+    bdr:CR7DCACD3880AA85B7
         a                   :AgentAsCreator ;
         :agent              bdr:P9780 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +84,7 @@ bdg:WA29509 {
     bdr:WA29509  a          :Work ;
         skos:altLabel       "tshe ring bzo rigs slob grwa'i bod kyi ri mo sngon 'gro'i ma dpe kun khyab nyi 'bum/"@bo-x-ewts ;
         skos:prefLabel      "bod kyi ri mo sngon 'gro'i ma dpe kun khyab nyi 'bum/"@bo-x-ewts , "the sun : tsering art school manual for the basic drawing"@en ;
-        :creator            bdr:CR88F7A410689A4F52 ;
+        :creator            bdr:CR7DCACD3880AA85B7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29509 , bdr:W29509 ;

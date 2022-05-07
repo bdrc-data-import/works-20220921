@@ -36,23 +36,30 @@ bdg:WA1KG8721 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG8721  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG8721 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "fb/WA1KG8721.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG8721 ;
-        adm:logEntry        bda:LG009B7BF6047995B0 , bda:LG2D790B6D25F00D9D , bda:LG47CC184FC62141DD , bda:LGDBA6152320753096 ;
+        adm:logEntry        bda:LG009B7BF6047995B0 , bda:LG2D790B6D25F00D9D , bda:LG47CC184FC62141DD , bda:LGDBA6152320753096 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRBB347431A2FB02C0
+    bdr:CR21F29478DFAFE7E9
         a                   :AgentAsCreator ;
         :agent              bdr:P3389 ;
         :role               bdr:R0ER0028 .
     
-    bdr:CRE6D711112D235290
+    bdr:CRBB347431A2FB02C0
         a                   :AgentAsCreator ;
         :agent              bdr:P3379 ;
         :role               bdr:R0ER0019 .
@@ -62,7 +69,7 @@ bdg:WA1KG8721 {
     bdr:WA1KG8721  a        :Work ;
         skos:prefLabel      "jo bo rje lha gcig dpal ldan a ti sha'i rnam thar bla ma'i yon tan chos kyi 'byung gnas sogs bka' gdams rin po che'i gleg bam/ (bkra shis lhun po'i par rnying /)"@bo-x-ewts , "biography of atisa and his disciple 'brom-ston (old tashilhunpo edition)"@en ;
         :catalogInfo        "Collection teachings and stories of a great Indain master atisha (982-1054) and his disciples on the precious practice of Kadampa tradition."@en ;
-        :creator            bdr:CRBB347431A2FB02C0 , bdr:CRE6D711112D235290 ;
+        :creator            bdr:CR21F29478DFAFE7E9 , bdr:CRBB347431A2FB02C0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1342 ;

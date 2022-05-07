@@ -24,18 +24,25 @@ bdg:WA1KG26107 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG26107  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG26107 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "fc/WA1KG26107.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG26107 ;
-        adm:logEntry        bda:LG842208D46641F154 , bda:LGD1A534341646E44A ;
+        adm:logEntry        bda:LG842208D46641F154 , bda:LGD1A534341646E44A , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR588B5909B5EF5064
+    bdr:CRE136ECAF6F81224C
         a                   :AgentAsCreator ;
         :agent              bdr:P888 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +51,7 @@ bdg:WA1KG26107 {
         skos:altLabel       "zab khrid mtha' dag gi sngon 'gro la nye bar mkho ba'i zin bris thar lam mchog gi them skas/"@bo-x-ewts ;
         skos:prefLabel      "'brug pa sangs rgyas rdo rje'i gsung sngon 'gro'i skor/"@bo-x-ewts ;
         :catalogInfo        "Important notes required in preliminary for all the profound instructions."@en ;
-        :creator            bdr:CR588B5909B5EF5064 ;
+        :creator            bdr:CRE136ECAF6F81224C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1478 ;

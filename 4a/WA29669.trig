@@ -18,7 +18,7 @@ bdg:WA29669 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LGD2227294F3A6C5A3
+    bda:LGE32A44EB6B9D746A
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -34,6 +34,12 @@ bdg:WA29669 {
         adm:logMessage      "normalized catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
@@ -52,12 +58,13 @@ bdg:WA29669 {
     bda:WA29669  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29669 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "4a/WA29669.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29669 ;
-        adm:logEntry        bda:LG95B2B2F887725556 , bda:LGD2227294F3A6C5A3 , bda:LGFA49DE275645BFD5 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG95B2B2F887725556 , bda:LGE32A44EB6B9D746A , bda:LGFA49DE275645BFD5 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW29669  skos:altLabel  "collected manuals for prediction"@en .

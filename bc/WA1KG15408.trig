@@ -31,6 +31,12 @@ bdg:WA1KG15408 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMC3134826EB
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:13:59.68Z"^^xsd:dateTime ;
@@ -41,20 +47,21 @@ bdg:WA1KG15408 {
     bda:WA1KG15408  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG15408 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "bc/WA1KG15408.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG15408 ;
-        adm:logEntry        bda:LG237C8F4E3548F54E , bda:LGB10F018BA5F684A9 , bda:LGIM4BF5F96E12 , bda:LGIMC3134826EB ;
+        adm:logEntry        bda:LG237C8F4E3548F54E , bda:LGB10F018BA5F684A9 , bda:LGIM4BF5F96E12 , bda:LGIM8A299A84 , bda:LGIMC3134826EB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CREB717245A43F971D
+    bdr:CRD19E72E165564F20
         a                   :AgentAsCreator ;
         :agent              bdr:P1638 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVD19E72E165564F20
+    bdr:EV0125E5E0526AB6C6
         a                   :CompletedEvent ;
         :onYear             "1919"^^xsd:gYear .
     
@@ -64,10 +71,10 @@ bdg:WA1KG15408 {
         skos:altLabel       "'dzam gling byang phyogs chen po hor gyi rgyal khams kyi rtogs pa brjod pa'i bstan bcos chen po dpyod ldan mgu byed ngo mtshar gser gyi deb ther/"@bo-x-ewts , "The golden annals of Lamaism :being the original Tibetan text of the Hor-chos-ḥbyuṅ of Blo-bzaṅ-rta-mgrin entitled ʾDzam gliṅ byaṅ phyogs chen po Hor gyi rgyal khams kyi rtogs pa brjod paʾi bstan bcos chen po dpyod ldan mgu byed no mtshar gser gyi reb ther /edited by Lokesh Chandra."@en-x-mixed ;
         skos:prefLabel      "hor chos 'byung /"@bo-x-ewts , "the golden annals of lamaism : being the original tibetan text of the hor-chos-'byung of blo-bzang-rta-mgrin entitled 'dzam gling byang phyogs chen po hor gyi rgyal khams kyi rtogs pa brjod pa'i bstan bcos chen po dpyod ldan mgu byed ngo mtshar gser gyi deb ther/"@en ;
         :catalogInfo        "Famous history of Buddhism in the Mongol lands"@en ;
-        :creator            bdr:CREB717245A43F971D ;
+        :creator            bdr:CRD19E72E165564F20 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVD19E72E165564F20 ;
+        :workEvent          bdr:EV0125E5E0526AB6C6 ;
         :workGenre          bdr:T12 ;
         :workHasInstance    bdr:MW1KG15408 , bdr:W1KG15408 ;
         :workIsAbout        bdr:G584 .

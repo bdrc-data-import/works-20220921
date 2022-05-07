@@ -24,10 +24,6 @@ bdg:WA30452 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
     
-    bda:LG97B68370CED3FF2A
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG97CD55755BED54E7
         a                   adm:UpdateData ;
         adm:logDate         "2015-02-05T14:11:49.534Z"^^xsd:dateTime ;
@@ -40,6 +36,10 @@ bdg:WA30452 {
         adm:logMessage      "scan complete"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGBB229192E12C5792
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGBD575987C44984DC
         a                   adm:UpdateData ;
         adm:logDate         "2010-10-05T15:51:15.666Z"^^xsd:dateTime ;
@@ -51,6 +51,12 @@ bdg:WA30452 {
         adm:logDate         "2010-10-05T16:01:00.511Z"^^xsd:dateTime ;
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00021 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -76,15 +82,16 @@ bdg:WA30452 {
     bda:WA30452  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30452 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "51/WA30452.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30452 ;
-        adm:logEntry        bda:LG1452FB58341DAEF8 , bda:LG3F32140F31BBB9AE , bda:LG97B68370CED3FF2A , bda:LG97CD55755BED54E7 , bda:LG9B9F0114EF5B952C , bda:LGBD575987C44984DC , bda:LGE5A393CFD41CDAD6 , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG1452FB58341DAEF8 , bda:LG3F32140F31BBB9AE , bda:LG97CD55755BED54E7 , bda:LG9B9F0114EF5B952C , bda:LGBB229192E12C5792 , bda:LGBD575987C44984DC , bda:LGE5A393CFD41CDAD6 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRBB229192E12C5792
+    bdr:CR9F47139577043303
         a                   :AgentAsCreator ;
         :agent              bdr:P3610 ;
         :role               bdr:R0ER0019 .
@@ -94,7 +101,7 @@ bdg:WA30452 {
     bdr:WA30452  a          :Work ;
         skos:altLabel       "gso dpyad bdud rtsi'i 'khrul med ngos 'dzin bzo rig me long du rnam par shar pa mdzes mtshar mig rgyan/"@bo-x-ewts , "An illustrated Tibeto-Mongolian materia medica."@en-x-mixed , "An illustrated Tibeto-Mongolian materia medica of Ayurveda of ʼJam-dpal-rdo-rje of Mongolia /edited by Lokesh Chandra from the collection of Z. D. Gomboev ; with a foreword by E. Gene Smith."@en-x-mixed ;
         skos:prefLabel      "dri med shel phreng nas bshad pa'i sman gyi 'khrungs dpe mdzes mtshar mig rgyan/"@bo-x-ewts , "an illustrated tibeto mongolian materia medica ayurveda 'jam dpal rdo rje mongolia"@en ;
-        :creator            bdr:CRBB229192E12C5792 ;
+        :creator            bdr:CR9F47139577043303 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW30452 , bdr:W30452 ;

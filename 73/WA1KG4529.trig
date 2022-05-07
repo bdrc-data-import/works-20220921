@@ -44,6 +44,12 @@ bdg:WA1KG4529 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -54,30 +60,31 @@ bdg:WA1KG4529 {
     bda:WA1KG4529  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4529 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "73/WA1KG4529.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4529 ;
-        adm:logEntry        bda:LG139568442C93C096 , bda:LG6BCB676F3FD49D04 , bda:LGF949FF4B9EF758D7 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG139568442C93C096 , bda:LG6BCB676F3FD49D04 , bda:LGF949FF4B9EF758D7 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1F84D859E6FA7FB1
+    bdr:CR6A86A2C069A5A2CF
         a                   :AgentAsCreator ;
         :agent              bdr:P9236 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV6A86A2C069A5A2CF
+    bdr:EVB5B2D184BD266B2E
         a                   :CompletedEvent ;
         :onYear             "1998"^^xsd:gYear .
     
     bdr:WA1KG4529  a        :Work ;
         skos:prefLabel      "'dul 'dzin gyi gzhi gsum dang mchan sbyar gser sbyangs gtso ma'i do shal/"@bo-x-ewts ;
         :catalogInfo        "On the three basic disciplinary codes practiced by Buddhist monks and nuns during purification peridos (gso sbyong), summer retreat (dbyar gnas), and the end of summer retreat (dgag dbye) observance periods."@en ;
-        :creator            bdr:CR1F84D859E6FA7FB1 ;
+        :creator            bdr:CR6A86A2C069A5A2CF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV6A86A2C069A5A2CF ;
+        :workEvent          bdr:EVB5B2D184BD266B2E ;
         :workHasInstance    bdr:MW1KG4529 , bdr:W1KG4529 ;
         :workIsAbout        bdr:T55 , bdr:T809 , bdr:T949 .
 }

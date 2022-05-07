@@ -18,28 +18,35 @@ bdg:WA29665 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LG0A69C9893EF63E4C
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG29E12F40ADDA93AC
         a                   adm:UpdateData ;
         adm:logDate         "2015-09-14T15:16:58.825Z"^^xsd:dateTime ;
         adm:logMessage      "selected topic dris lan"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGC456F3ACD7EA7055
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA29665  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29665 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "d9/WA29665.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29665 ;
-        adm:logEntry        bda:LG01B28E79A278D477 , bda:LG0A69C9893EF63E4C , bda:LG29E12F40ADDA93AC ;
+        adm:logEntry        bda:LG01B28E79A278D477 , bda:LG29E12F40ADDA93AC , bda:LGC456F3ACD7EA7055 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC456F3ACD7EA7055
+    bdr:CR981835008BBA962F
         a                   :AgentAsCreator ;
         :agent              bdr:P9920 ;
         :role               bdr:R0ER0019 .
@@ -49,7 +56,7 @@ bdg:WA29665 {
     bdr:WA29665  a          :Work ;
         skos:prefLabel      "rtags 'jug dka' gnad gsal ba'i me long gi dri lan dbyangs can dgyes pa'i mchod sprin/"@bo-x-ewts , "a brief spellings and elementary guide for reading tibetan script"@en ;
         :catalogInfo        "The Tibetan grammar text rtags 'jug dka' gnad gsal ba'i me long on questions and answers form."@en ;
-        :creator            bdr:CRC456F3ACD7EA7055 ;
+        :creator            bdr:CR981835008BBA962F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 ;

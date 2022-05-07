@@ -30,18 +30,25 @@ bdg:WA1KG21711 {
         adm:logMessage      "reviwed by LS, KG, Cn and KL"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG21711  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG21711 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "99/WA1KG21711.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG21711 ;
-        adm:logEntry        bda:LG1239ECA1DFA32B3B , bda:LG5CA7FE2855472961 , bda:LG869FEE5AF353B47D ;
+        adm:logEntry        bda:LG1239ECA1DFA32B3B , bda:LG5CA7FE2855472961 , bda:LG869FEE5AF353B47D , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF866215E4891B49E
+    bdr:CR61EC6C4CB6000F11
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG21722 ;
         :role               bdr:R0ER0019 .
@@ -51,7 +58,7 @@ bdg:WA1KG21711 {
     bdr:WA1KG21711  a       :Work ;
         skos:prefLabel      "bod gangs can pa'i yul goms gshis lugs/"@bo-x-ewts , "tibetan culture"@en ;
         :catalogInfo        "On Tibetan culture and tradition."@en ;
-        :creator            bdr:CRF866215E4891B49E ;
+        :creator            bdr:CR61EC6C4CB6000F11 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG21711 , bdr:W1KG21711 ;

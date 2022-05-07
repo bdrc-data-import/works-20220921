@@ -51,6 +51,12 @@ bdg:WA1KG5871 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -61,25 +67,26 @@ bdg:WA1KG5871 {
     bda:WA1KG5871  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG5871 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "a2/WA1KG5871.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG5871 ;
-        adm:logEntry        bda:LG10DAA1DBE5189F28 , bda:LG5ABFA873787721DD , bda:LG68AB78309B1C1A1A , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG10DAA1DBE5189F28 , bda:LG5ABFA873787721DD , bda:LG68AB78309B1C1A1A , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3CBBB07C541819AD
+    bdr:CR7BEAA90FB815EDF1
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG5874 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR7BEAA90FB815EDF1
+    bdr:CRA8B528843F62CDE6
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG5869 ;
         :role               bdr:R0ER0026 .
     
-    bdr:CRA8B528843F62CDE6
+    bdr:CRB7F9327EC75DECD2
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG11741 ;
         :role               bdr:R0ER0026 .
@@ -90,7 +97,7 @@ bdg:WA1KG5871 {
         skos:altLabel       "slob dpon b+har+t+r-iharis mdzad pa'i lugs brgya pa/"@bo-x-ewts ;
         skos:prefLabel      "lugs brgya pa/"@bo-x-ewts , "nitisatakam of acarya bhartrhari"@en ;
         :catalogInfo        "Didactic verses of the Indian master Bhartrhari. Translated and edited into Tibetan by Lobzang Norbu Shastri and Tenzin Donyod."@en ;
-        :creator            bdr:CR3CBBB07C541819AD , bdr:CR7BEAA90FB815EDF1 , bdr:CRA8B528843F62CDE6 ;
+        :creator            bdr:CR7BEAA90FB815EDF1 , bdr:CRA8B528843F62CDE6 , bdr:CRB7F9327EC75DECD2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T2033 ;

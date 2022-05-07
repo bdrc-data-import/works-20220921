@@ -24,18 +24,25 @@ bdg:WA1KG23617 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG23617  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG23617 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "47/WA1KG23617.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG23617 ;
-        adm:logEntry        bda:LG916A8AA81F69FADE , bda:LGD86F25B5AC8E40A8 ;
+        adm:logEntry        bda:LG916A8AA81F69FADE , bda:LGD86F25B5AC8E40A8 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR49B52632EDA97845
+    bdr:CR3380F22D895A40B3
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG23630 ;
         :role               bdr:R0ER0019 .
@@ -43,7 +50,7 @@ bdg:WA1KG23617 {
     bdr:WA1KG23617  a       :Work ;
         skos:prefLabel      "bya tshig sbyong thabs gsar ma grangs nges kun grol/"@bo-x-ewts ;
         :catalogInfo        "On the account of study Tibetan verbs."@en ;
-        :creator            bdr:CR49B52632EDA97845 ;
+        :creator            bdr:CR3380F22D895A40B3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG23617 , bdr:W1KG23617 ;

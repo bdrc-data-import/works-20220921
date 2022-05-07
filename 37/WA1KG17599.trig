@@ -24,18 +24,25 @@ bdg:WA1KG17599 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG17599  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG17599 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "37/WA1KG17599.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG17599 ;
-        adm:logEntry        bda:LG9F46A075320C80E1 , bda:LGF6CDBD976BF7BF21 ;
+        adm:logEntry        bda:LG9F46A075320C80E1 , bda:LGF6CDBD976BF7BF21 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5AAFCF7FD54BB122
+    bdr:CR13FCEB4D7D727875
         a                   :AgentAsCreator ;
         :agent              bdr:P966 ;
         :role               bdr:R0ER0019 .
@@ -43,7 +50,7 @@ bdg:WA1KG17599 {
     bdr:WA1KG17599  a       :Work ;
         skos:prefLabel      "dpal sa skya'i 'khon gdung 'jig med rdo rje rin po che'i zhabs brtan rdo rje'i sgra dbyangs sogs/"@bo-x-ewts ;
         :catalogInfo        "Selection of writings of a Sakya master Chogye Trichen Ngawang Khyenrab Thupten Lekshe Gyatso (1920-2007)"@en ;
-        :creator            bdr:CR5AAFCF7FD54BB122 ;
+        :creator            bdr:CR13FCEB4D7D727875 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;

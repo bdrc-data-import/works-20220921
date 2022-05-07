@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30179 {
-    bda:LG0E20607D162C731B
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG259A72AE5A3CD6C5
         a                   adm:UpdateData ;
         adm:logDate         "2009-01-07T16:15:35.107Z"^^xsd:dateTime ;
@@ -40,6 +36,10 @@ bdg:WA30179 {
         adm:logMessage      "added bibliographical title"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG9DE869E68270C254
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGB4F4DE145D7DD843
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2008-08-25T10:33:24.31Z"^^xsd:dateTime ;
@@ -52,6 +52,12 @@ bdg:WA30179 {
         adm:logMessage      "normalized catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
@@ -70,23 +76,24 @@ bdg:WA30179 {
     bda:WA30179  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30179 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "37/WA30179.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30179 ;
-        adm:logEntry        bda:LG0E20607D162C731B , bda:LG259A72AE5A3CD6C5 , bda:LG31852AAC45E0CE9B , bda:LG525208A511E8E3E0 , bda:LG5518FBA3E1ADD880 , bda:LGB4F4DE145D7DD843 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
+        adm:logEntry        bda:LG259A72AE5A3CD6C5 , bda:LG31852AAC45E0CE9B , bda:LG525208A511E8E3E0 , bda:LG5518FBA3E1ADD880 , bda:LG9DE869E68270C254 , bda:LGB4F4DE145D7DD843 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR3BC582B976066272
         a                   :AgentAsCreator ;
-        :agent              bdr:P1550 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR9DE869E68270C254
-        a                   :AgentAsCreator ;
         :agent              bdr:P4358 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRE1DFDA346904E06D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1550 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW30179  skos:altLabel  "the obligatory texts (yig cha) prescribed for the study of madhyamika at dga' ldan byan rtse"@en .
     
@@ -94,7 +101,7 @@ bdg:WA30179 {
         skos:altLabel       "dbu ma la 'jug pa'i rnam bshad dgongs pa rab gsal gyi dka' ba'i gnas gsal bar byed pa legs bshad skal bzang mgul rgyan/"@bo-x-ewts , "dbu ma la 'jug pa'i rnam bshad thar 'dod 'jug ngogs zla ba'i dgongs rgyan/"@bo-x-ewts , "The obligatory texts (yig cha) prescribed for the study of Madhyamika at Dgaʾ-ldan Byan-rtse /by Khyuṅ-phrug Byams-pa-bkra-śis and Sgom-sde Śar-pa Nam-mkhaʾ-rgyal-mtshan."@en-x-mixed ;
         skos:prefLabel      "dga' ldan byang rtse'i dbu ma'i yig cha/"@bo-x-ewts , "the obligatory texts (yig cha) prescribed for the study of madhyamika at dga' ldan byan rtse"@en ;
         :catalogInfo        "Obligatory curricular texts (yig cha) prescribed for the study of Madhyamaka philosophy in the Ganden Jentse and it's affiliates."@en ;
-        :creator            bdr:CR3BC582B976066272 , bdr:CR9DE869E68270C254 ;
+        :creator            bdr:CR3BC582B976066272 , bdr:CRE1DFDA346904E06D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW30179 , bdr:W30179 ;

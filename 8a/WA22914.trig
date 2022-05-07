@@ -24,28 +24,35 @@ bdg:WA22914 {
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGC5B3BBDC80007B55
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGDC7A2155C5A4317C
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2014-11-03T16:41:33.264Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGF1A3565D94674C24
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA22914  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22914 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "8a/WA22914.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22914 ;
-        adm:logEntry        bda:LG64EC03EF9039D6B3 , bda:LG8139C4472633B08A , bda:LGC5B3BBDC80007B55 , bda:LGDC7A2155C5A4317C ;
+        adm:logEntry        bda:LG64EC03EF9039D6B3 , bda:LG8139C4472633B08A , bda:LGDC7A2155C5A4317C , bda:LGF1A3565D94674C24 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF1A3565D94674C24
+    bdr:CR674006B01DF64D9E
         a                   :AgentAsCreator ;
         :agent              bdr:P3217 ;
         :role               bdr:R0ER0019 .
@@ -54,7 +61,7 @@ bdg:WA22914 {
         skos:altLabel       "Ācāryakriyāsamuccaya"@sa-x-ndia ;
         skos:prefLabel      "rdo rje slob dpon gyi bya ba kun las btus pa/"@bo-x-ewts , "kriya-samuccaya : a sanskrit manuscript from nepal containing a collection of tantric ritual by jagaddarpana"@en , "kriyasamuccaya"@sa-alalc97 ;
         :catalogInfo        "Collection of important rituals and Tantric initiations."@en ;
-        :creator            bdr:CRF1A3565D94674C24 ;
+        :creator            bdr:CR674006B01DF64D9E ;
         :isRoot             true ;
         :language           bdr:LangEn , bdr:LangSa ;
         :workGenre          bdr:T977 ;

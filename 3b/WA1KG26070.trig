@@ -24,31 +24,38 @@ bdg:WA1KG26070 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG26070  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG26070 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "3b/WA1KG26070.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG26070 ;
-        adm:logEntry        bda:LG691188E492F59B15 , bda:LGA7A9D7E82D795D5F ;
+        adm:logEntry        bda:LG691188E492F59B15 , bda:LGA7A9D7E82D795D5F , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR505EB4AF8C306917
         a                   :AgentAsCreator ;
-        :agent              bdr:P1KG26077 ;
-        :role               bdr:R0ER0014 .
-    
-    bdr:CR8106EFC9EE197A5B
-        a                   :AgentAsCreator ;
         :agent              bdr:P4954 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRCBE973BCD704E311
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG26077 ;
+        :role               bdr:R0ER0014 .
     
     bdr:WA1KG26070  a       :Work ;
         skos:prefLabel      "lugs kyi bstan bcos skye bo gso ba'i thigs pa'i 'grel pa ya rabs de nyid snang ba/"@bo-x-ewts ;
         :catalogInfo        "Commentary on Nagarjuna's Nitisastra Jana-posana bindu by Shisa Drungchen Konchog Tenzin Gyatso."@en ;
-        :creator            bdr:CR505EB4AF8C306917 , bdr:CR8106EFC9EE197A5B ;
+        :creator            bdr:CR505EB4AF8C306917 , bdr:CRCBE973BCD704E311 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T2033 ;

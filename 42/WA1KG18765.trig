@@ -38,36 +38,43 @@ bdg:WA1KG18765 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG18765  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG18765 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "42/WA1KG18765.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG18765 ;
-        adm:logEntry        bda:LG126705711DD2EAC2 , bda:LG6DD59E0E93477FA8 , bda:LGIM206EC9B06D , bda:LGIM4D99209C62 ;
+        adm:logEntry        bda:LG126705711DD2EAC2 , bda:LG6DD59E0E93477FA8 , bda:LGIM206EC9B06D , bda:LGIM4D99209C62 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR35E235DE86D60698
+    bdr:CR34119B857C4803ED
         a                   :AgentAsCreator ;
         :agent              bdr:P2984 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRC72CA3351E9464BE
+    bdr:CR35E235DE86D60698
         a                   :AgentAsCreator ;
-        :agent              bdr:P856 ;
+        :agent              bdr:P2382 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRE28158F7047E71F8
         a                   :AgentAsCreator ;
-        :agent              bdr:P2382 ;
+        :agent              bdr:P856 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1KG18765  a       :Work ;
         skos:prefLabel      "zha rnam bra gsum gyi sum rtags 'grel pa phyogs bsgrigs mun sel sgron me/"@bo-x-ewts ;
         :catalogInfo        "Selection of commentaries on root text of Tibetan grammar."@en ;
-        :creator            bdr:CR35E235DE86D60698 , bdr:CRC72CA3351E9464BE , bdr:CRE28158F7047E71F8 ;
+        :creator            bdr:CR34119B857C4803ED , bdr:CR35E235DE86D60698 , bdr:CRE28158F7047E71F8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T132 ;

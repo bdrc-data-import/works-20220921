@@ -49,6 +49,12 @@ bdg:WA00KG03671 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -59,15 +65,16 @@ bdg:WA00KG03671 {
     bda:WA00KG03671  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG03671 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "9e/WA00KG03671.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG03671 ;
-        adm:logEntry        bda:LG217BEC4D1B9F77C7 , bda:LG3689F94E0AACA54B , bda:LG75E399143AC8A39A , bda:LG7CCE70FCEFA22634 , bda:LGDC87480122D1ECB9 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG217BEC4D1B9F77C7 , bda:LG3689F94E0AACA54B , bda:LG75E399143AC8A39A , bda:LG7CCE70FCEFA22634 , bda:LGDC87480122D1ECB9 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CREE92C31E2EC1AA89
+    bdr:CRB68B06DE1DFB0BF8
         a                   :AgentAsCreator ;
         :agent              bdr:P6672 ;
         :role               bdr:R0ER0019 .
@@ -75,7 +82,7 @@ bdg:WA00KG03671 {
     bdr:WA00KG03671  a      :Work ;
         skos:prefLabel      "sgrung lde'u bon gsum gyi gtam e ma ho/"@bo-x-ewts ;
         :catalogInfo        "On pre-Buddhist culture in Tibet."@bo-x-ewts ;
-        :creator            bdr:CREE92C31E2EC1AA89 ;
+        :creator            bdr:CRB68B06DE1DFB0BF8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T216 ;

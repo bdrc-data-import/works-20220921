@@ -30,18 +30,25 @@ bdg:WA1KG13770 {
         adm:logMessage      "added T# of food"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG13770  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG13770 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "30/WA1KG13770.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG13770 ;
-        adm:logEntry        bda:LG880103DB2A44F244 , bda:LG883FD80D90B03E3F , bda:LGC59DAF52819A1F06 ;
+        adm:logEntry        bda:LG880103DB2A44F244 , bda:LG883FD80D90B03E3F , bda:LGC59DAF52819A1F06 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD9DC510CBA2C9AD4
+    bdr:CRBA1BD4851EB7EDFB
         a                   :AgentAsCreator ;
         :agent              bdr:P7911 ;
         :role               bdr:R0ER0019 .
@@ -49,7 +56,7 @@ bdg:WA1KG13770 {
     bdr:WA1KG13770  a       :Work ;
         skos:prefLabel      "deng rabs kyi bza' btung gi 'phrod bsten bya tshul mdor bsdus/"@bo-x-ewts ;
         :catalogInfo        "Spiritual advice on health care"@en ;
-        :creator            bdr:CRD9DC510CBA2C9AD4 ;
+        :creator            bdr:CRBA1BD4851EB7EDFB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG13770 , bdr:MW1TLMTGA002467 , bdr:W1KG13770 ;

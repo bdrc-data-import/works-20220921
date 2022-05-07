@@ -48,6 +48,10 @@ bdg:WA22106 {
         adm:logMessage      "completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG897F9FD4D3DBB500
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGB921C413FF8B4195
         a                   adm:UpdateData ;
         adm:logDate         "2021-03-19T18:58:09.432Z"^^xsd:dateTime ;
@@ -59,10 +63,6 @@ bdg:WA22106 {
         adm:logDate         "2013-02-27T15:34:40.99Z"^^xsd:dateTime ;
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
-    
-    bda:LGF6C563298BAB78AB
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGIM320307B99D
         a                   adm:UpdateData ;
@@ -85,6 +85,12 @@ bdg:WA22106 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -95,20 +101,21 @@ bdg:WA22106 {
     bda:WA22106  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22106 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "54/WA22106.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22106 ;
-        adm:logEntry        bda:LG1C168458FAEE105B , bda:LG204D784A177A0AD4 , bda:LG3A669474244CE4FA , bda:LG46CF9F9AFE880F19 , bda:LG4869DDB0EC32511E , bda:LG71741E90ABCDFE16 , bda:LGB921C413FF8B4195 , bda:LGD745199169959245 , bda:LGF6C563298BAB78AB , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1C168458FAEE105B , bda:LG204D784A177A0AD4 , bda:LG3A669474244CE4FA , bda:LG46CF9F9AFE880F19 , bda:LG4869DDB0EC32511E , bda:LG71741E90ABCDFE16 , bda:LG897F9FD4D3DBB500 , bda:LGB921C413FF8B4195 , bda:LGD745199169959245 , bda:LGIM320307B99D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR30659E2631EDC314
+    bdr:CR197956119EAEF81A
         a                   :AgentAsCreator ;
         :agent              bdr:P154 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CR897F9FD4D3DBB500
+    bdr:CR30659E2631EDC314
         a                   :AgentAsCreator ;
         :agent              bdr:P155 ;
         :role               bdr:R0ER0019 .
@@ -119,7 +126,7 @@ bdg:WA22106 {
         skos:altLabel       "bu ston rin chen grub dang sgra tshad pa rin chen rnam rgyal gyi gsung 'bum/"@bo-x-ewts , "The collected works of Bu-ston.Edited by Lokesh Chandra from the collections of Raghu Vira."@en-x-mixed ;
         skos:prefLabel      "gsung 'bum/_rin chen grub/"@bo-x-ewts , "the collected works of bu-ston"@en ;
         :catalogInfo        "Collected Works by Buton Rinchen Drub (1290-1364) and his disciple Dratsepa Rinchen Namgyal (1318-1388) of the Zhalu order."@en ;
-        :creator            bdr:CR30659E2631EDC314 , bdr:CR897F9FD4D3DBB500 ;
+        :creator            bdr:CR197956119EAEF81A , bdr:CR30659E2631EDC314 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

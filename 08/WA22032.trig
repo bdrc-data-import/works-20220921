@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22032 {
-    bda:LG5A26D807A483CC06
+    bda:LG3E6AB8F3D0421DF9
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -27,6 +27,12 @@ bdg:WA22032 {
         adm:logDate         "2014-06-11T10:49:15.011Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -52,13 +58,14 @@ bdg:WA22032 {
     bda:WA22032  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22032 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "08/WA22032.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22032 ;
-        adm:logEntry        bda:LG5A26D807A483CC06 , bda:LG7BA15092FAE8EA8F , bda:LGAD25D432D1DBF0B0 , bda:LGIMA1F3FB78EA , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG3E6AB8F3D0421DF9 , bda:LG7BA15092FAE8EA8F , bda:LGAD25D432D1DBF0B0 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMB5991979B0 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG16566 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:MW22032  skos:altLabel  "lha glin gab tse dgu skor : an episode from the tibetan epic king gesar glin"@en .

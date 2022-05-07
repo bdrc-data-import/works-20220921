@@ -49,6 +49,12 @@ bdg:WA2CZ8084 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -59,15 +65,16 @@ bdg:WA2CZ8084 {
     bda:WA2CZ8084  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2CZ8084 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "bf/WA2CZ8084.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2CZ8084 ;
-        adm:logEntry        bda:LG58EF54926FEC0352 , bda:LG67E9139C7F008B77 , bda:LGAAC620697348F449 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG58EF54926FEC0352 , bda:LG67E9139C7F008B77 , bda:LGAAC620697348F449 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR14B6C3DCD654D676
+    bdr:CRB837A462D0381B12
         a                   :AgentAsCreator ;
         :agent              bdr:P6079 ;
         :role               bdr:R0ER0019 .
@@ -75,7 +82,7 @@ bdg:WA2CZ8084 {
     bdr:WA2CZ8084  a        :Work ;
         skos:prefLabel      "gnas brgyad kyi 'grel pa tha snyad rig pa'i thi gu dang sprin gyi pho nya'i 'grel pa glog phreng ma/"@bo-x-ewts ;
         :catalogInfo        "Commentary on Tibetan grammar and poetics. Includes commentary on the Cloud Messenger or Meghaduta, a Sanskrit poem by Kalidasa."@en ;
-        :creator            bdr:CR14B6C3DCD654D676 ;
+        :creator            bdr:CRB837A462D0381B12 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

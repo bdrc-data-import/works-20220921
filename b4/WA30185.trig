@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30185 {
+    bda:LG50F255407C521C0A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGA5A4D804C07D1C6B
         a                   adm:UpdateData ;
         adm:logDate         "2015-02-05T12:46:27.38Z"^^xsd:dateTime ;
@@ -30,10 +34,6 @@ bdg:WA30185 {
         adm:logMessage      "CTC5"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LGD4AAA0A129572B56
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -47,6 +47,12 @@ bdg:WA30185 {
         adm:logMessage      "updated catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -79,16 +85,17 @@ bdg:WA30185 {
     bda:WA30185  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30185 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "b4/WA30185.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30185 ;
-        adm:logEntry        bda:LGA5A4D804C07D1C6B , bda:LGC7D670127C015D75 , bda:LGD014881EF6A320BB , bda:LGD4AAA0A129572B56 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG50F255407C521C0A , bda:LGA5A4D804C07D1C6B , bda:LGC7D670127C015D75 , bda:LGD014881EF6A320BB , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA0XLD3A0FDF4C945 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR50F255407C521C0A
+    bdr:CRA240F243F55FB567
         a                   :AgentAsCreator ;
         :agent              bdr:P782 ;
         :role               bdr:R0ER0019 .
@@ -99,7 +106,7 @@ bdg:WA30185 {
         skos:altLabel       "rigs gter bshad pa/"@bo-x-ewts , "tshad ma rigs gter gyi rnam bshad/"@bo-x-ewts , "Tshad ma rigs paʾi gter gyi rnam par bshad pa Rigs pa ma lus pa la ʾjug paʾi sgo :a commentary on the Tshad ma rigs gter of Sa-skya Paṇḍita / /c by Glo-bo mkhan chen Bsod-nams-lhun-grub ; with an English introduction by E. Gene Smith."@en-x-mixed ;
         skos:prefLabel      "tshad ma rigs pa'i gter gyi rnam par bshad pa rigs pa ma lus pa la 'jug pa'i sgo"@bo-x-ewts , "a commentary on the tshad ma rigs gter of sa-skya pandi-ta"@en-x-mixed ;
         :catalogInfo        "Commentary on a fundamental work on Buddhist epistemology by Sakya Pandita, the Tsema Rikter."@en ;
-        :creator            bdr:CR50F255407C521C0A ;
+        :creator            bdr:CRA240F243F55FB567 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;

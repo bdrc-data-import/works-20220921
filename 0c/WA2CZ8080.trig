@@ -47,6 +47,12 @@ bdg:WA2CZ8080 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -57,15 +63,16 @@ bdg:WA2CZ8080 {
     bda:WA2CZ8080  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2CZ8080 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "0c/WA2CZ8080.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2CZ8080 ;
-        adm:logEntry        bda:LG38C3A2E2FAB47212 , bda:LG850E4901D4625B5E , bda:LGF32D28D24A36DC81 , bda:LGF642FC42A0B972B2 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG38C3A2E2FAB47212 , bda:LG850E4901D4625B5E , bda:LGF32D28D24A36DC81 , bda:LGF642FC42A0B972B2 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC26D390BFF7D0C0C
+    bdr:CR81823CCB28A545F5
         a                   :AgentAsCreator ;
         :agent              bdr:P5958 ;
         :role               bdr:R0ER0019 .
@@ -74,7 +81,7 @@ bdg:WA2CZ8080 {
         skos:altLabel       "dbu ma 'jug pa'i 'bru 'grel zab don snang ba'i 'od/"@bo-x-ewts , "shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan gyi 'bru 'grel de nyid snang ba'i 'od/"@bo-x-ewts ;
         skos:prefLabel      "rgyan 'jug gnyis kyi 'bru 'grel de nyid snang ba'i 'od/"@bo-x-ewts ;
         :catalogInfo        "Word by word commentary on the Abhisamayalankara and a work elucidating the fundamentals of Madhyamaka."@en ;
-        :creator            bdr:CRC26D390BFF7D0C0C ;
+        :creator            bdr:CR81823CCB28A545F5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1488 ;

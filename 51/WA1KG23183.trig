@@ -30,52 +30,59 @@ bdg:WA1KG23183 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG23183  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG23183 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "51/WA1KG23183.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG23183 ;
-        adm:logEntry        bda:LG1E630F395F27CBDA , bda:LGE0913BEEFF8C1E7D , bda:LGFA69C8CC00346608 ;
+        adm:logEntry        bda:LG1E630F395F27CBDA , bda:LGE0913BEEFF8C1E7D , bda:LGFA69C8CC00346608 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR46DF5E0219991405
         a                   :AgentAsCreator ;
-        :agent              bdr:P7588 ;
+        :agent              bdr:P8LS15066 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR5F23704F8E8FC0DE
         a                   :AgentAsCreator ;
-        :agent              bdr:P2666 ;
+        :agent              bdr:P7588 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR84D824E522DE8DE9
         a                   :AgentAsCreator ;
-        :agent              bdr:P317 ;
+        :agent              bdr:P2666 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRD78DD583467A66A3
+    bdr:CRD002AB55B09E8E43
         a                   :AgentAsCreator ;
         :agent              bdr:P2710 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRF4095CDD0912B439
+    bdr:CRD78DD583467A66A3
         a                   :AgentAsCreator ;
-        :agent              bdr:P4CZ16819 ;
+        :agent              bdr:P317 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRFD04513AA011812F
         a                   :AgentAsCreator ;
-        :agent              bdr:P8LS15066 ;
+        :agent              bdr:P4CZ16819 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1KG23183  a       :Work ;
         skos:altLabel       "dge tshul kA ri kA sum brgya pa dang de'i mchan bus gsal ba/ kA ri kA lnga bcu pa dang de'i 'grel pa thar pa'i lam gyi sgron me/ bla ma lnga bcu pa dang / de'i 'grel chung mun sel sgron ma bcas/"@bo-x-ewts ;
         skos:prefLabel      "dge tshul kA ri kA sum brgya pa dang / lnga bcu pa dang / bla ma lnga bcu pa'i rtsa 'grel/"@bo-x-ewts ;
         :catalogInfo        "Selected of Vinaya texts written by Indian masters and its commentaries by Tibetan masters."@en ;
-        :creator            bdr:CR46DF5E0219991405 , bdr:CR5F23704F8E8FC0DE , bdr:CR84D824E522DE8DE9 , bdr:CRD78DD583467A66A3 , bdr:CRF4095CDD0912B439 , bdr:CRFD04513AA011812F ;
+        :creator            bdr:CR46DF5E0219991405 , bdr:CR5F23704F8E8FC0DE , bdr:CR84D824E522DE8DE9 , bdr:CRD002AB55B09E8E43 , bdr:CRD78DD583467A66A3 , bdr:CRFD04513AA011812F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T1KG8787 ;

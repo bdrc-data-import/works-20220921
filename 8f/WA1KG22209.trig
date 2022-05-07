@@ -30,32 +30,39 @@ bdg:WA1KG22209 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG22209  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG22209 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "8f/WA1KG22209.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG22209 ;
-        adm:logEntry        bda:LG7BCE63ED63684E41 , bda:LGC02ACDA01C70743C , bda:LGFBFCD1DD74C61D13 ;
+        adm:logEntry        bda:LG7BCE63ED63684E41 , bda:LGC02ACDA01C70743C , bda:LGFBFCD1DD74C61D13 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR0C67D3343664B932
         a                   :AgentAsCreator ;
-        :agent              bdr:P1959 ;
+        :agent              bdr:P2666 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR75D2C0169CEEB6ED
+    bdr:CRA977205DFC60F3EC
         a                   :AgentAsCreator ;
-        :agent              bdr:P2666 ;
+        :agent              bdr:P1959 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1KG22209  a       :Work ;
         skos:altLabel       "chos rgyal srong btsan sgam po'i bka' 'bum gyi las tshogs phreng ba skor gsum gyi lo rgyus mdor bstan pa/"@bo-x-ewts , "rgyal lugs thugs rje chen po'i khrid yig"@bo-x-ewts ;
         skos:prefLabel      "srong btsan sgam po'i bka' 'bum gyi las tshogs phreng ba skor gsum gyi lo rgyus/"@bo-x-ewts ;
         :catalogInfo        "Brief explanation on the history of three cycles of kriya (activities) in the collected works of King Songtsen Gampo."@en ;
-        :creator            bdr:CR0C67D3343664B932 , bdr:CR75D2C0169CEEB6ED ;
+        :creator            bdr:CR0C67D3343664B932 , bdr:CRA977205DFC60F3EC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;

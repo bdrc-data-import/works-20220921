@@ -50,6 +50,12 @@ bdg:WA1KG23401 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMDFF9E3EB63
         a                   adm:UpdateData ;
         adm:logDate         "2016-12-05T22:09:43.772Z"^^xsd:dateTime ;
@@ -60,15 +66,16 @@ bdg:WA1KG23401 {
     bda:WA1KG23401  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG23401 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "c7/WA1KG23401.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG23401 ;
-        adm:logEntry        bda:LG00A9589D84C46114 , bda:LG724AA6590B55EAA9 , bda:LG72BE1BAA571D18A3 , bda:LG7CEA8DAF24E78E13 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIMDFF9E3EB63 ;
+        adm:logEntry        bda:LG00A9589D84C46114 , bda:LG724AA6590B55EAA9 , bda:LG72BE1BAA571D18A3 , bda:LG7CEA8DAF24E78E13 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM8A299A84 , bda:LGIMDFF9E3EB63 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE4773113224E76A7
+    bdr:CR51395AE3EB6BEF75
         a                   :AgentAsCreator ;
         :agent              bdr:P00EGS1016970 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +84,7 @@ bdg:WA1KG23401 {
         skos:altLabel       "gser gyi pha bong / rtogs brjod/ snyan rtsom/ rjes dran/ 'phrin yig/ gsol 'debs/"@bo-x-ewts , "rong bo blo bzang snyan grags kyi gsung pod ka pa/"@bo-x-ewts ;
         skos:prefLabel      "gser gyi pha bong /"@bo-x-ewts ;
         :catalogInfo        "On Tibetan creative writings and literature."@en ;
-        :creator            bdr:CRE4773113224E76A7 ;
+        :creator            bdr:CR51395AE3EB6BEF75 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T258 ;

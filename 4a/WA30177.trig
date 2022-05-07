@@ -18,15 +18,15 @@ bdg:WA30177 {
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LG0975FD14CBCC30B9
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG16E1E614A2F15138
         a                   adm:UpdateData ;
         adm:logDate         "2011-11-16T12:53:00.012Z"^^xsd:dateTime ;
         adm:logMessage      "added bibliographical title"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG526526928DCACF2E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LG97C1D8DC4A4D3A9C
         a                   adm:ScanRequestCreation ;
@@ -66,6 +66,12 @@ bdg:WA30177 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -97,23 +103,24 @@ bdg:WA30177 {
     bda:WA30177  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30177 ;
-        adm:facetIndex      16 ;
+        adm:facetIndex      17 ;
         adm:gitPath         "4a/WA30177.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30177 ;
-        adm:logEntry        bda:LG038397184B3C5F1C , bda:LG0975FD14CBCC30B9 , bda:LG16E1E614A2F15138 , bda:LG97C1D8DC4A4D3A9C , bda:LGBADE3076910FF161 , bda:LGCE51492AE8D35F59 , bda:LGFAAF9356FA8A3604 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG038397184B3C5F1C , bda:LG16E1E614A2F15138 , bda:LG526526928DCACF2E , bda:LG97C1D8DC4A4D3A9C , bda:LGBADE3076910FF161 , bda:LGCE51492AE8D35F59 , bda:LGFAAF9356FA8A3604 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR4C04BBC62CF835CD
         a                   :AgentAsCreator ;
-        :agent              bdr:P6116 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CR526526928DCACF2E
-        a                   :AgentAsCreator ;
         :agent              bdr:P101 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRF2532BEC5D0D08C8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6116 ;
+        :role               bdr:R0ER0016 .
     
     bdr:MW30177  skos:altLabel  "the obligatory texts (yig cha) prescribed for the study of madhyamika at 'bras spuns blo gsal glin"@en .
     
@@ -121,7 +128,7 @@ bdg:WA30177 {
         skos:altLabel       "dbu ma'i spyi don gsal ba'i sgron me/"@bo-x-ewts , "dbu ma la 'jug pa'i brgal lan zab don yang gsal sgron me/"@bo-x-ewts , "paN chen bsod nams grags pas mdzad pa'i phar phyin dang dbu ma'i spyi thal sogs kyi dogs gnas 'ga' zhig las brtsams pa'i dri lan/"@bo-x-ewts , "som nyi'i khongs skran stsal ba'i byi tshe pha mo/"@bo-x-ewts , "The obligatory texts (yig-cha) prescribed for the study of Madhyamika at ʾBras-spuṅs Blo-gsal-gliṅ /by Paṇ-chen Bsod-nams-grags-pa and Dge-bśes Tshul-khrims-rnam-rgyal."@en-x-mixed ;
         skos:prefLabel      "'bras spungs blo gsal gling gi dbu ma'i yig cha/"@bo-x-ewts , "the obligatory texts (yig cha) prescribed for the study of madhyamika at 'bras spuns blo gsal glin"@en ;
         :catalogInfo        "Collection of textbooks prescribed for the study of Madhyamaka in the curriculum at Drepung Losal Ling Monastery and its affiliates."@en ;
-        :creator            bdr:CR4C04BBC62CF835CD , bdr:CR526526928DCACF2E ;
+        :creator            bdr:CR4C04BBC62CF835CD , bdr:CRF2532BEC5D0D08C8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW30177 , bdr:W30177 ;

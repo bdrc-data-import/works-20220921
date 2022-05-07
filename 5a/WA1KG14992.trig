@@ -30,18 +30,25 @@ bdg:WA1KG14992 {
         adm:logMessage      "copyright"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG14992  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG14992 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "5a/WA1KG14992.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG14992 ;
-        adm:logEntry        bda:LG2B43A1898554290F , bda:LG9A4AC7835C06E0CD , bda:LGA4D145561E1C968F ;
+        adm:logEntry        bda:LG2B43A1898554290F , bda:LG9A4AC7835C06E0CD , bda:LGA4D145561E1C968F , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR61726B39DB8E7E65
+    bdr:CR16377917075065F6
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG14993 ;
         :role               bdr:R0ER0019 .
@@ -49,7 +56,7 @@ bdg:WA1KG14992 {
     bdr:WA1KG14992  a       :Work ;
         skos:prefLabel      "phug brag bka' 'gyur gyi dkar chag"@bo-x-ewts , "location list of the texts in the microfiche edition of the phug brag kanjur : compiled from the microfiche edition and jampa samten's descriptive catalogue"@en ;
         :catalogInfo        "Location list of the texts in the microfiche edition of the Phugdrag Kanjur"@en ;
-        :creator            bdr:CR61726B39DB8E7E65 ;
+        :creator            bdr:CR16377917075065F6 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn ;
         :workGenre          bdr:T13 ;

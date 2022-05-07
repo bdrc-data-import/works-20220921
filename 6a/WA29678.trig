@@ -24,9 +24,15 @@ bdg:WA29678 {
         adm:logMessage      "added lccn 2003333530"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGA95CF1DD7301A7BC
+    bda:LG984F073B682F527B
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -38,15 +44,16 @@ bdg:WA29678 {
     bda:WA29678  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29678 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "6a/WA29678.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29678 ;
-        adm:logEntry        bda:LG0A0F831DF79B0CE5 , bda:LG6BA21D6BA7382575 , bda:LGA95CF1DD7301A7BC , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG0A0F831DF79B0CE5 , bda:LG6BA21D6BA7382575 , bda:LG984F073B682F527B , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR984F073B682F527B
+    bdr:CR0C68B24831769A16
         a                   :AgentAsCreator ;
         :agent              bdr:P748 ;
         :role               bdr:R0ER0019 .
@@ -56,7 +63,7 @@ bdg:WA29678 {
     bdr:WA29678  a          :Work ;
         skos:altLabel       "Sum rtags ʼgrel pa nor buʼi me loṅ źes bya ba bźugs so =The mirror of jewel, a commentary on thirty stanzas of Tibetan grammar /rtsa ba Thu-mi Sambho-ṭa ; ʼgrel pa mdzad pa po Mkhan-chen Thub-bstan-brtson-ʼgrus."@en-x-mixed ;
         skos:prefLabel      "sum rtags 'grel pa nor bu'i me long /"@bo-x-ewts , "the mirror of jewel, a commentary on thirty stanzas of tibetan grammar"@en ;
-        :creator            bdr:CR984F073B682F527B ;
+        :creator            bdr:CR0C68B24831769A16 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29678 , bdr:W29678 ;

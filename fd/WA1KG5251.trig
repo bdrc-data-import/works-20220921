@@ -44,6 +44,12 @@ bdg:WA1KG5251 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -75,20 +81,21 @@ bdg:WA1KG5251 {
     bda:WA1KG5251  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG5251 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "fd/WA1KG5251.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG5251 ;
-        adm:logEntry        bda:LG3CD1E9F71DA4A8FB , bda:LG88E62BB5AAA380F9 , bda:LG8CB634CF4CEFAF64 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG3CD1E9F71DA4A8FB , bda:LG88E62BB5AAA380F9 , bda:LG8CB634CF4CEFAF64 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8C6DBD74159340CF
+    bdr:CRBCBCF2FC7B9283E3
         a                   :AgentAsCreator ;
         :agent              bdr:P219 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRBCBCF2FC7B9283E3
+    bdr:CRDDFC6F7F7B577A4E
         a                   :AgentAsCreator ;
         :agent              bdr:P252 ;
         :role               bdr:R0ER0016 .
@@ -99,7 +106,7 @@ bdg:WA1KG5251 {
         skos:altLabel       "ʾDod paʾi bstan bcos bźugs so /Dge-ʾdun-chos-ʾphel gyis mdzad paʾo."@en-x-mixed ;
         skos:prefLabel      "'dod pa'i bstan bcos/"@bo-x-ewts , "ʾDod paʾi bstan bcos."@en-x-mixed ;
         :catalogInfo        "Two texts on Tibetan art of love."@en ;
-        :creator            bdr:CR8C6DBD74159340CF , bdr:CRBCBCF2FC7B9283E3 ;
+        :creator            bdr:CRBCBCF2FC7B9283E3 , bdr:CRDDFC6F7F7B577A4E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG5251 , bdr:W1KG5251 ;

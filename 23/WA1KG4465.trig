@@ -51,6 +51,12 @@ bdg:WA1KG4465 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -68,15 +74,16 @@ bdg:WA1KG4465 {
     bda:WA1KG4465  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4465 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "23/WA1KG4465.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4465 ;
-        adm:logEntry        bda:LG23B7D9965B33228C , bda:LG591D58B2BEADF807 , bda:LGD5E7E02B29CFF189 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG23B7D9965B33228C , bda:LG591D58B2BEADF807 , bda:LGD5E7E02B29CFF189 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4A0505A5DF9475AF
+    bdr:CR20BEB4C99525F574
         a                   :AgentAsCreator ;
         :agent              bdr:P65 ;
         :role               bdr:R0ER0019 .
@@ -86,7 +93,7 @@ bdg:WA1KG4465 {
     bdr:WA1KG4465  a        :Work ;
         skos:prefLabel      "bzhi brgya pa'i rnam bshad legs bshad snying po/"@bo-x-ewts , "Bźi brgya paʼi rnam bśad Legs bśad sñiṅ po źes bya ba bźugs so /Rgyal-tshab Rje."@en-x-mixed ;
         :catalogInfo        "Commentary on Aryadeva's Catuhsatakasastrakarika (the Four Hundred Verses)."@en ;
-        :creator            bdr:CR4A0505A5DF9475AF ;
+        :creator            bdr:CR20BEB4C99525F574 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;

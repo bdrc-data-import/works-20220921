@@ -55,6 +55,12 @@ bdg:WA1KG4471 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -65,16 +71,17 @@ bdg:WA1KG4471 {
     bda:WA1KG4471  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4471 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "f8/WA1KG4471.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4471 ;
-        adm:logEntry        bda:LGBCAB3B33ECB2F143 , bda:LGD5390E65FD026830 , bda:LGE79F6A1C7F680EF1 , bda:LGF4B478294940DE0F , bda:LGFF32E32A22776FB0 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LGBCAB3B33ECB2F143 , bda:LGD5390E65FD026830 , bda:LGE79F6A1C7F680EF1 , bda:LGF4B478294940DE0F , bda:LGFF32E32A22776FB0 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG22571 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR063EE34401912F5E
+    bdr:CR046758B38F458C75
         a                   :AgentAsCreator ;
         :agent              bdr:P6242 ;
         :role               bdr:R0ER0019 .
@@ -85,7 +92,7 @@ bdg:WA1KG4471 {
         skos:altLabel       "dam pa'i chos 'dul ba mdo rtsa/"@bo-x-ewts ;
         skos:prefLabel      "'dul ba mdo rtsa ba/"@bo-x-ewts , "vinaya sutra"@en ;
         :catalogInfo        "Rules of monastic discipline by Gunaprabha."@en ;
-        :creator            bdr:CR063EE34401912F5E ;
+        :creator            bdr:CR046758B38F458C75 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workIsAbout        bdr:T55 .

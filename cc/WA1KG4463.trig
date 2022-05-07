@@ -38,6 +38,12 @@ bdg:WA1KG4463 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -48,15 +54,16 @@ bdg:WA1KG4463 {
     bda:WA1KG4463  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4463 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "cc/WA1KG4463.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4463 ;
-        adm:logEntry        bda:LGBF51D8E91621CA62 , bda:LGF4841FCA01C15094 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LGBF51D8E91621CA62 , bda:LGF4841FCA01C15094 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR334043DAAB7F5657
+    bdr:CR7F006E6BB5B3FDDD
         a                   :AgentAsCreator ;
         :agent              bdr:P65 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +71,7 @@ bdg:WA1KG4463 {
     bdr:WA1KG4463  a        :Work ;
         skos:prefLabel      "rtsa ba shes rab kyi dka' gnas chen po brgyad kyi bshad pa/"@bo-x-ewts ;
         :catalogInfo        "Explanation of the eight assertions that are hardest points to discern in the Mulamadhyamakakarika."@en ;
-        :creator            bdr:CR334043DAAB7F5657 ;
+        :creator            bdr:CR7F006E6BB5B3FDDD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1029 ;

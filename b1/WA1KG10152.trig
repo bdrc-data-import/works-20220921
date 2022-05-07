@@ -44,18 +44,25 @@ bdg:WA1KG10152 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG10152  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG10152 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "b1/WA1KG10152.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG10152 ;
-        adm:logEntry        bda:LG2FD4410E3497F2CC , bda:LGC29E12C62052FEB0 , bda:LGE2A407B978D98127 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B ;
+        adm:logEntry        bda:LG2FD4410E3497F2CC , bda:LGC29E12C62052FEB0 , bda:LGE2A407B978D98127 , bda:LGIM01FF8512D7 , bda:LGIM685E38743B , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8A8EA156B85D283E
+    bdr:CR2B7403FE7DE659FD
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG20687 ;
         :role               bdr:R0ER0019 .
@@ -63,7 +70,7 @@ bdg:WA1KG10152 {
     bdr:WA1KG10152  a       :Work ;
         skos:prefLabel      "sgra sbyor bam po gnyis pa dang / dag yig za ma tog dang / dag yig li shi'i gur khang bcas/"@bo-x-ewts , "tibeto-sanskrit lexicographical materials : the sgra sbyar bam po gnis pa, the dag yig za ma tog, and the dag yig li si'i gur khan"@en ;
         :catalogInfo        "Lexicographical materials of Tibetan and Sanskrit with detailed indices."@en ;
-        :creator            bdr:CR8A8EA156B85D283E ;
+        :creator            bdr:CR2B7403FE7DE659FD ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn , bdr:LangSa ;
         :workGenre          bdr:T218 , bdr:T240 ;

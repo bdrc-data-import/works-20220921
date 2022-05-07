@@ -18,6 +18,10 @@ bdg:WA30144 {
         adm:logMessage      "annotation added"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LG08E2C013707DF902
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG094DA8D9230AAC33
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-13T14:52:13.571Z"^^xsd:dateTime ;
@@ -31,8 +35,10 @@ bdg:WA30144 {
         adm:logWho          bdu:U00013 .
     
     bda:LGAB44DF675ED1DA34
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-06T14:53:34.831Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LGF9B576E387DED361
         a                   adm:UpdateData ;
@@ -57,15 +63,15 @@ bdg:WA30144 {
     bda:WA30144  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30144 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "d1/WA30144.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30144 ;
-        adm:logEntry        bda:LG0826D3CB1BED1BC2 , bda:LG094DA8D9230AAC33 , bda:LG3E2B4420CE5069E1 , bda:LGAB44DF675ED1DA34 , bda:LGF9B576E387DED361 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0826D3CB1BED1BC2 , bda:LG08E2C013707DF902 , bda:LG094DA8D9230AAC33 , bda:LG3E2B4420CE5069E1 , bda:LGAB44DF675ED1DA34 , bda:LGF9B576E387DED361 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR08E2C013707DF902
+    bdr:CR3E6DE31316FBE4A0
         a                   :AgentAsCreator ;
         :agent              bdr:P10200 ;
         :role               bdr:R0ER0019 .
@@ -75,7 +81,7 @@ bdg:WA30144 {
     bdr:WA30144  a          :Work ;
         skos:prefLabel      "srid gsum gtsug rgyan si tu chos kyi 'byung gnas kyi zhal lung dngul chu btso chen ril bu'i sbyor sde zab bdun bdud rtsi'i thig le/"@bo-x-ewts , "instructions for the preparation of mercury pellets according to the teachings of the great si-tu pan-chen chos-kyi-'byun-gnas"@en-x-mixed ;
         :catalogInfo        "Treatise on the use of mercury pellets in Tibetan medicine according to the order of Situ Panchen. Reproduced from a Degge print prepared at the order of Yeshe Donden by the ruler Tsewang Dudul."@en ;
-        :creator            bdr:CR08E2C013707DF902 ;
+        :creator            bdr:CR3E6DE31316FBE4A0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW30144 , bdr:W30144 ;

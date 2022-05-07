@@ -24,31 +24,38 @@ bdg:WA1KG26103 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG26103  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG26103 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "72/WA1KG26103.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG26103 ;
-        adm:logEntry        bda:LG1AF4A20DBB61A3C0 , bda:LG6D301FC12D37A80B ;
+        adm:logEntry        bda:LG1AF4A20DBB61A3C0 , bda:LG6D301FC12D37A80B , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB03DD20A91957F5C
+    bdr:CR3FE6694836084D24
         a                   :AgentAsCreator ;
-        :agent              bdr:P00KG09749 ;
+        :agent              bdr:P1844 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRF58FA417156A1827
         a                   :AgentAsCreator ;
-        :agent              bdr:P1844 ;
+        :agent              bdr:P00KG09749 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1KG26103  a       :Work ;
         skos:prefLabel      "blo rtags kyi rnam gzhag rig pa'i mun sel/ thar pa rin po che'i rgyan las le'u dang po gsum/ rgyal dbang kar 'brug rnam gnyis kyi zhabs brtan/ bka' brgyud bstan pa rgyas smon bcas/"@bo-x-ewts ;
         :catalogInfo        "Combined text of logical disputation and reasoning, the first three chapters from the Jewel Ornament of Liberation; Long life prayer 16th Karmapa Rangjung Rigpai Dorjee and 12th Drukchen Jigme Pema Wangchen; Aspirational prayers for the spread Kagyu teachings."@en ;
-        :creator            bdr:CRB03DD20A91957F5C , bdr:CRF58FA417156A1827 ;
+        :creator            bdr:CR3FE6694836084D24 , bdr:CRF58FA417156A1827 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn ;
         :workGenre          bdr:T238 , bdr:T2511 ;

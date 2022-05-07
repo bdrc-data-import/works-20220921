@@ -18,29 +18,36 @@ bdg:WA29671 {
         adm:logMessage      "added to ctc 4"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LG7E9D9A18F4B67C12
+    bda:LGDAC1F813F799AFFB
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:WA29671  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29671 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "9e/WA29671.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29671 ;
-        adm:logEntry        bda:LG5A49196AA1C76F7A , bda:LG7E9D9A18F4B67C12 ;
+        adm:logEntry        bda:LG5A49196AA1C76F7A , bda:LGDAC1F813F799AFFB , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDAC1F813F799AFFB
+    bdr:CRA66AB1440FC2B81B
         a                   :AgentAsCreator ;
         :agent              bdr:P9922 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA29671  a          :Work ;
         skos:prefLabel      "bod kyi brda dag byis pa'i lam mkhan/"@bo-x-ewts ;
-        :creator            bdr:CRDAC1F813F799AFFB ;
+        :creator            bdr:CRA66AB1440FC2B81B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T218 ;

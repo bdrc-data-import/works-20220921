@@ -31,6 +31,12 @@ bdg:WA1KG15922 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMB5991979B0
         a                   adm:UpdateData ;
         adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
@@ -41,15 +47,16 @@ bdg:WA1KG15922 {
     bda:WA1KG15922  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG15922 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "5f/WA1KG15922.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG15922 ;
-        adm:logEntry        bda:LG598EBC9E57C9E345 , bda:LGB392A0FEA2845501 , bda:LGIM74A445C794 , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG598EBC9E57C9E345 , bda:LGB392A0FEA2845501 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRFDFCF9D8C20DD5F0
+    bdr:CRDF8C8A6295F8DF27
         a                   :AgentAsCreator ;
         :agent              bdr:P4902 ;
         :role               bdr:R0ER0019 .
@@ -60,7 +67,7 @@ bdg:WA1KG15922 {
         skos:altLabel       "sdom gsum bsdus pa'am sdom gsum gsal byed nyi ma'i snying po dang / sdom gsum 'bring po'am sdom pa gsum legs par gtan la dbab pa'i bstan bcos rgyal ba'i dgongs pa rab tu gsal bar byed pa/ sdom gsum rgyas pa'am sdom pa gsum lag tu blang ba'i tshul rgya cher bshad pa bstan pa'i ku mud gsal bar byed pa'i zla shel bcas/ sdom pa gsum gyi gzhung rgyas 'bring bsdus gsum phyogs gcig tu bsgrigs pa/"@bo-x-ewts , "sdom gsum bsdus pa gsal byed nyi ma'i snying po dang / sdom gsum 'bring po rgyal ba'i dgongs pa rab tu gsal bar byed pa/ sdom gsum rgyas pa bstan pa'i ku mud gsal bar byed pa'i zla shel bcas/"@bo-x-ewts ;
         skos:prefLabel      "stag lung sdom gsum rgyas 'bring bsdus pa phyogs gcig tu bsgrigs pa/"@bo-x-ewts , "stag-lun sdom-gsum rgyas-'brin bsdus-pa phyogs-gcig-tu bsgrigs-pa"@en ;
         :catalogInfo        "Collection of three texts on Trisamvara."@en ;
-        :creator            bdr:CRFDFCF9D8C20DD5F0 ;
+        :creator            bdr:CRDF8C8A6295F8DF27 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 ;

@@ -44,6 +44,12 @@ bdg:WA1KG4427 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -54,15 +60,16 @@ bdg:WA1KG4427 {
     bda:WA1KG4427  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4427 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "a1/WA1KG4427.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4427 ;
-        adm:logEntry        bda:LG26F1597C8F74F482 , bda:LG7602F3196FB85D8B , bda:LGD93E47024443E4F8 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG26F1597C8F74F482 , bda:LG7602F3196FB85D8B , bda:LGD93E47024443E4F8 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF9FE206A41B51A12
+    bdr:CRD7FAFC68B2153CFF
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG4434 ;
         :role               bdr:R0ER0019 .
@@ -72,7 +79,7 @@ bdg:WA1KG4427 {
     bdr:WA1KG4427  a        :Work ;
         skos:prefLabel      "lam rim chen mo'i sa bcad kyi zur rgyan mdo btus lam sgrig"@bo-x-ewts , "compilation of sutras for synthesizing th path of enlightenment"@en ;
         :catalogInfo        "Compilation of sutras for studying the graduated lamrim path as outlined in Tsongkhapa's (1357-1419) Lamrim Chenmo, a treatise on the stages of the path to enlightenment."@en ;
-        :creator            bdr:CRF9FE206A41B51A12 ;
+        :creator            bdr:CRD7FAFC68B2153CFF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T238 , bdr:T89 ;

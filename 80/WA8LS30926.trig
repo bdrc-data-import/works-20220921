@@ -30,6 +30,12 @@ bdg:WA8LS30926 {
         adm:logMessage      "added author"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -46,15 +52,16 @@ bdg:WA8LS30926 {
     bda:WA8LS30926  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS30926 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "80/WA8LS30926.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS30926 ;
-        adm:logEntry        bda:LG36C7198ED58D35EF , bda:LGD4C7523D6E235810 , bda:LGD901513B3C4A8CD9 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG36C7198ED58D35EF , bda:LGD4C7523D6E235810 , bda:LGD901513B3C4A8CD9 , bda:LGIM8A299A84 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF2EC85B9192D50BC
+    bdr:CRAEA1C53C61D6D32E
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG23542 ;
         :role               bdr:R0ER0019 .
@@ -62,7 +69,7 @@ bdg:WA8LS30926 {
     bdr:WA8LS30926  a       :Work ;
         skos:prefLabel      "dbyin ji skad nas bod skad la phab pa'i brda gnyis shan sbyar gyi bstan bcos/"@bo-x-ewts , "English-Tibetan Dictionary"@en ;
         :catalogInfo        "An English-Tibetan dictionary compiled by Kazi Dawa Samdup."@en ;
-        :creator            bdr:CRF2EC85B9192D50BC ;
+        :creator            bdr:CRAEA1C53C61D6D32E ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn ;
         :workGenre          bdr:T220 , bdr:T240 ;

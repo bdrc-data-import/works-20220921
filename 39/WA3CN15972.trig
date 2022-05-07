@@ -41,6 +41,12 @@ bdg:WA3CN15972 {
         adm:logMessage      "correct archiveInfo"@en ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -51,15 +57,16 @@ bdg:WA3CN15972 {
     bda:WA3CN15972  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN15972 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "39/WA3CN15972.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN15972 ;
-        adm:logEntry        bda:LG751DD5486D7098D7 , bda:LG874CAE370D60B931 , bda:LG87CEC499DA1CADF1 , bda:LGB4AD049177D3C2B5 , bda:LGEC5658A5DD794618 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG751DD5486D7098D7 , bda:LG874CAE370D60B931 , bda:LG87CEC499DA1CADF1 , bda:LGB4AD049177D3C2B5 , bda:LGEC5658A5DD794618 , bda:LGIM8A299A84 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0122664811FED6B6
+    bdr:CR5C01A741E6569E5D
         a                   :AgentAsCreator ;
         :agent              bdr:P64 ;
         :role               bdr:R0ER0019 .
@@ -67,7 +74,7 @@ bdg:WA3CN15972 {
     bdr:WA3CN15972  a       :Work ;
         skos:prefLabel      "rten 'brel bstod pa legs bshad snying po/"@bo-x-ewts , "Pratityasamutpadastutisubhasitahrdayam"@sa-x-ndia ;
         :catalogInfo        "Famous verse work in praise of the pratityasamutpada by tsong kha pa translated in to Hindi by Gyaltsen Namdrol and Ngawang Samtan at Varanasi."@en ;
-        :creator            bdr:CR0122664811FED6B6 ;
+        :creator            bdr:CR5C01A741E6569E5D ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangHi , bdr:LangSa ;
         :workGenre          bdr:T240 , bdr:T67 ;

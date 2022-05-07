@@ -50,6 +50,12 @@ bdg:WA1KG12307 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -60,15 +66,16 @@ bdg:WA1KG12307 {
     bda:WA1KG12307  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG12307 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "12/WA1KG12307.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG12307 ;
-        adm:logEntry        bda:LG0BE448039FA83EC5 , bda:LG452461466A33E854 , bda:LG5B7FE62D319476B0 , bda:LG99389B55D3AC0543 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG0BE448039FA83EC5 , bda:LG452461466A33E854 , bda:LG5B7FE62D319476B0 , bda:LG99389B55D3AC0543 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1252A40D8E485C12
+    bdr:CR4C26F78C2B2F49BA
         a                   :AgentAsCreator ;
         :agent              bdr:P00EGS1017029 ;
         :role               bdr:R0ER0019 .
@@ -77,7 +84,7 @@ bdg:WA1KG12307 {
         skos:altLabel       "skyes rabs rin po che dpag bsam 'khri shing gi bsdus don/"@bo-x-ewts , "skyes rabs rin po che dpag bsam 'khri shing gi bsdus don byang chub lam bzang /"@bo-x-ewts ;
         skos:prefLabel      "skyes rabs rnam thar bsdus don byang chub lam bzang /"@bo-x-ewts ;
         :catalogInfo        "Summary of Avadhanakalpalata, a previous life of Gautma Buddha."@en ;
-        :creator            bdr:CR1252A40D8E485C12 ;
+        :creator            bdr:CR4C26F78C2B2F49BA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1342 , bdr:T2398 ;

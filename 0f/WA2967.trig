@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2967 {
-    bda:LG1CCB60345CEC92CF
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG5CBA35DCA17B442D
         a                   adm:UpdateData ;
         adm:logDate         "2016-08-25T17:14:15.624Z"^^xsd:dateTime ;
@@ -28,6 +24,10 @@ bdg:WA2967 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGC06DB94C51FF641D
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM206EC9B06D
         a                   adm:UpdateData ;
         adm:logDate         "2018-04-05T14:36:06.065Z"^^xsd:dateTime ;
@@ -35,18 +35,25 @@ bdg:WA2967 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA2967  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2967 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "0f/WA2967.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2967 ;
-        adm:logEntry        bda:LG1CCB60345CEC92CF , bda:LG5CBA35DCA17B442D , bda:LGBE19CA1EF1FD2938 , bda:LGIM206EC9B06D ;
+        adm:logEntry        bda:LG5CBA35DCA17B442D , bda:LGBE19CA1EF1FD2938 , bda:LGC06DB94C51FF641D , bda:LGIM206EC9B06D , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC06DB94C51FF641D
+    bdr:CR192BF9F7623C79FB
         a                   :AgentAsCreator ;
         :agent              bdr:P9929 ;
         :role               bdr:R0ER0019 .
@@ -55,7 +62,7 @@ bdg:WA2967 {
         skos:altLabel       "gans brtan tshul khrims rdo rjes mdzad pa'i rnam thar la gzhir byas/ rje btsun bla ma tshul khrims nyi ma'i rnam thar ngo sprod tshigs lhugs ma dang tshigs bcad ma/"@bo-x-ewts ;
         skos:prefLabel      "rje btsun bla ma tshul khrims nyi ma'i rnam thar ngo sprod/"@bo-x-ewts ;
         :catalogInfo        "Biography of Ridzong Tsultrim Nyima (1796-1872), founder of Ridzong Monastery in Ladakh."@en ;
-        :creator            bdr:CRC06DB94C51FF641D ;
+        :creator            bdr:CR192BF9F7623C79FB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

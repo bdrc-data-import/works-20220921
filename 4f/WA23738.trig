@@ -18,7 +18,7 @@ bdg:WA23738 {
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
     
-    bda:LGD09C03FCC0C9EA81
+    bda:LGCAFFA2BBE3D8FE83
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -47,6 +47,12 @@ bdg:WA23738 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -64,20 +70,21 @@ bdg:WA23738 {
     bda:WA23738  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23738 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "4f/WA23738.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23738 ;
-        adm:logEntry        bda:LG73F817F6F9BF213F , bda:LGD09C03FCC0C9EA81 , bda:LGF0E0CAD564EE0AD1 , bda:LGFBD439B43DAA72DA , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG73F817F6F9BF213F , bda:LGCAFFA2BBE3D8FE83 , bda:LGF0E0CAD564EE0AD1 , bda:LGFBD439B43DAA72DA , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCAFFA2BBE3D8FE83
+    bdr:CR58D621F5C9E06648
         a                   :AgentAsCreator ;
         :agent              bdr:P357 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV58D621F5C9E06648
+    bdr:EV54C71132747D78F9
         a                   :CompletedEvent ;
         :onYear             "1542"^^xsd:gYear .
     
@@ -87,10 +94,10 @@ bdg:WA23738 {
         skos:altLabel       "Mes poʼi źal luṅ :a detailed commentary on the four Tibetan medical tantras (Rgyud bźi) /by Zur-mkhar Blo-gros-rgyal-po (Legs-bśad-ʼtshol)"@en-x-mixed ;
         skos:prefLabel      "mes po zhal lung /"@bo-x-ewts , "mes po'i zal lun : a detailed commentary on the four tibetan medical tantras (rgyud bzi)"@en-x-mixed ;
         :catalogInfo        "Commentary on the Four Medical Tantras by a master of the Zurkar tradition, Lodro Gyalpo (b. 1509)."@en ;
-        :creator            bdr:CRCAFFA2BBE3D8FE83 ;
+        :creator            bdr:CR58D621F5C9E06648 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV58D621F5C9E06648 ;
+        :workEvent          bdr:EV54C71132747D78F9 ;
         :workGenre          bdr:T132 ;
         :workHasInstance    bdr:MW23738 , bdr:W23738 ;
         :workIsAbout        bdr:T85 , bdr:WA21667 .

@@ -37,6 +37,12 @@ bdg:WA1KG4931 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -54,15 +60,16 @@ bdg:WA1KG4931 {
     bda:WA1KG4931  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4931 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "6e/WA1KG4931.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4931 ;
-        adm:logEntry        bda:LG099189B9D232B9BE , bda:LGAB5F927F267B4428 , bda:LGE00C1D7E864C5082 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG099189B9D232B9BE , bda:LGAB5F927F267B4428 , bda:LGE00C1D7E864C5082 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR42FDEE25C6726324
+    bdr:CR638AB46DBB5BFA3B
         a                   :AgentAsCreator ;
         :agent              bdr:P4554 ;
         :role               bdr:R0ER0019 .
@@ -72,7 +79,7 @@ bdg:WA1KG4931 {
     bdr:WA1KG4931  a        :Work ;
         skos:prefLabel      "blo gsal dga' bskyed snying gi nor bu/"@bo-x-ewts , "Blo gsal dgaʼ bskyed sñiṅ gi nor bu :a detailed exegesis of the ʼBras-spuṅs Blo-gsal-gliṅ tradition of commentatorial treatment of Prajñāpāramita philosophy according to the yig-cha of Paṇ-chen Bsod-nams-grags-pa /by Blo-gliṅ Mkhan-zur Padma-rgyal-mtshan."@en-x-mixed ;
         :catalogInfo        "Exegesis of the Drepung Losel Ling tradition of commentatorial treatment of the Prajnaparamita philosophy according to the curriculum of Panchen Sonam Drakpa by Loling Khenzur Pema Gyaltsen."@en ;
-        :creator            bdr:CR42FDEE25C6726324 ;
+        :creator            bdr:CR638AB46DBB5BFA3B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG4931 , bdr:W1KG4931 ;

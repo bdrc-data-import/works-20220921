@@ -71,6 +71,12 @@ bdg:WA1KG5876 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -88,23 +94,24 @@ bdg:WA1KG5876 {
     bda:WA1KG5876  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG5876 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "d1/WA1KG5876.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG5876 ;
-        adm:logEntry        bda:LG29E877B51EC88439 , bda:LG60DBBE1ACEC22B6B , bda:LG87B4AEF076AC9004 , bda:LGC42C36F709D24449 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG29E877B51EC88439 , bda:LG60DBBE1ACEC22B6B , bda:LG87B4AEF076AC9004 , bda:LGC42C36F709D24449 , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB66F2713EADF7668
-        a                   :AgentAsCreator ;
-        :agent              bdr:P1KG5877 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRFE7C137135D9454C
+    bdr:CR7B2083A08A27C7C0
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG5869 ;
         :role               bdr:R0ER0026 .
+    
+    bdr:CRFE7C137135D9454C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG5877 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW1KG5876  skos:altLabel  "katantronadisutravrttih of acarya durgasimha"@en .
     
@@ -112,7 +119,7 @@ bdg:WA1KG5876 {
         skos:altLabel       "Ācāryadurgasiṃhapraṇītā kātantroṇādisūtravr̥ttiḥ =Slob-dpon Bgrod-dkaʼ-seṅges mdzad paʼi kalāpaʼi uṇa sogs kyi ʼgrel pa /Tibbatī-anuvādaka evaṃ sampādaka, Losaṅga Norabū Śāstrī."@en-x-mixed ;
         skos:prefLabel      "slob dpon bgrod dka' seng+ges mdzad pa'i kalApa'i uN sogs kyi 'grel pa/"@bo-x-ewts , "katantronadisutravrttih of acarya durgasimha"@en ;
         :catalogInfo        "Commentary on a post-Paninian aphoristic work on Sanskrit Katantra grammar."@en ;
-        :creator            bdr:CRB66F2713EADF7668 , bdr:CRFE7C137135D9454C ;
+        :creator            bdr:CR7B2083A08A27C7C0 , bdr:CRFE7C137135D9454C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

@@ -30,6 +30,12 @@ bdg:WA1KG13796 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -40,15 +46,16 @@ bdg:WA1KG13796 {
     bda:WA1KG13796  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG13796 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "58/WA1KG13796.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG13796 ;
-        adm:logEntry        bda:LG07897FE007E133C9 , bda:LG0FAEADBBF64F2637 , bda:LG31EDD95EAAF7F63C , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG07897FE007E133C9 , bda:LG0FAEADBBF64F2637 , bda:LG31EDD95EAAF7F63C , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR560495EB1E7F46E3
+    bdr:CRD7B53BF67B306E7D
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG15378 ;
         :role               bdr:R0ER0019 .
@@ -58,7 +65,7 @@ bdg:WA1KG13796 {
     bdr:WA1KG13796  a       :Work ;
         skos:prefLabel      "dbu ma'i zin tho zla ba'i dgongs rgyan/"@bo-x-ewts , "Dbu maʼi zin tho zla baʼi dgoṅs rgyan bźugs so /Ser-byes Tre-hor Dge-bśes ʼPhrin-las-rdo-rje."@en-x-mixed ;
         :catalogInfo        "Exgetical notes on Madhyamika philosophy"@en ;
-        :creator            bdr:CR560495EB1E7F46E3 ;
+        :creator            bdr:CRD7B53BF67B306E7D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1478 ;

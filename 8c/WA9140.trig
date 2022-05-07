@@ -12,14 +12,14 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA9140 {
+    bda:LG32D3FA3FDAAC3900
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG703AE772EA4EC9F4
         a                   adm:UpdateData ;
         adm:logDate         "2010-10-12T10:43:29.643Z"^^xsd:dateTime ;
         adm:logMessage      "added to WMDL and WMDL05"@en .
-    
-    bda:LGDD79DAA8B5BB8B35
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -35,6 +35,12 @@ bdg:WA9140 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -45,16 +51,17 @@ bdg:WA9140 {
     bda:WA9140  a           adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA9140 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "8c/WA9140.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA9140 ;
-        adm:logEntry        bda:LG703AE772EA4EC9F4 , bda:LGDD79DAA8B5BB8B35 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG32D3FA3FDAAC3900 , bda:LG703AE772EA4EC9F4 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA22197 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR32D3FA3FDAAC3900
+    bdr:CRFF8BC393B3B388C3
         a                   :AgentAsCreator ;
         :agent              bdr:P667 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +71,7 @@ bdg:WA9140 {
     bdr:WA9140  a           :Work ;
         skos:prefLabel      "gsung 'bum/_d+harma shrI/"@bo-x-ewts , "collected works (gsun 'bum) of Smin-glin Lo-chhen Dharma-shrI"@en-x-mixed ;
         :catalogInfo        "Collected Works by Nyingma master Minling Lochen Dharmashri (1654-1718)."@en ;
-        :creator            bdr:CR32D3FA3FDAAC3900 ;
+        :creator            bdr:CRFF8BC393B3B388C3 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

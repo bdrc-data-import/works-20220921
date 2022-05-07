@@ -42,6 +42,12 @@ bdg:WA3CN15689 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -52,29 +58,30 @@ bdg:WA3CN15689 {
     bda:WA3CN15689  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN15689 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "b5/WA3CN15689.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN15689 ;
-        adm:logEntry        bda:LG29B271C2A5389DDB , bda:LG2EC4A243B342C53A , bda:LG73A0329E19710D43 , bda:LG86B360D1AEF4C009 , bda:LGB92EE4B48C8C5E3C , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG29B271C2A5389DDB , bda:LG2EC4A243B342C53A , bda:LG73A0329E19710D43 , bda:LG86B360D1AEF4C009 , bda:LGB92EE4B48C8C5E3C , bda:LGIM8A299A84 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8193A0F8C58C39DB
-        a                   :AgentAsCreator ;
-        :agent              bdr:P7641 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRD160AB79CCF937E0
+    bdr:CR8160319762226A54
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG5860 ;
         :role               bdr:R0ER0026 .
+    
+    bdr:CRD160AB79CCF937E0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7641 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN15689  a       :Work ;
         skos:altLabel       "slob dpon kamalashIlas mdzad pa'i sgom rim thog mtha' bar gsum/"@bo-x-ewts ;
         skos:prefLabel      "sgom rim thog mtha' bar gsum/"@bo-x-ewts ;
         :catalogInfo        "Bhavanakramah of acarya kamalashila, tibetan version, sanskrit restoration and hindi translation. Restored, translated & edited by Gyaltsen Namdol, Acarya."@en ;
-        :creator            bdr:CR8193A0F8C58C39DB , bdr:CRD160AB79CCF937E0 ;
+        :creator            bdr:CR8160319762226A54 , bdr:CRD160AB79CCF937E0 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangHi , bdr:LangSa ;
         :workGenre          bdr:T1777 ;

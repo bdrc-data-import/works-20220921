@@ -24,18 +24,25 @@ bdg:WA2KG1677 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA2KG1677  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG1677 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "45/WA2KG1677.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG1677 ;
-        adm:logEntry        bda:LG11F04CC5D18845B5 , bda:LG2B76CBC60983C875 ;
+        adm:logEntry        bda:LG11F04CC5D18845B5 , bda:LG2B76CBC60983C875 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR72509D29690E1EEC
+    bdr:CR20308DAFE5B89450
         a                   :AgentAsCreator ;
         :agent              bdr:P7809 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +51,7 @@ bdg:WA2KG1677 {
         skos:altLabel       "dam pa'i chos 'dul ba rgya mtsho'i snying po bsdus pa thar 'dod yid kyi mun sel/"@bo-x-ewts ;
         skos:prefLabel      "'dul ba rgya mtsho'i snying po bsdus pa thar 'dod yid kyi mun sel/"@bo-x-ewts ;
         :catalogInfo        "Textbook on Buddhist monastic discipline from the curriculum at Drepung Monastery College and its affiliates."@en ;
-        :creator            bdr:CR72509D29690E1EEC ;
+        :creator            bdr:CR20308DAFE5B89450 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2KG1677 , bdr:W2KG1677 ;

@@ -24,18 +24,25 @@ bdg:WA1KG16213 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG16213  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG16213 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "8f/WA1KG16213.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG16213 ;
-        adm:logEntry        bda:LG74F9782B5F84C241 , bda:LGC5BE14F41D8FDF12 ;
+        adm:logEntry        bda:LG74F9782B5F84C241 , bda:LGC5BE14F41D8FDF12 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR49CE6F7E744802BA
+    bdr:CR0460B3588314503F
         a                   :AgentAsCreator ;
         :agent              bdr:P1GS137943 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +51,7 @@ bdg:WA1KG16213 {
         skos:altLabel       "legs bshad 'od dkar 'phreng ba/ sa lam gyi skor/"@bo-x-ewts , "sa dang lam gyi rnam gzhag sku gsum nor bu'i bang mdzod dang/ sa lam gyi rnam gzhag thar pa'i grong khyer du bgrod pa'i myur lam/"@bo-x-ewts ;
         skos:prefLabel      "legs bshad 'od dkar 'phreng ba/ (15)"@bo-x-ewts ;
         :catalogInfo        "Detailed presentation of paths and bhumis"@en ;
-        :creator            bdr:CR49CE6F7E744802BA ;
+        :creator            bdr:CR0460B3588314503F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 ;

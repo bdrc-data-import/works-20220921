@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30173 {
+    bda:LG1D351CF8195B487E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG31836AD4366EB9CA
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-09-12T17:05:41.25Z"^^xsd:dateTime ;
@@ -19,8 +23,10 @@ bdg:WA30173 {
         adm:logWho          bdu:U00016 .
     
     bda:LG33ED8E479B489064
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-06T14:53:34.831Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG41A3B5765FE857A4
         a                   adm:UpdateData ;
@@ -69,16 +75,16 @@ bdg:WA30173 {
     bda:WA30173  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30173 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "5a/WA30173.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30173 ;
-        adm:logEntry        bda:LG31836AD4366EB9CA , bda:LG33ED8E479B489064 , bda:LG41A3B5765FE857A4 , bda:LG7EA81DA4946C3677 , bda:LGB1380E635F3C5145 , bda:LGDDB49959720A2050 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1D351CF8195B487E , bda:LG31836AD4366EB9CA , bda:LG33ED8E479B489064 , bda:LG41A3B5765FE857A4 , bda:LG7EA81DA4946C3677 , bda:LGB1380E635F3C5145 , bda:LGDDB49959720A2050 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1NLM947 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR1D351CF8195B487E
+    bdr:CRA69D08698E90820D
         a                   :AgentAsCreator ;
         :agent              bdr:P182 ;
         :role               bdr:R0ER0019 .
@@ -87,7 +93,7 @@ bdg:WA30173 {
         skos:altLabel       "grub pa'i mtha'i rnam par bzhag pa gsal bar bshad pa thub bstan lhun po'i mdzes rgyan/"@bo-x-ewts ;
         skos:prefLabel      "grub mtha' thub bstan lhun po'i mdzes rgyan/"@bo-x-ewts ;
         :catalogInfo        "Survey of the Buddhist philosophical tenets and systems."@en ;
-        :creator            bdr:CR1D351CF8195B487E ;
+        :creator            bdr:CRA69D08698E90820D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 , bdr:T385 .

@@ -31,6 +31,12 @@ bdg:WA1KG4522 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -48,15 +54,16 @@ bdg:WA1KG4522 {
     bda:WA1KG4522  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4522 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "03/WA1KG4522.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4522 ;
-        adm:logEntry        bda:LG065C1B2056044E8A , bda:LG8EE8DEC289D3079F , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG065C1B2056044E8A , bda:LG8EE8DEC289D3079F , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD1AA69E86765880B
+    bdr:CR4E336A5D48534954
         a                   :AgentAsCreator ;
         :agent              bdr:P9569 ;
         :role               bdr:R0ER0019 .
@@ -65,7 +72,7 @@ bdg:WA1KG4522 {
         skos:altLabel       "gtan tshigs de kho na nyid kyi sa bcad sogs chos tshan khag cig"@bo-x-ewts ;
         skos:prefLabel      "tshad ma'i rigs lam/"@bo-x-ewts ;
         :catalogInfo        "Annotations on some Pramana texts concerning Buddhist epistemology."@en ;
-        :creator            bdr:CRD1AA69E86765880B ;
+        :creator            bdr:CR4E336A5D48534954 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T304 , bdr:T89 ;

@@ -24,23 +24,30 @@ bdg:WA1KG13992 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG13992  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG13992 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "c1/WA1KG13992.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG13992 ;
-        adm:logEntry        bda:LG8440FAAE80341BFB , bda:LGD2907AAEAFDF9128 ;
+        adm:logEntry        bda:LG8440FAAE80341BFB , bda:LGD2907AAEAFDF9128 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF960AEF3D69412D8
+    bdr:CR149CC6F15096020D
         a                   :AgentAsCreator ;
         :agent              bdr:P219 ;
         :role               bdr:R0ER0026 .
     
-    bdr:EV149CC6F15096020D
+    bdr:EV351C98AB2A88A185
         a                   :CompletedEvent ;
         :onYear             "1944"^^xsd:gYear .
     
@@ -49,10 +56,10 @@ bdg:WA1KG13992 {
     bdr:WA1KG13992  a       :Work ;
         skos:prefLabel      "chos kyi tshigs su bcad pa/"@bo-x-ewts , "dhammapada"@en ;
         :catalogInfo        "Dhammapada : Teachings of Buddha in verses"@en ;
-        :creator            bdr:CRF960AEF3D69412D8 ;
+        :creator            bdr:CR149CC6F15096020D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV149CC6F15096020D ;
+        :workEvent          bdr:EV351C98AB2A88A185 ;
         :workGenre          bdr:T769 ;
         :workHasInstance    bdr:MW1KG13992 , bdr:MW1KG5171 , bdr:W1KG13992 , bdr:W1KG5171 .
 }

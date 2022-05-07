@@ -24,6 +24,12 @@ bdg:WA3CN17351 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -40,23 +46,24 @@ bdg:WA3CN17351 {
     bda:WA3CN17351  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN17351 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "34/WA3CN17351.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN17351 ;
-        adm:logEntry        bda:LG2D3A8F5762286F52 , bda:LGF9470F5D0E81C0B6 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG2D3A8F5762286F52 , bda:LGF9470F5D0E81C0B6 , bda:LGIM8A299A84 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6250465742F51C6D
-        a                   :AgentAsCreator ;
-        :agent              bdr:P4954 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRED6E7A3C3349B22E
+    bdr:CR469602DBA2596921
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG24112 ;
         :role               bdr:R0ER0026 .
+    
+    bdr:CRED6E7A3C3349B22E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4954 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW3CN17351  skos:altLabel  "Acarya Nagarjuna's Aryasalistambakakarika with the Autocommentary"@sa-x-ndia .
     
@@ -64,7 +71,7 @@ bdg:WA3CN17351 {
         skos:altLabel       "slob dpon klu sgrub kyis mdzad pa'i 'phags pa sA lu ljang pa'i tshig le'ur byas pa dang de'i rgya cher 'grel/"@bo-x-ewts ;
         skos:prefLabel      "'phags pa sA lu ljang pa'i tshig le'ur byas pa dang de'i rgya cher 'grel/"@bo-x-ewts , "Acarya Nagarjuna's Aryasalistambakakarika with the Autocommentary"@sa-x-ndia ;
         :catalogInfo        "Acarya Nagarjuna's Aryasalistambakakarika with the Autocommentary. Restored, translated and edited by Dr. Sonam Rabten."@en ;
-        :creator            bdr:CR6250465742F51C6D , bdr:CRED6E7A3C3349B22E ;
+        :creator            bdr:CR469602DBA2596921 , bdr:CRED6E7A3C3349B22E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T769 ;

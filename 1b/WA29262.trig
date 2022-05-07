@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29262 {
-    bda:LG11BF638F28FD899C
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG36953B8B6BB2530C
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-14T10:16:52.536Z"^^xsd:dateTime ;
         adm:logMessage      "ctc5"@en ;
         adm:logWho          bdu:U00026 .
+    
+    bda:LGE787C4A7B8A8A658
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGEB6051ECD963645A
         a                   adm:UpdateData ;
@@ -34,6 +34,12 @@ bdg:WA29262 {
         adm:logMessage      "normalized catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -59,15 +65,16 @@ bdg:WA29262 {
     bda:WA29262  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29262 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "1b/WA29262.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29262 ;
-        adm:logEntry        bda:LG11BF638F28FD899C , bda:LG36953B8B6BB2530C , bda:LGEB6051ECD963645A , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG36953B8B6BB2530C , bda:LGE787C4A7B8A8A658 , bda:LGEB6051ECD963645A , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRE787C4A7B8A8A658
+    bdr:CR4A7B180C2D9208D9
         a                   :AgentAsCreator ;
         :agent              bdr:P9615 ;
         :role               bdr:R0ER0019 .
@@ -78,7 +85,7 @@ bdg:WA29262 {
         skos:altLabel       "bya bral grub pa'i dbang phyug tre hor skyor dpon rin po che blo bzang dar rgyas dpal bzang po'i rnam par thar pa mdo tsam bkod pa ngo mtshar rin chen do shal/"@bo-x-ewts , "ngo mtshar rin chen do shal/"@bo-x-ewts ;
         skos:prefLabel      "tre hor skyor dpon rin po che'I rnam thar ngo mtshar rin chen do shal/"@bo-x-ewts , "Tre-hor skyor-dpon Rin-po-cheʾi rnam thar Ṅo mtshar rin chen do śal /Ser-smad-ri-ʾbur Sprul-skus brtsams paʾo."@en-x-mixed ;
         :catalogInfo        "Biography of modern Geluk teacher Trehor Kyopon Rinpoche."@en ;
-        :creator            bdr:CRE787C4A7B8A8A658 ;
+        :creator            bdr:CR4A7B180C2D9208D9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

@@ -35,18 +35,25 @@ bdg:WA8LS22899 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA8LS22899  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS22899 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "b7/WA8LS22899.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS22899 ;
-        adm:logEntry        bda:LG1DD3F35A2D7DBAFD , bda:LG6F79BAA46A36B33C , bda:LG751F2F2F2681F257 , bda:LGE8B808018C3B17D3 ;
+        adm:logEntry        bda:LG1DD3F35A2D7DBAFD , bda:LG6F79BAA46A36B33C , bda:LG751F2F2F2681F257 , bda:LGE8B808018C3B17D3 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR22A4EAB40C9299F8
+    bdr:CRA6323BF974699B84
         a                   :AgentAsCreator ;
         :agent              bdr:P667 ;
         :role               bdr:R0ER0019 .
@@ -55,7 +62,7 @@ bdg:WA8LS22899 {
         skos:altLabel       "'phags pa bzang po spyod pa'i smon lam gyi 'grel chung 'phags mchog rnams kyi rnam par thar pa mtha' yas la 'jug pa'i sgo"@bo-x-ewts ;
         skos:prefLabel      "'phags pa bzang po spyod pa'i smon lam gyi 'grel chung /"@bo-x-ewts ;
         :catalogInfo        "A commentary of Bhadrakalpapranidhana by MInling Lochen Dharma Shri."@en ;
-        :creator            bdr:CR22A4EAB40C9299F8 ;
+        :creator            bdr:CRA6323BF974699B84 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

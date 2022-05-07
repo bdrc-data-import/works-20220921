@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30281 {
-    bda:LG3A2D498C970A21E6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG57BFA115D0B303F9
         a                   adm:UpdateData ;
         adm:logDate         "2015-02-05T12:48:32.541Z"^^xsd:dateTime ;
         adm:logMessage      "changed language"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LG63ECDECE37096175
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGF034B3C71E0AF0B0
         a                   adm:UpdateData ;
@@ -47,6 +47,12 @@ bdg:WA30281 {
         adm:logMessage      "updated catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -79,15 +85,16 @@ bdg:WA30281 {
     bda:WA30281  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30281 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "2a/WA30281.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30281 ;
-        adm:logEntry        bda:LG3A2D498C970A21E6 , bda:LG57BFA115D0B303F9 , bda:LGF034B3C71E0AF0B0 , bda:LGF16203980C29ABD9 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG57BFA115D0B303F9 , bda:LG63ECDECE37096175 , bda:LGF034B3C71E0AF0B0 , bda:LGF16203980C29ABD9 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR63ECDECE37096175
+    bdr:CRB914603CA598A383
         a                   :AgentAsCreator ;
         :agent              bdr:P1040 ;
         :role               bdr:R0ER0019 .
@@ -98,7 +105,7 @@ bdg:WA30281 {
         skos:altLabel       "lam 'bras po ti dmar chung /"@bo-x-ewts , "pod dmar ma/"@bo-x-ewts , "Lam ʼbras gźuṅ bśad Pod dmar ma :a collection of treasured instructions of the Lam ʼbras practice of the Sa-skya-pa tradition."@en-x-mixed ;
         skos:prefLabel      "lam 'bras gzhung bshad pod dmar ma/"@bo-x-ewts , "a collection treasured instructions the lam 'bras practice the sa skya pa tradition"@en-x-mixed ;
         :catalogInfo        "Collection of Lamdre practices by the Ngorpa master Gyaltsab Kunga Wangchuk. Rare manuscript."@en ;
-        :creator            bdr:CR63ECDECE37096175 ;
+        :creator            bdr:CRB914603CA598A383 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1TLMTGA002592 , bdr:MW30281 , bdr:W30281 ;

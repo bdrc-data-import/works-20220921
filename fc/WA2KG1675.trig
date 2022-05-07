@@ -30,6 +30,12 @@ bdg:WA2KG1675 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -46,15 +52,16 @@ bdg:WA2KG1675 {
     bda:WA2KG1675  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG1675 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "fc/WA2KG1675.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG1675 ;
-        adm:logEntry        bda:LG55DA7DD1BA9ED874 , bda:LG7AB9D763529E7D57 , bda:LG9963EF773AE96FEC , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG55DA7DD1BA9ED874 , bda:LG7AB9D763529E7D57 , bda:LG9963EF773AE96FEC , bda:LGIM8A299A84 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR7858C2991027D7ED
+    bdr:CR379E79A6CE079D78
         a                   :AgentAsCreator ;
         :agent              bdr:P667 ;
         :role               bdr:R0ER0019 .
@@ -62,7 +69,7 @@ bdg:WA2KG1675 {
     bdr:WA2KG1675  a        :Work ;
         skos:prefLabel      "dpal gsang ba'i snying po de kho na nyid nges pa'i rgyud kyi 'grel pa gsang bdag dgongs rgyan/"@bo-x-ewts ;
         :catalogInfo        "A commentary of Guhyagarbha Tantra by Minling Lochen Dharmashri."@en ;
-        :creator            bdr:CR7858C2991027D7ED ;
+        :creator            bdr:CR379E79A6CE079D78 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

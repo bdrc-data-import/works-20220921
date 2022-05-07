@@ -24,23 +24,30 @@ bdg:WA1KG13769 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG13769  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG13769 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "7b/WA1KG13769.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG13769 ;
-        adm:logEntry        bda:LG61B39942E3A86ADC , bda:LGDF1735D94CA0A7A0 ;
+        adm:logEntry        bda:LG61B39942E3A86ADC , bda:LGDF1735D94CA0A7A0 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9518D8A00506302F
+    bdr:CRC3588F5724281FB9
         a                   :AgentAsCreator ;
         :agent              bdr:P4902 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EVC3588F5724281FB9
+    bdr:EVBF6614226FD0AD0F
         a                   :CompletedEvent ;
         :onYear             "1602"^^xsd:gYear .
     
@@ -48,10 +55,10 @@ bdg:WA1KG13769 {
         skos:altLabel       "mgon po stag lung pa chen po'i rdo rje'i gsung gzhung dang man ngag gi mthus legs par bshad pa sdom pa gsum legs par gtan la dbab pa'i bstan bcos rgyal ba'i dgongs pa rab tu gsal bar byed pa/"@bo-x-ewts ;
         skos:prefLabel      "stag lung sdom gsum/"@bo-x-ewts ;
         :catalogInfo        "Detail commentary on the three vows"@en ;
-        :creator            bdr:CR9518D8A00506302F ;
+        :creator            bdr:CRC3588F5724281FB9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EVC3588F5724281FB9 ;
+        :workEvent          bdr:EVBF6614226FD0AD0F ;
         :workGenre          bdr:T1029 ;
         :workHasInstance    bdr:MW1KG13769 , bdr:W1KG13769 ;
         :workIsAbout        bdr:T201 .

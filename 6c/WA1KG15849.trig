@@ -31,6 +31,12 @@ bdg:WA1KG15849 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMB5991979B0
         a                   adm:UpdateData ;
         adm:logDate         "2015-05-07T18:09:14.22Z"^^xsd:dateTime ;
@@ -41,15 +47,16 @@ bdg:WA1KG15849 {
     bda:WA1KG15849  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG15849 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "6c/WA1KG15849.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG15849 ;
-        adm:logEntry        bda:LG458248B5A76AD4F6 , bda:LG5B4F0F06491D05C8 , bda:LGIM74A445C794 , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG458248B5A76AD4F6 , bda:LG5B4F0F06491D05C8 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR07E149EAB3CB991D
+    bdr:CR4B95CE04541226D2
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG6324 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +64,7 @@ bdg:WA1KG15849 {
     bdr:WA1KG15849  a       :Work ;
         skos:prefLabel      "dpyad rtsom phyogs sgrig chos rig gsal ba'i nyin byed/"@bo-x-ewts ;
         :catalogInfo        "Collection of writings on various subjects"@en ;
-        :creator            bdr:CR07E149EAB3CB991D ;
+        :creator            bdr:CR4B95CE04541226D2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T003JR155 , bdr:T1081 ;

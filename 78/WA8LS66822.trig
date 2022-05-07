@@ -58,18 +58,25 @@ bdg:WA8LS66822 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA8LS66822  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS66822 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "78/WA8LS66822.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS66822 ;
-        adm:logEntry        bda:LG2956D1B294FC27C7 , bda:LG4846C0A37A097A89 , bda:LG75D1E04D0F43D948 , bda:LGB02B687ECB9739C5 , bda:LGB5E08051F6AEDBF0 , bda:LGB64140EF5FCDDF04 , bda:LGC9FC10320E7BDCF5 , bda:LGDA45B01563842528 ;
+        adm:logEntry        bda:LG2956D1B294FC27C7 , bda:LG4846C0A37A097A89 , bda:LG75D1E04D0F43D948 , bda:LGB02B687ECB9739C5 , bda:LGB5E08051F6AEDBF0 , bda:LGB64140EF5FCDDF04 , bda:LGC9FC10320E7BDCF5 , bda:LGDA45B01563842528 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCE452BBB7BDE849F
+    bdr:CR99F3E87459B0FE1E
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS75503 ;
         :role               bdr:R0ER0019 .
@@ -80,7 +87,7 @@ bdg:WA8LS66822 {
         skos:altLabel       "gang di si"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "gangs dkar ti si/"@bo-x-ewts , "gangsdkar dise"@en , "岗底斯"@zh-hans ;
         :catalogInfo        "Tibetan medical and cultural journal."@en ;
-        :creator            bdr:CRCE452BBB7BDE849F ;
+        :creator            bdr:CR99F3E87459B0FE1E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T297 ;

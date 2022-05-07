@@ -38,6 +38,12 @@ bdg:WA1KG10770 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -48,29 +54,30 @@ bdg:WA1KG10770 {
     bda:WA1KG10770  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG10770 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "25/WA1KG10770.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG10770 ;
-        adm:logEntry        bda:LG1438EF87B9A347A1 , bda:LGA778F45415DFEC87 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1438EF87B9A347A1 , bda:LGA778F45415DFEC87 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR34E55B54E7918807
-        a                   :AgentAsCreator ;
-        :agent              bdr:P0RK998 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRE3A8DFC3F887750E
+    bdr:CR360C760F0B8FF880
         a                   :AgentAsCreator ;
         :agent              bdr:P252 ;
         :role               bdr:R0ER0016 .
+    
+    bdr:CRE3A8DFC3F887750E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P0RK998 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA1KG10770  a       :Work ;
         skos:altLabel       "rig 'dzin 'das rjes dang mi pham gyi rtogs ldan rgan po'i 'grel pa sogs/"@bo-x-ewts ;
         skos:prefLabel      "rig 'dzin 'das rjes dang mi pham gyi sems ngo mdzub tshugs kyi gdams pa'i 'grel pa sogs/"@bo-x-ewts ;
         :catalogInfo        "Collection of teachings on the posthumous teachings of the vidyadhara, the heart essence of Vimalamitra, and on Dzogchen view and meditation. Produced with the support of Tsadra Foundation."@en ;
-        :creator            bdr:CR34E55B54E7918807 , bdr:CRE3A8DFC3F887750E ;
+        :creator            bdr:CR360C760F0B8FF880 , bdr:CRE3A8DFC3F887750E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

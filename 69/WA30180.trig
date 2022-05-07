@@ -12,10 +12,6 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30180 {
-    bda:LG6ACCD8C85D1EA99C
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG7199E3EC0C24887E
         a                   adm:UpdateData ;
         adm:logDate         "2012-04-30T16:07:08.604Z"^^xsd:dateTime ;
@@ -28,6 +24,10 @@ bdg:WA30180 {
         adm:logMessage      "ctc6"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGDD550E921EFA3449
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGE1B9EB122C4B4F45
         a                   adm:UpdateData ;
         adm:logDate         "2015-02-05T12:42:57.745Z"^^xsd:dateTime ;
@@ -38,6 +38,12 @@ bdg:WA30180 {
         a                   adm:UpdateData ;
         adm:logDate         "2012-04-30T17:38:34.116Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -63,27 +69,28 @@ bdg:WA30180 {
     bda:WA30180  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30180 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "69/WA30180.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30180 ;
-        adm:logEntry        bda:LG6ACCD8C85D1EA99C , bda:LG7199E3EC0C24887E , bda:LG92385C263A9C6DAC , bda:LGE1B9EB122C4B4F45 , bda:LGECF90B6E488C60C5 , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG7199E3EC0C24887E , bda:LG92385C263A9C6DAC , bda:LGDD550E921EFA3449 , bda:LGE1B9EB122C4B4F45 , bda:LGECF90B6E488C60C5 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB0C01A553FAD8438
+    bdr:CR463403D8ACA8ADC8
         a                   :AgentAsCreator ;
-        :agent              bdr:P105 ;
+        :agent              bdr:P80 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRDD550E921EFA3449
+    bdr:CRB0C01A553FAD8438
         a                   :AgentAsCreator ;
         :agent              bdr:P432 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRDDB6F4F50D0E38FA
         a                   :AgentAsCreator ;
-        :agent              bdr:P80 ;
+        :agent              bdr:P105 ;
         :role               bdr:R0ER0016 .
     
     bdr:MW30180  skos:altLabel  "together with four other lta-khrid and commentaries on madhyamika"@en-x-mixed .
@@ -91,7 +98,7 @@ bdg:WA30180 {
     bdr:WA30180  a          :Work ;
         skos:altLabel       "dbu ma'i lta khrid chen mo of ba-so chos-kyi-rgyal-mtshan"@bo-alalc97 , "Dbu maʼi lta khrid chen mo of Ba-so Chos-kyi-rgyal-mtshan :together with four other Lta-khrid and commentaries on Madhyamika /by Tshe-gliṅ Yoṅs-ʼdzin Ye-śes-rgyal-mtshan and the First Dalai Lama Dge-ʼdun-grub-pa."@en-x-mixed ;
         skos:prefLabel      "dbu ma'i lta khrid chen mo/"@bo-x-ewts , "together with four other lta-khrid and commentaries on madhyamika"@en-x-mixed ;
-        :creator            bdr:CRB0C01A553FAD8438 , bdr:CRDD550E921EFA3449 , bdr:CRDDB6F4F50D0E38FA ;
+        :creator            bdr:CR463403D8ACA8ADC8 , bdr:CRB0C01A553FAD8438 , bdr:CRDDB6F4F50D0E38FA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T395 ;

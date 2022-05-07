@@ -24,18 +24,25 @@ bdg:WA2KG209125 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA2KG209125  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG209125 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "ab/WA2KG209125.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG209125 ;
-        adm:logEntry        bda:LGC538B1B671C29928 , bda:LGE258837B4997EE12 ;
+        adm:logEntry        bda:LGC538B1B671C29928 , bda:LGE258837B4997EE12 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0AFCF45B08E29B7B
+    bdr:CRC51B78F8DB957B44
         a                   :AgentAsCreator ;
         :agent              bdr:P1846 ;
         :role               bdr:R0ER0019 .
@@ -43,7 +50,7 @@ bdg:WA2KG209125 {
     bdr:WA2KG209125  a      :Work ;
         skos:prefLabel      "zab mo rten cing 'brel bar byung ba'i sgo nas bstod pa snying po'i rgyan rnam par bkod pa/"@bo-x-ewts ;
         :catalogInfo        "Commentary on the praise of dependent arising by Tsongkhapa."@en ;
-        :creator            bdr:CR0AFCF45B08E29B7B ;
+        :creator            bdr:CRC51B78F8DB957B44 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

@@ -30,6 +30,12 @@ bdg:WA4CZ354412 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGB9321BF78EB07B17
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-06T14:53:34.831Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -40,28 +46,28 @@ bdg:WA4CZ354412 {
     bda:WA4CZ354412  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ354412 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "78/WA4CZ354412.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ354412 ;
-        adm:logEntry        bda:LG38CD7117E0013C14 , bda:LGA972883F594614FE , bda:LGB68C9F3CAF73E220 , bda:LGIMA612579E55 ;
+        adm:logEntry        bda:LG38CD7117E0013C14 , bda:LGA972883F594614FE , bda:LGB68C9F3CAF73E220 , bda:LGB9321BF78EB07B17 , bda:LGIMA612579E55 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR72E2D19AB9755D03
         a                   :AgentAsCreator ;
-        :agent              bdr:P6873 ;
+        :agent              bdr:P859 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRB9321BF78EB07B17
+    bdr:CRAE433B8977DE5DE5
         a                   :AgentAsCreator ;
-        :agent              bdr:P1656 ;
+        :agent              bdr:P6873 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRBC874FDE1ED9EBDD
         a                   :AgentAsCreator ;
-        :agent              bdr:P859 ;
+        :agent              bdr:P1656 ;
         :role               bdr:R0ER0019 .
     
     bdr:MW4CZ354412  skos:altLabel  "bonpo miscellaneous texts"@en .
@@ -69,7 +75,7 @@ bdg:WA4CZ354412 {
     bdr:WA4CZ354412  a      :Work ;
         skos:prefLabel      "bon gyi bstan bcos 'ga' zhig"@bo-x-ewts , "bonpo miscellaneous texts"@en ;
         :catalogInfo        "Bonpo Texts on the Laying out of Mandalas, Mantras, Poetics, Scripts, and Puja."@en ;
-        :creator            bdr:CR72E2D19AB9755D03 , bdr:CRB9321BF78EB07B17 , bdr:CRBC874FDE1ED9EBDD ;
+        :creator            bdr:CR72E2D19AB9755D03 , bdr:CRAE433B8977DE5DE5 , bdr:CRBC874FDE1ED9EBDD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;

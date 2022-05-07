@@ -24,15 +24,15 @@ bdg:WA17836 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00001 .
     
+    bda:LGB780E1A9B6E61A8E
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGE734F7A1A2DACA4C
         a                   adm:UpdateData ;
         adm:logDate         "2016-01-20T11:13:16.51Z"^^xsd:dateTime ;
         adm:logMessage      "added subject"@en ;
         adm:logWho          bdu:U00016 .
-    
-    bda:LGE9C26399A479CE18
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGIM093A1A0447
         a                   adm:UpdateData ;
@@ -62,6 +62,12 @@ bdg:WA17836 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -79,20 +85,21 @@ bdg:WA17836 {
     bda:WA17836  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA17836 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "d2/WA17836.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA17836 ;
-        adm:logEntry        bda:LG4168A670DB83AC64 , bda:LG5B1D351139EC8915 , bda:LGE734F7A1A2DACA4C , bda:LGE9C26399A479CE18 , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG4168A670DB83AC64 , bda:LG5B1D351139EC8915 , bda:LGB780E1A9B6E61A8E , bda:LGE734F7A1A2DACA4C , bda:LGIM093A1A0447 , bda:LGIM569A8014B1 , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB780E1A9B6E61A8E
+    bdr:CREEE607F70308F95C
         a                   :AgentAsCreator ;
         :agent              bdr:P5008 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CREEE607F70308F95C
+    bdr:CRFBCBF1661B4D0EA6
         a                   :AgentAsCreator ;
         :agent              bdr:P1844 ;
         :role               bdr:R0ER0016 .
@@ -102,7 +109,7 @@ bdg:WA17836 {
     bdr:WA17836  a          :Work ;
         skos:prefLabel      "gsung sgros phan byed rig pa'i mdzod/"@bo-x-ewts , "a treasure collection of medical practices from the tradition of sgam-po-pa bsod-nams-rin-chen (1079-1153)"@en ;
         :catalogInfo        "Collected medical instructions originating from the Kagyu master Gampopa."@en ;
-        :creator            bdr:CRB780E1A9B6E61A8E , bdr:CREEE607F70308F95C ;
+        :creator            bdr:CREEE607F70308F95C , bdr:CRFBCBF1661B4D0EA6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW17836 , bdr:W17836 ;

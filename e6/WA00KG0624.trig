@@ -24,18 +24,25 @@ bdg:WA00KG0624 {
         adm:logMessage      "released from onhold and completed cataloging"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA00KG0624  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG0624 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "e6/WA00KG0624.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG0624 ;
-        adm:logEntry        bda:LGA4CF7713CFDB1280 , bda:LGADF9CE419134A80F ;
+        adm:logEntry        bda:LGA4CF7713CFDB1280 , bda:LGADF9CE419134A80F , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA94E5F601880637B
+    bdr:CRDBDFC710EF881726
         a                   :AgentAsCreator ;
         :agent              bdr:P3092 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +51,7 @@ bdg:WA00KG0624 {
         skos:altLabel       "liturgical texts of the lam 'bras tradition"@en , "liturgical texts of the lam 'bras tradition for use in the sgrub grwa at the new lumbini monastery"@en ;
         skos:prefLabel      "lam 'bras brgyud pa'i gsol 'debs brag phug pas mdzad pa kha skong dang bcas pa/"@bo-x-ewts , "liturgical texts of the sa skya pa lam 'bras tradition for recitation in the sgrub grwa at the new lumbini buddhist monastery"@en ;
         :catalogInfo        "Liturgical texts of the Sakya Lamdre tradition for recitation in the sgrub grwa at the new Lumbini Buddhist monastery."@en ;
-        :creator            bdr:CRA94E5F601880637B ;
+        :creator            bdr:CRDBDFC710EF881726 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn ;
         :workGenre          bdr:T11 ;

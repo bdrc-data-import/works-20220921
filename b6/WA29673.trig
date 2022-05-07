@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA29673 {
+    bda:LG406EB3AB8EAD09BE
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGD3965CAFD86EE5F0
         a                   adm:UpdateData ;
         adm:logDate         "2012-05-15T09:33:21.023Z"^^xsd:dateTime ;
         adm:logMessage      "removed work and added t2339,T3JT12423"@en ;
         adm:logWho          bdu:U00013 .
-    
-    bda:LGFCA514B6E7612984
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGFFA8A53BBF5DFFF2
         a                   adm:UpdateData ;
@@ -28,25 +28,32 @@ bdg:WA29673 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA29673  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29673 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "b6/WA29673.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29673 ;
-        adm:logEntry        bda:LGD3965CAFD86EE5F0 , bda:LGFCA514B6E7612984 , bda:LGFFA8A53BBF5DFFF2 ;
+        adm:logEntry        bda:LG406EB3AB8EAD09BE , bda:LGD3965CAFD86EE5F0 , bda:LGFFA8A53BBF5DFFF2 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR406EB3AB8EAD09BE
+    bdr:CRE93C328AF1A9B7F7
         a                   :AgentAsCreator ;
         :agent              bdr:P9921 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA29673  a          :Work ;
         skos:prefLabel      "gsang ba snying po'i dka' gnad rdo rje'i mdud bkral ba'i me long /"@bo-x-ewts ;
-        :creator            bdr:CR406EB3AB8EAD09BE ;
+        :creator            bdr:CRE93C328AF1A9B7F7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW29673 , bdr:W29673 ;

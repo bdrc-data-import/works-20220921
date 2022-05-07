@@ -58,6 +58,12 @@ bdg:WA00KG09733 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -68,20 +74,21 @@ bdg:WA00KG09733 {
     bda:WA00KG09733  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG09733 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "fa/WA00KG09733.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG09733 ;
-        adm:logEntry        bda:LG21AE61076021EE81 , bda:LG2548414018138537 , bda:LG3BAC05946F377FFD , bda:LG624AEE06E74E6537 , bda:LG6C37C9DA84238629 , bda:LG9D7215C4A0E6C984 , bda:LGF75081AC1982F4C3 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG21AE61076021EE81 , bda:LG2548414018138537 , bda:LG3BAC05946F377FFD , bda:LG624AEE06E74E6537 , bda:LG6C37C9DA84238629 , bda:LG9D7215C4A0E6C984 , bda:LGF75081AC1982F4C3 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR0A8181DA6984420F
+    bdr:CR2B9E5304993205BD
         a                   :AgentAsCreator ;
         :agent              bdr:P4796 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV2B9E5304993205BD
+    bdr:EVC2D10BE20E9ED18A
         a                   :CompletedEvent ;
         :onYear             "1965"^^xsd:gYear .
     
@@ -90,10 +97,10 @@ bdg:WA00KG09733 {
     bdr:WA00KG09733  a      :Work ;
         skos:prefLabel      "chos 'byung lung rigs sgron me/"@bo-x-ewts , "the lamp illumining the history of buddhism according to precepts and tradition"@en ;
         :catalogInfo        "History of Buddhism in India and Tibet."@en ;
-        :creator            bdr:CR0A8181DA6984420F ;
+        :creator            bdr:CR2B9E5304993205BD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV2B9E5304993205BD ;
+        :workEvent          bdr:EVC2D10BE20E9ED18A ;
         :workGenre          bdr:T12 ;
         :workHasInstance    bdr:MW00KG09733 , bdr:MW24052_A147D1 , bdr:MW28809_698BB7 , bdr:W00KG09733 .
 }

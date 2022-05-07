@@ -24,18 +24,25 @@ bdg:WA2KG209075 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA2KG209075  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG209075 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "92/WA2KG209075.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG209075 ;
-        adm:logEntry        bda:LG31FF14F09650F34F , bda:LGC86F48EA412A2555 ;
+        adm:logEntry        bda:LG31FF14F09650F34F , bda:LGC86F48EA412A2555 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR24CA1A34EC681B48
+    bdr:CRA522DCD8E4FBEA1E
         a                   :AgentAsCreator ;
         :agent              bdr:P4592 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +51,7 @@ bdg:WA2KG209075 {
         skos:altLabel       "byang chub lam gyi rim pa chung ngu'i zin bris blo gsal rgya mtsho'i 'jug ngogs/"@bo-x-ewts ;
         skos:prefLabel      "lam rim chung ngu'i zin bris blo gsal rgya mtsho'i 'jug ngogs/"@bo-x-ewts ;
         :catalogInfo        "Annotations on Tsongkhapa's Lamrim Chungngu. Written by the 18th century scholar Keutsang Jamyang Monlam."@en ;
-        :creator            bdr:CR24CA1A34EC681B48 ;
+        :creator            bdr:CRA522DCD8E4FBEA1E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T1478 , bdr:T238 ;

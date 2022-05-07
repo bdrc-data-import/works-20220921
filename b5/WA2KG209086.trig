@@ -24,18 +24,25 @@ bdg:WA2KG209086 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA2KG209086  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG209086 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "b5/WA2KG209086.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG209086 ;
-        adm:logEntry        bda:LG1170C433F98B1B72 , bda:LG522F8667D4085CC9 ;
+        adm:logEntry        bda:LG1170C433F98B1B72 , bda:LG522F8667D4085CC9 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB508C76C8A2672D5
+    bdr:CR4FBECBED6B53855A
         a                   :AgentAsCreator ;
         :agent              bdr:P2KG209127 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +51,7 @@ bdg:WA2KG209086 {
         skos:altLabel       "dwags po grub dbang bstan 'dzin mkhas grub kyis mdzad pa'i smon lam gang thugs ma/"@bo-x-ewts , "gser skyems 'bul ba'i rim pa dbang phyug brgyad ldan bsam don thogs med/"@bo-x-ewts ;
         skos:prefLabel      "gser skyems 'bul ba'i rim pa dbang phyug brgyad ldan dang smon lam gang thugs ma/"@bo-x-ewts ;
         :catalogInfo        "Ritual texts to make beverage offerings and aspiration prayers."@en ;
-        :creator            bdr:CRB508C76C8A2672D5 ;
+        :creator            bdr:CR4FBECBED6B53855A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T34 ;

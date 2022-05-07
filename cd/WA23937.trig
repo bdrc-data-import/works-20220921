@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23937 {
-    bda:LG428CA87042EDEBFF
+    bda:LG902DC6C1C9A6A8FE
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -45,18 +45,25 @@ bdg:WA23937 {
         adm:logMessage      "t3"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA23937  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23937 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "cd/WA23937.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23937 ;
-        adm:logEntry        bda:LG428CA87042EDEBFF , bda:LG961861302B2083E1 , bda:LGA94BC342EEABABA1 , bda:LGC316466AEE526D96 , bda:LGF2619F304B212949 , bda:LGF6A9245ECABDCD37 ;
+        adm:logEntry        bda:LG902DC6C1C9A6A8FE , bda:LG961861302B2083E1 , bda:LGA94BC342EEABABA1 , bda:LGC316466AEE526D96 , bda:LGF2619F304B212949 , bda:LGF6A9245ECABDCD37 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR902DC6C1C9A6A8FE
+    bdr:CRB160F643AFB5C484
         a                   :AgentAsCreator ;
         :agent              bdr:P5284 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +71,7 @@ bdg:WA23937 {
     bdr:WA23937  a          :Work ;
         skos:altLabel       "rje tsong kha pa chen po'i rnam thar nor bu'i bang mdzod dang bu chen byon tshul gser gyi mchod sdong zhes bya ba gnyis dang gzhan yang ne rings pa'i gsung thor bu nang rnyed phyogs gcig tu bsdus pa/"@bo-x-ewts ;
         skos:prefLabel      "tsong kha pa chen po'i rnam thar nor bu'i bang mdzod sogs/"@bo-x-ewts ;
-        :creator            bdr:CR902DC6C1C9A6A8FE ;
+        :creator            bdr:CRB160F643AFB5C484 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

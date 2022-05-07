@@ -50,6 +50,12 @@ bdg:WA1KG10749 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -60,15 +66,16 @@ bdg:WA1KG10749 {
     bda:WA1KG10749  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG10749 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "a2/WA1KG10749.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG10749 ;
-        adm:logEntry        bda:LG4355F180173E4A17 , bda:LG66D74FF5DDE19CEF , bda:LG6AB787BC66CC77AE , bda:LGE380F3E30C38DCDA , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG4355F180173E4A17 , bda:LG66D74FF5DDE19CEF , bda:LG6AB787BC66CC77AE , bda:LGE380F3E30C38DCDA , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCD923D3F03D427E5
+    bdr:CRA13803734E2C19DB
         a                   :AgentAsCreator ;
         :agent              bdr:P7274 ;
         :role               bdr:R0ER0019 .
@@ -78,7 +85,7 @@ bdg:WA1KG10749 {
     bdr:WA1KG10749  a       :Work ;
         skos:prefLabel      "rdo rje 'chang dngos mkhan chen mun sel mchog gi zab gsung gces bsdus dang nyer mkho khag cig"@bo-x-ewts , "the collected works of khenchen munsel"@en ;
         :catalogInfo        "Collected Works by Nyingma master Khenchen Munsel (1916-1993). Produced with the support of the Tsadra Foundation."@en ;
-        :creator            bdr:CRCD923D3F03D427E5 ;
+        :creator            bdr:CRA13803734E2C19DB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T413 ;

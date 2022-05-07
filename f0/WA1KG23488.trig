@@ -24,6 +24,12 @@ bdg:WA1KG23488 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8F5AC89D  a     adm:UpdateData ;
         adm:logAgent        "add-works-to-PR1CTC16" ;
         adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
@@ -33,15 +39,16 @@ bdg:WA1KG23488 {
     bda:WA1KG23488  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG23488 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "f0/WA1KG23488.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG23488 ;
-        adm:logEntry        bda:LG79BBA1B7C18AA64A , bda:LGA9A5AB0611E9928C , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG79BBA1B7C18AA64A , bda:LGA9A5AB0611E9928C , bda:LGIM8A299A84 , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB2D8D4AB1395E32E
+    bdr:CRED78508F5603530D
         a                   :AgentAsCreator ;
         :agent              bdr:P856 ;
         :role               bdr:R0ER0019 .
@@ -50,7 +57,7 @@ bdg:WA1KG23488 {
         skos:altLabel       "bod kyi brda'i bstan bcos legs par bshad pa rin po che za ma tog bkod pa/"@bo-x-ewts ;
         skos:prefLabel      "dag yig za ma tog"@bo-x-ewts ;
         :catalogInfo        "Tibetan orthographical dictionary in verse with prose annotations."@en ;
-        :creator            bdr:CRB2D8D4AB1395E32E ;
+        :creator            bdr:CRED78508F5603530D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T218 ;

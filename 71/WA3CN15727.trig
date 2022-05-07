@@ -24,6 +24,12 @@ bdg:WA3CN15727 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -40,15 +46,16 @@ bdg:WA3CN15727 {
     bda:WA3CN15727  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN15727 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "71/WA3CN15727.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN15727 ;
-        adm:logEntry        bda:LGB0E34B2D8E142B19 , bda:LGF51A3E55C0572FA4 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LGB0E34B2D8E142B19 , bda:LGF51A3E55C0572FA4 , bda:LGIM8A299A84 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9F8A91C5C967DB8C
+    bdr:CR2B48A01F0421E8E0
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG20863 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +64,7 @@ bdg:WA3CN15727 {
         skos:altLabel       "brda sprod pa'i bstan bcos rtags 'jug gi brjod bya snying po bya tshig gi rnam gzhag zhib cing rgyas par bshad pa lag len bcud bsdus chen mo/"@bo-x-ewts ;
         skos:prefLabel      "bya tshig gi rnam gzhag rgyas bshad/"@bo-x-ewts ;
         :catalogInfo        "Detailed analysis of verbs of Tibetan grammar by Drong Ngur Choje."@en ;
-        :creator            bdr:CR9F8A91C5C967DB8C ;
+        :creator            bdr:CR2B48A01F0421E8E0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 ;

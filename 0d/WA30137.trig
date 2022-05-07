@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30137 {
+    bda:LG09738ECE2181E00C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG49CAF5AC23D302D2
         a                   adm:UpdateData ;
         adm:logDate         "2012-03-06T15:14:11.933Z"^^xsd:dateTime ;
@@ -48,10 +52,6 @@ bdg:WA30137 {
         adm:logMessage      "added rgyud bzhi as genre"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LGB65B04D99664E537
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGDD5C39D38AA6F382
         a                   adm:UpdateData ;
         adm:logDate         "2013-03-20T09:23:28.523Z"^^xsd:dateTime ;
@@ -65,6 +65,12 @@ bdg:WA30137 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -75,13 +81,14 @@ bdg:WA30137 {
     bda:WA30137  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30137 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "0d/WA30137.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30137 ;
-        adm:logEntry        bda:LG49CAF5AC23D302D2 , bda:LG5C81AA599D59ADF0 , bda:LG6BE1FC1880CB2701 , bda:LG91969563C9606250 , bda:LGA2B29351A518FD21 , bda:LGAE71F9CE00144460 , bda:LGB65B04D99664E537 , bda:LGDD5C39D38AA6F382 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG09738ECE2181E00C , bda:LG49CAF5AC23D302D2 , bda:LG5C81AA599D59ADF0 , bda:LG6BE1FC1880CB2701 , bda:LG91969563C9606250 , bda:LGA2B29351A518FD21 , bda:LGAE71F9CE00144460 , bda:LGDD5C39D38AA6F382 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA30134 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
     bdr:MW30137  skos:altLabel  "a reproduction of a set of prints from the 18th century zun-cu ze blocks from the collections of raghu vira"@en-x-mixed .

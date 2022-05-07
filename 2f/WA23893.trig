@@ -34,7 +34,7 @@ bdg:WA23893 {
         adm:logMessage      "bcos"@en ;
         adm:logWho          bdu:U00003 .
     
-    bda:LGC25AA961BD7D27B6
+    bda:LGEB38233F5BCD2E8D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -58,6 +58,12 @@ bdg:WA23893 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -75,16 +81,17 @@ bdg:WA23893 {
     bda:WA23893  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23893 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "2f/WA23893.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23893 ;
-        adm:logEntry        bda:LG25D34D253702353D , bda:LG87A6B85C0CB85485 , bda:LG92D900C806E767E4 , bda:LGBB8B2377BA50FB4D , bda:LGC25AA961BD7D27B6 , bda:LGEB710980920204B8 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG25D34D253702353D , bda:LG87A6B85C0CB85485 , bda:LG92D900C806E767E4 , bda:LGBB8B2377BA50FB4D , bda:LGEB38233F5BCD2E8D , bda:LGEB710980920204B8 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1PD45150 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CREB38233F5BCD2E8D
+    bdr:CR3E0414B83C5A35B2
         a                   :AgentAsCreator ;
         :agent              bdr:P287 ;
         :role               bdr:R0ER0019 .
@@ -95,7 +102,7 @@ bdg:WA23893 {
         skos:altLabel       "the collected works of zhabs dkar tshogs drug rang grol"@en , "Zhabs-dkar Tshogs-drug-rang-grol kyi bkaʾ ʾbum =The collected works of Zhabs-dkar Tshogs-drug-rang-drol (1781-1851)."@en-x-mixed ;
         skos:prefLabel      "gsung 'bum/_tshogs drug rang grol/"@bo-x-ewts , "zhabs dkar tshogs drug rang grol gyi bka' 'bum : the collected works zhabs dkar tshogs drug rang grol (1781 1851)"@en-x-mixed ;
         :catalogInfo        "Collected Works by Nyingma master Zhabkar Tsokdruk Rangdrol (1781-1851) from Amdo."@en ;
-        :creator            bdr:CREB38233F5BCD2E8D ;
+        :creator            bdr:CR3E0414B83C5A35B2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

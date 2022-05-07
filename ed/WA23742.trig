@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA23742 {
+    bda:LG1951C6A3DDF259FC
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG199ABF574C82148C
         a                   adm:UpdateData ;
         adm:logDate         "2008-12-09T16:33:51.382Z"^^xsd:dateTime ;
         adm:logMessage      "ctc6"@en ;
         adm:logWho          bdu:U00026 .
-    
-    bda:LG93A1452722E1F1B6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -35,6 +35,12 @@ bdg:WA23742 {
         adm:logMessage      "updated catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -53,15 +59,16 @@ bdg:WA23742 {
     bda:WA23742  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23742 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "ed/WA23742.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23742 ;
-        adm:logEntry        bda:LG199ABF574C82148C , bda:LG93A1452722E1F1B6 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG1951C6A3DDF259FC , bda:LG199ABF574C82148C , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1951C6A3DDF259FC
+    bdr:CR7763590A191B0706
         a                   :AgentAsCreator ;
         :agent              bdr:P7770 ;
         :role               bdr:R0ER0019 .
@@ -71,7 +78,7 @@ bdg:WA23742 {
     bdr:WA23742  a          :Work ;
         skos:prefLabel      "phyag skor mchod 'bul sogs rnam dkar dge sbyor bya tshul las brtsams pa'i dris lan blo mun sel ba'i sgron me/"@bo-x-ewts , "Phyag skor mchod ʾbul sogs rnam dkar dge sbyor bya tshul las brtsams paʾi dris lan blo mun sel baʾi sgron me /Dge-bśes Dpal-ldan-grags-pa."@en-x-mixed ;
         :catalogInfo        "Collection of responses to various religious questions by Palden Drakpa."@en ;
-        :creator            bdr:CR1951C6A3DDF259FC ;
+        :creator            bdr:CR7763590A191B0706 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T28 ;

@@ -30,7 +30,7 @@ bdg:WA22354 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00001 .
     
-    bda:LGF4FD5EBBB8C245EF
+    bda:LGA46E39AF7A8ADD7A
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -62,6 +62,12 @@ bdg:WA22354 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -79,15 +85,16 @@ bdg:WA22354 {
     bda:WA22354  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22354 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "22/WA22354.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22354 ;
-        adm:logEntry        bda:LG058B4BAE21072CD2 , bda:LG367495801FD6958B , bda:LG796CEF2CA3A01E16 , bda:LGF4FD5EBBB8C245EF , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG058B4BAE21072CD2 , bda:LG367495801FD6958B , bda:LG796CEF2CA3A01E16 , bda:LGA46E39AF7A8ADD7A , bda:LGIM093A1A0447 , bda:LGIM206EC9B06D , bda:LGIM5A753E00B7 , bda:LGIM8647D1C7AE , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA46E39AF7A8ADD7A
+    bdr:CRB5690412B89B5416
         a                   :AgentAsCreator ;
         :agent              bdr:P4704 ;
         :role               bdr:R0ER0019 .
@@ -96,7 +103,7 @@ bdg:WA22354 {
         skos:altLabel       "nges don gyi sems dpa' chen po shing bza' skal bzang chos kyi rgyal mtshan dpal bzang po mchog gi rnam par thar pa dad ldan yid kyi bdud rtsi/"@bo-x-ewts , "skal bzang chos kyi rgyal mtshan gyi rnam thar/"@bo-x-ewts ;
         skos:prefLabel      "rje shing bza' paN+Di ta sku 'phreng lnga pa skal bzang chos kyi rgyal mtshan gyi rnam thar/"@bo-x-ewts ;
         :catalogInfo        "Biography the Shingza Pandita 05 Kelzang Chokyi Gyaltsen (1925-1998), prominent Geluk lama connected with Labrang Tashi Khyil Monastery."@en ;
-        :creator            bdr:CRA46E39AF7A8ADD7A ;
+        :creator            bdr:CRB5690412B89B5416 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

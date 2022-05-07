@@ -37,6 +37,12 @@ bdg:WA1KG15036 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -54,15 +60,16 @@ bdg:WA1KG15036 {
     bda:WA1KG15036  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG15036 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "f3/WA1KG15036.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG15036 ;
-        adm:logEntry        bda:LG58AD912C3BFFCD8B , bda:LG912BC5070A6BA61C , bda:LGA1F5356C03E962A0 , bda:LGIM569A8014B1 , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG58AD912C3BFFCD8B , bda:LG912BC5070A6BA61C , bda:LGA1F5356C03E962A0 , bda:LGIM569A8014B1 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD14328869F5100E8
+    bdr:CRFD218CD5C5D1FE7B
         a                   :AgentAsCreator ;
         :agent              bdr:P9509 ;
         :role               bdr:R0ER0019 .
@@ -73,7 +80,7 @@ bdg:WA1KG15036 {
         skos:altLabel       "A catalogue of the Urga Kanjur in the Prof. Raghuvira collection at the International Academy of Indian Culture /Geza Bethlenfalvy."@en-x-mixed ;
         skos:prefLabel      "urga bka' 'gyur gyi dkar chag"@bo-x-ewts , "a catalogue of the urga kanjur in the prof. raghuvira collection at the international academy of indian culture"@en ;
         :catalogInfo        "Catalog of the Urga Kanjur."@en ;
-        :creator            bdr:CRD14328869F5100E8 ;
+        :creator            bdr:CRFD218CD5C5D1FE7B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T13 ;

@@ -24,10 +24,6 @@ bdg:WA10206 {
         adm:logMessage      "restored work record"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LG77CBA60BCAD0FFD6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG7873027649EBAA74
         a                   adm:UpdateData ;
         adm:logDate         "2008-12-10T10:21:06.802Z"^^xsd:dateTime ;
@@ -51,6 +47,10 @@ bdg:WA10206 {
         adm:logDate         "2010-07-19T10:20:51.088Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGD70E01366D4B5CE9
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGE6B4FFA6FA106441
         a                   adm:UpdateData ;
         adm:logDate         "2007-12-31T10:09:41.929Z"^^xsd:dateTime ;
@@ -71,6 +71,12 @@ bdg:WA10206 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -88,15 +94,16 @@ bdg:WA10206 {
     bda:WA10206  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA10206 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "34/WA10206.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA10206 ;
-        adm:logEntry        bda:LG3394E7D4D33A8C5F , bda:LG47DC278F620E7A63 , bda:LG77CBA60BCAD0FFD6 , bda:LG7873027649EBAA74 , bda:LG991A3CEFDCF945FA , bda:LGB1B6FAF1206E028D , bda:LGD2AC96D049CBFBAA , bda:LGE6B4FFA6FA106441 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG3394E7D4D33A8C5F , bda:LG47DC278F620E7A63 , bda:LG7873027649EBAA74 , bda:LG991A3CEFDCF945FA , bda:LGB1B6FAF1206E028D , bda:LGD2AC96D049CBFBAA , bda:LGD70E01366D4B5CE9 , bda:LGE6B4FFA6FA106441 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD70E01366D4B5CE9
+    bdr:CRBAADE398B983B582
         a                   :AgentAsCreator ;
         :agent              bdr:P758 ;
         :role               bdr:R0ER0019 .
@@ -107,7 +114,7 @@ bdg:WA10206 {
         skos:altLabel       "bshes gnyen chen po dge 'dun rin chen mchog gi gsung 'bum/"@bo-x-ewts , "The collected works (sugṅ ʾbum) of Dge-bśes Brag-phug Dge-ʾdun-rin-chen."@en-x-mixed ;
         skos:prefLabel      "gsung 'bum/_dge 'dun rin chen/"@bo-x-ewts , "the collected works (gsun 'bum) of dge bses brag phug dge 'dun rin chen"@en ;
         :catalogInfo        "Collected Works by Drukpa Kagyu master Je Khenpo 69 Geshe Chapu Gendun Rinchen (1926-1997) of Bhutan."@en ;
-        :creator            bdr:CRD70E01366D4B5CE9 ;
+        :creator            bdr:CRBAADE398B983B582 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

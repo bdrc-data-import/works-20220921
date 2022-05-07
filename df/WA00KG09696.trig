@@ -31,6 +31,12 @@ bdg:WA00KG09696 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -48,15 +54,16 @@ bdg:WA00KG09696 {
     bda:WA00KG09696  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA00KG09696 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "df/WA00KG09696.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA00KG09696 ;
-        adm:logEntry        bda:LG165D62805D623BD6 , bda:LG52C55111C9677E18 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG165D62805D623BD6 , bda:LG52C55111C9677E18 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR69AFAD29AD744D2C
+    bdr:CR69F7610F2DA0A368
         a                   :AgentAsCreator ;
         :agent              bdr:P00KG09697 ;
         :role               bdr:R0ER0019 .
@@ -66,7 +73,7 @@ bdg:WA00KG09696 {
     bdr:WA00KG09696  a      :Work ;
         skos:prefLabel      "bod kyi rgyal rabs sa 'og nas brnyes pa'i dum bsgrigs rna ba'i bdud rtsi/"@bo-x-ewts , "a nectar for the ear an early history of tibet edited from the findings unearthed at the dunhuang caves"@en ;
         :catalogInfo        "Collected manuscripts found at archaeological sites at Dunhuang."@en ;
-        :creator            bdr:CR69AFAD29AD744D2C ;
+        :creator            bdr:CR69F7610F2DA0A368 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 , bdr:T793 ;

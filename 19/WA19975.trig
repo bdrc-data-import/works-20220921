@@ -48,10 +48,6 @@ bdg:WA19975 {
         adm:logMessage      "added to ctc 4"@en ;
         adm:logWho          bdu:U00012 .
     
-    bda:LGB4286B2EBDC4DC45
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGE5DE3D16D9C7E2B2
         a                   adm:UpdateData ;
         adm:logDate         "2009-03-05T11:58:30.155Z"^^xsd:dateTime ;
@@ -70,6 +66,10 @@ bdg:WA19975 {
         adm:logMessage      "added print type"@en ;
         adm:logWho          bdu:U00013 .
     
+    bda:LGF37C9D8AC9CE42C4
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-21T23:05:36.322Z"^^xsd:dateTime ;
@@ -83,6 +83,12 @@ bdg:WA19975 {
         adm:logMessage      "updated catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -115,15 +121,16 @@ bdg:WA19975 {
     bda:WA19975  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA19975 ;
-        adm:facetIndex      18 ;
+        adm:facetIndex      19 ;
         adm:gitPath         "19/WA19975.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA19975 ;
-        adm:logEntry        bda:LG1063EA5CB96BAB20 , bda:LG181AAAC0E58B880C , bda:LG35E049976DAA8CBE , bda:LG45DF05772F0FCB74 , bda:LG500DA12FC12E5E06 , bda:LG9E4DA3148F3F0EBE , bda:LGB4286B2EBDC4DC45 , bda:LGE5DE3D16D9C7E2B2 , bda:LGE6241663AE54DC92 , bda:LGE8FD585E83CF9C8F , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
+        adm:logEntry        bda:LG1063EA5CB96BAB20 , bda:LG181AAAC0E58B880C , bda:LG35E049976DAA8CBE , bda:LG45DF05772F0FCB74 , bda:LG500DA12FC12E5E06 , bda:LG9E4DA3148F3F0EBE , bda:LGE5DE3D16D9C7E2B2 , bda:LGE6241663AE54DC92 , bda:LGE8FD585E83CF9C8F , bda:LGF37C9D8AC9CE42C4 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A , bda:LGIMC3134826EB , bda:LGIMDA3CC38EDF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRF37C9D8AC9CE42C4
+    bdr:CR9C71D97977C1E8A4
         a                   :AgentAsCreator ;
         :agent              bdr:P1932 ;
         :role               bdr:R0ER0019 .
@@ -134,7 +141,7 @@ bdg:WA19975 {
         skos:altLabel       "rje 'ba' ra ba chen po rgyal mtshan dpal bzang gi bka' 'bum/"@bo-x-ewts , "rnam thar mgur 'bum dang bcas pa/"@bo-x-ewts , "thar pa skor gsum/"@bo-x-ewts , "A Tibetan encyclopedia of Buddhist scholasticism :the collected writings of ʾBaʾ-ra-ba Rgyal-mtshan-dpal-bzang."@en-x-mixed ;
         skos:prefLabel      "gsung 'bum/_rgyal mtshan dpal bzang /"@bo-x-ewts , "a tibetan encyclopedia of buddhist scholasticism : the collected writings of 'ba' ra ba rgyal mtshan dpal bzang"@en-x-mixed ;
         :catalogInfo        "Collected Works by Drukpa Kagyu master Barawa Gyaltsen Pelzang (1310-1391). Volumes contain his encyclopedic Tharpa korsum."@bo-x-ewts ;
-        :creator            bdr:CRF37C9D8AC9CE42C4 ;
+        :creator            bdr:CR9C71D97977C1E8A4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

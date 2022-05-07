@@ -50,6 +50,12 @@ bdg:WA1KG8722 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -67,15 +73,16 @@ bdg:WA1KG8722 {
     bda:WA1KG8722  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG8722 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "05/WA1KG8722.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG8722 ;
-        adm:logEntry        bda:LG0BD6837DD5B09317 , bda:LG36BF71D1775F282D , bda:LG603163BC692178C3 , bda:LGD2B2DE83FBE90332 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG0BD6837DD5B09317 , bda:LG36BF71D1775F282D , bda:LG603163BC692178C3 , bda:LGD2B2DE83FBE90332 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR73CBBCB7BF00CBCD
+    bdr:CRF372616EA6ACBF17
         a                   :AgentAsCreator ;
         :agent              bdr:P6877 ;
         :role               bdr:R0ER0019 .
@@ -86,7 +93,7 @@ bdg:WA1KG8722 {
         skos:altLabel       "mkhas mchog nA ro pan chen gyi rnam par thar pa dri med legs bshad bde chen 'brug sgra/"@bo-x-ewts , "rje btsun tai lo pa'i rnam par thar pa zab gsal rin chen gter mdzod bskal bzang yid 'phrog"@bo-x-ewts ;
         skos:prefLabel      "rje btsun ti lo pa dang nA ro pa'i rnam thar rin po che/"@bo-x-ewts , "the biographies of tilopa and naropa"@en ;
         :catalogInfo        "Biographies of the Indian mahasiddhas Tilopa and Naropa, of the Marpa Kagyu order."@en ;
-        :creator            bdr:CR73CBBCB7BF00CBCD ;
+        :creator            bdr:CRF372616EA6ACBF17 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

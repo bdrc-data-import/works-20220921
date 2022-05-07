@@ -48,6 +48,12 @@ bdg:WA1CZ2398 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -58,29 +64,30 @@ bdg:WA1CZ2398 {
     bda:WA1CZ2398  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1CZ2398 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "00/WA1CZ2398.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1CZ2398 ;
-        adm:logEntry        bda:LG2FFAEFA1E19D1FFB , bda:LG37C1CCEBDBB24DCD , bda:LG57E0A1009E9B919E , bda:LGAD36481081636A4A , bda:LGC61EB3905DD4FD21 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG2FFAEFA1E19D1FFB , bda:LG37C1CCEBDBB24DCD , bda:LG57E0A1009E9B919E , bda:LGAD36481081636A4A , bda:LGC61EB3905DD4FD21 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR8DFB1D2A614A460F
+    bdr:CR7D23E1231F0C2E28
         a                   :AgentAsCreator ;
-        :agent              bdr:P298 ;
+        :agent              bdr:P4798 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRF3CA24DFCB0F4C67
         a                   :AgentAsCreator ;
-        :agent              bdr:P4798 ;
+        :agent              bdr:P298 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA1CZ2398  a        :Work ;
         skos:altLabel       "rje gung thang pa'i shes rab snying po'i sngags kyi rnam bshad dang co ne bla ma blo bzang rgya mtsho'i gsung las legs par bshad pa'i snying po las brtsams te spel mar bkod pa dang zab don dbyangs su gyer ba bung ba 'phro 'du'i glu dbyangs sogs lta mgur khag"@bo-x-ewts ;
         skos:prefLabel      "gung thang pa'i shes rab snying po'i sngags kyi rnam bshad dang co ne bla ma blo bzang rgya mtsho'i lta mgur sogs/"@bo-x-ewts ;
         :catalogInfo        "Miscellaneous writings from the Geluk master Chone Lama Lobzang Gyatso."@en ;
-        :creator            bdr:CR8DFB1D2A614A460F , bdr:CRF3CA24DFCB0F4C67 ;
+        :creator            bdr:CR7D23E1231F0C2E28 , bdr:CRF3CA24DFCB0F4C67 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T413 ;

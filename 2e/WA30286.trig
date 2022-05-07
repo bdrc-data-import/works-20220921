@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30286 {
+    bda:LG176C5B76F15C23D5
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG236770D761B60F0A
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-08-30T11:13:21.787Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
-    
-    bda:LG2C7D35B60DA52E56
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LG35373568937C8A90
         a                   adm:UpdateData ;
@@ -72,6 +72,12 @@ bdg:WA30286 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -89,12 +95,13 @@ bdg:WA30286 {
     bda:WA30286  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30286 ;
-        adm:facetIndex      13 ;
+        adm:facetIndex      14 ;
         adm:gitPath         "2e/WA30286.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30286 ;
-        adm:logEntry        bda:LG236770D761B60F0A , bda:LG2C7D35B60DA52E56 , bda:LG35373568937C8A90 , bda:LG75FDDA775B3719D8 , bda:LG7A95FFA5A2E1EBEC , bda:LGB5BB6CB0BD5BEA16 , bda:LGC0ADC172866E6143 , bda:LGC9397397D1E42C22 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG176C5B76F15C23D5 , bda:LG236770D761B60F0A , bda:LG35373568937C8A90 , bda:LG75FDDA775B3719D8 , bda:LG7A95FFA5A2E1EBEC , bda:LGB5BB6CB0BD5BEA16 , bda:LGC0ADC172866E6143 , bda:LGC9397397D1E42C22 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA30286  a          :Work ;

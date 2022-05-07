@@ -12,7 +12,7 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA30152 {
-    bda:LGAEDE799EB181DC6C
+    bda:LG19B970E93B6C2FD7
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -28,6 +28,12 @@ bdg:WA30152 {
         adm:logMessage      "included in ctc 4"@en ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -38,15 +44,16 @@ bdg:WA30152 {
     bda:WA30152  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30152 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "5d/WA30152.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30152 ;
-        adm:logEntry        bda:LGAEDE799EB181DC6C , bda:LGC4EAF73E5BE32062 , bda:LGE3C788958F37562B , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG19B970E93B6C2FD7 , bda:LGC4EAF73E5BE32062 , bda:LGE3C788958F37562B , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR19B970E93B6C2FD7
+    bdr:CR8480C463212FE1D5
         a                   :AgentAsCreator ;
         :agent              bdr:P7031 ;
         :role               bdr:R0ER0019 .
@@ -56,7 +63,7 @@ bdg:WA30152 {
     bdr:WA30152  a          :Work ;
         skos:altLabel       "dpal na len+dra'i gzim 'og byams pa bstan 'dzin phrin las kyi gsung 'bum/"@bo-x-ewts ;
         skos:prefLabel      "gsung 'bum/_byams pa bstan 'dzin 'phrin las/"@bo-x-ewts , "ʼJam mgon Byams-pa-phrin-las-yon-tan gyi gsuṅ pod dgeʼo =The collected works of Jamgon Jampa Trinlye Yonten."@en-x-mixed ;
-        :creator            bdr:CR19B970E93B6C2FD7 ;
+        :creator            bdr:CR8480C463212FE1D5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

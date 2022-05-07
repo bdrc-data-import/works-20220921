@@ -24,6 +24,12 @@ bdg:WA1KG26249 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8F5AC89D  a     adm:UpdateData ;
         adm:logAgent        "add-works-to-PR1CTC16" ;
         adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
@@ -33,12 +39,13 @@ bdg:WA1KG26249 {
     bda:WA1KG26249  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG26249 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "b0/WA1KG26249.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG26249 ;
-        adm:logEntry        bda:LG3F0CB36615FA2227 , bda:LG49BEC6CC1FB941E0 , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG3F0CB36615FA2227 , bda:LG49BEC6CC1FB941E0 , bda:LGIM8A299A84 , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1KG26249  a       :Work ;

@@ -18,9 +18,15 @@ bdg:WA29634 {
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LGCD6D98B42D96A6B7
+    bda:LGA354E9EE8F4A8EF1
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
@@ -32,15 +38,16 @@ bdg:WA29634 {
     bda:WA29634  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29634 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "8b/WA29634.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29634 ;
-        adm:logEntry        bda:LG8C2928B04627A330 , bda:LGCD6D98B42D96A6B7 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG8C2928B04627A330 , bda:LGA354E9EE8F4A8EF1 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA354E9EE8F4A8EF1
+    bdr:CR33816412C4A0CABE
         a                   :AgentAsCreator ;
         :agent              bdr:P131 ;
         :role               bdr:R0ER0019 .
@@ -50,7 +57,7 @@ bdg:WA29634 {
     bdr:WA29634  a          :Work ;
         skos:altLabel       "skyob pa 'jig rten mgon po chen po'i rnam thar phyogs bcu dus gsum ma'i 'grel pa/"@bo-x-ewts ;
         skos:prefLabel      "skyob pa'i rnam thar phyogs bcu dus gsum ma/"@bo-x-ewts , "Skyob-paʾi rnam thar phyogs bcu dus gsum ma /ʾBri-guṅ-gliṅ-pa Śes-rab-ʾbyuṅ-gnas ; ʾBri-guṅ Bkaʾ-brgyud rdo rje dbyiṅs gtsug lag slob gñer khaṅ nas bsgrigs."@en-x-mixed ;
-        :creator            bdr:CRA354E9EE8F4A8EF1 ;
+        :creator            bdr:CR33816412C4A0CABE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

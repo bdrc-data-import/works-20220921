@@ -31,6 +31,12 @@ bdg:WA1KG4524 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -41,16 +47,17 @@ bdg:WA1KG4524 {
     bda:WA1KG4524  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4524 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "a2/WA1KG4524.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4524 ;
-        adm:logEntry        bda:LG5E76965FC3E3AAB4 , bda:LGB7015E3D1FA5C309 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG5E76965FC3E3AAB4 , bda:LGB7015E3D1FA5C309 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG10008 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR37D47E5741CCA012
+    bdr:CR5BB45F14AF400121
         a                   :AgentAsCreator ;
         :agent              bdr:P1629 ;
         :role               bdr:R0ER0019 .
@@ -59,7 +66,7 @@ bdg:WA1KG4524 {
         skos:altLabel       "rtags rigs kyi rnam gzhag rgyas pa rigs lam blo gros mig 'byed/"@bo-x-ewts ;
         skos:prefLabel      "rtags rigs rgyas pa/"@bo-x-ewts ;
         :catalogInfo        "On Buddhist epistemology and dialectical studies."@en ;
-        :creator            bdr:CR37D47E5741CCA012 ;
+        :creator            bdr:CR5BB45F14AF400121 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG4524 ;

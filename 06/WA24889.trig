@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA24889 {
-    bda:LG4A7135A2AE7A13C2
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LG50DBCADED9EF2D1F
         a                   adm:UpdateData ;
         adm:logDate         "2009-03-12T10:10:16.69Z"^^xsd:dateTime ;
         adm:logMessage      "qc"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LG95B4933279452BE1
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGB5BAA7688D7BA242
         a                   adm:ScanRequestCreation ;
@@ -56,6 +56,12 @@ bdg:WA24889 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -73,15 +79,16 @@ bdg:WA24889 {
     bda:WA24889  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA24889 ;
-        adm:facetIndex      11 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "06/WA24889.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA24889 ;
-        adm:logEntry        bda:LG4A7135A2AE7A13C2 , bda:LG50DBCADED9EF2D1F , bda:LGB5BAA7688D7BA242 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG50DBCADED9EF2D1F , bda:LG95B4933279452BE1 , bda:LGB5BAA7688D7BA242 , bda:LGIM093A1A0447 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8647D1C7AE , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR95B4933279452BE1
+    bdr:CR5AC27E742906FE35
         a                   :AgentAsCreator ;
         :agent              bdr:P8022 ;
         :role               bdr:R0ER0019 .
@@ -92,7 +99,7 @@ bdg:WA24889 {
         skos:altLabel       "myang stod sger pha lha ba'i mi rgyud rim pa'i sri zhu'i skor dang 'brel ba'i rang gi byung ba brjod pa srong po'i gtam/"@bo-x-ewts ;
         skos:prefLabel      "pha lha'i mi rgyud rim pa'i sri zhu'i byung ba brjod pa srong po'i gtam/"@bo-x-ewts , "Myaṅ stod sger Pha-lha baʾi mi rgyud rim byuṅ gi sri źuʾi skor daṅ ʾbrel baʾi raṅ gi byuṅ ba brjod pa sroṅ poʾi gtam źes bya ba bźugs so /Pha-lha Rdo-rje-dbaṅ-ʾdud."@en-x-mixed ;
         :catalogInfo        "Collected biographies of Tibetan civil servants from the Palha family and their contributions in exile. Written by Palha Dorje Wangdu."@en ;
-        :creator            bdr:CR95B4933279452BE1 ;
+        :creator            bdr:CR5AC27E742906FE35 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

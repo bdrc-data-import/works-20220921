@@ -18,18 +18,25 @@ bdg:WA1KG23849 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG23849  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG23849 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "34/WA1KG23849.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG23849 ;
-        adm:logEntry        bda:LG5D955DE36D263EFB ;
+        adm:logEntry        bda:LG5D955DE36D263EFB , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR786341A647C10114
+    bdr:CRE0D3575C91B202C2
         a                   :AgentAsCreator ;
         :agent              bdr:P37 ;
         :role               bdr:R0ER0019 .
@@ -37,7 +44,7 @@ bdg:WA1KG23849 {
     bdr:WA1KG23849  a       :Work ;
         skos:prefLabel      "lugs zung gi bslab bya mu thi la'i 'phreng ba/"@bo-x-ewts ;
         :catalogInfo        "Verse instruction to Khalkha Thushe Yethu Dorje Gyaltsen on the theory of the Tibetan Church and State."@en ;
-        :creator            bdr:CR786341A647C10114 ;
+        :creator            bdr:CRE0D3575C91B202C2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG23849 , bdr:MW1PD107937_27BB3E , bdr:W1KG23849 ;

@@ -24,18 +24,25 @@ bdg:WA8LS75856 {
         adm:logMessage      "new work record created"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA8LS75856  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS75856 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "fd/WA8LS75856.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS75856 ;
-        adm:logEntry        bda:LG5E0DCAC76A4466A8 , bda:LGA90DF75188CF4750 ;
+        adm:logEntry        bda:LG5E0DCAC76A4466A8 , bda:LGA90DF75188CF4750 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRC574412E8CACB662
+    bdr:CR87C5671AFAB006D1
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG5156 ;
         :role               bdr:R0ER0019 .
@@ -45,7 +52,7 @@ bdg:WA8LS75856 {
     bdr:WA8LS75856  a       :Work ;
         skos:prefLabel      "bod kyi gdam dpe phyogs bsdus/"@bo-x-ewts , "A Collection of Tibetan Proverbs"@en ;
         :catalogInfo        "A collecction of Tibetan proverbs; compiled by Tsewang Tamding."@en ;
-        :creator            bdr:CRC574412E8CACB662 ;
+        :creator            bdr:CR87C5671AFAB006D1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW8LS75856 , bdr:W8LS75856 ;

@@ -24,18 +24,25 @@ bdg:WA2KG208021 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA2KG208021  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG208021 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "c4/WA2KG208021.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG208021 ;
-        adm:logEntry        bda:LG3AD9404D4CD664D6 , bda:LG51B2D90DFF996B8C ;
+        adm:logEntry        bda:LG3AD9404D4CD664D6 , bda:LG51B2D90DFF996B8C , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR12959944B346F092
+    bdr:CR2CC9E823CFD3FB23
         a                   :AgentAsCreator ;
         :agent              bdr:P1583 ;
         :role               bdr:R0ER0019 .
@@ -46,7 +53,7 @@ bdg:WA2KG208021 {
         skos:altLabel       "rdzogs pa chen po sems nyid ngal gso'i 'grel pa shing rta chen po zhes bya ba kun mkhyen klong chen rab 'byams pas mdzad pa/"@bo-x-ewts ;
         skos:prefLabel      "rdzogs pa chen po sems nyid ngal gso'i 'grel pa shing rta chen po/"@bo-x-ewts , "the great chariot: a commentary to the great perfection, resting in mind itself"@en ;
         :catalogInfo        "A commentary to the great perfection, resting in mind itself by Nyingma master Longchen Rabjam Drime Odzer (1308-1364)."@en ;
-        :creator            bdr:CR12959944B346F092 ;
+        :creator            bdr:CR2CC9E823CFD3FB23 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

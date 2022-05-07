@@ -64,6 +64,12 @@ bdg:WA4CZ2193 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -74,27 +80,28 @@ bdg:WA4CZ2193 {
     bda:WA4CZ2193  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ2193 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "2e/WA4CZ2193.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ2193 ;
-        adm:logEntry        bda:LG0CA0B69141FFE518 , bda:LG16D34165D0169DE2 , bda:LG178E237C45DD893C , bda:LG17DF3BF8613CF142 , bda:LG5E5641BC3DCC1D36 , bda:LG91183358C927059F , bda:LGAC3088CA367F1D0D , bda:LGB51D35D684394DBC , bda:LGIM4BF5F96E12 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG0CA0B69141FFE518 , bda:LG16D34165D0169DE2 , bda:LG178E237C45DD893C , bda:LG17DF3BF8613CF142 , bda:LG5E5641BC3DCC1D36 , bda:LG91183358C927059F , bda:LGAC3088CA367F1D0D , bda:LGB51D35D684394DBC , bda:LGIM4BF5F96E12 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR211677BE95C0B165
         a                   :AgentAsCreator ;
-        :agent              bdr:P1056 ;
+        :agent              bdr:P1844 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR2A56426B5C6502BA
         a                   :AgentAsCreator ;
-        :agent              bdr:P1844 ;
+        :agent              bdr:P139 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR8B5C2174BF1146DA
+    bdr:CRE8FF2B6CAC4038C4
         a                   :AgentAsCreator ;
-        :agent              bdr:P139 ;
+        :agent              bdr:P1056 ;
         :role               bdr:R0ER0019 .
     
     bdr:MW4CZ2193  skos:altLabel  "Bstan pa la ʼjug paʼi rim pa ston paʼi gźuṅ gces btus /[compiled &amp; edited by Institute of Tibetan Classics]."@en-x-mixed .
@@ -102,7 +109,7 @@ bdg:WA4CZ2193 {
     bdr:WA4CZ2193  a        :Work ;
         skos:altLabel       "bstan pa la 'jug pa'i rim pa ston pa'i gzhung gces btus/"@bo-x-ewts ;
         skos:prefLabel      "bstan rim gces btus/"@bo-x-ewts , "Bstan pa la ʼjug paʼi rim pa ston paʼi gźuṅ gces btus /[compiled &amp; edited by Institute of Tibetan Classics]."@en-x-mixed ;
-        :creator            bdr:CR211677BE95C0B165 , bdr:CR2A56426B5C6502BA , bdr:CR8B5C2174BF1146DA ;
+        :creator            bdr:CR211677BE95C0B165 , bdr:CR2A56426B5C6502BA , bdr:CRE8FF2B6CAC4038C4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T1352 , bdr:T238 ;

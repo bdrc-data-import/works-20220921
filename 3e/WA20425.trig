@@ -12,15 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA20425 {
+    bda:LG9B8ACAC7D053963B
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG9CD924DB0A45C858
         a                   adm:UpdateData ;
         adm:logDate         "2009-11-01T13:30:53.786Z"^^xsd:dateTime ;
         adm:logMessage      "ctc7"@en ;
         adm:logWho          bdu:U00026 .
-    
-    bda:LGBFA93E2554E0DA74
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -28,6 +28,12 @@ bdg:WA20425 {
         adm:logMessage      "normalized catalog info"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
@@ -39,15 +45,16 @@ bdg:WA20425 {
     bda:WA20425  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA20425 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "3e/WA20425.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA20425 ;
-        adm:logEntry        bda:LG9CD924DB0A45C858 , bda:LGBFA93E2554E0DA74 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG9B8ACAC7D053963B , bda:LG9CD924DB0A45C858 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9B8ACAC7D053963B
+    bdr:CR9AB8A7054B08D58E
         a                   :AgentAsCreator ;
         :agent              bdr:P7 ;
         :role               bdr:R0ER0019 .
@@ -56,7 +63,7 @@ bdg:WA20425 {
         skos:altLabel       "rje bla ma gter bdag gling pa'i bka' 'bum dkar chag nor bu'i phreng ba/"@bo-x-ewts ;
         skos:prefLabel      "smin gling gter chen bka' 'bum dkar chag"@bo-x-ewts ;
         :catalogInfo        "Notice of contents to the Collected Works of Terdak Lingpa Gyurme Dorje (1646-1714)."@en ;
-        :creator            bdr:CR9B8ACAC7D053963B ;
+        :creator            bdr:CR9AB8A7054B08D58E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T13 ;

@@ -49,6 +49,12 @@ bdg:WA1PD108087 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -66,15 +72,16 @@ bdg:WA1PD108087 {
     bda:WA1PD108087  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD108087 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      11 ;
         adm:gitPath         "91/WA1PD108087.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD108087 ;
-        adm:logEntry        bda:LG03B7BDB1BA2C152A , bda:LG43A74BD70BFC11D3 , bda:LG7CEA3D62E63229D7 , bda:LGA1396C0A499130C7 , bda:LGBAC625E7AC0F2201 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG03B7BDB1BA2C152A , bda:LG43A74BD70BFC11D3 , bda:LG7CEA3D62E63229D7 , bda:LGA1396C0A499130C7 , bda:LGBAC625E7AC0F2201 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CREE914587E26F0083
+    bdr:CRE4FD9DC432463C9B
         a                   :AgentAsCreator ;
         :agent              bdr:P1PD108088 ;
         :role               bdr:R0ER0019 .
@@ -83,7 +90,7 @@ bdg:WA1PD108087 {
         skos:altLabel       "mkhan rin po che pad+ma dam chos kyi mdzad rnam mdor bsdus bkod pa dad gsum ut+pal gsar pa'i snye ma/"@bo-x-ewts ;
         skos:prefLabel      "rdzong sar mkhan pad+ma dam chos kyi mdzad rnam mdor bsdus dad gsum ut+pal gsar pa'i snye ma/"@bo-x-ewts ;
         :catalogInfo        "A biography of Dzongsar Khenpo Pema Damcho (1933-)."@en ;
-        :creator            bdr:CREE914587E26F0083 ;
+        :creator            bdr:CRE4FD9DC432463C9B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

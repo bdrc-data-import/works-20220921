@@ -24,18 +24,25 @@ bdg:WA2KG228738 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA2KG228738  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG228738 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "29/WA2KG228738.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG228738 ;
-        adm:logEntry        bda:LG4366D152EA4C9400 , bda:LG59C5753534987BC3 ;
+        adm:logEntry        bda:LG4366D152EA4C9400 , bda:LG59C5753534987BC3 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5913B628991E6458
+    bdr:CR537C62340ACEDA28
         a                   :AgentAsCreator ;
         :agent              bdr:P8LS43259 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +51,7 @@ bdg:WA2KG228738 {
         skos:altLabel       "zin bris bdams bsgrigs/"@bo-x-ewts ;
         skos:prefLabel      "srid pa'i gtam tshogs/"@bo-x-ewts ;
         :catalogInfo        "Selection of record writings by Geshe Tri Youngdrung on biographies, doctrine, history, poetry."@en ;
-        :creator            bdr:CR5913B628991E6458 ;
+        :creator            bdr:CR537C62340ACEDA28 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1478 , bdr:T1PD128746 , bdr:T258 ;

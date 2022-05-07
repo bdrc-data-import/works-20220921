@@ -24,6 +24,12 @@ bdg:WA3CN15679 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA612579E55
         a                   adm:UpdateData ;
         adm:logDate         "2020-06-17T14:18:30.613Z"^^xsd:dateTime ;
@@ -40,15 +46,16 @@ bdg:WA3CN15679 {
     bda:WA3CN15679  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN15679 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "80/WA3CN15679.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN15679 ;
-        adm:logEntry        bda:LG1DBC18C0B2775509 , bda:LG873AEA14DC4C5C19 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
+        adm:logEntry        bda:LG1DBC18C0B2775509 , bda:LG873AEA14DC4C5C19 , bda:LGIM8A299A84 , bda:LGIMA612579E55 , bda:LGIMECF1E61D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRD042F93115819F8D
+    bdr:CRE209D1762D9880CB
         a                   :AgentAsCreator ;
         :agent              bdr:P1830 ;
         :role               bdr:R0ER0019 .
@@ -56,7 +63,7 @@ bdg:WA3CN15679 {
     bdr:WA3CN15679  a       :Work ;
         skos:prefLabel      "rgyal sras lag len so bdun ma/"@bo-x-ewts ;
         :catalogInfo        "The thirty seven bodhisattva practices by Gyalse Tokme Zangpo (1295-1369)."@en ;
-        :creator            bdr:CRD042F93115819F8D ;
+        :creator            bdr:CRE209D1762D9880CB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1CZ1084_5A97B7 , bdr:MW1TLMTGA001804 , bdr:MW3CN15679 , bdr:MW4CZ34262_F4B4D4 , bdr:W3CN15679 ;

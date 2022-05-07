@@ -29,7 +29,7 @@ bdg:WA30403 {
         adm:logMessage      "CTC5"@en ;
         adm:logWho          bdu:U00026 .
     
-    bda:LG9D1D44278FD3FAA7
+    bda:LG96170F489B42EB9D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
@@ -47,6 +47,12 @@ bdg:WA30403 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -57,15 +63,16 @@ bdg:WA30403 {
     bda:WA30403  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30403 ;
-        adm:facetIndex      9 ;
+        adm:facetIndex      10 ;
         adm:gitPath         "bf/WA30403.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30403 ;
-        adm:logEntry        bda:LG05CBE02C3DA6D6A2 , bda:LG49CA60F9B70F4B96 , bda:LG50762E23CAD4CCBA , bda:LG9D1D44278FD3FAA7 , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG05CBE02C3DA6D6A2 , bda:LG49CA60F9B70F4B96 , bda:LG50762E23CAD4CCBA , bda:LG96170F489B42EB9D , bda:LGIM5A753E00B7 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR96170F489B42EB9D
+    bdr:CRF01B929F60BE0ECF
         a                   :AgentAsCreator ;
         :agent              bdr:P9569 ;
         :role               bdr:R0ER0019 .
@@ -73,7 +80,7 @@ bdg:WA30403 {
     bdr:WA30403  a          :Work ;
         skos:prefLabel      "rtsa ba sum cu pa'i 'grel pa phan bde'i dga' char/"@bo-x-ewts ;
         :catalogInfo        "Commentary on Tibetan grammar,"@en ;
-        :creator            bdr:CR96170F489B42EB9D ;
+        :creator            bdr:CRF01B929F60BE0ECF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

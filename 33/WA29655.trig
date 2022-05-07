@@ -18,15 +18,15 @@ bdg:WA29655 {
         adm:logMessage      "added shad"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LG9A9D15D102BD50EF
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGB08DAE602196B4CC
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2011-08-12T16:09:12.661Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
+    
+    bda:LGC09BCD9820D2FB7C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM4BF5F96E12
         a                   adm:UpdateData ;
@@ -35,19 +35,26 @@ bdg:WA29655 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA29655  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA29655 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "33/WA29655.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA29655 ;
-        adm:logEntry        bda:LG76723A93B13C5B12 , bda:LG9A9D15D102BD50EF , bda:LGB08DAE602196B4CC , bda:LGIM4BF5F96E12 ;
+        adm:logEntry        bda:LG76723A93B13C5B12 , bda:LGB08DAE602196B4CC , bda:LGC09BCD9820D2FB7C , bda:LGIM4BF5F96E12 , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA0XL740518E2E9D8 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRC09BCD9820D2FB7C
+    bdr:CRAA87141E8B4884E2
         a                   :AgentAsCreator ;
         :agent              bdr:P675 ;
         :role               bdr:R0ER0019 .
@@ -55,7 +62,7 @@ bdg:WA29655 {
     bdr:WA29655  a          :Work ;
         skos:altLabel       "drang ba dang nges pa'i don rnam par 'byed pa'i bstan bcos legs bshad snying po'i dgongs don gsal bar byed pa blo bzang dgongs gsal dang tshad ma grub pa'i le'u'i zur rgyan gzhan phan rgya mtsho bcas/"@bo-x-ewts , "tshad ma grub pa'i le'u'i zur rgyan gzhan phan rgya mtsho/"@bo-x-ewts ;
         skos:prefLabel      "drang nges blo bzang dgongs gsal dang tshad ma gzhan phan rgya mtsho bcas/"@bo-x-ewts ;
-        :creator            bdr:CRC09BCD9820D2FB7C ;
+        :creator            bdr:CRAA87141E8B4884E2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workIsAbout        bdr:T1441 , bdr:T370 , bdr:WA606 .

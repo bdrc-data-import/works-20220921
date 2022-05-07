@@ -66,6 +66,12 @@ bdg:WA2CZ8047 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -76,27 +82,28 @@ bdg:WA2CZ8047 {
     bda:WA2CZ8047  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2CZ8047 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "9d/WA2CZ8047.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2CZ8047 ;
-        adm:logEntry        bda:LG0C380F84EB0AF9C1 , bda:LG27E0FFC586B45D91 , bda:LG2BC7874A70185BA6 , bda:LGAE62E3A4D0FA5FCE , bda:LGB89D735C940171EF , bda:LGCB8AB8AAF3D54489 , bda:LGE344E71BEE1AF310 , bda:LGIM569A8014B1 , bda:LGIM74A445C794 , bda:LGIMA1F3FB78EA ;
+        adm:logEntry        bda:LG0C380F84EB0AF9C1 , bda:LG27E0FFC586B45D91 , bda:LG2BC7874A70185BA6 , bda:LGAE62E3A4D0FA5FCE , bda:LGB89D735C940171EF , bda:LGCB8AB8AAF3D54489 , bda:LGE344E71BEE1AF310 , bda:LGIM569A8014B1 , bda:LGIM74A445C794 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR582C9338F890B967
         a                   :AgentAsCreator ;
-        :agent              bdr:P166 ;
+        :agent              bdr:P6116 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR59AB4AB8B522DD1A
         a                   :AgentAsCreator ;
-        :agent              bdr:P6116 ;
+        :agent              bdr:P4758 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRE13AA4A4B49B34A9
+    bdr:CRC1BDCDEAA3E40A0E
         a                   :AgentAsCreator ;
-        :agent              bdr:P4758 ;
+        :agent              bdr:P166 ;
         :role               bdr:R0ER0019 .
     
     bdr:MW2CZ8047  skos:altLabel  "a magic key for hundred doors to knowledge"@en .
@@ -104,7 +111,7 @@ bdg:WA2CZ8047 {
     bdr:WA2CZ8047  a        :Work ;
         skos:prefLabel      "rigs lam sgo brgya 'byed pa'i 'phrul gyi lde mig"@bo-x-ewts , "a magic key for hundred doors to knowledge"@en ;
         :catalogInfo        "Collection of texts on Buddhist logic and epistemology."@en ;
-        :creator            bdr:CR582C9338F890B967 , bdr:CR59AB4AB8B522DD1A , bdr:CRE13AA4A4B49B34A9 ;
+        :creator            bdr:CR582C9338F890B967 , bdr:CR59AB4AB8B522DD1A , bdr:CRC1BDCDEAA3E40A0E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2CZ8047 , bdr:W2CZ8047 ;

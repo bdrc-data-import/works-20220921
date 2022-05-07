@@ -24,6 +24,12 @@ bdg:WA1KG16760 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMA1F3FB78EA
         a                   adm:UpdateData ;
         adm:logDate         "2014-04-23T19:16:52.743Z"^^xsd:dateTime ;
@@ -41,15 +47,16 @@ bdg:WA1KG16760 {
     bda:WA1KG16760  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG16760 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "72/WA1KG16760.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG16760 ;
-        adm:logEntry        bda:LG7842430F2897296E , bda:LGB5A98EA5F68B93B1 , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG7842430F2897296E , bda:LGB5A98EA5F68B93B1 , bda:LGIM8A299A84 , bda:LGIMA1F3FB78EA , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR9F32355D478152A8
+    bdr:CR45908A6F5CE38724
         a                   :AgentAsCreator ;
         :agent              bdr:P1GS135253 ;
         :role               bdr:R0ER0019 .
@@ -58,7 +65,7 @@ bdg:WA1KG16760 {
         skos:altLabel       "A grammar of the Tibetan language, in English.Prepared, under the patronage of the government and the auspices of the Asiatic Society of Bengal,by Alexander Csoma de Ko̦rös ..."@en-x-mixed ;
         skos:prefLabel      "bod skad kyi byA ka ra Na'am lung ston pa'i bstan bcos/"@bo-x-ewts , "grammar of the tibetan language"@en ;
         :catalogInfo        "Grammar of the Tibetan language. Prepared under the patronage of the government and the auspices of the Asiatic Society of Bengal."@en ;
-        :creator            bdr:CR9F32355D478152A8 ;
+        :creator            bdr:CR45908A6F5CE38724 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn ;
         :workHasInstance    bdr:MW1KG16760 , bdr:W1KG16760 ;

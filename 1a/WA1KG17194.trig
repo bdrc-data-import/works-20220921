@@ -24,18 +24,25 @@ bdg:WA1KG17194 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA1KG17194  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG17194 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "1a/WA1KG17194.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG17194 ;
-        adm:logEntry        bda:LG584AB210F54B4012 , bda:LG84FB4B34DCB49A0A ;
+        adm:logEntry        bda:LG584AB210F54B4012 , bda:LG84FB4B34DCB49A0A , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6DEF9571D81C60F9
+    bdr:CR92E70F6BB4295190
         a                   :AgentAsCreator ;
         :agent              bdr:P560 ;
         :role               bdr:R0ER0019 .
@@ -43,7 +50,7 @@ bdg:WA1KG17194 {
     bdr:WA1KG17194  a       :Work ;
         skos:prefLabel      "tshad ma'i rtags rigs skor sde bdun sgo brgyad 'byed pa'i 'phrul gyi lde mig"@bo-x-ewts ;
         :catalogInfo        "Writings on Buddhist epistemology by a Sakya scholar Jamyang Loter Wangpo"@en ;
-        :creator            bdr:CR6DEF9571D81C60F9 ;
+        :creator            bdr:CR92E70F6BB4295190 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG17194 , bdr:W1KG17194 ;

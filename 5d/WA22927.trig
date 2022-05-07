@@ -12,9 +12,15 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22927 {
-    bda:LG429DA9D49B31419B
+    bda:LG05AD4237AF906639
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
+    
+    bda:LG429DA9D49B31419B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-06T14:53:34.831Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PL480"@en ;
+        adm:logWhoStr       "add-works-to-PR1PL480" .
     
     bda:LG58ECEC65BA4CBFF1
         a                   adm:ScanRequestCreation ;
@@ -81,21 +87,21 @@ bdg:WA22927 {
     bda:WA22927  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22927 ;
-        adm:facetIndex      14 ;
+        adm:facetIndex      15 ;
         adm:gitPath         "5d/WA22927.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22927 ;
-        adm:logEntry        bda:LG429DA9D49B31419B , bda:LG58ECEC65BA4CBFF1 , bda:LG8F3A02F36C85141E , bda:LG9B22678D0232A68D , bda:LGA1D960D33DDC220C , bda:LGABCC66670D1A0B8F , bda:LGBB0D7138202DAD66 , bda:LGC4BC1DF07495D934 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG05AD4237AF906639 , bda:LG429DA9D49B31419B , bda:LG58ECEC65BA4CBFF1 , bda:LG8F3A02F36C85141E , bda:LG9B22678D0232A68D , bda:LGA1D960D33DDC220C , bda:LGABCC66670D1A0B8F , bda:LGBB0D7138202DAD66 , bda:LGC4BC1DF07495D934 , bda:LGIM4BF5F96E12 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA1KG10779 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CR05AD4237AF906639
+    bdr:CR6007ABBCBF981360
         a                   :AgentAsCreator ;
         :agent              bdr:P3442 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR6007ABBCBF981360
+    bdr:CRF5B1AF53C0898DEB
         a                   :AgentAsCreator ;
         :agent              bdr:P4892 ;
         :role               bdr:R0ER0014 .
@@ -105,7 +111,7 @@ bdg:WA22927 {
     bdr:WA22927  a          :Work ;
         skos:prefLabel      "dpe chos rin chen spungs pa'i 'bum 'grel/"@bo-x-ewts , "dpe chos rin chen spungs pa'i 'bum 'grel : detailed explanations of the examples (dpe) used in po-to-ba rin-chen-gsal's dpe chos rtsa ba and dge-bshes wa-brag-dkar-ba's dpe chos rin chen spungs pa, popular presentations of the principles of the bka'-gdams-pa approach to lamaist practice"@en ;
         :catalogInfo        "Explanation of examples employed in Potowa Rinchen Sal's presentation, Dpe chos rtsa ba and Geshe Drakarwa's Dpe chos rin chen spungs pa. Popular presentations of the principles of the Kadam approach to practice by Chegom Sherab Dorje."@en ;
-        :creator            bdr:CR05AD4237AF906639 , bdr:CR6007ABBCBF981360 ;
+        :creator            bdr:CR6007ABBCBF981360 , bdr:CRF5B1AF53C0898DEB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;

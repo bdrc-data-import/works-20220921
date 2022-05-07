@@ -12,6 +12,10 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA22720 {
+    bda:LG3CAD6B551289F08A
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LG880D90130861BC3C
         a                   adm:UpdateData ;
         adm:logDate         "2016-01-29T14:15:02.733Z"^^xsd:dateTime ;
@@ -24,10 +28,6 @@ bdg:WA22720 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
-    bda:LGDFA07A71AA079B84
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
-    
     bda:LGIM4599A38FCE
         a                   adm:UpdateData ;
         adm:logDate         "2017-07-07T21:31:19.81Z"^^xsd:dateTime ;
@@ -35,18 +35,25 @@ bdg:WA22720 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:WA22720  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22720 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "3a/WA22720.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22720 ;
-        adm:logEntry        bda:LG880D90130861BC3C , bda:LGBA3332CF5AD08978 , bda:LGDFA07A71AA079B84 , bda:LGIM4599A38FCE ;
+        adm:logEntry        bda:LG3CAD6B551289F08A , bda:LG880D90130861BC3C , bda:LGBA3332CF5AD08978 , bda:LGIM4599A38FCE , bda:LGIM8A299A84 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3CAD6B551289F08A
+    bdr:CR2A8F97FB51A80E8A
         a                   :AgentAsCreator ;
         :agent              bdr:P00EGS1010412 ;
         :role               bdr:R0ER0019 .
@@ -55,7 +62,7 @@ bdg:WA22720 {
         skos:altLabel       "thams cad mkhyen pa dkar brgyud 'phrin las shing rta chen po'i rnam par thar pa dad pa rgya mtsho'i gru rdzings/"@bo-x-ewts ;
         skos:prefLabel      "dkar brgyud 'phrin las shing rta chen po'i rnam thar dad pa rgya mtsho'i gru rdzings/"@bo-x-ewts ;
         :catalogInfo        "A biography of Drukpa Kagyu master Trinle Shingta (1718-1766), written by Ratnasamudra."@en ;
-        :creator            bdr:CR3CAD6B551289F08A ;
+        :creator            bdr:CR2A8F97FB51A80E8A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;

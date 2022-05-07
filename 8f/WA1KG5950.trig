@@ -37,6 +37,12 @@ bdg:WA1KG5950 {
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00012 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIMAEA9B78D7A
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-17T11:18:37.731Z"^^xsd:dateTime ;
@@ -47,15 +53,16 @@ bdg:WA1KG5950 {
     bda:WA1KG5950  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG5950 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "8f/WA1KG5950.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG5950 ;
-        adm:logEntry        bda:LG8C482CA38E0ED3DF , bda:LGA1E38D36E1B6FF42 , bda:LGC341340B26EF29E8 , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A ;
+        adm:logEntry        bda:LG8C482CA38E0ED3DF , bda:LGA1E38D36E1B6FF42 , bda:LGC341340B26EF29E8 , bda:LGIM5A753E00B7 , bda:LGIM8A299A84 , bda:LGIMAEA9B78D7A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRB9AE3A63882CC58D
+    bdr:CR35A123B3B7E89FB2
         a                   :AgentAsCreator ;
         :agent              bdr:P8014 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +71,7 @@ bdg:WA1KG5950 {
         skos:altLabel       "bod du chang sa rgyag tshul gna' bo'i lugs bzang yang gsal bde skyid rdzongs ldan gsar pa mgron du 'gugs pa'i pho nya/"@bo-x-ewts ;
         skos:prefLabel      "gna' rabs bod kyi chang sa'i lam srol/"@bo-x-ewts , "tibetan marriage custom"@en ;
         :catalogInfo        "On Tibetan marriage custom and rites."@en ;
-        :creator            bdr:CRB9AE3A63882CC58D ;
+        :creator            bdr:CR35A123B3B7E89FB2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1KG5950 , bdr:W1KG5950 ;

@@ -18,15 +18,15 @@ bdg:WA22017 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG1EBEBE1682539A8C
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
+    
     bda:LGACD9C006219A56CF
         a                   adm:UpdateData ;
         adm:logDate         "2014-05-08T15:58:07.051Z"^^xsd:dateTime ;
         adm:logMessage      "released from onhold and completed cataloing"@en ;
         adm:logWho          bdu:U00016 .
-    
-    bda:LGE1386BDFE44D7EC0
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
     
     bda:LGIM569A8014B1
         a                   adm:UpdateData ;
@@ -34,6 +34,12 @@ bdg:WA22017 {
         adm:logMessage      "added Work to CTC 13"@en ;
         adm:logMethod       bda:BatchMethod ;
         adm:logWho          bdu:U00006 .
+    
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
     
     bda:LGIMF03D5361F1
         a                   adm:UpdateData ;
@@ -45,15 +51,16 @@ bdg:WA22017 {
     bda:WA22017  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22017 ;
-        adm:facetIndex      7 ;
+        adm:facetIndex      8 ;
         adm:gitPath         "22/WA22017.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22017 ;
-        adm:logEntry        bda:LG0D9EAA941AF992AA , bda:LGACD9C006219A56CF , bda:LGE1386BDFE44D7EC0 , bda:LGIM569A8014B1 , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG0D9EAA941AF992AA , bda:LG1EBEBE1682539A8C , bda:LGACD9C006219A56CF , bda:LGIM569A8014B1 , bda:LGIM8A299A84 , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1EBEBE1682539A8C
+    bdr:CR2CEE0079CF45052A
         a                   :AgentAsCreator ;
         :agent              bdr:P7442 ;
         :role               bdr:R0ER0019 .
@@ -64,7 +71,7 @@ bdg:WA22017 {
         skos:altLabel       "gling rje ge sar rgyal po'i sgrung smug gu drel rdzong /"@bo-x-ewts ;
         skos:prefLabel      "smug gu drel rdzong /"@bo-x-ewts , "the smug gu drel rdzon version of the tibetan gesar epic"@en ;
         :catalogInfo        "An episode from the epic of Gesar."@en ;
-        :creator            bdr:CR1EBEBE1682539A8C ;
+        :creator            bdr:CR2CEE0079CF45052A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW22017 , bdr:W22017 ;

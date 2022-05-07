@@ -24,6 +24,12 @@ bdg:WA1KG17605 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGIM8A299A84  a     adm:UpdateData ;
+        adm:logAgent        "works-mark-restrictedInChina.xql" ;
+        adm:logDate         "2022-05-06T15:15:30.865Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access to restrictedInChina"@en ;
+        adm:logMethod       bda:BatchMethod .
+    
     bda:LGIM8F5AC89D  a     adm:UpdateData ;
         adm:logAgent        "add-works-to-PR1CTC16" ;
         adm:logDate         "2019-05-15T17:49:21.383Z"^^xsd:dateTime ;
@@ -40,15 +46,16 @@ bdg:WA1KG17605 {
     bda:WA1KG17605  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG17605 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "76/WA1KG17605.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG17605 ;
-        adm:logEntry        bda:LG91F6DAE7A7DDB464 , bda:LGACAF622D0120F37D , bda:LGIM8F5AC89D , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG91F6DAE7A7DDB464 , bda:LGACAF622D0120F37D , bda:LGIM8A299A84 , bda:LGIM8F5AC89D , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR65096459D56E8F85
+    bdr:CR82F939B6BFDFF965
         a                   :AgentAsCreator ;
         :agent              bdr:P1KG17636 ;
         :role               bdr:R0ER0019 .
@@ -57,7 +64,7 @@ bdg:WA1KG17605 {
         skos:altLabel       "phyi lo 1993 nas 2008 bar gna' dus kyi yig rnying gsar rnyed byung ba rnams dang dpe rgyun dkon rigs 'ga' zhig bcas ka Tha man DU rgyal yongs gsung rab slob gnyer khang du glog klad kyis dpar rtsa bzos te zhu dag lan grangs byas nas ldi lir par du bskrun pa'i bzhugs byang mdor bsdus/"@bo-x-ewts ;
         skos:prefLabel      "sa skya pa'i gsung rab dpe rnying khag gcig phyogs bsgrigs par du bskrun pa'i dkar chag rin chen mdzod brgya 'byed pa'i lde mig"@bo-x-ewts ;
         :catalogInfo        "Catalog of new findings of old manuscripts and rare texts. Computerised, digitally input, and published by Sachen International, Kathmandu from 1993-2008."@en ;
-        :creator            bdr:CR65096459D56E8F85 ;
+        :creator            bdr:CR82F939B6BFDFF965 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T13 , bdr:T208 ;
