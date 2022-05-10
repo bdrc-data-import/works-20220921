@@ -14,13 +14,14 @@
 bdg:WA2KG5060 {
     bda:LG94A5F7E59419E471
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2021-09-16T18:15:51.84Z"^^xsd:dateTime ;
+        adm:logDate         "2022-05-09T10:12:01.566Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:LGE7F59F280B343D79
-        a                   adm:UpdateData ;
-        adm:logDate         "2021-09-21T15:41:25.093Z"^^xsd:dateTime ;
-        adm:logMessage      "cataloged"@en ;
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-05-09T10:14:55.015Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG5060  a        adm:AdminData ;
@@ -32,7 +33,7 @@ bdg:WA2KG5060 {
         adm:graphId         bdg:WA2KG5060 ;
         adm:logEntry        bda:LG94A5F7E59419E471 , bda:LGE7F59F280B343D79 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusProvisional .
+        adm:status          bda:StatusReleased .
     
     bdr:CRA0B817916EDDA82A
         a                   :AgentAsCreator ;
@@ -47,6 +48,6 @@ bdg:WA2KG5060 {
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1134 ;
-        :workHasInstance    bdr:MW2KG5060 ;
+        :workHasInstance    bdr:MW2KG5060 , bdr:W2KG5060 ;
         :workIsAbout        bdr:T1082 , bdr:T1113 , bdr:T350 .
 }

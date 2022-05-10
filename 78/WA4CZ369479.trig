@@ -1,0 +1,47 @@
+@prefix :      <http://purl.bdrc.io/ontology/core/> .
+@prefix adm:   <http://purl.bdrc.io/ontology/admin/> .
+@prefix bda:   <http://purl.bdrc.io/admindata/> .
+@prefix bdg:   <http://purl.bdrc.io/graph/> .
+@prefix bdr:   <http://purl.bdrc.io/resource/> .
+@prefix bdu:   <http://purl.bdrc.io/resource-nc/user/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+bdg:WA4CZ369479 {
+    bda:LG4948FCE0C2192A50
+        a                   adm:InitialDataCreation ;
+        adm:logDate         "2022-05-09T16:21:23.468Z"^^xsd:dateTime ;
+        adm:logMessage      "new test"@en ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:WA4CZ369479  a      adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:WA4CZ369479 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "78/WA4CZ369479.trig" ;
+        adm:gitRepo         bda:GR0008 ;
+        adm:graphId         bdg:WA4CZ369479 ;
+        adm:logEntry        bda:LG4948FCE0C2192A50 ;
+        adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:status          bda:StatusReleased .
+    
+    bdr:CR072692799DF06C4E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P7771 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA4CZ369479  a      :Work ;
+        skos:altLabel       "shar rgyal ba tsong kha pa dpal bzang pos mdzad pa'i zab mo rten 'byung gi bstod pa legs par bshad pa snying po'i 'grel pa rnam bshad nyi ma'i snying po/"@bo-x-ewts ;
+        skos:prefLabel      "zab mo rten 'byung gi bstod pa legs par bshad pa snying po'i 'grel pa rnam bshad nyi ma'i snying po/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on cittamatra section of Tsongkhapa's writing on provisional and ultimate"@en ;
+        :creator            bdr:CR072692799DF06C4E ;
+        :isRoot             true ;
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW4CZ369479 ;
+        :workIsAbout        bdr:WA10MS11183 .
+}
