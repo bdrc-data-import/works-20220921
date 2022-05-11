@@ -24,6 +24,12 @@ bdg:WA1KG15366 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGA5196A21BD586AD4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-10T13:02:39.69Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to PR4JW5430"@en ;
+        adm:logWhoStr       "add-works-to-PR4JW5430" .
+    
     bda:LGB7CFE4143E29CBAC
         a                   adm:InitialDataCreation ;
         adm:logDate         "2013-09-30T16:43:52.925Z"^^xsd:dateTime ;
@@ -46,29 +52,29 @@ bdg:WA1KG15366 {
     bda:WA1KG15366  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG15366 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "75/WA1KG15366.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG15366 ;
-        adm:logEntry        bda:LG3AA52801AA5785EF , bda:LG93B8626B8729C15C , bda:LGB7CFE4143E29CBAC , bda:LGE432FF9E642EE559 , bda:LGIMB5991979B0 ;
+        adm:logEntry        bda:LG3AA52801AA5785EF , bda:LG93B8626B8729C15C , bda:LGA5196A21BD586AD4 , bda:LGB7CFE4143E29CBAC , bda:LGE432FF9E642EE559 , bda:LGIMB5991979B0 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR64703636E967473E
         a                   :AgentAsCreator ;
-        :agent              bdr:P1132 ;
-        :role               bdr:R0ER0011 .
-    
-    bdr:CRA5196A21BD586AD4
-        a                   :AgentAsCreator ;
         :agent              bdr:P1KG14993 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CREFAE266D2CA8BEB6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1132 ;
+        :role               bdr:R0ER0011 .
     
     bdr:WA1KG15366  a       :Work ;
         skos:altLabel       "the early mustang kanjur catalogue"@en ;
         skos:prefLabel      "mdo sngags bka' 'gyur dkar chag dang bka' 'gyur ro cog gi dkar chag bstan pa gsal ba'i sgron me/"@bo-x-ewts , "the early mustang kanjur catalogue : a structured edition of the mdo sngags bka' 'gyur dkar chag and of ngor chen kun dga' bzang po's bKa' 'gyur ro cog gi dkar chag bstan pa gsal ba'i sgron me"@en ;
         :catalogInfo        "The early Mustang Kanjur catalogue."@en ;
-        :creator            bdr:CR64703636E967473E , bdr:CRA5196A21BD586AD4 ;
+        :creator            bdr:CR64703636E967473E , bdr:CREFAE266D2CA8BEB6 ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangEn ;
         :workGenre          bdr:T13 ;
