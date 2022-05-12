@@ -25,8 +25,10 @@ bdg:WA23640 {
         adm:logWho          bdu:U00016 .
     
     bda:LG3662B95B8F354608
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-11T19:25:20.326Z"^^xsd:dateTime ;
+        adm:logMessage      "added main author"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG649717B94AB31057
         a                   adm:ScanRequestCreation ;
@@ -39,6 +41,10 @@ bdg:WA23640 {
         adm:logDate         "2013-03-06T09:23:48.569Z"^^xsd:dateTime ;
         adm:logMessage      "added print type and source printery"@en ;
         adm:logWho          bdu:U00013 .
+    
+    bda:LGCA10A7D6D3085CCB
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGIM5A753E00B7
         a                   adm:UpdateData ;
@@ -64,19 +70,24 @@ bdg:WA23640 {
     bda:WA23640  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA23640 ;
-        adm:facetIndex      10 ;
+        adm:facetIndex      12 ;
         adm:gitPath         "14/WA23640.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA23640 ;
-        adm:logEntry        bda:LG1158E8E3130CDBC8 , bda:LG32369E6B302433B9 , bda:LG3662B95B8F354608 , bda:LG649717B94AB31057 , bda:LG983D892E7C3308CC , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG1158E8E3130CDBC8 , bda:LG32369E6B302433B9 , bda:LG3662B95B8F354608 , bda:LG649717B94AB31057 , bda:LG983D892E7C3308CC , bda:LGCA10A7D6D3085CCB , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:replaceWith     bdr:WA13868 ;
         adm:status          bda:StatusWithdrawn .
     
-    bdr:CRCA10A7D6D3085CCB
+    bdr:CRDC0FA1ED3B37809B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1GS56811 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRFC7240636F692580
         a                   :AgentAsCreator ;
         :agent              bdr:P1791 ;
-        :role               bdr:R0ER0019 .
+        :role               bdr:R0ER0016 .
     
     bdr:MW23640  skos:altLabel  "biographies of the g.yu-thog physicians"@en .
     
@@ -84,7 +95,7 @@ bdg:WA23640 {
         skos:altLabel       "dus gsum gyi rgyal ba sras bcas kyi mkhyen brtse'i spyi gzugs mkhas pa dang grub pa'i pha rol tu son pa rigs kun khyab bdag g.yu thog gsar ma yon tan mgon po'i rnam par thar pa/"@bo-x-ewts , "rje btsun g.yu thog yon tan mgon po rnying ma'i rnam par thar pa bka' rgya ma gzi brjid rin po che'i gter mdzod/"@bo-x-ewts ;
         skos:prefLabel      "g.yu thog gsar rnying gi rnam thar/"@bo-x-ewts , "biographies of the g.yu-thog physicians"@en ;
         :catalogInfo        "Biographical accounts of two masters of the medical tradition in Tibet: Yutok the Elder and Yutok the Junior. Written by Darmo Lobzang Chodrak (1638-1710)."@en ;
-        :creator            bdr:CRCA10A7D6D3085CCB ;
+        :creator            bdr:CRDC0FA1ED3B37809B , bdr:CRFC7240636F692580 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T3 ;
