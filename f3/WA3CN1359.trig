@@ -24,6 +24,12 @@ bdg:WA3CN1359 {
         adm:logMessage      "catalogued"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG99EBADB342D45E69
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-13T14:28:58.614Z"^^xsd:dateTime ;
+        adm:logMessage      "added pagenations"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LGAEEF70B4B37CE22A
         a                   adm:UpdateData ;
         adm:logDate         "2015-03-11T14:05:52.658Z"^^xsd:dateTime ;
@@ -57,39 +63,39 @@ bdg:WA3CN1359 {
     bda:WA3CN1359  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN1359 ;
-        adm:facetIndex      12 ;
+        adm:facetIndex      13 ;
         adm:gitPath         "f3/WA3CN1359.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN1359 ;
-        adm:logEntry        bda:LG01F07C46256EF163 , bda:LG3518627D311B1D35 , bda:LGAEEF70B4B37CE22A , bda:LGAF5B10CF3379E43D , bda:LGDE8BC8BA60B6947D , bda:LGE406986F185B8956 , bda:LGF4C61DEBC5B6E3F3 ;
+        adm:logEntry        bda:LG01F07C46256EF163 , bda:LG3518627D311B1D35 , bda:LG99EBADB342D45E69 , bda:LGAEEF70B4B37CE22A , bda:LGAF5B10CF3379E43D , bda:LGDE8BC8BA60B6947D , bda:LGE406986F185B8956 , bda:LGF4C61DEBC5B6E3F3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR29F93575F9C5D2E6
         a                   :AgentAsCreator ;
-        :agent              bdr:P7695 ;
-        :role               bdr:R0ER0021 .
+        :agent              bdr:P4956 ;
+        :role               bdr:R0ER0019 .
     
     bdr:CR48ABCBE45BB1D5D3
         a                   :AgentAsCreator ;
-        :agent              bdr:P7787 ;
+        :agent              bdr:P7695 ;
         :role               bdr:R0ER0021 .
     
     bdr:CR5DC45917C90C3D5E
         a                   :AgentAsCreator ;
+        :agent              bdr:P7787 ;
+        :role               bdr:R0ER0021 .
+    
+    bdr:CRFB3E2EDBFC5E275F
+        a                   :AgentAsCreator ;
         :agent              bdr:P364 ;
         :role               bdr:R0ER0025 .
-    
-    bdr:CR99EBADB342D45E69
-        a                   :AgentAsCreator ;
-        :agent              bdr:P4956 ;
-        :role               bdr:R0ER0019 .
     
     bdr:WA3CN1359  a        :Work ;
         skos:altLabel       "jo mo la gdams pa dang mnga' bdag la gdams pa sogs zhal gdams dang sgrub thabs man ngag sna tshogs bzhugs/"@bo-x-ewts ;
         skos:prefLabel      "jo mo la gdams pa sogs/"@bo-x-ewts ;
         :catalogInfo        "Instructions on practice of Nyingma tradition given by Guru Rinpoche to Jomo Yeshe Tsogyal and King Trisong Detsen etc."@en ;
-        :creator            bdr:CR29F93575F9C5D2E6 , bdr:CR48ABCBE45BB1D5D3 , bdr:CR5DC45917C90C3D5E , bdr:CR99EBADB342D45E69 ;
+        :creator            bdr:CR29F93575F9C5D2E6 , bdr:CR48ABCBE45BB1D5D3 , bdr:CR5DC45917C90C3D5E , bdr:CRFB3E2EDBFC5E275F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T613 ;
