@@ -18,6 +18,12 @@ bdg:WA2KG234636 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG3DF7984B65023F25
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-17T12:31:58.496Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restrictedinchina"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG51B2FF0224A2BE5E
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-04-27T18:30:57.384Z"^^xsd:dateTime ;
@@ -27,15 +33,16 @@ bdg:WA2KG234636 {
     bda:WA2KG234636  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234636 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "eb/WA2KG234636.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234636 ;
-        adm:logEntry        bda:LG19FA785BB6A7E0E5 , bda:LG51B2FF0224A2BE5E ;
+        adm:logEntry        bda:LG19FA785BB6A7E0E5 , bda:LG3DF7984B65023F25 , bda:LG51B2FF0224A2BE5E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR3DF7984B65023F25
+    bdr:CR85E48338C3B0511C
         a                   :AgentAsCreator ;
         :agent              bdr:P6120 ;
         :role               bdr:R0ER0019 .
@@ -45,7 +52,7 @@ bdg:WA2KG234636 {
     bdr:WA2KG234636  a      :Work ;
         skos:prefLabel      "rgyas pa'i bstan bcos tshad ma rnam 'grel/"@bo-x-ewts , "pramana varttika karika"@en-x-mixed ;
         :catalogInfo        "The root text of the Pramanavarttika by Indian master Dharmakirti; Commentary on the Pramanasamuchaya composed by Acharya Dignga."@en ;
-        :creator            bdr:CR3DF7984B65023F25 ;
+        :creator            bdr:CR85E48338C3B0511C ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG8787 ;

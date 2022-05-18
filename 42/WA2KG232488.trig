@@ -18,6 +18,12 @@ bdg:WA2KG232488 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG73069C142AC28D8A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-17T12:31:54.775Z"^^xsd:dateTime ;
+        adm:logMessage      "changed to restrictedinchina"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGB86F44757DA4CCE2
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-04-28T10:33:23.673Z"^^xsd:dateTime ;
@@ -27,33 +33,34 @@ bdg:WA2KG232488 {
     bda:WA2KG232488  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG232488 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "42/WA2KG232488.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG232488 ;
-        adm:logEntry        bda:LG2A25629E1182FF55 , bda:LGB86F44757DA4CCE2 ;
+        adm:logEntry        bda:LG2A25629E1182FF55 , bda:LG73069C142AC28D8A , bda:LGB86F44757DA4CCE2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
-    
-    bdr:CR73069C142AC28D8A
-        a                   :AgentAsCreator ;
-        :agent              bdr:P6118 ;
-        :role               bdr:R0ER0019 .
     
     bdr:CR758A7F67860FF28B
         a                   :AgentAsCreator ;
-        :agent              bdr:P6119 ;
+        :agent              bdr:P5782 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRAA8B5AC074F3A5A2
         a                   :AgentAsCreator ;
-        :agent              bdr:P5782 ;
+        :agent              bdr:P6118 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE24674FD4CAF9255
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6119 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2KG232488  a      :Work ;
         skos:prefLabel      "mngon rtogs rgyan dang dbu ma 'jug pa mdzod rtsa ba bcas/"@bo-x-ewts ;
         :catalogInfo        "Root text of Abhisamayalankara, Mulamadhyamika, and Abhidharmakosh."@en ;
-        :creator            bdr:CR73069C142AC28D8A , bdr:CR758A7F67860FF28B , bdr:CRAA8B5AC074F3A5A2 ;
+        :creator            bdr:CR758A7F67860FF28B , bdr:CRAA8B5AC074F3A5A2 , bdr:CRE24674FD4CAF9255 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1KG8787 ;
