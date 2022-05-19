@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ369467 {
+    bda:LG18E9F4A48C17AC22
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-05-18T09:30:19.814Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG1EF107F17F21F9E2
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-05-17T16:22:14.396Z"^^xsd:dateTime ;
@@ -21,11 +27,11 @@ bdg:WA4CZ369467 {
     bda:WA4CZ369467  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369467 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "5a/WA4CZ369467.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369467 ;
-        adm:logEntry        bda:LG1EF107F17F21F9E2 ;
+        adm:logEntry        bda:LG18E9F4A48C17AC22 , bda:LG1EF107F17F21F9E2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -37,5 +43,5 @@ bdg:WA4CZ369467 {
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T769 ;
-        :workHasInstance    bdr:MW4CZ369467 .
+        :workHasInstance    bdr:MW4CZ369467 , bdr:W4CZ369467 .
 }

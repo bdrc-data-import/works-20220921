@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA4CZ369474 {
+    bda:LG16EEC0DA41ACADCE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-05-18T09:34:08.681Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGF3DB4A5C8DF846F4
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-05-17T16:33:12.721Z"^^xsd:dateTime ;
@@ -21,11 +27,11 @@ bdg:WA4CZ369474 {
     bda:WA4CZ369474  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369474 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "33/WA4CZ369474.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369474 ;
-        adm:logEntry        bda:LGF3DB4A5C8DF846F4 ;
+        adm:logEntry        bda:LG16EEC0DA41ACADCE , bda:LGF3DB4A5C8DF846F4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
@@ -35,5 +41,5 @@ bdg:WA4CZ369474 {
         :catalogInfo        "Practice of Konchok Chidu cycle of Jatson Nyingpo according to the Pelyul Monastery"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4CZ369474 .
+        :workHasInstance    bdr:MW4CZ369474 , bdr:W4CZ369474 .
 }

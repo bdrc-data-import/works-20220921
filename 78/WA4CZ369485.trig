@@ -18,24 +18,35 @@ bdg:WA4CZ369485 {
         adm:logMessage      "check and released"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LG7582A184CCA4CDBC
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-18T10:12:03.575Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
+    bda:LGE567075EADF4EBE1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-05-18T10:07:48.087Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:WA4CZ369485  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA4CZ369485 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "78/WA4CZ369485.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA4CZ369485 ;
-        adm:logEntry        bda:LG2F060D161B3D1F1B ;
+        adm:logEntry        bda:LG2F060D161B3D1F1B , bda:LG7582A184CCA4CDBC , bda:LGE567075EADF4EBE1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA4CZ369485  a      :Work ;
-        skos:altLabel       "sgrol ma phyag 'tshal nyer gcig gi bstod pa and spyan ras gzigs kyi bsgom bzlas/"@bo-x-ewts ;
+        skos:altLabel       "sgrol ma phyag 'tshal nyer gcig gi bstod pa dang spyan ras gzigs kyi bsgom bzlas/"@bo-x-ewts ;
         skos:prefLabel      "phyag 'tshal nyer gcig gi bstod pa/"@bo-x-ewts ;
         :catalogInfo        "The twenty one Tara praise in Tibetan and Chinese and A visualization of Avalikeshvara"@en ;
         :isRoot             true ;
         :language           bdr:LangBo , bdr:LangZh ;
         :workGenre          bdr:T240 , bdr:T67 ;
-        :workHasInstance    bdr:MW4CZ369485 ;
+        :workHasInstance    bdr:MW4CZ369485 , bdr:W4CZ369485 ;
         :workIsAbout        bdr:T744 .
 }
