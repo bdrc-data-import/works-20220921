@@ -12,6 +12,18 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN21636 {
+    bda:LG07D885FBB7704EFD
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-03T16:03:31.258Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LG799F0A68E8CAE49D
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-03T16:01:51.664Z"^^xsd:dateTime ;
+        adm:logMessage      "added infomation"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG955BAC03413EC60C
         a                   adm:InitialDataCreation ;
         adm:logDate         "2019-11-07T15:52:49.256Z"^^xsd:dateTime ;
@@ -21,17 +33,20 @@ bdg:WA3CN21636 {
     bda:WA3CN21636  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN21636 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "df/WA3CN21636.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN21636 ;
-        adm:logEntry        bda:LG955BAC03413EC60C ;
+        adm:logEntry        bda:LG07D885FBB7704EFD , bda:LG799F0A68E8CAE49D , bda:LG955BAC03413EC60C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA3CN21636  a       :Work ;
         skos:prefLabel      "drung sa ru pa bsod nams dpal 'byor lugs kyi sa gcod phyogs sgrigs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Cho texts in Skya tradition by Sonam Paljor Drung Sarupa."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW3CN21636 .
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW3CN21636 , bdr:W3CN21636 ;
+        :workIsAbout        bdr:T194 , bdr:T617 .
 }

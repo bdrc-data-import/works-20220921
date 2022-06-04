@@ -18,6 +18,12 @@ bdg:WA3CN22797 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG1895729977AA9DDA
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-03T11:52:57.661Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG53E46A31806F0B81
         a                   adm:InitialDataCreation ;
         adm:logDate         "2020-05-18T21:06:08.456Z"^^xsd:dateTime ;
@@ -33,21 +39,27 @@ bdg:WA3CN22797 {
     bda:WA3CN22797  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN22797 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "66/WA3CN22797.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN22797 ;
-        adm:logEntry        bda:LG0E9351C407193D26 , bda:LG53E46A31806F0B81 , bda:LG93CF214E6555CC47 ;
+        adm:logEntry        bda:LG0E9351C407193D26 , bda:LG1895729977AA9DDA , bda:LG53E46A31806F0B81 , bda:LG93CF214E6555CC47 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
+    
+    bdr:CRAEBA99261B23BDC2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P309 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA3CN22797  a       :Work ;
         skos:altLabel       "bya bral ngag dbang gi rtogs brjod dang gung thang dpal gyi gtsug lag khang gi dkar chag 'gro mgon zhal lung /"@bo-x-ewts ;
         skos:prefLabel      "bya bral ngag dbang gi rtogs brjod dang gung thang dpal gyi gtsug lag khang gi dkar chag"@bo-x-ewts ;
-        :catalogInfo        "Avadana of Chadral Ngakwang and notes of Gungthang Pal monastery."@en ;
+        :catalogInfo        "Autobiography of Chadral Ngawang Tenzin Trinley and history of Buddhism and Gungthang Pal monastery."@en ;
+        :creator            bdr:CRAEBA99261B23BDC2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1779 ;
+        :workGenre          bdr:T1CZ60 ;
         :workHasInstance    bdr:MW3CN22797 , bdr:W3CN22797 ;
-        :workIsAbout        bdr:T1GS44553 .
+        :workIsAbout        bdr:P309 , bdr:T1GS44553 .
 }
