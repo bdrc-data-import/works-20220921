@@ -17,6 +17,12 @@ bdg:WA1PD105846 {
         adm:logDate         "2017-05-10T00:09:10.759Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00021 .
     
+    bda:LG2559B3BAB1563E34
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-06T14:20:24.185Z"^^xsd:dateTime ;
+        adm:logMessage      "added editor, cat info, isbn"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGAE2E98334E1BD8C6
         a                   adm:UpdateData ;
         adm:logDate         "2012-10-19T15:36:13.505Z"^^xsd:dateTime ;
@@ -58,13 +64,12 @@ bdg:WA1PD105846 {
     bda:WA1PD105846  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1PD105846 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "99/WA1PD105846.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1PD105846 ;
-        adm:logEntry        bda:LG0BB716DCCC717965 , bda:LGAE2E98334E1BD8C6 , bda:LGC83F6799DAA8E99E , bda:LGC93D11C4C0F0353F , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG0BB716DCCC717965 , bda:LG2559B3BAB1563E34 , bda:LGAE2E98334E1BD8C6 , bda:LGC83F6799DAA8E99E , bda:LGC93D11C4C0F0353F , bda:LGIM093A1A0447 , bda:LGIM4394141E , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:MW1PD105846  skos:altLabel  "扎拉铠甲宗"@zh-hans .
@@ -72,8 +77,9 @@ bdg:WA1PD105846 {
     bdr:WA1PD105846  a      :Work ;
         skos:altLabel       "zha la kai jia zong"@zh-latn-pinyin-x-ndia ;
         skos:prefLabel      "dgra lha'i khrab rdzong /"@bo-x-ewts , "扎拉铠甲宗"@zh-hans ;
+        :catalogInfo        "Collection of episodes from the epic of King Gesar."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW1PD105846 , bdr:W1PD105846 ;
-        :workIsAbout        bdr:T248 .
+        :workIsAbout        bdr:T1863 , bdr:T248 .
 }
