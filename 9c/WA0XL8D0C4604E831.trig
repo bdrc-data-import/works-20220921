@@ -16,6 +16,7 @@ bdg:WA0XL8D0C4604E831 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA0XL8D0C4604E831 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "9c/WA0XL8D0C4604E831.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA0XL8D0C4604E831 ;
@@ -23,10 +24,18 @@ bdg:WA0XL8D0C4604E831 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRE93DF36B8DE3C41A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P667 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA0XL8D0C4604E831
         a                   :Work ;
         skos:prefLabel      "d+hAr+ma shi+rI'i rnam thar/"@bo-x-ewts ;
+        :creator            bdr:CRE93DF36B8DE3C41A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW3CN53_8D0C46 .
+        :workGenre          bdr:T1CZ60 ;
+        :workHasInstance    bdr:MW3CN53_8D0C46 ;
+        :workIsAbout        bdr:P667 .
 }
