@@ -13,14 +13,20 @@
 
 bdg:WA26176 {
     bda:LG361A8B992242585C
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-15T11:55:31.519Z"^^xsd:dateTime ;
+        adm:logMessage      "added subject, cat info, series"@en ;
+        adm:logWho          bdu:U00016 .
     
     bda:LG8B60E683B2F9681C
         a                   adm:UpdateData ;
         adm:logDate         "2022-04-15T15:01:21.093Z"^^xsd:dateTime ;
         adm:logMessage      "changed access to fairUse"@en ;
         adm:logWho          bdu:U00053 .
+    
+    bda:LGA5AE7C13DFA1E8DA
+        a                   adm:InitialDataCreation ;
+        adm:logWho          bdu:U00001 .
     
     bda:LGF968C691BB5353F9
         a                   adm:UpdateData ;
@@ -44,33 +50,34 @@ bdg:WA26176 {
     bda:WA26176  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA26176 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "37/WA26176.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA26176 ;
-        adm:logEntry        bda:LG361A8B992242585C , bda:LG8B60E683B2F9681C , bda:LGF968C691BB5353F9 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
+        adm:logEntry        bda:LG361A8B992242585C , bda:LG8B60E683B2F9681C , bda:LGA5AE7C13DFA1E8DA , bda:LGF968C691BB5353F9 , bda:LGIM093A1A0447 , bda:LGIM8647D1C7AE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA5AE7C13DFA1E8DA
+    bdr:CRA709160E07CBED42
         a                   :AgentAsCreator ;
-        :agent              bdr:P60 ;
+        :agent              bdr:P1042 ;
         :role               bdr:R0ER0019 .
     
     bdr:CRB0183014022F766D
         a                   :AgentAsCreator ;
-        :agent              bdr:P1042 ;
-        :role               bdr:R0ER0016 .
+        :agent              bdr:P60 ;
+        :role               bdr:R0ER0019 .
     
     bdr:MW26176  skos:altLabel  "zhongguan"@zh-latn-pinyin-x-ndia .
     
     bdr:WA26176  a          :Work ;
-        skos:altLabel       "dbu ma la 'jug pa'i dkyus kyi sa bcad pa lta ba ngan sel/"@bo-x-ewts , "dbu ma la 'jug pa'i rnam bshad de kho na nyid gsal ba'i sgron me/"@bo-x-ewts ;
+        skos:altLabel       "bod kyi bcu phrag rig mdzod chen mo las sa skya pa'i gsung rab/ dbu ma/"@bo-x-ewts , "dbu ma la 'jug pa'i dkyus kyi sa bcad pa lta ba ngan sel/"@bo-x-ewts , "dbu ma la 'jug pa'i rnam bshad de kho na nyid gsal ba'i sgron me/"@bo-x-ewts ;
         skos:prefLabel      "dbu ma/"@bo-x-ewts , "zhongguan"@zh-latn-pinyin-x-ndia ;
-        :creator            bdr:CRA5AE7C13DFA1E8DA , bdr:CRB0183014022F766D ;
+        :catalogInfo        "Commentary on the Madhyamakavatara of Candrakirti and topical outline of Madhyamakavatara."@en ;
+        :creator            bdr:CRA709160E07CBED42 , bdr:CRB0183014022F766D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T132 ;
+        :workGenre          bdr:T61 ;
         :workHasInstance    bdr:MW26176 , bdr:W26176 ;
-        :workIsAbout        bdr:T233 , bdr:WA19458 .
+        :workIsAbout        bdr:T233 , bdr:T299 , bdr:WA19458 .
 }
