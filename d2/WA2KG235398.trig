@@ -14,22 +14,34 @@
 bdg:WA2KG235398 {
     bda:LGA3986F565D089BCD
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-05-26T15:03:30.027Z"^^xsd:dateTime ;
+        adm:logDate         "2022-06-16T17:53:00.83Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG235398  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG235398 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "d2/WA2KG235398.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG235398 ;
         adm:logEntry        bda:LGA3986F565D089BCD ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusEditing .
+        adm:status          bda:StatusReleased .
+    
+    bdr:CRCC4464EEC63E1A4A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2KG235398  a      :Work ;
+        skos:altLabel       "shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan 'grel pa dang bcas pa'i rgya cher bshad pa legs bshad gser gyi phreng ba/"@bo-x-ewts ;
+        skos:prefLabel      "legs bshad gser gyi phreng ba/"@bo-x-ewts ;
+        :catalogInfo        "Comprehensive treatise on both Maitreyanatha's Abhisamayalankara and the commentary on this work by Haribhadra, the Abhisamayalankaravrtti."@en ;
+        :creator            bdr:CRCC4464EEC63E1A4A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG235398 .
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW2KG235398 ;
+        :workIsAbout        bdr:T2005 , bdr:WA19716 .
 }
