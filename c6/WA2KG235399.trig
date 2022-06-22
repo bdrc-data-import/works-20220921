@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG235399 {
+    bda:LG67F50A94A82AA24E
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T18:09:10.252Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG7412729F3D18456D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-06-16T17:53:01.177Z"^^xsd:dateTime ;
@@ -21,15 +27,15 @@ bdg:WA2KG235399 {
     bda:WA2KG235399  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG235399 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "c6/WA2KG235399.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG235399 ;
-        adm:logEntry        bda:LG7412729F3D18456D ;
+        adm:logEntry        bda:LG67F50A94A82AA24E , bda:LG7412729F3D18456D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR67F50A94A82AA24E
+    bdr:CR1BE65113781673E7
         a                   :AgentAsCreator ;
         :agent              bdr:P64 ;
         :role               bdr:R0ER0019 .
@@ -40,9 +46,9 @@ bdg:WA2KG235399 {
         skos:altLabel       "drang ba dang nges pa'i don rnam par 'byed pa'i bstan bcos legs bshad snying po dang rten 'brel bstod pa bcas/"@bo-x-ewts ;
         skos:prefLabel      "drang nges legs bshad snying po dang rten 'brel bstod pa/"@bo-x-ewts , "the essence of eloquence, on the art of interpretation"@en ;
         :catalogInfo        "The Essence of Eloquence by Tsongkhapa (1357-1419). Critical and systematic exposition on the philosophic systems of the Mahayana. Explicates fundamental philosophic position of Tsongkhapa on the Two Truths, the definitive and interpretice meanings. One of the author's most important works and a core Geluk text."@en ;
-        :creator            bdr:CR67F50A94A82AA24E ;
+        :creator            bdr:CR1BE65113781673E7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG235399 ;
+        :workHasInstance    bdr:MW2KG235399 , bdr:W2KG235399 ;
         :workIsAbout        bdr:T1441 , bdr:T233 , bdr:WA606 .
 }

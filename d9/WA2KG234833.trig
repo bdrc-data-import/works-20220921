@@ -18,39 +18,45 @@ bdg:WA2KG234833 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG8D5FF4F62C19BACC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T16:19:19.44Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG234833  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234833 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "d9/WA2KG234833.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234833 ;
-        adm:logEntry        bda:LG74412343EF6C7409 ;
+        adm:logEntry        bda:LG74412343EF6C7409 , bda:LG8D5FF4F62C19BACC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR39156FA421E289F1
         a                   :AgentAsCreator ;
-        :agent              bdr:P65 ;
+        :agent              bdr:P64 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR876D2E0641F87BAC
+    bdr:CR7751A5FFE9FE75F1
         a                   :AgentAsCreator ;
         :agent              bdr:P55 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR8D5FF4F62C19BACC
+    bdr:CR876D2E0641F87BAC
         a                   :AgentAsCreator ;
-        :agent              bdr:P64 ;
+        :agent              bdr:P65 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2KG234833  a      :Work ;
         skos:prefLabel      "rje rin po che'i tshad ma'i lam bsgrigs dang sras mchog rnam gnyis kyi tshad ma'i lam khrid/"@bo-x-ewts ;
         :catalogInfo        "Collection of writings on the Path of Valid Cognition by Je Tsongkhapa and his two supreme students Gyaltsab Darma Rinchen and Khedrup Gelek Palzang."@en ;
-        :creator            bdr:CR39156FA421E289F1 , bdr:CR876D2E0641F87BAC , bdr:CR8D5FF4F62C19BACC ;
+        :creator            bdr:CR39156FA421E289F1 , bdr:CR7751A5FFE9FE75F1 , bdr:CR876D2E0641F87BAC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1029 ;
-        :workHasInstance    bdr:MW2KG234833 ;
+        :workHasInstance    bdr:MW2KG234833 , bdr:W2KG234833 ;
         :workIsAbout        bdr:T370 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG234832 {
+    bda:LG81AE9C7DD88E7C30
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T16:18:38.555Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGF8FB3B50226D0F97
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-06-16T17:52:23.965Z"^^xsd:dateTime ;
@@ -21,15 +27,15 @@ bdg:WA2KG234832 {
     bda:WA2KG234832  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234832 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "e4/WA2KG234832.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234832 ;
-        adm:logEntry        bda:LGF8FB3B50226D0F97 ;
+        adm:logEntry        bda:LG81AE9C7DD88E7C30 , bda:LGF8FB3B50226D0F97 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR81AE9C7DD88E7C30
+    bdr:CR175DEFC0F494114D
         a                   :AgentAsCreator ;
         :agent              bdr:P65 ;
         :role               bdr:R0ER0019 .
@@ -38,10 +44,10 @@ bdg:WA2KG234832 {
         skos:altLabel       "tshad ma rnam 'grel gyi tshig le'ur byas pa'i rnam bshad thar lam phyin ci ma log par gsal bar byed pa/"@bo-x-ewts ;
         skos:prefLabel      "rnam 'grel thar lam gsal byed/"@bo-x-ewts ;
         :catalogInfo        "A detailed commentary of Pramanavartika by Gyaltshab Darma Rinchen."@en ;
-        :creator            bdr:CR81AE9C7DD88E7C30 ;
+        :creator            bdr:CR175DEFC0F494114D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;
-        :workHasInstance    bdr:MW2KG234832 ;
+        :workHasInstance    bdr:MW2KG234832 , bdr:W2KG234832 ;
         :workIsAbout        bdr:T370 , bdr:WA19721 .
 }

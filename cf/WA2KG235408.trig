@@ -18,18 +18,24 @@ bdg:WA2KG235408 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGA3E8F9CBFE0DBE1C
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T18:16:41.049Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG235408  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG235408 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "cf/WA2KG235408.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG235408 ;
-        adm:logEntry        bda:LG160374F9A3A6A8A9 ;
+        adm:logEntry        bda:LG160374F9A3A6A8A9 , bda:LGA3E8F9CBFE0DBE1C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA3E8F9CBFE0DBE1C
+    bdr:CR030BEA8F80892CCA
         a                   :AgentAsCreator ;
         :agent              bdr:P169 ;
         :role               bdr:R0ER0019 .
@@ -37,10 +43,10 @@ bdg:WA2KG235408 {
     bdr:WA2KG235408  a      :Work ;
         skos:prefLabel      "bsam gzugs chen mo las mdor bsdus te bkod pa bsam gzugs kyi rnam bzhag legs bshad bum bzang /"@bo-x-ewts ;
         :catalogInfo        "Analysis of the thought and form by the second Jamyang Zhedpa Kunkhyen Konchok Jigme Wangpo."@en ;
-        :creator            bdr:CRA3E8F9CBFE0DBE1C ;
+        :creator            bdr:CR030BEA8F80892CCA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 ;
-        :workHasInstance    bdr:MW2KG235408 ;
+        :workHasInstance    bdr:MW2KG235408 , bdr:W2KG235408 ;
         :workIsAbout        bdr:T211 .
 }

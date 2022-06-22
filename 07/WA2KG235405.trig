@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG235405 {
+    bda:LG5FB982E984960882
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T18:14:34.854Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG9B3B62E32927128A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-06-16T17:53:03.33Z"^^xsd:dateTime ;
@@ -21,32 +27,32 @@ bdg:WA2KG235405 {
     bda:WA2KG235405  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG235405 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "07/WA2KG235405.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG235405 ;
-        adm:logEntry        bda:LG9B3B62E32927128A ;
+        adm:logEntry        bda:LG5FB982E984960882 , bda:LG9B3B62E32927128A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5FB982E984960882
+    bdr:CR1A2187388EBC8AE9
         a                   :AgentAsCreator ;
-        :agent              bdr:P423 ;
+        :agent              bdr:P169 ;
         :role               bdr:R0ER0019 .
     
     bdr:CR9971452700E073AC
         a                   :AgentAsCreator ;
-        :agent              bdr:P169 ;
+        :agent              bdr:P423 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2KG235405  a      :Work ;
         skos:altLabel       "dngos po brgyad don bdun cu'i rnam bzhag legs par bshad pa mi pham bla ma'i zhal lung /"@bo-x-ewts , "sa lam gyi rnam gzhag theg gsum mdzes rgyan/"@bo-x-ewts ;
         skos:prefLabel      "don bdun cu'i mtha' dpyod mi pham bla ma'i zhal lung dang/ sa lam gyi rnam gzhag theg gsum mdzes rgyan bcas/"@bo-x-ewts ;
         :catalogInfo        "An analysis of 8 reality states and Abhisamayalankara by the first Jamyang Zhedpa Ngawang Tsundue and An analysis of Paths and Bhumis by the second Jamyang Zhedpa Konchok Jigme Wangpo."@en ;
-        :creator            bdr:CR5FB982E984960882 , bdr:CR9971452700E073AC ;
+        :creator            bdr:CR1A2187388EBC8AE9 , bdr:CR9971452700E073AC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 ;
-        :workHasInstance    bdr:MW2KG235405 ;
+        :workHasInstance    bdr:MW2KG235405 , bdr:W2KG235405 ;
         :workIsAbout        bdr:T1091 , bdr:T2025 , bdr:T333 .
 }

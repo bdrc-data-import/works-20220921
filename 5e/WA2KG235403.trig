@@ -18,35 +18,41 @@ bdg:WA2KG235403 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGB9489BFD16934A03
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T18:12:45.345Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG235403  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG235403 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "5e/WA2KG235403.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG235403 ;
-        adm:logEntry        bda:LG1F05A388591C0DD0 ;
+        adm:logEntry        bda:LG1F05A388591C0DD0 , bda:LGB9489BFD16934A03 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CRAD5EEB4D3F70506D
         a                   :AgentAsCreator ;
-        :agent              bdr:P80 ;
+        :agent              bdr:P84 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CRB9489BFD16934A03
+    bdr:CRF96654EFE3526CB7
         a                   :AgentAsCreator ;
-        :agent              bdr:P84 ;
+        :agent              bdr:P80 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2KG235403  a      :Work ;
         skos:altLabel       "mngon rtogs rgyan gyi tshig Tik mun sel sgron me dang / dbu ma la 'jug pa'i bstan bcos kyi dgongs pa rab tu gsal ba'i me long /"@bo-x-ewts ;
         skos:prefLabel      "mngon rtogs rgyan gyi tshig Tik mun sel sgron me dang dbu ma dgongs pa rab tu gsal ba'i me long /"@bo-x-ewts ;
         :catalogInfo        "Commentaries on Abhisamayalankara of Maitreyanatha and Chandrakirti's Madhyamakavatara."@en ;
-        :creator            bdr:CRAD5EEB4D3F70506D , bdr:CRB9489BFD16934A03 ;
+        :creator            bdr:CRAD5EEB4D3F70506D , bdr:CRF96654EFE3526CB7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;
-        :workHasInstance    bdr:MW2KG235403 ;
+        :workHasInstance    bdr:MW2KG235403 , bdr:W2KG235403 ;
         :workIsAbout        bdr:WA19458 , bdr:WA19716 .
 }

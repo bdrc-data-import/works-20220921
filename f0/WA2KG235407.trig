@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG235407 {
+    bda:LG199CF9F917B7850F
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T18:16:12.641Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGE4923D97959CBD6E
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-06-16T17:53:04.063Z"^^xsd:dateTime ;
@@ -21,20 +27,20 @@ bdg:WA2KG235407 {
     bda:WA2KG235407  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG235407 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "f0/WA2KG235407.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG235407 ;
-        adm:logEntry        bda:LGE4923D97959CBD6E ;
+        adm:logEntry        bda:LG199CF9F917B7850F , bda:LGE4923D97959CBD6E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR17B3C69760A84103
+    bdr:CR0F7C9404590E2498
         a                   :AgentAsCreator ;
         :agent              bdr:P166 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR199CF9F917B7850F
+    bdr:CR17B3C69760A84103
         a                   :AgentAsCreator ;
         :agent              bdr:P169 ;
         :role               bdr:R0ER0019 .
@@ -43,10 +49,10 @@ bdg:WA2KG235407 {
         skos:altLabel       "chos 'khor gyi dogs gcod som nyi'i mun sel/"@bo-x-ewts , "mkhyen gsum gyi rnam pa brgya dang don gsum gyi rang bzhin yang dag par brjod pa legs bshad pad+ma dkar po'i 'khri shing /"@bo-x-ewts ;
         skos:prefLabel      "pad+ma dkar po'i 'khri shing dang chos 'khor kyi dogs gcod som nyi'i mun sel/"@bo-x-ewts ;
         :catalogInfo        "Treatise on a problem in the interpretation of prajanaparamita literature and clarification of doublts in religious councils."@en ;
-        :creator            bdr:CR17B3C69760A84103 , bdr:CR199CF9F917B7850F ;
+        :creator            bdr:CR0F7C9404590E2498 , bdr:CR17B3C69760A84103 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1029 ;
-        :workHasInstance    bdr:MW2KG235407 ;
+        :workHasInstance    bdr:MW2KG235407 , bdr:W2KG235407 ;
         :workIsAbout        bdr:T2005 , bdr:T308 .
 }

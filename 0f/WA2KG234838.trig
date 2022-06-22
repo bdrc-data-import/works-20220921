@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG234838 {
+    bda:LG1C4840B066F5CA24
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T17:09:22.905Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGF756A2518535D13A
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-06-16T17:52:26.125Z"^^xsd:dateTime ;
@@ -21,15 +27,15 @@ bdg:WA2KG234838 {
     bda:WA2KG234838  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234838 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "0f/WA2KG234838.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234838 ;
-        adm:logEntry        bda:LGF756A2518535D13A ;
+        adm:logEntry        bda:LG1C4840B066F5CA24 , bda:LGF756A2518535D13A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1C4840B066F5CA24
+    bdr:CR512AC58D4C5679B4
         a                   :AgentAsCreator ;
         :agent              bdr:P4802 ;
         :role               bdr:R0ER0019 .
@@ -38,9 +44,9 @@ bdg:WA2KG234838 {
         skos:altLabel       "tshad ma sde bdun mdo dang bcas pa'i gzhung lugs rgya mtshor 'jug pa'i gru gzings/"@bo-x-ewts ;
         skos:prefLabel      "sde bdun rgya mtshor 'jug pa'i gru gzings/"@bo-x-ewts ;
         :catalogInfo        "A detailed commentary on DharmakIrti's seven treatises on valid cognition."@en ;
-        :creator            bdr:CR1C4840B066F5CA24 ;
+        :creator            bdr:CR512AC58D4C5679B4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG234838 ;
+        :workHasInstance    bdr:MW2KG234838 , bdr:W2KG234838 ;
         :workIsAbout        bdr:T370 , bdr:WA3JT13405 .
 }

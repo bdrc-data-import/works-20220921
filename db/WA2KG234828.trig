@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG234828 {
+    bda:LG17B05AFEE329AE80
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T15:32:23.994Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG3266EB8567FC65DE
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-06-16T17:52:22.477Z"^^xsd:dateTime ;
@@ -21,15 +27,15 @@ bdg:WA2KG234828 {
     bda:WA2KG234828  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234828 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "db/WA2KG234828.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234828 ;
-        adm:logEntry        bda:LG3266EB8567FC65DE ;
+        adm:logEntry        bda:LG17B05AFEE329AE80 , bda:LG3266EB8567FC65DE ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR17B05AFEE329AE80
+    bdr:CREE9F718B1BCCFBF9
         a                   :AgentAsCreator ;
         :agent              bdr:P194 ;
         :role               bdr:R0ER0019 .
@@ -37,10 +43,10 @@ bdg:WA2KG234828 {
     bdr:WA2KG234828  a      :Work ;
         skos:prefLabel      "tshad ma'i gzhung don 'byed pa'i bsdus grwa'i rnam gzhag rigs lam 'phrul gyi lde mig"@bo-x-ewts ;
         :catalogInfo        "Basic course of study of elementary logic and dialectical studies of Tibetan Buddhism."@en ;
-        :creator            bdr:CR17B05AFEE329AE80 ;
+        :creator            bdr:CREE9F718B1BCCFBF9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 ;
-        :workHasInstance    bdr:MW2KG234828 ;
+        :workHasInstance    bdr:MW2KG234828 , bdr:W2KG234828 ;
         :workIsAbout        bdr:T370 , bdr:T96 .
 }

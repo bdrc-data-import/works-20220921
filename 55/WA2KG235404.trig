@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG235404 {
+    bda:LG4D13AC3681CE84C2
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T18:13:45.813Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGFE0A2AA5D2BBDF34
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-06-16T17:53:02.92Z"^^xsd:dateTime ;
@@ -21,15 +27,15 @@ bdg:WA2KG235404 {
     bda:WA2KG235404  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG235404 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "55/WA2KG235404.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG235404 ;
-        adm:logEntry        bda:LGFE0A2AA5D2BBDF34 ;
+        adm:logEntry        bda:LG4D13AC3681CE84C2 , bda:LGFE0A2AA5D2BBDF34 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4D13AC3681CE84C2
+    bdr:CRE716B2D36702F8BB
         a                   :AgentAsCreator ;
         :agent              bdr:P423 ;
         :role               bdr:R0ER0019 .
@@ -38,9 +44,9 @@ bdg:WA2KG235404 {
         skos:altLabel       "grub mtha'i rnam par bzhag pa 'khrul spong gdong lnga'i sgra dbyangs kun mkhyen lam bzang gsal ba'i rin chen sgron me/"@bo-x-ewts ;
         skos:prefLabel      "grub mtha'i rnam par bzhag pa 'khrul spong gdong lnga'i sgra dbyangs/"@bo-x-ewts ;
         :catalogInfo        "A detailed analysis of philosophical view by Jamyang Zhadpai Dorjee."@en ;
-        :creator            bdr:CR4D13AC3681CE84C2 ;
+        :creator            bdr:CRE716B2D36702F8BB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1CZ56 , bdr:T385 ;
-        :workHasInstance    bdr:MW2KG235404 .
+        :workHasInstance    bdr:MW2KG235404 , bdr:W2KG235404 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG235402 {
+    bda:LG4CC43AAD1B8EB091
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T18:11:45.696Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGF9F23F9AAE0DB3A5
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-06-16T17:53:02.2Z"^^xsd:dateTime ;
@@ -21,15 +27,15 @@ bdg:WA2KG235402 {
     bda:WA2KG235402  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG235402 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "72/WA2KG235402.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG235402 ;
-        adm:logEntry        bda:LGF9F23F9AAE0DB3A5 ;
+        adm:logEntry        bda:LG4CC43AAD1B8EB091 , bda:LGF9F23F9AAE0DB3A5 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR4CC43AAD1B8EB091
+    bdr:CR80B7CB62D4706603
         a                   :AgentAsCreator ;
         :agent              bdr:P37 ;
         :role               bdr:R0ER0019 .
@@ -38,10 +44,10 @@ bdg:WA2KG235402 {
         skos:altLabel       "phar phyin blo bzang dgongs rgyan/"@bo-x-ewts ;
         skos:prefLabel      "bstan bcos mngon rtogs rgyan rtsa 'grel rnams gsal bar byed pa blo bzang dgongs rgyan gdong lnga'i dbang po'i sgra dbyangs/"@bo-x-ewts ;
         :catalogInfo        "A pedagogical commentary on the prajnaparamita literature by the 5th Dalai Lama."@en ;
-        :creator            bdr:CR4CC43AAD1B8EB091 ;
+        :creator            bdr:CR80B7CB62D4706603 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;
-        :workHasInstance    bdr:MW2KG235402 ;
+        :workHasInstance    bdr:MW2KG235402 , bdr:W2KG235402 ;
         :workIsAbout        bdr:T36 , bdr:WA19716 .
 }

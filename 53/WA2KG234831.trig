@@ -18,34 +18,40 @@ bdg:WA2KG234831 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGF0D17499141BA2BC
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T16:17:42.202Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG234831  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234831 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "53/WA2KG234831.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234831 ;
-        adm:logEntry        bda:LG38D87E3DDF635DA4 ;
+        adm:logEntry        bda:LG38D87E3DDF635DA4 , bda:LGF0D17499141BA2BC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:CR7403345A9BB92112
         a                   :AgentAsCreator ;
-        :agent              bdr:P5617 ;
-        :role               bdr:R0ER0014 .
-    
-    bdr:CRF0D17499141BA2BC
-        a                   :AgentAsCreator ;
         :agent              bdr:P507 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CR8B75B377239CD193
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5617 ;
+        :role               bdr:R0ER0014 .
     
     bdr:WA2KG234831  a      :Work ;
         skos:altLabel       "thun mong bsdus pa'i bsdoms tshig blo gsal dga' bskyed dang de'i 'grel pa lung rigs smra ba'i rgyan/"@bo-x-ewts ;
         skos:prefLabel      "bsdus grwa rtsa 'grel/"@bo-x-ewts ;
         :catalogInfo        "General summarize of the subject of the collected topics."@en ;
-        :creator            bdr:CR7403345A9BB92112 , bdr:CRF0D17499141BA2BC ;
+        :creator            bdr:CR7403345A9BB92112 , bdr:CR8B75B377239CD193 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG234831 ;
+        :workHasInstance    bdr:MW2KG234831 , bdr:W2KG234831 ;
         :workIsAbout        bdr:T1235 , bdr:T1420 , bdr:T96 .
 }

@@ -18,35 +18,41 @@ bdg:WA2KG235400 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGDFE750160643D5B4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-06-21T18:10:05.554Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG235400  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG235400 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "96/WA2KG235400.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG235400 ;
-        adm:logEntry        bda:LG6E0CA04C552A789B ;
+        adm:logEntry        bda:LG6E0CA04C552A789B , bda:LGDFE750160643D5B4 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDFE750160643D5B4
-        a                   :AgentAsCreator ;
-        :agent              bdr:P6118 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CRF649386D28177DC2
+    bdr:CR53C8287033A8FB1A
         a                   :AgentAsCreator ;
         :agent              bdr:P65 ;
         :role               bdr:R0ER0014 .
+    
+    bdr:CRF649386D28177DC2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6118 ;
+        :role               bdr:R0ER0019 .
     
     bdr:WA2KG235400  a      :Work ;
         skos:altLabel       "theg pa chen po rgyud bla ma'i bstan bcos/"@bo-x-ewts , "theg pa chen po rgyud bla ma'i TIk+ka"@bo-x-ewts ;
         skos:prefLabel      "theg pa chen po rgyud bla ma'i bstan bcos dang TIk+ka"@bo-x-ewts ;
         :catalogInfo        "Detailed commentary on Maitreya's Ratnagotravibhaga-uttaratantra-shastra, by Gyaltsab Darma Rinchen"@en ;
-        :creator            bdr:CRDFE750160643D5B4 , bdr:CRF649386D28177DC2 ;
+        :creator            bdr:CR53C8287033A8FB1A , bdr:CRF649386D28177DC2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T1KG8787 ;
-        :workHasInstance    bdr:MW2KG235400 ;
+        :workHasInstance    bdr:MW2KG235400 , bdr:W2KG235400 ;
         :workIsAbout        bdr:WA1GS1563 .
 }
