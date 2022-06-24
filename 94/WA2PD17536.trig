@@ -23,6 +23,12 @@ bdg:WA2PD17536 {
         adm:logMessage      "updated works scanned in China scanInfo"@en ;
         adm:logWhoStr       "works-update-scaninfo-from-list" .
     
+    bda:LGCCE141F4CA279993
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-06-23T12:10:08.672Z"^^xsd:dateTime ;
+        adm:logMessage      "changed subject"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGD25CB28835031882
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2016-06-01T11:49:04.523Z"^^xsd:dateTime ;
@@ -38,26 +44,26 @@ bdg:WA2PD17536 {
     bda:WA2PD17536  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2PD17536 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "94/WA2PD17536.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2PD17536 ;
-        adm:logEntry        bda:LG126C999A8E917EAA , bda:LG88048171911B421F , bda:LGD25CB28835031882 , bda:LGIM8F5AC89D ;
+        adm:logEntry        bda:LG126C999A8E917EAA , bda:LG88048171911B421F , bda:LGCCE141F4CA279993 , bda:LGD25CB28835031882 , bda:LGIM8F5AC89D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRCCE141F4CA279993
+    bdr:CRF41E43E37EE0A3E4
         a                   :AgentAsCreator ;
         :agent              bdr:P79 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2PD17536  a       :Work ;
         skos:prefLabel      "stag tshang lo tsA ba shes rab rin chen gyi gsung phyogs bsdus/"@bo-x-ewts ;
-        :catalogInfo        "Collected Works by the prominent 15th century Sakya master Sherab Rinchen (b. 1405)."@en ;
-        :creator            bdr:CRCCE141F4CA279993 ;
+        :catalogInfo        "Selected Works of the prominent 15th century Sakya master Sherab Rinchen (b. 1405)."@en ;
+        :creator            bdr:CRF41E43E37EE0A3E4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T208 ;
+        :workGenre          bdr:T1PD128746 ;
         :workHasInstance    bdr:MW2PD17536 , bdr:W2PD17536 ;
         :workIsAbout        bdr:T617 .
 }
