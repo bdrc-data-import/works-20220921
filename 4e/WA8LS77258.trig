@@ -11,36 +11,43 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA8LS77255 {
-    bda:LG70CE76EAF9BEED4C
+bdg:WA8LS77258 {
+    bda:LG805DB44E509F7818
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-06-28T10:06:18.297Z"^^xsd:dateTime ;
+        adm:logDate         "2022-06-28T11:08:06.349Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGBD9B79E2E375F6FB
+    bda:LG8B7993B5F3F799AC
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-06-28T10:05:06.008Z"^^xsd:dateTime ;
+        adm:logDate         "2022-06-28T11:07:41.352Z"^^xsd:dateTime ;
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:WA8LS77255  a       adm:AdminData ;
+    bda:WA8LS77258  a       adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA8LS77255 ;
-        adm:facetIndex      3 ;
-        adm:gitPath         "da/WA8LS77255.trig" ;
+        adm:adminAbout      bdr:WA8LS77258 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "4e/WA8LS77258.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA8LS77255 ;
-        adm:logEntry        bda:LG70CE76EAF9BEED4C , bda:LGBD9B79E2E375F6FB ;
+        adm:graphId         bdg:WA8LS77258 ;
+        adm:logEntry        bda:LG805DB44E509F7818 , bda:LG8B7993B5F3F799AC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA8LS77255  a       :Work ;
-        skos:prefLabel      "legs bshad gser phreng bgro gleng thengs gnyis kyi rtsom shog phyogs bsgrigs gser gyi led mig bgro gleng rtsom deb gnyis pa/"@bo-x-ewts ;
-        :catalogInfo        "A collection of essays concerning the second conference on the Tsongkhapa's commentary on Abhisamayalankara."@en ;
+    bdr:CRD01C1EC29717396E
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4762 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA8LS77258  a       :Work ;
+        skos:altLabel       "kun mkhyen blo gros rin chen seng ge'i gsung rtsom/"@bo-x-ewts ;
+        skos:prefLabel      "gsung rtsom/ kun mkhyen blo gros rin chen seng ge"@bo-x-ewts ;
+        :catalogInfo        "Writings of Kunkhyen Lodro Rinchen Senge."@en ;
+        :creator            bdr:CRD01C1EC29717396E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T1081 , bdr:T258 ;
-        :workHasInstance    bdr:MW8LS77255 , bdr:W8LS77255 ;
-        :workIsAbout        bdr:T36 .
+        :workGenre          bdr:T1KG21749 ;
+        :workHasInstance    bdr:MW8LS77258 , bdr:W8LS77258 ;
+        :workIsAbout        bdr:P4762 .
 }
