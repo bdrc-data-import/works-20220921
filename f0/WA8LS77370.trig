@@ -11,37 +11,41 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA8LS77361 {
-    bda:LGB3A0782D3D8CC2D3
+bdg:WA8LS77370 {
+    bda:LG21490953D8EB9C8A
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-07-13T08:18:13.338Z"^^xsd:dateTime ;
+        adm:logDate         "2022-07-13T13:12:19.086Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGCE01CA4DCE5DD51A
+    bda:LG66C87B993DEC2D5B
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-07-13T08:17:26.973Z"^^xsd:dateTime ;
+        adm:logDate         "2022-07-13T13:11:50.229Z"^^xsd:dateTime ;
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:WA8LS77361  a       adm:AdminData ;
+    bda:WA8LS77370  a       adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA8LS77361 ;
-        adm:facetIndex      3 ;
-        adm:gitPath         "43/WA8LS77361.trig" ;
+        adm:adminAbout      bdr:WA8LS77370 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "f0/WA8LS77370.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA8LS77361 ;
-        adm:logEntry        bda:LGB3A0782D3D8CC2D3 , bda:LGCE01CA4DCE5DD51A ;
+        adm:graphId         bdg:WA8LS77370 ;
+        adm:logEntry        bda:LG21490953D8EB9C8A , bda:LG66C87B993DEC2D5B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA8LS77361  a       :Work ;
-        skos:altLabel       "'phags pa thar pa chen po phyogs su rgyas pa 'gyod tshangs kyis sdig sbyangs te sangs rgyas su grub par rnam par bkod pa zhes bya ba theg pa chen po'i mdo/"@bo-x-ewts ;
-        skos:prefLabel      "thar mdo/"@bo-x-ewts ;
-        :catalogInfo        "Mahayana sutra of liberation; translated from Chinese to Tibetan."@en ;
+    bdr:CR3F5F42CFFA92D8CA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1KG13159 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA8LS77370  a       :Work ;
+        skos:prefLabel      "bod kyi ri mo 'bri tshul deb gsar kun phan nyi ma/"@bo-x-ewts ;
+        :catalogInfo        "A book on drawing Tibetan thangka painting by Amdo Jamyang."@en ;
+        :creator            bdr:CR3F5F42CFFA92D8CA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T769 ;
-        :workHasInstance    bdr:MW8LS77361 , bdr:W8LS77361 ;
-        :workIsAbout        bdr:T1KG3717 .
+        :workHasInstance    bdr:MW8LS77370 , bdr:W8LS77370 ;
+        :workIsAbout        bdr:T1125 , bdr:T1845 , bdr:T361 .
 }
