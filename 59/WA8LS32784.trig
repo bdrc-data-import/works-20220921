@@ -18,6 +18,12 @@ bdg:WA8LS32784 {
         adm:logMessage      "created new work record"@en ;
         adm:logWho          bdu:U00019 .
     
+    bda:LG97C688CC92E94F01
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-07-20T08:15:42.51Z"^^xsd:dateTime ;
+        adm:logMessage      "added author"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGAD967C5141473702
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2018-05-01T10:34:55.74Z"^^xsd:dateTime ;
@@ -27,18 +33,24 @@ bdg:WA8LS32784 {
     bda:WA8LS32784  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS32784 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "59/WA8LS32784.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS32784 ;
-        adm:logEntry        bda:LG9407F7C82573857B , bda:LGAD967C5141473702 ;
+        adm:logEntry        bda:LG9407F7C82573857B , bda:LG97C688CC92E94F01 , bda:LGAD967C5141473702 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB99394AE7C0C6BAE
+        a                   :AgentAsCreator ;
+        :agent              bdr:P301 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA8LS32784  a       :Work ;
         skos:altLabel       "stag brag paN+Di ta ngag dbang chos 'phel gyi gsung 'bum/"@bo-x-ewts ;
-        skos:prefLabel      "gsung 'bum/ngag dbang chos 'phel/"@bo-x-ewts ;
+        skos:prefLabel      "gsung 'bum/ ngag dbang chos 'phel/"@bo-x-ewts ;
         :catalogInfo        "Collected works of the first Takdrak Ngawang Chophel."@en ;
+        :creator            bdr:CRB99394AE7C0C6BAE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;
