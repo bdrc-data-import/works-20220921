@@ -12,11 +12,23 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3290 {
+    bda:LG645566A9DF9199BA
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-07-27T16:46:20.252Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LG9EAAAF58A8B93F1A
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
+    
+    bda:LGD8D13205F0AD0191
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-07-27T09:24:45.138Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
     
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
@@ -27,17 +39,27 @@ bdg:WA1NLM3290 {
     bda:WA1NLM3290  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3290 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "d4/WA1NLM3290.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3290 ;
-        adm:logEntry        bda:LG9EAAAF58A8B93F1A , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG645566A9DF9199BA , bda:LG9EAAAF58A8B93F1A , bda:LGD8D13205F0AD0191 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR02A21D0F3C9B09CF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2KG208395 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3290  a       :Work ;
-        skos:prefLabel      "bod kyi brda'i bye brag gsal bar byed pa ngag gi sgron ma sogs/"@bo-x-ewts ;
+        skos:altLabel       "bstan bcos mngon par rtogs pa'i rgyan 'grel dang bcas pa'i rnam bshad rin chen gsal ba'i sgron me las bden bzhi'i skor/"@bo-x-ewts ;
+        skos:prefLabel      "mngon rtogs rgyan 'grel dang bcas pa'i rnam bshad rin chen gsal ba'i sgron me las bden bzhi'i skor/"@bo-x-ewts ;
+        :catalogInfo        "A detailed commentary of Abhisamayalankara focussing on the four truths and other miscellaneous rituals and liturgical texts"@en ;
+        :creator            bdr:CR02A21D0F3C9B09CF ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3290 , bdr:W1NLM3290 .
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM3290 , bdr:W1NLM3290 ;
+        :workIsAbout        bdr:WA19716 .
 }

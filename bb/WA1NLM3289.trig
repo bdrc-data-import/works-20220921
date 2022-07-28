@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3289 {
+    bda:LG57E8D59D898FACCC
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-07-27T16:46:19.973Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGB8D5689619CD3C1D
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM3289 {
     bda:WA1NLM3289  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3289 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "bb/WA1NLM3289.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3289 ;
-        adm:logEntry        bda:LGB8D5689619CD3C1D , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG57E8D59D898FACCC , bda:LGB8D5689619CD3C1D , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR1ED16586CBC4661F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4337 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3289  a       :Work ;
-        skos:prefLabel      "legs par bshad pa mkhas pa'i mgul rgyan zhes bya ba las skabs dang pa'i mtha' dpyod/"@bo-x-ewts ;
+        skos:prefLabel      "legs par bshad pa mkhas pa'i mgul rgyan zhes bya ba las skabs dang po'i mtha' dpyod/"@bo-x-ewts ;
+        :catalogInfo        "An analytic explanation for the first section of Abhisamayalankara By the second Yershong Tulku Ngawang Gedun Dawa Drakpa, composed at Yershong Samten Chophel Ling monastery."@en ;
+        :creator            bdr:CR1ED16586CBC4661F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3289 , bdr:W1NLM3289 .
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM3289 , bdr:W1NLM3289 ;
+        :workIsAbout        bdr:T1215 , bdr:WA19716 .
 }
