@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG234833 {
+    bda:LG39156FA421E289F1
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-07-28T11:45:44.298Z"^^xsd:dateTime ;
+        adm:logMessage      "changed status to restrictedinchina"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG74412343EF6C7409
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-06-16T17:52:24.31Z"^^xsd:dateTime ;
@@ -27,33 +33,34 @@ bdg:WA2KG234833 {
     bda:WA2KG234833  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234833 ;
-        adm:facetIndex      6 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "d9/WA2KG234833.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234833 ;
-        adm:logEntry        bda:LG74412343EF6C7409 , bda:LG8D5FF4F62C19BACC ;
+        adm:logEntry        bda:LG39156FA421E289F1 , bda:LG74412343EF6C7409 , bda:LG8D5FF4F62C19BACC ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR39156FA421E289F1
-        a                   :AgentAsCreator ;
-        :agent              bdr:P64 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR7751A5FFE9FE75F1
+    bdr:CR4BBD17EC67F2F200
         a                   :AgentAsCreator ;
         :agent              bdr:P55 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR876D2E0641F87BAC
+    bdr:CR7751A5FFE9FE75F1
         a                   :AgentAsCreator ;
         :agent              bdr:P65 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR876D2E0641F87BAC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA2KG234833  a      :Work ;
         skos:prefLabel      "rje rin po che'i tshad ma'i lam bsgrigs dang sras mchog rnam gnyis kyi tshad ma'i lam khrid/"@bo-x-ewts ;
         :catalogInfo        "Collection of writings on the Path of Valid Cognition by Je Tsongkhapa and his two supreme students Gyaltsab Darma Rinchen and Khedrup Gelek Palzang."@en ;
-        :creator            bdr:CR39156FA421E289F1 , bdr:CR7751A5FFE9FE75F1 , bdr:CR876D2E0641F87BAC ;
+        :creator            bdr:CR4BBD17EC67F2F200 , bdr:CR7751A5FFE9FE75F1 , bdr:CR876D2E0641F87BAC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1029 ;

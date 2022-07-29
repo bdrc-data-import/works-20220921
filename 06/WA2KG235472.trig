@@ -14,21 +14,28 @@
 bdg:WA2KG235472 {
     bda:LG45BE48BC80C9A250
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-07-19T14:30:43.594Z"^^xsd:dateTime ;
+        adm:logDate         "2022-07-28T12:47:32.824Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG687F99A53EA49893
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-07-28T12:48:26.932Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG235472  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG235472 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "06/WA2KG235472.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG235472 ;
-        adm:logEntry        bda:LG45BE48BC80C9A250 ;
+        adm:logEntry        bda:LG45BE48BC80C9A250 , bda:LG687F99A53EA49893 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR687F99A53EA49893
+    bdr:CRD97161C3FB551435
         a                   :AgentAsCreator ;
         :agent              bdr:P298 ;
         :role               bdr:R0ER0019 .
@@ -36,9 +43,9 @@ bdg:WA2KG235472 {
     bdr:WA2KG235472  a      :Work ;
         skos:prefLabel      "phar phyin skabs dang po'i mtha' dpyod kyi mchan 'grel rtsom 'phro/"@bo-x-ewts ;
         :catalogInfo        "Annotations on the first chapter (Sarvakarajnata) of Jamyang Shepa's exegesis on Prajnaparamita by Gungthang Konchok Tenpe Dronme."@en ;
-        :creator            bdr:CR687F99A53EA49893 ;
+        :creator            bdr:CRD97161C3FB551435 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG235472 ;
+        :workHasInstance    bdr:MW2KG235472 , bdr:W2KG235472 ;
         :workIsAbout        bdr:T1215 , bdr:T36 .
 }

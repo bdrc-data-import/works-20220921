@@ -24,32 +24,39 @@ bdg:WA2KG235400 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGF649386D28177DC2
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-07-28T11:45:48.514Z"^^xsd:dateTime ;
+        adm:logMessage      "changed status to restrictedinchina"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG235400  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG235400 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "96/WA2KG235400.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG235400 ;
-        adm:logEntry        bda:LG6E0CA04C552A789B , bda:LGDFE750160643D5B4 ;
+        adm:logEntry        bda:LG6E0CA04C552A789B , bda:LGDFE750160643D5B4 , bda:LGF649386D28177DC2 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
     bdr:CR53C8287033A8FB1A
         a                   :AgentAsCreator ;
-        :agent              bdr:P65 ;
-        :role               bdr:R0ER0014 .
-    
-    bdr:CRF649386D28177DC2
-        a                   :AgentAsCreator ;
         :agent              bdr:P6118 ;
         :role               bdr:R0ER0019 .
+    
+    bdr:CRDCC47E95E1AB89C7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0014 .
     
     bdr:WA2KG235400  a      :Work ;
         skos:altLabel       "theg pa chen po rgyud bla ma'i bstan bcos/"@bo-x-ewts , "theg pa chen po rgyud bla ma'i TIk+ka"@bo-x-ewts ;
         skos:prefLabel      "theg pa chen po rgyud bla ma'i bstan bcos dang TIk+ka"@bo-x-ewts ;
         :catalogInfo        "Detailed commentary on Maitreya's Ratnagotravibhaga-uttaratantra-shastra, by Gyaltsab Darma Rinchen"@en ;
-        :creator            bdr:CR53C8287033A8FB1A , bdr:CRF649386D28177DC2 ;
+        :creator            bdr:CR53C8287033A8FB1A , bdr:CRDCC47E95E1AB89C7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 , bdr:T1KG8787 ;

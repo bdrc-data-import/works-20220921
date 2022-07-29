@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG235410 {
+    bda:LG025579F3DFA42AE9
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-07-28T11:45:53.527Z"^^xsd:dateTime ;
+        adm:logMessage      "changed status to restrictedinchina"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG61FEC36D0CF85912
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2022-06-21T18:18:11.478Z"^^xsd:dateTime ;
@@ -27,15 +33,16 @@ bdg:WA2KG235410 {
     bda:WA2KG235410  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG235410 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "d0/WA2KG235410.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG235410 ;
-        adm:logEntry        bda:LG61FEC36D0CF85912 , bda:LGCE73596E681EBC39 ;
+        adm:logEntry        bda:LG025579F3DFA42AE9 , bda:LG61FEC36D0CF85912 , bda:LGCE73596E681EBC39 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR025579F3DFA42AE9
+    bdr:CRCD015CB558E27FEE
         a                   :AgentAsCreator ;
         :agent              bdr:P410 ;
         :role               bdr:R0ER0019 .
@@ -44,7 +51,7 @@ bdg:WA2KG235410 {
         skos:altLabel       "sras dge 'dun nyi shu/"@bo-x-ewts , "zhugs pa dang gnas pa'i 'phags pa'i dge 'dun gyi rnam gzhag gi mtha' dpyod skal bzang 'jug ngogs/"@bo-x-ewts ;
         skos:prefLabel      "dge 'dun nyi shu'i rnam gzhag mtha' spyod skal bzang 'jug ngogs/"@bo-x-ewts ;
         :catalogInfo        "A critical analysis of the Vimsatiprabhedasangha by Se Ngawang Tashi (1678-1738)."@en ;
-        :creator            bdr:CR025579F3DFA42AE9 ;
+        :creator            bdr:CRCD015CB558E27FEE ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2KG235410 , bdr:W2KG235410 ;

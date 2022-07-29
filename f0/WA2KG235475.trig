@@ -14,21 +14,28 @@
 bdg:WA2KG235475 {
     bda:LG0EC7BA6C3B9AD31F
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-07-19T14:30:44.315Z"^^xsd:dateTime ;
+        adm:logDate         "2022-07-28T12:47:34.388Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG5F9DAC878A9BC2DB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-07-28T12:49:36.16Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG235475  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG235475 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "f0/WA2KG235475.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG235475 ;
-        adm:logEntry        bda:LG0EC7BA6C3B9AD31F ;
+        adm:logEntry        bda:LG0EC7BA6C3B9AD31F , bda:LG5F9DAC878A9BC2DB ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR5F9DAC878A9BC2DB
+    bdr:CR94CC2AEEE7E9F57E
         a                   :AgentAsCreator ;
         :agent              bdr:P298 ;
         :role               bdr:R0ER0019 .
@@ -36,10 +43,10 @@ bdg:WA2KG235475 {
     bdr:WA2KG235475  a      :Work ;
         skos:prefLabel      "bstan bcos legs par bshad pa'i snying po las sems tsam skor gyi mchan 'grel rtsom 'phro rnam rig gzhung brgya'i snang ba/"@bo-x-ewts ;
         :catalogInfo        "An annotated commentary on Cittamatrin chapter of Tsongkhapa's provisional and ultimate meaning by Gungthang Tenpe Dronme."@en ;
-        :creator            bdr:CR5F9DAC878A9BC2DB ;
+        :creator            bdr:CR94CC2AEEE7E9F57E ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T304 ;
-        :workHasInstance    bdr:MW2KG235475 ;
+        :workHasInstance    bdr:MW2KG235475 , bdr:W2KG235475 ;
         :workIsAbout        bdr:T2055 .
 }

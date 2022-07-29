@@ -14,21 +14,28 @@
 bdg:WA2KG235474 {
     bda:LG68B543235212A902
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-07-19T14:30:44.082Z"^^xsd:dateTime ;
+        adm:logDate         "2022-07-28T12:47:33.924Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGA340B555A5A96ADF
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-07-28T12:49:15.018Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG235474  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG235474 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a9/WA2KG235474.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG235474 ;
-        adm:logEntry        bda:LG68B543235212A902 ;
+        adm:logEntry        bda:LG68B543235212A902 , bda:LGA340B555A5A96ADF ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRA340B555A5A96ADF
+    bdr:CR8CC2C96DC569706A
         a                   :AgentAsCreator ;
         :agent              bdr:P298 ;
         :role               bdr:R0ER0019 .
@@ -36,10 +43,10 @@ bdg:WA2KG235474 {
     bdr:WA2KG235474  a      :Work ;
         skos:prefLabel      "drang nges rnam 'byed kyi dka' 'grel rtsom 'phro legs bshad snying po'i yang snying /"@bo-x-ewts ;
         :catalogInfo        "A commentary on the difficult points of Tsongkhapa's provisional and true meaning by Gungthang Konchok Tenpe Dronme. This unfinished work was written at the behest of lha btsun sprul sku blo bzang dge legs bstan 'dzin."@en ;
-        :creator            bdr:CRA340B555A5A96ADF ;
+        :creator            bdr:CR8CC2C96DC569706A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1491 ;
-        :workHasInstance    bdr:MW2KG235474 ;
+        :workHasInstance    bdr:MW2KG235474 , bdr:W2KG235474 ;
         :workIsAbout        bdr:T1441 , bdr:WA606 .
 }

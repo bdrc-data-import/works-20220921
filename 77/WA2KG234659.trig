@@ -18,6 +18,12 @@ bdg:WA2KG234659 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG1CB4C5C554DD43CF
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-07-28T11:45:40.593Z"^^xsd:dateTime ;
+        adm:logMessage      "changed status to restrictedinchina"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG65B5F7CD88A9707E
         a                   adm:ScanRequestCreation ;
         adm:logDate         "2022-06-21T15:29:18.213Z"^^xsd:dateTime ;
@@ -27,20 +33,21 @@ bdg:WA2KG234659 {
     bda:WA2KG234659  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG234659 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "77/WA2KG234659.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG234659 ;
-        adm:logEntry        bda:LG102D4CFE9C8EC850 , bda:LG65B5F7CD88A9707E ;
+        adm:logEntry        bda:LG102D4CFE9C8EC850 , bda:LG1CB4C5C554DD43CF , bda:LG65B5F7CD88A9707E ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR1CB4C5C554DD43CF
+    bdr:CR355DA3D5E40E7D2C
         a                   :AgentAsCreator ;
         :agent              bdr:P166 ;
         :role               bdr:R0ER0019 .
     
-    bdr:CR355DA3D5E40E7D2C
+    bdr:CRC25CDEEDDB92341A
         a                   :AgentAsCreator ;
         :agent              bdr:P410 ;
         :role               bdr:R0ER0019 .
@@ -48,7 +55,7 @@ bdg:WA2KG234659 {
     bdr:WA2KG234659  a      :Work ;
         skos:prefLabel      "blo rig sdom tshig dang / blo rig mgul rgyan/ blo rig zur rgyan bcas phyogs gcig tu bkod pa legs bshad pad dkar chun po/"@bo-x-ewts ;
         :catalogInfo        "Collection texts of types of awareness written by Akya Yongzin Losang Dondrup and Se Ngawang Tashi."@en ;
-        :creator            bdr:CR1CB4C5C554DD43CF , bdr:CR355DA3D5E40E7D2C ;
+        :creator            bdr:CR355DA3D5E40E7D2C , bdr:CRC25CDEEDDB92341A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW2KG234659 , bdr:W2KG234659 ;
