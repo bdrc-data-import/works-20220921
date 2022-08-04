@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3307 {
+    bda:LG5264AC6FECD7BA34
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-03T16:31:27.817Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGC1EC62D005257860
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,27 @@ bdg:WA1NLM3307 {
     bda:WA1NLM3307  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3307 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "85/WA1NLM3307.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3307 ;
-        adm:logEntry        bda:LGC1EC62D005257860 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG5264AC6FECD7BA34 , bda:LGC1EC62D005257860 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR85C40F5D35ABEBDA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3307  a       :Work ;
-        skos:prefLabel      "'phags pa dri med rnam gnyis lugs kyi mchod rten mchod pa'i cho ga khrigs chags su bkod pa phan bde'i 'byung gnas sogs/"@bo-x-ewts ;
+        skos:altLabel       "'phags pa 'od zer dri med dang gtsug tor dri med rnam gnyis kyi cho ga dang 'brel bar bzhengs pa'i mchod rten mchod pa'i cho ga'i rim pa ji ltar bya tshul/"@bo-x-ewts , "'phags pa dri med rnam gnyis lugs kyi mchod rten mchod pa'i cho ga khrigs chags su bkod pa phan bde'i 'byung gnas/"@bo-x-ewts , "rje btsun mi pham mgon po la stong mchod sogs phul te bsag sbyang bya tshul gyi chog sgrigs byams mgon dgyes pa'i mchod sprin/"@bo-x-ewts ;
+        skos:prefLabel      "khal kha dam tshig rdo rje'i gsung 'bum pod kha pa/"@bo-x-ewts ;
+        :catalogInfo        "The third volume of (ga) collected Works of renowned Mongolian master Damtsik Dorje from Urga."@en ;
+        :creator            bdr:CR85C40F5D35ABEBDA ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3307 , bdr:W1NLM3307 .
+        :workGenre          bdr:T529 ;
+        :workHasInstance    bdr:MW1NLM3307 , bdr:W1NLM3307 ;
+        :workIsAbout        bdr:T1013 .
 }

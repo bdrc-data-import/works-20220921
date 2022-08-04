@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3305 {
+    bda:LG7BDE199D6384F02D
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-03T16:31:27.563Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGCDF32F717887504D
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +32,27 @@ bdg:WA1NLM3305 {
     bda:WA1NLM3305  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3305 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "f0/WA1NLM3305.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3305 ;
-        adm:logEntry        bda:LGCDF32F717887504D , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG7BDE199D6384F02D , bda:LGCDF32F717887504D , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR198876658F0DEA28
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3305  a       :Work ;
-        skos:prefLabel      "dpal ldan rgyud sde lnga'i rigs bsdus kyi dkyil 'khor chen po'i zhi ba dang rgyas pa'i sbyin sreg gi cho ga gsal bar bkod pa dngos grub myur ster nor bu gzi 'bar sogs/"@bo-x-ewts ;
+        skos:altLabel       "'khor lo sdom pa'i zhi ba'i sbyin sreg gi cho ga ngag 'don gyi rim pa gsal bar bkod pa/"@bo-x-ewts , "dpal ldan rgyud sde lnga'i rigs bsdus kyi dkyil 'khor chen por dbang bskur tshul gyi cho ga dngos grub rin chen 'byung gnas/"@bo-x-ewts ;
+        skos:prefLabel      "dpal ldan rgyud sde lnga'i rigs bsdus kyi dkyil 'khor chen po'i zhi ba dang rgyas pa'i sbyin sreg gi cho ga gsal bar bkod pa dngos grub myur ster nor bu gzi 'bar/"@bo-x-ewts ;
+        :catalogInfo        "Initiation manual, rituals for the performance of the santika and paustika homa in connection with the worship of the five classes of tantra"@en ;
+        :creator            bdr:CR198876658F0DEA28 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3305 , bdr:W1NLM3305 .
+        :workGenre          bdr:T159 ;
+        :workHasInstance    bdr:MW1NLM3305 , bdr:W1NLM3305 ;
+        :workIsAbout        bdr:T1CZ12 , bdr:T2166 .
 }
