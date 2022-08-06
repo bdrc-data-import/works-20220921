@@ -16,6 +16,7 @@ bdg:WA0XLF17790A71980 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA0XLF17790A71980 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "f6/WA0XLF17790A71980.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA0XLF17790A71980 ;
@@ -23,11 +24,19 @@ bdg:WA0XLF17790A71980 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR2E31B3238F39F182
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5986 ;
+        :role               bdr:R0ER0025 .
+    
     bdr:WA0XLF17790A71980
         a                   :Work ;
         skos:altLabel       "chos skyong ba'i rgyal po srong btsan sgam po'i rnam thar/"@bo-x-ewts ;
         skos:prefLabel      "chos rgyal rnam thar/ (dbu shog chad pa zhig)"@bo-x-ewts ;
+        :creator            bdr:CR2E31B3238F39F182 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW4PD1207_F17790 .
+        :workGenre          bdr:T3 ;
+        :workHasInstance    bdr:MW4PD1207_F17790 ;
+        :workIsAbout        bdr:P8067 .
 }

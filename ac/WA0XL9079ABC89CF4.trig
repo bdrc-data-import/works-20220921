@@ -16,6 +16,7 @@ bdg:WA0XL9079ABC89CF4 {
         a                   adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA0XL9079ABC89CF4 ;
+        adm:facetIndex      2 ;
         adm:gitPath         "ac/WA0XL9079ABC89CF4.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA0XL9079ABC89CF4 ;
@@ -23,9 +24,15 @@ bdg:WA0XL9079ABC89CF4 {
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR8D11EAFA94404B82
+        a                   :AgentAsCreator ;
+        :agent              bdr:P5986 ;
+        :role               bdr:R0ER0025 .
+    
     bdr:WA0XL9079ABC89CF4
         a                   :Work ;
         skos:prefLabel      "thugs rje chen po 'brel tshad rang grol lasH thugs dam snying po yid bzhin nor bu snyan brgyud ma/"@bo-x-ewts ;
+        :creator            bdr:CR8D11EAFA94404B82 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workHasInstance    bdr:MW4PD1207_9079AB .
