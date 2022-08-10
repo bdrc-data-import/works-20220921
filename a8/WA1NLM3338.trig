@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3338 {
+    bda:LG8E1DE178E0A0B497
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-09T16:03:02.881Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGDB0941E287BC8DB2
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,32 @@ bdg:WA1NLM3338 {
     bda:WA1NLM3338  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3338 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "a8/WA1NLM3338.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3338 ;
-        adm:logEntry        bda:LGDB0941E287BC8DB2 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG8E1DE178E0A0B497 , bda:LGDB0941E287BC8DB2 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR5EEC46C9BEFBCB82
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4699 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRC95268C408F24606
+        a                   :AgentAsCreator ;
+        :agent              bdr:P80 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3338  a       :Work ;
-        skos:prefLabel      "tshad ma rnam 'grel legs par bshad pa zhes bya ba thams cad mkhyen pa dge 'dun grub kyis mdzad pa las gzhan don rjes dpag gi le'u'i rnam bshad sogs/"@bo-x-ewts ;
+        skos:altLabel       "tshad ma rnam 'grel legs par bshad pa zhes bya ba thams cad mkhyen pa dge 'dun grub kyis mdzad pa las gzhan don rjes dpag gi le'u'i rnam bshad/"@bo-x-ewts ;
+        skos:prefLabel      "tshad ma rnam 'grel legs par bshad pa las gzhan don rjes dpag gi le'u'i rnam bshad sogs/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the pramanavarttika of Dharmakirti, a method for worship (pujavidhi) for the worship of Maitreya to be used in connection with the sadhana and other miscellaneous liturgical texts from Mongolia"@en ;
+        :creator            bdr:CR5EEC46C9BEFBCB82 , bdr:CRC95268C408F24606 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3338 , bdr:W1NLM3338 .
+        :workGenre          bdr:T132 , bdr:T529 ;
+        :workHasInstance    bdr:MW1NLM3338 , bdr:W1NLM3338 ;
+        :workIsAbout        bdr:T681 , bdr:WA19721 .
 }

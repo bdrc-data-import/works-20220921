@@ -18,6 +18,12 @@ bdg:WA1NLM3329 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LG160DF5F80945B8A2
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-09T16:03:01.634Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
@@ -27,17 +33,21 @@ bdg:WA1NLM3329 {
     bda:WA1NLM3329  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3329 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "f5/WA1NLM3329.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3329 ;
-        adm:logEntry        bda:LG08A0D75B4C5A6762 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG08A0D75B4C5A6762 , bda:LG160DF5F80945B8A2 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3329  a       :Work ;
-        skos:prefLabel      "rgyud thams cad kyi rgyal po dpal gsang ba 'dus pa'i rtsa ba'i rgyud rgyud phyi ma dang bcas pa/"@bo-x-ewts ;
+        skos:altLabel       "rgyud thams cad kyi rgyal po dpal gsang ba 'dus pa'i rtsa ba'i rgyud rgyud phyi ma dang bcas pa/"@bo-x-ewts ;
+        skos:prefLabel      "gsang ba 'dus pa'i rtsa ba'i rgyud rgyud phyi ma dang bcas pa/"@bo-x-ewts ;
+        :catalogInfo        "The Guhyasamaja tantra"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3329 , bdr:W1NLM3329 .
+        :workGenre          bdr:T2129 ;
+        :workHasInstance    bdr:MW1NLM3329 , bdr:W1NLM3329 ;
+        :workIsAbout        bdr:T417 .
 }

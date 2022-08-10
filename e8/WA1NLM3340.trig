@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3340 {
+    bda:LG0EBDC1B1B43D892C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-09T16:03:03.108Z"^^xsd:dateTime ;
+        adm:logMessage      "test"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGFBAC3CEF6D074AE1
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,19 @@ bdg:WA1NLM3340 {
     bda:WA1NLM3340  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3340 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "e8/WA1NLM3340.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3340 ;
-        adm:logEntry        bda:LGFBAC3CEF6D074AE1 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG0EBDC1B1B43D892C , bda:LGFBAC3CEF6D074AE1 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3340  a       :Work ;
         skos:prefLabel      "tshe chog 'chi med 'dod 'jo dbang gi rgyal po sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM3340 , bdr:W1NLM3340 .
 }
