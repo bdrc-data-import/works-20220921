@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2023 {
+    bda:LG150F19BDDD4FF18A
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-10T21:27:26.617Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG528087FEA1087BC4
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +32,20 @@ bdg:WA1NLM2023 {
     bda:WA1NLM2023  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2023 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "44/WA1NLM2023.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2023 ;
-        adm:logEntry        bda:LG528087FEA1087BC4 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG150F19BDDD4FF18A , bda:LG528087FEA1087BC4 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2023  a       :Work ;
         skos:prefLabel      "bcom ldan 'das mgon po tshe dpag med kyi tshe ril sgrub tshul bsam 'phel yid bzhin nor bu sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgimal texts concern with long life sadhana, divination, grant permission ceremony, Consecration ritual etc."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2023 , bdr:W1NLM2023 .
+        :workGenre          bdr:T1028 , bdr:T27 , bdr:T7 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2023 , bdr:W1NLM2023 ;
+        :workIsAbout        bdr:T817 .
 }

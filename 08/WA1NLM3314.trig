@@ -18,6 +18,12 @@ bdg:WA1NLM3314 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGF1DE0266F478BEEA
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-10T10:28:58.263Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloed"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM3314 {
     bda:WA1NLM3314  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3314 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "08/WA1NLM3314.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3314 ;
-        adm:logEntry        bda:LG64954A2C85A3AEC5 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG64954A2C85A3AEC5 , bda:LGF1DE0266F478BEEA , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3314  a       :Work ;
-        skos:prefLabel      "dpal gsang ba 'dus pa'i sgrub thabs rnal 'byor dag rim ngag 'don du bsgrigs pa blo gsal dga' skyed sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal gsang ba 'dus pa'i sgrub thabs rnal 'byor dag rim ngag 'don du bsgrigs pa blo gsal dga' skyed/"@bo-x-ewts ;
+        skos:prefLabel      "gsang ba 'dus pa'i sgrub thabs rnal 'byor dag rim ngag 'don du bsgrigs pa blo gsal dga' skyed sogs/"@bo-x-ewts ;
+        :catalogInfo        "A recitation compilation of the Guhyasamaja and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3314 , bdr:W1NLM3314 .
+        :workHasInstance    bdr:MW1NLM3314 , bdr:W1NLM3314 ;
+        :workIsAbout        bdr:T2579 , bdr:T417 .
 }
