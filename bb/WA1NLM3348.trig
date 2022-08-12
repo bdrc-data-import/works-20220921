@@ -18,6 +18,12 @@ bdg:WA1NLM3348 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00v2" .
     
+    bda:LGDB04BB46F0DEEBC7
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-11T15:11:06.813Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM63F77742  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-04-16T15:18:14.719Z"^^xsd:dateTime ;
@@ -27,17 +33,27 @@ bdg:WA1NLM3348 {
     bda:WA1NLM3348  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3348 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "bb/WA1NLM3348.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3348 ;
-        adm:logEntry        bda:LG845452BB0696C0A1 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG845452BB0696C0A1 , bda:LGDB04BB46F0DEEBC7 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRCB4C7D53C0B7B91B
+        a                   :AgentAsCreator ;
+        :agent              bdr:P31 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3348  a       :Work ;
-        skos:prefLabel      "chos mngon rgya mtsho'i dgongs don brjed byang du bkod pa rin chen sgron me sogs/"@bo-x-ewts ;
+        skos:altLabel       "chos mngon rgya mtsho'i dgongs don brjed byang du bkod pa rin chen sgron me/"@bo-x-ewts ;
+        skos:prefLabel      "mngon pa mdzod kyi brjed byang du bkod pa rin chen sgron me sogs/"@bo-x-ewts ;
+        :catalogInfo        "Pedagogical presentation of the the Abhidharmakosa by Vasubhandu according to the Gomang tradition."@en ;
+        :creator            bdr:CRCB4C7D53C0B7B91B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3348 , bdr:W1NLM3348 .
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM3348 , bdr:W1NLM3348 ;
+        :workIsAbout        bdr:WA19720 .
 }

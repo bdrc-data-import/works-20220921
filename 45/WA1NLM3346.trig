@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3346 {
+    bda:LG52725E35927B1E60
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-11T15:11:06.407Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGBFCA10C1ACCD51E0
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,32 @@ bdg:WA1NLM3346 {
     bda:WA1NLM3346  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3346 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "45/WA1NLM3346.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3346 ;
-        adm:logEntry        bda:LGBFCA10C1ACCD51E0 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG52725E35927B1E60 , bda:LGBFCA10C1ACCD51E0 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR7D05E97E0DF17613
+        a                   :AgentAsCreator ;
+        :agent              bdr:P477 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CREADBEB261FF3124D
+        a                   :AgentAsCreator ;
+        :agent              bdr:P65 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3346  a       :Work ;
-        skos:prefLabel      "pha rol tu phyin pa'i lam gyi bsgrigs/_rgyal tshab rin po ches mdzad pa theg chen sgo 'byed sogs/"@bo-x-ewts ;
+        skos:altLabel       "rje btsun 'jam dpal dbyangs chos kyi rgyal mtshan gyis mdzad par grags pa'i grub mtha'i rnam bzhag"@bo-x-ewts ;
+        skos:prefLabel      "pha rol tu phyin pa'i lam gyi bsgrigs/_rgyal tshab rin po ches mdzad pa theg chen sgo 'byed/"@bo-x-ewts ;
+        :catalogInfo        "Explanation of the practice of the eitht Abhisamayakrama as related in the Abhisamayalamkara; written at Gadhan wi the Rinchen Choegyal as scribe and"@en ;
+        :creator            bdr:CR7D05E97E0DF17613 , bdr:CREADBEB261FF3124D ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3346 , bdr:W1NLM3346 .
+        :workGenre          bdr:T132 , bdr:T385 ;
+        :workHasInstance    bdr:MW1NLM3346 , bdr:W1NLM3346 ;
+        :workIsAbout        bdr:WA19716 .
 }

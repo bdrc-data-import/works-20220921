@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3341 {
+    bda:LG348AE60D5ADA2B43
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-11T15:11:04.16Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGC05930F043DB61E2
         a                   adm:UpdateData ;
         adm:logDate         "2021-04-27T16:10:33.945Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM3341 {
     bda:WA1NLM3341  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3341 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "89/WA1NLM3341.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3341 ;
-        adm:logEntry        bda:LGC05930F043DB61E2 , bda:LGIM63F77742 ;
+        adm:logEntry        bda:LG348AE60D5ADA2B43 , bda:LGC05930F043DB61E2 , bda:LGIM63F77742 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRB950B4B4580FE5E2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6242 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3341  a       :Work ;
-        skos:prefLabel      "dam chos 'dul ba mdo rtsa/"@bo-x-ewts ;
+        skos:altLabel       "dam chos 'dul ba mdo rtsa/"@bo-x-ewts ;
+        skos:prefLabel      "'dul ba mdo rtsa ba/"@bo-x-ewts ;
+        :catalogInfo        "The Vinayasutra"@en ;
+        :creator            bdr:CRB950B4B4580FE5E2 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3341 , bdr:W1NLM3341 .
+        :workHasInstance    bdr:MW1NLM3341 , bdr:W1NLM3341 ;
+        :workIsAbout        bdr:T55 .
 }
