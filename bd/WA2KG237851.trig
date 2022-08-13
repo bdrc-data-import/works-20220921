@@ -18,18 +18,31 @@ bdg:WA2KG237851 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG940556E7ECC083CE
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-08-12T09:13:30.142Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGB8FC18D6F1026D1D
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-12T10:54:25.209Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access status"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG237851  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG237851 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "bd/WA2KG237851.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG237851 ;
-        adm:logEntry        bda:LG0C658469044DB436 ;
+        adm:logEntry        bda:LG0C658469044DB436 , bda:LG940556E7ECC083CE , bda:LGB8FC18D6F1026D1D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR940556E7ECC083CE
+    bdr:CR8B7C9F0C86BF44F1
         a                   :AgentAsCreator ;
         :agent              bdr:P64 ;
         :role               bdr:R0ER0019 .
@@ -38,10 +51,10 @@ bdg:WA2KG237851 {
         skos:altLabel       "dbu ma rtsa ba'i tshig le'ur byas pa shes rab ces bya ba'i rnam bshad rigs pa'i rgya mtsho/"@bo-x-ewts ;
         skos:prefLabel      "rtsa shes Tik chen rigs pa'i rgya mtsho/"@bo-x-ewts ;
         :catalogInfo        "A detailed commentary by Je Tsongkhapa Lobsang Drakpa on the mulamadhyamaka-karika of nagarjuna presented from the prasangika view."@en ;
-        :creator            bdr:CR940556E7ECC083CE ;
+        :creator            bdr:CR8B7C9F0C86BF44F1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T61 ;
-        :workHasInstance    bdr:MW2KG237851 ;
+        :workHasInstance    bdr:MW2KG237851 , bdr:W2KG237851 ;
         :workIsAbout        bdr:WA23226 .
 }

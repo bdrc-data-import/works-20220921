@@ -18,18 +18,31 @@ bdg:WA2KG237848 {
         adm:logMessage      "cataloged"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LGDE1E8393722AB390
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-08-12T09:10:41.201Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGF80D369DB3CB646D
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-12T09:35:23.998Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access status"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:WA2KG237848  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG237848 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "24/WA2KG237848.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG237848 ;
-        adm:logEntry        bda:LG4B56742250DF754C ;
+        adm:logEntry        bda:LG4B56742250DF754C , bda:LGDE1E8393722AB390 , bda:LGF80D369DB3CB646D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CRDE1E8393722AB390
+    bdr:CR34ADB951426E1B86
         a                   :AgentAsCreator ;
         :agent              bdr:P4925 ;
         :role               bdr:R0ER0019 .
@@ -38,10 +51,10 @@ bdg:WA2KG237848 {
         skos:altLabel       "bstan bcos mngon par rtogs pa'i rgyan gyi don gsal bar byed pa lung dang rigs pa'i gter mdzod ces bya ba las skabs gnyis pa nas brgyad pa'i bar gyi mtha' dpyod/"@bo-x-ewts , "mngon par rtogs pa'i rgyan gyi don gsal bar byed pa lung dang rigs pa'i gter mdzod ces bya ba las skabs dang po/"@bo-x-ewts ;
         skos:prefLabel      "mngon par rtogs pa'i rgyan gyi don gsal bar byed pa lung dang rigs pa'i gter mdzod/"@bo-x-ewts ;
         :catalogInfo        "Detailed treatment on Maitreyanatha's Abhisamayalankara by Gungru Choekyi Jungne."@en ;
-        :creator            bdr:CRDE1E8393722AB390 ;
+        :creator            bdr:CR34ADB951426E1B86 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T132 ;
-        :workHasInstance    bdr:MW2KG237848 ;
+        :workHasInstance    bdr:MW2KG237848 , bdr:W2KG237848 ;
         :workIsAbout        bdr:T1215 , bdr:T2005 , bdr:WA19716 .
 }

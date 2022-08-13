@@ -14,21 +14,35 @@
 bdg:WA2KG237994 {
     bda:LG0B6F74335306415C
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-08-10T22:21:32.296Z"^^xsd:dateTime ;
+        adm:logDate         "2022-08-12T06:24:57.345Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG2BF2810DF410A152
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-08-12T09:16:47.071Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LGB24D4B113C8360C3
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-12T10:54:26.804Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access status"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG237994  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG237994 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "98/WA2KG237994.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG237994 ;
-        adm:logEntry        bda:LG0B6F74335306415C ;
+        adm:logEntry        bda:LG0B6F74335306415C , bda:LG2BF2810DF410A152 , bda:LGB24D4B113C8360C3 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
+        adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR2BF2810DF410A152
+    bdr:CRB3044C158B1304FD
         a                   :AgentAsCreator ;
         :agent              bdr:P37 ;
         :role               bdr:R0ER0019 .
@@ -36,9 +50,9 @@ bdg:WA2KG237994 {
     bdr:WA2KG237994  a      :Work ;
         skos:prefLabel      "zab mo dbu ma'i lta ba nyams su len tshul 'jam dpal snying po'i zhal lung /"@bo-x-ewts ;
         :catalogInfo        "How to practise the view of profound madhyamaka."@en ;
-        :creator            bdr:CR2BF2810DF410A152 ;
+        :creator            bdr:CRB3044C158B1304FD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW2KG237994 ;
+        :workHasInstance    bdr:MW2KG237994 , bdr:W2KG237994 ;
         :workIsAbout        bdr:T1764 , bdr:T541 .
 }

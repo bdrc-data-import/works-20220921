@@ -12,23 +12,36 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA2KG237997 {
+    bda:LG4786603926F6D0A9
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-12T10:54:27.899Z"^^xsd:dateTime ;
+        adm:logMessage      "changed access status"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG6DCD5B789A91FB02
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-08-10T22:21:33.111Z"^^xsd:dateTime ;
+        adm:logDate         "2022-08-12T06:24:58.522Z"^^xsd:dateTime ;
+        adm:logMessage      "cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG96E9E01634F1123B
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-08-12T09:18:23.056Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00016 .
     
     bda:WA2KG237997  a      adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA2KG237997 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "3a/WA2KG237997.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA2KG237997 ;
-        adm:logEntry        bda:LG6DCD5B789A91FB02 ;
+        adm:logEntry        bda:LG4786603926F6D0A9 , bda:LG6DCD5B789A91FB02 , bda:LG96E9E01634F1123B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR96E9E01634F1123B
+    bdr:CRC3153F9040AA5FA5
         a                   :AgentAsCreator ;
         :agent              bdr:P507 ;
         :role               bdr:R0ER0019 .
@@ -36,10 +49,10 @@ bdg:WA2KG237997 {
     bdr:WA2KG237997  a      :Work ;
         skos:prefLabel      "rnam bshad dgongs pa rab gsal gyi dka' ba'i gnad gsal bar byed pa'i bstan bcos dbang gi rgyal po/"@bo-x-ewts ;
         :catalogInfo        "Textbook for the study of Madhyamaka at Kyil Khang College at Tashi Lhunpo and it's affiliates."@en ;
-        :creator            bdr:CR96E9E01634F1123B ;
+        :creator            bdr:CRC3153F9040AA5FA5 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1491 ;
-        :workHasInstance    bdr:MW2KG237997 ;
+        :workHasInstance    bdr:MW2KG237997 , bdr:W2KG237997 ;
         :workIsAbout        bdr:WA19458 .
 }
