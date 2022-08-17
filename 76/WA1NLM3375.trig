@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3375 {
+    bda:LG8AB24CCABF542194
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-16T16:01:36.075Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +26,21 @@ bdg:WA1NLM3375 {
     bda:WA1NLM3375  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3375 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "76/WA1NLM3375.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3375 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG8AB24CCABF542194 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3375  a       :Work ;
+        skos:altLabel       "rnam rig gzhung brgya'i dgongs don rab gsal sgron me/"@bo-x-ewts ;
         skos:prefLabel      "drang nges rnam 'byed kyi dka' gnad las brtsams te rnam rig gzhung brgya'i dgongs don rab gsal sgron me/"@bo-x-ewts ;
+        :catalogInfo        "An annotated commentary on cittamatra section of Tsongkhapa's writing on provisional and ultimate meaning by Khanzur Kelsang Gephel"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3375 , bdr:W1NLM3375 .
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM3375 , bdr:W1NLM3375 ;
+        :workIsAbout        bdr:WA10MS11183 .
 }

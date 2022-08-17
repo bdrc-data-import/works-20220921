@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3357 {
+    bda:LG44BC5EFEA2D8C1ED
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-16T11:30:26.156Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGA304B58FD517A0FF
         a                   adm:UpdateData ;
         adm:logDate         "2022-08-11T10:14:15.989Z"^^xsd:dateTime ;
@@ -27,21 +33,20 @@ bdg:WA1NLM3357 {
     bda:WA1NLM3357  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3357 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "5f/WA1NLM3357.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3357 ;
-        adm:logEntry        bda:LGA304B58FD517A0FF , bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG44BC5EFEA2D8C1ED , bda:LGA304B58FD517A0FF , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3357  a       :Work ;
         skos:altLabel       "dpal gsang ba 'dus pa'i sgrub thabs rnal 'byor dag rim ngag 'don du bsgrigs pa blo gsal dga' skyed/"@bo-x-ewts ;
         skos:prefLabel      "gsang ba 'dus pa'i sgrub thabs rnal 'byor dag rim ngag 'don du bsgrigs pa blo gsal dga' skyed sogs/"@bo-x-ewts ;
-        :catalogInfo        "A recitation compilation of the Guhyasamaja and other miscellaneous rituals"@en ;
+        :catalogInfo        "Collected sadhana focusing upon Guhyasamaja from the Gelug order"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T536 ;
         :workHasInstance    bdr:MW1NLM3357 , bdr:W1NLM3357 ;
-        :workIsAbout        bdr:T417 .
+        :workIsAbout        bdr:T1181 , bdr:T417 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3359 {
+    bda:LGECF9EB08DFF042EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-16T11:30:27.654Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,19 @@ bdg:WA1NLM3359 {
     bda:WA1NLM3359  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3359 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "41/WA1NLM3359.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3359 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LGECF9EB08DFF042EE , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3359  a       :Work ;
         skos:prefLabel      "yi dam chos skyong rnams kyi gtor ma bca' thabs kyi rim pa 'khrigs chags su sdebs pa dwangs shel me long /"@bo-x-ewts ;
+        :catalogInfo        "A manual for preparing bali of protective deities bu unknown author"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3359 , bdr:W1NLM3359 .
+        :workHasInstance    bdr:MW1NLM3359 , bdr:W1NLM3359 ;
+        :workIsAbout        bdr:T00KG02749 , bdr:T1338 , bdr:T406 .
 }

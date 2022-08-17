@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3369 {
+    bda:LG5B9E4C86504097B3
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-16T16:01:35.016Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +26,21 @@ bdg:WA1NLM3369 {
     bda:WA1NLM3369  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3369 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "78/WA1NLM3369.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3369 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG5B9E4C86504097B3 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3369  a       :Work ;
-        skos:prefLabel      "rgyal ba rdo rje 'chang grub chen brgyad cu rtsa bzhi yi dam dka' sdod dang bcas pa mchod pa'i chog grub dbang bzhad pa'i rol mo sogs/"@bo-x-ewts ;
+        skos:altLabel       "rgyal ba rdo rje 'chang grub chen brgyad cu rtsa bzhi yi dam dka' sdod dang bcas pa mchod pa'i chog grub dbang bzhad pa'i rol mo/"@bo-x-ewts ;
+        skos:prefLabel      "yi dam dka' sdod dang bcas pa mchod pa'i chog grub dbang bzhad pa'i rol mo sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgical texts for daily prayers of the Gelug order."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3369 , bdr:W1NLM3369 .
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW1NLM3369 , bdr:W1NLM3369 ;
+        :workIsAbout        bdr:T819 .
 }

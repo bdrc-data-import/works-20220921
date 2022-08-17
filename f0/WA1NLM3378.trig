@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3378 {
+    bda:LG1F448EE14610CED3
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-16T16:01:36.635Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +26,21 @@ bdg:WA1NLM3378 {
     bda:WA1NLM3378  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3378 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "f0/WA1NLM3378.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3378 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG1F448EE14610CED3 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3378  a       :Work ;
-        skos:prefLabel      "'phags pa 'jam dpal gyi mtshan yang dag par brjod pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "'phags pa 'jam dpal gyi mtshan yang dag par brjod pa sogs/"@bo-x-ewts ;
+        skos:prefLabel      "'jam dpal mtshanbrjod sogs/"@bo-x-ewts ;
+        :catalogInfo        "The Manjusrinamasangiti , Fasting ritual focussing on Avalokiteshvara nd other liturgical texts for daily prayers"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3378 , bdr:W1NLM3378 .
+        :workGenre          bdr:T225 ;
+        :workHasInstance    bdr:MW1NLM3378 , bdr:W1NLM3378 ;
+        :workIsAbout        bdr:T147 .
 }

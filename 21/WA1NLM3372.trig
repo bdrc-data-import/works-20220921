@@ -18,6 +18,11 @@ bdg:WA1NLM3372 {
         adm:logMessage      "test"@en ;
         adm:logWho          bdu:U00017 .
     
+    bda:LGF9776BD4EC3C1DE6
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-16T16:01:35.585Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -27,19 +32,20 @@ bdg:WA1NLM3372 {
     bda:WA1NLM3372  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3372 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "21/WA1NLM3372.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3372 ;
-        adm:logEntry        bda:LGEDD95FA3BA2C6690 , bda:LGIM03915F22 ;
+        adm:logEntry        bda:LGEDD95FA3BA2C6690 , bda:LGF9776BD4EC3C1DE6 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3372  a       :Work ;
         skos:prefLabel      "pU dza maN+Dal 'bul tshul gyi rnam par bzhag pa kun bzang mchod pa'i sprin phung sogs/"@bo-x-ewts ;
-        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
+        :catalogInfo        "Collection of Work on Vinaya, rules of monastic discipline ans other miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T1081 , bdr:T977 ;
-        :workHasInstance    bdr:MW1NLM3372 , bdr:W1NLM3372 .
+        :workHasInstance    bdr:MW1NLM3372 , bdr:W1NLM3372 ;
+        :workIsAbout        bdr:T2MS11339 .
 }

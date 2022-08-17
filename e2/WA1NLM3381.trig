@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3381 {
+    bda:LG6BC988019C2B92F6
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-16T16:01:37.115Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +26,27 @@ bdg:WA1NLM3381 {
     bda:WA1NLM3381  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3381 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "e2/WA1NLM3381.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3381 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG6BC988019C2B92F6 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR42B8E6822F70E2CC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P410 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3381  a       :Work ;
-        skos:prefLabel      "phar phyin sogs las brtsams pa'i zin bris 'ga' zhig phyogs gcig tu bsdebs pa dge ba'i bshes gnyen chen po dkon mchog dar rgyas pa'i gsung rgyun sogs/"@bo-x-ewts ;
+        skos:altLabel       "'phrin las kyi rnam bzhag blo gsal 'jug ngogs rin chen them skas/"@bo-x-ewts , "dge 'dun nyi shu'u sdom tshig dran pa gso byed/"@bo-x-ewts , "sems bskyed tshul gnyis kyi thad ka brjed tho/"@bo-x-ewts ;
+        skos:prefLabel      "phar phyin sogs las brtsams pa'i zin bris 'ga' zhig phyogs gcig tu bsdebs pa dge ba'i bshes gnyen chen po dkon mchog dar rgyas pa'i gsung rgyun/"@bo-x-ewts ;
+        :catalogInfo        "Collection of commentaries on Abhisamayalankara by early Gelug masters."@en ;
+        :creator            bdr:CR42B8E6822F70E2CC ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3381 , bdr:W1NLM3381 .
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM3381 , bdr:W1NLM3381 ;
+        :workIsAbout        bdr:WA19716 .
 }

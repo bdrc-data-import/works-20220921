@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3361 {
+    bda:LG588F9413153B2BAC
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-16T11:30:28.457Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,21 @@ bdg:WA1NLM3361 {
     bda:WA1NLM3361  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3361 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "e1/WA1NLM3361.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3361 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG588F9413153B2BAC , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3361  a       :Work ;
+        skos:altLabel       "drang nges rnam 'byed kyi dka' gnad las brtsams te dbu ma rang rgyud pa'i gzhung gi dgongs don rab gsal sgron me sogs/"@bo-x-ewts ;
         skos:prefLabel      "drang nges rnam 'byed kyi dka' gnad las brtsams te dpal ldan thal 'gyur ba'i gzhung gi dgongs don rab gsal sgron me sogs/"@bo-x-ewts ;
+        :catalogInfo        "Analysis on the view point of Prasangika and Svatantrika Madhyamaka acording Tsongkhapa's differentiation of the interpretable and the definitive meanings by Khanzur Kelsang Gephel"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3361 , bdr:W1NLM3361 .
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM3361 , bdr:W1NLM3361 ;
+        :workIsAbout        bdr:WA10MS11183 .
 }
