@@ -11,37 +11,42 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA8LS77817 {
-    bda:LG8360EB85ED10547F
+bdg:WA8LS77826 {
+    bda:LG350D3EE97CC99164
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-08-17T08:21:40.729Z"^^xsd:dateTime ;
+        adm:logDate         "2022-08-17T11:25:01.865Z"^^xsd:dateTime ;
         adm:logMessage      "new work record created"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:LGDAB87DBE86BE70E9
+    bda:LGF5D1823EEE7F0D2A
         a                   adm:ScanRequestCreation ;
-        adm:logDate         "2022-08-17T08:22:08.462Z"^^xsd:dateTime ;
+        adm:logDate         "2022-08-17T11:25:25.367Z"^^xsd:dateTime ;
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00019 .
     
-    bda:WA8LS77817  a       adm:AdminData ;
+    bda:WA8LS77826  a       adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA8LS77817 ;
-        adm:facetIndex      3 ;
-        adm:gitPath         "88/WA8LS77817.trig" ;
+        adm:adminAbout      bdr:WA8LS77826 ;
+        adm:facetIndex      4 ;
+        adm:gitPath         "9a/WA8LS77826.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA8LS77817 ;
-        adm:logEntry        bda:LG8360EB85ED10547F , bda:LGDAB87DBE86BE70E9 ;
+        adm:graphId         bdg:WA8LS77826 ;
+        adm:logEntry        bda:LG350D3EE97CC99164 , bda:LGF5D1823EEE7F0D2A ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA8LS77817  a       :Work ;
-        skos:altLabel       "'dzin grwa drug pa'i slob deb/ nang chos dang rigs lam/"@bo-x-ewts ;
-        skos:prefLabel      "nang chos dang rigs lam/ 'dzin grwa drug pa'i slob deb/"@bo-x-ewts ;
-        :catalogInfo        "Textbook ob Buddhist philosophy and logic for class six standard. Reader VI Part III."@en ;
+    bdr:CR76642C9EADDB97FD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA8LS77826  a       :Work ;
+        skos:prefLabel      "rten 'brel bstod pa/ rtogs brjod mdun legs ma/ lam rim nyams bgur bcas/"@bo-x-ewts ;
+        :catalogInfo        "Praise of Pratityasamudapada and graduated path by Tsongkhapa Losang Dakpa."@en ;
+        :creator            bdr:CR76642C9EADDB97FD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T266 ;
-        :workHasInstance    bdr:MW8LS77817 , bdr:W8LS77817 ;
-        :workIsAbout        bdr:T370 , bdr:T770 .
+        :workGenre          bdr:T238 , bdr:T67 ;
+        :workHasInstance    bdr:MW8LS77826 , bdr:W8LS77826 ;
+        :workIsAbout        bdr:T1361 .
 }
