@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3384 {
+    bda:LG3676CA5CA8F4D9EF
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-18T11:22:52.246Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +26,31 @@ bdg:WA1NLM3384 {
     bda:WA1NLM3384  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3384 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "4c/WA1NLM3384.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3384 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG3676CA5CA8F4D9EF , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR897787992A701529
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRB1E3C6A05F5D2E51
+        a                   :AgentAsCreator ;
+        :agent              bdr:P64 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3384  a       :Work ;
-        skos:prefLabel      "tshad 'bras kyi rnam gzhag chen mo bzhugs pa'i dbu phyogs sogs/"@bo-x-ewts ;
+        skos:prefLabel      "tshad 'bras kyi rnam gzhag chen mo/"@bo-x-ewts ;
+        :catalogInfo        "A study of the pramanaphala in buddhist logic, on valid knowledge in practice and other miscellaneous rituals"@en ;
+        :creator            bdr:CR897787992A701529 , bdr:CRB1E3C6A05F5D2E51 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3384 , bdr:W1NLM3384 .
+        :workGenre          bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW1NLM3384 , bdr:W1NLM3384 ;
+        :workIsAbout        bdr:T1219 , bdr:T370 .
 }
