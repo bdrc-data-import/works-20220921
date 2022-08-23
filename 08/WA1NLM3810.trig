@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3810 {
+    bda:LG6AF5856871C4E328
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-22T10:34:47.941Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +27,26 @@ bdg:WA1NLM3810 {
     bda:WA1NLM3810  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3810 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "08/WA1NLM3810.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3810 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LG6AF5856871C4E328 , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRD2323D3F97152F59
+        a                   :AgentAsCreator ;
+        :agent              bdr:P101 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3810  a       :Work ;
-        skos:prefLabel      "shes rab kyi pha rol tu phyin pa'i man ngag gi bstan bcos mngon par rtogs pa'i rgyan 'grel pa dang bcas pa'i rnam bshad snying po rgyan gyi dgongs 'grel rnam bshad tshig don rab gsal/"@bo-x-ewts ;
+        skos:prefLabel      "rnam bshad snying po rgyan gyi dgongs 'grel rnam bshad tshig don rab gsal/"@bo-x-ewts ;
+        :catalogInfo        "A detailed commentary of Abhisamayalankara by Panchen Sonam Drakpa."@en ;
+        :creator            bdr:CRD2323D3F97152F59 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3810 , bdr:W1NLM3810 .
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW1NLM3810 , bdr:W1NLM3810 ;
+        :workIsAbout        bdr:WA648 .
 }
