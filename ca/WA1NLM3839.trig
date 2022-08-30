@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3839 {
+    bda:LG03578DE0C44E5BB0
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-29T11:22:50.438Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +27,26 @@ bdg:WA1NLM3839 {
     bda:WA1NLM3839  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3839 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ca/WA1NLM3839.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3839 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LG03578DE0C44E5BB0 , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR53F63827E00727D0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3839  a       :Work ;
         skos:prefLabel      "skyer sgang lugs kyi rta mgrin gsang sgrub kyi sgrub thabs bdud dpung 'joms pa'i rdo rje'i sgom rim rta mchog rol ba'i dgongs rgyan sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 rta mgrin gsang sgrub kyi zhi rgyas dbang gsum gyi sbyin sreg gi cho ga ye shes mi 'od/ 2 rta mgrin skyer sgang lugs kyi sgrub thabs bdud dpung 'joms pai rdo rje/ 3 bcom ldan 'das rta mchog rol pa gsang sgrub kyi tshogs mchod ji ltar bya ba'i tshul rta mchog dgyes pa'i 'dzum zhal/ 4 rta mgrin gsang sgrub kyi sgo nas sri mnan byed tshul rdo rje'i lhun po brtsegs pa/"@en , "Sadhana of Hayagriva Guhyasadhana according to the Kyergang tradition by the 3rd thukwan Losang Chokyi Nyima."@en ;
+        :creator            bdr:CR53F63827E00727D0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3839 , bdr:W1NLM3839 .
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM3839 , bdr:W1NLM3839 ;
+        :workIsAbout        bdr:T50 .
 }
