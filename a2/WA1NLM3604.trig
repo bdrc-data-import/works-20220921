@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3604 {
+    bda:LG4EF5C640C81C29F2
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-08-31T16:00:23.474Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloed"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,27 @@ bdg:WA1NLM3604 {
     bda:WA1NLM3604  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3604 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a2/WA1NLM3604.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3604 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG4EF5C640C81C29F2 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR08093DDAFBFA42C4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P2AG1 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3604  a       :Work ;
-        skos:prefLabel      "dpal ldan dmag zor ma'i sgo nas rno mthong sgrub tshul de'i 'bras bshad dang bcas pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal ldan dmag zor ma'i sgo nas rno mthong sgrub tshul de'i 'bras bshad dang bcas pa/"@bo-x-ewts ;
+        skos:prefLabel      "dmag zor ma'i sgo nas rno mthong sgrub tshul de'i 'bras bshad dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Anthology of writings on prognostication and protection from adverse results according to the Siridevi and other dharma activities."@en ;
+        :creator            bdr:CR08093DDAFBFA42C4 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3604 , bdr:W1NLM3604 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3604 , bdr:W1NLM3604 ;
+        :workIsAbout        bdr:T405 , bdr:T926 .
 }
