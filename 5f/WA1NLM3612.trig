@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3612 {
+    bda:LG808B526B6FE39568
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-08T16:25:00.476Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +26,20 @@ bdg:WA1NLM3612 {
     bda:WA1NLM3612  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3612 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "5f/WA1NLM3612.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3612 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG808B526B6FE39568 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3612  a       :Work ;
-        skos:prefLabel      "dam can chos kyi rgyal po phyi sgrub la bsten pa'i drug bcu pa'i gtor chen gyi dmigs rim bar chad kun sel sogs/"@bo-x-ewts ;
+        skos:altLabel       "dam can chos kyi rgyal po phyi sgrub la bsten pa'i drug bcu pa'i gtor chen gyi dmigs rim bar chad kun sel/"@bo-x-ewts ;
+        skos:prefLabel      "chos rgyal phyi sgrub la bsten pa'i drug bcu pa'i gtor chen gyi dmigs rim bar chad kun sel sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collections of miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM3612 , bdr:W1NLM3612 .
 }

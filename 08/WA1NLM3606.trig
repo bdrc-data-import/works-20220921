@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3606 {
+    bda:LG5161212CF6617610
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-07T16:22:29.675Z"^^xsd:dateTime ;
+        adm:logMessage      "full catalog"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,20 @@ bdg:WA1NLM3606 {
     bda:WA1NLM3606  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3606 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "08/WA1NLM3606.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3606 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG5161212CF6617610 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3606  a       :Work ;
-        skos:prefLabel      "dpal rdo rje 'jigs byed zhing skyong chen po'i sbrags pa'i sgo nas gtor bzlog bya tshul bsam sbyor ngan pa'i rgya nag thams cad 'thal bar rlog pa'i gnam lcags rdo rje mtshon cha'i char chen sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal rdo rje 'jigs byed zhing skyong chen po'i sbrags pa'i sgo nas gtor bzlog bya tshul bsam sbyor ngan pa'i rgya nag thams cad 'thal bar rlog pa'i gnam lcags rdo rje mtshon cha'i char chen/"@bo-x-ewts ;
+        skos:prefLabel      "rdo rje 'jigs byed zhing skyong chen po'i sbrags pa'i sgo nas gtor bzlog bya tshul bsam sbyor ngan pa'i rgya nag thams cad 'thal bar rlog pa'i gnam lcags rdo rje mtshon cha'i char chen sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM3606 , bdr:W1NLM3606 .
 }
