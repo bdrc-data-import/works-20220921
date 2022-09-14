@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3618 {
+    bda:LG123F26AF30D6DE26
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-12T16:05:22.575Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +26,21 @@ bdg:WA1NLM3618 {
     bda:WA1NLM3618  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3618 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "57/WA1NLM3618.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3618 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG123F26AF30D6DE26 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3618  a       :Work ;
-        skos:prefLabel      "dam can gshin rje chos kyi rgyal po dang chos skyong chen po dregs pa lcam sring gnyis kyi mchod gtor 'bul tshul sogs/"@bo-x-ewts ;
+        skos:altLabel       "dam can gshin rje chos kyi rgyal po dang chos skyong chen po dregs pa lcam sring gnyis kyi mchod gtor 'bul tshul/"@bo-x-ewts ;
+        skos:prefLabel      "chos rgyal dang dregs pa lcam sring gnyis kyi mchod gtor 'bul tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3618 , bdr:W1NLM3618 .
+        :workGenre          bdr:T1081 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3618 , bdr:W1NLM3618 ;
+        :workIsAbout        bdr:T406 .
 }
