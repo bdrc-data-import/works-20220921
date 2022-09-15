@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3623 {
+    bda:LG485F4B1C8111F101
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-14T16:38:08.204Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,19 @@ bdg:WA1NLM3623 {
     bda:WA1NLM3623  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3623 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "0b/WA1NLM3623.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3623 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG485F4B1C8111F101 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3623  a       :Work ;
         skos:prefLabel      "rdo rje mkha' lding nag po'i sgrub thabs dang byabs khrus sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM3623 , bdr:W1NLM3623 .
 }
