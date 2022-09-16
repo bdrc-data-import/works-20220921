@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3915 {
+    bda:LG80E476DEF39B364F
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-15T08:20:26.485Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +27,26 @@ bdg:WA1NLM3915 {
     bda:WA1NLM3915  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3915 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "b8/WA1NLM3915.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3915 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LG80E476DEF39B364F , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR4D4565F52DD9E2F1
+        a                   :AgentAsCreator ;
+        :agent              bdr:P179 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3915  a       :Work ;
         skos:prefLabel      "blo sbyong dang 'brel ba'i gdams pa dang gsung mgur gyi riM pa nas nye bar mkho bor sogs/"@bo-x-ewts ;
+        :catalogInfo        "1 bla ma'i bka' drin dran cing thugs rje bskul ba'i gsol 'debs byin rlabs 'phreng ba/ 2 bka' dring gsol 'debs thugs rgyud bskul pa'i gdung dbyangs/ 3 skyabs 'gro'i bslab bya/ 4 sdig bshags gser gyi spu gri/ 5 gzungs sngags dang / de bzhin gshegs pa'i tshan/ bka' 'gyur snying po sogs kha 'don byed rgyu zab mo'i rigs phyogs gcig tu bkod pa don gnyis lhun grub/"@bo-x-ewts , "A selection of instructions and spiritual songs concerning the mind training by 7th Dalai Lama Kelsang Gyatsho."@en ;
+        :creator            bdr:CR4D4565F52DD9E2F1 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3915 , bdr:W1NLM3915 .
+        :workGenre          bdr:T6 , bdr:T613 ;
+        :workHasInstance    bdr:MW1NLM3915 , bdr:W1NLM3915 ;
+        :workIsAbout        bdr:T393 .
 }

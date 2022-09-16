@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3918 {
+    bda:LGE4AFE4857C8AA972
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-15T10:50:55.257Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +27,36 @@ bdg:WA1NLM3918 {
     bda:WA1NLM3918  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3918 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "76/WA1NLM3918.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3918 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LGE4AFE4857C8AA972 , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR135F0019551993AF
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3388 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR558AB4CB61A19FCB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P8093 ;
+        :role               bdr:R0ER0018 .
+    
+    bdr:CR5E852E6CAEAE6764
+        a                   :AgentAsCreator ;
+        :agent              bdr:P753 ;
+        :role               bdr:R0ER0026 .
+    
     bdr:WA1NLM3918  a       :Work ;
         skos:prefLabel      "'phags pa 'jam dpal gyi mtshan yang dag par brjod pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Manjushri Namasangitit tantra."@en ;
+        :creator            bdr:CR135F0019551993AF , bdr:CR558AB4CB61A19FCB , bdr:CR5E852E6CAEAE6764 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3918 , bdr:W1NLM3918 .
+        :workGenre          bdr:T2129 ;
+        :workHasInstance    bdr:MW1NLM3918 , bdr:W1NLM3918 ;
+        :workIsAbout        bdr:WA22003 .
 }
