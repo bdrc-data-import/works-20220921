@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3636 {
+    bda:LG5C79F9E156339B9E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-19T12:45:41.533Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,20 @@ bdg:WA1NLM3636 {
     bda:WA1NLM3636  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3636 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "96/WA1NLM3636.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3636 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG5C79F9E156339B9E , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3636  a       :Work ;
-        skos:prefLabel      "bcom ldan 'das 'jam dpal gshin rje gshed kyi sgo nas gshin po rjes su 'dzin thabs rmad du byung ba lto sgor grags cho ga bzhugs so//_gshin po'i sbyang cho ga thar lam gsal sgron sogs/"@bo-x-ewts ;
+        skos:altLabel       "bcom ldan 'das 'jam dpal gshin rje gshed kyi sgo nas gshin po rjes su 'dzin thabs rmad du byung ba lho sgor grags pa'i cho ga/_gshin po'i sbyang chog thar lam gsal sgron/"@bo-x-ewts ;
+        skos:prefLabel      "gshin rje gshed kyi sgo nas gshin po rjes su 'dzin thabs rmad du byung ba lho sgor grags pa'i cho ga/ gshin po'i sbyang chog thar lam gsal sgron sogs/"@bo-x-ewts ;
+        :catalogInfo        "Liturgical recitation of Vajrabairava funeral rites and other miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3636 , bdr:W1NLM3636 .
+        :workHasInstance    bdr:MW1NLM3636 , bdr:W1NLM3636 ;
+        :workIsAbout        bdr:T1734 , bdr:T1CZ27 , bdr:T4 .
 }

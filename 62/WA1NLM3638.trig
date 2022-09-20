@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3638 {
+    bda:LGD0F0B5A56F3EE082
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-19T15:53:33.424Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +26,20 @@ bdg:WA1NLM3638 {
     bda:WA1NLM3638  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3638 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "62/WA1NLM3638.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3638 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LGD0F0B5A56F3EE082 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3638  a       :Work ;
-        skos:prefLabel      "bcom ldan 'das rdo rje mi 'khrugs pa'i sgo nas ngan song sbyong ba'i cho ga 'chi med gang+ga'i chu rgyun sogs/"@bo-x-ewts ;
+        skos:altLabel       "bcom ldan 'das rdo rje mi 'khrugs pa'i sgo nas ngan song sbyong ba'i cho ga 'chi med gang+ga'i chu rgyun/"@bo-x-ewts ;
+        skos:prefLabel      "mi 'khrugs pa'i sgo nas ngan song sbyong ba'i cho ga 'chi med gang+ga'i chu rgyun sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of miscellaneous rituals and liturgical texts from Mongolia"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM3638 , bdr:W1NLM3638 .
 }

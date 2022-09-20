@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3632 {
+    bda:LG8602828AD98193C8
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-19T12:45:39.297Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,21 @@ bdg:WA1NLM3632 {
     bda:WA1NLM3632  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3632 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "fd/WA1NLM3632.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3632 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG8602828AD98193C8 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3632  a       :Work ;
-        skos:prefLabel      "dpal ldan lha mo skangs gtor bstod bskul dang bcas pa rten thugs skyed pa'i zhes bya ba bzhugs so/_/mkha' 'gro spyi gtor sogs/"@bo-x-ewts ;
+        skos:altLabel       "dpal ldan lha mo skangs gtor bstod bskul dang bcas pa rten thugs skyed pa'i zhes bya ba dang / mkha' 'gro spyi gtor/"@bo-x-ewts ;
+        skos:prefLabel      "lha mo skangs gtor bstod bskul dang bcas pa rten thugs skyed pa dang mkha' 'gro spyi gtor/ zas lhag 'bul tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "Liturgical recitation concerning confession and purification, praise and exhortationof Shridevi and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3632 , bdr:W1NLM3632 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3632 , bdr:W1NLM3632 ;
+        :workIsAbout        bdr:T905 , bdr:T926 .
 }

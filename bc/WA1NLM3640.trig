@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3640 {
+    bda:LG3EF9BA1D6EACFEEF
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-19T15:54:31.628Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +26,27 @@ bdg:WA1NLM3640 {
     bda:WA1NLM3640  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3640 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "bc/WA1NLM3640.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3640 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG3EF9BA1D6EACFEEF , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR0EC62121F0EEE6F9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P6418 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3640  a       :Work ;
-        skos:prefLabel      "mkhan chen chos kyi rgyal po'i gsung 'bum las bla ma mchod pa'i 'khrid dngos grub kyi char 'babs sogs/"@bo-x-ewts ;
+        skos:altLabel       "mkhan chen chos kyi rgyal po'i gsung 'bum las bla ma mchod pa'i 'khrid dngos grub kyi char 'bebs/"@bo-x-ewts ;
+        skos:prefLabel      "bla ma mchod pa'i 'khrid dngos grub kyi char 'bebs sogs/"@bo-x-ewts ;
+        :catalogInfo        "Instruction on the practice of the gurupuja of the Wensa Nyangyue tradition; based upon the Lama Choepa Detong Yermema and other related texts in Geluk orrder."@en ;
+        :creator            bdr:CR0EC62121F0EEE6F9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3640 , bdr:W1NLM3640 .
+        :workGenre          bdr:T132 ;
+        :workHasInstance    bdr:MW1NLM3640 , bdr:W1NLM3640 ;
+        :workIsAbout        bdr:T11MS11 , bdr:WA4CZ369314 .
 }
