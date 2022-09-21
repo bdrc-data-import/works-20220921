@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3643 {
+    bda:LGBEBE6CD72DAB835D
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-20T16:05:12.466Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,31 @@ bdg:WA1NLM3643 {
     bda:WA1NLM3643  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3643 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "3c/WA1NLM3643.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3643 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LGBEBE6CD72DAB835D , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRDB6B051D7AF63525
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRE73070BF1284804A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3643  a       :Work ;
         skos:prefLabel      "bsangs kyi cho ga dngos grub kyi gzi 'od 'bar ba ngo mtshar rin po che'i phreng ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "Incense offering ritual, Tara's four mandala and other collection of short canonical texts"@en ;
+        :creator            bdr:CRDB6B051D7AF63525 , bdr:CRE73070BF1284804A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3643 , bdr:W1NLM3643 .
+        :workGenre          bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM3643 , bdr:W1NLM3643 ;
+        :workIsAbout        bdr:T1709 , bdr:T173 .
 }

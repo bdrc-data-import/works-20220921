@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3649 {
+    bda:LG27EF852649413C25
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-20T16:05:15.257Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM03915F22  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-08-17T15:51:42.211Z"^^xsd:dateTime ;
@@ -21,17 +27,32 @@ bdg:WA1NLM3649 {
     bda:WA1NLM3649  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3649 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "1b/WA1NLM3649.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3649 ;
-        adm:logEntry        bda:LGIM03915F22 ;
+        adm:logEntry        bda:LG27EF852649413C25 , bda:LGIM03915F22 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR541A11AF0A492137
+        a                   :AgentAsCreator ;
+        :agent              bdr:P105 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CREBD90C921FB7AB00
+        a                   :AgentAsCreator ;
+        :agent              bdr:P170 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3649  a       :Work ;
-        skos:prefLabel      "khro ma nag mo'i rol 'bum las/_thos sgrol gyi 'chi bslu dang sprag pa'i brgya bzhi cho ga bdud bzhi rang sar sgrol ba lo bdun gyi 'chi ltas gcod pa'i ye shes kyi ral gri sogs/"@bo-x-ewts ;
+        skos:altLabel       "khros ma nag mo'i rol 'bum las/_thos sgrol gyi 'chi bslu dang sbrag pa'i brgya bzhi cho ga bdud bzhi rang sar sgrol ba lo bdun gyi 'chi ltas gcod pa'i ye shes kyi ral gri/"@bo-x-ewts ;
+        skos:prefLabel      "thos sgrol gyi 'chi bslu dang sbrags pa'i brgya bzhi cho ga bdud bzhi rang sar sgrol ba lo bdun gyi 'chi ltas gcod pa'i ye shes kyi ral gri sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collected instructions on various Choe practices"@en ;
+        :creator            bdr:CR541A11AF0A492137 , bdr:CREBD90C921FB7AB00 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3649 , bdr:W1NLM3649 .
+        :workGenre          bdr:T10MS14464 ;
+        :workHasInstance    bdr:MW1NLM3649 , bdr:W1NLM3649 ;
+        :workIsAbout        bdr:T1240 , bdr:T194 .
 }
