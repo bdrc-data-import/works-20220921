@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3653 {
+    bda:LG8E140746D58A849E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-21T15:55:31.315Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +26,26 @@ bdg:WA1NLM3653 {
     bda:WA1NLM3653  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3653 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "15/WA1NLM3653.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3653 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LG8E140746D58A849E , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR8CDFED2638F2351A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P311 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3653  a       :Work ;
         skos:prefLabel      "gcod gzhung thar 'dod ded dpon ma'i dgongs don nyams su len tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "A treasured collection of commentaries to the Choe practice by various Geluk masters."@en ;
+        :creator            bdr:CR8CDFED2638F2351A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3653 , bdr:W1NLM3653 .
+        :workGenre          bdr:T1081 ;
+        :workHasInstance    bdr:MW1NLM3653 , bdr:W1NLM3653 ;
+        :workIsAbout        bdr:T194 .
 }

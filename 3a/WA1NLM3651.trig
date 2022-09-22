@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3651 {
+    bda:LG26022EFC0D046477
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-21T15:55:30.57Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +26,20 @@ bdg:WA1NLM3651 {
     bda:WA1NLM3651  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3651 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "3a/WA1NLM3651.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3651 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LG26022EFC0D046477 , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3651  a       :Work ;
         skos:prefLabel      "gdugs dkar mchog sgrub ma bstod bzlog dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Repelling ritual of Sitatapatra and collection of reverential petition and prayers"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3651 , bdr:W1NLM3651 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3651 , bdr:W1NLM3651 ;
+        :workIsAbout        bdr:T1473 , bdr:T703 .
 }
