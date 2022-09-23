@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3657 {
+    bda:LGA043678435BF1F4C
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-22T17:13:14.076Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +26,20 @@ bdg:WA1NLM3657 {
     bda:WA1NLM3657  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3657 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "37/WA1NLM3657.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3657 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LGA043678435BF1F4C , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3657  a       :Work ;
         skos:prefLabel      "drug cu pa'i sgo nas blo bur las bcol gyi gtor ma 'phen tshul bstan dgra gzhom pa'i gnam lcags 'khor lo sogs/"@bo-x-ewts ;
+        :catalogInfo        "Method for the practice of Vajrabhairava through the special torma called the drugcu pa and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3657 , bdr:W1NLM3657 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3657 , bdr:W1NLM3657 ;
+        :workIsAbout        bdr:T104 , bdr:T1433 .
 }
