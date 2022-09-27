@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3663 {
+    bda:LG2BA4096DB9D33EB2
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-26T12:17:33.691Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +27,20 @@ bdg:WA1NLM3663 {
     bda:WA1NLM3663  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3663 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "94/WA1NLM3663.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3663 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LG2BA4096DB9D33EB2 , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3663  a       :Work ;
         skos:prefLabel      "gshin rtsis mdor bsdus bklag pa'i don grub sogs/"@bo-x-ewts ;
+        :catalogInfo        "Supplementary to the astrology of death chapter of Desid's Baidur Karpo and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3663 , bdr:W1NLM3663 .
+        :workGenre          bdr:T98 ;
+        :workHasInstance    bdr:MW1NLM3663 , bdr:W1NLM3663 ;
+        :workIsAbout        bdr:T1PD106859 .
 }

@@ -11,29 +11,35 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA2KG238000 {
-    bda:LG05804B0B5FAB6820
+bdg:WA2KG238110 {
+    bda:LG3D8B59C9329D3196
         a                   adm:InitialDataCreation ;
-        adm:logDate         "2022-09-26T06:02:50.436Z"^^xsd:dateTime ;
+        adm:logDate         "2022-09-26T06:03:10.84Z"^^xsd:dateTime ;
         adm:logWho          bdu:U00016 .
     
-    bda:WA2KG238000  a      adm:AdminData ;
+    bda:WA2KG238110  a      adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA2KG238000 ;
-        adm:facetIndex      2 ;
-        adm:gitPath         "35/WA2KG238000.trig" ;
+        adm:adminAbout      bdr:WA2KG238110 ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "fc/WA2KG238110.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA2KG238000 ;
-        adm:logEntry        bda:LG05804B0B5FAB6820 ;
+        adm:graphId         bdg:WA2KG238110 ;
+        adm:logEntry        bda:LG3D8B59C9329D3196 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA2KG238000  a      :Work ;
-        skos:prefLabel      "dpal rdo rje 'jigs byed dpa' bo gcig pa'i rim gnyis kyi man ngag gces bsdus mun sel sgron me/"@bo-x-ewts ;
-        :catalogInfo        "Selected quintessential instruction on utpattikrama and sampanna krama of vajrabhairava-ekavira."@en ;
+    bdr:CR73D49A11AC2D1819
+        a                   :AgentAsCreator ;
+        :agent              bdr:P272 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA2KG238110  a      :Work ;
+        skos:prefLabel      "spyir bstan gyi rnam bzhag 'dul gzhung gsal byed/"@bo-x-ewts ;
+        :catalogInfo        "Commentary on the Vinaya Sutra by Khalka Ngawang Palden (b. 1797)."@en ;
+        :creator            bdr:CR73D49A11AC2D1819 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T456 ;
-        :workHasInstance    bdr:MW2KG238000 ;
-        :workIsAbout        bdr:T154 , bdr:T1CZ30 .
+        :workGenre          bdr:T132 , bdr:T1CZ56 ;
+        :workHasInstance    bdr:MW2KG238110 ;
+        :workIsAbout        bdr:T55 , bdr:WA4CZ16829 .
 }
