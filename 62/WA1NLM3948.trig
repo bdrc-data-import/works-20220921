@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3948 {
+    bda:LGAF9E7DC37E89FC1B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-27T12:54:50.943Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +27,26 @@ bdg:WA1NLM3948 {
     bda:WA1NLM3948  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3948 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "62/WA1NLM3948.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3948 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LGAF9E7DC37E89FC1B , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CREB2B84A385FBD022
+        a                   :AgentAsCreator ;
+        :agent              bdr:P37 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3948  a       :Work ;
         skos:prefLabel      "bder gshegs bdun gyi mchod pa'i cho ga sgrigs yid bzhin dbang rgyal/"@bo-x-ewts ;
+        :catalogInfo        "Ritual offering of seven medicine Buddha by 5th Dalai Lama Ngawang Losang Gyatsho."@en ;
+        :creator            bdr:CREB2B84A385FBD022 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3948 , bdr:W1NLM3948 .
+        :workGenre          bdr:T529 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3948 , bdr:W1NLM3948 ;
+        :workIsAbout        bdr:T568 .
 }
