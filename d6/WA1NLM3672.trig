@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3672 {
+    bda:LGD6B28D114A250F49
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-28T16:24:07.693Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +27,21 @@ bdg:WA1NLM3672 {
     bda:WA1NLM3672  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3672 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "d6/WA1NLM3672.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3672 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LGD6B28D114A250F49 , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3672  a       :Work ;
-        skos:prefLabel      "bcom ldan 'das ngan song sbyong ba'i lha lnga la brten nas gson gshin gyi 'jig rten sbyang chog dang 'brel ba'i smyung gnas kyi cho ga bde chen thar pa'i them skas sogs/"@bo-x-ewts ;
+        skos:altLabel       "bcom ldan 'das ngan song sbyong ba'i lha lnga la brten nas gson gshin gyi 'jig rten sbyang chog dang 'brel ba'i smyung gnas kyi cho ga bde chen thar pa'i them skas/"@bo-x-ewts ;
+        skos:prefLabel      "ngan song sbyong ba'i lha lnga la brten nas gson gshin gyi 'jig rten sbyang chog dang 'brel ba'i smyung gnas kyi cho ga bde chen thar pa'i them skas sogs/"@bo-x-ewts ;
+        :catalogInfo        "Ritual of fasting and silence according to the devotion to Sarvadurgatiparisodhana and collection of miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3672 , bdr:W1NLM3672 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3672 , bdr:W1NLM3672 ;
+        :workIsAbout        bdr:T175 .
 }

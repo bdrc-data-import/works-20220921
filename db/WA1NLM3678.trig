@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3678 {
+    bda:LGE6BF22ED2684B758
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-28T16:24:10.474Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +27,32 @@ bdg:WA1NLM3678 {
     bda:WA1NLM3678  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3678 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "db/WA1NLM3678.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3678 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LGE6BF22ED2684B758 , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR3B19271A1AF8A541
+        a                   :AgentAsCreator ;
+        :agent              bdr:P719 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR54A16EBE8D1D0FB8
+        a                   :AgentAsCreator ;
+        :agent              bdr:P3016 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3678  a       :Work ;
-        skos:prefLabel      "bcom ldan 'das sman pa'i rgyal po'i lho sgo bgegs sel nor bu'i bang mdzod sogs/"@bo-x-ewts ;
+        skos:altLabel       "bcom ldan 'das sman pa'i rgyal po'i lho sgo bgegs sel nor bu'i bang mdzod/"@bo-x-ewts ;
+        skos:prefLabel      "sman pa'i rgyal po'i lho sgo bgegs sel nor bu'i bang mdzod sogs/"@bo-x-ewts ;
+        :catalogInfo        "Repelling ritual of southern gate of medicine Buddha, rituals to ensure longevity through the propitation of amitayu and other collection of miscellaneous rituals and liturgical texts Gelug order"@en ;
+        :creator            bdr:CR3B19271A1AF8A541 , bdr:CR54A16EBE8D1D0FB8 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3678 , bdr:W1NLM3678 .
+        :workGenre          bdr:T27 ;
+        :workHasInstance    bdr:MW1NLM3678 , bdr:W1NLM3678 ;
+        :workIsAbout        bdr:T1CZ27 .
 }

@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3679 {
+    bda:LGEDC6EF9B7D78CE5B
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-28T16:24:11.159Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +27,20 @@ bdg:WA1NLM3679 {
     bda:WA1NLM3679  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3679 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "b3/WA1NLM3679.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3679 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LGEDC6EF9B7D78CE5B , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3679  a       :Work ;
-        skos:prefLabel      "sa bdag lha cang rkan po dkar po'i gsol mchod bya tshul phan bde'i rin chen bang mdzod sogs/"@bo-x-ewts ;
+        skos:altLabel       "sa bdag ha cang rkan po dkar po'i gsol mchod bya tshul phan bde'i rin chen bang mdzod/"@bo-x-ewts ;
+        skos:prefLabel      "sa bdag ha cang rgan po dkar po'i gsol mchod bya tshul phan bde'i rin chen bang mdzod sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of ritual offering of Genpo karpo. a protective deities of places and of the earth"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3679 , bdr:W1NLM3679 .
+        :workHasInstance    bdr:MW1NLM3679 , bdr:W1NLM3679 ;
+        :workIsAbout        bdr:T249 , bdr:T4CZ371297 .
 }
