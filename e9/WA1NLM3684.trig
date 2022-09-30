@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3684 {
+    bda:LGFD57C081A7D152D2
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-29T15:48:14.017Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +26,20 @@ bdg:WA1NLM3684 {
     bda:WA1NLM3684  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3684 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "e9/WA1NLM3684.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3684 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LGFD57C081A7D152D2 , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3684  a       :Work ;
-        skos:prefLabel      "mi phyugs la sogs pa'i g.yang 'phel ba la gnod byed kyi the'u rang 'god po bskrod pa'i mdos g.yang gi lcags kyu sogs/"@bo-x-ewts ;
+        skos:prefLabel      "mi phyugs la sogs pa'i g.yang 'phel ba la gnod byed kyi the'u rang 'gong po bskrod pa'i mdos g.yang gi lcags kyu sogs/"@bo-x-ewts ;
+        :catalogInfo        "Thread crossed ritual to protect prosperity of human and animal, the saptabuddhaka sutra and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3684 , bdr:W1NLM3684 .
+        :workGenre          bdr:T769 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3684 , bdr:W1NLM3684 ;
+        :workIsAbout        bdr:T2415 .
 }

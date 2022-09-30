@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3683 {
+    bda:LG1A1296332595F605
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-29T15:48:13.746Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +26,31 @@ bdg:WA1NLM3683 {
     bda:WA1NLM3683  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3683 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "15/WA1NLM3683.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3683 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LG1A1296332595F605 , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR7A4A5875612FAA0C
+        a                   :AgentAsCreator ;
+        :agent              bdr:P168 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRCD4CE899C2EAF8FB
+        a                   :AgentAsCreator ;
+        :agent              bdr:P298 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3683  a       :Work ;
         skos:prefLabel      "dzaM dkar lha lnga'i nor sgrub bya tshul gyi zur 'debs gser gyi lde mig dang dzaM dmar sgrub thabs 'dod dgu'i mchog sbyin sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection rituals focussing upon forms of all kinds of Jambhala and Vaishravana sadhana of fortune,"@en ;
+        :creator            bdr:CR7A4A5875612FAA0C , bdr:CRCD4CE899C2EAF8FB ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3683 , bdr:W1NLM3683 .
+        :workGenre          bdr:T1 , bdr:T132 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3683 , bdr:W1NLM3683 ;
+        :workIsAbout        bdr:T1432 .
 }

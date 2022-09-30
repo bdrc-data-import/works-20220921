@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3681 {
+    bda:LGC61FEE9B0943CEE6
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-29T15:48:13.14Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +26,27 @@ bdg:WA1NLM3681 {
     bda:WA1NLM3681  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3681 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "d2/WA1NLM3681.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3681 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LGC61FEE9B0943CEE6 , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR6ECF714B0F858725
+        a                   :AgentAsCreator ;
+        :agent              bdr:P168 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3681  a       :Work ;
-        skos:prefLabel      "mgon dkar 'grel pa bka' rgya ma bzhugs pa 'di lta ba'i dus su mgon po dang gnod sbyin k+She tra pA la dang 'khor bzhi dang chos skyong rnams la gtor ma phul gzhi bdag la gser skyems phul nas bltas na dngos grub thob po bkra shis sogs/"@bo-x-ewts ;
+        skos:altLabel       "mgon dkar 'grel pa bka' rgya ma bzhugs pa 'di lta ba'i dus su mgon po dang gnod sbyin k+She tra pA la dang 'khor bzhi dang chos skyong rnams la gtor ma phul gzhi bdag la gser skyems phul nas bltas na dngos grub thob po bkra shis/"@bo-x-ewts ;
+        skos:prefLabel      "mgon dkar yid bzhin gyi nor bu'i sgrub thabs kyi rgya cher 'grel pa dngos grub sgo 'byed/ sogs/"@bo-x-ewts ;
+        :catalogInfo        "Explanation of the practices connected with the white Mahakala and other miscellaneous rituals texts from Mongoli"@en ;
+        :creator            bdr:CR6ECF714B0F858725 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3681 , bdr:W1NLM3681 .
+        :workGenre          bdr:T1 ;
+        :workHasInstance    bdr:MW1NLM3681 , bdr:W1NLM3681 ;
+        :workIsAbout        bdr:T295 , bdr:T492 .
 }

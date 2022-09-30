@@ -13,28 +13,34 @@
 
 bdg:WA30457 {
     bda:LG3B1B84A269050440
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-29T20:34:06.689Z"^^xsd:dateTime ;
+        adm:logMessage      "creator changed from P10671 to P4611"@en ;
+        adm:logWho          bdu:U00016 .
+    
+    bda:LG6CD11340BEAAA66D
         a                   adm:InitialDataCreation ;
         adm:logWho          bdu:U00001 .
     
     bda:WA30457  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA30457 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "a8/WA30457.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA30457 ;
-        adm:logEntry        bda:LG3B1B84A269050440 ;
+        adm:logEntry        bda:LG3B1B84A269050440 , bda:LG6CD11340BEAAA66D ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusOnHold .
     
-    bdr:CR6CD11340BEAAA66D
+    bdr:CRB1CE2DD71272E95B
         a                   :AgentAsCreator ;
-        :agent              bdr:P10671 ;
+        :agent              bdr:P4611 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA30457  a          :Work ;
         skos:prefLabel      "gsung 'bum/_grags pa dar rgyas/"@bo-x-ewts ;
-        :creator            bdr:CR6CD11340BEAAA66D ;
+        :creator            bdr:CRB1CE2DD71272E95B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T208 ;

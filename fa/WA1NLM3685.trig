@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3685 {
+    bda:LGFA5EEDD1ABF5DC7E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-29T15:48:14.28Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +26,25 @@ bdg:WA1NLM3685 {
     bda:WA1NLM3685  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3685 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "fa/WA1NLM3685.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3685 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LGFA5EEDD1ABF5DC7E , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR31C3F8AA64EDD88A
+        a                   :AgentAsCreator ;
+        :agent              bdr:P268 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3685  a       :Work ;
         skos:prefLabel      "ra lug gi 'bras mchod 'dod dgu'i 'byung gnas sogs/"@bo-x-ewts ;
+        :catalogInfo        "Rituals to bring wealth, long life, fortune, and auspiciousness through the practice focussing on the wealth deity Vaishravana, sadhana vidhi for perfomance of the kumbha and kapala cakra using the Cintamani Mahakala and six armed Mahakala"@en ;
+        :creator            bdr:CR31C3F8AA64EDD88A ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3685 , bdr:W1NLM3685 .
+        :workHasInstance    bdr:MW1NLM3685 , bdr:W1NLM3685 ;
+        :workIsAbout        bdr:T1181 , bdr:T197 , bdr:T492 .
 }
