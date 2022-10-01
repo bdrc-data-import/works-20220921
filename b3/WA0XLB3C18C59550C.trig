@@ -11,22 +11,35 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA0XL48416DC1A950 {
-    bda:WA0XL48416DC1A950
+bdg:WA0XLB3C18C59550C {
+    bda:WA0XLB3C18C59550C
         a                   adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA0XL48416DC1A950 ;
-        adm:gitPath         "30/WA0XL48416DC1A950.trig" ;
+        adm:adminAbout      bdr:WA0XLB3C18C59550C ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "b3/WA0XLB3C18C59550C.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA0XL48416DC1A950 ;
+        adm:graphId         bdg:WA0XLB3C18C59550C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA0XL48416DC1A950
+    bdr:CR126B5F675D83BBF2
+        a                   :AgentAsCreator ;
+        :agent              bdr:P385 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR21C3FC268A769BD7
+        a                   :AgentAsCreator ;
+        :agent              bdr:P385 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA0XLB3C18C59550C
         a                   :Work ;
-        skos:altLabel       "dpal rdo rje gzhon nua'i sgrub thabs rab gsal sgron ma/"@bo-x-ewts ;
-        skos:prefLabel      "phur pa'i sgrub thabs dang bdag 'jug"@bo-x-ewts ;
+        skos:prefLabel      "dbu ma 'jug pa'i rnam bshad dwags brgyud grub pa'i shing rta/"@bo-x-ewts ;
+        :creator            bdr:CR126B5F675D83BBF2 , bdr:CR21C3FC268A769BD7 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW3CN11633_48416D .
+        :workGenre          bdr:T61 ;
+        :workHasInstance    bdr:MW3CN477_B3C18C ;
+        :workIsAbout        bdr:T233 , bdr:WA19458 .
 }

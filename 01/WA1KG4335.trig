@@ -30,6 +30,12 @@ bdg:WA1KG4335 {
         adm:logMessage      "released"@en ;
         adm:logWho          bdu:U00016 .
     
+    bda:LG50603F208C964AA3
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-09-30T13:02:26.719Z"^^xsd:dateTime ;
+        adm:logMessage      "updated title and biblio note"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG5ED8389EAE7E209B
         a                   adm:UpdateData ;
         adm:logDate         "2018-01-31T10:39:00.523Z"^^xsd:dateTime ;
@@ -78,43 +84,43 @@ bdg:WA1KG4335 {
     bda:WA1KG4335  a        adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1KG4335 ;
-        adm:facetIndex      15 ;
+        adm:facetIndex      16 ;
         adm:gitPath         "01/WA1KG4335.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1KG4335 ;
-        adm:logEntry        bda:LG36CBB8A665397CB9 , bda:LG3B3554D9A3386FF3 , bda:LG488149470E4B5E80 , bda:LG5ED8389EAE7E209B , bda:LG676FCA6AD4D80AE1 , bda:LGB3329C6CD04841EB , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
+        adm:logEntry        bda:LG36CBB8A665397CB9 , bda:LG3B3554D9A3386FF3 , bda:LG488149470E4B5E80 , bda:LG50603F208C964AA3 , bda:LG5ED8389EAE7E209B , bda:LG676FCA6AD4D80AE1 , bda:LGB3329C6CD04841EB , bda:LGIM4394141E , bda:LGIM5A753E00B7 , bda:LGIMAEA9B78D7A , bda:LGIMF03D5361F1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:restrictedInChina  true ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR50603F208C964AA3
-        a                   :AgentAsCreator ;
-        :agent              bdr:P821 ;
-        :role               bdr:R0ER0019 .
-    
-    bdr:CR52CB79218C85A631
+    bdr:CR30400E456E8A1E91
         a                   :AgentAsCreator ;
         :agent              bdr:P66 ;
         :role               bdr:R0ER0016 .
     
-    bdr:CRB897533EDA241674
-        a                   :AgentAsCreator ;
-        :agent              bdr:P385 ;
-        :role               bdr:R0ER0016 .
-    
-    bdr:CRED23FDB946FCBCFD
+    bdr:CR52CB79218C85A631
         a                   :AgentAsCreator ;
         :agent              bdr:P264 ;
         :role               bdr:R0ER0016 .
     
+    bdr:CRB897533EDA241674
+        a                   :AgentAsCreator ;
+        :agent              bdr:P821 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRED23FDB946FCBCFD
+        a                   :AgentAsCreator ;
+        :agent              bdr:P385 ;
+        :role               bdr:R0ER0016 .
+    
     bdr:WA1KG4335  a        :Work ;
-        skos:altLabel       "dpal spungs dpe rnying gsar bskrun/ gzhung lugs pod 'phreng / (1-12)"@bo-x-ewts ;
-        skos:prefLabel      "dpal spungs dpe rnying gsar bskrun las gzhung lugs phyogs bsgrigs/ (dang po/)"@bo-x-ewts ;
-        :catalogInfo        "Anthology of philosophical texts from the Kagyu order. From Pelpung Monastery."@en ;
-        :creator            bdr:CR50603F208C964AA3 , bdr:CR52CB79218C85A631 , bdr:CRB897533EDA241674 , bdr:CRED23FDB946FCBCFD ;
+        skos:altLabel       "dpal spungs dpe rnying gsar bskrun/ gzhung lugs pod 'phreng / (pod 1-12)"@bo-x-ewts ;
+        skos:prefLabel      "dpal spungs dpe rnying gsar bskrun las gzhung lugs phyogs bsgrigs/ (pod dang po nas bcu bnyis/)"@bo-x-ewts ;
+        :catalogInfo        "Anthology of philosophical texts from the Kagyu order (v. 1-12). From Palpung Monastery."@en ;
+        :creator            bdr:CR30400E456E8A1E91 , bdr:CR52CB79218C85A631 , bdr:CRB897533EDA241674 , bdr:CRED23FDB946FCBCFD ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workGenre          bdr:T385 ;
+        :workGenre          bdr:T1081 ;
         :workHasInstance    bdr:MW1KG4335 , bdr:W1KG4335 ;
-        :workIsAbout        bdr:T770 .
+        :workIsAbout        bdr:T1187 , bdr:T3CN26386 .
 }
