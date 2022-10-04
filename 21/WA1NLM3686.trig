@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3686 {
+    bda:LGAC2643E471DA2883
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-03T16:48:55.403Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +26,26 @@ bdg:WA1NLM3686 {
     bda:WA1NLM3686  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3686 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "21/WA1NLM3686.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3686 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LGAC2643E471DA2883 , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRE1E49BA9F1C5E690
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4694 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3686  a       :Work ;
-        skos:prefLabel      "'phags ma rje btsun ma gdugs dkar gyi sgrub thabs dang bum sgrub byad 'grol dang bcas pa byabs khrus nyon mongs gdungs sel zhes bya ba dang yang byad 'grol dang bcas pa sogs/"@bo-x-ewts ;
+        skos:altLabel       "'phags ma rje btsun ma gdugs dkar gyi sgrub thabs dang bum sgrub byad 'grol dang bcas pa byabs khrus nyon mongs gdungs sel zhes bya ba dang yang byad 'grol dang bcas pa/"@bo-x-ewts ;
+        skos:prefLabel      "gdugs dkar gyi sgrub thabs dang bum sgrub byad 'grol dang bcas pa byabs khrus nyon mongs gdungs sel zhes bya ba dang yang byad 'grol dang bcas pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Ritual for the Prosperity , protection of pandemic on the basis of Shakyamuni and Tara as deity and Purification ritual on the basis of Vajravidharana, Vajrasattva and Nagesvaraja"@en ;
+        :creator            bdr:CRE1E49BA9F1C5E690 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3686 , bdr:W1NLM3686 .
+        :workHasInstance    bdr:MW1NLM3686 , bdr:W1NLM3686 ;
+        :workIsAbout        bdr:T1AT489 , bdr:T22 , bdr:T249 .
 }

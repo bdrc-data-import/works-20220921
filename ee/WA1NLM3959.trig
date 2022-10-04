@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3959 {
+    bda:LGCC034E2D310AD9D1
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-03T08:38:48.214Z"^^xsd:dateTime ;
+        adm:logMessage      "added topic, author, cat info, content, pub info"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +27,26 @@ bdg:WA1NLM3959 {
     bda:WA1NLM3959  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3959 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "ee/WA1NLM3959.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3959 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LGCC034E2D310AD9D1 , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRBB5596C6556C0DF6
+        a                   :AgentAsCreator ;
+        :agent              bdr:P37 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3959  a       :Work ;
-        skos:prefLabel      "gdugs dkar mchog tu grub pa zhes bya ba'i gzungs sogs/"@bo-x-ewts ;
+        skos:prefLabel      "bder gshegs bdun gyi mchod pa'i chog sgrigs yid bzhin dbang rgyal/"@bo-x-ewts ;
+        :catalogInfo        "Ritual of seven medecine Buddha by 5th Dalai Lama Ngawang Losang Gyatsho."@en ;
+        :creator            bdr:CRBB5596C6556C0DF6 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3959 , bdr:W1NLM3959 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM3959 , bdr:W1NLM3959 ;
+        :workIsAbout        bdr:T012AG03552 , bdr:T568 .
 }

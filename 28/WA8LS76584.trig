@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS76584 {
+    bda:LG61F5411CD366ACB4
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-10-03T13:46:54.542Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LGE23D33E7A5ED1D9D
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-02-08T13:59:45.62Z"^^xsd:dateTime ;
@@ -27,15 +33,15 @@ bdg:WA8LS76584 {
     bda:WA8LS76584  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS76584 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "28/WA8LS76584.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS76584 ;
-        adm:logEntry        bda:LGE23D33E7A5ED1D9D , bda:LGF1AC82E0215AC8C7 ;
+        adm:logEntry        bda:LG61F5411CD366ACB4 , bda:LGE23D33E7A5ED1D9D , bda:LGF1AC82E0215AC8C7 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR61F5411CD366ACB4
+    bdr:CR2120FEC937DE8B05
         a                   :AgentAsCreator ;
         :agent              bdr:P64 ;
         :role               bdr:R0ER0019 .
@@ -44,10 +50,10 @@ bdg:WA8LS76584 {
         skos:altLabel       "rgyal ba khyab bdag rdo rje 'chang chen po'i lam gyi rim pa gsang ba kun gyi gnad rnam par phye ba/"@bo-x-ewts ;
         skos:prefLabel      "sngags rim chen mo/"@bo-x-ewts ;
         :catalogInfo        "Je Tsongkhapa's monumental survey of Vajrayana Buddhism."@en ;
-        :creator            bdr:CR61F5411CD366ACB4 ;
+        :creator            bdr:CR2120FEC937DE8B05 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T238 ;
-        :workHasInstance    bdr:MW8LS76584 ;
+        :workHasInstance    bdr:MW8LS76584 , bdr:W8LS76584 ;
         :workIsAbout        bdr:T1871 , bdr:T307 .
 }
