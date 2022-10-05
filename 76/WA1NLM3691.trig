@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3691 {
+    bda:LG164B91C915C9E0EE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-04T11:26:22.986Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloed"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +27,36 @@ bdg:WA1NLM3691 {
     bda:WA1NLM3691  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3691 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      6 ;
         adm:gitPath         "76/WA1NLM3691.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3691 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LG164B91C915C9E0EE , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR51B36FB3844E81BA
+        a                   :AgentAsCreator ;
+        :agent              bdr:P253 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CR8BD77DC47B571BB4
+        a                   :AgentAsCreator ;
+        :agent              bdr:P286 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:CRBC3CE12DAF623BE0
+        a                   :AgentAsCreator ;
+        :agent              bdr:P423 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3691  a       :Work ;
         skos:prefLabel      "lhag pa'i lha gang la'ng sbyar chog pa'i sbyin sreg gi chog smin byed nyi ma'i 'od zer sogs/"@bo-x-ewts ;
+        :catalogInfo        "Sevavidhi for invoking vajrabhairava, ritual for the invocation and protiation of the esoteric form of Dharmaraja (Yama) through the performace of the bali offering and Descriptions of environment and inhabitants"@en ;
+        :creator            bdr:CR51B36FB3844E81BA , bdr:CR8BD77DC47B571BB4 , bdr:CRBC3CE12DAF623BE0 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3691 , bdr:W1NLM3691 .
+        :workGenre          bdr:T8 ;
+        :workHasInstance    bdr:MW1NLM3691 , bdr:W1NLM3691 ;
+        :workIsAbout        bdr:T104 , bdr:T1465 , bdr:T198 .
 }

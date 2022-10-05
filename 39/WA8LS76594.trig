@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA8LS76594 {
+    bda:LG6EB2CE261287B8CB
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-10-04T08:44:49.465Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00019 .
+    
     bda:LG81AA6DF5326D8B45
         a                   adm:UpdateData ;
         adm:logDate         "2022-02-28T15:32:10.157Z"^^xsd:dateTime ;
@@ -27,15 +33,15 @@ bdg:WA8LS76594 {
     bda:WA8LS76594  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA8LS76594 ;
-        adm:facetIndex      4 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "39/WA8LS76594.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA8LS76594 ;
-        adm:logEntry        bda:LG81AA6DF5326D8B45 , bda:LGE0D6B85DB885B73B ;
+        adm:logEntry        bda:LG6EB2CE261287B8CB , bda:LG81AA6DF5326D8B45 , bda:LGE0D6B85DB885B73B ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR6EB2CE261287B8CB
+    bdr:CR458EAFFFFD9F7020
         a                   :AgentAsCreator ;
         :agent              bdr:P209 ;
         :role               bdr:R0ER0019 .
@@ -43,10 +49,10 @@ bdg:WA8LS76594 {
     bdr:WA8LS76594  a       :Work ;
         skos:prefLabel      "skyabs 'gro'i khrid yig"@bo-x-ewts ;
         :catalogInfo        "Instructional manual of taking refuge by Ngawang Choden."@en ;
-        :creator            bdr:CR6EB2CE261287B8CB ;
+        :creator            bdr:CR458EAFFFFD9F7020 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
         :workGenre          bdr:T200 ;
-        :workHasInstance    bdr:MW8LS76594 ;
+        :workHasInstance    bdr:MW8LS76594 , bdr:W8LS76594 ;
         :workIsAbout        bdr:T1297 .
 }
