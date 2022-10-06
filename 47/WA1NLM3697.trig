@@ -12,6 +12,11 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3697 {
+    bda:LGC987EE3252342201
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-05T11:50:22.911Z"^^xsd:dateTime ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +26,27 @@ bdg:WA1NLM3697 {
     bda:WA1NLM3697  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3697 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "47/WA1NLM3697.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3697 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LGC987EE3252342201 , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRC894E3D5B470EA7F
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4610 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3697  a       :Work ;
-        skos:prefLabel      "skyer sgang lugs kyi rta mgrin gsang sgrub kyi dbang bskur chog pad+ma rA ga'i srang bur brgyus pa'i bsam 'phel dbang gi rgyal po'i phreng ba sogs/"@bo-x-ewts ;
+        skos:altLabel       "skyer sgang lugs kyi rta mgrin gsang sgrub kyi dbang bskur cho ga pad+ma rA ga'i srad bur brgyus pa'i bsam 'phel dbang gi rgyal po'i phreng ba sogs/"@bo-x-ewts ;
+        skos:prefLabel      "rta mgrin gsang sgrub kyi dbang bskur chog pad+ma rA ga'i srang bur brgyus pa'i bsam 'phel dbang gi rgyal po'i phreng ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of Sādhanas and Initiation texts for the practice of the for the Hayagriva Guhyasadhana according to Kyergang tradition, and vajrapani nilambaradhara. Urga Khenzur Ngawang Lobsang Dondrub."@en ;
+        :creator            bdr:CRC894E3D5B470EA7F ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3697 , bdr:W1NLM3697 .
+        :workGenre          bdr:T48 ;
+        :workHasInstance    bdr:MW1NLM3697 , bdr:W1NLM3697 ;
+        :workIsAbout        bdr:T00AG01174 , bdr:T50 .
 }
