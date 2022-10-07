@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3702 {
+    bda:LG6155C64DA9192D38
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-06T17:12:44.511Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +27,27 @@ bdg:WA1NLM3702 {
     bda:WA1NLM3702  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3702 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "fa/WA1NLM3702.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3702 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LG6155C64DA9192D38 , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CR02ADA2143234C501
+        a                   :AgentAsCreator ;
+        :agent              bdr:P55 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM3702  a       :Work ;
-        skos:prefLabel      "ston phrag bcu gnyis pa dri ma med pa'i 'od kyi dka' ba'i gnas rnam par 'byed pa brjed byang gi yi ge mkhas grub chos rjes rjel gsan dus mdzad pa/"@bo-x-ewts ;
+        skos:altLabel       "stong phrag bcu gnyis pa dri ma med pa'i 'od kyi dka' ba'i gnas rnam par 'byed pa brjed byang gi yi ge mkhas grub chos rjes rjel gsan dus mdzad pa/"@bo-x-ewts ;
+        skos:prefLabel      "dri med'od kyi dka' ba'i gnas rnam par 'byed pa brjed byang gi yi ge mkhas grub chos rjes rjel gsan dus mdzad pa/"@bo-x-ewts ;
+        :catalogInfo        "Explanation of difficult points in the Vimalaprabha commentary on the Kalacakra tantra; based on the lectures of Tsongkhapa and recorded by Khedrubje for his own use"@en ;
+        :creator            bdr:CR02ADA2143234C501 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM3702 , bdr:W1NLM3702 .
+        :workGenre          bdr:T1446 ;
+        :workHasInstance    bdr:MW1NLM3702 , bdr:W1NLM3702 ;
+        :workIsAbout        bdr:T2339 , bdr:WA22306 .
 }

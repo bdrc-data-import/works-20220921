@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM3700 {
+    bda:LG845CD0A3D2DF53D4
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-06T17:12:43.133Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00017 .
+    
     bda:LGIM4F552576  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2021-10-26T17:09:02.792Z"^^xsd:dateTime ;
@@ -21,17 +27,19 @@ bdg:WA1NLM3700 {
     bda:WA1NLM3700  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM3700 ;
-        adm:facetIndex      2 ;
+        adm:facetIndex      3 ;
         adm:gitPath         "df/WA1NLM3700.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM3700 ;
-        adm:logEntry        bda:LGIM4F552576 ;
+        adm:logEntry        bda:LG845CD0A3D2DF53D4 , bda:LGIM4F552576 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM3700  a       :Work ;
         skos:prefLabel      "gshin po rjes 'dzin gyi cho ga thar pa'i lam ston sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of funeral ritual text associated with the southern gate of the Bhaisajyaguru practice and other miscellaneous rituals"@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
+        :workGenre          bdr:T1081 , bdr:T810 , bdr:T977 ;
         :workHasInstance    bdr:MW1NLM3700 , bdr:W1NLM3700 .
 }
