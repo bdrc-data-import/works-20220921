@@ -12,40 +12,35 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA25688 {
-    bda:LGD931A347B165ECA6
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+    bda:LG2C483BD788B0D311
+        a                   adm:UpdateData .
+    
+    bda:LGE10B68079380C02B
+        a                   adm:InitialDataCreation .
+    
+    bda:W25688  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W25688 ;
+        adm:replaceWith     bdr:WA25688 ;
+        adm:status          bda:StatusWithdrawn .
     
     bda:WA25688  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA25688 ;
-        adm:facetIndex      5 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "04/WA25688.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA25688 ;
-        adm:logEntry        bda:LGD931A347B165ECA6 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusOnHold .
+        adm:status          bda:StatusReleased .
     
-    bdr:CR2C483BD788B0D311
-        a                   :AgentAsCreator ;
-        :agent              bdr:P8209 ;
-        :role               bdr:R0ER0018 .
-    
-    bdr:CR5E8D68C390FFA41B
-        a                   :AgentAsCreator ;
-        :agent              bdr:P8205 ;
-        :role               bdr:R0ER0026 .
-    
-    bdr:CRE10B68079380C02B
-        a                   :AgentAsCreator ;
-        :agent              bdr:P8210 ;
-        :role               bdr:R0ER0018 .
+    bdr:NTD931A347B165ECA6
+        a                   :Note ;
+        :noteText           "toh 699"@en .
     
     bdr:WA25688  a          :Work ;
         skos:prefLabel      "kun tu bzang po zhes bya ba'i gzungs/"@bo-x-ewts , "samantabhadra-nama-dharani"@sa-alalc97 ;
-        :creator            bdr:CR2C483BD788B0D311 , bdr:CR5E8D68C390FFA41B , bdr:CRE10B68079380C02B ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW25688 .
+        :note               bdr:NTD931A347B165ECA6 .
 }

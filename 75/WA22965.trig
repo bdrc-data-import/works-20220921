@@ -13,29 +13,35 @@
 
 bdg:WA22965 {
     bda:LG67BB9AAAFFC8C247
-        a                   adm:InitialDataCreation ;
-        adm:logWho          bdu:U00001 .
+        a                   adm:UpdateData .
+    
+    bda:LGF22C9D6EE5FBFC36
+        a                   adm:InitialDataCreation .
+    
+    bda:W22965  a           adm:AdminData ;
+        :isRoot             true ;
+        adm:adminAbout      bdr:W22965 ;
+        adm:replaceWith     bdr:WA22965 ;
+        adm:status          bda:StatusWithdrawn .
     
     bda:WA22965  a          adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA22965 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "75/WA22965.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA22965 ;
-        adm:logEntry        bda:LG67BB9AAAFFC8C247 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
-        adm:status          bda:StatusOnHold .
+        adm:status          bda:StatusReleased .
     
-    bdr:CRF22C9D6EE5FBFC36
+    bdr:CR554B2B2458608665
         a                   :AgentAsCreator ;
         :agent              bdr:P719 ;
         :role               bdr:R0ER0019 .
     
     bdr:WA22965  a          :Work ;
         skos:prefLabel      "bar do 'phrang sgrol gyi gsol 'debs 'jigs sgrol gyi dpa' bo/"@bo-x-ewts ;
-        :creator            bdr:CRF22C9D6EE5FBFC36 ;
+        :creator            bdr:CR554B2B2458608665 ;
         :isRoot             true ;
-        :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW22965 .
+        :language           bdr:LangBo .
 }

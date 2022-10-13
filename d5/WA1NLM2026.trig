@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2026 {
+    bda:LG16E574B0DD4B455E
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-11T14:43:59.738Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG7D317BAD4F2ABB59
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,26 @@ bdg:WA1NLM2026 {
     bda:WA1NLM2026  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2026 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      5 ;
         adm:gitPath         "d5/WA1NLM2026.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2026 ;
-        adm:logEntry        bda:LG7D317BAD4F2ABB59 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG16E574B0DD4B455E , bda:LG7D317BAD4F2ABB59 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRDD573DB7C4B4F587
+        a                   :AgentAsCreator ;
+        :agent              bdr:P168 ;
+        :role               bdr:R0ER0019 .
+    
     bdr:WA1NLM2026  a       :Work ;
         skos:prefLabel      "mdo sde brgyad brgya ba sogs/"@bo-x-ewts ;
+        :catalogInfo        "Seven Arya Tathagata's prayer sutra and included ritual for mending-purification and fasting practice."@en ;
+        :creator            bdr:CRDD573DB7C4B4F587 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2026 , bdr:W1NLM2026 .
+        :workGenre          bdr:T769 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2026 , bdr:W1NLM2026 ;
+        :workIsAbout        bdr:T147 , bdr:T809 .
 }
