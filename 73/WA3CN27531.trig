@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA3CN27531 {
+    bda:LG2188BBDBEC1EC0A5
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-05-12T15:39:27.334Z"^^xsd:dateTime ;
+        adm:logMessage      "added info"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:LG2640279716A9D978
         a                   adm:InitialDataCreation ;
         adm:logDate         "2022-01-31T17:33:32.008Z"^^xsd:dateTime ;
@@ -24,19 +30,43 @@ bdg:WA3CN27531 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG6F8CFA0B1E0B85D3
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-14T14:47:34.983Z"^^xsd:dateTime ;
+        adm:logMessage      "released"@en ;
+        adm:logWho          bdu:U00007 .
+    
+    bda:LGA71CFA860359D2C1
+        a                   adm:ScanRequestCreation ;
+        adm:logDate         "2022-10-14T14:47:54.457Z"^^xsd:dateTime ;
+        adm:logMessage      "added volumeMap for scan request"@en ;
+        adm:logWho          bdu:U00007 .
+    
     bda:WA3CN27531  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN27531 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      7 ;
         adm:gitPath         "73/WA3CN27531.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN27531 ;
-        adm:logEntry        bda:LG2640279716A9D978 , bda:LG55CFEAB6E1293FB0 ;
+        adm:logEntry        bda:LG2188BBDBEC1EC0A5 , bda:LG2640279716A9D978 , bda:LG55CFEAB6E1293FB0 , bda:LG6F8CFA0B1E0B85D3 , bda:LGA71CFA860359D2C1 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
+    bdr:CRA2886F9C48AB80CC
+        a                   :AgentAsCreator ;
+        :agent              bdr:P00EGS1017900 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:MW3CN27531  skos:altLabel  "藏族古代邦国、小邦、千户府及“域参”新考"@zh-hans .
+    
     bdr:WA3CN27531  a       :Work ;
-        skos:prefLabel      "testing /"@bo-x-ewts ;
+        skos:prefLabel      "bod kyi gna' bo'i rgyal phran dang / rgyal phran sil ma/ stong sde/ yul dpon tshan bcas kyi zhib 'jug"@bo-x-ewts , "藏族古代邦国、小邦、千户府及“域参”新考"@zh-hans ;
+        :catalogInfo        "Research works about ancient history of Tibet by Pasang Wangdui Patsab."@en ;
+        :creator            bdr:CRA2886F9C48AB80CC ;
         :isRoot             true ;
-        :workHasInstance    bdr:MW3CN27531 , bdr:W3CN27531 .
+        :language           bdr:LangBo ;
+        :workGenre          bdr:T1134 ;
+        :workHasInstance    bdr:MW3CN27531 , bdr:W3CN27531 ;
+        :workIsAbout        bdr:T1113 .
 }

@@ -18,6 +18,12 @@ bdg:WA1NLM2039 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGBFFFF88A1C1BBBD2
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-14T19:26:16.21Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2039 {
     bda:WA1NLM2039  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2039 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "e0/WA1NLM2039.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2039 ;
-        adm:logEntry        bda:LG3DC4C1CB3C281743 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG3DC4C1CB3C281743 , bda:LGBFFFF88A1C1BBBD2 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2039  a       :Work ;
         skos:prefLabel      "bcom ldan 'das sman pa'i rgyal po gson pa lho sgo bgegs sel nor bu'i bang mdzod sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgical texts concerned with the removal of obstacles, beverage offered, a ritual for torma offering, four mandala ritual, and other texts included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2039 , bdr:W1NLM2039 .
+        :workGenre          bdr:T1458 , bdr:T2038 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2039 , bdr:W1NLM2039 ;
+        :workIsAbout        bdr:T26 , bdr:T829 .
 }

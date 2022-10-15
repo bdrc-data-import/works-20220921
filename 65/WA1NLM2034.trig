@@ -18,6 +18,12 @@ bdg:WA1NLM2034 {
         adm:logMessage      "added Work to NLM"@en ;
         adm:logWhoStr       "add-works-to-PR1NLM00" .
     
+    bda:LGFE53D586ABA37545
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-14T19:26:14.241Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGIM57C6901C  a     adm:InitialDataImport ;
         adm:logAgent        "NLM Importer" ;
         adm:logDate         "2020-06-19T21:23:53.36Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2034 {
     bda:WA1NLM2034  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2034 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "65/WA1NLM2034.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2034 ;
-        adm:logEntry        bda:LGF1572F08009B725B , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LGF1572F08009B725B , bda:LGFE53D586ABA37545 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2034  a       :Work ;
         skos:prefLabel      "bka' bsrung chen po dam can rnam gsum gyi gtor chog 'phrin las sgrub byed dpa' bo'i nga ro sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgical texts concerned with Torma offering, consecration ritual, and other texts included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2034 , bdr:W1NLM2034 .
+        :workGenre          bdr:T1028 , bdr:T1458 ;
+        :workHasInstance    bdr:MW1NLM2034 , bdr:W1NLM2034 ;
+        :workIsAbout        bdr:T1434 , bdr:T846 .
 }

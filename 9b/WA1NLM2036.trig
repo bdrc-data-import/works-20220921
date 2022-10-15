@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2036 {
+    bda:LGF32F9C27648C6A46
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-14T19:26:15.007Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGF7CD237F3837E044
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2036 {
     bda:WA1NLM2036  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2036 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9b/WA1NLM2036.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2036 ;
-        adm:logEntry        bda:LGF7CD237F3837E044 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LGF32F9C27648C6A46 , bda:LGF7CD237F3837E044 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2036  a       :Work ;
         skos:prefLabel      "sme bdun skar ma rnams la tshe thar 'bul tshul sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgical texts concerned with saving the life of animals, longevity practice, smoke-offering, beverage offering, and other texts included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2036 , bdr:W1NLM2036 .
+        :workGenre          bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2036 , bdr:W1NLM2036 ;
+        :workIsAbout        bdr:T173 , bdr:T2463 , bdr:T26 , bdr:T444 .
 }

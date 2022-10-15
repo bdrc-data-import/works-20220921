@@ -36,38 +36,44 @@ bdg:WA3CN677 {
         adm:logMessage      "added volumeMap for scan request"@en ;
         adm:logWho          bdu:U00007 .
     
+    bda:LG61A9B5C54B395D11
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-14T14:45:12.218Z"^^xsd:dateTime ;
+        adm:logMessage      "added Work to Texts from Palpung Sherabling"@en ;
+        adm:logWhoStr       "add-works-to-PR1NCLK" .
+    
     bda:WA3CN677  a         adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA3CN677 ;
-        adm:facetIndex      8 ;
+        adm:facetIndex      9 ;
         adm:gitPath         "93/WA3CN677.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA3CN677 ;
-        adm:logEntry        bda:LG02E1135E30C345BD , bda:LG04A67FC8EA210717 , bda:LG37AD31728A6C3F55 , bda:LG5BFAC58B00C3289C ;
+        adm:logEntry        bda:LG02E1135E30C345BD , bda:LG04A67FC8EA210717 , bda:LG37AD31728A6C3F55 , bda:LG5BFAC58B00C3289C , bda:LG61A9B5C54B395D11 ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:CR61A9B5C54B395D11
-        a                   :AgentAsCreator ;
-        :agent              bdr:P385 ;
-        :role               bdr:R0ER0028 .
-    
-    bdr:CRC49F64F4F13582E9
+    bdr:CR24E3617E6C71643C
         a                   :AgentAsCreator ;
         :agent              bdr:P1457 ;
         :role               bdr:R0ER0019 .
     
-    bdr:EV24E3617E6C71643C
+    bdr:CRC49F64F4F13582E9
+        a                   :AgentAsCreator ;
+        :agent              bdr:P385 ;
+        :role               bdr:R0ER0028 .
+    
+    bdr:EV0BF16BA2CD1046DA
         a                   :CompletedEvent ;
         :eventWhen          "1549(samobyalo)"^^<http://id.loc.gov/datatypes/edtf> .
     
     bdr:WA3CN677  a         :Work ;
         skos:altLabel       "dus gsum gyi rgyal ba sras dang bcas pa'i bstan pa mtha' dag dang khyad par rdo rje 'chang karma pa'i dgongs pa gsal bar byed pa'i bstan bcos thar pa'i lam chen bgrod pa'i shing rta/"@bo-x-ewts , "karma pa'i dgongs pa gsal bar byed pa'i bstan bcos/"@bo-x-ewts , "karma shing rta/"@bo-x-ewts ;
         skos:prefLabel      "bstan pa mtha' dag dang khyad par rdo rje 'chang karma pa'i dgongs pa gsal bar byed pa'i bstan bcos/"@bo-x-ewts ;
-        :creator            bdr:CR61A9B5C54B395D11 , bdr:CRC49F64F4F13582E9 ;
+        :creator            bdr:CR24E3617E6C71643C , bdr:CRC49F64F4F13582E9 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workEvent          bdr:EV24E3617E6C71643C ;
+        :workEvent          bdr:EV0BF16BA2CD1046DA ;
         :workGenre          bdr:T1777 , bdr:T4CZ71 ;
         :workHasInstance    bdr:MW3CN677 , bdr:W3CN677 ;
         :workIsAbout        bdr:T1386 , bdr:T381 .

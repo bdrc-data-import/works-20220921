@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2035 {
+    bda:LG510CBE2BB82932B1
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-14T19:26:14.607Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LG7DCF52E5A05C9F33
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2035 {
     bda:WA1NLM2035  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2035 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "9e/WA1NLM2035.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2035 ;
-        adm:logEntry        bda:LG7DCF52E5A05C9F33 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG510CBE2BB82932B1 , bda:LG7DCF52E5A05C9F33 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2035  a       :Work ;
         skos:prefLabel      "lan chags gtor ma gtor tshul yungs 'bru'i lhun po sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of liturgical texts concerned with Torma offering for karmic debts, obscurations and purifying, exorcism, consecration ritual, and other texts included."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2035 , bdr:W1NLM2035 .
+        :workGenre          bdr:T1028 , bdr:T977 ;
+        :workHasInstance    bdr:MW1NLM2035 , bdr:W1NLM2035 ;
+        :workIsAbout        bdr:T1219 , bdr:T1447 , bdr:T58 .
 }

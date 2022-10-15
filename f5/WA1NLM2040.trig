@@ -12,6 +12,12 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 bdg:WA1NLM2040 {
+    bda:LG90CCA9D63ECCEBBE
+        a                   adm:UpdateData ;
+        adm:logDate         "2022-10-14T19:26:16.554Z"^^xsd:dateTime ;
+        adm:logMessage      "full cataloged"@en ;
+        adm:logWho          bdu:U00016 .
+    
     bda:LGA26AED296D1B51E8
         a                   adm:UpdateData ;
         adm:logDate         "2020-09-03T17:19:20.147Z"^^xsd:dateTime ;
@@ -27,17 +33,20 @@ bdg:WA1NLM2040 {
     bda:WA1NLM2040  a       adm:AdminData ;
         :isRoot             true ;
         adm:adminAbout      bdr:WA1NLM2040 ;
-        adm:facetIndex      3 ;
+        adm:facetIndex      4 ;
         adm:gitPath         "f5/WA1NLM2040.trig" ;
         adm:gitRepo         bda:GR0008 ;
         adm:graphId         bdg:WA1NLM2040 ;
-        adm:logEntry        bda:LGA26AED296D1B51E8 , bda:LGIM57C6901C ;
+        adm:logEntry        bda:LG90CCA9D63ECCEBBE , bda:LGA26AED296D1B51E8 , bda:LGIM57C6901C ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
     bdr:WA1NLM2040  a       :Work ;
         skos:prefLabel      "shes rab kyi pha rol tu phyin pa yon tan rin po che sdud pa sogs/"@bo-x-ewts ;
+        :catalogInfo        "Collection of sutra and liturgical texts."@en ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW1NLM2040 , bdr:W1NLM2040 .
+        :workGenre          bdr:T5 , bdr:T769 ;
+        :workHasInstance    bdr:MW1NLM2040 , bdr:W1NLM2040 ;
+        :workIsAbout        bdr:T1225 , bdr:T173 , bdr:T339 .
 }
