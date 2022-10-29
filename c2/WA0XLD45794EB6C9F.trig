@@ -11,21 +11,35 @@
 @prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
-bdg:WA0XLDF6017A94056 {
-    bda:WA0XLDF6017A94056
+bdg:WA0XLD45794EB6C9F {
+    bda:WA0XLD45794EB6C9F
         a                   adm:AdminData ;
         :isRoot             true ;
-        adm:adminAbout      bdr:WA0XLDF6017A94056 ;
-        adm:gitPath         "d7/WA0XLDF6017A94056.trig" ;
+        adm:adminAbout      bdr:WA0XLD45794EB6C9F ;
+        adm:facetIndex      3 ;
+        adm:gitPath         "c2/WA0XLD45794EB6C9F.trig" ;
         adm:gitRepo         bda:GR0008 ;
-        adm:graphId         bdg:WA0XLDF6017A94056 ;
+        adm:graphId         bdg:WA0XLD45794EB6C9F ;
         adm:metadataLegal   bda:LD_BDRC_CC0 ;
         adm:status          bda:StatusReleased .
     
-    bdr:WA0XLDF6017A94056
+    bdr:CR06F770ABC9A3B036
+        a                   :AgentAsCreator ;
+        :agent              bdr:P4402 ;
+        :role               bdr:R0ER0026 .
+    
+    bdr:CR2C51AE5E329CAD95
+        a                   :AgentAsCreator ;
+        :agent              bdr:P1243 ;
+        :role               bdr:R0ER0019 .
+    
+    bdr:WA0XLD45794EB6C9F
         a                   :Work ;
-        skos:prefLabel      "mkha' 'gro rgya mtsho'i rtogs brjod dang brda mgur gsang mdzod/ (pod nyer gcig pa/)"@bo-x-ewts ;
+        skos:prefLabel      "mkha 'gro ma'i brda mgur/"@bo-x-ewts ;
+        :creator            bdr:CR06F770ABC9A3B036 , bdr:CR2C51AE5E329CAD95 ;
         :isRoot             true ;
         :language           bdr:LangBo ;
-        :workHasInstance    bdr:MW3CN2459_DF6017 .
+        :workGenre          bdr:T6 ;
+        :workHasInstance    bdr:MW3CN2459_D45794 ;
+        :workIsAbout        bdr:T1346 .
 }
